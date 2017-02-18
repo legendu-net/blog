@@ -1,0 +1,22 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Author: Ben Chuanlong Du
+Date: 2015-01-17 16:52:47
+Slug: food-tips
+Title: Food Tips
+Category: Life
+Tags: food, life, source, tips
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author. 
+It is not meant to readers but rather for convenient reference of the author and future improvement.**
+ 
+## Good Salad Sources
+
+1. Thousand Ialand 
+
+2. House
+
+## Wine
+
+1. tequila sunrise

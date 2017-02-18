@@ -1,0 +1,30 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Author: Ben Chuanlong Du
+Title: Tips About GPG
+Date: 2016-07-13 22:17:57
+Slug: gpg-tips
+Category: Software
+Tags: tips
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author. 
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+ 
+```sh
+gpg -c file
+```
+
+1. You can use the following command to encrypt a file as ascii armor.
+```sh
+gpg -a -c file
+```
+
+2. You can specified the password using the `--passphrase` option
+to avoid keyboard interaction. 
+You have to quote (in double/single quotation marks) the password 
+if it contains white spaces.
+And you when you quote the password in double/single quotation marks,
+the double/single quotation marks can be escaped as usual by `\"`/`\'`.
+

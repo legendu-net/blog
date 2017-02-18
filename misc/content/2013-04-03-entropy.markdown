@@ -1,0 +1,23 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Title: Entropy
+Date: 2013-04-03 00:00:00
+Tags: statistics
+Category: Statistics
+Slug: entropy
+Author: Ben Chuanlong Du
+
+**Things on this page are fragmentary and immature notes/thoughts of the author. It is not meant to readers but rather for convenient reference of the author and future improvement.**
+ 
+Entropy discrete
+
+not good for continuous distributions
+
+K-L Divergence is good for both
+
+Fisher information explanation
+ 
+
+likelihood based tests: LRT, wald, score 
+expected fisher, 
+observed fisher (sum, log, law of large number)

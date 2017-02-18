@@ -1,0 +1,36 @@
+UUID: 3731ba41-88ca-46e9-ab62-32435f19cdd3
+Status: published
+Date: 2016-06-20 21:01:14
+Author: Ben Chuanlong Du
+Slug: mac-tips
+Title: Mac Tips
+Category: Mac OSX
+Tags: Mac OSX, tips, Apple
+
+**
+Things on this page are
+fragmentary and immature notes/thoughts of the author.
+It is not meant to readers
+but rather for convenient reference of the author and future improvement.
+**
+
+5. Print Mac OS X operating system version information.
+```sh
+sw_vers -productName
+```
+
+
+0. `iTerm2` is the best termimal application in Mac. 
+
+1. You can use Homebrew to install applications in Mac
+similar to the command `apt-get` or wajig in Debian series of Linux distributions.
+However, you do not have to run the command brew with sudo.
+As a matter of fact, 
+you should never do this. 
+
+## Touchpad
+
+1. two finger click for right menu
+
+2. You got to tap hard in order to click on a Mac laptop.
+

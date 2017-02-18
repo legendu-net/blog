@@ -1,0 +1,258 @@
+Date: 2014-09-07 22:12:33
+Slug: learning
+Title: It is Never too Late to Learn
+Category: Links
+Tags: links, learning, study
+
+- [W3C](http://www.w3schools.com/)
+- [LeetCode](http://leetcode.com/)
+- [Video Lectures](http://videolectures.net/)
+- [Speaker Deck](https://speakerdeck.com/)
+- [Channel 9](http://channel9.msdn.com/)
+- [TED](http://www.ted.com/talks)
+- [Coursera](https://www.coursera.org/course/)
+- [Welcome to BrightTALK](https://www.brighttalk.com/mybrighttalk)
+- [Cheat Sheet](http://www.cheatography.com/)
+- [Cheat Sheet](http://www.addedbytes.com/cheat-sheets/)
+
+## General
+
+- General Stuff
+    - [My Notes]({{ site.url }}/miscellanea/learning/general/notes)
+    - [Other Links]({{ site.url }}/miscellanea/learning/general/links)
+    - [My Questions]({{ site.url }}/miscellanea/learning/general/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/general/tips)
+- General Statistics Knowledge
+	- [My Notes]({{ site.url }}/miscellanea/learning/statistics/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/statistics/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/statistics/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/statistics/tips)
+
+## Software/Apps/Plug-ins/Extensions
+
+- VirtualBox
+	- [My Notes]({{ site.url }}/miscellanea/learning/virtualbox/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/virtualbox/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/virtualbox/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/virtualbox/tips)
+- Texstudio
+    - [My Notes]({{ site.url }}/miscellanea/learning/texstudio/notes)
+    - [Other Links]({{ site.url }}/miscellanea/learning/texstudio/links)
+    - [My Questions]({{ site.url }}/miscellanea/learning/texstudio/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/texstudio/tips)
+- Firefox
+    - [My Notes]({{ site.url }}/miscellanea/learning/firefox/notes)
+    - [Other Links]({{ site.url }}/miscellanea/learning/firefox/links)
+    - [My Questions]({{ site.url }}/miscellanea/learning/firefox/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/firefox/tips)
+- Dropbox
+    - [My Notes]({{ site.url }}/miscellanea/learning/dropbox/notes)
+    - [Other Links]({{ site.url }}/miscellanea/learning/dropbox/links)
+    - [My Questions]({{ site.url }}/miscellanea/learning/dropbox/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/dropbox/tips)
+- AeroFS
+    - [My Notes]({{ site.url }}/miscellanea/learning/aerofs/notes)
+    - [Other Links]({{ site.url }}/miscellanea/learning/aerofs/links)
+    - [My Questions]({{ site.url }}/miscellanea/learning/aerofs/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/aerofs/tips)
+- Google
+    - [My Notes]({{ site.url }}/miscellanea/learning/google/notes)
+    - [Other Links]({{ site.url }}/miscellanea/learning/google/links)
+    - [My Questions]({{ site.url }}/miscellanea/learning/google/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/google/tips)
+- Eclipse
+	- [My Notes]({{ site.url }}/miscellanea/learning/eclipse/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/eclipse/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/eclipse/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/eclipse/tips)
+- Gedit
+	- [My Notes]({{ site.url }}/miscellanea/learning/gedit/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/gedit/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/gedit/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/gedit/tips)
+- Vimperator
+	- [My Notes]({{ site.url }}/miscellanea/learning/vimperator/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/vimperator/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/vimperator/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/vimperator/tips)
+- Rstudio
+	- [My Notes]({{ site.url }}/miscellanea/learning/rstudio/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/rstudio/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/rstudio/questions)  
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/rstudio/tips)
+- Wine
+	- [My Notes]({{ site.url }}/miscellanea/learning/wine/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/wine/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/wine/questions)  
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/wine/tips)
+- QQ
+	- [My Notes]({{ site.url }}/miscellanea/learning/qq/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/qq/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/qq/questions)  
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/qq/tips)
+
+## Programming Languages/Tools
+
+- Algorithm
+	- [My Notes]({{ site.url }}/miscellanea/learning/algorithm/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/algorithm/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/algorithm/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/algorithm/tips)
+- GPU
+	- [My Notes]({{ site.url }}/miscellanea/learning/gpu/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/gpu/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/gpu/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/gpu/tips)
+- R
+	- [My Notes]({{ site.url }}/miscellanea/learning/r/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/r/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/r/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/r/tips)
+- SAS
+	- [My Notes]({{ site.url }}/miscellanea/learning/sas/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/sas/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/sas/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/sas/tips)
+- C++
+    - [My Notes]({{ site.url }}/miscellanea/learning/cpp/notes)
+    - [Other Links]({{ site.url }}/miscellanea/learning/cpp/links)
+    - [My Questions]({{ site.url }}/miscellanea/learning/cpp/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/cpp/tips)
+- JavaScript
+    - [My Notes]({{ site.url }}/miscellanea/learning/javascript/notes)
+    - [Other Links]({{ site.url }}/miscellanea/learning/javascript/links)
+    - [My Questions]({{ site.url }}/miscellanea/learning/javascript/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/javascript/tips)
+- Python
+	- [My Notes]({{ site.url }}/miscellanea/learning/python/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/python/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/python/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/python/tips)
+    - [Underscore vs Camel Case](http://jeremy-knight.com/underscore2camel/)
+    - [Python Glossary](https://docs.python.org/3.3/glossary.html)
+    - [Scripting Vim with Python](http://orestis.gr/blog/2008/08/10/scripting-vim-with-python/)
+- Ruby
+	- [My Notes]({{ site.url }}/miscellanea/learning/ruby/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/ruby/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/ruby/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/ruby/tips)
+- Matlab
+	- [My Notes]({{ site.url }}/miscellanea/learning/matlab/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/matlab/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/matlab/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/matlab/tips)
+- Julia
+	- [My Notes]({{ site.url }}/miscellanea/learning/julia/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/julia/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/julia/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/julia/tips)
+- Java
+	- [My Notes]({{ site.url }}/miscellanea/learning/java/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/java/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/java/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/java/tips)
+- Markdown
+	- [My Notes]({{ site.url }}/miscellanea/learning/markdown/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/markdown/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/markdown/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/markdown/tips)
+    - [Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+    - [Cheatsheet](http://warpedvisions.org/projects/markdown-cheat-sheet.md)
+    - [Tables](http://www.tablesgenerator.com/markdown_tables)
+- Git
+	- [My Notes]({{ site.url }}/miscellanea/learning/git/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/git/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/git/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/git/tips)
+
+## Operating Systems
+
+- Linux
+	- [My Notes]({{ site.url }}/miscellanea/learning/linux/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/linux/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/linux/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/linux/tips)
+- Debian
+	- [My Notes]({{ site.url }}/miscellanea/learning/debian/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/debian/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/debian/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/debian/tips)
+- Ubuntu
+	- [My Notes]({{ site.url }}/miscellanea/learning/ubuntu/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/ubuntu/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/ubuntu/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/ubuntu/tips)
+- Mac
+	- [My Notes]({{ site.url }}/miscellanea/learning/mac/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/mac/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/mac/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/mac/tips)
+- Windows
+	- [My Notes]({{ site.url }}/miscellanea/learning/windows/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/windows/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/windows/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/windows/tips)
+
+## Linux Tools
+
+- XFCE
+	- [My Notes]({{ site.url }}/miscellanea/learning/xfce/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/xfce/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/xfce/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/xfce/tips)
+- Shell
+	- [My Notes]({{ site.url }}/miscellanea/learning/shell/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/shell/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/shell/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/shell/tips)
+- Vim
+	- [My Notes]({{ site.url }}/miscellanea/learning/vim/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/vim/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/vim/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/vim/tips)
+- AWK
+	- [My Notes]({{ site.url }}/miscellanea/learning/awk/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/awk/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/awk/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/awk/tips)
+- Sed
+	- [My Notes]({{ site.url }}/miscellanea/learning/sed/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/sed/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/sed/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/sed/tips)
+- IBus
+	- [My Notes]({{ site.url }}/miscellanea/learning/ibus/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/ibus/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/ibus/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/ibus/tips)
+- Postfix
+	- [My Notes]({{ site.url }}/miscellanea/learning/postfix/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/postfix/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/postfix/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/postfix/tips)
+- abook
+	- [My Notes]({{ site.url }}/miscellanea/learning/abook/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/abook/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/abook/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/abook/tips)
+
+## Others
+
+- Database
+	- [My Notes]({{ site.url }}/miscellanea/learning/database/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/database/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/database/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/database/tips)
+- Regular Expression
+	- [My Notes]({{ site.url }}/miscellanea/learning/regex/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/regex/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/regex/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/regex/tips)
+- Octopress
+	- [My Notes]({{ site.url }}/miscellanea/learning/octopress/notes)
+	- [Other Links]({{ site.url }}/miscellanea/learning/octopress/links)
+	- [My Questions]({{ site.url }}/miscellanea/learning/octopress/questions)
+    - [Fragmentary Tips]({{ site.url }}/miscellanea/learning/octopress/tips)
+- BitTorrent Sync
+    - [BitTorrent Sync](http://www.btsync.com/#/)
+

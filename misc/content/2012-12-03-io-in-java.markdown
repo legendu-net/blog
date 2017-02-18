@@ -1,0 +1,268 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Date: 2015-03-14 22:30:04
+Slug: io-in-java
+Author: Ben Chuanlong Du
+Title: IO in Java
+Category: Programming
+Tags: IO, programming, Java, input, output
+
+**
+Things on this page are
+fragmentary and immature notes/thoughts of the author.
+It is not meant to readers
+but rather for convenient reference of the author and future improvement.
+**
+
+
+1. try catch, safe 
+2. text, bin
+3. buffered or not ...
+
+
+
+    Reader - Abstract class for reading character streams
+    InputStream - Abstract class is the superclass of all classes representing an input stream of bytes.
+And similary for Writer vs OutputStream
+
+Scanner is used for parsing tokens from the contents of the stream while BufferedReader just reads the stream and does not do any special parsing.
+
+In fact you can pass a BufferedReader to a scanner as the source of characters to parse.
+
+As to the choice, use the Scanner if you want to parse the file, use the BufferedReader if you want to read the file line by line. Also see the introductory text of their aforelinked API documentations.
+
+
+
+    A BufferedReader is a simple class meant to efficiently read from the underling stream. Generally, each read request made of a Reader like a FileReader causes a corresponding read request to be made to underlying stream. Each invocation of read() or readLine() could cause bytes to be read from the file, converted into characters, and then returned, which can be very inefficient. Efficiency is improved appreciably if a Reader is warped in a BufferedReader.
+
+    BufferedReader is synchronized, so read operations on a BufferedReader can safely be done from multiple threads.
+
+    A scanner on the other hand has a lot more cheese built into it; it can do all that a BufferedReader can do and at the same level of efficiency as well. However, in addition a Scanner can parse the underlying stream for primitive types and strings using regular expressions. It can also tokenize the underlying stream with the delimiter of your choice. It can also do forward scanning of the underlying stream disregarding the delimiter!
+
+    A scanner however is not thread safe, it has to be externally synchronized.
+
+    The choice of using a BufferedReader or a Scanner depends on the code you are writing, if you are writing a simple log reader Buffered reader is adequate. However if you are writing an XML parser Scanner is the more natural choice.
+
+    Even while reading the input, if want to accept user input line by line and say just add it to a file, a BufferedReader is good enough. On the other hand if you want to accept user input as a command with multiple options, and then intend to perform different operations based on the command and options specified, a Scanner will suit better.
+
+
+PrintWriter is the output equivalent of the Scanner class
+
+```language
+//PrintWriter is a class for writng text file.
+package study.io;
+
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
+public class TestPrintWriter {
+	public static void main(String[] args) throws FileNotFoundException{
+		PrintWriter out = new PrintWriter("java_out.txt");
+		out.print(1.11111111+" ");
+		out.print(2.2+" ");
+		out.print(3.3+" ");
+		out.close();
+	}
+}
+```
+
+
+## Input and Output
+
+1. `System.out.println` is super fast. Generally speaking, you do not
+have worry much about the overheading of printing information to the
+console in Java.
+
+## Reading and Writing Text File
+
+1. `Scanner` is convenient for parsing text data.
+
+2. `PrintWriter` is for writing text file.
+
+## Reading and Writing Binary File
+
+1. To read in binary data (through byte) from a file, you can use
+`FileInputStream`; to write binary data into a file, you can use
+`FileOutputStream`. To read in binary data into primitive types
+from a file, you can wrap a FileInputStream in DataInputStream;
+to write primitive types into a binary file directly, you can
+wrap a FileOutputStream in DataOutputStream. Note that
+DataInputStream and DataOutputStream is compatible, i.e., they
+recognize the format of each other. However, DataInputStream is
+not compatible with `writeBin` in R; neither is DataOutputStream
+compatible with `readBin` in R. To communicate binary data
+between Java and R, you can run Java code which do the right job
+for you using `rJava`.
+
+
+
+
+FileReader vs FileInputStream?
+Or Reader vs InputStream
+Writer vs OutputStream
+DataInputStream/DataOutPutStream vs FileInputStream/FileOutputStream
+
+
+The following is a simple yet very common way
+```language
+try(BufferedReader br = new BufferedReader(new FileReader("file.txt"))) {
+    StringBuilder sb = new StringBuilder();
+    String line = br.readLine();
+
+    while (line != null) {
+        sb.append(line);
+        sb.append(System.lineSeparator());
+        line = br.readLine();
+    }
+    String everything = sb.toString();
+}
+```
+
+---------------------------------------------------------------------------------------------------------------------------------------
+In Java 7: similar to BufferedReader(FileInputStream...)
+```language
+Charset charset = Charset.forName("US-ASCII");
+try (BufferedReader reader = Files.newBufferedReader(file, charset)) {
+	String line = null;
+	while ((line = reader.readLine()) != null) {
+		System.out.println(line);
+	}
+} catch (IOException x) {
+	System.err.format("IOException: %s%n", x);
+}
+```
+--------------------------------------------------------------------------------------------------------------------------------------------
+The difference between the two methods is what to use to construct a BufferedReader. Method 1 uses InputStreamReader and Method 2 uses FileReader. What's the difference between the two classes?
+
+From Java Doc, "An InputStreamReader is a bridge from byte streams to character streams: It reads bytes and decodes them into characters using a specified charset." InputStreamReader can handle other input streams than files, such as network connections, classpath resources, ZIP files, etc.
+
+FileReader is "Convenience class for reading character files. The constructors of this class assume that the default character encoding and the default byte-buffer size are appropriate." FileReader does not allow you to specify an encoding other than the platform default encoding. Therefore, it is not a good idea to use it if the program will run on systems with different platform encoding.
+
+In summary, InputStreamReader is always a safer choice than FileReader.
+
+
+Scanner in = new Scanner(new FileReader("filename.txt"));
+
+http://www.javapractices.com/topic/TopicAction.do?Id=42
+
+http://howtodoinjava.com/2013/05/01/3-ways-to-read-files-using-java-nio/
+
+http://www.programcreek.com/2011/03/java-read-a-file-line-by-line-code-example/
+
+http://www.baeldung.com/java-read-lines-large-file
+Faster file copy with mapped byte buffer
+
+```language
+package com.howtodoinjava.test.nio;
+ 
+import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
+ 
+public class ReadFileWithMappedByteBuffer
+{
+	public static void main(String[] args) throws IOException
+	{
+		RandomAccessFile aFile = new RandomAccessFile
+				("test.txt", "r");
+		FileChannel inChannel = aFile.getChannel();
+		MappedByteBuffer buffer = inChannel.map(FileChannel.MapMode.READ_ONLY, 0, inChannel.size());
+		buffer.load(); 
+		for (int i = 0; i < buffer.limit(); i++)
+		{
+			System.out.print((char) buffer.get());
+		}
+		buffer.clear(); // do something with the data and clear/compact it.
+		inChannel.close();
+		aFile.close();
+	}
+}
+```
+
+
+
+
+
+
+
+There are too many ways to read files from Java. Best practice?
+
+
+FileReader vs FileInputStream?
+Or Reader vs InputStream
+Writer vs OutputStream
+DataInputStream/DataOutPutStream vs FileInputStream/FileOutputStream
+
+
+The following is a simple yet very common way
+
+try(BufferedReader br = new BufferedReader(new FileReader("file.txt"))) {
+		StringBuilder sb = new StringBuilder();
+		String line = br.readLine();
+
+		while (line != null) {
+			sb.append(line);
+			sb.append(System.lineSeparator());
+			line = br.readLine();
+		}
+		String everything = sb.toString();
+   }
+
+---------------------------------------------------------------------------------------------------------------------------------------
+In Java 7: similar to BufferedReader(FileInputStream...)
+Charset charset = Charset.forName("US-ASCII");
+try (BufferedReader reader = Files.newBufferedReader(file, charset)) {
+	String line = null;
+	while ((line = reader.readLine()) != null) {
+		System.out.println(line);
+	}
+} catch (IOException x) {
+	System.err.format("IOException: %s%n", x);
+}
+--------------------------------------------------------------------------------------------------------------------------------------------
+The difference between the two methods is what to use to construct a BufferedReader. Method 1 uses InputStreamReader and Method 2 uses FileReader. What's the difference between the two classes?
+
+From Java Doc, "An InputStreamReader is a bridge from byte streams to character streams: It reads bytes and decodes them into characters using a specified charset." InputStreamReader can handle other input streams than files, such as network connections, classpath resources, ZIP files, etc.
+
+FileReader is "Convenience class for reading character files. The constructors of this class assume that the default character encoding and the default byte-buffer size are appropriate." FileReader does not allow you to specify an encoding other than the platform default encoding. Therefore, it is not a good idea to use it if the program will run on systems with different platform encoding.
+
+In summary, InputStreamReader is always a safer choice than FileReader.
+
+
+Scanner in = new Scanner(new FileReader("filename.txt"));
+
+http://www.javapractices.com/topic/TopicAction.do?Id=42
+
+http://howtodoinjava.com/2013/05/01/3-ways-to-read-files-using-java-nio/
+
+http://www.programcreek.com/2011/03/java-read-a-file-line-by-line-code-example/
+
+http://www.baeldung.com/java-read-lines-large-file
+Faster file copy with mapped byte buffer
+
+package com.howtodoinjava.test.nio;
+ 
+import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
+ 
+public class ReadFileWithMappedByteBuffer
+{
+	public static void main(String[] args) throws IOException
+	{
+		RandomAccessFile aFile = new RandomAccessFile
+				("test.txt", "r");
+		FileChannel inChannel = aFile.getChannel();
+		MappedByteBuffer buffer = inChannel.map(FileChannel.MapMode.READ_ONLY, 0, inChannel.size());
+		buffer.load(); 
+		for (int i = 0; i < buffer.limit(); i++)
+		{
+			System.out.print((char) buffer.get());
+		}
+		buffer.clear(); // do something with the data and clear/compact it.
+		inChannel.close();
+		aFile.close();
+	}
+}

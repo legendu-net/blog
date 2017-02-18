@@ -1,0 +1,48 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Date: 2016-07-09 18:51:44
+Author: Ben Chuanlong Du
+Slug: teamdrive-tips
+Title: TeamDrive Tips
+Category: Software
+Tags: software, teamdrive, tips, synchronization, cloud, backup
+
+**
+Things on this page are
+fragmentary and immature notes/thoughts of the author.
+It is not meant to readers
+but rather for convenient reference of the author and future improvement.
+**
+ 
+0. teamdrive on phone, if you use "available offline", update might not take effect ...
+if you encounter a problem, just uncheck available offline ...
+
+1. TeamDrive clients might show more space usage than the web dashboard. 
+It's because the clients counts everything watched locally including old versions
+while the web only shows the true space usage. 
+
+2. TeamDrive does not sync symbolic links currently!!
+
+3. I don't TeamDrive support the standard hierarchical configuration files. 
+
+
+2. It seems that TeamDrive is slow when syncing database files.
+
+---------------------------------------
+Why can't I see my Spaces when I install a new client?
+
+Every new TeamDrive client is empty. There is no central server which has information about a client. The new client hast to learn where its servers are, which Spaces it has access to and with whom it can share files.
+
+There are 3 ways to teach your client:
+
+1) Receive and accept Space invitations.
+If you want to sync 2 computers you have to invite yourself from the first computer. You can do this by choosing the "Invite all my TeamDrive installations" option at one of your old installations (right-click the relevant Space).
+
+2) Alternatively, you can import your own Space keys by choosing "Extras" --> "Settings" --> "Backup" --> "Import from Backups..." from the menu -->, provided you have previously saved these keys, select all backups --> "Open" --> select the backups and click "Import" --> afterwards, right click on the imported Spaces and select "Restore Space". Keys function only in conjunction with your username and are thus useless to other users.
+
+3) You can always create an new Space sync it to the Cloud and share your files with others.
+
+Once your clients have been installed, you will automatically receive invitations to new Spaces on all clients.
+
+also restore space ...
+---------------------------------------

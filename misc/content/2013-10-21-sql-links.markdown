@@ -1,0 +1,15 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Author: Ben Chuanlong Du
+Title: Some Links for Database
+Date: 2014-08-22 17:50:47
+Slug: sql-links
+Category: Software
+Tags: links
+
+**Things on this page are fragmentary and immature notes/thoughts of the author. 
+It is not meant to readers but rather for convenient reference of the author and future improvement.**
+
+1. http://www.sasanalysis.com/2011/01/top-10-most-powerful-functions-for-proc.html
+- [ZetaCode](http://zetcode.com/db/sqlite/)
+- [Tutorials Point](http://www.tutorialspoint.com/sqlite/)

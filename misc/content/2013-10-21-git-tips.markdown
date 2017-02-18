@@ -1,0 +1,77 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Author: Ben Chuanlong Du
+Date: 2017-02-18 13:16:02
+Title: Random Tips for Git
+Slug: git-tips
+Title: Random Tips for Git
+Category: Software
+Tags: tips, Git, software, version control, distributed
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author. 
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+0. not a good practice to track non text files 
+especially when the files are large.
+It suggested that you separate (large) non-text files into another place (e.g., a file host). 
+
+1. `#` or `;` start a comment line
+
+5. Working in remote directory mounted by fuse might cause problems.
+Avoid using Git in a remote file system.
+
+6. Generally speaking, 
+it is not a good idea to puts things into the global Git ignoring file.
+
+7. not a good idea to track .gitignore ... this depends
+
+
+10. When you want to change a part of the code, 
+and this change might also be applied to other branches, 
+then you'd better fork from the base of all branches. 
+This allows you to patch the changes to all branches easily.
+
+
+14. It seems that the git repo for criss's project is very large even though it is the first commit. 
+Why is this? 1.9G? while things recorded is much smaller than this. 
+
+18. In Git 1.x+, 
+you can use `git add -u` to stage all tracked files including deleting previously tracked files. 
+In Git 2.0, 
+you can use `git add -u :/` to stage your whole working tree, 
+and you can use `git add -u .` to stage just the current path. 
+
+19. Git with http proctol ask for passwords when one push to or pull from a repository.
+There are ways to cache Git password in Windows, 
+however, 
+I'd rather save the pain and use AutoHotkey to help me type in password.
+
+5. To rebase, follow the steps below.
+```bash
+git pull --rebase origin master
+git add <some-file>
+git rebase --continue
+git rebase --abort
+```
+
+1. It seems that git now supports submodules, 
+you have to either remove .git in subdirectories or use submodule to manage them.
+
+## Git Bash Shell on Windows
+
+1. git bash shell (on Windows) also uses shitf + insert to paste.
+
+2. Git bash shell use /c, /d, /e, etc. for root path of drives.
+
+3. It seems to me that 
+`git config --global core.fileModel` 
+has no effect on Windows.
+You can use `git -c core.fileMode=false command` as an alternative.
+
+git push --force
+
+
+
+
+

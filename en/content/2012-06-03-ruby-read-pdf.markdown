@@ -1,0 +1,24 @@
+UUID: 21443057-903b-44ae-b806-756ae32eeafc
+Status: published
+Title: Read PDF in Ruby
+Date: 2012-06-03 00:00:00
+Tags: require, library, programming, package, PDF, Ruby
+Category: Programming
+Slug: ruby-read-pdf
+Author: Ben Chuanlong Du
+
+<img src="http://dclong.github.io/media/ruby/ruby.png" height="200" width="240" align="right"/>
+
+"pdf-reader" is a good Ruby libary for reading pdf document. 
+You can install it via RubyGems using the following command.
+
+    sudo gem install pdf-reader
+
+You have to load the library before you use it. 
+To load it, use the command below. 
+
+    require 'pdf-reader'
+
+For more information, see the [project on GitHub](https://github.com/yob/pdf-reader).
+
+

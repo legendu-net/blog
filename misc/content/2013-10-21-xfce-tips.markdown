@@ -1,0 +1,26 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Author: Ben Chuanlong Du
+Title: Random Tips for Xfce
+Date: 2016-07-13 22:09:52
+Slug: xfce-tips
+Category: Software
+Tags: tips
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author. 
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+ 
+http://forum.xfce.org/
+
+http://blog.xfce.org/
+
+1. the problem of system tray (notification aera), not right aligned, to slove this, add a separator, make it expand and transparent 
+If you want the windows button to be center aligned, 
+you can add another separator to the left of it and make it expand and transparent.
+
+2. If you install desktop environment manually, 
+you might have to manually install lightdm also ...
+
+3. not sure how I can make auto login in xfce?

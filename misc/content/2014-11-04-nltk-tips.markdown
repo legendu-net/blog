@@ -1,0 +1,27 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Date: 2016-07-13 22:20:46
+Author: Ben Chuanlong Du
+Slug: nltk tips
+Title: NLTK Tips
+Category: Machine Learning
+Tags: machine learning, data mining, text mining, data science, NLP
+
+**
+Things on this page are
+fragmentary and immature notes/thoughts of the author.
+It is not meant to readers
+but rather for convenient reference of the author and future improvement.
+**
+
+nltk.util.ngrams
+nltk.bigrams
+
+    from nltk.util import ngrams
+    sentence = 'this is a foo bar sentences and i want to ngramize it'
+    n = 6
+    sixgrams = ngrams(sentence.split(), n)
+    for grams in sixgrams:
+      print grams
+
+nltk.PorterStemmer

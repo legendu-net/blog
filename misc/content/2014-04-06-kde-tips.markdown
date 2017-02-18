@@ -1,0 +1,12 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Title: KDE Tips
+Author: Ben Chuanlong Du
+Date: 2014-04-06 16:22:43
+Slug: kde-tips
+Category: OS
+Tags: KDE, Linux, desktop environment
+
+**Things on this page are fragmentary and immature notes/thoughts of the author. It is not meant to readers but rather for convenient reference of the author and future improvement.**
+ 
+

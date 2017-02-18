@@ -1,0 +1,25 @@
+UUID: 0f5f97bb-bd90-4687-87d0-58ab2146027e
+Status: published
+Date: 2017-01-07 15:46:24
+Author: Ben Chuanlong Du
+Slug: cloud9-tips
+Title: Cloud9 Tips
+Category: Programming
+Tags: programming, cloud9, cloud IDE
+
+**
+Things on this page are
+fragmentary and immature notes/thoughts of the author.
+It is not meant to readers
+but rather for convenient reference of the author and future improvement.
+**
+
+1. [cloud9-docker](https://store.docker.com/community/images/kdelfour/cloud9-docker)
+is a good docker image for cloud9 IDE.
+You are able to attach a local directory as the workspace 
+so that you do not have to create (private) workspaces on cloud9.
+
+2. [ensime-cloud9](https://github.com/ensime/ensime-cloud9)
+is a plugin for Scala support in cloud9 IDE.
+
+3. Java/Scala support is not ready at this time. 

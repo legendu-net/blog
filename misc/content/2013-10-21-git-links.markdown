@@ -1,0 +1,18 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Author: Ben Chuanlong Du
+Date: 2015-02-24 13:51:00
+Slug: git-links
+Title: Git Links
+Category: Software
+Tags: links, software, Git, version control
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author. 
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+ 
+- [Git Documentation](http://git-scm.com/documentation)
+- [Using Git to manage a web site](http://toroid.org/ams/git-website-howto)
+- [A web-focused Git workflow](http://joemaller.com/990/a-web-focused-git-workflow/)
+- [Why is my Git repository so big?](http://stackoverflow.com/questions/1029969/why-is-my-git-repository-so-big)

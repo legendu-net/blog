@@ -1,0 +1,25 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Author: Ben Chuanlong Du
+Title: Tips for GPU Computing
+Date: 2013-10-20 00:00:00
+Slug: gpu-tips
+Category: Software
+Tags: tips
+
+**Things on this page are fragmentary and immature notes/thoughts of the author. It is not meant to readers but rather for convenient reference of the author and future improvement.**
+ 
+
+1. Nvidia has very poor support on Linux, so avoid Nvidia graphics card and use AMD or Intel instead if you want to use Linux.
+
+2. OpenCL has a brighter future than CUDA. not sure about MS C++ AMP ... not recommended
+
+4. AMD APP SDK seems to be the best tool, you can use it even if no GPU 
+
+----------------------------------------------
+
+## good CUDA packages:
+1. thrust
+    - reduce
+    - scan
+

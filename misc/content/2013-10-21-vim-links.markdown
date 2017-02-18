@@ -1,0 +1,31 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Author: Ben Chuanlong Du
+Title: Some Links for Vim
+Date: 2016-03-05 22:19:03
+Slug: vim-links
+Category: Software
+Tags: links, software, Vim
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author. 
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+ 
+- [Learn Vim Progressively](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)  
+- [100 Vim Commands](http://www.catswhocode.com/blog/100-vim-commands-every-programmer-should-know)
+- [Vim Tutorial](http://www.yolinux.com/TUTORIALS/LinuxTutorialAdvanced_vi.html)
+- [Vim Macro Example](http://www.thegeekstuff.com/2009/01/vi-and-vim-macro-tutorial-how-to-record-and-play/)
+- [Vim Substitution](http://vim.wikia.com/wiki/Search_and_replace)
+- [Vivify](http://bytefluent.com/vivify/)
+- [Linux vi and vim editor: Tutorial and advanced features](http://www.yolinux.com/TUTORIALS/LinuxTutorialAdvanced_vi.html)
+- [Shifting Blocks Visually](http://vim.wikia.com/wiki/VimTip224)
+
+
+https://github.com/tpope/vim-surround/blob/master/doc/surround.txt
+
+http://vimgolf.com/
+
+http://www.drbunsen.org/vim-croquet/
+
+[Graphical vi-vim Cheat Sheet and Tutorial - ViEmu] (http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)

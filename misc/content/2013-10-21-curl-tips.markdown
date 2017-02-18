@@ -1,0 +1,56 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Author: Ben Chuanlong Du
+Date: 2016-07-13 22:44:00
+Slug: curl-tips
+Title: Random Tips About cURL
+Category: Software
+Tags: tips, cURL, downloading, web, wget
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author. 
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+ 
+The easy way: login with your browser,
+and give the cookies to wget
+
+Easiest method: in general, 
+you need to provide wget or `cURL` with the (logged-in) cookies 
+from a particular website for them to fetch pages as if you were logged in.
+
+If you are using Firefox, 
+it's easy to do via the Export Cookies add-on. 
+Install the add-on, and:
+
+Go to Tools...Export Cookies, 
+and save the cookies.txt file (you can change the filename/destination).
+
+Open up a terminal, 
+and use wget with the --load-cookies=FILENAME option, e.g.
+
+wget --load-cookies=cookies.txt http://en.wikipedia.org/wiki/User:A
+
+For `cURL`, it's 
+```sh
+curl --cookie cookies.txt ...
+```
+
+
+The hard way: use `cURL` (preferably) or `wget` to manage the entire session
+
+A detailed how-to is beyond the scope of this answer, 
+but you use `cURL` with the --cookie-jar or `wget` 
+with the --save-cookies --keep-session-cookiesoptions, 
+along with the HTTP/S PUT method to log in to a site, 
+save the login cookies, and then use them to simulate a browser.
+Needless to say, 
+this requires going through the HTML source for the login page (get input field names, etc.), 
+and is often difficult to get to work for sites 
+using anything beyond simple login/password authentication.
+
+Tip: if you go this route, 
+it is often much simpler to deal with the mobile version of a website (if available), 
+at least for the authentication step.
+
+

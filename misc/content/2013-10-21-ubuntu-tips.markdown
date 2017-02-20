@@ -2,7 +2,7 @@ UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for Ubuntu
-Date: 2016-07-13 23:03:54
+Date: 2017-02-19 12:20:43
 Slug: ubuntu-tips
 Category: Linux
 Tags: tips, Ubuntu, Linux, OS
@@ -13,6 +13,8 @@ It is not meant to readers but rather for convenient reference of the author and
 **
  
 [How to solve boot problems with Ubuntu after kernel upgrade](http://www.dedoimedo.com/computers/ubuntu-initrd-bug.html)
+
+[Ubuntu Sources List Generator](https://repogen.simplylinux.ch/)
 
 1. use CTRL + D in a folder to add it as a bookmark
 

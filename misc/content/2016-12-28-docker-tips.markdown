@@ -1,6 +1,6 @@
 UUID: 05e465c7-cb32-400b-9101-52043a8c6876
 Status: published
-Date: 2017-02-18 09:19:15
+Date: 2017-02-19 11:21:52
 Author: Ben Chuanlong Du
 Slug: docker-tips
 Title: Docker Tips
@@ -70,7 +70,36 @@ Or you can directly add the following line in the file `/etc/default/docker`.
 DOCKER_OPTS="--registry-mirror='http://a92c904a.m.daocloud.io'"
 ```
 
+## Docker Image and Container Management
+
+1. Remove all existing containers (not images).
+```bash
+docker rm $(docker ps -aq)
+docker ps -aq | xargs docker rm
+docker images | awk '{ if ($1 == "<none>") print $3 }' | xargs docker rmi
+docker images | awk '{ if ($2 == "<none>") print $3 }' | xargs docker rmi
+```
+Use the `-f` (force remove image/container) option with caution.
+
+
 ## Interesting Docker Images
+
+### Trustable Docker Publishers 
+
+1. [continuumio](https://hub.docker.com/u/continuumio/)
+1. eclipse
+2. codenvy 
+3. rocker (R cores)
+
+### HTTP
+
+1. [httpd](https://hub.docker.com/_/httpd/)
+
+### Python 
+
+1. [continuumio/anaconda](https://hub.docker.com/r/continuumio/anaconda/)
+
+Anaconda Python distribution.
 
 ### Ubuntu
 
@@ -112,12 +141,6 @@ password: nomachine
 2. [dubuqingfeng/ubuntu-shadowsocks](https://store.docker.com/community/images/dubuqingfeng/ubuntu-shadowsocks)
 3. [vimagick/shadowsocks-libev](https://store.docker.com/community/images/vimagick/shadowsocks-libev)
 4. [oddrationale/docker-shadowsocks](https://store.docker.com/community/images/oddrationale/docker-shadowsocks)
-
-### Trustable Docker Publishers 
-
-1. eclipse
-2. codenvy 
-3. rocker (R cores)
 
 ### Notebooks (Jupyter, JupyterLab and Zeppelin)
 
@@ -203,3 +226,4 @@ http://blog.codacy.com/2015/07/16/dockerizing-scala/
 https://velvia.github.io/Docker-Scala-Sbt/
 
 https://github.com/stevenalexander/docker-scala-ide
+

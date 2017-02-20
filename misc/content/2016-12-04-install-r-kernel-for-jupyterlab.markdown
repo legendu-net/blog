@@ -1,6 +1,6 @@
 UUID: 3fb54c7a-12bb-443b-817b-5aef23d29b8c
 Status: published
-Date: 2016-12-06 23:15:59
+Date: 2017-02-18 15:43:01
 Author: Ben Chuanlong Du
 Slug: install-r-kernel-for-jupyterlab
 Title: Install R Kernel for JupyterLab
@@ -16,7 +16,7 @@ but rather for convenient reference of the author and future improvement.
 
 1. Install JupyterLab.
 ```bash
-wajig install python3 python3-pip
+wajig install python3 python3-pip python3-setuptools
 sudo -H pip3 install jupyter jupyterlab
 sudo jupyter serverextension enable --py jupyterlab --sys-prefix
 ```

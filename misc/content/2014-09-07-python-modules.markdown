@@ -1,6 +1,6 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Date: 2015-05-11 22:51:26
+Date: 2017-02-19 09:04:33
 Author: Ben Chuanlong Du
 Slug: python-modules
 Title: Python Modules
@@ -50,6 +50,9 @@ It is a little more work if you are using `pip` to download and install:
 ```bash
 pip install --install-option="--prefix=$HOME/.local" foo
 ```
+
+pip list --outdated
+pip install --upgrade wheel
 
 2. You can use `help('modules')` to display all locally installed modules.
 

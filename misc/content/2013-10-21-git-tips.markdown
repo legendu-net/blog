@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-02-18 14:48:03
+Date: 2017-02-21 09:04:52
 Title: Random Tips for Git
 Slug: git-tips
 Title: Random Tips for Git
@@ -104,3 +104,6 @@ http://stackoverflow.com/questions/2100907/how-to-remove-delete-a-large-file-fro
 http://blog.gbacon.com/2009/08/git-shrinking-subversion-import.html
 
 http://stackoverflow.com/questions/2116778/reduce-git-repository-size
+
+shadow clone using the depth option
+git clone git://source.winehq.org/git/wine.git ~/wine-git --depth 1

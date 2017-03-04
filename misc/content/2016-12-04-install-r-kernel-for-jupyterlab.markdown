@@ -1,6 +1,6 @@
 UUID: 3fb54c7a-12bb-443b-817b-5aef23d29b8c
 Status: published
-Date: 2017-02-18 15:43:01
+Date: 2017-03-01 23:13:06
 Author: Ben Chuanlong Du
 Slug: install-r-kernel-for-jupyterlab
 Title: Install R Kernel for JupyterLab
@@ -43,11 +43,14 @@ It takes a while, so be patient.
 update.packages(ask = F, checkBuilt = T)
 ```
 
-5. Install dependencies R packages of IRKernel.
-Run the following command in R.
+5. Install IRkernel and register it.
 ```R
+# install dependencies packages of IRKernel
 install.packages(c('repr', 'IRdisplay', 'crayon', 'pbdZMQ', 'devtools'))
+# install IRkernel
 devtools::install_github('IRkernel/IRkernel')
+# register IRkernel
+IRkernel::installspec() 
 ```
 If for any reason you cannot install devtools, 
 you can manually download IRkernel and its dependencies and install them.

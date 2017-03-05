@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2015-03-13 00:58:46
+Date: 2017-03-04 14:31:43
 Slug: firefox-tips
 Title: Some Tips About Firefox
 Category: Software
@@ -46,4 +46,4 @@ Of course, you lose old profile.
 6. Alt + T: Pop up the Tool menu.
 7. alt + h: pop up the Help menu
 
-
+The Firefox Reader Mode keyboard shortcut is currently bound to Cmd+Alt+R on macOS, and Alt+R on Windows and Linux.

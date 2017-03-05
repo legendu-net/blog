@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2015-09-10 00:40:47
+Date: 2017-03-04 14:29:35
 Slug: thunderbird-tips
 Title: Random Tips About Thunderbird
 Category: Software
@@ -94,3 +94,9 @@ This a good way to migrate filters in Thunderbird.
 1. select the account that you want to set as default
 2. right click on the acount and choose settings
 3. click Account Action at the bottom and then choose Set as Default in the drop-down menu.
+
+## Questions
+
+1. thunderbird: is there an easy way to convert a message filter on one account to another account?
+
+2. thunderbird hangs at "attaching ..." -> reply contains image that are not available or after compact folders ...

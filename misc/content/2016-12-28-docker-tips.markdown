@@ -1,6 +1,6 @@
 UUID: 05e465c7-cb32-400b-9101-52043a8c6876
 Status: published
-Date: 2017-02-19 11:21:52
+Date: 2017-03-05 22:12:14
 Author: Ben Chuanlong Du
 Slug: docker-tips
 Title: Docker Tips
@@ -14,9 +14,43 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-1. [Docker Reference](https://docs.docker.com/engine/reference/builder/)
+## TODO
 
-2. [Best practices for writing Dockerfiles](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/)
+docker: sbt and maven for the intellij version
+
+a VM on ali, tengxun or ..., very necessary, use it for many purposes, ..., e.g., private docker registry, proxy server, shadowsocks, jupyterlab, etc.
+
+## Installation
+
+Install docker on Ubuntu 16.04 using the commands below.
+```bash
+wajig install docker.io
+gpasswd -a $(whoami) docker
+newgrp docker
+```
+
+## Tricks and Traps
+
+1. ADD vs COPY: ADD auto untar which is tricky 
+
+2. Don't forget to forward port while using docker containers. 
+For example, if use Git in a docker container,
+you probably have to forward ports to 22 and 80 as Git uses HTTP(s) and SSH protocol which listen on these 2 prots.
+
+3. Amazon aws indeed have issues in China, try another cloud service ...
+
+4. Docker images are saved in `/var/lib/docker`. 
+You can link the directory to another place to save images elsewhere.
+Another way is to change the configuration file of Docker.
+For example, 
+you can add the following into `/etc/default/docker` 
+to save docker images into `/mnt` (instead of the default location).
+```
+DOCKER_OPTS="-dns 8.8.8.8 -dns 8.8.4.4 -g /mnt"
+```
+
+5. If you use the `-v` option when starting a Docker container, 
+make sure that you have r/w access to it otherwise the Docker container might fail to start.
 
 ## General Tips
 
@@ -36,146 +70,65 @@ as the docker group is sudo equivalent
 4. You have to tag an image into a docker repository 
 so that you can push the image into the repository. 
 
-docker -v option, make sure that you have r/w access to it otherwise docker service might fail
+5. Docker caches building operations. 
+When cache for an operation is available, 
+Docker use the cache layer directly and avoiding building the layer again.
 
-https://docs.docker.com/engine/reference/commandline/tag/
+6. If you are in the `docker` group, 
+you can run docker commands without `sudo`,
+o.w., you have to use `sudo`.
 
-https://docs.docker.com/engine/reference/commandline/push/
+## Docker Commands
 
-
-
-Install docker on Ubuntu 16.04 using the commands below.
 ```bash
-wajig install docker.io
-gpasswd -a $(whoami) docker
-newgrp docker
-```
-
-sudo docker run -p 8888:8888 66c9887513b9
+service docker restart
+docker run -p 8888:8888 66c9887513b9
 docker run -d -p 8888:8888 jupyter/all-spark-notebook
-sudo docker run -it ubuntu:16.04
+docker run -it ubuntu:16.04
+docker run -dit -p 8888:8888 -v /mnt:/home/jovyan/work dclong/jupyterlab-spark-all
+docker run -dit -p 80:80 -v /wwwroot:/usr/local/apache2/htdocs/ httpd
+docker run -dit -p 80:80 -v /wwwroot:/usr/local/apache2/htdocs/ httpd
+docker run -d -p 8787:8787 -v /wwwroot:/home/rstudio rocker/rstudio
+docker run -d -p 8888:8888 -v /wwwroot:/home/jovyan/work jupyter/all-spark-notebook
+```
 
 Copying file between a docker container and the host.
 docker cp foo.txt mycontainer:/foo.txt 
 docker cp mycontainer:/foo.txt foo.txt
 
-docker build -t firefox .
-
-
-
-## Use [DaoCloud](https://www.daocloud.io/) to Speed Up Pulling/Pushing 
-Please refer to <https://www.daocloud.io/mirror#accelerator-doc>
-Or you can directly add the following line in the file `/etc/default/docker`.
-```text
-DOCKER_OPTS="--registry-mirror='http://a92c904a.m.daocloud.io'"
-```
-
-## Docker Image and Container Management
-
-1. Remove all existing containers (not images).
-```bash
-docker rm $(docker ps -aq)
-docker ps -aq | xargs docker rm
-docker images | awk '{ if ($1 == "<none>") print $3 }' | xargs docker rmi
-docker images | awk '{ if ($2 == "<none>") print $3 }' | xargs docker rmi
-```
-Use the `-f` (force remove image/container) option with caution.
-
-
-## Interesting Docker Images
-
-### Trustable Docker Publishers 
-
-1. [continuumio](https://hub.docker.com/u/continuumio/)
-1. eclipse
-2. codenvy 
-3. rocker (R cores)
-
-### HTTP
-
-1. [httpd](https://hub.docker.com/_/httpd/)
-
-### Python 
-
-1. [continuumio/anaconda](https://hub.docker.com/r/continuumio/anaconda/)
-
-Anaconda Python distribution.
-
-### Ubuntu
-
-for vnc, probably not a scaling problem but has to set resolution while starting the docker ...
-
-1. [consol/ubuntu-xfce-vnc](https://store.docker.com/community/images/consol/ubuntu-xfce-vnc)
-
-    works well, seems like a good choice
-    ```bash
-    docker run -it -p 5901:5901 -p 6901:6901 -e VNC_RESOLUTION=800x600 consol/ubuntu-xfce-vnc
-    ```
-
-2. [dorowu/ubuntu-desktop-lxqt-vnc](https://store.docker.com/community/images/dorowu/ubuntu-desktop-lxde-vnc)
-
-    works, novnc in HTML doesn't scale very well
-    password: ubuntu
-
-3. [dorowu/ubuntu-desktop-lxde-vnc](https://store.docker.com/community/images/dorowu/ubuntu-desktop-lxde-vnc)
-
-    works, novnc in HTML doesn't scale very well
-    password: ubuntu
-
-1. [ensky/ubuntu-nxserver-xfce](https://store.docker.com/community/images/ensky/ubuntu-nxserver-xfce)
-
-    Works, free NX client is a little bit ugly
-    had to create a new user, don't know the password
-
-4. welkineins/ubuntu-xfce-vnc-desktop
-Failed.
-
-3. atomney/nxdesktop
-https://github.com/atomney/nxdesktop
-failed to login 
-username: nomachine
-password: nomachine
-
-### Shadowsocks
-1. [smounives/shadowsocksr-docker](https://store.docker.com/community/images/smounives/shadowsocksr-docker)
-2. [dubuqingfeng/ubuntu-shadowsocks](https://store.docker.com/community/images/dubuqingfeng/ubuntu-shadowsocks)
-3. [vimagick/shadowsocks-libev](https://store.docker.com/community/images/vimagick/shadowsocks-libev)
-4. [oddrationale/docker-shadowsocks](https://store.docker.com/community/images/oddrationale/docker-shadowsocks)
-
-### Notebooks (Jupyter, JupyterLab and Zeppelin)
-
-1. [jupyter/all-spark-notebook](https://github.com/jupyter/docker-stacks/tree/master/all-spark-notebook)
-
-4. dit4c/dit4c-container-jupyterlab
-
-6. epahomov/docker-zeppelin
-
-### Spark
-
-9. shopkeep/spark too old ...
-
-### IDE
-
-1. codenvy/che
-
-2. eclipse/che
-
-https://store.docker.com/community/images/kdelfour/cloud9-docker
-
-### Misc
-
-3. apihackers/pelican
-5. devurandom/firefox
-7. sitespeedio/sitespeed.io
-8. brook/ubuntu-14.04.3-baidupcs
-
-https://github.com/Theasker/scripts
 
 ## Links
 
+[Private Docker Registry](https://docs.docker.com/registry/deploying/)
+
+[Configure automated builds on Docker Hub](https://docs.docker.com/docker-hub/builds/)
+
+[Configure automated builds with Bitbucket](https://docs.docker.com/docker-hub/bitbucket/)
+
+https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/
+
+https://coderwall.com/p/4g8znw/things-i-learned-while-writing-a-dockerfile
+
+http://stackoverflow.com/questions/25311613/docker-mounting-volumes-on-host
+
+http://stackoverflow.com/questions/26500270/understanding-user-file-ownership-in-docker-how-to-avoid-changing-permissions-o
+
+https://chrisjean.com/fix-apt-get-update-the-following-signatures-couldnt-be-verified-because-the-public-key-is-not-available/
+
+https://github.com/docker/docker/issues/22599
+
+http://stackoverflow.com/questions/28056522/access-host-database-from-a-docker-container
+
+https://docs.docker.com/engine/reference/commandline/tag/
+
+https://docs.docker.com/engine/reference/commandline/push/
+
 ### Communicate with Host
+
 http://stackoverflow.com/questions/23439126/how-to-mount-host-directory-in-docker-container
+
 http://stackoverflow.com/questions/22907231/copying-files-from-host-to-docker-container
+
 http://stackoverflow.com/questions/23935141/how-to-copy-docker-images-from-one-host-to-another-without-via-repository
 
 ### UI Related
@@ -196,34 +149,8 @@ http://stackoverflow.com/questions/23935141/how-to-copy-docker-images-from-one-h
 4. <https://twitter.com/saturnism/status/645366585981538304>
 
 
-## Questions
-docker save/export?
-which account is used when writing files to host?
-docker: can it handle big files?
-running docker using sudo vs not using sudo?
-proxy via docker?
-what if I set a vpn in docker, will it be effect in docker only or also on host?
+1. [Docker Reference](https://docs.docker.com/engine/reference/builder/)
 
-2. does docker build cache operations?
-e.g., if there are 2 commands,
-the first succeeds but the second one fails. 
-will it cache the first command?
-When I modify the second command and run biuld again, 
-will it skip the first command?
-probably not, seems hard to do ...
+2. [Best practices for writing Dockerfiles](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/)
 
-3. best practice for authentication required service in docker, 
-
-
-
-
-### Scala
-
-http://www.slideshare.net/marcuslonnberg/ship-your-scala-code-often-and-easy-with-docker
-
-http://blog.codacy.com/2015/07/16/dockerizing-scala/
-
-https://velvia.github.io/Docker-Scala-Sbt/
-
-https://github.com/stevenalexander/docker-scala-ide
 

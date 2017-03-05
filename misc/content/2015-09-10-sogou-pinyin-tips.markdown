@@ -1,6 +1,6 @@
 UUID: a3dd9255-1a1c-4089-85d7-cd48e2e90fab
 Status: published
-Date: 2015-11-03 00:55:26
+Date: 2017-03-04 14:38:06
 Author: Ben Chuanlong Du
 Slug: sogou-pinyin-tips
 Title: Sogou Pinyin Tips
@@ -36,3 +36,7 @@ if the input method application doesn't start correctly
 3. it seems that you cannot turn off sogou pinyin on Linux Mint? ctrl + space does not work ...
 you can use the command kill of course ...
 
+
+web WeChat: if sogou pinyin does not wok, just refresh web wechat, this can fix the issue usually
+
+fcitx sogou拼音输入法 导致fcitx无法显示退出按钮 目前唯一的解决办法是隐藏搜狗拼音输入法的状态栏　you can close auto update to avoid distraction

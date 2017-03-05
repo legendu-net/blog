@@ -2,7 +2,7 @@ UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: SSH Tips
-Date: 2017-02-10 07:29:58
+Date: 2017-03-05 22:19:19
 Slug: ssh-tips
 Category: Software
 Tags: tips, SSH, software, remote, Linux
@@ -35,7 +35,7 @@ probably because of debian sid
 7. ip can be important if you use ssh, 
 make sure your ip is allowed to ...
 
-## SSH Proxy
+## SSH Proxy for SSH
 
 1. wildcard is supported
 ```SSH
@@ -43,3 +43,25 @@ Host *.xxx.xxx.com !*xxx*.xxx.xxx.com
 ProxyCommand ssh proxy_server_address -W %h:%p   
 Host *
 ```
+
+## SSH Socks Proxy for Other Applications
+
+First, start a proxy connection to a SSH server using the command below.
+```bash
+ssh -D port user@remote_ssh_server
+```
+This will have you logged in as usually,
+and socks proxy can be used as long as you are connected.
+Then configure your application to use Socks5 proxy use the specified port.
+The local DNS you use in China is probably contaminated 
+and popular sites like Google, Facebook, etc. are not interpreted correctly.
+So if you are in China and use Firefox with Proxy,
+make sure to set `network.proxy.socks_remote_dns` to be true (follow the steps below).
+1. Open an empty tab in Firefox.
+2. Go to about:config in the URL bar.
+3. Search for `network.proxy.socks_remote_dns`. 
+4. Change the value to be `true`.
+
+[Proxy Using SSH Tunnel](https://www.systutorials.com/944/proxy-using-ssh-tunnel/)
+
+[Quick-Tip: SSH Tunneling Made Easy](http://www.revsys.com/writings/quicktips/ssh-tunnel.html)

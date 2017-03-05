@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-02-21 09:04:52
+Date: 2017-03-04 12:16:25
 Title: Random Tips for Git
 Slug: git-tips
 Title: Random Tips for Git
@@ -69,41 +69,4 @@ you have to either remove .git in subdirectories or use submodule to manage them
 has no effect on Windows.
 You can use `git -c core.fileMode=false command` as an alternative.
 
-git push --force
 
-
-$ git gc --prune=now --aggressive
-
-git filter-branch --prune-empty -d /dev/shm/scratch \
-  --index-filter "git rm --cached -f --ignore-unmatch oops.iso" \
-  --tag-name-filter cat -- --all
-$ git reflog expire --expire=now --all
-git filter-branch --tree-filter 'rm -f DVD-rip' HEAD
-
-git filter-branch --force --index-filter 'git rm --cached -r --ignore-unmatch oops.iso' --prune-empty --tag-name-filter cat -- --all
-rm -rf .git/refs/original/
-git reflog expire --expire=now --all
-git gc --prune=now
-git gc --aggressive --prune=now
-
-#!/bin/bash
-git checkout --orphan temp $1 # create a new branch without parent history
-git commit -m "Truncated history" # create a first commit on this branch
-git rebase --onto temp $1 master # now rebase the part of master branch that we want to keep onto this branch
-git branch -D temp # delete the temp branch
-
-# The following 2 commands are optional - they keep your git repo in good shape.
-git prune --progress # delete all the objects w/o references
-git gc --aggressive # aggressively collect garbage; may take a lot of time on large repos
-
-Or another way is just to remove the .git directory, 
-reinitial a git repository and push to remote with the `--force` option.
-
-http://stackoverflow.com/questions/2100907/how-to-remove-delete-a-large-file-from-commit-history-in-git-repository
-
-http://blog.gbacon.com/2009/08/git-shrinking-subversion-import.html
-
-http://stackoverflow.com/questions/2116778/reduce-git-repository-size
-
-shadow clone using the depth option
-git clone git://source.winehq.org/git/wine.git ~/wine-git --depth 1

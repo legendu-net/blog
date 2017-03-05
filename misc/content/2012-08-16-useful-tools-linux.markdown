@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-01-07 20:18:50
+Date: 2017-03-04 14:35:42
 Slug: useful-tools-linux
 Title: Useful Tools in Linux
 Category: OS
@@ -291,10 +291,14 @@ to find software/tools for all kinds of purposes.
 ### Password Management
 
 #### GUI Password Manager
-1. keepassx
+
+1. [KeePassXC](https://keepassxc.org/) (successor of KeePassX)
+1. KeePassX
 2. LastPass (for non-critical passwords)
 3. kpcli (command line tool for keepassX)
+
 #### Command-line Password Manager
+
 3. pwman3
 3. pass
 

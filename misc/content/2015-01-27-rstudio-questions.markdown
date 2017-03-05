@@ -1,6 +1,6 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Date: 2016-12-04 20:30:43
+Date: 2017-03-04 14:39:38
 Author: Ben Chuanlong Du
 Slug: rstudio-questions
 Title: RStudio Questions
@@ -22,3 +22,6 @@ otherwise, it is annoying ...
 4. rstudio: best way to refresh code?
 I close and reopen a script if it does not automatically refresh
 or rerefresh the web page if you are using rstudio server edition
+
+5. how to copy and paste plots in rstudio into other software (e.g., outlook)? 
+currently I first take screenshot of the plot and then paste the screenshot into other software.

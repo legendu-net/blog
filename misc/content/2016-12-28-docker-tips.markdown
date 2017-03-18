@@ -1,6 +1,6 @@
 UUID: 05e465c7-cb32-400b-9101-52043a8c6876
 Status: published
-Date: 2017-03-05 22:12:14
+Date: 2017-03-18 19:48:18
 Author: Ben Chuanlong Du
 Slug: docker-tips
 Title: Docker Tips
@@ -52,6 +52,12 @@ DOCKER_OPTS="-dns 8.8.8.8 -dns 8.8.4.4 -g /mnt"
 5. If you use the `-v` option when starting a Docker container, 
 make sure that you have r/w access to it otherwise the Docker container might fail to start.
 
+6. docker: Error response from daemon: Get https://registry-1.docker.io/v2/dclong/jupyterlab-rstudio/manifests/latest: dial tcp 50.17.62.194:443: getsockopt: connection refused just restart docker deamon resolves the issue ...
+retry or restart the docker daemon.
+```bash
+service docker restart
+```
+
 ## General Tips
 
 1. multiple running instances of the same docker image do not interact with each other. 
@@ -77,6 +83,8 @@ Docker use the cache layer directly and avoiding building the layer again.
 6. If you are in the `docker` group, 
 you can run docker commands without `sudo`,
 o.w., you have to use `sudo`.
+
+7. docker `ARG` for build-time and `ENV` for run-time
 
 ## Docker Commands
 

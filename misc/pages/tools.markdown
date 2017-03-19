@@ -1,5 +1,5 @@
 Title: Some Links to Useful Tools and Resources
-Date: 2014-09-14 15:09:29
+Date: 2017-03-18 20:16:31
 Slug: tools
 Category: Links
 Tags: links, tools, application, software
@@ -7,6 +7,11 @@ Tags: links, tools, application, software
 ## Answer Engine
 
 - [Wolfram Alpha](http://www.wolframalpha.com/)
+
+- [explainshell.com](http://www.explainshell.com/) 
+
+- [Show the Docs](http://showthedocs.com/)
+
 
 ## Data 
 

@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2015-01-01 20:35:45
+Date: 2017-03-19 09:57:51
 Slug: network-tips
 Title: Network Tips
 Category: Internet
@@ -12,6 +12,7 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
  
+[Arch Linux Doc - NetworkManager](https://wiki.archlinux.org/index.php/NetworkManager)
 
 ## Debug Network Issues
 

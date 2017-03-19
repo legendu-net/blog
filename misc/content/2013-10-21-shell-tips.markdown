@@ -2,7 +2,7 @@ UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Some Tips for Shell Commands
-Date: 2016-06-04 17:45:53
+Date: 2017-03-18 20:10:50
 Slug: shell-tips
 Category: Linux
 Tags: tips, Linux, shell, terminal
@@ -11,7 +11,10 @@ Tags: tips, Linux, shell, terminal
 Things on this page are fragmentary and immature notes/thoughts of the author. 
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
- 
+
+1. [explainshell.com](http://www.explainshell.com/) 
+is a great place for learning shell.
+
 ## Configuration 
 
 1. Debian does not read in the `.profile` file on start-up of X windows. 

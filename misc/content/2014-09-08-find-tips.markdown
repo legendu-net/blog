@@ -1,6 +1,6 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Date: 2016-05-30 23:13:18
+Date: 2017-03-19 10:00:54
 Author: Ben Chuanlong Du
 Slug: find-tips
 Title: Find Tips
@@ -15,60 +15,95 @@ but rather for convenient reference of the author and future improvement.
 **
 
 1. Find all files with extension ".out" in currently directory and its subdirectory, 
-and then make them executable.
-```bash
-find . -type f -iname *.out -exec chmod +x '{}' \;
-# or you can use 
-find . -type f -iname *.out -print0 | xargs -0 chmod +x
-```
+    and then make them executable.
+
+        find . -type f -iname *.out -exec chmod +x '{}' \;
+        # or you can use 
+        find . -type f -iname *.out -print0 | xargs -0 chmod +x
+
 
 2. Find files whose names contain "conflicted" and remove them.
-```bash
-find . -iname '*conflicted*' -print0 | xargs -0 rm
-```
+
+        find . -iname '*conflicted*' -print0 | xargs -0 rm
+
+## Size Related Finding
+
+1. Find files with 0 size and delete them.
+
+        find /path/to/files -size 0 -ok -exec rm {} \;
+        # or you can use
+        find /path/to/files -size 0 -ok | xargs rm 
+
+
+2. Find empty directories. 
+
+        find / -type d -empty
+
+
+3. Find files greater than 1G.
+
+        find . -xdev -type f -size +1G
+
+
+4. First find files and then pass them to other commands is a very useful trick.
+    For example, 
+    you can use the following command to find all R scripts containing the word `paste`.
+
+        find . -type f -iname '*.r' | grep --color=auto paste
+
+
+## Time Related Finding
+
+1. Find files created with in 60 minutes.
+
+        find . -cmin 60
+
+2. Find files more than 30 days ago
+        
+        find . -ctime +30
+
+3. Find file less than 30 days ago.
+
+        find . -ctime -30
+
+4. Find files that are exactly 30 days ago.
+
+        find . -ctime 30
+
+2. Find all files modified on the June 7, 2007 in the current directory.
+
+        find . -type f -newermt 2007-06-07 ! -newermt 2007-06-08
+
+
+3. Find all files accessed on the Sep 29, 2008 in the current directory.
+
+        find . -type f -newerat 2008-09-29 ! -newerat 2008-09-30
+
+4. Find files which had their permission changed on the same day.
+
+        find . -type f -newerct 2008-09-29 ! -newerct 2008-09-30
+
+## File Type Related Finding
+
+1. Find broken symbolic links.
+
+        find . -xtype l
+        # or
+        find -L . -type l
 
 3. Find executable files in current directory 
-```bash
-find .  -maxdepth 1 -type f -executable
-```
+        
+        find .  -maxdepth 1 -type f -executable
 
-4. Find files with 0 size and delete them
-```bash
-find /path/to/files -size 0 -ok -exec rm {} \;
-```
-
-5. find empty directories 
-```bash
-find / -type d -empty
-```
-
-7. First find files and then pass them to other commands is a very useful trick.
-For example, 
-you can use the following command to find all R scripts containing the word `paste`.
-```bash
-find . -type f -iname '*.r' | grep --color=auto paste
-```
-
-8. Find files created with in 60 minutes
-```bash
-find . -cmin 60
-```
-
-9. find broken symbolic links
-```bash
-find . -xtype l
-# or
-find -L . -type l
-```
+## User Related Finding
 
 10. Find files that belong to a user but writable by its group or other people.
-```bash
-find /path/to/file -user user1 -perm /022
-```
+
+        find /path/to/file -user user1 -perm /022
+
 11. Check file type of all files under the current directory.
-```bash
-find . -type f | xargs file
-```
+
+        find . -type f | xargs file
 
 -perm mode: File's permission bits are exactly mode (octal or symbolic).
 -perm -mode: All  of  the  permission bits mode are set for the file. 

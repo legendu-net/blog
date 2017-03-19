@@ -1,6 +1,6 @@
 UUID: 866ecf58-079e-4cec-9978-c9782410a0d0
 Status: published
-Date: 2016-12-30 17:17:12
+Date: 2017-03-18 20:19:18
 Author: Ben Chuanlong Du
 Slug: jupyterlab-tips
 Title: JupyterLab Tips
@@ -14,20 +14,25 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-[Running a notebook server](http://jupyter-notebook.readthedocs.io/en/latest/public_server.html)
+## Cools Plugins for Jupyter Noteboo/Lab
+
+1. [qgrid](https://github.com/quantopian/qgrid)
+
 
 ## General Tips
 
+[Running a notebook server](http://jupyter-notebook.readthedocs.io/en/latest/public_server.html)
+
 1. performance on big csv ... very slow, even switching ...
-use a relatively small part of csv ...
+    use a relatively small part of csv ...
 
 2. hard to do interactive UI in JupyterLab right now ...
-many interactive UI pacakges in R relies on RStudio to work.
+    many interactive UI pacakges in R relies on RStudio to work.
 
 3. Convert Jupyter Notebook to another format.
-```bash
-jupyter nbconvert --to FORMAT notebook.ipynb
-```
+    ```bash
+    jupyter nbconvert --to FORMAT notebook.ipynb
+    ```
 
 ## Useful Extensions
 

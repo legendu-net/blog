@@ -1,7 +1,7 @@
 UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
 Title: Ways to Make a Bootable Flash Drive in Linux
-Date: 2016-12-10 02:11:55
+Date: 2017-03-19 10:33:38
 Slug: ways-to-make-a-bootable-flash-drive
 Author: Ben Chuanlong Du
 Category: Linux
@@ -11,7 +11,7 @@ Tags: bootable, flash drive, hybird, USB, Hardware, Linux
 
         dd if=path_to_linux_image of=path_to_device bs=4M; sync
 
-or
+    or
 
         cat path_to_linux_image > path_to_device
 

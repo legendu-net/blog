@@ -1,6 +1,6 @@
 UUID: 714cb0b0-3623-478f-91a5-d67b00f92527
 Status: published
-Date: 2017-02-19 12:19:27
+Date: 2017-03-19 10:31:31
 Author: Ben Chuanlong Du
 Slug: add-a-user-to-the-sudo-group-on-linux
 Title: Add Users to a Group in Linux
@@ -12,14 +12,12 @@ The following uses the `sudo` group as illustration.
 
 1. Use `gpasswd` or `usermod`.
 
-    ```sh
-    gpasswd -a user_name sudo
-    newgrp sudo
-    ```
-    ```sh
-    usermod -aG sudo user_name
-    newgrp sudo
-    ```
+        gpasswd -a user_name sudo
+        newgrp sudo
+
+        usermod -aG sudo user_name
+        newgrp sudo
+
     Just adding an user to a group might not make it work right away.
     The command `newgrp sudo` make the group `sudo` in effect right away.
     Of course, you can log out and then log in to make it work.

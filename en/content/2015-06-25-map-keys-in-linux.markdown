@@ -1,27 +1,39 @@
 UUID: 9ba8c173-8851-4beb-bda4-a68e1360a23f
 Status: published
-Date: 2017-03-04 13:12:16
+Date: 2017-03-19 10:30:15
 Author: Ben Chuanlong Du
 Slug: map-keys-in-linux
 Title: Map Keys in Linux
 Category: Linux
 Tags: Linux, keyboard, mapping, swap, setxkbmap, Cinnamon, GNOME, keys
 
+Note: For Vim users, it is appealing to make the `Caps Lock` function like `Escape`. 
+It is suggested that you make `Caps Lock` an additonal `Escape` 
+rather than swap them. 
+This avoid inconsistent key mapping issues when you work remotely via VNC, NoMachine, etc.
+
 ## Desktop Environment
 
-Some desktop environment (e.g., GNOME, Cinnamon, etc.) can do this for you.
-For exampel, 
-you can follow the steps below to map the Caps Lock key in Cinnamon.
+Some desktop environment (e.g., Cinnamon, GNOME, etc.) let you define behavior of keys.
+For example, 
+you can follow the steps below to define the behavior of the `Caps Lock` key in Cinnamon.
 
 1. Open System Settings.
+
 2. Select Keybord.
+
 3. Keybord layouts 
+
 4. Options (on the right-bottom corner) 
+
 5. Caps Lock key behavior
+
 6. Choose the behavior you want.
 
-For Unity desktop, you need to install `unity-tweak-tool`. 
-And if you are on GNOME desktop, you need `gnome-tweak-tool`.
+For the Unity desktop environment, 
+you need to install `unity-tweak-tool`. 
+And if you are on the GNOME desktop, 
+you need `gnome-tweak-tool`.
 
 
 ## setxkbmap

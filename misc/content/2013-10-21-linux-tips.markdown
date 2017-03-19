@@ -2,7 +2,7 @@ UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for Linux
-Date: 2016-07-09 19:01:16
+Date: 2017-03-18 20:10:13
 Slug: linux-tips
 Category: Linux
 Tags: tips, Linux
@@ -13,6 +13,9 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+1. [explainshell.com](http://www.explainshell.com/) 
+is a great place for learning shell.
 
 
 1. broken symbolic link .bashrc (and problem other configuration files/scripts) 

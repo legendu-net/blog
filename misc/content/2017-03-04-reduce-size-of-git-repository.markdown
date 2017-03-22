@@ -1,6 +1,6 @@
 UUID: 8ce9e86f-a210-4196-a0a9-7b10343d50f5
 Status: published
-Date: 2017-03-04 12:17:54
+Date: 2017-03-22 00:15:01
 Author: Ben Chuanlong Du
 Slug: reduce-size-of-git-repository
 Title: Reduce Size of Git Repository
@@ -15,6 +15,7 @@ but rather for convenient reference of the author and future improvement.
 **
 
 
+```bash
 git push --force
 
 
@@ -31,17 +32,21 @@ rm -rf .git/refs/original/
 git reflog expire --expire=now --all
 git gc --prune=now
 git gc --aggressive --prune=now
+```
 
-#!/bin/bash
+```bash
 git checkout --orphan temp $1 # create a new branch without parent history
 git commit -m "Truncated history" # create a first commit on this branch
 git rebase --onto temp $1 master # now rebase the part of master branch that we want to keep onto this branch
 git branch -D temp # delete the temp branch
+```
 
 The following 2 commands are optional - they keep your git repo in good shape.
 
+```bash
 git prune --progress # delete all the objects w/o references
 git gc --aggressive # aggressively collect garbage; may take a lot of time on large repos
+```
 
 Or another way is just to remove the .git directory, 
 reinitial a git repository and push to remote with the `--force` option.
@@ -53,4 +58,6 @@ http://blog.gbacon.com/2009/08/git-shrinking-subversion-import.html
 http://stackoverflow.com/questions/2116778/reduce-git-repository-size
 
 shadow clone using the depth option
+```bash
 git clone git://source.winehq.org/git/wine.git ~/wine-git --depth 1
+```

@@ -1,10 +1,9 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-03-04 12:16:25
+Date: 2017-03-22 00:17:39
 Title: Random Tips for Git
 Slug: git-tips
-Title: Random Tips for Git
 Category: Software
 Tags: tips, Git, software, version control, distributed
 

@@ -1,0 +1,35 @@
+UUID: 3bdbd46d-3f35-4ed0-8bd6-e847e66e583f
+Status: published
+Date: 2017-04-03 18:00:18
+Author: Ben Chuanlong Du
+Slug: java-ppa
+Title: Java PPA
+Category: Programming
+Tags: programming, Java, Ubuntu, PPA
+
+**
+Things on this page are
+fragmentary and immature notes/thoughts of the author.
+It is not meant to readers
+but rather for convenient reference of the author and future improvement.
+**
+
+```bash
+sudo add-apt-repository ppa:webupd8team/java
+```
+If you are behind a firewall and has to communicate to the internal via a proxy,
+you can first export the environment vairables `http_proxy` and `https_proxy`.
+```bash
+export http_proxy='proxy_server:port'
+export https_proxy='proxy_server:port'
+```
+If a user name and password is needed, 
+export them using the following command.
+```bash
+export http_proxy=http://username:password@proxy_server:port
+export https_proxy=https://username:password@proxy_server:port
+```
+However, make sure to run `sudo` with the `-E` (preserve environment) option.
+```bash
+sudo -E add-apt-repository ppa:webupd8team/java
+```

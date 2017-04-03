@@ -1,6 +1,6 @@
 UUID: f112de65-cdbc-4cc5-aa90-ab958d217bd5
 Status: published
-Date: 2017-01-07 19:11:48
+Date: 2017-03-24 23:51:16
 Author: Ben Chuanlong Du
 Slug: maven-tips
 Title: Maven Tips
@@ -13,6 +13,21 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+mvn package
+$HOME/.m2
+maven: shade plugin, scala compile plugin, exclude manifest files, ...
+
+import as maven project ...
+find an updated version of scala archetype for maven
+
+mvn package  
+mvn clean package  
+mvn compile  
+mvn build  
+mvn -e build
+
+intellij scala mavn archtype is too ooooooooooold!!! wait for generate complete and then manaully update the pom file
 
 ```XML
 <plugin>

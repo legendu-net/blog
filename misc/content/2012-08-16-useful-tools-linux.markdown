@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-03-04 14:35:42
+Date: 2017-03-27 10:34:49
 Slug: useful-tools-linux
 Title: Useful Tools in Linux
 Category: OS
@@ -717,6 +717,16 @@ sounds great!
 
 ### Audio/Video Conference
 
+<https://en.wikipedia.org/wiki/Comparison_of_web_conferencing_software>
+
+2. Apache OpenMeeting
+
+3. Jitsi
+
+3. UberConference (free for up to 10 callers)
+
+4. TeamViewer
+
 1. Skype (support screen sharing)
 
 2. iVisit, iChat, NetMeeting
@@ -725,7 +735,6 @@ sounds great!
 
 2. MeetingBurner (free for 10 attendees)
 
-3. UberConference (free for up to 10 callers)
 
 3. GoToMeeting (free for up to 4 people)
 

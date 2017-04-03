@@ -1,0 +1,25 @@
+UUID: 621ae9cf-7858-480e-a521-3492b2d9f181
+Status: published
+Date: 2017-04-03 18:00:21
+Author: Ben Chuanlong Du
+Slug: apt-proxy
+Title: Apt Proxy
+Category: Linux
+Tags: Linux, apt, source list, proxy
+
+**
+Things on this page are
+fragmentary and immature notes/thoughts of the author.
+It is not meant to readers
+but rather for convenient reference of the author and future improvement.
+**
+
+Add the following lines into the file `/etc/apt/apt.conf`,
+where `proxy_server` is the address/ip of the server 
+and `port` is the port of the proxy service.
+```bash
+Acquire::http::Proxy "proxy_server:port";
+Acquire::https::Proxy "proxy_server:port";
+```
+
+

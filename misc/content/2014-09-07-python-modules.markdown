@@ -1,6 +1,6 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Date: 2017-02-19 09:04:33
+Date: 2017-04-03 18:12:05
 Author: Ben Chuanlong Du
 Slug: python-modules
 Title: Python Modules
@@ -27,6 +27,8 @@ you should import packages at the beginning of your module.
 to manage Python packages.
 Use Python's own package managing tools instead.
 `pip` is recommended (over `easy_install`, etc.).
+If you are using Anaconda Python, 
+then use `conda` to install python packages.
 
 2. The following are ways to install a python module 
 to a local directory.
@@ -39,30 +41,24 @@ or
 pip install --user mercurial
 ```
 
-If you are using `easy_install` and would like the package downloaded and installed:
-
-```bash
-easy_install --prefix=$HOME/.local/ foo
-```
-
-It is a little more work if you are using `pip` to download and install:
-
-```bash
-pip install --install-option="--prefix=$HOME/.local" foo
-```
-
 pip list --outdated
+
 pip install --upgrade wheel
 
 2. You can use `help('modules')` to display all locally installed modules.
 
 1. sys.path.append
 
-11. It is recommended that you use 
-`import module_name`  or `import module_name as alias` 
-to import a module instead of `from module import fun`.
+```bash
+import module_name  
+import module_name as alias 
+from module import pkg_mod_or_fun
+```
 
 10. Python built-in functions are acutally in the `__builtins__` module.
+
+1. `__file__` path of a module 
+[Retrieving python module path](http://stackoverflow.com/questions/247770/retrieving-python-module-path)
 
 ### Numerical Computing
 

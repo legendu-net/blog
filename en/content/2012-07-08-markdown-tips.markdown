@@ -1,6 +1,6 @@
 UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
-Date: 2015-03-10 20:21:40
+Date: 2017-04-03 18:54:28
 Slug: markdown-tips
 Author: Ben Chuanlong Du
 Category: Programming
@@ -26,9 +26,11 @@ building your web pages.
 
 1. A block indented 4 spaces is treated as a code block in Markdown. 
 However, if this block is after a list item, 
-it might not show up as a code block correctly due to ambiguity of Markdown syntax.
-It is recommended you never use indent to indicate code blocks 
-but instead use back tildes (see the following examples) which is more robust. 
+you have to indent 8 spaces for it to be treated as code block. 
+Indenting 4 spaces means that it is continued part of the list item. 
+The addition 4-space means that it is a code block of the list item.
+Even though back tildes (see the following examples) can be use specify a code block,
+you'd better use the 8-space indentation as back tildes block does not work correctly in list.
 > ```
 > example of code block
 > ```

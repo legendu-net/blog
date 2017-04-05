@@ -1,0 +1,33 @@
+UUID: dd5e55e6-0bbb-46b0-bd39-d292fd0ffa6b
+Status: published
+Date: 2017-04-06 00:33:04
+Author: Ben Chuanlong Du
+Slug: yum-tips
+Title: Yum Tips
+Category: Linux
+Tags: Linux, yum, rpm, RedHat, CentOS, package management
+
+**
+Things on this page are
+fragmentary and immature notes/thoughts of the author.
+It is not meant to readers
+but rather for convenient reference of the author and future improvement.
+**
+
+```bash
+yum update
+
+yum search vim
+
+yum install yum-utils
+
+yum groupinstall development
+
+yum install https://centos7.iuscommunity.org/ius-release.rpm
+
+yum info unixODBC 
+
+rpm -ivh pkg.rpm
+rpm -qa
+rpm -qa | grep -i odbc
+```

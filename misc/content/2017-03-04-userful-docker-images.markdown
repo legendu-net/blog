@@ -1,6 +1,6 @@
 UUID: cdc960ec-1edf-4d17-a081-3ad9c7b11702
 Status: published
-Date: 2017-03-18 18:23:46
+Date: 2017-04-04 20:26:54
 Author: Ben Chuanlong Du
 Slug: userful-docker-images
 Title: Userful Docker Images
@@ -25,6 +25,12 @@ but rather for convenient reference of the author and future improvement.
 1. eclipse (Eclipse Che)
 2. codenvy (Eclipse Che)
 3. rocker (R in Docker)
+
+## Official Images
+
+1. [ubuntu](https://hub.docker.com/_/ubuntu/)
+
+2. [CentOS](https://hub.docker.com/r/_/centos/)
 
 ## Others' Docker Images
 

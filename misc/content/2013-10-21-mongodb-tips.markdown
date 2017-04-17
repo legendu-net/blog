@@ -2,7 +2,7 @@ UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Random Tips About MongoDB
-Date: 2015-05-13 01:10:43
+Date: 2017-04-17 10:28:31
 Slug: mongodb-tips
 Category: Software
 Tags: tips, software, MongoDB, database, NoSQL
@@ -17,3 +17,5 @@ It is not meant to readers but rather for convenient reference of the author and
 {"$and": [{"tags": {"$regex": "idea"}}, {"tags": {"$regex": "mob"}}]}
 
 mongoimport -d notes -c note notes.json
+
+mongodb: dbpath, centos: /data/db by default

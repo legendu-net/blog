@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-03-27 10:34:49
+Date: 2017-04-17 11:37:24
 Slug: useful-tools-linux
 Title: Useful Tools in Linux
 Category: OS
@@ -492,28 +492,7 @@ A open source community edition is available for users.
 
 ### Notes Taking
 
-0. [CherryTree](http://www.giuspen.com/cherrytree/)
-
-1. Zim
-
-2. EverNote (for Windows and Mac)
-
-3. EverPad (client of EverNote for Linux)
-
-4. NixNote (3rd party cross-platform client for EverNote)
-
-5. Basket Note Pads
-
-1. KeepNote
-
-3. GeekNote (command-line client for EverNote)
-
-1. Out of Milk
-
-2. Remember the Milk
-
-4. Taskwarrior (the package is named task in Debian)
-
+<http://www.legendu.net/misc/blog/software-for-taking-notes/>
 
 ### Mind Mapping Tools
 

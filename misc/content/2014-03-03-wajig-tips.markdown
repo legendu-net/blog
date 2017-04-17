@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2015-07-05 20:27:39
+Date: 2017-04-17 09:25:41
 Slug: wajig-tips
 Title: Wajig Tips
 Category: Software
@@ -12,36 +12,49 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
  
-<http://www.togaware.com/linux/survivor/Wajig_Overview.html>
+[Wajig on Debian Wiki](https://wiki.debian.org/Wajig)
 
 
-20. Let wajig also search description 
-```bash
-wajig search -v youtube
-```
-19. Remove all GNOME desktop related packages
-```bash
-wajig list | awk '{print $2}' | grep -i ^gnome | xargs wajig purge
-```
-7. install a package of specific version using wajig 
-```bash
-wajig search libssl/testing
-```
-13. check which repository a package comes from
-```bash
-wajig policy geary
-```
+1. You can type enter the CLI of `wajig` by typing `wajig` in terminal,
+so that you can use commands of `wajig` directly 
+instead of typing `wajig` every time. 
+
+        $ wajig
+        wajig> 
+
+2. Let wajig also search description 
+
+        wajig search -v youtube
+
+3. Download a package for install later. 
+    This is very helpful if the package is big. 
+
+        wajig download pkg_name
+
+1. Remove all GNOME desktop related packages
+
+        wajig list | awk '{print $2}' | grep -i ^gnome | xargs wajig purge
+
+2. install a package of specific version using wajig 
+
+        wajig search libssl/testing
+
+3. check which repository a package comes from
+
+        wajig policy geary
+
 6. To install backport packages, use 
-```bash
-wajig install libreoffice/wheezy-backports 
-wajig -t install/wheezy-backports libreoffice
-apt-get -t wheezy-backports libreoffice
-```
-It doesn't work if you use 
-```bash
-wajig install libreoffice/stable-backports 
-```
+
+        wajig install libreoffice/wheezy-backports 
+        wajig -t install/wheezy-backports libreoffice
+        apt-get -t wheezy-backports libreoffice
+
+    It does not work if you use 
+
+        wajig install libreoffice/stable-backports 
+
 
 ## Issues
+
 1. it seems to me that `wajig purge package_name` fails to remove packages sometimes
 even though it seems to succeed. 

@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-04-17 11:37:24
+Date: 2017-04-22 22:41:25
 Slug: useful-tools-linux
 Title: Useful Tools in Linux
 Category: OS
@@ -889,6 +889,10 @@ Virtual machine is the recommend way to emulate Windows working environment.
 2. MobaXterm (tools have limited functionalities)
 
 2. MobaLiveCD (a little cool application to run Linux live CD in Windows)
+
+## Andriod Emulation on Linux
+
+1. AnBox - Run Android applications on any GNU/Linux operating system.
 
 ## Games
 

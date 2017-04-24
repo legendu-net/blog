@@ -1,6 +1,6 @@
 UUID: 05e465c7-cb32-400b-9101-52043a8c6876
 Status: published
-Date: 2017-03-18 19:48:18
+Date: 2017-04-23 10:01:02
 Author: Ben Chuanlong Du
 Slug: docker-tips
 Title: Docker Tips
@@ -54,6 +54,12 @@ make sure that you have r/w access to it otherwise the Docker container might fa
 
 6. docker: Error response from daemon: Get https://registry-1.docker.io/v2/dclong/jupyterlab-rstudio/manifests/latest: dial tcp 50.17.62.194:443: getsockopt: connection refused just restart docker deamon resolves the issue ...
 retry or restart the docker daemon.
+```bash
+service docker restart
+```
+
+7. docker: Error response from daemon: containerd: container not started.
+Just restart the docker daemon to resovle the issue.
 ```bash
 service docker restart
 ```

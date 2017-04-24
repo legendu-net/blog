@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2016-11-20 19:14:41
+Date: 2017-04-22 14:56:23
 Slug: oracle-sql-tips
 Title: Oracle SQL Tips
 Category: Programming
@@ -61,3 +61,7 @@ from
     dual
 ;
 ```
+
+## Trick and Traps
+
+Oracle sql: it seems that {} in /* ... */ causes issues ...

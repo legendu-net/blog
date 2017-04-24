@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2015-06-26 00:00:23
+Date: 2017-04-23 13:06:45
 Slug: python-tips
 Title: Some Fragmentary Tips About Python
 Category: Programming
@@ -13,6 +13,17 @@ It is not meant to readers but rather for convenient reference of the author and
 **
  
 <img src="http://dclong.github.io/media/python/python.png" height="200" width="240" align="right"/>
+
+## Python Doc
+
+- [The Python Wiki](https://wiki.python.org/moin/)
+- [Useful Modules](https://wiki.python.org/moin/UsefulModules)
+- [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
+- [PyVideo](http://pyvideo.org/)
+
+## Python Conference
+[PyCon](https://us.pycon.org/2017/)
+[EuroPython](https://ep2017.europython.eu/en/)
 
 ## Configuration
 

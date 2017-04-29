@@ -1,6 +1,6 @@
 UUID: 05e465c7-cb32-400b-9101-52043a8c6876
 Status: published
-Date: 2017-04-23 10:01:02
+Date: 2017-04-29 14:29:39
 Author: Ben Chuanlong Du
 Slug: docker-tips
 Title: Docker Tips
@@ -31,7 +31,8 @@ newgrp docker
 
 ## Tricks and Traps
 
-1. ADD vs COPY: ADD auto untar which is tricky 
+1. ADD vs COPY: ADD auto untar which is tricky.
+It is suggested that you avoid use ADD unless you are clear about the side effect.
 
 2. Don't forget to forward port while using docker containers. 
 For example, if use Git in a docker container,

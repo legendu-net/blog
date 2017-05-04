@@ -1,6 +1,6 @@
 UUID: 24461e79-268a-46cd-80ac-b27f221a4b3d
 Status: published
-Date: 2016-10-22 18:48:34
+Date: 2017-05-05 07:39:26
 Author: Ben Chuanlong Du
 Slug: spyder-tips
 Title: Spyder Tips
@@ -32,3 +32,14 @@ so you have to press the `Down` arrow key to go to the next line manually.
 similar to what you can do in RStudio
 however, you can define cells to contain blocks of code to run.
 
+
+ctrl + I gives help doc on object ... cursor has to be on a function
+
+an open parenthesis pops up the argument hints, you can type in mutliple open parentheses ...
+and you can put mouse on the pop-up to make it stay 
+
+spyder run code not as convenient as rstudio, 
+but you can use cells to help you, a little bit more work ...
+shift + enter 
+
+is it possible to customize hotkeys?

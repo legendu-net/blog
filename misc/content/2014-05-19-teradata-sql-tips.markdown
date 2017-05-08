@@ -2,7 +2,7 @@ UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Title: Teradata SQL Tips
 Author: Ben Chuanlong Du
-Date: 2016-11-20 18:23:59
+Date: 2017-05-08 21:12:48
 Slug: teradata-sql-tips
 Category: Programming
 Tags: programming, tips, Teradata SQL
@@ -147,22 +147,22 @@ Or you if there is an table (e.g., B) of the same structure,
 you can 
 ```SQL
 create table A as B
-without data;
+with no data;
 ```
 or
 ```SQL
 create table A as /*as cannot be omitted here*/(
     select * from B
 )
-without data 
+with no data 
 primary index (id)
 ;
 ```
 Notice that the syntax of Teradata SQL is different from other SQL languages 
 when creating a table using a select clause. 
-You have to end the statement with `with data;` or `without data;`.
+You have to end the statement with `with data;` or `with no data;`.
 `with data` means that you want to append the selected records into the created table
-while `without data` creates an empty table.
+while `with no data` creates an empty table.
 
 ## Database Information
 1. Get version of Teradata SQL. 

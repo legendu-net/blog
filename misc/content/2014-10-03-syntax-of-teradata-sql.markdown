@@ -1,6 +1,6 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Date: 2016-10-23 12:37:28
+Date: 2017-05-08 21:12:08
 Author: Ben Chuanlong Du
 Slug: syntax-of-teradata-sql
 Title: Syntax of Teradata SQL
@@ -55,7 +55,7 @@ forget "with data"
 ## SQL Style
 1. It is suggested that you write SQL code in the following style.
 ```SQL
-create table t0 as
+create table t0 as (
 select distinct top 5 *
 from
     t1
@@ -71,5 +71,8 @@ having
     condition
 order by
     1
+)
+with data
+primary index (f1, f2)
 ;
 ```

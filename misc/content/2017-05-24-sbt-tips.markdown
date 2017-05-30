@@ -1,0 +1,42 @@
+UUID: ffbfdf36-86b4-48fa-a542-ed3afdc4c472
+Status: published
+Date: 2017-05-24 20:35:48
+Author: Ben Chuanlong Du
+Slug: sbt-tips
+Title: Sbt Tips
+Category: Programming
+Tags: programming, sbt, Scala
+
+**
+Things on this page are
+fragmentary and immature notes/thoughts of the author.
+It is not meant to readers
+but rather for convenient reference of the author and future improvement.
+**
+
+"joda-time" % "joda-time" % "2.9.9"
+
+"org.scala-lang.modules" %% "scala-xml" % "1.0.6"
+
+"org.scalaz" %% "scalaz-core" % "7.2.12"
+
+"org.scala-lang.modules" %% "scala-parser-combinators" % "1.0.4"
+
+"org.scala-lang.modules" %% "scala-swing" % "2.0.0-M2"
+
+"org.scala-lang.modules" %% "scala-parser-combinators" % "1.0.4"
+
+"org.scala-lang.modules" %% "scala-swing" % "1.0.2"
+
+"org.scala-lang.modules" %% "scala-parser-combinators" % "1.0.4"
+
+"org.scala-lang.modules" %% "scala-xml" % "1.0.6"
+
+
+Speed up sbt in China. 
+
+因为目前 sbt 默认用的是 https ，而墙的一个策略是一看到加密流量就会劣化连接质量，速度就变得很慢。解决方法：翻墙
+1. 如果用 vpn：把 repo1.maven.org, repo.typesafe.com, oss.sonatype.org, http://repo.scala-sbt.org 这几个的 ip 加到路由表里
+2. 如果用 socks 代理： sbt -DsocksProxyHost=代理ip -DsocksProxyPort=端口
+
+更多详情: https://www.zhihu.com/question/30743282/answer/51040001

@@ -1,6 +1,6 @@
 UUID: 9fde8ad7-e1b6-420e-8db0-e0046f8eb529
 Status: published
-Date: 2017-04-08 15:23:26
+Date: 2017-05-24 19:31:11
 Author: Ben Chuanlong Du
 Slug: odbc-vs-jdbc-in-python
 Title: ODBC vs JDBC in Python
@@ -30,4 +30,6 @@ but it is relative young compared to JayDeBeApi.
 1. `pyodbc` and `SQLAlchemy` are general purpose packages relying on ODBC. 
 
 2. There are lots of database specific packages relying on ODBC. 
+For example, 
+`teradata` is a Python package for Teradata SQL which relies on ODBC or RESTful.
 

@@ -1,5 +1,8 @@
 [
-    ["A", "a"], ["As", "as"], ["By", "by"], ["In", "in"], ["Of", "of"], ["To", "to"], ["On", "on"], ["Vs", "vs"], ["And", "and"], ["But", "but"], ["For", "for"], ["The", "the"], ["From", "from"], ["Into", "into"], 
+    ["A", "a"], 
+    ["As", "as"], ["By", "by"], ["In", "in"], ["Of", "of"], ["To", "to"], ["On", "on"], ["Vs", "vs"], 
+    ["And", "and"], ["But", "but"], ["For", "for"], ["The", "the"], 
+    ["From", "from"], ["Into", "into"], 
     ["3d", "3D"], ["Id", "ID"], ["Ms", "MS"], ["Os", "OS"], 
     ["Aix", "AIX"], ["Ibm", "IBM"], ["Cpp", "C++"], ["Gdb", "GDB"], ["Iml", "IML"], ["Nfs", "NFS"], ["Kde", "KDE"], ["Pdf", "PDF"],
     ["Sas", "SAS"], ["Sed", "sed"], ["Sql", "SQL"], ["Ssd", "SSD"], ["Ssh", "SSH"],
@@ -13,6 +16,7 @@
     ["Autokey", "AutoKey"],
     ["Add-Ons", "Add-ons"],
     ["Ipython", "IPython"],
+    ["Pymysql", "PyMySQL"],
     ["Rstudio", "RStudio"],
     ["Kdevelop", "KDevelop"],
     ["Noscript", "NoScript"],

@@ -1,6 +1,6 @@
 UUID: ded4fb17-43c4-46e1-bafd-1d47789bedc9
 Status: published
-Date: 2017-03-19 10:23:50
+Date: 2017-06-11 19:26:27
 Author: Ben Chuanlong Du
 Slug: docker-image-and-container-management
 Title: Docker Image and Container Management
@@ -35,4 +35,13 @@ Tags: software, Docker, image, container, management, remove
 
 4. Use the `-f` (force remove image/container) option with caution.
 
+5. Get the container ID inside the docker container. 
 
+    cat /proc/self/cgroup | grep -o  -e "docker-.*.scope" | head -n 1 | sed "s/docker-\(.*\).scope/\\1/"
+
+    Or you can use the following command.
+    Though, this way will not work in two cases. 
+        1. if hostname is explicitly specified with --hostname flag. 
+        2. when using --net=host mode.
+
+        echo $HOSTNAME

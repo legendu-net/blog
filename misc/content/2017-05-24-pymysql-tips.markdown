@@ -1,11 +1,11 @@
 UUID: e5321142-cc73-4331-8a08-2e9a2f2db4ca
 Status: published
-Date: 2017-05-24 19:27:47
+Date: 2017-06-11 18:49:31
 Author: Ben Chuanlong Du
 Slug: pymysql-tips
 Title: PyMySQL Tips
 Category: Programming
-Tags: programming
+Tags: programming, PyMySQL, tips, Python
 
 **
 Things on this page are
@@ -20,11 +20,21 @@ but rather for convenient reference of the author and future improvement.
 sudo pip3 install PyMySQL
 ```
 
-Connection is not autocommit by default. 
-So you must commit to save your changes.
+## Tricks
 
-connection.commit()
+1. Connection in PyMySQL is not autocommit by default. 
+You must commit to save your changes.
+```Python
+# suppose conn is the connection object
+conn.commit()
+```
 
+2. parameterized sql: %s instead of ?
+
+3. cursor returns tuple of tuples instead of list of tuples ...
+
+
+## PyMYSQL vs MySQLdb
 
 PyMySQL and MySQLdb provide the same functionality - 
 they are both database connectors. 

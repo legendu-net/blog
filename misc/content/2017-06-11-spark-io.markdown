@@ -1,0 +1,53 @@
+UUID: 73d3a35c-1de6-4ee0-905e-36abf03bf09e
+Status: published
+Date: 2017-06-11 19:16:05
+Author: Ben Chuanlong Du
+Slug: spark-io
+Title: Spark IO
+Category: Programming
+Tags: programming, Spark, IO, compression
+
+**
+Things on this page are
+fragmentary and immature notes/thoughts of the author.
+It is not meant to readers
+but rather for convenient reference of the author and future improvement.
+**
+
+1. Writing to existing files in Spark throws file already exist exception. 
+This s because Hadoop filesystem does not overwrite files that already exist.
+`RDD.saveAsTextFile` does not provide an option to manually overwrite existing files.
+To avoid the issue, 
+you have to manually remove the existing file before writing to them.
+
+## RDD.saveAsTextFile
+
+1. `RDD.saveAsTextFile` does not provide options to control the format of output files.
+    You have to manually format the RDD to one containings string in the format that you want. 
+    For example, 
+    if rdd contains tuples and you want to output it into TSV files, 
+    you can format it first using the following code.
+
+        rdd.map { x => x.productIterator.mkString("\t") }
+
+2. It takes lots of for `hadoop fs -getmerge`
+    to extract and merge large number of compressed files.
+    So it is suggested that you turn off compression 
+    when saving results into text files (using `saveAsTextFile`)
+    especially when there are huge number of partitions.
+
+```scala
+sc.hadoopConfiguration.set("mapred.output.compress", "false")
+```
+
+## File Format
+
+avro offical support instead of databricks? simplest way to read avro into data frame?
+
+– Text – Sequence – Avro – Parquet – ORC
+
+Example orc file for me to read?
+
+spark: it seems that we must know the schema of sequence files ...
+
+

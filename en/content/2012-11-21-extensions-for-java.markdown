@@ -1,6 +1,6 @@
 UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
-Date: 2015-02-20 10:37:03
+Date: 2017-06-11 12:02:00
 Slug: extensions-for-java
 Author: Ben Chuanlong Du
 Category: Programming
@@ -8,7 +8,9 @@ Title: Extensions for Java
 Tags: JNI, JNA, extension, Java, programming
 
 
-[Here](https://bitbucket.org/dclong/java_learn/src/1d6428249cae93dc7ad6ca61fa93479dcc7390fc/src/study/access?at=master) are some code examples for the following topics.
+[Here](https://bitbucket.org/dclong/java_learn/src/1d6428249cae93dc7ad6ca61fa93479dcc7390fc/src/study/access?at=master) 
+are some code examples for the following topics.
+
 ## Java Native Interface
 
 1. You can call native code (typically C, C++ or Fortran) in Java using the Java Native Interface (JNI). 

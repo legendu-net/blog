@@ -1,6 +1,6 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Date: 2016-07-09 18:51:44
+Date: 2017-06-11 09:57:48
 Author: Ben Chuanlong Du
 Slug: teamdrive-tips
 Title: TeamDrive Tips
@@ -13,6 +13,10 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+1. TeamDrive 4 asking users to buy a commerical license frequently,
+    which is very annoying. 
+    It is suggested that you stay with TeamDrive 3 as long as it is supported. 
  
 0. teamdrive on phone, if you use "available offline", update might not take effect ...
 if you encounter a problem, just uncheck available offline ...

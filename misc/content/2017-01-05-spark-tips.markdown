@@ -1,6 +1,6 @@
 UUID: a85907ac-decf-4477-9a47-54086e01ca9b
 Status: published
-Date: 2017-01-05 21:47:58
+Date: 2017-06-11 11:00:24
 Author: Ben Chuanlong Du
 Slug: spark-tips
 Title: Spark Tips
@@ -34,16 +34,6 @@ http://www.simonouellette.com/blog/spark-join-when-not-to-use-it
 https://bzhangusc.wordpress.com/2015/11/20/use-sbt-console-as-spark-shell/
 
 https://spark-summit.org/2015/events/interactive-graph-analytics-with-spark/
-
-## File Format
-
-avro offical support instead of databricks? simplest way to read avro into data frame?
-
-– Text – Sequence – Avro – Parquet – ORC
-
-Example orc file for me to read?
-
-spark: it seems that we must know the schema of sequence files ...
 
 
 

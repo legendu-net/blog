@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2014-09-14 16:44:20
+Date: 2017-06-11 20:08:06
 Slug: hadoop-tips
 Title: Hadoop Tips
 Category: Software
@@ -18,6 +18,10 @@ hadoop fs -cat
 hadoop fs -mkdir
 hadoop fs -put
 hadoop fs -get
+hadoop fs -getmerge /hdfs/path /path/in/linux
+hadoop fs -copyFromLocal /path/in/linux /hdfs/path
+hadoop fs -put /path/in/linux /hdfs/path
+hdfs dfs -du [-s] [-h] URI [URI …] 
 
 
 1. no update, have to update locally and upload to hadoop

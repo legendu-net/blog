@@ -8,7 +8,7 @@
     ["Iml", "IML"], ["Nfs", "NFS"], ["Kde", "KDE"], ["Pdf", "PDF"],
     ["Ppt", "PPT"],
     ["Rdd", "RDD"], ["Rdds", "RDDs"],
-    ["Sas", "SAS"], ["Sed", "sed"], ["Sql", "SQL"], ["Ssd", "SSD"], ["Ssh", "SSH"],
+    ["Sas", "SAS"], ["Sbt", "sbt"], ["Sed", "sed"], ["Sql", "SQL"], ["Ssd", "SSD"], ["Ssh", "SSH"],
     ["Vba", "VBA"], ["Vpn", "VPN"],
     ["Ar1X", "AR1X"], ["Curl", "cURL"], ["Ipad", "iPad"], ["Json", "JSON"], ["Nltk", "NLTK"], ["Odbc", "ODBC"], ["jdbc", "JDBC"], ["Uget", "uGet"], ["Uuid", "UUID"], ["Wget", "wget"],
     ["Anbox", "AnBox"], ["Latex", "LaTeX"], ["Xmind", "XMind"],

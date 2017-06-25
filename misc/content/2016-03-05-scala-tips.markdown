@@ -1,6 +1,6 @@
 UUID: e32b8182-c90c-432a-b328-f1346fe92df1
 Status: published
-Date: 2016-12-31 22:14:46
+Date: 2017-06-17 10:03:34
 Author: Ben Chuanlong Du
 Slug: scala-tips
 Title: Scala Tips
@@ -20,14 +20,14 @@ but rather for convenient reference of the author and future improvement.
 - [Scala Glossary](http://docs.scala-lang.org/glossary/)
 - [Scala Cheatsheet](http://docs.scala-lang.org/cheatsheets/)
 
-## IDE 
+1. IntelliJ IDEA is the recommended IDE.
+Eclipse (with the Scala IDE plugin) is alternative.
 
-Eclipse 
+## Style
 
-Need the Scala IDE plugin.
+1. avoid using break, continue, return even though you can use them in Scala
 
-
-IntelliJ IDEA
+2. avoid using while loop but don't go too crazy
 
 ## Links
 

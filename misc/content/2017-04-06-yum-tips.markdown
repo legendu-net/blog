@@ -1,6 +1,6 @@
 UUID: dd5e55e6-0bbb-46b0-bd39-d292fd0ffa6b
 Status: published
-Date: 2017-04-06 00:33:04
+Date: 2017-06-25 11:07:02
 Author: Ben Chuanlong Du
 Slug: yum-tips
 Title: Yum Tips
@@ -20,6 +20,10 @@ yum update
 yum search vim
 
 yum install yum-utils
+
+yum install pkg
+
+yum localinstall pkg
 
 yum groupinstall development
 

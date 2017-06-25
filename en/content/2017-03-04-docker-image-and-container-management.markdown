@@ -1,11 +1,18 @@
 UUID: ded4fb17-43c4-46e1-bafd-1d47789bedc9
 Status: published
-Date: 2017-06-11 19:26:27
+Date: 2017-06-25 10:35:50
 Author: Ben Chuanlong Du
 Slug: docker-image-and-container-management
-Title: Docker Image and Container Management
+Title: Manage Docker Images and Containers 
 Category: Software
 Tags: software, Docker, image, container, management, remove
+
+## Remove Containers
+
+Note that running containers will NOT be removed by default.
+This is what users want generally speaking. 
+You can use the option `-f` to force removing running containers,
+but use it with caution and at your own risk.
 
 1. Remove all existing containers (not images).
 
@@ -18,12 +25,19 @@ Tags: software, Docker, image, container, management, remove
         docker ps -aqf status=exited
 
 
-2. Remove images without names.
+## Remove Images
+
+Note that images required by running containers will NOT be removed by default.
+This is what users want generally speaking. 
+You can use the option `-f` to force removing images,
+but use it with caution and at your own risk.
+
+1. Remove images without names.
 
         docker images | awk '{ if ($1 == "<none>") print $3 }' | xargs docker rmi
 
 
-3. Remove images without versions.
+2. Remove images without versions.
 
         docker images | awk '{ if ($2 == "<none>") print $3 }' | xargs docker rmi
 
@@ -32,16 +46,40 @@ Tags: software, Docker, image, container, management, remove
 
         docker images | awk '{ if ($1 == "<none>" || $2 == "<none>") print $3 }' | xargs docker rmi
 
+## Get Container ID Inside Container
 
-4. Use the `-f` (force remove image/container) option with caution.
-
-5. Get the container ID inside the docker container. 
+You can get the container ID inside the docker container 
+by running the following command.
 
     cat /proc/self/cgroup | grep -o  -e "docker-.*.scope" | head -n 1 | sed "s/docker-\(.*\).scope/\\1/"
 
-    Or you can use the following command.
-    Though, this way will not work in two cases. 
-        1. if hostname is explicitly specified with --hostname flag. 
-        2. when using --net=host mode.
+Or another simpler way is to run
 
-        echo $HOSTNAME
+    echo $HOSTNAME
+
+But it will not work in the following two cases. 
+
+    1. if hostname is explicitly specified with `--hostname` flag. 
+
+    2. when using `--net=host` mode.
+
+
+## Import/Export Docker Container/Images
+
+[Moving Docker Containers and Images Around](https://blog.giantswarm.io/moving-docker-container-images-around/)
+
+1. Save a docker image to a tar.gz file.
+
+        docker save image | gzip > image.tar.gz
+
+
+2. Load a docker image from tar file.
+
+        docker load < image.tar
+
+
+## Kill a Process in a Container
+
+```sh
+docker exec container_name kill process_name
+```

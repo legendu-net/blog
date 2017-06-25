@@ -1,6 +1,6 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Date: 2017-04-03 18:12:05
+Date: 2017-06-17 11:16:27
 Author: Ben Chuanlong Du
 Slug: python-modules
 Title: Python Modules
@@ -18,55 +18,11 @@ but rather for convenient reference of the author and future improvement.
 
 - [20 Python libraries you can’t live without](https://freepythontips.wordpress.com/2013/07/30/20-python-libraries-you-cant-live-without/)
 
-1. Accroding to PEP, 
-you should import packages at the beginning of your module.
+1. pandas: data frame.
 
-### Install Modules
+1. scipy: scientific computing.
 
-1. Do not use OS tools (e.g., `apt-get`, `yum`, `wajig`, `aptitude`, etc.) 
-to manage Python packages.
-Use Python's own package managing tools instead.
-`pip` is recommended (over `easy_install`, etc.).
-If you are using Anaconda Python, 
-then use `conda` to install python packages.
-
-2. The following are ways to install a python module 
-to a local directory.
-
-```bash
-python setup.py install --user
-```
-or
-```bash
-pip install --user mercurial
-```
-
-pip list --outdated
-
-pip install --upgrade wheel
-
-2. You can use `help('modules')` to display all locally installed modules.
-
-1. sys.path.append
-
-```bash
-import module_name  
-import module_name as alias 
-from module import pkg_mod_or_fun
-```
-
-10. Python built-in functions are acutally in the `__builtins__` module.
-
-1. `__file__` path of a module 
-[Retrieving python module path](http://stackoverflow.com/questions/247770/retrieving-python-module-path)
-
-### Numerical Computing
-
-1. numpy: numerical computing
-
-2. scipy (a super set of numpy)
-
-2. pandas: data frame
+2. numpy: multi-dimensional array.
 
 3. re: regular expression
     - re.sub
@@ -76,17 +32,7 @@ from module import pkg_mod_or_fun
 
 4. inspect: check class, function definition and so on
 
-5. tempfile
-    - tempfile.mkdtemp
-    - tempfile.mkstemp
-
-6. os: Operating system related utilities.
-
-7. os.path file path related utilities.
-    - os.path.join
-    - os.path.basename file name without parent directory
-
-8. warnings: Warning message.
+### File System
 
 9. shutil: Copy, move and remove files.
     - shutil.copy
@@ -95,15 +41,31 @@ from module import pkg_mod_or_fun
     - shutil.copytree
     - shutil.rmtree
 
+5. tempfile
+    - tempfile.mkdtemp
+    - tempfile.mkstemp
+
+7. os.path file path related utilities.
+    - os.path.join
+    - os.path.basename file name without parent directory
+
+6. os: Operating system related utilities.
+
+### Logging
+
+8. warnings: Warning message.
+
 ### Visualization/Graph
 
-1. ggplot
-2. matplotlib
-1. [plotly](https://plot.ly/python/user-guide/)
+1. matplotlib
+2. bokeh
+3. [plotly](https://plot.ly/python/user-guide/)
 
 ### Multimedia
 
-1. PDFMiner
+1. ReportLab 
+seems interesting
+2. PDFMiner
 2. pyPDF
 3. slate (based on PDFMiner and make it much easier to use)
 4. pdftables 
@@ -133,7 +95,7 @@ and others take file stream arguments.
 
 10. PyMongo
 
-11. MySQLdb
+11. PyMySQL, MySQLdb
 
 11. sqlite3
 
@@ -189,9 +151,9 @@ http://www.christianpeccei.com/textmining/
 
 ### GUI application
 
-1. PySide
+1. PyQt
 
-2. PyQt
+2. PySide
 
 3. Tkinter 
 ```bash
@@ -250,36 +212,9 @@ probably not ...
 
 3. python-virtualenv virtual environment is good, 
 
-1. ipython-notebook is great,
-and you can restrict ip ...
-
-10. module vs class:
-you can use module to simulate a class,
-however, class still has advantages.
-class is smaller unit, and can encapsulate state variables.
-Global variables are comparable to state variables of a class,
-the things is that they are exposed to all modules, class ...
-
-11. Python module import does not have the transitivity property (unlike C++ include).
-That is if you import module a in module and then import module b in module c,
-you cannot access members of module a in module c.
-Module kind of encapsulates its members.
-so it is similar to a class.
-The differene is that class is smaller unit.
-
-When you import module a in module b, things defined in module b cannot be used in module a either
-
-2. the conflict of function and module names seems tricky!!!
-
 ### Internet
 
 1. email.parser
-
-### IO
-
-1. csv (reading and writing CSV files)
-
-2. numpy (use methods loadtxt, etc.)
 
 ## Unit Testing
 

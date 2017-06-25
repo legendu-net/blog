@@ -1,6 +1,6 @@
 UUID: 5871584f-b78d-48a0-a7e4-3b307f7af6bf
 Status: published
-Date: 2017-06-11 18:53:59
+Date: 2017-06-17 10:15:36
 Author: Ben Chuanlong Du
 Slug: dashboard-solutions
 Title: Dashboard Solutions
@@ -16,12 +16,24 @@ but rather for convenient reference of the author and future improvement.
 
 ## Jupyter/JupyterLab Dashboard
 
+JupyterLab plans to support dashboard. 
+
+Currently, you can use the Jupyter Dashboard.
+
+[Jupyer Dashboard Docker Deploy](https://github.com/jupyter-incubator/dashboards_setup/tree/master/docker_deploy)
+
 ## Superset
 
 Superset is great! 
 But it seems that it's for SQL only? 
 Is python scripting supported?
 based on python, but doesn't support direct python scraping ...
+
+http://airbnb.io/superset/installation.html
+
+http://airbnb.io/superset/
+
+amancevice/superset
 
 ## Redash
 

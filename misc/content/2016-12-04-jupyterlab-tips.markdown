@@ -1,11 +1,11 @@
 UUID: 866ecf58-079e-4cec-9978-c9782410a0d0
 Status: published
-Date: 2017-03-18 20:19:18
+Date: 2017-06-19 08:09:52
 Author: Ben Chuanlong Du
 Slug: jupyterlab-tips
 Title: JupyterLab Tips
 Category: Software
-Tags: software, JupyterLab, Jupyter
+Tags: software, JupyterLab, Jupyter, tips
 
 **
 Things on this page are
@@ -13,6 +13,8 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+[28 Jupyter Notebook tips, tricks and shortcuts](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/)
 
 ## Cools Plugins for Jupyter Noteboo/Lab
 

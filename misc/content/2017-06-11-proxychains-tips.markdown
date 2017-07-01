@@ -1,11 +1,11 @@
 UUID: 902f18b9-7675-4cfe-9e87-26f56e722fbd
 Status: published
-Date: 2017-06-11 10:10:04
+Date: 2017-07-01 14:38:36
 Author: Ben Chuanlong Du
 Slug: proxychains-tips
 Title: Proxychains Tips
-Category: Programming
-Tags: programming
+Category: Software
+Tags: Software, proxychains, network, web, proxy
 
 **
 Things on this page are

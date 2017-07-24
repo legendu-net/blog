@@ -1,6 +1,6 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Date: 2017-06-17 11:16:27
+Date: 2017-07-22 10:55:43
 Author: Ben Chuanlong Du
 Slug: python-modules
 Title: Python Modules
@@ -55,16 +55,18 @@ but rather for convenient reference of the author and future improvement.
 
 8. warnings: Warning message.
 
-### Visualization/Graph
-
-1. matplotlib
-2. bokeh
-3. [plotly](https://plot.ly/python/user-guide/)
+### [Visualization](http://www.legendu.net/misc/blog/python-modules-for-visualization/)
 
 ### Multimedia
 
 1. ReportLab 
+
 seems interesting
+
+2. Pweave 
+
+R knitr equivalence in Python.
+
 2. PDFMiner
 2. pyPDF
 3. slate (based on PDFMiner and make it much easier to use)

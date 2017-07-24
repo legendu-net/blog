@@ -1,6 +1,6 @@
 UUID: 05e465c7-cb32-400b-9101-52043a8c6876
 Status: published
-Date: 2017-06-11 18:36:58
+Date: 2017-07-22 10:57:22
 Author: Ben Chuanlong Du
 Slug: docker-tips
 Title: Docker Tips
@@ -14,6 +14,9 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+
+- [DockOne.io，最专业的Docker交流平台] (http://dockone.io/)
+- [Docker在Coding WebIDE项目中的运用] (http://www.infoq.com/cn/articles/the-apply-of-docker-in-coding-webide-project)
 
 
 ## Docker Commands

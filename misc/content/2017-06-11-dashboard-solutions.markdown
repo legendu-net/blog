@@ -1,11 +1,11 @@
 UUID: 5871584f-b78d-48a0-a7e4-3b307f7af6bf
 Status: published
-Date: 2017-06-17 10:15:36
+Date: 2017-07-22 10:39:43
 Author: Ben Chuanlong Du
 Slug: dashboard-solutions
 Title: Dashboard Solutions
 Category: Software
-Tags: software, dashboard, Jupyter, JupyterLab, Superset, Redash
+Tags: software, dashboard, Jupyter, JupyterLab, Superset, Redash, plotly, dash, Bokeh Server
 
 **
 Things on this page are
@@ -13,6 +13,10 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+## Bokeh Server
+
+very convenient, but batch rather than interactive mode
 
 ## Jupyter/JupyterLab Dashboard
 
@@ -25,7 +29,7 @@ Currently, you can use the Jupyter Dashboard.
 ## Superset
 
 Superset is great! 
-But it seems that it's for SQL only? 
+But it seems that it is for SQL only? 
 Is python scripting supported?
 based on python, but doesn't support direct python scraping ...
 
@@ -34,6 +38,10 @@ http://airbnb.io/superset/installation.html
 http://airbnb.io/superset/
 
 amancevice/superset
+
+## Plotly Dash
+
+Great but unfortunately plotly is not totally free (very limited API calls).
 
 ## Redash
 

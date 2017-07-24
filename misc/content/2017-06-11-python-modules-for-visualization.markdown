@@ -1,11 +1,11 @@
 UUID: 1baf3556-9f9f-40af-9264-179019cff440
 Status: published
-Date: 2017-06-11 18:42:38
+Date: 2017-07-22 10:24:46
 Author: Ben Chuanlong Du
 Slug: python-modules-for-visualization
 Title: Python Modules for Visualization
 Category: Programming
-Tags: programming
+Tags: programming, visualization, Python, bokeh, plotly, plot.ly, matplotlib, pandas
 
 **
 Things on this page are
@@ -14,37 +14,26 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-http://pbpython.com/visualization-tools-1.html
-
-https://blog.modeanalytics.com/python-data-visualization-libraries/
-
-http://kyrandale.com/static/talks/reveal.js/index_pydata2015.html#/
-
-
 ## JS based Modules
 
-## plotly
-has limit on API calls
-Plotly handles both figures and tables!
-https://images.plot.ly/plotly-documentation/images/python_cheat_sheet.pdf
+### bokeh
 
-## bokeh
+Bokeh is a great JS-based package for visualization in Python and is also available in other programming languages. 
+It is a free and opensource alternative to plotly (which is not totally free). 
+Both bokeh and plotly is feature-rich. 
+They supports all kinds of charts, data table and can easily build a dashboard.
 
-seems that date as x-axis, sometimes not formatted right ...
+### [plotly](https://plot.ly/python/user-guide/)
 
-http://bokeh.pydata.org/en/latest/docs/user_guide/tools.html
+Plotly is great (even better than Bokeh) but unfortunately not totally free (very limited API calls per day). 
 
-http://bokeh.pydata.org/en/0.11.1/docs/user_guide/interaction.html#data-table
-
-## bqplot
-https://github.com/bloomberg/bqplot
-1. need to have nodejs installed!!!
-
-
-
-## Non JS based Modules 
+## `matplotlib` based Modules 
 
 ### matplotlib
+
+The old default visualization package in Python.
+
+
 has display issues without x server ...
 
 http://stackoverflow.com/questions/11264521/date-ticks-and-rotation-in-matplotlib
@@ -55,21 +44,8 @@ http://stackoverflow.com/questions/10998621/rotate-axis-text-in-python-matplotli
 
 ### pandas
 
-Altair
-Mayavi: 3D scientific data visualization and plotting in Python
-python-nvd3
-http://vpython.org/
+3. pandas
 
-Chaco
-
-
-http://stockcharts.com/school/doku.php?id=chart_school:chart_analysis:introduction_to_candlesticks
-https://plot.ly/python/candlestick-charts/
-python candlestick chart, etc.
-http://pbpython.com/visualization-tools-1.html
-
-
-https://wiki.python.org/moin/NumericAndScientific/Plotting
-
-http://pbpython.com/visualization-tools-1.html
+`pandas` integrates some visualization features based on matplotlib.
+It makes things convenient if you have to work with data frame a lot.
 

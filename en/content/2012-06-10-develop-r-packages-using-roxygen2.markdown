@@ -1,7 +1,7 @@
 UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
 Title: Develop R Packages Using "roxygen2" 
-Date: 2017-03-19 10:35:02
+Date: 2017-07-27 12:41:29
 Category: Programming
 Tags: R, package, programming, tags, CRAN, roxygen2, develop
 Slug: develop-r-packages-using-roxygen2
@@ -63,3 +63,21 @@ The following are some roxygen2 tags that I use frequently for writing R package
         R CMD INSTALL --build package_dir
 
     Notice that `INSTALL` must be in upper case.
+
+
+2. The following LaTex packages `texlive`, `texinfo` and `texlive-fonts-extra` (on Linux) 
+    are need to compile R packages 
+    if you want to generate and check PDF manuals. 
+
+        wajig install texlive texinfo texlive-fonts-extra
+
+    If you do not want (or have permissions) to install them,
+    you can compile R packages without generating PDF manuals.
+
+        R CMD build --no-manual ...
+        R CMD check --no-manual ...
+
+    For more details on R package build options, 
+    please refer to the post 
+    [Customizing Package Build Options](https://support.rstudio.com/hc/en-us/articles/200486518-Customizing-Package-Build-Options).
+

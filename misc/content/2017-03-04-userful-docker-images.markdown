@@ -1,6 +1,6 @@
 UUID: cdc960ec-1edf-4d17-a081-3ad9c7b11702
 Status: published
-Date: 2017-05-23 22:26:09
+Date: 2017-07-27 12:24:58
 Author: Ben Chuanlong Du
 Slug: userful-docker-images
 Title: Userful Docker Images
@@ -52,69 +52,9 @@ yantis/wine
 lijianying10/wineqq
 
 
-### HTTP Service
-
-1. [httpd](https://hub.docker.com/_/httpd/)
-```bash
-docker run -dit -p 80:80 -v /wwwroot:/usr/local/apache2/htdocs/ httpd
-```
-
-### Python 
-
-1. [continuumio/anaconda](https://hub.docker.com/r/continuumio/anaconda/)
-
-Anaconda Python distribution.
-
-### Ubuntu
-
-For vnc, probably not a scaling problem but has to set resolution while starting the docker ...
-
-1. [consol/ubuntu-xfce-vnc](https://store.docker.com/community/images/consol/ubuntu-xfce-vnc)
-
-    works well, seems like a good choice
-    ```bash
-    docker run -it -p 5901:5901 -p 6901:6901 -e VNC_RESOLUTION=800x600 consol/ubuntu-xfce-vnc
-    ```
-
-2. [dorowu/ubuntu-desktop-lxqt-vnc](https://store.docker.com/community/images/dorowu/ubuntu-desktop-lxde-vnc)
-
-    works, novnc in HTML doesn't scale very well
-    password: ubuntu
-
-3. [dorowu/ubuntu-desktop-lxde-vnc](https://store.docker.com/community/images/dorowu/ubuntu-desktop-lxde-vnc)
-
-    works, novnc in HTML doesn't scale very well
-    password: ubuntu
-
-1. [ensky/ubuntu-nxserver-xfce](https://store.docker.com/community/images/ensky/ubuntu-nxserver-xfce)
-
-    Works, free NX client is a little bit ugly
-    had to create a new user, don't know the password
-
-### KDE Plasma
-
-[kdeneon/plasma](https://hub.docker.com/r/kdeneon/plasma/)
-
-### Shadowsocks
-
-1. [smounives/shadowsocksr-docker](https://store.docker.com/community/images/smounives/shadowsocksr-docker)
-2. [dubuqingfeng/ubuntu-shadowsocks](https://store.docker.com/community/images/dubuqingfeng/ubuntu-shadowsocks)
-3. [vimagick/shadowsocks-libev](https://store.docker.com/community/images/vimagick/shadowsocks-libev)
-4. [oddrationale/docker-shadowsocks](https://store.docker.com/community/images/oddrationale/docker-shadowsocks)
-
-### Notebooks (Jupyter, JupyterLab and Zeppelin)
-
-1. [jupyter/all-spark-notebook](https://github.com/jupyter/docker-stacks/tree/master/all-spark-notebook)
-
-2. epahomov/docker-zeppelin
-
-4. dylanmei/docker-zeppelin
-
-3. toree spark 1.6 spark docker ...
-
 ### Spark
 
-9. shopkeep/spark too old ...
+1. [brunelvis/notebook-minimal](https://hub.docker.com/r/brunelvis/notebook-minimal/)
 
 ### IDE
 
@@ -136,15 +76,6 @@ https://store.docker.com/community/images/kdelfour/cloud9-docker
 
 2. [haugene/transmission-openvpn](https://hub.docker.com/r/haugene/transmission-openvpn/)
 
-### Scala
-
-http://www.slideshare.net/marcuslonnberg/ship-your-scala-code-often-and-easy-with-docker
-
-http://blog.codacy.com/2015/07/16/dockerizing-scala/
-
-https://velvia.github.io/Docker-Scala-Sbt/
-
-https://github.com/stevenalexander/docker-scala-ide
 
 ### Android 
 
@@ -166,3 +97,7 @@ thshaw/arc-welder
 
 1. [MySQL](https://hub.docker.com/_/mysql/)
 2. [Mongo](https://store.docker.com/images/9147d1b7-a686-4e38-8ecd-94a47f5da9cf?tab=description)
+
+### Visualization
+
+1. [brunelvis/notebook-minimal](https://hub.docker.com/r/brunelvis/notebook-minimal/)

@@ -10,10 +10,12 @@
     ["Rdd", "RDD"], ["Rdds", "RDDs"],
     ["Sas", "SAS"], ["Sbt", "sbt"], ["Sed", "sed"], ["Sql", "SQL"], ["Ssd", "SSD"], ["Ssh", "SSH"],
     ["Vba", "VBA"], ["Vpn", "VPN"],
-    ["Ar1X", "AR1X"], ["Curl", "cURL"], ["Ipad", "iPad"], ["Json", "JSON"], ["Nltk", "NLTK"], ["Odbc", "ODBC"], ["jdbc", "JDBC"], ["Uget", "uGet"], ["Uuid", "UUID"], ["Wget", "wget"],
+    ["Ar1X", "AR1X"], ["Curl", "cURL"], ["Ipad", "iPad"], ["Json", "JSON"], 
+    ["Nltk", "NLTK"], ["Odbc", "ODBC"], ["jdbc", "JDBC"], ["Uget", "uGet"], 
+    ["Uuid", "UUID"], ["Wget", "wget"], ["Http", "HTTP"], ["Pyqt", "PyQT"],
     ["Anbox", "AnBox"], ["Latex", "LaTeX"], ["Xmind", "XMind"],
     ["Gnome", "GNOME"], ["Mysql", "MySQL"],
-    ["Aerofs", "AeroFS"], ["Btsync", "BTSync"], ["Centos", "CentOS"], 
+    ["Aerofs", "AeroFS"], ["Btsync", "BTSync"], ["Centos", "CentOS"], ["Nodejs", "NodeJS"],
     ["Ffmpeg", "FFmpeg"], ["Wechat", "WeChat"], ["Pyodbc", "pyodbc"],
     ["Yyyymm", "YYYYMM"],
     ["Autokey", "AutoKey"],
@@ -34,5 +36,6 @@
     ["Crunchbang", "CrunchBang"],
     ["Jupyterlab", "JupyterLab"],
     ["Teamviewer", "TeamViewer"],
+    ["IJavascript", "IJavascript"], ["Itypescript", "ITypescript"],
     ["Youcompleteme", "YouCompleteMe"]
 ]

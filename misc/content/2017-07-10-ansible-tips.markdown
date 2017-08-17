@@ -1,11 +1,11 @@
 UUID: 1827a10a-70e9-4bf8-877e-aef9f672b4dd
 Status: published
-Date: 2017-07-10 23:59:37
+Date: 2017-08-17 08:44:24
 Author: Ben Chuanlong Du
 Slug: ansible-tips
 Title: Ansible Tips
 Category: Software
-Tags: Software, Ansible, Python
+Tags: Software, Ansible, Python, cluster management, server management
 
 **
 Things on this page are
@@ -22,8 +22,6 @@ sudo pip3 install ansible
 ```
 
 `ansible.cfg` in the current directory for local configuration
-
-#!/usr/bin/env bash
 
 ```sh
 proxychains ansible all \

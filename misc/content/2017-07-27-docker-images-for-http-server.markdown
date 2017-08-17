@@ -1,9 +1,9 @@
 UUID: aee7e150-6b1f-4544-902b-bc1506054640
 Status: published
-Date: 2017-07-27 12:23:00
+Date: 2017-08-17 08:40:34
 Author: Ben Chuanlong Du
 Slug: docker-images-for-http-server
-Title: Docker Images for Http Server
+Title: Docker Images for HTTP Server
 Category: Software
 Tags: software, HTTP server, docker, httpd
 

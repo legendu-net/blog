@@ -1,9 +1,9 @@
 UUID: 6f158ee8-c631-40c8-aaef-b4087e84868b
 Status: published
-Date: 2017-07-22 11:29:13
+Date: 2017-08-17 08:43:23
 Author: Ben Chuanlong Du
 Slug: pyqt-tips
-Title: Pyqt Tips
+Title: PyQT Tips
 Category: Programming
 Tags: programming, GUI, Python, QT, PyQT
 

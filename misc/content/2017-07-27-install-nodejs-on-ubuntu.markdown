@@ -1,9 +1,9 @@
 UUID: 73d864a1-baff-459d-a310-67b077688ac5
 Status: published
-Date: 2017-07-27 12:31:02
+Date: 2017-08-17 08:40:03
 Author: Ben Chuanlong Du
 Slug: install-nodejs-on-ubuntu
-Title: Install Nodejs on Ubuntu
+Title: Install NodeJS on Ubuntu
 Category: Software
 Tags: software, NodeJS, installation, Ubuntu
 

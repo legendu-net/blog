@@ -1,9 +1,9 @@
-UUID: 069ecb73-0fdb-49c0-bc65-4e1bbd3e356b
+UUID: a2a09b17-04df-49ba-9a83-26d32a439651
 Status: published
-Date: 2017-07-22 11:00:27
+Date: 2017-08-26 20:57:39
 Author: Ben Chuanlong Du
-Slug: docker-on-windows
-Title: Docker on Windows
+Slug: scala-errors
+Title: Scala Errors
 Category: Programming
 Tags: programming
 
@@ -14,6 +14,10 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-Docker is natively supported on Win 10 and later. 
+1. Java Version Issue
 
-need to enable Hyper-V and Virtualization
+Unsupported major minor version 
+
+https://stackoverflow.com/questions/22489398/unsupported-major-minor-version-52-0
+
+

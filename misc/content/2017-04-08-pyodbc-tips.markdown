@@ -1,6 +1,6 @@
 UUID: 04d5b491-e930-470f-b355-8d60f283534b
 Status: published
-Date: 2017-04-08 14:47:56
+Date: 2017-08-26 21:48:07
 Author: Ben Chuanlong Du
 Slug: pyodbc-tips
 Title: pyodbc Tips
@@ -13,6 +13,13 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+pyodbc only supports qmark
+
+https://github.com/mkleehammer/pyodbc/wiki
+
+
+
 
 ## Unicode Converter Buffer Overflow 
 

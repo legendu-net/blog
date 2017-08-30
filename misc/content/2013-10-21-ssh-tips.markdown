@@ -2,7 +2,7 @@ UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: SSH Tips
-Date: 2017-03-05 22:19:19
+Date: 2017-08-26 21:50:44
 Slug: ssh-tips
 Category: Software
 Tags: tips, SSH, software, remote, Linux
@@ -62,6 +62,13 @@ make sure to set `network.proxy.socks_remote_dns` to be true (follow the steps b
 3. Search for `network.proxy.socks_remote_dns`. 
 4. Change the value to be `true`.
 
+## SSH Tunel
+
+ssh -fND 1080 server
+
 [Proxy Using SSH Tunnel](https://www.systutorials.com/944/proxy-using-ssh-tunnel/)
 
 [Quick-Tip: SSH Tunneling Made Easy](http://www.revsys.com/writings/quicktips/ssh-tunnel.html)
+
+
+

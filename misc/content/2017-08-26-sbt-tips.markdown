@@ -1,0 +1,21 @@
+UUID: f191c6b3-54e6-4e48-926f-653946b63353
+Status: published
+Date: 2017-08-26 19:45:59
+Author: Ben Chuanlong Du
+Slug: sbt-tips
+Title: sbt Tips
+Category: Programming
+Tags: programming
+
+**
+Things on this page are
+fragmentary and immature notes/thoughts of the author.
+It is not meant to readers
+but rather for convenient reference of the author and future improvement.
+**
+
+http://www.scala-sbt.org/release/docs/Basic-Def.html
+
+
+
+

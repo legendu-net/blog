@@ -2,7 +2,7 @@ UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for JavaScript
-Date: 2016-11-20 19:22:21
+Date: 2017-08-26 21:36:38
 Slug: javascript-tips
 Category: Programming
 Tags: tips, programming, JavaScript, JS, web
@@ -54,3 +54,11 @@ angularJS
 
 ## Visulization
 1. Google Visualization APIs
+
+
+[Underscore](http://underscorejs.org/)
+is a JavaScript library that provides a whole mess of useful functional programming helpers without extending any built-in objects. 
+It's the answer to the question: 
+"If I sit down in front of a blank HTML page, 
+and want to start being productive immediately, 
+what do I need?" ... and the tie to go along with jQuery's tux and Backbone's suspenders. 

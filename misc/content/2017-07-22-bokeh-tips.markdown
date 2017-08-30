@@ -1,6 +1,6 @@
 UUID: b67401b6-5ce8-455d-883f-ac02e2f678b1
 Status: published
-Date: 2017-07-22 10:40:00
+Date: 2017-08-26 21:12:26
 Author: Ben Chuanlong Du
 Slug: bokeh-tips
 Title: Bokeh Tips
@@ -24,3 +24,11 @@ but rather for convenient reference of the author and future improvement.
 
 Can u combine bokeh and Jupyter Notebook to quickly prototype and then deploy? 
 This requires support of Bokeh server in Jupyter Notebook.
+
+
+bokeh, not numeric values, no corresponding warnings due to HTML ...
+be careful ...
+
+```
+bokeh serve --allow-websocket-origin=server_ip:5006 sliders.py
+```

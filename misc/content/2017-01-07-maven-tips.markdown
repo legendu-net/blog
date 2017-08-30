@@ -1,6 +1,6 @@
 UUID: f112de65-cdbc-4cc5-aa90-ab958d217bd5
 Status: published
-Date: 2017-05-24 20:24:40
+Date: 2017-08-26 20:05:33
 Author: Ben Chuanlong Du
 Slug: maven-tips
 Title: Maven Tips
@@ -32,84 +32,30 @@ mvn -e build
 
 intellij scala mavn archtype is too ooooooooooold!!! wait for generate complete and then manaully update the pom file
 
-```XML
-<dependency>
-    <groupId>org.scalaz</groupId>
-    <artifactId>scalaz-core_2.11</artifactId>
-    <version>7.2.12</version>
-</dependency>
-```
-```XML
-<dependency>
-  <groupId>com.ebay.scalaplatform</groupId>
-  <artifactId>platform-spark_2.11</artifactId>
-  <version>1.0-SNAPSHOT</version>
-</dependency>
-```
+
+Maven
+https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/hdinsight/hdinsight-apache-spark-create-standalone-application.md
+
+
+How to define a customized archetype for IntelliJ?
+If you use maven in intellij for scala, after choose archetype, update the old pom content!!!
+
+http://maven.apache.org/
+
+## Configuration
+
+[Configuring Maven](https://maven.apache.org/guides/mini/guide-configuring-maven.html)
+
+You can either set up a proxy or mirror repositories to speed up Maven compilation (in China).
+Both of them are good ways and are easy to set up.
+
+[Using Mirrors for Repositories](https://maven.apache.org/guides/mini/guide-mirror-settings.html)
+
+[Configuring a proxy](https://maven.apache.org/guides/mini/guide-proxies.html)
 
 
 
-```XML
-<plugin>
-    <artifactId>maven-compiler-plugin</artifactId>
-    <version>2.0.2</version>
-    <configuration>
-        <source>1.6</source>
-        <target>1.6</target>
-    </configuration>
-</plugin>
-```
+http://search.maven.org/#search%7Cga%7C1%7C
 
-```XML
-<plugin>
-    <groupId>org.codehaus.mojo</groupId>
-    <artifactId>exec-maven-plugin</artifactId>
-    <configuration>
-         <mainClass>net.legendu.App</mainClass>
-    </configuration>
-</plugin>
-```
+https://maven.apache.org/guides/introduction/introduction-to-archetypes.html
 
-
-## Scala Maven Plugin
-
-```XML
-<plugin>
-  <groupId>net.alchim31.maven</groupId>
-  <artifactId>scala-maven-plugin</artifactId>
-  <version>3.2.2</version>
-  <executions>
-    <execution>
-      <goals>
-        <goal>compile</goal>
-        <goal>testCompile</goal>
-      </goals>
-    </execution>
-  </executions>
-</plugin>
-```
-
-
-## Maven Surefire Plugin
-for unit testing
-
-## maven-shade-plugin
- 
-```XML
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-shade-plugin</artifactId>
-    <version>3.0.0</version>
-    <configuration>
-    <!-- put your configurations here -->
-    </configuration>
-    <executions>
-        <execution>
-            <phase>package</phase>
-            <goals>
-                <goal>shade</goal>
-            </goals>
-        </execution>
-    </executions>
-</plugin>
-```

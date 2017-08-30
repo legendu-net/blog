@@ -1,6 +1,6 @@
 UUID: ded4fb17-43c4-46e1-bafd-1d47789bedc9
 Status: published
-Date: 2017-06-25 10:35:50
+Date: 2017-08-26 09:39:27
 Author: Ben Chuanlong Du
 Slug: docker-image-and-container-management
 Title: Manage Docker Images and Containers 
@@ -83,3 +83,6 @@ But it will not work in the following two cases.
 ```sh
 docker exec container_name kill process_name
 ```
+## List Mounted Volumes 
+
+<https://stackoverflow.com/questions/30642844/how-to-list-docker-mounted-volumes-from-within-the-container>

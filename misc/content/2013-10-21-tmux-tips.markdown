@@ -1,18 +1,18 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Title: Some Tips About Tmux
-Date: 2017-08-26 20:43:06
+Title: Some Tips About tmux
+Date: 2017-09-06 07:57:29
 Slug: tmux-tips
 Category: Software
-Tags: tips, Tmux, software, remote, screen, terminal
+Tags: tips, tmux, software, remote, screen, terminal
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
  
-## Scroll in Tmux
+## Scroll in tmux
 
 1. ctrl + b z: zoom/maximize
 

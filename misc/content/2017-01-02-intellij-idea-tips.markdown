@@ -1,9 +1,9 @@
 UUID: f7982e28-2aa2-4829-ab77-2c8904408b1b
 Status: published
-Date: 2017-08-26 20:25:35
+Date: 2017-09-06 08:04:31
 Author: Ben Chuanlong Du
 Slug: intellij-idea-tips
-Title: Intellij Idea Tips
+Title: IntelliJ IDEA Tips
 Category: Software
 Tags: software, IDE, IntelliJ IDEA, tips
 

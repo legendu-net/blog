@@ -1,9 +1,9 @@
 UUID: bbf469f4-c773-4ff9-a7e1-0e43d8fbad10
 Status: published
-Date: 2017-06-11 11:09:53
+Date: 2017-09-06 08:02:05
 Author: Ben Chuanlong Du
 Slug: union-RDDs-in-spark
-Title: Union Rdds in Spark
+Title: Union RDDs in Spark
 Category: Programming
 Tags: programming, Scala, Spark, RDD, union
 

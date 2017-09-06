@@ -1,9 +1,9 @@
 UUID: 3df72304-6f5c-44b8-aebd-db65163d617e
 Status: published
-Date: 2017-08-26 21:23:56
+Date: 2017-09-06 07:59:41
 Author: Ben Chuanlong Du
 Slug: macports-tips
-Title: Macports Tips
+Title: MacPorts Tips
 Category: Mac OSX
 Tags: Mac OSX, MacPorts, tips
 

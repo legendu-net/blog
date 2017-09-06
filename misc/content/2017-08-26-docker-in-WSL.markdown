@@ -1,9 +1,9 @@
 UUID: 045df550-e675-4a90-a9f2-0081631b165d
 Status: published
-Date: 2017-08-26 20:47:08
+Date: 2017-09-06 08:06:03
 Author: Ben Chuanlong Du
 Slug: docker-in-WSL
-Title: Docker in Wsl
+Title: Docker in WSL
 Category: Software
 Tags: software, Docker, WSL, Windows, Bash, BashOnWindows, Bash on Windows
 

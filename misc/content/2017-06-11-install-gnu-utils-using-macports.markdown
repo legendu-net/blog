@@ -1,9 +1,9 @@
 UUID: 775a72d6-f67a-4003-951f-b90be1dea2f8
 Status: published
-Date: 2017-06-11 20:01:09
+Date: 2017-09-06 07:59:12
 Author: Ben Chuanlong Du
 Slug: install-gnu-utils-using-macports
-Title: Install GNU Utils Using Macports
+Title: Install GNU Utils Using MacPorts
 Category: OS
 Tags: Mac, Mac OSX, MacPorts
 

@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2014-01-28 00:25:53
+Date: 2017-10-22 13:43:08
 Title: Hive Tips
 Slug: hive-tips
 Category: Programming
@@ -35,3 +35,19 @@ in hive, e.g., when you count the number of records in a table.
 ## Common Mistakes
 
 1. Forget to separate fields with comma in the select or group by clause.
+
+
+
+### Hive
+
+http://stackoverflow.com/questions/18129581/how-do-i-output-the-results-of-a-hiveql-query-to-csv
+
+https://hadoopsters.net/2015/09/18/hadoop-tutorial-how-to-export-hive-table-to-csv-file/
+
+https://analyticsanvil.wordpress.com/2016//python-jdbc-dyanmic-hive-scripting/ 
+
+Hive table, if I need a small part of a big Hive table, does hive load in all data or try to be smart? it seems that it's hard ...
+
+
+
+

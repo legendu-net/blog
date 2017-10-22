@@ -1,6 +1,6 @@
 UUID: 775a72d6-f67a-4003-951f-b90be1dea2f8
 Status: published
-Date: 2017-09-06 07:59:12
+Date: 2017-10-22 12:32:25
 Author: Ben Chuanlong Du
 Slug: install-gnu-utils-using-macports
 Title: Install GNU Utils Using MacPorts
@@ -16,11 +16,11 @@ but rather for convenient reference of the author and future improvement.
 
 
 
-export PATH=/opt/local/libexec/gnubin：/opt/local/bin:/opt/local/sbin:$PATH
-export MANPATH=/opt/local/share/man:$MANPATH
+    export PATH=/opt/local/libexec/gnubin：/opt/local/bin:/opt/local/sbin:$PATH
+    export MANPATH=/opt/local/share/man:$MANPATH
 
-sudo port install file
-sudo port install coreutils
+    sudo port install file
+    sudo port install coreutils
 
 
 ## Issues

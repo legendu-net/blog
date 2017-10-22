@@ -2,7 +2,7 @@ UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: SSH Tips
-Date: 2017-08-26 21:50:44
+Date: 2017-10-22 13:49:47
 Slug: ssh-tips
 Category: Software
 Tags: tips, SSH, software, remote, Linux
@@ -12,44 +12,46 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
  
-1. it seems that if you use the local ip address, the port number is not important ...
+1. It seems that if you use the local ip address, 
+    the port number is not important.
 
-2. it might be that the server cannot stand the traffic ...
-it seems that it dies if I copy lots of files into it ...
+2. It might be that the server cannot stand the traffic ...
+    it seems that it dies if I copy lots of files into it ...
 
 3. when use sshfs and fuse, you want to add your user account into the fuse group, 
-sudo usermod -aG fuse dclong, reboot is required!!!
+
+        gpasswd -a dclong fuse
+        newgrp fuse
 
 4. best to set no password for public keys, 
-though it's not very secure, 
-it saves lots of potential problems, such as keyring management, 
-ssh key for cron and so on
+    though it's not very secure, 
+    it saves lots of potential problems, such as keyring management, 
+    ssh key for cron and so on
 
 5. must use no passphrase for ssh so that ssh works
-for duplicity and so on,
-many program rely on this, so you'd better not set passphrase for ssh
+    for duplicity and so on,
+    many program rely on this, so you'd better not set passphrase for ssh
 
 6. about debian laptop not recognized on local network, it's really strange
-probably because of debian sid
+    probably because of debian sid
 
 7. ip can be important if you use ssh, 
-make sure your ip is allowed to ...
+    make sure your ip is allowed to ...
 
 ## SSH Proxy for SSH
 
 1. wildcard is supported
-```SSH
-Host *.xxx.xxx.com !*xxx*.xxx.xxx.com 
-ProxyCommand ssh proxy_server_address -W %h:%p   
-Host *
-```
+
+    Host *.xxx.xxx.com !*xxx*.xxx.xxx.com 
+    ProxyCommand ssh proxy_server_address -W %h:%p   
+    Host *
 
 ## SSH Socks Proxy for Other Applications
 
 First, start a proxy connection to a SSH server using the command below.
-```bash
-ssh -D port user@remote_ssh_server
-```
+
+    ssh -D port user@remote_ssh_server
+
 This will have you logged in as usually,
 and socks proxy can be used as long as you are connected.
 Then configure your application to use Socks5 proxy use the specified port.
@@ -57,14 +59,18 @@ The local DNS you use in China is probably contaminated
 and popular sites like Google, Facebook, etc. are not interpreted correctly.
 So if you are in China and use Firefox with Proxy,
 make sure to set `network.proxy.socks_remote_dns` to be true (follow the steps below).
+
 1. Open an empty tab in Firefox.
+
 2. Go to about:config in the URL bar.
+
 3. Search for `network.proxy.socks_remote_dns`. 
+
 4. Change the value to be `true`.
 
 ## SSH Tunel
 
-ssh -fND 1080 server
+    ssh -fND 1080 server
 
 [Proxy Using SSH Tunnel](https://www.systutorials.com/944/proxy-using-ssh-tunnel/)
 

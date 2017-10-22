@@ -1,6 +1,6 @@
 UUID: e5321142-cc73-4331-8a08-2e9a2f2db4ca
 Status: published
-Date: 2017-06-11 18:49:31
+Date: 2017-10-22 13:21:25
 Author: Ben Chuanlong Du
 Slug: pymysql-tips
 Title: PyMySQL Tips
@@ -24,10 +24,9 @@ sudo pip3 install PyMySQL
 
 1. Connection in PyMySQL is not autocommit by default. 
 You must commit to save your changes.
-```Python
-# suppose conn is the connection object
-conn.commit()
-```
+
+        # suppose conn is the connection object
+        conn.commit()
 
 2. parameterized sql: %s instead of ?
 
@@ -36,52 +35,42 @@ conn.commit()
 
 ## PyMYSQL vs MySQLdb
 
-PyMySQL and MySQLdb provide the same functionality - 
+`PyMySQL` and `MySQLdb` provide the same functionality - 
 they are both database connectors. 
-The difference is in the implementation where MySQLdb is a C extension and PyMySQL is pure Python.
+The difference is in the implementation where `MySQLdb` is a C extension and `PyMySQL` is pure Python.
 
-There are a few reasons to try PyMySQL:
+There are a few reasons to try `PyMySQL`:
 
-it might be easier to get running on some systems
-it works with PyPy
-it can be "greened" and works with gevent
+1. it might be easier to get running on some systems
+
+2. it works with PyPy
+
+3. it can be "greened" and works with gevent
 
 
 ## Issues
 
-pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' 
-([Errno 2] No such file or directory)")
+    pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' 
+    ([Errno 2] No such file or directory)")
 
 在所有信息正确的情况下可能是my.conf下开启了skip-networking或绑定了IP
 
-skip-networking
-bind-address = 127.0.0.1
+    skip-networking
+    bind-address = 127.0.0.1
 
 若要开启skip-networking的情况下使用，则用unix_socket来连接
 
-pymysql.connect(host='127.0.0.1',
-unix_socket='/xxx/mysqld.sock',
-user='root',
-passwd='root',
-db='test',
-charset='utf8')
+    pymysql.connect(host='127.0.0.1',
+    unix_socket='/xxx/mysqld.sock',
+    user='root',
+    passwd='root',
+    db='test',
+    charset='utf8')
 
+## Configuration
 
-
-```SQL
-show databases;
-
-create database database_name;
-
-
-use database;
-
-show tables;
-```
-
-
-Configuration
 1. bind-address
+
 2. admin user (non root)
 
 ```SQL

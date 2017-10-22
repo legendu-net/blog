@@ -1,6 +1,6 @@
 UUID: ded4fb17-43c4-46e1-bafd-1d47789bedc9
 Status: published
-Date: 2017-08-26 09:39:27
+Date: 2017-10-22 12:21:19
 Author: Ben Chuanlong Du
 Slug: docker-image-and-container-management
 Title: Manage Docker Images and Containers 
@@ -59,9 +59,9 @@ Or another simpler way is to run
 
 But it will not work in the following two cases. 
 
-    1. if hostname is explicitly specified with `--hostname` flag. 
+1. if hostname is explicitly specified with `--hostname` flag. 
 
-    2. when using `--net=host` mode.
+2. when using `--net=host` mode.
 
 
 ## Import/Export Docker Container/Images

@@ -1,6 +1,6 @@
 UUID: 045df550-e675-4a90-a9f2-0081631b165d
 Status: published
-Date: 2017-09-06 08:06:03
+Date: 2017-10-22 12:28:14
 Author: Ben Chuanlong Du
 Slug: docker-in-WSL
 Title: Docker in WSL
@@ -21,22 +21,23 @@ there are still all kinds of issues running Docker in WSL.
 
 ## Use Docker on Windows in WSL
 
-1. Install Docker on Windows
+### Install Docker on Windows
 
-To install the Docker engine on Windows, just go to docker.com and download the appropriate distribution. Also, make sure hardware virtualization is enabled and Hyper-V is installed, lest the engine won’t start.
-Shortcut: Install Windows 10 Creators Update
+To install the Docker engine on Windows, 
+just go to docker.com and download the appropriate distribution. 
+Also, 
+make sure hardware virtualization is enabled and Hyper-V is installed, 
+lest the engine won’t start.
 
-With Windows 10 Creators Update*, accomplishing all of this has become a lot simpler, since it allows you to run Windows executables from Bash. Just add these two lines to your .bashrc and you’re done!
-PATH="$HOME/bin:$HOME/.local/bin:$PATH" PATH="$PATH:/mnt/c/Program\ Files/Docker/Docker/resources/bin"
-1
-2
-    
+### Run Docker in WSL
+
+With Windows 10 Creators Update*, 
+accomplishing all of this has become a lot simpler, 
+since it allows you to run Windows executables from Bash. 
+Just add these two lines to your .bashrc and you are done!
+
     PATH="$HOME/bin:$HOME/.local/bin:$PATH"
     PATH="$PATH:/mnt/c/Program\ Files/Docker/Docker/resources/bin"
-
-    You can now run docker --version from Bash, and you don’t even have to read the rest of this blog post :)
-
-    *) Windows 10 Creators Update is available to Insiders since April 11, 2017, and will be released to the public on April 25, 2017.
 
 ## Related Articles 
 

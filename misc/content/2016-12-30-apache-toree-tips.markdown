@@ -1,6 +1,6 @@
 UUID: 7cda85b2-c49e-412a-8760-67b38eab1ebe
 Status: published
-Date: 2017-08-26 20:21:31
+Date: 2017-10-22 12:41:58
 Author: Ben Chuanlong Du
 Slug: apache-toree-tips
 Title: Apache Toree Tips
@@ -18,26 +18,24 @@ but rather for convenient reference of the author and future improvement.
 
 ## Dependency Managemnt
 
-```scala
-%AddJar jar_url
-%AddDeps
-printHelp(printStream, """%AddDeps my.company artifact-id version""")
-```
+    %AddJar jar_url
+    %AddDeps
+    printHelp(printStream, """%AddDeps my.company artifact-id version""")
 
 
-%AddDeps com.databricks spark-csv_2.10 1.2.0 --transitive
+    %AddDeps com.databricks spark-csv_2.10 1.2.0 --transitive
 
-kernel.magics.addDeps("com.databricks spark-csv_2.10 1.2.0 --transitive")
-
-
-%AddDeps org.apache.spark spark-mllib_2.10 1.6.2
-%AddDeps com.github.haifengl smile-core 1.1.0 --transitive
-%AddDeps io.reactivex rxscala_2.10 0.26.1 --transitive
-%AddDeps com.chuusai shapeless_2.10 2.3.0 --repository https://oss.sonatype.org/content/repositories/releases/
-%AddDeps org.tmoerman plongeur-spark_2.10 0.3.9 --repository file:/Users/tmo/.m2/repository
+    kernel.magics.addDeps("com.databricks spark-csv_2.10 1.2.0 --transitive")
 
 
-%AddDeps "graphframes" % "graphframes" % "0.1.0-spark1.6" --repository http://dl.bintray.com/spark-packages/maven
+    %AddDeps org.apache.spark spark-mllib_2.10 1.6.2
+    %AddDeps com.github.haifengl smile-core 1.1.0 --transitive
+    %AddDeps io.reactivex rxscala_2.10 0.26.1 --transitive
+    %AddDeps com.chuusai shapeless_2.10 2.3.0 --repository https://oss.sonatype.org/content/repositories/releases/
+    %AddDeps org.tmoerman plongeur-spark_2.10 0.3.9 --repository file:/Users/tmo/.m2/repository
+
+
+    %AddDeps "graphframes" % "graphframes" % "0.1.0-spark1.6" --repository http://dl.bintray.com/spark-packages/maven
 
 
 Currently it supports only https://repo1.maven.org/maven2/, but not all projects deploy there.

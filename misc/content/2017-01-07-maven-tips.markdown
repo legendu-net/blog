@@ -1,6 +1,6 @@
 UUID: f112de65-cdbc-4cc5-aa90-ab958d217bd5
 Status: published
-Date: 2017-08-26 20:05:33
+Date: 2017-10-22 12:41:04
 Author: Ben Chuanlong Du
 Slug: maven-tips
 Title: Maven Tips
@@ -17,9 +17,11 @@ but rather for convenient reference of the author and future improvement.
 [The Central Repository](http://search.maven.org/#search)
 
 $HOME/.m2
+
 maven: shade plugin, scala compile plugin, exclude manifest files, ...
 
 import as maven project ...
+
 find an updated version of scala archetype for maven
 
 ```sh
@@ -30,10 +32,12 @@ mvn build
 mvn -e build
 ```
 
-intellij scala mavn archtype is too ooooooooooold!!! wait for generate complete and then manaully update the pom file
+intellij scala mavn archtype is too ooooooooooold!!! 
+wait for generate complete and then manaully update the pom file
 
 
 Maven
+
 https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/hdinsight/hdinsight-apache-spark-create-standalone-application.md
 
 

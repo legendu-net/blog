@@ -1,6 +1,6 @@
 UUID: bbf469f4-c773-4ff9-a7e1-0e43d8fbad10
 Status: published
-Date: 2017-09-06 08:02:05
+Date: 2017-10-22 12:23:51
 Author: Ben Chuanlong Du
 Slug: union-RDDs-in-spark
 Title: Union RDDs in Spark
@@ -19,11 +19,8 @@ No deduplication is done (to be efficient) when unioning RDDs.
 
 1. Union 2 RDDs.
 
-```scala
-rdd1.union(rdd_2)
-```
+        rdd1.union(rdd_2)
 
 2. Union multiple RDDs.
-```scala
-rdd = sc.union([rdd1, rdd2, rdd3])
-```
+
+        rdd = sc.union([rdd1, rdd2, rdd3])

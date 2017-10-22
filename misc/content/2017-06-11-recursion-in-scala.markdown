@@ -1,11 +1,11 @@
 UUID: 761ece83-262f-47cb-ac9b-1fcf7b1ec663
 Status: published
-Date: 2017-06-11 11:46:33
+Date: 2017-10-22 13:34:25
 Author: Ben Chuanlong Du
 Slug: recursion-in-scala
 Title: Recursion in Scala
 Category: Programming
-Tags: programming
+Tags: programming, Scala, recursion, tail recursion, tail recursive call
 
 **
 Things on this page are

@@ -1,6 +1,6 @@
 UUID: 3df72304-6f5c-44b8-aebd-db65163d617e
 Status: published
-Date: 2017-09-06 07:59:41
+Date: 2017-10-22 13:30:59
 Author: Ben Chuanlong Du
 Slug: macports-tips
 Title: MacPorts Tips
@@ -14,13 +14,13 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-sudo port selfupdate
+    sudo port selfupdate
 
-port search pkg
+    port search pkg
 
-sudo port install pkg
+    sudo port install pkg
 
-MacPorts behind Firewall
+## MacPorts behind Firewall
 
 1. use http instead of rsync 
 
@@ -41,11 +41,11 @@ https://destefano.wordpress.com/2011/03/18/macports-behind-a-proxy/
 
 https://samkhan13.wordpress.com/2012/06/15/make-macports-work-behind-proxy/
 
-export http_proxy=http://username:password@proxyURL:portNumber
-export HTTP_PROXY=http://username:password@proxyURL:portNumberexport 
-export ftp_proxy=ftp://username:password@proxyURL:portNumber
-export FTP_PROXY=ftp://username:password@proxyURL:portNumber
-export rsync_proxy=username:password@proxyURL:portNumber
-export RSYNC_PROXY=username:password@proxyURL:portNumber
+    export http_proxy=http://username:password@proxyURL:portNumber
+    export HTTP_PROXY=http://username:password@proxyURL:portNumberexport 
+    export ftp_proxy=ftp://username:password@proxyURL:portNumber
+    export FTP_PROXY=ftp://username:password@proxyURL:portNumber
+    export rsync_proxy=username:password@proxyURL:portNumber
+    export RSYNC_PROXY=username:password@proxyURL:portNumber
 
 Use `sudo port -d sync` instead of `sudo port selfupdate` to print debugging information while updating.

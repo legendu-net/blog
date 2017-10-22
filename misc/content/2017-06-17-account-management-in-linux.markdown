@@ -1,6 +1,6 @@
 UUID: 80bbd1f8-625d-4b40-860c-8dfb79c23d24
 Status: published
-Date: 2017-06-17 09:56:10
+Date: 2017-10-22 13:30:05
 Author: Ben Chuanlong Du
 Slug: account-management-in-linux
 Title: Account Management in Linux
@@ -26,9 +26,13 @@ useradd -o -m -u -g -d
 groupadd -o -g 
 ```
 
+## Group
+
+Add a user to a group.
 ```sh
-gpasswd
+gpasswd -a user_name group_name
 ```
+
 Get information about a group.
 ```sh
 getent group group_name

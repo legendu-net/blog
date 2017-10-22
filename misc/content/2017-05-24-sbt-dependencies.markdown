@@ -1,6 +1,6 @@
 UUID: ffbfdf36-86b4-48fa-a542-ed3afdc4c472
 Status: published
-Date: 2017-08-26 10:13:27
+Date: 2017-10-22 12:38:10
 Author: Ben Chuanlong Du
 Slug: sbt-dependencies
 Title: Scala Dependencies for SBT
@@ -13,6 +13,8 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+
 1. Joda Time
 
         "joda-time" % "joda-time" % "2.9.9"

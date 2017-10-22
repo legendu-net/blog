@@ -1,6 +1,6 @@
 UUID: d43839ed-ef6d-4e1b-8360-2145528057b9
 Status: published
-Date: 2017-08-26 21:34:08
+Date: 2017-10-22 12:59:02
 Author: Ben Chuanlong Du
 Slug: unit-test-for-scala
 Title: Unit Test for Scala
@@ -21,15 +21,15 @@ ScalaTest is more flexible is recommended.
 
 http://www.scalatest.org/
 
-Keep eyes on sbt-idea ..., check whether a plugin for IntelliJ is available, ...
+Keep eyes on sbt-idea ..., 
+check whether a plugin for IntelliJ is available, ...
 
 https://github.com/mpeltonen/sbt-idea
 
 
 
-
-
 It seems that supersafe has issues with scala 2.12.2 ...
+
 https://github.com/scalatest/scalatest/issues/1156
 
 
@@ -37,14 +37,16 @@ https://github.com/scalatest/scalatest/issues/1156
 
 Try the following:
 
-When we add the plug-in in projects/build.sbt:
+When we add the plug-in in `projects/build.sbt`:
 
-addSbtPlugin("com.artima.supersafe" % "sbtplugin" % "1.1.2")
+    addSbtPlugin("com.artima.supersafe" % "sbtplugin" % "1.1.2")
+
 We must not add the above plug-in anywhere else
 
-Add to ~/.sbt/0.13/global.sbt
+Add to `~/.sbt/0.13/global.sbt`
 
-resolvers += "Artima Maven Repository" at "http://repo.artima.com/releases"
+    resolvers += "Artima Maven Repository" at "http://repo.artima.com/releases"
+
 Do not add this resolver anywhere else
 
 Make sure you have an empty line before and after each of the sbt lines
@@ -52,6 +54,6 @@ Make sure you have an empty line before and after each of the sbt lines
 
 ## Specs2
 
-"org.specs2" % "specs2-core_2.11" % "3.7.2" % "test",
+    "org.specs2" % "specs2-core_2.11" % "3.7.2" % "test",
 
-"org.specs2" % "specs2-mock_2.11" % "3.7.2" % "test"
+    "org.specs2" % "specs2-mock_2.11" % "3.7.2" % "test"

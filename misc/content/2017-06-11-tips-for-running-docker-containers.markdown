@@ -1,6 +1,6 @@
 UUID: c744cc45-eaa3-46e4-925d-a298beb815c0
 Status: published
-Date: 2017-06-11 18:35:08
+Date: 2017-10-22 13:31:44
 Author: Ben Chuanlong Du
 Slug: tips-for-running-docker-containers
 Title: Tips for Running Docker Containers
@@ -28,9 +28,8 @@ make sure that you have r/w access to it otherwise the Docker container might fa
 
 6. docker: Error response from daemon: Get https://registry-1.docker.io/v2/dclong/jupyterlab-rstudio/manifests/latest: dial tcp 50.17.62.194:443: getsockopt: connection refused just restart docker deamon resolves the issue ...
 retry or restart the docker daemon.
-```bash
-service docker restart
-```
+
+        service docker restart
 
 6. If you are in the `docker` group, 
 you can run docker commands without `sudo`,

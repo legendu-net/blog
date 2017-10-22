@@ -1,6 +1,6 @@
 UUID: 14b087dd-1a27-4fcf-9f46-622f5375c616
 Status: published
-Date: 2017-08-26 09:29:27
+Date: 2017-10-22 12:21:29
 Author: Ben Chuanlong Du
 Slug: list-running-jupyter-notebook-servers
 Title: List Running Jupyter Notebook Servers
@@ -22,7 +22,7 @@ a better alternative is to list running servers using Python script.
     servers = list(notebookapp.list_running_servers())
     print servers
 
-For more please refer to the
+For more please refer to 
 <https://stackoverflow.com/questions/41782255/how-to-get-the-current-jupyter-notebook-servers-in-python>.
 
 

@@ -1,11 +1,11 @@
 UUID: 902f18b9-7675-4cfe-9e87-26f56e722fbd
 Status: published
-Date: 2017-07-01 14:38:36
+Date: 2017-10-22 13:47:13
 Author: Ben Chuanlong Du
 Slug: proxychains-tips
-Title: Proxychains Tips
+Title: ProxyChains Tips
 Category: Software
-Tags: Software, proxychains, network, web, proxy
+Tags: Software, ProxyChains, network, web, proxy
 
 **
 Things on this page are
@@ -14,7 +14,7 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-Example of proxychains configuration.
+Example of ProxyChains configuration.
 
 ```text
 strict_chain
@@ -51,7 +51,7 @@ socks5     127.0.0.1 1080
         [proxychains] preloading /usr/local/lib/libproxychains4.so
         proxychains can't load process....: No such file or directory
 
-    It is possibly due to alias used with proxychains.
+    It is possibly due to alias used with ProxyChains.
     For example, 
     I have the alias defined.
 

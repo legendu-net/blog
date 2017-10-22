@@ -1,11 +1,11 @@
 UUID: eb376cce-1701-4c29-933b-ef40621a7750
 Status: published
-Date: 2017-06-11 11:27:00
+Date: 2017-10-22 13:37:40
 Author: Ben Chuanlong Du
 Slug: null,-none-and-alike-in-Scala
 Title: Null, None and Alike in Scala
 Category: Programming
-Tags: programming, null, none, 
+Tags: programming, null, none, Scala
 
 **
 Things on this page are
@@ -42,4 +42,6 @@ which is a way to avoid null pointer exception.
 
 Think- AnyRef == Object in Java.
 
-The above is a breif summary of a wonderful post by Matt Malone where he has explained all these concepts in depth with examples. Read the blog post here.
+## Ref
+
+http://oldfashionedsoftware.com/2008/08/20/a-post-about-nothing/

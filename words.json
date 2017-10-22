@@ -5,7 +5,7 @@
     ["From", "from"], ["Into", "into"], 
     ["3d", "3D"], ["Id", "ID"], ["Io", "IO"], ["Ms", "MS"], ["Os", "OS"], 
     ["Aix", "AIX"], ["Ibm", "IBM"], ["Cpp", "C++"], ["Gdb", "GDB"], ["Gnu", "GNU"],
-    ["Iml", "IML"], ["Nfs", "NFS"], ["Kde", "KDE"], ["Pdf", "PDF"],
+    ["Iml", "IML"], ["Jar", "JAR"], ["Nfs", "NFS"], ["Kde", "KDE"], ["Pdf", "PDF"],
     ["Ppt", "PPT"], ["Rdd", "RDD"], ["Rdds", "RDDs"],
     ["Sas", "SAS"], ["Sbt", "sbt"], ["Sed", "sed"], ["Sql", "SQL"], ["Ssd", "SSD"], ["Ssh", "SSH"],
     ["Vba", "VBA"], ["Vpn", "VPN"], ["Wsl", "WSL"],
@@ -22,10 +22,10 @@
     ["Autokey", "AutoKey"],
     ["Add-Ons", "Add-ons"],
     ["Ipython", "IPython"],
+    ["Scalajs", "ScalaJS"],
     ["Pymysql", "PyMySQL"],
     ["Rstudio", "RStudio"],
     ["Stringi", "stringi"]
-    ["Homebrew", "HomeBrew"],
     ["Kdevelop", "KDevelop"],
     ["Macports", "MacPorts"], ["Noscript", "NoScript"],
     ["Mobaxterm", "MobaXterm"],
@@ -38,7 +38,7 @@
     ["Crunchbang", "CrunchBang"],
     ["Jupyterlab", "JupyterLab"],
     ["Teamviewer", "TeamViewer"],
-    ["IJavascript", "IJavascript"], ["Itypescript", "ITypescript"],
+    ["IJavascript", "IJavascript"], ["Itypescript", "ITypescript"], ["Proxychains", "ProxyChains"],
     ["Youcompleteme", "YouCompleteMe"],
     ["Intellij Idea", "IntelliJ IDEA"]
 ]

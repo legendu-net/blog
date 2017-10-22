@@ -1,11 +1,11 @@
 UUID: 17d19cd8-0daa-4a52-a403-5d7e49341c9e
 Status: published
-Date: 2017-08-26 21:44:33
+Date: 2017-10-22 13:51:30
 Author: Ben Chuanlong Du
 Slug: scalajs-tips
-Title: Scalajs Tips
+Title: ScalaJS Tips
 Category: Programming
-Tags: programming
+Tags: programming, ScalaJS, Scala, JavaScript, JS
 
 **
 Things on this page are

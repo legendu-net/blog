@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2016-11-20 20:08:05
+Date: 2017-10-22 10:25:16
 Slug: regex-equivalence
 Title: Regular Expression Equivalence
 Category: Programming
@@ -157,7 +157,7 @@ gsub('\s', "", c("abc ", "hello"))
 [[:space:]]
 
 ### sed
-`\s`
+[[:space:]] (recommended) or `\s`
 ### egrep
 `\s, [[:space:]]`
 ### grep

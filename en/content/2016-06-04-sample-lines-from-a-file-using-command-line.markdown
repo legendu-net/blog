@@ -1,11 +1,18 @@
 UUID: 1f35c839-fcf9-46f5-9c77-002c630d2a6c
 Status: published
-Date: 2016-07-12 23:10:41
+Date: 2017-10-28 10:52:36
 Author: Ben Chuanlong Du
 Slug: sample-lines-from-a-file-using-command-line
 Title: Sample Lines from a File Using Command Line
 Category: Linux
 Tags: Linux, shell, command line, sample, shuffle, shuf, q, text, SQL
+
+
+NOTE: the article talks about sampling "lines" rather than "records". 
+If a records can occupy multiple lines, 
+e.g., if any field contains a new line (`\n`),
+the following tutorial does not work 
+and you have to fall back to more powerful tools such as Python or R.
 
 Let's say that you want sample 500 lines (without replacement) from a file.
 This can be done easily using a scraping language such as R or Python. 
@@ -36,6 +43,10 @@ then you can use the following command to sample 500 lines from it.
 The option `-O` outputs the header also.
 ```sh
 q -t -H -O 'select * from file order by random() limit 500'
+```
+`q` can be installed with the command below. 
+```
+wajig install q-text-as-data
 ```
 
 Even thougt I'm Linux fan, 

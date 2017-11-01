@@ -1,6 +1,6 @@
 UUID: c2334373-2554-4d65-9911-5836efc6bd9d
 Status: published
-Date: 2017-02-18 11:46:23
+Date: 2017-11-01 23:51:11
 Author: Ben Chuanlong Du
 Slug: print-rows-from-a-text-file
 Title: Print Rows from a Text File
@@ -26,3 +26,4 @@ the following command efficiently prints lines 10000000 to 10000020 of the file.
 ```bash
 sed -n '10000000,10000020p; 10000021q' file_name 
 ```
+Thi way is faster than `awk` (but slower without the quitting early trick) on large files.

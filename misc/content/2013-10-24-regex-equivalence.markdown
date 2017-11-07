@@ -1,11 +1,11 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-10-22 10:25:16
+Date: 2017-11-07 22:34:00
 Slug: regex-equivalence
 Title: Regular Expression Equivalence
 Category: Programming
-Tags: tips, regex, equivalence, regular expression, regex, Python, R, CRAN, Perl, SAS, grep, egrep
+Tags: tips, regex, equivalence, regular expression, regexp, Python, R, CRAN, Perl, SAS, grep, egrep
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
@@ -13,7 +13,7 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 
-1. If you use a regex multiple times, 
+1. If you use a regular expression multiple times, 
 then there is advantage to complie it and use the compiled version ... 
 as everyone use a plain regrex, 
 it is compiled and then used ...
@@ -29,9 +29,10 @@ It is suggested that you use regular expression modifiers when possible.
 Both regular expression in the base package and the stringi package fully supported modifiers.
 
 ### Python
+
 Partial supported.
-Tunning modifiers on is supported
-however turnning modifiers off is not supported.
+Turning modifiers on is supported
+however turning modifiers off is not supported.
 Modifiers (once turned on) are applied to the entire regular expression
 and cannot be turned off.
 

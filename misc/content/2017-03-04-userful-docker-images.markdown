@@ -1,6 +1,6 @@
 UUID: cdc960ec-1edf-4d17-a081-3ad9c7b11702
 Status: published
-Date: 2017-07-27 12:24:58
+Date: 2017-11-12 14:13:10
 Author: Ben Chuanlong Du
 Slug: userful-docker-images
 Title: Userful Docker Images
@@ -27,13 +27,23 @@ but rather for convenient reference of the author and future improvement.
 3. rocker (R in Docker)
 4. mysql
 
-## Official Images
+## Ubuntu 
 
 1. [ubuntu](https://hub.docker.com/_/ubuntu/)
 
-2. [CentOS](https://hub.docker.com/r/_/centos/)
+This is the default/offical Ubuntu Docker image.
 
-3. [MySQL](https://hub.docker.com/_/mysql/)
+2. [phusion/baseimage](https://hub.docker.com/r/phusion/baseimage/)
+
+It cliams to be better than the default/official Ubuntu Docker image. 
+
+## CentOS
+
+1. [CentOS](https://hub.docker.com/r/_/centos/)
+
+## MySQL
+
+1. [MySQL](https://hub.docker.com/_/mysql/)
 
 ## Others' Docker Images
 

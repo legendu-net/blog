@@ -1,8 +1,11 @@
 UUID: 79c95947-045f-40e9-b781-5210b10756c2
 Status: published
-Date: 2017-10-22 10:40:09
+Date: 2017-11-12 15:07:59
 Author: Ben Chuanlong Du
 Slug: configure-jupyter-notebook-permissions
+Title: Configure Jupyte Notebook Permissions
+Category: Software
+Tags: software, Jupyter Notebook, JupyterLab, permission, umask
 
 
 

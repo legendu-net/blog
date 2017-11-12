@@ -1,8 +1,11 @@
 UUID: 772b0c6e-bd2d-4cd8-82a6-88957d7d9002
 Status: published
-Date: 2017-10-22 10:16:15
+Date: 2017-11-12 15:12:42
 Author: Ben Chuanlong Du
 Slug: diff-tools
+Title: Diff Tools
+Category: Software
+Tags: diff, tools, Linux, cli, command line, colordiff, vimdiff
 
 
 colordiff great but only showing line level difference

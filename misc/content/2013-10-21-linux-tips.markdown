@@ -2,7 +2,7 @@ UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for Linux
-Date: 2017-03-18 20:10:13
+Date: 2017-11-16 00:15:26
 Slug: linux-tips
 Category: Linux
 Tags: tips, Linux
@@ -13,6 +13,16 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+## Tricks and Traps
+
+1. Use full paths of commands when you use a batch account
+or schedule a cron job.
+The reason is that batch account 
+and/or cron might have different environment from your personal account.
+So if a shell script works in your personal account,
+it might not work in a batch account or in cron. 
+
 
 1. [explainshell.com](http://www.explainshell.com/) 
 is a great place for learning shell.
@@ -219,7 +229,8 @@ Though `/dev/urandom` might contain less entropy than `/dev/random` does,
 it is still valide for usual use.
 
 ## Copy using UI
-5. Many Linux/Unix realted applications use `copy on selection`.
+
+1. Many Linux/Unix realted applications use `copy on selection`.
 This features makes things confusing sometimes. 
 For example, if you copy things from one place and want to paste it into a terminal which has `copy on selection` enable.
 Then you click on the terminal to paste. 

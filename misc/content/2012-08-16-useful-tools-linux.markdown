@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-04-22 22:41:25
+Date: 2017-11-15 23:32:11
 Slug: useful-tools-linux
 Title: Useful Tools in Linux
 Category: OS
@@ -93,39 +93,69 @@ to find software/tools for all kinds of purposes.
 ## Backup 
 
 ### Cloud Backup Tools
-9. Network Attach Storage (NAS)
-1. Storage Made Simple (SME)
+
+1. Network Attach Storage (NAS)
+
+2. Storage Made Simple (SME)
+
 #### Centralized 
+
 0. Amazon S3 
     - AeroFS can backup to Amazon S3
     - s3cmd is a command line client for Linux
+
 1. Dropbox
+
 2. TeamDrive (secure, fast)
+
 3. Bitcasa (security, infinite storage)
+
 2. Google Drive
+
 #### Decentralized (private, security)
+
 2. BitTorrent Sync (BTSync)
+
 ##### Pros
+
     1. secure
+
     2. free
+
     3. no limit on files except the limit of your own disk
+
 ##### Cons
+
     1. beta version, not stable enough
+
     2. versioning is a little bit tricky
+
     3. no GUI version for Linux
 
 5. AeroFS (can use Amazon S3 as the central repository)
+
 3. Syncthing
 
 ### Non-cloud Backup Tools
-1. FreeFileSync (a very good synchronization software written in C++, but bundled with malware now)
-2. rsync (1-way synchronization)
+
+1. rsync (1-way synchronization)
+
 3. rsnapshot (incremental backup)
+
 4. duplicity (incremental backup with encryption and compression)
+
+5. borg
+
 6. Back In Time
+
 5. unison (2-way synchronization, not a good solution compared to cloud backup tools)
+
 7. Bacula (comprehensive backup tool)
+
 8. BackupPC
+
+1. FreeFileSync (a very good synchronization software written in C++, but bundled with malware now)
+
 
 ### File Transfer
 
@@ -371,7 +401,7 @@ A open source community edition is available for users.
 
 #### R
 
-1. RStudio (for R, Markdown ,C++, Latex, etc.) 
+1. RStudio (for R, Markdown ,C++, LaTex, etc.) 
 
 #### Markdown
 
@@ -385,17 +415,19 @@ A open source community edition is available for users.
 
 4. JuliaStudio (for Julia)
 
-#### Latex
+#### LaTex
 
-6. Bakoma (Great for Latex)
+6. Bakoma (Great for LaTex)
 
-7. Texstudio (latex)
+7. TexStudio (LaTex)
 
 8. TexMacs (WYSIWYG, convert to Tex available)
 
 9. ShareLatex (on-line collaborative editing)
 
 10. WriteLatex (on-line collaborative editing)
+
+11. [OverLeaf](https://www.overleaf.com/) for online LaTex editing and publishing
 
 #### SQL
 

@@ -1,6 +1,6 @@
 UUID: 7abb905a-186d-4944-98be-c8b08ea9e83d
 Status: published
-Date: 2017-01-02 22:38:27
+Date: 2017-11-16 00:06:05
 Author: Ben Chuanlong Du
 Slug: useful-firefox-add-ons
 Title: Useful Firefox Add-ons
@@ -16,9 +16,16 @@ but rather for convenient reference of the author and future improvement.
 
 
 ## Navigation & Shortcut
+
+1. tridactyl
+
+2. vimium-FF
+
 1. Vimperator 
 
-    Vim-like key bindings, the ultimate plug-in for Firefox
+    - Vim-like key bindings, the ultimate plug-in for Firefox
+
+    - outdated in Firefox 57+
 
 2. Pentadactyl
 
@@ -70,6 +77,8 @@ Also Pentadactyl focuses more on 1:1 Vim compatibility.
 ## Proxy
 
 - Proxy Switcher
+
+- Decentraleyes
 
 ## Feeds
 

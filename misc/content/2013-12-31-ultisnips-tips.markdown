@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2015-08-02 12:16:49
+Date: 2017-11-16 00:59:21
 Slug: ultisnips-tips
 Title: UltiSnips Tips
 Category: Software
@@ -11,6 +11,13 @@ Tags: snippet, UltiSnips, tips, software
 Things on this page are fragmentary and immature notes/thoughts of the author. 
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+1. Python3 is supported!
+
+2. Your auto completiion scripts requires `python-dateutil`. 
+(check whether you can get rid of this dependency ...)
+
+        pip3 install python-dateutil
 
 1. ultisnips list snippet does not show regex snippet. 
 however, YouCompleteMe solves this problem perfectly!!!
@@ -167,3 +174,12 @@ you can define different keys and then use superTab to help you
 
 5. Ultisnips import Multiple files ..., one compelete
 the author does not like this idea
+
+
+## Useful Snippets
+
+### Date for all
+d-
+d/
+dns
+tns

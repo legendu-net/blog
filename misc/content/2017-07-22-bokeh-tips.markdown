@@ -1,6 +1,6 @@
 UUID: b67401b6-5ce8-455d-883f-ac02e2f678b1
 Status: published
-Date: 2017-08-26 21:12:26
+Date: 2017-11-18 10:28:59
 Author: Ben Chuanlong Du
 Slug: bokeh-tips
 Title: Bokeh Tips
@@ -32,3 +32,9 @@ be careful ...
 ```
 bokeh serve --allow-websocket-origin=server_ip:5006 sliders.py
 ```
+
+## jupyterlab_bokeh
+
+    wajig install libgif-dev
+    sudo jupyter labextension install jupyterlab_bokeh
+

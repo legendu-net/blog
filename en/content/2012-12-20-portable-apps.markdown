@@ -1,6 +1,6 @@
 UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
-Date: 2014-09-13 20:25:18
+Date: 2017-11-18 09:51:49
 Author: Ben Chuanlong Du
 Slug: portable-apps
 Category: Software
@@ -40,7 +40,7 @@ Though CygwinPortable has built-in Python support,
 the Python coming with it has limitations due to library dependencies.
 For example, 
 some Python packages such as FuzzyWuzzy and NLTK fails to work in CygwinPortable.
-[Portable Python](http://portablepython.com/) is good version of portable Python.
+[Anaconda Python](http://portablepython.com/) is great portable distribution of Python.
 It comes with many popular Python packages 
 such as NumPy, SciPy, Matplotlib, PIL, PyQt, etc.
 and also code editors such as PyCharm, PyScripter and IDLE.

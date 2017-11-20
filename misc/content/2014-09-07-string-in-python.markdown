@@ -1,6 +1,6 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Date: 2015-05-26 00:58:55
+Date: 2017-11-18 09:49:58
 Author: Ben Chuanlong Du
 Slug: string-in-python
 Title: String in Python
@@ -14,8 +14,10 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+1. `\` needs to be escaped (i.e., use `\\`) in triple quotes.
 
-1. `\` to break a line like bash, but it has undesirable effect on string,
+
+2. `\` to break a line like bash, but it has undesirable effect on string,
 or you can use triple quotes
 ```Python
 """..."""/'''...''', 

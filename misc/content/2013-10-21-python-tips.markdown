@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-04-23 13:06:45
+Date: 2017-11-18 09:59:47
 Slug: python-tips
 Title: Some Fragmentary Tips About Python
 Category: Programming
@@ -24,6 +24,22 @@ It is not meant to readers but rather for convenient reference of the author and
 ## Python Conference
 [PyCon](https://us.pycon.org/2017/)
 [EuroPython](https://ep2017.europython.eu/en/)
+
+## Distirbutions
+
+### Anaconda Python
+
+Anaconda Python is great and provides an all-in-one installer. 
+If you want to install Python on a server that you do not have sudo permission,
+Anaconda Python is a great choice. 
+It is installed to your home directory by default.
+
+### PyPy
+
+Python implemented in Python, which has JIT support. 
+However, 
+it is not useful in pratice 
+unless it resolves the issue of numerous C-based packages.
 
 ## Configuration
 

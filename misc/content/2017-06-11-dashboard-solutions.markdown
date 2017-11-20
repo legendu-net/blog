@@ -1,6 +1,6 @@
 UUID: 5871584f-b78d-48a0-a7e4-3b307f7af6bf
 Status: published
-Date: 2017-07-27 11:32:08
+Date: 2017-11-18 10:33:55
 Author: Ben Chuanlong Du
 Slug: dashboard-solutions
 Title: Dashboard Solutions
@@ -25,6 +25,8 @@ JupyterLab plans to support dashboard.
 Currently, you can use the Jupyter Dashboard.
 
 [Jupyer Dashboard Docker Deploy](https://github.com/jupyter-incubator/dashboards_setup/tree/master/docker_deploy)
+
+## HVF/franchise
 
 ## [Bowtie](https://github.com/jwkvam/bowtie)
 

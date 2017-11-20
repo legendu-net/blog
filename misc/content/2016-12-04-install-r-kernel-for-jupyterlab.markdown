@@ -1,6 +1,6 @@
 UUID: 3fb54c7a-12bb-443b-817b-5aef23d29b8c
 Status: published
-Date: 2017-03-01 23:13:06
+Date: 2017-11-18 10:11:13
 Author: Ben Chuanlong Du
 Slug: install-r-kernel-for-jupyterlab
 Title: Install R Kernel for JupyterLab
@@ -82,8 +82,17 @@ sudo chown -R username:usergroup ~/.local/share/jupyter
 nohup jupyter lab &
 ```
 
-## Trouble Shooting
+## Issues
 
-1. Notice that you'd better turn off proxies while using JupyterLab. 
+1. Matrices are not displayed correctly.
+They are shown as vectors instead.
+However,
+data frames are displayed correctly.
 
+2. flush.console does not work well.
+
+3. .Last.value retrieves the return value of the last expression in R.
+It is not working in Jupyter 0.7 or older.
+
+4. IRKernel does not implement magics currently.
 

@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2016-08-15 21:44:29
+Date: 2017-11-21 22:47:30
 Slug: sed-tips
 Title: Tips for "sed"
 Category: Software
@@ -99,4 +99,15 @@ sed 's/\(s[0-9]\{1,2\}\)" "\(t[0-9]\{1,2\}\)/\1-\2/g' testing.txt
 sed -i '1 s_^_#!/bin/bash\n_' *.txt
 ```
 
+1. Get rid of lines matching `^user_id,.*` with the 1st line skipped.
+    This is helpful when you merge multiple text files with headers 
+    (e.g., output of Spark with headers).
+    This commands help you get rid of duplicated header lines. 
+    Of course, 
+    you have replace the regular expression `^user_id,.*` with an appropriate one.
 
+        sed -i '2,$ s/^user_id,.*$//g' data.csv 
+
+2. Get rid of escaped double quotes (`\"`).
+
+        sed -i 's/\\"//g' data.csv

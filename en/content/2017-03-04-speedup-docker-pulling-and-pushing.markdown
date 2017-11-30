@@ -1,6 +1,6 @@
 UUID: 709db98e-f0f6-456c-8fbd-248f28157e98
 Status: published
-Date: 2017-03-04 15:48:24
+Date: 2017-11-29 20:28:31
 Author: Ben Chuanlong Du
 Slug: speedup-docker-pulling-and-pushing
 Title: Speedup Docker Pulling and Pushing
@@ -8,6 +8,18 @@ Category: Software
 Tags: software, Docker, speedup, performance, DaoCloud
 
 Pulling/pushing Docker images is extremely slow in China. 
+There are a few ways to speed up docker pulling/pushing in China.
+
+## Using the Official China Mirror 
+
+Now the best way is to use the offical China mirror.
+Please refer to 
+[Docker 中国官方镜像加速](https://www.docker-cn.com/registry-mirror)
+for details.
+
+
+## Old Way 
+
 One way to speedup Docker visiting is to use [DaoCloud](https://www.daocloud.io/) as a proxy.
 All you have to do is simply adding the following line into the file `/etc/default/docker`.
 ```text

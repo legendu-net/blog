@@ -1,9 +1,9 @@
 UUID: 64ffad7b-8360-478c-a755-c5337b0fa48d
 Status: published
-Date: 2017-11-18 10:16:52
+Date: 2017-12-03 00:40:04
 Author: Ben Chuanlong Du
-Slug: useful-extensions-for-jupyterlab
-Title: Useful Extensions for JupyterLab
+Slug: useful-tools-extensions-for-jupyterlab
+Title: Useful Tools and Extensions for JupyterLab
 Category: Software
 Tags: software, JupyterLab, extension, plugin
 
@@ -13,6 +13,23 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+
+## Useful Tools
+
+### [jupyter/nbdime](https://github.com/jupyter/nbdime)
+
+Tools for diffing and merging of Jupyter notebooks.
+[http://nbdime.readthedocs.io]
+
+Notice that nbdime integrates with git well.
+
+To configure all diff/merge drivers and tools, simply call:
+
+nbdime config-git (--enable | --disable) [--global | --system]
+
+This command will register nbdime with git for the current project (repository), or on the global (user), or sytem level according to the --global or --system options.
+
 
 ## Useful Plugins/Extensions for Jupyter Notebook/Lab
 

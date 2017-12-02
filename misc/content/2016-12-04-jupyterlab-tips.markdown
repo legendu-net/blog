@@ -1,6 +1,6 @@
 UUID: 866ecf58-079e-4cec-9978-c9782410a0d0
 Status: published
-Date: 2017-11-18 10:37:32
+Date: 2017-12-02 16:56:15
 Author: Ben Chuanlong Du
 Slug: jupyterlab-tips
 Title: JupyterLab Tips
@@ -26,11 +26,28 @@ http://arogozhnikov.github.io/2016/09/10/jupyter-features.html
 
 ## General Tips
 
+
+1. You might lose data if you edit a notebook in multiple places 
+(e.g., in different browsers or on different machines)!
+
+1. If you have a notebook open on a machine 
+    but have it edited before on another machine, 
+    the changes might not be synchronized automatically.
+    If you jump to edit the notebook on the current machine without refreshing it, 
+    you might loss data.
+    Even if JupyterLab do warn you about the notebook is changed on the disk,
+    it is a hassle to go back to figure out new changes you've made.
+    To avoid data loss,
+    you'd better close notebook tabs and reopen them
+    if you switch to another machine to use JupyterLab. 
+
+2. Shutdown a kernel will kill the kernel associated with a notebook
+but it won't affect content in the notebook if no code is running. 
+After shutdowning the kernel, 
+a notebook behaves like a pure text editor.
+
 1. `find.scala | xargs vim` makes terminal fail to display correctly.
 `reset` resolves the issue.
-
-1. performance on big csv ... very slow, even switching ...
-    use a relatively small part of csv ...
 
 2. hard to do interactive UI in JupyterLab right now ...
     many interactive UI pacakges in R relies on RStudio to work.

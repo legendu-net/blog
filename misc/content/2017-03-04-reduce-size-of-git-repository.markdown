@@ -1,6 +1,6 @@
 UUID: 8ce9e86f-a210-4196-a0a9-7b10343d50f5
 Status: published
-Date: 2017-03-22 00:15:01
+Date: 2017-12-20 00:22:55
 Author: Ben Chuanlong Du
 Slug: reduce-size-of-git-repository
 Title: Reduce Size of Git Repository
@@ -14,6 +14,13 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+## [BFG Repo Cleaner](https://rtyley.github.io/bfg-repo-cleaner/)
+
+```
+java -jar bfg.jar --strip-blobs-bigger-than 100M some-big-repo.git
+```
+
+## Other
 
 ```bash
 git push --force

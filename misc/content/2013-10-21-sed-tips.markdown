@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-12-05 07:16:25
+Date: 2017-12-31 20:38:40
 Slug: sed-tips
 Title: Tips for "sed"
 Category: Software
@@ -115,3 +115,8 @@ sed -i '1 s_^_#!/bin/bash\n_' *.txt
 3. Replace `## Usage` with `## Usage in Linux/Unix`
 
         sed -i 's_^## Usage.*$_## Usage in Linux/Unix_' *.ipynb
+
+4. Replace `valid users = ${DOCKER_USER}` with `valid users = dclong`.
+
+        sed "s/^valid users\s*=\s*\${DOCKER_USER}/valid users = dclong/g" smb.conf 
+

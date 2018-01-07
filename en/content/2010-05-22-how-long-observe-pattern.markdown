@@ -1,7 +1,7 @@
 UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
 Title: How Long Does It Take to Observe a Sequence?
-Date: 2010-05-22 00:00:00
+Date: 2018-01-04 02:30:19
 Tags: Mathematica, pattern, Markov chain, statistics, sequence, coin, stochastic, martingale, fun problems
 Category: Fun Problems
 Slug: how-long-observe-pattern
@@ -9,8 +9,8 @@ Author: Ben Chuanlong Du
 
 [more examples and results]: http://dclong.github.io/media/pattern/pattern-time-examples.pdf 
 [code]: http://dclong.github.io/media/pattern/pattern.cdf
-[Which One Is the Best Strategy?]: http://dclong.github.io/en/2010/05/best-strategy/
-[Which One Is the Best Strategy? (continued)]: http://dclong.github.io/en/2012/07/best-strategy-2/
+[Which One Is the Best Strategy?]: http://dclong.github.io/en/blog/best-strategy/
+[Which One Is the Best Strategy? (continued)]: http://dclong.github.io/en/blog/best-strategy-2/
 
 <img src="http://dclong.github.io/media/pattern/coin.jpg" height="200" width="240" align="right"/>
 

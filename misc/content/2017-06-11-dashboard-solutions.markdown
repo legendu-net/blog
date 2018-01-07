@@ -1,6 +1,6 @@
 UUID: 5871584f-b78d-48a0-a7e4-3b307f7af6bf
 Status: published
-Date: 2017-11-18 10:33:55
+Date: 2018-01-07 14:29:13
 Author: Ben Chuanlong Du
 Slug: dashboard-solutions
 Title: Dashboard Solutions
@@ -14,56 +14,124 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-## Bokeh Server
+## [Redash](https://github.com/getredash/redash)
 
-very convenient, but batch rather than interactive mode
-
-## Jupyter/JupyterLab Dashboard
-
-JupyterLab plans to support dashboard. 
-
-Currently, you can use the Jupyter Dashboard.
-
-[Jupyer Dashboard Docker Deploy](https://github.com/jupyter-incubator/dashboards_setup/tree/master/docker_deploy)
-
-## HVF/franchise
-
-## [Bowtie](https://github.com/jwkvam/bowtie)
-
-another good dashboard candidate ...
-
-## Superset
-
-Superset is great! 
-But it seems that it is for SQL only? 
-Is python scripting supported?
-based on python, but doesn't support direct python scraping ...
-
-http://airbnb.io/superset/installation.html
-
-http://airbnb.io/superset/
-
-amancevice/superset
-
-## Plotly Dash
-
-Great but unfortunately plotly is not totally free (very limited API calls).
-
-## Redash
-
-https://github.com/getredash/redash
+### Docs
 
 http://www.ehfeng.com/redash-python-functions/
 
 https://discuss.redash.io/
 
-Redash sounds like a good one, but still missing a few components:
+### Pros & Cons
 
-1. Teradata SQL support
-2. python pandas support
+**Pros**
 
-## Kibana on Elastic Search
+1. Redash is a great opensource alternative to Tableau! 
 
+2. Code free which makes it suitable for business people.
+
+**Cons**
+
+1. Currently SQL is supported. 
+    Even though Redash is developed in Python,
+    directly Python script based data manipulation is not nicely supported. 
+    There is a large voice in the community on this, 
+    so hopefully this will get improved soon.
+
+2. Superset use SQLAlchemy for underlying crunching. 
+    SQLAlchemy relies on ODBC for querying databases,
+    however, 
+    ODBC installation and configuration is often a nightmare for commerical databases
+    (such as Teradata, Oracle and SQL Server).
+    It is often more convenient to query commerical databases using JDBC,
+    but unfortuantely JDBC support in SQLAlchemy is not good.
+
+3. Visualization is via JS. 
+    Python visualization libraries (even if JS based) are not supported directly.
+
+### Docker Image
+
+[redash/redash](https://hub.docker.com/r/redash/redash/)
+
+## [Superset](https://github.com/apache/incubator-superset)
+
+Superset is a very similar (both functionalities and underlying techs) product to Redash.
+
+### Pros & Cons
+
+**Pros**
+
+1. Superset is a great opensource alternative to Tableau! 
+
+2. Code free which makes it suitable for business people.
+
+**Cons**
+
+1. Currently SQL Lab is supported. 
+    Even though Superset is developed in Python,
+    directly Python script based data manipulation is not nicely supported. 
+    There is a large voice in the community on this, 
+    so hopefully this will get improved soon.
+
+2. Superset use SQLAlchemy for underlying crunching. 
+    SQLAlchemy relies on ODBC for querying databases,
+    however, 
+    ODBC installation and configuration is often a nightmare for commerical databases
+    (such as Teradata, Oracle and SQL Server).
+    It is often more convenient to query commerical databases using JDBC,
+    but unfortuantely JDBC support in SQLAlchemy is not good.
+
+3. Visualization is via JS. 
+    Python visualization libraries (even if JS based) are not supported directly.
+    
+### Docker Image
+
+amancevice/superset
+
+## [Bokeh Server](https://bokeh.pydata.org/en/latest/docs/user_guide/server.html)
+
+It is a great idea to combine Bokeh Serve with Jupyter Notebook and Docker images. 
+You can use Jupyter Notebook to quickly prototype
+and rely on Docker for quickly deployment. 
+
+### Pros & Cons
+
+**Pros**
+
+1. Very convenient for Python user. 
+
+2. Bokeh Server integrates with Jupyter Notebook very well.
+    You can even start a Bokeh Server in a Jupyter Notebook.
+    This gives the ability to quickly prototype your dashboard in Jupyter Notebook.
+
+**Cons**
+
+1. Coding required. 
+    Users have to be familiar with both Python and the Bokeh package.
+
+## Plotly Dash
+
+Dash is a great (even better) alternative to Bokeh.
+I though Dash is based on Plotly APIs but the developers says not 
+(see [this issue](https://github.com/plotly/dash/issues/192)).
+
+
+## Jupyter/JupyterLab Dashboard
+
+JupyterLab plans to support dashboard in future. 
+Currently, 
+you can use the Jupyter Dashboard.
+JupyterLab Dashboard will probably be the best dashboard for data scientist if implemented.
+
+### Docker Image
+
+[Jupyer Dashboard Docker Deploy](https://github.com/jupyter-incubator/dashboards_setup/tree/master/docker_deploy)
+
+## [Bowtie](https://github.com/jwkvam/bowtie)
+
+Bowtie is another alternative (less appealing) to Bokeh.
+
+## HVF/franchise
 
 ## FreeBoard
 

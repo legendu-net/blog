@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-11-15 23:32:11
+Date: 2018-01-04 02:50:17
 Slug: useful-tools-linux
 Title: Useful Tools in Linux
 Category: OS
@@ -202,44 +202,7 @@ to find software/tools for all kinds of purposes.
 
 ## Network 
 
-### Remote Tools
-1. OpenSSH, keychain (keyring for OpenSSH)
-0. Teamviewer
-5. NoMachine, FreeNX
-2. VNC
-3. SSHFS
-4. Remmina
-6. YuuGuu (Web Conference)
-7. LogMeIn (Windows and Mac only)
-
-
-### Network Maintenance
-1. arp-scan
-2. ping
-
-### Downloading Tools
-
-0. aria2 (high speed command line download utility)
-1. uGet (a great Linux download manager, also a GUI for aria2)
-1. Deluge (BitTorrent, magnet)
-1. wget
-2. curl
-3. mechanize, Selenium, iMacros (auto download solutions)
-3. transimission (A simple and clean BitTorrent GUI, allow you set upload rate to 0)
-4. qBitTorrent (BitTorrent)
-5. rTorrent (command line BitTorrent)
-7. youtube-dl (youtube video downloader)
-6. SubDownloader (download/upload subtitles of movies)
-
-### Anonymous Tools
-1. VPN
-2. Proxy
-3. Anomos
-4. Tor
-
-### VPN
-1. PrivateInternetAccess
-2. LogMeIn Hamachi 
+http://www.legendu.net/misc/blog/linux-network-tools/
 
 ## Compress and Uncompress
 1. tar

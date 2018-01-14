@@ -1,7 +1,7 @@
 UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
 Title: Parallel Computing in Different Programming Languages
-Date: 2016-11-22 00:57:52
+Date: 2018-01-13 13:51:33
 Tags: Mathematica, lock, programming, C/C++, thread, Java, HPC, parallel, R, concurrency, mutex, GPU Computing
 Category: Programming
 Slug: summary-parallel-computing
@@ -106,7 +106,7 @@ j=foreach(i=1:n) %dopar% {
 ```
 You can use package "snow" as the backend if you have access to a cluster.
 In R, 
-you don have to worry about different kind of variables. 
+you do not have to worry about different kind of variables. 
 Variables outside the `foreach` loop are shared among threads, 
 and `foreach` returns a list of results corresponding to each iteration. 
 Surely access variables outside the `foreach` loop

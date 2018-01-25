@@ -1,11 +1,24 @@
 UUID: a96776f9-5501-4c6a-9e2b-ccf0f8f1718b
 Status: published
-Date: 2017-11-15 23:36:20
+Date: 2018-01-26 07:30:03
 Author: Ben Chuanlong Du
 Slug: map-keys-in-mac
 Title: Map Keys in Mac
 Category: Apple
-Tags: Mac, Apple, OS X, mapping, keys
+Tags: Mac, Apple, OS X, mapping, keys, Seil
+
+
+Update: As of MacOS Sierra 10.12.1, 
+the remapping of `Caps Lock` to `Escape` can be done natively in the Keyboard System Preferences pane. 
+Follow the steps below to remap Caps Lock to Escape (without relying on 3rd party software). 
+
+1. Open System Preferences and click on `Keyboard`
+2. Click on `Modifier Keys...`
+3. For `Caps Lock Key`, choose `Escape`
+4. Click `OK`
+
+
+## The Old Way of Using Seil
 
 [Seil](https://pqrs.org/osx/karabiner/seil.html.en)
 (previouly known as PCKeyboardHack) is great tool for mapping keys on Mac.

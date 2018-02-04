@@ -2,7 +2,7 @@ UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Some Tips for Shell Commands
-Date: 2017-03-18 20:10:50
+Date: 2018-02-05 07:49:05
 Slug: shell-tips
 Category: Linux
 Tags: tips, Linux, shell, terminal
@@ -531,3 +531,11 @@ uuidgen
 need the libuuid library which is part of `util-linux`
 
 1. `id -un` is a better alternative than `whoami`.
+
+## Timezone 
+Linux
+```
+cat /etc/timezone
+```
+Mac
+<https://slaptijack.com/system-administration/set-mac-os-x-time-zone-from-the-command-line/>

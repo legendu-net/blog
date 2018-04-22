@@ -1,6 +1,6 @@
 UUID: c744cc45-eaa3-46e4-925d-a298beb815c0
 Status: published
-Date: 2017-10-22 13:31:44
+Date: 2018-04-22 17:42:23
 Author: Ben Chuanlong Du
 Slug: tips-for-running-docker-containers
 Title: Tips for Running Docker Containers
@@ -19,9 +19,11 @@ but rather for convenient reference of the author and future improvement.
 For example, if use Git in a docker container,
 you probably have to forward ports to 22 and 80 as Git uses HTTP(s) and SSH protocol which listen on these 2 prots.
 
-1. avoid mounting things into image, this is actually a general rule.
-It is recommend that you always mount to /some_dir and then link to home if needed
-Never mount into HOME!!!
+2. Avoid mounting a volume into your home directory in the Docker container.
+    1. You might screw up the permission of your home directory in the Docker container.
+    2. If you mount your home on the host into your home in the Docker container, 
+        you might accidentally overwrite things in your home directory on the host.
+It is recommend that you always mount a volume to `/some_dir` and then link to home if needed.
 
 3. If you use the `-v` option when starting a Docker container, 
 make sure that you have r/w access to it otherwise the Docker container might fail to start.

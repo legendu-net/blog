@@ -7,12 +7,12 @@ Author: Ben Chuanlong Du
 Category: Linux
 Tags: Linux, decompress, compress, archive, split, multiple, zip, tar, gz, bz2, dtrx, rar, 7zip
 
-Important tips: 
+Important tips:
 
-1. Always test integrity of the compressed file 
+1. Always test integrity of the compressed file
 before you throw away the original archives.
 
-2. For a large zip file generated in Windows, 
+2. For a large zip file generated in Windows,
 it is possible that it cannot be unzipped correctly in Linux.
 (unzip bug?)
 
@@ -43,8 +43,8 @@ gzip -cd archive_name.gz > decompressed_file_name
 # or
 zcat archive_name.gz > decompressed_file_name
 ```
-Notice that you have to use the `-c` option, 
-otherwise, 
+Notice that you have to use the `-c` option,
+otherwise,
 the original compressed file is removed.
 
 ## tar.bz2
@@ -81,6 +81,13 @@ unrar t file_name
 unrar x file_name
 ```
 
+## Jar 
+
+```
+# extract the archive
+jar xf jar-file [archived-file(s)]
+```
+
 ## 7zip
 ```bash
 # list the archive contents
@@ -93,22 +100,22 @@ unrar x file_name
 7za x archive_name path_to_file_to_be_extracted
 ```
 If the compressed archive is splitted into several smaller files,
-just replace `file_name` in the above commands 
+just replace `file_name` in the above commands
 with the name of the first file of the compressed archive.
 
-For `rar` and `7za`, 
-I'm not sure whether there are options for creating a new directory 
-to uncompress the archive into. 
-However, you can always first create an empty directory, 
-move the archive into it and then uncompress it. 
+For `rar` and `7za`,
+I'm not sure whether there are options for creating a new directory
+to uncompress the archive into.
+However, you can always first create an empty directory,
+move the archive into it and then uncompress it.
 
 ## Multiple Archives
-The archive related commands (e.g., `tar`, `zip`, `unzip`, etc.) in Linux 
-does not support decompressing from multiple archives 
-or compressing files into multiple archives directly. 
-To extract content from multiple archives, 
+The archive related commands (e.g., `tar`, `zip`, `unzip`, etc.) in Linux
+does not support decompressing from multiple archives
+or compressing files into multiple archives directly.
+To extract content from multiple archives,
 you need to first concatenate them into a single one.
-For example, 
+For example,
 you can use the following command to unzip archives
 `BigDataLite-3.0.zip.001`, `BigDataLite-3.0.zip.002`, `BigDataLite-3.0.zip.003`,
 `BigDataLite-3.0.zip.004`, `BigDataLite-3.0.zip.005` and `BigDataLite-3.0.zip.006`.
@@ -118,18 +125,18 @@ cat BigDataLite-3.0.zip.00? > BigDataLite-3.0.zip
 # unzip the combined archive
 unzip BigDataLite-3.0.zip
 ```
-To compress files into multiple archives, 
-you have to first compress them into a single archive 
-using one of the commands introduced before 
+To compress files into multiple archives,
+you have to first compress them into a single archive
+using one of the commands introduced before
 and then split the single archive into multiple ones
 using the command `split`.
-For example, 
+For example,
 the following command split the archive `WinTPC_1.tar.gz`
 into smaller ones named `WinTPC_1.tar.gz_part??` with size around 2.7G.
 ```bash
 split -b 2700M -d WinTPC_1.tar.gz WinTPC_1.tar.gz_part
 ```
-An alternative way (and better in my opinion) 
+An alternative way (and better in my opinion)
 is to specify the number of archives (with about equal size) to split into.
 ```bash
 split -n 5 -d xp_2.tar.gz xp_2.tar.gz_part

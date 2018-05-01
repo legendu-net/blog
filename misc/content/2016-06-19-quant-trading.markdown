@@ -14,6 +14,14 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+## Open Source Trading Platforms/Projects
+
+quantos, kungfu, vnpy, RQAlpha2
+
+https://zhuanlan.zhihu.com/p/34822731
+
+## Misc
+
 http://www.zhihu.com/question/28557233?from=profile_question_card
 
 http://myquant.cn/
@@ -45,4 +53,3 @@ https://www.zhihu.com/question/31817168/answer/53462153
 Prediction of Hidden Liquidity in the Limit Order Book of GLOBEX Futures
 
 Mclean, R. David and Jeffrey Pontiff, 2016, Does Academic Research Destroy Stock Return Predictability, The Journal of Finance 71(1), 5-32.
-

@@ -1,6 +1,6 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Date: 2017-07-22 10:55:43
+Date: 2018-04-29 11:33:39
 Author: Ben Chuanlong Du
 Slug: python-modules
 Title: Python Modules
@@ -20,19 +20,19 @@ but rather for convenient reference of the author and future improvement.
 
 1. pandas: data frame.
 
-1. scipy: scientific computing.
+2. scipy: scientific computing.
 
-2. numpy: multi-dimensional array.
+3. numpy: multi-dimensional array.
 
-3. re: regular expression
+4. re: regular expression
     - re.sub
     - re.search
         + return none if match is not found
         + use the `group` method to extract found match
 
-4. inspect: check class, function definition and so on
+5. inspect: check class, function definition and so on
 
-### File System
+## File System
 
 9. shutil: Copy, move and remove files.
     - shutil.copy
@@ -51,13 +51,15 @@ but rather for convenient reference of the author and future improvement.
 
 6. os: Operating system related utilities.
 
-### Logging
+## Logging
 
-8. warnings: Warning message.
+1. logging
 
-### [Visualization](http://www.legendu.net/misc/blog/python-modules-for-visualization/)
+2. warnings: Warning message.
 
-### Multimedia
+## [Visualization](http://www.legendu.net/misc/blog/python-modules-for-visualization/)
+
+## Multimedia
 
 1. ReportLab 
 
@@ -75,7 +77,7 @@ doc – antiword
 docx – python-docx
 odt – odt2txt 
 
-### Database
+## Database
 
 1. json/simplejson 
 
@@ -94,14 +96,19 @@ except ImportError: import json
 Methods of json ending with `s` takes string arguments 
 and others take file stream arguments.
 
+2. pyodbc, pypyodbc, SQLAlchemy
 
-10. PyMongo
+3. teradata, sqlalchemy-teradata
 
-11. PyMySQL, MySQLdb
+4. JayDeBeApi
 
-11. sqlite3
+5. PyMongo
 
-### Date/Time
+6. PyMySQL, MySQLdb
+
+7. sqlite3
+
+## Date/Time
 
 11. dateutil: Parses time in all kinds of format.
 ```bash
@@ -116,21 +123,22 @@ pip install python-dateutil
 
 14. PyGPU
 
-### Command-line 
+## Command-line 
 
-3. curses 
+1. argparse 
+    This is the recommended package to use for argument parsing in Python.
 
-1. argparse
+2. curses 
 
-2. getopt: great for paring arguments in a list! very cool, sounds like more general than argparse
+3. getopt
+    Not as convenient as argparse.
 
 
+## Text Mining
 
-### Text Mining
+1. NLTK
 
-2. NLTK
-
-1. scrapy: Web cr
+2. scrapy: Web cr
 
 3. textmining package 
 
@@ -139,7 +147,7 @@ http://www.christianpeccei.com/textmining/
 
 4. email.parser
 
-### Machine Learning
+## Machine Learning
 
 1. mlpy
 
@@ -151,7 +159,7 @@ http://www.christianpeccei.com/textmining/
 
 5. theano (deep learning)
 
-### GUI application
+## GUI application
 
 1. PyQt
 
@@ -162,7 +170,7 @@ http://www.christianpeccei.com/textmining/
 wajig install python-tk
 ```
 
-### command-line application
+## command-line application
 
 0. subprocess 
 
@@ -176,25 +184,36 @@ write down the bash commands and split it by space into a list, this is how you 
 
 3. Clint
 
-clint is a Python module which is filled with very useful tools for developing command-line applications. It supports features such as; CLI colors and indents, simple and powerful column printer, iterator based progress bars and implicit argument handling.
+clint is a Python module which is filled with very useful tools for developing command-line applications. 
+It supports features such as; CLI colors and indents, 
+simple and powerful column printer, iterator based progress bars and implicit argument handling.
 
 4. Click
 
-click is an upcoming Python package for creating command-line interfaces in a composable way with as little code as possible. This “Command-line Interface Creation Kit” is highly configurable but comes with good defaults out of the box.
+click is an upcoming Python package for creating command-line interfaces in a composable way with as little code as possible. 
+This "Command-line Interface Creation Kit" is highly configurable but comes with good defaults out of the box.
 
 5. docopt
 
-docopt is a lightweight, highly Pythonic package that allows creating command-line interfaces easily and intuitively, by parsing POSIX-style usage instructions.
+docopt is a lightweight, 
+highly Pythonic package that allows creating command-line interfaces easily and intuitively, 
+by parsing POSIX-style usage instructions.
 
 6. Plac
 
-Plac is a simple wrapper over the Python standard library argparse, which hides most of its complexity by using a declarative interface: the argument parser is inferred rather than written down by imperatively. This module targets especially unsophisticated users, programmers, sys-admins, scientists and in general people writing throw-away scripts for themselves, who choose to create a command-line interface because it is quick and simple.
+Plac is a simple wrapper over the Python standard library argparse, 
+which hides most of its complexity by using a declarative interface: the argument parser is inferred rather than written down by imperatively. 
+This module targets especially unsophisticated users, programmers, sys-admins, scientists and in general people writing throw-away scripts for themselves, 
+who choose to create a command-line interface because it is quick and simple.
 
 7. Cliff
 
-Cliff is a framework for building command-line programs. It uses setuptools entry points to provide subcommands, output formatters, and other extensions. The framework is meant to be used to create multi-level commands such as subversion and git, where the main program handles some basic argument parsing and then invokes a sub-command to do the work.
+Cliff is a framework for building command-line programs. It uses setuptools entry points to provide subcommands, 
+output formatters, and other extensions. 
+The framework is meant to be used to create multi-level commands such as subversion and git, 
+where the main program handles some basic argument parsing and then invokes a sub-command to do the work.
 
-### encryption
+## encryption
 
 4. gnupg 
 
@@ -206,15 +225,7 @@ You must create a new object ...
 can I use an object to decrypt repeated? for different texts?
 probably not ...
 
-### Others
-
-1. fuzzywuzzy
-
-2. weechat
-
-3. python-virtualenv virtual environment is good, 
-
-### Internet
+## Internet
 
 1. email.parser
 
@@ -227,4 +238,13 @@ PyUnit is the standard unit testing framework module for Python.
 It is a Python implementation of JUnit.
 
 2. nose
+
+
+## Others
+
+1. fuzzywuzzy
+
+2. weechat
+
+3. python-virtualenv virtual environment is good, 
 

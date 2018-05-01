@@ -19,8 +19,8 @@ but rather for convenient reference of the author and future improvement.
 
 ```bash
 import module_name  
-import module_name as alias 
+import module_name as alias
 from module import pkg_mod_or_fun
 ```
 
-
+https://stackoverflow.com/questions/3144089/expand-python-search-path-to-other-source

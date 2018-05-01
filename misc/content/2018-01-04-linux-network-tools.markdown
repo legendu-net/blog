@@ -1,11 +1,11 @@
 UUID: 20d79b02-800d-4c0f-8885-d01be3bb28f2
 Status: published
-Date: 2018-01-04 02:49:23
+Date: 2018-04-29 23:12:18
 Author: Ben Chuanlong Du
 Slug: linux-network-tools
 Title: Linux Network Tools
-Category: Programming
-Tags: programming
+Category: Software
+Tags: Software, Linux, network, tool, download, VPN
 
 **
 Things on this page are
@@ -43,21 +43,8 @@ but rather for convenient reference of the author and future improvement.
 ## VPN
 0. ExpressVPN
 1. PrivateInternetAccess
-2. LogMeIn Hamachi 
+2. LogMeIn Hamachi
 
-## Downloading Tools
-
-0. aria2 (high speed command line download utility)
-1. uGet (a great Linux download manager, also a GUI for aria2)
-1. Deluge (BitTorrent, magnet)
-1. wget
-2. curl
-3. mechanize, Selenium, iMacros (auto download solutions)
-3. transimission (A simple and clean BitTorrent GUI, allow you set upload rate to 0)
-4. qBitTorrent (BitTorrent)
-5. rTorrent (command line BitTorrent)
-7. youtube-dl (youtube video downloader)
-6. SubDownloader (download/upload subtitles of movies)
 
 ## Anonymous Tools
 1. VPN
@@ -65,3 +52,4 @@ but rather for convenient reference of the author and future improvement.
 3. Anomos
 4. Tor
 
+## [Downloading Tools](http://www.legendu.net/misc/blog/downloading-tools/)

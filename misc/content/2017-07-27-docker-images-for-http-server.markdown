@@ -1,6 +1,6 @@
 UUID: aee7e150-6b1f-4544-902b-bc1506054640
 Status: published
-Date: 2017-08-17 08:40:34
+Date: 2018-04-30 12:55:50
 Author: Ben Chuanlong Du
 Slug: docker-images-for-http-server
 Title: Docker Images for HTTP Server
@@ -19,4 +19,3 @@ but rather for convenient reference of the author and future improvement.
 ```bash
 docker run -dit -p 80:80 -v /wwwroot:/usr/local/apache2/htdocs/ httpd
 ```
-

@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2018-01-04 02:50:17
+Date: 2018-04-29 23:11:09
 Slug: useful-tools-linux
 Title: Useful Tools in Linux
 Category: OS
@@ -16,11 +16,12 @@ but rather for convenient reference of the author and future improvement.
 
 <img src="http://dclong.github.io/media/linux/linux.png" height="200" width="240" align="right"/>
 
-[IceWalkers](http://www.icewalkers.com/) is a great place 
+[IceWalkers](http://www.icewalkers.com/) is a great place
 to find software/tools for all kinds of purposes.
 
 ## Project Collaborating/Managment
 1. slack
+2. [ProjectLibre](http://www.projectlibre.com/)
 
 2. [trello](https://trello.com)
 <http://lifehacker.com/how-to-use-trello-to-organize-your-entire-life-1683821040?utm_source=pocket&utm_medium=email&utm_campaign=pockethits>
@@ -48,7 +49,7 @@ to find software/tools for all kinds of purposes.
 
 ### Terminal Tools
 0. command-not-found - Suggest installation of packages in interactive bash sessions
-1. terminator, terra, terminology, TermKit
+1. terminator, terra, terminology, TermKit, XiKi (inactive)
 1. screen, tmux
 3. nohup, disown
 5. nautilus-open-terminal
@@ -57,7 +58,7 @@ to find software/tools for all kinds of purposes.
 ### Administer
 1. webmin, cloudmin, usermin
 1. id, adduser, gpasswd (recommended for adding/removing groups)
-2. uptime, top, netstat, ifconfig, top, iotop (input and output monitoring), atop, 
+2. uptime, top, netstat, ifconfig, top, iotop (input and output monitoring), atop,
 3. htop (a better alternative to top)
 
 ### Disk Maintenance
@@ -77,7 +78,7 @@ to find software/tools for all kinds of purposes.
 
 ### Encryption
 
-1. gpg 
+1. gpg
 
 ### Time Synchronization
 
@@ -90,7 +91,7 @@ to find software/tools for all kinds of purposes.
 2. inotify (monitoring file system changes and trigger events)
 3. parallel
 
-## Backup 
+## Backup
 
 ### Cloud Backup Tools
 
@@ -98,9 +99,9 @@ to find software/tools for all kinds of purposes.
 
 2. Storage Made Simple (SME)
 
-#### Centralized 
+#### Centralized
 
-0. Amazon S3 
+0. Amazon S3
     - AeroFS can backup to Amazon S3
     - s3cmd is a command line client for Linux
 
@@ -159,7 +160,7 @@ to find software/tools for all kinds of purposes.
 
 ### File Transfer
 
-0. infinit (fast, secure) 
+0. infinit (fast, secure)
 1. BitTorrent
 2. BiTorrent Sync
 
@@ -181,13 +182,13 @@ to find software/tools for all kinds of purposes.
 #### Cons
     1. one file at a time for free account
 
-1. File Dropper 
+1. File Dropper
 
 #### Pros
-    1. unlimited space 
-    2. no bandwith limit 
+    1. unlimited space
+    2. no bandwith limit
 #### Cons
-    1. uploaded files will be removed if they are not downloaded even once 
+    1. uploaded files will be removed if they are not downloaded even once
     within 30 days consecutively (files belong to premium account are never removed)
     2. upload file can be at most 5 GB
     3. the cheapest plan is $1/month.
@@ -200,11 +201,9 @@ to find software/tools for all kinds of purposes.
 2. Baidu Yun
 3. Tencent Weiyun
 
-## Network 
+## [Network](http://www.legendu.net/misc/blog/linux-network-tools/)
 
-http://www.legendu.net/misc/blog/linux-network-tools/
-
-## Compress and Uncompress
+## [Compress and Uncompress](http://www.legendu.net/en/blog/compress-and-decompress-in-linux/)
 1. tar
 1. dar (disk archive)
 2. rar, unrar
@@ -228,7 +227,7 @@ http://www.legendu.net/misc/blog/linux-network-tools/
 
 ### Relational DBMS
 1. MySQL
-    - MySQL Workbench 
+    - MySQL Workbench
 2. SQLite (embedded database)
 
 ### Object/Document-oriented DBMS
@@ -255,7 +254,7 @@ http://www.legendu.net/misc/blog/linux-network-tools/
 0. Tor (on-line anonymity)
 1. Google Chrome
 2. Firefox/Iceweasel
-3. w3m (a powerful text-based web browser) 
+3. w3m (a powerful text-based web browser)
 4. lynx (another text-based web browser)
 
 ### On-line Tools
@@ -281,25 +280,13 @@ http://www.legendu.net/misc/blog/linux-network-tools/
 1. gnucash
 2. DocumentBurst
 
-### Password Management
-
-#### GUI Password Manager
-
-1. [KeePassXC](https://keepassxc.org/) (successor of KeePassX)
-1. KeePassX
-2. LastPass (for non-critical passwords)
-3. kpcli (command line tool for keepassX)
-
-#### Command-line Password Manager
-
-3. pwman3
-3. pass
+### [Password Management](http://www.legendu.net/misc/blog/password-management/)
 
 ### Data Manipulation
 0. grep/sed/awk/cut/sort/uniq/comm
-1. pdfgrep 
+1. pdfgrep
 
-Search in pdf files for strings matching a regular expression. 
+Search in pdf files for strings matching a regular expression.
 It only works on PDF files but even not text files.
 
 2. taggrepper - search and match tags of audio files against regular expressions
@@ -308,7 +295,7 @@ It only works on PDF files but even not text files.
 
 4. sgrep - tool to search a file for structured pattern
 
-2. recoll 
+2. recoll
 
 Personal full text search package with a Qt GUI
 
@@ -319,92 +306,7 @@ Personal full text search package with a Qt GUI
 3. Geany (my favourite GUI text editor)
 2. Gedit
 
-### IDE
-
-#### Cloud IDE
-
-1. cloud9
-
-Looks a good one for public projects. 
-Need an account on cloud9 in order to create new workspace/project. 
-
-2. Codenvy / Eclipse Che
-
-Eclipse Che is a great cloud IDE!
-
-#### C++
-
-1. Vim with plugins YouCompleteMe and UltiSnips
-0. KDevelop (C++)
-0. Clion (Commerical IDE)
-2. Qt Creator (for Qt development and general purpose C++ IDE)
-1. Eclipse (for Java ,C++, Python, etc.)
-3. Dev-C++
-
-#### Java
-
-1. Eclipse
-
-2. IntelliJ IDEA (community edition available)
-
-#### Python
-
-1. Spyder (Python)
-
-2. Wing IDE
-
-3. PyCharm 
-
-A great IDE for Python. 
-A open source community edition is available for users.
-
-4. Eric
-
-3. Eclipse + PyDev (python)
-
-#### R
-
-1. RStudio (for R, Markdown ,C++, LaTex, etc.) 
-
-#### Markdown
-
-1. Atom + Markdown Plugin
-
-4. ReText (Markdown, reStructuredText)
-
-5. Markable (on-line Markdown editor)
-
-#### Julia
-
-4. JuliaStudio (for Julia)
-
-#### LaTex
-
-6. Bakoma (Great for LaTex)
-
-7. TexStudio (LaTex)
-
-8. TexMacs (WYSIWYG, convert to Tex available)
-
-9. ShareLatex (on-line collaborative editing)
-
-10. WriteLatex (on-line collaborative editing)
-
-11. [OverLeaf](https://www.overleaf.com/) for online LaTex editing and publishing
-
-#### SQL
-
-1. Teradata Studio
-
-2. Oracle SQL Developer
-
-3. Toad
-
-1. ViEmu/SQL for SQL Server
-
-2. dbext for Vim
-
-### MS Office Alternative
+## MS Office Alternative
 
 2. LibreOffice
 
@@ -418,11 +320,15 @@ A open source community edition is available for users.
 
 3. WPS Office
 
-### Type Setting Tools
+### Publishing Tools
 
-1. texlive
+1. LaTex
 
-2. texstudio
+#### [Scribus](https://www.scribus.net/magazine-production/)
+
+Opensource Desktop Publishing
+
+
 
 ### Dictionary
 
@@ -475,7 +381,7 @@ A open source community edition is available for users.
 
 ### E-book library management
 
-1. calibre 
+1. calibre
 
 ### Symbolic Computing
 
@@ -506,7 +412,7 @@ cross-platform (via Adobe Air)
 
 5. IHMC CmapTools
 
-6. SimpleMind 
+6. SimpleMind
 Windows, Mac
 
 3. [Coggle](http://coggle.it/)
@@ -523,7 +429,7 @@ WebApplication, free
 #### Text-based Mind Mapping Tools
 1. Markdown with relevant tools
 MarkdownToMindMap
-PopClip 
+PopClip
 http://brettterpstra.com/2013/08/18/markdown-to-mind-map/
 
 4. LaTex PGF/TikZ/Graphviz
@@ -579,6 +485,15 @@ sounds great!
 
 ## Multimedia Tools
 
+### Screenshot
+
+[Shutter](http://shutter-project.org/)
+is the best screenshot application for Linux (only).
+You can install it on Ubuntu using the following command.
+```
+wajig install libgoo-canvas-perl shutter shutter
+```
+
 ### CD/DVD burning
 
 #### GUI Tools  
@@ -616,8 +531,6 @@ sounds great!
 5. exiftool (command line multimedia meta data editor)
 
 6. Exiv2 (image meta data library and tools written in C++)
-
-7. youtube-dl (youtube video downloader)
 
 ### Audio
 
@@ -828,7 +741,7 @@ http://www.d.umn.edu/~hrallis/professional/presentations/cotfsp06/indiv_tools/vi
 
 3. SAS Stored Process (Web Application) and SAS Visual Analytics
 
-## Software Host 
+## Software Host
 
 1. GitHub
     - no private repository for free account
@@ -863,7 +776,7 @@ http://www.d.umn.edu/~hrallis/professional/presentations/cotfsp06/indiv_tools/vi
 
 5. [CutyCapt](http://cutycapt.sourceforge.net/)
 
-4. pdflatex 
+4. pdflatex
 
 5. dos2unix, unix2dos
 
@@ -929,5 +842,5 @@ https://www.apertium.org/index.eng.html?dir=eng-cat#translation
 
 ## Misc
 
-1. KeyMon: displays the mouse button or key being clicked/pressed, 
+1. KeyMon: displays the mouse button or key being clicked/pressed,
 useful when you video tape your screen

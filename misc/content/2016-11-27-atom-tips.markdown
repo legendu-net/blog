@@ -14,17 +14,35 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-Install Atom using the following command.
+## Installation on Ubuntu
+
+You can install Atom on Ubuntu using the following command.
 ```bash
-sudo add-apt-repository ppa:webupd8team/atom 
-sudo apt-get update 
+sudo add-apt-repository ppa:webupd8team/atom
+sudo apt-get update
 sudo apt-get install atom
 ```
 
-vim-mode: neovim 
-ex-mode for Vim ex line
+## Plugins
 
-## Packages
+### vim-mode-plus
+vim-mode-plus is a good neovim-based vim mode plugin for Atom.
+
+### ex-mode
+
+Extra mode line for vim-mode-plus.
+
+## Misc
+
 https://github.com/randy3k/remote-atom
 
 https://codeforgeek.com/2014/09/5-must-have-packages-atom-editor/
+
+
+http://www.blog.bdauria.com/?p=1071
+
+atom-beautify
+
+https://dzone.com/articles/developing-scala-in-atom-with-ensime
+
+https://atom.io/packages/language-scala

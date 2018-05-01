@@ -14,7 +14,7 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-Example of ProxyChains configuration.
+## Example of ProxyChains Configuration
 
 ```text
 strict_chain
@@ -33,12 +33,12 @@ socks5     127.0.0.1 1080
 
 ## Error Message
 
-1. SSH Configuration 
+1. SSH Configuration
 
         muxserver_listen bind(): No such file or directory
 
-    This is probably due to configuration of SSH. 
-    For example, 
+    This is probably due to configuration of SSH.
+    For example,
     if you have the following line in the config file for SSH,
     you have to make sure that the directory `~/.ssh/control` exists.
     ```text
@@ -52,10 +52,15 @@ socks5     127.0.0.1 1080
         proxychains can't load process....: No such file or directory
 
     It is possibly due to alias used with ProxyChains.
-    For example, 
+    For example,
     I have the alias defined.
 
         alias ssh.analytics='ssh analytics_server_ip'
 
-    `proxychains4 ssh.analytics` throws the above error message
-    while `proxychains4 ssh analytics_server_ip` works well.
+`proxychains4 ssh.analytics` throws the above error message
+while `proxychains4 ssh analytics_server_ip` works well.
+
+proxychains ssh -i /path_to_key user@server_ip 
+
+1. There seems to be an issue if ProxyChains is directly in a VM,
+but it works well if used in a Docker on the VM ...

@@ -3,7 +3,7 @@ Status: published
 Date: 2016-07-13 22:49:45
 Author: Ben Chuanlong Du
 Slug: rsnapshot-questions
-Title: Questions About "rsnapshot" 
+Title: Questions About "rsnapshot"
 Category: Software
 Tags: software, rsnapshot, backup
 
@@ -16,3 +16,5 @@ but rather for convenient reference of the author and future improvement.
 
 1. how to backup to remote? ...
 seems a pain
+
+2. how to setup password for remote server? 

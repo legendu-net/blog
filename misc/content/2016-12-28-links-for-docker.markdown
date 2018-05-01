@@ -2,10 +2,10 @@ UUID: 05e465c7-cb32-400b-9101-52043a8c6876
 Status: published
 Date: 2017-11-18 10:35:35
 Author: Ben Chuanlong Du
-Slug: docker-tips
-Title: Docker Tips
+Slug: links-docker
+Title: Links for Docker
 Category: Software
-Tags: software, docker, container, tips
+Tags: software, Docker, links
 
 **
 Things on this page are
@@ -17,26 +17,6 @@ but rather for convenient reference of the author and future improvement.
 
 - [DockOne.io，最专业的Docker交流平台] (http://dockone.io/)
 - [Docker在Coding WebIDE项目中的运用] (http://www.infoq.com/cn/articles/the-apply-of-docker-in-coding-webide-project)
-
-## General Tips
-
-1. Never mount a volume into `$HOME`!
-Mount to `/user_name` instead.
-
-
-## Docker Commands
-
-```bash
-service docker restart
-docker run -it ubuntu:16.04
-docker run -dit -p 80:80 -v /wwwroot:/usr/local/apache2/htdocs/ httpd
-```
-
-## Sharing Files
-
-Copying file between a docker container and the host.
-docker cp foo.txt mycontainer:/foo.txt 
-docker cp mycontainer:/foo.txt foo.txt
 
 
 ## Links
@@ -88,7 +68,7 @@ http://stackoverflow.com/questions/23935141/how-to-copy-docker-images-from-one-h
 ### Misc
 
 1. <https://getcarina.com/docs/troubleshooting/stop-nonresponsive-running-container/>
-2. <https://medium.com/@saturnism> 
+2. <https://medium.com/@saturnism>
 3. <http://openhome.cc/Gossip/CodeData/DockerLayman/DockerLayman3.html>
 4. <https://twitter.com/saturnism/status/645366585981538304>
 
@@ -96,4 +76,3 @@ http://stackoverflow.com/questions/23935141/how-to-copy-docker-images-from-one-h
 1. [Docker Reference](https://docs.docker.com/engine/reference/builder/)
 
 2. [Best practices for writing Dockerfiles](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/)
-

@@ -85,14 +85,4 @@ A open source community edition is available for users.
 
 11. [OverLeaf](https://www.overleaf.com/) for online LaTex editing and publishing
 
-## SQL
-
-1. Teradata Studio
-
-2. Oracle SQL Developer
-
-3. Toad
-
-1. ViEmu/SQL for SQL Server
-
-2. dbext for Vim
+## [SQL](http://www.legendu.net/misc/blog/ide-for-sql/)

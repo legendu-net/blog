@@ -14,39 +14,26 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-Even thought some features that I like (e.g., vim bindings, Scala support) 
-are not complete,
-it is usable and cool!
-
-1. need to run project via customized command
-for Maven project, use the maven plugin `exe-maven-plugin` to help run the application.
-
-http://hmkcode.com/how-to-run-execute-java-main-class-using-maven-command/
-
-## Eclipse Che in Docker
-
-The simplest way to luanch Eclipse Che is via the Eclipse Che launcher image.
-```bash
-# pull the latest Eclipse Che launcher image
-docker pull eclipse/che-launcher
-
-# or if you'd rather run a specific version
-docker pull eclipse/che-launcher[:tag]
+You can launch an Eclipse Che server using the command below.
 ```
-```bash
-# run the latest docker image
-docker run --rm -t -v /var/run/docker.sock:/var/run/docker.sock eclipse/che-launcher start
-
-# or if you'd rather run a specific version
-docker run --rm -t -v /var/run/docker.sock:/var/run/docker.sock eclipse/che-launcher[:tag] start
+docker run -it -v /var/run/docker.sock:/var/run/docker.sock -v /wwwroot/che:/data eclipse/che start
 ```
-Please refer to 
-<https://eclipse-che.readme.io/docs/usage-docker>
-for more details.
+The launched Eclipse Che server can be visited at `server:8080`,
+where `server` is the ip/address of your server.
+Please refer to the [Quick Start](https://www.eclipse.org/che/docs/quick-start.html#docker) for more details.
 
-If you'd like to have more control over the Eclipse Che server, 
-you can launch it directly.
-Please refer to 
-[Docker Installation](https://eclipse.org/che/docs/setup/docker/index.html)
-for more details.
+## Git/GitHub & SSH Keys
 
+I encountered issues import a project from enterprise version of GitHub.
+An alternative way was to manually clone the project in terminal.
+Of course,
+the SSH public key has to be configured in GitHub.
+Here is a [related ticket](https://github.com/eclipse/che/issues/1938) on GitHub.
+
+## [Language Servers](https://microsoft.github.io/language-server-protocol/implementors/servers/)
+
+## Shortcuts
+
+Ctrl + Insert: Copy
+
+Shift + Insert: Paste

@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Slug: atom-tips
 Title: Atom Tips
 Category: Software
-Tags: software, Atom, IDE, editor
+Tags: software, Atom, IDE, editor, plugin, addon, add-on
 
 **
 Things on this page are
@@ -27,6 +27,11 @@ sudo apt-get install atom
 
 ### vim-mode-plus
 vim-mode-plus is a good neovim-based vim mode plugin for Atom.
+
+### vim-mode-plus-keymaps-for-surround
+
+Vim surround.
+
 
 ### ex-mode
 

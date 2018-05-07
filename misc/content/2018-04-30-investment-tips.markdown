@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Slug: investment-tips
 Title: Investment Tips
 Category: Finance
-Tags: finance, investment, WeChat official account
+Tags: finance, investment, WeChat official account, money, tips
 
 **
 Things on this page are
@@ -23,6 +23,8 @@ but rather for convenient reference of the author and future improvement.
 https://jingyan.baidu.com/article/49711c61858939fa441b7cd9.html
 
 ## Good WeChat Official Accounts
+
+1. [Yahoo Finance](https://finance.yahoo.com/news/)
 
 投研帮
 

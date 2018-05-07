@@ -68,6 +68,7 @@ http://www.wdong.org/wordpress/
 - [考试卷的博客](http://www.kaoshijuan.net/blog/)
 - [LibreByte](http://www.librebyte.net/en/)
 - [Free Will](http://zhuoqiang.me/)
+- [BingoTree](http://bingotree.cn/)
 
 ## Material Science
 - [Ralf Hielscher](http://www-user.tu-chemnitz.de/~rahi/pubs.php?druck)

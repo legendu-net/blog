@@ -19,12 +19,7 @@ but rather for convenient reference of the author and future improvement.
 [IceWalkers](http://www.icewalkers.com/) is a great place
 to find software/tools for all kinds of purposes.
 
-## Project Collaborating/Managment
-1. slack
-2. [ProjectLibre](http://www.projectlibre.com/)
-
-2. [trello](https://trello.com)
-<http://lifehacker.com/how-to-use-trello-to-organize-your-entire-life-1683821040?utm_source=pocket&utm_medium=email&utm_campaign=pockethits>
+## [Project](http://www.legendu.net/misc/blog/project-tips/)
 
 ## Server/Desktop Management
 

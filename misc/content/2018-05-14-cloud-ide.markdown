@@ -3,7 +3,7 @@ Status: published
 Date: 2018-05-14 09:05:00
 Author: Ben Chuanlong Du
 Slug: cloud-ide
-Title: Cloud Ide
+Title: Cloud IDE
 Category: Software
 Tags: software, cloud IDE, Cloud9, Codenvy, Eclipse Che, Koding, Codeanywhere
 

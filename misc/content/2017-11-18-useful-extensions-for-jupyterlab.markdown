@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Slug: useful-tools-extensions-for-jupyterlab
 Title: Useful Tools and Extensions for JupyterLab
 Category: Software
-Tags: software, JupyterLab, extension, plugin
+Tags: software, JupyterLab, extension, plugin, JupyterHub, nbdime
 
 **
 Things on this page are
@@ -30,19 +30,30 @@ nbdime config-git (--enable | --disable) [--global | --system]
 
 This command will register nbdime with git for the current project (repository), or on the global (user), or sytem level according to the --global or --system options.
 
+### jupyterhub
+
+### sudospawner
+
 
 ## Useful Plugins/Extensions for Jupyter Notebook/Lab
 
-1. [qgrid](https://github.com/quantopian/qgrid)
 
-2. [jupyterlab_geojson](https://github.com/jupyterlab/jupyterlab_geojson)
+www.draw.io is also interesting,
+
+1. [jupyterlab-drawio](https://github.com/QuantStack/jupyterlab-drawio)
+
+2. [jupyterlab-latex](https://github.com/jupyterlab/jupyterlab-latex)
+
+3. [qgrid](https://github.com/quantopian/qgrid)
+
+4. [jupyterlab_geojson](https://github.com/jupyterlab/jupyterlab_geojson)
 ```bash
 pip3 install jupyterlab_geojson
 jupyter labextension install --py --sys-prefix jupyterlab_geojson
 jupyter labextension enable --py --sys-prefix jupyterlab_geojson
 ```
 
-3. [ipywidgets](https://github.com/ipython/ipywidgets/tree/master/jupyterlab_widgets)
+5. [ipywidgets](https://github.com/ipython/ipywidgets/tree/master/jupyterlab_widgets)
     Interactive HTML widgets (slider, button, textbox, etc.) for Python Notebook.
 
         pip install jupyterlab_widgets
@@ -57,15 +68,10 @@ jupyter labextension enable --py --sys-prefix jupyterlab_geojson
 
     - ipyleaflet a leaflet widget for Jupyter.
 
-4. [widget-cookiecutter](https://github.com/jupyter/widget-cookiecutter)
+6. [widget-cookiecutter](https://github.com/jupyter/widget-cookiecutter)
 
     pip3 install cookiecutter
 
-5. jupyter_declarativewidgets
+7. jupyter_declarativewidgets
 
-6. jupyter-wysiwyg, does not integrate jupyterlab ...
-
-7. sudospawner
-
-8. jupyterhub
-
+8. jupyter-wysiwyg, does not integrate jupyterlab ...

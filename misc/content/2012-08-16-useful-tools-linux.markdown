@@ -579,11 +579,7 @@ wajig install libgoo-canvas-perl shutter shutter
 
 2. gocr
 
-### Chart
-
-1. Dia Diagram Editor
-
-2. LibreOffice Draw
+### [Charts](http://www.legendu.net/misc/blog/software-for-charts/)
 
 ### 3-D Modelling
 

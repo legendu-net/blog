@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Slug: ide-tips
 Title: Ide Tips
 Category: Software
-Tags: Software, IDE, Cloud IDE, Java, C++, Python
+Tags: Software, IDE, Cloud IDE, Java, C++, Python, Latex
 
 **
 Things on this page are
@@ -14,16 +14,7 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-## Cloud IDE
-
-1. cloud9
-
-Looks a good one for public projects.
-Need an account on cloud9 in order to create new workspace/project.
-
-2. Codenvy / Eclipse Che
-
-Eclipse Che is a great cloud IDE!
+## [Cloud IDEs](http://www.legendu.net/misc/blog/cloud-ide/)
 
 ## C++
 
@@ -71,18 +62,6 @@ A open source community edition is available for users.
 
 4. JuliaStudio (for Julia)
 
-## LaTex
-
-6. Bakoma (Great for LaTex)
-
-7. TexStudio (LaTex)
-
-8. TexMacs (WYSIWYG, convert to Tex available)
-
-9. ShareLatex (on-line collaborative editing)
-
-10. WriteLatex (on-line collaborative editing)
-
-11. [OverLeaf](https://www.overleaf.com/) for online LaTex editing and publishing
+## [LaTex](http://www.legendu.net/misc/blog/latex-ide)
 
 ## [SQL](http://www.legendu.net/misc/blog/ide-for-sql/)

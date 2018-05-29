@@ -37,3 +37,6 @@ Here is a [related ticket](https://github.com/eclipse/che/issues/1938) on GitHub
 Ctrl + Insert: Copy
 
 Shift + Insert: Paste
+
+## Question
+Doesn't seem easy to edit a file outside the current project?

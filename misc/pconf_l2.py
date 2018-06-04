@@ -6,7 +6,7 @@ import os
 blog_dir = os.environ["blog_dir"]
 os.system('rm -rf output/*')
 
-SITEURL = 'http://y570.stat.iastate.edu:8000/misc'
+SITEURL = 'http://localhost:8000/misc'
 SITESUBTITLE = 'The messy process of learning.'
 AUTHOR = 'Ben Chuanlong Du'
 SITENAME = "Ben Chuanlong Du's Blog"

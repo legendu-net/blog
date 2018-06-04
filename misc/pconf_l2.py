@@ -1,17 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
-# from __future__ import unicode_literals
+
 import os
-# remove old files
+
+blog_dir = os.environ["blog_dir"]
 os.system('rm -rf output/*')
-#-------------------------------------------------------------------------
-__blog_dir__ = os.environ["blog_dir"]
-# !!! http:// is necessary
-__home_url__ = "http://y570.stat.iastate.edu:8000"
-__relative_url__ = "misc"
-#-------------------------------------------------------------------------
-SITEURL = os.path.join(__home_url__, __relative_url__) 
-SITESUBTITLE = "The messy process of learning."
+
+SITEURL = 'http://y570.stat.iastate.edu:8000/misc'
+SITESUBTITLE = 'The messy process of learning.'
 AUTHOR = 'Ben Chuanlong Du'
 SITENAME = "Ben Chuanlong Du's Blog"
 # Times and dates
@@ -81,9 +77,9 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 
 # theme and plugins
 CSS_FILE = 'main_2.css'
-THEME = os.path.join(__blog_dir__, "themes/octopress_2")
+THEME = os.path.join(blog_dir, "themes/octopress_2")
 # plugins
-PLUGIN_PATHS = [os.path.join(__blog_dir__, 'plugins')]
+PLUGIN_PATHS = [os.path.join(blog_dir, 'plugins')]
 PLUGINS = [
         'latex',
         'summary', 

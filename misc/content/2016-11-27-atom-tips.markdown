@@ -37,6 +37,11 @@ Vim surround.
 
 Extra mode line for vim-mode-plus.
 
+### [teletype](https://teletype.atom.io/)
+
+Teletype(beta) for Atom lets developers share their workspace 
+with team members and collaborate on code in real time.
+
 ## Misc
 
 https://github.com/randy3k/remote-atom

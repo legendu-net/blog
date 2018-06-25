@@ -54,7 +54,8 @@ https://github.com/theia-ide/theia
 Docker for theia
 https://github.com/theia-ide/theia-apps#theia-docker
 
+## [wdb](https://github.com/Kozea/wdb)
 
-
+An improbable web debugger through WebSockets for Python.
 
 ## [ShareLatex ](https://www.sharelatex.com/)

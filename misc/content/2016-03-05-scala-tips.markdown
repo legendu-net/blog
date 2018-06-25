@@ -19,6 +19,7 @@ but rather for convenient reference of the author and future improvement.
 - [Scala Coding Style] (http://docs.scala-lang.org/style/)
 - [Scala Glossary](http://docs.scala-lang.org/glossary/)
 - [Scala Cheatsheet](http://docs.scala-lang.org/cheatsheets/)
+- [Scala Style Guide](https://github.com/databricks/scala-style-guide)
 
 1. IntelliJ IDEA is the recommended IDE.
 Eclipse (with the Scala IDE plugin) is alternative.

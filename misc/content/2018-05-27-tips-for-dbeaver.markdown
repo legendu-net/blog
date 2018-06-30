@@ -25,7 +25,11 @@ but rather for convenient reference of the author and future improvement.
 ## Vim Keybindings
 
 You can install vrapper as vim keybindings on dbeaver.
+
     1. Help -> Install Software
+
     2. Add vrapper repository http://vrapper.sourceforge.net/update-site/stable
+
     3. Install
+
     4. Restart dbeaver

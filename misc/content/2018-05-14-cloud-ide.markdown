@@ -18,16 +18,21 @@ but rather for convenient reference of the author and future improvement.
 
 1. Looks much better Codenvy/Eclipse Che.
 
-2. Python autocompletion does not work well for me currently.
-    Not sure whether it's due old version or not ...
+2. Python autocompletion works in the official online version. 
+    However, debugging is supported only for Python2 currently.
 
-## [Codenvy][https://codenvy.io/] / [Eclipse Che](https://www.eclipse.org/che/)
+## [theia](http://www.theia-ide.org/)
 
-1. very slow
+https://github.com/theia-ide/theia
 
-2. vi keybindings is stupid
+1. Syntax highlighting and checking works well.
 
-3. Scala support is not ready
+2. Debugging is not supported currently but under active development.
+
+### Docker for theia
+
+https://github.com/theia-ide/theia-apps#theia-docker
+
 
 ## [Koding](https://www.koding.com/)
 
@@ -47,15 +52,18 @@ https://hub.docker.com/r/wernight/codiad/
 
 https://github.com/QuantumObject/docker-codiad
 
-## [theia](http://www.theia-ide.org/)
-
-https://github.com/theia-ide/theia
-
-Docker for theia
-https://github.com/theia-ide/theia-apps#theia-docker
-
 ## [wdb](https://github.com/Kozea/wdb)
 
 An improbable web debugger through WebSockets for Python.
 
 ## [ShareLatex ](https://www.sharelatex.com/)
+
+## [Codenvy](https://codenvy.io/) / [Eclipse Che](https://www.eclipse.org/che/)
+
+1. very slow
+
+2. vi keybindings is stupid
+
+3. Scala support is not ready
+
+Conclusion: basically unusable, not recommended

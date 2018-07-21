@@ -15,6 +15,17 @@ but rather for convenient reference of the author and future improvement.
 **
 
 
+## Fix the Caps Lock Mapping to Escape Issue
+
+https://github.com/Microsoft/vscode/wiki/Keybinding-Issues
+
+A simple fix is to add the following configuration into the user's setting.json file.
+
+```
+{
+    "keyboard.dispatch": "keyCode"
+}
+```
 
 
 ## Launching VS Code from Command Line on Mac 

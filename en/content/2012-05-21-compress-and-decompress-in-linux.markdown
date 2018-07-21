@@ -7,6 +7,9 @@ Author: Ben Chuanlong Du
 Category: Linux
 Tags: Linux, decompress, compress, archive, split, multiple, zip, tar, gz, bz2, dtrx, rar, 7zip
 
+
+[18 Tar Command Examples in Linux](https://www.tecmint.com/18-tar-command-examples-in-linux/)
+
 Important tips:
 
 1. Always test integrity of the compressed file

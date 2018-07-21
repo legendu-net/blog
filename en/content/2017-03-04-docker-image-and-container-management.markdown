@@ -32,19 +32,23 @@ This is what users want generally speaking.
 You can use the option `-f` to force removing images,
 but use it with caution and at your own risk.
 
-1. Remove images without names.
+1. Remove images without names (with the help of `awk`).
 
         docker images | awk '{ if ($1 == "<none>") print $3 }' | xargs docker rmi
 
 
-2. Remove images without versions.
+2. Remove images without versions (with the help of `awk`).
 
         docker images | awk '{ if ($2 == "<none>") print $3 }' | xargs docker rmi
 
 
-3. Remove images without names or versions.
+3. Remove images without names or versions (with the help of `awk`).
 
         docker images | awk '{ if ($1 == "<none>" || $2 == "<none>") print $3 }' | xargs docker rmi
+
+4. Remove all images belong to the eclipse organization with the help of `sed` and `q`. 
+
+        docker images sed 's/ \+/\t/g' q -tH "select [image id] from - where repository like 'eclipse/%'" xargs docker rmi 
 
 ## Get Container ID Inside Container
 

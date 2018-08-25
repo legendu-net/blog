@@ -22,6 +22,8 @@ The best universal IDE for (almost all versions of) database.
 ## DbVisualizer
 
 Both free and pro editions are available.
+Functionalities of the free is too limited. 
+It is suggested that you use dbeaver if you prefer a free SQL IDE.
 
 ## Teradata Studio
 

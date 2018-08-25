@@ -1,0 +1,28 @@
+UUID: 4cbb7460-997d-4d17-a7a2-5311d726e281
+Status: published
+Date: 2018-08-25 23:37:23
+Author: Ben Chuanlong Du
+Slug: sql-tip
+Title: SQL Tip
+Category: Programming
+Tags: programming, SQL, sqldep, queryscope, queryViz, eralchemy, database
+
+**
+Things on this page are
+fragmentary and immature notes/thoughts of the author.
+It is not meant to readers
+but rather for convenient reference of the author and future improvement.
+**
+
+## SQL Logic Visualiztoion
+
+1. [sqldep - queryScope](https://app.sqldep.com/queryscope/#)
+    is a great online tool for visualizing logic of SQL code.
+    You need to sign up in order to use this tool.
+
+2. [queryViz](http://queryviz.com/online/)
+    is another online tool for visualizing logic of SQL code 
+    but with very limited functionalities.
+
+3. [eralchemy](https://github.com/Alexis-benoist/eralchemy)
+    is a a tool for visualizing entity relationship in a SQL database.

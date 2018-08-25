@@ -58,6 +58,8 @@ An improbable web debugger through WebSockets for Python.
 
 ## [ShareLatex ](https://www.sharelatex.com/)
 
+## [CodiMD](https://hackmd-ce.herokuapp.com/)
+
 ## [Codenvy](https://codenvy.io/) / [Eclipse Che](https://www.eclipse.org/che/)
 
 1. very slow

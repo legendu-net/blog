@@ -26,19 +26,6 @@ You can use `v is (not) null` in the `where` and/or `on` clauses to select rows.
 When Teradata SQL Assistant displays query results, 
 `null` values are indicated by question marks (`?`).
 
-4. Dates can be represented by strings in the 'yyyy-mm-dd' format in Teradata SQL,
-and these strings will be converted to dates implicitly when necessarily.
-For example,
-the following code counts the number of transactions in a month.
-```SQL
-select
-    count(*) as n
-from
-    some_transaction_table
-where
-    tran_dt between '2014-03-01' and '2014-03-31'
-;
-```
 5. When unioning multiple tables containing constant columns,
 the type of constant columns are forced to be the same as the one in the first table.
 For example, 
@@ -84,3 +71,26 @@ you cannot define a column of size 65K.
 3. be careful about return type of string functions, some return too long strings, 
 better to manually cast them to short strings
 
+
+## Date Types
+
+1. Dates can be represented by strings in the 'yyyy-mm-dd' format in Teradata SQL,
+    and these strings will be converted to dates implicitly when necessarily.
+    For example,
+    the following code counts the number of transactions in a month.
+
+    select
+        count(*) as n
+    from
+        some_transaction_table
+    where
+        tran_dt between '2014-03-01' and '2014-03-31'
+    ;
+
+2. Be careful when you work with date in SQL.
+    A non-exist date can result in tricky errors.
+    For example (note that `2016-09-31` does not exist)
+
+        where dt between '2016-09-01' and '2016-09-31'  
+
+    in Teradata throws the error message "a character string failed to convert to a numeric value".

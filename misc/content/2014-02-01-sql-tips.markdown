@@ -5,185 +5,119 @@ Date: 2016-11-20 19:22:04
 Title: SQL Tips
 Slug: sql-tips
 Category: Programming 
-Tags: programming, SQL, tips, IDE
+Tags: programming, SQL, tips, IDE, sqldep, queryscope, queryViz, eralchemy, database
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-## SQL Formatter
-<http://sqlformat.org/>
-<http://www.dpriver.com/pp/sqlformat.htm>
-<http://www.sql-format.com/>
-<http://www.tsqltidy.com/>
-<http://stackoverflow.com/questions/1394998/parsing-sql-with-python>
+
+1. If space and performance is not critical, 
+    to make it is easier for collabarating,
+    you can define all columns as type of varchar. 
+    The advantage is that no one has to remember the type of columns. 
+
+2. Good to keep all kind of IDs even if you won't need them currently, 
+    you nev.. know when you are going to need them ...
+
+3. Avoid using subqueries in SQL. 
+    Use CTE (with clause) instead
+    which is equivalent but has much more readable.
 
 1. avoid using resvered keywords (e.g., title) as column/table name, 
-even if you can use "keyword" but still other people might forget for not obvious keywords like title
+    even if you can use "keyword" but still other people might forget for not obvious keywords like title
 
 2. JDBC is preferred over ODBC for 3 reason. 
-First, JDBC is easier to set up.
-Second, JDBC has better performance.
-Last but not least, JDBC has wider support.
+    First, JDBC is easier to set up.
+    Second, JDBC has better performance.
+    Last but not least, JDBC has wider support.
 
 3. `*` stand for all fields. 
-If you want all fields of a specific table,
-then prefix `*` with the table name, 
-e.g., `t.*`. 
-This is helpful when you join multiple tables.
-Another thing is that `*` cannot be followed by more fields. 
-However, `t.*` can (where `t` is a table).
+    If you want all fields of a specific table,
+    then prefix `*` with the table name, 
+    e.g., `t.*`. 
+    This is helpful when you join multiple tables.
+    Another thing is that `*` cannot be followed by more fields. 
+    However, `t.*` can (where `t` is a table).
  
 1. Some versions of SQL use `as` when creating aliases for selected fields 
-while some other versions of SQL don't.
+    while some other versions of SQL don't.
 
 2. analytical functions are powerful
-row_number() over partition
-another way is to use self join
+    row_number() over partition
+    another way is to use self join
 
 3. `select count(*) from table t;`
-no grouping, kind of default grouping, all record are in a default group
+    no grouping, kind of default grouping, all record are in a default group
 
 4. Use `=` instead of `==` for comparison.
-Quote strings using single quotation marks instead of double quotation marks.
+    Quote strings using single quotation marks instead of double quotation marks.
 
 5. refresh in SQLDeveloper to show newly created talbes
 
 6. You must put all columns of the SELECT 
-in the GROUP BY or use aggregate functions on them 
-which compress the results to a single value (like MIN, MAX or SUM) 
-according to SQL standard.
-MySQL does not conform to this standard
-and the results returned is not well defined sometimes 
-when you don't follow the SQL standard.
+    in the GROUP BY or use aggregate functions on them 
+    which compress the results to a single value (like MIN, MAX or SUM) 
+    according to SQL standard.
+    MySQL does not conform to this standard
+    and the results returned is not well defined sometimes 
+    when you don't follow the SQL standard.
 
 7. the select distinct, distinct describes record, not column.
 
-## Style
-1. some people like to put `,` 
-before column names in select, 
-I don't think this is a good practices, 
-as what if we want to remove the first column? 
-it similarly inconvenient to removing the last column when put comma after column names
-
 ## Tricks and Traps
 
-0. It is always good practice to indicate the version of SQL in your sql code ....
-as others cannot easily tell whether you are using Teradata SQL, Oracel SQL or MS SQL
-not to mention the version (if version specific feature is used).
+1. You cannot use `order by` when insert records into a table using select .
+    this is easy to understand as first SQL does not save data in order. 
+    second, ordering in select might conflict with ordered columns (e.g., auto increment columns).
+    Finally, select never garantee any ordering.
+    You have to apply order by any way. 
+
+2. It is always good practice to indicate the version of SQL in your sql code ....
+    as others cannot easily tell whether you are using Teradata SQL, Oracel SQL or MS SQL
+    not to mention the version (if version specific feature is used).
 
 1. extra semicolon somewhere causes mistakes
 
 2. case when, break at first match, no need to manually break (unlike C/C++)
 
 3. avoid using keywords as column names, 
-if you do want use a keyword as a column name, 
-you have to double quote it (e.g., "as"). 
-can also use [], '', in MS SQL, etc.
+    if you do want use a keyword as a column name, 
+    you have to double quote it (e.g., "as"). 
+    can also use [], '', in MS SQL, etc.
 
 4. always specify (unique) primary index when you create a table 
 
 8. if not group by statement, then all records as 1 group 
-if there is a aggregation function.
+    if there is a aggregation function.
 
 9. be careful when you use the 
-`delete from table_name` command, 
-as you might mistakely delete all rows 
-if you forget the `where` clause or has an extra `;` before ...
+    `delete from table_name` command, 
+    as you might mistakely delete all rows 
+    if you forget the `where` clause or has an extra `;` before ...
 
 1. sometimes you want add "missing" rows (compared to some "full" table). 
-the first step is of course to create such a full table, 
-and join the two tables to find "missing" rows
+    the first step is of course to create such a full table, 
+    and join the two tables to find "missing" rows
 
 3. Even if observations in a table is sorted, 
-you have to rely on the `order by` clause to get sorted observations.
-That is the `select` statement without `order by` guarantees no specific order of observations.
-This is true for all versions of SQLs.
+    you have to rely on the `order by` clause to get sorted observations.
+    That is the `select` statement without `order by` guarantees no specific order of observations.
+    This is true for all versions of SQLs.
 
-## Comment
+## Syntax
 
-1. Amost all versions of SQL support `--` as single-line comment.
-and `/* ... */` as multiple-line comment.
-MySQL also support `#` as single-line comment.
-
-## General Tips
-
-1. If space and performance is not critical, 
-to make it is easier for collabarating,
-you can define all columns as type of varchar. 
-The advantage is that no one has to remember the type of columns. 
-
-2. Good to keep all kind of IDs even if you won't need them currently, 
-you nev.. know when you are going to need them ...
-
-3. Avoid using subqueries in SQL. 
-Use CTE (with clause) instead
-which is equivalent but has much more readable.
+1. `()` can be used and sometimes make people confused ... function or keyword ...
 
 ## Operators
+
 1. Prefer `<>` as the not equal sign as not all versions of SQL support `!=` as the not equal sign.
 
 2. extra `;` can be really dangerous ... 
 
-1. cannot use order by when insert records into a table using select .
-this is easy to understand as first SQL does not save data in order. 
-second, ordering in select might conflict with ordered columns (e.g., auto increment columns).
-Finally, select never garantee any ordering.
-You have to apply order by any way. 
+## Comment
 
-## Date
-Be careful when you work with date in SQL.
-A non-exist date can result in tricky errors.
-For example (note that `2016-09-31` does not exist)
-```SQL
-where dt between '2016-09-01' and '2016-09-31'  
-```
-in Teradata throws the error message "a character string failed to convert to a numeric value".
-
-
-## Group By VS Over Partition
-[SQL Server: Difference between PARTITION BY and GROUP BY](http://stackoverflow.com/questions/2404565/sql-server-difference-between-partition-by-and-group-by)
-1. `group by` alwasy aggreates values. 
-That is `group by` alwasy reduces a group of values to 1 value.
-Hoever, `analytics_function() over(partition by column)` does not aggreage.
-It returns a value for each record in the group.
-Even if an aggregation function is applied and returns only 1 value,
-this value is returned for each value in the group.
-real example, meta_cat, sub_cat, want to find all sub_cat that have multiple meta_cat, over partition is an easier way
-
-
-
-They are used in different places. group by modifies the entire query, like:
-
-```SQL
-select 
-    customerId, 
-    count(*) as orderCount
-from 
-    Orders
-group by 
-    customerId
-
-```
-But partition by just works on a window function, like row_number:
-
-```SQL
-select 
-    row_number() over (partition by customerId order by orderId) as OrderNumberForThisCustomer
-from 
-    Orders
-```
-
-A group by normally reduces the number of rows returned 
-by rolling them up and calculating averages or sums for each row. 
-partition by does not affect the number of rows returned, 
-but it changes how a window function's result is calculated.
-
-## Formatting and Casting
-1. || works differently on different date types. 
-This is because different data types have different (default) padding/formatting styles.
-You can manually cast date types to produce the format you want. 
-
-## Syntax
-() can be used and sometimes make people confused ... function or keyword ...
+1. Amost all versions of SQL support `--` as single-line comment.
+    and `/* ... */` as multiple-line comment.
+    MySQL also support `#` as single-line comment.

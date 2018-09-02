@@ -15,7 +15,12 @@ but rather for convenient reference of the author and future improvement.
 **
 
 
-1. [httpd](https://hub.docker.com/_/httpd/)
+## [httpd](https://hub.docker.com/_/httpd/)
+Pull the image. 
+```bash
+docker pull httpd
+```
+Start a docker container.
 ```bash
 docker run -dit -p 80:80 -v /wwwroot:/usr/local/apache2/htdocs/ httpd
 ```

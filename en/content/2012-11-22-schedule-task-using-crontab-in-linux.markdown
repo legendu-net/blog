@@ -47,6 +47,10 @@ If you do not have read permission to the log files,
 you can redict the standard output and error messages of a cron job when you schedule it. 
 Please find an example below.
 
+## Start a Crontab Service on Ubuntu
+```
+sudo service cron start
+```
 
 ## Cron Job Examples 
 

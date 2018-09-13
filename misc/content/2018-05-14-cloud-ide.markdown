@@ -31,6 +31,7 @@ https://github.com/theia-ide/theia
 
 3. best to mount a directory that has mode 777
 
+### Docker for theia
 ```
 docker pull theiaide/theia-full
 ```
@@ -38,11 +39,6 @@ docker pull theiaide/theia-full
 ```
 docker run -d -p 3000:3000 -v /workdir:/home/project:cached theiaide/theia-full
 ```
-
-### Docker for theia
-
-https://github.com/theia-ide/theia-apps#theia-docker
-
 
 ## [Koding](https://www.koding.com/)
 

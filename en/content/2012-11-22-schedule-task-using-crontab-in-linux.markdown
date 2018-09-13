@@ -49,7 +49,12 @@ Please find an example below.
 
 ## Start a Crontab Service on Ubuntu
 ```
+# start cron service
 sudo service cron start
+# check status of the cron service 
+service cron status
+# stop the cron service
+service cron stop
 ```
 
 ## Cron Job Examples 

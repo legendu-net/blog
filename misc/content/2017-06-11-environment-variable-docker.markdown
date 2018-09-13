@@ -2,8 +2,8 @@ UUID: c86f6efc-25f7-41da-87ab-7392b6dbb9f1
 Status: published
 Date: 2017-06-11 11:58:35
 Author: Ben Chuanlong Du
-Slug: use-environment-variable-in-docker-entrypoint
-Title: Use Environment Variable in Docker Entrypoint
+Slug: environment-variable-docker
+Title: Environment Variable in Docker
 Category: Software
 Tags: software, docker, shell form, exec form, environment variable
 
@@ -14,6 +14,20 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+## Environment Variables 
+
+1. It seems that Docker reads neither `/etc/profile` 
+    nor `/etc/environment` for environment variables.
+
+2. You can create environment variables for the current user 
+   using the command `ENV`. 
+   And you can also manually export environment variables in a init script once the container is started.
+   
+3. There is an option in JupyterHub to keep env virables 
+   from the JupyterHub process for JupyterLab processes.
+
+
+## Environment Variables in Entrypoint
 
 The exec form of ENTRYPOINT does not invoke a command shell, 
 unlike the shell form. 

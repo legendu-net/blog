@@ -15,12 +15,48 @@ but rather for convenient reference of the author and future improvement.
 **
 
 
-1. [pylint](https://github.com/PyCQA/pylint)
+## Check Python Script
 
-Either have PyLint in JupyterHub-ds or make a new Docker image for it
+### [pylint](https://github.com/PyCQA/pylint)
+
+pylint your_script.py
+
+### mypy
+
+mypy your_script.py
+
+mypy --ignore-missing-imports roas.py
+
+## Type Annotation
+
+### [MonkeyType](https://github.com/Instagram/MonkeyType)
+
+1. Run the following command to annotate your Python script.
+
+        monkeytype run yourscript.py
 
 
-2. [yapf](https://github.com/google/yapf)
+2. MonkeyType supports pytest.
+
+        monkeytype run `which pytest` 
+
+## Formatting 
+
+1. [yapf](https://github.com/google/yapf)
+
+        yapf -d yourscript.py
+
+## Debugging
+
+1. [pdb](https://docs.python.org/3/library/pdb.html)
 
 
-3. [pdb](https://docs.python.org/3/library/pdb.html)
+## Installation
+
+```
+pip3 install yapf, pylint, monkeytype, mypy
+```
+```
+conda install -c conda-forge MonkeyType
+conda install mypy
+```

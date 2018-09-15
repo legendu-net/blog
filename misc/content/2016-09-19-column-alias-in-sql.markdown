@@ -16,17 +16,17 @@ but rather for convenient reference of the author and future improvement.
 
 
 Logically any `SELECT` is processed in following order:
-```SQL
-from
-where
-group by
-having
-olap functions
-qualify
-select 
-sample
-order by
-```
+
+1. from
+2. where
+3. group by
+4. having
+5. olap functions
+6. qualify
+7. select 
+8. sample
+9. order by
+
 Besides the proprietary `QUALIFY/SAMPLE` every DBMS will do it exactly the same.
 When you use a column alias in
 `where`, `group by`, `having`, `olap functions` or `quality`
@@ -35,16 +35,19 @@ thus using an alias should fail.
 
 However, there are a few exceptions.  
 Both Teradata SQL and MySQL allows using column aliases in
-`where`, `group by`, `having`, `olap functions` and `quality`.
+`where`, `group by`, `having`, `olap functions` and `qualify`.
 Even if column aliases are allowed in Teradata and MySQL, 
 you should never alias to an existing column name 
 to avoid confusing the optimizer and/or end user).
+If you do alias to an existing column name in Teradata,
+the original column instead of the alias is used 
+in `where`, `group byy`, `having`, `olap functions` and `qualify`.
 
 ## Allow Column Alias 
+
 1. Teradata SQL
 2. MySQL
 
 ## Disallow Column Alias 
+
 1. Oracle SQL
-
-

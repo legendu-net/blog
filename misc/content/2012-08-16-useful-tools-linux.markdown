@@ -378,71 +378,10 @@ Opensource Desktop Publishing
 
 1. calibre
 
-### Symbolic Computing
-
-1. Methmatica
-
-2. sage
-
-3. Maxima
-
 ### Notes Taking
 
 <http://www.legendu.net/misc/blog/software-for-taking-notes/>
 
-### Mind Mapping Tools
-
-1. XMind
-cross-platform, free
-
-2. IHMC Cmap
-
-2. [MindJet](http://www.mindjet.com/)
-commerical, windows, mac
-
-3. Mindomo
-cross-platform (via Adobe Air)
-
-4. WiseMapping
-
-5. IHMC CmapTools
-
-6. SimpleMind
-Windows, Mac
-
-3. [Coggle](http://coggle.it/)
-
-4. FreeMind
-
-5. [LucidChart](https://www.lucidchart.com/)
-
-6. [MindMeister](https://www.mindmeister.com/)
-WebApplication, free
-
-7. [code2flow](http://code2flow.com/)
-
-#### Text-based Mind Mapping Tools
-1. Markdown with relevant tools
-MarkdownToMindMap
-PopClip
-http://brettterpstra.com/2013/08/18/markdown-to-mind-map/
-
-4. LaTex PGF/TikZ/Graphviz
-
-5. [Mappio](http://mappio.com/)
-looks pretty cook, better than Text2MindMap
-but unfortunately also web-based
-
-6. [Text2MindMap](https://www.text2mindmap.com/)
-An online tool which looks pretty cool, but I'm looking for a native application ...
-
-2. [Asciiflow](http://asciiflow.com/)
-
-3. [ditaa](http://ditaa.sourceforge.net/)
-
-4. PlantUML
-plugin available for Eclipse
-sounds great!
 
 ### Task Management
 
@@ -593,73 +532,6 @@ wajig install libgoo-canvas-perl shutter shutter
 
 2. EQUINOX-3D
 
-### Audio/Video Conference
-
-<https://en.wikipedia.org/wiki/Comparison_of_web_conferencing_software>
-
-2. Apache OpenMeeting
-
-3. Jitsi
-
-3. UberConference (free for up to 10 callers)
-
-4. TeamViewer
-
-1. Skype (support screen sharing)
-
-2. iVisit, iChat, NetMeeting
-
-3. Breeze
-
-2. MeetingBurner (free for 10 attendees)
-
-
-3. GoToMeeting (free for up to 4 people)
-
-4. Google Voice (up to 4 people)
-
-5. FreeConferenceCall (seems that it is free?)
-
-6. Wiggio (?)
-
-7. Speek (?)
-
-8. https://www.freeconference.com/
-
-9. join.me by LogMeIn
-
-10. SightSpeed
-
-11. Free conference calling
-
-12. Dimdim
-
-1. Tokbox
-
-2. MyMeeting123
-
-3. Paltalk
-
-4. MegaMeeting
-
-5. Fuze Meeting
-
-6. Free Audio Conferencing
-
-7. Easy Conference
-
-8. Easy Conference
-
-9. Gizmo Call
-
-10. Totally Free Conference
-
-11. RingCenteral
-
-1. Onstream Meetings
-http://en.wikipedia.org/wiki/Comparison_of_web_conferencing_software
-http://www.d.umn.edu/~hrallis/professional/presentations/cotfsp06/indiv_tools/videoaudio.htm
-
 ## Social Tools
 
 ### Teleconference
@@ -748,78 +620,6 @@ http://www.d.umn.edu/~hrallis/professional/presentations/cotfsp06/indiv_tools/vi
 
 2. gitlab
 
-
-## File Converting Tools
-
-1. pandoc (mark-up language)
-
-2. markdown (markdown to HTML)
-
-2. tex4ht (convert Latex code to HTML)
-
-2. wkhtmltopdf (html to PDF, support URL, best)
-
-2. knitr (an R package)
-
-3. ImageMagick (convert between types of images)
-
-4. [HTML2Image](http://www.guangmingsoft.net/htmlsnapshot/html2image.htm)
-
-5. [CutyCapt](http://cutycapt.sourceforge.net/)
-
-4. pdflatex
-
-5. dos2unix, unix2dos
-
-## Windows Emulation on Linux Host
-
-Virtual machine is the recommend way to emulate Windows working environment.
-
-1. VirtualBox, VMWare, MobaLiveCD
-
-2. Wine, CrossOver
-
-## Linux Emulation on Windows Host
-
-0. VirtualBox, VMWare
-
-1. Cygwin (Vim, git and other tools might limited functionalities)
-
-2. MobaXterm (tools have limited functionalities)
-
-2. MobaLiveCD (a little cool application to run Linux live CD in Windows)
-
-## Andriod Emulation on Linux
-
-1. AnBox - Run Android applications on any GNU/Linux operating system.
-
-## Games
-
-- Team fortress 2
-
-- Dungeon defenders
-
-- Counter strike
-
-- Bit trip runner 2
-
-- The cave
-
-- Heroes of newerth
-
-- Trine 2
-
-- Serious sam 3
-
-- Rochard
-
-- Botanicula
-
-- Frozen Synapse
-
-- Dear Esther
-
-
 ## Websites
 
 1. MileWise
@@ -829,6 +629,7 @@ Virtual machine is the recommend way to emulate Windows working environment.
 3. http://dedalvs.tumblr.com/post/48998678919/99-life-hacks-to-make-your-life-easier
 
 ## Translation
+
 https://www.apertium.org/index.eng.html?dir=eng-cat#translation
 
 ## Misc

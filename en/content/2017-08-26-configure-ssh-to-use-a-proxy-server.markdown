@@ -27,3 +27,9 @@ GSSAPIDelegateCredentials no
 ServerAliveInterval 90
 ServerAliveCountMax 3
 ```
+
+1. Wildcard and NOT operator are supported.
+
+        Host *.xxx.xxx.com !*.exclude.com
+        ProxyCommand ssh proxy_server_address -W %h:%p   
+        Host *

@@ -1,10 +1,21 @@
-Title: Some Links of People
-Date: 2017-01-05 21:39:16
-Slug: people
-Category: Links
-Tags: links, people
+UUID: 32b5b88e-d415-402a-af22-5293c4020ba9
+Status: published
+Date: 2018-09-27 23:47:00
+Author: Ben Chuanlong Du
+Slug: personal-blogs
+Title: Personal Blogs
+Category: People
+Tags: people, personal blogs
+
+**
+Things on this page are
+fragmentary and immature notes/thoughts of the author.
+It is not meant to readers
+but rather for convenient reference of the author and future improvement.
+**
 
 ## Machine Learning
+
 - [Andrew Ng](http://ai.stanford.edu/~ang/)
 - [视觉计算研究论坛](http://www.sigvc.org/bbs/forum.php)
 - [计算机视觉|视频处理|视频呈现](http://doctorimage.cn/)
@@ -25,14 +36,16 @@ Tags: links, people
 - [Paul Viola](http://research.microsoft.com/en-us/um/people/viola/)
 - [Dorin Comaniclu](http://www.cs.cmu.edu/~har/)
 - [Henry Schneiderman](http://www.cs.cmu.edu/~hws/)
+- [Michael Wong](https://wongmichael.com/)
 http://www.wdong.org/wordpress/
 
 ## Statistics
-- [Steve Vardeman](http://www.public.iastate.edu/~vardeman/)
-- [Dan Nettleton](http://www.public.iastate.edu/~dnett/)
+
 - [Peter Bartlett](http://www.stat.berkeley.edu/~bartlett/)
 - [Dennis D. Boos](http://www4.stat.ncsu.edu/~boos/)
 - [David Blankley](http://www.blankley.com/)
+- [Steve Vardeman](http://www.public.iastate.edu/~vardeman/)
+- [Dan Nettleton](http://www.public.iastate.edu/~dnett/)
 - [谢益辉](http://yihui.name/)
 - [不周山](http://www.wentrue.net/blog/)
 - [老工兵](http://lgby.blog.sohu.com)
@@ -49,9 +62,6 @@ http://www.wdong.org/wordpress/
 - http://blog.gillerinvestments.com/archive.aspx
 
 ## CS:
-- [Bjarne Stroustrup](http://www.stroustrup.com/)
-- [Herb Sutter](http://herbsutter.com/)
-- [Scott Meyers](http://scottmeyers.blogspot.com)
 - [Josh Rendek](http://joshrendek.com/)
 - [SmSpillaz](http://smspillaz.wordpress.com/)
 - [Solarian Programmer](http://solarianprogrammer.com/)
@@ -73,7 +83,20 @@ http://www.wdong.org/wordpress/
 ## Material Science
 - [Ralf Hielscher](http://www-user.tu-chemnitz.de/~rahi/pubs.php?druck)
 
+
+
+## C++ 
+
+- [Michael Wong](https://wongmichael.com/)
+
+- [Bjarne Stroustrup](http://www.stroustrup.com/)
+
+- [Herb Sutter](http://herbsutter.com/)
+
+- [Scott Meyers](http://scottmeyers.blogspot.com)
+
 ## Misc
+
 http://eric-yuan.me/
 - [月光](http://www.williamlong.info/blog/)
 - [独步清风](http://dbqf.xyz)

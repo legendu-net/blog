@@ -25,6 +25,10 @@ which are variables that are only “added” to, such as counters and sums.
 
 spark-shell --jars ... to add jars and then you can use it!!!
 
+## Spark Cluster Master URL
+
+https://spark.apache.org/docs/latest/submitting-applications.html#master-urls
+
 
 ## Links
 

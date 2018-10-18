@@ -14,23 +14,39 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+### IDE
 
-## ElasticSearch
+2. [eclipse/che](https://hub.docker.com/r/eclipse/che/)
 
-https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html
 
-## Kibana
+### wine 
 
-https://www.elastic.co/guide/en/kibana/current/docker.html
+suchja/wine 
 
-## Mongo
+yantis/wine 
 
-https://hub.docker.com/_/mongo/
+lijianying10/wineqq
 
-## nextCloud
 
-https://hub.docker.com/_/nextcloud/
+### Spark
 
-## mysql
+1. [brunelvis/notebook-minimal](https://hub.docker.com/r/brunelvis/notebook-minimal/)
 
-https://hub.docker.com/r/_/mysql/
+https://store.docker.com/community/images/kdelfour/cloud9-docker
+
+### Misc
+
+3. apihackers/pelican
+
+5. devurandom/firefox
+
+7. sitespeedio/sitespeed.io
+
+8. brook/ubuntu-14.04.3-baidupcs
+
+2. [haugene/transmission-openvpn](https://hub.docker.com/r/haugene/transmission-openvpn/)
+
+
+### Android 
+
+thshaw/arc-welder 

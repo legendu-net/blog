@@ -4,8 +4,8 @@ Date: 2018-09-27 23:58:53
 Author: Ben Chuanlong Du
 Slug: elasticsearch-tips
 Title: Elasticsearch Tips
-Category: Programming
-Tags: programming
+Category: Software
+Tags: software, Elasticsearch, tips, search engine, database
 
 **
 Things on this page are
@@ -14,6 +14,7 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+
 ## SQL Support 
 
 1. Elasticsearch supports SQL syntax starting from version 6.3.
@@ -21,3 +22,7 @@ but rather for convenient reference of the author and future improvement.
 https://logz.io/blog/elasticsearch-sql-support/
 
 https://medium.com/@mustafaakin/previewing-elasticsearch-6-3-sql-feature-2d3a1d60cab4
+
+## Links
+
+https://www.elastic.co/downloads

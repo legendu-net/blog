@@ -14,6 +14,7 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+https://www.elastic.co/guide/en/elasticsearch/reference/2.1/setup-service.html
 
 ## SQL Support 
 

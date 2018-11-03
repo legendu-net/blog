@@ -38,7 +38,7 @@ Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
                             - [dclong/jupyterlab-rstudio](https://hub.docker.com/r/dclong/jupyterlab-rstudio/)
                                 - [dclong/jupyterlab-rstudio-py](https://hub.docker.com/r/dclong/jupyterlab-rstudio-py/)
                     - [dclong/jupyterhub](https://hub.docker.com/r/dclong/jupyterhub/)  
-                        - [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/)  
+                        - [dclong/jupyterhub-julia](https://hub.docker.com/r/dclong/jupyterhub-julia/)  
                         - [dclong/jupyterhub-jdk](https://hub.docker.com/r/dclong/jupyterhub-jdk/)  
                             - [dclong/jupyterhub-py](https://hub.docker.com/r/dclong/jupyterhub-py/)  
                                 - [dclong/jupyterhub-beaker](https://hub.docker.com/r/dclong/jupyterhub-beakerx/)  

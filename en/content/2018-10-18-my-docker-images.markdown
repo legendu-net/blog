@@ -17,6 +17,8 @@ Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
     It is suggested that you use the corresponding `dclong/lubuntu*` Docker images instead,
     which are based on LXQt.
 
+## My Docker Images
+
 - [dclong/ubuntu_b](https://hub.docker.com/r/dclong/ubuntu_b/)  
     - [dclong/python](https://hub.docker.com/r/dclong/python/)  
         - [dclong/jupyter](https://hub.docker.com/r/dclong/jupyter/)  
@@ -69,3 +71,33 @@ Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
             - [dclong/xubuntu-jdk](https://hub.docker.com/r/dclong/xubuntu-jdk/)  
                 - [dclong/xubuntu-scala](https://hub.docker.com/r/dclong/xubuntu-scala/)  
                     - [dclong/xubuntu-intellij](https://hub.docker.com/r/dclong/xubuntu-intellij/)  
+
+## Software Versions in My Docker Images
+
+Time Zone: all my Docker images uses US Pacific Time.
+
+### Tag `latest`
+
+OS: Ubuntu 18.04  
+Jupyter Notebook: 5.6.0  
+NodeJS: 8.11.3  
+JupyterLab: 0.35.4  
+JupyterHub: 0.9.3  
+OpenJDK 8  
+Maven: 3.3.9  
+Python 3.6.6 
+Scala 2.11.12 
+BeakerX 1.1.0
+
+### Tag `18.10`
+
+OS: Ubuntu 18.10  
+Jupyter Notebook: 5.6.0  
+NodeJS: 8.11.3  
+JupyterLab: 0.35.4  
+JupyterHub: 0.9.3  
+OpenJDK 8  
+Maven: 3.3.9  
+Python 3.6.6 
+Scala 2.11.12 
+BeakerX 1.1.0

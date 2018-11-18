@@ -27,3 +27,10 @@ https://medium.com/@mustafaakin/previewing-elasticsearch-6-3-sql-feature-2d3a1d6
 ## Links
 
 https://www.elastic.co/downloads
+
+## Aggregation
+
+The after_key is equals to the last bucket returned in the response 
+before any filtering that could be done by Pipeline aggregations. 
+If all buckets are filtered/removed by a pipeline aggregation, 
+the after_key will contain the last bucket before filtering.

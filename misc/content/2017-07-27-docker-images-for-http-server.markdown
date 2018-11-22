@@ -22,5 +22,5 @@ docker pull httpd
 ```
 Start a docker container.
 ```bash
-docker run -dit -p 80:80 -v /wwwroot:/usr/local/apache2/htdocs/ httpd
+docker run -dit -p 80:80 -v /workdir:/usr/local/apache2/htdocs/ httpd
 ```

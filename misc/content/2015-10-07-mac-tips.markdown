@@ -34,3 +34,11 @@ you should never do this.
 
 2. You got to tap hard in order to click on a Mac laptop.
 
+## Move and Resize Windows
+
+https://www.spectacleapp.co/
+
+## External Monitors
+
+https://support.apple.com/en-us/HT202351
+

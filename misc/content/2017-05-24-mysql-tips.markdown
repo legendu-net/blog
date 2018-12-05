@@ -23,6 +23,11 @@ sudo service mysql restart
 mysqladmin -u root -p variables | grep port
 ```
 
+`mysqladmin --help` list the locations of `my.cnf`.
+```sh
+mysqladmin --help
+```
+
 ## Python Packages 
 
 1. peewee

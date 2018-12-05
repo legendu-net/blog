@@ -14,11 +14,26 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+## Links
+
 <http://bokeh.pydata.org/en/latest/>
 
-1. Bokeh supports both charts and data tables.
+## Installation
 
-2. Bokeh server is a very convenient way to build a dashboard.
+```
+sudo pip3 install bokeh jupyter holoviews
+```
+
+## Usage
+```
+bokeh serve --allow-websocket-origin=*:5006 dash.ipynb
+```
+it seems that only 5006 works ...
+might be because ...
+
+
+
+
 
 ## Questions
 

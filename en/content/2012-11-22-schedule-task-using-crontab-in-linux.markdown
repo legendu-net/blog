@@ -5,7 +5,7 @@ Slug: schedule-task-using-crontab-in-linux
 Author: Ben Chuanlong Du
 Title: Schedule Task Using Crontab in Linux
 Category: Linux
-Tags: task, crontab, schedule, linux, scheduling
+Tags: task, crontab, schedule, linux, scheduling, AirFlow
 
 The information of scheuled tasks are saved in the file `/etc/crontab`. 
 It contains scheduled tasks of all users.
@@ -72,6 +72,17 @@ service cron stop
 
         5   *   *     *     *     /home/dclong/schedule.sh >> /home/dclong/cron.log 2> &1
 
+## Check Crontab Logs
+
+You can use the following command to check crontab logs on Ubuntu.
+```
+sudo cat /var/log/syslog | grep cron
+```
+
+## Crontab vs AirFlow
+
+Crontab is great for simple scheduling requests. 
+For complicated scheduling with many dependencies you probably want to go with AirFlow.
 
 ## References
 

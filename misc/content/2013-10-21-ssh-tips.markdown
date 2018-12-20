@@ -12,28 +12,31 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-1. It seems that if you use the local ip address,
+0. You can use the option `-o StrictHostKeyChecking=no` to turn off strict host key checking.
+    This is helpful for automation when you are in a relative safe environment. 
+
+2. It seems that if you use the local ip address,
     the port number is not important.
 
-2. It might be that the server cannot stand the traffic ...
+3. It might be that the server cannot stand the traffic ...
     it seems that it dies if I copy lots of files into it ...
 
-3. when use sshfs and fuse, you want to add your user account into the fuse group,
+4. when use sshfs and fuse, you want to add your user account into the fuse group,
 
         gpasswd -a dclong fuse
         newgrp fuse
 
-4. best to set no password for public keys,
+5. best to set no password for public keys,
     though it's not very secure,
     it saves lots of potential problems, such as keyring management,
     ssh key for cron and so on
 
-5. must use no passphrase for ssh so that ssh works
+6. must use no passphrase for ssh so that ssh works
     for duplicity and so on,
     many program rely on this, so you'd better not set passphrase for ssh
 
-6. about debian laptop not recognized on local network, it's really strange
+7. about debian laptop not recognized on local network, it's really strange
     probably because of debian sid
 
-7. ip can be important if you use ssh,
+8. ip can be important if you use ssh,
     make sure your ip is allowed to ...

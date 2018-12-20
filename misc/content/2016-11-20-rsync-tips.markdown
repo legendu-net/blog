@@ -13,4 +13,11 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
 [14 Practical examples of the rsync command](http://www.librebyte.net/en/gnulinux/14-practical-examples-of-the-rsync-command/)
+
+rsync -e "ssh -o StrictHostKeyChecking=no" ...
+
+
+
+rsync -e "ssh -p 323" ...

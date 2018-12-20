@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Slug: bash-tips
 Title: Bash Tips
 Category: Programming
-Tags: programming, bash, shell
+Tags: programming, bash, shell, tips, parallel, xargs, wait
 
 **
 Things on this page are
@@ -19,3 +19,13 @@ is a great place for learning shell.
 
 1. Bash array supports negative indexes,
 which is similar to Python.
+
+## Parallel Computing in Bash 
+
+1. & and wait 
+
+2. parallel 
+
+3. xargs
+
+

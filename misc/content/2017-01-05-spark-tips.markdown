@@ -27,6 +27,14 @@ spark-shell --jars ... to add jars and then you can use it!!!
 
 spark-shell accepts --queue as parameter ...!!!
 
+## Spark SQL
+
+Spark SQL supports hive sql syntax.
+For example,
+`spark.sql("show tables in some_schema")` 
+returns a DataFrame with tables in the Hive database.
+
+
 ## Spark Cluster Master URL
 
 https://spark.apache.org/docs/latest/submitting-applications.html#master-urls

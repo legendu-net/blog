@@ -72,6 +72,17 @@ service cron stop
 
         5   *   *     *     *     /home/dclong/schedule.sh >> /home/dclong/cron.log 2> &1
 
+## Scheduling Tips
+
+You can schedule more frequently in crontab 
+and then reduce the running frequency of the application in your scripts.
+Below is an example in Bash shell.
+```
+if [[ $(date +%H) =~ ^(10|12|14|16|18)$ ]]; then
+    ...
+fi
+```
+
 ## Check Crontab Logs
 
 You can use the following command to check crontab logs on Ubuntu.

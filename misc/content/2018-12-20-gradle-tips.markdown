@@ -21,6 +21,13 @@ sudo apt-get update
 sudo apt upgrade gradle
 ```
 
+## Tricks and Traps
+
+1. You'd better rebuild (using the `build` command) your project 
+    before testing running your project or generating a fat jar (using the `shadowjar` command).
+    Otherwise, 
+    you might run into weird issues such as resource file not found, etc.
+
 ## References
 
 https://askubuntu.com/questions/932083/how-do-i-upgrade-gradle

@@ -14,6 +14,10 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-- XMind
-- [Lucid Chart](https://www.lucidchart.com/)
-- MS Visio
+## XMind
+
+## [Lucid Chart](https://www.lucidchart.com/)
+
+Only 3 docs allowed, the free account is pretty much useless!!!
+
+## MS Visio

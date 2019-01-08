@@ -14,16 +14,22 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+## Installation in Ubuntu 
+
+https://www.ubuntupit.com/how-to-install-intellij-idea-in-ubuntu-linux/
+
+
+
 1. The first scala project might very long time to generate the directories
-depending on your network speed.
-SBT needs to download some JARs and when the download is complete,
-it will generate the `src` directory.
-It suggests that you work in environment with good network connection
-when using IntelliJ.
+    depending on your network speed.
+    SBT needs to download some JARs and when the download is complete,
+    it will generate the `src` directory.
+    It suggests that you work in environment with good network connection
+    when using IntelliJ.
 
 
 2. sbt (rather than Maven) is required if you want to use Scala worksheet in IntelliJ IDEA.
-You might see the following error if Maven is use.
+    You might see the following error if Maven is use.
 
         scalac error: bad option: '-make:transitive' on mvn package via command line
 

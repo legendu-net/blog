@@ -14,9 +14,19 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+
+Unfortunately ARM-only apps are not supported in Anbox in a x86-based Linux OS at this time.
+
 [Anbox - Android in a Box](http://anbox.io/)
 
 ```bash
 sudo snap install --classic anbox-installer 
 anbox-installer 
 ```
+
+## References
+
+
+https://anbox.io/
+
+https://medium.com/@xeroxism/install-anbox-and-run-android-apps-on-linux-36b665def84

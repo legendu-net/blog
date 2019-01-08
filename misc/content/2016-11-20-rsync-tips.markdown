@@ -18,6 +18,14 @@ but rather for convenient reference of the author and future improvement.
 
 rsync -e "ssh -o StrictHostKeyChecking=no" ...
 
-
-
 rsync -e "ssh -p 323" ...
+
+## Errors & Solutions
+
+### error in protocol data stream (code 12)
+It is probably because the remote diretory does not exist.
+
+### References
+
+https://askubuntu.com/questions/625085/rsync-over-ssh-error-in-protocol-data-stream-code-12-ssh-works
+

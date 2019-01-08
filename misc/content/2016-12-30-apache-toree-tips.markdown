@@ -16,6 +16,12 @@ but rather for convenient reference of the author and future improvement.
 
 <https://github.com/apache/incubator-toree/blob/master/etc/examples/notebooks/magic-tutorial.ipynb>
 
+
+```bash
+anaconda3/bin/jupyter toree install --user --spark_home=/apache/spark
+```
+
+
 ## Dependency Managemnt
 
     %AddJar jar_url
@@ -42,4 +48,4 @@ Currently it supports only https://repo1.maven.org/maven2/, but not all projects
 
 ## Questions
 
-1. multiple version of scala? How?
+1. multiple version of Scala? How?

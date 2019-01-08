@@ -14,11 +14,34 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-1. Writing to existing files in Spark throws file already exist exception. 
-This s because Hadoop filesystem does not overwrite files that already exist.
-`RDD.saveAsTextFile` does not provide an option to manually overwrite existing files.
-To avoid the issue, 
-you have to manually remove the existing file before writing to them.
+1. When you want to keep headers in the data, 
+    it is suggested that you use the Parquet format to save data for multiple reasons.
+    It is fast, takes less space
+    and you don't have to worry about duplicated headers encountered when merging CSV files with headers.
+    There is no need to merge Parquet files. 
+    You can directly read in a folder of Parquet files in all kinds of programming languages,
+    which is more convenient than a folder of CSV files.
+
+2. Writing to existing files using `RDD.saveAsTextFile` throws file already exist exception. 
+    This s because Hadoop filesystem does not overwrite files that already exist.
+    `RDD.saveAsTextFile` does not provide an option to manually overwrite existing files.
+    To avoid the issue, 
+    you have to manually remove the existing file before writing to them.
+    Of course, 
+    it is no longer suggested to use RDD directly any more in Spark. 
+    You use should DataFrame as much as possible. 
+    `DataFrame.write` allows you to overwrite existing HDFS files via `DataFrame.write.option("overwrite")`.
+
+## File Format
+
+avro offical support instead of databricks? simplest way to read avro into data frame?
+
+– Text – Sequence – Avro – Parquet – ORC
+
+Example orc file for me to read?
+
+spark: it seems that we must know the schema of sequence files ...
+
 
 ## RDD.saveAsTextFile
 
@@ -39,15 +62,3 @@ you have to manually remove the existing file before writing to them.
 ```scala
 sc.hadoopConfiguration.set("mapred.output.compress", "false")
 ```
-
-## File Format
-
-avro offical support instead of databricks? simplest way to read avro into data frame?
-
-– Text – Sequence – Avro – Parquet – ORC
-
-Example orc file for me to read?
-
-spark: it seems that we must know the schema of sequence files ...
-
-

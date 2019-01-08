@@ -16,10 +16,10 @@ but rather for convenient reference of the author and future improvement.
 
 You can launch an Eclipse Che server using the command below.
 ```
-docker run -it -v /var/run/docker.sock:/var/run/docker.sock -v /wwwroot/che:/data eclipse/che start
+docker run -it -v /var/run/docker.sock:/var/run/docker.sock -v /workdir/che:/data eclipse/che start
 ```
-The launched Eclipse Che server can be visited at `server:8080`,
-where `server` is the ip/address of your server.
+The launched Eclipse Che server can be visited at `server_ip:8080`,
+where `server_ip` is the ip of your server.
 Please refer to the [Quick Start](https://www.eclipse.org/che/docs/quick-start.html#docker) for more details.
 
 ## Git/GitHub & SSH Keys

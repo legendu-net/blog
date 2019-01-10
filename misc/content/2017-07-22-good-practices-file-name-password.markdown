@@ -14,11 +14,23 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-## File Name
+## File Names
 
-space (` `), dollar sign (`$`), double/single quotes, tilde, dash/minus
+1. Avoid the following special characters in file names.
+    - spaces (` `) 
+    - dollar signs (`$`)
+    - double quotes (`"`)
+    - single quotes (`'`)
+    - tilde (`~`)
+    - dash/minus (`-`) 
+
+2. When you programmally get the path of a file, 
+    it is best to convert it to its absolute form.
 
 ## Password
-space, $, double/single quotes
 
-
+1. Avoid the following special characters in passwords.
+    - space (` `)
+    - dollar signs (`$`) 
+    - double quotes (`"`) 
+    - single quotes (`'`) 

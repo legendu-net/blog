@@ -14,11 +14,39 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-[14 Practical examples of the rsync command](http://www.librebyte.net/en/gnulinux/14-practical-examples-of-the-rsync-command/)
+## Tricks & Traps 
 
+The command `rsync -avh src_dir des_dir` synchronizes the whole directory `src_dir` 
+into the destination directory `des_dir`
+while `rsync -avh src_dir/ des_dir` synchronizes the contents 
+(sub-files and sub-directories) of `src_dir`
+into the destination directory `des_dir`.
+However, 
+one thing tricky is that `rsync -avh . des_dir` synchronizes the content 
+(sub-files and sub-directories) of the current directory 
+into the destination directory `des_dir`.
+This is especially tricky if you programmally get the source directory that you want to synchronize.
+One good practice is to always convert the programmally generated path into its absolute form.
+
+## Examples
+```
 rsync -e "ssh -o StrictHostKeyChecking=no" ...
+```
 
+```
 rsync -e "ssh -p 323" ...
+```
+
+```
+rsync -avh \
+    --progress \
+    --delete \
+    --exclude .git/ \
+    --exclude target/ \
+    --exclude build/ \
+    --exclude '*.jar' \
+    some_dir user@server_ip:dest_dir/
+```
 
 ## Errors & Solutions
 
@@ -26,6 +54,8 @@ rsync -e "ssh -p 323" ...
 It is probably because the remote diretory does not exist.
 
 ### References
+
+[14 Practical examples of the rsync command](http://www.librebyte.net/en/gnulinux/14-practical-examples-of-the-rsync-command/)
 
 https://askubuntu.com/questions/625085/rsync-over-ssh-error-in-protocol-data-stream-code-12-ssh-works
 

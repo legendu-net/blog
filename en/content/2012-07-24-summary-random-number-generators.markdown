@@ -5,7 +5,7 @@ Date: 2012-07-24 00:00:00
 Slug: summary-random-number-generators
 Author: Ben Chuanlong Du
 Category: Statistics
-Tags: WELL, RNG, statistics, SFMT, dimension, MT, PCG
+Tags: WELL, RNG, statistics, SFMT, dimension, MT, PCG, Java, Python
 
 <img src="http://www.legendu.net/media/rng/random-number-generator.png" height="200" width="240" align="right"/>
 
@@ -61,6 +61,16 @@ they are also hard to predict.
 C++ implementations are available but I don't see a popular Java implementation at this time.
 
 
-## Popular Libraries for Random Number Generators
+## Libraries for Random Number Generators
 
-[Apache Commons Implementation](https://commons.apache.org/proper/commons-rng/userguide/rng.html)
+### Java 
+
+1. [org.apache.commons.math3.random.RandomDataGenerator](http://commons.apache.org/proper/commons-math/javadocs/api-3.6/org/apache/commons/math3/random/RandomDataGenerator.html)
+    is a popular one. 
+    By default it uses a Well19937c generator.
+    A customized RandomGenerator can be provided in the constructor.
+
+### Python
+
+1. Use the [random](https://docs.python.org/3/library/random.html) model.
+    It is based on a Mersenne Twister random number generator.

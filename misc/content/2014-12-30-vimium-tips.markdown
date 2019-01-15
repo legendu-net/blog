@@ -18,3 +18,15 @@ but rather for convenient reference of the author and future improvement.
 1. Open Vimium Options
 2. Paste your customized key mappings into "Custom key mappings".
 3. click save changes button at the bottom-left corn ...
+
+## My Customized Mappings
+```
+map d removeTab
+map u restoreTab
+unmap x
+unmap X
+map <c-d> scrollPageDown
+map <c-u> scrollPageUp
+map <c-f> scrollFullPageDown
+map <c-b> scrollFullPageUp
+```

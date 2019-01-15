@@ -15,10 +15,16 @@ but rather for convenient reference of the author and future improvement.
 **
 
 
+## Installation 
+You can use the following command to install the latest version of gradle on Ubuntu.
 ```
 sudo add-apt-repository ppa:cwchien/gradle
 sudo apt-get update
 sudo apt upgrade gradle
+```
+You can use the following command to install Gradle on Mac.
+```
+brew install gradle
 ```
 
 ## Tricks and Traps

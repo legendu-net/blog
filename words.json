@@ -30,6 +30,7 @@
     ["Macports", "MacPorts"], ["Noscript", "NoScript"],
     ["Mobaxterm", "MobaXterm"],
     ["Nomachine", "NoMachine"],
+    ["Pybuilder", "PyBuilder"],
     ["Rmarkdown", "RMarkdown"],
     ["Teamdrive", "TeamDrive"],
     ["Texstudio", "TeXstudio"],

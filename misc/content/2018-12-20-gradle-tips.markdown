@@ -3,7 +3,7 @@ Status: published
 Date: 2018-12-20 10:13:28
 Author: Ben Chuanlong Du
 Slug: gradle-tips
-Title: Gradle Tips
+Title: General Tips for Gradle
 Category: Programming
 Tags: programming, JVM, Java, gradle, Groovy, compile, compiler, package management
 
@@ -34,6 +34,42 @@ brew install gradle
     Otherwise, 
     you might run into weird issues such as resource file not found, etc.
 
+## Customize Tasks
+
+https://stackoverflow.com/questions/11767713/adding-script-to-build-gradle
+
+## [shadowJar](https://github.com/johnrengelman/shadow) for Gradle
+```
+plugins {
+    id "com.github.johnrengelman.shadow" version "4.0.3"
+}
+```
+```
+shadowJar {
+    zip64 true
+    mergeServiceFiles()
+    exclude "META-INF/*.SF"
+    exclude 'META-INF/*.DSA'
+    exclude 'META-INF/*.RSA'
+    exclude "LICENSE*"
+}
+```
+## Gradle Sync
+
+1. support only local sync
+2. not incremental
+
+Overall it is far behind rsync. 
+I'd rather use rsync in shell.
+
+## Gradle SSH Plugin
+
+https://gradle-ssh-plugin.github.io/
+
+I'd rather use ssh/rsync in shell.
+
 ## References
 
 https://askubuntu.com/questions/932083/how-do-i-upgrade-gradle
+
+https://ftclausen.github.io/general/gradle_sync_task_is_not_incremental/

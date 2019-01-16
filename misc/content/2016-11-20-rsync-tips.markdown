@@ -26,7 +26,11 @@ one thing tricky is that `rsync -avh . des_dir` synchronizes the content
 (sub-files and sub-directories) of the current directory 
 into the destination directory `des_dir`.
 This is especially tricky if you programmally get the source directory that you want to synchronize.
-One good practice is to always convert the programmally generated path into its absolute form.
+Here are a few good practices to follow.
+
+1. Convert programmally generated path (for use in `rsync`) into its absolute form.
+
+2. Always use the form `rsync -avh src_dir/ des_dir` instead of the form `rsync -avh src_dir des_dir`.
 
 ## Examples
 ```
@@ -38,14 +42,27 @@ rsync -e "ssh -p 323" ...
 ```
 
 ```
+#!/usr/bin/env bash
+
+dir=$(dirname $(dirname "$0"))
+
 rsync -avh \
-    --progress \
-    --delete \
-    --exclude .git/ \
-    --exclude target/ \
-    --exclude build/ \
-    --exclude '*.jar' \
-    some_dir user@server_ip:dest_dir/
+    --progress \
+    --delete \
+    --exclude=.git/ \
+    --exclude=target/ \
+    --exclude=build/ \
+    --exclude=analysis/ \
+    --exclude=classes/ \
+    --exclude=maven-archiver/ \
+    --exclude=surefire-reports/ \
+    --exclude=test-classes/ \
+    --exclude=generated-sources/ \
+    --exclude=generated-test-sources/ \
+    --exclude=java.io.tmpdir/ \
+    --exclude=out \
+    $dir/ \
+    $tiger:/workdir/users/
 ```
 
 ## Errors & Solutions

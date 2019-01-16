@@ -19,19 +19,8 @@ Python packaging:
 https://python-packaging.readthedocs.io/en/latest/minimal.html
 
 
-1. It is recommended to use pybuilder to manager Python projects.
+1. It is recommended to use [PyBuilder](http://pybuilder.github.io/) to manager Python projects.
 
-## pybuilder
-
-
-pybuilder
-https://dev.to/awwsmm/managing-your-python-project-with-git-and-pybuilder-21if
-https://pybuilder.readthedocs.io/en/latest/walkthrough-new.html
-http://pybuilder.github.io/documentation/tutorial.html#.XC-5d_x7nmE
-https://python-packaging.readthedocs.io/en/latest/minimal.html
-
-
-pybuilder check and format code?
 
 ## [pyinstaller](https://github.com/pyinstaller/pyinstaller)
 

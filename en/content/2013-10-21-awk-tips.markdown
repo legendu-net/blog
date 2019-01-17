@@ -63,11 +63,15 @@ Tags: tips, awk, text manipulation
 
         awk '{ if($1 > 3) print }' file_name
 
-2. Print docker image IDs that has no repositories names.
+2. Print Docker image IDs that has no repositories names.
 
         docker images | awk '{ if ($1 == "<none>") print $3 }'
 
-3. Print rows with 2 fileds.
+3. Print Docker image IDs whose name contains `che` using regular expression match.
+
+        docker images | awk '{if ($1 ~ "che") print $3}'
+
+4. Print rows with 2 fileds.
 
         awk 'NF == 2' file_name
 
@@ -75,7 +79,12 @@ Tags: tips, awk, text manipulation
 
         awk 'NF == 2 {print} {}' file_name
 
-4. Count the number of fields in each line.
+5. Count the number of fields in each line.
 
         awk '{print NF}' file_name
 
+
+
+## References
+
+https://stackoverflow.com/questions/15386632/awk-4th-column-everything-matching-wildcard-before-the

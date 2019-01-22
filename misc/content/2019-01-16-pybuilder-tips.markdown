@@ -3,9 +3,9 @@ Status: published
 Date: 2019-01-16 09:30:41
 Author: Ben Chuanlong Du
 Slug: pybuilder-tips
-Title: Pybuilder Tips
+Title: PyBuilder Tips
 Category: Programming
-Tags: programming, pybuilder, Python, project management
+Tags: programming, PyBuilder, Python, project management
 
 **
 Things on this page are
@@ -23,7 +23,7 @@ http://pybuilder.github.io/documentation/tutorial.html#.XC-5d_x7nmE
 https://python-packaging.readthedocs.io/en/latest/minimal.html
 
 
-pybuilder check and format code?
+PyBuilder check and format code?
 
 ## Copy/Install Non-Python Files
 ```

@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Slug: python-packaging-tools
 Title: Python Packaging Tools
 Category: Programming
-Tags: programming, Python, packaging, pybuilder, pip, pyinstaller, pip, project management
+Tags: programming, Python, packaging, PyBuilder, pip, pyinstaller, pip, project management
 
 **
 Things on this page are

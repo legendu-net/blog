@@ -21,7 +21,8 @@ Tags: tips, programming, Java
 
 ## Containers
 
-1. you can use `Arrays.fill` to set a value to all elements of an array at once.
+1. You can use `Arrays.fill` to set a value to all elements of an array at once.
+
 
 ## Code Flow Control
 
@@ -114,6 +115,12 @@ Tags: tips, programming, Java
     to the console and end the program.
 
 ## Misc
+
+1. `getClass` returns the RUNTIME class of the object not the declared type!
+
+2. `Objects.hash` can be used to create hash code for an object easily.
+
+3. `Double.compare` is the recommended way to compare whether 2 double values are equal.
 
 9.  Since you do not have to assign the returned value of method to any object in Java, 
     you can use any method as if it is a `void` method.

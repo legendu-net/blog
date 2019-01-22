@@ -12,10 +12,12 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
+## Carrier Service in China
+
 1. 中国联通用户可以拨打10010转人工服务要求开通账单寄送服务. 
-需要服务密码
-联通设置新服务密码:
-MMCZ#新密码
+    需要服务密码
+    联通设置新服务密码:
+    MMCZ#新密码
  
 ## Carrier Service in US
 
@@ -25,17 +27,12 @@ MMCZ#新密码
 
 3. Verizon is way too expensive!
 
-## Smart Phone Apps
+## Android
 
-1. Schemes (scheduled messages, sounds good)
-
-2. BTSync (Multiway synchronization)
-
-
-3. It seems that in order to sync with Google calendar on an Android phone,
-you must have the Google Calendar App installed and setup. 
-You have to go to settings of Google Calendar App, 
-choose an account, and select the calendars that you want to sync.
+1. It seems that in order to sync with Google calendar on an Android phone,
+    you must have the Google Calendar App installed and setup. 
+    You have to go to settings of Google Calendar App, 
+    choose an account, and select the calendars that you want to sync.
 
 ## Smart Phone Tips
 

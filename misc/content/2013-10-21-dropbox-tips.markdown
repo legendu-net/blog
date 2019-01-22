@@ -13,11 +13,21 @@ It is not meant to readers but rather for convenient reference of the author and
 **
  
 
-
 1. Dropbox won't sync files that you don't have the right permissions.
 
 2. You'd better not merge an old Dropbox folder while installing/configuring Dropbox.
 
-3. Using symbolic links in dropbox folder is problematic:
-the symbolic links get synced as real files/directories on other computers
-It might have problem if you push things to a repository and give the symbolic link to public for downloading. Strickly speaking, this is a problem of using symbolic with GIT not with Dropbox.
+3. You'd better not store symbolic links in the Dropbox folder,
+    because the symbolic links will be replaced by the real files/folders 
+    when synchronized to other computers.
+    It might have problem if you push things to a repository 
+    and give the symbolic link to public for downloading. 
+    Strickly speaking, 
+    this is a problem of using symbolic with GIT not with Dropbox.
+
+4. It is not a good idea to put Git repository in Dropbox,
+    especially these repositories than generate lots of small files after compiling.
+
+## References
+
+https://www.addictivetips.com/ubuntu-linux-tips/enable-dropbox-support-in-dolphin-file-manager/

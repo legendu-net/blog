@@ -13,10 +13,11 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
-- [Scala Root Package] (http://www.scala-lang.org/api/current/#package)
+
+- [Scala Root Package](http://www.scala-lang.org/api/current/#package)
 - [Scala Documentation](http://docs.scala-lang.org/index.html)
 - [Scala Tutorial](http://docs.scala-lang.org/tutorials/)
-- [Scala Coding Style] (http://docs.scala-lang.org/style/)
+- [Scala Coding Style](http://docs.scala-lang.org/style/)
 - [Scala Glossary](http://docs.scala-lang.org/glossary/)
 - [Scala Cheatsheet](http://docs.scala-lang.org/cheatsheets/)
 - [Scala Style Guide](https://github.com/databricks/scala-style-guide)
@@ -29,6 +30,14 @@ Eclipse (with the Scala IDE plugin) is alternative.
 1. avoid using break, continue, return even though you can use them in Scala
 
 2. avoid using while loop but don't go too crazy
+
+## Argument Parsing
+
+
+Scala Args Parsing 
+
+https://github.com/scopt/scopt
+
 
 ## Links
 

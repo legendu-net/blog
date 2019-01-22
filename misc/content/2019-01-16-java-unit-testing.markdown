@@ -15,4 +15,13 @@ but rather for convenient reference of the author and future improvement.
 **
 
 
+import static org.junit.Assert.*;
+
+assertEquals
+
+assertArrayEquals
+
+
+## References
+
 https://javarevisited.blogspot.com/2018/09/junit-testing-tips-constructor-is-called-before-test-methods.html

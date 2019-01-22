@@ -23,32 +23,11 @@ to find software/tools for all kinds of purposes.
 
 ## Server/Desktop Management
 
-### Desktop Environment
+### [Linux Desktop Environment](http://www.legendu.net/misc/blog/desktop-environments-for-linux/)
 
-1. Xfce
-2. KDE
-3. Gnome
-4. Cinnamon
-5. Unity
+### [Linux Package Management](http://www.legendu.net/misc/blog/package-management-in-linux/)
 
-### Tiling Windows Manager
-
-1. Xmonad
-2. i3
-
-### Software Installation/Remove/Recommendation
-1. apt-get
-2. wajig (my favourite Debian/Ubuntu package management command)
-3. Software Center (A fancy GUI for managing packages on Ubuntu/Debian)
-4. Software Management (Linux Mint)
-
-### Terminal Tools
-0. command-not-found - Suggest installation of packages in interactive bash sessions
-1. terminator, terra, terminology, TermKit, XiKi (inactive)
-1. screen, tmux
-3. nohup, disown
-5. nautilus-open-terminal
-6. script (logging terminal activities)
+### [Terminal Tools](http://www.legendu.net/misc/blog/linux-terminal-tips/)
 
 ### Administer
 1. webmin, cloudmin, usermin
@@ -56,11 +35,7 @@ to find software/tools for all kinds of purposes.
 2. uptime, top, netstat, ifconfig, top, iotop (input and output monitoring), atop,
 3. htop (a better alternative to top)
 
-### Disk Maintenance
-1. fdisk (manipulate disk partition tables)
-2. df (report file system disk space usage)
-3. badblocks
-4. dd
+### [Disk Maintenance](http://www.legendu.net/misc/blog/command-line-tools-for-linux-file-system/)
 
 ### Resource Statistics
 1. top
@@ -114,19 +89,19 @@ to find software/tools for all kinds of purposes.
 
 ##### Pros
 
-    1. secure
+1. secure
 
-    2. free
+2. free
 
-    3. no limit on files except the limit of your own disk
+3. no limit on files except the limit of your own disk
 
 ##### Cons
 
-    1. beta version, not stable enough
+1. beta version, not stable enough
 
-    2. versioning is a little bit tricky
+2. versioning is a little bit tricky
 
-    3. no GUI version for Linux
+3. no GUI version for Linux
 
 5. AeroFS (can use Amazon S3 as the central repository)
 
@@ -156,7 +131,9 @@ to find software/tools for all kinds of purposes.
 ### File Transfer
 
 0. infinit (fast, secure)
+
 1. BitTorrent
+
 2. BiTorrent Sync
 
 ### File Cleaning
@@ -166,34 +143,51 @@ to find software/tools for all kinds of purposes.
 ### File Hosting
 
 1. Mega
+
 #### Pros
-    1. 50 GB free
-    2. secure (encrypted before upload)
-    3. 10 GB every 30 minutes free (essentially free consider currently network speed)
-    4. maximum file size is only restricted by browser memory capability
-    5. never expire
-    6. cross-platform and command line tools available for Linux
-    7. able to follow symbolic link
+
+1. 50 GB free
+
+2. secure (encrypted before upload)
+
+3. 10 GB every 30 minutes free (essentially free consider currently network speed)
+
+4. maximum file size is only restricted by browser memory capability
+
+5. never expire
+
+6. cross-platform and command line tools available for Linux
+
+7. able to follow symbolic link
+
 #### Cons
     1. one file at a time for free account
 
 1. File Dropper
 
 #### Pros
-    1. unlimited space
-    2. no bandwith limit
+
+1. unlimited space
+
+2. no bandwith limit
+
 #### Cons
-    1. uploaded files will be removed if they are not downloaded even once
+
+1. uploaded files will be removed if they are not downloaded even once
     within 30 days consecutively (files belong to premium account are never removed)
-    2. upload file can be at most 5 GB
-    3. the cheapest plan is $1/month.
+
+2. upload file can be at most 5 GB
+
+3. the cheapest plan is $1/month.
     really no free account, but rather just upload and keep link
     so not convenient for people without an premium account
 
     Good for people who would like to share large files and do not need uploaded files to be persistent.
     Or for backing up frequently changed files so that before an uploaded file is removed,
     another updated version is uploaded.
+
 2. Baidu Yun
+
 3. Tencent Weiyun
 
 ## [Network](http://www.legendu.net/misc/blog/linux-network-tools/)
@@ -418,6 +412,10 @@ Opensource Desktop Publishing
 1. git
 
 ## Multimedia Tools
+
+### Music Player
+
+1. [Clementine](https://www.clementine-player.org/)
 
 ### Screenshot
 

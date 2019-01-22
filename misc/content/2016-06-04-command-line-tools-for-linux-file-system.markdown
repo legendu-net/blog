@@ -28,3 +28,8 @@ fdisk
 mkfs.ext4
 mkfs.ntfs
 mkfs.fat
+
+1. fdisk (manipulate disk partition tables)
+2. df (report file system disk space usage)
+3. badblocks
+4. dd

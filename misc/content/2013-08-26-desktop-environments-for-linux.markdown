@@ -27,10 +27,12 @@ Removing Iceweasel might have undesirable effect on your GNOME desktop environme
 
 
 ## Desktop Environments
+
+1. LXQt
 1. Xfce
-2. GNOME
-3. KDE
-4. Unity (for Ubuntu only)
+2. KDE
+3. Gnome
+4. Cinnamon
 
 ## Desktop Manager
 
@@ -40,3 +42,8 @@ lightdm might have problems when multiple desktop enviroments are installed.
 2. gdm3
 
 3. kdm
+
+### Tiling Windows Manager
+
+1. Xmonad
+2. i3

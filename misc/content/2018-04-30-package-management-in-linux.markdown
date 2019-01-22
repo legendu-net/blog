@@ -14,6 +14,11 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+1. apt-get
+2. wajig (my favourite Debian/Ubuntu package management command)
+3. Software Center (A fancy GUI for managing packages on Ubuntu/Debian)
+4. Software Management (Linux Mint)
+
 ## Debian 
 
 wajig apt-get, dpkg,

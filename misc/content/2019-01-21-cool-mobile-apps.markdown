@@ -14,6 +14,8 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+https://techwiser.com/5-apps-to-remote-control-android-phone-from-pc-usb-and-wifi/
+
 1. 5KPlayer
 
 1. Schemes (scheduled messages, sounds good)

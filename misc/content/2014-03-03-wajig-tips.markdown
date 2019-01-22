@@ -22,11 +22,21 @@ instead of typing `wajig` every time.
         $ wajig
         wajig>
 
+## wajig search
+
+1. `wajig search` use regular expression by default.
+    For example, 
+    `wajig search g++` does not search for literal `g++` but any package that contains `g`. 
+    To search for `g++` related packages, 
+    you can use `wajig search g\\+\\+` instead.
+
 2. Let wajig also search description
 
         wajig search -v youtube
 
-3. Download a package for install later.
+## wajig download
+
+1. Download a package for install later.
     This is very helpful if the package is big.
 
         wajig download pkg_name

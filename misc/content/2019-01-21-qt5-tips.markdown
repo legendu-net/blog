@@ -1,0 +1,24 @@
+UUID: f0862f95-a58a-4e76-a43a-4dec6f7232c0
+Status: published
+Date: 2019-01-21 22:39:09
+Author: Ben Chuanlong Du
+Slug: qt5-tips
+Title: Qt5 Tips
+Category: Programming
+Tags: programming, Qt5, Ubuntu
+
+**
+Things on this page are
+fragmentary and immature notes/thoughts of the author.
+It is not meant to readers
+but rather for convenient reference of the author and future improvement.
+**
+
+## Installation on Ubuntu
+```
+wajig install qt5-default
+```
+
+## References
+
+https://wiki.qt.io/Install_Qt_5_on_Ubuntu

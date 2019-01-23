@@ -7,6 +7,9 @@ Title: Manage Docker Images and Containers
 Category: Software
 Tags: software, Docker, image, container, management, remove
 
+It is suggested that you use [osquery](https://osquery.io/)
+to query Docker images, containers, etc.
+
 ## Remove Containers
 
 Note that running containers will NOT be removed by default.
@@ -19,10 +22,13 @@ but use it with caution and at your own risk.
         docker rm $(docker ps -aq)
         # or you can use pipe
         docker ps -aq | xargs docker rm
+        # or you can osquery
+        osqueryi "select id from docker_containers" --list --header=false | xargs docker rm
 
 2. Remove exited containers.
 
-        docker ps -aqf status=exited
+        docker ps -aqf status=exited | xargs docker rm
+        osqueryi "select id from docker_containers where state=exited" --list --header=false | xargs docker rm
 
 
 ## Remove Images
@@ -46,9 +52,25 @@ but use it with caution and at your own risk.
 
         docker images | awk '{ if ($1 == "<none>" || $2 == "<none>") print $3 }' | xargs docker rmi
 
-4. Remove all images belong to the eclipse organization with the help of `sed` and `q`. 
+4. Remove images without names or versions (with the help of `osquery`).
+
+        osqueryi "select id from docker_images where tags = ''" --list --header=false | xargs docker rmi
+
+5. Remove all images belong to the eclipse organization with the help of `sed` and `q`. 
 
         docker images sed 's/ \+/\t/g' q -tH "select [image id] from - where repository like 'eclipse/%'" xargs docker rmi 
+
+6. Remove all images belong to the eclipse organization with the help of `osquery`. 
+
+        osqueryi "select id from docker_images where tags like 'eclipse/%'" --list --header=false | xargs docker rmi
+
+7. You can force removing an image with the `--force` option.
+
+        docker rmi ubuntu --force
+
+8. If you have multiple tags on the same docker image, 
+    you cannot remove the docker image by image id (without using `--force`.)
+    One way (without using `--force`) is to specify the tag name to remove.
 
 ## Get Container ID Inside Container
 

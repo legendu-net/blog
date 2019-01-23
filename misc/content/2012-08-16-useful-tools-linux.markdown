@@ -29,11 +29,7 @@ to find software/tools for all kinds of purposes.
 
 ### [Terminal Tools](http://www.legendu.net/misc/blog/linux-terminal-tips/)
 
-### Administer
-1. webmin, cloudmin, usermin
-1. id, adduser, gpasswd (recommended for adding/removing groups)
-2. uptime, top, netstat, ifconfig, top, iotop (input and output monitoring), atop,
-3. htop (a better alternative to top)
+### [Administer](http://www.legendu.net/misc/blog/linux-administrator-tools/)
 
 ### [Disk Maintenance](http://www.legendu.net/misc/blog/command-line-tools-for-linux-file-system/)
 
@@ -292,6 +288,7 @@ Personal full text search package with a Qt GUI
 
 ### Text Editor
 1. Vim (general purpose text editor)
+2. Visual Studio Code
 3. Geany (my favourite GUI text editor)
 2. Gedit
 

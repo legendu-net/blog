@@ -40,11 +40,29 @@ This command will register nbdime with git for the current project (repository),
 
 www.draw.io is also interesting,
 
-1. [jupyterlab-drawio](https://github.com/QuantStack/jupyterlab-drawio)
+1. [jupyterlab-toc](https://github.com/jupyterlab/jupyterlab-toc)
 
-2. [jupyterlab-latex](https://github.com/jupyterlab/jupyterlab-latex)
+2. [jupyterlab-quickopen](https://github.com/parente/jupyterlab-quickopen)
 
-3. [qgrid](https://github.com/quantopian/qgrid)
+1. [jupyterlab-monaco](https://github.com/jupyterlab/jupyterlab-monaco)
+
+2. [jupyterlab-drawio](https://github.com/QuantStack/jupyterlab-drawio)
+
+3. [jupyterlab-latex](https://github.com/jupyterlab/jupyterlab-latex)
+
+4. [jupyterlab_spellchecker](https://github.com/ijmbarr/jupyterlab_spellchecker)
+
+5. [jupyterlab-flake8](https://github.com/mlshapiro/jupyterlab-flake8)
+
+6. [jupyterlab_code_formatter](https://github.com/ryantam626/jupyterlab_code_formatter)
+
+7. [Voila](https://github.com/QuantStack/voila)
+
+8. [qgrid](https://github.com/quantopian/qgrid)
+
+9. [jupyterlab-google-drive](https://github.com/jupyterlab/jupyterlab-google-drive)
+
+10. [jupyterlab-spreadsheet](https://github.com/quigleyj97/jupyterlab-spreadsheet)
 
 4. [jupyterlab_geojson](https://github.com/jupyterlab/jupyterlab_geojson)
 ```bash

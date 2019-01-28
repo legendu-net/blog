@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Slug: learn-frontend
 Title: Learn Frontend
 Category: Programming
-Tags: frontend, HTML, JavaScript, JS
+Tags: frontend, HTML, JavaScript, JS, UnDraw
 
 **
 Things on this page are
@@ -25,3 +25,10 @@ https://www.theodinproject.com/courses/web-development-101/lessons/introduction-
 https://frontendmasters.com/books/front-end-handbook/2018/2018.html
 
 https://www.w3.org/TR/html53/
+
+
+
+## Resources
+
+[UnDraw](https://undraw.co/) offers free to use pictures for web desgin, etc.
+

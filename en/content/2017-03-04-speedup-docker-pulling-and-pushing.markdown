@@ -16,6 +16,12 @@ Now the best way is to use the offical China mirror.
 Please refer to 
 [Docker 中国官方镜像加速](https://www.docker-cn.com/registry-mirror)
 for details.
+You have to restart the Docker daemon in order for the configuration to take effect.
+If you are Ubuntu, 
+then you can use the following command to restart the daemon.
+```
+sudo service docker restart
+```
 
 
 ## Old Way 

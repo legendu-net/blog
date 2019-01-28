@@ -44,6 +44,8 @@ www.draw.io is also interesting,
 
 2. [jupyterlab-quickopen](https://github.com/parente/jupyterlab-quickopen)
 
+Very slow when there are lots of files.
+
 1. [jupyterlab-monaco](https://github.com/jupyterlab/jupyterlab-monaco)
 
 2. [jupyterlab-drawio](https://github.com/QuantStack/jupyterlab-drawio)
@@ -54,6 +56,8 @@ www.draw.io is also interesting,
 
 5. [jupyterlab-flake8](https://github.com/mlshapiro/jupyterlab-flake8)
 
+A non polished product. Too much messages.
+
 6. [jupyterlab_code_formatter](https://github.com/ryantam626/jupyterlab_code_formatter)
 
 7. [Voila](https://github.com/QuantStack/voila)
@@ -61,6 +65,7 @@ www.draw.io is also interesting,
 8. [qgrid](https://github.com/quantopian/qgrid)
 
 9. [jupyterlab-google-drive](https://github.com/jupyterlab/jupyterlab-google-drive)
+Not sure whether this is useful.
 
 10. [jupyterlab-spreadsheet](https://github.com/quigleyj97/jupyterlab-spreadsheet)
 

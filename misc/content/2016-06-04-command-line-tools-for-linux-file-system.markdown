@@ -14,6 +14,7 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+## Report System Disks
 ```sh
 df
 df /HOME
@@ -23,13 +24,14 @@ df /HOME
 du
 ```
 
+## Management Disk Partition Tables
 fdisk
 
-mkfs.ext4
-mkfs.ntfs
-mkfs.fat
+## Format Disk Partitions
+The commands `mkfs.ext4`, `mkfs.ntfs` and `mkfs.fat` can be used 
+to format a partition (note: partition NOT device)
+as `EXT4`, `NTFS` and `FAT32` respectively.
 
-1. fdisk (manipulate disk partition tables)
-2. df (report file system disk space usage)
+## Others
 3. badblocks
 4. dd

@@ -13,7 +13,7 @@ It is not meant to readers but rather for convenient reference of the author and
 **
  
 1. HTML is not case sensitive, 
-but it's suggested that you alway use lower case for tags.
+    but it's suggested that you alway use lower case for tags.
 
 1. `<!-- ... -->` comment 
 
@@ -21,10 +21,12 @@ but it's suggested that you alway use lower case for tags.
 
 
 1. code is for verbatim code while `<script> ... </script>` 
-is for scripting code that will acutally run.
+    is for scripting code that will acutally run.
 
 3. you'd better use percent for width when formating paragraphs and so on, 
-this is more portable `<p style="width:79%"> ... </p>`
+    this is more portable `<p style="width:79%"> ... </p>`
 
 1. it seems that figcaption in html5 cannot align correctly, must rely on div to align, 
-but only center works perfect.
+    but only center works perfect.
+
+4. no difference between double vs single quotes in HTML

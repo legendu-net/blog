@@ -4,7 +4,7 @@
     ["And", "and"], ["But", "but"], ["For", "for"], ["The", "the"], 
     ["From", "from"], ["Into", "into"], 
     ["3d", "3D"], ["Id", "ID"], ["Io", "IO"], ["Ms", "MS"], ["Os", "OS"], 
-    ["Aix", "AIX"], ["Ibm", "IBM"], ["Cpp", "C++"], ["Gdb", "GDB"], ["Gnu", "GNU"],
+    ["Aix", "AIX"], ["Ibm", "IBM"], ["Cpp", "C++"], ["Gdb", "GDB"], ["Gnu", "GNU"], ["Gui", "GUI"],
     ["Ide", "IDE"], ["Iml", "IML"], ["Jar", "JAR"], ["Nfs", "NFS"], ["Kde", "KDE"], ["Pdf", "PDF"],
     ["Ppt", "PPT"], ["Rdd", "RDD"], ["Rdds", "RDDs"],
     ["Sas", "SAS"], ["Sbt", "sbt"], ["Sed", "sed"], ["Sql", "SQL"], ["Ssd", "SSD"], ["Ssh", "SSH"],

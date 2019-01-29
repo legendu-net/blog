@@ -3,7 +3,7 @@ Status: published
 Date: 2019-01-22 22:54:03
 Author: Ben Chuanlong Du
 Slug: gui-frameworks-for-java
-Title: Gui Frameworks for Java
+Title: GUI Frameworks for Java
 Category: Programming
 Tags: programming, Java, GUI, Swing, SwingX, JavaFX
 

@@ -16,3 +16,4 @@ but rather for convenient reference of the author and future improvement.
 
 1. it seems that ipython tries to beautify outputs
 
+2. ipython accepts only script with the file extension `.ipy`.

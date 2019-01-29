@@ -31,3 +31,8 @@ A simple fix is to add the following configuration into the user's setting.json 
 ## Launching VS Code from Command Line on Mac 
 
 https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line
+
+## Tricks & Traps
+
+1. It seems that Visual Studio Code installed using snap in Kubuntu 18.10 has issues.
+    It is suggested that you install Visual Studio Code using the `.deb` package instead of snap.

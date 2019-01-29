@@ -3,9 +3,9 @@ Status: published
 Date: 2017-11-18 10:35:35
 Author: Ben Chuanlong Du
 Slug: links-docker
-Title: Links for Docker
+Title: General Tips for Docker
 Category: Software
-Tags: software, Docker, links
+Tags: software, Docker, tips
 
 **
 Things on this page are

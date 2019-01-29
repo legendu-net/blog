@@ -16,9 +16,14 @@ docker attach container_name_or_id
 If the docker container was started but not with `/bin/bash`,
 you have to create a bash instance inside the container using `exec`.
 ```bash
-sudo docker exec -it container_name_or_id /bin/bash 
+docker exec -it container_name_or_id /bin/bash 
 ```
 Notice that `attach` does not create a new instance of bash 
 but use the already created one in the corresponding docker container.
 However, 
 both `exec` and `run` create new bash instances.
+
+## Examples
+```
+docker exec -it -u dclong jupyterlab-py jupyter nbconvert --to html --execute --ExecutePreprocessor.timeout=600 /workdir/spend.ipynb 
+```

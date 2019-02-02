@@ -1,6 +1,6 @@
 UUID: 9fde8ad7-e1b6-420e-8db0-e0046f8eb529
 Status: published
-Date: 2017-06-25 12:10:31
+Date: 2019-02-01 20:08:49
 Author: Ben Chuanlong Du
 Slug: odbc-vs-jdbc-in-python
 Title: ODBC vs JDBC in Python
@@ -58,7 +58,12 @@ http://stackoverflow.com/questions/34948453/read-teradata-query-into-pandas
 
 ## ORM
 
-SQLalchemy, peewee (lightweight)
+1. [SQLAlchemy](https://www.sqlalchemy.org/)
+    is the most popular ORM package for Python. 
+    [peewee](https://github.com/coleifer/peewee)
+    and 
+    [orator](https://github.com/sdispater/orator) 
+    are lightweight ORM solutions compared to `SQLAlchemy`.
 
 
 http://stackoverflow.com/questions/10797794/multiple-queries-executed-in-java-in-single-statement

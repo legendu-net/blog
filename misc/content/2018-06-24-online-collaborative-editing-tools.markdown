@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Slug: online-collaborative-editing-tools
 Title: Online Collaborative Editing Tools
 Category: Software
-Tags: software, online collaborative editing, conclave
+Tags: software, online collaborative editing
 
 **
 Things on this page are
@@ -14,6 +14,5 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-https://www.conclave.tech/ 
+http://collabedit.com
 
-https://github.com/conclave-team/conclave

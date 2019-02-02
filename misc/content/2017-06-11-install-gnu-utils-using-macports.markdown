@@ -14,18 +14,22 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+## Configuration
+Run the following command after installation.
+```
+export PATH=/opt/local/libexec/gnubin：/opt/local/bin:/opt/local/sbin:$PATH
+export MANPATH=/opt/local/share/man:$MANPATH
+```
 
-
-    export PATH=/opt/local/libexec/gnubin：/opt/local/bin:/opt/local/sbin:$PATH
-    export MANPATH=/opt/local/share/man:$MANPATH
-
-    sudo port install file
-    sudo port install coreutils
-
+## Installation
+```
+sudo port install file
+sudo port install coreutils
+```
 
 ## Issues
 
 1. had issues to sync ports in office, not sure this is due to network issue or firewall in office
-rsync: failed to connect to rsync.macports.org: No route to host (65)
-exit code 10
+    rsync: failed to connect to rsync.macports.org: No route to host (65)
+    exit code 10
 

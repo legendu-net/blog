@@ -3,7 +3,7 @@ Status: published
 Date: 2019-01-16 09:03:06
 Author: Ben Chuanlong Du
 Slug: gitignore-tips
-Title: Gitignore Tips
+Title: Gitignore Examples
 Category: Programming
 Tags: programming, Git, .gitignore
 
@@ -17,8 +17,12 @@ but rather for convenient reference of the author and future improvement.
 ## Gitignore Example for Python
 ```
 __pycache__
+.coverage
 .mypy
-.ipynb_checkpoints
+.ipynb_checkpoints/
+venv/
+target/
+*.crc
 ```
 
 ## Gitignore Example for Java

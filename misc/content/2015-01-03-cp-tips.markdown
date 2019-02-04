@@ -15,37 +15,40 @@ but rather for convenient reference of the author and future improvement.
 **
 
 1. Generally speaking, 
-you do not want to follow symbolic links when copying files 
-unless you are copying from one machine to another.
-If you do not want follow symbolic links,
-`cp -av` and `rsync -avh` (or `rsync -avzh` when copying to a remote server) are good choices.
-When you want to follow symbolic links,
-`cp -rL` and `rsync -rLvh` (or `rsync -rLvzh` when copying to a remote server) are good choices.
-It is suggested that you use `rsync` instead of `cp` and `scp`.
-
+    you do not want to follow symbolic links when copying files 
+    unless you are copying from one machine to another.
+    If you do not want follow symbolic links,
+    use `cp -av` and `rsync -avh`.
+    If you do want to follow symbolic links,
+    use `cp -rL` and `rsync -rLvh`.
+    It is suggested that you use `rsync` instead of `cp` and `scp`.
 
 ## cp
 
-do not follow symbolic links: -P -d --no-dereference
-follow symbolic links: -L --dereference
-
-
-By default, cp does not copy directories. 
-However, the -R, -a, and -r options cause cp to copy recursively 
+By default, 
+cp does not copy directories. 
+However, 
+the `-R`, `-a`, and `-r` options cause cp to copy recursively 
 by descending into source directories 
 and copying files to corresponding destination directories.
 
 When copying from a symbolic link, 
 cp normally follows the link only when not copying recursively 
-or when --link (-l) is used. 
+or when `--link` (`-l`) is used. 
 This default can be overridden 
-with the --archive (-a), -d, --dereference (-L), --no-dereference (-P), 
-and -H options. 
+with the `--archive` (`-a`), `-d`, `--dereference` (`-L`), `--no-dereference` (`-P`), 
+and `-H` options. 
 If more than one of these options is specified, the last one silently overrides the others.
 
 When copying to a symbolic link, 
 cp follows the link only when it refers to an existing regular file. 
-However, when copying to a dangling symbolic link, cp refuses by default, and fails with a diagnostic, since the operation is inherently dangerous. This behavior is contrary to historical practice and to POSIX. Set POSIXLY_CORRECT to make cp attempt to create the target of a dangling destination symlink, in spite of the possible risk. Also, when an option like --backup or --link acts to rename or remove the destination before copying, cp renames or removes the symbolic link rather than the file it points to.
+However, 
+when copying to a dangling symbolic link, 
+cp refuses by default, 
+and fails with a diagnostic, 
+since the operation is inherently dangerous. 
+This behavior is contrary to historical practice and to POSIX. 
+Set POSIXLY_CORRECT to make cp attempt to create the target of a dangling destination symlink, in spite of the possible risk. Also, when an option like --backup or --link acts to rename or remove the destination before copying, cp renames or removes the symbolic link rather than the file it points to.
 
 By default, cp copies the contents of special files only when not copying recursively. This default can be overridden with the --copy-contents option.
 

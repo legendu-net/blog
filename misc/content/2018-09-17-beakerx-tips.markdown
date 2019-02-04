@@ -15,4 +15,13 @@ but rather for convenient reference of the author and future improvement.
 **
 
 1. The maven cache is save to the following directory
-`/tmp/share/beakerx/maven/cache/`.
+    `/tmp/share/beakerx/maven/cache/`.
+
+## SQL
+
+1. Connect to SQLite3 in memory.
+
+        %defaultDatasource jdbc:sqlite:fts5.sqlite3
+
+    It seems to me that SQLite3 in BeakerX does not support the in-memory mode,
+    which is not a big deal. 

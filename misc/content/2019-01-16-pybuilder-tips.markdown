@@ -14,16 +14,36 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-https://dev.to/awwsmm/managing-your-python-project-with-git-and-pybuilder-21if
+## Jump Start a Python 3 Project Using pybuilder
 
-https://pybuilder.readthedocs.io/en/latest/walkthrough-new.html
+1. Install the Python package venv if you haven't. 
 
-http://pybuilder.github.io/documentation/tutorial.html#.XC-5d_x7nmE
+        wajig install python3-venv 
 
-https://python-packaging.readthedocs.io/en/latest/minimal.html
+2. Create a directory for your new project (e.g., myproj).
 
+        mkdir myproj
 
-PyBuilder check and format code?
+3. Change directory to the created directory. 
+
+        cd myproj 
+
+4. Create a new virtual environment.
+
+        python3 -m venv venv 
+
+5. Activate the virtual environment.
+
+        source venv/bin/activate 
+
+5. Install `pybuilder` in the virtual environment.
+
+    pip3 install pybuilder
+   
+6. Run the `pyb` command to initialize your project.
+
+    pyb --start-project 
+
 
 ## Copy/Install Non-Python Files
 ```
@@ -55,3 +75,9 @@ def set_properties(project):
 
 https://stackoverflow.com/questions/37409282/pybuilder-non-python-files-are-not-packaged
 
+
+## References
+
+https://pybuilder.readthedocs.io/en/latest/walkthrough-new.html
+
+http://pybuilder.github.io/documentation/tutorial.html#.XC-5d_x7nmE

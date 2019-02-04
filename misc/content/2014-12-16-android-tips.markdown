@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Slug: android-tips
 Title: Android Tips
 Category: OS
-Tags: Android, OS, operating system, scp, rsync, remote, copy
+Tags: Android, OS
 
 **
 Things on this page are
@@ -15,4 +15,4 @@ but rather for convenient reference of the author and future improvement.
 **
 
 
-1. scp works well but rsync not
+1. `scp` works well but `rsync` not.

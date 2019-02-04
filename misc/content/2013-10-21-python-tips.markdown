@@ -1,4 +1,3 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Date: 2017-11-18 09:59:47
@@ -21,21 +20,40 @@ It is not meant to readers but rather for convenient reference of the author and
 - [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
 - [PyVideo](http://pyvideo.org/)
 
-## Distirbutions
+## Python Distirbutions
 
-### Anaconda Python
+1. When people talks about Python,
+    it usually means the CPython implementation
+    which you can download from <www.python.org>.
+    There are other interesting Python implementations 
+    such as [PyPy](https://pypy.org/) (Python implementation in Python), 
+    [Jython](http://www.jython.org/) (Python implementation in Java), etc. exists,
+    however,
+    they have relatively very small use groups.
+    Generally speaking,
+    you want to stay with CPython, 
+    i.e., the Python people are taling about unless you have very strong reasons to go with another choice.
 
-Anaconda Python is great and provides an all-in-one installer. 
-If you want to install Python on a server that you do not have sudo permission,
-Anaconda Python is a great choice. 
-It is installed to your home directory by default.
+2. For the CPython implementation, 
+    there are different distributions as well. 
+    Besides the official Python distribution 
+    (which comes by default in many operating systems),
+    Anaconda Python rules the unofficial distributions.
+    It is a great choice which provies an all-in-one installer 
+    to use on machines that you don't have sudo permissions 
+    as it installs to your home directory by default.
+    Anaconda Python supports 2 different flavors: 
+    Anaconda (binded with many popular Python packages) and miniconda (with minimum Python packages).
+    It also invented another package management tool named `conda` to replace `pip`.
+    `conda` is a general purpose package management tool instead of for Python only.
+    It eases the pain of figuring out the right dependencies of Python packages 
+    but it is a little bit bloated (with larger installation sizes) compared to `pip`.
 
-### PyPy
+## Environment Variable
 
-Python implemented in Python, which has JIT support. 
-However, 
-it is not useful in pratice 
-unless it resolves the issue of numerous C-based packages.
+1. You should use `os.pathexpanduser("~")` (instead of `os.getenv('HOME')`) 
+    to get the home directory of the current user in Python
+    `os.getenv('HOME')` only works on Linux/Unix.
 
 ## Configuration
 
@@ -56,110 +74,87 @@ PYTHONHOME
 
 4. `*args` and `**kwargs`
 
-5. int str convert integer and string, constructors
+6. `sys.stdout.write`, `sys.stdout.flush`, `print`
 
-6. sys.stdout.write sys.stdout.flush print('h', end='')
+9. Global variables in a Python module are readable but not writable to functions in the same module by default.
+    If you want to write to a global variable in a function (in the same module),
+    you have to declare the global variable in the method using the keyword `global`.
+    For example, if `x` is a global variable 
+    and you want to write to it in a method,
+    you have to declare `global x` at the beginning of the method.
 
-8. have to use import dateutil.parser, otherwise won't work
+## Tricks and Traps
 
-9. By default global variables in Python are already readable to methods 
-defined in the same module.
-However, if you want to write to a global variable in a method (in the same module),
-you have to declare the global variable in the method using the keyword `global`.
-For example, if `x` is a global variable 
-and you want to write to it in a method,
-you have to declare `global x` at the beginning of the method.
+1. Almost all modern programming languages follow the convention 
+    of not returnting anything (or in another words, retun void, None, etc.) 
+    from a mutator method so that you cannot chain on a mutator method.
+    Functional programming languages enough chaining on methods 
+    as they often have immutable objects and the methods return new objects 
+    rather than changing the original objects.
 
-## Debugging
-
-1. simply commenting out try catch or if else clause causes problems, 
-    becuase Python use idention to decide code structure!!!
-
-2. "+=" on a non existing variable/object, causes funny mistake, 
-    sounds like exception happens
-
-## tricks and traps
-
-2. Mutator methods are ugly in the sense 
-    that they do not return a reference to the original file.
-    Mutator methods usually returns None, which makes coding a little inconvenient.
-    Do not use the following style of code in Python.
-
-        `obj = obj.mutable_method()`
-
-4. if, for no parentheses which is different from popular programming languages
-    such as C/C++, Java, R, etc., but similar to MATLAB.
-
-6. Python does not automatically return value (unlike R). 
-    It is quite often that an R use forget to return a value
-    in a user-defined function and get a "NoneType" related error.
-
-9. if collection is a list of string, double, integer, etc. not changed
-    check this to make sure ...
-
-        for item in collection:
-            item ...
+2. Python functions (except lambda functions) do not automatically return value 
+    unlike functional programming languages.
+    Forgotting a `return` statement is a common mistake in Python. 
 
 ## Design
 
-12. There is no constant variables in Python. 
+1. There is no constant variables in Python. 
     If you need a constant variable in Python,
     just define one and never change it.
-    It is suggested that you use UPPER case to stand for const variables.
+    It is suggested that you use UPPER_WITH_UNDERSCORE naming style for const variables in Python.
+    There is no private variables/method in Python either.
+    You can change/call any variable/method in a module/class.
+    However,
+    members that start with a single underscore (`_`) are considered as private by convention
+    and you should avoid using them directly.
 
-1. The bottom-most package in Java should be a file in Python
+2. The bottom-most package in Java should be a file in Python.
+    Do not use inner classes in Python.
+    Just put classes in the same module.
 
-    Do not use inner classes. 
-    Just put classes in the same module
-    By convention, things that start with _ are "private".
-    It is OK to have "public variables"
+3. Python is a dynamic language and thus does not support function/method overloading.
 
-2. Python does not support method/function overloading.
+## Numerical
 
-## numerical
-
-1. By default Python does integer division. 
-    If you want to do float division, 
-    you can either cast (explicit or implicitly) integers to float numbers before division
-    or you can import the `division` module.
-
-15. % modulus
-
-static variable inside a function in python is tricky, 
-one possible way is to pass an extra variable and use it to as a role of static variable
-
+1. Division is float division in Python 3 which is different from Python 2.
+    If you want integer division,
+    use the `//` operator.
 
 ## Misc
 
-1. A list in Python is mutable and cannot be use as keys for set or dict objects.
-    An alternative way is to convert lists to tuples using `tuple(a_list)`.
-    Notice that not all tuples can used as keys for set and dict objects.
-    The fundamental requirement is that keys for set and dict objects must be immutable,
-    so a tuple must contain immutable object in order to be hashable.
+1. Keys for set and dict objects must be immutable in Python
+    (and the same concept holds in other programming languages too).
+    Since a list in Python is mutable, 
+    it cannot be used as a key in set and dict objects.
+    You have to convert it to an immutable equivalence (e.g., tuple).
 
-## IO
+use sys.exit(msg) to print error message and quit when error happens
 
-write a list of tuple of numbers into a file
+```Python
+type(obj).__name__
+```
 
-    open('rr.txt', "w").writelines(["%s %s\n" % e for e in rr])
+use `reload(module)` to reload a module.
+In Python3, `imp.reload(module)`
 
 ## File System
 
 1. You can get rid of file extension use the following code.
 
-    os.path.splitext(filename)[0]
+        os.path.splitext(file_name)[0]
 
 2. `os.mkdir` acts like `mkdir` in Linux and `os.makedirs` acts like `mkdir -p` in Linux.
     Both of them throw an exception if the file already exists.
 
-1. use execfile(open(filename).read()) to source a file,
+3. Use `execfile(open(filename).read())` to source a file,
     variables defined in 'filename' are visible,
     however, imported packages are invisible to the script running execfile
 
 ## Encoding
-ord unichar
-return ascii number of characters
-chr return a string from a ascii number
+
+`ord` `unichar`
+return `ascii` number of characters
+`chr` return a string from a ascii number
 
 ## Data Structure
 
@@ -206,24 +201,8 @@ chr return a string from a ascii number
 7. Python does not support `++`, `--` but support `+=`, `-+`, etc.
 
 
-## Environment Variable
+## Collections
 
-os.getenv("HOME") only on Linux/Unix
-
-the following works everywhere
-from os.path import expanduser
-home = expanduser("~")
-
-
-use sys.exit(msg) to print error message and quit when error happens
-
-```Python
-type(obj).__name__
-```
-
-use `reload(module)` to reload a module.
-In Python3, `imp.reload(module)`
-
-## Containers
 1. defaultdict
+
 2. namedtuple

@@ -30,40 +30,46 @@ Here are a few good practices to follow.
 
 1. Convert programmally generated path (for use in `rsync`) into its absolute form.
 
-2. Always use the form `rsync -avh src_dir/ des_dir` instead of the form `rsync -avh src_dir des_dir`.
+2. Always use the form `rsync -avh src_dir/ des_dir/` instead of the form `rsync -avh src_dir des_dir`.
 
 ## Examples
-```
-rsync -e "ssh -o StrictHostKeyChecking=no" ...
-```
 
-```
-rsync -e "ssh -p 323" ...
-```
+1. Disable strickt host key checking. 
 
-```
-#!/usr/bin/env bash
+        rsync -e "ssh -o StrictHostKeyChecking=no" ...
 
-dir=$(dirname $(dirname "$0"))
+2. Use a different port (rather than 22).
 
-rsync -avh \
-    --progress \
-    --delete \
-    --exclude=.git/ \
-    --exclude=target/ \
-    --exclude=build/ \
-    --exclude=analysis/ \
-    --exclude=classes/ \
-    --exclude=maven-archiver/ \
-    --exclude=surefire-reports/ \
-    --exclude=test-classes/ \
-    --exclude=generated-sources/ \
-    --exclude=generated-test-sources/ \
-    --exclude=java.io.tmpdir/ \
-    --exclude=out \
-    $dir/ \
-    $tiger:/workdir/users/
-```
+        rsync -e "ssh -p 323" ...
+
+3. Copy specified patterns (e.g., JupyterLab notebooks) only.
+
+        rsync -avh --include='*.ipynb' --include='*/' --exclude='*' src_dir/ des_dir/
+
+4. An example script for synchronizing a Java project directory.
+
+        #!/usr/bin/env bash
+
+        dir=$(dirname $(dirname "$0"))
+
+        rsync -avh \
+            --progress \
+            --delete \
+            --exclude=.git/ \
+            --exclude=target/ \
+            --exclude=build/ \
+            --exclude=analysis/ \
+            --exclude=classes/ \
+            --exclude=maven-archiver/ \
+            --exclude=surefire-reports/ \
+            --exclude=test-classes/ \
+            --exclude=generated-sources/ \
+            --exclude=generated-test-sources/ \
+            --exclude=java.io.tmpdir/ \
+            --exclude=out \
+            $dir/ \
+            $tiger:/workdir/users/
+
 
 ## Errors & Solutions
 

@@ -29,7 +29,7 @@
     ["Kdevelop", "KDevelop"],
     ["Macports", "MacPorts"], ["Noscript", "NoScript"],
     ["Mobaxterm", "MobaXterm"],
-    ["Nomachine", "NoMachine"],
+    ["Nbconvert", "nbconvert"], ["Nomachine", "NoMachine"],
     ["Pybuilder", "PyBuilder"],
     ["Rmarkdown", "RMarkdown"],
     ["Teamdrive", "TeamDrive"],

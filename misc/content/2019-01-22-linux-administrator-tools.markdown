@@ -24,3 +24,9 @@ but rather for convenient reference of the author and future improvement.
 4. htop (a better alternative to top)
 
 ## [osquery](https://github.com/facebook/osquery)
+
+## References
+
+https://www.tecmint.com/command-line-tools-to-monitor-linux-performance/
+
+https://blog.serverdensity.com/80-linux-monitoring-tools-know/

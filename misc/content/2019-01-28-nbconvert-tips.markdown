@@ -25,3 +25,7 @@ but rather for convenient reference of the author and future improvement.
     You can use the option `--inplace` to overwrite the inplace file.
 
     jupyter nbconvert --to notebook --inplace --execute mynotebook.ipynb
+
+## References
+
+https://nbconvert.readthedocs.io/en/latest/usage.html

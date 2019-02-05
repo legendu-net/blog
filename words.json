@@ -7,7 +7,7 @@
     ["Aix", "AIX"], ["Ibm", "IBM"], ["Cpp", "C++"], ["Gdb", "GDB"], ["Gnu", "GNU"], ["Gui", "GUI"],
     ["Ide", "IDE"], ["Iml", "IML"], ["Jar", "JAR"], ["Nfs", "NFS"], ["Kde", "KDE"], ["Pdf", "PDF"],
     ["Ppt", "PPT"], ["Rdd", "RDD"], ["Rdds", "RDDs"],
-    ["Sas", "SAS"], ["Sbt", "sbt"], ["Sed", "sed"], ["Sql", "SQL"], ["Ssd", "SSD"], ["Ssh", "SSH"],
+    ["Sas", "SAS"], ["Sbt", "sbt"], ["Sed", "sed"], ["Sql", "SQL"], ["Ssd", "SSD"], ["Ssh", "SSH"], ["Ssl", "SSL"],
     ["Vba", "VBA"], ["Vpn", "VPN"], ["Wsl", "WSL"],
     ["Ar1X", "AR1X"], ["Curl", "cURL"], ["Ipad", "iPad"], ["Json", "JSON"], 
     ["Nltk", "NLTK"], ["Odbc", "ODBC"], ["jdbc", "JDBC"], ["Uget", "uGet"], 

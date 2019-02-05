@@ -1,4 +1,3 @@
-UUID: 79c95947-045f-40e9-b781-5210b10756c2
 Status: published
 Date: 2017-11-12 15:07:59
 Author: Ben Chuanlong Du
@@ -7,15 +6,17 @@ Title: Configure Jupyte Notebook Permissions
 Category: Software
 Tags: software, Jupyter Notebook, JupyterLab, permission, umask
 
-
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
 
 1. umask in /etc/profile or /etc/bashrc doesn't work in docker,
-which is strange.
-Changing UMASK 022 in /etc/login.defs doesn't work either ...
+    which is strange.
+    Changing UMASK 022 in /etc/login.defs doesn't work either ...
 
-[[:space:]] is recommended for sed
-
-Had issues, tried to set /etc/profile, /etc/bashrc, in an init script, none of them worked worked well,
+Had issues, 
+tried to set /etc/profile, /etc/bashrc, in an init script, none of them worked worked well,
 For JupyterHub, you can configure in the *.py file
 https://github.com/jupyterhub/jupyterhub/issues/1402
 

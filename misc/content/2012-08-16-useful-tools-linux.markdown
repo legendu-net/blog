@@ -33,10 +33,7 @@ to find software/tools for all kinds of purposes.
 
 ### [Disk Maintenance](http://www.legendu.net/misc/blog/command-line-tools-for-linux-file-system/)
 
-### Resource Statistics
-1. top
-2. htop
-3. dstat
+### [Admin Tools](http://www.legendu.net/misc/blog/linux-administrator-tools/)
 
 ### Security
 1. fail2ban
@@ -189,14 +186,6 @@ to find software/tools for all kinds of purposes.
 ## [Network](http://www.legendu.net/misc/blog/linux-network-tools/)
 
 ## [Compress and Uncompress](http://www.legendu.net/en/blog/compress-and-decompress-in-linux/)
-1. tar
-1. dar (disk archive)
-2. rar, unrar
-3. 7z and 7za
-4. dtrx
-5. zip, unzip
-6. xarchive
-7. PeaZip
 
 ## Virtual Machine
 1. VirtualBox
@@ -204,9 +193,6 @@ to find software/tools for all kinds of purposes.
 3. Xen
 4. KVM (requires hardware support, e.g., Intel VT-x or AMD-V)
 5. QEMU-KVM (requires hardware support, e.g., Intel VT-x or AMD-V)
-
-## Cloud
-5. OpenStack
 
 ## Database Management System (DBMS)
 
@@ -287,10 +273,9 @@ Personal full text search package with a Qt GUI
 1. catdoc/xls2csv/catppt
 
 ### Text Editor
+
 1. Vim (general purpose text editor)
 2. Visual Studio Code
-3. Geany (my favourite GUI text editor)
-2. Gedit
 
 ## MS Office Alternative
 

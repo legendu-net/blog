@@ -141,6 +141,8 @@ class Blogger:
         self.root_dir = self._root_dir()
 
     def _load_posts(self, post_dir):
+        if not os.path.isdir(post_dir):
+            return
         for post in os.listdir(post_dir):
             if post.endswith('.markdown'):
                 post = os.path.join(post_dir, post)

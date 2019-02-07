@@ -1,11 +1,10 @@
-UUID: 3df72304-6f5c-44b8-aebd-db65163d617e
 Status: published
 Date: 2017-10-22 13:30:59
 Author: Ben Chuanlong Du
 Slug: macports-tips
 Title: MacPorts Tips
-Category: Mac OSX
-Tags: Mac OSX, MacPorts, tips
+Category: OS
+Tags: macOS, MacPorts, tips
 
 **
 Things on this page are
@@ -22,24 +21,17 @@ but rather for convenient reference of the author and future improvement.
 
 ## MacPorts behind Firewall
 
-1. use http instead of rsync 
-
-Open the file `/opt/local/etc/macports/sources.conf`
-and replace the line 
+1. Use http instead of rsync. 
+    Open the file `/opt/local/etc/macports/sources.conf`
+    and replace the line 
 
         rsync://rsync.macports.org/release/tarballs/ports.tar [default]
 
-with
+    with
 
         http://www.macports.org/files/ports.tar.gz [default]
 
-2. use a proxy
-
-## Proxy for MacPorts
-
-https://destefano.wordpress.com/2011/03/18/macports-behind-a-proxy/
-
-https://samkhan13.wordpress.com/2012/06/15/make-macports-work-behind-proxy/
+2. Configure proxy.
 
     export http_proxy=http://username:password@proxyURL:portNumber
     export HTTP_PROXY=http://username:password@proxyURL:portNumberexport 
@@ -48,4 +40,10 @@ https://samkhan13.wordpress.com/2012/06/15/make-macports-work-behind-proxy/
     export rsync_proxy=username:password@proxyURL:portNumber
     export RSYNC_PROXY=username:password@proxyURL:portNumber
 
-Use `sudo port -d sync` instead of `sudo port selfupdate` to print debugging information while updating.
+3. Use `sudo port -d sync` instead of `sudo port selfupdate` to print debugging information while updating.
+
+## References
+
+https://destefano.wordpress.com/2011/03/18/macports-behind-a-proxy/
+
+https://samkhan13.wordpress.com/2012/06/15/make-macports-work-behind-proxy/

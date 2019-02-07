@@ -1,35 +1,33 @@
-UUID: 1f692e94-c786-4ba2-be36-1e6836f6f1ac
 Status: published
 Date: 2017-10-22 13:26:28
 Author: Ben Chuanlong Du
 Slug: install-gnu-utils-using-homebrew
 Title: Install GNU Utils Using Homebrew
-Category: Mac OSX
-Tags: Mac OSX, Homebrew, GNU
+Category: OS
+Tags: macOS, Homebrew, GNU
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-It is not meant to readers
-but rather for convenient reference of the author and future improvement.
-**
 
 # Configuration
+
 Run the following command in terminal before you install any GNU utils using Homebrew.
 It will ensures that the installed GNU utils get used by default.
+
 ```bash
 export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
 export MANPATH="/usr/local/opt/findutils/libexec/gnuman:$MANPATH"
 ```
+
 Notice that upgrading your Mac OS will reset the 2 environment variables.
 So you will have to run the above commands again after you upgrading your Mac OS.
 
 # GNU Core Utils
+
 ```bash
 brew install coreutils
 ```
 
 # Key Commands
+
 ```bash
 brew install binutils
 brew install diffutils
@@ -62,6 +60,7 @@ brew install nano
 ```
 
 # Other commands (non-GNU)
+
 ```bash
 brew install file-formula
 brew install git

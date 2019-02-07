@@ -1,29 +1,24 @@
-UUID: 559e7882-d431-4a76-b1f7-9eb950bbc42f
 Status: published
 Date: 2017-02-18 11:57:33
 Author: Ben Chuanlong Du
 Slug: sql-on-text-file
 Title: SQL on Text File
-Category: Programing
+Category: Programming
 Tags: programming, SQL, structured text, CSV, TSV
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-It is not meant to readers
-but rather for convenient reference of the author and future improvement.
-**
 
 [q](http://harelba.github.io/q/) is a great tool 
 for working on structured text files 
 using SQL syntax in command line.
 
 ## Installation on Ubuntu
+
 ```bash
 wajig install python3-q-text-as-data
 ```
 
 ## General Tips
+
 1. The semantics of `q` is identical to `sqlite`. 
     `q` preserve the original order of rows if no sorting (order by) is applied.
     You force querying by the order of insertion 

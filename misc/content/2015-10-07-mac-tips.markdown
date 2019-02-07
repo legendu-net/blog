@@ -1,11 +1,10 @@
-UUID: 3731ba41-88ca-46e9-ab62-32435f19cdd3
 Status: published
 Date: 2016-06-20 21:01:14
 Author: Ben Chuanlong Du
 Slug: mac-tips
 Title: Mac Tips
-Category: Mac OSX
-Tags: Mac OSX, tips, Apple
+Category: OS
+Tags: macOS, tips, Apple
 
 **
 Things on this page are
@@ -15,18 +14,17 @@ but rather for convenient reference of the author and future improvement.
 **
 
 1. Print Mac OS X operating system version information.
-```sh
-sw_vers -productName
-```
+
+        sw_vers -productName
 
 
-0. `iTerm2` is the best termimal application in Mac. 
+2. `iTerm2` is the best termimal application in Mac. 
 
-1. You can use Homebrew to install applications in Mac
-similar to the command `apt-get` or wajig in Debian series of Linux distributions.
-However, you do not have to run the command brew with sudo.
-As a matter of fact, 
-you should never do this. 
+3. You can use Homebrew to install applications in Mac
+    similar to the command `apt-get` or wajig in Debian series of Linux distributions.
+    However, you do not have to run the command brew with sudo.
+    As a matter of fact, 
+    you should never do this. 
 
 ## Touchpad
 

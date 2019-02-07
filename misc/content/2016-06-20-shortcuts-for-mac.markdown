@@ -1,11 +1,10 @@
-UUID: 035a7b99-836a-4a76-8d1e-3d2f1425c635
 Status: published
 Date: 2016-06-20 20:58:25
 Author: Ben Chuanlong Du
 Slug: shortcuts-for-mac
 Title: Shortcuts for Mac
-Category: Mac OSX
-Tags: Mac OSX, Apple, shortcuts, GUI
+Category: OS
+Tags: macOS, Apple, shortcuts, GUI
 
 **
 Things on this page are
@@ -17,8 +16,8 @@ but rather for convenient reference of the author and future improvement.
 [Table of keyboard shortcuts](https://en.wikipedia.org/wiki/Windows_shortcuts)
 
 1. Unless you have a full Mac keyboard, 
-you will not have the Home and End key. 
-See the shortcuts section for equivalents. 
+    you will not have the Home and End key. 
+    See the shortcuts section for equivalents. 
 
 
 Fn + Left/Right: equivalent to Home and End, but Home and End not necessarily behave the same as in Windows/Linux

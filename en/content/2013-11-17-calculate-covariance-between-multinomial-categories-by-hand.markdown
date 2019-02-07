@@ -1,10 +1,9 @@
-UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
 Title: Calculate Covariance Between Multinomial Categories by Hand
 Author: Ben Chuanlong Du
 Date: 2013-11-17 15:14:27
 Slug: calculate-covariance-between-multinomial-categories-by-hand
-Category: Fun problems
+Category: Fun Problems
 Tags: fun problem, statistics, probability, multinomial, covariance
 
 Let $(X_1, \ldots, X_k)\sim\text{Multinomial}(n, p_1, \ldots, p_k)$. 

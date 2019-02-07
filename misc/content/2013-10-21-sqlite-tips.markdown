@@ -2,7 +2,7 @@ UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for SQLite3
-Date: 2016-10-16 17:04:19
+Date: {NOW_DASH}
 Slug: sqlite-tips
 Category: Software
 Tags: tips, SQLite3, database, FTS5, full-text search
@@ -18,6 +18,12 @@ It is not meant to readers but rather for convenient reference of the author and
     by applying `order by rowid`.
 
 3. SQLite3 supports full-text search by the FTS5 extension.
+
+## Recursive Common Table Expressions
+
+https://www.sqlite.org/lang_with.html
+
+https://stackoverflow.com/questions/34659643/split-a-string-into-rows-using-pure-sqlite
 
 ## References
 

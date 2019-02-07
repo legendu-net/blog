@@ -92,6 +92,7 @@ def _fts_version():
         return 'fts5'
     return 'fts4'
 
+
 class Blogger:
 
     def __init__(self, db: str = ''):
@@ -305,6 +306,22 @@ class Blogger:
         print('Please consider COMMITTING THE SOURCE CODE as well!')
         print(DASHES + '\n')
 
+    def category(self, dir_: str = '', where=''):
+        sql = '''
+            select distinct
+                category
+            from
+                posts
+            {where}
+            '''
+        if where:
+            sql = sql.format(where=where)
+        else:
+            # todo you can support quicker specific filtering in future
+            pass
+        cats = (row[0] for row in self._conn.execute(sql).fetchall())
+        return cats
+
 
 def query(blogger, args):
     rows = blogger.query(' '.join(args.sql))
@@ -356,12 +373,32 @@ def publish(blogger, args):
     blogger.publish(args.sub_dirs)
 
 
+def category(blogger, args):
+    cats = blogger.publish(dir_=args.dir, where=args.where)
+    print(cats)
+
+
 def parse_args(args=None, namespace=None):
     """Parse command-line arguments for the blogging util.
     """
     parser = ArgumentParser(
         description='Write blog in command line.')
     subparsers = parser.add_subparsers(help='Sub commands.')
+    # parser for the category command
+    parser_cat = subparsers.add_parser('cats', aliases=['c'], help='list all categories.')
+    parser_cat.add_argument(
+        '-w',
+        '---where',
+        dest='where',
+        default='',
+        help='a user-specified filtering condition.')
+    parser_cat.add_argument(
+        '-d',
+        '---dir',
+        dest='sub_dir',
+        default='',
+        help='the sub blog directory to list categories; by default list all categories.')
+    parser_cat.set_defaults(func=category)
     # parser for the reload command
     parser_reload = subparsers.add_parser('reload', aliases=['r'], help='reload information of posts.')
     parser_reload.add_argument(

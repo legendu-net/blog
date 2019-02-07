@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-12-31 20:38:40
+Date: {NOW_DASH}
 Slug: sed-tips
 Title: Tips for "sed"
 Category: Software
@@ -120,3 +120,6 @@ sed -i '1 s_^_#!/bin/bash\n_' *.txt
 
         sed "s/^valid users\s*=\s*\${DOCKER_USER}/valid users = dclong/g" smb.conf 
 
+## Questions
+
+1. sed recursively ... aaaa aa -> a?

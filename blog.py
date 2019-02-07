@@ -313,12 +313,14 @@ class Blogger:
             from
                 posts
             {where}
+            order by
+                category
             '''
         if where:
             sql = sql.format(where=where)
         else:
             # todo you can support quicker specific filtering in future
-            pass
+            sql = sql.format(where=where)
         cats = (row[0] for row in self._conn.execute(sql).fetchall())
         return cats
 
@@ -374,8 +376,9 @@ def publish(blogger, args):
 
 
 def category(blogger, args):
-    cats = blogger.publish(dir_=args.dir, where=args.where)
-    print(cats)
+    cats = blogger.category(dir_=args.sub_dir, where=args.where)
+    for cat in cats:
+        print(cat)
 
 
 def parse_args(args=None, namespace=None):

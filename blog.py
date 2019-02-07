@@ -306,7 +306,25 @@ class Blogger:
         print('Please consider COMMITTING THE SOURCE CODE as well!')
         print(DASHES + '\n')
 
-    def category(self, dir_: str = '', where=''):
+    def tags(self, dir_: str = '', where=''):
+        sql = '''
+            select distinct
+                category
+            from
+                posts
+            {where}
+            order by
+                category
+            '''
+        if where:
+            sql = sql.format(where=where)
+        else:
+            # todo you can support quicker specific filtering in future
+            sql = sql.format(where=where)
+        cats = (row[0] for row in self._conn.execute(sql).fetchall())
+        return cats
+
+    def categories(self, dir_: str = '', where=''):
         sql = '''
             select distinct
                 category
@@ -349,6 +367,8 @@ def edit(blogger, args):
     if args.index:
         args.file = blogger.path(args.index)
     if args.file:
+        if not shutil.which(args.editor):
+            args.editor = 'vim'
         blogger.edit(args.file, args.editor)
 
 
@@ -375,8 +395,8 @@ def publish(blogger, args):
     blogger.publish(args.sub_dirs)
 
 
-def category(blogger, args):
-    cats = blogger.category(dir_=args.sub_dir, where=args.where)
+def categories(blogger, args):
+    cats = blogger.categories(dir_=args.sub_dir, where=args.where)
     for cat in cats:
         print(cat)
 
@@ -401,7 +421,7 @@ def parse_args(args=None, namespace=None):
         dest='sub_dir',
         default='',
         help='the sub blog directory to list categories; by default list all categories.')
-    parser_cat.set_defaults(func=category)
+    parser_cat.set_defaults(func=categories)
     # parser for the reload command
     parser_reload = subparsers.add_parser('reload', aliases=['r'], help='reload information of posts.')
     parser_reload.add_argument(

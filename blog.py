@@ -388,7 +388,9 @@ def reload(blogger, args):
 
 def add(blogger, args):
     file = blogger.add(' '.join(args.title), args.sub_dir)
-    blogger.edit(file, args.editor)
+    args.index = None
+    args.file = file
+    edit(blogger, args)
 
 
 def publish(blogger, args):

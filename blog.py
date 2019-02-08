@@ -56,7 +56,7 @@ def _update_time(post):
     with open(post, 'r', encoding='utf-8') as fin:
         lines = fin.readlines()
     for i, line in enumerate(lines):
-        if line.startswith('Date: 2'):
+        if line.startswith('Date: '):
             lines[i] = f'Date: {NOW_DASH}\n'
             break
     with open(post, 'w') as fout:
@@ -215,14 +215,7 @@ class Blogger:
         with open(post, 'r', encoding='utf-8') as f:
             hash1 = hashlib.md5(f.read().encode('utf-8')).hexdigest()
         if hash1 != hash0:
-            with open(post, 'r', encoding='utf-8') as f:
-                lines = f.readlines()
-            for i, line in enumerate(lines):
-                if line.startswith('Date: 2'):
-                    lines[i] = 'Date: {NOW_DASH}\n'
-                    break
-            with open(post, 'w', encoding='utf-8') as f:
-                f.writelines(lines)
+            _update_time(post)
         sql = 'DELETE FROM posts WHERE path = ?'
         self._conn.execute(sql, [post])
         self._load_post(post)
@@ -350,6 +343,8 @@ def query(blogger, args):
 
 
 def delete(blogger, args):
+    if re.search('^d\d+$', args.sub_cmd):
+        args.index = int(args.sub_cmd[1:])
     if args.index:
         args.file = blogger.path(args.index)
     if args.file:
@@ -357,6 +352,8 @@ def delete(blogger, args):
 
 
 def move(blogger, args):
+    if re.search('^d\d+$', args.sub_cmd):
+        args.index = int(args.sub_cmd[1:])
     if args.index:
         args.file = blogger.path(args.index)
     if args.file:
@@ -364,6 +361,8 @@ def move(blogger, args):
 
 
 def edit(blogger, args):
+    if re.search('^e\d+$', args.sub_cmd):
+        args.index = int(args.sub_cmd[1:])
     if args.index:
         args.file = blogger.path(args.index)
     if args.file:
@@ -406,9 +405,10 @@ def categories(blogger, args):
 def parse_args(args=None, namespace=None):
     """Parse command-line arguments for the blogging util.
     """
+    INDEXES = [''] + [str(i) for i in range(1, 11)]
     parser = ArgumentParser(
         description='Write blog in command line.')
-    subparsers = parser.add_subparsers(help='Sub commands.')
+    subparsers = parser.add_subparsers(dest='sub_cmd', help='Sub commands.')
     # parser for the category command
     parser_cat = subparsers.add_parser('cats', aliases=['c'], help='list all categories.')
     parser_cat.add_argument(
@@ -486,7 +486,7 @@ def parse_args(args=None, namespace=None):
         help='title of the post to be created.')
     parser_add.set_defaults(func=add)
     # parser for the edit command
-    parser_edit = subparsers.add_parser('edit', aliases=['e'], help='edit a post.')
+    parser_edit = subparsers.add_parser('edit', aliases=['e' + i for i in INDEXES], help='edit a post.')
     parser_edit.add_argument(
         '-v',
         '--vim',
@@ -508,7 +508,7 @@ def parse_args(args=None, namespace=None):
         help='path of the post to be edited.')
     parser_edit.set_defaults(func=edit)
     # parser for the move command
-    parser_move = subparsers.add_parser('move', aliases=['m'], help='move a post.')
+    parser_move = subparsers.add_parser('move', aliases=['m' + i for i in INDEXES], help='move a post.')
     parser_move.add_argument(
         '-i',
         '--index',
@@ -574,7 +574,7 @@ def parse_args(args=None, namespace=None):
         help='add the misc sub blog directory into the publish list.')
     parser_publish.set_defaults(func=publish)
     # parser for the remove command
-    parser_delete = subparsers.add_parser('delete', aliases=['d'], help='remove a post/page.')
+    parser_delete = subparsers.add_parser('delete', aliases=['d' + i for i in INDEXES], help='delete a post/page.')
     parser_delete.add_argument(
         '-i',
         '--index',

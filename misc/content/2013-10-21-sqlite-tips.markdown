@@ -1,8 +1,7 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for SQLite3
-Date: {NOW_DASH}
+Date: 2019-02-07 23:51:29
 Slug: sqlite-tips
 Category: Software
 Tags: tips, SQLite3, database, FTS5, full-text search
@@ -30,5 +29,4 @@ https://stackoverflow.com/questions/34659643/split-a-string-into-rows-using-pure
 https://sqlite.org/fts5.html
 
 http://www.sqlitetutorial.net/sqlite-full-text-search/
-
 

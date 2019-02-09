@@ -2,7 +2,7 @@ Status: published
 Date: 2016-06-20 21:01:14
 Author: Ben Chuanlong Du
 Slug: mac-tips
-Title: Mac Tips
+Title: Tips for macOS
 Category: OS
 Tags: macOS, tips, Apple
 

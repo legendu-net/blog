@@ -1,10 +1,9 @@
-UUID: 77915c23-f445-46cc-b630-4ffc7812020b
 Status: published
 Date: 2016-11-20 11:56:41
 Author: Ben Chuanlong Du
 Slug: rsync-tips
 Title: rsync Tips
-Category: Linux
+Category: OS
 Tags: Linux, copy, synchronization, file system, filesystem, rsync
 
 **
@@ -14,7 +13,7 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-## Tricks & Traps 
+## Tricks & Traps
 
 The command `rsync -avh src_dir des_dir` synchronizes the whole directory `src_dir` 
 into the destination directory `des_dir`
@@ -70,6 +69,38 @@ Here are a few good practices to follow.
             $dir/ \
             $tiger:/workdir/users/
 
+## Squeeze the Performance out of `rsync` over `ssh`
+
+### Some Options of `rsync`
+
+- a: archive mode - rescursive, preserves owner, preserves permissions, preserves modification times, preserves group, copies symlinks as symlinks, preserves device files.
+- H: preserves hard-links
+- A: preserves ACLs
+- X: preserves extended attributes
+- x: don't cross file-system boundaries
+- v: increase verbosity
+- --numeric-ds: don't map uid/gid values by user/group name
+- --delete: delete extraneous files from dest dirs (differential clean-up during sync)
+- --progress: show progress during transfer
+
+## Some Options of `ssh`
+
+- T: turn off pseudo-tty to decrease cpu load on destination.
+- c arcfour: use the weakest but fastest SSH encryption. Must specify "Ciphers arcfour" in sshd_config on destination.
+- o Compression=no: Turn off SSH compression.
+- x: turn off X forwarding if it is on by default.
+
+Example of copying files from local to a remote server using rsync and ssh with optimal speed.
+```sh
+rsync -aHAXxv --numeric-ids --delete --progress -e "ssh -T -c arcfour -o Compression=no -x" user@remote_host:source_dir dest_dir
+```
+Example of copying files from a remote server to local using rsync and ssh with optimal speed.
+```sh
+rsync -aHAXxv --numeric-ids --delete --progress -e "ssh -T -c arcfour -o Compression=no -x" source_dir user@remote_host:dest_dir]
+```
+
+
+
 
 ## Errors & Solutions
 
@@ -82,3 +113,4 @@ It is probably because the remote diretory does not exist.
 
 https://askubuntu.com/questions/625085/rsync-over-ssh-error-in-protocol-data-stream-code-12-ssh-works
 
+https://gist.github.com/KartikTalwar/4393116

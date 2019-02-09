@@ -300,39 +300,46 @@ class Blogger:
         print(DASHES + '\n')
 
     def tags(self, dir_: str = '', where=''):
-        sql = '''
-            select distinct
-                category
-            from
-                posts
-            {where}
-            order by
-                category
-            '''
+        sql = 'SELECT tags FROM posts {where}'
         if where:
             sql = sql.format(where=where)
         else:
             # todo you can support quicker specific filtering in future
             sql = sql.format(where=where)
-        cats = (row[0] for row in self._conn.execute(sql).fetchall())
-        return cats
+        cursor = self._conn.execute(sql)
+        tags = {}
+        row = cursor.fetchone()
+        while row is not None:
+            for tag in row[0].split(','):
+                tag = tag.strip() 
+                if tag == '':
+                    continue
+                if tag in tags:
+                    tags[tag] += 1
+                else:
+                    tags[tag] = 1
+            row = cursor.fetchone()
+        return sorted(tags.items(), key=lambda pair: pair[1], reverse=True)
 
     def categories(self, dir_: str = '', where=''):
         sql = '''
-            select distinct
-                category
-            from
+            SELECT 
+                category,
+                count(*) as n
+            FROM
                 posts
             {where}
-            order by
+            GROUP BY
                 category
+            ORDER BY
+                n desc
             '''
         if where:
             sql = sql.format(where=where)
         else:
             # todo you can support quicker specific filtering in future
             sql = sql.format(where=where)
-        cats = (row[0] for row in self._conn.execute(sql).fetchall())
+        cats = (row for row in self._conn.execute(sql).fetchall())
         return cats
 
 
@@ -352,7 +359,7 @@ def delete(blogger, args):
 
 
 def move(blogger, args):
-    if re.search('^d\d+$', args.sub_cmd):
+    if re.search('^m\d+$', args.sub_cmd):
         args.index = int(args.sub_cmd[1:])
     if args.index:
         args.file = blogger.path(args.index)
@@ -402,6 +409,12 @@ def categories(blogger, args):
         print(cat)
 
 
+def tags(blogger, args):
+    tags = blogger.tags(dir_=args.sub_dir, where=args.where)
+    for tag in tags:
+        print(tag)
+
+
 def parse_args(args=None, namespace=None):
     """Parse command-line arguments for the blogging util.
     """
@@ -409,41 +422,62 @@ def parse_args(args=None, namespace=None):
     parser = ArgumentParser(
         description='Write blog in command line.')
     subparsers = parser.add_subparsers(dest='sub_cmd', help='Sub commands.')
-    # parser for the category command
-    parser_cat = subparsers.add_parser('cats', aliases=['c'], help='list all categories.')
-    parser_cat.add_argument(
+    # parser for the tags command
+    parser_tags = subparsers.add_parser('tags', aliases=['t'], help='List all tags and their frequencies.')
+    parser_tags.add_argument(
         '-w',
         '---where',
         dest='where',
         default='',
-        help='a user-specified filtering condition.')
-    parser_cat.add_argument(
+        help='A user-specified filtering condition.')
+    parser_tags.add_argument(
         '-d',
         '---dir',
         dest='sub_dir',
         default='',
-        help='the sub blog directory to list categories; by default list all categories.')
-    parser_cat.set_defaults(func=categories)
+        help='The sub blog directory to list categories; by default list all categories.')
+    parser_tags.set_defaults(func=tags)
+    # parser for the categories command
+    parser_cats = subparsers.add_parser('cats', aliases=['c'], help='List all categories and their frequencies.')
+    parser_cats.add_argument(
+        '-w',
+        '---where',
+        dest='where',
+        default='',
+        help='A user-specified filtering condition.')
+    parser_cats.add_argument(
+        '-d',
+        '---dir',
+        dest='sub_dir',
+        default='',
+        help='The sub blog directory to list categories; by default list all categories.')
+    parser_cats.set_defaults(func=categories)
     # parser for the reload command
-    parser_reload = subparsers.add_parser('reload', aliases=['r'], help='reload information of posts.')
+    parser_reload = subparsers.add_parser('reload', aliases=['r'], help='Reload information of posts.')
     parser_reload.add_argument(
         '-d',
         '--root-dir',
         dest='root_dir',
         default=os.getenv('blog_dir'),
-        help='the root directory of the blog.')
+        help='The root directory of the blog.')
     parser_reload.set_defaults(func=reload)
     # parser for the show command
-    parser_list = subparsers.add_parser('list', aliases=['l'], help='list last search results.')
+    parser_list = subparsers.add_parser('list', aliases=['l'], help='List last search results.')
     parser_list.add_argument(
         '-n',
         dest='n',
         type=int,
         default=10,
-        help='number of matched records to show.')
+        help='Number of matched records to show.')
     parser_list.set_defaults(func=show)
     # parser for the search command
-    parser_search = subparsers.add_parser('search', aliases=['s'], help='search for posts.')
+    parser_search = subparsers.add_parser('search', aliases=['s'], 
+        help='Search for posts. ' \
+            'Tokens separated by spaces ( ) or plus signs (+) in the search phrase ' \
+            'are matched in order with tokens in the text. ' \
+            'ORDERLESS match of tokens can be achieved by separating them with the AND keyword. ' \
+            'You can also limit match into specific columns. ' \
+            'For more information, please refer to https://sqlite.org/fts5.html')
     parser_search.add_argument(
         'phrase',
         nargs='+',
@@ -456,7 +490,7 @@ def parse_args(args=None, namespace=None):
         help='number of matched records to show.')
     parser_search.set_defaults(func=search)
     # parser for the add command
-    parser_add = subparsers.add_parser('add', aliases=['a'], help='add a new post.')
+    parser_add = subparsers.add_parser('add', aliases=['a'], help='Add a new post.')
     parser_add.add_argument(
         '-v',
         '--vim',
@@ -508,7 +542,7 @@ def parse_args(args=None, namespace=None):
         help='path of the post to be edited.')
     parser_edit.set_defaults(func=edit)
     # parser for the move command
-    parser_move = subparsers.add_parser('move', aliases=['m' + i for i in INDEXES], help='move a post.')
+    parser_move = subparsers.add_parser('move', aliases=['m' + i for i in INDEXES], help='Move a post.')
     parser_move.add_argument(
         '-i',
         '--index',
@@ -549,7 +583,7 @@ def parse_args(args=None, namespace=None):
         help='move to the misc sub blog directory.')
     parser_move.set_defaults(func=move)
     # parser for the publish command
-    parser_publish = subparsers.add_parser('publish', aliases=['p'], help='publish the blog.')
+    parser_publish = subparsers.add_parser('publish', aliases=['p'], help='Publish the blog.')
     parser_publish.add_argument(
         '-c',
         '--cn',
@@ -574,7 +608,7 @@ def parse_args(args=None, namespace=None):
         help='add the misc sub blog directory into the publish list.')
     parser_publish.set_defaults(func=publish)
     # parser for the remove command
-    parser_delete = subparsers.add_parser('delete', aliases=['d' + i for i in INDEXES], help='delete a post/page.')
+    parser_delete = subparsers.add_parser('delete', aliases=['d' + i for i in INDEXES], help='Delete a post/page.')
     parser_delete.add_argument(
         '-i',
         '--index',
@@ -588,7 +622,7 @@ def parse_args(args=None, namespace=None):
         help='path of the post to delete.')
     parser_delete.set_defaults(func=delete)
     # parser for the query command
-    parser_query = subparsers.add_parser('query', aliases=['q'], help='run a SQL query.')
+    parser_query = subparsers.add_parser('query', aliases=['q'], help='Run a SQL query.')
     parser_query.add_argument(
         'sql',
         nargs='+',

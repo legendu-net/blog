@@ -29,6 +29,12 @@ TODAY_DASH = NOW_DASH[:10]
 EDITOR = 'code'
 
 
+def md5sum(post: str):
+    with open(post, 'r', encoding='utf-8') as fin:
+        bytes = fin.read().encode('utf-8')
+    return hashlib.md5(bytes).hexdigest()
+
+
 def _update_post_move(post):
     """ Update the post after move.
     There are two possible change.
@@ -176,9 +182,9 @@ class Blogger:
         for post in os.listdir(post_dir):
             if post.endswith('.markdown'):
                 post = os.path.join(post_dir, post)
-                self._load_post(post, md5, updated)
+                self._load_post(post, md5)
 
-    def _load_post(self, post, md5, updated):
+    def _load_post(self, post, md5):
         with open(post, 'r') as fin:
             lines = fin.readlines()
         for index, line in enumerate(lines):
@@ -231,7 +237,7 @@ class Blogger:
             tags, 
             content,
             md5,
-            updated,
+            0,
         ])
 
     def delete(self, post: Union[str, List[str]]):
@@ -242,7 +248,6 @@ class Blogger:
         qmark = ', '.join(['?'] * len(post))
         sql = f'DELETE FROM posts WHERE path in ({qmark})'
         self._conn.execute(sql, post)
-        self._conn.commit()
 
     def move(self, post, target):
         if target in (EN, CN, MISC):
@@ -254,15 +259,8 @@ class Blogger:
         sql = 'UPDATE posts SET path = ?, dir = ? WHERE path = ?'
         self._conn.execute(sql, [target, blog_dir(target), post])
 
-    def _check_update_time(self, post):
-        with open(post, 'r', encoding='utf-8') as f:
-            hash1 = hashlib.md5(f.read().encode('utf-8')).hexdigest()
-        if hash1 != hash0:
-            _update_time(post)
-
     def edit(self, post, editor):
-        with open(post, 'r', encoding='utf-8') as f:
-            md5 = hashlib.md5(f.read().encode('utf-8')).hexdigest()
+        md5 = md5sum(post)
         sql = 'UPDATE posts SET md5sum = ?, updated = 1 WHERE path = ?'
         self._conn.execute(sql, [md5, post])
         os.system(f'{editor} "{post}"')
@@ -286,6 +284,21 @@ class Blogger:
             if blog_dir(post) == MISC:
                     fout.writelines(DECLARATION)
 
+    def update(self):
+        """Update information of the changed posts.
+        """
+        sql = 'SELECT path, md5sum FROM posts WHERE updated = 1'
+        rows = self._conn.execute(sql).fetchall()
+        sql = 'DELETE FROM posts WHERE updated = 1'
+        self._conn.execute(sql)
+        for row in rows:
+            post = row[0]
+            md5 = row[1]
+            md5_new = md5sum(post)
+            if md5_new != md5:
+                _update_time(post)
+                self._load_post(post, md5_new)
+
     def add(self, title, dir_) -> str:
         file = self.find_post(title, dir_)
         if not file:
@@ -293,7 +306,7 @@ class Blogger:
             file = os.path.join(self.root_dir, dir_, 'content', file)
             self._create_post(file, title)
         # todo: similar to edit time update, do it later
-        # self._load_post(file, '', 0)
+        # self._load_post(file, '')
         # sql = 'DELETE FROM srps'
         # self._conn.execute(sql)
         # sql = 'INSERT INTO srps SELECT * FROM posts WHERE path = ?'
@@ -425,6 +438,7 @@ def delete(blogger, args):
         args.file = blogger.path(args.index)
     if args.file:
         blogger.delete(args.file)
+    blogger.commit()
 
 
 def move(blogger, args):
@@ -446,9 +460,11 @@ def edit(blogger, args):
         if not shutil.which(args.editor):
             args.editor = 'vim'
         blogger.edit(args.file, args.editor)
+    blogger.commit()
 
 
 def search(blogger, args):
+    update(blogger, args)
     filter_ = []
     args.filter = ' '.join(args.filter)
     if args.filter:
@@ -566,6 +582,11 @@ def tags(blogger, args):
         print(tag)
 
 
+def update(blogger, args):
+    blogger.update()
+    blogger.commit()
+
+
 def parse_args(args=None, namespace=None):
     """Parse command-line arguments for the blogging util.
     """
@@ -661,6 +682,9 @@ def parse_args(args=None, namespace=None):
         default='',
         help='The sub blog directory to list categories; by default list all categories.')
     parser_cats.set_defaults(func=categories)
+    # parser for the update command
+    parser_update = subparsers.add_parser('update', aliases=['u'], help='Update information of changed posts.')
+    parser_update.set_defaults(func=update)
     # parser for the reload command
     parser_reload = subparsers.add_parser('reload', aliases=['r'], help='Reload information of posts.')
     parser_reload.add_argument(

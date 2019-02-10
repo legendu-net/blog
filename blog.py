@@ -53,17 +53,6 @@ def _update_post_move(post):
             fout.write(text)
 
 
-def _update_category(post, from_cat, to_cat: str = ''):
-    with open(post, 'r', encoding='utf-8') as fin:
-        lines = fin.readlines()
-    for i, line in enumerate(lines):
-        if line.startswith('Category: ' + to_cat):
-            lines[i] = f'Category: {from_cat}\n'
-            break
-    with open(post, 'w') as fout:
-        fout.writelines(lines)
-
-
 def _update_tags(post, from_tag, to_tag):
     with open(post, 'r', encoding='utf-8') as fin:
         lines = fin.readlines()
@@ -156,6 +145,22 @@ class Blogger:
         )
         '''
         self._conn.execute(sql)
+
+    def commit(self):
+        self._conn.commit()
+
+    def update_category(self, post, from_cat, to_cat: str = ''):
+        with open(post, 'r', encoding='utf-8') as fin:
+            lines = fin.readlines()
+        for i, line in enumerate(lines):
+            if line.startswith('Category: ' + to_cat):
+                lines[i] = f'Category: {from_cat}\n'
+                break
+        with open(post, 'w') as fout:
+            fout.writelines(lines)
+        sql = 'DELETE FROM posts WHERE path = ?'
+        self._conn.execute(sql, [post])
+        self._load_post(post)
 
     def reload_posts(self, root_dir: str):
         self._create_vtable_posts()
@@ -294,17 +299,21 @@ class Blogger:
     def search(self, phrase: str, filter_: str = '', dry_run=False):
         self._create_table_srps()
         self._conn.execute('DELETE FROM srps')
+        conditions = []
+        if phrase:
+            conditions.append(f"posts MATCH '{phrase}'")
         if filter_:
-            filter_ = 'AND ' + filter_
+            filter_ =  conditions.append(filter_)
+        where = ' AND '.join(conditions)
+        if where:
+            where = 'WHERE ' + where
         sql = f'''
             INSERT INTO srps
             SELECT 
                 * 
             FROM 
                 posts 
-            WHERE 
-                posts MATCH '{phrase}' 
-            {filter_}
+            {where} 
             ORDER BY rank
             '''
         if args.dry_run:
@@ -322,7 +331,7 @@ class Blogger:
 
     def posts(self):
         sql = 'SELECT path FROM posts'
-        return self._conn.execute(sql).fetchall()
+        return [row[0] for row in self._conn.execute(sql).fetchall()]
 
     def fetch(self, n: int):
         sql = 'SELECT rowid, * FROM srps LIMIT {}'.format(n)
@@ -466,6 +475,7 @@ def search(blogger, args):
     args.neg_title = ' '.join(args.neg_title)
     if args.neg_title:
         filter_.append(f"title NOT LIKE '%{args.neg_title}%'")
+    args.phrase = [token for token in args.phrase if token.lower() != 'the' and token.lower() != 'a']
     blogger.search(' '.join(args.phrase), ' AND '.join(filter_), args.dry_run)
     show(blogger, args)
 
@@ -497,14 +507,15 @@ def categories(blogger, args):
 
 
 def update_category(blogger, args):
-    if args.index:
-        args.file = blogger.path(args.index)
-    if args.file:
-        for post in args.file:
-            _update_category(post, args.to_cat)
+    if args.indexes:
+        args.files = blogger.path(args.indexes)
+    if args.files:
+        for post in args.files:
+            blogger.update_category(post, args.to_cat)
     elif args.from_cat:
         for post in blogger.posts():
-            _update_category(post, args.to_cat, args.from_cat)
+            blogger.update_category(post, args.to_cat, args.from_cat)
+    blogger.commit()
 
 
 def tags(blogger, args):
@@ -524,12 +535,18 @@ def parse_args(args=None, namespace=None):
     parser_ucat = subparsers.add_parser('update_category', aliases=['ucat'], help='update category of posts.')
     parser_ucat.add_argument(
         '-i',
-        '--index',
+        '--indexes',
         nargs='+',
-        dest='index',
+        dest='indexes',
         type=int,
         default=(),
         help='row IDs in the search results.')
+    parser_ucat.add_argument(
+        '--files',
+        nargs='+',
+        dest='files',
+        default=(),
+        help='paths of the posts whose categories are to be updated.')
     parser_ucat.add_argument(
         '-f',
         '--from-category',
@@ -607,7 +624,12 @@ def parse_args(args=None, namespace=None):
     parser_search.add_argument(
         'phrase',
         nargs='+',
-        help='the phrase to match posts.')
+        default=(),
+        help='the phrase to match in posts. ' \
+            'Notice that tokens "a" and "the" are removed from phrase, ' \
+            'which can be used as a hack way to make phrase optional. ' \
+            'For example if you want to filter by category only without constraints on full-text search, ' \
+            'you can use ./blog.py a -c some_category.')
     parser_search.add_argument(
         '-i',
         '--title',
@@ -639,12 +661,14 @@ def parse_args(args=None, namespace=None):
     parser_search.add_argument(
         '-s',
         '--status',
+        nargs='+',
         dest='status',
         default='',
         help='search for posts with the sepcified status.')
     parser_search.add_argument(
         '-S',
         '--neg-status',
+        nargs='+',
         dest='neg_status',
         default='',
         help='search for posts without the sepcified status.')
@@ -665,12 +689,14 @@ def parse_args(args=None, namespace=None):
     parser_search.add_argument(
         '-c',
         '--categories',
+        nargs='+',
         dest='categories',
         default='',
         help='search for posts with the sepcified categories.')
     parser_search.add_argument(
         '-C',
         '--neg-categories',
+        nargs='+',
         dest='neg_categories',
         default='',
         help='search for posts without the sepcified categories.')

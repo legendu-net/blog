@@ -1,7 +1,6 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2014-07-12 20:21:51
+Date: 2019-02-10 12:26:09
 Slug: english-writing
 Title: English Writing
 Category: English

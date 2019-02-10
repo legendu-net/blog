@@ -1,5 +1,5 @@
 Status: published
-Date: {NOW_DASH}
+Date: 2019-02-10 12:26:09
 Author: Benjamin Du
 Slug: check-whether-a-shell-command-exists
 Title: Check Whether a Shell Command Exists
@@ -18,3 +18,4 @@ https://stackoverflow.com/questions/11210104/check-if-a-program-exists-from-a-py
 ## Shell
 
 https://stackoverflow.com/questions/592620/how-to-check-if-a-program-exists-from-a-bash-script
+

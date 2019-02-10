@@ -5,12 +5,12 @@ import os
 # remove old files
 os.system('rm -rf output/*')
 #-------------------------------------------------------------------------
-__blog_dir__ = os.environ["blog_dir"]
+BLOG_DIR = os.environ['blog_dir']
 # !!! http:// is necessary
-__home_url__ = "http://www.legendu.net"
-SITEURL = os.path.join(__home_url__, "cn") 
+HOME_URL = 'http://www.legendu.net'
+SITEURL = os.path.join(HOME_URL, 'cn') 
 #-------------------------------------------------------------------------
-SITESUBTITLE = u"山不在高，有仙则名；水不在深，有龙则灵。"
+SITESUBTITLE = u'山不在高，有仙则名；水不在深，有龙则灵。'
 AUTHOR = 'Ben Chuanlong Du'
 SITENAME = "Ben Chuanlong Du's Blog"
 # Times and dates
@@ -19,7 +19,7 @@ TIMEZONE = 'US/Pacific'
 DEFAULT_LANG = u'en'
 
 # pages
-PAGE_PATHS = ["pages"]
+PAGE_PATHS = ['pages']
 DISPLAY_PAGES_ON_MENU = False
 
 # Set the article URL
@@ -28,12 +28,11 @@ ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 
 # Title menu options
 MENUITEMS = [
-        ('Home', __home_url__),
+        ('Home', HOME_URL),
         ('Blog', SITEURL), 
         ("Archives", os.path.join(SITEURL, 'archives.html')), 
-        ('About', os.path.join(SITEURL, 'pages/about.html')), 
-        ('Resume', os.path.join(SITEURL, 'pages/resume.html')), 
-        ]
+        ('About', os.path.join(HOME_URL, 'pages/about')), 
+    ]
 NEWEST_FIRST_ARCHIVES = True
 
 # tag cloud
@@ -80,16 +79,16 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 
 # theme and plugins
 CSS_FILE = 'main_2.css'
-THEME = os.path.join(__blog_dir__, "themes/octopress_2")
+THEME = os.path.join(BLOG_DIR, 'themes/octopress_2')
 # plugins
-PLUGIN_PATHS = [os.path.join(__blog_dir__, 'plugins')]
+PLUGIN_PATHS = [os.path.join(BLOG_DIR, 'plugins')]
 PLUGINS = [
         'render_math',
         'summary', 
     ]
 
 # disqus comment
-DISQUS_SITENAME = "dclong"
+DISQUS_SITENAME = 'dclong'
 
 # Sharing
 TWITTER_USER = 'longendu'
@@ -115,7 +114,7 @@ FEED_ATOM = 'atom.xml'
 # SEARCH_BOX = True
 # SITESEARCH = "http://www.google.com/search"
 # SITESEARCH = "https://search.yahoo.com"
-SITESEARCH = "https://www.bing.com/search"
+SITESEARCH = 'https://www.bing.com/search'
 
 # google analytics
 GOOGLE_ANALYTICS = 'UA-30259661-1'

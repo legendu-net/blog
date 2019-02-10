@@ -1,4 +1,3 @@
-UUID: f26e9bdb-ae3e-4b78-bf96-48fe74472063
 Status: published
 Date: 2016-12-10 01:40:38
 Slug: cygwin-ports
@@ -19,20 +18,18 @@ following the instruction below if available.
 1. Download the newest version of Cygwin installtion program.
 
 2. Launch the Cygwin installation program with the `-K` flag in a Cygwin shell.
-For example,
+    For example,
 
         cygstart -- /path/to/setup-x86.exe -K http://cygwinports.org/ports.gpg
 
 3. On the "Choose Installation Type" page, 
-select "Install from Internet".
+    select "Install from Internet".
 
 4. On the "Choose Download Site(s)" page, 
-select a distro mirror, 
-then enter 
-<ftp://ftp.cygwinports.org/pub/cygwinports> 
-in the User URL field and press Add (making sure that both are highlighted).
-You can just select the download site and proceed with it if you have added it before.
+    select a distro mirror, 
+    then enter <ftp://ftp.cygwinports.org/pub/cygwinports> 
+    in the User URL field and press Add (making sure that both are highlighted).
+    You can just select the download site and proceed with it if you have added it before.
 
 5. Proceed with package selection and installation, 
-making sure to install any indicated dependencies.
-
+    making sure to install any indicated dependencies.

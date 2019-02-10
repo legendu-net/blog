@@ -179,6 +179,8 @@ class Blogger:
                 category = line[10:].strip()
             elif line.startswith('Tags: '):
                 tags = line[6:].strip()
+                if not tags.endswith(','):
+                    tags = tags + ','
         # parse content index to end
         content = ''.join(lines[index:])
         sql = '''
@@ -260,13 +262,22 @@ class Blogger:
             return row[0]
         return ''
 
-    def search(self, phrase: str):
+    def search(self, phrase: str, filter_: str = ''):
         self._create_table_srps()
         self._conn.execute('DELETE FROM srps')
-        sql = '''
+        if filter_:
+            filter_ = 'AND ' + filter_
+        sql = f'''
             INSERT INTO srps
-            SELECT * FROM posts WHERE posts MATCH '{}' ORDER BY rank
-            '''.format(phrase)
+            SELECT 
+                * 
+            FROM 
+                posts 
+            WHERE 
+                posts MATCH '{phrase}' 
+            {filter_}
+            ORDER BY rank
+            '''
         self._conn.execute(sql)
         self._conn.commit()
 
@@ -379,7 +390,47 @@ def edit(blogger, args):
 
 
 def search(blogger, args):
-    blogger.search(' '.join(args.phrase))
+    filter_ = []
+    args.filter = ' '.join(args.filter)
+    if args.filter:
+        filter_.append(args.filter)
+    if args.sub_dir:
+        args.sub_dir = ', '.join(f"'{dir_}'" for dir_ in args.sub_dir)
+        filter_.append(f'dir IN ({args.sub_dir})')
+    if args.neg_sub_dir:
+        args.neg_sub_dir = ', '.join(f"'{dir_}'" for dir_ in args.neg_sub_dir)
+        filter_.append(f'dir NOT IN ({args.neg_sub_dir})')
+    if args.categories:
+        args.categories = ', '.join(f"'{cat}'" for cat in args.categories)
+        filter_.append(f'category IN ({args.categories})')
+    if args.neg_categories:
+        args.neg_sub_dir = ', '.join(f"'{cat}'" for cat in args.neg_catgories)
+        filter_.append(f'category NOT IN ({args.neg_categories})')
+    if args.tags:
+        args.tags = ''.join(f'% {tag},%' for tag in args.tags).replace('%%', '%')
+        filter_.append(f"tags LIKE '{args.tags}'")
+    if args.neg_tags:
+        args.neg_tags = ''.join(f'% {tag},%' for tag in args.neg_tags).replace('%%', '%')
+        filter_.append(f"tags NOT LIKE '{args.neg_tags}'")
+    if args.status:
+        args.status = ', '.join(f"'{stat}'" for stat in args.status)
+        filter_.append(f'status IN ({args.status})')
+    if args.neg_status:
+        args.neg_status = ', '.join(f"'{stat}'" for stat in args.neg_status)
+        filter_.append(f'status NOT IN ({args.neg_status})')
+    args.author = ' '.join(args.author)
+    if args.author:
+        filter_.append(f"author = '{args.author}'")
+    args.neg_author = ' '.join(args.neg_author)
+    if args.neg_author:
+        filter_.append(f"author != '{args.neg_author}'")
+    args.title = ' '.join(args.title)
+    if args.title:
+        filter_.append(f"title LIKE '%{args.title}%'")
+    args.neg_title = ' '.join(args.neg_title)
+    if args.neg_title:
+        filter_.append(f"title NOT LIKE '%{args.neg_title}%'")
+    blogger.search(' '.join(args.phrase), ' AND '.join(filter_))
     show(blogger, args)
 
 
@@ -482,6 +533,93 @@ def parse_args(args=None, namespace=None):
         'phrase',
         nargs='+',
         help='the phrase to match posts.')
+    parser_search.add_argument(
+        '-i',
+        '--title',
+        nargs='+',
+        dest='title',
+        default='',
+        help='search for posts with the sepcified title.')
+    parser_search.add_argument(
+        '-I',
+        '--neg-title',
+        nargs='+',
+        dest='neg_title',
+        default='',
+        help='search for posts without the sepcified title.')
+    parser_search.add_argument(
+        '-a',
+        '--author',
+        nargs='+',
+        dest='author',
+        default='',
+        help='search for posts with the sepcified author.')
+    parser_search.add_argument(
+        '-A',
+        '--neg-author',
+        nargs='+',
+        dest='neg_author',
+        default='',
+        help='search for posts without the sepcified author.')
+    parser_search.add_argument(
+        '-s',
+        '--status',
+        dest='status',
+        default='',
+        help='search for posts with the sepcified status.')
+    parser_search.add_argument(
+        '-S',
+        '--neg-status',
+        dest='neg_status',
+        default='',
+        help='search for posts without the sepcified status.')
+    parser_search.add_argument(
+        '-t',
+        '--tags',
+        nargs='+',
+        dest='tags',
+        default='',
+        help='search for posts with the sepcified tags.')
+    parser_search.add_argument(
+        '-T',
+        '--neg-tags',
+        nargs='+',
+        dest='neg_tags',
+        default='',
+        help='search for posts without the sepcified tags.')
+    parser_search.add_argument(
+        '-c',
+        '--categories',
+        dest='categories',
+        default='',
+        help='search for posts with the sepcified categories.')
+    parser_search.add_argument(
+        '-C',
+        '--neg-categories',
+        dest='neg_categories',
+        default='',
+        help='search for posts without the sepcified categories.')
+    parser_search.add_argument(
+        '-d',
+        '--sub-dir',
+        dest='sub_dir',
+        nargs='+',
+        default='',
+        help='search for posts in the specified sub blog directory.')
+    parser_search.add_argument(
+        '-D',
+        '--neg-sub-dir',
+        dest='neg_sub_dir',
+        nargs='+',
+        default='',
+        help='search for posts not in the specified sub blog directory.')
+    parser_search.add_argument(
+        '-f',
+        '--filter',
+        dest='filter',
+        nargs='+',
+        default=(),
+        help='futher filtering conditions in addition to the full-text match.')
     parser_search.add_argument(
         '-n',
         dest='n',

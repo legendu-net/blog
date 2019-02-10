@@ -5,8 +5,7 @@ Author: Ben Chuanlong Du
 Slug: map-keys-in-mac
 Title: Map Keys in Mac
 Category: Apple
-Tags: Mac, Apple, OS X, mapping, keys, Seil
-
+Tags: Mac, Apple, macOS, mapping, keys, Seil
 
 Update: As of MacOS Sierra 10.12.1,
 the remapping of `Caps Lock` to `Escape` can be done natively in the Keyboard System Preferences pane.

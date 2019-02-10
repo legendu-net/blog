@@ -549,6 +549,35 @@ def parse_args(args=None, namespace=None):
     parser = ArgumentParser(
         description='Write blog in command line.')
     subparsers = parser.add_subparsers(dest='sub_cmd', help='Sub commands.')
+    # parser for the update_tags command
+    parser_utag = subparsers.add_parser('update_tags', aliases=['utag' + i for i in INDEXES], help='update tags of posts.')
+    parser_utag.add_argument(
+        '-i',
+        '--indexes',
+        nargs='+',
+        dest='indexes',
+        type=int,
+        default=(),
+        help='row IDs in the search results.')
+    parser_utag.add_argument(
+        '--files',
+        nargs='+',
+        dest='files',
+        default=(),
+        help='paths of the posts whose categories are to be updated.')
+    parser_utag.add_argument(
+        '-f',
+        '--from-tag',
+        dest='from_tag',
+        default='',
+        help='the tag to change from.')
+    parser_utag.add_argument(
+        '-t',
+        '--to-tag',
+        dest='to_tag',
+        default='',
+        help='the tag to change to.')
+    parser_utag.set_defaults(func=update_tags)
     # parser for the update_category command
     parser_ucat = subparsers.add_parser('update_category', aliases=['ucat' + i for i in INDEXES], help='update category of posts.')
     parser_ucat.add_argument(

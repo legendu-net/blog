@@ -1,4 +1,5 @@
 *.pyc
+.ipynb_checkpoints/
 home/output
 home/cache
 en/output
@@ -7,3 +8,4 @@ cn/output
 cn/cache
 misc/output
 misc/cache
+

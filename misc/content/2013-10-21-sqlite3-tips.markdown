@@ -7,10 +7,10 @@ Category: Software
 Tags: tips, SQLite3, database, FTS5, full-text search
 
 **
-Things on this page are fragmentary and immature notes/thoughts of the author. 
+Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
- 
+
 1. `.schema` show create statement of a table
 
 2. You can force query to keep the original order of rows 

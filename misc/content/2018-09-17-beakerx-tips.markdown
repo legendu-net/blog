@@ -1,4 +1,3 @@
-UUID: 6af44d1e-d4a3-4515-82b6-a84917961027
 Status: published
 Date: 2018-09-17 22:14:31
 Author: Ben Chuanlong Du
@@ -19,9 +18,16 @@ but rather for convenient reference of the author and future improvement.
 
 ## SQL
 
-1. Connect to SQLite3 in memory.
+1. Connect to SQLite3.
 
         %defaultDatasource jdbc:sqlite:fts5.sqlite3
 
-    It seems to me that SQLite3 in BeakerX does not support the in-memory mode,
-    which is not a big deal. 
+2. Connect to SQLite3 in memory
+
+        %defaultDatasource jdbc:sqlite::memory:
+    or
+        %defaultDatasource jdbc:sqlite:
+
+3. The SQLite3 JDBC driver is located at 
+    `/usr/local/lib/python3.6/dist-packages/beakerx/kernel/sql/lib/sqlite-jdbc-3.21.0.jar`.
+    You can manually replace it with a higher version to upgrade it.

@@ -527,12 +527,12 @@ def update_tags(blogger, args):
         args.files = blogger.path(args.indexes)
     if args.files:
         for post in args.files:
-            blogger.update_tags(post, args.from_tag, args.to_cat)
+            blogger.update_tags(post, args.from_tag, args.to_tag)
     else:
         sql = f"SELECT path FROM posts WHERE tags LIKE '% {args.from_tag},%'"
         posts = (row[0] for row in blogger.query(sql))
         for post in posts:
-            blogger.update_tags(post, args.to_cat, args.from_cat)
+            blogger.update_tags(post, args.from_tag, args.to_tag)
     blogger.commit()
 
 

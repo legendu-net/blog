@@ -53,19 +53,6 @@ def _update_post_move(post):
             fout.write(text)
 
 
-def _update_tags(post, from_tag, to_tag):
-    with open(post, 'r', encoding='utf-8') as fin:
-        lines = fin.readlines()
-    for i, line in enumerate(lines):
-        if line.startswith('Tags: '):
-            tags = (tag.strip() for tag in line[5:].split(','))
-            tags = (to_tag if tag == from_tag else tag for tag in tags)
-            lines[i] = 'Tags: ' + ', '.join(tags)
-            break
-    with open(post, 'w') as fout:
-        fout.writelines(lines)
-
-
 def _update_time(post):
     with open(post, 'r', encoding='utf-8') as fin:
         lines = fin.readlines()
@@ -149,12 +136,27 @@ class Blogger:
     def commit(self):
         self._conn.commit()
 
-    def update_category(self, post, from_cat, to_cat: str = ''):
+    def update_category(self, post, from_cat):
         with open(post, 'r', encoding='utf-8') as fin:
             lines = fin.readlines()
         for i, line in enumerate(lines):
-            if line.startswith('Category: ' + to_cat):
+            if line.startswith('Category: '):
                 lines[i] = f'Category: {from_cat}\n'
+                break
+        with open(post, 'w') as fout:
+            fout.writelines(lines)
+        sql = 'DELETE FROM posts WHERE path = ?'
+        self._conn.execute(sql, [post])
+        self._load_post(post)
+
+    def update_tags(self, post, from_tag, to_tag):
+        with open(post, 'r', encoding='utf-8') as fin:
+            lines = fin.readlines()
+        for i, line in enumerate(lines):
+            if line.startswith('Tags: '):
+                tags = (tag.strip() for tag in line[5:].split(','))
+                tags = (to_tag if tag == from_tag else tag for tag in tags)
+                lines[i] = 'Tags: ' + ', '.join(tags)
                 break
         with open(post, 'w') as fout:
             fout.writelines(lines)
@@ -328,10 +330,6 @@ class Blogger:
         qmark = ', '.join(['?'] * len(id_))
         sql = f'SELECT path FROM srps WHERE rowid in ({qmark})'
         return [row[0] for row in self._conn.execute(sql, id_).fetchall()]
-
-    def posts(self):
-        sql = 'SELECT path FROM posts'
-        return [row[0] for row in self._conn.execute(sql).fetchall()]
 
     def fetch(self, n: int):
         sql = 'SELECT rowid, * FROM srps LIMIT {}'.format(n)
@@ -515,8 +513,26 @@ def update_category(blogger, args):
         for post in args.files:
             blogger.update_category(post, args.to_cat)
     elif args.from_cat:
-        for post in blogger.posts():
-            blogger.update_category(post, args.to_cat, args.from_cat)
+        sql = 'SELECT path FROM posts WHERE category = ?'
+        posts = (row[0] for row in blogger.query(sql))
+        for post in posts:
+            blogger.update_category(post, args.to_cat)
+    blogger.commit()
+
+
+def update_tags(blogger, args):
+    if re.search('^utag\d+$', args.sub_cmd):
+        args.indexes = int(args.sub_cmd[4:])
+    if args.indexes:
+        args.files = blogger.path(args.indexes)
+    if args.files:
+        for post in args.files:
+            blogger.update_tags(post, args.from_tag, args.to_cat)
+    else:
+        sql = f"SELECT path FROM posts WHERE tags LIKE '% {args.from_tag},%'"
+        posts = (row[0] for row in blogger.query(sql))
+        for post in posts:
+            blogger.update_tags(post, args.to_cat, args.from_cat)
     blogger.commit()
 
 

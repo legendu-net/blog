@@ -535,8 +535,8 @@ def update_tags(blogger, args):
             FROM 
                 posts 
             WHERE 
-                tags LIKE ',% {args.from_tag},%'
-                OR tags LIKE ':% {args.from_tag},%'
+                tags LIKE '%, {args.from_tag},%'
+                OR tags LIKE '%: {args.from_tag},%'
             '''
         posts = (row[0] for row in blogger.query(sql))
         for post in posts:

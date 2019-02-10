@@ -120,7 +120,7 @@ class Blogger:
     def _create_vtable_posts(self):
         sql = f'''
         CREATE VIRTUAL TABLE IF NOT EXISTS posts USING {self._fts} (
-            path, dir, status, date, author, slug, title, category, tags, content
+            path, dir, status, date, author, slug, title, category, tags, content, md5sum, updated
         )
         '''
         self._conn.execute(sql)
@@ -128,7 +128,7 @@ class Blogger:
     def _create_table_srps(self):
         sql = '''
         CREATE TABLE IF NOT EXISTS srps (
-            path, dir, status, date, author, slug, title, category, tags, content
+            path, dir, status, date, author, slug, title, category, tags, content, md5sum, updated
         )
         '''
         self._conn.execute(sql)
@@ -136,18 +136,17 @@ class Blogger:
     def commit(self):
         self._conn.commit()
 
-    def update_category(self, post, from_cat):
+    def update_category(self, post, category):
         with open(post, 'r', encoding='utf-8') as fin:
             lines = fin.readlines()
         for i, line in enumerate(lines):
             if line.startswith('Category: '):
-                lines[i] = f'Category: {from_cat}\n'
+                lines[i] = f'Category: {category}\n'
                 break
         with open(post, 'w') as fout:
             fout.writelines(lines)
-        sql = 'DELETE FROM posts WHERE path = ?'
-        self._conn.execute(sql, [post])
-        self._load_post(post)
+        sql = 'UPDATE posts SET category = ? WHERE path = ?'
+        self._conn.execute(sql, [category, post])
 
     def update_tags(self, post, from_tag, to_tag):
         with open(post, 'r', encoding='utf-8') as fin:
@@ -160,28 +159,26 @@ class Blogger:
                 break
         with open(post, 'w') as fout:
             fout.writelines(lines)
-        sql = 'DELETE FROM posts WHERE path = ?'
-        self._conn.execute(sql, [post])
-        self._load_post(post)
+        sql = 'UPDATE posts SET tags = ? WHERE path = ?'
+        self._conn.execute(sql, [tags + ',', post])
 
-    def reload_posts(self, root_dir: str):
+    def reload_posts(self, root_dir: str, md5: str, updated: int):
         self._create_vtable_posts()
         self._conn.execute('DELETE FROM posts')
-        # self._conn.commit()
         for dir_ in (HOME, CN, EN, MISC):
-            self._load_posts(os.path.join(root_dir, dir_, 'content'))
+            self._load_posts(os.path.join(root_dir, dir_, 'content'), md5, updated)
         self._conn.commit()
         self.root_dir = self._root_dir()
 
-    def _load_posts(self, post_dir):
+    def _load_posts(self, post_dir, md5, updated):
         if not os.path.isdir(post_dir):
             return
         for post in os.listdir(post_dir):
             if post.endswith('.markdown'):
                 post = os.path.join(post_dir, post)
-                self._load_post(post)
+                self._load_post(post, md5, updated)
 
-    def _load_post(self, post):
+    def _load_post(self, post, md5, updated):
         with open(post, 'r') as fin:
             lines = fin.readlines()
         for index, line in enumerate(lines):
@@ -217,12 +214,25 @@ class Blogger:
         content = ''.join(lines[index:])
         sql = '''
         INSERT INTO posts (
-            path, dir, status, date, author, slug, title, category, tags, content
+            path, dir, status, date, author, slug, title, category, tags, content, md5sum, updated
         ) VALUES (
-            ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+            ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
         )
         '''
-        self._conn.execute(sql, [post, blog_dir(post), status, date, author, slug, title, category, tags, content])
+        self._conn.execute(sql, [
+            post, 
+            blog_dir(post), 
+            status, 
+            date, 
+            author, 
+            slug, 
+            title, 
+            category, 
+            tags, 
+            content,
+            md5,
+            updated,
+        ])
 
     def delete(self, post: Union[str, List[str]]):
         if isinstance(post, str):
@@ -241,23 +251,27 @@ class Blogger:
             return
         shutil.move(post, target)
         _update_post_move(target)
-        sql = 'DELETE FROM posts WHERE path = ?'
-        self._conn.execute(sql, [post])
-        self._load_post(target)
-        self._conn.commit()
+        sql = 'UPDATE posts SET path = ?, dir = ? WHERE path = ?'
+        self._conn.execute(sql, [target, blog_dir(target), post])
 
-    def edit(self, post, editor):
-        with open(post, 'r', encoding='utf-8') as f:
-            hash0 = hashlib.md5(f.read().encode('utf-8')).hexdigest()
-        os.system(editor + ' "' + post + '"')
+    def _check_update_time(self, post):
         with open(post, 'r', encoding='utf-8') as f:
             hash1 = hashlib.md5(f.read().encode('utf-8')).hexdigest()
         if hash1 != hash0:
             _update_time(post)
-        sql = 'DELETE FROM posts WHERE path = ?'
-        self._conn.execute(sql, [post])
-        self._load_post(post)
-        self._conn.commit()
+
+    def edit(self, post, editor):
+        with open(post, 'r', encoding='utf-8') as f:
+            md5 = hashlib.md5(f.read().encode('utf-8')).hexdigest()
+        sql = 'UPDATE posts SET md5sum = ?, updated = 1 WHERE path = ?'
+        self._conn.execute(sql, [md5, post])
+        os.system(f'{editor} "{post}"')
+        # todo: the logic here doesn't seem right to me ...
+        # better to use a upsert statement
+        # sql = 'DELETE FROM posts WHERE path = ?'
+        # self._conn.execute(sql, [post])
+        # self._load_post(post)
+        # self._conn.commit()
 
     def _create_post(self, post, title):
         file_words = os.path.join(self.root_dir, 'words.json')
@@ -278,12 +292,13 @@ class Blogger:
             file = f'{TODAY_DASH}-{_slug(title)}.markdown'
             file = os.path.join(self.root_dir, dir_, 'content', file)
             self._create_post(file, title)
-        self._load_post(file)
-        sql = 'DELETE FROM srps'
-        self._conn.execute(sql)
-        sql = 'INSERT INTO srps SELECT * FROM posts WHERE path = ?'
-        self._conn.execute(sql, [file])
-        self._conn.commit()
+        # todo: similar to edit time update, do it later
+        # self._load_post(file, '', 0)
+        # sql = 'DELETE FROM srps'
+        # self._conn.execute(sql)
+        # sql = 'INSERT INTO srps SELECT * FROM posts WHERE path = ?'
+        # self._conn.execute(sql, [file])
+        # self._conn.commit()
         return file
 
     def find_post(self, title, dir_):
@@ -419,6 +434,7 @@ def move(blogger, args):
         args.file = blogger.path(args.index)[0]
     if args.file:
         blogger.move(args.file, args.target)
+    blogger.commit()
 
 
 def edit(blogger, args):
@@ -484,7 +500,7 @@ def show(blogger, args):
 
 
 def reload(blogger, args):
-    blogger.reload_posts(args.root_dir)
+    blogger.reload_posts(args.root_dir, '', 0)
 
 
 def add(blogger, args):

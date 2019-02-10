@@ -325,7 +325,7 @@ class Blogger:
     def path(self, id_: Union[int, List[int]]):
         if isinstance(id_, int):
             id_ = [id_]
-        qmark = ', '.join(['?'] * len(id))
+        qmark = ', '.join(['?'] * len(id_))
         sql = f'SELECT path FROM srps WHERE rowid in ({qmark})'
         return [row[0] for row in self._conn.execute(sql, id_).fetchall()]
 

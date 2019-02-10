@@ -3,7 +3,7 @@ Date: 2015-03-13 15:04:40
 Slug: about
 Tags: about
 
-- [LinkedIn](http://www.linkedin.com/pub/chuanlong-ben-du/21/9b2/123/)
+- [LinkedIn](https://www.linkedin.com/in/ben-chuanlong-du-1239b221/)
 
 - [GitHub](https://github.com/dclong) 
 

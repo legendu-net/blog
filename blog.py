@@ -507,6 +507,8 @@ def categories(blogger, args):
 
 
 def update_category(blogger, args):
+    if re.search('^ucat\d+$', args.sub_cmd):
+        args.indexes = int(args.sub_cmd[4:])
     if args.indexes:
         args.files = blogger.path(args.indexes)
     if args.files:
@@ -532,7 +534,7 @@ def parse_args(args=None, namespace=None):
         description='Write blog in command line.')
     subparsers = parser.add_subparsers(dest='sub_cmd', help='Sub commands.')
     # parser for the update_category command
-    parser_ucat = subparsers.add_parser('update_category', aliases=['ucat'], help='update category of posts.')
+    parser_ucat = subparsers.add_parser('update_category', aliases=['ucat' + i for i in INDEXES], help='update category of posts.')
     parser_ucat.add_argument(
         '-i',
         '--indexes',

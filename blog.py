@@ -10,6 +10,7 @@ import hashlib
 import datetime
 import shutil
 import json
+from typing import Union, List
 
 EN = 'en'
 CN = 'cn'
@@ -50,6 +51,30 @@ def _update_post_move(post):
         # text = re.sub('\nSlug: .*\n', slug, text)
         with open(post, 'w', encoding='utf-8') as fout:
             fout.write(text)
+
+
+def _update_category(post, from_cat, to_cat: str = ''):
+    with open(post, 'r', encoding='utf-8') as fin:
+        lines = fin.readlines()
+    for i, line in enumerate(lines):
+        if line.startswith('Category: ' + to_cat):
+            lines[i] = f'Category: {from_cat}\n'
+            break
+    with open(post, 'w') as fout:
+        fout.writelines(lines)
+
+
+def _update_tags(post, from_tag, to_tag):
+    with open(post, 'r', encoding='utf-8') as fin:
+        lines = fin.readlines()
+    for i, line in enumerate(lines):
+        if line.startswith('Tags: '):
+            tags = (tag.strip() for tag in line[5:].split(','))
+            tags = (to_tag if tag == from_tag else tag for tag in tags)
+            lines[i] = 'Tags: ' + ', '.join(tags)
+            break
+    with open(post, 'w') as fout:
+        fout.writelines(lines)
 
 
 def _update_time(post):
@@ -192,10 +217,14 @@ class Blogger:
         '''
         self._conn.execute(sql, [post, blog_dir(post), status, date, author, slug, title, category, tags, content])
 
-    def delete(self, post):
-        os.remove(post)
-        sql = 'DELETE FROM posts WHERE path = ?'
-        self._conn.execute(sql, [post])
+    def delete(self, post: Union[str, List[str]]):
+        if isinstance(post, str):
+            post = [post]
+        for file in post:
+            os.remove(file)
+        qmark = ', '.join(['?'] * len(post))
+        sql = f'DELETE FROM posts WHERE path in ({qmark})'
+        self._conn.execute(sql, post)
         self._conn.commit()
 
     def move(self, post, target):
@@ -262,7 +291,7 @@ class Blogger:
             return row[0]
         return ''
 
-    def search(self, phrase: str, filter_: str = ''):
+    def search(self, phrase: str, filter_: str = '', dry_run=False):
         self._create_table_srps()
         self._conn.execute('DELETE FROM srps')
         if filter_:
@@ -278,15 +307,22 @@ class Blogger:
             {filter_}
             ORDER BY rank
             '''
+        if args.dry_run:
+            print(sql)
+            return
         self._conn.execute(sql)
         self._conn.commit()
 
-    def path(self, id_: int):
-        sql = 'SELECT path FROM srps WHERE rowid = ?'
-        result = self._conn.execute(sql, [id_]).fetchone()
-        if result:
-            return result[0]
-        return ''
+    def path(self, id_: Union[int, List[int]]):
+        if isinstance(id_, int):
+            id_ = [id_]
+        qmark = ', '.join(['?'] * len(id))
+        sql = f'SELECT path FROM srps WHERE rowid in ({qmark})'
+        return [row[0] for row in self._conn.execute(sql, id_).fetchall()]
+
+    def posts(self):
+        sql = 'SELECT path FROM posts'
+        return self._conn.execute(sql).fetchall()
 
     def fetch(self, n: int):
         sql = 'SELECT rowid, * FROM srps LIMIT {}'.format(n)
@@ -373,7 +409,7 @@ def move(blogger, args):
     if re.search('^m\d+$', args.sub_cmd):
         args.index = int(args.sub_cmd[1:])
     if args.index:
-        args.file = blogger.path(args.index)
+        args.file = blogger.path(args.index)[0]
     if args.file:
         blogger.move(args.file, args.target)
 
@@ -382,7 +418,7 @@ def edit(blogger, args):
     if re.search('^e\d+$', args.sub_cmd):
         args.index = int(args.sub_cmd[1:])
     if args.index:
-        args.file = blogger.path(args.index)
+        args.file = blogger.path(args.index)[0]
     if args.file:
         if not shutil.which(args.editor):
             args.editor = 'vim'
@@ -430,7 +466,7 @@ def search(blogger, args):
     args.neg_title = ' '.join(args.neg_title)
     if args.neg_title:
         filter_.append(f"title NOT LIKE '%{args.neg_title}%'")
-    blogger.search(' '.join(args.phrase), ' AND '.join(filter_))
+    blogger.search(' '.join(args.phrase), ' AND '.join(filter_), args.dry_run)
     show(blogger, args)
 
 
@@ -460,6 +496,17 @@ def categories(blogger, args):
         print(cat)
 
 
+def update_category(blogger, args):
+    if args.index:
+        args.file = blogger.path(args.index)
+    if args.file:
+        for post in args.file:
+            _update_category(post, args.to_cat)
+    elif args.from_cat:
+        for post in blogger.posts():
+            _update_category(post, args.to_cat, args.from_cat)
+
+
 def tags(blogger, args):
     tags = blogger.tags(dir_=args.sub_dir, where=args.where)
     for tag in tags:
@@ -473,6 +520,29 @@ def parse_args(args=None, namespace=None):
     parser = ArgumentParser(
         description='Write blog in command line.')
     subparsers = parser.add_subparsers(dest='sub_cmd', help='Sub commands.')
+    # parser for the update_category command
+    parser_ucat = subparsers.add_parser('update_category', aliases=['ucat'], help='update category of posts.')
+    parser_ucat.add_argument(
+        '-i',
+        '--index',
+        nargs='+',
+        dest='index',
+        type=int,
+        default=(),
+        help='row IDs in the search results.')
+    parser_ucat.add_argument(
+        '-f',
+        '--from-category',
+        dest='from_cat',
+        default='',
+        help='the category to change from.')
+    parser_ucat.add_argument(
+        '-t',
+        '--to-category',
+        dest='to_cat',
+        default='',
+        help='the category to change to.')
+    parser_ucat.set_defaults(func=update_category)
     # parser for the tags command
     parser_tags = subparsers.add_parser('tags', aliases=['t'], help='List all tags and their frequencies.')
     parser_tags.add_argument(
@@ -529,6 +599,11 @@ def parse_args(args=None, namespace=None):
             'ORDERLESS match of tokens can be achieved by separating them with the AND keyword. ' \
             'You can also limit match into specific columns. ' \
             'For more information, please refer to https://sqlite.org/fts5.html')
+    parser_search.add_argument(
+        '--dry-run',
+        dest='dry_run',
+        action='store_true',
+        help='print out the SQL query without running it.')
     parser_search.add_argument(
         'phrase',
         nargs='+',

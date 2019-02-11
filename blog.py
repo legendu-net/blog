@@ -450,7 +450,8 @@ def edit(blogger, args):
     if args.index:
         args.file = blogger.path(args.index)[0]
     if args.file:
-        if not shutil.which(args.editor):
+        # todo: best to unify the it or make a feature request to shutil.which
+        if args.editor != 'gp open' and not shutil.which(args.editor):
             args.editor = 'vim'
         blogger.edit(args.file, args.editor)
     blogger.commit()
@@ -819,6 +820,14 @@ def parse_args(args=None, namespace=None):
     # parser for the add command
     parser_add = subparsers.add_parser('add', aliases=['a'], help='Add a new post.')
     parser_add.add_argument(
+        '-g',
+        '--gp-open',
+        dest='editor',
+        action='store_const',
+        const='gp open',
+        default=EDITOR,
+        help='edit the post using vim.')
+    parser_add.add_argument(
         '-v',
         '--vim',
         dest='editor',
@@ -849,11 +858,11 @@ def parse_args(args=None, namespace=None):
     # parser for the edit command
     parser_edit = subparsers.add_parser('edit', aliases=['e' + i for i in INDEXES], help='edit a post.')
     parser_edit.add_argument(
-        '-o',
-        '--open',
+        '-g',
+        '--gp-open',
         dest='editor',
         action='store_const',
-        const='open',
+        const='gp open',
         default=EDITOR,
         help='edit the post using vim.')
     parser_edit.add_argument(

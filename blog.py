@@ -264,12 +264,6 @@ class Blogger:
         sql = 'UPDATE posts SET md5sum = ?, updated = 1 WHERE path = ?'
         self._conn.execute(sql, [md5, post])
         os.system(f'{editor} "{post}"')
-        # todo: the logic here doesn't seem right to me ...
-        # better to use a upsert statement
-        # sql = 'DELETE FROM posts WHERE path = ?'
-        # self._conn.execute(sql, [post])
-        # self._load_post(post)
-        # self._conn.commit()
 
     def _create_post(self, post, title):
         file_words = os.path.join(self.root_dir, 'words.json')
@@ -310,7 +304,7 @@ class Blogger:
             file = os.path.join(self.root_dir, dir_, 'content', file)
             self._create_post(file, title)
             self._load_post(file, '')
-        print(f'The following post is added.\n{file}\n')
+        print(f'\nThe following post is added.\n{file}\n')
         return file
 
     def find_post(self, title, dir_):

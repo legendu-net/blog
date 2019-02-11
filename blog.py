@@ -226,15 +226,15 @@ class Blogger:
         )
         '''
         self._conn.execute(sql, [
-            post, 
-            blog_dir(post), 
-            status, 
-            date, 
-            author, 
-            slug, 
-            title, 
-            category, 
-            tags, 
+            post,
+            blog_dir(post),
+            status,
+            date,
+            author,
+            slug,
+            title,
+            category,
+            tags,
             content,
             md5,
             0,
@@ -332,11 +332,11 @@ class Blogger:
             where = 'WHERE ' + where
         sql = f'''
             INSERT INTO srps
-            SELECT 
-                * 
-            FROM 
-                posts 
-            {where} 
+            SELECT
+                *
+            FROM
+                posts
+            {where}
             ORDER BY rank
             '''
         if args.dry_run:
@@ -386,7 +386,7 @@ class Blogger:
         row = cursor.fetchone()
         while row is not None:
             for tag in row[0].split(','):
-                tag = tag.strip() 
+                tag = tag.strip()
                 if tag == '':
                     continue
                 if tag in tags:
@@ -398,7 +398,7 @@ class Blogger:
 
     def categories(self, dir_: str = '', where=''):
         sql = '''
-            SELECT 
+            SELECT
                 category,
                 count(*) as n
             FROM
@@ -555,11 +555,11 @@ def update_tags(blogger, args):
             blogger.update_tags(post, args.from_tag, args.to_tag)
     else:
         sql = f'''
-            SELECT 
-                path 
-            FROM 
-                posts 
-            WHERE 
+            SELECT
+                path
+            FROM
+                posts
+            WHERE
                 tags LIKE '%, {args.from_tag},%'
                 OR tags LIKE '%: {args.from_tag},%'
             '''
@@ -697,7 +697,7 @@ def parse_args(args=None, namespace=None):
         help='Number of matched records to show.')
     parser_list.set_defaults(func=show)
     # parser for the search command
-    parser_search = subparsers.add_parser('search', aliases=['s'], 
+    parser_search = subparsers.add_parser('search', aliases=['s'],
         help='Search for posts. ' \
             'Tokens separated by spaces ( ) or plus signs (+) in the search phrase ' \
             'are matched in order with tokens in the text. ' \
@@ -848,6 +848,14 @@ def parse_args(args=None, namespace=None):
     parser_add.set_defaults(func=add)
     # parser for the edit command
     parser_edit = subparsers.add_parser('edit', aliases=['e' + i for i in INDEXES], help='edit a post.')
+    parser_edit.add_argument(
+        '-o',
+        '--open',
+        dest='editor',
+        action='store_const',
+        const='open',
+        default=EDITOR,
+        help='edit the post using vim.')
     parser_edit.add_argument(
         '-v',
         '--vim',

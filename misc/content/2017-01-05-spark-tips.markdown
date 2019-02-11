@@ -1,6 +1,5 @@
-UUID: a85907ac-decf-4477-9a47-54086e01ca9b
 Status: published
-Date: 2017-10-22 13:43:04
+Date: 2019-02-11 19:42:46
 Author: Ben Chuanlong Du
 Slug: spark-tips
 Title: Spark Tips
@@ -16,9 +15,9 @@ but rather for convenient reference of the author and future improvement.
 
 ## Sharing Variables
 
-Spark supports two types of shared variables: broadcast variables, 
-which can be used to cache a value in memory on all nodes, 
-and accumulators, 
+Spark supports two types of shared variables: broadcast variables,
+which can be used to cache a value in memory on all nodes,
+and accumulators,
 which are variables that are only “added” to, such as counters and sums.
 
 ## Spark Shell
@@ -26,14 +25,6 @@ which are variables that are only “added” to, such as counters and sums.
 spark-shell --jars ... to add jars and then you can use it!!!
 
 spark-shell accepts --queue as parameter ...!!!
-
-## Spark SQL
-
-Spark SQL supports hive sql syntax.
-For example,
-`spark.sql("show tables in some_schema")` 
-returns a DataFrame with tables in the Hive database.
-
 
 ## Spark Cluster Master URL
 

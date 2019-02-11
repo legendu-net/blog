@@ -299,19 +299,18 @@ class Blogger:
                 _update_time(post)
                 self._load_post(post, md5_new)
 
+    def clear_srps(self):
+        sql = 'DELETE FROM srps'
+        self._conn.execute(sql)
+
     def add(self, title, dir_) -> str:
         file = self.find_post(title, dir_)
         if not file:
             file = f'{TODAY_DASH}-{_slug(title)}.markdown'
             file = os.path.join(self.root_dir, dir_, 'content', file)
             self._create_post(file, title)
-        # todo: similar to edit time update, do it later
-        # self._load_post(file, '')
-        # sql = 'DELETE FROM srps'
-        # self._conn.execute(sql)
-        # sql = 'INSERT INTO srps SELECT * FROM posts WHERE path = ?'
-        # self._conn.execute(sql, [file])
-        # self._conn.commit()
+            self._load_post(file, '')
+        print(f'The following post is added.\n{file}\n')
         return file
 
     def find_post(self, title, dir_):

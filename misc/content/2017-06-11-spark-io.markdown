@@ -1,4 +1,3 @@
-UUID: 73d3a35c-1de6-4ee0-905e-36abf03bf09e
 Status: published
 Date: 2017-06-11 19:16:05
 Author: Ben Chuanlong Du
@@ -14,29 +13,49 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-1. When you want to keep headers in the data, 
+1. When you want to keep headers in the data,
     it is suggested that you use the Parquet format to save data for multiple reasons.
     It is fast, takes less space
     and you don't have to worry about duplicated headers encountered when merging CSV files with headers.
-    There is no need to merge Parquet files. 
+    There is no need to merge Parquet files.
     You can directly read in a folder of Parquet files in all kinds of programming languages,
     which is more convenient than a folder of CSV files.
 
-2. Writing to existing files using `RDD.saveAsTextFile` throws file already exist exception. 
+2. Writing to existing files using `RDD.saveAsTextFile` throws file already exist exception.
     This s because Hadoop filesystem does not overwrite files that already exist.
     `RDD.saveAsTextFile` does not provide an option to manually overwrite existing files.
-    To avoid the issue, 
+    To avoid the issue,
     you have to manually remove the existing file before writing to them.
-    Of course, 
-    it is no longer suggested to use RDD directly any more in Spark. 
-    You use should DataFrame as much as possible. 
+    Of course,
+    it is no longer suggested to use RDD directly any more in Spark.
+    You use should DataFrame as much as possible.
     `DataFrame.write` allows you to overwrite existing HDFS files via `DataFrame.write.option("overwrite")`.
+
+## Readiness of Data on HDFS
+
+1. Data in a Hive table guarantees completeness
+    which means that if you see data of a certain date in the table,
+    the complete data is there.
+    However, if you work with other format (Parquet, Avro, Sequence, etc.),
+    you'd better check for data readiness before you use it.
+    A simple way to do this is to check whether the `_SUCESS` file exists in the same directory.
+
 
 ## Parquet
 
-1. You have issues saving a DataFrame read in from Parquet to a CSV file. 
-    The reason is that Parquet support more complex data structures (e.g., array) 
+1. You have issues saving a DataFrame read in from Parquet to a CSV file.
+    The reason is that Parquet support more complex data structures (e.g., array)
     which is not supported in CSV.
+
+2. Wildcard is supported in both the Scala API and the SQL API when querying files directly
+    as long as it does cause CONFLICTING directory structure.
+
+        spark.read.parquet("some_path/2019-02-10_05-38-11/SITE_NAME=*")
+
+        select
+            count(*) as n
+        from
+            parquet.`/some_path/2019-02-10_05-38-11/SITE_NAME=*`
 
 https://spark.apache.org/docs/latest/sql-data-sources-parquet.html
 
@@ -56,16 +75,16 @@ spark: it seems that we must know the schema of sequence files ...
 ## RDD.saveAsTextFile
 
 1. `RDD.saveAsTextFile` does not provide options to control the format of output files.
-    You have to manually format the RDD to one containings string in the format that you want. 
-    For example, 
-    if rdd contains tuples and you want to output it into TSV files, 
+    You have to manually format the RDD to one containings string in the format that you want.
+    For example,
+    if rdd contains tuples and you want to output it into TSV files,
     you can format it first using the following code.
 
         rdd.map { x => x.productIterator.mkString("\t") }
 
 2. It takes lots of for `hadoop fs -getmerge`
     to extract and merge large number of compressed files.
-    So it is suggested that you turn off compression 
+    So it is suggested that you turn off compression
     when saving results into text files (using `saveAsTextFile`)
     especially when there are huge number of partitions.
 

@@ -1,4 +1,3 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Date: 2015-09-26 16:54:11
 Author: Ben Chuanlong Du
@@ -22,3 +21,8 @@ but rather for convenient reference of the author and future improvement.
 ## Themes
 
 https://github.com/alexandrevicenzi/Flex
+
+
+## Anchor Links for Titles
+
+https://github.com/getpelican/pelican/issues/1357

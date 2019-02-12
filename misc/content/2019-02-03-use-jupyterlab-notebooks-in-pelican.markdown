@@ -1,6 +1,6 @@
 UUID: f619752c-38b7-4355-a7f0-ef671eec4a57
 Status: published
-Date: 2019-02-03 10:59:34
+Date: 2019-02-11 20:29:53
 Author: Ben Chuanlong Du
 Slug: use-jupyterlab-notebooks-in-pelican
 Title: Use JupyterLab Notebooks in Pelican
@@ -13,6 +13,10 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+https://github.com/getpelican/pelican-plugins/issues/866
+
+https://github.com/getpelican/pelican-plugins/issues/651
 
 ## Plugins 
 

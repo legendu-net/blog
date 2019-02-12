@@ -26,13 +26,23 @@ DISPLAY_PAGES_ON_MENU = False
 ARTICLE_URL = 'blog/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'markdown.extensions.toc': {},
+    },
+    'output_format': 'html5',
+}
+
 # Title menu options
 MENUITEMS = [
-        ('Home', __home_url__),
-        ('Blog', SITEURL), 
-        ("Archives", os.path.join(SITEURL, 'archives.html')), 
-        ('Links', os.path.join(SITEURL, 'pages/links.html')), 
-        ]
+    ('Home', __home_url__),
+    ('Blog', SITEURL), 
+    ("Archives", os.path.join(SITEURL, 'archives.html')), 
+    ('Links', os.path.join(SITEURL, 'pages/links.html')), 
+]
 NEWEST_FIRST_ARCHIVES = True
 
 # tag cloud

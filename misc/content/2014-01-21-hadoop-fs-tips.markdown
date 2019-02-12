@@ -1,4 +1,3 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Date: 2017-10-22 13:40:34
@@ -21,7 +20,11 @@ It is not meant to readers but rather for convenient reference of the author and
     hadoop fs -getmerge /hdfs/path /path/in/linux
     hadoop fs -copyFromLocal /path/in/linux /hdfs/path
     hadoop fs -put /path/in/linux /hdfs/path
+
+3. Check size of a directory.
+
     hdfs dfs -du [-s] [-h] URI [URI …] 
+
     hadoop fs -rm -r -skipTrash /tmp/chdu_item_desc
 
 ## Hadoop FS compress 
@@ -45,3 +48,7 @@ http://www.ericlin.me/disable-hive-output-compression
 7. data nodes (slave nodes), edge node, access point for the external applications, tools, and users that need to utilize the hadoop environment
 
 11. edge nodes (gate to hadoop), name nodes, data nodes
+
+## References
+
+https://stackoverflow.com/questions/6504107/the-way-to-check-a-hdfs-directorys-size

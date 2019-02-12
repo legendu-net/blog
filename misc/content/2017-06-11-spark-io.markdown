@@ -34,6 +34,10 @@ but rather for convenient reference of the author and future improvement.
 
 ## Parquet
 
+1. You have issues saving a DataFrame read in from Parquet to a CSV file. 
+    The reason is that Parquet support more complex data structures (e.g., array) 
+    which is not supported in CSV.
+
 https://spark.apache.org/docs/latest/sql-data-sources-parquet.html
 
 https://docs.databricks.com/spark/latest/data-sources/read-parquet.html

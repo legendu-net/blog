@@ -27,6 +27,7 @@ DASHES = '-' * 80
 NOW_DASH = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 TODAY_DASH = NOW_DASH[:10]
 EDITOR = 'code'
+BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 
 
 def md5sum(post: str):
@@ -112,16 +113,15 @@ class Blogger:
         self._db = db if db else os.path.join(os.path.expanduser('~'), '.blogger.sqlite3')
         self._conn = sqlite3.connect(self._db)
         self._create_vtable_posts()
-        self.root_dir = self._root_dir()
 
-    def _root_dir(self):
-        sql = 'SELECT path FROM posts LIMIT 1'
-        row = self._conn.execute(sql).fetchone()
-        if row:
-            dir_ = os.path.dirname(row[0])
-            dir_ = os.path.dirname(dir_)
-            return os.path.dirname(dir_)
-        return ''
+    # def _root_dir(self):
+    #     sql = 'SELECT path FROM posts LIMIT 1'
+    #     row = self._conn.execute(sql).fetchone()
+    #     if row:
+    #         dir_ = os.path.dirname(row[0])
+    #         dir_ = os.path.dirname(dir_)
+    #         return os.path.dirname(dir_)
+    #     return ''
 
     def _create_vtable_posts(self):
         sql = f'''
@@ -174,7 +174,6 @@ class Blogger:
         for dir_ in (HOME, CN, EN, MISC):
             self._load_posts(os.path.join(root_dir, dir_, 'content'), md5, updated)
         self._conn.commit()
-        self.root_dir = self._root_dir()
 
     def _load_posts(self, post_dir, md5, updated):
         if not os.path.isdir(post_dir):
@@ -251,7 +250,7 @@ class Blogger:
 
     def move(self, post, target):
         if target in (EN, CN, MISC):
-            target = os.path.join(self.root_dir, target, 'content', os.path.basename(post))
+            target = os.path.join(BASE_DIR, target, 'content', os.path.basename(post))
         if post == target:
             return
         shutil.move(post, target)
@@ -266,7 +265,7 @@ class Blogger:
         os.system(f'{editor} "{post}"')
 
     def _create_post(self, post, title):
-        file_words = os.path.join(self.root_dir, 'words.json')
+        file_words = os.path.join(BASE_DIR, 'words.json')
         with open(post, 'w', encoding='utf-8') as fout:
             fout.writelines('Status: published\n')
             fout.writelines(f'Date: {NOW_DASH}\n')
@@ -301,7 +300,7 @@ class Blogger:
         file = self.find_post(title, dir_)
         if not file:
             file = f'{TODAY_DASH}-{_slug(title)}.markdown'
-            file = os.path.join(self.root_dir, dir_, 'content', file)
+            file = os.path.join(BASE_DIR, dir_, 'content', file)
             self._create_post(file, title)
             self._load_post(file, '')
         print(f'\nThe following post is added.\n{file}\n')
@@ -367,9 +366,9 @@ class Blogger:
 
     def _publish(self, dir_):
         # pelican
-        os.system(f'cd "{os.path.join(self.root_dir, dir_)}" && pelican . -s pconf_sd.py')
+        os.system(f'cd "{os.path.join(BASE_DIR, dir_)}" && pelican . -s pconf_sd.py')
         # git push
-        os.system(f'cd "{self.root_dir}" && ./git.sh {dir_}')
+        os.system(f'cd "{BASE_DIR}" && ./git.sh {dir_}')
         print('\n' + DASHES)
         print('Please consider COMMITTING THE SOURCE CODE as well!')
         print(DASHES + '\n')
@@ -510,7 +509,7 @@ def show(blogger, args):
 
 
 def reload(blogger, args):
-    blogger.reload_posts(args.root_dir, '', 0)
+    blogger.reload_posts(BASE_DIR, '', 0)
 
 
 def add(blogger, args):
@@ -681,12 +680,6 @@ def parse_args(args=None, namespace=None):
     parser_update.set_defaults(func=update)
     # parser for the reload command
     parser_reload = subparsers.add_parser('reload', aliases=['r'], help='Reload information of posts.')
-    parser_reload.add_argument(
-        '-d',
-        '--root-dir',
-        dest='root_dir',
-        default=os.getenv('blog_dir'),
-        help='The root directory of the blog.')
     parser_reload.set_defaults(func=reload)
     # parser for the show command
     parser_list = subparsers.add_parser('list', aliases=['l'], help='List last search results.')

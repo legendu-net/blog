@@ -47,8 +47,13 @@ but rather for convenient reference of the author and future improvement.
     The reason is that Parquet support more complex data structures (e.g., array)
     which is not supported in CSV.
 
-2. Wildcard is supported in both the Scala API and the SQL API when querying files directly
+2. Shell-like syntax (curly brace, wildcard, etc.) of matching multiple files is supported in both the Scala API
+    and the SQL API when querying files directly
     as long as it does cause CONFLICTING directory structure.
+
+
+        files = 's3a://dev/2017/01/{02,03}/data.parquet'
+        df = session.read.parquet(files)
 
         spark.read.parquet("some_path/2019-02-10_05-38-11/SITE_NAME=*")
 

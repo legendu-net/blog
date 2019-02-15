@@ -162,14 +162,14 @@ class Blogger:
         sql = 'UPDATE posts SET tags = ? WHERE path = ?'
         self._conn.execute(sql, [tags + ',', post])
 
-    def reload_posts(self, root_dir: str, updated: int):
+    def reload_posts(self, root_dir: str):
         self._create_vtable_posts()
         self._conn.execute('DELETE FROM posts')
         for dir_ in (HOME, CN, EN, MISC):
-            self._load_posts(os.path.join(root_dir, dir_, 'content'), updated)
+            self._load_posts(os.path.join(root_dir, dir_, 'content'))
         self._conn.commit()
 
-    def _load_posts(self, post_dir, updated):
+    def _load_posts(self, post_dir):
         if not os.path.isdir(post_dir):
             return
         for post in os.listdir(post_dir):
@@ -502,7 +502,7 @@ def show(blogger, args):
 
 
 def reload(blogger, args):
-    blogger.reload_posts(BASE_DIR, '', 0)
+    blogger.reload_posts(BASE_DIR)
 
 
 def add(blogger, args):

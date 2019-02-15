@@ -30,12 +30,6 @@ EDITOR = 'code'
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 
 
-def md5sum(post: str):
-    with open(post, 'r', encoding='utf-8') as fin:
-        bytes = fin.read().encode('utf-8')
-    return hashlib.md5(bytes).hexdigest()
-
-
 def _update_post_move(post):
     """ Update the post after move.
     There are two possible change.
@@ -126,7 +120,7 @@ class Blogger:
     def _create_vtable_posts(self):
         sql = f'''
         CREATE VIRTUAL TABLE IF NOT EXISTS posts USING {self._fts} (
-            path, dir, status, date, author, slug, title, category, tags, content, md5sum, updated
+            path, dir, status, date, author, slug, title, category, tags, content, updated
         )
         '''
         self._conn.execute(sql)
@@ -134,7 +128,7 @@ class Blogger:
     def _create_table_srps(self):
         sql = '''
         CREATE TABLE IF NOT EXISTS srps (
-            path, dir, status, date, author, slug, title, category, tags, content, md5sum, updated
+            path, dir, status, date, author, slug, title, category, tags, content, updated
         )
         '''
         self._conn.execute(sql)
@@ -168,22 +162,22 @@ class Blogger:
         sql = 'UPDATE posts SET tags = ? WHERE path = ?'
         self._conn.execute(sql, [tags + ',', post])
 
-    def reload_posts(self, root_dir: str, md5: str, updated: int):
+    def reload_posts(self, root_dir: str, updated: int):
         self._create_vtable_posts()
         self._conn.execute('DELETE FROM posts')
         for dir_ in (HOME, CN, EN, MISC):
-            self._load_posts(os.path.join(root_dir, dir_, 'content'), md5, updated)
+            self._load_posts(os.path.join(root_dir, dir_, 'content'), updated)
         self._conn.commit()
 
-    def _load_posts(self, post_dir, md5, updated):
+    def _load_posts(self, post_dir, updated):
         if not os.path.isdir(post_dir):
             return
         for post in os.listdir(post_dir):
             if post.endswith('.markdown'):
                 post = os.path.join(post_dir, post)
-                self._load_post(post, md5)
+                self._load_post(post)
 
-    def _load_post(self, post, md5):
+    def _load_post(self, post):
         with open(post, 'r') as fin:
             lines = fin.readlines()
         for index, line in enumerate(lines):
@@ -216,12 +210,12 @@ class Blogger:
                 if not tags.endswith(','):
                     tags = tags + ','
         # parse content index to end
-        content = ''.join(lines[index:])
+        content = ''.join(lines)
         sql = '''
         INSERT INTO posts (
-            path, dir, status, date, author, slug, title, category, tags, content, md5sum, updated
+            path, dir, status, date, author, slug, title, category, tags, content, updated
         ) VALUES (
-            ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+            ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
         )
         '''
         self._conn.execute(sql, [
@@ -235,7 +229,6 @@ class Blogger:
             category,
             tags,
             content,
-            md5,
             0,
         ])
 
@@ -259,9 +252,8 @@ class Blogger:
         self._conn.execute(sql, [target, blog_dir(target), post])
 
     def edit(self, post, editor):
-        md5 = md5sum(post)
-        sql = 'UPDATE posts SET md5sum = ?, updated = 1 WHERE path = ?'
-        self._conn.execute(sql, [md5, post])
+        sql = 'UPDATE posts SET updated = 1 WHERE path = ?'
+        self._conn.execute(sql, [post])
         os.system(f'{editor} "{post}"')
 
     def _create_post(self, post, title):
@@ -280,17 +272,18 @@ class Blogger:
     def update(self):
         """Update information of the changed posts.
         """
-        sql = 'SELECT path, md5sum FROM posts WHERE updated = 1'
+        sql = 'SELECT path, content FROM posts WHERE updated = 1'
         rows = self._conn.execute(sql).fetchall()
         sql = 'DELETE FROM posts WHERE updated = 1'
         self._conn.execute(sql)
         for row in rows:
-            post = row[0]
-            md5 = row[1]
-            md5_new = md5sum(post)
-            if md5_new != md5:
-                _update_time(post)
-                self._load_post(post, md5_new)
+            path = row[0]
+            content = row[1]
+            with open(path, 'r') as fin:
+                content_0 = fin.read()
+            if content != content_0:
+                _update_time(path)
+                self._load_post(path)
 
     def clear_srps(self):
         sql = 'DELETE FROM srps'

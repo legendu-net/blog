@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-12 01:28:32
+Date: 2019-02-13 07:34:08
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -16,9 +16,9 @@ Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
     It is suggested that you use the corresponding `dclong/lubuntu*` Docker images instead,
     which are based on LXQt.
 
-## <a name="#usage"></a> Usage in Unix/Linux
+## Usage
 
-### <a name="#prerequisites"></a> Prerequisites
+### Install Docker
 
 You must have Docker installed.
 If you are on Ubuntu,
@@ -32,7 +32,7 @@ If you'd rather install the enterprise edition
 or if you are on other platforms,
 please refer to the offical Docker doc [Install Docker](https://docs.docker.com/install/).
 
-### <a name="#pull"></a> Pull the Docker Image
+### Pull the Docker Image
 
 Taking `dclong/jupyterhub-ds` as an example,
 you can pull it using the command below.
@@ -52,7 +52,7 @@ then just use the command below.
 docker pull registry.docker-cn.com/dclong/jupyterhub-ds
 ```
 
-### <a name="#run"></a> Start a Container
+### Start a Container
 
 Below are some Docker command arguments explained.
 These are for properly handling file permissions in the Docker container and on the host.
@@ -76,8 +76,50 @@ Keep the default if you don't know what are the best to use.
 
 The root directory of JupyterLab/Jupyter notebooks is `/workdir` in the container.
 You can mount directory on the host to it as you wish.
+Below are illustration using the Docker image `dclong/jupyterhub-ds`.
 
-## <a name="#jupyterhub"></a> Use the JupyterHub Server
+The following command starts a container 
+and mounts the current working directory and `/home` on the host machine 
+to `/workdir` and `/home_host` in the container respectively.
+
+```
+docker run -d \
+    --name jupyterhub-ds \
+    --log-opt max-size=50m \
+    -p 8000:8000 \
+    -p 5006:5006 \
+    -e DOCKER_USER=`id -un` \
+    -e DOCKER_USER_ID=`id -u` \
+    -e DOCKER_PASSWORD=`id -un` \
+    -e DOCKER_GROUP_ID=`id -g` \
+    -e DOCKER_ADMIN_USER=`id -un` \
+    -v `pwd`:/workdir \
+    -v `dirname $HOME`:/home_host \
+    dclong/jupyterhub-ds
+```
+
+The following command (only works on Linux) does the same as the above one 
+except that it limits the use of CPU and memory.
+
+```
+docker run -d \
+    --name jupyterhub-ds \
+    --log-opt max-size=50m \
+    --memory=$(($(head -n 1 /proc/meminfo | awk '{print $2}') * 4 / 5))k \
+    --cpus=$((`nproc` - 1)) \
+    -p 8000:8000 \
+    -p 5006:5006 \
+    -e DOCKER_USER=`id -un` \
+    -e DOCKER_USER_ID=`id -u` \
+    -e DOCKER_PASSWORD=`id -un` \
+    -e DOCKER_GROUP_ID=`id -g` \
+    -e DOCKER_ADMIN_USER=`id -un` \
+    -v `pwd`:/workdir \
+    -v `dirname $HOME`:/home_host \
+    dclong/jupyterhub-ds
+```
+
+## Use the JupyterHub Server
 
 Open your browser and and visit `your_host_ip:8000`
 where `your_host_ip` is the URL/ip address of your server.
@@ -86,7 +128,7 @@ and password (by default your user name on the host and might want to change it 
 You can of course change your user password later
 using the command `passwd` in the container.  
 
-## <a name="#add_user"></a> Add a New User to the JupyterHub Server
+## Add a New User to the JupyterHub Server
 
 By default,
 any user in the Docker container can visit the JupyterHub server.
@@ -123,21 +165,31 @@ sudo /scripts/create_user_nogroup.sh dclong 2000
 Since we didn't specify a password for the user,
 the default password (same as the user name) is used.
 
-## <a name="#images"></a> List of Images & Detailed Information
+## List of Images and Detailed Information
 
 - [dclong/ubuntu_b](https://hub.docker.com/r/dclong/ubuntu_b/)  
-    OS: Ubuntu 18.04  
-    Time Zone: US Pacific Time  
-    Desktop Environment: None  
-    Remote Desktop: None  
+
+    > OS: Ubuntu 18.04  
+    > Time Zone: US Pacific Time  
+    > Desktop Environment: None  
+    > Remote Desktop: None  
+
     - [dclong/python](https://hub.docker.com/r/dclong/python/)  
-        Python 3.6  
+
+        > Python 3.6  
+
         - [dclong/jupyter](https://hub.docker.com/r/dclong/jupyter/)  
-             Jupyter Notebook: 5.7.0  
+
+             > Jupyter Notebook: 5.7.0  
+
             - [dclong/jupyter-nodejs](https://hub.docker.com/r/dclong/jupyter-nodejs/)  
-                 NodeJS: 10.15.0  
+
+                 > NodeJS: 10.15.0  
+
                 - [dclong/jupyterlab](https://hub.docker.com/r/dclong/jupyterlab)  
-                     JupyterLab: 0.35.4  
+
+                     > JupyterLab: 0.35.4  
+
                     - [dclong/jupyterlab-js](https://hub.docker.com/r/dclong/jupyterlab-js/)
                     - [dclong/jupyterlab-ts](https://hub.docker.com/r/dclong/jupyterlab-ts/)
                     - [dclong/jupyterlab-tdodbc](https://hub.docker.com/r/dclong/jupyterlab-tdodbc/)
@@ -154,27 +206,37 @@ the default password (same as the user name) is used.
                             - [dclong/jupyterlab-rstudio](https://hub.docker.com/r/dclong/jupyterlab-rstudio/)
                                 - [dclong/jupyterlab-rstudio-py](https://hub.docker.com/r/dclong/jupyterlab-rstudio-py/)
                     - [dclong/jupyterhub](https://hub.docker.com/r/dclong/jupyterhub/)  
-                         JupyterHub: 0.9.3  
+
+                         > JupyterHub: 0.9.3  
+
                         - [dclong/jupyterhub-julia](https://hub.docker.com/r/dclong/jupyterhub-julia/)  
                         - [dclong/jupyterhub-jdk](https://hub.docker.com/r/dclong/jupyterhub-jdk/)  
-                            OpenJDK 8  
-                            Maven: 3.3.9  
+
+                            > OpenJDK 8  
+                            > Maven: 3.3.9  
+
                             - [dclong/jupyterhub-py](https://hub.docker.com/r/dclong/jupyterhub-py/)  
-                                numpy scipy pandas dask  
-                                torch torchvision tensorflow keras h2o  
-                                gensim nltk  
-                                scikit-learn xgboost  
-                                matplotlib seaborn bokeh plotly  
-                                tabulate  
-                                JayDeBeApi pymysql pymongo sqlalchemy  
-                                pysocks requests[socks] Scrapy beautifulsoup4 wget  ansible  
+
+                                > numpy scipy pandas dask  
+                                > torch torchvision tensorflow keras h2o  
+                                > gensim nltk  
+                                > scikit-learn xgboost  
+                                > matplotlib seaborn bokeh plotly  
+                                > tabulate  
+                                > JayDeBeApi pymysql pymongo sqlalchemy  
+                                > pysocks requests[socks] Scrapy beautifulsoup4 wget  ansible  
+
                                 - [dclong/jupyterhub-ai](https://hub.docker.com/r/dclong/jupyterhub-ai/)  
-                                    torch torchvision tensorflow keras h2o  
-                                    gensim pytext    
+
+                                    > torch torchvision tensorflow keras h2o  
+                                    > gensim pytext    
+
                                 - [dclong/jupyterhub-beaker](https://hub.docker.com/r/dclong/jupyterhub-beakerx/)  
-                                    SQL (based on JDBC) via BeakerX 1.1.0  
-                                    Scala 2.11.12 via BeakerX 1.1.0  
-                                    Java 8, Clojure, Groovy, Kotlin via BeakerX 1.1.0  
+
+                                    > SQL (based on JDBC) via BeakerX 1.1.0  
+                                    > Scala 2.11.12 via BeakerX 1.1.0  
+                                    > Java 8, Clojure, Groovy, Kotlin via BeakerX 1.1.0  
+
                                     - [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/)  
     - [dclong/python:conda3](https://hub.docker.com/r/dclong/python/)  
         - [dclong/jupyter:conda3](https://hub.docker.com/r/dclong/jupyter/)  
@@ -203,33 +265,7 @@ the default password (same as the user name) is used.
                 - [dclong/xubuntu-scala](https://hub.docker.com/r/dclong/xubuntu-scala/)  
                     - [dclong/xubuntu-intellij](https://hub.docker.com/r/dclong/xubuntu-intellij/)  
 
-### Tag `latest`
-
-OS: Ubuntu 18.04  
-Jupyter Notebook: 5.6.0  
-NodeJS: 8.11.3  
-JupyterLab: 0.35.4  
-JupyterHub: 0.9.3  
-OpenJDK 8  
-Maven: 3.3.9  
-Python 3.6.6 
-Scala 2.11.12 
-BeakerX 1.1.0
-
-### Tag `18.10`
-
-OS: Ubuntu 18.10  
-Jupyter Notebook: 5.6.0  
-NodeJS: 8.11.3  
-JupyterLab: 0.35.4  
-JupyterHub: 0.9.3  
-OpenJDK 8  
-Maven: 3.3.9  
-Python 3.6.6 
-Scala 2.11.12 
-BeakerX 1.1.0
-
-## <a name="issues"></a> Known Issues 
+## Known Issues 
 
 1. The subprocess managment issue.
     This is not an issue at in most use cases.

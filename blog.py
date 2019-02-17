@@ -6,7 +6,6 @@ import os.path
 import re
 from argparse import ArgumentParser
 import sqlite3
-import hashlib
 import datetime
 import shutil
 import json
@@ -95,6 +94,15 @@ def _fts_version():
     return 'fts4'
 
 
+def _publish_blog_dir(dir_):
+    # pelican
+    os.system(f'cd "{os.path.join(BASE_DIR, dir_)}" && pelican . -s pconf_sd.py')
+    # git push
+    os.system(f'cd "{BASE_DIR}" && ./git.sh {dir_}')
+    print('\n' + DASHES)
+    print('Please consider COMMITTING THE SOURCE CODE as well!')
+    print(DASHES + '\n')
+
 class Blogger:
 
     def __init__(self, db: str = ''):
@@ -180,6 +188,7 @@ class Blogger:
     def _load_post(self, post):
         with open(post, 'r') as fin:
             lines = fin.readlines()
+        index = 0
         for index, line in enumerate(lines):
             if not re.match('[A-Za-z]+: ', line):
                 break
@@ -267,7 +276,7 @@ class Blogger:
             fout.writelines('Category: Programming\n')
             fout.writelines('Tags: programming\n')
             if blog_dir(post) == MISC:
-                    fout.writelines(DECLARATION)
+                fout.writelines(DECLARATION)
 
     def update(self):
         """Update information of the changed posts.
@@ -295,7 +304,7 @@ class Blogger:
             file = f'{TODAY_DASH}-{_slug(title)}.markdown'
             file = os.path.join(BASE_DIR, dir_, 'content', file)
             self._create_post(file, title)
-            self._load_post(file, '')
+            self._load_post(file)
         print(f'\nThe following post is added.\n{file}\n')
         return file
 
@@ -318,7 +327,7 @@ class Blogger:
         if phrase:
             conditions.append(f"posts MATCH '{phrase}'")
         if filter_:
-            filter_ =  conditions.append(filter_)
+            filter_ = conditions.append(filter_)
         where = ' AND '.join(conditions)
         if where:
             where = 'WHERE ' + where
@@ -331,7 +340,7 @@ class Blogger:
             {where}
             ORDER BY rank
             '''
-        if args.dry_run:
+        if dry_run:
             print(sql)
             return
         self._conn.execute(sql)
@@ -345,6 +354,10 @@ class Blogger:
         return [row[0] for row in self._conn.execute(sql, id_).fetchall()]
 
     def fetch(self, n: int):
+        """Fetch search results.
+
+        :param n: the number of results to fetch.
+        """
         sql = 'SELECT rowid, * FROM srps LIMIT {}'.format(n)
         return self._conn.execute(sql).fetchall()
 
@@ -355,16 +368,7 @@ class Blogger:
         """Publish the specified blog to GitHub.
         """
         for dir_ in dirs:
-            self._publish(dir_)
-
-    def _publish(self, dir_):
-        # pelican
-        os.system(f'cd "{os.path.join(BASE_DIR, dir_)}" && pelican . -s pconf_sd.py')
-        # git push
-        os.system(f'cd "{BASE_DIR}" && ./git.sh {dir_}')
-        print('\n' + DASHES)
-        print('Please consider COMMITTING THE SOURCE CODE as well!')
-        print(DASHES + '\n')
+            _publish_blog_dir(dir_)
 
     def tags(self, dir_: str = '', where=''):
         sql = 'SELECT tags FROM posts {where}'
@@ -513,7 +517,8 @@ def add(blogger, args):
 
 
 def publish(blogger, args):
-    blogger.publish(args.sub_dirs)
+    for dir_ in args.sub_dirs:
+        _publish_blog_dir(dir_)
 
 
 def categories(blogger, args):

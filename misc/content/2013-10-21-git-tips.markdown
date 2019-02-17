@@ -8,45 +8,45 @@ Category: Software
 Tags: tips, Git, software, version control, distributed
 
 **
-Things on this page are fragmentary and immature notes/thoughts of the author. 
+Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
 https://www.gitignore.io/
 
-0. not a good practice to track non text files 
+0. not a good practice to track non text files
     especially when the files are large.
-    It suggested that you separate (large) non-text files into another place (e.g., a file host). 
+    It suggested that you separate (large) non-text files into another place (e.g., a file host).
 
 1. `#` or `;` start a comment line
 
 5. Working in remote directory mounted by fuse might cause problems.
     Avoid using Git in a remote file system.
 
-6. Generally speaking, 
+6. Generally speaking,
     it is not a good idea to puts things into the global Git ignoring file.
 
 7. not a good idea to track .gitignore ... this depends
 
 
-10. When you want to change a part of the code, 
-    and this change might also be applied to other branches, 
-    then you'd better fork from the base of all branches. 
+10. When you want to change a part of the code,
+    and this change might also be applied to other branches,
+    then you'd better fork from the base of all branches.
     This allows you to patch the changes to all branches easily.
 
 
-14. It seems that the git repo for criss's project is very large even though it is the first commit. 
-    Why is this? 1.9G? while things recorded is much smaller than this. 
+14. It seems that the git repo for criss's project is very large even though it is the first commit.
+    Why is this? 1.9G? while things recorded is much smaller than this.
 
-18. In Git 1.x+, 
-    you can use `git add -u` to stage all tracked files including deleting previously tracked files. 
-    In Git 2.0, 
-    you can use `git add -u :/` to stage your whole working tree, 
-    and you can use `git add -u .` to stage just the current path. 
+18. In Git 1.x+,
+    you can use `git add -u` to stage all tracked files including deleting previously tracked files.
+    In Git 2.0,
+    you can use `git add -u :/` to stage your whole working tree,
+    and you can use `git add -u .` to stage just the current path.
 
 19. Git with http proctol ask for passwords when one push to or pull from a repository.
-    There are ways to cache Git password in Windows, 
-    however, 
+    There are ways to cache Git password in Windows,
+    however,
     I'd rather save the pain and use AutoHotkey to help me type in password.
 
 5. To rebase, follow the steps below.
@@ -57,7 +57,7 @@ https://www.gitignore.io/
         git rebase --abort
 
 
-1. It seems that git now supports submodules, 
+1. It seems that git now supports submodules,
     you have to either remove .git in subdirectories or use submodule to manage them.
 
 ## Git Bash Shell on Windows
@@ -66,9 +66,37 @@ https://www.gitignore.io/
 
 2. Git bash shell use /c, /d, /e, etc. for root path of drives.
 
-3. It seems to me that 
-    `git config --global core.fileModel` 
+3. It seems to me that
+    `git config --global core.fileModel`
     has no effect on Windows.
     You can use `git -c core.fileMode=false command` as an alternative.
 
 
+7. Git diff origin/master..HEAD
+
+8. Git diff 15dc8^!
+
+## Shadow clone
+
+1. use
+```bash
+git clone --depth 1 repos_url
+```
+You can get the full clone later by running either of the following two commands.
+```bash
+git fetch --unshallow
+# or
+git fetch --depth 1000000
+```
+
+## Submodule
+
+git submodule update --recursive --remote
+
+
+## References
+
+- [Git Documentation](http://git-scm.com/documentation)
+- [Using Git to manage a web site](http://toroid.org/ams/git-website-howto)
+- [A web-focused Git workflow](http://joemaller.com/990/a-web-focused-git-workflow/)
+- [Why is my Git repository so big?](http://stackoverflow.com/questions/1029969/why-is-my-git-repository-so-big)

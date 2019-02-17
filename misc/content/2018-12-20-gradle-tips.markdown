@@ -33,6 +33,10 @@ brew install gradle
 ## Tricks and Traps
 
 1. It is recommended that you use the gradle wrapper `gradlew` to compile the project.
+    You don't have to use the `task` subcommand 
+    when using the gradle wrapper `gradlew` to compile the project.
+    For example, 
+    instead of `gradle task build` you can use `./gradlew build`.
 
 2. You'd better rebuild (using the `build` command) your project 
     before testing running your project or generating a fat jar (using the `shadowjar` command).

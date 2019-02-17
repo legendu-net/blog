@@ -1,12 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
+
 from __future__ import unicode_literals
 import os
+
+
+BLOG_DIR = os.path.dirname(os.path.dirname(__file__))
 # remove old files
 os.system('rm -rf output/*')
 #-------------------------------------------------------------------------
-BLOG_DIR = os.environ['blog_dir']
-# !!! http:// is necessary
+# http:// is necessary!
 HOME_URL = 'http://www.legendu.net'
 SITEURL = os.path.join(HOME_URL, 'cn') 
 #-------------------------------------------------------------------------

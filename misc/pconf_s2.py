@@ -1,14 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
-# from __future__ import unicode_literals
 import os
+
+
+BLOG_DIR = os.path.dirname(os.path.dirname(__file__))
 # remove old files
 os.system('rm -rf output/*')
 #-------------------------------------------------------------------------
-__blog_dir__ = os.environ["blog_dir"]
 # !!! http:// is necessary
-__home_url__ = "http://www.legendu.net"
-SITEURL = os.path.join(__home_url__, "misc") 
+HOME_URL = "http://www.legendu.net"
+SITEURL = os.path.join(HOME_URL, "misc") 
 #-------------------------------------------------------------------------
 SITESUBTITLE = "The messy process of learning."
 AUTHOR = 'Ben Chuanlong Du'
@@ -38,7 +39,7 @@ MARKDOWN = {
 
 # Title menu options
 MENUITEMS = [
-    ('Home', __home_url__),
+    ('Home', HOME_URL),
     ('Blog', SITEURL), 
     ("Archives", os.path.join(SITEURL, 'archives.html')), 
     ('Links', os.path.join(SITEURL, 'pages/links.html')), 
@@ -89,9 +90,9 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 
 # theme and plugins
 CSS_FILE = 'main_2.css'
-THEME = os.path.join(__blog_dir__, "themes/octopress_2")
+THEME = os.path.join(BLOG_DIR, "themes/octopress_2")
 # plugins
-PLUGIN_PATHS = [os.path.join(__blog_dir__, 'plugins')]
+PLUGIN_PATHS = [os.path.join(BLOG_DIR, 'plugins')]
 PLUGINS = [
         'latex',
         'summary', 

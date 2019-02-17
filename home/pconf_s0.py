@@ -2,11 +2,13 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 import os
+
+
+BLOG_DIR = os.path.dirname(os.path.dirname(__file__))
 # remove old files
 os.system('rm -rf output/*')
 #-------------------------------------------------------------------------
-BLOG_DIR = os.environ['blog_dir']
-# !!! http:// is necessary
+# http:// is necessary!
 SITEURL = 'http://www.legendu.net'
 #-------------------------------------------------------------------------
 SITESUBTITLE = 'And let it direct your passion with reason.'

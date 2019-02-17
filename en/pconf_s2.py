@@ -3,7 +3,7 @@
 import os
 
 
-BLOG_DIR = os.path.dirname(os.path.dirname(__file__))
+BLOG_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # remove old files
 os.system('rm -rf output/*')

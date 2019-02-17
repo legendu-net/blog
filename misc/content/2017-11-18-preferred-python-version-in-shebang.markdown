@@ -1,6 +1,5 @@
-UUID: b1d58ca9-c28e-49c8-a9c4-0ea828fe4a93
 Status: published
-Date: 2017-11-18 10:26:03
+Date: 2019-02-17 19:15:35
 Author: Ben Chuanlong Du
 Slug: preferred-python-version-in-shebang
 Title: Preferred Python Version in Shebang

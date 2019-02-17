@@ -1,11 +1,10 @@
-UUID: e351eb46-5d28-4699-ae22-8f8b2b6c7e18
 Status: published
-Date: 2019-01-07 09:53:39
+Date: 2019-02-17 18:34:49
 Author: Ben Chuanlong Du
 Slug: python-module-tips
 Title: Python Module Tips
 Category: Programming
-Tags: programming, Python, module, tips, module access, __all__
+Tags: programming, Python, module, tips, module access
 
 **
 Things on this page are
@@ -14,6 +13,23 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+## Import a Module
+
+1. sys.path.append
+
+```bash
+import module_name
+import module_name as alias
+from module import pkg_mod_or_fun
+```
+
+https://stackoverflow.com/questions/3144089/expand-python-search-path-to-other-source
+
+
+1. A module is cached in memory when it is loaded into Python.
+    Changes to the module after loading of the module will not take effect
+	unless the module is reloaded.
+	A module can be reloaded using `imp.reload(module)` In Python3.
 
 ## Module Access
 
@@ -26,3 +42,5 @@ http://xion.io/post/code/python-all-wild-imports.html
 ## Import Warning
 
 https://stackoverflow.com/questions/43393764/python-3-6-project-structure-leads-to-runtimewarning
+
+

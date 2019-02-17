@@ -1,6 +1,5 @@
-UUID: 6f158ee8-c631-40c8-aaef-b4087e84868b
 Status: published
-Date: 2017-10-22 12:34:04
+Date: 2019-02-17 19:03:29
 Author: Ben Chuanlong Du
 Slug: qt-in-python
 Title: Use Qt in Python
@@ -16,24 +15,24 @@ but rather for convenient reference of the author and future improvement.
 
 Both PyQt (developed by Riverbank) and PySide2 (official Python bindings from Qt) are great.
 They have very similar APIs.
-However, 
-PySide2 has a more friendly LGPL licence. 
-Personally, 
+However,
+PySide2 has a more friendly LGPL licence.
+Personally,
 I prefer PySide2.
 
-## Installation 
+## Installation of PySide2
 ```
 wajig show libclang-dev cmake
 pip install PySide2
 ```
 
-## Git Repository
+## Git Repository of PySide2
 
 git clone git://code.qt.io/pyside/pyside-setup.git
 
 ## PyQt
 ```
-QtCore.QCoreApplication.instance().quit 
+QtCore.QCoreApplication.instance().quit
 # vs
 QtGui.qApp.quit vs QtGui.QMainWindow (self.close)
 ```
@@ -72,4 +71,4 @@ https://wiki.qt.io/Differences_Between_PySide_and_PyQt
 
 http://zetcode.com/gui/pyqt4/firstprograms/
 
-http://openbookproject.net/thinkcs/python/english3e/events.html 
+http://openbookproject.net/thinkcs/python/english3e/events.html

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-10 17:31:24
+Date: 2019-02-17 19:15:35
 Author: Benjamin Du
 Slug: python-packages-for-unit-testing
 Title: Python Packages for Unit Testing
@@ -19,4 +19,4 @@ pytest
 
 hypothesis
 
-Notice that pybuilder has support for both unittest and pytest.
+Notice that `pybuilder` has support for both `unittest` and `pytest`.

@@ -1,5 +1,5 @@
 Status: published
-Date: 2015-06-20 21:07:30
+Date: 2019-02-17 19:03:29
 Author: Ben Chuanlong Du
 Slug: python-pandas-tips
 Title: Python pandas Tips
@@ -13,41 +13,40 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-Python pandas settings
+## `pandas` Settings
 ```Python
 import pandas as pd
-pd.set_option('display.height', 1000)
-pd.set_option('display.width', 1000)
-pd.set_option('display.max_rows', 100)
-pd.set_option('display.max_columns', 100)
+pd.set_option('display.max_rows', 1000)
+pd.set_option('display.max_columns', 1000)
 pd.set_option('display.max_colwidth', 100)
 ```
 
-1. avoid naming a column "size" 
-    as you will not be able to access the column using dot.
-    `df.size` show the number of element in the DataFrame.
+## Tips
 
-2. be careful when you use integers as column names or indexes
-    this might affect the way of slicing
-    It is suggested that you never use integer as column names or indexes.
+1. Avoid column names that conflict with pandas internal member names,
+    otherwise you will not be able to access the column using the dot syntax.
+    For example,
+    if you name a column `size`
+    you can to refer to the column as `df.size`
+    because `df.size` is a method that returns the number of element in the DataFrame.
+
+2. Be careful when you use integers as column names or indexes
+    as it might affect the way of slicing.
+    It is suggested that you never use integers as column names or indexes.
     If you do not have a natural meaningful way for the index,
     it is recommended that you use "r1", "r2", ... as the index.
 
-3. pandas.series.str.replace: regular expression manipulation supported!
+3. `pandas.series.str.replace` supports regular expression.
 
-4. pandas also support time delta, you should compare with the MonthDelta module
+4. `pandas` also support time delta, you should compare with the MonthDelta module
 
-5. pandas keeps the precision while reading excels files but just be careful 
-    that pandas display 7 significant digits by default ...
+5. `pandas` keeps the underlying precision (instead of the display precision)
+    while reading Excels files.
+    However,
+    be aware that pandas displays 7 significant digits by default.
 
-6. label-based slicing is inclusive as it is not clear what "pass by 1" means for label-based slicing
-    Integer index based slicing is passing by 1 as usual
-    Notice that `.ix` is mixed slicing, 
-    so its slicing can be both inclusive and exclusive 
-    depending on whether you are using integer-based slicing or label-based scling.
-
-7. some operations on data frame will sort the index and column names.
-    It is better to use acending indexes to avoid surprise.
+6. Label-based slicing is inclusive
+    as it is not clear what "pass by 1" means for label-based slicing.
 
 ## Questions
 
@@ -59,7 +58,7 @@ pd.set_option('display.max_colwidth', 100)
 
 6. difference between merge and join?
 
-7. it seems that DataFrame.str.replace and Series.str.replace 
-    use regular expression by default. 
+7. it seems that DataFrame.str.replace and Series.str.replace
+    use regular expression by default.
     Is there any way to perform literal string substitution
     like what the `fixed=True` options does for regular expression related functions in R?

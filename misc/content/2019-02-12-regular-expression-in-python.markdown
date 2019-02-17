@@ -17,4 +17,10 @@ It is not meant to readers but rather for convenient reference of the author and
 
 1. (?i) case-insensitive matching
 
-2. 
+2. `re.match` matches the regular expression pattern from the beginning of the string
+    while `re.search` matches the regular expression pattern anywhere in the string.
+    Generally speaking `re.search` is preferred over `re.match`
+    as it is more flexible.
+
+3. Passing `re.DOTALL` to the argument `flag` makes the dot (`.`) matches anything
+    including a newline (by default the dot does not matches a newline).

@@ -104,7 +104,7 @@ class Blogger:
         :param db: the path to the SQLite3 database file.
         """
         self._fts = _fts_version()
-        self._db = db if db else os.path.join(os.path.expanduser('~'), '.blogger.sqlite3')
+        self._db = db if db else os.path.join(BASE_DIR, '.blogger.sqlite3')
         self._conn = sqlite3.connect(self._db)
         self._create_vtable_posts()
 

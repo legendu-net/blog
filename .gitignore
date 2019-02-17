@@ -1,3 +1,4 @@
+.blogger.sqlite3
 *.pyc
 .ipynb_checkpoints/
 home/output

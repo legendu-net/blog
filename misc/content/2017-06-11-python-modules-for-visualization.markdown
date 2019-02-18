@@ -15,6 +15,14 @@ but rather for convenient reference of the author and future improvement.
 
 ## JS based Modules
 
+## Cufflink
+
+Enables plotly plots in pandas DataFrame (via the `iplot` method) directly. 
+
+https://plot.ly/pandas/getting-started/
+
+https://medium.com/@kbrook10/day-7-data-visualization-how-to-use-plotly-and-cufflinks-for-interactive-data-visualizations-3a4b85fdd999
+
 ### HoloViews
 
 HoloViews is my favorate JS-based visualization package in Python.

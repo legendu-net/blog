@@ -38,6 +38,14 @@ but rather for convenient reference of the author and future improvement.
 pip install --upgrade wheel
 ```
 
+1. List all available versions of a Python package. 
+
+	pip install pylibmc==
+
+2. Install a specific version of a Python package.
+
+	pip install MySQL_python==1.2.2
+
 ## List Modules
 
 1. List outdated modules.
@@ -70,5 +78,6 @@ http://stackoverflow.com/questions/36394101/pip-install-locale-error-unsupported
 
 http://unix.stackexchange.com/questions/87745/what-does-lc-all-c-do
 
+https://stackoverflow.com/questions/4888027/python-and-pip-list-all-versions-of-a-package-thats-available
 
-
+https://stackoverflow.com/questions/5226311/installing-specific-package-versions-with-pip

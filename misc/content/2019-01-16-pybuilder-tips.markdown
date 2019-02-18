@@ -1,6 +1,6 @@
 UUID: e853fa52-9673-49d0-9ff9-c39216d73964
 Status: published
-Date: 2019-01-16 09:30:41
+Date: 2019-02-18 09:35:23
 Author: Ben Chuanlong Du
 Slug: pybuilder-tips
 Title: PyBuilder Tips
@@ -75,9 +75,20 @@ def set_properties(project):
 
 https://stackoverflow.com/questions/37409282/pybuilder-non-python-files-are-not-packaged
 
+## Issues with Python 3.7 
+
+The current version (0.11.17) of pybuilder does not support Python 3.7. 
+Python 3.7 will be supported by pybuilder starting from version 0.12.
+If you must use pybuilder with Python 3.7 at this time, 
+you can install the pre-release of pybuilder.
+
+	pip3 install --pre pybuilder
+
 
 ## References
 
 https://pybuilder.readthedocs.io/en/latest/walkthrough-new.html
 
 http://pybuilder.github.io/documentation/tutorial.html#.XC-5d_x7nmE
+
+https://github.com/pybuilder/pybuilder/issues/606

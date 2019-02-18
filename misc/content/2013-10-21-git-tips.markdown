@@ -91,6 +91,8 @@ git fetch --depth 1000000
 
 ## Submodule
 
+git submodule init
+
 git submodule update --recursive --remote
 
 

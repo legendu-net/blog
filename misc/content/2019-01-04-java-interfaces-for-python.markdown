@@ -1,11 +1,10 @@
-UUID: 19b64350-dc23-42f3-be27-521c4b1b2dbf
 Status: published
-Date: 2019-01-04 09:30:04
+Date: 2019-02-18 19:53:47
 Author: Ben Chuanlong Du
-Slug: pynjius-tips
-Title: Pynjius Tips
+Slug: java-interfaces-for-python
+Title: Java Interfaces for Python
 Category: Programming
-Tags: programming, Python, Java, pyjnius
+Tags: programming, Python, Java, interface, pyjnius, jpype, py4j
 
 **
 Things on this page are
@@ -14,14 +13,23 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-https://github.com/kivy/pyjnius
+pyjnius looks like a great one. 
 
-## Installation
+jpype is perhaps the most used one
+
+py4j is too complicated to use
+
+## [pyjnius](https://github.com/kivy/pyjnius)
+
+### Installation
+
 ```bash
 pip install Cython
 pip install pyjnius
 ```
+
 ## Example with Imported Jar
+
 ```
 import os
 os.environ['CLASSPATH'] = "/path/to/your.jar"
@@ -31,4 +39,5 @@ yourObj = YourClass()
 ```
 
 ## References
+
 https://web.archive.org/web/20170729052824/http://baojie.org/blog/2014/06/16/call-java-from-python/

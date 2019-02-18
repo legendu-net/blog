@@ -1,5 +1,6 @@
 .blogger.sqlite3
 *.pyc
+*.swp
 .ipynb_checkpoints/
 home/output
 home/cache

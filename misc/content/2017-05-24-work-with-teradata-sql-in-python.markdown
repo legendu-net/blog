@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Slug: work-with-teradata-sql-in-python
 Title: Work With Teradata SQL in Python
 Category: Programming
-Tags: programming, Python, Teradata SQL, teradata, JayDeBeApi, pyodbc
+Tags: programming, Python, Teradata SQL, Teradata
 
 **
 Things on this page are
@@ -30,10 +30,10 @@ but rather for convenient reference of the author and future improvement.
 
 1. pyodbc works for Teradata too.
 
-## JDBC 
+## JDBC
 
 1. JayDeBeApi
 
 ## CLIv2
 
-1. giraffez 
+1. giraffez

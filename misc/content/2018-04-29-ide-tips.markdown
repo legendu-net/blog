@@ -1,6 +1,5 @@
-UUID: 47043f3f-8c5f-4c5b-9a07-8fc2b4a16871
 Status: published
-Date: 2018-04-29 16:19:26
+Date: 2019-02-18 19:35:55
 Author: Ben Chuanlong Du
 Slug: ide-tips
 Title: Ide Tips
@@ -16,35 +15,36 @@ but rather for convenient reference of the author and future improvement.
 
 ## [Cloud IDEs](http://www.legendu.net/misc/blog/cloud-ide/)
 
-## C++
+## General Purpose IDEs
 
-1. Vim with plugins YouCompleteMe and UltiSnips
-0. KDevelop (C++)
-0. Clion (Commerical IDE)
-2. Qt Creator (for Qt development and general purpose C++ IDE)
-1. Eclipse (for Java ,C++, Python, etc.)
-3. Dev-C++
+1. Visual Studio Code
+
+2. Eclipse (with all kinds of plugins)
+
+3. Vim
 
 ## Java
 
-1. Eclipse
+1. IntelliJ IDEA (community edition available)
 
-2. IntelliJ IDEA (community edition available)
+2. Eclipse
 
 ## Python
 
-1. Spyder (Python)
+1. PyCharm
 
-2. Wing IDE
+    A great IDE for Python.
+    A open source community edition is available for users.
 
-3. PyCharm
+2. JupyterLab
 
-A great IDE for Python.
-A open source community edition is available for users.
 
-4. Eric
+## C++
 
-3. Eclipse + PyDev (python)
+1. MS Visual Studio
+2. KDevelop
+3. Qt Creator
+4. Eclipse (with CDT)
 
 ## R
 

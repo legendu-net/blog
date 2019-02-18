@@ -1,11 +1,10 @@
-UUID: 9e5cb75e-b892-41a3-babf-780f311ec2f3
 Status: published
 Date: 2015-05-13 01:30:45
 Author: Ben Chuanlong Du
 Slug: numpy-tips
 Title: Python Numpy Tips
 Category: Programming
-Tags: programming, Python, Numpy, tips, scientific computing
+Tags: programming, Python, numpy, tips, scientific computing, scipy
 
 **
 Things on this page are
@@ -15,3 +14,9 @@ but rather for convenient reference of the author and future improvement.
 **
 
 1. NaN NAN nan in numpy are all the same
+
+2. numpy.sum, numpy.prod
+
+## matrix
+
+numpy.Matrix.diagonal

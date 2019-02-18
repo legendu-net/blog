@@ -1,11 +1,10 @@
-UUID: 221a355b-2d26-4670-996b-678c15b729d0
 Status: published
-Date: 2017-06-11 18:11:11
+Date: 2019-02-18 19:57:43
 Author: Ben Chuanlong Du
 Slug: high-performance-computing-in-python
 Title: High Performance Computing in Python
 Category: Programming
-Tags: programming, Python, HPC, high performance computing, pybind11, numba, cython
+Tags: programming, Python, HPC, high performance computing, pybind11, numba, Cython, mars, Apache Ray
 
 **
 Things on this page are
@@ -13,6 +12,10 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+## [mars](https://github.com/mars-project/mars)
+
+## [Apache Ray](https://github.com/ray-project/ray)
 
 ## Numba
 
@@ -49,7 +52,7 @@ PYBIND11_PLUGIN(ma_cpp) {
 
 
 The cppimport package makes things easy.
-Don't forget to use the following setup 
+Don't forget to use the following setup
 when using cppimport.
 
 ```C++

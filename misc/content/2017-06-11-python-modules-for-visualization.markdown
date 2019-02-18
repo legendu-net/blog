@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-17 19:03:29
+Date: 2019-02-18 23:39:08
 Author: Ben Chuanlong Du
 Slug: python-modules-for-visualization
 Title: Python Modules for Visualization

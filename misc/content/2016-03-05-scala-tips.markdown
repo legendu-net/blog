@@ -1,4 +1,3 @@
-UUID: e32b8182-c90c-432a-b328-f1346fe92df1
 Status: published
 Date: 2017-06-17 10:03:34
 Author: Ben Chuanlong Du
@@ -22,8 +21,14 @@ but rather for convenient reference of the author and future improvement.
 - [Scala Cheatsheet](http://docs.scala-lang.org/cheatsheets/)
 - [Scala Style Guide](https://github.com/databricks/scala-style-guide)
 
+## Trick & Traps 
+
+- [Scala and 22](https://underscore.io/blog/posts/2016/10/11/twenty-two.html)
+
+## General Tips
+
 1. IntelliJ IDEA is the recommended IDE.
-Eclipse (with the Scala IDE plugin) is alternative.
+    Eclipse (with the Scala IDE plugin) is alternative.
 
 ## Style
 

@@ -1,11 +1,10 @@
-UUID: f5ecce8f-3e97-431b-a66c-cd1770fb5630
 Status: published
 Date: 2019-01-08 06:07:17
 Author: Ben Chuanlong Du
-Slug: install-java-in-mac
-Title: Install Java in Mac 
-Category: Programming
-Tags: programming, Java, Mac OS X, Homebrew
+Slug: install-java8-in-mac
+Title: Install Java 8 in Mac 
+Category: macOS
+Tags: Java, macOS, Homebrew
 
 **
 Things on this page are
@@ -14,10 +13,21 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-brew cask install java
+Uninstall the default Java (which has a higher version than 8).
 
-https://apple.stackexchange.com/questions/334384/how-can-i-install-java-openjdk-8-on-high-sierra
+    brew cask uninstall java
 
-https://dzone.com/articles/install-openjdk-versions-on-the-mac
+Install Java 8.
 
-https://stackoverflow.com/questions/52524112/how-do-i-install-java-on-mac-osx-allowing-version-switching
+    brew tap caskroom/versions
+    brew cask install java8
+
+You can verify the version of Java using the command below.
+
+	java -version
+
+
+## References
+
+https://stackoverflow.com/questions/24342886/how-to-install-java-8-on-mac
+

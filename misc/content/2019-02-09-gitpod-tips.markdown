@@ -19,10 +19,10 @@ It is not meant to readers but rather for convenient reference of the author and
 
 3. browser plugins are available for Chrome, Firefox, etc.
 
-## Customized Docker Images
-
-https://docs.gitpod.io/42_Config_Docker.html?highlight=customized,layer#configure-a-custom-docker-image
-
 ## References
 
-https://addons.mozilla.org/en-US/firefox/addon/gitpod/
+[Gitpod Config File](https://docs.gitpod.io/41_Config_Gitpod_File.html)
+
+[Configure a Custom Docker Image](https://docs.gitpod.io/42_Config_Docker.html?highlight=customized,layer#configure-a-custom-docker-image)
+
+[Gitpod Addon for Firefox](https://addons.mozilla.org/en-US/firefox/addon/gitpod/)

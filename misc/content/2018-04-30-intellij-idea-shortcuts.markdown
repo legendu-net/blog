@@ -1,6 +1,6 @@
 UUID: bfb89278-20ed-4571-b8b2-5f909ff984b0
 Status: published
-Date: 2018-04-30 18:02:52
+Date: 2019-02-20 23:02:07
 Author: Ben Chuanlong Du
 Slug: intellij-idea-shortcuts
 Title: IntelliJ IDEA Shortcuts

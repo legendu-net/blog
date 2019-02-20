@@ -14,9 +14,27 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-File -> Settings... -> Editor -> Colors & Fonts 
-choose a scheme right to "Scheme name"
+## Change Scheme
 
-The Community edition of pycharm has some limitations:
+1. File -> Settings... -> Editor -> Colors & Fonts 
+
+2. Choose a scheme right to "Scheme name"
+
+## Change Font of Terminal
+
+1. Search for Console Font
+
+2. Set the desired font size.
+
+3. Restart terminal (the font size for terminal won't take effect until the terminal is restarted)
+
+
+## Limitations in PyCharm Community Edition
+
 1. no good theme
+
 2. auto completion does not complete file paths
+
+## References
+
+https://stackoverflow.com/questions/34412739/set-the-font-size-in-pycharms-python-console-or-terminal

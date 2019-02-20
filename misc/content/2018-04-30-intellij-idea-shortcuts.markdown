@@ -15,6 +15,8 @@ but rather for convenient reference of the author and future improvement.
 **
 
 
-ctrl + shift +p: show type of field
+`ctrl + shift + p`: show inferred type of the variable
+
+## References
 
 https://alvinalexander.com/source-code/scala/how-configure-intellij-idea-show-scala-data-types-when-you-hover-over-field

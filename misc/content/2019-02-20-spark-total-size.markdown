@@ -30,6 +30,8 @@ Total size of serialized results is bigger than spark.driver.maxResultSize
 
 ## References
 
+https://spark.apache.org/docs/latest/configuration.html
+
 https://www.hackingnote.com/en/spark/trouble-shooting/total-size-is-bigger-than-maxResultSize
 
 https://issues.apache.org/jira/browse/SPARK-17556

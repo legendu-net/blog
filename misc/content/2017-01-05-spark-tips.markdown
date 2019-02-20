@@ -22,16 +22,16 @@ which are variables that are only “added” to, such as counters and sums.
 
 ## Spark Shell
 
-spark-shell --jars ... to add jars and then you can use it!!!
+1. The `--jars` option of `spark-shell` can be used to add JAR dependencies.
 
-spark-shell accepts --queue as parameter ...!!!
+2. `spark-shell` accepts `--queue` (for specifying the queue to submit jobs) as parameter!
 
 ## Spark Cluster Master URL
 
 https://spark.apache.org/docs/latest/submitting-applications.html#master-urls
 
 
-## Links
+## References
 
 https://developer.ibm.com/hadoop/2016/07/18/troubleshooting-and-tuning-spark-for-heavy-workloads/
 

@@ -27,6 +27,10 @@ but rather for convenient reference of the author and future improvement.
 
 https://conda.io/docs/user-guide/configuration/admin-multi-user-install.html
 
+## My Conda Packages
+
+https://anaconda.org/legendu/sqlalchemy-teradata
+
 ## References
 
 https://conda.io/docs/user-guide/tutorials/build-pkgs-skeleton.html

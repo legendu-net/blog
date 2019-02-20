@@ -14,9 +14,9 @@ It is not meant to readers but rather for convenient reference of the author and
 
 
 1. Spark SQL supports hive sql syntax.
-For example,
-`spark.sql("show tables in some_schema")`
-returns a DataFrame with tables in the Hive database.
+    For example,
+    `spark.sql("show tables in some_schema")`
+    returns a DataFrame with tables in the Hive database.
 
 2. JSON, ORC, Parquet and CSV files can be queried using Spark SQL without creating a table on the Spark DataFrame.
 

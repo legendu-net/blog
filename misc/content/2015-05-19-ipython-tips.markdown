@@ -1,4 +1,3 @@
-UUID: 2920d54b-cc9e-4914-8305-a6b6039ab6f8
 Status: published
 Date: 2015-05-19 23:14:03
 Author: Ben Chuanlong Du
@@ -14,9 +13,27 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-1. it seems that ipython tries to beautify outputs
 
-2. ipython accepts only script with the file extension `.ipy`.
+1. IPython accepts only script with the file extension `.ipy`.
+
+2. Python variables can used in a shell command like an environment variable. 
+    For example, 
+	if there is a Python named `pkg` which refers to a local package file,
+	then you can use `!cp $pkg ~` to copy it to the home directory. 
+	Another even more general approach is to use the curly braces
+	which accepts an arbitrary Python expresion.
+	Still, 
+	let's assume that `pkg` is a Python variable which refers to a local package file 
+	but in relative path w.r.t. `/tmp`.
+	You can copy it to the home directory using the following command.
+
+		!cp {os.path.join('/tmp', pkg)} ~
+
+1. it seems that IPython tries to beautify outputs.
+
+## References
+
+https://stackoverflow.com/questions/19579546/can-i-access-python-variables-within-a-bash-or-script-ipython-notebook-c
 
 https://ipython.org/ipython-doc/3/interactive/shell.html
 

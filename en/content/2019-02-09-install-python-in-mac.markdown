@@ -21,3 +21,9 @@ A few comments about different ways of installation.
 
 2. There are limited choices of Python versions in Homebrew.
     Go with Anaconda Python if you cannot find the version you need in Homebrew.
+
+## References
+
+https://stackoverflow.com/questions/51125013/how-can-i-install-a-previous-version-of-python-3-in-macos-using-homebrew
+
+https://osxuninstaller.com/uninstall-guides/properly-uninstall-python-mac/

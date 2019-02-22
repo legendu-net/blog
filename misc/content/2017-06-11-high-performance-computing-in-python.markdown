@@ -13,6 +13,12 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+First of all,
+make sure that you have read 
+[Python Performance Tips](https://wiki.python.org/moin/PythonSpeed/PerformanceTips).
+However,
+keep in mind that some of the tips might be outdated.
+
 ## [mars](https://github.com/mars-project/mars)
 
 ## [Apache Ray](https://github.com/ray-project/ray)

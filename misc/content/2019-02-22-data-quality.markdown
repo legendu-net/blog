@@ -27,6 +27,16 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## Useful Libraries
 
+1. [Optimus](https://github.com/ironmussa/Optimus)
+
+2. [DataCleaner](https://github.com/datacleaner/DataCleaner)
+    looks promising
+    https://datacleaner.github.io/docs/5.4.0/html/
+
+3. [osdq-spark](https://github.com/arrahtech/osdq-spark)
+
+4. [Open Stduio for Data Quality](https://www.talend.com/products/data-quality/data-quality-open-studio/)
+
 1. athena 
 
 2. [pydqc](https://github.com/SauceCat/pydqc)

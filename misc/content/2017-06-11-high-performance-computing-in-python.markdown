@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-18 19:57:43
+Date: 2019-02-22 20:14:17
 Author: Ben Chuanlong Du
 Slug: high-performance-computing-in-python
 Title: High Performance Computing in Python
@@ -18,6 +18,10 @@ make sure that you have read
 [Python Performance Tips](https://wiki.python.org/moin/PythonSpeed/PerformanceTips).
 However,
 keep in mind that some of the tips might be outdated.
+
+## [Python Profilers](https://docs.python.org/3/library/profile.html)
+
+1. [cprofile](https://docs.python.org/3/library/profile.html#module-cProfile)
 
 ## [mars](https://github.com/mars-project/mars)
 
@@ -67,3 +71,6 @@ setup_pybind11(cfg)
 %>
 ```
 
+## References
+
+https://stackoverflow.com/questions/582336/how-can-you-profile-a-python-script

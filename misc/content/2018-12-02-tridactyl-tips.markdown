@@ -15,3 +15,5 @@ but rather for convenient reference of the author and future improvement.
 **
 
 :mode ignore temporarily disables Tridactyl on the page. 
+ctrl/cmd + g: next search result
+shift + ctrl/cmd + g: previous search result

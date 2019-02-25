@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-25 21:55:58
+Date: 2019-02-25 22:21:05
 Author: Benjamin Du
 Slug: pylint-tips
 Title: pylint Tips

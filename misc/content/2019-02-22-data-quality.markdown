@@ -27,6 +27,8 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## Useful Libraries
 
+1. [Apache Griffin](https://github.com/apache/griffin)
+
 1. [Optimus](https://github.com/ironmussa/Optimus)
 
 2. [DataCleaner](https://github.com/datacleaner/DataCleaner)
@@ -42,6 +44,10 @@ It is not meant to readers but rather for convenient reference of the author and
 2. [pydqc](https://github.com/SauceCat/pydqc)
 
 3. [DataGristle](https://github.com/kenfar/DataGristle)
+
+## Commercial Solutions
+
+4. [Trifacta](https://www.trifacta.com/)
 
 ## Books
 

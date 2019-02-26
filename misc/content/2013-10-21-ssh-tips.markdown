@@ -1,8 +1,7 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: SSH Tips
-Date: 2017-10-22 13:49:47
+Date: 2019-02-26 23:47:21
 Slug: ssh-tips
 Category: Software
 Tags: tips, SSH, software, remote, Linux
@@ -40,3 +39,16 @@ It is not meant to readers but rather for convenient reference of the author and
 
 8. ip can be important if you use ssh,
     make sure your ip is allowed to ...
+
+## Questions
+
+
+1. the connection via ssh to my toshiba is very unstable, I'm not sure what have cuased the problem?
+The internet seems OK, or maybe it is because I'm copying larges files over local network
+
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: ssh: Could not resolve hostname y570.stat.iastate.edu -p 323: Name or service not known
+
+3. SSH: ‘No Route to Host’ error
+

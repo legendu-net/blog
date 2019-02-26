@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Slug: ssh-tunnel
 Title: SSH Tunnel
 Category: Software
-Tags: software, SSH tunnel, socks proxy
+Tags: software, SSH tunnel, socks proxy, reverse
 
 **
 Things on this page are
@@ -13,6 +13,7 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+## SSH Tunnel
 
 ```
 ssh -i /path_to_key -fND 1080 user@server_ip
@@ -23,6 +24,14 @@ you can bind it to all IPs.
 ```
 ssh -i /path_to_key -fND "*:1080" user@server_ip
 ```
+
+## Reverse SSH Tunnel
+
+https://www.howtoforge.com/reverse-ssh-tunneling
+
+https://unix.stackexchange.com/questions/46235/how-does-reverse-ssh-tunneling-work
+
+https://blog.devolutions.net/2017/3/what-is-reverse-ssh-port-forwarding
 
 ## References
 

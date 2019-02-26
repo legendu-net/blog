@@ -14,6 +14,10 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+## Tricks and Traps 
+
+1. Use IP addresses instead of domain names if you do not know how to set up DNS for ProxyChains.
+
 ## Example of ProxyChains Configuration
 
 ```text

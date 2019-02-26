@@ -1,0 +1,29 @@
+Status: published
+Date: 2019-02-26 00:37:57
+Author: Benjamin Du
+Slug: mypy-tips
+Title: Mypy Tips
+Category: Programming
+Tags: programming, Python, mypy, tips
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+
+
+
+
+--check-untyped-defs
+--ignore-missing-imports
+
+## References
+
+https://mypy.readthedocs.io/en/latest/index.html
+
+https://mypy.readthedocs.io/en/latest/common_issues.html
+
+https://mypy.readthedocs.io/en/latest/common_issues.html#displaying-the-type-of-an-expression
+
+https://mypy.readthedocs.io/en/latest/kinds_of_types.html#kinds-of-types
+

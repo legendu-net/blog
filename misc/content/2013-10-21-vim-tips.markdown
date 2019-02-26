@@ -12,36 +12,46 @@ Tags: tips, Linux, software, Vim, surround, repeat
 Things on this page are fragmentary and immature notes/thoughts of the author. 
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+## Vim Distributions
+
+- [SpaceVim](https://spacevim.org/)
+
+- [spf13-vim](https://vim.spf13.com/)
  
+
+## Tips
+
+1. Look for good vim plugins on [Vim Awesome](https://vimawesome.com/).
 
 ## Skills
 
 1. To quickly comment a range of text, 
-you can substitute ^ with # in that range.
+    you can substitute ^ with # in that range.
 
 2. `:w !sudo tee %` helps write current content into the file 
-if you did not open the write-protected file with `sudo vim`.
-Another way is to use the `:w a_file` command to write to a file that you 
-have access to and then use it to replace the original file. 
+    if you did not open the write-protected file with `sudo vim`.
+    Another way is to use the `:w a_file` command to write to a file that you 
+    have access to and then use it to replace the original file. 
 
 ## Search
 
 1. `n` jumps to next occurrence of the search pattern 
-and `N` jumps to previous occurrence of the search pattern.
+    and `N` jumps to previous occurrence of the search pattern.
 
 2. `/` (without specifying a search pattern) searches last searched string. 
-This trick can also be used in substitution.
-For example, 
-`:%s//new_string/gc` replaces the last search pattern with `new_string`.
+    This trick can also be used in substitution.
+    For example, 
+    `:%s//new_string/gc` replaces the last search pattern with `new_string`.
 
 ## Command
 
 1. You can use `:! external_command` to run external commands. 
-You can use the up and down arrow to scroll to last and next external command 
-after you have typed `:! ` in Vim. 
-This trick also works in other environment, 
-e.g., you can press the up and down key to scroll to last and next search string
-after you have typed `/` in Vim.
+    You can use the up and down arrow to scroll to last and next external command 
+    after you have typed `:! ` in Vim. 
+    This trick also works in other environment, 
+    e.g., you can press the up and down key to scroll to last and next search string
+    after you have typed `/` in Vim.
 
 ## Buffers
 
@@ -50,28 +60,28 @@ after you have typed `/` in Vim.
 ## Indent
 
 1. Select lines that you want to indent
-and then use command `:le n` or `:ri n`.
-This sets the indent of the selected lines to `n` spaces (from the left/right).
+    and then use command `:le n` or `:ri n`.
+    This sets the indent of the selected lines to `n` spaces (from the left/right).
 
 2. `>>`, `n>>`
 
 1. Use `>G` to shift the current line and lines after to the right.
-If you want shift all lines to the right,
-you can first go the first line by command `gg`,
-and then type in command `>G`.
+    If you want shift all lines to the right,
+    you can first go the first line by command `gg`,
+    and then type in command `>G`.
 
 ## Read 
 
 1. You can read the content of a file or the output of an external command into Vim.
 
-    :r path_to_file
-    :r !ls
-    :r !date
+	:r path_to_file
+	:r !ls
+	:r !date
 
 ## Misc
 
 1. it is recommned to use `"+p` to paste text in clipboard copied from other places,
-especially text with indentions.
+    especially text with indentions.
 
 5. can user-defined commands operate on marked range? e.g., delete the last column of marked range?
 
@@ -84,10 +94,10 @@ especially text with indentions.
 2. `''` (two apostrophes) or `````` (two backticks) to go to the previous position of cursor
 
 2. Like most of the capitalized movement pairs, b moves by word, 
-but B moves by WORD. 
-The difference is that vim considers a "word" to be letters, numbers, 
-and underscores (and you can configure this with the iskeyword setting), 
-but a "WORD" is always anything that isn't whitespace.
+    but B moves by WORD. 
+    The difference is that vim considers a "word" to be letters, numbers, 
+    and underscores (and you can configure this with the iskeyword setting), 
+    but a "WORD" is always anything that isn't whitespace.
 
 
 ## Addons
@@ -129,42 +139,42 @@ Plugin for Visual Studio.
 ## Macro
 
 1. As with other commands in vi, you can playback a macro any number of times.
-The following command would playback the macro assigned to the key `w' 100
-times: 100@w
+    The following command would playback the macro assigned to the key `w' 100
+    times: 100@w
 
 2. Macro letters are case-insensitive. 
 
 2. Vim uses words that exist in your current buffer and any other buffer you may
-have open for auto-complete suggestions.
+    have open for auto-complete suggestions.
 
 ## Macro/Command/Function
 
 1. Macro is best for simple and one-time task
-Command is best for frequently task, command is easy to use
-Functions are for more complicated task, not as convenient as command to use
-but you can define function and wrap it in a command
+    Command is best for frequently task, command is easy to use
+    Functions are for more complicated task, not as convenient as command to use
+    but you can define function and wrap it in a command
 
 ## Settings
 
 1. It is good practice to set a central swap and backup directory.
-You'd better use 2 path separator (//) at the end of the path!
-This makes vim to use the full path of the swap file, 
-which ensures unique path name.
+    You'd better use 2 path separator (//) at the end of the path!
+    This makes vim to use the full path of the swap file, 
+    which ensures unique path name.
 
 3. It is good practice to map the Caps Lock key to the Esc key or to swap them.
 
 ## Usage
 
 1. Search in visual mode let you quick select large block of text.
-For example, if you search "quickly" in visual mode, 
-the text from cursor to the next occurrence of "quickly" will be selected.
+    For example, if you search "quickly" in visual mode, 
+    the text from cursor to the next occurrence of "quickly" will be selected.
 
 2. You have to "\r" instead of "\n" for newline when substituting characters. 
 
 6. You can execute more than one command by placing a `|` between two commands. 
 
 3. The ability to run external command (prefixed by `!`) is great!
-For example, you can use `:r !basename % .sh` to insert the name of the current file.
+    For example, you can use `:r !basename % .sh` to insert the name of the current file.
 
 3. Insert date (different ways) or you can use UltiSnips to do it which is recommended.
 normal mode
@@ -300,13 +310,12 @@ mark the word under cursor as incorrect                                         
 ## Block and Mark
 
 1. After operating (copy/yank, idention, etc.) on a block (via marks),
-the cursor goes to the begin of the block.
-This is not covenient if the cursor was at the end of the block 
-and you want to continue work at the end of the block.
-You can go back to the previous location of cursor by `''` or ``````.
+    the cursor goes to the begin of the block.
+    This is not covenient if the cursor was at the end of the block 
+    and you want to continue work at the end of the block.
+    You can go back to the previous location of cursor by `''` or ``````.
 
-VAM repository
-<http://vam.mawercer.de/>
+[VAM repository](http://vam.mawercer.de/)
 
 [tComment](https://github.com/tomtom/tcomment_vim)
 
@@ -404,3 +413,26 @@ A secondary set of key maps is defined for normal and insert mode:
 ## Visual Mode
 
 Capital V selects the current line in one key stroke; two, if you include the "shift" in shift+v.
+
+## References
+
+- [Vim Awesome](https://vimawesome.com/)
+
+- [Learn Vim Progressively](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)  
+- [100 Vim Commands](http://www.catswhocode.com/blog/100-vim-commands-every-programmer-should-know)
+- [Vim Tutorial](http://www.yolinux.com/TUTORIALS/LinuxTutorialAdvanced_vi.html)
+- [Vim Macro Example](http://www.thegeekstuff.com/2009/01/vi-and-vim-macro-tutorial-how-to-record-and-play/)
+- [Vim Substitution](http://vim.wikia.com/wiki/Search_and_replace)
+- [Vivify](http://bytefluent.com/vivify/)
+- [Linux vi and vim editor: Tutorial and advanced features](http://www.yolinux.com/TUTORIALS/LinuxTutorialAdvanced_vi.html)
+- [Shifting Blocks Visually](http://vim.wikia.com/wiki/VimTip224)
+
+
+https://github.com/tpope/vim-surround/blob/master/doc/surround.txt
+
+http://vimgolf.com/
+
+http://www.drbunsen.org/vim-croquet/
+
+[Graphical vi-vim Cheat Sheet and Tutorial - ViEmu] (http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)
+

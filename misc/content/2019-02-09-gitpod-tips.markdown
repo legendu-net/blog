@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-18 20:22:40
+Date: 2019-02-27 09:07:14
 Author: Benjamin Du
 Slug: gitpod-tips
 Title: Gitpod Tips
@@ -20,6 +20,8 @@ It is not meant to readers but rather for convenient reference of the author and
 3. browser plugins are available for Chrome, Firefox, etc.
 
 ## References
+
+[GitPod Chat](https://spectrum.chat/gitpod)
 
 [Gitpod Config File](https://docs.gitpod.io/41_Config_Gitpod_File.html)
 

@@ -36,4 +36,8 @@ https://hub.docker.com/r/oldiy/baidupcs
 
 wine + baidu pan 
 
+Use BaiduExporter (Chrome plugin) to get the link 
+
+Tampermonkey (Chrome plugin) + Greasy Fork (website)
+
 WinTPC VM

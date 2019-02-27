@@ -578,6 +578,13 @@ def update(blogger, args):
     blogger.commit()
 
 
+def git(blogger, args):
+    mapping = {
+            'status': 'git status'
+        }
+    os.system(mapping[args.sub_cmd])
+
+
 def parse_args(args=None, namespace=None):
     """Parse command-line arguments for the blogging util.
     """
@@ -963,6 +970,9 @@ def parse_args(args=None, namespace=None):
         nargs='+',
         help='the SQL to run')
     parser_query.set_defaults(func=query)
+    # parser for the status command
+    parser_status = subparsers.add_parser('status', help='The git status command.')
+    parser_status.set_defaults(func=git)
     # parse and run
     return parser.parse_args(args=args, namespace=namespace)
 

@@ -1,6 +1,5 @@
-UUID: a0df35c1-10ed-4826-bf36-d2180c09506c
 Status: published
-Date: 2018-10-18 23:33:05
+Date: 2019-02-26 23:47:10
 Author: Ben Chuanlong Du
 Slug: docker-images-for-OS
 Title: Docker Images for OS
@@ -23,3 +22,15 @@ This is the default/offical Ubuntu Docker image.
 It cliams to be better than the default/official Ubuntu Docker image. 
 
 ## [CentOS](https://hub.docker.com/r/_/centos/)
+
+## [Linux Deepin](https://hub.docker.com/r/bestwu/deepin/)
+
+https://hub.docker.com/r/x11docker/deepin
+
+## [Android](https://github.com/budtmo/docker-android)
+
+https://hub.docker.com/r/circleci/android
+
+https://hub.docker.com/r/bitriseio/docker-android/
+
+## [wine](https://hub.docker.com/r/bestwu/wine)

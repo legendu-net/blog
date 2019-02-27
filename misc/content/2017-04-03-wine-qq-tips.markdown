@@ -1,6 +1,5 @@
-UUID: 524797b0-3c9f-4b2c-8b94-16b5ff047432
 Status: published
-Date: 2017-04-03 14:45:33
+Date: 2019-02-26 23:47:44
 Author: Ben Chuanlong Du
 Slug: wine-qq-tips
 Title: Wine QQ Tips
@@ -14,11 +13,13 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-The most difficult part for Chinese Software is Chinese font support. 
 
-0. CrossOver has a much better support than Wine.
+1. CrossOver has a much better support than Wine.
 
-1. Avoid QQ PC, use TIM (office version) instead.
+2. Avoid QQ PC, use TIM (office version) instead.
 
-2. Support of QQ International is buggy even though the default English language is nice (no font issues).
+## References
 
+https://www.lulinux.com/archives/1319
+
+https://hub.docker.com/r/bestwu/qq

@@ -1,4 +1,3 @@
-UUID: 8811d194-8cb9-41ea-9fd3-f9b545007c41
 Status: published
 Date: 2018-09-02 12:22:38
 Author: Ben Chuanlong Du
@@ -26,6 +25,8 @@ suchja/wine
 yantis/wine 
 
 lijianying10/wineqq
+
+https://hub.docker.com/r/bestwu/qq
 
 
 ### Spark

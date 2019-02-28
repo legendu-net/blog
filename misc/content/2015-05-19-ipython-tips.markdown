@@ -14,7 +14,16 @@ but rather for convenient reference of the author and future improvement.
 **
 
 
+## Tricks & Traps 
+
 1. IPython accepts only script with the file extension `.ipy`.
+
+2. If you parsing arguments in an IPython script, 
+    you have to prepend `-- ` to you arguments passed to the IPython scripts,
+    otherwise,
+    the arguments are passed to the `ipython` command instead of your script.
+    For more information,
+    please check [this discussion on Stack Overflow](https://stackoverflow.com/questions/22631845/how-to-pass-command-line-arguments-to-ipython).
 
 2. Python variables can used in a shell command like an environment variable. 
     For example, 

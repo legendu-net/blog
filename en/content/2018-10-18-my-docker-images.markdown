@@ -165,6 +165,14 @@ sudo /scripts/create_user_nogroup.sh dclong 2000
 Since we didn't specify a password for the user,
 the default password (same as the user name) is used.
 
+
+## Remote Connect to Desktop in the Container
+
+Download the NoMachine client from <https://www.nomachine.com/download>, 
+install the client, 
+create a new connection to your public ip, port 4000, NX protocol, 
+use a user on the host OS and the corresponding password for authentication. 
+
 ## List of Images and Detailed Information
 
 - [dclong/ubuntu_b](https://hub.docker.com/r/dclong/ubuntu_b/)  

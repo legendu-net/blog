@@ -585,6 +585,11 @@ def git(blogger, args):
     os.system(mapping[args.sub_cmd])
 
 
+def install_vim(blogger, args):
+    cmd = 'curl -sLf https://spacevim.org/install.sh | bash'
+    os.system(cmd)
+
+
 def parse_args(args=None, namespace=None):
     """Parse command-line arguments for the blogging util.
     """
@@ -970,6 +975,9 @@ def parse_args(args=None, namespace=None):
         nargs='+',
         help='the SQL to run')
     parser_query.set_defaults(func=query)
+    # parser for the vim command
+    parser_vim = subparsers.add_parser('vim', aliases=['v'], help='Install SpaceVim.')
+    parser_vim.set_defaults(func=install_vim)
     # parser for the status command
     parser_status = subparsers.add_parser('status', help='The git status command.')
     parser_status.set_defaults(func=git)

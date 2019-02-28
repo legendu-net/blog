@@ -12,6 +12,8 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 
+https://help.getpocket.com/article/883-using-the-save-to-pocket-extension-for-google-chrome
+
 https://help.getpocket.com/article/1077-what-is-article-view
 
 https://help.getpocket.com/article/900-saving-to-pocket-and-viewing-your-list-in-firefox

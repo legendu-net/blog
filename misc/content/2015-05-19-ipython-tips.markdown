@@ -1,5 +1,5 @@
 Status: published
-Date: 2015-05-19 23:14:03
+Date: 2019-02-28 01:55:14
 Author: Ben Chuanlong Du
 Slug: ipython-tips
 Title: IPython Tips

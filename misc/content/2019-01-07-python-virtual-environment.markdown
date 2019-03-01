@@ -1,4 +1,3 @@
-UUID: 9960de34-b765-4299-b129-2fe8a840b977
 Status: published
 Date: 2019-01-07 09:49:27
 Author: Ben Chuanlong Du
@@ -14,14 +13,38 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-
 It is suggested that you use `venv` for managing virtual environments in Python3. 
+
+## Installation on Ubuntu
 
 ```bash
 wajig install python3-venv
-python3 -m venv /path/to/your/environment
-source <DIR>/bin/activate
 ```
+
+## Create a Virtual Environment
+
+```bash
+python3 -m venv /path/to/your/environment
+```
+
+## Activate the Virtual Environment
+
+```bash
+source <DIR>/bin/activate
+# or 
+. <DIR>/bin/activate
+```
+
+## Use the Virtual Environment in PyCharm
+
+1. Click on the `PyCharm` menu.
+
+2. Click on `Preferences...`.
+
+3. Select `Project Interpreter` in the left panel under `Project`.
+
+4. If no virtual environment is configured for PyCharm, 
+    you can select `Using Existing Virtual Environment` and then choose the virtual environment directory.
 
 ## References
 

@@ -274,10 +274,10 @@ class Blogger:
             0,
         ])
 
-    def delete(self, post: Union[str, List[str]]):
-        if isinstance(post, str):
-            post = [post]
-        for file in post:
+    def delete(self, posts: Union[str, List[str]]):
+        if isinstance(posts, str):
+            posts = [posts]
+        for file in posts:
             os.remove(file)
         qmark = ', '.join(['?'] * len(post))
         sql = f'DELETE FROM posts WHERE path in ({qmark})'
@@ -461,11 +461,11 @@ def query(blogger, args):
 
 def delete(blogger, args):
     if re.search('^d\d+$', args.sub_cmd):
-        args.index = int(args.sub_cmd[1:])
-    if args.index:
-        args.file = blogger.path(args.index)
-    if args.file:
-        blogger.delete(args.file)
+        args.indexes = [int(args.sub_cmd[1:])]
+    if args.indexes:
+        args.files = blogger.path(args.indexes)
+    if args.files:
+        blogger.delete(args.files)
     blogger.commit()
 
 
@@ -1025,12 +1025,12 @@ def parse_args(args=None, namespace=None):
         help='Delete a post/page.')
     parser_delete.add_argument(
         '-i',
-        '--index',
-        dest='index',
+        '--indexes',
+        dest='indexes',
         type=int,
-        help='rowid of the file (in the search results) to delete.')
+        help='row IDs of the files (in the search results) to delete.')
     parser_delete.add_argument(
-        '-f', '--file', dest='file', help='path of the post to delete.')
+        '-f', '--files', dest='files', help='paths of the posts to delete.')
     parser_delete.set_defaults(func=delete)
     # parser for the query command
     parser_query = subparsers.add_parser(

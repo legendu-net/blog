@@ -298,9 +298,9 @@ class Blogger:
         if isinstance(posts, str):
             posts = [posts]
         posts = ["'" + p + "'" for p in posts]
-        sql = f'UPDATE posts SET updated = 1 WHERE path in ({",".join(paths)})'
+        sql = f'UPDATE posts SET updated = 1 WHERE path in ({",".join(posts)})'
         self._conn.execute(sql)
-        os.system(f'{editor} {" ".join(post)}')
+        os.system(f'{editor} {" ".join(posts)}')
 
     def _create_post(self, post, title):
         file_words = os.path.join(BASE_DIR, 'words.json')

@@ -279,9 +279,9 @@ class Blogger:
             posts = [posts]
         for file in posts:
             os.remove(file)
-        qmark = ', '.join(['?'] * len(post))
+        qmark = ', '.join(['?'] * len(posts))
         sql = f'DELETE FROM posts WHERE path in ({qmark})'
-        self._conn.execute(sql, post)
+        self._conn.execute(sql, posts)
 
     def move(self, post, target):
         if target in (EN, CN, MISC):
@@ -336,7 +336,7 @@ class Blogger:
         sql = 'DELETE FROM srps'
         self._conn.execute(sql)
 
-    def add(self, title, dir_) -> str:
+    def add(self, title: str, dir_: str) -> str:
         file = self.find_post(title, dir_)
         if not file:
             file = f'{TODAY_DASH}-{_slug(title)}.markdown'
@@ -349,7 +349,8 @@ class Blogger:
     def find_post(self, title, dir_):
         """Find existing post matching the given title.
 
-        :return: Return the path of the existing post if any, otherwise return empty string.
+        :return: Return the path of the existing post if any,
+        otherwise return empty string.
         """
         # find all posts and get rid of leading dates
         sql = 'SELECT path FROM posts WHERE path LIKE ? AND dir = ?'
@@ -460,7 +461,7 @@ def query(blogger, args):
 
 
 def delete(blogger, args):
-    if re.search('^d\d+$', args.sub_cmd):
+    if re.search(r'^d\d+$', args.sub_cmd):
         args.indexes = [int(args.sub_cmd[1:])]
     if args.indexes:
         args.files = blogger.path(args.indexes)
@@ -470,7 +471,7 @@ def delete(blogger, args):
 
 
 def move(blogger, args):
-    if re.search('^m\d+$', args.sub_cmd):
+    if re.search(r'^m\d+$', args.sub_cmd):
         args.index = int(args.sub_cmd[1:])
     if args.index:
         args.file = blogger.path(args.index)[0]
@@ -480,7 +481,7 @@ def move(blogger, args):
 
 
 def edit(blogger, args):
-    if re.search('^e\d+$', args.sub_cmd):
+    if re.search(r'^e\d+$', args.sub_cmd):
         args.indexes = [int(args.sub_cmd[1:])]
     if args.indexes:
         args.files = blogger.path(args.indexes)
@@ -555,8 +556,8 @@ def reload(blogger, args):
 
 def add(blogger, args):
     file = blogger.add(' '.join(args.title), args.sub_dir)
-    args.index = None
-    args.file = file
+    args.indexes = None
+    args.files = file
     edit(blogger, args)
 
 
@@ -572,7 +573,7 @@ def categories(blogger, args):
 
 
 def update_category(blogger, args):
-    if re.search('^ucat\d+$', args.sub_cmd):
+    if re.search(r'^ucat\d+$', args.sub_cmd):
         args.indexes = int(args.sub_cmd[4:])
     if args.indexes:
         args.files = blogger.path(args.indexes)
@@ -588,7 +589,7 @@ def update_category(blogger, args):
 
 
 def update_tags(blogger, args):
-    if re.search('^utag\d+$', args.sub_cmd):
+    if re.search(r'^utag\d+$', args.sub_cmd):
         args.indexes = int(args.sub_cmd[4:])
     if args.indexes:
         args.files = blogger.path(args.indexes)
@@ -769,11 +770,11 @@ def parse_args(args=None, namespace=None):
     parser_list.set_defaults(func=show)
     # parser for the search command
     parser_search = subparsers.add_parser('search', aliases=['s'],
-        help='Search for posts. ' \
-            'Tokens separated by spaces ( ) or plus signs (+) in the search phrase ' \
-            'are matched in order with tokens in the text. ' \
-            'ORDERLESS match of tokens can be achieved by separating them with the AND keyword. ' \
-            'You can also limit match into specific columns. ' \
+        help='Search for posts. '
+            'Tokens separated by spaces ( ) or plus signs (+) in the search phrase '
+            'are matched in order with tokens in the text. '
+            'ORDERLESS match of tokens can be achieved by separating them with the AND keyword. '
+            'You can also limit match into specific columns. '
             'For more information, please refer to https://sqlite.org/fts5.html')
     parser_search.add_argument(
         '--dry-run',
@@ -784,10 +785,10 @@ def parse_args(args=None, namespace=None):
         'phrase',
         nargs='+',
         default=(),
-        help='the phrase to match in posts. ' \
-            'Notice that tokens "a" and "the" are removed from phrase, ' \
-            'which can be used as a hack way to make phrase optional. ' \
-            'For example if you want to filter by category only without constraints on full-text search, ' \
+        help='the phrase to match in posts. '
+            'Notice that tokens "a" and "the" are removed from phrase, '
+            'which can be used as a hack way to make phrase optional. '
+            'For example if you want to filter by category only without constraints on full-text search, '
             'you can use ./blog.py a -c some_category.')
     parser_search.add_argument(
         '-i',

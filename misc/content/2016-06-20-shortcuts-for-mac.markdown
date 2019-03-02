@@ -105,6 +105,12 @@ Command + R = Refresh widget
 Command + = = Zoom in (works in terminal, iterm2, etc.)
 Command + - = Zoom out (works in terminal, iterm2, etc.)
 
+## Shortcuts for Moving Windows Among Monitors
+
+https://www.youtube.com/watch?v=Hcp5YpFv1d0
+
+http://www.keyboardmaestro.com/main/
+
 
 ## Web Browsing
 

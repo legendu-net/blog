@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-02 03:26:31
+Date: 2019-03-02 03:57:23
 Author: Benjamin Du
 Slug: spacevim-tips
 Title: Spacevim Tips

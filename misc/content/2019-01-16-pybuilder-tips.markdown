@@ -80,6 +80,16 @@ http://pybuilder.github.io/documentation/ide.html#.XHngOZNKjRY
 
 ## use `pybuilder` with `pytest`
 
+You need to place
+
+    use_plugin("exec")
+
+and
+
+    project.set_property("run_unit_tests_command", "py.test %s" % project.expand_path("$dir_source_unittest_python"))
+
+into the file `build.py`.
+
 https://github.com/pybuilder/pybuilder/issues/13
 
 ## Issues with Python 3.7 

@@ -1,4 +1,3 @@
-UUID: e853fa52-9673-49d0-9ff9-c39216d73964
 Status: published
 Date: 2019-02-18 09:35:23
 Author: Ben Chuanlong Du
@@ -74,6 +73,14 @@ def set_properties(project):
 ```
 
 https://stackoverflow.com/questions/37409282/pybuilder-non-python-files-are-not-packaged
+
+## Integration with PyCharm 
+
+http://pybuilder.github.io/documentation/ide.html#.XHngOZNKjRY
+
+## use `pybuilder` with `pytest`
+
+https://github.com/pybuilder/pybuilder/issues/13
 
 ## Issues with Python 3.7 
 

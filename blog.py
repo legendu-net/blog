@@ -294,10 +294,13 @@ class Blogger:
         sql = 'UPDATE posts SET path = ?, dir = ? WHERE path = ?'
         self._conn.execute(sql, [target, blog_dir(target), post])
 
-    def edit(self, post, editor):
-        sql = 'UPDATE posts SET updated = 1 WHERE path = ?'
-        self._conn.execute(sql, [post])
-        os.system(f'{editor} "{post}"')
+    def edit(self, posts: Union[str, List[str]], editor: str) -> None:
+        if isinstance(posts, str):
+            posts = [posts]
+        posts = ["'" + p + "'" for p in posts]
+        sql = f'UPDATE posts SET updated = 1 WHERE path in ({",".join(paths)})'
+        self._conn.execute(sql)
+        os.system(f'{editor} {" ".join(post)}')
 
     def _create_post(self, post, title):
         file_words = os.path.join(BASE_DIR, 'words.json')
@@ -382,7 +385,7 @@ class Blogger:
         self._conn.execute(sql)
         self._conn.commit()
 
-    def path(self, id_: Union[int, List[int]]):
+    def path(self, id_: Union[int, List[int]]) -> List[str]:
         if isinstance(id_, int):
             id_ = [id_]
         qmark = ', '.join(['?'] * len(id_))
@@ -478,14 +481,14 @@ def move(blogger, args):
 
 def edit(blogger, args):
     if re.search('^e\d+$', args.sub_cmd):
-        args.index = int(args.sub_cmd[1:])
-    if args.index:
-        args.file = blogger.path(args.index)[0]
-    if args.file:
+        args.indexes = [int(args.sub_cmd[1:])]
+    if args.indexes:
+        args.files = blogger.path(args.indexes)
+    if args.files:
         # todo: best to unify the it or make a feature request to shutil.which
         if args.editor != 'gp open' and not shutil.which(args.editor):
             args.editor = 'vim'
-        blogger.edit(args.file, args.editor)
+        blogger.edit(args.files, args.editor)
     blogger.commit()
 
 
@@ -942,12 +945,13 @@ def parse_args(args=None, namespace=None):
         help='edit the post using vim.')
     parser_edit.add_argument(
         '-i',
-        '--index',
-        dest='index',
+        '--indexes',
+        dest='indexes',
+        nargs='+',
         type=int,
-        help='rowid in the search results.')
+        help='row IDs in the search results.')
     parser_edit.add_argument(
-        '-f', '--file', dest='file', help='path of the post to be edited.')
+        '-f', '--files', dest='files', help='path of the post to be edited.')
     parser_edit.set_defaults(func=edit)
     # parser for the move command
     parser_move = subparsers.add_parser(

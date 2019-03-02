@@ -91,14 +91,15 @@ def _format_title(title, file_words):
 def _fts_version():
     options = sqlite3.connect(':memory:') \
             .execute('pragma compile_options').fetchall()
-    if ('ENABLE_FTS5',) in options:
+    if ('ENABLE_FTS5', ) in options:
         return 'fts5'
     return 'fts4'
 
 
 def _publish_blog_dir(dir_):
     # pelican
-    os.system(f'cd "{os.path.join(BASE_DIR, dir_)}" && pelican . -s pconf_sd.py')
+    os.system(
+        f'cd "{os.path.join(BASE_DIR, dir_)}" && pelican . -s pconf_sd.py')
     # git push
     os.system(f'cd "{BASE_DIR}" && ./git.sh {dir_}')
     print('\n' + DASHES)
@@ -107,7 +108,6 @@ def _publish_blog_dir(dir_):
 
 
 class Blogger:
-
     def __init__(self, db: str = ''):
         """Create an instance of Blogger.
 
@@ -285,7 +285,8 @@ class Blogger:
 
     def move(self, post, target):
         if target in (EN, CN, MISC):
-            target = os.path.join(BASE_DIR, target, 'content', os.path.basename(post))
+            target = os.path.join(BASE_DIR, target, 'content',
+                                  os.path.basename(post))
         if post == target:
             return
         shutil.move(post, target)
@@ -304,7 +305,8 @@ class Blogger:
             fout.writelines('Status: published\n')
             fout.writelines(f'Date: {NOW_DASH}\n')
             fout.writelines('Author: Benjamin Du\n')
-            fout.writelines('Slug: {}\n'.format(title.replace(' ', '-').replace('/', '-')))
+            fout.writelines('Slug: {}\n'.format(
+                title.replace(' ', '-').replace('/', '-')))
             fout.writelines(f'Title: {_format_title(title, file_words)}\n')
             fout.writelines('Category: Programming\n')
             fout.writelines('Tags: programming\n')
@@ -348,7 +350,8 @@ class Blogger:
         """
         # find all posts and get rid of leading dates
         sql = 'SELECT path FROM posts WHERE path LIKE ? AND dir = ?'
-        row = self._conn.execute(sql, [f'%{_slug(title)}.markdown', dir_]).fetchone()
+        row = self._conn.execute(
+            sql, [f'%{_slug(title)}.markdown', dir_]).fetchone()
         if row:
             return row[0]
         return ''
@@ -505,10 +508,12 @@ def search(blogger, args):
         args.neg_sub_dir = ', '.join(f"'{cat}'" for cat in args.neg_catgories)
         filter_.append(f'category NOT IN ({args.neg_categories})')
     if args.tags:
-        args.tags = ''.join(f'% {tag},%' for tag in args.tags).replace('%%', '%')
+        args.tags = ''.join(f'% {tag},%' for tag in args.tags).replace(
+            '%%', '%')
         filter_.append(f"tags LIKE '{args.tags}'")
     if args.neg_tags:
-        args.neg_tags = ''.join(f'% {tag},%' for tag in args.neg_tags).replace('%%', '%')
+        args.neg_tags = ''.join(f'% {tag},%' for tag in args.neg_tags).replace(
+            '%%', '%')
         filter_.append(f"tags NOT LIKE '{args.neg_tags}'")
     if args.status:
         args.status = ', '.join(f"'{stat}'" for stat in args.status)
@@ -528,7 +533,10 @@ def search(blogger, args):
     args.neg_title = ' '.join(args.neg_title)
     if args.neg_title:
         filter_.append(f"title NOT LIKE '%{args.neg_title}%'")
-    args.phrase = [token for token in args.phrase if token.lower() != 'the' and token.lower() != 'a']
+    args.phrase = [
+        token for token in args.phrase
+        if token.lower() != 'the' and token.lower() != 'a'
+    ]
     blogger.search(' '.join(args.phrase), ' AND '.join(filter_), args.dry_run)
     show(blogger, args)
 
@@ -612,9 +620,7 @@ def update(blogger, args):
 
 
 def git(blogger, args):
-    mapping = {
-            'status': 'git status'
-        }
+    mapping = {'status': 'git status'}
     os.system(mapping[args.sub_cmd])
 
 
@@ -636,11 +642,13 @@ def parse_args(args=None, namespace=None):
     """Parse command-line arguments for the blogging util.
     """
     INDEXES = [''] + [str(i) for i in range(1, 11)]
-    parser = ArgumentParser(
-        description='Write blog in command line.')
+    parser = ArgumentParser(description='Write blog in command line.')
     subparsers = parser.add_subparsers(dest='sub_cmd', help='Sub commands.')
     # parser for the update_tags command
-    parser_utag = subparsers.add_parser('update_tags', aliases=['utag' + i for i in INDEXES], help='update tags of posts.')
+    parser_utag = subparsers.add_parser(
+        'update_tags',
+        aliases=['utag' + i for i in INDEXES],
+        help='update tags of posts.')
     parser_utag.add_argument(
         '-i',
         '--indexes',
@@ -669,7 +677,10 @@ def parse_args(args=None, namespace=None):
         help='the tag to change to.')
     parser_utag.set_defaults(func=update_tags)
     # parser for the update_category command
-    parser_ucat = subparsers.add_parser('update_category', aliases=['ucat' + i for i in INDEXES], help='update category of posts.')
+    parser_ucat = subparsers.add_parser(
+        'update_category',
+        aliases=['ucat' + i for i in INDEXES],
+        help='update category of posts.')
     parser_ucat.add_argument(
         '-i',
         '--indexes',
@@ -698,7 +709,8 @@ def parse_args(args=None, namespace=None):
         help='the category to change to.')
     parser_ucat.set_defaults(func=update_category)
     # parser for the tags command
-    parser_tags = subparsers.add_parser('tags', aliases=['t'], help='List all tags and their frequencies.')
+    parser_tags = subparsers.add_parser(
+        'tags', aliases=['t'], help='List all tags and their frequencies.')
     parser_tags.add_argument(
         '-w',
         '---where',
@@ -710,10 +722,15 @@ def parse_args(args=None, namespace=None):
         '---dir',
         dest='sub_dir',
         default='',
-        help='The sub blog directory to list categories; by default list all categories.')
+        help=
+        'The sub blog directory to list categories; by default list all categories.'
+    )
     parser_tags.set_defaults(func=tags)
     # parser for the categories command
-    parser_cats = subparsers.add_parser('cats', aliases=['c'], help='List all categories and their frequencies.')
+    parser_cats = subparsers.add_parser(
+        'cats',
+        aliases=['c'],
+        help='List all categories and their frequencies.')
     parser_cats.add_argument(
         '-w',
         '---where',
@@ -725,16 +742,21 @@ def parse_args(args=None, namespace=None):
         '---dir',
         dest='sub_dir',
         default='',
-        help='The sub blog directory to list categories; by default list all categories.')
+        help=
+        'The sub blog directory to list categories; by default list all categories.'
+    )
     parser_cats.set_defaults(func=categories)
     # parser for the update command
-    parser_update = subparsers.add_parser('update', aliases=['u'], help='Update information of changed posts.')
+    parser_update = subparsers.add_parser(
+        'update', aliases=['u'], help='Update information of changed posts.')
     parser_update.set_defaults(func=update)
     # parser for the reload command
-    parser_reload = subparsers.add_parser('reload', aliases=['r'], help='Reload information of posts.')
+    parser_reload = subparsers.add_parser(
+        'reload', aliases=['r'], help='Reload information of posts.')
     parser_reload.set_defaults(func=reload)
     # parser for the show command
-    parser_list = subparsers.add_parser('list', aliases=['l'], help='List last search results.')
+    parser_list = subparsers.add_parser(
+        'list', aliases=['l'], help='List last search results.')
     parser_list.add_argument(
         '-n',
         dest='n',
@@ -863,7 +885,8 @@ def parse_args(args=None, namespace=None):
         help='number of matched records to show.')
     parser_search.set_defaults(func=search)
     # parser for the add command
-    parser_add = subparsers.add_parser('add', aliases=['a'], help='Add a new post.')
+    parser_add = subparsers.add_parser(
+        'add', aliases=['a'], help='Add a new post.')
     parser_add.add_argument(
         '-g',
         '--gp-open',
@@ -896,12 +919,11 @@ def parse_args(args=None, namespace=None):
         const=CN,
         help='create a post in the cn sub blog directory.')
     parser_add.add_argument(
-        'title',
-        nargs='+',
-        help='title of the post to be created.')
+        'title', nargs='+', help='title of the post to be created.')
     parser_add.set_defaults(func=add)
     # parser for the edit command
-    parser_edit = subparsers.add_parser('edit', aliases=['e' + i for i in INDEXES], help='edit a post.')
+    parser_edit = subparsers.add_parser(
+        'edit', aliases=['e' + i for i in INDEXES], help='edit a post.')
     parser_edit.add_argument(
         '-g',
         '--gp-open',
@@ -925,13 +947,11 @@ def parse_args(args=None, namespace=None):
         type=int,
         help='rowid in the search results.')
     parser_edit.add_argument(
-        '-f',
-        '--file',
-        dest='file',
-        help='path of the post to be edited.')
+        '-f', '--file', dest='file', help='path of the post to be edited.')
     parser_edit.set_defaults(func=edit)
     # parser for the move command
-    parser_move = subparsers.add_parser('move', aliases=['m' + i for i in INDEXES], help='Move a post.')
+    parser_move = subparsers.add_parser(
+        'move', aliases=['m' + i for i in INDEXES], help='Move a post.')
     parser_move.add_argument(
         '-i',
         '--index',
@@ -939,10 +959,7 @@ def parse_args(args=None, namespace=None):
         type=int,
         help='rowid in the search results.')
     parser_move.add_argument(
-        '-f',
-        '--file',
-        dest='file',
-        help='path of the post to be moved.')
+        '-f', '--file', dest='file', help='path of the post to be moved.')
     parser_move.add_argument(
         '-t',
         '--target',
@@ -972,7 +989,8 @@ def parse_args(args=None, namespace=None):
         help='move to the misc sub blog directory.')
     parser_move.set_defaults(func=move)
     # parser for the publish command
-    parser_publish = subparsers.add_parser('publish', aliases=['p'], help='Publish the blog.')
+    parser_publish = subparsers.add_parser(
+        'publish', aliases=['p'], help='Publish the blog.')
     parser_publish.add_argument(
         '-c',
         '--cn',
@@ -997,7 +1015,10 @@ def parse_args(args=None, namespace=None):
         help='add the misc sub blog directory into the publish list.')
     parser_publish.set_defaults(func=publish)
     # parser for the remove command
-    parser_delete = subparsers.add_parser('delete', aliases=['d' + i for i in INDEXES], help='Delete a post/page.')
+    parser_delete = subparsers.add_parser(
+        'delete',
+        aliases=['d' + i for i in INDEXES],
+        help='Delete a post/page.')
     parser_delete.add_argument(
         '-i',
         '--index',
@@ -1005,26 +1026,26 @@ def parse_args(args=None, namespace=None):
         type=int,
         help='rowid of the file (in the search results) to delete.')
     parser_delete.add_argument(
-        '-f',
-        '--file',
-        dest='file',
-        help='path of the post to delete.')
+        '-f', '--file', dest='file', help='path of the post to delete.')
     parser_delete.set_defaults(func=delete)
     # parser for the query command
-    parser_query = subparsers.add_parser('query', aliases=['q'], help='Run a SQL query.')
-    parser_query.add_argument(
-        'sql',
-        nargs='+',
-        help='the SQL to run')
+    parser_query = subparsers.add_parser(
+        'query', aliases=['q'], help='Run a SQL query.')
+    parser_query.add_argument('sql', nargs='+', help='the SQL to run')
     parser_query.set_defaults(func=query)
     # parser for the auto_git_push command
-    parser_auto = subparsers.add_parser('auto_git_push', aliases=['auto', 'agp', 'ap'], help='Run a SQL query.')
+    parser_auto = subparsers.add_parser(
+        'auto_git_push',
+        aliases=['auto', 'agp', 'ap'],
+        help='Run a SQL query.')
     parser_auto.set_defaults(func=auto_git_push)
     # parser for the vim command
-    parser_vim = subparsers.add_parser('vim', aliases=['v'], help='Install SpaceVim.')
+    parser_vim = subparsers.add_parser(
+        'vim', aliases=['v'], help='Install SpaceVim.')
     parser_vim.set_defaults(func=install_vim)
     # parser for the status command
-    parser_status = subparsers.add_parser('status', help='The git status command.')
+    parser_status = subparsers.add_parser(
+        'status', help='The git status command.')
     parser_status.set_defaults(func=git)
     # parse and run
     return parser.parse_args(args=args, namespace=namespace)

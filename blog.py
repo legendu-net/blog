@@ -35,9 +35,9 @@ def qmarks(n: int):
 
 
 def _changed(post: str, content: str) -> bool:
-    with open(path, 'r') as fin:
+    with open(post, 'r') as fin:
         content_updated = fin.read()
-    return content_updated != content:
+    return content_updated != content
 
 
 def _update_post_move(post):
@@ -342,10 +342,10 @@ class Blogger:
         sql = 'SELECT path, content FROM posts WHERE updated = 1'
         rows = self._conn.execute(sql).fetchall()
         posts_same = [post for post, content in rows if not _changed(post, content)]
-        self._mark_as(updated=0, posts_same)
+        self._mark_as(updated=0, posts=posts_same)
         self._delete_updated()
         posts_updated = [post for post, content in rows if _changed(post, content)]
-        for path, content in post_updated:
+        for path in posts_updated:
             _update_time(path)
             self._load_post(path)
 

@@ -646,6 +646,7 @@ def git(blogger, args):
 
 
 def auto_git_push(blogger, args):
+    update(blogger, args)
     cmd = f'git add {BASE_DIR}'
     os.system(cmd)
     cmd = 'git commit -m ...'

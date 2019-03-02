@@ -30,6 +30,16 @@ BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 INDEXES = [''] + [str(i) for i in range(1, 11)]
 
 
+def qmarks(n: int):
+    return ', '.join(['?'] * n)
+
+
+def _changed(post: str, content: str) -> bool:
+    with open(path, 'r') as fin:
+        content_updated = fin.read()
+    return content_updated != content:
+
+
 def _update_post_move(post):
     """ Update the post after move.
     There are two possible change.
@@ -298,10 +308,9 @@ class Blogger:
     def edit(self, posts: Union[str, List[str]], editor: str) -> None:
         if isinstance(posts, str):
             posts = [posts]
-        posts = ["'" + p + "'" for p in posts]
-        sql = f'UPDATE posts SET updated = 1 WHERE path in ({",".join(posts)})'
-        self._conn.execute(sql)
-        os.system(f'{editor} {" ".join(posts)}')
+        self._mark_as(updated=1, posts=posts)
+        posts = ' '.join(f"'{p}'" for p in posts)
+        os.system(f'{editor} {posts}')
 
     def _create_post(self, post, title):
         file_words = os.path.join(BASE_DIR, 'words.json')
@@ -317,21 +326,28 @@ class Blogger:
             if blog_dir(post) == MISC:
                 fout.writelines(DECLARATION)
 
+    def _mark_as(self, updated: int, posts: Union[str, List[str]]):
+        if isinstance(posts, str):
+            posts = [posts]
+        sql = f'UPDATE posts SET updated = ? WHERE path in ({qmarks(len(posts))})'
+        self._conn.execute(sql, [updated] + posts)
+
+    def _delete_updated(self) -> None:
+        sql = 'DELETE FROM posts WHERE updated = 1'
+        self._conn.execute(sql)
+
     def update(self):
         """Update information of the changed posts.
         """
         sql = 'SELECT path, content FROM posts WHERE updated = 1'
         rows = self._conn.execute(sql).fetchall()
-        sql = 'DELETE FROM posts WHERE updated = 1'
-        self._conn.execute(sql)
-        for row in rows:
-            path = row[0]
-            content = row[1]
-            with open(path, 'r') as fin:
-                content_0 = fin.read()
-            if content != content_0:
-                _update_time(path)
-                self._load_post(path)
+        posts_same = [post for post, content in rows if not _changed(post, content)]
+        self._mark_as(updated=0, posts_same)
+        self._delete_updated()
+        posts_updated = [post for post, content in rows if _changed(post, content)]
+        for path, content in post_updated:
+            _update_time(path)
+            self._load_post(path)
 
     def clear_srps(self):
         sql = 'DELETE FROM srps'

@@ -1,6 +1,5 @@
-UUID: 9fefd265-56e3-464b-9b7a-4579c7ad556b
 Status: published
-Date: 2019-02-20 23:39:46
+Date: 2019-03-02 00:12:47
 Author: Ben Chuanlong Du
 Slug: pycharm-tip
 Title: Pycharm Tip
@@ -38,3 +37,5 @@ but rather for convenient reference of the author and future improvement.
 ## References
 
 https://stackoverflow.com/questions/34412739/set-the-font-size-in-pycharms-python-console-or-terminal
+
+https://www.jetbrains.com/help/pycharm/creating-and-registering-file-types.html

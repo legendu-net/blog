@@ -1,6 +1,5 @@
-UUID: 2bfbca23-84a4-4771-ad9e-b689909b1b63
 Status: published
-Date: 2018-12-02 19:39:26
+Date: 2019-03-01 23:22:02
 Author: Ben Chuanlong Du
 Slug: tridactyl-tips
 Title: Tridactyl Tips
@@ -14,6 +13,7 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-:mode ignore temporarily disables Tridactyl on the page. 
-ctrl/cmd + g: next search result
-shift + ctrl/cmd + g: previous search result
+`:mode ignore`: temporarily disables Tridactyl on a page.
+`ctrl + alt + esc`: toggle ignore on/off on Mac
+`ctrl/cmd + g`: next search result
+`shift + ctrl/cmd + g`: previous search result

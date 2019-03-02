@@ -32,7 +32,8 @@ BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 def _update_post_move(post):
     """ Update the post after move.
     There are two possible change.
-    First, the declaration might be added/removed depending on whether the post is moved to the misc sub blog directory.
+    First, the declaration might be added/removed
+    depending on whether the post is moved to the misc sub blog directory.
     Second, the slug of the post is updated to match the path of the post.
     """
     # slug = 'Slug: ' + _slug(os.path.basename(post)[11:])
@@ -88,7 +89,8 @@ def _format_title(title, file_words):
 
 
 def _fts_version():
-    options = sqlite3.connect(':memory:').execute('pragma compile_options').fetchall()
+    options = sqlite3.connect(':memory:') \
+            .execute('pragma compile_options').fetchall()
     if ('ENABLE_FTS5',) in options:
         return 'fts5'
     return 'fts4'
@@ -102,6 +104,7 @@ def _publish_blog_dir(dir_):
     print('\n' + DASHES)
     print('Please consider COMMITTING THE SOURCE CODE as well!')
     print(DASHES + '\n')
+
 
 class Blogger:
 
@@ -128,7 +131,17 @@ class Blogger:
     def _create_vtable_posts(self):
         sql = f'''
         CREATE VIRTUAL TABLE IF NOT EXISTS posts USING {self._fts} (
-            path, dir, status, date, author, slug, title, category, tags, content, updated
+            path,
+            dir,
+            status,
+            date,
+            author,
+            slug,
+            title,
+            category,
+            tags,
+            content,
+            updated
         )
         '''
         self._conn.execute(sql)
@@ -136,7 +149,17 @@ class Blogger:
     def _create_table_srps(self):
         sql = '''
         CREATE TABLE IF NOT EXISTS srps (
-            path, dir, status, date, author, slug, title, category, tags, content, updated
+            path,
+            dir,
+            status,
+            date,
+            author,
+            slug,
+            title,
+            category,
+            tags,
+            content,
+            updated
         )
         '''
         self._conn.execute(sql)
@@ -222,7 +245,17 @@ class Blogger:
         content = ''.join(lines)
         sql = '''
         INSERT INTO posts (
-            path, dir, status, date, author, slug, title, category, tags, content, updated
+            path,
+            dir,
+            status,
+            date,
+            author,
+            slug,
+            title,
+            category,
+            tags,
+            content,
+            updated
         ) VALUES (
             ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
         )
@@ -583,6 +616,15 @@ def git(blogger, args):
             'status': 'git status'
         }
     os.system(mapping[args.sub_cmd])
+
+
+def auto_git_push(blogger, args):
+    cmd = f'git add {BASE_DIR}'
+    os.system(cmd)
+    cmd = 'git commit -m ...'
+    os.system(cmd)
+    cmd = 'git push origin master'
+    os.system(cmd)
 
 
 def install_vim(blogger, args):
@@ -975,6 +1017,9 @@ def parse_args(args=None, namespace=None):
         nargs='+',
         help='the SQL to run')
     parser_query.set_defaults(func=query)
+    # parser for the auto_git_push command
+    parser_auto = subparsers.add_parser('auto_git_push', aliases=['auto', 'agp', 'ap'], help='Run a SQL query.')
+    parser_auto.set_defaults(func=auto_git_push)
     # parser for the vim command
     parser_vim = subparsers.add_parser('vim', aliases=['v'], help='Install SpaceVim.')
     parser_vim.set_defaults(func=install_vim)

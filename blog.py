@@ -682,11 +682,11 @@ def parse_args(args=None, namespace=None):
 
 def _subparse_utag(subparsers):
     # parser for the update_tags command
-    parser_utag = subparsers.add_parser(
+    subparser_utag = subparsers.add_parser(
         'update_tags',
         aliases=['utag' + i for i in INDEXES],
         help='update tags of posts.')
-    parser_utag.add_argument(
+    subparser_utag.add_argument(
         '-i',
         '--indexes',
         nargs='+',
@@ -694,34 +694,34 @@ def _subparse_utag(subparsers):
         type=int,
         default=(),
         help='row IDs in the search results.')
-    parser_utag.add_argument(
+    subparser_utag.add_argument(
         '--files',
         nargs='+',
         dest='files',
         default=(),
         help='paths of the posts whose categories are to be updated.')
-    parser_utag.add_argument(
+    subparser_utag.add_argument(
         '-f',
         '--from-tag',
         dest='from_tag',
         default='',
         help='the tag to change from.')
-    parser_utag.add_argument(
+    subparser_utag.add_argument(
         '-t',
         '--to-tag',
         dest='to_tag',
         default='',
         help='the tag to change to.')
-    parser_utag.set_defaults(func=update_tags)
+    subparser_utag.set_defaults(func=update_tags)
 
 
 def _subparse_ucat(subparsers):
     # parser for the update_category command
-    parser_ucat = subparsers.add_parser(
+    subparser_ucat = subparsers.add_parser(
         'update_category',
         aliases=['ucat' + i for i in INDEXES],
         help='update category of posts.')
-    parser_ucat.add_argument(
+    subparser_ucat.add_argument(
         '-i',
         '--indexes',
         nargs='+',
@@ -729,37 +729,37 @@ def _subparse_ucat(subparsers):
         type=int,
         default=(),
         help='row IDs in the search results.')
-    parser_ucat.add_argument(
+    subparser_ucat.add_argument(
         '--files',
         nargs='+',
         dest='files',
         default=(),
         help='paths of the posts whose categories are to be updated.')
-    parser_ucat.add_argument(
+    subparser_ucat.add_argument(
         '-f',
         '--from-category',
         dest='from_cat',
         default='',
         help='the category to change from.')
-    parser_ucat.add_argument(
+    subparser_ucat.add_argument(
         '-t',
         '--to-category',
         dest='to_cat',
         default='',
         help='the category to change to.')
-    parser_ucat.set_defaults(func=update_category)
+    subparser_ucat.set_defaults(func=update_category)
 
 
 def _subparse_tags(subparsers):
-    parser_tags = subparsers.add_parser(
+    subparser_tags = subparsers.add_parser(
         'tags', aliases=['t'], help='List all tags and their frequencies.')
-    parser_tags.add_argument(
+    subparser_tags.add_argument(
         '-w',
         '---where',
         dest='where',
         default='',
         help='A user-specified filtering condition.')
-    parser_tags.add_argument(
+    subparser_tags.add_argument(
         '-d',
         '---dir',
         dest='sub_dir',
@@ -767,21 +767,21 @@ def _subparse_tags(subparsers):
         help=
         'The sub blog directory to list categories; by default list all categories.'
     )
-    parser_tags.set_defaults(func=tags)
+    subparser_tags.set_defaults(func=tags)
 
 
 def _subparse_cats(subparsers):
-    parser_cats = subparsers.add_parser(
+    subparser_cats = subparsers.add_parser(
         'cats',
         aliases=['c'],
         help='List all categories and their frequencies.')
-    parser_cats.add_argument(
+    subparser_cats.add_argument(
         '-w',
         '---where',
         dest='where',
         default='',
         help='A user-specified filtering condition.')
-    parser_cats.add_argument(
+    subparser_cats.add_argument(
         '-d',
         '---dir',
         dest='sub_dir',
@@ -789,53 +789,53 @@ def _subparse_cats(subparsers):
         help=
         'The sub blog directory to list categories; by default list all categories.'
     )
-    parser_cats.set_defaults(func=categories)
+    subparser_cats.set_defaults(func=categories)
 
 
 def _subparse_update(subparsers):
-    parser_update = subparsers.add_parser(
+    subparser_update = subparsers.add_parser(
         'update', aliases=['u'], help='Update information of changed posts.')
-    parser_update.set_defaults(func=update)
+    subparser_update.set_defaults(func=update)
 
 
 def _subparse_reload(subparsers):
-    parser_reload = subparsers.add_parser(
+    subparser_reload = subparsers.add_parser(
         'reload', aliases=['r'], help='Reload information of posts.')
-    parser_reload.set_defaults(func=reload)
+    subparser_reload.set_defaults(func=reload)
 
 
 def _subparse_list(subparsers):
-    parser_list = subparsers.add_parser(
+    subparser_list = subparsers.add_parser(
         'list', aliases=['l'], help='List last search results.')
-    parser_list.add_argument(
+    subparser_list.add_argument(
         '-n',
         dest='n',
         type=int,
         default=10,
         help='Number of matched records to show.')
-    parser_list.add_argument(
+    subparser_list.add_argument(
         '-F',
         '--full-path',
         dest='full_path',
         action='store_true',
         help='whether to show full (instead of short/relative) path.')
-    parser_list.set_defaults(func=show)
+    subparser_list.set_defaults(func=show)
 
 
 def _subparse_search(subparsers):
-    parser_search = subparsers.add_parser('search', aliases=['s'],
+    subparser_search = subparsers.add_parser('search', aliases=['s'],
         help='Search for posts. '
             'Tokens separated by spaces ( ) or plus signs (+) in the search phrase '
             'are matched in order with tokens in the text. '
             'ORDERLESS match of tokens can be achieved by separating them with the AND keyword. '
             'You can also limit match into specific columns. '
             'For more information, please refer to https://sqlite.org/fts5.html')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         '--dry-run',
         dest='dry_run',
         action='store_true',
         help='print out the SQL query without running it.')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         'phrase',
         nargs='+',
         default=(),
@@ -844,116 +844,116 @@ def _subparse_search(subparsers):
             'which can be used as a hack way to make phrase optional. '
             'For example if you want to filter by category only without constraints on full-text search, '
             'you can use ./blog.py a -c some_category.')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         '-i',
         '--title',
         nargs='+',
         dest='title',
         default='',
         help='search for posts with the sepcified title.')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         '-I',
         '--neg-title',
         nargs='+',
         dest='neg_title',
         default='',
         help='search for posts without the sepcified title.')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         '-a',
         '--author',
         nargs='+',
         dest='author',
         default='',
         help='search for posts with the sepcified author.')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         '-A',
         '--neg-author',
         nargs='+',
         dest='neg_author',
         default='',
         help='search for posts without the sepcified author.')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         '-s',
         '--status',
         nargs='+',
         dest='status',
         default='',
         help='search for posts with the sepcified status.')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         '-S',
         '--neg-status',
         nargs='+',
         dest='neg_status',
         default='',
         help='search for posts without the sepcified status.')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         '-t',
         '--tags',
         nargs='+',
         dest='tags',
         default='',
         help='search for posts with the sepcified tags.')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         '-T',
         '--neg-tags',
         nargs='+',
         dest='neg_tags',
         default='',
         help='search for posts without the sepcified tags.')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         '-c',
         '--categories',
         nargs='+',
         dest='categories',
         default='',
         help='search for posts with the sepcified categories.')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         '-C',
         '--neg-categories',
         nargs='+',
         dest='neg_categories',
         default='',
         help='search for posts without the sepcified categories.')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         '-d',
         '--sub-dir',
         dest='sub_dir',
         nargs='+',
         default='',
         help='search for posts in the specified sub blog directory.')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         '-D',
         '--neg-sub-dir',
         dest='neg_sub_dir',
         nargs='+',
         default='',
         help='search for posts not in the specified sub blog directory.')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         '-f',
         '--filter',
         dest='filter',
         nargs='+',
         default=(),
         help='futher filtering conditions in addition to the full-text match.')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         '-n',
         dest='n',
         type=int,
         default=10,
         help='number of matched records to show.')
-    parser_search.add_argument(
+    subparser_search.add_argument(
         '-F',
         '--full-path',
         dest='full_path',
         action='store_true',
         help='whether to show full (instead of short/relative) path.')
-    parser_search.set_defaults(func=search)
+    subparser_search.set_defaults(func=search)
 
 
 def _subparse_add(subparsers):
-    parser_add = subparsers.add_parser(
+    subparser_add = subparsers.add_parser(
         'add', aliases=['a'], help='Add a new post.')
-    parser_add.add_argument(
+    subparser_add.add_argument(
         '-g',
         '--gp-open',
         dest='editor',
@@ -961,7 +961,7 @@ def _subparse_add(subparsers):
         const='gp open',
         default=EDITOR,
         help='edit the post using vim.')
-    parser_add.add_argument(
+    subparser_add.add_argument(
         '-v',
         '--vim',
         dest='editor',
@@ -969,7 +969,7 @@ def _subparse_add(subparsers):
         const='vim',
         default=EDITOR,
         help='edit the post using vim.')
-    parser_add.add_argument(
+    subparser_add.add_argument(
         '-e',
         '--en',
         dest='sub_dir',
@@ -977,22 +977,22 @@ def _subparse_add(subparsers):
         const=EN,
         default=MISC,
         help='create a post in the en sub blog directory.')
-    parser_add.add_argument(
+    subparser_add.add_argument(
         '-c',
         '--cn',
         dest='sub_dir',
         action='store_const',
         const=CN,
         help='create a post in the cn sub blog directory.')
-    parser_add.add_argument(
+    subparser_add.add_argument(
         'title', nargs='+', help='title of the post to be created.')
-    parser_add.set_defaults(func=add)
+    subparser_add.set_defaults(func=add)
 
 
 def _subparse_edit(subparsers):
-    parser_edit = subparsers.add_parser(
+    subparser_edit = subparsers.add_parser(
         'edit', aliases=['e' + i for i in INDEXES], help='edit a post.')
-    parser_edit.add_argument(
+    subparser_edit.add_argument(
         '-g',
         '--gp-open',
         dest='editor',
@@ -1000,7 +1000,7 @@ def _subparse_edit(subparsers):
         const='gp open',
         default=EDITOR,
         help='edit the post using vim.')
-    parser_edit.add_argument(
+    subparser_edit.add_argument(
         '-v',
         '--vim',
         dest='editor',
@@ -1008,63 +1008,63 @@ def _subparse_edit(subparsers):
         const='vim',
         default=EDITOR,
         help='edit the post using vim.')
-    parser_edit.add_argument(
+    subparser_edit.add_argument(
         '-i',
         '--indexes',
         dest='indexes',
         nargs='+',
         type=int,
         help='row IDs in the search results.')
-    parser_edit.add_argument(
+    subparser_edit.add_argument(
         '-f', '--files', dest='files', help='path of the post to be edited.')
-    parser_edit.set_defaults(func=edit)
+    subparser_edit.set_defaults(func=edit)
 
 
 def _subparse_move(subparsers):
-    parser_move = subparsers.add_parser(
+    subparser_move = subparsers.add_parser(
         'move', aliases=['m' + i for i in INDEXES], help='Move a post.')
-    parser_move.add_argument(
+    subparser_move.add_argument(
         '-i',
         '--index',
         dest='index',
         type=int,
         help='rowid in the search results.')
-    parser_move.add_argument(
+    subparser_move.add_argument(
         '-f', '--file', dest='file', help='path of the post to be moved.')
-    parser_move.add_argument(
+    subparser_move.add_argument(
         '-t',
         '--target',
         dest='target',
         default=MISC,
         help='path of destination file')
-    parser_move.add_argument(
+    subparser_move.add_argument(
         '-c',
         '--cn',
         dest='target',
         action='store_const',
         const=CN,
         help='move to the cn sub blog directory.')
-    parser_move.add_argument(
+    subparser_move.add_argument(
         '-e',
         '--en',
         dest='target',
         action='store_const',
         const=EN,
         help='move to the en sub blog directory.')
-    parser_move.add_argument(
+    subparser_move.add_argument(
         '-m',
         '--misc',
         dest='target',
         action='store_const',
         const=MISC,
         help='move to the misc sub blog directory.')
-    parser_move.set_defaults(func=move)
+    subparser_move.set_defaults(func=move)
 
 
 def _subparse_publish(subparsers):
-    parser_publish = subparsers.add_parser(
+    subparser_publish = subparsers.add_parser(
         'publish', aliases=['p'], help='Publish the blog.')
-    parser_publish.add_argument(
+    subparser_publish.add_argument(
         '-c',
         '--cn',
         dest='sub_dirs',
@@ -1072,64 +1072,64 @@ def _subparse_publish(subparsers):
         const=CN,
         default=[HOME],
         help='add the cn sub blog directory into the publish list.')
-    parser_publish.add_argument(
+    subparser_publish.add_argument(
         '-e',
         '--en',
         dest='sub_dirs',
         action='append_const',
         const=EN,
         help='add the en sub blog directory into the publish list.')
-    parser_publish.add_argument(
+    subparser_publish.add_argument(
         '-m',
         '--misc',
         dest='sub_dirs',
         action='append_const',
         const=MISC,
         help='add the misc sub blog directory into the publish list.')
-    parser_publish.set_defaults(func=publish)
+    subparser_publish.set_defaults(func=publish)
 
 
 def _subparse_delete(subparsers):
-    parser_delete = subparsers.add_parser(
+    subparser_delete = subparsers.add_parser(
         'delete',
         aliases=['d' + i for i in INDEXES],
         help='Delete a post/page.')
-    parser_delete.add_argument(
+    subparser_delete.add_argument(
         '-i',
         '--indexes',
         dest='indexes',
         type=int,
         help='row IDs of the files (in the search results) to delete.')
-    parser_delete.add_argument(
+    subparser_delete.add_argument(
         '-f', '--files', dest='files', help='paths of the posts to delete.')
-    parser_delete.set_defaults(func=delete)
+    subparser_delete.set_defaults(func=delete)
 
 
 def _subparse_query(subparsers):
-    parser_query = subparsers.add_parser(
+    subparser_query = subparsers.add_parser(
         'query', aliases=['q'], help='Run a SQL query.')
-    parser_query.add_argument('sql', nargs='+', help='the SQL to run')
-    parser_query.set_defaults(func=query)
+    subparser_query.add_argument('sql', nargs='+', help='the SQL to run')
+    subparser_query.set_defaults(func=query)
 
 
 def _subparse_auto(subparsers):
-    parser_auto = subparsers.add_parser(
+    subparser_auto = subparsers.add_parser(
         'auto_git_push',
         aliases=['auto', 'agp', 'ap'],
         help='Run a SQL query.')
-    parser_auto.set_defaults(func=auto_git_push)
+    subparser_auto.set_defaults(func=auto_git_push)
 
 
 def _subparse_space_vim(subparsers):
-    parser_vim = subparsers.add_parser(
+    subparser_vim = subparsers.add_parser(
         'space_vim', aliases=['isv', 'sv', 'svim'], help='Install SpaceVim.')
-    parser_vim.set_defaults(func=install_vim)
+    subparser_vim.set_defaults(func=install_vim)
 
 
 def _subparse_git(subparsers):
-    parser_status = subparsers.add_parser(
+    subparser_status = subparsers.add_parser(
         'status', help='The git status command.')
-    parser_status.set_defaults(func=git)
+    subparser_status.set_defaults(func=git)
 
 
 if __name__ == '__main__':

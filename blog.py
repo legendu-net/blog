@@ -562,9 +562,14 @@ def search(blogger, args):
     show(blogger, args)
 
 
-def show(blogger, args):
-    for row in blogger.fetch(args.n):
-        print('{id}: {path}'.format(id=row[0], path=row[1]))
+def _disp_path(path: str, full: bool = True) -> str:
+    return path if full else path.replace(BASE_DIR + '/', '') 
+
+
+def show(blogger, args) -> None:
+    for id, path in blogger.fetch(args.n):
+        path = _disp_path(path, full=args.short)
+        print(f'{id}: {path}')
 
 
 def reload(blogger, args):
@@ -818,6 +823,12 @@ def _subparse_list(subparsers):
         type=int,
         default=10,
         help='Number of matched records to show.')
+    parser_list.add_argument(
+        '-f',
+        '--full-path',
+        dest='full',
+        action='store_true',
+        help='whether to show full (instead of short/relative) path.')
     parser_list.set_defaults(func=show)
 
 

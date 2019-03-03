@@ -691,7 +691,7 @@ def clear(blogger, args):
 def _subparse_clear(subparsers):
     subparser_clear = subparsers.add_parser(
         'clear', aliases=['c'], help='Remove the underlying SQLite3 database.')
-    subparser_tags.set_defaults(func=clear)
+    subparser_clear.set_defaults(func=clear)
 
 
 def _subparse_utag(subparsers):

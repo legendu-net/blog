@@ -165,6 +165,9 @@ class Blogger:
         '''
         self._conn.execute(sql)
 
+    def clear(self):
+        os.remove(self._db)
+
     def commit(self):
         self._conn.commit()
 
@@ -677,7 +680,18 @@ def parse_args(args=None, namespace=None):
     _subparse_auto(subparsers)
     _subparse_space_vim(subparsers)
     _subparse_git(subparsers)
+    _subparse_clear(subparsers)
     return parser.parse_args(args=args, namespace=namespace)
+
+
+def clear(blogger, args):
+    blogger.clear()
+
+
+def _subparse_clear(subparsers):
+    subparser_clear = subparsers.add_parser(
+        'clear', aliases=['c'], help='Remove the underlying SQLite3 database.')
+    subparser_tags.set_defaults(func=clear)
 
 
 def _subparse_utag(subparsers):

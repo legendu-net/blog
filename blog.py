@@ -160,17 +160,7 @@ class Blogger:
     def _create_table_srps(self):
         sql = '''
         CREATE TABLE IF NOT EXISTS srps (
-            path,
-            dir,
-            status,
-            date,
-            author,
-            slug,
-            title,
-            category,
-            tags,
-            content,
-            updated
+            path
         )
         '''
         self._conn.execute(sql)
@@ -391,7 +381,7 @@ class Blogger:
         sql = f'''
             INSERT INTO srps
             SELECT
-                *
+                path
             FROM
                 posts
             {where}
@@ -415,7 +405,7 @@ class Blogger:
 
         :param n: the number of results to fetch.
         """
-        sql = 'SELECT rowid, * FROM srps LIMIT {}'.format(n)
+        sql = 'SELECT rowid, path FROM srps LIMIT {}'.format(n)
         return self._conn.execute(sql).fetchall()
 
     def query(self, sql: str):
@@ -568,7 +558,7 @@ def _disp_path(path: str, full: bool = True) -> str:
 
 def show(blogger, args) -> None:
     for id, path in blogger.fetch(args.n):
-        path = _disp_path(path, full=args.short)
+        path = _disp_path(path, full=args.full_path)
         print(f'{id}: {path}')
 
 
@@ -824,9 +814,9 @@ def _subparse_list(subparsers):
         default=10,
         help='Number of matched records to show.')
     parser_list.add_argument(
-        '-f',
+        '-F',
         '--full-path',
-        dest='full',
+        dest='full_path',
         action='store_true',
         help='whether to show full (instead of short/relative) path.')
     parser_list.set_defaults(func=show)
@@ -951,6 +941,12 @@ def _subparse_search(subparsers):
         type=int,
         default=10,
         help='number of matched records to show.')
+    parser_search.add_argument(
+        '-F',
+        '--full-path',
+        dest='full_path',
+        action='store_true',
+        help='whether to show full (instead of short/relative) path.')
     parser_search.set_defaults(func=search)
 
 

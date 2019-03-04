@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-02 00:12:47
+Date: 2019-03-04 22:46:22
 Author: Ben Chuanlong Du
 Slug: pycharm-tip
 Title: Pycharm Tip
@@ -27,6 +27,13 @@ but rather for convenient reference of the author and future improvement.
 
 3. Restart terminal (the font size for terminal won't take effect until the terminal is restarted)
 
+## Use Ubuntu Shell as Terminal
+
+1. Install Ubuntu Shell on Windows 10 if it hasn't been installed.
+
+2. File -> Settings -> Tools -> Terminal 
+
+3. Replace the Shell path with `C:\Windows\System32\bash.exe`.
 
 ## Limitations in PyCharm Community Edition
 

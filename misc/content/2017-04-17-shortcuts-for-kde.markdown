@@ -1,6 +1,5 @@
-UUID: cd2d9c67-884a-4af9-9c8c-cacfa3416a3d
 Status: published
-Date: 2017-04-17 09:38:40
+Date: 2019-03-04 08:53:41
 Author: Ben Chuanlong Du
 Slug: shortcuts-for-kde
 Title: Shortcuts for KDE
@@ -14,9 +13,8 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+1. KDE supports the Win/Super key to bring up the application launcher now.
+    If you are on an older KDE distributions which does not have it by default,
+    you can get it enabled by installing the `ksuperkey` package.
 
-1. KDE does not use the Win/Super key to pop up the application launcher menu by default. 
-Instead, `Alt + F1` is used by default. 
-Linux Mint slightly polishes KDE and allows users to bring up the application launcher menu using the Win/Super key.
-If you are on other Linux distributions and do not have feature, 
-you can get it enabled by installing the `ksuperkey` package. 
+2. Win + Arrow to resize windows.

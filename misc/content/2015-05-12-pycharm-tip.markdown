@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-04 22:46:22
+Date: 2019-03-04 23:08:43
 Author: Ben Chuanlong Du
 Slug: pycharm-tip
 Title: Pycharm Tip
@@ -34,6 +34,8 @@ but rather for convenient reference of the author and future improvement.
 2. File -> Settings -> Tools -> Terminal 
 
 3. Replace the Shell path with `C:\Windows\System32\bash.exe`.
+
+https://engineroom.teamwork.com/using-cygwins-bash-terminal-in-a-jetbrains-ide-d22dd71b52b4
 
 ## Limitations in PyCharm Community Edition
 

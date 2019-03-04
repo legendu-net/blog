@@ -1,6 +1,6 @@
 UUID: d9973977-83cd-43d0-9bee-cde1ba8c5c42
 Status: published
-Date: 2017-09-06 08:06:16
+Date: 2019-03-04 23:07:55
 Author: Ben Chuanlong Du
 Slug: wsl-tips
 Title: WSL Tips
@@ -14,27 +14,36 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-[简明的WSL教程](https://zhuanlan.zhihu.com/p/24537874)
+## Installation 
+
+https://devtidbits.com/2017/06/08/run-ubuntu-16-04-on-windows-10-creators-update/
+
+## Access Linux Filesystems from Windows 
+
+https://blogs.msdn.microsoft.com/commandline/2016/11/17/do-not-change-linux-files-using-windows-apps-and-tools/
+
+With the 1903 update, users can access Linux Filesystem from Windows directly.
+
+
+## General Tips
 
 1. [cmder](http://cmder.net/) is a good alternative UI for WSL (and also PowerShell and CMD).
 
-1. All windows disks are mounted under `/mnt`. 
-You can visit all Windows files/directories that do not require admin privilige in WSL. 
-However, 
-if you want to visit files/directories that require admin privilige, 
-you have to run WSL with admin and visit these files/directories using sudo in WSL.
+2. All windows disks are mounted under `/mnt`. 
+    You can visit all Windows files/directories that do not require admin privilige in WSL. 
+    However, 
+    if you want to visit files/directories that require admin privilige, 
+    you have to run WSL with admin and visit these files/directories using sudo in WSL.
 
-2. You'd better use files names that work both in Windows and Linux, 
-otherwise, weird behavior might happen. 
+3. You'd better use files names that work both in Windows and Linux, 
+  otherwise, weird behavior might happen. 
 
-3. Shift + Right Click -> "Open CMD here ..."
+4. Shift + Right Click -> "Open CMD here ..."
 
-4. Starting with Win 10 Creator Update, Ubuntu 16.04 is available. if you installed old Ubuntu bash,
-you need to first uninstall it and then reinstall again to get Ubuntu 16.04.
-Upgrade to Ubuntu 16.04
-https://www.howtogeek.com/278152/how-to-update-the-windows-bash-shell/
-
-https://devtidbits.com/2017/06/08/run-ubuntu-16-04-on-windows-10-creators-update/
+5. Starting with Win 10 Creator Update, Ubuntu 16.04 is available. if you installed old Ubuntu bash,
+    you need to first uninstall it and then reinstall again to get Ubuntu 16.04.
+    Upgrade to Ubuntu 16.04
+    https://www.howtogeek.com/278152/how-to-update-the-windows-bash-shell/
 
 
 
@@ -58,3 +67,6 @@ cannot mount samba in WSL currently.
 samba requires kernelspace while WSL only implements a userspace.
 
 
+## References
+
+[简明的WSL教程](https://zhuanlan.zhihu.com/p/24537874)

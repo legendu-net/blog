@@ -1,6 +1,6 @@
 UUID: 902f18b9-7675-4cfe-9e87-26f56e722fbd
 Status: published
-Date: 2019-02-26 23:10:55
+Date: 2019-03-05 23:00:09
 Author: Ben Chuanlong Du
 Slug: proxychains-tips
 Title: ProxyChains Tips
@@ -14,9 +14,30 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+## Installation
+
+### Ubuntu
+
+```
+wajig install proxychains
+```
+
+### Mac
+
+```
+brew install proxychains-ng
+```
+
 ## Tricks and Traps 
 
 1. Use IP addresses instead of domain names if you do not know how to set up DNS for ProxyChains.
+
+2. no special requirement on .ssh/config
+
+3. socks5 is recommended
+
+4. proxychains ssh -i /path_to_key user@server_ip 
+
 
 ## Example of ProxyChains Configuration
 
@@ -30,10 +51,6 @@ localnet 127.0.0.1/255.0.0.0
 [ProxyList]
 socks5     127.0.0.1 1080
 ```
-
-2. no special requirement on .ssh/config
-
-3. socks5 is recommended
 
 ## Error Message
 
@@ -61,10 +78,9 @@ socks5     127.0.0.1 1080
 
         alias ssh.analytics='ssh analytics_server_ip'
 
-`proxychains4 ssh.analytics` throws the above error message
-while `proxychains4 ssh analytics_server_ip` works well.
+    `proxychains4 ssh.analytics` throws the above error message
+    while `proxychains4 ssh analytics_server_ip` works well.
 
-proxychains ssh -i /path_to_key user@server_ip 
 
 1. There seems to be an issue if ProxyChains is directly in a VM,
 but it works well if used in a Docker on the VM ...

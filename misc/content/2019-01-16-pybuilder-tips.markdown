@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-02 03:10:15
+Date: 2019-03-05 22:54:36
 Author: Ben Chuanlong Du
 Slug: pybuilder-tips
 Title: PyBuilder Tips
@@ -80,13 +80,14 @@ http://pybuilder.github.io/documentation/ide.html#.XHngOZNKjRY
 
 ## use `pybuilder` with `pytest`
 
+
 You need to place
 
-    use_plugin("exec")
+    use_plugin('pypi:pybuilder_pytest')
 
 and
 
-    project.set_property("run_unit_tests_command", "py.test %s" % project.expand_path("$dir_source_unittest_python"))
+    project.get_property("pytest_extra_args").append("-x")
 
 into the file `build.py`.
 

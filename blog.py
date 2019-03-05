@@ -638,11 +638,6 @@ def update(blogger, args):
     blogger.commit()
 
 
-def git(blogger, args):
-    mapping = {'status': 'git status'}
-    os.system(mapping[args.sub_cmd])
-
-
 def auto_git_push(blogger, args):
     update(blogger, args)
     cmd = f'git add {BASE_DIR}'
@@ -679,8 +674,9 @@ def parse_args(args=None, namespace=None):
     _subparse_query(subparsers)
     _subparse_auto(subparsers)
     _subparse_space_vim(subparsers)
-    _subparse_git(subparsers)
     _subparse_clear(subparsers)
+    _subparse_git_status(subparsers)
+    _subparse_git_diff(subparsers)
     return parser.parse_args(args=args, namespace=namespace)
 
 
@@ -1140,10 +1136,25 @@ def _subparse_space_vim(subparsers):
     subparser_vim.set_defaults(func=install_vim)
 
 
-def _subparse_git(subparsers):
+def _subparse_git_status(subparsers):
     subparser_status = subparsers.add_parser(
-        'status', help='The git status command.')
+        'status', 
+        aliases=['st', 'sts'],
+        help='The git status command.')
     subparser_status.set_defaults(func=git)
+
+
+def _subparse_git_diff(subparsers):
+    subparser_status = subparsers.add_parser(
+        'diff', 
+        aliases=['df', 'dif'],
+        help='The git diff command.')
+    subparser_status.set_defaults(func=git)
+
+
+def git(blogger, args):
+    mapping = {'status': 'git status', 'diff': 'git diff'}
+    os.system(mapping[args.sub_cmd])
 
 
 if __name__ == '__main__':

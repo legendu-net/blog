@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-06 03:43:42
+Date: 2019-03-06 04:05:09
 Author: Ben Chuanlong Du
 Slug: python-virtual-environment
 Title: Python Virtual Environment
@@ -55,6 +55,14 @@ optional arguments:
                         environment (pip is bootstrapped by default)
   --prompt PROMPT       Provides an alternative prompt prefix for this
                         environment.
+```
+The virtual environment can be updated by running the module command again 
+with the desired combination of parameters.
+For example, 
+suppose a virtual environment is created using the command `python3 -m venv /path/to/your/environment`,
+you can make it inherit system site-packages by running the following command.
+```bash
+python3 -m venv --system-site-packages /path/to/your/environment
 ```
 
 ## Activate the Virtual Environment

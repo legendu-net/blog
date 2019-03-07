@@ -1,7 +1,6 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-04-17 09:25:41
+Date: 2019-03-07 19:22:21
 Slug: wajig-tips
 Title: Wajig Tips
 Category: Software
@@ -56,7 +55,6 @@ instead of typing `wajig` every time.
 6. To install backport packages, use
 
         wajig install libreoffice/wheezy-backports
-        wajig -t install/wheezy-backports libreoffice
         apt-get -t wheezy-backports libreoffice
 
     It does not work if you use

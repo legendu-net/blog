@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-07 09:41:56
+Date: 2019-03-07 19:24:11
 Author: Benjamin Du
 Slug: install-newer-version-of-sqlite3-on-debian
 Title: Install Newer Version of Sqlite3 on Debian Jessie
@@ -22,10 +22,10 @@ or
 
 2. make sure the GPG signatures are correct by running the following command.
 
-        sudo aptitude update
-        sudo aptitude install debian-backports-keyring
+        sudo apt-get update
+        sudo apt-get install debian-backports-keyring
 
 3. Install SQLite3.
 
-    sudo apt-get update
-    sudo apt-get -t jessie-backports install sqlite3 libsqlite3-dev
+	sudo apt-get update
+	sudo apt-get -t jessie-backports install sqlite3 libsqlite3-dev

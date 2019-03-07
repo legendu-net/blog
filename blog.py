@@ -1141,7 +1141,7 @@ def _subparse_git_status(subparsers):
         'status', 
         aliases=['st', 'sts'],
         help='The git status command.')
-    subparser_status.set_defaults(func=git)
+    subparser_status.set_defaults(func=git_status)
 
 
 def _subparse_git_diff(subparsers):
@@ -1149,12 +1149,15 @@ def _subparse_git_diff(subparsers):
         'diff', 
         aliases=['df', 'dif'],
         help='The git diff command.')
-    subparser_status.set_defaults(func=git)
+    subparser_status.set_defaults(func=git_diff)
 
 
-def git(blogger, args):
-    mapping = {'status': 'git status', 'diff': 'git diff'}
-    os.system(mapping[args.sub_cmd])
+def git_status(blogger, args):
+    os.system('git status')
+
+
+def git_diff(blogger, args):
+    os.system('git diff')
 
 
 if __name__ == '__main__':

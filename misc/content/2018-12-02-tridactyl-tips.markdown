@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-01 23:22:02
+Date: 2019-03-07 03:39:02
 Author: Ben Chuanlong Du
 Slug: tridactyl-tips
 Title: Tridactyl Tips
@@ -17,3 +17,10 @@ but rather for convenient reference of the author and future improvement.
 `ctrl + alt + esc`: toggle ignore on/off on Mac
 `ctrl/cmd + g`: next search result
 `shift + ctrl/cmd + g`: previous search result
+
+## Tricks & Traps
+
+1. `shift + insert` enters insert mode in Tridactyl, however `shift + insert` is also used as paste in JupyterLab terminals on Windows. 
+    If you are using Tridactyl and JupyterLab together,
+    `shift + insert` is passed to Tridactyl rather than acts as paste in JupyterLab terminals.
+    

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-07 03:17:18
+Date: 2019-03-07 09:40:27
 Author: Benjamin Du
 Slug: install-newer-version-of-sqlite3-on-debian
 Title: Install Newer Version of Sqlite3 on Debian
@@ -11,16 +11,21 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-# via: http://www.fangiotophia.com/journal/2010/8/31/random-act-of-stupidity-6-debian-rails-3-setup-guide.html
+1. Open `/etc/apt/sources.list` and add the following line to the end.
 
-# Open /etc/apt/sources.list and add the following line to the end, then save the file:
-deb http://www.backports.org/debian lenny-backports main contrib non-free
+    deb http://www.backports.org/debian jessie-backports main contrib non-free
 
-# Then, run the following command to make sure the GPG signatures are correct and don't give you warnings when running apt commands:
-sudo aptitude update
-sudo aptitude install debian-backports-keyring
+or
 
-# Finally, you can install SQLite3:
-sudo aptitude update
-sudo aptitude -t lenny-backports install sqlite3 libsqlite3-dev
-gem install sqlite3-ruby
+    deb http://ftp.us.debian.org/debian/ jessie-backports main contrib non-free
+    deb-src http://ftp.us.debian.org/debian/ jessie-backports main contrib non-free
+
+2. make sure the GPG signatures are correct by running the following command.
+
+        sudo aptitude update
+        sudo aptitude install debian-backports-keyring
+
+3. Install SQLite3.
+
+    sudo apt-get update
+    sudo apt-get -t jessie-backports install sqlite3 libsqlite3-dev

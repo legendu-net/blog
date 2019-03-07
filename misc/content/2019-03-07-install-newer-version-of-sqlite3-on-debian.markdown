@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-03-07 09:40:27
+Date: 2019-03-07 09:41:56
 Author: Benjamin Du
 Slug: install-newer-version-of-sqlite3-on-debian
-Title: Install Newer Version of Sqlite3 on Debian
+Title: Install Newer Version of Sqlite3 on Debian Jessie
 Category: Linux
 Tags: Linux, SQLite3, Debian, backports
 

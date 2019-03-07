@@ -28,6 +28,7 @@
     ["Stringi", "stringi"],
     ["Kdevelop", "KDevelop"],
     ["Macports", "MacPorts"], ["Noscript", "NoScript"],
+    ["Spacevim", "SpaceVim"],
     ["Mobaxterm", "MobaXterm"],
     ["Nbconvert", "nbconvert"], ["Nomachine", "NoMachine"],
     ["Pybuilder", "PyBuilder"],

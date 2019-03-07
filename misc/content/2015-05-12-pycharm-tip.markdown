@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-05 01:48:55
+Date: 2019-03-06 23:46:17
 Author: Ben Chuanlong Du
 Slug: pycharm-tip
 Title: Pycharm Tip
@@ -27,6 +27,13 @@ but rather for convenient reference of the author and future improvement.
 
 3. Restart terminal (the font size for terminal won't take effect until the terminal is restarted)
 
+## PyCharm on WSL
+
+https://blog.jetbrains.com/pycharm/2018/10/pycharm-2018-3-eap-7/
+
+https://www.jetbrains.com/help/pycharm/using-wsl-as-a-remote-interpreter.html
+
+https://medium.com/@rhdzmota/python-development-on-the-windows-subsystem-for-linux-wsl-17a0fa1839d
 
 
 ## Limitations in PyCharm Community Edition

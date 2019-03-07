@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-06 23:10:24
+Date: 2019-03-07 00:53:12
 Author: Benjamin Du
 Slug: python-build-tools
 Title: Python Build Tools
@@ -11,6 +11,7 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
+poetry, pybuilder and pydoit seem to be good ones.
 
 ## [pybuilder/pybuilder](https://github.com/pybuilder/pybuilder)
 
@@ -29,3 +30,9 @@ It is not meant to readers but rather for convenient reference of the author and
 ## [buildbot/buildbot](https://github.com/buildbot/buildbot)
 
 Buildbot is a Python system to automate the compile/test cycle to validate code changes.
+
+## References
+
+https://medium.com/@fedor/setting-up-intellij-for-py-gradle-758770367858
+
+https://jacobian.org/2018/feb/21/python-environment-2018/

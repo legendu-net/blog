@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-06 04:05:09
+Date: 2019-03-07 00:12:58
 Author: Ben Chuanlong Du
 Slug: python-virtual-environment
 Title: Python Virtual Environment
@@ -82,7 +82,8 @@ source <DIR>/bin/activate
 3. Select `Project Interpreter` in the left panel under `Project`.
 
 4. If no virtual environment is configured for PyCharm, 
-    you can select `Using Existing Virtual Environment` and then choose the virtual environment directory.
+    you can select `Using Existing Virtual Environment` 
+    and then choose the Python executable in the virtual environment directory (e.g., `venv/bin/python`).
 
 ## References
 

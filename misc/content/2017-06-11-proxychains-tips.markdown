@@ -1,6 +1,5 @@
-UUID: 902f18b9-7675-4cfe-9e87-26f56e722fbd
 Status: published
-Date: 2019-03-05 23:00:09
+Date: 2019-03-07 03:24:27
 Author: Ben Chuanlong Du
 Slug: proxychains-tips
 Title: ProxyChains Tips
@@ -27,6 +26,11 @@ wajig install proxychains
 ```
 brew install proxychains-ng
 ```
+Notice that the proxychains-ng installed using Homebrew on Mac does not work well right now (as of 2019-03-07).
+An alternative way is to use proxychains via Docker on Mac.
+The Docker image
+[dclong/ubuntu_b](https://cloud.docker.com/repository/docker/dclong/ubuntu_b)
+has proxychains (not proxychains-ng) installed.
 
 ## Tricks and Traps 
 

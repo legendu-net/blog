@@ -1,5 +1,5 @@
 Status: published
-Date: 2016-07-09 19:02:28
+Date: 2019-03-07 03:11:14
 Author: Ben Chuanlong Du
 Slug: install-software-on-mac
 Title: Install Software on Mac
@@ -12,12 +12,6 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
-
-There are a few ways to install software in Mac. 
-The universal (and GUI) way is to download the installation file on run it in Mac.
-There are a few command-line ways to install software in Mac too,
-among which Homebrew is the most popular one.
-
 
 ## Homebrew
 

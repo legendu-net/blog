@@ -566,6 +566,7 @@ def show(blogger, args) -> None:
 
 
 def reload(blogger, args):
+    blogger.clear()
     blogger.reload_posts(BASE_DIR)
 
 

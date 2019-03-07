@@ -1,4 +1,4 @@
-Title: Motto 
+Title: 
 Date: 2013-9-9 00:00:00
 Slug: index
 

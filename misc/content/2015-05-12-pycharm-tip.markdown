@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-06 23:46:17
+Date: 2019-03-07 21:10:32
 Author: Ben Chuanlong Du
 Slug: pycharm-tip
 Title: Pycharm Tip
@@ -29,12 +29,11 @@ but rather for convenient reference of the author and future improvement.
 
 ## PyCharm on WSL
 
-https://blog.jetbrains.com/pycharm/2018/10/pycharm-2018-3-eap-7/
-
-https://www.jetbrains.com/help/pycharm/using-wsl-as-a-remote-interpreter.html
-
-https://medium.com/@rhdzmota/python-development-on-the-windows-subsystem-for-linux-wsl-17a0fa1839d
-
+PyCharm (starting from 2018.3) supports configuring a remote Python interpreter via Windows Subsystem Linux WSL).
+See [Using WSL As a Remote Interpreter](https://www.jetbrains.com/help/pycharm/2018.3/using-wsl-as-a-remote-interpreter.html)
+for detailed instructions.
+However, 
+be aware that this feature is **only available in the professional edition** but not in the community edition.
 
 ## Limitations in PyCharm Community Edition
 

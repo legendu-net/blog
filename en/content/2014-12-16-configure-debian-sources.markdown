@@ -1,11 +1,10 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Date: 2017-04-03 17:37:33
+Date: 2019-03-07 09:27:00
 Author: Ben Chuanlong Du
 Slug: configure-debian-sources
-Title: Configure Debian Sources
+Title: Configure Debian Apt Source List
 Category: Linux
-Tags: operating system, OS, Linux, Debian, sources, apt-get
+Tags: operating system, OS, Linux, Debian, apt-get, apt, source list
 
 **
 Things on this page are
@@ -14,7 +13,7 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-[Debian Sources List Generator](http://debgen.simplylinux.ch/)
+[Debian Apt Sources List Generator](http://debgen.simplylinux.ch/)
 
 Personally, I prefer stable with backports.
 Testing is also good but still update might introduce critial bugs sometimes.

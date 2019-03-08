@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-08 00:20:54
+Date: 2019-03-08 00:27:32
 Author: Ben Chuanlong Du
 Slug: install-python-behind-firewall
 Title: Install Python Packages Behind Firewall
@@ -39,16 +39,11 @@ it can be used to install `pip` for Python in Cygwin.
     read the post [Find out Proxy in Use](http://www.legendu.net/en/blog/find-out-proxy-in-use/)
     to figure it out.
 
-2. Open the Windows command prompt.
-
-3. Set proxy environment variables. 
+2. Set proxy environment variables. 
 
         set http_proxy=http://user:password@proxy_ip:port
         set https_proxy=https://user:password@proxy_ip:port
 
-4. Install Python packages using proxy in the same Windows command prompt.
+3. Install Python packages using proxy.
 
         pip install --proxy="user:password@proxy_ip:port" package_name
-
-    Note that working in a Linux virtual machine on your office laptop with Windows OS
-    can possibly help you circumvent the proxy issue.

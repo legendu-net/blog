@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-18 23:39:08
+Date: 2019-03-08 09:47:48
 Author: Ben Chuanlong Du
 Slug: python-modules-for-visualization
 Title: Python Modules for Visualization
@@ -15,7 +15,7 @@ but rather for convenient reference of the author and future improvement.
 
 ## JS based Modules
 
-## Cufflink
+### [Cufflink](https://github.com/santosjorge/cufflinks)
 
 Enables plotly plots in pandas DataFrame (via the `iplot` method) directly. 
 
@@ -55,8 +55,6 @@ http://stackoverflow.com/questions/9627686/plotting-dates-on-the-x-axis-with-pyt
 http://stackoverflow.com/questions/10998621/rotate-axis-text-in-python-matplotlib
 
 ### pandas
-
-3. pandas
 
 `pandas` integrates some visualization features based on matplotlib.
 It makes things convenient if you have to work with data frame a lot.

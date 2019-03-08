@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-07 03:32:59
+Date: 2019-03-08 02:49:28
 Author: Benjamin Du
 Slug: calling-shell-from-python
 Title: Calling Shell from Python
@@ -16,12 +16,18 @@ It is not meant to readers but rather for convenient reference of the author and
 1. It is suggested that you always use full path of command as the environment is not always identical across machines.
 
 2. `subprocess.check_output` is prefered over `subprocess.run` or `os.system` 
-		as the first one will throw exception on errors
+		as the first one will throw exception on errors.
 
+3. `echo` and pipe is common trick to feed input into another comamnd. 
+    For exampel, 
+    suppose `kinit` is an authentication command that takes a password interactively,
+    you can use the following command to authenticate directly without typing password interactively.
 
-`os.system` works on `echo 'password' | kinit`
-however sp.check_out(['echo', password, '|', 'kinit']) doesn't work
+        echo 'your_password' | kinit
 
-I think you should use the input parameter to pass password to kinit ...<Paste>
-
+    This trick works with the `os.system` function in Python.
+    Basically `os.system` takes whatever you run in shell and run it.
+    However, 
+    the trick does not work for `subprocess.check_output`.
+    You have to pass interactive input as bytes to the `input` argument of `subprocess.check_output`.
 

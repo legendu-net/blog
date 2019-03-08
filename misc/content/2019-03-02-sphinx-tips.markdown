@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-02 12:50:31
+Date: 2019-03-08 23:47:26
 Author: Benjamin Du
 Slug: sphinx-tips
 Title: Sphinx Tips
@@ -19,3 +19,11 @@ https://www.sphinx-doc.org/en/master/usage/markdown.html
 https://medium.com/@richdayandnight/a-simple-tutorial-on-how-to-document-your-python-project-using-sphinx-and-rinohtype-177c22a15b5b
 
 https://matplotlib.org/sampledoc/getting_started.html
+
+## Generate Python Documentation 
+
+https://developer.ridgerun.com/wiki/index.php/How_to_generate_sphinx_documentation_for_python_code_running_in_an_embedded_system
+
+https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
+
+https://samnicholls.net/2016/06/15/how-to-sphinx-readthedocs/

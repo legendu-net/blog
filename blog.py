@@ -112,7 +112,7 @@ def _publish_blog_dir(dir_):
     os.system(
         f'cd "{os.path.join(BASE_DIR, dir_)}" && pelican . -s pconf_sd.py')
     # git push
-    os.system(f'cd "{BASE_DIR}" && ./git.sh {dir_}')
+    os.system(f'cd "{BASE_DIR}" && bash ./git.sh {dir_}')
     print('\n' + DASHES)
     print('Please consider COMMITTING THE SOURCE CODE as well!')
     print(DASHES + '\n')

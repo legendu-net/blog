@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-03-07 23:42:48
+Date: 2019-03-08 00:20:54
 Author: Ben Chuanlong Du
-Slug: install-python-on-windows-behind-proxy
-Title: Install Python Packages Behind Proxy on Windows 
+Slug: install-python-behind-firewall
+Title: Install Python Packages Behind Firewall
 Category: Programming
 Tags: Python, programming, Windows, proxy, install package
 

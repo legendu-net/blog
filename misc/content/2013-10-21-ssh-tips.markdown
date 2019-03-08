@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: SSH Tips
-Date: 2019-02-26 23:47:21
+Date: 2019-03-08 02:59:55
 Slug: ssh-tips
 Category: Software
 Tags: tips, SSH, software, remote, Linux
@@ -11,8 +11,19 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-0. You can use the option `-o StrictHostKeyChecking=no` to turn off strict host key checking.
+## Tricks and Traps
+
+1. You can use the option `-o StrictHostKeyChecking=no` to turn off strict host key checking.
     This is helpful for automation when you are in a relative safe environment. 
+
+2. You can use the option `-o ProxyCommand='ssh proxy_server -W %h:%p'` 
+    to SSH into a machine via a proxy server.
+    Below is an illustration.
+    For more details,
+    please refer to
+    [SSH Proxies and Jump Hosts](https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Proxies_and_Jump_Hosts).
+
+      ssh -o ProxyCommand='ssh proxy_server -W %h:%p' target_server
 
 2. It seems that if you use the local ip address,
     the port number is not important.
@@ -51,4 +62,12 @@ The internet seems OK, or maybe it is because I'm copying larges files over loca
 /usr/bin/ssh-copy-id: ERROR: ssh: Could not resolve hostname y570.stat.iastate.edu -p 323: Name or service not known
 
 3. SSH: ‘No Route to Host’ error
+
+## References
+
+https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Proxies_and_Jump_Hosts
+
+https://www.cyberciti.biz/faq/linux-unix-ssh-proxycommand-passing-through-one-host-gateway-server/
+
+https://stackoverflow.com/questions/22635613/what-is-the-difference-between-ssh-proxycommand-w-nc-exec-nc
 

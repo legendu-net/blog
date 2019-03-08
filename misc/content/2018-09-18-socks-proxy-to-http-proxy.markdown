@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-07 23:42:48
+Date: 2019-03-08 18:57:48
 Author: Ben Chuanlong Du
 Slug: socks-proxy-to-http-proxy
 Title: Socks Proxy to HTTP Proxy
@@ -18,6 +18,9 @@ but rather for convenient reference of the author and future improvement.
 Polipo is a tool that can convert a socks proxy to a HTTP proxy.
 However this might not be needed
 as many tools directly accepts a socks proxy as a HTTP/HTTPS proxy.
+For example, 
+if you have a socks5 proxy at `localhost:1080`,
+you can pass `socks5://localhost:1080` to tools that require a HTTP/HTTPS proxy.
 
 ```Bash
 # install polipo

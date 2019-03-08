@@ -1,6 +1,5 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Date: 2019-02-26 23:45:17
+Date: 2019-03-08 19:23:06
 Author: Ben Chuanlong Du
 Slug: vim-tips
 Title: Some Fragmentary Tips for Vim
@@ -24,7 +23,7 @@ It is not meant to readers but rather for convenient reference of the author and
 
 1. Look for good vim plugins on [Vim Awesome](https://vimawesome.com/).
 
-## Skills
+## Tricks & Traps
 
 1. To quickly comment a range of text, 
     you can substitute ^ with # in that range.
@@ -56,6 +55,10 @@ It is not meant to readers but rather for convenient reference of the author and
 ## Buffers
 
 1. `:buffers`, `:ls`, `:bw` (have to write buffer to file first)
+
+  :bn go to the next buffer 
+  :bp go to the previous buffer 
+  :e #: go to the previous buffer 
 
 ## Indent
 

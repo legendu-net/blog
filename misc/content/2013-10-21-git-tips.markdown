@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-02-18 09:31:11
+Date: 2019-03-08 22:13:35
 Title: Random Tips for Git
 Slug: git-tips
 Category: Software
@@ -57,9 +57,6 @@ https://www.gitignore.io/
         git rebase --abort
 
 
-1. It seems that git now supports submodules,
-    you have to either remove .git in subdirectories or use submodule to manage them.
-
 ## Git Bash Shell on Windows
 
 1. git bash shell (on Windows) also uses shitf + insert to paste.
@@ -91,9 +88,9 @@ git fetch --depth 1000000
 
 ## Submodule
 
-git submodule init
+    git submodule init
 
-git submodule update --recursive --remote
+    git submodule update --recursive --remote
 
 
 ## References

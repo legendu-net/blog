@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-07 23:42:48
+Date: 2019-03-08 18:57:48
 Author: Ben Chuanlong Du
 Slug: proxy-server-tools
 Title: Proxy Server Tools
@@ -17,3 +17,6 @@ but rather for convenient reference of the author and future improvement.
 
 [dannydirect/tinyproxy](https://hub.docker.com/r/dannydirect/tinyproxy/)
 is a good Docker image for tinyproxy.
+
+
+Polipo is a tool that can convert a socks proxy to a HTTP proxy.

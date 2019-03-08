@@ -1,6 +1,5 @@
-UUID: bac41a69-cf6d-43d2-b4a4-f1c97784b37d
 Status: published
-Date: 2018-09-18 00:13:28
+Date: 2019-03-07 23:42:48
 Author: Ben Chuanlong Du
 Slug: socks-proxy-to-http-proxy
 Title: Socks Proxy to HTTP Proxy
@@ -16,7 +15,11 @@ but rather for convenient reference of the author and future improvement.
 
 ## Convert Socks Proxy to HTTP Proxy
 
-```
+Polipo is a tool that can convert a socks proxy to a HTTP proxy.
+However this might not be needed
+as many tools directly accepts a socks proxy as a HTTP/HTTPS proxy.
+
+```Bash
 # install polipo
 wajig search polipo
 

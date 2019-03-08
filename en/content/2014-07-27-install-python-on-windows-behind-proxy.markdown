@@ -1,6 +1,5 @@
-UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
-Date: 2016-07-13 00:11:34
+Date: 2019-03-07 23:42:48
 Author: Ben Chuanlong Du
 Slug: install-python-on-windows-behind-proxy
 Title: Install Python Packages Behind Proxy on Windows 
@@ -9,44 +8,47 @@ Tags: Python, programming, Windows, proxy, install package
 
 
 It is recommended that you use `pip` to install Python packages.
-You can follow the following steps to install `pip` on Windows.
 
-1. Download [distribute](http://python-distribute.org/distribute_setup.py) 
-and save it as `distribute_setup.py`.
+## Install pip
 
-2. Install distribute.
+### Ubuntu
 
-        python distribute_setup.py
+```Bash
+wajig install python3-pip
+```
 
-If you don't have permission to change environment variables on your office laptop,
-you cannot run the `python` command directly.
-You have to either use the full path to the python executable 
-or run it in the directory containing it.
+### Mac
 
-3. Download [pip](https://raw.github.com/pypa/pip/master/contrib/get-pip.py) 
-and save it as `get-pip.py`.
+`pip` should have already been installed when you instal Python using Homebrew or Anaconda.
 
-4. Install `pip`.
+### Universal Way
 
-        python get-pip.py
+`pip` can be installed directly from Python.
 
-After `pip` is installed, 
-you can then follow the steps below to install Python packages.
+```Bash
+python3 -m ensurepip
+```
 
-0. If you don't already know the proxy in use (in your company),
-read the post [Find out Proxy in Use](http://www.legendu.net/en/blog/find-out-proxy-in-use/)
-to figure it out.
+This is a universal and convenient way of installing `pip` for Python.
+For example,
+it can be used to install `pip` for Python in Cygwin.
 
-1. Open the Windows command prompt.
+## Install Packages Using pip with Proxy
 
-2. Set proxy environment variables. 
+1. If you don't already know the proxy in use (in your company),
+    read the post [Find out Proxy in Use](http://www.legendu.net/en/blog/find-out-proxy-in-use/)
+    to figure it out.
+
+2. Open the Windows command prompt.
+
+3. Set proxy environment variables. 
 
         set http_proxy=http://user:password@proxy_ip:port
         set https_proxy=https://user:password@proxy_ip:port
 
-3. Install Python packages using proxy in the same Windows command prompt.
+4. Install Python packages using proxy in the same Windows command prompt.
 
         pip install --proxy="user:password@proxy_ip:port" package_name
 
-Note that working in a Linux virtual machine on your office laptop with Windows OS
-can possibly help you circumvent the proxy issue.
+    Note that working in a Linux virtual machine on your office laptop with Windows OS
+    can possibly help you circumvent the proxy issue.

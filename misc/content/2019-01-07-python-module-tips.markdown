@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-17 18:34:49
+Date: 2019-03-09 13:31:07
 Author: Ben Chuanlong Du
 Slug: python-module-tips
 Title: Python Module Tips
@@ -43,4 +43,8 @@ http://xion.io/post/code/python-all-wild-imports.html
 
 https://stackoverflow.com/questions/43393764/python-3-6-project-structure-leads-to-runtimewarning
 
+
+## Misc
+
+[depfinder](https://github.com/ericdill/depfinder) finds all the unique imports in your library.
 

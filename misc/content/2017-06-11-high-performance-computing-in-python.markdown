@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-22 20:14:17
+Date: 2019-03-09 14:25:28
 Author: Ben Chuanlong Du
 Slug: high-performance-computing-in-python
 Title: High Performance Computing in Python
@@ -70,6 +70,8 @@ when using cppimport.
 setup_pybind11(cfg)
 %>
 ```
+
+## PyCUDA & PyGPU
 
 ## References
 

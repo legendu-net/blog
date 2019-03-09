@@ -1,10 +1,16 @@
 Status: published
-Date: 2019-03-09 15:16:35
+Date: 2019-03-09 23:49:57
 Author: Benjamin Du
 Slug: a-trick-to-ensure-capturing-log
-Title: a Trick to Ensure Capturing Log
+Title: Ensure Capturing Log of Applications
 Category: Programming
 Tags: programming, logging, rediction, exception
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

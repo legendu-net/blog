@@ -1,6 +1,6 @@
 UUID: 87b30504-5bb2-478b-be49-1ae1027fe610
 Status: published
-Date: 2019-03-08 22:50:38
+Date: 2019-03-09 15:29:10
 Author: Ben Chuanlong Du
 Slug: ssh-tunnel
 Title: SSH Tunnel
@@ -48,7 +48,7 @@ https://unix.stackexchange.com/questions/46235/how-does-reverse-ssh-tunneling-wo
 
 https://blog.devolutions.net/2017/3/what-is-reverse-ssh-port-forwarding
 
-## Advanced usage 1: SSH Tunnel to Avoid 2FA
+## Advanced Usage 1: SSH Tunnel to Avoid 2FA
 
 Suppose you have 2 machines A and B. 
 Machine B is only accssible from machine A using SSH through 2FA.

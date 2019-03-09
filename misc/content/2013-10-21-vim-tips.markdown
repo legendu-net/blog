@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-03-08 19:23:06
+Date: 2019-03-09 15:36:49
 Author: Ben Chuanlong Du
 Slug: vim-tips
-Title: Some Fragmentary Tips for Vim
+Title: Tips for Vim
 Category: Software
 Tags: tips, Linux, software, Vim, surround, repeat
 
@@ -17,7 +17,6 @@ It is not meant to readers but rather for convenient reference of the author and
 - [SpaceVim](https://spacevim.org/)
 
 - [spf13-vim](https://vim.spf13.com/)
- 
 
 ## Tips
 
@@ -57,7 +56,9 @@ It is not meant to readers but rather for convenient reference of the author and
 1. `:buffers`, `:ls`, `:bw` (have to write buffer to file first)
 
   :bn go to the next buffer 
+
   :bp go to the previous buffer 
+
   :e #: go to the previous buffer 
 
 ## Indent
@@ -77,9 +78,9 @@ It is not meant to readers but rather for convenient reference of the author and
 
 1. You can read the content of a file or the output of an external command into Vim.
 
-	:r path_to_file
-	:r !ls
-	:r !date
+        :r path_to_file
+        :r !ls
+        :r !date
 
 ## Misc
 
@@ -105,37 +106,13 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## Addons
 
-    - clang_complete
-    - supertab
-    - PythonMode
-    - pythoncomplete
-    - dbext (SQL client)
-    - SQLComplete
-    - SQLUtilities
-    - Vim-R-plugin
-    - ViEmu (for MS Word, Outlook, Visual Studio, SQL server, etc., non-free unfortunately)
-
-1. `vim-addon-manager` 
-
-A good tool for managing addons for vim.
-
-2. `UltiSnips` 
-
-A powerful (best) vim add-on for text snippets. 
-It requires Python in order to work.
-For environment without Python support (e.g., Cygwin or MobaXterm on Windows), 
-you can use `snipMate` instead which is not as powerful as `UltiSnips`
-but has fewer dependencies.
-
-3. repeat
+1. repeat
 
 4. surround
 
 4. airlight
 
-5. VsVim
-
-Plugin for Visual Studio.
+5. VsVim: Plugin for Visual Studio.
 
 6. tComment
 
@@ -180,7 +157,7 @@ Plugin for Visual Studio.
     For example, you can use `:r !basename % .sh` to insert the name of the current file.
 
 3. Insert date (different ways) or you can use UltiSnips to do it which is recommended.
-normal mode
+    normal mode
         "=strftime('%c')<C-M>p
         :r!date +\%c
         :call append(line('.'), strftime("%c"))
@@ -262,6 +239,7 @@ change a {...}, (...), [...] or "..." block (both surrounding symbols and surrou
 change text in a {...}, (...), [...] or "..." block (only surrounded text will be changed)    ca{ ca( ca[ ca"
 
 ## Upper/Lower Cases
+
 convert selected text to uppercase                                                  U                                     
 convert selected text to lowercase                                                  u                                     
 convert the character after cursor to uppercase                                     gUl
@@ -275,6 +253,7 @@ title words (i.e., Capitalize the first letter of words)                        
 invert case of selected text                                                        ~                                     
 
 ## Split Windows
+
 split screen horizontally                                                           :split <file> or :sp <file>                               
 split screen vertically                                                             :vsplit <file> or :vsp <file>                               
 move down a screen in split mode                                                    :wincmd j or CTRL + w + j 
@@ -284,18 +263,21 @@ move right a screen in split mode                                               
 close all other split screens                                                       :only                                 
 
 ## Macro
+
 start recording a macro to `x`                                                             qx (x = key to assign macro to)       
 stop recording a macro                                                              q                                       
 playback macro                                                                      @X (X = key macro was assigned to)    
 replay previously played macro *                                                    @@                                    
 
 ## Indention and Unindention
+
 indent selected text                                                                >                                     
 unindent selected text                                                              <                                     
 indent # rows                                                                       #>> (where # is a number)                                    
 unindent # rows                                                                     #<< (where # is a number)                                    
 
 ## Buffers
+
 list buffers                                                                        :ls                                   
 open buffer                                                                         :bN (N = buffer number)               
 close a buffer when multiple ones are open.                                         :bw (:x close all opened buffers)
@@ -303,6 +285,7 @@ open a file/buffer                                                              
 open last file                                                                      :e #
 
 ## Spell Check
+
 move the cursor to the next misspelled word                                         ]s
 move the cursor back through the buffer to previous misspelled words                [s
 suggest a list of alternatives for the word under cursor                            z=

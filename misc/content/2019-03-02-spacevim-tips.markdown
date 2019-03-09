@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-03-09 01:47:48
+Date: 2019-03-09 15:32:44
 Author: Benjamin Du
 Slug: spacevim-tips
-Title: Spacevim Tips
+Title: SpaceVim Tips
 Category: Software
 Tags: software, SpaceVim, Vim, tips
 

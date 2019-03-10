@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-08 02:49:28
+Date: 2019-03-10 19:07:51
 Author: Benjamin Du
 Slug: calling-shell-from-python
 Title: Calling Shell from Python
@@ -27,7 +27,19 @@ It is not meant to readers but rather for convenient reference of the author and
 
     This trick works with the `os.system` function in Python.
     Basically `os.system` takes whatever you run in shell and run it.
-    However, 
-    the trick does not work for `subprocess.check_output`.
-    You have to pass interactive input as bytes to the `input` argument of `subprocess.check_output`.
+    Methods in `subprocess` does not take pipe commands by default. 
+    If the pipe is used to feed input into another command,
+    you can simply use the `input` argument of methods in `subprocess`.
+    For example,
 
+        subprocess.check_output(['kinit'], input=b'your_password')
+
+    If you do want to use pipe directly in methods of `subprocess`, 
+    you can set the option `shell=True`.
+
+
+## References
+
+https://docs.python.org/3/library/subprocess.html#replacing-shell-pipeline
+
+https://docs.python.org/3/library/subprocess.html#replacing-os-system

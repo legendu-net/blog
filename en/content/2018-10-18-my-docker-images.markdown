@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-06 01:04:05
+Date: 2019-03-10 01:21:26
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -250,14 +250,6 @@ use a user on the host OS and the corresponding password for authentication.
                                     > Java 8, Clojure, Groovy, Kotlin via BeakerX 1.1.0  
 
                                     - [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/)  
-
-    - [dclong/python:conda3](https://hub.docker.com/r/dclong/python/)  
-        - [dclong/jupyter:conda3](https://hub.docker.com/r/dclong/jupyter/)  
-            - [dclong/jupyterlab:conda3](https://hub.docker.com/r/dclong/jupyterlab)  
-                - [dclong/jupyterhub:conda3](https://hub.docker.com/r/dclong/jupyterhub/)  
-                    - [dclong/jupyterhub-py:conda3](https://hub.docker.com/r/dclong/jupyterhub-py/)  
-                        - [dclong/holoviews:conda3](https://hub.docker.com/r/dclong/holoviews/)  
-                        - [dclong/jupyterhub-ds:conda3](https://hub.docker.com/r/dclong/jupyterhub-ds/)  
 
     - [dclong/ubuntu_cn](https://hub.docker.com/r/dclong/ubuntu_cn/)  
 

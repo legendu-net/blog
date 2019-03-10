@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-10 01:21:26
+Date: 2019-03-10 18:19:42
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -175,7 +175,7 @@ use a user on the host OS and the corresponding password for authentication.
 
 ## List of Images and Detailed Information
 
-- [dclong/gitpod](https://github.com/dclong/docker-gitpod)
+- [dclong/gitpod](https://hub.docker.com/r/dclong/gitpod/)
 
 - [dclong/ubuntu_b](https://hub.docker.com/r/dclong/ubuntu_b/)  
 
@@ -202,21 +202,6 @@ use a user on the host OS and the corresponding password for authentication.
 
                      > JupyterLab: 0.35.4  
 
-                    - [dclong/jupyterlab-js](https://hub.docker.com/r/dclong/jupyterlab-js/)
-                    - [dclong/jupyterlab-ts](https://hub.docker.com/r/dclong/jupyterlab-ts/)
-                    - [dclong/jupyterlab-tdodbc](https://hub.docker.com/r/dclong/jupyterlab-tdodbc/)
-                    - [dclong/jupyterlab-jdk](https://hub.docker.com/r/dclong/jupyterlab-jdk/)
-                        - [dclong/jupyterlab-scala](https://hub.docker.com/r/dclong/jupyterlab-scala/)
-                            - [dclong/jupyterlab-spark](https://hub.docker.com/r/dclong/jupyterlab-spark/)
-                        - [dclong/jupyterlab-antlr4](https://hub.docker.com/r/dclong/jupyterlab-antlr4/)
-                        - [dclong/jupyterlab-py](https://hub.docker.com/r/dclong/jupyterlab-py/)
-                            - [dclong/jupyterlab-beakerx](https://hub.docker.com/r/dclong/jupyterlab-beakerx/)
-                                - [dclong/jupyterlab-ds](https://hub.docker.com/r/dclong/jupyterlab-ds/)
-                    - [dclong/jupyterlab-rb](https://hub.docker.com/r/dclong/jupyterlab-rb/)
-                        - [dclong/jupyterlab-rp](https://hub.docker.com/r/dclong/jupyterlab-rp/)
-                            - [dclong/jupyterlab-rp-py](https://hub.docker.com/r/dclong/jupyterlab-rp-py/)
-                            - [dclong/jupyterlab-rstudio](https://hub.docker.com/r/dclong/jupyterlab-rstudio/)
-                                - [dclong/jupyterlab-rstudio-py](https://hub.docker.com/r/dclong/jupyterlab-rstudio-py/)
                     - [dclong/jupyterhub](https://hub.docker.com/r/dclong/jupyterhub/)  
 
                          > JupyterHub: 0.9.3  
@@ -257,8 +242,6 @@ use a user on the host OS and the corresponding password for authentication.
 
             - [dclong/lubuntu-nodejs](https://hub.docker.com/r/dclong/lubuntu-nodejs/)  
 
-                - [dclong/lubuntu-atom](https://hub.docker.com/r/dclong/lubuntu-atom/)  
-
                 - [dclong/lubuntu-vscode](https://hub.docker.com/r/dclong/lubuntu-vscode/)  
 
             - [dclong/lubuntu-py](https://hub.docker.com/r/dclong/lubuntu-py/)  
@@ -272,7 +255,6 @@ use a user on the host OS and the corresponding password for authentication.
 
         - [dclong/xubuntu](https://hub.docker.com/r/dclong/xubuntu/)  
             - [dclong/xubuntu-nodejs](https://hub.docker.com/r/dclong/xubuntu-nodejs/)  
-                - [dclong/xubuntu-atom](https://hub.docker.com/r/dclong/xubuntu-atom/)  
                 - [dclong/xubuntu-vscode](https://hub.docker.com/r/dclong/xubuntu-vscode/)  
             - [dclong/xubuntu-py](https://hub.docker.com/r/dclong/xubuntu-py/)  
                 - [dclong/xubuntu-pycharm](https://hub.docker.com/r/dclong/xubuntu-pycharm/)  

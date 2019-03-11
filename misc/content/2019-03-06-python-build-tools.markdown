@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-07 00:53:12
+Date: 2019-03-11 23:07:13
 Author: Benjamin Du
 Slug: python-build-tools
 Title: Python Build Tools
@@ -13,7 +13,13 @@ It is not meant to readers but rather for convenient reference of the author and
 
 poetry, pybuilder and pydoit seem to be good ones.
 
+## [sdispater/poetry](https://github.com/sdispater/poetry)
+
 ## [pybuilder/pybuilder](https://github.com/pybuilder/pybuilder)
+
+## [pypa/pipenv](https://github.com/pypa/pipenv/)
+
+## [pydoit](https://github.com/pydoit/doit)
 
 ## [ninja](https://github.com/ninja-build/ninja)
 
@@ -21,17 +27,23 @@ poetry, pybuilder and pydoit seem to be good ones.
 
 ## [Meson](https://github.com/mesonbuild/meson)
 
-## [pydoit](https://github.com/pydoit/doit)
-
-## [sdispater/poetry](https://github.com/sdispater/poetry)
-
-## [pypa/pipenv](https://github.com/pypa/pipenv/)
-
 ## [buildbot/buildbot](https://github.com/buildbot/buildbot)
 
 Buildbot is a Python system to automate the compile/test cycle to validate code changes.
 
 ## References
+
+https://frostming.com/2019/01-04/pipenv-poetry
+
+https://www.youtube.com/watch?v=GBQAKldqgZs&feature=youtu.be
+
+https://www.youtube.com/watch?v=GBQAKldqgZs&feature=youtu.be
+
+https://medium.com/@DJetelina/pipenv-review-after-using-in-production-a05e7176f3f0
+
+http://www.pybloggers.com/2018/07/pipenv-promises-a-lot-delivers-very-little/
+
+https://hynek.me/articles/python-app-deps-2018/
 
 https://medium.com/@fedor/setting-up-intellij-for-py-gradle-758770367858
 

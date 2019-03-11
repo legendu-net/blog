@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-05 22:54:36
+Date: 2019-03-11 22:34:44
 Author: Ben Chuanlong Du
 Slug: pybuilder-tips
 Title: PyBuilder Tips
@@ -77,6 +77,8 @@ https://stackoverflow.com/questions/37409282/pybuilder-non-python-files-are-not-
 ## Integration with PyCharm 
 
 http://pybuilder.github.io/documentation/ide.html#.XHngOZNKjRY
+
+https://github.com/pybuilder/pybuilder/issues/24
 
 ## use `pybuilder` with `pytest`
 

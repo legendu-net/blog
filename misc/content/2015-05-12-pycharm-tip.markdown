@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-07 21:10:32
+Date: 2019-03-11 22:33:57
 Author: Ben Chuanlong Du
 Slug: pycharm-tip
 Title: Pycharm Tip
@@ -34,6 +34,10 @@ See [Using WSL As a Remote Interpreter](https://www.jetbrains.com/help/pycharm/2
 for detailed instructions.
 However, 
 be aware that this feature is **only available in the professional edition** but not in the community edition.
+
+## pybuilder Integration
+
+https://github.com/pybuilder/pybuilder/issues/24
 
 ## Limitations in PyCharm Community Edition
 

@@ -1,6 +1,6 @@
 UUID: 7a8e975c-5e12-4204-add5-433e3fb73551
 Status: published
-Date: 2018-09-27 23:58:53
+Date: 2019-03-11 17:55:36
 Author: Ben Chuanlong Du
 Slug: elasticsearch-tips
 Title: Elasticsearch Tips
@@ -19,10 +19,8 @@ https://www.elastic.co/guide/en/elasticsearch/reference/2.1/setup-service.html
 ## SQL Support 
 
 1. Elasticsearch supports SQL syntax starting from version 6.3.
-
-https://logz.io/blog/elasticsearch-sql-support/
-
-https://medium.com/@mustafaakin/previewing-elasticsearch-6-3-sql-feature-2d3a1d60cab4
+    There is also an unofficial SQL support of Elasticsearch by 
+    [NLPchina/elasticsearch-sql](https://github.com/NLPchina/elasticsearch-sql)
 
 ## Links
 
@@ -34,3 +32,10 @@ The after_key is equals to the last bucket returned in the response
 before any filtering that could be done by Pipeline aggregations. 
 If all buckets are filtered/removed by a pipeline aggregation, 
 the after_key will contain the last bucket before filtering.
+
+## References
+
+https://logz.io/blog/elasticsearch-sql-support/
+
+https://medium.com/@mustafaakin/previewing-elasticsearch-6-3-sql-feature-2d3a1d60cab4
+

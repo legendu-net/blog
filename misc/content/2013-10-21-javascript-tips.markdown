@@ -2,7 +2,7 @@ UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for JavaScript
-Date: 2019-02-01 19:47:14
+Date: 2019-03-11 19:29:53
 Slug: javascript-tips
 Category: Programming
 Tags: tips, programming, JavaScript, JS, web
@@ -17,16 +17,29 @@ It is not meant to readers but rather for convenient reference of the author and
 
 [Node.js](https:/nodejs.org/en/) is a JavaScript runtime environment outside browsers.
 
+https://github.com/sindresorhus/awesome-nodejs
 
+https://github.com/bnb/awesome-awesome-nodejs
  
 [JavaScript Libraries](http://javascriptlibraries.com/)
 [JavaScript WikiBooks](http://en.wikibooks.org/wiki/JavaScript)
 [W3Schools JavaScript Tutorial](http://www.w3schools.com/js/default.asp)
 
-1. case sensitive
+## Testing & Debugging
+
+https://github.com/Microsoft/vscode-recipes/tree/master/Docker-TypeScript
+
+## Docker Client API
+
+https://github.com/AgustinCB/docker-api
+
+https://github.com/apocas/dockerode
+
+
+1. case sensi tive
 
 2. you don't have to write every line of code in HTML,
-you can save JavaScript code in another file and then load it.
+    you can save JavaScript code in another file and then load it.
 
 
 3. alert vs confirm vs prompt

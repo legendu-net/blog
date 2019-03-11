@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-10 18:19:42
+Date: 2019-03-11 20:06:31
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -177,6 +177,14 @@ use a user on the host OS and the corresponding password for authentication.
 
 - [dclong/gitpod](https://hub.docker.com/r/dclong/gitpod/)
 
+- [dclong/wajig](https://hub.docker.com/r/dclong/wajig/)
+
+- [dclong/deepin_b](https://hub.docker.com/r/dclong/deepin_b/)  
+
+    - [dclong/deepin_cn](https://hub.docker.com/r/dclong/deepin_cn/)  
+
+        - [dclong/deepin](https://hub.docker.com/r/dclong/deepin/)  
+
 - [dclong/ubuntu_b](https://hub.docker.com/r/dclong/ubuntu_b/)  
 
     > OS: Ubuntu 18.04  
@@ -186,13 +194,61 @@ use a user on the host OS and the corresponding password for authentication.
 
     - [dclong/proxychains](https://hub.docker.com/r/dclong/proxychains/)  
 
+    - [dclong/linuxbrew](https://hub.docker.com/r/dclong/linuxbrew/)  
+
+    - [dclong/blog](https://hub.docker.com/r/dclong/blog/)  
+
+    - [dclong/samba](https://hub.docker.com/r/dclong/samba/)  
+
+    - [dclong/pdftk](https://hub.docker.com/r/dclong/pdftk/)  
+
+    - [dclong/nodejs](https://hub.docker.com/r/dclong/nodejs/)  
+
+    - [dclong/jdk](https://hub.docker.com/r/dclong/jdk/)  
+
+        - [dclong/scala](https://hub.docker.com/r/dclong/scala/)  
+
+        - [dclong/h2o](https://hub.docker.com/r/dclong/h2o/)  
+
+    - [dclong/r-base](https://hub.docker.com/r/dclong/r-base/)  
+
+        - [dclong/r-pop](https://hub.docker.com/r/dclong/r-pop/)  
+
+            - [dclong/rstudio](https://hub.docker.com/r/dclong/rstudio/)  
+
+    - [dclong/qt5](https://hub.docker.com/r/dclong/qt5/)  
+
+    - [dclong/conda](https://hub.docker.com/r/dclong/conda/)  
+
+        - [dclong/conda-build](https://hub.docker.com/r/dclong/conda-build/)  
+
+        - [dclong/conda-yarn](https://hub.docker.com/r/dclong/conda-yarn/)  
+
+    - [dclong/tdodbc](https://hub.docker.com/r/dclong/tdodbc/)  
+
+        - [dclong/tdodbc-py](https://hub.docker.com/r/dclong/tdodbc-py/)  
+
     - [dclong/python](https://hub.docker.com/r/dclong/python/)  
 
         > Python 3.6  
 
+        - [dclong/theia](https://hub.docker.com/r/dclong/theia/)  
+
+        - [dclong/wdb](https://hub.docker.com/r/dclong/wdb/)  
+
+        - [dclong/python-jdk](https://hub.docker.com/r/dclong/python-jdk/)  
+
+        - [dclong/python-nodejs](https://hub.docker.com/r/dclong/python-nodejs/)  
+
+        - [dclong/mlflow](https://hub.docker.com/r/dclong/mlflow/)  
+
+        - [dclong/flask](https://hub.docker.com/r/dclong/flask/)  
+
         - [dclong/jupyter](https://hub.docker.com/r/dclong/jupyter/)  
 
              > Jupyter Notebook: 5.7.0  
+
+            - [dclong/jupyter-beakerx](https://hub.docker.com/r/dclong/jupyter-beakerx/)  
 
             - [dclong/jupyter-nodejs](https://hub.docker.com/r/dclong/jupyter-nodejs/)  
 
@@ -206,7 +262,10 @@ use a user on the host OS and the corresponding password for authentication.
 
                          > JupyterHub: 0.9.3  
 
+                        - [dclong/jupyterhub-giraffez](https://hub.docker.com/r/dclong/jupyterhub-giraffez/)  
+
                         - [dclong/jupyterhub-julia](https://hub.docker.com/r/dclong/jupyterhub-julia/)  
+
                         - [dclong/jupyterhub-jdk](https://hub.docker.com/r/dclong/jupyterhub-jdk/)  
 
                             > OpenJDK 8  
@@ -222,6 +281,8 @@ use a user on the host OS and the corresponding password for authentication.
                                 > tabulate  
                                 > JayDeBeApi pymysql pymongo sqlalchemy  
                                 > pysocks requests[socks] Scrapy beautifulsoup4 wget  ansible  
+
+                                - [dclong/holoviews](https://hub.docker.com/r/dclong/holoviews/)  
 
                                 - [dclong/jupyterhub-ai](https://hub.docker.com/r/dclong/jupyterhub-ai/)  
 

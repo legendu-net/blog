@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-20 20:55:44
+Date: 2019-03-12 16:37:28
 Author: Ben Chuanlong Du
 Slug: spark-tips
 Title: Spark Tips
@@ -25,6 +25,11 @@ which are variables that are only “added” to, such as counters and sums.
 1. The `--jars` option of `spark-shell` can be used to add JAR dependencies.
 
 2. `spark-shell` accepts `--queue` (for specifying the queue to submit jobs) as parameter!
+    If you run `spark-shell` and encounter the issue of "ERROR SparkContext: Error initializing SparkContext" 
+    due to "application submitted by user to unknown queue",
+    you have to pass the queue that you can access to `spark-shell`.
+
+        spark-shell --queue my_queue
 
 ## Spark Cluster Master URL
 

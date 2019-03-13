@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-07 00:12:58
+Date: 2019-03-13 04:03:06
 Author: Ben Chuanlong Du
 Slug: python-virtual-environment
 Title: Python Virtual Environment
@@ -62,7 +62,7 @@ For example,
 suppose a virtual environment is created using the command `python3 -m venv /path/to/your/environment`,
 you can make it inherit system site-packages by running the following command.
 ```bash
-python3 -m venv --system-site-packages /path/to/your/environment
+python3 -m venv --system-site-packages venv
 ```
 
 ## Activate the Virtual Environment

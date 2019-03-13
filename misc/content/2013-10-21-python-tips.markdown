@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-02-17 18:34:49
+Date: 2019-03-12 22:55:06
 Slug: python-tips
 Title: Some Fragmentary Tips About Python
 Category: Programming
@@ -77,6 +77,11 @@ It is not meant to readers but rather for convenient reference of the author and
     you have to declare `global x` at the beginning of the method.
 
 ## Tricks and Traps
+
+https://docs.python-guide.org/writing/gotchas/
+
+https://stackoverflow.com/questions/101268/hidden-features-of-python
+
 
 1. Almost all modern programming languages follow the convention
     of not returnting anything (or in another words, retun void, None, etc.)

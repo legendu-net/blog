@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-09 02:23:14
+Date: 2019-03-13 00:40:55
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages
@@ -77,6 +77,18 @@ so that you do not need to use the `--user` option when installing Python packag
     you can install the pre-release version (0.12) which is compatible with Python 3.7.
 
         pip3 install --pre pybuilder
+
+## --ignore-installed vs --force-reinstall
+
+https://stackoverflow.com/questions/51913361/difference-between-pip-install-options-ignore-installed-and-force-reinstall
+
+https://github.com/blockstack/blockstack-core/issues/504
+
+Sometimes a package is installed by distutils
+which cannot be reinstalled using `pip`, 
+not even with the `--force-reinstall` option.
+In that case, 
+you have to use the `--ignore-installed` option.
 
 ## Upgrade Packages
 

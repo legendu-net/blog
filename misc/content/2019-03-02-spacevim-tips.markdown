@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-09 15:32:44
+Date: 2019-03-15 17:23:32
 Author: Benjamin Du
 Slug: spacevim-tips
 Title: SpaceVim Tips
@@ -55,6 +55,23 @@ https://github.com/SpaceVim/SpaceVim/issues/78
   <tr>
     <td> SPC [1-9] </td>
     <td> jump to the windows with the specific number </td>
+  </tr>
+</table>
+
+### [Comment](https://spacevim.org/documentation/#commenting)
+
+<table style="width:100%">
+  <tr>
+    <th> Key Binding </th>
+    <th> Description </th> 
+  </tr>
+  <tr>
+    <td> SPC c h </td>
+    <td> hide/show comments </td>
+  </tr>
+  <tr>
+    <td> SPC c l </td>
+    <td> toggle comment line </td>
   </tr>
 </table>
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-22 01:58:22
+Date: 2019-03-22 02:26:53
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -295,7 +295,7 @@ use a user on the host OS and the corresponding password for authentication.
                                     > torch torchvision tensorflow keras h2o  
                                     > gensim pytext    
 
-                                - [dclong/jupyterhub-beaker](https://hub.docker.com/r/dclong/jupyterhub-beakerx/)  
+                                - [dclong/jupyterhub-beakerx](https://hub.docker.com/r/dclong/jupyterhub-beakerx/)  
 
                                     > SQL (based on JDBC) via BeakerX 1.1.0  
                                     > Scala 2.11.12 via BeakerX 1.1.0  

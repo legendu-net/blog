@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-22 01:57:48
+Date: 2019-03-22 01:58:22
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -195,8 +195,6 @@ use a user on the host OS and the corresponding password for authentication.
     - [dclong/linuxbrew](https://hub.docker.com/r/dclong/linuxbrew/)  
 
     - [dclong/samba](https://hub.docker.com/r/dclong/samba/)  
-
-    - [dclong/pdftk](https://hub.docker.com/r/dclong/pdftk/)  
 
     - [dclong/nfs](https://hub.docker.com/r/dclong/nfs/)  
 

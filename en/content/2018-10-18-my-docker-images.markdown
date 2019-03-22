@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-19 19:14:49
+Date: 2019-03-22 01:54:54
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -177,8 +177,6 @@ use a user on the host OS and the corresponding password for authentication.
 
 - [dclong/gitpod](https://hub.docker.com/r/dclong/gitpod/)
 
-- [dclong/wajig](https://hub.docker.com/r/dclong/wajig/)
-
 - [dclong/deepin_b](https://hub.docker.com/r/dclong/deepin_b/)  
 
     - [dclong/deepin_cn](https://hub.docker.com/r/dclong/deepin_cn/)  
@@ -262,8 +260,6 @@ use a user on the host OS and the corresponding password for authentication.
 
              > Jupyter Notebook: 5.7.0  
 
-            - [dclong/jupyter-beakerx](https://hub.docker.com/r/dclong/jupyter-beakerx/)  
-
             - [dclong/jupyter-nodejs](https://hub.docker.com/r/dclong/jupyter-nodejs/)  
 
                  > NodeJS: 10.15.0  
@@ -277,8 +273,6 @@ use a user on the host OS and the corresponding password for authentication.
                          > JupyterHub: 0.9.3  
 
                         - [dclong/jupyterhub-ts](https://hub.docker.com/r/dclong/jupyterhub-ts/)  
-
-                        - [dclong/jupyterhub-giraffez](https://hub.docker.com/r/dclong/jupyterhub-giraffez/)  
 
                         - [dclong/jupyterhub-julia](https://hub.docker.com/r/dclong/jupyterhub-julia/)  
 

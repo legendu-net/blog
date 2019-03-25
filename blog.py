@@ -26,6 +26,7 @@ DASHES = '-' * 80
 NOW_DASH = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 TODAY_DASH = NOW_DASH[:10]
 EDITOR = 'code'
+VIM = 'nvim' if shutil.which('nvim') else 'vim'
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 INDEXES = [''] + [str(i) for i in range(1, 11)]
 
@@ -498,7 +499,7 @@ def edit(blogger, args):
     if args.files:
         # todo: best to unify the it or make a feature request to shutil.which
         if args.editor != 'gp open' and not shutil.which(args.editor):
-            args.editor = 'vim'
+            args.editor = VIM
         blogger.edit(args.files, args.editor)
     blogger.commit()
 
@@ -970,15 +971,15 @@ def _subparse_add(subparsers):
         action='store_const',
         const='gp open',
         default=EDITOR,
-        help='edit the post using vim.')
+        help='edit the post using Vim.')
     subparser_add.add_argument(
         '-v',
         '--vim',
         dest='editor',
         action='store_const',
-        const='vim',
+        const=VIM,
         default=EDITOR,
-        help='edit the post using vim.')
+        help='edit the post using Vim.')
     subparser_add.add_argument(
         '-e',
         '--en',
@@ -1009,15 +1010,15 @@ def _subparse_edit(subparsers):
         action='store_const',
         const='gp open',
         default=EDITOR,
-        help='edit the post using vim.')
+        help='edit the post using Theia\'s built-in editor.')
     subparser_edit.add_argument(
         '-v',
         '--vim',
         dest='editor',
         action='store_const',
-        const='vim',
+        const=VIM,
         default=EDITOR,
-        help='edit the post using vim.')
+        help='edit the post using Vim.')
     subparser_edit.add_argument(
         '-i',
         '--indexes',

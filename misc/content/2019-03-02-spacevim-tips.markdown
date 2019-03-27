@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-15 17:23:32
+Date: 2019-03-27 20:55:13
 Author: Benjamin Du
 Slug: spacevim-tips
 Title: SpaceVim Tips
@@ -57,6 +57,24 @@ https://github.com/SpaceVim/SpaceVim/issues/78
     <td> jump to the windows with the specific number </td>
   </tr>
 </table>
+
+### [Window](https://spacevim.org/documentation/#window-manipulation)
+
+<table style="width:100%">
+  <tr>
+    <th> Key Binding </th>
+    <th> Description </th> 
+  </tr>
+  <tr>
+    <td> SPC 1 </td>
+    <td> got to window number 1 </td>
+  </tr>
+  <tr>
+    <td> SPC 2 </td>
+    <td> go to window number 2 </td>
+  </tr>
+</table>
+
 
 ### [Comment](https://spacevim.org/documentation/#commenting)
 

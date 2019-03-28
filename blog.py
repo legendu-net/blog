@@ -10,6 +10,7 @@ import datetime
 import shutil
 import json
 from typing import Union, List
+import pelican
 
 EN = 'en'
 CN = 'cn'
@@ -109,9 +110,9 @@ def _fts_version():
 
 
 def _publish_blog_dir(dir_):
-    # pelican
-    os.system(
-        f'cd "{os.path.join(BASE_DIR, dir_)}" && pelican . -s pconf_sd.py')
+    path = os.path.join(BASE_DIR, dir_, 'pconf_sd.py')
+    settings = pelican.settings.read_settings(path=path)
+    pelican.Pelican(settings).run()
     # git push
     os.system(f'cd "{BASE_DIR}" && bash ./git.sh {dir_}')
     print('\n' + DASHES)

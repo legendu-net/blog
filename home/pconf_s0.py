@@ -1,12 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
 import os
 
-
-BLOG_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# remove old files
-os.system('rm -rf output/*')
 #-------------------------------------------------------------------------
 # http:// is necessary!
 SITEURL = 'http://www.legendu.net'
@@ -18,7 +13,10 @@ SITENAME = "Ben Chuanlong Du's Blog"
 DEFAULT_DATE_FORMAT = '%b %d, %Y'
 TIMEZONE = 'US/Pacific'
 DEFAULT_LANG = u'en'
-
+#-------------------------------------------------------------------------
+PATH = os.path.dirname(os.path.abspath(os.path.realpath(__file__)))
+BLOG_DIR = os.path.dirname(PATH)
+DELETE_OUTPUT_DIRECTORY = False
 # pages
 PAGE_PATHS = ["pages"]
 DISPLAY_PAGES_ON_MENU = False

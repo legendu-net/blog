@@ -110,8 +110,10 @@ def _fts_version():
 
 
 def _publish_blog_dir(dir_):
-    path = os.path.join(BASE_DIR, dir_, 'pconf_sd.py')
-    settings = pelican.settings.read_settings(path=path)
+    blog_dir = os.path.join(BASE_DIR, dir_)
+    os.chdir(blog_dir)
+    config = os.path.join(blog_dir, 'pconf.py')
+    settings = pelican.settings.read_settings(path=config)
     pelican.Pelican(settings).run()
     # git push
     os.system(f'cd "{BASE_DIR}" && bash ./git.sh {dir_}')

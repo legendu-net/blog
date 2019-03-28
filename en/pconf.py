@@ -2,28 +2,29 @@
 # -*- coding: utf-8 -*- #
 import os
 
-
-BLOG_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# remove old files
-os.system('rm -rf output/*')
 #-------------------------------------------------------------------------
-# !!! http:// is necessary
-HOME_URL = "http://www.legendu.net"
-SITEURL = os.path.join(HOME_URL, "misc") 
+# http:// is necessary!
+HOME_URL = 'http://www.legendu.net'
+SITEURL = os.path.join(HOME_URL, 'en')
 #-------------------------------------------------------------------------
-SITESUBTITLE = "The messy process of learning."
+SITESUBTITLE = "It's never too late to learn."
 AUTHOR = 'Ben Chuanlong Du'
 SITENAME = "Ben Chuanlong Du's Blog"
 # Times and dates
 DEFAULT_DATE_FORMAT = '%b %d, %Y'
 TIMEZONE = 'US/Pacific'
 DEFAULT_LANG = u'en'
-
+#-------------------------------------------------------------------------
+PATH = os.path.dirname(os.path.abspath(os.path.realpath(__file__)))
+BLOG_DIR = os.path.dirname(PATH)
+DELETE_OUTPUT_DIRECTORY = True
 # pages
-PAGE_PATHS = ["pages"]
+PAGE_PATHS = ['pages']
 DISPLAY_PAGES_ON_MENU = False
 
 # Set the article URL
+# don't change the ARTICLE_URL and ARTICLE_SAVE_AS settings
+# it's easy to orgnanize media belong to one post in this way
 ARTICLE_URL = 'blog/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 
@@ -39,11 +40,11 @@ MARKDOWN = {
 
 # Title menu options
 MENUITEMS = [
-    ('Home', HOME_URL),
-    ('Blog', SITEURL), 
-    ("Archives", os.path.join(SITEURL, 'archives.html')), 
-    ('Links', os.path.join(SITEURL, 'pages/links.html')), 
-]
+        ('Home', HOME_URL),
+        ('Blog', SITEURL), 
+        ("Archives", os.path.join(SITEURL, 'archives.html')), 
+        ('About', os.path.join(HOME_URL, 'pages/about')), 
+    ]
 NEWEST_FIRST_ARCHIVES = True
 
 # tag cloud
@@ -90,7 +91,7 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 
 # theme and plugins
 CSS_FILE = 'main_2.css'
-THEME = os.path.join(BLOG_DIR, "themes/octopress_2")
+THEME = os.path.join(BLOG_DIR, 'themes/octopress_2')
 # plugins
 PLUGIN_PATHS = [os.path.join(BLOG_DIR, 'plugins')]
 PLUGINS = [
@@ -99,7 +100,7 @@ PLUGINS = [
     ]
 
 # disqus comment
-DISQUS_SITENAME = "dclong"
+DISQUS_SITENAME = 'dclong'
 
 # Sharing
 TWITTER_USER = 'longendu'
@@ -123,9 +124,9 @@ FEED_ATOM = 'atom.xml'
 
 # Search
 # SEARCH_BOX = True
-# SITESEARCH = "http://www.google.com/search"
+# SITESEARCH = "https://www.google.com/search"
 # SITESEARCH = "https://search.yahoo.com"
-SITESEARCH = "https://www.bing.com/search"
+SITESEARCH = 'https://www.bing.com/search'
 
 # google analytics
 GOOGLE_ANALYTICS = 'UA-30259661-1'

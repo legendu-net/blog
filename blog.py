@@ -1161,6 +1161,10 @@ def git_diff(blogger, args):
     os.system('git diff')
 
 
+def git_pull(blogger, args):
+    os.system('git pull origin master')
+
+
 if __name__ == '__main__':
     blogger = Blogger()
     args = parse_args()

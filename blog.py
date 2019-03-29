@@ -678,6 +678,7 @@ def parse_args(args=None, namespace=None):
     _subparse_clear(subparsers)
     _subparse_git_status(subparsers)
     _subparse_git_diff(subparsers)
+    _subparse_git_pull(subparsers)
     return parser.parse_args(args=args, namespace=namespace)
 
 
@@ -1159,6 +1160,14 @@ def git_status(blogger, args):
 
 def git_diff(blogger, args):
     os.system('git diff')
+
+
+def _subparse_git_pull(subparsers):
+    subparser_status = subparsers.add_parser(
+        'pull', 
+        aliases=['pu'],
+        help='The git pull command.')
+    subparser_status.set_defaults(func=git_pull)
 
 
 def git_pull(blogger, args):

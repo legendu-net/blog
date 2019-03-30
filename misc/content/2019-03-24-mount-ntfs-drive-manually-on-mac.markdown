@@ -1,20 +1,20 @@
 Status: published
-Date: 2019-03-24 12:46:05
+Date: 2019-03-30 14:28:17
 Author: Benjamin Du
-Slug: mount-ntfs-drive-manually-on-mac
+Slug: mount-external-hard-drive-manually-on-mac
 Title: Mount Ntfs Drive Manually on Mac
 Category: OS
-Tags: OS, macOS, mount, NTFS, external drive
+Tags: OS, macOS, mount, NTFS, external drive, ExFAT
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-First use `diskutil list` to list all avaiable disks and identifiy the NTFS drive.
+First use `diskutil list` to list all avaiable disks and identifiy the external hard drive to mount.
 For example,
 running `diskutil list` on my Mac gives me the following output
-and `/dev/disk2s1` is the NTFS partition to mount.
+and `/dev/disk2s1` is the partition (NTFS) to mount.
 
 ```
 $ diskutil list
@@ -39,8 +39,14 @@ $ diskutil list
    1:                      Linux                         1.0 TB     disk2s1
 ```
 
-Now you can mount it using the following command.
+## NTFS 
 
 ```Bash
-sudo /sbin/mount_ntfs /dev/disk2s1 /path_to_mount_in
+sudo mount_ntfs /dev/disk2s1 /path_to_mount_in
+```
+
+## ExFAT
+
+```Bash
+sudo mount_exfat /dev/disk2s1 /path_to_mount_in
 ```

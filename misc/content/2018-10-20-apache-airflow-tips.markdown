@@ -1,6 +1,5 @@
-UUID: a64534c3-c495-436a-a1f6-d21dd3fc135f
 Status: published
-Date: 2019-03-28 18:42:55
+Date: 2019-03-29 09:20:48
 Author: Ben Chuanlong Du
 Slug: apache-airflow-tips
 Title: Apache Airflow Tips

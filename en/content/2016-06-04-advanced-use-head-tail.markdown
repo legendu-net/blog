@@ -1,6 +1,5 @@
-UUID: 16089c09-7898-4805-b2ff-7d092b241fcb
 Status: published
-Date: 2017-03-19 10:32:15
+Date: 2019-03-29 09:29:01
 Author: Ben Chuanlong Du
 Slug: advanced-use-head-tail
 Title: Advanced Use of "head" and "tail" 

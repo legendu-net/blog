@@ -1,6 +1,5 @@
-UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
-Date: 2019-02-27 20:53:02
+Date: 2019-03-29 09:29:01
 Slug: list-files-without-tilde-linux
 Author: Ben Chuanlong Du
 Title: Advanced Use of "ls" in Linux

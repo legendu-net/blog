@@ -134,6 +134,10 @@ def _push_github(dir_: str, https: bool):
 
 
 def _pelican_generate(dir_: str):
+    """Generate the (sub) blog/site using Pelican.
+
+    :param dir_: the sub blog directory to generate.
+    """
     blog_dir = os.path.join(BASE_DIR, dir_)
     os.chdir(blog_dir)
     config = os.path.join(blog_dir, 'pconf.py')
@@ -141,10 +145,12 @@ def _pelican_generate(dir_: str):
     pelican.Pelican(settings).run()
 
 
-def _publish_blog_dir(dir_: str, https: bool):
-    _pelican_generate(dir_)
-    _push_github(dir_, https)
-    print(MSG)
+def publish(blogger, args):
+    for dir_ in args.sub_dirs:
+        _pelican_generate(dir_)
+        if not args.no_push_github:
+            _push_github(dir_, args.https)
+        print(MSG)
 
 
 class Blogger:
@@ -603,11 +609,6 @@ def add(blogger, args):
     args.indexes = None
     args.files = file
     edit(blogger, args)
-
-
-def publish(blogger, args):
-    for dir_ in args.sub_dirs:
-        _publish_blog_dir(dir_, args.https)
 
 
 def categories(blogger, args):
@@ -1131,6 +1132,11 @@ def _subparse_publish(subparsers):
         dest='https',
         action='store_true',
         help='use the HTTPS protocol for Git.')
+    subparser_publish.add_argument(
+        '--no-push-github',
+        dest='no_push_github',
+        action='store_true',
+        help='do not push the generated (sub) blog/site to GitHub.')
     subparser_publish.set_defaults(func=publish)
 
 

@@ -1,8 +1,7 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Random Tips for SAS
-Date: 2015-08-28 16:53:21
+Date: 2019-03-30 17:27:51
 Slug: sas-tips
 Category: Programming
 Tags: tips, SAS, programming
@@ -166,3 +165,12 @@ which is recommended
 If you want to run run multiple statements in a if ... then ... branch,
 you have to include them in a do ... end block.
 
+
+## References
+
+- [CFA SAS FRM Statistics Finance](http://duanzy.blogspot.com/)
+
+
+http://www.jiangtanghu.com/blog/2012/10/16/incorporate-sasiml-to-base-sas/
+
+http://support.sas.com/documentation/cdl/en/imlug/64248/HTML/default/viewer.htm#imlug_procs_sect005.htm

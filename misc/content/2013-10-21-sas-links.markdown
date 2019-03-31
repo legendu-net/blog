@@ -1,4 +1,3 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Some Links for SAS
@@ -12,10 +11,3 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
  
-
-- [CFA SAS FRM Statistics Finance](http://duanzy.blogspot.com/)
-
-
-http://www.jiangtanghu.com/blog/2012/10/16/incorporate-sasiml-to-base-sas/
-
-http://support.sas.com/documentation/cdl/en/imlug/64248/HTML/default/viewer.htm#imlug_procs_sect005.htm

@@ -1,4 +1,3 @@
-UUID: 9ec371e9-90d4-42ef-96f9-48d0ccda5978
 Status: published
 Date: 2018-04-30 16:35:53
 Author: Ben Chuanlong Du
@@ -29,5 +28,3 @@ https://jingyan.baidu.com/article/49711c61858939fa441b7cd9.html
 投研帮
 
 摩尔金融
-
-当日股票分析

@@ -23,13 +23,17 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 '''
-DASHES = '-' * 80
 NOW_DASH = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 TODAY_DASH = NOW_DASH[:10]
 EDITOR = 'code'
 VIM = 'nvim' if shutil.which('nvim') else 'vim'
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 INDEXES = [''] + [str(i) for i in range(1, 11)]
+MSG = '''
+--------------------------------------------------------------------------------
+Please consider COMMITTING THE SOURCE CODE as well!
+--------------------------------------------------------------------------------
+'''
 
 
 def qmarks(n: int):
@@ -109,17 +113,38 @@ def _fts_version():
     return 'fts4'
 
 
-def _publish_blog_dir(dir_):
+def _push_github(dir_: str, https: bool):
+    path = os.path.join(BASE_DIR, dir_, 'output')
+    os.chdir(path)
+    if dir_ == 'home':
+        shutil.copy('pages/index.html', 'index.html')
+    cmd = 'git init && git add --all . && git commit -a -m ...' 
+    os.system(cmd)
+    if dir_ == 'home':
+        branch = 'master'
+    else:
+        branch = 'gh-pages'
+        cmd = f'git branch {branch} && git checkout {branch} && git branch -d master'
+        os.system(cmd)
+    url = f'git@github.com:dclong/{dir_}.git'
+    if https:
+        url = f'https://github.com/dclong/{dir_}.git'
+    cmd = f'git remote add origin {url} && git push origin {branch} --force'
+    os.system(cmd)
+
+
+def _pelican_generate(dir_: str):
     blog_dir = os.path.join(BASE_DIR, dir_)
     os.chdir(blog_dir)
     config = os.path.join(blog_dir, 'pconf.py')
     settings = pelican.settings.read_settings(path=config)
     pelican.Pelican(settings).run()
-    # git push
-    os.system(f'cd "{BASE_DIR}" && bash ./git.sh {dir_}')
-    print('\n' + DASHES)
-    print('Please consider COMMITTING THE SOURCE CODE as well!')
-    print(DASHES + '\n')
+
+
+def _publish_blog_dir(dir_: str, https: bool):
+    _pelican_generate(dir_)
+    _push_github(dir_, https)
+    print(MSG)
 
 
 class Blogger:
@@ -582,7 +607,7 @@ def add(blogger, args):
 
 def publish(blogger, args):
     for dir_ in args.sub_dirs:
-        _publish_blog_dir(dir_)
+        _publish_blog_dir(dir_, args.https)
 
 
 def categories(blogger, args):
@@ -1101,6 +1126,11 @@ def _subparse_publish(subparsers):
         action='append_const',
         const=MISC,
         help='add the misc sub blog directory into the publish list.')
+    subparser_publish.add_argument(
+        '--https',
+        dest='https',
+        action='store_true',
+        help='use the HTTPS protocol for Git.')
     subparser_publish.set_defaults(func=publish)
 
 

@@ -1,0 +1,22 @@
+def is_empty(post):
+    file = open(post, "r")
+    lines = file.readlines()
+    index = len(lines)
+    remove_list = []
+    
+    for i in range(index):
+        row = lines[i]
+        if row.startswith("UUID") or row.startswith("Status") or row.startswith("Date") or row.startswith("Author") or row.startswith("Slug") or row.startswith("Title") or row.startswith("Category") or row.startswith("Tag"):
+            remove_list.append(i)
+            
+    del lines[0:len(remove_list)]
+    
+    content = ' '.join(x.strip() for x in lines)
+    
+    para = len("**Things on this page are fragmentary and immature notes/thoughts of the author. It is not meant to readers but rather for convenient reference of the author and future improvement.**")
+    
+    if len(content) <= para + 5:
+        return "empty"
+    else:
+        return "Non-empty"
+    

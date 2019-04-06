@@ -278,6 +278,19 @@ class Blogger:
             content,
             0,
         ])
+    
+    def is_ess_empty(self, lines):
+        content = ' '.join(line.strip() for line in lines)
+        if len(content) == 0:
+            return True
+        elif content.startswith("**"):
+            del content[0:2]
+            if len(content.partition('**')[2]) == 0:
+                return True
+            else:
+                return False
+        else:
+            return False
 
     def delete(self, posts: Union[str, List[str]]):
         if isinstance(posts, str):

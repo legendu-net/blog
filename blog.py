@@ -312,7 +312,12 @@ class Blogger:
             content,
             0,
         ])
-
+    
+    def _is_ess_empty(self, lines: List[str]) -> int:
+        content = ''.join(line.strip() for line in lines)
+        empty = re.sub(r'\*\*.+\*\*', '', content) == ''
+        return 1 if empty else 0
+  
     def delete(self, posts: Union[str, List[str]]):
         if isinstance(posts, str):
             posts = [posts]

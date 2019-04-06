@@ -187,6 +187,7 @@ class Blogger:
             category,
             tags,
             content,
+            empty,
             updated
         )
         '''
@@ -282,6 +283,7 @@ class Blogger:
                     tags = tags + ','
         # parse content index to end
         content = ''.join(lines)
+        empty = self._is_ess_empty(lines[index:])
         sql = '''
         INSERT INTO posts (
             path,
@@ -294,9 +296,10 @@ class Blogger:
             category,
             tags,
             content,
+            empty,
             updated
         ) VALUES (
-            ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+            ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
         )
         '''
         self._conn.execute(sql, [
@@ -310,6 +313,7 @@ class Blogger:
             category,
             tags,
             content,
+            empty,
             0,
         ])
     

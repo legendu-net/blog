@@ -10,6 +10,7 @@ import datetime
 import shutil
 import json
 from typing import Union, List
+import pelican
 
 EN = 'en'
 CN = 'cn'
@@ -22,13 +23,17 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 '''
-DASHES = '-' * 80
 NOW_DASH = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 TODAY_DASH = NOW_DASH[:10]
 EDITOR = 'code'
 VIM = 'nvim' if shutil.which('nvim') else 'vim'
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 INDEXES = [''] + [str(i) for i in range(1, 11)]
+MSG = '''
+--------------------------------------------------------------------------------
+Please consider COMMITTING THE SOURCE CODE as well!
+--------------------------------------------------------------------------------
+'''
 
 
 def qmarks(n: int):
@@ -108,15 +113,44 @@ def _fts_version():
     return 'fts4'
 
 
-def _publish_blog_dir(dir_):
-    # pelican
-    os.system(
-        f'cd "{os.path.join(BASE_DIR, dir_)}" && pelican . -s pconf_sd.py')
-    # git push
-    os.system(f'cd "{BASE_DIR}" && bash ./git.sh {dir_}')
-    print('\n' + DASHES)
-    print('Please consider COMMITTING THE SOURCE CODE as well!')
-    print(DASHES + '\n')
+def _push_github(dir_: str, https: bool):
+    path = os.path.join(BASE_DIR, dir_, 'output')
+    os.chdir(path)
+    if dir_ == 'home':
+        shutil.copy('pages/index.html', 'index.html')
+    cmd = 'git init && git add --all . && git commit -a -m ...' 
+    os.system(cmd)
+    if dir_ == 'home':
+        branch = 'master'
+    else:
+        branch = 'gh-pages'
+        cmd = f'git branch {branch} && git checkout {branch} && git branch -d master'
+        os.system(cmd)
+    url = f'git@github.com:dclong/{dir_}.git'
+    if https:
+        url = f'https://github.com/dclong/{dir_}.git'
+    cmd = f'git remote add origin {url} && git push origin {branch} --force'
+    os.system(cmd)
+
+
+def _pelican_generate(dir_: str):
+    """Generate the (sub) blog/site using Pelican.
+
+    :param dir_: the sub blog directory to generate.
+    """
+    blog_dir = os.path.join(BASE_DIR, dir_)
+    os.chdir(blog_dir)
+    config = os.path.join(blog_dir, 'pconf.py')
+    settings = pelican.settings.read_settings(path=config)
+    pelican.Pelican(settings).run()
+
+
+def publish(blogger, args):
+    for dir_ in args.sub_dirs:
+        _pelican_generate(dir_)
+        if not args.no_push_github:
+            _push_github(dir_, args.https)
+        print(MSG)
 
 
 class Blogger:
@@ -153,6 +187,7 @@ class Blogger:
             category,
             tags,
             content,
+            empty,
             updated
         )
         '''
@@ -248,6 +283,7 @@ class Blogger:
                     tags = tags + ','
         # parse content index to end
         content = ''.join(lines)
+        empty = self._is_ess_empty(lines[index:])
         sql = '''
         INSERT INTO posts (
             path,
@@ -260,9 +296,10 @@ class Blogger:
             category,
             tags,
             content,
+            empty,
             updated
         ) VALUES (
-            ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+            ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
         )
         '''
         self._conn.execute(sql, [
@@ -276,9 +313,15 @@ class Blogger:
             category,
             tags,
             content,
+            empty,
             0,
         ])
-
+    
+    def _is_ess_empty(self, lines: List[str]) -> int:
+        content = ''.join(line.strip() for line in lines)
+        empty = re.sub(r'\*\*.+\*\*', '', content) == ''
+        return 1 if empty else 0
+  
     def delete(self, posts: Union[str, List[str]]):
         if isinstance(posts, str):
             posts = [posts]
@@ -370,6 +413,24 @@ class Blogger:
         if row:
             return row[0]
         return ''
+
+    def empty_post(self, dry_run=False):
+        self._create_table_srps()
+        self._conn.execute('DELETE FROM srps')
+        sql = f'''
+            INSERT INTO srps
+            SELECT
+                path
+            FROM
+                posts
+            WHERE
+                empty = 1
+            '''
+        if dry_run:
+            print(sql)
+            return
+        self._conn.execute(sql)
+        self._conn.commit()
 
     def search(self, phrase: str, filter_: str = '', dry_run=False):
         self._create_table_srps()
@@ -577,11 +638,6 @@ def add(blogger, args):
     edit(blogger, args)
 
 
-def publish(blogger, args):
-    for dir_ in args.sub_dirs:
-        _publish_blog_dir(dir_)
-
-
 def categories(blogger, args):
     cats = blogger.categories(dir_=args.sub_dir, where=args.where)
     for cat in cats:
@@ -678,6 +734,8 @@ def parse_args(args=None, namespace=None):
     _subparse_clear(subparsers)
     _subparse_git_status(subparsers)
     _subparse_git_diff(subparsers)
+    _subparse_git_pull(subparsers)
+    _subparse_empty_post(subparsers)
     return parser.parse_args(args=args, namespace=namespace)
 
 
@@ -1097,6 +1155,16 @@ def _subparse_publish(subparsers):
         action='append_const',
         const=MISC,
         help='add the misc sub blog directory into the publish list.')
+    subparser_publish.add_argument(
+        '--https',
+        dest='https',
+        action='store_true',
+        help='use the HTTPS protocol for Git.')
+    subparser_publish.add_argument(
+        '--no-push-github',
+        dest='no_push_github',
+        action='store_true',
+        help='do not push the generated (sub) blog/site to GitHub.')
     subparser_publish.set_defaults(func=publish)
 
 
@@ -1161,9 +1229,43 @@ def git_diff(blogger, args):
     os.system('git diff')
 
 
+def _subparse_git_pull(subparsers):
+    subparser_status = subparsers.add_parser(
+        'pull', 
+        aliases=['pu'],
+        help='The git pull command.')
+    subparser_status.set_defaults(func=git_pull)
+    
+def empty_post(blogger, args):
+    blogger.empty_post(args.dry_run)
+    show(blogger, args)
+
+def _subparse_empty_post(subparsers):
+    subparser_status = subparsers.add_parser(
+        'empty', 
+        aliases=['em'],
+        help='Find empty post.')
+    subparser_status.add_argument(
+        '--dry-run',
+        dest='dry_run',
+        action='store_true',
+        help='print out the SQL query without running it.')
+    subparser_status.add_argument(
+        '-n',
+        dest='n',
+        type=int,
+        default=10,
+        help='number of matched records to show.')
+    subparser_status.add_argument(
+        '-F',
+        '--full-path',
+        dest='full_path',
+        action='store_true',
+        help='whether to show full (instead of short/relative) path.')
+    subparser_status.set_defaults(func=empty_post)
+
 def git_pull(blogger, args):
     os.system('git pull origin master')
-
 
 if __name__ == '__main__':
     blogger = Blogger()

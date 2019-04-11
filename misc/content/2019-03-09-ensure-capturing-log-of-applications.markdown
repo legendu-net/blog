@@ -10,13 +10,7 @@ Tags: programming, logging, rediction, exception
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
-
-
 **
-Things on this page are fragmentary and immature notes/thoughts of the author.
-It is not meant to readers but rather for convenient reference of the author and future improvement.
-**
-
 Logging is critical for debugging applications.
 For production applications,
 it is best to send log information into a file instead of the standard output
@@ -38,3 +32,8 @@ this is not always feasible.
 Another even simple way is to wrap `some_command` into a `try ... catch ...` block
 to ensure that `some_command` runs without throwing exceptions
 so that the log redirection will always happen.
+
+
+## References
+
+https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels

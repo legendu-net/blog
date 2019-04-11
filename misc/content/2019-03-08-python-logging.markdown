@@ -28,3 +28,5 @@ message
 ## References
 
 https://realpython.com/python-logging/
+
+https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels

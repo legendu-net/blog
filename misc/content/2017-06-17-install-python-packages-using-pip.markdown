@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-13 00:40:55
+Date: 2019-04-11 23:54:08
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages
@@ -89,6 +89,12 @@ which cannot be reinstalled using `pip`,
 not even with the `--force-reinstall` option.
 In that case, 
 you have to use the `--ignore-installed` option.
+
+## Install a Package Without Installing Dependencies
+
+```
+pip3 install --no-deps some_package
+```
 
 ## Upgrade Packages
 

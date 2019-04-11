@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-02-12 01:06:44
+Date: 2019-04-11 23:52:08
 Slug: hadoop-fs-tips
 Title: Hadoop Filesystem Tips
 Category: Software
@@ -26,6 +26,11 @@ It is not meant to readers but rather for convenient reference of the author and
     hdfs dfs -du [-s] [-h] URI [URI …] 
 
     hadoop fs -rm -r -skipTrash /tmp/chdu_item_desc
+
+## Parquet Format
+
+Hadoop commands do not support merging Parquet files. 
+You can use [apache/parquet-mr](https://github.com/apache/parquet-mr) to merge Parquet files.
 
 ## Hadoop FS compress 
 

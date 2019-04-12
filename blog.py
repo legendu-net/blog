@@ -414,6 +414,24 @@ class Blogger:
             return row[0]
         return ''
 
+    def empty_post(self, dry_run=False):
+        self._create_table_srps()
+        self._conn.execute('DELETE FROM srps')
+        sql = f'''
+            INSERT INTO srps
+            SELECT
+                path
+            FROM
+                posts
+            WHERE
+                empty = 1
+            '''
+        if dry_run:
+            print(sql)
+            return
+        self._conn.execute(sql)
+        self._conn.commit()
+
     def search(self, phrase: str, filter_: str = '', dry_run=False):
         self._create_table_srps()
         self._conn.execute('DELETE FROM srps')
@@ -717,6 +735,7 @@ def parse_args(args=None, namespace=None):
     _subparse_git_status(subparsers)
     _subparse_git_diff(subparsers)
     _subparse_git_pull(subparsers)
+    _subparse_empty_post(subparsers)
     return parser.parse_args(args=args, namespace=namespace)
 
 
@@ -1217,6 +1236,33 @@ def _subparse_git_pull(subparsers):
         help='The git pull command.')
     subparser_status.set_defaults(func=git_pull)
 
+def empty_post(blogger, args):
+    blogger.empty_post(args.dry_run)
+    show(blogger, args)
+
+def _subparse_empty_post(subparsers):
+    subparser_status = subparsers.add_parser(
+        'empty', 
+        aliases=['em'],
+        help='Find empty post.')
+    subparser_status.add_argument(
+        '--dry-run',
+        dest='dry_run',
+        action='store_true',
+        help='print out the SQL query without running it.')
+    subparser_status.add_argument(
+        '-n',
+        dest='n',
+        type=int,
+        default=10,
+        help='number of matched records to show.')
+    subparser_status.add_argument(
+        '-F',
+        '--full-path',
+        dest='full_path',
+        action='store_true',
+        help='whether to show full (instead of short/relative) path.')
+    subparser_status.set_defaults(func=empty_post)
 
 def git_pull(blogger, args):
     os.system('git pull origin master')

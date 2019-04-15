@@ -539,9 +539,7 @@ def delete(blogger, args):
         args.files = blogger.path(args.indexes)
     if args.all:
         sql = 'SELECT path FROM srps'
-        posts = (row[0] for row in blogger.query(sql))
-        for post in posts:
-            blogger.delete(post)
+        arg.files = (row[0] for row in blogger.query(sql))
     if args.files:
         blogger.delete(args.files)
     blogger.commit()
@@ -1186,7 +1184,8 @@ def _subparse_delete(subparsers):
         type=int,
         help='row IDs of the files (in the search results) to delete.')
     subparser_delete.add_argument(
-        '--a',
+        '-a',
+        '--all'
         dest='all',
         help='all row IDs of the files (in the search results) to delete.')
     subparser_delete.add_argument(

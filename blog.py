@@ -1187,7 +1187,7 @@ def _subparse_delete(subparsers):
         '-a',
         '--all'
         dest='all',
-        help='all row IDs of the files (in the search results) to delete.')
+        help='delete all files in the search results.')
     subparser_delete.add_argument(
         '-f', '--files', dest='files', help='paths of the posts to delete.')
     subparser_delete.set_defaults(func=delete)

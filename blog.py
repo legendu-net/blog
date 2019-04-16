@@ -542,7 +542,7 @@ def delete(blogger, args):
         args.files = (row[0] for row in blogger.query(sql))
     if args.files:
         answer = input('Are you sure to delete all files in the srps table (yes or no): ')
-        if answer == "yes":
+        if answer == 'yes':
             blogger.delete(args.files)
     blogger.commit()
 

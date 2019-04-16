@@ -1185,7 +1185,7 @@ def _subparse_delete(subparsers):
         help='row IDs of the files (in the search results) to delete.')
     subparser_delete.add_argument(
         '-a',
-        '--all'
+        '--all',
         dest='all',
         help='delete all files in the search results.')
     subparser_delete.add_argument(

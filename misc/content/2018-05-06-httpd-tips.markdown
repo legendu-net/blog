@@ -1,9 +1,9 @@
 UUID: 143f0a38-db55-4d60-9025-825983fefcfe
 Status: published
-Date: 2018-05-06 10:36:05
+Date: 2019-04-13 00:24:45
 Author: Ben Chuanlong Du
 Slug: httpd-tips
-Title: Httpd Tips
+Title: httpd Tips
 Category: Software
 Tags: software, httpd, HTTP, tips
 

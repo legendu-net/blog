@@ -539,7 +539,7 @@ def delete(blogger, args):
         args.files = blogger.path(args.indexes)
     if args.all:
         sql = 'SELECT path FROM srps'
-        args.files = (row[0] for row in blogger.query(sql))
+        args.files = [row[0] for row in blogger.query(sql)]
     if args.files:
         answer = input('Are you sure to delete the specified files in the srps table (yes or no): ')
         if answer == 'yes':

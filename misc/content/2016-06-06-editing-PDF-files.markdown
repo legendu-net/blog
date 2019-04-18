@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-18 17:57:21
+Date: 2019-04-18 18:37:20
 Author: Ben Chuanlong Du
 Slug: editing-PDF-files
 Title: Editing PDF Files
@@ -39,3 +39,23 @@ a good WYSIWYG PDF editor, too simple, does not support Chinese
 ### pdftk
 
 A command-line tool for filling fileds in PDF docs.
+
+## [tabulapdf/tabula](https://github.com/tabulapdf/tabula)
+
+A Java library for liberating data tables trapped inside PDF files.
+
+## [socialcopsdev/camelot/](https://github.com/socialcopsdev/camelot/)
+
+A Python library for extracting data tables in PDF files.
+
+## [chezou/tabula-py](https://github.com/chezou/tabula-py)
+
+A Python binding for [tabulapdf/tabula](https://github.com/tabulapdf/tabula).
+
+
+
+## References
+
+[Python for PDF](https://towardsdatascience.com/python-for-pdf-ef0fac2808b0)
+
+http://stanford.edu/~mgorkove/cgi-bin/rpython_tutorials/Using_Python_to_Extract_Tables_From_PDFs.php

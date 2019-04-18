@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-18 18:42:39
+Date: 2019-04-18 19:09:37
 Author: Ben Chuanlong Du
 Slug: editing-PDF-files
 Title: Editing PDF Files
@@ -43,6 +43,10 @@ A command-line tool for filling fileds in PDF docs.
 ## [tabulapdf/tabula](https://github.com/tabulapdf/tabula)
 
 A Java library for liberating data tables trapped inside PDF files.
+
+## [mstamy2/PyPDF2](https://github.com/mstamy2/PyPDF2)
+
+A utility to read and write PDFs with Python.
 
 ## [pdfminer/pdfminer.six](https://github.com/pdfminer/pdfminer.six)
 

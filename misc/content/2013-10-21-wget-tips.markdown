@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for "wget" 
-Date: 2019-02-10 17:14:12
+Date: 2019-04-18 18:07:16
 Slug: wget-tips
 Category: Software
 Tags: tips, wget, web, download
@@ -16,3 +16,18 @@ To filter for specific file extensions:
 wget -A pdf,jpg -m -p -E -k -K -np http://site/PATH/
 ```
 This will mirror the site, but the files without jpg or pdf extension will be automatically removed.
+
+Download all contents under the link.
+```
+wget -r --no-parent -e robots=off http://site/PATH/
+```
+
+Download all contents except HTML files under the link.
+```
+wget -r --no-parent -e robots=off -R "*.html"
+```
+
+wget --no-check-certificate
+
+
+wget --random-wait -r -p -e robots=off -U mozilla

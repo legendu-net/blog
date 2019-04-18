@@ -1,6 +1,5 @@
-UUID: 51dab043-4183-4763-97a6-eaa336f868e4
 Status: published
-Date: 2016-07-10 11:13:55
+Date: 2019-04-18 17:57:21
 Author: Ben Chuanlong Du
 Slug: editing-PDF-files
 Title: Editing PDF Files
@@ -37,3 +36,6 @@ great, support Chinese, commerical, 30 days free trial
 ### flpsed
 a good WYSIWYG PDF editor, too simple, does not support Chinese
 
+### pdftk
+
+A command-line tool for filling fileds in PDF docs.

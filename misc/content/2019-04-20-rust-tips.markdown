@@ -1,0 +1,14 @@
+Status: published
+Date: 2019-04-20 03:03:10
+Author: Benjamin Du
+Slug: rust-tips
+Title: Rust Tips
+Category: Programming
+Tags: programming, Rust, tips
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+
+http://www.arewelearningyet.com/

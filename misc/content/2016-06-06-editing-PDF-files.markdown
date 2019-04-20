@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-18 19:09:37
+Date: 2019-04-20 00:41:54
 Author: Ben Chuanlong Du
 Slug: editing-PDF-files
 Title: Editing PDF Files
@@ -60,6 +60,7 @@ A Python library for extracting data tables in PDF files.
 
 A Python binding for [tabulapdf/tabula](https://github.com/tabulapdf/tabula).
 
+## [pmaupin/pdfrw](https://github.com/pmaupin/pdfrw)
 
 
 ## References

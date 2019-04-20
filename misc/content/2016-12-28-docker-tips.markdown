@@ -1,6 +1,5 @@
-UUID: 05e465c7-cb32-400b-9101-52043a8c6876
 Status: published
-Date: 2017-11-18 10:35:35
+Date: 2019-04-20 00:13:53
 Author: Ben Chuanlong Du
 Slug: links-docker
 Title: General Tips for Docker
@@ -14,9 +13,6 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-
-- [DockOne.io，最专业的Docker交流平台] (http://dockone.io/)
-- [Docker在Coding WebIDE项目中的运用] (http://www.infoq.com/cn/articles/the-apply-of-docker-in-coding-webide-project)
 
 
 ## Links
@@ -44,6 +40,10 @@ http://stackoverflow.com/questions/28056522/access-host-database-from-a-docker-c
 https://docs.docker.com/engine/reference/commandline/tag/
 
 https://docs.docker.com/engine/reference/commandline/push/
+
+## Start Another Docker Container in a Docker Container
+
+https://stackoverflow.com/questions/39468841/is-it-possible-to-start-a-stopped-container-from-another-container
 
 ### Communicate with Host
 

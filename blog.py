@@ -48,10 +48,12 @@ def _changed(post: str, content: str) -> bool:
 
 def _update_post_move(post):
     """ Update the post after move.
-    There are two possible change.
-    First, the declaration might be added/removed
+    There are 3 possible change.
+    1. The declaration might be added/removed
     depending on whether the post is moved to the misc sub blog directory.
-    Second, the slug of the post is updated to match the path of the post.
+    2. The slug of the post is updated to match the path of the post.
+    3. The title should be updated to match the file name. 
+    Both 2 and 3 will prompt to user for confirmation.
     """
     # slug = 'Slug: ' + _slug(os.path.basename(post)[11:])
     if blog_dir(post) == MISC:

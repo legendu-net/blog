@@ -1,11 +1,10 @@
-UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
-Title: Read PDF in Ruby
-Date: 2012-06-03 00:00:00
-Tags: require, library, programming, package, PDF, Ruby
-Category: Programming
-Slug: ruby-read-pdf
 Author: Ben Chuanlong Du
+Date: 2019-04-18 17:57:21
+Title: Read PDF in Ruby
+Slug: ruby-read-pdf
+Category: Programming
+Tags: library, programming, package, PDF, Ruby
 
 <img src="http://dclong.github.io/media/ruby/ruby.png" height="200" width="240" align="right"/>
 

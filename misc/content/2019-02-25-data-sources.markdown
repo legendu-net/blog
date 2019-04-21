@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-25 20:35:22
+Date: 2019-04-17 21:18:30
 Author: Benjamin Du
 Slug: data-sources
 Title: Data Sources
@@ -11,6 +11,15 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
+## Data Platforms
+
+https://registry.opendata.aws/
+
+https://www.google.com/publicdata/directory
+
+https://proxycrawl.com
+
+## Data Sources
 
 World Bank Open Data Datasets covering population demographics and a huge number of economic and development indicators from across the world.
 IMF Data The International Monetary Fund publishes data on international finances, debt rates, foreign exchange reserves, commodity prices and investments.
@@ -47,10 +56,6 @@ LondonAir Pollution and air quality data from across London
 
 
 ## References
-
-https://registry.opendata.aws/
-
-https://www.google.com/publicdata/directory
 
 [awesome-public-datasets](https://github.com/awesomedata/awesome-public-datasets)
 

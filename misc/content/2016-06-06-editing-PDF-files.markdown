@@ -1,6 +1,5 @@
-UUID: 51dab043-4183-4763-97a6-eaa336f868e4
 Status: published
-Date: 2016-07-10 11:13:55
+Date: 2019-04-20 00:41:54
 Author: Ben Chuanlong Du
 Slug: editing-PDF-files
 Title: Editing PDF Files
@@ -37,3 +36,35 @@ great, support Chinese, commerical, 30 days free trial
 ### flpsed
 a good WYSIWYG PDF editor, too simple, does not support Chinese
 
+### pdftk
+
+A command-line tool for filling fileds in PDF docs.
+
+## [tabulapdf/tabula](https://github.com/tabulapdf/tabula)
+
+A Java library for liberating data tables trapped inside PDF files.
+
+## [mstamy2/PyPDF2](https://github.com/mstamy2/PyPDF2)
+
+A utility to read and write PDFs with Python.
+
+## [pdfminer/pdfminer.six](https://github.com/pdfminer/pdfminer.six)
+
+A Python library for parsing PDF.
+
+## [socialcopsdev/camelot/](https://github.com/socialcopsdev/camelot/)
+
+A Python library for extracting data tables in PDF files.
+
+## [chezou/tabula-py](https://github.com/chezou/tabula-py)
+
+A Python binding for [tabulapdf/tabula](https://github.com/tabulapdf/tabula).
+
+## [pmaupin/pdfrw](https://github.com/pmaupin/pdfrw)
+
+
+## References
+
+[Python for PDF](https://towardsdatascience.com/python-for-pdf-ef0fac2808b0)
+
+http://stanford.edu/~mgorkove/cgi-bin/rpython_tutorials/Using_Python_to_Extract_Tables_From_PDFs.php

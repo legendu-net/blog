@@ -1,6 +1,6 @@
 UUID: 3a801beb-3661-4af7-af76-b3490954e35a
 Status: published
-Date: 2018-05-14 09:05:00
+Date: 2019-04-22 20:30:52
 Author: Ben Chuanlong Du
 Slug: cloud-ide
 Title: Cloud IDE
@@ -30,6 +30,9 @@ https://github.com/theia-ide/theia
 2. Debugging is not supported currently but under active development.
 
 3. best to mount a directory that has mode 777
+
+
+[Enable username/password for Theia](https://github.com/theia-ide/theia-apps/issues/167)
 
 ### Docker for theia
 ```

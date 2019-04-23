@@ -1,5 +1,5 @@
 Status: published
-Date: 2018-09-17 22:14:31
+Date: 2019-04-23 10:53:06
 Author: Ben Chuanlong Du
 Slug: beakerx-tips
 Title: Beakerx Tips
@@ -13,8 +13,17 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+[BeakerX dependencies](https://github.com/twosigma/beakerx/blob/master/configuration.yml#L6)
+Currently Java 8 is request.
+
 1. The maven cache is save to the following directory
     `/tmp/share/beakerx/maven/cache/`.
+
+2. Set JVM properties for Beakerx.
+
+https://github.com/twosigma/beakerx/issues/7666
+
+https://github.com/twosigma/beakerx/blob/master/FAQ.md
 
 ## SQL
 

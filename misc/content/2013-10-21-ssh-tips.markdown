@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: SSH Tips
-Date: 2019-03-08 02:59:55
+Date: 2019-04-24 00:29:40
 Slug: ssh-tips
 Category: Software
 Tags: tips, SSH, software, remote, Linux
@@ -23,7 +23,7 @@ It is not meant to readers but rather for convenient reference of the author and
     please refer to
     [SSH Proxies and Jump Hosts](https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Proxies_and_Jump_Hosts).
 
-      ssh -o ProxyCommand='ssh proxy_server -W %h:%p' target_server
+        ssh -o ProxyCommand='ssh proxy_server -W %h:%p' target_server
 
 2. It seems that if you use the local ip address,
     the port number is not important.

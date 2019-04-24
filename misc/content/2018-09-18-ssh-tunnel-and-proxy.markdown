@@ -1,6 +1,5 @@
-UUID: 87b30504-5bb2-478b-be49-1ae1027fe610
 Status: published
-Date: 2019-03-09 15:29:10
+Date: 2019-04-24 00:29:40
 Author: Ben Chuanlong Du
 Slug: ssh-tunnel
 Title: SSH Tunnel
@@ -42,13 +41,19 @@ Or you can try to visit a website using curl through the socks5 proxy.
 
 ## Reverse SSH Tunnel
 
+
+
 https://www.howtoforge.com/reverse-ssh-tunneling
 
 https://unix.stackexchange.com/questions/46235/how-does-reverse-ssh-tunneling-work
 
 https://blog.devolutions.net/2017/3/what-is-reverse-ssh-port-forwarding
 
-## Advanced Usage 1: SSH Tunnel to Avoid 2FA
+## Advanced Usage 1: SSH into a Server Using Proxy
+
+    ssh -o ProxyCommand='ssh bastion_server -W %h:%p' target_server
+
+## Advanced Usage 2: SSH Tunnel to Avoid 2FA
 
 Suppose you have 2 machines A and B. 
 Machine B is only accssible from machine A using SSH through 2FA.
@@ -56,7 +61,13 @@ You can create and persist a SSH tunnel from machine A to machine B (2FA is stil
 Then you can avoid 2FA when connecting from machine A to machine B 
 by using the created SSH tunnel as socks5 proxy through tools such as proxychains. 
 
-## Advanced Usage 2: SSH Reverse Tunnel + SSH Tunnel
+## Advanced Usage 3: SSH Reverse Tunnel Using Proxy
+
+    ssh -o ProxyCommand='ssh bastion_server -W %h:%p' -R 20000:localhost:22 target_server
+
+## Advanced Usage 4: SSH Reverse Tunnel + SSH Tunnel
+
+    ssh -fND "*:1080" target_server
 
 Suppose you have 2 machines A and B. 
 Machine B cannot visit the public network nor machine A.

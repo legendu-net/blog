@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-24 00:01:08
+Date: 2019-04-24 02:14:33
 Author: Benjamin Du
 Slug: spark-sql-tips
 Title: Spark SQL Tips
@@ -19,6 +19,18 @@ It is not meant to readers but rather for convenient reference of the author and
     returns a DataFrame with tables in the Hive database.
 
 2. JSON, ORC, Parquet and CSV files can be queried using Spark SQL without creating a table on the Spark DataFrame.
+
+        select
+            *
+        from
+            csv.`hdfs://cluster_name/path_to_csv`
+        where
+            rand() <= 0.01
+        distribute by
+            rand()
+        sort by
+            rand()
+        limit 10000
 
 ## References
 

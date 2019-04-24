@@ -1,7 +1,6 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-10-22 13:43:08
+Date: 2019-04-24 00:01:08
 Title: Hive Tips
 Slug: hive-tips
 Category: Programming
@@ -15,21 +14,37 @@ Tags: big data, hadoop, Hive
 1. You can use both double and single quotes for strings
 
 1. use `=` rather than `==` for equality comparison
-but it seems that `==` also works
+  but it seems that `==` also works
 
 2. use `%` rather than `*` for matching multiple characters
 
 3. use quit or exit
 
 4. when filtering use the where clause
-while when joining use the on clause
+  while when joining use the on clause
 
 5. it seems that it's not necessary to use group before running aggregation functions
-in hive, e.g., when you count the number of records in a table.
+  in hive, e.g., when you count the number of records in a table.
 
 6. must separate fields/column names with comma in the select clause or group by clause.
 
 7. it seems to me that Hive runs command from right to left?
+
+8. Random sample from a Hive table.
+    http://www.joefkelley.com/736/
+
+        SELECT 
+            * 
+        FROM 
+          my_table
+        WHERE 
+            rand() <= 0.0001
+        DISTRIBUTE BY 
+            rand()
+        SORT BY 
+            rand()
+        LIMIT 10000
+        ;
 
 
 ## Common Mistakes
@@ -50,4 +65,6 @@ Hive table, if I need a small part of a big Hive table, does hive load in all da
 
 
 
+## References
 
+http://www.joefkelley.com/736/

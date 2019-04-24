@@ -1,7 +1,6 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2014-01-28 00:25:41
+Date: 2019-04-24 00:01:08
 Slug: hive-questions
 Title: Hive Questions
 Category: Programming

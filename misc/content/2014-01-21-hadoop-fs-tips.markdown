@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-04-24 18:39:26
+Date: 2019-04-24 19:46:44
 Slug: hadoop-fs-tips
 Title: Hadoop Filesystem Tips
 Category: Software
@@ -20,6 +20,8 @@ It is not meant to readers but rather for convenient reference of the author and
     hadoop fs -getmerge /hdfs/path /path/in/linux
     hadoop fs -copyFromLocal /path/in/linux /hdfs/path
     hadoop fs -put /path/in/linux /hdfs/path
+    hadoop fs -mv /user/saurzcode/dir1/abc.txt /user/saurzcode/dir2
+
 
 3. Check size of a directory.
     However, the depth option is not supported currently.

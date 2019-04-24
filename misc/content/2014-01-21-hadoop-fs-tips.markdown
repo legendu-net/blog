@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-04-11 23:52:08
+Date: 2019-04-24 18:39:26
 Slug: hadoop-fs-tips
 Title: Hadoop Filesystem Tips
 Category: Software
@@ -22,10 +22,16 @@ It is not meant to readers but rather for convenient reference of the author and
     hadoop fs -put /path/in/linux /hdfs/path
 
 3. Check size of a directory.
+    However, the depth option is not supported currently.
 
-    hdfs dfs -du [-s] [-h] URI [URI …] 
+        hdfs dfs -du [-s] [-h] URI [URI …] 
 
-    hadoop fs -rm -r -skipTrash /tmp/chdu_item_desc
+4. Remove a directory in HDFS without making a backup in trash.
+    This is a dangerous operation 
+    but it is useful when the directory that you want to remove 
+    is too big to place into the trash directory.
+
+        hadoop fs -rm -r -skipTrash /tmp/chdu_item_desc
 
 ## Parquet Format
 

@@ -1,6 +1,5 @@
-UUID: f7982e28-2aa2-4829-ab77-2c8904408b1b
 Status: published
-Date: 2017-09-06 08:04:31
+Date: 2019-04-24 01:14:09
 Author: Ben Chuanlong Du
 Slug: intellij-idea-tips
 Title: IntelliJ IDEA Tips
@@ -41,6 +40,20 @@ sbt is better supported in IntelliJ IDEA.
 The Maven archetype for Scala is too old in IntelliJ.
 You have to update the file pom.xml immediately after you create a Maven based Scala project in IntelliJ IDEA.
 
+## General Tips
+
+1. Close IntelliJ IDEA if you don't use it.
+    First, 
+    this save memory and make your machine run faster.
+    Second, 
+    this helps avoiding some tricky issues that happens when IntelliJ IDEA runs for a long time 
+    (especially on Mac where people typically don't quit applications and don't restart for a long time).
+    Some of the tricky issues can be resolved simplify by restarting IntelliJ IDEA,
+    so closing IntelliJ IDEA if you don't use it helps preventing these tricky issues from happening.
+
+2. If you encounter some tricky issues in IntellIJ IDEA that doesn't seem to be caused by coding errors,
+    you can first restart IntelliJ IDEA, 
+    and then do a clean build to see whether the issue is resolved.
 
 ## Scala Project Using Maven in IntelliJ
 

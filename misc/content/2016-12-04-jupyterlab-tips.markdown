@@ -1,6 +1,5 @@
-UUID: 866ecf58-079e-4cec-9978-c9782410a0d0
 Status: published
-Date: 2017-12-02 16:56:15
+Date: 2019-04-25 20:32:51
 Author: Ben Chuanlong Du
 Slug: jupyterlab-tips
 Title: JupyterLab Tips
@@ -91,7 +90,6 @@ https://geomesa.atlassian.net/wiki/display/GEOMESA/How+to+install+the+Scala+Spar
 
 
 ## Questions
-1. jupyterlab多人改同一个notebook会发生什么情况
 2. How to use JupyterLab for blogging? 
     For example, if you write a blog about R/Python, 
     it's best to illustrate in JupyterLab, 

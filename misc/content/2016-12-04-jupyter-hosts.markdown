@@ -1,6 +1,6 @@
 UUID: a17174d9-ac37-4812-8a3d-2e498b96fdf4
 Status: published
-Date: 2016-12-04 21:01:34
+Date: 2019-04-25 20:32:51
 Author: Ben Chuanlong Du
 Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
@@ -21,7 +21,5 @@ but rather for convenient reference of the author and future improvement.
 3. [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio)
 
 5. [R-Brain](https://r-brain.io/en/)
-
-
 
 

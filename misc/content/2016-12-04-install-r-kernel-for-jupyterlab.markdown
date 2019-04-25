@@ -1,6 +1,5 @@
-UUID: 3fb54c7a-12bb-443b-817b-5aef23d29b8c
 Status: published
-Date: 2017-11-18 10:11:13
+Date: 2019-04-25 20:22:24
 Author: Ben Chuanlong Du
 Slug: install-r-kernel-for-jupyterlab
 Title: Install R Kernel for JupyterLab

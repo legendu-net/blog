@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-04-24 19:46:44
+Date: 2019-04-25 01:26:10
 Slug: hadoop-fs-tips
 Title: Hadoop Filesystem Tips
 Category: Software
@@ -21,6 +21,9 @@ It is not meant to readers but rather for convenient reference of the author and
     hadoop fs -copyFromLocal /path/in/linux /hdfs/path
     hadoop fs -put /path/in/linux /hdfs/path
     hadoop fs -mv /user/saurzcode/dir1/abc.txt /user/saurzcode/dir2
+    hadoop fs -tail /user/saurzcode/dir1/abc.txt
+    hadoop fs -cp /user/saurzcode/dir1/abc.txt /user/saurzcode/dir2
+
 
 
 3. Check size of a directory.
@@ -65,3 +68,5 @@ http://www.ericlin.me/disable-hive-output-compression
 ## References
 
 https://stackoverflow.com/questions/6504107/the-way-to-check-a-hdfs-directorys-size
+
+https://dzone.com/articles/top-10-hadoop-shell-commands

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-12 16:37:28
+Date: 2019-04-26 02:45:41
 Author: Ben Chuanlong Du
 Slug: spark-tips
 Title: Spark Tips
@@ -19,6 +19,18 @@ Spark supports two types of shared variables: broadcast variables,
 which can be used to cache a value in memory on all nodes,
 and accumulators,
 which are variables that are only “added” to, such as counters and sums.
+
+
+## Spark Submit
+
+1. After submitting a Spark application, 
+    if the network connection get lots, 
+    the Spark application submitted will be killed.
+    You can nohup or tmux to submit your Spark application 
+    so that loss of network connection won't kill your Spark application.
+    Or another way is to just submit your Spark application
+    from a server that has very stable network connection.
+
 
 ## Spark Shell
 
@@ -50,5 +62,5 @@ https://bzhangusc.wordpress.com/2015/11/20/use-sbt-console-as-spark-shell/
 
 https://spark-summit.org/2015/events/interactive-graph-analytics-with-spark/
 
-
+https://www.slideshare.net/SparkSummit/understanding-memory-management-in-spark-for-fun-and-profit
 

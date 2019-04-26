@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-26 22:58:57
+Date: 2019-04-26 23:48:36
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages
@@ -139,3 +139,5 @@ http://unix.stackexchange.com/questions/87745/what-does-lc-all-c-do
 https://stackoverflow.com/questions/4888027/python-and-pip-list-all-versions-of-a-package-thats-available
 
 https://stackoverflow.com/questions/5226311/installing-specific-package-versions-with-pip
+
+https://stackoverflow.com/questions/14149422/using-pip-behind-a-proxy

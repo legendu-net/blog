@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-11 23:54:08
+Date: 2019-04-26 22:58:57
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages
@@ -42,7 +42,7 @@ For example,
 it can be used to install `pip` for Python in Cygwin.
 
 
-## Install Locally
+## Install Python packages Locally
 
 You can install Python packages to your local directory 
 by specifying the `--user` option to `pip`.
@@ -60,7 +60,7 @@ Notice that if your Python is installed by Homebrew or you are using Anaconda Py
 the whole Python is installed to your local directory,
 so that you do not need to use the `--user` option when installing Python packages.
 
-## Install a Specific Version
+## Install a Specific Version of a Python Package
 
 1. List all available versions of a Python package. 
 
@@ -78,7 +78,7 @@ so that you do not need to use the `--user` option when installing Python packag
 
         pip3 install --pre pybuilder
 
-## --ignore-installed vs --force-reinstall
+## Difference between --ignore-installed and --force-reinstall
 
 https://stackoverflow.com/questions/51913361/difference-between-pip-install-options-ignore-installed-and-force-reinstall
 
@@ -90,19 +90,19 @@ not even with the `--force-reinstall` option.
 In that case, 
 you have to use the `--ignore-installed` option.
 
-## Install a Package Without Installing Dependencies
+## Install Python Packages Without Installing Dependencies
 
 ```
 pip3 install --no-deps some_package
 ```
 
-## Upgrade Packages
+## Upgrade Python Packages
 
 ```sh
 pip3 install --upgrade wheel
 ```
 
-## List Modules
+## List All Installed Python Packages
 
 1. List all installed modules.
 
@@ -113,6 +113,12 @@ pip3 install --upgrade wheel
         pip3 list --outdated
 
 3. You can also use `help('modules')` to show all installed modules in Python.
+
+## Use pip with Proxy
+
+```
+pip3 --proxy http://proxy__server_ip:port install some_pkg
+```
 
 ## Misc
 

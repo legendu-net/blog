@@ -1,4 +1,3 @@
-UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
 Date: 2019-04-18 18:02:38
 Slug: general-tips-for-latex
@@ -6,6 +5,12 @@ Author: Ben Chuanlong Du
 Title: General Tips for LaTeX
 Category: Programming
 Tags: tips, LaTeX, programming, list
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+
 
 
 ## Online Compiler/Editor
@@ -75,35 +80,30 @@ Tags: tips, LaTeX, programming, list
     equations manually though can do that. If you don't align equations
     manually, they will be aligned automatically.
 
-## References
-
-http://www.tug.org/books/
-
-
 ## Related Image Converter/Editer 
 
-IPE: http://tclab.kaist.ac.kr/ipe/
-jpeg2ps: http://www.ctan.org/tex-archive/support/jpeg2ps/
-eps2pdf: http://www.ctan.org/tex-archive/support/eps2pdf/
-XFig: http://www.xfig.org/
-TGIF: http://bourbon.usc.edu/tgif/download.html
+- [IPE](http://tclab.kaist.ac.kr/ipe/)
+- [jpeg2ps](http://www.ctan.org/tex-archive/support/jpeg2ps/)
+- [eps2pdf](http://www.ctan.org/tex-archive/support/eps2pdf/)
+- [XFig](http://www.xfig.org/)
+- [TGIF](http://bourbon.usc.edu/tgif/download.html)
 
 ## Bibliography Management 
 
-JabRef: http://sourceforge.net/projects/jabref/
-wbibdb22: http://www.ctan.org/tex-archive/support/bibdb/
-LaTeX Bibliography Styles Database: http://jo.irisson.free.fr/bstdatabase/
-
-## Documentation        
-
-LaTeX Help 1.4: http://www.emerson.emory.edu/services/latex/latex2e/latex2e_toc.html
-Not so short LaTeX guide: http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf
-The Comprehensive LaTeX Symbol List: ftp://tug.ctan.org/pub/tex-archive/info
-/symbols/comprehensive/symbols-letter.pdf
-LaTeX Mathematical Symbols: http://amath.colorado.edu/documentation/LaTeX/Symbols.pdf
-Short Math Guide for LaTeX: ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math
--guide.pdf
+- [JabRef](http://sourceforge.net/projects/jabref/)
+- [wbibdb22](http://www.ctan.org/tex-archive/support/bibdb/)
+- [LaTeX Bibliography Styles Database](http://jo.irisson.free.fr/bstdatabase/)
 
 ## Integration with Other Tools 
-Tex4PPT: http://users.ecs.soton.ac.uk/srg/softwaretools/presentation/TeX4PPT/
 
+- [Tex4PPT](http://users.ecs.soton.ac.uk/srg/softwaretools/presentation/TeX4PPT/)
+
+## References        
+
+http://www.tug.org/books/
+
+- [LaTeX Help 1.4](http://www.emerson.emory.edu/services/latex/latex2e/latex2e_toc.html)
+- [Not so short LaTeX guide](http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf)
+- [The Comprehensive LaTeX Symbol List](ftp://tug.ctan.org/pub/tex-archive/info/symbols/comprehensive/symbols-letter.pdf)
+- [LaTeX Mathematical Symbols](http://amath.colorado.edu/documentation/LaTeX/Symbols.pdf)
+- [Short Math Guide for LaTeX](ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf)

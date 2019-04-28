@@ -1,7 +1,6 @@
-UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
 Title: Parallel Computing in Different Programming Languages
-Date: 2018-01-13 13:51:33
+Date: 2019-04-28 11:50:22
 Tags: Mathematica, lock, programming, C/C++, thread, Java, HPC, parallel, R, concurrency, mutex, GPU Computing
 Category: Programming
 Slug: summary-parallel-computing
@@ -20,10 +19,7 @@ This is contrarary to most other programming languages which encourages multithr
 as processes are much heavier than thread and communication among processes are harder than communications among threads.
 Despite this, `multiprocess.Pool.map` makes parallel computing real easy in Python.
 
-## Bash
-`parallel` is a cool bash command which makes parallel computing easy in Bash.
-It is a parallel version replacement of `xargs`.
-
+## [Parallel Computing in Bash](http://www.legendu.net/misc/blog/parallel-computing-in-bash/)
 
 ## Mathematica
 In Mathematica,  

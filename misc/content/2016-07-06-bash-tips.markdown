@@ -1,6 +1,5 @@
-UUID: ba732c18-b055-4cca-a906-46dab2cd68fa
 Status: published
-Date: 2017-03-18 20:11:12
+Date: 2019-04-28 11:46:10
 Author: Ben Chuanlong Du
 Slug: bash-tips
 Title: Bash Tips
@@ -15,31 +14,14 @@ but rather for convenient reference of the author and future improvement.
 **
 
 1. [explainshell.com](http://www.explainshell.com/) 
-is a great place for learning shell.
+    is a great place for learning shell. 
 
-1. Bash array supports negative indexes,
-which is similar to Python.
+2. [Bash-it/bash-it](https://github.com/Bash-it/bash-it)
+    is a great community driven Bash framework.
 
-## Parallel Computing in Bash 
-
-1. & and wait 
-
-2. parallel 
-
-3. xargs
-
-
-## Regular Expression Match
-
-You can use `=~` for regular expression mathch in Bash.
-This make Bash syntax extremely flexible and powerful.
-For example, 
-you can match multiple strings using regular expression.
-```
-if [[ value =~ ^(v1|v2|v3)$ ]]; then
-    ...
-fi
-```
+3. It is suggested that you avoid writing complicated Bash scripts. 
+    [IPython](https://ipython.readthedocs.io/en/stable/)
+    is a much better alternative.
 
 ## Redirect Output
 

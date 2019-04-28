@@ -1,4 +1,3 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Date: 2018-04-29 23:11:09
@@ -240,12 +239,6 @@ to find software/tools for all kinds of purposes.
 6. mechanize (web browsing/scripting written in python)
 7. Selenium, iMacros
 2. Sikuli Script (automate anything based on image recognition)
-
-### Web Crawling
-1. Scrapy (an open source web crawling and scraping tool written in Python)
-2. 火车采集器
-3. [80legs](http://www.80legs.com/)
-
 
 ### Finance
 1. gnucash

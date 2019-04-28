@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-17 19:48:08
+Date: 2019-04-28 11:39:16
 Author: Ben Chuanlong Du
 Slug: my-list-of-python-modules
 Title: My List of Python Modules
@@ -98,10 +98,6 @@ but rather for convenient reference of the author and future improvement.
 1. argparse: Parser for command-line options, arguments and sub-commands.
 
 2. curses
-
-## Web Crawler
-
-1. scrapy: Web cr
 
 ## Machine Learning
 

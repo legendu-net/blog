@@ -1224,7 +1224,7 @@ def _subparse_git_status(subparsers):
         'status', 
         aliases=['st', 'sts'],
         help='The git status command.')
-    subparser_status.set_defaults(func=git_status)
+    subparser_status.set_defaults(func=_git_status)
 
 
 def _subparse_git_diff(subparsers):
@@ -1232,15 +1232,20 @@ def _subparse_git_diff(subparsers):
         'diff', 
         aliases=['df', 'dif'],
         help='The git diff command.')
-    subparser_status.set_defaults(func=git_diff)
+    subparser_status.set_defaults(func=_git_diff)
 
 
-def git_status(blogger, args):
+def _git_status(blogger, args):
     os.system('git status')
 
 
-def git_diff(blogger, args):
+def _git_diff(blogger, args):
     os.system('git diff')
+
+
+def _git_pull(blogger, args):
+    os.system('git pull origin master')
+    reload(blogger, args)
 
 
 def _subparse_git_pull(subparsers):
@@ -1248,7 +1253,7 @@ def _subparse_git_pull(subparsers):
         'pull', 
         aliases=['pu'],
         help='The git pull command.')
-    subparser_status.set_defaults(func=git_pull)
+    subparser_status.set_defaults(func=_git_pull)
 
 def empty_post(blogger, args):
     blogger.empty_post(args.dry_run)
@@ -1277,9 +1282,6 @@ def _subparse_empty_post(subparsers):
         action='store_true',
         help='whether to show full (instead of short/relative) path.')
     subparser_status.set_defaults(func=empty_post)
-
-def git_pull(blogger, args):
-    os.system('git pull origin master')
 
 
 if __name__ == '__main__':

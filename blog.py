@@ -29,6 +29,7 @@ EDITOR = 'code'
 VIM = 'nvim' if shutil.which('nvim') else 'vim'
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 INDEXES = [''] + [str(i) for i in range(1, 11)]
+DASHES = '\n' + '-' * 80 + '\n'
 
 
 def qmarks(n: int):
@@ -144,11 +145,12 @@ def _pelican_generate(dir_: str):
 
 def publish(blogger, args):
     auto_git_push(blogger, args)
-    print('\n' + '-' * 80 + '\n')
+    print(DASHES)
     for dir_ in args.sub_dirs:
         _pelican_generate(dir_)
         if not args.no_push_github:
             _push_github(dir_, args.https)
+        print(DASHES)
 
 
 class Blogger:

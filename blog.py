@@ -148,6 +148,7 @@ def _pelican_generate(dir_: str):
 
 
 def publish(blogger, args):
+    auto_git_push(blogger, args)
     for dir_ in args.sub_dirs:
         _pelican_generate(dir_)
         if not args.no_push_github:

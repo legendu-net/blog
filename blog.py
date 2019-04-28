@@ -29,7 +29,7 @@ EDITOR = 'code'
 VIM = 'nvim' if shutil.which('nvim') else 'vim'
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 INDEXES = [''] + [str(i) for i in range(1, 11)]
-DASHES = '\n' + '-' * 80 + '\n'
+DASHES = '\n' + '-' * 100 + '\n'
 
 
 def qmarks(n: int):

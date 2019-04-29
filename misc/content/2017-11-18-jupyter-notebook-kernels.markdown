@@ -1,6 +1,5 @@
-UUID: bcbd7723-669f-4569-ac6a-324c3c40619e
 Status: published
-Date: 2017-11-18 10:37:05
+Date: 2019-04-29 18:20:22
 Author: Ben Chuanlong Du
 Slug: jupyter-notebook-kernels
 Title: Jupyter Notebook Kernels
@@ -29,3 +28,13 @@ tmthyjames/SQLCell
 2. sparkmagic (seems like a good choice)
 
 3. spylon-kernel
+
+## Remote Kernels
+
+IPython is able to run remtoe kernels.
+
+https://github.com/ipython/ipython/wiki/Cookbook:-Connecting-to-a-remote-kernel-via-ssh
+
+https://stackoverflow.com/questions/29037211/how-do-i-add-a-kernel-on-a-remote-machine-in-ipython-jupyter-notebook
+
+https://github.com/jupyter/notebook/issues/1487

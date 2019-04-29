@@ -1,6 +1,5 @@
-UUID: 265e6617-684a-4e73-8ba5-cffffead55ed
 Status: published
-Date: 2019-01-31 08:36:06
+Date: 2019-04-29 10:02:51
 Author: Ben Chuanlong Du
 Slug: shell-alternatives
 Title: Shell Alternatives
@@ -21,6 +20,30 @@ IPython is the best and simpliest Python approach to replace shell so far.
 https://ipython.readthedocs.io/en/stable/interactive/magics.html
 
 https://github.com/ivanov/vim-ipython
+
+1. Use the IPython shell or JupyterLab notebook (preferred) instead of Shell for complicated interactive operations.
+
+2. Be careful about illegal shell commands. 
+    For example, 
+    `ls )` in Bash shell throws the error message `bash: syntax error near unexpected token )`.
+    If you have a equivalent IPython command,
+    it will throw the same error message.
+    For example, 
+    suppose `file` is path of a file which contains `)`
+    then `!ls {file}` in IPython will throws the same error message as above. 
+    However, 
+    this is definitely trickier to debug than the original Bash shell command `ls )`. 
+    There are several ways to avoid this.
+    First, 
+    you can use Python script 
+    ([xonsh](https://github.com/xonsh/xonsh) is a great choice is vanilla Python script is too verbose) 
+    instead Shell as underlying commands.
+    Second, 
+    you can show the underlying Shell commands for debugging.
+
+3. You can even run Shell commands on a remote server (via `ssh` or a remote kernel) in JupyterLab notebook. 
+    This provide the advantage of leveraging the JupyterLab notebook UI.
+
 
 ## [xonsh](https://github.com/xonsh/xonsh)
 

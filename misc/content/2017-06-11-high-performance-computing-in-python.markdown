@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-09 14:25:28
+Date: 2019-04-30 02:27:26
 Author: Ben Chuanlong Du
 Slug: high-performance-computing-in-python
 Title: High Performance Computing in Python
@@ -26,6 +26,8 @@ keep in mind that some of the tips might be outdated.
 ## [mars](https://github.com/mars-project/mars)
 
 ## [Apache Ray](https://github.com/ray-project/ray)
+
+## Dask
 
 ## Numba
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-30 21:18:54
+Date: 2019-04-30 21:22:47
 Author: Benjamin Du
 Slug: python-poetry-tips
 Title: Python Poetry Tips
@@ -22,6 +22,14 @@ https://github.com/sdispater/poetry/pull/591
 https://github.com/sdispater/poetry/issues/241
 
 ## Python Version
+
+Poetry supports the `env` subcomamnd starting from version 1.0.0.
+You can use `poetry env use python_version` to specify the Python version to use for the project.
+```
+poetry env use python3
+```
+
+## References
 
 https://github.com/sdispater/poetry/issues/522
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-12 17:53:07
+Date: 2019-04-30 21:18:54
 Author: Benjamin Du
 Slug: python-poetry-tips
 Title: Python Poetry Tips
@@ -20,4 +20,13 @@ https://hackersandslackers.com/poetic-python-project-packaging/
 https://github.com/sdispater/poetry/pull/591
 
 https://github.com/sdispater/poetry/issues/241
+
+## Python Version
+
+https://github.com/sdispater/poetry/issues/522
+
+https://github.com/sdispater/poetry/issues/655
+
+https://github.com/sdispater/poetry/issues/621
+
 

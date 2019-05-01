@@ -1226,11 +1226,17 @@ def _subparse_git_status(subparsers):
 
 
 def _subparse_git_diff(subparsers):
-    subparser_status = subparsers.add_parser(
+    subparser_git = subparsers.add_parser(
         'diff', 
         aliases=['df', 'dif'],
         help='The git diff command.')
-    subparser_status.set_defaults(func=_git_diff)
+    subparser_git.add_argument(
+        '-f',
+        '--file',
+        dest='file',
+        default='',
+        help='Path of the post to run git diff on.')
+    subparser_git.set_defaults(func=_git_diff)
 
 
 def _git_status(blogger, args):
@@ -1238,7 +1244,7 @@ def _git_status(blogger, args):
 
 
 def _git_diff(blogger, args):
-    os.system('git diff')
+    os.system(f'git diff {args.file}')
 
 
 def _git_pull(blogger, args):

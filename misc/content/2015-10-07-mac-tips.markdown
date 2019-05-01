@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-28 12:10:31
+Date: 2019-05-01 01:03:30
 Author: Ben Chuanlong Du
 Slug: mac-tips
 Title: Tips for macOS
@@ -28,13 +28,38 @@ but rather for convenient reference of the author and future improvement.
 
 ## Enable Key Repeating 
 
-https://www.howtogeek.com/267463/how-to-enable-key-repeating-in-macos/
+1. Enable key repeating by pressing and holding.
+
+    defaults write -g ApplePressAndHoldEnabled -bool false
+
+2. Disable key repeating by presing and holding.
+
+    defaults write -g ApplePressAndHoldEnabled -bool true
+
+For more details please refer to
+[How to Enable Key Repeating in macOS](https://www.howtogeek.com/267463/how-to-enable-key-repeating-in-macos/)
+.
+
+## Allow SSH into Mac
+
+[Enable Remote Login to Start SSH Server in Mac OS X](http://osxdaily.com/2011/09/30/remote-login-ssh-server-mac-os-x/)
+
+## IP Address
+
+ifconfig | grep inet
+
+[How to find internal and external IP addresses on Mac OS X and macOS?](https://blog.pcrisk.com/mac/12377-how-to-find-out-your-ip-address-on-mac)
+
 
 ## Touchpad
 
-1. two finger click for right menu
+1. Enable tapping (for click) by checking the checkbox `Tap to click`
+    in `System preference...` > `Trackpad` > `Point & Click`.
 
-2. You got to tap hard in order to click on a Mac laptop.
+2. Enable tapping with two fingers for right click by checking the checkboxs `Tap to click` and `Secondary click`
+    in `System preference...` > `Trackpad` > `Point & Click`.
+
+3. Tapping is automatically disable while typing on Mac.
 
 ## Move and Resize Windows
 

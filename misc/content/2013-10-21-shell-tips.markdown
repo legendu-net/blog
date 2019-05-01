@@ -1,8 +1,7 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Some Tips for Shell Commands
-Date: 2018-02-05 07:49:05
+Date: 2019-05-01 16:50:47
 Slug: shell-tips
 Category: Linux
 Tags: tips, Linux, shell, terminal
@@ -52,9 +51,7 @@ It is not meant to readers but rather for convenient reference of the author and
 
 2. Check whether a system is 32 bit or 64 bit
 
-```bash
-getconf LONG_BIT
-```
+        getconf LONG_BIT
 
 3. all parameters: `$@` (what about `$*`?)
 
@@ -102,7 +99,7 @@ getconf LONG_BIT
 24. bash array index is 0-based
 
 28. Be careful about `.` when using regular expressions (e.g., sed),
-this is really a general problem
+    this is really a general problem
 
 
 `-b file` = True if the file exists and is block special file.

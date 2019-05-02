@@ -1,6 +1,5 @@
-UUID: 3a801beb-3661-4af7-af76-b3490954e35a
 Status: published
-Date: 2019-04-22 20:30:52
+Date: 2019-05-02 21:45:00
 Author: Ben Chuanlong Du
 Slug: cloud-ide
 Title: Cloud IDE
@@ -78,3 +77,7 @@ An improbable web debugger through WebSockets for Python.
 3. Scala support is not ready
 
 Conclusion: basically unusable, not recommended
+
+## References
+
+https://matttrent.com/remote-development/

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-02 21:45:00
+Date: 2019-05-02 22:11:40
 Author: Benjamin Du
 Slug: vscode-tips
 Title: Vscode Tips
@@ -32,3 +32,9 @@ https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-cont
 ## Misc
 
 [Download Visual Studio Code Insiders](https://code.visualstudio.com/insiders/)
+
+## References
+
+- [Visual Studio Code Blog](https://code.visualstudio.com/blogs/2019/05/02/remote-development)
+
+- [Visual Studio Code Updates](https://code.visualstudio.com/updates/)

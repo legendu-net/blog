@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-28 12:43:27
+Date: 2019-05-02 20:55:44
 Author: Ben Chuanlong Du
 Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
@@ -13,14 +13,16 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-1. [RMOTR Notebooks](https://notebooks.rmotr.com/)
+1. [Cocalc](https://cocalc.com/)
 
-2. [Google Colaboratory](https://colab.research.google.com/)
+2. [RMOTR Notebooks](https://notebooks.rmotr.com/)
 
-3. Amazon SageMath
+3. [Google Colaboratory](https://colab.research.google.com/)
 
-3. [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio)
+4. Amazon SageMath
 
-5. [R-Brain](https://r-brain.io/en/)
+5. [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio)
 
-6. deploy your own public JupyterHub server
+6. [R-Brain](https://r-brain.io/en/)
+
+7. deploy your own public JupyterHub server

@@ -1,6 +1,5 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Date: 2016-07-13 22:14:10
+Date: 2019-05-02 01:07:43
 Author: Ben Chuanlong Du
 Slug: sikuli-tips
 Title: Sikuli Tips
@@ -19,3 +18,9 @@ but rather for convenient reference of the author and future improvement.
 2. Print documents (to a specific printer).
 
 3. Navigate to a page in the browser, you can also try Selenium
+
+## References
+
+https://github.com/RaiMan/SikuliX1
+
+https://raiman.github.io/SikuliX1/javadocs/index.html

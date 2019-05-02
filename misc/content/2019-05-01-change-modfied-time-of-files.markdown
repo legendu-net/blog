@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-05-01 00:39:51
+Date: 2019-05-02 02:40:46
 Author: Benjamin Du
-Slug: change-modfied-time-of-files
-Title: Change Modfied Time of Files
+Slug: change-modified-time-of-files
+Title: Change Modified Time of Files
 Category: Linux
 Tags: Linux, modified timestamp, touch
 

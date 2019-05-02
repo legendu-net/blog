@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-29 10:02:51
+Date: 2019-05-02 18:34:45
 Author: Ben Chuanlong Du
 Slug: shell-alternatives
 Title: Shell Alternatives
@@ -11,11 +11,31 @@ Things on this page are
 fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
-**
+
+
+## Python Equivalent of Shell Commands
+
+<table style="width:100%">
+  <tr>
+    <th> Shell Command </th>
+    <th> Python Alternative 1 </th>
+    <th> Python Alternative 2 </th>
+  </tr>
+  <tr>
+    <td> `mkdir -p path/to/some/file` </td>
+    <td> `os.makedirs('path/to/some/file', exist_ok=True)` </td>
+    <td> `pathlib.Path.mkdir('path/to/some/file', exist_ok=True)` </td>
+  </tr>
+  <tr>
+    <td> `cp file1 file2` </td>
+    <td> `shutil.copy2('file1', 'file2')` </td>
+    <td> `shutil.copyfile('file1', 'file2')` </td>
+  </tr>
+</table>
 
 ## [IPython](https://github.com/ipython/ipython)
 
-IPython is the best and simpliest Python approach to replace shell so far. 
+IPython is the best and simpliest Python approach to replace shell so far.
 
 https://ipython.readthedocs.io/en/stable/interactive/magics.html
 
@@ -23,36 +43,36 @@ https://github.com/ivanov/vim-ipython
 
 1. Use the IPython shell or JupyterLab notebook (preferred) instead of Shell for complicated interactive operations.
 
-2. Be careful about illegal shell commands. 
-    For example, 
+2. Be careful about illegal shell commands.
+    For example,
     `ls )` in Bash shell throws the error message `bash: syntax error near unexpected token )`.
     If you have a equivalent IPython command,
     it will throw the same error message.
-    For example, 
+    For example,
     suppose `file` is path of a file which contains `)`
-    then `!ls {file}` in IPython will throws the same error message as above. 
-    However, 
-    this is definitely trickier to debug than the original Bash shell command `ls )`. 
+    then `!ls {file}` in IPython will throws the same error message as above.
+    However,
+    this is definitely trickier to debug than the original Bash shell command `ls )`.
     There are several ways to avoid this.
-    First, 
-    you can use Python script 
-    ([xonsh](https://github.com/xonsh/xonsh) is a great choice is vanilla Python script is too verbose) 
+    First,
+    you can use Python script
+    ([xonsh](https://github.com/xonsh/xonsh) is a great choice is vanilla Python script is too verbose)
     instead Shell as underlying commands.
-    Second, 
+    Second,
     you can show the underlying Shell commands for debugging.
 
-3. You can even run Shell commands on a remote server (via `ssh` or a remote kernel) in JupyterLab notebook. 
+3. You can even run Shell commands on a remote server (via `ssh` or a remote kernel) in JupyterLab notebook.
     This provide the advantage of leveraging the JupyterLab notebook UI.
 
 
 ## [xonsh](https://github.com/xonsh/xonsh)
 
-Another Python approach to replace shell. 
+Another Python approach to replace shell.
 It looks interesting and quite promising too.
 
 ## [plumbum](https://github.com/tomerfiliba/plumbum)
 
-Yet another Python approach as a replacement of shell. 
+Yet another Python approach as a replacement of shell.
 I personally prefer IPython and xonsh to plumbum.
 
 
@@ -62,3 +82,5 @@ I personally prefer IPython and xonsh to plumbum.
 https://github.com/ninjaaron/replacing-bash-scripting-with-python
 
 https://stackoverflow.com/questions/209470/how-to-implement-common-bash-idioms-in-python
+**
+https://stackoverflow.com/questions/123198/how-do-i-copy-a-file-in-python

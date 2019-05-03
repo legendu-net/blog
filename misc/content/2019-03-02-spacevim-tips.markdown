@@ -32,6 +32,13 @@ https://github.com/SpaceVim/SpaceVim/issues/78
     simplify disable GUI colors by setting `enable_guicolors = false`
     under `[options]` in your SpaceVim configure file `$HOME/.SpaceVim.d/init.toml`.
 
+2. SpaceVim has mapped `q` as smart buffer close.
+    The normal functionality (recording macros) of `q` can be get by `<leader>`qr.
+    By default, 
+    `<leader>` is `\` so you can use `\qr` to record macros in SpaceVim.
+
+
+
 
 ## Some Useful Key Bindings
 

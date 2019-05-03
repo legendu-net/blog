@@ -26,15 +26,15 @@ but rather for convenient reference of the author and future improvement.
     As a matter of fact, 
     you should never do this. 
 
-## Enable Key Repeating 
+## Key Repeating 
 
-1. Enable key repeating by pressing and holding.
+1. Run the following command in terminal to enable key repeating by pressing and holding.
 
-    defaults write -g ApplePressAndHoldEnabled -bool false
+        defaults write -g ApplePressAndHoldEnabled -bool false
 
-2. Disable key repeating by presing and holding.
+2. Run the following command in terminal to disable key repeating by presing and holding.
 
-    defaults write -g ApplePressAndHoldEnabled -bool true
+        defaults write -g ApplePressAndHoldEnabled -bool true
 
 For more details please refer to
 [How to Enable Key Repeating in macOS](https://www.howtogeek.com/267463/how-to-enable-key-repeating-in-macos/)
@@ -46,7 +46,7 @@ For more details please refer to
 
 ## IP Address
 
-ifconfig | grep inet
+    ifconfig | grep inet
 
 [How to find internal and external IP addresses on Mac OS X and macOS?](https://blog.pcrisk.com/mac/12377-how-to-find-out-your-ip-address-on-mac)
 

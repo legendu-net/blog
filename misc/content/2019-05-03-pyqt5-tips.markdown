@@ -12,3 +12,11 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 https://www.youtube.com/watch?v=0wAU5usATX8
+
+## Examples
+
+https://github.com/mfitzp/15-minute-apps
+
+## References
+
+https://stackoverflow.com/questions/6236323/whats-the-suitable-widget-in-pyqt-to-create-a-floating-widget-on-the-desktop

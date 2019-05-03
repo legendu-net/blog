@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-22 02:26:53
+Date: 2019-05-03 08:10:00
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -166,7 +166,7 @@ Since we didn't specify a password for the user,
 the default password (same as the user name) is used.
 
 
-## Remote Connect to Desktop in the Container
+## Remote Connection to Desktop in the Container
 
 Download the NoMachine client from <https://www.nomachine.com/download>, 
 install the client, 
@@ -306,6 +306,10 @@ use a user on the host OS and the corresponding password for authentication.
     - [dclong/ubuntu_cn](https://hub.docker.com/r/dclong/ubuntu_cn/)  
 
         - [dclong/lubuntu](https://hub.docker.com/r/dclong/lubuntu/)  
+
+            - [dclong/lubuntu-qt5](https://hub.docker.com/r/dclong/lubuntu-qt5/)  
+
+                - [dclong/lubuntu-pyside2](https://hub.docker.com/r/dclong/lubuntu-pyside2/)  
 
             - [dclong/lubuntu-nodejs](https://hub.docker.com/r/dclong/lubuntu-nodejs/)  
 

@@ -1,0 +1,14 @@
+Status: published
+Date: 2019-05-03 21:28:28
+Author: Benjamin Du
+Slug: pyqt5-tips
+Title: Pyqt5 Tips
+Category: Programming
+Tags: programming, PyQt5, GUI, Python, Qt5
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+
+https://www.youtube.com/watch?v=0wAU5usATX8

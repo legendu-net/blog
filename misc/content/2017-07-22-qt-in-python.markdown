@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-17 19:03:29
+Date: 2019-05-03 09:28:49
 Author: Ben Chuanlong Du
 Slug: qt-in-python
 Title: Use Qt in Python
@@ -20,11 +20,19 @@ PySide2 has a more friendly LGPL licence.
 Personally,
 I prefer PySide2.
 
-## Installation of PySide2
+## Installation 
+### PySide2
 ```
-wajig show libclang-dev cmake
-pip install PySide2
+pip3 install PySide2
 ```
+### PyQt5
+```
+pip3 install PyQt5
+```
+
+- [PyQt5 GitHub Repository](https://github.com/baoboa/pyqt5)
+
+- [PyQt5 Examples](https://github.com/baoboa/pyqt5/tree/master/examples)
 
 ## Git Repository of PySide2
 

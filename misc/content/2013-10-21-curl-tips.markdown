@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-02-10 17:14:12
+Date: 2019-05-04 01:34:52
 Slug: curl-tips
 Title: Random Tips About cURL
 Category: Software
@@ -9,7 +9,15 @@ Tags: tips, cURL, downloading, web, wget
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
 It is not meant to readers but rather for convenient reference of the author and future improvement.
+
+## Alternatives to `curl`
+
+[Convert curl syntax to Python, Node.js, R, PHP, Strest, Go, JSON, Rust](https://curl.trillworks.com/)
+
+The postman plugin for Google Chrome can also convert curl command to other programming languages.
+
 **
+## Examples
 
 ```
 curl -v --cookie-jar cjar \

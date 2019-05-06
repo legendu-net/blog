@@ -28,6 +28,14 @@ You can use `poetry env use python_version` to specify the Python version to use
 ```
 poetry env use python3
 ```
+## Activate Virtual Environment
+
+`poetry shell` does not activate virtual environment currently, 
+which is a bug. 
+However, 
+one alternative is to run the following command (starting from poetry 1.0.0beta2).
+
+    source $(poetry env info -p)/bin/activate
 
 ## References
 

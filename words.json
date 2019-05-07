@@ -12,7 +12,7 @@
     ["Vba", "VBA"], ["Vpn", "VPN"], ["Wsl", "WSL"],
     ["Ar1X", "AR1X"], ["Curl", "cURL"], ["Ipad", "iPad"], ["Json", "JSON"], 
     ["Nltk", "NLTK"], ["Odbc", "ODBC"], ["jdbc", "JDBC"], ["Uget", "uGet"], 
-    ["Uuid", "UUID"], ["Wget", "wget"], ["Http", "HTTP"], ["Pyqt", "PyQT"],
+    ["Uuid", "UUID"], ["Wget", "wget"], ["Http", "HTTP"], ["Pyqt", "PyQt"],
     ["Tmux", "tmux"],
     ["Anbox", "AnBox"], ["Latex", "LaTeX"], ["Xmind", "XMind"],
     ["Gnome", "GNOME"], ["Mysql", "MySQL"],

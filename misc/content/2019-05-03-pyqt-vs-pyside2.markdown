@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-05-03 01:13:27
+Date: 2019-05-07 20:51:16
 Author: Benjamin Du
 Slug: pyqt-vs-pyside2
-Title: PyQT vs Pyside2
+eitle: PyQt5 vs PySide2
 Category: Programming
-Tags: programming
+Tags: programming, Python, PyQt5, PySide2
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

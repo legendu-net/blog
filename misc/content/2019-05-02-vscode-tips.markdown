@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-05-02 22:11:40
+Date: 2019-05-07 20:37:47
 Author: Benjamin Du
 Slug: vscode-tips
-Title: Vscode Tips
-Category: Programming
-Tags: programming
+Title: Tips for Visual Studio Code
+Category: Software
+Tags: software, vscode, Visual Studio Code, tips, IDE
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -29,12 +29,36 @@ https://marketplace.visualstudio.com/items?itemName=rafaelmaiolla.remote-vscode
 
 https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
 
-## Misc
+## Fix the Caps Lock Mapping to Escape Issue
 
-[Download Visual Studio Code Insiders](https://code.visualstudio.com/insiders/)
+https://github.com/Microsoft/vscode/wiki/Keybinding-Issues
+
+A simple fix is to add the following configuration into the user's setting.json file.
+
+```
+{
+    "keyboard.dispatch": "keyCode"
+}
+```
+
+## Change Indention/Shift Width
+
+https://stackoverflow.com/questions/34174207/how-to-change-indentation-in-visual-studio-code/45671704
+
+## Launching VS Code from Command Line on Mac
+
+https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line
+
+## Tricks & Traps
+
+1. It seems that Visual Studio Code installed using snap in Kubuntu 18.10 has issues.
+    It is suggested that you install Visual Studio Code using the `.deb` package instead of snap.
+
 
 ## References
 
 - [Visual Studio Code Blog](https://code.visualstudio.com/blogs/2019/05/02/remote-development)
 
 - [Visual Studio Code Updates](https://code.visualstudio.com/updates/)
+
+- [Download Visual Studio Code Insiders](https://code.visualstudio.com/insiders/)

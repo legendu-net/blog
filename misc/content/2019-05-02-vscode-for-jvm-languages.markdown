@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-05-02 22:11:40
+Date: 2019-05-07 20:34:40
 Author: Benjamin Du
 Slug: vscode-for-jvm-languages
-Title: Vscode for Jvm Languages
+Title: Virtual Studio Code for JVM Languages
 Category: Programming
 Tags: programming, Java, JVM languages, Scala, vscode, Visual Studio Code
 

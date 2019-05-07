@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-05-02 21:51:49
+Date: 2019-05-07 20:34:40
 Author: Benjamin Du
 Slug: vscode-for-python
-Title: Vscode for Python
+Title: Visual Studio Code for Python
 Category: Programming
 Tags: programming, Python, Visual Studio Code, vscode, IDE
 

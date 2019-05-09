@@ -1,6 +1,5 @@
-UUID: bbf469f4-c773-4ff9-a7e1-0e43d8fbad10
 Status: published
-Date: 2017-10-22 12:23:51
+Date: 2019-05-09 19:43:10
 Author: Ben Chuanlong Du
 Slug: union-RDDs-in-spark
 Title: Union RDDs in Spark
@@ -15,12 +14,16 @@ but rather for convenient reference of the author and future improvement.
 **
 
 
-No deduplication is done (to be efficient) when unioning RDDs.
+No deduplication is done (to be efficient) when unioning RDDs/DataFrames in Spark 2.1.0+.
 
 1. Union 2 RDDs.
 
+        df1.union(df2)
+        // or for old-fashioned RDD
         rdd1.union(rdd_2)
 
 2. Union multiple RDDs.
 
-        rdd = sc.union([rdd1, rdd2, rdd3])
+        df = spark.union([df1, df2, df3]) // spark is a SparkSession object
+        // or for old-fashioned RDD
+        rdd = sc.union([rdd1, rdd2, rdd3]) // sc is a SparkContext object

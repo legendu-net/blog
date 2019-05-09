@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-04-25 01:26:10
+Date: 2019-05-09 23:38:17
 Slug: hadoop-fs-tips
 Title: Hadoop Filesystem Tips
 Category: Software
@@ -14,7 +14,7 @@ It is not meant to readers but rather for convenient reference of the author and
 
 
     hadoop fs -cat
-    hadoop fs -mkdir
+    hadoop fs -mkdir [-p] /path/to/create
     hadoop fs -put
     hadoop fs -get
     hadoop fs -getmerge /hdfs/path /path/in/linux
@@ -24,7 +24,7 @@ It is not meant to readers but rather for convenient reference of the author and
     hadoop fs -tail /user/saurzcode/dir1/abc.txt
     hadoop fs -cp /user/saurzcode/dir1/abc.txt /user/saurzcode/dir2
 
-
+2. The command `hdfs dfs -mkdir` supports the `-p` option similar to that of the `mkdir` command in Linux/Unix.
 
 3. Check size of a directory.
     However, the depth option is not supported currently.

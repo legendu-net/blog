@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-02-26 21:27:09
+Date: 2019-05-09 23:40:06
 Author: Benjamin Du
 Slug: python-hdfs
-Title: Python Hdfs
+Title: HDFS in Python
 Category: Programming
 Tags: programming, Python, Hadoop, HDFS
 

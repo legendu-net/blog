@@ -629,7 +629,8 @@ def _disp_path(path: str, full: bool = True) -> str:
 def show(blogger, args) -> None:
     for id, path in blogger.fetch(args.n):
         path = _disp_path(path, full=args.full_path)
-        print(f'{id}: {path}')
+        print(f'\n{id}: {path}')
+    print('')
 
 
 def reload(blogger, args):

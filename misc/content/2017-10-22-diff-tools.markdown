@@ -1,6 +1,5 @@
-UUID: 772b0c6e-bd2d-4cd8-82a6-88957d7d9002
 Status: published
-Date: 2017-11-12 15:12:42
+Date: 2019-05-10 19:13:40
 Author: Ben Chuanlong Du
 Slug: diff-tools
 Title: Diff Tools
@@ -8,19 +7,54 @@ Category: Software
 Tags: diff, tools, Linux, cli, command line, colordiff, vimdiff
 
 
-colordiff great but only showing line level difference
+## General Tips
 
-vimdiff is great tool if you want to see differences inside lines.
+1. If 2 files are formatted differently,
+  you can first format them and then check the differences between them.
+  An extreme way is to get rid of all white spaces in the 2 files and then compare them.
 
-diffr is an R package wrapping around the JS library ...
+        sed -i 's/ //g' file_1 file_2
 
-CompareIt seems like a good tools for windows
+## Command-line Tools
+
+### git-diff
+
+`git diff` is a generally useful command. 
+It can not only show you the changes of files in side a Git repository
+but can also be used to compare files/directories outside of a Git repository.
+
+1. Show differences between 2 files.
+    The option `--no-index` can be omitted if at least one of the two files is outside a Git repository.
+    Output of `git diff` is colorized.
+
+        git diff --no-index file_1 file_2
+
+2. Show differences between 2 directories,
+    which is similar to that of showing differences between 2 files.
+
+        git diff --no-index dir_1 dir_2
+
+### colordiff/diff
+
+It is suggested that you use `colordiff` instead of `diff`
+as `colordiff` colorizes the output of `diff`.
+However, 
+both `colordiff` and `diff` can be replaced by `git diff` as shown above.
+
+
+### vimdiff
+
+All of `git diff`, `colordiff` and `diff` show line-leve changes. 
+`vimdiff` is great command-line tool that is able to show differences inside lines.
 
 ## Online Tools
 
-https://text-compare.com/
-is a good one
-https://www.diffnow.com/
+### [text-compare](https://text-compare.com/)
+[text-compare](https://text-compare.com/)
+is a good one.
+
+
+### [diffnow](https://www.diffnow.com/)
 
 
 ## Ref

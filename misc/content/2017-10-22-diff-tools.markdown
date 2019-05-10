@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-10 19:13:40
+Date: 2019-05-10 19:15:40
 Author: Ben Chuanlong Du
 Slug: diff-tools
 Title: Diff Tools
@@ -57,7 +57,9 @@ is a good one.
 ### [diffnow](https://www.diffnow.com/)
 
 
-## Ref
+## References
+
+https://stackoverflow.com/questions/16683121/git-diff-between-two-different-files
 
 https://wiki.dandascalescu.com/reviews/software/diffuse_-_the_one_best_visual_diff_tool_for_linux
 

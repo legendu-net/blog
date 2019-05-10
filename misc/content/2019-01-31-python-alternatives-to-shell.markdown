@@ -1,10 +1,16 @@
 Status: published
-Date: 2019-05-10 01:18:12
+Date: 2019-05-10 01:20:23
 Author: Ben Chuanlong Du
 Slug: shell-alternatives
 Title: Python Alternatives to Shell
 Category: Programming
 Tags: programming, IPython, shell, bash, xonsh, plumbum, Python, shell alternatives
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+
 
 **
 Things on this page are

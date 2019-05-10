@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-05-02 18:34:45
+Date: 2019-05-10 01:18:12
 Author: Ben Chuanlong Du
 Slug: shell-alternatives
-Title: Shell Alternatives
+Title: Python Alternatives to Shell
 Category: Programming
-Tags: programming, IPython, shell, bash, xonsh, plumbum
+Tags: programming, IPython, shell, bash, xonsh, plumbum, Python, shell alternatives
 
 **
 Things on this page are
@@ -18,18 +18,23 @@ but rather for convenient reference of the author and future improvement.
 <table style="width:100%">
   <tr>
     <th> Shell Command </th>
-    <th> Python Alternative 1 </th>
-    <th> Python Alternative 2 </th>
+    <th> Python Alternative </th>
   </tr>
   <tr>
-    <td> `mkdir -p path/to/some/file` </td>
-    <td> `os.makedirs('path/to/some/file', exist_ok=True)` </td>
-    <td> `pathlib.Path.mkdir('path/to/some/file', exist_ok=True)` </td>
+    <td> mkdir -p path/to/some/file </td>
+    <td> os.makedirs('path/to/some/file', exist_ok=True) </td>
   </tr>
   <tr>
-    <td> `cp file1 file2` </td>
-    <td> `shutil.copy2('file1', 'file2')` </td>
-    <td> `shutil.copyfile('file1', 'file2')` </td>
+    <td> mkdir -p path/to/some/file </td>
+    <td> pathlib.Path.mkdir('path/to/some/file', exist_ok=True) </td>
+  </tr>
+  <tr>
+    <td> cp file1 file2 </td>
+    <td> shutil.copy2('file1', 'file2') </td>
+  </tr>
+  <tr>
+    <td> cp file1 file2 </td>
+    <td> shutil.copyfile('file1', 'file2') </td>
   </tr>
 </table>
 

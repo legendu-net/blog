@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
-Title: Some Tips About Virtualbox
-Date: 2019-03-30 00:52:22
+Title: Tips on Virtualbox
+Date: 2019-05-11 01:05:59
 Slug: virtualbox-tips
 Category: Software
 Tags: tips, virtualbox, virtualization

@@ -1,9 +1,8 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-03-04 14:31:43
+Date: 2019-05-11 01:05:59
 Slug: firefox-tips
-Title: Some Tips About Firefox
+Title: Tips on Firefox
 Category: Software
 Tags: software, tips, Firefox, web browser
 
@@ -13,28 +12,27 @@ It is not meant to readers but rather for convenient reference of the author and
 **
  
 1. In Debian, Iceweasel sometimes fail to wrap Chienes page well.
-To solve the problem, you can just remove the .mozilla directory under you home directory. 
-The cons is that this might remove some add-ons you installed, 
-so you have to reinstall them.
-This trick works for any application in Linux.
+    To solve the problem, you can just remove the .mozilla directory under you home directory. 
+    The cons is that this might remove some add-ons you installed, 
+    so you have to reinstall them.
+    This trick works for any application in Linux.
 
 2. A Simple Way to Export all tab URLs (Without Using Extensions)
 
-Go to Tools > Options.
+    a. Go to Tools > Options.
 
-In the General tab look for the Use Current Pages button in the Startup section. 
-When you click on the Use Current Pages button, 
-all the URLs of the pages open in different tabs 
-are copied to the Home Page text box with a pipe delimiter. 
-Copy the text to get all the URLs.
+    b. Look for the button `Use Current Pages` in the Startup section in the `General` tab. 
 
-3. The keyboard shortcut to simulate clicking on the "Use Current Pages" button 
-is Alt+T+O+C (tested in Firefox 14).
+    c. Click the button `Use Current Pages`, 
+        which will copy URLs of pages (delimited by pipes) to the textbox on the home page. 
 
-3. Do not backup firefox profile using BitTorrent Sync.
+    d. Copy the text to get all the URLs.
+
+3. The keyboard shortcut to simulate clicking on the `Use Current Pages` button 
+    is `Alt + T + O + C` (tested in Firefox 14).
 
 4. Firefox is very slow sometimes. Removing .Mozilla and restart helps.
-Of course, you lose old profile.
+    Of course, you lose old profile.
 
 ## Shortcut 
 

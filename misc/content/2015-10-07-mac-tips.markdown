@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-05-03 09:30:24
+Date: 2019-05-11 01:05:59
 Author: Ben Chuanlong Du
 Slug: mac-tips
-Title: Tips for macOS
+Title: Tips on macOS
 Category: OS
 Tags: macOS, tips, Apple
 

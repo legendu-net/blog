@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-07 20:51:16
+Date: 2019-05-12 11:12:42
 Author: Benjamin Du
 Slug: pyqt-vs-pyside2
 eitle: PyQt5 vs PySide2
@@ -17,6 +17,5 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-https://www.reddit.com/r/Qt5/comments/a3zt3j/eli5_pyqt5_pyside2_which_one_to_use/
 
 

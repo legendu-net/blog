@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-05-03 09:28:49
+Date: 2019-05-12 11:12:42
 Author: Ben Chuanlong Du
 Slug: qt-in-python
 Title: Use Qt in Python
 Category: Programming
-Tags: programming, GUI, Python, QT, PyQT
+Tags: programming, GUI, Python, QT, PyQT5, PySide2
 
 **
 Things on this page are
@@ -13,7 +13,11 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-Both PyQt (developed by Riverbank) and PySide2 (official Python bindings from Qt) are great.
+## PyQt5 vs PySide2
+
+https://www.reddit.com/r/Qt5/comments/a3zt3j/eli5_pyqt5_pyside2_which_one_to_use/
+
+Both PyQt5 (developed by Riverbank) and PySide2 (official Python bindings from Qt) are great.
 They have very similar APIs.
 However,
 PySide2 has a more friendly LGPL licence.

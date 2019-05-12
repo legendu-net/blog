@@ -1,8 +1,8 @@
 Status: published
-Date: 2016-11-20 11:56:41
+Date: 2019-05-12 11:00:28
 Author: Ben Chuanlong Du
 Slug: rsync-tips
-Title: rsync Tips
+Title: Tips on rsync
 Category: OS
 Tags: Linux, copy, synchronization, file system, filesystem, rsync
 
@@ -43,7 +43,7 @@ Here are a few good practices to follow.
 
 3. Copy specified patterns (e.g., JupyterLab notebooks) only.
 
-        rsync -avh --include='*.ipynb' --include='*/' --exclude='*' src_dir/ des_dir/
+        rsync -avh --include='*.ipynb' --include='*/' --exclude='*' --delete src_dir/ des_dir/
 
 4. An example script for synchronizing a Java project directory.
 

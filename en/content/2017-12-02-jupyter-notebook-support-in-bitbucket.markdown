@@ -1,4 +1,3 @@
-UUID: 1313f781-c8ce-4c9d-993b-0ceb0c4bb3e6
 Status: published
 Date: 2017-12-19 23:34:17
 Author: Ben Chuanlong Du
@@ -12,14 +11,17 @@ Bitbucket supports Jupyter Notebooks via a fileview addon.
 It works on both publick and private notebooks.
 Follow the steps below to install the addon.
 
-1. Click your avatar in the lower left corner and select "Integrations". 
+1. Click on your avatar in the lower left corner on your homepage of Bitbucket.
 
-2. Find "Bitbucket Notebook Viewer" in the addon listings. 
+2. Select the option `App marketplace`. 
 
-3. Install the addon.
+2. Find the addon `Notebook Viewer` in the listings. 
 
-Now you have installed the addon you will get the option to render as a notebook on any file with the extension ".ipynb".
+3. Install the addon `Notebook Viewer`.
 
+4. Open a notebook in one of your Bitbucket repository.
+
+5. Click on `Default file viwer` (to the left of the button Edit) and select `IPython Viwer`.
 
 ## Reference
 

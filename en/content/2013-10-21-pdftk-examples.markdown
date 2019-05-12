@@ -1,15 +1,11 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: Examples of Using pdftk to Manipulating PDF Files
-Date: 2019-05-12 15:19:26
+Date: 2019-05-12 15:25:00
 Slug: pdftk-examples
 Category: Software
 Tags: pdftk, software, examples, PDF
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-It is not meant to readers but rather for convenient reference of the author and future improvement.
-**
 
 Even though `pdftk` is a great command-line tool,
 it is suggested that you use Python libraries to manipulating PDFs.

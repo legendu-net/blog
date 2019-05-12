@@ -20,7 +20,7 @@
     ["Pyqt5", "PyQt5"],
     ["Rjava", "rJava"],
     ["Aerofs", "AeroFS"], ["Btsync", "BTSync"], ["Centos", "CentOS"], ["Nodejs", "NodeJS"],
-    ["Ffmpeg", "FFmpeg"], ["Wechat", "WeChat"], ["Pyodbc", "pyodbc"],
+    ["Ffmpeg", "FFmpeg"], ["Wechat", "WeChat"], ["Pyodbc", "pyodbc"], ["Pypdf2", "PyPDF2"],
     ["Yyyymm", "YYYYMM"],
     ["Autokey", "AutoKey"],
     ["Add-Ons", "Add-ons"],

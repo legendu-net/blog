@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-05-12 15:02:47
+Date: 2019-05-12 15:21:22
 Author: Benjamin Du
 Slug: pypdf2-examples
-Title: Pypdf2 Examples
+Title: PyPDF2 Examples
 Category: Programming
 Tags: programming, Python, PyPDF2, example
 

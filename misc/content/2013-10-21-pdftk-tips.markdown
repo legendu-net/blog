@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips on pdftk
-Date: 2019-05-12 15:12:58
+Date: 2019-05-12 15:16:34
 Slug: pdftk-tips
 Category: Software
 Tags: tips, pdftk, Linux, software
@@ -13,7 +13,11 @@ It is not meant to readers but rather for convenient reference of the author and
 
 Even though `pdftk` is a great command-line tool,
 it is suggested that you use Python libraries to manipulating PDFs.
-
+Please refer to 
+[Editing PDF Files](http://www.legendu.net/misc/blog/editing-PDF-files/)
+and
+[PyPDF2 Examples](http://www.legendu.net/misc/blog/pypdf2-examples/)
+for more details.
 
 1. Fill in forms in an I-9 doc. 
 

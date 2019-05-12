@@ -544,6 +544,8 @@ def delete(blogger, args):
         answer = input('Are you sure to delete the specified files in the srps table (yes or no): ')
         if answer == 'yes':
             blogger.delete(args.files)
+    else:
+        'No file to delete is specified!'
     blogger.commit()
 
 

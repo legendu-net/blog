@@ -1,6 +1,5 @@
-UUID: 8ce9e86f-a210-4196-a0a9-7b10343d50f5
 Status: published
-Date: 2017-12-20 00:22:55
+Date: 2019-05-12 13:15:21
 Author: Ben Chuanlong Du
 Slug: reduce-size-of-git-repository
 Title: Reduce Size of Git Repository
@@ -14,13 +13,18 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+## Use Git Large File Storage to Manage Large Files
+
+Git Large File Storage (Git-LFS) is the recommended way to work with large files.
+Please read the following if have already committed large files into your repository.
+
 ## [BFG Repo Cleaner](https://rtyley.github.io/bfg-repo-cleaner/)
 
 ```
 java -jar bfg.jar --strip-blobs-bigger-than 100M some-big-repo.git
 ```
 
-## Other
+## Other Ways
 
 ```bash
 git push --force

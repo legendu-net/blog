@@ -1,6 +1,5 @@
-UUID: 419c2341-e8fb-4233-b470-5a7443b5ec87
 Status: published
-Date: 2019-02-18 05:01:12
+Date: 2019-05-12 13:15:21
 Author: Ben Chuanlong Du
 Slug: git-errors-solutions
 Title: Git Errors and Solutions

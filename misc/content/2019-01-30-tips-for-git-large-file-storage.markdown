@@ -1,6 +1,5 @@
-UUID: 8bcfcfbe-bc61-4221-acdd-d9c3a7f70a48
 Status: published
-Date: 2019-01-30 09:15:15
+Date: 2019-05-12 13:15:21
 Author: Ben Chuanlong Du
 Slug: tips-for-git-large-file-storage
 Title: Tips for Git Large File Storage

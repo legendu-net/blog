@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-12 15:21:22
+Date: 2019-05-13 09:46:53
 Author: Benjamin Du
 Slug: pypdf2-examples
 Title: PyPDF2 Examples
@@ -12,16 +12,16 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 Extract the first 2 pages from `input.pdf` and write them to `output.pdf`.
-```
-from PyPDF2 import PdfFileWriter, PdfFileReader
 
-output_pdf = PdfFileWriter()
-input_pdf = PdfFileReader(open('input.pdf', 'rb'))
-for i in [0, 1]:
-    output_pdf.addPage(input_pdf.getPage(i))
-with open('output.pdf', 'wb') as fout:
-    output_pdf.write(fout)
-```
+    from PyPDF2 import PdfFileWriter, PdfFileReader
+
+    output_pdf = PdfFileWriter()
+    input_pdf = PdfFileReader(open('input.pdf', 'rb'))
+    for i in [0, 1]:
+        output_pdf.addPage(input_pdf.getPage(i))
+    with open('output.pdf', 'wb') as fout:
+        output_pdf.write(fout)
+
 
 ## References
 

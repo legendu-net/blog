@@ -2,7 +2,7 @@ Status: published
 Date: 2019-05-12 13:27:21
 Author: Benjamin Du
 Slug: tips-on-gitpython
-Title: Tips on Gitpython
+Title: Tips on GitPython
 Category: Programming
 Tags: programming, Python, Git, GitPython, tips
 
@@ -13,19 +13,18 @@ It is not meant to readers but rather for convenient reference of the author and
 
 
 ## Changes Files
-```
-from git import Repo
-repo = Repo('.')
-files_changed = [item.a_path for item in repo.index.diff(None)]
-```
+
+    from git import Repo
+    repo = Repo('.')
+    files_changed = [item.a_path for item in repo.index.diff(None)]
+
 
 ## Staged Files
 
-```
-from git import Repo
-repo = Repo('.')
-files_changed = [item.a_path for item in repo.index.diff('HEAD')]
-```
+    from git import Repo
+    repo = Repo('.')
+    files_changed = [item.a_path for item in repo.index.diff('HEAD')]
+
 
 ## References
 

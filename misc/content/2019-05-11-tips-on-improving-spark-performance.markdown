@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-05-11 01:34:21
+Date: 2019-05-13 21:30:05
 Author: Benjamin Du
 Slug: tips-on-improving-spark-performance
 Title: Tips on Improving Spark Performance
 Category: Programming
-Tags: programming, Spark, performance
+Tags: programming, Spark, performance, tuning
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -21,6 +21,8 @@ It is not meant to readers but rather for convenient reference of the author and
 
 
 ## References
+
+[Tuning Spark](https://spark.apache.org/docs/latest/tuning.html)
 
 https://github.com/databricks/spark-knowledgebase
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-14 03:24:53
+Date: 2019-05-14 03:36:08
 Author: Benjamin Du
 Slug: tips-on-etrade
 Title: Tips on Etrade
@@ -15,3 +15,10 @@ It is not meant to readers but rather for convenient reference of the author and
 
 
 [Upload Documents](https://us.etrade.com/etx/hw/customerservice/uploaddoc#!/upload)
+
+
+1. Wire transfer is made on the same business day but cost $25.
+
+2. Transfering to a Linked External Funding Account takes about 3 business days but is free. 
+
+

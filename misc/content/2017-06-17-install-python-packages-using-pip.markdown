@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-26 23:48:36
+Date: 2019-05-14 01:39:41
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages
@@ -120,6 +120,17 @@ pip3 install --upgrade wheel
 pip3 --proxy http://proxy__server_ip:port install some_pkg
 ```
 
+## Caching
+
+1. You can disable pip caching using the option `--no-cache-dir`.
+
+https://pip.pypa.io/en/latest/reference/pip_install/#caching
+
+
+https://github.com/pypa/pip/issues/4685
+
+https://github.com/pypa/pip/pull/6391
+
 ## Misc
 
 1. `pip` supports downloading without installation!
@@ -141,3 +152,5 @@ https://stackoverflow.com/questions/4888027/python-and-pip-list-all-versions-of-
 https://stackoverflow.com/questions/5226311/installing-specific-package-versions-with-pip
 
 https://stackoverflow.com/questions/14149422/using-pip-behind-a-proxy
+
+https://stackoverflow.com/questions/9510474/removing-pips-cache

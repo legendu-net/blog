@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-03-09 15:21:18
+Date: 2019-05-14 22:17:20
 Author: Benjamin Du
 Slug: homebrew-tips
-Title: Homebrew Tips
+Title: Tips on Homebrew
 Category: Software
 Tags: software, Homebrew, macOS
 

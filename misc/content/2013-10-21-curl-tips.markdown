@@ -1,14 +1,15 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-05-07 20:55:55
+Date: 2019-05-14 22:25:02
 Slug: curl-tips
 Title: Tips on cURL
 Category: Software
 Tags: tips, cURL, downloading, web, wget
 
 **
-Things on this page are fragmentary and immature notes/thoughts of the author. 
+Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
 
 ## Alternatives to `curl`
 
@@ -16,7 +17,18 @@ It is not meant to readers but rather for convenient reference of the author and
 
 The postman plugin for Google Chrome can also convert curl command to other programming languages.
 
-**
+## Proxy
+
+A general way (works for most other command-line tools too) is set the environment variables `http_proxy` and `https_proxy`
+(and `ftp_proxy`, etc. if need them).
+
+    export http_proxy=http://your.proxy.server:port
+    export https_proxy=http://your.proxy.server:port
+
+Another simple way is to use the option `--proxy` directly.
+    
+    curl --proxy http://your.proxy.server:port ...
+
 ## Examples
 
 ```
@@ -25,7 +37,7 @@ curl -v --cookie-jar cjar \
     http://cos.name/cn/
 
 curl -v --cookie cjar --cookie-jar cjar \
-    --data 'user_login={username}' \ 
+    --data 'user_login={username}' \
     --data 'password={password}' \
     --data 'form_id=login' \
     --output cos.html \
@@ -65,27 +77,27 @@ wget --no-check-certificate \
     --load-cookies=ff_cookies.txt \
     -p https://bitbucket.org/dclong/config/get/
 ```
- 
+
 The easy way: login with your browser,
 and give the cookies to wget
 
-Easiest method: in general, 
-you need to provide wget or `cURL` with the (logged-in) cookies 
+Easiest method: in general,
+you need to provide wget or `cURL` with the (logged-in) cookies
 from a particular website for them to fetch pages as if you were logged in.
 
-If you are using Firefox, 
-it's easy to do via the Export Cookies add-on. 
+If you are using Firefox,
+it's easy to do via the Export Cookies add-on.
 Install the add-on, and:
 
-Go to Tools...Export Cookies, 
+Go to Tools...Export Cookies,
 and save the cookies.txt file (you can change the filename/destination).
 
-Open up a terminal, 
+Open up a terminal,
 and use wget with the --load-cookies=FILENAME option, e.g.
 
 wget --load-cookies=cookies.txt http://en.wikipedia.org/wiki/User:A
 
-For `cURL`, it's 
+For `cURL`, it's
 ```sh
 curl --cookie cookies.txt ...
 ```
@@ -93,18 +105,21 @@ curl --cookie cookies.txt ...
 
 The hard way: use `cURL` (preferably) or `wget` to manage the entire session
 
-A detailed how-to is beyond the scope of this answer, 
-but you use `cURL` with the --cookie-jar or `wget` 
-with the --save-cookies --keep-session-cookiesoptions, 
-along with the HTTP/S PUT method to log in to a site, 
+A detailed how-to is beyond the scope of this answer,
+but you use `cURL` with the --cookie-jar or `wget`
+with the --save-cookies --keep-session-cookiesoptions,
+along with the HTTP/S PUT method to log in to a site,
 save the login cookies, and then use them to simulate a browser.
-Needless to say, 
-this requires going through the HTML source for the login page (get input field names, etc.), 
-and is often difficult to get to work for sites 
+Needless to say,
+this requires going through the HTML source for the login page (get input field names, etc.),
+and is often difficult to get to work for sites
 using anything beyond simple login/password authentication.
 
-Tip: if you go this route, 
-it is often much simpler to deal with the mobile version of a website (if available), 
+Tip: if you go this route,
+it is often much simpler to deal with the mobile version of a website (if available),
 at least for the authentication step.
 
 
+## References
+
+https://stackoverflow.com/questions/9445489/performing-http-requests-with-curl-using-proxy

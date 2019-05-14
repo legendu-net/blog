@@ -1,11 +1,10 @@
-UUID: 3d01d30a-8021-4c2b-b816-f5b94474d533
 Status: published
-Date: 2017-12-31 15:55:39
+Date: 2019-05-14 22:17:20
 Author: Ben Chuanlong Du
 Slug: linuxbrew-tips
-Title: Linuxbrew Tips
+Title: Tips on Homebrew for Linux (Linuxbrew)
 Category: Linux
-Tags: Linux, Linuxbrew, package management
+Tags: Linux, Homebrew, Linuxbrew, package management
 
 **
 Things on this page are
@@ -17,5 +16,9 @@ but rather for convenient reference of the author and future improvement.
 https://blog.eduardovalle.com/2015/10/15/installing-software-without-root/
 
 https://github.com/Linuxbrew/brew
+
+https://github.com/Linuxbrew/install
+
+https://docs.brew.sh/Homebrew-on-Linux
 
 

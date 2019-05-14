@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-05-14 01:39:41
+Date: 2019-05-14 18:35:07
 Author: Ben Chuanlong Du
 Slug: install-python-packages
-Title: Install Python Packages
+Title: Install Python Packages Using pip
 Category: Programming
 Tags: programming, Python, package, module, install, pip, conda
 

@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-05-14 21:11:43
+Date: 2019-05-15 07:44:37
 Slug: hadoop-fs-tips
 Title: Hadoop Filesystem Tips
 Category: Software
@@ -15,7 +15,27 @@ It is not meant to readers but rather for convenient reference of the author and
 
     hadoop fs -cat
     hadoop fs -mkdir [-p] /path/to/create
-    hadoop fs -put [-f]
+
+
+2. Upload a file/directory to HDFS.
+
+        hadoop fs -put [-f]
+
+    The option `-f` overwrite existing files on HDFS. 
+    However, 
+    a tricky misunderstanding might happend when you upload a directory using the following command.
+
+        hadoop fs -put -f /local/path/to/some_directory /hdfs/path/to/some_directory
+
+    Supppose `/hdfs/path/to/some_directory` already exists,
+    it is not the directory `/hdfs/path/to/some_directory` itself get overwritten 
+    but rather files in it get overwritten.
+    If files in `/local/path/to/some_directory` have diffrent names than files in `/hdfs/path/to/some_directory`
+    then nothing is overwritten.
+    This might not what you want and can get you bitten. 
+    It is suggested that you always remove a directory manually using the command `hdfs dfs -rm -r /hdfs/path/to/some_directory`
+    if you intend to overwrite the whole directory.
+
     hadoop fs -get
     hadoop fs -getmerge /hdfs/path /path/in/linux
     hadoop fs -copyFromLocal /path/in/linux /hdfs/path

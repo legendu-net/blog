@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-13 21:30:05
+Date: 2019-05-15 00:11:34
 Author: Benjamin Du
 Slug: tips-on-improving-spark-performance
 Title: Tips on Improving Spark Performance
@@ -18,6 +18,9 @@ It is not meant to readers but rather for convenient reference of the author and
     This will likely cause an out-of-memory issue if the RDD/DataFrame is big.
     Even if not, 
     it will make your Spark application run slowly.
+
+
+[Cost Based Optimizer in Apache Spark 2.2](https://databricks.com/blog/2017/08/31/cost-based-optimizer-in-apache-spark-2-2.html)
 
 
 ## References

@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-05-14 22:25:02
+Date: 2019-05-15 00:10:02
 Slug: curl-tips
 Title: Tips on cURL
 Category: Software
@@ -21,11 +21,13 @@ The postman plugin for Google Chrome can also convert curl command to other prog
 
 A general way (works for most other command-line tools too) is set the environment variables `http_proxy` and `https_proxy`
 (and `ftp_proxy`, etc. if need them).
+This way is preferred if your command/script to run has dependencies which also requires proxy to work.
 
     export http_proxy=http://your.proxy.server:port
     export https_proxy=http://your.proxy.server:port
 
 Another simple way is to use the option `--proxy` directly.
+This way is preferred if your command/script does not have other dependencies which also requires proxy to work.
     
     curl --proxy http://your.proxy.server:port ...
 

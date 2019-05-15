@@ -22,3 +22,4 @@ https://github.com/Linuxbrew/install
 https://docs.brew.sh/Homebrew-on-Linux
 
 
+    sh -c "$(curl --proxy http://your.proxy.servder:port -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"

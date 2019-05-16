@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-02 01:00:04
+Date: 2019-05-16 18:55:00
 Author: Ben Chuanlong Du
 Slug: shortcuts-for-mac
 Title: Shortcuts for Mac
@@ -14,21 +14,21 @@ but rather for convenient reference of the author and future improvement.
 **
 
 [Table of keyboard shortcuts](https://en.wikipedia.org/wiki/Windows_shortcuts)
+lists comparisons of shortcuts on Windows, macOS and Linux.
 
 1. Unless you have a full Mac keyboard, 
-    you will not have the Home and End key. 
-    See the shortcuts section for equivalents. 
+  you will not have the `Home/End` keys. 
+  `Fn + Left/Right` act as equivalent to `Home/End` keys in macOS, 
+  however, `Home/End` keys not necessarily behave the same as in Windows/Linux.
+  `Command + Left/Right` behave equivalent to what `Home/End` keys do in Windows/Linux.
 
+2. `Delete` acts like the key `Backspace` in Windows/Linux
+  `Fn + Delete` acts like the key `Delete` in Windows/Linux.
 
-Fn + Left/Right: equivalent to Home and End, but Home and End not necessarily behave the same as in Windows/Linux
+3. `CMD + C` copies files and `CMD + V` pastes the copied files.
+`CMD + Option + V` moves the files instead of to copy them.
 
-Command + Left/Right: equivalent to what Home/End does in Windows/Linux
-
-Delete: act like Backspace in Windows/Linux
-
-Fn + Delete: act like delete in Windows/Linux
-
-Command + k: connect ot server
+Command + k: connect to server
 
 Option + Left/Right: move to the left/right by one word
 
@@ -166,4 +166,8 @@ Read our our guide to using Mission Control for more keyboard shortcuts and tric
     F3 – Open Mission Control to view all open application windows and desktops.
     Ctrl + Left Arrow – Move one desktop to the left.
     Ctrl + Right Arrow – Move one desktop to the right.
+
+## References
+
+https://appuals.com/cut-paste-mac/
 

@@ -1,7 +1,6 @@
-UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
 Title: Online Tools for Popular Programming Languages
-Date: 2019-05-02 22:01:11
+Date: 2019-05-17 19:20:44
 Slug: Free Online Tools for Developers
 Author: Ben Chuanlong Du
 Category: Programming
@@ -18,6 +17,8 @@ It is not meant to readers but rather for convenient reference of the author and
 [StackOverflow Tends](https://insights.stackoverflow.com/trends)
 
 [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev)
+
+[UnDraw](https://undraw.co/) offers free to use pictures for web desgin, etc.
 
 ## Answer Engine
 

@@ -188,7 +188,8 @@ class Blogger:
             tags,
             content,
             empty,
-            updated
+            updated,
+            tokenize = porter
         )
         '''
         self._conn.execute(sql)

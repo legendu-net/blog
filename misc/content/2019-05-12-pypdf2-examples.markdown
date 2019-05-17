@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-13 09:46:53
+Date: 2019-05-17 19:30:40
 Author: Benjamin Du
 Slug: pypdf2-examples
 Title: PyPDF2 Examples
@@ -11,17 +11,31 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-Extract the first 2 pages from `input.pdf` and write them to `output.pdf`.
-
     from PyPDF2 import PdfFileWriter, PdfFileReader
+    from typing import List, Mapping, Sequence
 
-    output_pdf = PdfFileWriter()
-    input_pdf = PdfFileReader(open('input.pdf', 'rb'))
-    for i in [0, 1]:
-        output_pdf.addPage(input_pdf.getPage(i))
-    with open('output.pdf', 'wb') as fout:
-        output_pdf.write(fout)
+    def extract_pages(file: str, subfiles: Mapping[str, Sequence[int]]) -> None:
+        fin = open(file, 'rb')
+        reader = PdfFileReader(fin)
+        for file, indexes in subfiles.items():
+            _extract_pages(reader, indexes, file)
+        fin.close()
 
+    def _extract_pages(reader: PdfFileReader, indexes: Sequence[int], output) -> None:
+        writer = PdfFileWriter()
+        for index in indexes:
+            writer.addPage(reader.getPage(index))
+        with open(output, 'wb') as fout:
+            writer.write(fout)
+
+Extract pages 0-3 as `tod.pdf`, page 4 as `loi.pdf` and pages 5-15 as `cia.pdf`.
+
+    subfiles = {
+      'tod.pdf': range(4),
+      'loi.pdf': [4],
+      'cia.pdf': range(5, 16)
+    }
+    extract_pages('scan.pdf', subfiles)
 
 ## References
 

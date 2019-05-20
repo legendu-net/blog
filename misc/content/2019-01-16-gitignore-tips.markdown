@@ -1,6 +1,6 @@
 UUID: bbe6ee36-67b0-44d2-8b61-f7c6b8f24bff
 Status: published
-Date: 2019-01-16 09:03:06
+Date: 2019-05-20 19:54:03
 Author: Ben Chuanlong Du
 Slug: gitignore-tips
 Title: Gitignore Examples
@@ -16,12 +16,13 @@ but rather for convenient reference of the author and future improvement.
 
 ## Gitignore Example for Python
 ```
-__pycache__
-.coverage
-.mypy
+__pycache__/
 .ipynb_checkpoints/
 venv/
 target/
+dist/
+.coverage
+.mypy
 *.crc
 ```
 

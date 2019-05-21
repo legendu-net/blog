@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-17 21:18:30
+Date: 2019-05-20 23:25:41
 Author: Benjamin Du
 Slug: data-sources
 Title: Data Sources
@@ -18,6 +18,14 @@ https://registry.opendata.aws/
 https://www.google.com/publicdata/directory
 
 https://proxycrawl.com
+
+## Data for Deep Learning
+
+### [MNIST](http://yann.lecun.com/exdb/mnist/)
+
+https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research
+
+https://www.nist.gov/
 
 ## Data Sources
 

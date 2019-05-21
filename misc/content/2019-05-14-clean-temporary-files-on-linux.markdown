@@ -27,3 +27,9 @@ https://askubuntu.com/questions/3167/what-is-difference-between-the-options-auto
 
 https://pip.pypa.io/en/stable/reference/pip_install/#caching
 
+## npm 
+
+    npm cache clean
+
+https://docs.npmjs.com/cli/cache.html
+

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-15 22:36:51
+Date: 2019-05-20 19:37:23
 Author: Benjamin Du
 Slug: python-poetry-tips
 Title: Python Poetry Tips
@@ -10,20 +10,27 @@ Tags: programming, Python, poetry, build tool, dependency management
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 
-## Usage
 
-    poetry new proj
+https://poetry.eustace.io/docs/
+
+## Usage
+```Bash
+poetry new proj
+```
 
 ## Updating poetry
 
 Updating poetry to the latest stable version is as simple as calling the self:update command.
 
-    poetry self:update
+```Bash
+poetry self:update
+```
 
 If you want to install prerelease versions, you can use the --preview option.
 
-    poetry self:update --preview
-
+```Bash
+poetry self:update --preview
+```
 
 https://codingdose.info/2018/08/02/develop-and-publish-with-poetry/
 
@@ -39,7 +46,7 @@ https://github.com/sdispater/poetry/issues/241
 
 Poetry supports the `env` subcomamnd starting from version 1.0.0.
 You can use `poetry env use python_version` to specify the Python version to use for the project.
-```
+```Bash
 poetry env use python3
 ```
 ## Activate Virtual Environment
@@ -48,8 +55,9 @@ poetry env use python3
 which is a bug. 
 However, 
 one alternative is to run the following command (starting from poetry 1.0.0beta2).
-
-    source $(poetry env info -p)/bin/activate
+```Bash
+source $(poetry env info -p)/bin/activate
+```
 
 ## References
 

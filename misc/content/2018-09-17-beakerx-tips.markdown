@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-23 10:53:06
+Date: 2019-05-20 19:02:28
 Author: Ben Chuanlong Du
 Slug: beakerx-tips
 Title: Beakerx Tips
@@ -12,6 +12,8 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+[BeakerX Cheatsheet](https://github.com/twosigma/beakerx/raw/master/doc/Cheatsheet.pdf)
 
 [BeakerX dependencies](https://github.com/twosigma/beakerx/blob/master/configuration.yml#L6)
 Currently Java 8 is request.

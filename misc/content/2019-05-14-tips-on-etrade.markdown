@@ -2,7 +2,7 @@ Status: published
 Date: 2019-05-16 21:20:07
 Author: Benjamin Du
 Slug: tips-on-etrade
-Title: Tips on Etrade
+Title: Tips on eTrade
 Category: Finance
 Tags: finance, money, eTrade, stock
 

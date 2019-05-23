@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-23 18:30:04
+Date: 2019-05-23 18:42:58
 Author: Ben Chuanlong Du
 Slug: linuxbrew-tips
 Title: Tips on Homebrew for Linux (Linuxbrew)
@@ -17,6 +17,8 @@ but rather for convenient reference of the author and future improvement.
 
 1. Linuxbrew/brew has been merged into Homebrew/brew.
   For more please refer to [this issue](https://github.com/Linuxbrew/brew/issues/1).
+
+## Installation
 
 ```Bash
 sh -c "$(curl --proxy http://your.proxy.servder:port -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
@@ -37,3 +39,14 @@ Follow the instructions below if you have to install Linuxbrew using a proxy.
 2. Configure proxy for Git (as Linuxbrew rely on Git to work) following instructions in
   [Use Git Behind a Proxy](http://www.legendu.net/en/blog/use-git-behind-a-proxy/).
 
+
+You can export environment variables for Linuxbrew using the following command
+assuming Linuxbrew is installed to `/home/linuxbrew/.linuxbrew`.
+```Bash
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+```
+
+Or use the following command if Linuxbrew is installed to `~/.linuxbrew`.
+```Bash
+eval $(~/.linuxbrew/bin/brew shellenv)
+```

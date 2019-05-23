@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-14 18:35:07
+Date: 2019-05-23 20:33:33
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages Using pip
@@ -116,6 +116,8 @@ pip3 install --upgrade wheel
 
 ## Use pip with Proxy
 
+You can export environment variables `http_proxy` and `https_proxy`
+or you can use `pip` with the `--proxy` option directly.
 ```
 pip3 --proxy http://proxy__server_ip:port install some_pkg
 ```

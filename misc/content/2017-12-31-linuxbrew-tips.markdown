@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-23 18:42:58
+Date: 2019-05-23 20:28:10
 Author: Ben Chuanlong Du
 Slug: linuxbrew-tips
 Title: Tips on Homebrew for Linux (Linuxbrew)
@@ -43,10 +43,9 @@ Follow the instructions below if you have to install Linuxbrew using a proxy.
 You can export environment variables for Linuxbrew using the following command
 assuming Linuxbrew is installed to `/home/linuxbrew/.linuxbrew`.
 ```Bash
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+/home/linuxbrew/.linuxbrew/bin/brew shellenv >> .bash_profile
 ```
-
 Or use the following command if Linuxbrew is installed to `~/.linuxbrew`.
 ```Bash
-eval $(~/.linuxbrew/bin/brew shellenv)
+~/.linuxbrew/bin/brew shellenv >> .bash_profile
 ```

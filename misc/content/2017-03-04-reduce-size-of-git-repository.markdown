@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-12 13:15:21
+Date: 2019-05-23 07:43:12
 Author: Ben Chuanlong Du
 Slug: reduce-size-of-git-repository
 Title: Reduce Size of Git Repository
@@ -68,7 +68,7 @@ http://blog.gbacon.com/2009/08/git-shrinking-subversion-import.html
 
 http://stackoverflow.com/questions/2116778/reduce-git-repository-size
 
-shadow clone using the depth option
+shallow clone using the depth option
 ```bash
 git clone git://source.winehq.org/git/wine.git ~/wine-git --depth 1
 ```

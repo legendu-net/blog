@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-20 22:26:53
+Date: 2019-05-23 18:30:04
 Author: Ben Chuanlong Du
 Slug: linuxbrew-tips
 Title: Tips on Homebrew for Linux (Linuxbrew)
@@ -13,13 +13,7 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-https://blog.eduardovalle.com/2015/10/15/installing-software-without-root/
-
-https://github.com/Linuxbrew/brew
-
-https://github.com/Linuxbrew/install
-
-https://docs.brew.sh/Homebrew-on-Linux
+[Homebrew Documentation](https://docs.brew.sh/Homebrew-on-Linux)
 
 1. Linuxbrew/brew has been merged into Homebrew/brew.
   For more please refer to [this issue](https://github.com/Linuxbrew/brew/issues/1).

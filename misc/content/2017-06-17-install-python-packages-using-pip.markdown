@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-23 20:33:33
+Date: 2019-05-24 02:06:14
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages Using pip
@@ -15,7 +15,8 @@ It is not meant to readers but rather for convenient reference of the author and
 `pip` is preferred over OS tools
 (e.g., `apt-get`, `yum`, `wajig`, `aptitude`, etc.) for managing Python packages.
 If you are using Anaconda Python,
-use `conda` to manage python packages.
+use `conda` (instead of `pip`) to manage Python packages
+especially when you encounter dependency issues.
 
 ## Install pip
 

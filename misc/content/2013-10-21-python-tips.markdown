@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-03-12 22:55:06
+Date: 2019-05-24 01:46:40
 Slug: python-tips
 Title: Some Fragmentary Tips About Python
 Category: Programming
@@ -23,41 +23,43 @@ It is not meant to readers but rather for convenient reference of the author and
 ## Python Distirbutions
 
 1. When people talks about Python,
-    it usually means the CPython implementation
-    which you can download from <www.python.org>.
-    There are other interesting Python implementations
-    such as [PyPy](https://pypy.org/) (Python implementation in Python),
-    [Jython](http://www.jython.org/) (Python implementation in Java), etc. exists,
-    however,
-    they have relatively very small use groups.
-    Generally speaking,
-    you want to stay with CPython,
-    i.e., the Python people are taling about unless you have very strong reasons to go with another choice.
+  it usually means the CPython implementation
+  which you can download from <www.python.org>.
+  There are other interesting Python implementations
+  such as [PyPy](https://pypy.org/) (Python implementation in Python),
+  [Jython](http://www.jython.org/) (Python implementation in Java), etc. exists,
+  however,
+  they have relatively very small use groups.
+  Generally speaking,
+  you want to stay with CPython,
+  i.e., the Python people are taling about unless you have very strong reasons to go with another choice.
+  There are also different distributions among CPython implementations.
+  Anaconda Python is a good one if you do not have sudo permissions in the system.
 
 2. For the CPython implementation,
-    there are different distributions as well.
-    Besides the official Python distribution
-    (which comes by default in many operating systems),
-    Anaconda Python rules the unofficial distributions.
-    It is a great choice which provies an all-in-one installer
-    to use on machines that you don't have sudo permissions
-    as it installs to your home directory by default.
-    Anaconda Python supports 2 different flavors:
-    Anaconda (binded with many popular Python packages) and miniconda (with minimum Python packages).
-    It also invented another package management tool named `conda` to replace `pip`.
-    `conda` is a general purpose package management tool instead of for Python only.
-    It eases the pain of figuring out the right dependencies of Python packages
-    but it is a little bit bloated (with larger installation sizes) compared to `pip`.
+  there are different distributions as well.
+  Besides the official Python distribution
+  (which comes by default in many operating systems),
+  Anaconda Python rules the unofficial distributions.
+  It is a great choice which provies an all-in-one installer
+  to use on machines that you don't have sudo permissions
+  as it installs to your home directory by default.
+  Anaconda Python supports 2 different flavors:
+  Anaconda (binded with many popular Python packages) and miniconda (with minimum Python packages).
+  It also invented another package management tool named `conda` to replace `pip`.
+  `conda` is a general purpose package management tool instead of for Python only.
+  It eases the pain of figuring out the right dependencies of Python packages
+  but it is a little bit bloated (with larger installation sizes) compared to `pip`.
 
 ## Environment Variable
 
 1. `os.getenv` gets the value of an environment variable
-	while `os.setenv` creates a new environment variable or
-	sets the value of an environment variable.
+  while `os.setenv` creates a new environment variable or
+  sets the value of an environment variable.
 
 2. You should use `os.pathexpanduser("~")` instead of `os.getenv('HOME')`
-    to get the home directory of the current user in Python.
-    `os.getenv('HOME')` only works on Linux/Unix.
+  to get the home directory of the current user in Python.
+  `os.getenv('HOME')` only works on Linux/Unix.
 
 ## Programming Skills
 
@@ -70,11 +72,11 @@ It is not meant to readers but rather for convenient reference of the author and
 6. `sys.stdout.write`, `sys.stdout.flush`, `print`
 
 9. Global variables in a Python module are readable but not writable to functions in the same module by default.
-    If you want to write to a global variable in a function (in the same module),
-    you have to declare the global variable in the method using the keyword `global`.
-    For example, if `x` is a global variable
-    and you want to write to it in a method,
-    you have to declare `global x` at the beginning of the method.
+  If you want to write to a global variable in a function (in the same module),
+  you have to declare the global variable in the method using the keyword `global`.
+  For example, if `x` is a global variable
+  and you want to write to it in a method,
+  you have to declare `global x` at the beginning of the method.
 
 ## Tricks and Traps
 
@@ -84,15 +86,15 @@ https://stackoverflow.com/questions/101268/hidden-features-of-python
 
 
 1. Almost all modern programming languages follow the convention
-    of not returnting anything (or in another words, retun void, None, etc.)
-    from a mutator method so that you cannot chain on a mutator method.
-    Functional programming languages enough chaining on methods
-    as they often have immutable objects and the methods return new objects
-    rather than changing the original objects.
+  of not returnting anything (or in another words, retun void, None, etc.)
+  from a mutator method so that you cannot chain on a mutator method.
+  Functional programming languages enough chaining on methods
+  as they often have immutable objects and the methods return new objects
+  rather than changing the original objects.
 
 2. Python functions (except lambda functions) do not automatically return value
-    unlike functional programming languages.
-    Forgotting a `return` statement is a common mistake in Python.
+  unlike functional programming languages.
+  Forgotting a `return` statement is a common mistake in Python.
 
 ## Design
 

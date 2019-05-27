@@ -320,7 +320,7 @@ class Blogger:
     
     def _is_ess_empty(self, lines: List[str]) -> int:
         content = ''.join(line.strip() for line in lines)
-        empty = re.sub(r'\*\*.+\*\*', '', content) == ''
+        empty = re.sub(r'\*\*.+\*\*', '', content) == '' or re.sub(r'\*\*', '', content) == ''
         return 1 if empty else 0
   
     def delete(self, posts: Union[str, List[str]]):

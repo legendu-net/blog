@@ -320,8 +320,8 @@ class Blogger:
     
     def _is_ess_empty(self, lines: List[str]) -> int:
         content = ''.join(line.strip() for line in lines)
-        empty = re.sub(r'\*\*.+\*\*', '', content) == ''
-        return 1 if empty else 0
+        is_empty = re.sub(r'\*\*.+\*\*', '', content).replace('**', '') == ''
+        return 1 if is_empty else 0
   
     def delete(self, posts: Union[str, List[str]]):
         if isinstance(posts, str):
@@ -546,7 +546,7 @@ def delete(blogger, args):
         if answer == 'yes':
             blogger.delete(args.files)
     else:
-        'No file to delete is specified!'
+        print('No file to delete is specified!')
     blogger.commit()
 
 

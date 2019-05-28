@@ -17,4 +17,9 @@ but rather for convenient reference of the author and future improvement.
 1. The java.util.Random class provides a low-quallity generator 
 suitable for "informal" uses of random numbers.
 
-2. 
+2. It is suggested that you use the classs 
+  [org.apache.commons.math3.random.RandomDataGenerator](http://commons.apache.org/proper/commons-math/javadocs/api-3.6/org/apache/commons/math3/random/RandomDataGenerator.html)
+  for generating random numbers if quality is of a concern. 
+  Please refer to 
+  [Summary on Random Number Generators](http://www.legendu.net/en/blog/summary-random-number-generators/)
+  for more details.

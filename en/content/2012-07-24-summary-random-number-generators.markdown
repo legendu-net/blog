@@ -1,7 +1,6 @@
-UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
 Title: Summary on Random Number Generators
-Date: 2012-07-24 00:00:00
+Date: 2019-05-27 21:14:07
 Slug: summary-random-number-generators
 Author: Ben Chuanlong Du
 Category: Statistics

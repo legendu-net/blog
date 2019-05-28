@@ -546,7 +546,7 @@ def delete(blogger, args):
         if answer == 'yes':
             blogger.delete(args.files)
     else:
-        'No file to delete is specified!'
+        print('No file to delete is specified!')
     blogger.commit()
 
 

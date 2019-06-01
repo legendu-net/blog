@@ -322,12 +322,15 @@ class Blogger:
         content = ''.join(line.strip() for line in lines)
         is_empty = re.sub(r'\*\*.+\*\*', '', content).replace('**', '') == ''
         return 1 if is_empty else 0
-  
-    def delete(self, posts: Union[str, List[str]]):
+
+    def trash(self, posts: Union[str, List[str]]):
         if isinstance(posts, str):
             posts = [posts]
-        for file in posts:
-            os.remove(file)
+        path_ = os.path.join(BASE_DIR, 'trash')
+        if not os.path.isdir(path_):
+            os.mkdir(path_)
+        for post in posts:
+            shutil.move(post, path_)
         qmark = ', '.join(['?'] * len(posts))
         sql = f'DELETE FROM posts WHERE path in ({qmark})'
         self._conn.execute(sql, posts)
@@ -533,9 +536,19 @@ def query(blogger, args):
         print(row)
 
 
-def delete(blogger, args):
-    if re.search(r'^d\d+$', args.sub_cmd):
-        args.indexes = [int(args.sub_cmd[1:])]
+def move(blogger, args):
+    if re.search(r'^m\d+$', args.sub_cmd):
+        args.index = int(args.sub_cmd[1:])
+    if args.index:
+        args.file = blogger.path(args.index)[0]
+    if args.file:
+        blogger.move(args.file, args.target)
+    blogger.commit()
+
+
+def trash(blogger, args):
+    if re.search(r'^t\d+$', args.sub_cmd):
+        args.indexes = int(args.sub_cmd[1:])
     if args.indexes:
         args.files = blogger.path(args.indexes)
     if args.all:
@@ -544,19 +557,9 @@ def delete(blogger, args):
     if args.files:
         answer = input('Are you sure to delete the specified files in the srps table (yes or no): ')
         if answer == 'yes':
-            blogger.delete(args.files)
+            blogger.trash(args.files)
     else:
         print('No file to delete is specified!')
-    blogger.commit()
-
-
-def move(blogger, args):
-    if re.search(r'^m\d+$', args.sub_cmd):
-        args.index = int(args.sub_cmd[1:])
-    if args.index:
-        args.file = blogger.path(args.index)[0]
-    if args.file:
-        blogger.move(args.file, args.target)
     blogger.commit()
 
 
@@ -736,7 +739,6 @@ def parse_args(args=None, namespace=None):
     _subparse_edit(subparsers)
     _subparse_move(subparsers)
     _subparse_publish(subparsers)
-    _subparse_delete(subparsers)
     _subparse_query(subparsers)
     _subparse_auto(subparsers)
     _subparse_space_vim(subparsers)
@@ -745,6 +747,7 @@ def parse_args(args=None, namespace=None):
     _subparse_git_diff(subparsers)
     _subparse_git_pull(subparsers)
     _subparse_empty_post(subparsers)
+    _subparse_trash(subparsers)
     return parser.parse_args(args=args, namespace=namespace)
 
 
@@ -1177,27 +1180,27 @@ def _subparse_publish(subparsers):
     subparser_publish.set_defaults(func=publish)
 
 
-def _subparse_delete(subparsers):
-    subparser_delete = subparsers.add_parser(
-        'delete',
-        aliases=['d' + i for i in INDEXES],
-        help='Delete a post/page.')
-    subparser_delete.add_argument(
+def _subparse_trash(subparsers):
+    subparser_trash = subparsers.add_parser(
+        'trash',
+        aliases=['t' + i for i in INDEXES],
+        help='move posts to the trash directory')
+    subparser_trash.add_argument(
         '-i',
         '--indexes',
         dest='indexes',
         nargs='+',
         type=int,
-        help='row IDs of the files (in the search results) to delete.')
-    subparser_delete.add_argument(
+        help='row IDs of the files (in the search results) to be moved to trash directory.')
+    subparser_trash.add_argument(
         '-a',
         '--all',
         dest='all',
         action='store_true',
-        help='delete all files in the search results.')
-    subparser_delete.add_argument(
-        '-f', '--files', dest='files', help='paths of the posts to delete.')
-    subparser_delete.set_defaults(func=delete)
+        help='move all files in the search results to trash directory.')
+    subparser_trash.add_argument(
+        '-f', '--files', dest='files', help='paths of the posts to be moved to trash directory.')
+    subparser_trash.set_defaults(func=trash)
 
 
 def _subparse_query(subparsers):

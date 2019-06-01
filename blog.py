@@ -333,7 +333,7 @@ class Blogger:
             shutil.move(post, path_)
         qmark = ', '.join(['?'] * len(posts))
         sql = f'DELETE FROM posts WHERE path in ({qmark})'
-        self._conn.execute(sql, posts) 
+        self._conn.execute(sql, posts)
 
     def move(self, post, target):
         if target in (EN, CN, MISC):
@@ -1184,22 +1184,22 @@ def _subparse_trash(subparsers):
     subparser_trash = subparsers.add_parser(
         'trash',
         aliases=['t' + i for i in INDEXES],
-        help='move posts to trash folder')
+        help='move posts to the trash directory')
     subparser_trash.add_argument(
         '-i',
         '--indexes',
         dest='indexes',
         nargs='+',
         type=int,
-        help='row IDs of the files (in the search results) need to be moved to trash folder.')
+        help='row IDs of the files (in the search results) to be moved to trash directory.')
     subparser_trash.add_argument(
         '-a',
         '--all',
         dest='all',
         action='store_true',
-        help='move all files in the search results to trash folder.')
+        help='move all files in the search results to trash directory.')
     subparser_trash.add_argument(
-        '-f', '--files', dest='files', help='paths of the posts need to be moved to trash folder.')
+        '-f', '--files', dest='files', help='paths of the posts to be moved to trash directory.')
     subparser_trash.set_defaults(func=trash)
 
 

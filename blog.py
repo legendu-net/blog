@@ -332,6 +332,17 @@ class Blogger:
         sql = f'DELETE FROM posts WHERE path in ({qmark})'
         self._conn.execute(sql, posts)
 
+    def trash(self, posts: Union[str, List[str]]):
+        if isinstance(posts, str):
+            posts = [posts]
+        if not os.path.isdir(os.path.join(BASE_DIR, 'trash')):
+            os.mkdir(os.path.join(BASE_DIR, 'trash'))
+        for post in posts:
+            shutil.move(post, os.path.join(BASE_DIR, 'trash'))
+            qmark = ', '.join(['?'] * len(posts))
+            sql = f'DELETE FROM posts WHERE path in ({qmark})'
+            self._conn.execute(sql, posts) 
+
     def move(self, post, target):
         if target in (EN, CN, MISC):
             target = os.path.join(BASE_DIR, target, 'content',
@@ -560,6 +571,23 @@ def move(blogger, args):
     blogger.commit()
 
 
+def trash(blogger, args):
+    if re.search(r'^t\d+$', args.sub_cmd):
+        args.indexes = int(args.sub_cmd[1:])
+    if args.indexes:
+        args.files = blogger.path(args.indexes)
+    if args.all:
+        sql = 'SELECT path FROM srps'
+        args.files = [row[0] for row in blogger.query(sql)]
+    if args.files:
+        answer = input('Are you sure to move the specified files in the srps table to trash folder (yes or no): ')
+        if answer == 'yes':
+            blogger.trash(args.files)
+    else:
+        print('No specified files need to be moved to trash folder!')
+    blogger.commit()
+
+
 def edit(blogger, args):
     if re.search(r'^e\d+$', args.sub_cmd):
         args.indexes = [int(args.sub_cmd[1:])]
@@ -745,6 +773,7 @@ def parse_args(args=None, namespace=None):
     _subparse_git_diff(subparsers)
     _subparse_git_pull(subparsers)
     _subparse_empty_post(subparsers)
+    _subparse_trash(subparsers)
     return parser.parse_args(args=args, namespace=namespace)
 
 
@@ -1198,6 +1227,29 @@ def _subparse_delete(subparsers):
     subparser_delete.add_argument(
         '-f', '--files', dest='files', help='paths of the posts to delete.')
     subparser_delete.set_defaults(func=delete)
+
+
+def _subparse_trash(subparsers):
+    subparser_trash = subparsers.add_parser(
+        'trash',
+        aliases=['t' + i for i in INDEXES],
+        help='move posts to trash folder')
+    subparser_trash.add_argument(
+        '-i',
+        '--indexes',
+        dest='indexes',
+        nargs='+',
+        type=int,
+        help='row IDs of the files (in the search results) need to be moved to trash folder.')
+    subparser_trash.add_argument(
+        '-a',
+        '--all',
+        dest='all',
+        action='store_true',
+        help='move all files in the search results to trash folder.')
+    subparser_trash.add_argument(
+        '-f', '--files', dest='files', help='paths of the posts need to be moved to trash folder.')
+    subparser_trash.set_defaults(func=trash)
 
 
 def _subparse_query(subparsers):

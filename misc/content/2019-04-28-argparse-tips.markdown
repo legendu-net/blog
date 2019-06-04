@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-01 12:17:55
+Date: 2019-06-04 21:42:45
 Author: Benjamin Du
 Slug: argparse-tips
 Title: argparse Tips
@@ -15,3 +15,6 @@ It is not meant to readers but rather for convenient reference of the author and
 
 2. It seems that the default value for an argument must be specified 
     in the first occurrence of the corresponding `add_argument` function.
+
+3. It seems that default value must be specified in the first occurrence. 
+

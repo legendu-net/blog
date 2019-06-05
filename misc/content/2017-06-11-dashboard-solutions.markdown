@@ -1,6 +1,5 @@
-UUID: 5871584f-b78d-48a0-a7e4-3b307f7af6bf
 Status: published
-Date: 2018-01-07 14:29:13
+Date: 2019-06-05 03:00:46
 Author: Ben Chuanlong Du
 Slug: dashboard-solutions
 Title: Dashboard Solutions
@@ -87,6 +86,14 @@ Superset is a very similar (both functionalities and underlying techs) product t
 ### Docker Image
 
 amancevice/superset
+
+## [QuantStack/voila](https://github.com/QuantStack/voila)
+
+Looks very interesting!
+
+## [minrk/thebelab](https://github.com/minrk/thebelab)
+
+Looks very interesting!
 
 ## [Bokeh Server](https://bokeh.pydata.org/en/latest/docs/user_guide/server.html)
 

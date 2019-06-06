@@ -555,6 +555,7 @@ def trash(blogger, args):
         sql = 'SELECT path FROM srps'
         args.files = [row[0] for row in blogger.query(sql)]
     if args.files:
+        print(args.files)
         answer = input('Are you sure to delete the specified files in the srps table (yes or no): ')
         if answer == 'yes':
             blogger.trash(args.files)
@@ -1191,15 +1192,15 @@ def _subparse_trash(subparsers):
         dest='indexes',
         nargs='+',
         type=int,
-        help='row IDs of the files (in the search results) to be moved to trash directory.')
+        help='row IDs of the files (in the search results) to be moved to the trash directory.')
     subparser_trash.add_argument(
         '-a',
         '--all',
         dest='all',
         action='store_true',
-        help='move all files in the search results to trash directory.')
+        help='move all files in the search results to the trash directory.')
     subparser_trash.add_argument(
-        '-f', '--files', dest='files', help='paths of the posts to be moved to trash directory.')
+        '-f', '--files', dest='files', help='paths of the posts to be moved to the trash directory.')
     subparser_trash.set_defaults(func=trash)
 
 

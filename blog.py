@@ -574,6 +574,8 @@ def edit(blogger, args):
         if args.editor != 'gp open' and not shutil.which(args.editor):
             args.editor = VIM
         blogger.edit(args.files, args.editor)
+    else:
+        print('No post is specified for editing!')
     blogger.commit()
 
 

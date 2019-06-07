@@ -575,7 +575,7 @@ def edit(blogger, args):
             args.editor = VIM
         blogger.edit(args.files, args.editor)
     else:
-        print('No post is specified for editing!')
+        print('No post is specified for editing!\n')
     blogger.commit()
 
 

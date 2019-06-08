@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-05 03:00:46
+Date: 2019-06-08 09:37:08
 Author: Ben Chuanlong Du
 Slug: dashboard-solutions
 Title: Dashboard Solutions
@@ -12,6 +12,10 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+## [QuantStack/voila](https://github.com/QuantStack/voila)
+
+The best solution so far for quickly creating ad hoc dashboard leveraging JupyterLab notebooks.
 
 ## [Redash](https://github.com/getredash/redash)
 
@@ -86,10 +90,6 @@ Superset is a very similar (both functionalities and underlying techs) product t
 ### Docker Image
 
 amancevice/superset
-
-## [QuantStack/voila](https://github.com/QuantStack/voila)
-
-Looks very interesting!
 
 ## [minrk/thebelab](https://github.com/minrk/thebelab)
 

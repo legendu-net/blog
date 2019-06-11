@@ -555,12 +555,12 @@ def trash(blogger, args):
         sql = 'SELECT path FROM srps'
         args.files = [row[0] for row in blogger.query(sql)]
     if args.files:
-        print(args.files)
+        show(blogger, args)
         answer = input('Are you sure to delete the specified files in the srps table (yes or no): ')
         if answer == 'yes':
             blogger.trash(args.files)
     else:
-        print('No file to delete is specified!')
+        print('No file to delete is specified!\n')
     blogger.commit()
 
 
@@ -575,7 +575,7 @@ def edit(blogger, args):
             args.editor = VIM
         blogger.edit(args.files, args.editor)
     else:
-        print('No post is specified for editing!')
+        print('No post is specified for editing!\n')
     blogger.commit()
 
 
@@ -1201,6 +1201,18 @@ def _subparse_trash(subparsers):
         dest='all',
         action='store_true',
         help='move all files in the search results to the trash directory.')
+    subparser_trash.add_argument(
+        '-n',
+        dest='n',
+        type=int,
+        default=10,
+        help='number of files to be moved to the trash directory.')
+    subparser_trash.add_argument(
+        '-F',
+        '--full-path',
+        dest='full_path',
+        action='store_true',
+        help='whether to show full (instead of short/relative) path.')
     subparser_trash.add_argument(
         '-f', '--files', dest='files', help='paths of the posts to be moved to the trash directory.')
     subparser_trash.set_defaults(func=trash)

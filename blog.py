@@ -11,8 +11,6 @@ import shutil
 import json
 from typing import Union, List
 import pelican
-import sys
-import fileinput
 
 EN = 'en'
 CN = 'cn'

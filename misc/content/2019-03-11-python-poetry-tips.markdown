@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-20 19:37:23
+Date: 2019-06-15 19:09:53
 Author: Benjamin Du
 Slug: python-poetry-tips
 Title: Python Poetry Tips
@@ -11,11 +11,16 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 
 
-https://poetry.eustace.io/docs/
+[Poetry Documentation](https://poetry.eustace.io/docs/)
 
 ## Usage
+
 ```Bash
 poetry new proj
+```
+
+```Bash
+poetry init
 ```
 
 ## Updating poetry

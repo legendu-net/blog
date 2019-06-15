@@ -11,6 +11,8 @@ import shutil
 import json
 from typing import Union, List
 import pelican
+import sys
+import fileinput
 
 EN = 'en'
 CN = 'cn'
@@ -189,6 +191,7 @@ class Blogger:
             content,
             empty,
             updated,
+            retitle,
             tokenize = porter
         )
         '''
@@ -285,6 +288,7 @@ class Blogger:
         # parse content index to end
         content = ''.join(lines)
         empty = self._is_ess_empty(lines[index:])
+        retitle = self._is_rename_title(post, title)
         sql = '''
         INSERT INTO posts (
             path,
@@ -298,9 +302,10 @@ class Blogger:
             tags,
             content,
             empty,
-            updated
+            updated,
+            retitle
         ) VALUES (
-            ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+            ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
         )
         '''
         self._conn.execute(sql, [
@@ -316,12 +321,20 @@ class Blogger:
             content,
             empty,
             0,
+            retitle,
         ])
     
     def _is_ess_empty(self, lines: List[str]) -> int:
         content = ''.join(line.strip() for line in lines)
         is_empty = re.sub(r'\*\*.+\*\*', '', content).replace('**', '') == ''
         return 1 if is_empty else 0
+
+    def _is_rename_title(self, path_, title_) -> int:
+        file_words = os.path.join(BASE_DIR, 'words.json')
+        filename = os.path.basename(path_)
+        filename = filename.replace('.markdown', '')
+        title_new = _format_title(filename[11: ].replace('-', ' '), file_words)
+        return 1 if title_ != title_new else 0
 
     def trash(self, posts: Union[str, List[str]]):
         if isinstance(posts, str):
@@ -430,6 +443,26 @@ class Blogger:
             WHERE
                 empty = 1
             '''
+        if dry_run:
+            print(sql)
+            return
+        self._conn.execute(sql)
+        self._conn.commit()
+
+    def need_rename(self, dry_run=False):
+        self._create_table_srps()
+        self._conn.execute('DELETE FROM srps')
+        sql = f'''
+        INSERT INTO srps
+        SELECT
+            path
+        FROM
+            posts
+        WHERE
+            retitle = 1
+        AND
+            dir <> 'cn'
+        '''
         if dry_run:
             print(sql)
             return
@@ -555,13 +588,95 @@ def trash(blogger, args):
         sql = 'SELECT path FROM srps'
         args.files = [row[0] for row in blogger.query(sql)]
     if args.files:
-        show(blogger, args)
+        for index in range(len(args.files)):
+            print(f'\n{index + 1}: {args.files[index]}')
         answer = input('Are you sure to delete the specified files in the srps table (yes or no): ')
         if answer == 'yes':
             blogger.trash(args.files)
     else:
         print('No file to delete is specified!\n')
     blogger.commit()
+
+
+def need_rename(blogger, args):
+    blogger.need_rename()
+    sql = 'SELECT path FROM srps'
+    total = len(blogger.query(sql))
+    print(f'\nTotal number of posts need to change title or name is: {total}')
+    show(blogger, args)
+
+
+def rename_title(post):
+    file_words = os.path.join(BASE_DIR, 'words.json')
+    filename = os.path.basename(post)
+    filename = filename.replace('.markdown', '')
+    title_name = _format_title(filename[11: ].replace('-', ' '), file_words)
+    post_old = post.replace('.markdown', '_old.markdown')
+    os.rename(post, post_old)
+    source = open(post_old, 'r')
+    dest = open(post, 'w')
+    for line in source:
+        if line.startswith('Title: '):
+            dest.write(line.replace(line[7:], title_name) + '\n')
+        else:
+            dest.write(line)
+    source.close()
+    dest.close()
+    Blogger().trash(post_old)
+
+
+def rename_postname(post):
+    filename = os.path.basename(post)
+    filename = filename.replace('.markdown', '')
+    with open(post, 'r', encoding='utf-8') as fin:
+        lines = fin.readlines()
+    index = 0
+    for index, line in enumerate(lines):
+        if not re.match('[A-Za-z]+: ', line):
+            break
+    title_old = ''
+    for i in range(0, index):
+        line = lines[i]
+        if line.startswith('Title: '):
+            title_old = line[7:].strip()
+    new_name = post.replace(filename[11: ], title_old.lower().replace(' ', '-'))
+    os.rename(post, new_name)
+
+
+def rename_post(blogger, args):
+    if re.search(r'^re\d+$', args.sub_cmd):
+        args.indexes = int(args.sub_cmd[1:])
+    if args.indexes:
+        args.files = blogger.path(args.indexes)
+    if args.all:
+        sql = 'SELECT path FROM srps'
+        args.files = [row[0] for row in blogger.query(sql)]
+    if args.files:
+        total = len(args.files)
+        print(total)
+        answer = input('Do you want to change post name or title for all specified files in the srps table (yes or no): \n')
+        if answer == 'yes':
+            answer1 = input('Choose change post name or title (name or title): \n')
+            if answer1 == 'title':               
+                for index in range(total):
+                    rename_title(args.files[index])
+            if answer1 == 'name':
+                for index in range(total):
+                    rename_postname(args.files[index])                
+        if answer == 'no':
+            answer2 = input('Do you want to change a specified post name or title (yes or no): \n')
+            if answer2 == 'yes':
+                answer21 = input('Specify the post position index you would like to change (int: 0 : total - 1): \n')
+                if int(answer21) in range(total):
+                    answer22 = input('Choose change post name or title (name or title): \n')
+                    if answer22 == 'title':
+                       rename_title(args.files[int(answer21)])
+                    if answer22 == 'name':
+                        rename_postname(args.files[int(answer21)])
+                else:
+                    print('position index error!!\n')
+            else:
+                print('No file name or title will be changed!\n')
 
 
 def edit(blogger, args):
@@ -751,6 +866,8 @@ def parse_args(args=None, namespace=None):
     _subparse_git_pull(subparsers)
     _subparse_empty_post(subparsers)
     _subparse_trash(subparsers)
+    _subparse_need_rename(subparsers)
+    _subparse_rename_post(subparsers)
     return parser.parse_args(args=args, namespace=namespace)
 
 
@@ -1202,20 +1319,56 @@ def _subparse_trash(subparsers):
         action='store_true',
         help='move all files in the search results to the trash directory.')
     subparser_trash.add_argument(
+        '-f', '--files', dest='files', help='paths of the posts to be moved to the trash directory.')
+    subparser_trash.set_defaults(func=trash)
+
+
+def _subparse_rename_post(subparsers):
+    subparser_rename_post = subparsers.add_parser(
+        'rename',
+        aliases=['re' + i for i in INDEXES],
+        help='rename post name or title')
+    subparser_rename_post.add_argument(
+        '-i',
+        '--indexes',
+        dest='indexes',
+        nargs='+',
+        type=int,
+        help='row IDs of the files (in the search results) to need to change their names or titles.')
+    subparser_rename_post.add_argument(
+        '-a',
+        '--all',
+        dest='all',
+        action='store_true',
+        help='rename the file name or title for all files in the search results.')
+    subparser_rename_post.add_argument(
+        '-f', '--files', dest='files', help='paths of the posts to change name or title.')
+    subparser_rename_post.set_defaults(func=rename_post)
+
+
+def _subparse_need_rename(subparsers):
+    subparser_status = subparsers.add_parser(
+        'needrename', 
+        aliases=['nr'],
+        help='Find posts that either the name or title need to be changed.')
+    subparser_status.add_argument(
+        '--dry-run',
+        dest='dry_run',
+        action='store_true',
+        help='print out the SQL query without running it.')
+    subparser_status.add_argument(
         '-n',
         dest='n',
         type=int,
         default=10,
-        help='number of files to be moved to the trash directory.')
-    subparser_trash.add_argument(
+        help='number of matched records to show.')
+    subparser_status.add_argument(
         '-F',
         '--full-path',
         dest='full_path',
         action='store_true',
         help='whether to show full (instead of short/relative) path.')
-    subparser_trash.add_argument(
-        '-f', '--files', dest='files', help='paths of the posts to be moved to the trash directory.')
-    subparser_trash.set_defaults(func=trash)
+    subparser_status.set_defaults(func=need_rename)
 
 
 def _subparse_query(subparsers):

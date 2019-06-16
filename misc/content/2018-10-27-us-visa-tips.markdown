@@ -1,9 +1,9 @@
 UUID: f337f6c4-4aff-4017-ae6c-c5654443736c
 Status: published
-Date: 2018-10-27 13:52:21
+Date: 2019-06-16 06:52:55
 Author: Ben Chuanlong Du
 Slug: us-visa-tips
-Title: Us Visa Tips
+Title: US Visa Tips
 Category: Life
 Tags: life, US, DS-160, visa, interview
 

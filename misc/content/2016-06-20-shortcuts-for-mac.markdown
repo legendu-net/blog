@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-16 18:55:00
+Date: 2019-06-16 22:10:09
 Author: Ben Chuanlong Du
 Slug: shortcuts-for-mac
 Title: Shortcuts for Mac
@@ -16,9 +16,9 @@ but rather for convenient reference of the author and future improvement.
 [Table of keyboard shortcuts](https://en.wikipedia.org/wiki/Windows_shortcuts)
 lists comparisons of shortcuts on Windows, macOS and Linux.
 
-1. Unless you have a full Mac keyboard, 
-  you will not have the `Home/End` keys. 
-  `Fn + Left/Right` act as equivalent to `Home/End` keys in macOS, 
+1. Unless you have a full Mac keyboard,
+  you will not have the `Home/End` keys.
+  `Fn + Left/Right` act as equivalent to `Home/End` keys in macOS,
   however, `Home/End` keys not necessarily behave the same as in Windows/Linux.
   `Command + Left/Right` behave equivalent to what `Home/End` keys do in Windows/Linux.
 
@@ -28,15 +28,29 @@ lists comparisons of shortcuts on Windows, macOS and Linux.
 3. `CMD + C` copies files and `CMD + V` pastes the copied files.
 `CMD + Option + V` moves the files instead of to copy them.
 
+
+<table style="width:100%">
+  <tr>
+    <th> Key Binding </th>
+    <th> Description </th>
+  </tr>
+  <tr>
+    <td> F11 or Fn + F11 (depends) </td>
+    <td> show desktop (press again to bring back windows) </td>
+  </tr>
+  <tr>
+    <td> Command + Q </td>
+    <td> Quit the current active application </td>
+  </tr>
+</table>
+
 Command + k: connect to server
 
 Option + Left/Right: move to the left/right by one word
 
-F11 or Fn + F11 (depends): temporarily hide windows, press it again to bring back windows 
 
 Basic Shortcuts
 
-Command + Q = Quit the current active application
 Command + W = Close the current active window
 Command + O = Open a file in your application
 Command + P = Print
@@ -114,10 +128,10 @@ http://www.keyboardmaestro.com/main/
 
 ## Web Browsing
 
-Different web browsers share standard keyboard shortcuts 
-that work similarly on all operating systems, 
-including Mac OS X. On a Mac, the big difference is 
-that you’ll usually be pressing the Command key instead of the Ctrl 
+Different web browsers share standard keyboard shortcuts
+that work similarly on all operating systems,
+including Mac OS X. On a Mac, the big difference is
+that you’ll usually be pressing the Command key instead of the Ctrl
 or Alt keys you’d press on Windows.
 
     Command + F – Start searching the current page. This also works in other applications.
@@ -132,12 +146,12 @@ or Alt keys you’d press on Windows.
 
 ## Text Editing
 
-Text-editing keyboard shortcuts also function similarly between Mac and Windows. 
-One again, you’ll mostly just be pressing the Command key instead of the Ctrl key. 
-This is a bigger difference than it seems at first glance. 
-The Command key is directly adjacent to the Space bar on Mac keyboards, 
-while the Ctrl key is in the bottom-left corner on Windows keyboards. 
-The way you have to position your fingers is different, 
+Text-editing keyboard shortcuts also function similarly between Mac and Windows.
+One again, you’ll mostly just be pressing the Command key instead of the Ctrl key.
+This is a bigger difference than it seems at first glance.
+The Command key is directly adjacent to the Space bar on Mac keyboards,
+while the Ctrl key is in the bottom-left corner on Windows keyboards.
+The way you have to position your fingers is different,
 so your muscle memory can interfere with these shortcuts.
 
     Command + A – Select All
@@ -156,8 +170,8 @@ As on Windows, you can press Shift to select text while using these shortcuts. F
 
 ## Managing Open Applications
 
-Macs offer an application switcher that works just like Alt + Tab does on Windows, 
-but there are many more keyboard shortcuts that tie into the Mission Control feature. 
+Macs offer an application switcher that works just like Alt + Tab does on Windows,
+but there are many more keyboard shortcuts that tie into the Mission Control feature.
 Read our our guide to using Mission Control for more keyboard shortcuts and tricks.
 
     Command + Tab – Move through a list of open applications. This is like Alt + Tab on Windows.

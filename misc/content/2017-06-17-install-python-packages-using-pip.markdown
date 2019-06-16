@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-24 02:06:14
+Date: 2019-06-16 17:25:33
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages Using pip
@@ -119,8 +119,13 @@ pip3 install --upgrade wheel
 
 You can export environment variables `http_proxy` and `https_proxy`
 or you can use `pip` with the `--proxy` option directly.
-```
+```Bash
 pip3 --proxy http://proxy__server_ip:port install some_pkg
+```
+When using the `--proxy` with `pip`/`pip3`, 
+you can omit `http://` and the port if the port is 80.
+```Bash
+pip3 --proxy 10.135.227.47 search notifiers
 ```
 
 ## Caching

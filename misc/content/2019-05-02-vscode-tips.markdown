@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-07 20:37:47
+Date: 2019-06-17 04:21:48
 Author: Benjamin Du
 Slug: vscode-tips
 Title: Tips for Visual Studio Code
@@ -22,6 +22,8 @@ https://code.visualstudio.com/docs/remote/ssh
 https://code.visualstudio.com/docs/remote/containers
 
 ## Useful Extensions
+
+[Visual Stuido IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 
 [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 

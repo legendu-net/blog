@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-09 21:21:15
+Date: 2019-06-17 18:22:24
 Author: Ben Chuanlong Du
 Slug: useful-tools-extensions-for-jupyterlab
 Title: Useful Tools and Extensions for JupyterLab
@@ -13,6 +13,13 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+```Bash
+jupyter labextension install some_extension
+```
+
+```Bash
+jupyter labextension uninstall some_extension
+```
 
 ## Useful Tools
 

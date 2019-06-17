@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-24 02:14:33
+Date: 2019-06-16 23:03:16
 Author: Benjamin Du
 Slug: spark-sql-tips
 Title: Spark SQL Tips
@@ -15,7 +15,7 @@ It is not meant to readers but rather for convenient reference of the author and
 
 1. Spark SQL follows hive sql syntax.
     For example,
-    `spark.sql("show tables in some_schema")`
+    `spark.sql("show tables in some_schema like '*perf*'")`
     returns a DataFrame with tables in the Hive database.
 
 2. JSON, ORC, Parquet and CSV files can be queried using Spark SQL without creating a table on the Spark DataFrame.

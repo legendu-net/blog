@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-13 19:54:22
+Date: 2019-06-16 23:45:42
 Author: Benjamin Du
 Slug: tips-on-spark-mllib
 Title: Tips on Spark MLlib
@@ -14,6 +14,8 @@ It is not meant to readers but rather for convenient reference of the author and
 1. Spark MLlib RDD-based API supports 
     [stratified sampling](https://spark.apache.org/docs/latest/mllib-statistics.html#stratified-sampling)
     but the DataFrame-based API hasn't implemented it yet as of Spark 2.4.3.
+
+sample keys (not rows) with equal probability
 
 
 ## References

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-26 19:11:31
+Date: 2019-06-18 21:20:13
 Author: Benjamin Du
 Slug: unit-testing-debugging-python
 Title: Unit Testing and Debugging Tools for Python
@@ -18,6 +18,11 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 - [TDDA](https://github.com/tdda/tdda)
+
+
+## [PySnooper](https://github.com/cool-RR/PySnooper)
+
+A poor man's tool for debugging which is much better than print.
 
 ## unittest vs pytest
 

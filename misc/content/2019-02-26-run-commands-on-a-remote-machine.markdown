@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-08 02:40:56
+Date: 2019-06-19 07:33:47
 Author: Benjamin Du
 Slug: run-commands-on-a-remote-machine
 Title: Run Commands on a Remote Machine
@@ -34,6 +34,40 @@ It is not meant to readers but rather for convenient reference of the author and
 https://stackoverflow.com/questions/305035/how-to-use-ssh-to-run-a-shell-script-on-a-remote-machine
 
 ## Python
+
+[ssh2-python](https://github.com/ParallelSSH/ssh2-python)
+
+[parallel-ssh](https://github.com/ParallelSSH/parallel-ssh)
+
+[asyncssh](https://github.com/ronf/asyncssh)
+
+[sshtunnel](https://github.com/pahaz/sshtunnel)
+
+[paramiko](https://github.com/paramiko/paramiko)
+
+[fabric](https://github.com/fabric/fabric/)
+
+
+[paramiko/paramiko](https://github.com/paramiko/paramiko)
+
+http://vozis.blogspot.com/2015/01/python-sftp-with-paramiko-via-socks.html
+
+https://medium.com/@RyanHiebert/sftp-via-socks-proxy-using-paramiko-a736afe17b9e
+
+https://adimian.com/blog/2014/10/paramiko-and-corporate-proxies
+
+https://github.com/Anorov/PySocks
+
+https://github.com/paramiko/paramiko/pull/508
+
+https://gist.github.com/rubanm/5818236
+
+
+https://medium.com/@keagileageek/paramiko-how-to-ssh-and-file-transfers-with-python-75766179de73
+
+https://stackoverflow.com/questions/10488832/how-to-ssh-over-http-proxy-in-python/33767220
+
+
 
 https://stackoverflow.com/questions/28411960/execute-a-command-on-remote-machine-in-python
 

@@ -1,6 +1,5 @@
-UUID: 8f4bb1db-d454-47a0-bd5d-33f77d596e2a
 Status: published
-Date: 2018-09-02 13:26:41
+Date: 2019-06-20 19:01:47
 Author: Ben Chuanlong Du
 Slug: sql-style-and-formatter
 Title: SQL Style and Formatter
@@ -35,7 +34,6 @@ https://www.sqlstyle.guide/
 
 ApexSQL is a nice and free SQL formatting tool 
 for VisualStudio SQL Server.
-
 
 1. <http://sqlformat.org/>
 

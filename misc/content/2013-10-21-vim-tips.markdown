@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-09 15:36:49
+Date: 2019-06-20 18:59:03
 Author: Ben Chuanlong Du
 Slug: vim-tips
 Title: Tips for Vim
@@ -17,6 +17,21 @@ It is not meant to readers but rather for convenient reference of the author and
 - [SpaceVim](https://spacevim.org/)
 
 - [spf13-vim](https://vim.spf13.com/)
+
+
+## Case Insensitive Search
+
+/\cPatterToSearch
+
+:set ignorecase
+
+:set smartcase
+/copyright      " Case insensitive
+/Copyright      " Case sensitive
+/copyright\C    " Case sensitive
+/Copyright\c    " Case insensitive
+
+[How to do case insensitive search in Vim](https://stackoverflow.com/questions/2287440/how-to-do-case-insensitive-search-in-vim)
 
 ## Tips
 

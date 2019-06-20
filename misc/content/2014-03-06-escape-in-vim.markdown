@@ -1,11 +1,10 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2015-08-26 22:01:14
-Slug: escape-in-vim
-Title: Escape in Vim
+Date: 2019-06-20 18:59:03
+Slug: escape-key-in-vim
+Title: The Escape Key in Vim
 Category: Software
-Tags: Vim, software, tips, escape, Caps Lock
+Tags: Vim, software, tips, escape, Caps Lock, keyboard
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. It is not meant to readers but rather for convenient reference of the author and future improvement.**
  
@@ -23,6 +22,11 @@ works very well until you remote to other desktops
 
 4. Map/Swap when needed is also a good idea
 
-You can check the post 
+Please refer the posts below on how to map keys in Windows, Mac and Linux.
+
+[Map Keys in Windows](http://www.legendu.net/misc/blog/map-keys-in-windows/)
+
+[Map Keys in Mac](http://www.legendu.net/en/blog/map-keys-in-mac/)
+
 [Map Keys in Linux](http://www.legendu.net/en/blog/map-keys-in-linux/)
-for ways of mapping keys in Linux.
+

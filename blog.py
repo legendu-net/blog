@@ -644,7 +644,7 @@ def match_post_title(post):
 
 
 def match_post(blogger, args):
-    if re.search(r'^re\d+$', args.sub_cmd):
+    if re.search(r'^mp\d+$', args.sub_cmd):
         args.indexes = int(args.sub_cmd[1:])
     if args.indexes:
         args.files = blogger.path(args.indexes)

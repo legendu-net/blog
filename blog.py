@@ -30,6 +30,7 @@ VIM = 'nvim' if shutil.which('nvim') else 'vim'
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 INDEXES = [''] + [str(i) for i in range(1, 11)]
 DASHES = '\n' + '-' * 100 + '\n'
+file_words = os.path.join(BASE_DIR, 'words.json')
 
 
 def qmarks(n: int):
@@ -189,7 +190,7 @@ class Blogger:
             content,
             empty,
             updated,
-            retitle,
+            name_title_mismatch,
             tokenize = porter
         )
         '''
@@ -286,7 +287,7 @@ class Blogger:
         # parse content index to end
         content = ''.join(lines)
         empty = self._is_ess_empty(lines[index:])
-        retitle = self._is_rename_title(post, title)
+        name_title_mismatch = self._is_name_title_mismatch(post, title)
         sql = '''
         INSERT INTO posts (
             path,
@@ -301,7 +302,7 @@ class Blogger:
             content,
             empty,
             updated,
-            retitle
+            name_title_mismatch
         ) VALUES (
             ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
         )
@@ -319,7 +320,7 @@ class Blogger:
             content,
             empty,
             0,
-            retitle,
+            name_title_mismatch,
         ])
     
     def _is_ess_empty(self, lines: List[str]) -> int:
@@ -327,12 +328,11 @@ class Blogger:
         is_empty = re.sub(r'\*\*.+\*\*', '', content).replace('**', '') == ''
         return 1 if is_empty else 0
 
-    def _is_rename_title(self, path_, title_) -> int:
-        file_words = os.path.join(BASE_DIR, 'words.json')
-        filename = os.path.basename(path_)
-        filename = filename.replace('.markdown', '')
-        title_new = _format_title(filename[11: ].replace('-', ' '), file_words)
-        return 1 if title_ != title_new else 0
+    def _is_name_title_mismatch(self, path, title) -> int:
+        file_name = os.path.basename(path)
+        file_name = file_name.replace('.markdown', '')
+        title_new = _format_title(file_name[11: ].replace('-', ' '), file_words)
+        return 1 if title != title_new else 0
 
     def trash(self, posts: Union[str, List[str]]):
         if isinstance(posts, str):
@@ -447,20 +447,20 @@ class Blogger:
         self._conn.execute(sql)
         self._conn.commit()
 
-    def need_rename(self, dry_run=False):
+    def find_name_title_mismatch(self, dry_run=False):
         self._create_table_srps()
         self._conn.execute('DELETE FROM srps')
         sql = f'''
-        INSERT INTO srps
-        SELECT
-            path
-        FROM
-            posts
-        WHERE
-            retitle = 1
-        AND
-            dir <> 'cn'
-        '''
+            INSERT INTO srps
+            SELECT
+                path
+            FROM
+                posts
+            WHERE
+                name_title_mismatch = 1
+            AND
+                dir <> 'cn'
+            '''
         if dry_run:
             print(sql)
             return
@@ -586,8 +586,8 @@ def trash(blogger, args):
         sql = 'SELECT path FROM srps'
         args.files = [row[0] for row in blogger.query(sql)]
     if args.files:
-        for index in range(len(args.files)):
-            print(f'\n{index + 1}: {args.files[index]}')
+        for index, file in enumerate(args.files):
+            print(f'\n{index}: {args.files[index]}')
         answer = input('Are you sure to delete the specified files in the srps table (yes or no): ')
         if answer == 'yes':
             blogger.trash(args.files)
@@ -596,52 +596,54 @@ def trash(blogger, args):
     blogger.commit()
 
 
-def need_rename(blogger, args):
-    blogger.need_rename()
-    sql = 'SELECT path FROM srps'
-    total = len(blogger.query(sql))
-    print(f'\nTotal number of posts need to change title or name is: {total}')
+def find_name_title_mismatch(blogger, args):
+    blogger.find_name_title_mismatch()
     show(blogger, args)
 
 
-def rename_title(post):
-    file_words = os.path.join(BASE_DIR, 'words.json')
-    filename = os.path.basename(post)
-    filename = filename.replace('.markdown', '')
-    title_name = _format_title(filename[11: ].replace('-', ' '), file_words)
-    post_old = post.replace('.markdown', '_old.markdown')
-    os.rename(post, post_old)
-    source = open(post_old, 'r')
-    dest = open(post, 'w')
-    for line in source:
-        if line.startswith('Title: '):
-            dest.write(line.replace(line[7:], title_name) + '\n')
-        else:
-            dest.write(line)
-    source.close()
-    dest.close()
-    Blogger().trash(post_old)
+def file_name(post) -> str:
+    post_name = os.path.basename(post)
+    post_name = post_name.replace('.markdown', '')
+    return post_name[11:].strip()
 
 
-def rename_postname(post):
-    filename = os.path.basename(post)
-    filename = filename.replace('.markdown', '')
+def match_post_name(post):
+    post_name = file_name(post)
+    title_name = _format_title(post_name.replace('-', ' '), file_words)
+    slug_name = title_name.lower().replace(' ', '-')
+    with open(post, 'r') as fin:
+        lines = fin.readlines()
+    with open(post, 'w') as fout:
+        for line in lines:
+            if line.startswith('Title: '):
+                fout.write(line.replace(line[7:].strip(), title_name))
+            elif line.startswith('Slug: '):
+                fout.write(line.replace(line[6: ].strip(), slug_name))
+            else:
+                fout.write(line)
+
+
+def match_post_title(post):
+    post_name = file_name(post)
     with open(post, 'r', encoding='utf-8') as fin:
         lines = fin.readlines()
-    index = 0
-    for index, line in enumerate(lines):
-        if not re.match('[A-Za-z]+: ', line):
-            break
-    title_old = ''
-    for i in range(0, index):
-        line = lines[i]
+    title = ''
+    for line in lines:
         if line.startswith('Title: '):
-            title_old = line[7:].strip()
-    new_name = post.replace(filename[11: ], title_old.lower().replace(' ', '-'))
+            title = line[7:].strip()
+            break
+    slug_name = title.lower().replace(' ', '-')
+    with open(post, 'w') as fout:
+        for line in lines:
+            if line.startswith('Slug: '):
+                fout.write(line.replace(line[6: ].strip(), slug_name))
+            else:
+                fout.write(line)
+    new_name = post.replace(post_name, slug_name)
     os.rename(post, new_name)
 
 
-def rename_post(blogger, args):
+def match_post(blogger, args):
     if re.search(r'^re\d+$', args.sub_cmd):
         args.indexes = int(args.sub_cmd[1:])
     if args.indexes:
@@ -652,29 +654,25 @@ def rename_post(blogger, args):
     if args.files:
         total = len(args.files)
         print(total)
-        answer = input('Do you want to change post name or title for all specified files in the srps table (yes or no): \n')
+        answer = input('Do you want to match post name and title for all specified files in the srps table (yes or no): \n')
         if answer == 'yes':
-            answer1 = input('Choose change post name or title (name or title): \n')
-            if answer1 == 'title':               
+            answer1 = input('Choose match based on post or title name and specify the number of posts to be matched (ap (all post) at (all title) or pn (post number) or tn (title number)): \n')
+            if answer1 == 'ap':               
                 for index in range(total):
-                    rename_title(args.files[index])
-            if answer1 == 'name':
+                    match_post_name(args.files[index])
+            if answer1 == 'at':
                 for index in range(total):
-                    rename_postname(args.files[index])                
+                    match_post_title(args.files[index])
+            if answer1[0] == 'p':
+                number_post = int(answer1[2:])
+                for index in range(number_post):
+                    match_post_name(args.files[index])
+            if answer1[0] == 't':
+                number_post = int(answer1[2:])
+                for index in range(number_post):
+                    match_post_title(args.files[index])                             
         if answer == 'no':
-            answer2 = input('Do you want to change a specified post name or title (yes or no): \n')
-            if answer2 == 'yes':
-                answer21 = input('Specify the post position index you would like to change (int: 0 : total - 1): \n')
-                if int(answer21) in range(total):
-                    answer22 = input('Choose change post name or title (name or title): \n')
-                    if answer22 == 'title':
-                       rename_title(args.files[int(answer21)])
-                    if answer22 == 'name':
-                        rename_postname(args.files[int(answer21)])
-                else:
-                    print('position index error!!\n')
-            else:
-                print('No file name or title will be changed!\n')
+            print('No file will be changed!\n')
 
 
 def edit(blogger, args):
@@ -749,6 +747,9 @@ def _disp_path(path: str, full: bool = True) -> str:
 
 
 def show(blogger, args) -> None:
+    sql = 'SELECT count(path) FROM srps'
+    total = blogger.query(sql)[0]
+    print(f'\nTotal number of posts in the search table srps is: {total}')
     for id, path in blogger.fetch(args.n):
         path = _disp_path(path, full=args.full_path)
         print(f'\n{id}: {path}')
@@ -864,8 +865,8 @@ def parse_args(args=None, namespace=None):
     _subparse_git_pull(subparsers)
     _subparse_empty_post(subparsers)
     _subparse_trash(subparsers)
-    _subparse_need_rename(subparsers)
-    _subparse_rename_post(subparsers)
+    _subparse_find_name_title_mismatch(subparsers)
+    _subparse_match_post(subparsers)
     return parser.parse_args(args=args, namespace=namespace)
 
 
@@ -1321,52 +1322,52 @@ def _subparse_trash(subparsers):
     subparser_trash.set_defaults(func=trash)
 
 
-def _subparse_rename_post(subparsers):
-    subparser_rename_post = subparsers.add_parser(
-        'rename',
-        aliases=['re' + i for i in INDEXES],
-        help='rename post name or title')
-    subparser_rename_post.add_argument(
+def _subparse_match_post(subparsers):
+    subparser_match_post = subparsers.add_parser(
+        'matchpost',
+        aliases=['mp' + i for i in INDEXES],
+        help='match file name and title')
+    subparser_match_post.add_argument(
         '-i',
         '--indexes',
         dest='indexes',
         nargs='+',
         type=int,
-        help='row IDs of the files (in the search results) to need to change their names or titles.')
-    subparser_rename_post.add_argument(
+        help='match file name and title for the specified row IDs of the files in the search results.')
+    subparser_match_post.add_argument(
         '-a',
         '--all',
         dest='all',
         action='store_true',
-        help='rename the file name or title for all files in the search results.')
-    subparser_rename_post.add_argument(
-        '-f', '--files', dest='files', help='paths of the posts to change name or title.')
-    subparser_rename_post.set_defaults(func=rename_post)
+        help='match the file name and title for all files in the search results.')
+    subparser_match_post.add_argument(
+        '-f', '--files', dest='files', help='match file name and title for the specified paths of the files in the search results.')
+    subparser_match_post.set_defaults(func=match_post)
 
 
-def _subparse_need_rename(subparsers):
-    subparser_status = subparsers.add_parser(
-        'needrename', 
-        aliases=['nr'],
-        help='Find posts that either the name or title need to be changed.')
-    subparser_status.add_argument(
+def _subparse_find_name_title_mismatch(subparsers):
+    subparser_find_name_title_mismatch = subparsers.add_parser(
+        'findmismatch', 
+        aliases=['fm'],
+        help='Find posts where their name and title are mismatched.')
+    subparser_find_name_title_mismatch.add_argument(
         '--dry-run',
         dest='dry_run',
         action='store_true',
         help='print out the SQL query without running it.')
-    subparser_status.add_argument(
+    subparser_find_name_title_mismatch.add_argument(
         '-n',
         dest='n',
         type=int,
         default=10,
         help='number of matched records to show.')
-    subparser_status.add_argument(
+    subparser_find_name_title_mismatch.add_argument(
         '-F',
         '--full-path',
         dest='full_path',
         action='store_true',
         help='whether to show full (instead of short/relative) path.')
-    subparser_status.set_defaults(func=need_rename)
+    subparser_find_name_title_mismatch.set_defaults(func=find_name_title_mismatch)
 
 
 def _subparse_query(subparsers):

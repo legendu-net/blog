@@ -1,11 +1,10 @@
-UUID: b9488cc2-6d84-4dcf-a9b5-590c600be825
 Status: published
-Date: 2017-06-11 18:36:51
+Date: 2019-06-21 23:37:16
 Author: Ben Chuanlong Du
 Slug: save-docker-image-in-another-location
 Title: Save Docker Image in Another Location
 Category: Software
-Tags: software, docker, location
+Tags: software, Docker, location
 
 **
 Things on this page are

@@ -1,11 +1,10 @@
-UUID: ded4fb17-43c4-46e1-bafd-1d47789bedc9
 Status: published
-Date: 2017-10-22 12:21:19
+Date: 2019-06-21 23:37:16
 Author: Ben Chuanlong Du
 Slug: docker-image-and-container-management
 Title: Manage Docker Images and Containers 
 Category: Software
-Tags: software, Docker, image, container, management, remove
+Tags: software, Docker, Docker image, container, management, remove
 
 It is suggested that you use [osquery](https://osquery.io/)
 to query Docker images, containers, etc.

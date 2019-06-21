@@ -1,6 +1,5 @@
-UUID: add495c4-fe4c-43ad-b13c-619ec1f348f0
 Status: published
-Date: 2018-10-18 23:27:46
+Date: 2019-06-21 23:37:16
 Author: Ben Chuanlong Du
 Slug: docker-images-for-database
 Title: Docker Images for Database

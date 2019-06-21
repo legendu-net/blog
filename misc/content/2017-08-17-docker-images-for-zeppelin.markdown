@@ -1,11 +1,10 @@
-UUID: ddef30ad-b838-4b72-b213-f2e24d170654
 Status: published
-Date: 2017-08-17 08:29:32
+Date: 2019-06-21 23:37:16
 Author: Ben Chuanlong Du
 Slug: docker-images-for-zeppelin
 Title: Docker Images for Zeppelin
 Category: Software
-Tags: software, docker, Zeppelin, big data, Spark 
+Tags: software, Docker, Docker image, Zeppelin, big data, Spark 
 
 **
 Things on this page are

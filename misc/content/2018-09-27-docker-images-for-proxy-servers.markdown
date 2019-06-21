@@ -1,11 +1,10 @@
-UUID: f7f81d11-421e-4448-b746-893d26f53126
 Status: published
-Date: 2018-09-27 23:56:06
+Date: 2019-06-21 23:37:16
 Author: Ben Chuanlong Du
 Slug: docker-images-for-proxy-servers
 Title: Docker Images for Proxy Servers
 Category: Software
-Tags: software, Docker image, proxy server, tinyproxy, VPN, openvpn, squid
+Tags: software, Docker, Docker image, proxy server, tinyproxy, VPN, openvpn, squid
 
 **
 Things on this page are

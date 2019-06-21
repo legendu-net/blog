@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-20 19:01:47
+Date: 2019-06-21 21:20:15
 Author: Ben Chuanlong Du
 Slug: sql-style-and-formatter
 Title: SQL Style and Formatter
@@ -13,6 +13,8 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+
+[SQL translation](https://www.jooq.org/translate/)
 
 ## SQL Style and Formatting
 

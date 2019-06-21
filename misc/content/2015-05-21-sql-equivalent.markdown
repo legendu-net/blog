@@ -1,6 +1,5 @@
-UUID: df4da60d-a5f1-4fd6-a387-e49800221e85
 Status: published
-Date: 2016-10-23 13:00:49
+Date: 2019-06-21 21:20:15
 Author: Ben Chuanlong Du
 Slug: sql-equivalent
 Title: SQL Equivalent
@@ -13,6 +12,9 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+[SQL translation](https://www.jooq.org/translate/)
+is a great tool that transalte any SQL statement(s) to a different dialetc using the JOOQ Parser.
 
 ## Show Tables
 

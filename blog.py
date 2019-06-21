@@ -30,10 +30,12 @@ VIM = 'nvim' if shutil.which('nvim') else 'vim'
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 INDEXES = [''] + [str(i) for i in range(1, 11)]
 DASHES = '\n' + '-' * 100 + '\n'
-file_words = os.path.join(BASE_DIR, 'words.json')
+FILE_WORDS = os.path.join(BASE_DIR, 'words.json')
 
 
 def qmarks(n: int):
+    """Generate n question marks delimited by comma.
+    """
     return ', '.join(['?'] * n)
 
 
@@ -53,7 +55,7 @@ def _update_post_move(post):
     Both 2 and 3 will prompt to user for confirmation.
     """
     # slug = 'Slug: ' + _slug(os.path.basename(post)[11:])
-    if blog_dir(post) == MISC:
+    if _blog_dir(post) == MISC:
         with open(post, 'r', encoding='utf-8') as fin:
             lines = fin.readlines()
         index = [line.strip() for line in lines].index('')
@@ -81,18 +83,20 @@ def _update_time(post):
         fout.writelines(lines)
 
 
-def blog_dir(post: str):
-    dir_ = os.path.dirname(post)
-    dir_ = os.path.dirname(dir_)
-    return os.path.basename(dir_)
+def _blog_dir(post: str):
+    """Get the corresponding blog directory (one of home, en, cn and misc)
+    of a post.
+    """
+    path = os.path.dirname(os.path.dirname(post))
+    return os.path.basename(path)
 
 
 def _slug(title: str):
     return title.replace(' ', '-').replace('/', '-')
 
 
-def _format_title(title, file_words):
-    with open(file_words, 'r', encoding='utf-8') as fin:
+def _format_title(title):
+    with open(FILE_WORDS, 'r', encoding='utf-8') as fin:
         words = json.load(fin)
     title = title.title()
     for word in words:
@@ -145,6 +149,8 @@ def _pelican_generate(dir_: str):
 
 
 def publish(blogger, args):
+    """Publish the blog to GitHub
+    """
     auto_git_push(blogger, args)
     print(DASHES)
     for dir_ in args.sub_dirs:
@@ -155,6 +161,9 @@ def publish(blogger, args):
 
 
 class Blogger:
+    """A class for managing blog.
+    """
+
     def __init__(self, db: str = ''):
         """Create an instance of Blogger.
 
@@ -205,12 +214,18 @@ class Blogger:
         self._conn.execute(sql)
 
     def clear(self):
+        """Remove the SQLite3 database.
+        """
         os.remove(self._db)
 
     def commit(self):
+        """Commit changes made to the SQLite3 database.
+        """
         self._conn.commit()
 
     def update_category(self, post, category):
+        """Change the category of the specified post to the specified category.
+        """
         with open(post, 'r', encoding='utf-8') as fin:
             lines = fin.readlines()
         for i, line in enumerate(lines):
@@ -223,6 +238,8 @@ class Blogger:
         self._conn.execute(sql, [category, post])
 
     def update_tags(self, post, from_tag, to_tag):
+        """Update the tag from_tag of the post to the tag to_tag.
+        """
         with open(post, 'r', encoding='utf-8') as fin:
             lines = fin.readlines()
         for i, line in enumerate(lines):
@@ -236,11 +253,13 @@ class Blogger:
         sql = 'UPDATE posts SET tags = ? WHERE path = ?'
         self._conn.execute(sql, [tags + ',', post])
 
-    def reload_posts(self, root_dir: str):
+    def reload_posts(self):
+        """Reload posts into the SQLite3 database.
+        """
         self._create_vtable_posts()
         self._conn.execute('DELETE FROM posts')
         for dir_ in (HOME, CN, EN, MISC):
-            self._load_posts(os.path.join(root_dir, dir_, 'content'))
+            self._load_posts(os.path.join(BASE_DIR, dir_, 'content'))
         self._conn.commit()
 
     def _load_posts(self, post_dir):
@@ -309,7 +328,7 @@ class Blogger:
         '''
         self._conn.execute(sql, [
             post,
-            blog_dir(post),
+            _blog_dir(post),
             status,
             date,
             author,
@@ -329,12 +348,12 @@ class Blogger:
         return 1 if is_empty else 0
 
     def _is_name_title_mismatch(self, path, title) -> int:
-        file_name = os.path.basename(path)
-        file_name = file_name.replace('.markdown', '')
-        title_new = _format_title(file_name[11: ].replace('-', ' '), file_words)
+        title_new = _format_title(_file_name(path).replace('-', ' '))
         return 1 if title != title_new else 0
 
     def trash(self, posts: Union[str, List[str]]):
+        """Move the specified posts to the trash directory.
+        """
         if isinstance(posts, str):
             posts = [posts]
         path_ = os.path.join(BASE_DIR, 'trash')
@@ -347,6 +366,8 @@ class Blogger:
         self._conn.execute(sql, posts)
 
     def move(self, post, target):
+        """Move a post to the specified location.
+        """
         if target in (EN, CN, MISC):
             target = os.path.join(BASE_DIR, target, 'content',
                                   os.path.basename(post))
@@ -355,9 +376,11 @@ class Blogger:
         shutil.move(post, target)
         _update_post_move(target)
         sql = 'UPDATE posts SET path = ?, dir = ? WHERE path = ?'
-        self._conn.execute(sql, [target, blog_dir(target), post])
+        self._conn.execute(sql, [target, _blog_dir(target), post])
 
     def edit(self, posts: Union[str, List[str]], editor: str) -> None:
+        """Edit the specified posts using the specified editor.
+        """
         if isinstance(posts, str):
             posts = [posts]
         self._mark_as(updated=1, posts=posts)
@@ -365,17 +388,16 @@ class Blogger:
         os.system(f'{editor} {posts}')
 
     def _create_post(self, post, title):
-        file_words = os.path.join(BASE_DIR, 'words.json')
         with open(post, 'w', encoding='utf-8') as fout:
             fout.writelines('Status: published\n')
             fout.writelines(f'Date: {NOW_DASH}\n')
             fout.writelines('Author: Benjamin Du\n')
             fout.writelines('Slug: {}\n'.format(
                 title.replace(' ', '-').replace('/', '-')))
-            fout.writelines(f'Title: {_format_title(title, file_words)}\n')
+            fout.writelines(f'Title: {_format_title(title)}\n')
             fout.writelines('Category: Programming\n')
             fout.writelines('Tags: programming\n')
-            if blog_dir(post) == MISC:
+            if _blog_dir(post) == MISC:
                 fout.writelines(DECLARATION)
 
     def _mark_as(self, updated: int, posts: Union[str, List[str]]):
@@ -401,11 +423,15 @@ class Blogger:
             _update_time(path)
             self._load_post(path)
 
-    def clear_srps(self):
+    def clean_srps(self):
+        """Clean contents of the table srps.
+        """
         sql = 'DELETE FROM srps'
         self._conn.execute(sql)
 
     def add(self, title: str, dir_: str) -> str:
+        """Add a new post with the given title.
+        """
         file = self.find_post(title, dir_)
         if not file:
             file = f'{TODAY_DASH}-{_slug(title)}.markdown'
@@ -430,6 +456,8 @@ class Blogger:
         return ''
 
     def empty_post(self, dry_run=False):
+        """Find all empty posts into the table srps.
+        """
         self._create_table_srps()
         self._conn.execute('DELETE FROM srps')
         sql = f'''
@@ -510,12 +538,6 @@ class Blogger:
 
     def query(self, sql: str):
         return self._conn.execute(sql).fetchall()
-
-    def publish(self, dirs):
-        """Publish the specified blog to GitHub.
-        """
-        for dir_ in dirs:
-            _publish_blog_dir(dir_)
 
     def tags(self, dir_: str = '', where=''):
         sql = 'SELECT tags FROM posts {where}'
@@ -601,15 +623,12 @@ def find_name_title_mismatch(blogger, args):
     show(blogger, args)
 
 
-def file_name(post) -> str:
-    post_name = os.path.basename(post)
-    post_name = post_name.replace('.markdown', '')
-    return post_name[11:].strip()
+def _file_name(post) -> str:
+    return os.path.basename(post)[11:-9].strip()
 
 
 def match_post_name(post):
-    post_name = file_name(post)
-    title_name = _format_title(post_name.replace('-', ' '), file_words)
+    title_name = _format_title(_file_name(post).replace('-', ' '))
     slug_name = title_name.lower().replace(' ', '-')
     with open(post, 'r') as fin:
         lines = fin.readlines()
@@ -624,7 +643,7 @@ def match_post_name(post):
 
 
 def match_post_title(post):
-    post_name = file_name(post)
+    post_name = _file_name(post)
     with open(post, 'r', encoding='utf-8') as fin:
         lines = fin.readlines()
     title = ''
@@ -757,7 +776,7 @@ def show(blogger, args) -> None:
 
 
 def reload(blogger, args):
-    blogger.reload_posts(BASE_DIR)
+    blogger.reload_posts()
 
 
 def add(blogger, args):
@@ -1341,7 +1360,10 @@ def _subparse_match_post(subparsers):
         action='store_true',
         help='match the file name and title for all files in the search results.')
     subparser_match_post.add_argument(
-        '-f', '--files', dest='files', help='match file name and title for the specified paths of the files in the search results.')
+        '-f',
+        '--files',
+        dest='files',
+        help='match file name and title for the specified paths of the files in the search results.')
     subparser_match_post.set_defaults(func=match_post)
 
 
@@ -1433,9 +1455,11 @@ def _subparse_git_pull(subparsers):
         help='The git pull command.')
     subparser_status.set_defaults(func=_git_pull)
 
+
 def empty_post(blogger, args):
     blogger.empty_post(args.dry_run)
     show(blogger, args)
+
 
 def _subparse_empty_post(subparsers):
     subparser_status = subparsers.add_parser(

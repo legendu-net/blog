@@ -49,7 +49,7 @@ def _update_post_move(post):
     1. The declaration might be added/removed
     depending on whether the post is moved to the misc sub blog directory.
     2. The slug of the post is updated to match the path of the post.
-    3. The title should be updated to match the file name. 
+    3. The title should be updated to match the file name.
     Both 2 and 3 will prompt to user for confirmation.
     """
     # slug = 'Slug: ' + _slug(os.path.basename(post)[11:])
@@ -117,7 +117,7 @@ def _push_github(dir_: str, https: bool):
     os.chdir(path)
     if dir_ == 'home':
         shutil.copy('pages/index.html', 'index.html')
-    cmd = 'git init && git add --all . && git commit -a -m ...' 
+    cmd = 'git init && git add --all . && git commit -a -m ...'
     os.system(cmd)
     if dir_ == 'home':
         branch = 'master'
@@ -322,7 +322,7 @@ class Blogger:
             0,
             name_title_mismatch,
         ])
-    
+
     def _is_ess_empty(self, lines: List[str]) -> int:
         content = ''.join(line.strip() for line in lines)
         is_empty = re.sub(r'\*\*.+\*\*', '', content).replace('**', '') == ''
@@ -618,7 +618,7 @@ def match_post_name(post):
             if line.startswith('Title: '):
                 fout.write(line.replace(line[7:].strip(), title_name))
             elif line.startswith('Slug: '):
-                fout.write(line.replace(line[6: ].strip(), slug_name))
+                fout.write(line.replace(line[6:].strip(), slug_name))
             else:
                 fout.write(line)
 
@@ -657,7 +657,7 @@ def match_post(blogger, args):
         answer = input('Do you want to match post name and title for all specified files in the srps table (yes or no): \n')
         if answer == 'yes':
             answer1 = input('Choose match based on post or title name and specify the number of posts to be matched (ap (all post) at (all title) or pn (post number) or tn (title number)): \n')
-            if answer1 == 'ap':               
+            if answer1 == 'ap':
                 for index in range(total):
                     match_post_name(args.files[index])
             if answer1 == 'at':
@@ -670,7 +670,7 @@ def match_post(blogger, args):
             if answer1[0] == 't':
                 number_post = int(answer1[2:])
                 for index in range(number_post):
-                    match_post_title(args.files[index])                             
+                    match_post_title(args.files[index])
         if answer == 'no':
             print('No file will be changed!\n')
 
@@ -743,7 +743,7 @@ def search(blogger, args):
 
 
 def _disp_path(path: str, full: bool = True) -> str:
-    return path if full else path.replace(BASE_DIR + '/', '') 
+    return path if full else path.replace(BASE_DIR + '/', '')
 
 
 def show(blogger, args) -> None:
@@ -1347,7 +1347,7 @@ def _subparse_match_post(subparsers):
 
 def _subparse_find_name_title_mismatch(subparsers):
     subparser_find_name_title_mismatch = subparsers.add_parser(
-        'findmismatch', 
+        'findmismatch',
         aliases=['fm'],
         help='Find posts where their name and title are mismatched.')
     subparser_find_name_title_mismatch.add_argument(
@@ -1393,7 +1393,7 @@ def _subparse_space_vim(subparsers):
 
 def _subparse_git_status(subparsers):
     subparser_status = subparsers.add_parser(
-        'status', 
+        'status',
         aliases=['st', 'sts'],
         help='The git status command.')
     subparser_status.set_defaults(func=_git_status)
@@ -1401,7 +1401,7 @@ def _subparse_git_status(subparsers):
 
 def _subparse_git_diff(subparsers):
     subparser_git = subparsers.add_parser(
-        'diff', 
+        'diff',
         aliases=['df', 'dif'],
         help='The git diff command.')
     subparser_git.add_argument(
@@ -1428,7 +1428,7 @@ def _git_pull(blogger, args):
 
 def _subparse_git_pull(subparsers):
     subparser_status = subparsers.add_parser(
-        'pull', 
+        'pull',
         aliases=['pu'],
         help='The git pull command.')
     subparser_status.set_defaults(func=_git_pull)
@@ -1439,7 +1439,7 @@ def empty_post(blogger, args):
 
 def _subparse_empty_post(subparsers):
     subparser_status = subparsers.add_parser(
-        'empty', 
+        'empty',
         aliases=['em'],
         help='Find empty post.')
     subparser_status.add_argument(

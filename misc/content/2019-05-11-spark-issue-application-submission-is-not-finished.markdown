@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-11 01:59:02
+Date: 2019-06-22 19:45:56
 Author: Benjamin Du
 Slug: spark-issue-application-submission-is-not-finished
 Title: Spark Application Submission Is Not Finished
@@ -20,6 +20,8 @@ It is not meant to readers but rather for convenient reference of the author and
 ## Error Message
 
 > Application submission is not finished, submitted application application__1524215324275_0081 is still in ...
+
+![image](https://user-images.githubusercontent.com/824507/57563475-447c7e00-7353-11e9-8421-4b51e58ef18d.png)
 
 ## Possible Causes
 

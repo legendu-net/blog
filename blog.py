@@ -329,9 +329,8 @@ class Blogger:
         return 1 if is_empty else 0
 
     def _is_name_title_mismatch(self, path, title) -> int:
-        file_name = os.path.basename(path)
-        file_name = file_name.replace('.markdown', '')
-        title_new = _format_title(file_name[11: ].replace('-', ' '), file_words)
+        post_name = _file_name(path)
+        title_new = _format_title(post_name.replace('-', ' '), file_words)
         return 1 if title != title_new else 0
 
     def trash(self, posts: Union[str, List[str]]):
@@ -601,14 +600,23 @@ def find_name_title_mismatch(blogger, args):
     show(blogger, args)
 
 
-def file_name(post) -> str:
-    post_name = os.path.basename(post)
-    post_name = post_name.replace('.markdown', '')
-    return post_name[11:].strip()
+def _file_name(post) -> str:
+    post_name = os.path.basename(post)[11:-9].strip()
+    return post_name
 
+
+def _post_title(post) -> str:
+    with open(post, 'r', encoding='utf-8') as fin:
+        lines = fin.readlines()
+    title = ''
+    for line in lines:
+        if line.startswith('Title: '):
+            title = line[7:].strip()
+            break
+    return title
 
 def match_post_name(post):
-    post_name = file_name(post)
+    post_name = _file_name(post)
     title_name = _format_title(post_name.replace('-', ' '), file_words)
     slug_name = title_name.lower().replace(' ', '-')
     with open(post, 'r') as fin:
@@ -624,15 +632,11 @@ def match_post_name(post):
 
 
 def match_post_title(post):
-    post_name = file_name(post)
-    with open(post, 'r', encoding='utf-8') as fin:
-        lines = fin.readlines()
-    title = ''
-    for line in lines:
-        if line.startswith('Title: '):
-            title = line[7:].strip()
-            break
+    post_name = _file_name(post)
+    title = _post_title(post)
     slug_name = title.lower().replace(' ', '-')
+    with open(post, 'r') as fin:
+        lines = fin.readlines()
     with open(post, 'w') as fout:
         for line in lines:
             if line.startswith('Slug: '):
@@ -644,35 +648,59 @@ def match_post_title(post):
 
 
 def match_post(blogger, args):
-    if re.search(r'^mp\d+$', args.sub_cmd):
-        args.indexes = int(args.sub_cmd[1:])
-    if args.indexes:
-        args.files = blogger.path(args.indexes)
-    if args.all:
-        sql = 'SELECT path FROM srps'
-        args.files = [row[0] for row in blogger.query(sql)]
-    if args.files:
-        total = len(args.files)
-        print(total)
-        answer = input('Do you want to match post name and title for all specified files in the srps table (yes or no): \n')
+    sql = 'SELECT path FROM srps'
+    posts = [row[0] for row in blogger.query(sql)]
+    total = len(posts)
+    print(total)
+    if args.all_name:
+        answer = input('Are you sure to edit post title for all specified files in the srps table (yes or no): \n')
         if answer == 'yes':
-            answer1 = input('Choose match based on post or title name and specify the number of posts to be matched (ap (all post) at (all title) or pn (post number) or tn (title number)): \n')
-            if answer1 == 'ap':               
-                for index in range(total):
-                    match_post_name(args.files[index])
-            if answer1 == 'at':
-                for index in range(total):
-                    match_post_title(args.files[index])
-            if answer1[0] == 'p':
-                number_post = int(answer1[2:])
-                for index in range(number_post):
-                    match_post_name(args.files[index])
-            if answer1[0] == 't':
-                number_post = int(answer1[2:])
-                for index in range(number_post):
-                    match_post_title(args.files[index])                             
-        if answer == 'no':
-            print('No file will be changed!\n')
+            for index in range(total):
+                match_post_name(posts[index])
+        print('No file will be edited! \n')
+    if args.all_title:
+        answer = input('Are you sure to edit post name for all specified files in the srps table (yes or no): \n')
+        if answer == 'yes':
+            for index in range(total):
+                match_post_title(posts[index])
+        print('No file will be edited! \n')
+    if args.index_name:
+        answer = input('Specify the index of file in the srps table to edit post title (int): \n')
+        index = int(answer)
+        match_post_name(posts[index])
+    if args.index_title:
+        answer = input('Specify the index of file in the srps table to edit post name (int): \n')
+        index = int(answer)
+        match_post_title(posts[index])
+    # if re.search(r'^mp\d+$', args.sub_cmd):
+    #     args.indexes = int(args.sub_cmd[1:])
+    # if args.indexes:
+    #     args.files = blogger.path(args.indexes)
+    # if args.all:
+    #     sql = 'SELECT path FROM srps'
+    #     args.files = [row[0] for row in blogger.query(sql)]
+    # if args.files:
+    #     total = len(args.files)
+    #     print(total)
+    #     answer = input('Do you want to match post name and title for all specified files in the srps table (yes or no): \n')
+    #     if answer == 'yes':
+    #         answer1 = input('Choose match based on post or title name and specify the number of posts to be matched (ap (all post) at (all title) or pn (post number) or tn (title number)): \n')
+    #         if answer1 == 'ap':               
+    #             for index in range(total):
+    #                 match_post_name(args.files[index])
+    #         if answer1 == 'at':
+    #             for index in range(total):
+    #                 match_post_title(args.files[index])
+    #         if answer1[0] == 'p':
+    #             number_post = int(answer1[2:])
+    #             for index in range(number_post):
+    #                 match_post_name(args.files[index])
+    #         if answer1[0] == 't':
+    #             number_post = int(answer1[2:])
+    #             for index in range(number_post):
+    #                 match_post_title(args.files[index])                             
+    #     if answer == 'no':
+    #         print('No file will be changed!\n')
 
 
 def edit(blogger, args):
@@ -747,12 +775,15 @@ def _disp_path(path: str, full: bool = True) -> str:
 
 
 def show(blogger, args) -> None:
-    sql = 'SELECT count(path) FROM srps'
+    sql = 'SELECT count(*) FROM srps'
     total = blogger.query(sql)[0]
     print(f'\nTotal number of posts in the search table srps is: {total}')
     for id, path in blogger.fetch(args.n):
         path = _disp_path(path, full=args.full_path)
-        print(f'\n{id}: {path}')
+        if args.show_title:
+            print(f'\n{id}: {path},\n"File name: " {_file_name(path)},\n"File Title is: " {_post_title(path)}')
+        else:
+            print(f'\n{id}: {path}')
     print('')
 
 
@@ -1325,23 +1356,32 @@ def _subparse_trash(subparsers):
 def _subparse_match_post(subparsers):
     subparser_match_post = subparsers.add_parser(
         'matchpost',
-        aliases=['mp' + i for i in INDEXES],
-        help='match file name and title')
+        aliases=['mp'],
+        help='match post name and title')
     subparser_match_post.add_argument(
-        '-i',
-        '--indexes',
-        dest='indexes',
-        nargs='+',
-        type=int,
-        help='match file name and title for the specified row IDs of the files in the search results.')
-    subparser_match_post.add_argument(
-        '-a',
-        '--all',
-        dest='all',
+        '-an',
+        '--all_name',
+        dest='all_name',
         action='store_true',
-        help='match the file name and title for all files in the search results.')
+        help='edit post title to match its name for all files in the search results.')
     subparser_match_post.add_argument(
-        '-f', '--files', dest='files', help='match file name and title for the specified paths of the files in the search results.')
+        '-at',
+        '--all_title',
+        dest='all_title',
+        action='store_true',
+        help='edit post name to match its title for all files in the search results.')
+    subparser_match_post.add_argument(
+        '-in',
+        '--index_name',
+        dest='index_name',
+        action='store_true',
+        help='specify row ID of the files (in the search results) to edit the title to match the name.')
+    subparser_match_post.add_argument(
+        '-it',
+        '--index_title',
+        dest='index_title',
+        action='store_true',
+        help='specify row ID of the files (in the search results) to edit the name to match the title.')
     subparser_match_post.set_defaults(func=match_post)
 
 
@@ -1367,6 +1407,12 @@ def _subparse_find_name_title_mismatch(subparsers):
         dest='full_path',
         action='store_true',
         help='whether to show full (instead of short/relative) path.')
+    subparser_find_name_title_mismatch.add_argument(
+        '-st',
+        '--show_title',
+        dest='show_title',
+        action='store_true',
+        help='whether to show file name and title.')    
     subparser_find_name_title_mismatch.set_defaults(func=find_name_title_mismatch)
 
 

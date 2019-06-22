@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-09 00:04:16
+Date: 2019-06-22 18:47:20
 Author: Benjamin Du
 Slug: python-logging
 Title: Python Logging
@@ -14,6 +14,12 @@ It is not meant to readers but rather for convenient reference of the author and
 ## [loguru](https://github.com/Delgan/loguru)
 
 The best logging package for Python!
+
+There are at least 2 ways to include traceback information in logging. 
+
+1. Use `logger.exception` to log error messages with traceback information.
+
+2. Use `logger.opt(exception=True).log(...)` to include the traceback information.
 
 ## [logging](https://docs.python.org/3/library/logging.html)
 

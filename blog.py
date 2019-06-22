@@ -287,7 +287,8 @@ class Blogger:
         # parse content index to end
         content = ''.join(lines)
         empty = self._is_ess_empty(lines[index:])
-        name_title_mismatch = self._is_name_title_mismatch(post, title)
+        title_compare = title.replace('-', ' ')
+        name_title_mismatch = self._is_name_title_mismatch(post, title_compare)
         sql = '''
         INSERT INTO posts (
             path,

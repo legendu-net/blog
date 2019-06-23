@@ -1,6 +1,5 @@
-UUID: bbe6ee36-67b0-44d2-8b61-f7c6b8f24bff
 Status: published
-Date: 2019-05-20 19:54:03
+Date: 2019-06-23 10:30:35
 Author: Ben Chuanlong Du
 Slug: gitignore-tips
 Title: Gitignore Examples
@@ -13,6 +12,12 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+## Online Tools
+
+- [gitignore.io](https://www.gitignore.io/)
+
+- [github/gitignore](https://github.com/github/gitignore)
 
 ## Gitignore Example for Python
 ```
@@ -64,11 +69,3 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 ```
 
-
-## References
-
-- [Gitignore API](https://www.gitignore.io/api)
-
-- [Gitignore on GitHub](https://github.com/github/gitignore)
-
-- https://medium.com/@petehouston/typical-gitignore-for-a-gradle-java-project-52cbe079a99c

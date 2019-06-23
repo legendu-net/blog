@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-21 23:37:16
+Date: 2019-06-23 02:38:23
 Author: Ben Chuanlong Du
 Slug: docker-image-and-container-management
 Title: Manage Docker Images and Containers 
@@ -159,8 +159,10 @@ docker exec container_name kill process_name
 ## Sharing Files
 
 Copying file between a docker container and the host.
+```Bash
 docker cp foo.txt mycontainer:/foo.txt
 docker cp mycontainer:/foo.txt foo.txt
+```
 
 ## Misc
 

@@ -1,6 +1,6 @@
 UUID: dd5e55e6-0bbb-46b0-bd39-d292fd0ffa6b
 Status: published
-Date: 2017-06-25 11:07:02
+Date: 2019-06-23 01:27:02
 Author: Ben Chuanlong Du
 Slug: yum-tips
 Title: Yum Tips
@@ -35,3 +35,8 @@ rpm -ivh pkg.rpm
 rpm -qa
 rpm -qa | grep -i odbc
 ```
+
+## Proxy
+
+[Using yum with a Proxy Server](https://docs.fedoraproject.org/en-US/Fedora_Core/3/html/Software_Management_Guide/sn-yum-proxy-server.html)
+

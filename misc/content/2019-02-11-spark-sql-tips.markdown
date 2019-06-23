@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-16 23:03:16
+Date: 2019-06-23 22:50:12
 Author: Benjamin Du
 Slug: spark-sql-tips
 Title: Spark SQL Tips
@@ -11,6 +11,7 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
+[Spark SQL Guide](https://docs.databricks.com/spark/latest/spark-sql/index.html#spark-sql-language-manual)
 
 
 1. Spark SQL follows hive sql syntax.

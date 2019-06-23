@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-23 01:31:24
+Date: 2019-06-23 02:11:01
 Author: Benjamin Du
 Slug: tips-on-kerberos
 Title: Tips on Kerberos
@@ -19,6 +19,7 @@ apt-get install krb5-user
 
 yum install -y ntp
 
-yum install krb5-workstation
+yum install krb5-workstation krb5-libs krb5-auth-dialog
+
 
 https://gist.github.com/ashrithr/4767927948eca70845db

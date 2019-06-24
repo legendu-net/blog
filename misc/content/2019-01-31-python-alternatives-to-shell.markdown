@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-10 01:20:23
+Date: 2019-06-24 17:54:47
 Author: Ben Chuanlong Du
 Slug: shell-alternatives
 Title: Python Alternatives to Shell
@@ -25,28 +25,42 @@ but rather for convenient reference of the author and future improvement.
   <tr>
     <th> Shell Command </th>
     <th> Python Alternative </th>
+    <th> IPython Alternative </th>
+    <th> Python xonsh Alternative </th>
   </tr>
   <tr>
     <td> mkdir -p path/to/some/file </td>
     <td> os.makedirs('path/to/some/file', exist_ok=True) </td>
+    <td> !mkdir -p path/to/some/file </td>
+    <td> mkdir -p path/to/some/file </td>
   </tr>
   <tr>
     <td> mkdir -p path/to/some/file </td>
     <td> pathlib.Path.mkdir('path/to/some/file', exist_ok=True) </td>
+    <td> !mkdir -p path/to/some/file </td>
+    <td> mkdir -p path/to/some/file </td>
   </tr>
   <tr>
     <td> cp file1 file2 </td>
     <td> shutil.copy2('file1', 'file2') </td>
+    <td> !cp file1 file2 </td>
+    <td> cp file1 file2 </td>
   </tr>
   <tr>
     <td> cp file1 file2 </td>
     <td> shutil.copyfile('file1', 'file2') </td>
+    <td> !cp file1 file2 </td>
+    <td> cp file1 file2 </td>
   </tr>
 </table>
 
+## [xonsh](https://github.com/xonsh/xonsh)
+
+xonsh is the best and simplest Python approach to replace (most part of) shell so far.
+
 ## [IPython](https://github.com/ipython/ipython)
 
-IPython is the best and simpliest Python approach to replace shell so far.
+IPython is the best and simpliest Python approach to replace (all part of) shell so far.
 
 https://ipython.readthedocs.io/en/stable/interactive/magics.html
 
@@ -75,11 +89,6 @@ https://github.com/ivanov/vim-ipython
 3. You can even run Shell commands on a remote server (via `ssh` or a remote kernel) in JupyterLab notebook.
     This provide the advantage of leveraging the JupyterLab notebook UI.
 
-
-## [xonsh](https://github.com/xonsh/xonsh)
-
-Another Python approach to replace shell.
-It looks interesting and quite promising too.
 
 ## [plumbum](https://github.com/tomerfiliba/plumbum)
 

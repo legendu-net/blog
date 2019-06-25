@@ -30,9 +30,12 @@ VIM = 'nvim' if shutil.which('nvim') else 'vim'
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 INDEXES = [''] + [str(i) for i in range(1, 11)]
 DASHES = '\n' + '-' * 100 + '\n'
+FILE_WORDS = os.path.join(BASE_DIR, 'words.json')
 
 
 def qmarks(n: int):
+    """Generate n question marks delimited by comma.
+    """
     return ', '.join(['?'] * n)
 
 
@@ -48,11 +51,11 @@ def _update_post_move(post):
     1. The declaration might be added/removed
     depending on whether the post is moved to the misc sub blog directory.
     2. The slug of the post is updated to match the path of the post.
-    3. The title should be updated to match the file name. 
+    3. The title should be updated to match the file name.
     Both 2 and 3 will prompt to user for confirmation.
     """
     # slug = 'Slug: ' + _slug(os.path.basename(post)[11:])
-    if blog_dir(post) == MISC:
+    if _blog_dir(post) == MISC:
         with open(post, 'r', encoding='utf-8') as fin:
             lines = fin.readlines()
         index = [line.strip() for line in lines].index('')
@@ -80,18 +83,20 @@ def _update_time(post):
         fout.writelines(lines)
 
 
-def blog_dir(post: str):
-    dir_ = os.path.dirname(post)
-    dir_ = os.path.dirname(dir_)
-    return os.path.basename(dir_)
+def _blog_dir(post: str):
+    """Get the corresponding blog directory (one of home, en, cn and misc)
+    of a post.
+    """
+    path = os.path.dirname(os.path.dirname(post))
+    return os.path.basename(path)
 
 
 def _slug(title: str):
     return title.replace(' ', '-').replace('/', '-')
 
 
-def _format_title(title, file_words):
-    with open(file_words, 'r', encoding='utf-8') as fin:
+def _format_title(title):
+    with open(FILE_WORDS, 'r', encoding='utf-8') as fin:
         words = json.load(fin)
     title = title.title()
     for word in words:
@@ -116,7 +121,7 @@ def _push_github(dir_: str, https: bool):
     os.chdir(path)
     if dir_ == 'home':
         shutil.copy('pages/index.html', 'index.html')
-    cmd = 'git init && git add --all . && git commit -a -m ...' 
+    cmd = 'git init && git add --all . && git commit -a -m ...'
     os.system(cmd)
     if dir_ == 'home':
         branch = 'master'
@@ -144,6 +149,8 @@ def _pelican_generate(dir_: str):
 
 
 def publish(blogger, args):
+    """Publish the blog to GitHub
+    """
     auto_git_push(blogger, args)
     print(DASHES)
     for dir_ in args.sub_dirs:
@@ -154,6 +161,9 @@ def publish(blogger, args):
 
 
 class Blogger:
+    """A class for managing blog.
+    """
+
     def __init__(self, db: str = ''):
         """Create an instance of Blogger.
 
@@ -189,6 +199,7 @@ class Blogger:
             content,
             empty,
             updated,
+            name_title_mismatch,
             tokenize = porter
         )
         '''
@@ -203,12 +214,18 @@ class Blogger:
         self._conn.execute(sql)
 
     def clear(self):
+        """Remove the SQLite3 database.
+        """
         os.remove(self._db)
 
     def commit(self):
+        """Commit changes made to the SQLite3 database.
+        """
         self._conn.commit()
 
     def update_category(self, post, category):
+        """Change the category of the specified post to the specified category.
+        """
         with open(post, 'r', encoding='utf-8') as fin:
             lines = fin.readlines()
         for i, line in enumerate(lines):
@@ -221,6 +238,8 @@ class Blogger:
         self._conn.execute(sql, [category, post])
 
     def update_tags(self, post, from_tag, to_tag):
+        """Update the tag from_tag of the post to the tag to_tag.
+        """
         with open(post, 'r', encoding='utf-8') as fin:
             lines = fin.readlines()
         for i, line in enumerate(lines):
@@ -234,11 +253,13 @@ class Blogger:
         sql = 'UPDATE posts SET tags = ? WHERE path = ?'
         self._conn.execute(sql, [tags + ',', post])
 
-    def reload_posts(self, root_dir: str):
+    def reload_posts(self):
+        """Reload posts into the SQLite3 database.
+        """
         self._create_vtable_posts()
         self._conn.execute('DELETE FROM posts')
         for dir_ in (HOME, CN, EN, MISC):
-            self._load_posts(os.path.join(root_dir, dir_, 'content'))
+            self._load_posts(os.path.join(BASE_DIR, dir_, 'content'))
         self._conn.commit()
 
     def _load_posts(self, post_dir):
@@ -285,6 +306,7 @@ class Blogger:
         # parse content index to end
         content = ''.join(lines)
         empty = self._is_ess_empty(lines[index:])
+        name_title_mismatch = self._is_name_title_mismatch(post, title)
         sql = '''
         INSERT INTO posts (
             path,
@@ -298,14 +320,15 @@ class Blogger:
             tags,
             content,
             empty,
-            updated
+            updated,
+            name_title_mismatch
         ) VALUES (
-            ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+            ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
         )
         '''
         self._conn.execute(sql, [
             post,
-            blog_dir(post),
+            _blog_dir(post),
             status,
             date,
             author,
@@ -316,14 +339,22 @@ class Blogger:
             content,
             empty,
             0,
+            name_title_mismatch,
         ])
-    
+
     def _is_ess_empty(self, lines: List[str]) -> int:
         content = ''.join(line.strip() for line in lines)
         is_empty = re.sub(r'\*\*.+\*\*', '', content).replace('**', '') == ''
         return 1 if is_empty else 0
 
+    def _is_name_title_mismatch(self, path, title) -> int:
+        title_new = _format_title(_file_name(path).replace('-', ' '))
+        title_old = title.replace('-', ' ')
+        return 1 if title_old != title_new else 0
+
     def trash(self, posts: Union[str, List[str]]):
+        """Move the specified posts to the trash directory.
+        """
         if isinstance(posts, str):
             posts = [posts]
         path_ = os.path.join(BASE_DIR, 'trash')
@@ -336,6 +367,8 @@ class Blogger:
         self._conn.execute(sql, posts)
 
     def move(self, post, target):
+        """Move a post to the specified location.
+        """
         if target in (EN, CN, MISC):
             target = os.path.join(BASE_DIR, target, 'content',
                                   os.path.basename(post))
@@ -344,9 +377,11 @@ class Blogger:
         shutil.move(post, target)
         _update_post_move(target)
         sql = 'UPDATE posts SET path = ?, dir = ? WHERE path = ?'
-        self._conn.execute(sql, [target, blog_dir(target), post])
+        self._conn.execute(sql, [target, _blog_dir(target), post])
 
     def edit(self, posts: Union[str, List[str]], editor: str) -> None:
+        """Edit the specified posts using the specified editor.
+        """
         if isinstance(posts, str):
             posts = [posts]
         self._mark_as(updated=1, posts=posts)
@@ -354,17 +389,16 @@ class Blogger:
         os.system(f'{editor} {posts}')
 
     def _create_post(self, post, title):
-        file_words = os.path.join(BASE_DIR, 'words.json')
         with open(post, 'w', encoding='utf-8') as fout:
             fout.writelines('Status: published\n')
             fout.writelines(f'Date: {NOW_DASH}\n')
             fout.writelines('Author: Benjamin Du\n')
             fout.writelines('Slug: {}\n'.format(
                 title.replace(' ', '-').replace('/', '-')))
-            fout.writelines(f'Title: {_format_title(title, file_words)}\n')
+            fout.writelines(f'Title: {_format_title(title)}\n')
             fout.writelines('Category: Programming\n')
             fout.writelines('Tags: programming\n')
-            if blog_dir(post) == MISC:
+            if _blog_dir(post) == MISC:
                 fout.writelines(DECLARATION)
 
     def _mark_as(self, updated: int, posts: Union[str, List[str]]):
@@ -390,11 +424,15 @@ class Blogger:
             _update_time(path)
             self._load_post(path)
 
-    def clear_srps(self):
+    def clean_srps(self):
+        """Clean contents of the table srps.
+        """
         sql = 'DELETE FROM srps'
         self._conn.execute(sql)
 
     def add(self, title: str, dir_: str) -> str:
+        """Add a new post with the given title.
+        """
         file = self.find_post(title, dir_)
         if not file:
             file = f'{TODAY_DASH}-{_slug(title)}.markdown'
@@ -419,6 +457,8 @@ class Blogger:
         return ''
 
     def empty_post(self, dry_run=False):
+        """Find all empty posts into the table srps.
+        """
         self._create_table_srps()
         self._conn.execute('DELETE FROM srps')
         sql = f'''
@@ -429,6 +469,26 @@ class Blogger:
                 posts
             WHERE
                 empty = 1
+            '''
+        if dry_run:
+            print(sql)
+            return
+        self._conn.execute(sql)
+        self._conn.commit()
+
+    def find_name_title_mismatch(self, dry_run=False):
+        self._create_table_srps()
+        self._conn.execute('DELETE FROM srps')
+        sql = f'''
+            INSERT INTO srps
+            SELECT
+                path
+            FROM
+                posts
+            WHERE
+                name_title_mismatch = 1
+            AND
+                dir <> 'cn'
             '''
         if dry_run:
             print(sql)
@@ -479,12 +539,6 @@ class Blogger:
 
     def query(self, sql: str):
         return self._conn.execute(sql).fetchall()
-
-    def publish(self, dirs):
-        """Publish the specified blog to GitHub.
-        """
-        for dir_ in dirs:
-            _publish_blog_dir(dir_)
 
     def tags(self, dir_: str = '', where=''):
         sql = 'SELECT tags FROM posts {where}'
@@ -555,13 +609,83 @@ def trash(blogger, args):
         sql = 'SELECT path FROM srps'
         args.files = [row[0] for row in blogger.query(sql)]
     if args.files:
-        print(args.files)
+        for index, file in enumerate(args.files):
+            print(f'\n{index}: {args.files[index]}')
         answer = input('Are you sure to delete the specified files in the srps table (yes or no): ')
         if answer == 'yes':
             blogger.trash(args.files)
     else:
-        print('No file to delete is specified!')
+        print('No file to delete is specified!\n')
     blogger.commit()
+
+
+def find_name_title_mismatch(blogger, args):
+    blogger.find_name_title_mismatch()
+    show(blogger, args, showtitle = True)
+
+
+def _file_name(post) -> str:
+    return os.path.basename(post)[11:-9].strip()
+
+
+def _file_title(post) -> str:
+    with open(post, 'r', encoding='utf-8') as fin:
+        lines = fin.readlines()
+    for line in lines:
+        if line.startswith('Title: '):
+            return line[7:].strip()
+    return ''
+
+def match_post_name(post):
+    title_name = _format_title(_file_name(post).replace('-', ' '))
+    slug_name = title_name.lower().replace(' ', '-')
+    with open(post, 'r') as fin:
+        lines = fin.readlines()
+    for index, line in enumerate(lines):
+        if line.startswith('Title: '):
+            lines[index] = f'Title: {title_name}\n'
+        elif line.startswith('Slug: '):
+            lines[index] = f'Slug: {slug_name}\n'          
+    with open(post, 'w') as fout:
+        fout.writelines(lines)
+
+
+def match_post_title(post):
+    post_name = _file_name(post)
+    title = _file_title(post)
+    slug_name = title.lower().replace(' ', '-')
+    with open(post, 'r') as fin:
+        lines = fin.readlines()
+    for index, line in enumerate(lines):
+        if line.startswith('Slug: '):
+            lines[index] = f'Slug: {slug_name}\n'
+    with open(post, 'w') as fout:
+            fout.writelines(lines)   
+    post_name_new = post.replace(post_name, slug_name)
+    os.rename(post, post_name_new)
+
+
+def match_post(blogger, args):
+    if re.search(r'^mp\d+$', args.sub_cmd):
+        args.indexes = [int(args.sub_cmd[2:])]
+    if args.indexes:
+        args.files = blogger.path(args.indexes)
+    if args.all:
+        sql = 'SELECT path FROM srps'
+        args.files = [row[0] for row in blogger.query(sql)]
+    total = len(args.files)
+    if not args.files:
+        print('No specifed file to be matched!\n')
+    if args.name:
+        answer = input('Are you sure to edit post title for the specified files in the srps table (yes or no): \n')
+        if answer == 'yes':
+            for index in range(total):
+                match_post_name(args.files[index])
+    if args.title:
+        answer = input('Are you sure to edit post name for the specified files in the srps table (yes or no): \n')
+        if answer == 'yes':
+            for index in range(total):
+                match_post_title(args.files[index])
 
 
 def edit(blogger, args):
@@ -632,18 +756,23 @@ def search(blogger, args):
 
 
 def _disp_path(path: str, full: bool = True) -> str:
-    return path if full else path.replace(BASE_DIR + '/', '') 
+    return path if full else path.replace(BASE_DIR + '/', '')
 
 
-def show(blogger, args) -> None:
+def show(blogger, args, showtitle = False) -> None:
+    sql = 'SELECT count(*) FROM srps'
+    total = blogger.query(sql)[0]
+    print(f'\nTotal number of posts in the search table srps is: {total}')
     for id, path in blogger.fetch(args.n):
         path = _disp_path(path, full=args.full_path)
         print(f'\n{id}: {path}')
+        if showtitle:
+            print(f'\nFile name: {_file_name(path)},\nFile Title is: {_file_title(path)}')
     print('')
 
 
 def reload(blogger, args):
-    blogger.reload_posts(BASE_DIR)
+    blogger.reload_posts()
 
 
 def add(blogger, args):
@@ -751,6 +880,8 @@ def parse_args(args=None, namespace=None):
     _subparse_git_pull(subparsers)
     _subparse_empty_post(subparsers)
     _subparse_trash(subparsers)
+    _subparse_find_name_title_mismatch(subparsers)
+    _subparse_match_post(subparsers)
     return parser.parse_args(args=args, namespace=namespace)
 
 
@@ -1206,6 +1337,64 @@ def _subparse_trash(subparsers):
     subparser_trash.set_defaults(func=trash)
 
 
+def _subparse_match_post(subparsers):
+    subparser_match_post = subparsers.add_parser(
+        'matchpost',
+        aliases=['mp' + i for i in INDEXES],
+        help='match post name and title')
+    subparser_match_post.add_argument(
+        '-i',
+        '--indexes',
+        dest='indexes',
+        nargs='+',
+        type=int,
+        help = 'row IDs of the files (in the search results) to be matched.')
+    subparser_match_post.add_argument(
+        '-a',
+        '--all',
+        dest='all',
+        action='store_true',
+        help='whether to edit all files in the search results.')
+    subparser_match_post.add_argument(
+        '-n',
+        '--name',
+        dest='name',
+        action='store_true',
+        help='match the post title with its name.')
+    subparser_match_post.add_argument(
+        '-t',
+        '--title',
+        dest='title',
+        action='store_true',
+        help='match the post name with its title.')
+    subparser_match_post.set_defaults(func=match_post)
+
+
+def _subparse_find_name_title_mismatch(subparsers):
+    subparser_find_name_title_mismatch = subparsers.add_parser(
+        'findmismatch',
+        aliases=['fm'],
+        help='Find posts where their name and title are mismatched.')
+    subparser_find_name_title_mismatch.add_argument(
+        '--dry-run',
+        dest='dry_run',
+        action='store_true',
+        help='print out the SQL query without running it.')
+    subparser_find_name_title_mismatch.add_argument(
+        '-n',
+        dest='n',
+        type=int,
+        default=10,
+        help='number of matched records to show.')
+    subparser_find_name_title_mismatch.add_argument(
+        '-F',
+        '--full-path',
+        dest='full_path',
+        action='store_true',
+        help='whether to show full (instead of short/relative) path.') 
+    subparser_find_name_title_mismatch.set_defaults(func=find_name_title_mismatch)
+
+
 def _subparse_query(subparsers):
     subparser_query = subparsers.add_parser(
         'query', aliases=['q'], help='Run a SQL query.')
@@ -1229,7 +1418,7 @@ def _subparse_space_vim(subparsers):
 
 def _subparse_git_status(subparsers):
     subparser_status = subparsers.add_parser(
-        'status', 
+        'status',
         aliases=['st', 'sts'],
         help='The git status command.')
     subparser_status.set_defaults(func=_git_status)
@@ -1237,7 +1426,7 @@ def _subparse_git_status(subparsers):
 
 def _subparse_git_diff(subparsers):
     subparser_git = subparsers.add_parser(
-        'diff', 
+        'diff',
         aliases=['df', 'dif'],
         help='The git diff command.')
     subparser_git.add_argument(
@@ -1264,18 +1453,20 @@ def _git_pull(blogger, args):
 
 def _subparse_git_pull(subparsers):
     subparser_status = subparsers.add_parser(
-        'pull', 
+        'pull',
         aliases=['pu'],
         help='The git pull command.')
     subparser_status.set_defaults(func=_git_pull)
+
 
 def empty_post(blogger, args):
     blogger.empty_post(args.dry_run)
     show(blogger, args)
 
+
 def _subparse_empty_post(subparsers):
     subparser_status = subparsers.add_parser(
-        'empty', 
+        'empty',
         aliases=['em'],
         help='Find empty post.')
     subparser_status.add_argument(

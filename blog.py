@@ -364,8 +364,11 @@ class Blogger:
             os.mkdir(path_)
         for post in posts:
             shutil.move(post, path_)
-        qmark = ', '.join(['?'] * len(posts))
-        sql = f'DELETE FROM posts WHERE path in ({qmark})'
+        sql = f'''
+            DELETE FROM posts 
+            WHERE 
+                path in ({qmarks(posts)})
+            '''
         self._conn.execute(sql, posts)
 
     def move(self, post, target):

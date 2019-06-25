@@ -9,7 +9,7 @@ import sqlite3
 import datetime
 import shutil
 import json
-from typing import Union, List
+from typing import Union, Sequence, List
 import pelican
 
 EN = 'en'
@@ -33,9 +33,11 @@ DASHES = '\n' + '-' * 100 + '\n'
 FILE_WORDS = os.path.join(BASE_DIR, 'words.json')
 
 
-def qmarks(n: int):
+def qmarks(n: Union[int, Sequence]) -> str:
     """Generate n question marks delimited by comma.
     """
+    if isinstance(n, List) or isinstance(n, tuple):
+        n = len(n)
     return ', '.join(['?'] * n)
 
 
@@ -522,12 +524,11 @@ class Blogger:
         self._conn.execute(sql)
         self._conn.commit()
 
-    def path(self, id_: Union[int, List[int]]) -> List[str]:
-        if isinstance(id_, int):
-            id_ = [id_]
-        qmark = ', '.join(['?'] * len(id_))
-        sql = f'SELECT path FROM srps WHERE rowid in ({qmark})'
-        return [row[0] for row in self._conn.execute(sql, id_).fetchall()]
+    def path(self, idx: Union[int, List[int]]) -> List[str]:
+        if isinstance(idx, int):
+            idx = [idx]
+        sql = f'SELECT path FROM srps WHERE rowid in ({qmark(idx)})'
+        return [row[0] for row in self._conn.execute(sql, idx).fetchall()]
 
     def fetch(self, n: int):
         """Fetch search results.

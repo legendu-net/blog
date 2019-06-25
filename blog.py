@@ -306,8 +306,7 @@ class Blogger:
         # parse content index to end
         content = ''.join(lines)
         empty = self._is_ess_empty(lines[index:])
-        title_compare = title.replace('-', ' ')
-        name_title_mismatch = self._is_name_title_mismatch(post, title_compare)
+        name_title_mismatch = self._is_name_title_mismatch(post, title)
         sql = '''
         INSERT INTO posts (
             path,
@@ -350,7 +349,8 @@ class Blogger:
 
     def _is_name_title_mismatch(self, path, title) -> int:
         title_new = _format_title(_file_name(path).replace('-', ' '))
-        return 1 if title != title_new else 0
+        title_old = title.replace('-', ' ')
+        return 1 if title_old != title_new else 0
 
     def trash(self, posts: Union[str, List[str]]):
         """Move the specified posts to the trash directory.
@@ -631,7 +631,6 @@ def _file_name(post) -> str:
 def _file_title(post) -> str:
     with open(post, 'r', encoding='utf-8') as fin:
         lines = fin.readlines()
-    title = ''
     for line in lines:
         if line.startswith('Title: '):
             return line[7:].strip()
@@ -647,8 +646,6 @@ def match_post_name(post):
             lines[index] = f'Title: {title_name}\n'
         elif line.startswith('Slug: '):
             lines[index] = f'Slug: {slug_name}\n'          
-        else:
-            lines[index] = line
     with open(post, 'w') as fout:
         fout.writelines(lines)
 
@@ -662,7 +659,6 @@ def match_post_title(post):
     for index, line in enumerate(lines):
         if line.startswith('Slug: '):
             lines[index] = f'Slug: {slug_name}\n'
-        lines[index] = line
     with open(post, 'w') as fout:
             fout.writelines(lines)   
     post_name_new = post.replace(post_name, slug_name)

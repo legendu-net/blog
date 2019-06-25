@@ -538,8 +538,8 @@ class Blogger:
         sql = 'SELECT rowid, path FROM srps LIMIT {}'.format(n)
         return self._conn.execute(sql).fetchall()
 
-    def query(self, sql: str):
-        return self._conn.execute(sql).fetchall()
+    def query(self, sql: str, params: Sequence = ()):
+        return self._conn.execute(sql, params).fetchall()
 
     def tags(self, dir_: str = '', where=''):
         sql = 'SELECT tags FROM posts {where}'

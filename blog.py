@@ -927,7 +927,7 @@ def _subparse_search(subparsers):
             'Notice that tokens "a" and "the" are removed from phrase, '
             'which can be used as a hack way to make phrase optional. '
             'For example if you want to filter by category only without constraints on full-text search, '
-            'you can use ./blog.py a -c some_category.')
+            'you can use ./blog.py s the -c some_category.')
     subparser_search.add_argument(
         '-i',
         '--title',

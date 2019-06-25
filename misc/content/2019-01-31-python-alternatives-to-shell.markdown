@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-24 17:54:47
+Date: 2019-06-25 18:19:54
 Author: Ben Chuanlong Du
 Slug: shell-alternatives
 Title: Python Alternatives to Shell
@@ -51,6 +51,24 @@ but rather for convenient reference of the author and future improvement.
     <td> shutil.copyfile('file1', 'file2') </td>
     <td> !cp file1 file2 </td>
     <td> cp file1 file2 </td>
+  </tr>
+  <tr>
+    <td> rm -rf dir </td>
+    <td> shutil.rmtree ('file1', 'file2') </td>
+    <td> !rm -rf dir </td>
+    <td> rm -rf dir </td>
+  </tr>
+  <tr>
+    <td> mv file1 file2 </td>
+    <td> os.rename('file1', 'file2') </td>
+    <td> !mv file1 file2 </td>
+    <td> mv file1 file2 </td>
+  </tr>
+  <tr>
+    <td> mv file1 file2 </td>
+    <td> shutil.move('file1', 'file2') </td>
+    <td> !mv file1 file2 </td>
+    <td> mv file1 file2 </td>
   </tr>
 </table>
 

@@ -409,7 +409,7 @@ class Blogger:
     def _mark_as(self, updated: int, posts: Union[str, List[str]]):
         if isinstance(posts, str):
             posts = [posts]
-        sql = f'UPDATE posts SET updated = ? WHERE path in ({qmarks(len(posts))})'
+        sql = f'UPDATE posts SET updated = ? WHERE path in ({qmarks(posts)})'
         self._conn.execute(sql, [updated] + posts)
 
     def _delete_updated(self) -> None:
@@ -530,7 +530,7 @@ class Blogger:
     def path(self, idx: Union[int, List[int]]) -> List[str]:
         if isinstance(idx, int):
             idx = [idx]
-        sql = f'SELECT path FROM srps WHERE rowid in ({qmark(idx)})'
+        sql = f'SELECT path FROM srps WHERE rowid in ({qmarks(idx)})'
         return [row[0] for row in self._conn.execute(sql, idx).fetchall()]
 
     def fetch(self, n: int):

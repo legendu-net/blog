@@ -1,6 +1,5 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Date: 2016-10-23 16:41:44
+Date: 2019-06-25 23:47:10
 Author: Ben Chuanlong Du
 Slug: ide-for-sql
 Title: IDE for SQL
@@ -14,6 +13,14 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+
+## [ApexSQL](https://www.apexsql.com/)
+
+ApexSQL is a nice and free SQL formatting tool for VisualStudio SQL Server.
+
+## [DataGrip](https://www.jetbrains.com/datagrip/)
+
+DataGrip (from JetBrains) looks like a good one
 
 ## [dbeaver](http://www.legendu.net/misc/blog/tips-for-dbeaver)
 

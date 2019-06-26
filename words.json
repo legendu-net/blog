@@ -17,7 +17,7 @@
     ["Tmux", "tmux"],
     ["Anbox", "AnBox"], ["Gnome", "GNOME"], 
     ["Latex", "LaTeX"], ["Mllib", "MLlib"], ["Mysql", "MySQL"],
-    ["Pyqt5", "PyQt5"], ["Rjava", "rJava"], ["Xmind", "XMind"],
+    ["Pyqt5", "PyQt5"], ["Rjava", "rJava"], ["Xmind", "XMind"], 
     ["Aerofs", "AeroFS"], ["Btsync", "BTSync"], ["Centos", "CentOS"], 
     ["Etrade", "eTrade"], ["Nodejs", "NodeJS"],
     ["Ffmpeg", "FFmpeg"], ["Wechat", "WeChat"], ["Pyodbc", "pyodbc"], ["Pypdf2", "PyPDF2"],

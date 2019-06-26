@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-24 18:04:22
+Date: 2019-06-26 18:36:06
 Author: Benjamin Du
 Slug: tips-on-xonsh
 Title: Tips on Xonsh
@@ -22,7 +22,7 @@ x = [1, 2, 3]
 echo @(x)
 ```
 
-### Pythonevalation with f-string.
+### Python Evalation with f-string.
 
 The Python variales are casted to string directly.
 For example, 

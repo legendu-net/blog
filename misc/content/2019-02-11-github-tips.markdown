@@ -21,3 +21,8 @@ https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys
 ## References
 
 https://stackoverflow.com/questions/26372417/github-oauth2-token-how-to-restrict-access-to-read-a-single-private-repo
+
+
+https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/
+
+https://mp.weixin.qq.com/s/r9dNXpoH8F5CMoHdyv6BFQ

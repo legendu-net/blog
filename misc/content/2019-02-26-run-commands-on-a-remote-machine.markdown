@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-19 07:33:47
+Date: 2019-06-26 18:39:12
 Author: Benjamin Du
 Slug: run-commands-on-a-remote-machine
 Title: Run Commands on a Remote Machine
@@ -35,20 +35,23 @@ https://stackoverflow.com/questions/305035/how-to-use-ssh-to-run-a-shell-script-
 
 ## Python
 
-[ssh2-python](https://github.com/ParallelSSH/ssh2-python)
-
-[parallel-ssh](https://github.com/ParallelSSH/parallel-ssh)
-
-[asyncssh](https://github.com/ronf/asyncssh)
-
-[sshtunnel](https://github.com/pahaz/sshtunnel)
-
-[paramiko](https://github.com/paramiko/paramiko)
-
-[fabric](https://github.com/fabric/fabric/)
-
-
+### [paramiko/paramiko](https://github.com/paramiko/paramiko)
 [paramiko/paramiko](https://github.com/paramiko/paramiko)
+is a pure Python implementation of SSHv2. 
+It is a great tool to interact with a remote server in Python.
+
+### [parallel-ssh](https://github.com/ParallelSSH/parallel-ssh)
+
+### [asyncssh](https://github.com/ronf/asyncssh)
+
+### [fabric](https://github.com/fabric/fabric/)
+
+### [ssh2-python](https://github.com/ParallelSSH/ssh2-python)
+
+### [sshtunnel](https://github.com/pahaz/sshtunnel)
+
+
+## References 
 
 http://vozis.blogspot.com/2015/01/python-sftp-with-paramiko-via-socks.html
 
@@ -62,12 +65,9 @@ https://github.com/paramiko/paramiko/pull/508
 
 https://gist.github.com/rubanm/5818236
 
-
 https://medium.com/@keagileageek/paramiko-how-to-ssh-and-file-transfers-with-python-75766179de73
 
 https://stackoverflow.com/questions/10488832/how-to-ssh-over-http-proxy-in-python/33767220
-
-
 
 https://stackoverflow.com/questions/28411960/execute-a-command-on-remote-machine-in-python
 

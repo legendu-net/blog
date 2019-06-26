@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-26 00:17:03
+Date: 2019-06-26 07:47:37
 Author: Ben Chuanlong Du
 Slug: sql-style-and-formatter
 Title: SQL Style and Formatter
@@ -16,6 +16,37 @@ but rather for convenient reference of the author and future improvement.
 
 [SQL translation](https://www.jooq.org/translate/)
 
+## SQL Formatter
+
+You can use online SQL formatters to help you format SQL queries.
+
+1. [Instant SQL Formatter](http://www.dpriver.com/pp/sqlformat.htm)
+
+2. [SQLFormat](https://sqlformat.org/)
+
+3. [SQL Formatter](http://www.sql-format.com/)
+
+You can also use the Python library 
+[andialbrecht/sqlparse](https://github.com/andialbrecht/sqlparse)
+to help you format SQL queries.
+It is actually the backend of [SQLFormat](https://sqlformat.org/).
+```
+import sqlparse as sp
+
+sql = '''
+    select c1, c2 /* this is a comment */
+    from t where c1 > 1"
+    '''
+sql_fmt = sp.format(sql,
+    keyword_case= upper',
+    identifier_case='lower',
+    strip_comments=False,
+    reindent=True,
+    indent_width=2
+)
+print(sql_fmt)
+```
+
 ## SQL Style and Formatting
 
 https://www.sqlstyle.guide/
@@ -29,16 +60,6 @@ https://www.sqlstyle.guide/
     I don't think this is a good practices, 
     as what if we want to remove the first column? 
     it similarly inconvenient to removing the last column when put comma after column names
-
-## SQL Formatter
-
-1. <http://www.dpriver.com/pp/sqlformat.htm>
-
-2. <http://sqlformat.org/>
-
-3. <http://www.sql-format.com/>
-
-## [andialbrecht/sqlparse](https://github.com/andialbrecht/sqlparse)
 
 ## References
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-21 21:20:15
+Date: 2019-06-25 23:50:05
 Author: Ben Chuanlong Du
 Slug: sql-style-and-formatter
 Title: SQL Style and Formatter
@@ -37,9 +37,6 @@ https://www.sqlstyle.guide/
 2. <http://www.dpriver.com/pp/sqlformat.htm>
 
 3. <http://www.sql-format.com/>
-
-4. <http://www.tsqltidy.com/>
-
 
 ## [andialbrecht/sqlparse](https://github.com/andialbrecht/sqlparse)
 

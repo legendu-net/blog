@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-02 00:12:47
+Date: 2019-06-26 21:56:32
 Author: Ben Chuanlong Du
 Slug: read-parquet-files-in-python
 Title: Read Parquet Files in Python
@@ -33,3 +33,7 @@ pip3 install fastparquet
 ## Write a DataFrame into Parquet Files
 
 https://github.com/pandas-dev/pandas/issues/21228
+
+## References 
+
+https://spark.apache.org/docs/latest/sql-data-sources-parquet.html#partition-discovery

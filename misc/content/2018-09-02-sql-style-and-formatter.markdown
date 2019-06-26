@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-25 23:50:05
+Date: 2019-06-26 00:17:03
 Author: Ben Chuanlong Du
 Slug: sql-style-and-formatter
 Title: SQL Style and Formatter
@@ -32,9 +32,9 @@ https://www.sqlstyle.guide/
 
 ## SQL Formatter
 
-1. <http://sqlformat.org/>
+1. <http://www.dpriver.com/pp/sqlformat.htm>
 
-2. <http://www.dpriver.com/pp/sqlformat.htm>
+2. <http://sqlformat.org/>
 
 3. <http://www.sql-format.com/>
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-17 19:03:29
+Date: 2019-06-29 23:15:50
 Author: Ben Chuanlong Du
 Slug: python-pandas-tips
 Title: Python pandas Tips
@@ -62,3 +62,7 @@ pd.set_option('display.max_colwidth', 100)
     use regular expression by default.
     Is there any way to perform literal string substitution
     like what the `fixed=True` options does for regular expression related functions in R?
+
+## References 
+
+https://www.youtube.com/watch?v=tcRGa2soc-c

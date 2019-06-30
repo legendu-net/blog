@@ -59,6 +59,18 @@ http://stackoverflow.com/questions/10998621/rotate-axis-text-in-python-matplotli
 `pandas` integrates some visualization features based on matplotlib.
 It makes things convenient if you have to work with data frame a lot.
 
+### Blender Python
+
+https://docs.blender.org/api/current/info_quickstart.html
+
+https://medium.com/@behreajj/creative-coding-in-blender-a-primer-53e79ff71e
+
+https://blenderscripting.blogspot.com/
+
+## [maartenbreddels/ipyvolume](https://github.com/maartenbreddels/ipyvolume)
+
+3-D plotting in Python.
+
 
 ## References
 

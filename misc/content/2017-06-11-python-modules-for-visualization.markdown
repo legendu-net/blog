@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-03-08 09:47:48
+Date: 2019-07-01 04:14:34
 Author: Ben Chuanlong Du
 Slug: python-modules-for-visualization
 Title: Python Modules for Visualization
 Category: Programming
-Tags: programming, visualization, Python, HoloViews, bokeh, plotly, matplotlib, pandas
+Tags: programming, visualization, Python, HoloViews, bokeh, plotly, matplotlib, pandas, library
 
 **
 Things on this page are
@@ -71,6 +71,17 @@ https://blenderscripting.blogspot.com/
 
 3-D plotting in Python.
 
+## [networkx/grave](https://github.com/networkx/grave)
+
+A dead simple graph visualizaiton.
+
+## [slundberg/shap](https://github.com/slundberg/shap)
+
+A unified approach to explain the output of any machine learning model.
+
+## [ResidentMario/missingno](https://github.com/ResidentMario/missingno)
+
+Missing data visualization module for Python.
 
 ## References
 

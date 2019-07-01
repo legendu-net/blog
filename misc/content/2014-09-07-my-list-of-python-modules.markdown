@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-28 11:39:16
+Date: 2019-07-01 04:19:46
 Author: Ben Chuanlong Du
 Slug: my-list-of-python-modules
 Title: My List of Python Modules
@@ -67,23 +67,7 @@ but rather for convenient reference of the author and future improvement.
 
 ## Database
 
-1. json: JSON parsing.
-
-2. sqlite3
-
-3. [JayDeBeApi](https://github.com/baztian/jaydebeapi): connect to databases using Java JDBC in Python.
-
-4. PyMySQL, MySQLdb
-
-5. PyMongo
-
-6. teradata
-
-7. pyodbc, pypyodbc: Python ODBC bridget.
-
-8. SQLAlchemy
-
-9. sqlalchemy-teradata
+http://www.legendu.net/misc/blog/odbc-vs-jdbc-in-python/
 
 ## Date/Time
 
@@ -115,7 +99,7 @@ but rather for convenient reference of the author and future improvement.
 
 1. os.system
 
-2. subprocess: subprocess management. 
+2. subprocess: subprocess management.
 
 ## Encryption
 
@@ -128,6 +112,10 @@ but rather for convenient reference of the author and future improvement.
 1. [pytest](https://github.com/pytest-dev/pytest): the best unit testing framework for Python.
 
 2. unittest: built-in unit testing framework.
+
+## Network/Graph
+
+1. [networkx/networkx](https://github.com/networkx/networkx)
 
 ## Misc
 

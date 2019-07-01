@@ -14,14 +14,16 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-Overall speaking, 
-Python has better ODBC support than JDBC support. 
-Most database related packages in Python support or rely on ODBC. 
+Overall speaking,
+Python has better ODBC support than JDBC support.
+Most database related packages in Python support or rely on ODBC.
 Currently, ODBC packages also have richer feathers than JDBC packages.
-However, 
-it is not an easy job to install and configure ODBC drivers for a non-open source databases. 
+However,
+it is not an easy job to install and configure ODBC drivers for a non-open source databases.
 
-## JDBC Packages in Python
+## ODBC vs JDBC
+
+### JDBC Packages in Python
 
 1. `JayDeBeApi` is currently the first choice even thought it is not fully DB-API compliant.
 It works on both Python 2 and Python 3.
@@ -29,17 +31,39 @@ It works on both Python 2 and Python 3.
 2. `py4jdbc` (based on Py4j) is another JDBC package which claims to be faster than `JayDeBeApi` (based on JPype)
 but it is relative young compared to JayDeBeApi.
 
-3. Just ignore the JayDeBeApi3 package (for Python3 only). 
+3. Just ignore the JayDeBeApi3 package (for Python3 only).
 
 4. PyAthenaJDBC is a JDBC package specifically for Amazon Athena.
 
-## ODBC Packages in Python
+### ODBC Packages in Python
 
-1. `pyodbc` and `SQLAlchemy` are general purpose packages relying on ODBC. 
+1. `pyodbc` and `SQLAlchemy` are general purpose packages relying on ODBC.
 
-2. There are lots of database specific packages relying on ODBC. 
-For example, 
+2. There are lots of database specific packages relying on ODBC.
+For example,
 `teradata` is a Python package for Teradata SQL which relies on ODBC or RESTful.
+
+## Database Modules
+
+
+1. json: JSON parsing.
+
+2. sqlite3
+
+3. [JayDeBeApi](https://github.com/baztian/jaydebeapi): connect to databases using Java JDBC in Python.
+
+4. PyMySQL, MySQLdb
+
+5. PyMongo
+
+6. teradata
+
+7. pyodbc, pypyodbc: Python ODBC bridget.
+
+8. SQLAlchemy
+
+9. sqlalchemy-teradata
+
 
 ## Misc
 
@@ -59,10 +83,10 @@ http://stackoverflow.com/questions/34948453/read-teradata-query-into-pandas
 ## ORM
 
 1. [SQLAlchemy](https://www.sqlalchemy.org/)
-    is the most popular ORM package for Python. 
+    is the most popular ORM package for Python.
     [peewee](https://github.com/coleifer/peewee)
-    and 
-    [orator](https://github.com/sdispater/orator) 
+    and
+    [orator](https://github.com/sdispater/orator)
     are lightweight ORM solutions compared to `SQLAlchemy`.
 
 

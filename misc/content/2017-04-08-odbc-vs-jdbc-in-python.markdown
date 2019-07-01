@@ -1,6 +1,5 @@
-UUID: 9fde8ad7-e1b6-420e-8db0-e0046f8eb529
 Status: published
-Date: 2019-02-01 20:08:49
+Date: 2019-07-01 19:37:29
 Author: Ben Chuanlong Du
 Slug: odbc-vs-jdbc-in-python
 Title: ODBC vs JDBC in Python
@@ -49,6 +48,8 @@ For example,
 1. json: JSON parsing.
 
 2. sqlite3
+
+3. [jreese/aiosqlite](https://github.com/jreese/aiosqlite)
 
 3. [JayDeBeApi](https://github.com/baztian/jaydebeapi): connect to databases using Java JDBC in Python.
 

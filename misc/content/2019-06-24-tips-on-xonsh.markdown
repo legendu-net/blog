@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-26 18:36:06
+Date: 2019-07-01 04:26:38
 Author: Benjamin Du
 Slug: tips-on-xonsh
 Title: Tips on Xonsh
@@ -31,6 +31,17 @@ the code below prints `[1, 2, 3]` in xonsh.
 x = [1, 2, 3]
 echo f'{x}'
 ```
+
+## Force (Shell) Subprocess
+
+1. use `os.system` or `subprocess.run`
+
+2. wrap the command in `$[]`
+
+3. for some commands, you just need to put part of it into single/double quotes.
+    For example, 
+    xonsh fails to recognize `pip3 install dask[complete]` as a shell command 
+    while it recognize `pip3 install "dask[complete]"` as a shell command.
 
 
 [Bash to Xonsh Translation Guide¶](https://xon.sh/bash_to_xsh.html)

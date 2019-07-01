@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-12 11:00:28
+Date: 2019-07-01 18:23:34
 Author: Ben Chuanlong Du
 Slug: rsync-tips
 Title: Tips on rsync
@@ -44,6 +44,11 @@ Here are a few good practices to follow.
 3. Copy specified patterns (e.g., JupyterLab notebooks) only.
 
         rsync -avh --include='*.ipynb' --include='*/' --exclude='*' --delete src_dir/ des_dir/
+
+4. Sync one directory to another one. 
+    ```Bash
+    rsync -avh --progress --exclude=‘*.pyc’ --exclude=‘.Trash-*’ --exclude=‘lost+found’ --delete $tiger:/workdir/ /workdir/
+    ```
 
 4. An example script for synchronizing a Java project directory.
 

@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: Some Tips for Shell Commands
-Date: 2019-05-01 16:50:47
+Date: 2019-07-03 04:25:47
 Slug: shell-tips
 Category: Linux
 Tags: tips, Linux, shell, terminal
@@ -12,6 +12,13 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 [explainshell.com](http://www.explainshell.com/)
+
+
+## Tips & Traps
+
+1. Do NOT use `;` to delimit paths passed to a shell command because `;` terminates shell commands.
+  Use `,` to delimit paths if needed.
+
 
 ## Configuration
 

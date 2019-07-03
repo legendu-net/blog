@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-28 11:46:10
+Date: 2019-07-03 04:25:47
 Author: Ben Chuanlong Du
 Slug: bash-tips
 Title: Bash Tips
@@ -22,6 +22,9 @@ but rather for convenient reference of the author and future improvement.
 3. It is suggested that you avoid writing complicated Bash scripts. 
     [IPython](https://ipython.readthedocs.io/en/stable/)
     is a much better alternative.
+
+4. Do NOT use `;` to delimit paths passed to a shell command because `;` terminates shell commands.
+  Use `,` to delimit paths if needed.
 
 ## Redirect Output
 

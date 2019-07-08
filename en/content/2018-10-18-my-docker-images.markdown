@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-08 21:20:07
+Date: 2019-07-08 21:25:20
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -266,7 +266,9 @@ df.show
 
 The Docker image
 [dclong/jupyterhub-toree](https://github.com/dclong/docker-jupyterhub-toree)
-has Spark and the Python packages `pyspark` and `findspark` installed and configured.
+has Spark (2.4.3) and the Python packages `pyspark` and `findspark` installed and configured.
+For convenience, 
+a symbolic link of the Spark home directory (`/opt/spark-2.4.3-bin-hadoop2.7`) is made to `/opt/spark`.
 
 1. Open a JupyterLab notebook with the `Scala - Apache Toree` kernel from the launcher.
 
@@ -274,7 +276,8 @@ has Spark and the Python packages `pyspark` and `findspark` installed and config
 
 ```
 import findspark
-findspark.init('/opt/spark-2.4.3-bin-hadoop2.7')
+# A symbolic link of the Spark Home is made to /opt/spark for convenience
+findspark.init('/opt/spark')
 
 import pyspark
 sc = pyspark.SparkContext(appName="myAppName")

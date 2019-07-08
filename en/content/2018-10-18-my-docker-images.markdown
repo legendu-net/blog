@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-07 20:01:39
+Date: 2019-07-07 20:15:25
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -227,7 +227,11 @@ has Spark and the Python packages `pyspark` and `findspark` installed and config
 2. Find and initialize PySpark.
 
     ```
-    code here ...
+    import findspark
+    findspark.init('/opt/spark-2.4.3-bin-hadoop2.7')
+
+    import pyspark
+    sc = pyspark.SparkContext(appName="myAppName")
     ```
 
 3. Use Spark as usual.

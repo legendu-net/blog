@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-26 21:56:32
+Date: 2019-07-08 23:28:03
 Author: Ben Chuanlong Du
 Slug: spark-io
 Title: Spark IO
@@ -13,7 +13,13 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-1. When you want to keep headers in the data,
+1. Do NOT read data from and write data to the same path in Spark!
+  Due to lazy evaluation of Spark, 
+  the path will likely be cleared before it's read into Spark,
+  which will throw IO exceptions.
+  And the worst part is that your data on HDFS is removed but recoverable.
+
+2. When you want to keep headers in the data,
     it is suggested that you use the Parquet format to save data for multiple reasons.
     It is fast, takes less space
     and you don't have to worry about duplicated headers encountered when merging CSV files with headers.
@@ -21,7 +27,7 @@ but rather for convenient reference of the author and future improvement.
     You can directly read in a folder of Parquet files in all kinds of programming languages,
     which is more convenient than a folder of CSV files.
 
-2. Writing to existing files using `RDD.saveAsTextFile` throws file already exist exception.
+3. Writing to existing files using `RDD.saveAsTextFile` throws file already exist exception.
     This s because Hadoop filesystem does not overwrite files that already exist.
     `RDD.saveAsTextFile` does not provide an option to manually overwrite existing files.
     To avoid the issue,

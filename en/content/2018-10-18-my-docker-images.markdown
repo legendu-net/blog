@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-07 22:35:40
+Date: 2019-07-08 21:20:07
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -181,27 +181,69 @@ you can connect to the desktop environment in the Docker container using NoMachi
     the user name used to start the Docker container on the host machine 
     is used as both the user name and password in the Docker container.
 
-## Use Spark in JupyterLab Notebook - The BeakerX Scala Kernel
+## Use Spark in JupyterLab Notebook
+
+### Spark - The BeakerX Scala Kernel
 
 1. Open a JupyterLab notebook with the BeakerX Scala kernel from the launcher.
 
-2. Download Spark dependencies. 
+2. Download Spark (say, 2.3.1) dependencies. 
+```
+%%classpath add mvn
+org.apache.spark spark-core_2.11 2.3.1
+org.apache.spark spark-sql_2.11 2.3.1
+```
 
 3. Create a SparkSession object.
+```
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.functions._
+
+val spark = SparkSession.builder()
+    .master("local[2]")
+    .appName("Spark Example")
+    .config("spark.some.config.option", "some-value")
+    .getOrCreate()
+
+import spark.implicits._
+```
 
 4. Use Spark as usual. 
+```
+val df = Range(0, 10).toDF
+df.show
+```
 
-## Use Spark in JupyterLab Notebook - The Almond Scala Kernel
+### Spark - The Almond Scala Kernel
 
 1. Open a JupyterLab notebook with the Almond Scala kernel from the launcher.
 
-2. Download Spark dependencies. 
+2. Download Spark (say, 2.3.1) dependencies. 
+```
+interp.load.ivy("org.apache.spark" % "spark-core_2.11" % "2.3.1")
+```
 
 3. Create a SparkSession object.
+```
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.functions._
+
+val spark = SparkSession.builder()
+    .master("local[2]")
+    .appName("Spark Example")
+    .config("spark.some.config.option", "some-value")
+    .getOrCreate()
+
+import spark.implicits._
+```
 
 4. Use Spark as usual. 
+```
+val df = Range(0, 10).toDF
+df.show
+```
 
-## Use Spark in JupyterLab Notebook - Apache Toree
+### Spark - Apache Toree
 
 The Docker image 
 [dclong/jupyterhub-toree](https://github.com/dclong/docker-jupyterhub-toree)
@@ -215,8 +257,12 @@ So, you can use Spark/Scala out-of-box in a JupyterLab notebook with the `Scala 
 1. Open a JupyterLab notebook with the `Scala - Apache Toree` kernel from the launcher.
 
 2. Use Spark as usual.
+```
+val df = Range(0, 10).toDF
+df.show
+```
 
-## Use PySpark in JupyterLab Notebook - pyspark and findspark
+### PySpark - pyspark and findspark
 
 The Docker image
 [dclong/jupyterhub-toree](https://github.com/dclong/docker-jupyterhub-toree)
@@ -233,9 +279,11 @@ findspark.init('/opt/spark-2.4.3-bin-hadoop2.7')
 import pyspark
 sc = pyspark.SparkContext(appName="myAppName")
 ```
-
 3. Use Spark as usual.
-    
+```
+sc.textFile
+```
+
 ## List of Images and Detailed Information
 
 - [dclong/gitpod-svim](https://hub.docker.com/r/dclong/gitpod-svim/)

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-07 21:28:58
+Date: 2019-07-07 22:17:02
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -172,9 +172,9 @@ the default password (same as the user name) is used.
 If you are running a Docker container with a desktop environment (`dclong/lubuntu*` or `dclong/xubuntu*`),
 you can connect to the desktop environment in the Docker container using NoMachine.
 
-    1. Download the NoMachine client from <https://www.nomachine.com/download>.
-    2. Install the NoMachine client on your computer.
-    3. Create a new connection from your computer 
+  1. Download the NoMachine client from <https://www.nomachine.com/download>.
+  2. Install the NoMachine client on your computer.
+  3. Create a new connection from your computer 
     to the desktop environment in the Docker image using the NX protocol and port 4000.
     You will be asked for a user name and password.
     By default,
@@ -212,9 +212,9 @@ By default,
 a Spark Session object named `spark` is created automatically just like spark-shell.
 So, you can use Spark/Scala out-of-box in a JupyterLab notebook with the `Scala - Apache Toree` kernel.
 
-    1. Open a JupyterLab notebook with the `Scala - Apache Toree` kernel from the launcher.
+  1. Open a JupyterLab notebook with the `Scala - Apache Toree` kernel from the launcher.
 
-    2. Use Spark as usual.
+  2. Use Spark as usual.
     
 ## Use PySpark in JupyterLab Notebook - pyspark and findspark
 
@@ -222,19 +222,19 @@ The Docker image
 [dclong/jupyterhub-toree](https://github.com/dclong/docker-jupyterhub-toree)
 has Spark and the Python packages `pyspark` and `findspark` installed and configured.
 
-    1. Open a JupyterLab notebook with the `Scala - Apache Toree` kernel from the launcher.
+  1. Open a JupyterLab notebook with the `Scala - Apache Toree` kernel from the launcher.
 
-    2. Find and initialize PySpark.
+  2. Find and initialize PySpark.
 
-        ```
-        import findspark
-        findspark.init('/opt/spark-2.4.3-bin-hadoop2.7')
+      ```
+      import findspark
+      findspark.init('/opt/spark-2.4.3-bin-hadoop2.7')
 
-        import pyspark
-        sc = pyspark.SparkContext(appName="myAppName")
-        ```
+      import pyspark
+      sc = pyspark.SparkContext(appName="myAppName")
+      ```
 
-    3. Use Spark as usual.
+  3. Use Spark as usual.
     
 ## List of Images and Detailed Information
 

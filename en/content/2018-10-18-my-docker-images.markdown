@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-29 16:11:57
+Date: 2019-07-07 20:01:39
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -9,7 +9,8 @@ Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
 ## Tips
 
 1. The `dclong/jupyterlab` Docker image is well maintained (which is the base image of `dclong/jupyterhub`), 
-    however many of the `dclong/jupyterlab-*` Docker images are not maintained any more.
+    however, 
+    many of the `dclong/jupyterlab-*` Docker images are not maintained any more.
     Please use the corresponding `dclong/jupyterhub-*`  Docker images instead.
 
 2. There is an issue with the `dclong/xubuntu*` Docker images due to Xfce on Ubuntu 18.04.
@@ -168,11 +169,69 @@ the default password (same as the user name) is used.
 
 ## Remote Connection to Desktop in the Container
 
-Download the NoMachine client from <https://www.nomachine.com/download>, 
-install the client, 
-create a new connection to your public ip, port 4000, NX protocol, 
-use a user on the host OS and the corresponding password for authentication. 
+If you are running a Docker container with a desktop environment (`dclong/lubuntu*` or `dclong/xubuntu*`),
+you can connect to the desktop environment in the Docker container using NoMachine.
 
+1. Download the NoMachine client from <https://www.nomachine.com/download>.
+2. Install the NoMachine client on your computer.
+3. Create a new connection from your computer 
+  to the desktop environment in the Docker image using the NX protocol and port 4000.
+  You will be asked for a user name and password.
+  By default,
+  the user name used to start the Docker container on the host machine 
+  is used as both the user name and password in the Docker container.
+
+## Use Spark in JupyterLab Notebook - The BeakerX Scala Kernel
+
+1. Open a JupyterLab notebook with the BeakerX Scala kernel from the launcher.
+
+2. Download Spark dependencies. 
+
+3. Create a SparkSession object.
+
+4. Use Spark as usual. 
+
+## Use Spark in JupyterLab Notebook - The Almond Scala Kernel
+
+1. Open a JupyterLab notebook with the Almond Scala kernel from the launcher.
+
+2. Download Spark dependencies. 
+
+3. Create a SparkSession object.
+
+4. Use Spark as usual. 
+
+## Use Spark in JupyterLab Notebook - Apache Toree
+
+The Docker image 
+[dclong/jupyterhub-toree](https://github.com/dclong/docker-jupyterhub-toree)
+has Spark and Apache Toree installed and configured.
+Since Spark is already installed in it, 
+you don't need to download and install Spark by yourself.
+By default, 
+a Spark Session object named `spark` is created automatically just like spark-shell.
+So, you can use Spark/Scala out-of-box in a JupyterLab notebook with the `Scala - Apache Toree` kernel.
+
+1. Open a JupyterLab notebook with the `Scala - Apache Toree` kernel from the launcher.
+
+2. Use Spark as usual.
+  
+## Use PySpark in JupyterLab Notebook - pyspark and findspark
+
+The Docker image
+[dclong/jupyterhub-toree](https://github.com/dclong/docker-jupyterhub-toree)
+has Spark and the Python packages `pyspark` and `findspark` installed and configured.
+
+1. Open a JupyterLab notebook with the `Scala - Apache Toree` kernel from the launcher.
+
+2. Find and initialize PySpark.
+
+    ```
+    code here ...
+    ```
+
+3. Use Spark as usual.
+  
 ## List of Images and Detailed Information
 
 - [dclong/gitpod-svim](https://hub.docker.com/r/dclong/gitpod-svim/)

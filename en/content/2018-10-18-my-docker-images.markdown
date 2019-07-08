@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-07 20:24:55
+Date: 2019-07-07 21:28:58
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -139,13 +139,13 @@ You can of course use the well know commands `useradd`, `adduser`, etc. to achiv
 To make things easier for you,
 there are some shell scripts in the directory `/scripts/` to create usres for you.
 
-- `/scripts/create_user.sh`: Create a new user. It's the base script for creating users.
-- `/scripts/create_user_group.sh`: Create a new user with the given (existing) group.
-- `/scripts/create_user_nogroup.sh`: Create a new user with group name `nogroup`.
-- `/scripts/create_user_docker.sh`: Create a new user with group name `docker`.
+- `/scripts/sys/create_user.sh`: Create a new user. It's the base script for creating users.
+- `/scripts/sys/create_user_group.sh`: Create a new user with the given (existing) group.
+- `/scripts/sys/create_user_nogroup.sh`: Create a new user with group name `nogroup`.
+- `/scripts/sys/create_user_docker.sh`: Create a new user with group name `docker`.
 
 You can use the option `-h` to print help doc for these commands.
-For example, `/scripts/create_user_nogroup.sh -h` prints the below help doc.
+For example, `/scripts/sys/create_user_nogroup.sh -h` prints the below help doc.
 
 ```Bash
 Create a new user with the group name "nogroup".
@@ -160,7 +160,7 @@ Now suppose you want to create a new user `dclong` with user ID `2000` and group
 you can use the following command.
 
 ```Bash
-sudo /scripts/create_user_nogroup.sh dclong 2000
+sudo /scripts/sys/create_user_nogroup.sh dclong 2000
 ```
 
 Since we didn't specify a password for the user,

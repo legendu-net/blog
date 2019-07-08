@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-01 18:23:34
+Date: 2019-07-08 23:21:31
 Author: Ben Chuanlong Du
 Slug: rsync-tips
 Title: Tips on rsync
@@ -50,7 +50,7 @@ Here are a few good practices to follow.
     rsync -avh --progress --exclude=‘*.pyc’ --exclude=‘.Trash-*’ --exclude=‘lost+found’ --delete $tiger:/workdir/ /workdir/
     ```
 
-4. An example script for synchronizing a Java project directory.
+5. An example script for synchronizing a Java project directory.
 
         #!/usr/bin/env bash
 

@@ -1,6 +1,5 @@
-UUID: c86f6efc-25f7-41da-87ab-7392b6dbb9f1
 Status: published
-Date: 2017-06-11 11:58:35
+Date: 2019-07-08 21:14:19
 Author: Ben Chuanlong Du
 Slug: environment-variable-docker
 Title: Environment Variable in Docker
@@ -18,6 +17,10 @@ but rather for convenient reference of the author and future improvement.
 
 1. It seems that Docker reads neither `/etc/profile` 
     nor `/etc/environment` for environment variables.
+    For more details, 
+    please refer to the issue 
+    [setting environment variables in a docker container #25388](https://github.com/moby/moby/issues/25388)
+    on GitHub.
 
 2. You can create environment variables for the current user 
    using the command `ENV`. 

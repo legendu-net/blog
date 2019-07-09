@@ -13,13 +13,15 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-pyjnius looks like a great one. 
+## [jpype-project/jpype](https://github.com/jpype-project/jpype)
 
-jpype is perhaps the most used one
+The most used one currently.
 
-py4j is too complicated to use
+[StartJVM and other upgrading issues with 0.7.0](https://github.com/jpype-project/jpype/issues/498)
 
 ## [pyjnius](https://github.com/kivy/pyjnius)
+
+pyjnius looks like a great one. 
 
 ### Installation
 
@@ -28,7 +30,7 @@ pip install Cython
 pip install pyjnius
 ```
 
-## Example with Imported Jar
+### Example with Imported Jar
 
 ```
 import os
@@ -37,6 +39,10 @@ from jnius import autoclass
 YourClass = autoclass(path.to.YourClass)
 yourObj = YourClass()
 ```
+
+## py4j 
+
+Too complicated to use ...
 
 ## References
 

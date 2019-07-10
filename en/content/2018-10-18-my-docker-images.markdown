@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-08 21:25:20
+Date: 2019-07-10 18:28:58
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -452,10 +452,10 @@ sc.textFile
 ## Known Issues 
 
 1. The subprocess managment issue.
-    This is not an issue at in most use cases.
+    This is not an issue at all in most use cases.
     This Docker image launch service using a shell script
     so there won't be orphan subprocesses
-    when the process of the Docker container is get killed.
+    when the process of the Docker container is killed.
     However, launching by shell script is not the best way for managing processes.
     I might switch to the [Supervisor](https://github.com/Supervisor/supervisor) for process management
     or use the base image of [pushion/ubuntu](https://github.com/phusion/baseimage-docker) in future.

@@ -610,7 +610,7 @@ def trash(blogger, args):
         args.files = [row[0] for row in blogger.query(sql)]
     if args.files:
         for index, file in enumerate(args.files):
-            print(f'\n{index}: {args.files[index]}')
+            print(f'\n{index}: {file}')
         answer = input('Are you sure to delete the specified files in the srps table (yes or no): ')
         if answer == 'yes':
             blogger.trash(args.files)
@@ -761,8 +761,8 @@ def _disp_path(path: str, full: bool = True) -> str:
 
 def show(blogger, args, showtitle = False) -> None:
     sql = 'SELECT count(*) FROM srps'
-    total = blogger.query(sql)[0]
-    print(f'\nTotal number of posts in the search table srps is: {total}')
+    total = blogger.query(sql)[0][0]
+    print(f'\nNumber of matched posts: {total}')
     for id, path in blogger.fetch(args.n):
         path = _disp_path(path, full=args.full_path)
         print(f'\n{id}: {path}')

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-10 18:28:58
+Date: 2019-07-12 02:42:43
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -122,12 +122,17 @@ docker run -d \
 
 ## Use the JupyterHub Server
 
-Open your browser and and visit `your_host_ip:8000`
-where `your_host_ip` is the URL/ip address of your server.
-You will be asked for user name (by default your user name on the host)
-and password (by default your user name on the host and might want to change it for security reasons).
-You can of course change your user password later
-using the command `passwd` in the container.  
+1. Open your browser and and visit `your_host_ip:8000`
+  where `your_host_ip` is the URL/ip address of your server.
+
+2. Login to the JupyterHub server 
+  using your user name (by default your user name on the host machine)
+  and password (by default your user name on the host machine). 
+
+3. It is strongly suggested (for security reasons) that you change your password (using the command `passwd`)
+  in the container.
+
+4. Enjoy JupyterLab notebook!
 
 ## Add a New User to the JupyterHub Server
 

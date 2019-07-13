@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-25 18:19:54
+Date: 2019-07-13 04:15:02
 Author: Ben Chuanlong Du
 Slug: shell-alternatives
 Title: Python Alternatives to Shell
@@ -54,7 +54,7 @@ but rather for convenient reference of the author and future improvement.
   </tr>
   <tr>
     <td> rm -rf dir </td>
-    <td> shutil.rmtree ('file1', 'file2') </td>
+    <td> shutil.rmtree (dir_) </td>
     <td> !rm -rf dir </td>
     <td> rm -rf dir </td>
   </tr>

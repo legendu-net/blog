@@ -1,6 +1,6 @@
 UUID: da5c4954-306c-44aa-ac7a-e162389c440a
 Status: published
-Date: 2017-01-01 13:54:32
+Date: 2019-07-14 14:13:50
 Author: Ben Chuanlong Du
 Slug: eclim-tips
 Title: Eclim Tips
@@ -25,7 +25,6 @@ https://github.com/tatsuya6502/docker-emacs-eclim
 https://hub.docker.com/r/tiokksar/eclipse/
 http://masato.github.io/2014/10/06/docker-devenv-emacs24-eclim-java8-failed-spring-boot/
 https://medium.com/google-cloud/deep-dream-with-containers-d28a26e4c8a3#.nh76djmbb
-https://medium.com/google-cloud/my-slow-internet-vs-docker-7678ae1cae72#.396feucy5
 
 ### Misc
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-03 07:55:45
+Date: 2019-07-14 14:00:13
 Author: Benjamin Du
 Slug: tips-on-xonsh
 Title: Tips on Xonsh
@@ -44,5 +44,12 @@ echo f'{x}'
     xonsh fails to recognize `pip3 install dask[complete]` as a shell command 
     while it recognize `pip3 install "dask[complete]"` as a shell command.
 
+## Background Mode for Subprocess
+
+https://github.com/xonsh/xonsh/issues/1477#event-2481368935
+
+## References
 
 [Bash to Xonsh Translation Guide¶](https://xon.sh/bash_to_xsh.html)
+
+https://github.com/xonsh/xonsh/issues/1477#event-2481368935

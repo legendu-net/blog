@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-12 02:42:43
+Date: 2019-07-14 14:13:50
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -247,6 +247,10 @@ import spark.implicits._
 val df = Range(0, 10).toDF
 df.show
 ```
+
+Please refer to 
+[almond-sh/examples](https://github.com/almond-sh/examples/blob/master/notebooks/spark.ipynb)
+for more details.
 
 ### Spark - Apache Toree
 

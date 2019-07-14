@@ -7,7 +7,7 @@ import os
 HOME_URL = 'http://www.legendu.net'
 SITEURL = os.path.join(HOME_URL, 'en')
 #-------------------------------------------------------------------------
-SITESUBTITLE = "It's never too late to learn."
+SITESUBTITLE = "And let it direct your passion with reason."
 AUTHOR = 'Ben Chuanlong Du'
 SITENAME = "Ben Chuanlong Du's Blog"
 # Times and dates

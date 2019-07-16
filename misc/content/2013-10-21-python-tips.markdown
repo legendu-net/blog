@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-05-24 01:46:40
+Date: 2019-07-16 07:27:23
 Slug: python-tips
 Title: Some Fragmentary Tips About Python
 Category: Programming
@@ -95,6 +95,26 @@ https://stackoverflow.com/questions/101268/hidden-features-of-python
 2. Python functions (except lambda functions) do not automatically return value
   unlike functional programming languages.
   Forgotting a `return` statement is a common mistake in Python.
+
+3. Do NOT use the ternary expression in complicated expressions!!!
+```
+update = {
+    'status': 'succeed', 
+    'partitions': 52,
+    'size': 28836,
+    'end_time': 1563259850.937318
+}
+[key + ' = ' + f'{val}' if isinstance(val, (int, float)) else f"'{val}'" for key, val in update.items()]
+```
+returns
+```
+["'succeed'", 'partitions = 52', 'size = 28836', 'end_time = 1563259850.937318']
+```
+The issue can be fixed by putting the ternary expression into parentheses or define a (lambda) function for the ternary expression.
+```
+[key + ' = ' + (f'{update[key]}' if isinstance(update[key], (int, float)) else f"'{update[key]}'") for key in update]
+```
+
 
 ## Design
 

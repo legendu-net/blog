@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-13 04:15:02
+Date: 2019-07-16 05:39:27
 Author: Ben Chuanlong Du
 Slug: shell-alternatives
 Title: Python Alternatives to Shell
@@ -53,8 +53,14 @@ but rather for convenient reference of the author and future improvement.
     <td> cp file1 file2 </td>
   </tr>
   <tr>
+    <td> rm file </td>
+    <td> os.remove(file) </td>
+    <td> !rm file </td>
+    <td> rm file </td>
+  </tr>
+  <tr>
     <td> rm -rf dir </td>
-    <td> shutil.rmtree (dir_) </td>
+    <td> shutil.rmtree(dir) </td>
     <td> !rm -rf dir </td>
     <td> rm -rf dir </td>
   </tr>

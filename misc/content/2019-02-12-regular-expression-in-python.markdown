@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-12 19:53:02
+Date: 2019-07-16 21:49:10
 Author: Benjamin Du
 Slug: regular-expression-in-python
 Title: Regular Expression in Python
@@ -14,6 +14,10 @@ It is not meant to readers but rather for convenient reference of the author and
 
 [Online Regular Expression Tester](https://regex101.com/)
 
+
+1. re.search vs pattern.search: no performance difference. 
+  Python compiles and caches regular expression internally. 
+  If you have to given the pattern a nice name or if you don't copy the regular expression multiple times, then compile it.
 
 1. (?i) case-insensitive matching
 

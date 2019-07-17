@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2016-11-20 19:22:04
+Date: 2019-07-17 00:36:24
 Title: SQL Tips
 Slug: sql-tips
 Category: Programming 
@@ -11,6 +11,33 @@ Tags: programming, SQL, tips, IDE, sqldep, queryscope, queryViz, eralchemy, data
 Things on this page are fragmentary and immature notes/thoughts of the author. 
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+1. If you want to do some analysis on a time window of data,
+  it is best to choose a continuous window during a certain month if possible.
+  This makes it simple (no need to use date/time function) to work with the dates later.
+
+2. Outer join is preferred over inner join if you doing some exploring analyses
+  (unless you absolute know that inner join is sufficient) 
+  as it preserves more information.
+  It is often the case when doing exploring analyses that you run an inner join and then found that you really need a left/right join.
+  This can be a great waste of time if your analysis consist of many steps and you have to go back to the very beginning change an inner join to an outer join.
+  On the contrary, 
+  it does not hurt that your run a left/right join when you found that you really just need an inner join.
+  However, 
+  DO be careful when you use outer joins as they are tricky too!
+  If using left/right join, 
+  prefer to keep column in the left/right table.
+
+3. `window_function() over (partition by col1, col2 order by col3)`
+  Be careful that a default window of unbounded prceeding to the current row is used by default when you sort partitions.
+  Due to this, some window functions requires full information (such as last, max, mean, rank, etc.) won't give you the right results.
+  However, windows functions that only require partial information (such as first, row_number, etc.) work as expected.
+  For this reason, 
+      - first is preferred over last
+      - row_number is preferred over rank
+
+4. If you write some database-based application,
+  never delete anything and just mark records (to be deleted) as hidden instead.
 
 
 1. If space and performance is not critical, 

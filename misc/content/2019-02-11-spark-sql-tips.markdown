@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-23 22:50:12
+Date: 2019-07-17 00:03:15
 Author: Benjamin Du
 Slug: spark-sql-tips
 Title: Spark SQL Tips
@@ -32,6 +32,13 @@ It is not meant to readers but rather for convenient reference of the author and
         sort by
             rand()
         limit 10000
+
+3. Position alias is supported in Spark SQL!
+
+4. Spark SQL supports bool expressions/columns. 
+  However, you cannot sum a bool expression/column directly.
+  You have to either cast it to Int/BigInt or use the old-school case clause.
+  
 
 ## References
 

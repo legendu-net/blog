@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-06-18 21:20:13
+Date: 2019-07-16 23:41:33
 Author: Benjamin Du
 Slug: unit-testing-debugging-python
 Title: Unit Testing and Debugging Tools for Python
 Category: Programming
-Tags: programming, Python, unit testing, debug
+Tags: programming, Python, unit testing, debugging, command-line tools, development, dev
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

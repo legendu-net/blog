@@ -36,8 +36,12 @@ It is not meant to readers but rather for convenient reference of the author and
       - first is preferred over last
       - row_number is preferred over rank
 
+5. `row_number() over ()` It is allowed to specify no partition for window functions.
+  In that case, all records is treated as one partition.
+
 4. If you write some database-based application,
   never delete anything and just mark records (to be deleted) as hidden instead.
+
 
 
 1. If space and performance is not critical, 

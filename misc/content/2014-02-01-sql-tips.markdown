@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-07-18 18:35:24
+Date: 2019-07-19 01:33:58
 Title: SQL Tips
 Slug: sql-tips
 Category: Programming 
@@ -41,7 +41,10 @@ It is not meant to readers but rather for convenient reference of the author and
 6. When using integer constant in SQL code, prefer BigInt, i.e., suffix them with `L`.
   This can save you troubes of overflow if count/sum a large table.
 
-4. If you write some database-based application,
+7. Always assume there are data issues (such as missing values, duplicates, etc.) unless forced by table constraints
+  as this is often the truth.
+
+8. If you write some database-based application,
   never delete anything and just mark records (to be deleted) as hidden instead.
 
 

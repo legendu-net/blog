@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-01 04:14:34
+Date: 2019-07-19 00:42:30
 Author: Ben Chuanlong Du
 Slug: python-modules-for-visualization
 Title: Python Modules for Visualization
@@ -71,9 +71,7 @@ https://blenderscripting.blogspot.com/
 
 3-D plotting in Python.
 
-## [networkx/grave](https://github.com/networkx/grave)
-
-A dead simple graph visualizaiton.
+## [pydot/pydot](https://github.com/pydot/pydot)
 
 ## [slundberg/shap](https://github.com/slundberg/shap)
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-18 23:54:24
+Date: 2019-07-19 00:33:35
 Author: Ben Chuanlong Du
 Slug: my-list-of-python-modules
 Title: My List of Python Modules
@@ -122,6 +122,8 @@ http://www.legendu.net/misc/blog/odbc-vs-jdbc-in-python/
 3. [opusonesolutions/asciigraf](https://github.com/opusonesolutions/asciigraf)
 
 4. [count0/graph-tool](https://git.skewed.de/count0/graph-tool)
+
+5. [pydot/pydot](https://github.com/pydot/pydot)
 
 ## Misc
 

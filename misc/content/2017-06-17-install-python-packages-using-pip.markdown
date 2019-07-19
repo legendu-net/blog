@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-16 17:25:33
+Date: 2019-07-19 17:51:56
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages Using pip
@@ -70,6 +70,11 @@ so that you do not need to use the `--user` option when installing Python packag
 2. Install a specific version of a Python package.
 
         pip3 install MySQL_python==1.2.2
+
+3. Install pyarrow with a verison of at least 0.14.0.
+```
+pip3 install pyarrow>=0.14.0
+```
 
 3. You can install the pre-release version of a package using the `--pre` option.
     For example, 

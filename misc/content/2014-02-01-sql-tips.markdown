@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-07-19 01:33:58
+Date: 2019-07-19 01:34:21
 Title: SQL Tips
 Slug: sql-tips
 Category: Programming 
@@ -42,7 +42,7 @@ It is not meant to readers but rather for convenient reference of the author and
   This can save you troubes of overflow if count/sum a large table.
 
 7. Always assume there are data issues (such as missing values, duplicates, etc.) unless forced by table constraints
-  as this is often the truth.
+  as this is often the fact.
 
 8. If you write some database-based application,
   never delete anything and just mark records (to be deleted) as hidden instead.

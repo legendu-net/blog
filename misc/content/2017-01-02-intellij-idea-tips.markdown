@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-20 05:17:28
+Date: 2019-07-20 05:18:46
 Author: Ben Chuanlong Du
 Slug: intellij-idea-tips
 Title: IntelliJ IDEA Tips
@@ -111,3 +111,8 @@ In some weird cases compiled classes may report wrong info and confuse IDEA. Ver
 1. how to port intellij configuration files from one machine to another one?
 
 2. how to pop up auto completion suggestions while typing?
+
+
+## References 
+
+https://stackoverflow.com/questions/39282282/class-not-found-empty-test-suite-in-intellij/40400136

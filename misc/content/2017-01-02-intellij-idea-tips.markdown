@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-24 01:14:09
+Date: 2019-07-20 05:12:08
 Author: Ben Chuanlong Du
 Slug: intellij-idea-tips
 Title: IntelliJ IDEA Tips
@@ -39,6 +39,11 @@ First,
 sbt is better supported in IntelliJ IDEA.
 The Maven archetype for Scala is too old in IntelliJ.
 You have to update the file pom.xml immediately after you create a Maven based Scala project in IntelliJ IDEA.
+
+## Tricks & Traps 
+
+1. Keep the folder name the same as your project name,
+  otherwise, IntelliJ might have issues discovering the tests.
 
 ## General Tips
 

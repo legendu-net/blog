@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-20 05:12:08
+Date: 2019-07-20 05:17:28
 Author: Ben Chuanlong Du
 Slug: intellij-idea-tips
 Title: IntelliJ IDEA Tips
@@ -42,8 +42,14 @@ You have to update the file pom.xml immediately after you create a Maven based S
 
 ## Tricks & Traps 
 
-1. Keep the folder name the same as your project name,
-  otherwise, IntelliJ might have issues discovering the tests.
+1. Close your project and quit IntelliJ IDEA.
+
+2. Rename the project directory to match the name of your project if they don't match.
+
+3. Restart IntelliJ.
+
+4. Go to the menu `File -> Invalidate Caches/Restart -> Invalidate and Restart`.
+
 
 ## General Tips
 

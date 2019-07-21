@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-27 02:25:39
+Date: 2019-07-21 20:40:24
 Author: Benjamin Du
 Slug: parsing-json-in-scala
 Title: Parsing JSON in Scala
@@ -17,6 +17,18 @@ It is not meant to readers but rather for convenient reference of the author and
 ## [json4s/json4s](https://github.com/json4s/json4s)
 
 https://stackoverflow.com/questions/29908297/how-can-i-convert-a-json-string-to-a-scala-map
+
+There are an dependency issue using json4s with Spark. 
+This issue was somehow fixed in the plugin 
+[johnrengelman/shadow](https://github.com/johnrengelman/shadow) v4.0.3.
+However, 
+I can confirm that there are issue in 
+[johnrengelman/shadow](https://github.com/johnrengelman/shadow) v5.1.0.
+
+
+https://github.com/json4s/json4s/issues/316
+
+https://github.com/json4s/json4s/issues/418
 
 ## [argonaut-io/argonaut](https://github.com/argonaut-io/argonaut)
 

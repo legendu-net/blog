@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for SQLite3
-Date: 2019-05-17 04:02:26
+Date: 2019-07-24 22:08:24
 Slug: sqlite-tips
 Category: Software
 Tags: tips, SQLite3, database, FTS5, full-text search
@@ -19,6 +19,11 @@ It is not meant to readers but rather for convenient reference of the author and
 3. SQLite3 supports full-text search by the FTS5 extension.
   It is suggested that you use the `porter` tokenizer for English searching.
   Please refer to Section *4.3. Tokenizers* of [SQLite FTS5 Extension](https://sqlite.org/fts5.html) for more details.
+
+4. Avoid keeping SQLite database file on a NFS filesystem, 
+  as the locking mechanism might not work correctly.
+  For details, 
+  please refer to https://www.sqlite.org/draft/faq.html#q5.
 
 ## Recursive Common Table Expressions
 

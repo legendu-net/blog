@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-07-16 07:27:23
+Date: 2019-07-24 22:22:50
 Slug: python-tips
 Title: Some Fragmentary Tips About Python
 Category: Programming
@@ -114,6 +114,15 @@ The issue can be fixed by putting the ternary expression into parentheses or def
 ```
 [key + ' = ' + (f'{update[key]}' if isinstance(update[key], (int, float)) else f"'{update[key]}'") for key in update]
 ```
+
+4. Backslash (`\`) cannot be used in a f-string (introduced in Python 3.6).
+  There are multiple ways to resolve this issue.
+  First, you can precompute things needed to avoid using `\` in a f-string.
+  Second, you can use `chr(10)` (which returns the backslash) instead.
+
+5. If you need trackback information when throwing an exception use `raise ExceptionClass(msg)`,
+  otherwise, use `sys.exit(msg)` instead.
+
 
 
 ## Design

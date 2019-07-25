@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-17 00:03:15
+Date: 2019-07-25 00:37:37
 Author: Benjamin Du
 Slug: spark-sql-tips
 Title: Spark SQL Tips
@@ -38,6 +38,15 @@ It is not meant to readers but rather for convenient reference of the author and
 4. Spark SQL supports bool expressions/columns. 
   However, you cannot sum a bool expression/column directly.
   You have to either cast it to Int/BigInt or use the old-school case clause.
+
+5. `select * from some_table limit 5` runs slow if the table `some_table` is large.
+  you can limit the selection to a specific partition (if the table is partitioned) to speed it up.
+
+
+6. You can use the following code to show the creation code of a Hive table in Spark.
+```
+println(spark.sql("show create table some_table").collect()(0)(0))
+```
   
 
 ## References

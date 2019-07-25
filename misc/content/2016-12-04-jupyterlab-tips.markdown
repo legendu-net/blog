@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-25 20:32:51
+Date: 2019-07-25 02:49:09
 Author: Ben Chuanlong Du
 Slug: jupyterlab-tips
 Title: JupyterLab Tips
@@ -56,6 +56,10 @@ http://arogozhnikov.github.io/2016/09/10/jupyter-features.html
         jupyter nbconvert --to FORMAT notebook.ipynb
 
 4. Notice that you'd better turn off proxies while using JupyterLab. 
+
+5. If a JupyerLab notebook doesn't render well due to trust issues, 
+    you can rerun everything in the notebook and save it. 
+    This will usually resolve the trust issue.
 
 ## JupyterLab Extenions
 

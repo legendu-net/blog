@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-07-24 22:22:50
+Date: 2019-07-25 01:04:02
 Slug: python-tips
 Title: Some Fragmentary Tips About Python
 Category: Programming
@@ -85,7 +85,16 @@ https://docs.python-guide.org/writing/gotchas/
 https://stackoverflow.com/questions/101268/hidden-features-of-python
 
 
-1. Almost all modern programming languages follow the convention
+1. Use type annotation to make your code more readable and easier to understand.
+
+2. Restrict the types of objects that your function/method can be applied to 
+  and throw a (ValueError) exception when a wrong type is provided.
+  This helps minimize surprisings.
+
+6. AVOID returning objects of different types from a Python function/method.
+
+
+2. Almost all modern programming languages follow the convention
   of not returnting anything (or in another words, retun void, None, etc.)
   from a mutator method so that you cannot chain on a mutator method.
   Functional programming languages enough chaining on methods

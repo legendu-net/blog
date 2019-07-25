@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-25 00:37:37
+Date: 2019-07-25 00:52:37
 Author: Benjamin Du
 Slug: spark-sql-tips
 Title: Spark SQL Tips
@@ -47,6 +47,13 @@ It is not meant to readers but rather for convenient reference of the author and
 ```
 println(spark.sql("show create table some_table").collect()(0)(0))
 ```
+
+7. You can use 
+  [Spark SQl hint](https://docs.databricks.com/spark/latest/spark-sql/language-manual/select.html#hints)
+  to fine control the behavior of Spark application.
+  Specially, 
+  a hint for skew join is supported in Spark Spark!
+  You can use it to help Spark optimizing the joining when the involved columns are skewed.
   
 
 ## References

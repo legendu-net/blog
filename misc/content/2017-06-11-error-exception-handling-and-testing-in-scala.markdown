@@ -1,6 +1,5 @@
-UUID: 3fac705c-dcf0-4c44-b746-55b3deb16d7a
 Status: published
-Date: 2017-06-11 11:51:42
+Date: 2019-07-25 01:15:11
 Author: Ben Chuanlong Du
 Slug: error-exception-handling-and-testing-in-scala
 Title: Error/Exception Handling and Testing in Scala
@@ -14,6 +13,8 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+## assert vs require vs assume
+
 `assert` means that your program has reached an inconsistent state.
 This might be a problem with the current method/function 
 (think of it a bit as e.g., HTTP 500 InternalServerError).
@@ -21,9 +22,8 @@ This might be a problem with the current method/function
 `require` means that the caller of the method is at fault 
 and should fix its call (think of it a bit as e.g., HTTP 400 BadRequest).
 Use `require` whenever you want a constraint on parameters.
-Use `assert`, 
-whenever you want to make sure some conditions (like invariants) are always true during execution. 
-It as a way of testing.
+Use `assert` whenever you want to make sure some conditions (like invariants) are always true during execution. 
+It is a way of testing.
 
 ```scala
 def assert(assertion: Boolean) { 
@@ -50,3 +50,16 @@ It is something that the static checker can rely upon.
 
 `require` (IllegalArgumentException) – Blames the caller of the method for violating the condition. 
 Used as a pre-condition. ensuring is a post-condition.
+
+
+## scalaTest
+
+1. It seems to be that scalaTest doesn't work well with junit5 at this time. 
+  The suggestion is to stick to junit4 when using scalaTest.
+
+2. Java discourages the use of Singletons and unit testing on Singletons is not supported any more in JUnit5. 
+  However, 
+  due to the nature of functional programming, 
+  you will find Singletons to be nature in Scala.
+
+

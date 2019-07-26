@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-19 00:42:30
+Date: 2019-07-26 23:49:57
 Author: Ben Chuanlong Du
 Slug: python-modules-for-visualization
 Title: Python Modules for Visualization
@@ -12,6 +12,10 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+The website [The Python Graph Gallery](https://python-graph-gallery.com/)
+displays hundreds of charts, always providing the reproducible python code! 
+It aims to showcase the awesome dataviz possibilities of python and to help you benefit it. 
 
 ## JS based Modules
 

@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-07-25 01:17:07
+Date: 2019-07-26 23:10:58
 Author: Benjamin Du
 Slug: tips-on-yapf
-Title: Tips on Yapf
+Title: Tips on yapf
 Category: Programming
 Tags: programming, Python, yapf, code formatting
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-25 00:43:09
+Date: 2019-07-26 23:07:38
 Author: Benjamin Du
 Slug: python-logging
 Title: Python Logging
@@ -26,7 +26,14 @@ logger.__class__.throw = throw
 
 logger.throw(ValueError, "Something bad happened")
 ```
-https://github.com/Delgan/loguru/issues/120
+
+Note that the default logging level is `DEBUG` in loguru
+and it is not allowed to change the logging level of an created logger object in loguru.
+You can refer to
+[changing-the-level-of-an-existing-handler](https://loguru.readthedocs.io/en/latest/resources/recipes.html#changing-the-level-of-an-existing-handler)
+and
+[Change level of default handler](https://github.com/Delgan/loguru/issues/51)
+on ways to changing logging level in loguru.
 
 
 ## [logging](https://docs.python.org/3/library/logging.html)
@@ -40,6 +47,8 @@ levelname
 message
 
 ## References
+
+https://github.com/Delgan/loguru/issues/120
 
 https://realpython.com/python-logging/
 

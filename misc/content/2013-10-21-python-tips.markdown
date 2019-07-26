@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-07-25 01:04:02
+Date: 2019-07-26 23:46:39
 Slug: python-tips
 Title: Some Fragmentary Tips About Python
 Category: Programming
@@ -14,6 +14,8 @@ It is not meant to readers but rather for convenient reference of the author and
 <img src="http://dclong.github.io/media/python/python.png" height="200" width="240" align="right"/>
 
 ## Python Doc
+
+[Comprehensive Python Cheatsheet](https://gto76.github.io/python-cheatsheet/)
 
 - [The Python Wiki](https://wiki.python.org/moin/)
 - [Useful Modules](https://wiki.python.org/moin/UsefulModules)

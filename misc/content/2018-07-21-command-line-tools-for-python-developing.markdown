@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-17 19:20:15
+Date: 2019-07-26 18:55:03
 Author: Ben Chuanlong Du
 Slug: command-line-tools-for-python-developing
 Title: Command-line Tools for Python Developing
@@ -39,6 +39,10 @@ Tags: programming, Python development, command-line, pylint, yapf, pdb, linter, 
         yapf -d yourscript.py
 
 2. [black](https://github.com/ambv/black)
+
+Please refer to 
+[Auto formatters for Python](https://medium.com/3yourmind/auto-formatters-for-python-8925065f9505)
+for detailed comparison between yapf and black.
 
 ## Debugging
 

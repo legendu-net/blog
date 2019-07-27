@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-27 02:21:43
+Date: 2019-07-27 02:26:33
 Author: Benjamin Du
 Slug: instal-the-latest-version-of-python-in-ubuntu
 Title: Instal the Latest Version of Python in Ubuntu
@@ -30,6 +30,9 @@ sudo apt-get install python3.7
 
 ## References
 
+https://websiteforstudents.com/installing-the-latest-python-3-7-on-ubuntu-16-04-18-04/
+
+http://ubuntuhandbook.org/index.php/2019/02/install-python-3-7-ubuntu-18-04/
+
 https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa
 
-https://launchpad.net/~jonathonf/+archive/ubuntu/python-3.7

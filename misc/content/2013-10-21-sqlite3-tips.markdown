@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for SQLite3
-Date: 2019-07-29 23:13:17
+Date: 2019-07-29 23:13:48
 Slug: sqlite-tips
 Category: Software
 Tags: tips, SQLite3, database, FTS5, full-text search
@@ -43,3 +43,4 @@ https://sqlite.org/fts5.html
 
 http://www.sqlitetutorial.net/sqlite-full-text-search/
 
+https://stackoverflow.com/questions/50332436/syntax-error-when-using-row-number-in-sqlite3

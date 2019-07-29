@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-03-10 19:07:51
+Date: 2019-07-28 23:10:16
 Author: Benjamin Du
 Slug: calling-shell-from-python
 Title: Calling Shell from Python
 Category: Programming
-Tags: programming, Python, shell
+Tags: programming, Python, shell, os.system, subprocess
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -15,8 +15,14 @@ It is not meant to readers but rather for convenient reference of the author and
 
 1. It is suggested that you always use full path of command as the environment is not always identical across machines.
 
-2. `subprocess.check_output` is prefered over `subprocess.run` or `os.system` 
-		as the first one will throw exception on errors.
+2. Generally speaking,
+    functions in the module `subprocess` are preferred to the function `os.system`
+    as functions in the module `subproces` are more flexible. 
+    However, 
+    be careful when you use `subprocess.call` to replace `os.system`.
+    You might want to pass the option `check=True` 
+    to turn on exception throwing on erros (turned off by default)
+    if the status of running a command matters. 
 
 3. `echo` and pipe is common trick to feed input into another comamnd. 
     For exampel, 

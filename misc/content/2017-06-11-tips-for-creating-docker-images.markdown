@@ -1,6 +1,6 @@
 UUID: 236e93b3-5eb1-47f0-a006-4ba28ed6546c
 Status: published
-Date: 2017-06-11 18:33:18
+Date: 2019-07-28 23:58:04
 Author: Ben Chuanlong Du
 Slug: tips-for-creating-docker-images
 Title: Tips for Creating Docker Images
@@ -14,17 +14,24 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-1. ADD vs COPY: ADD auto untar which is tricky.
-It is suggested that you avoid use ADD unless you are clear about the side effect.
+1. The `COPY` command copies a file or directory to the Docker image to be built.
+    In addition to copying the file/directory, 
+    the `ADD` command also untars the file if it is a `tar` file.
+    It is suggested that you avoid use the `ADD` command unless you are clear about the side effect.
 
 5. Docker caches building operations. 
-When cache for an operation is available, 
-Docker use the cache layer directly and avoiding building the layer again.
+    When cache for an operation is available, 
+    Docker use the cache layer directly and avoid building the layer again.
 
-7. docker `ARG` for build-time and `ENV` for run-time
+7. The command `ARG` creates environment variables for build-time 
+    while the command `ENV` creates environment variables for run-time.
+    Notice that substring does not work with environment variables created by `ARG`!
+    For example, 
+    if you have a variable created as `ARG version=6.7.6_11`. 
+    `${version:0:3}` won't work in a Dockerfile.
 
 4. You have to tag an image into a docker repository 
-so that you can push the image into the repository. 
+    so that you can push the image into the repository. 
 
 1. it might be a good idea to expose an additional port in docker, if not sure how many services will be used ...
 

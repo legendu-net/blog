@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for SQLite3
-Date: 2019-07-24 22:08:24
+Date: 2019-07-29 23:13:17
 Slug: sqlite-tips
 Category: Software
 Tags: tips, SQLite3, database, FTS5, full-text search
@@ -16,7 +16,7 @@ It is not meant to readers but rather for convenient reference of the author and
 2. You can force query to keep the original order of rows 
     by applying `order by rowid`.
 
-3. SQLite3 supports full-text search by the FTS5 extension.
+3. SQLite3 supports full-text search by the FTS5 extension (since 3.9.0).
   It is suggested that you use the `porter` tokenizer for English searching.
   Please refer to Section *4.3. Tokenizers* of [SQLite FTS5 Extension](https://sqlite.org/fts5.html) for more details.
 
@@ -24,6 +24,12 @@ It is not meant to readers but rather for convenient reference of the author and
   as the locking mechanism might not work correctly.
   For details, 
   please refer to https://www.sqlite.org/draft/faq.html#q5.
+
+5. The window functions are supported since 
+  [SQLite 3.25.0](https://www.sqlite.org/releaselog/3_25_0.html).
+  Notice that the official Python release 3.6.x does not have SQLite 3.25.0.
+  You have to use official Python release Python 3.7+ if you need SQLite 3.25.0+.
+  However, the Anaconda Python 3.6+ releases include SQLite 3.25.0+.
 
 ## Recursive Common Table Expressions
 

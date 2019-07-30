@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2017-03-19 09:57:51
+Date: 2019-07-30 07:46:57
 Slug: network-tips
 Title: Network Tips
 Category: Internet
@@ -27,6 +27,29 @@ It is not meant to readers but rather for convenient reference of the author and
 3. Turn off wireless router and moderm. 
     Start wireless router and wait for 30 seconds,
     and then start the moderm.
+
+## Permanent Change to the File /etc/resolv.conf
+
+https://www.techrepublic.com/article/how-to-set-dns-nameservers-in-ubuntu-server-18-04/
+
+https://unix.stackexchange.com/questions/128220/how-do-i-set-my-dns-when-resolv-conf-is-being-overwritten
+
+https://unix.stackexchange.com/questions/128220/how-do-i-set-my-dns-when-resolv-conf-is-being-overwritten/163506#163506
+
+https://wiki.debian.org/resolv.conf
+
+https://itsfoss.com/resolvconf-permanent-ubuntu/
+
+https://askubuntu.com/questions/623940/network-manager-how-to-stop-nm-updating-etc-resolv-conf/623956#623956
+
+https://askubuntu.com/questions/157154/how-do-i-include-lines-in-resolv-conf-that-wont-get-lost-on-reboot
+
+https://www.linuxquestions.org/questions/linux-software-2/i-can%27t-change-file-permission-via-chattr-4175553888/
+
+https://stackoverflow.com/questions/48578108/what-the-differences-between-chattr-i-file-and-chmod-w-file
+
+https://askubuntu.com/questions/1006741/what-is-the-difference-between-chmod-and-chattr
+
 
 ## List Network Cards 
 

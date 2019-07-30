@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-16 16:46:24
+Date: 2019-07-30 07:46:57
 Author: Benjamin Du
 Slug: network-in-docker-containers
 Title: Network in Docker Containers
@@ -13,6 +13,8 @@ It is not meant to readers but rather for convenient reference of the author and
 
 1. DNS is a common issue in Docker containers, especially behind a corporate firewall.
   In that situation, using IP is one possible solution.
+
+Docker mounts /etc/resolv.conf, ..., etc. 
 
 
 https://docs.docker.com/install/linux/linux-postinstall/#specify-dns-servers-for-docker

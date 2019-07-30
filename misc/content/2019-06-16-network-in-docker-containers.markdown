@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-30 01:06:56
+Date: 2019-07-30 01:15:28
 Author: Benjamin Du
 Slug: network-in-docker-containers
 Title: Network in Docker Containers
@@ -20,7 +20,7 @@ It is not meant to readers but rather for convenient reference of the author and
 
 
 2. Due to possible DNS issues in Docker containers, 
-  it is suggested that you use IP addresses instead of URL names where possible. 
+  it is suggested that you use IP addresses (e.g., proxy servers) instead of URL names where possible. 
 
 
 https://docs.docker.com/config/containers/container-networking/

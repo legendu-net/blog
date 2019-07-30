@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-07-30 07:46:57
+Date: 2019-07-30 01:06:56
 Slug: network-tips
 Title: Network Tips
 Category: Internet
@@ -29,6 +29,21 @@ It is not meant to readers but rather for convenient reference of the author and
     and then start the moderm.
 
 ## Permanent Change to the File /etc/resolv.conf
+
+Notice that the content of `/etc/resolv.conf` is dynamically managed. 
+Content of the file might change after the host machine is rebooted. 
+Below are some ways to make changes to the file `/etc/resolv.conf` permanent.
+(Notice that below are solutions for Linux machines only.
+Do NOT use any of the solutions below when you are building a Docker image
+as Docker has its own way of handling DNS.)
+
+1. Make `/etc/resolv.conf` immutable. 
+
+2. Update the file `/etc/dhcp/dhclient.conf`
+
+3. use `resolvconf`
+
+4. more ...
 
 https://www.techrepublic.com/article/how-to-set-dns-nameservers-in-ubuntu-server-18-04/
 

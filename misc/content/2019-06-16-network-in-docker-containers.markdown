@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-30 07:46:57
+Date: 2019-07-30 01:06:56
 Author: Benjamin Du
 Slug: network-in-docker-containers
 Title: Network in Docker Containers
@@ -11,11 +11,27 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-1. DNS is a common issue in Docker containers, especially behind a corporate firewall.
-  In that situation, using IP is one possible solution.
+1. DNS is a common issue in Docker containers, 
+  especially behind a corporate firewall.
+  While the Linux way of handling DNS is to configure the file `/etc/resolv.conf` 
+  (or via other related configuration files or tools),
+  the Docker way is to pass DNS servers to the container (will be added to `/etc/resolv.conf`) via the option `--dns`. 
+  Multiple DNS servers can be passed using multiple `--dsn` options.
 
-Docker mounts /etc/resolv.conf, ..., etc. 
 
+2. Due to possible DNS issues in Docker containers, 
+  it is suggested that you use IP addresses instead of URL names where possible. 
+
+
+https://docs.docker.com/config/containers/container-networking/
+
+https://docs.docker.com/v17.09/engine/userguide/networking/work-with-networks/#basic-container-networking-example
+
+https://docs.docker.com/v17.09/engine/userguide/networking/
+
+https://docs.docker.com/v17.09/engine/userguide/networking/configure-dns/
+
+https://docs.docker.com/v17.09/engine/userguide/networking/default_network/configure-dns/
 
 https://docs.docker.com/install/linux/linux-postinstall/#specify-dns-servers-for-docker
 

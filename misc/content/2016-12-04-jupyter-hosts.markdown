@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-02 20:55:44
+Date: 2019-07-30 19:01:09
 Author: Ben Chuanlong Du
 Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
@@ -15,7 +15,7 @@ but rather for convenient reference of the author and future improvement.
 
 1. [Cocalc](https://cocalc.com/)
 
-2. [RMOTR Notebooks](https://notebooks.rmotr.com/)
+2. [RMOTR Notebooks](https://notebooks.ai/)
 
 3. [Google Colaboratory](https://colab.research.google.com/)
 

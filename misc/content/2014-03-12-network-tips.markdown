@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-07-30 01:06:56
+Date: 2019-07-30 08:25:40
 Slug: network-tips
 Title: Network Tips
 Category: Internet
@@ -44,6 +44,8 @@ as Docker has its own way of handling DNS.)
 3. use `resolvconf`
 
 4. more ...
+
+https://kb.isc.org/docs/isc-dhcp-44-manual-pages-dhclientconf
 
 https://www.techrepublic.com/article/how-to-set-dns-nameservers-in-ubuntu-server-18-04/
 

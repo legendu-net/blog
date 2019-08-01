@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-07 03:24:27
+Date: 2019-08-01 18:14:39
 Author: Ben Chuanlong Du
 Slug: proxychains-tips
 Title: ProxyChains Tips
@@ -34,7 +34,10 @@ has proxychains (not proxychains-ng) installed.
 
 ## Tricks and Traps 
 
-1. Use IP addresses instead of domain names if you do not know how to set up DNS for ProxyChains.
+1. It is suggested that you use IP addresses instead of URL names when configuring ProxyChains. 
+  The reason is that IP addresses always work while URL names might not work if all the following situations are met.
+    - The proxy is for internal use in an enterprise, which is often the case.
+    - You use ProxyChains in a Docker container and forget to configure DNS for your Docker container.
 
 2. no special requirement on .ssh/config
 

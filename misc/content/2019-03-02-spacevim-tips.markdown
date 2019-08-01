@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-27 20:55:13
+Date: 2019-08-01 17:07:41
 Author: Benjamin Du
 Slug: spacevim-tips
 Title: SpaceVim Tips
@@ -37,7 +37,7 @@ https://github.com/SpaceVim/SpaceVim/issues/78
     By default, 
     `<leader>` is `\` so you can use `\qr` to record macros in SpaceVim.
 
-
+3. Custom configuration files are in the directory `$HOME/.SpaceVim.d`.
 
 
 ## Some Useful Key Bindings

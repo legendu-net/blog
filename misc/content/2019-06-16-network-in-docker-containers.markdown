@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-30 01:15:28
+Date: 2019-08-06 22:07:34
 Author: Benjamin Du
 Slug: network-in-docker-containers
 Title: Network in Docker Containers
@@ -22,6 +22,22 @@ It is not meant to readers but rather for convenient reference of the author and
 2. Due to possible DNS issues in Docker containers, 
   it is suggested that you use IP addresses (e.g., proxy servers) instead of URL names where possible. 
 
+
+## Configure Proxy for Docker Containers
+
+https://docs.docker.com/network/proxy/
+
+## Configure Proxy for Docker Daemon
+
+https://stackoverflow.com/questions/23111631/cannot-download-docker-images-behind-a-proxy
+
+https://docs.docker.com/config/daemon/systemd/
+
+If you set up http_proxy, https_proxy and restart the Docker daemon, 
+it should work.
+
+
+## References
 
 https://docs.docker.com/config/containers/container-networking/
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-01-28 22:48:30
+Date: 2019-08-06 22:10:36
 Author: Ben Chuanlong Du
 Slug: nbconvert-tips
 Title: Converting JupyterLab notebooks
@@ -18,13 +18,14 @@ but rather for convenient reference of the author and future improvement.
     It is suggested that you keep in within 3.
 
 2. You can execute a notebook without converting it to a different format using the following command.
-
-        jupyter nbconvert --to notebook --execute mynotebook.ipynb
-
+    ```Bash
+    jupyter nbconvert --to notebook --execute mynotebook.ipynb
+    ```
     This will generate another notebook with the output inlined.
-    You can use the option `--inplace` to overwrite the inplace file.
-
+    You can use the option `--inplace` to overwrite the file inplace.
+    ```Bash
     jupyter nbconvert --to notebook --inplace --execute mynotebook.ipynb
+    ```
 
 ## References
 

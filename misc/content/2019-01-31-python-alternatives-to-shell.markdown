@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-16 05:39:27
+Date: 2019-08-07 00:11:54
 Author: Ben Chuanlong Du
 Slug: shell-alternatives
 Title: Python Alternatives to Shell
@@ -51,6 +51,18 @@ but rather for convenient reference of the author and future improvement.
     <td> shutil.copyfile('file1', 'file2') </td>
     <td> !cp file1 file2 </td>
     <td> cp file1 file2 </td>
+  </tr>
+  <tr>
+    <td> ln -s file1 file2 </td>
+    <td> os.symlink('file1', 'file2', target_is_directory=True) </td>
+    <td> !ln -s file1 file2 </td>
+    <td> ln -s file1 file2 </td>
+  </tr>
+  <tr>
+    <td> ln -sT file1 file2 </td>
+    <td> os.symlink('file1', 'file2', target_is_directory=False) </td>
+    <td> !ln -sT file1 file2 </td>
+    <td> ln -sT file1 file2 </td>
   </tr>
   <tr>
     <td> rm file </td>

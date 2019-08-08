@@ -1,6 +1,5 @@
-UUID: 8fd99b99-1432-4c31-a603-450743521c21
 Status: published
-Date: 2018-01-03 01:04:37
+Date: 2019-08-08 20:46:07
 Author: Ben Chuanlong Du
 Slug: useful-chrome-extensions
 Title: Useful Chrome Extensions
@@ -20,6 +19,7 @@ A list of useful plugins for Google Chrome.
 - Vimimum, Vrome (Vim-like key bindings)
 - AdBlock Plus (block ads)
 - Pocket (save pages to read later)
+- [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en)
 - Send from Gmail (send the link of current page via Gmail)
 - Git-Browser (version control)
 - Git Crx (version control)

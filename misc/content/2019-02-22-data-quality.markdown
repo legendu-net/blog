@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-02-22 03:36:11
+Date: 2019-08-08 21:51:10
 Author: Benjamin Du
 Slug: data-quality
 Title: Data Quality
 Category: Database
-Tags: database, big data, data quality, data check
+Tags: database, big data, data quality, data check, data profiling
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -27,13 +27,18 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## Useful Libraries
 
-1. [Apache Griffin](https://github.com/apache/griffin)
-
 1. [Optimus](https://github.com/ironmussa/Optimus)
 
+Optimus is the one that is closest to what I want to achieve so far. 
+Looks promissing.
+
+1. [Apache Griffin](https://github.com/apache/griffin)
+
+Apache Griffin supports data profiling but seems to be heavy and limited.
+
 2. [DataCleaner](https://github.com/datacleaner/DataCleaner)
-    looks promising
-    https://datacleaner.github.io/docs/5.4.0/html/
+
+A GUI tool for data cleaning, profiling ,etc.
 
 3. [osdq-spark](https://github.com/arrahtech/osdq-spark)
 

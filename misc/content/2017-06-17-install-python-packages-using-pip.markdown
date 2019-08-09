@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-19 17:51:56
+Date: 2019-08-09 01:12:13
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages Using pip
@@ -11,6 +11,12 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
+## PyPi Statistics
+
+You can check download statistics of Python Packages on PYPI at https://pypistats.org/.
+This is especially helpful if you want to choose from multiple packages.
+
+## Prefer `pip`
 
 `pip` is preferred over OS tools
 (e.g., `apt-get`, `yum`, `wajig`, `aptitude`, etc.) for managing Python packages.

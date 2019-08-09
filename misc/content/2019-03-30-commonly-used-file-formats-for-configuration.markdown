@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-30 02:24:46
+Date: 2019-08-09 01:08:44
 Author: Benjamin Du
 Slug: commonly-used-file-formats-for-configuration
 Title: Commonly Used File Formats for Configuration
@@ -21,3 +21,10 @@ It seems that many people recommend TOML over JSON and YAML.
 ## [TOML](https://github.com/toml-lang/toml)
 
 ## XML
+
+## [translate/translate](https://github.com/translate/translate)
+
+
+## References
+
+https://www.zionandzion.com/json-vs-xml-vs-toml-vs-cson-vs-yaml/

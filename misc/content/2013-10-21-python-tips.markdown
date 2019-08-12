@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-07-26 23:46:39
+Date: 2019-08-12 19:57:50
 Slug: python-tips
 Title: Some Fragmentary Tips About Python
 Category: Programming
@@ -93,9 +93,24 @@ https://stackoverflow.com/questions/101268/hidden-features-of-python
   and throw a (ValueError) exception when a wrong type is provided.
   This helps minimize surprisings.
 
-6. AVOID returning objects of different types from a Python function/method.
+3. AVOID returning objects of different types from a Python function/method.
 
-
+4. Be CAREFULL about Python scripts in the current directory. 
+  They might mess up Python import as they are search for when Python looking for modules.
+  For example, 
+  if you have a Python script named `datetime.py` in the current working directory,
+  it will likely mess up your import if you use the official `datetime` module.
+  This is especially tricky,
+  if you invoke a Python script in shell 
+  and there are other Python scripts in the current working directory of shell 
+  (not the directory which the invoked Python script is located in)
+  whose names conflict with official Python modules.
+  If unfortunately, 
+  the invoked Python script depends on an official module which is hidden by Python scripts in the current working directory,
+  it will likely make your script mal-function.
+  One way to resolve this issue is to manually disable Python from search scripts in the current working directory as modules. 
+  You can achieve this by removing `''` from `sys.path`.
+  
 2. Almost all modern programming languages follow the convention
   of not returnting anything (or in another words, retun void, None, etc.)
   from a mutator method so that you cannot chain on a mutator method.

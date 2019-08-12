@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-08-12 19:57:50
+Date: 2019-08-12 20:15:00
 Slug: python-tips
 Title: Some Fragmentary Tips About Python
 Category: Programming
@@ -100,16 +100,22 @@ https://stackoverflow.com/questions/101268/hidden-features-of-python
   For example, 
   if you have a Python script named `datetime.py` in the current working directory,
   it will likely mess up your import if you use the official `datetime` module.
-  This is especially tricky,
-  if you invoke a Python script in shell 
+  This is true even if the official `datetime` module is indirectly used,
+  e.g.,
+  if you have imported the `numpy` module which imports the `datetime` module,
+  which makes things tricky.
+  It is even more tricky if you invoke a Python script in shell 
   and there are other Python scripts in the current working directory of shell 
   (not the directory which the invoked Python script is located in)
   whose names conflict with official Python modules.
   If unfortunately, 
-  the invoked Python script depends on an official module which is hidden by Python scripts in the current working directory,
-  it will likely make your script mal-function.
-  One way to resolve this issue is to manually disable Python from search scripts in the current working directory as modules. 
-  You can achieve this by removing `''` from `sys.path`.
+  the invoked Python script depends on (even if indirectly) an official module which is hidden by Python scripts in the current working directory,
+  it will likely make your Python script mal-function.
+  It is suggested that you follow the practices below to avoid such tricky issues.
+  - If you use Python shell interactively, avoid placing your scripts into the current working directory of the Python shell.
+    Instead, place them into subdirectories (of the current working directly) and import them as submodules.
+  - If you plan to invoke a Python script via shell, disable Python from search scripts in the current working directory as modules. 
+    This can be done this by removing `''` from `sys.path`.
   
 2. Almost all modern programming languages follow the convention
   of not returnting anything (or in another words, retun void, None, etc.)

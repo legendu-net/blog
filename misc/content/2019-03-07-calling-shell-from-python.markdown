@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-28 23:10:16
+Date: 2019-08-13 21:26:49
 Author: Benjamin Du
 Slug: calling-shell-from-python
 Title: Calling Shell from Python
@@ -44,7 +44,53 @@ It is not meant to readers but rather for convenient reference of the author and
     you can set the option `shell=True`.
 
 
+## subprocess
+
+1. It is suggested that you use the method `subprocess.run` as much as possible 
+  instead of the older high-level APIs (`subprocess.call`, `subprocess.check_call`, `subprocess.check_output`).
+```
+sys.stdout
+subprocess.STDOUT
+os.devnull
+subprocess.DEVNULL
+
+with open(os.devnull, 'w') as devnull:
+    pass
+```
+
+
+To suppress the output, you can redirect to /dev/null
+
+import os
+import subprocess
+
+with open(os.devnull, 'w') as devnull:
+    subprocess.run(['ls', '-l'], stdout=devnull)
+    # The above only redirects stdout...
+    # this will also redirect stderr to /dev/null as well
+    subprocess.run(['ls', '-l'], stdout=devnull, stderr=devnull)
+    # Alternatively, you can merge stderr and stdout streams and redirect
+    # the one stream to /dev/null
+    subprocess.run(['ls', '-l'], stdout=devnull, stderr=subprocess.STDOUT)
+If you want to capture the output (to use later or parse), you need to use subprocess.PIPE
+
+import subprocess
+result = subprocess.run(['ls', '-l'], stdout=subprocess.PIPE)
+print(result.stdout)
+
+# To also capture stderr...
+result = subprocess.run(['ls', '-l'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+print(result.stdout)
+print(result.stderr)
+
+# To mix stdout and stderr into a single string
+result = subprocess.run(['ls', '-l'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+print(result.stdout)
+
+
 ## References
+
+https://stackoverflow.com/questions/41171791/how-to-suppress-the-output-of-subprocess-run
 
 https://docs.python.org/3/library/subprocess.html#replacing-shell-pipeline
 

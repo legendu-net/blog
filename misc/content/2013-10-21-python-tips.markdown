@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-08-12 20:15:00
+Date: 2019-08-15 23:57:14
 Slug: python-tips
 Title: Some Fragmentary Tips About Python
 Category: Programming
@@ -95,28 +95,26 @@ https://stackoverflow.com/questions/101268/hidden-features-of-python
 
 3. AVOID returning objects of different types from a Python function/method.
 
-4. Be CAREFULL about Python scripts in the current directory. 
-  They might mess up Python import as they are search for when Python looking for modules.
-  For example, 
-  if you have a Python script named `datetime.py` in the current working directory,
-  it will likely mess up your import if you use the official `datetime` module.
-  This is true even if the official `datetime` module is indirectly used,
-  e.g.,
-  if you have imported the `numpy` module which imports the `datetime` module,
-  which makes things tricky.
-  It is even more tricky if you invoke a Python script in shell 
-  and there are other Python scripts in the current working directory of shell 
-  (not the directory which the invoked Python script is located in)
-  whose names conflict with official Python modules.
-  If unfortunately, 
-  the invoked Python script depends on (even if indirectly) an official module which is hidden by Python scripts in the current working directory,
-  it will likely make your Python script mal-function.
-  It is suggested that you follow the practices below to avoid such tricky issues.
-  - If you use Python shell interactively, avoid placing your scripts into the current working directory of the Python shell.
-    Instead, place them into subdirectories (of the current working directly) and import them as submodules.
-  - If you plan to invoke a Python script via shell, disable Python from search scripts in the current working directory as modules. 
-    This can be done this by removing `''` from `sys.path`.
-  
+4. Be CAREFULL about module name conflictions!
+  It happens when there are more than one Python scripts with the same name on Python module search paths.
+  This is often not a problem when developing Python packages due to absolute and relative import.
+  However, 
+  this issue can come up in a few situations and can be quite tricky for uers to figure out.
+    a. If an user run a Python script whose parent directory contains a Python script with a name conflicting with other (official) Python modules,
+      this issue will come up.
+    b. An even trickier situation is when a Python script is piped to a Python interpreter directly. 
+      According to [docs about sys.path](https://docs.python.org/3/library/sys.html#sys.path),
+      `sys.path[0]` is initailized to be the empty string on the startup of Python in this situation 
+      which directs Python to search modules in the current directly first.
+      Since an user can run the command in any directory, 
+      it is more likely for him/her to encounter the issue of conflicting module names. 
+  If a Python script is never intended to be imported as a module, 
+  one way to resolove the issue is to simply remove the first element from `sys.path`.
+  ```
+  import sys
+  sys.path.pop(0)
+  ```
+
 2. Almost all modern programming languages follow the convention
   of not returnting anything (or in another words, retun void, None, etc.)
   from a mutator method so that you cannot chain on a mutator method.

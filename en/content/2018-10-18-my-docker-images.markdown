@@ -190,6 +190,8 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
 ### Spark - The BeakerX Scala Kernel
 
+Currently [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/) uses the BeakerX Scala kernel.
+
 1. Open a JupyterLab notebook with the BeakerX Scala kernel from the launcher.
 
 2. Download Spark (say, 2.3.1) dependencies. 
@@ -220,6 +222,8 @@ df.show
 ```
 
 ### Spark - The Almond Scala Kernel
+
+Currently [dclong/jupyterhub-almond](https://hub.docker.com/r/dclong/jupyterhub-almond/) uses the Almond Scala kernel.
 
 1. Open a JupyterLab notebook with the Almond Scala kernel from the launcher.
 
@@ -253,6 +257,8 @@ Please refer to
 for more details.
 
 ### Spark - Apache Toree
+
+Currently [dclong/jupyterhub-toree](https://hub.docker.com/r/dclong/jupyterhub-toree/) uses the Apache Toree Scala kernel.
 
 The Docker image 
 [dclong/jupyterhub-toree](https://github.com/dclong/docker-jupyterhub-toree)

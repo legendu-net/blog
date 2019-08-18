@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-09 01:12:13
+Date: 2019-08-17 22:16:35
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages Using pip
@@ -26,13 +26,13 @@ especially when you encounter dependency issues.
 
 ## Install pip
 
-### Ubuntu
+### On Ubuntu
 
 ```Bash
-wajig install python3-pip
+apt-get install python3-pip
 ```
 
-### Mac
+### On Mac
 
 `pip` should have already been installed when you instal Python using Homebrew or Anaconda.
 
@@ -55,14 +55,14 @@ You can install Python packages to your local directory
 by specifying the `--user` option to `pip`.
 This is extremely useful if you do not have permission 
 to install packages to system-wide locations.
-
-    pip3 install --user mercurial
-
+```Bash
+pip3 install --user mercurial
+```
 The same option `--user` can be used to install a package to local directory
 if you install using the `setup.py` file.
-
-    python setup.py install --user
-
+```Bash
+python setup.py install --user
+```
 Notice that if your Python is installed by Homebrew or you are using Anaconda Python,
 the whole Python is installed to your local directory,
 so that you do not need to use the `--user` option when installing Python packages.
@@ -70,25 +70,25 @@ so that you do not need to use the `--user` option when installing Python packag
 ## Install a Specific Version of a Python Package
 
 1. List all available versions of a Python package. 
-
-        pip3 install pylibmc==
-
+    ```
+    pip3 install pylibmc==
+    ```
 2. Install a specific version of a Python package.
-
-        pip3 install MySQL_python==1.2.2
-
+    ```
+    pip3 install MySQL_python==1.2.2
+    ```
 3. Install pyarrow with a verison of at least 0.14.0.
-```
-pip3 install pyarrow>=0.14.0
-```
-
-3. You can install the pre-release version of a package using the `--pre` option.
+    ```
+    pip3 install pyarrow>=0.14.0
+    ```
+4. You can install the pre-release version of a package using the `--pre` option.
     For example, 
     the current version of pybuilder (0.11.7) is not compatible with Python 3.7.
     If you are using Python 3.7 and still want to use the pybuilder package, 
     you can install the pre-release version (0.12) which is compatible with Python 3.7.
-
-        pip3 install --pre pybuilder
+    ```
+    pip3 install --pre pybuilder
+    ```
 
 ## Difference between --ignore-installed and --force-reinstall
 
@@ -117,12 +117,14 @@ pip3 install --upgrade wheel
 ## List All Installed Python Packages
 
 1. List all installed modules.
-
-        pip3 list --outdated
+    ```
+    pip3 list --outdated
+    ```
 
 2. List outdated modules only.
-
-        pip3 list --outdated
+    ```
+    pip3 list --outdated
+    ```
 
 3. You can also use `help('modules')` to show all installed modules in Python.
 
@@ -138,6 +140,15 @@ you can omit `http://` and the port if the port is 80.
 ```Bash
 pip3 --proxy 10.135.227.47 search notifiers
 ```
+
+Notice that sometimes `pip` does not respect the environment variables.
+In that case, 
+you have to use the option `--proxy` to pass proxy to `pip`.
+And even with the option `--proxy`,
+pip might not work well if you install from a version control system. 
+Just be ware of that.
+[ProxyChains](http://www.legendu.net/misc/blog/proxychains-tips/)
+is likely a solution when that issue happens.
 
 ## Caching
 
@@ -155,8 +166,9 @@ https://github.com/pypa/pip/pull/6391
 1. `pip` supports downloading without installation!
 
 2. Install from the current directory
-
-        pip3 install .
+    ```
+    pip3 install .
+    ```
 
 4. `export LC_ALL=C` resolved an issues of pip3
 

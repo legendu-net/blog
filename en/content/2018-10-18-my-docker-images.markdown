@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-14 14:13:50
+Date: 2019-08-18 00:03:40
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -472,5 +472,7 @@ sc.textFile
     so there won't be orphan subprocesses
     when the process of the Docker container is killed.
     However, launching by shell script is not the best way for managing processes.
+    Please refer to [A Simple Init System](https://blog.phusion.nl/2015/01/20/docker-and-the-pid-1-zombie-reaping-problem/#asimpleinitsystem)
+    for more details.
     I might switch to the [Supervisor](https://github.com/Supervisor/supervisor) for process management
     or use the base image of [pushion/ubuntu](https://github.com/phusion/baseimage-docker) in future.

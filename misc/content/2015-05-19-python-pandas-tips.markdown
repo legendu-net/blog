@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-29 23:15:50
+Date: 2019-08-18 00:46:22
 Author: Ben Chuanlong Du
 Slug: python-pandas-tips
 Title: Python pandas Tips
@@ -47,6 +47,12 @@ pd.set_option('display.max_colwidth', 100)
 
 6. Label-based slicing is inclusive
     as it is not clear what "pass by 1" means for label-based slicing.
+
+7. You can apply a function on a row/column using the method `DataFrame.apply`.
+    However, 
+    it is suggested that you use list compression as much as possible for the following reasons.
+    - A list comprehension is more flexible as lambda is limited (1-line without comma) in Python.
+    - A list comprehension is faster than `DataFrame.apply`, generally speaking.
 
 ## Questions
 

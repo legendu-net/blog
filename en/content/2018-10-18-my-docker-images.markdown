@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-14 14:13:50
+Date: 2019-08-18 00:23:13
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -190,6 +190,8 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
 ### Spark - The BeakerX Scala Kernel
 
+Currently [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/) uses the BeakerX Scala kernel.
+
 1. Open a JupyterLab notebook with the BeakerX Scala kernel from the launcher.
 
 2. Download Spark (say, 2.3.1) dependencies. 
@@ -220,6 +222,8 @@ df.show
 ```
 
 ### Spark - The Almond Scala Kernel
+
+Currently [dclong/jupyterhub-almond](https://hub.docker.com/r/dclong/jupyterhub-almond/) uses the Almond Scala kernel.
 
 1. Open a JupyterLab notebook with the Almond Scala kernel from the launcher.
 
@@ -253,6 +257,8 @@ Please refer to
 for more details.
 
 ### Spark - Apache Toree
+
+Currently [dclong/jupyterhub-toree](https://hub.docker.com/r/dclong/jupyterhub-toree/) uses the Apache Toree Scala kernel.
 
 The Docker image 
 [dclong/jupyterhub-toree](https://github.com/dclong/docker-jupyterhub-toree)
@@ -466,5 +472,7 @@ sc.textFile
     so there won't be orphan subprocesses
     when the process of the Docker container is killed.
     However, launching by shell script is not the best way for managing processes.
+    Please refer to [A Simple Init System](https://blog.phusion.nl/2015/01/20/docker-and-the-pid-1-zombie-reaping-problem/#asimpleinitsystem)
+    for more details.
     I might switch to the [Supervisor](https://github.com/Supervisor/supervisor) for process management
-    or use the base image of [pushion/ubuntu](https://github.com/phusion/baseimage-docker) in future.
+    or use the base image of [pushion/baseimage](https://hub.docker.com/r/phusion/baseimage/) in future.

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-13 21:26:49
+Date: 2019-08-22 01:27:49
 Author: Benjamin Du
 Slug: calling-shell-from-python
 Title: Calling Shell from Python
@@ -86,6 +86,14 @@ print(result.stderr)
 # To mix stdout and stderr into a single string
 result = subprocess.run(['ls', '-l'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 print(result.stdout)
+
+## Capture Output
+
+1. You can use the option `capture_output=True` in Python 3.7+.
+  And you can emulate this using `stdout=PIPE, stderr=PIPE` in Python 3.6.
+  
+
+https://stackoverflow.com/questions/53209127/subprocess-unexpected-keyword-argument-capture-output
 
 
 ## References

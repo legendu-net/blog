@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-14 14:00:13
+Date: 2019-08-23 01:33:58
 Author: Benjamin Du
 Slug: tips-on-xonsh
 Title: Tips on Xonsh
@@ -51,5 +51,15 @@ https://github.com/xonsh/xonsh/issues/1477#event-2481368935
 ## References
 
 [Bash to Xonsh Translation Guide¶](https://xon.sh/bash_to_xsh.html)
+
+[Run Control File](https://xon.sh/xonshrc.html)
+
+[Updating and customizing xonsh](https://xon.sh/customization.html)
+
+[Environment Variables](https://xon.sh/envvars.html)
+
+[Xonribs](https://xon.sh/xontribs.html)
+
+[Environment Variables](https://xon.sh/envvars.html)
 
 https://github.com/xonsh/xonsh/issues/1477#event-2481368935

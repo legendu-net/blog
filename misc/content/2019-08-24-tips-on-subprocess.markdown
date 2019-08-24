@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-24 17:14:46
+Date: 2019-08-24 17:40:29
 Author: Benjamin Du
 Slug: tips-on-subprocess
 Title: Tips on Subprocess
@@ -87,3 +87,7 @@ def run_command(cmd):
 ## References 
 
 https://docs.python.org/3/library/subprocess.html#subprocess.Popen
+
+https://www.endpoint.com/blog/2015/01/28/getting-realtime-output-using-python
+
+https://codecalamity.com/run-subprocess-run/

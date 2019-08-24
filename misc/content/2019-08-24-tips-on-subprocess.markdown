@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-08-24 06:48:05
+Date: 2019-08-24 17:14:46
 Author: Benjamin Du
 Slug: tips-on-subprocess
 Title: Tips on Subprocess
 Category: Programming
-Tags: programming
+Tags: programming, Python, subprocess, tips
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -60,4 +60,30 @@ print(result.stdout)
 
 https://stackoverflow.com/questions/53209127/subprocess-unexpected-keyword-argument-capture-output
 
+## subprocess.Popen
 
+https://www.endpoint.com/blog/2015/01/28/getting-realtime-output-using-python
+
+```
+import subprocess
+import shlex
+import time
+
+def run_command(cmd):
+    process = subprocess.Popen(shlex.split(cmd), stdout=subprocess.PIPE)
+    while True:
+        output = process.stdout.readline().decode()
+        if output == '' and process.poll() is not None:
+            break
+        if output:
+            print(output.strip())
+            print('----')
+        time.sleep(1)
+    rc = process.poll()
+    return rc
+```
+
+
+## References 
+
+https://docs.python.org/3/library/subprocess.html#subprocess.Popen

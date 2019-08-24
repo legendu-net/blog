@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-22 01:27:49
+Date: 2019-08-24 05:59:01
 Author: Benjamin Du
 Slug: calling-shell-from-python
 Title: Calling Shell from Python
@@ -94,6 +94,11 @@ print(result.stdout)
   
 
 https://stackoverflow.com/questions/53209127/subprocess-unexpected-keyword-argument-capture-output
+
+
+## [shlex](https://docs.python.org/3/library/shlex.html)
+
+Parsing Shell commands.
 
 
 ## References

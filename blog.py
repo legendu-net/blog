@@ -752,7 +752,7 @@ def search(blogger, args):
         if token.lower() != 'the' and token.lower() != 'a'
     ]
     blogger.search(' '.join(args.phrase), ' AND '.join(filter_), args.dry_run)
-    show(blogger, args)
+    show(blogger, args, showtitle = True)
 
 
 def _disp_path(path: str, full: bool = True) -> str:

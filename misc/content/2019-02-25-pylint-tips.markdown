@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-26 00:37:49
+Date: 2019-08-25 21:11:08
 Author: Benjamin Du
 Slug: pylint-tips
 Title: pylint Tips
@@ -13,9 +13,16 @@ It is not meant to readers but rather for convenient reference of the author and
 
 
 ## pylint
--E, --errors-only   In error mode, checkers without error messages are disabled and for others, only the ERROR messages are displayed, and no reports are done by default.
 
---disable=R,C
+1. Show ERROR messages only.
+```
+pylint -E some_script.py
+```
+
+2. Show ERROR and WARNING messages only.
+```
+pylint --disable=R,C some_script.py
+```
 
 ## References
 

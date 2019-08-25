@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-25 17:34:58
+Date: 2019-08-25 20:07:41
 Author: Benjamin Du
 Slug: tips-on-subprocess
 Title: Tips on Subprocess
@@ -53,7 +53,7 @@ print(process.stdout)
   Notice that in Python 3.7+ you can capture the output and error by one simple option `capture_output=True`.
   It is equivalent to the options `stdout=PIPE, stderr=PIPE` in older versions of Python.
 
-3. Sometimes running `subprocess.run(cmd)` in a JupyterLab notebook prints nothing even the command `cmd` indeed has output.
+3. Sometimes running `subprocess.run(cmd)` in a JupyterLab notebook prints nothing even the command `cmd` indeed has output in command-line.
   This is likely due to the fact that the command `cmd` output everything to stderr instead of stdout by mistake.
   
 

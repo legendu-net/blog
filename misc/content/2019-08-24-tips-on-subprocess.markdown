@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-24 17:40:29
+Date: 2019-08-25 17:34:58
 Author: Benjamin Du
 Slug: tips-on-subprocess
 Title: Tips on Subprocess
@@ -11,20 +11,13 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-1. It is suggested that you use the method `subprocess.run` as much as possible 
-  instead of the older high-level APIs (`subprocess.call`, `subprocess.check_call`, `subprocess.check_output`).
+1. The method `subprocess.run` is preferred over the older high-level APIs 
+  (`subprocess.call`, `subprocess.check_call`, `subprocess.check_output`).
+  The method `subprocess.Popen` (which powers the high-level APIs) can be used if you need advanced control.
+
+2. To suppress the output of `subprocess.run`,
+  you can redirect the output to `/dev/null`.
 ```
-sys.stdout
-subprocess.STDOUT
-os.devnull
-subprocess.DEVNULL
-
-with open(os.devnull, 'w') as devnull:
-    pass
-```
-
-To suppress the output, you can redirect to /dev/null
-
 import os
 import subprocess
 
@@ -36,29 +29,33 @@ with open(os.devnull, 'w') as devnull:
     # Alternatively, you can merge stderr and stdout streams and redirect
     # the one stream to /dev/null
     subprocess.run(['ls', '-l'], stdout=devnull, stderr=subprocess.STDOUT)
-If you want to capture the output (to use later or parse), you need to use subprocess.PIPE
+```
 
-import subprocess
-result = subprocess.run(['ls', '-l'], stdout=subprocess.PIPE)
-print(result.stdout)
+3. To capture the output, you have to use the option `stdout=PIPE`.
+```
+import subprocess sp
+process = sp.run(['ls', '-l'], stdout=sp.PIPE)
+print(process.stdout)
+```
+  Similarly, to capture to the output, you have to use the option `stderr=PIPE`.
+```
+import subprocess as sp
+process = sp.run(['ls', '-l'], stdout=sp.PIPE, stderr=sp.PIPE)
+print(process.stdout)
+print(process.stderr)
+```
+  To capture both the output and the error in one place, you can use the options `stdout=PIPE, stderr=STDOUT`
+```
+import subprocess as sp
+process = sp.run(['ls', '-l'], stdout=sp.PIPE, stderr=sp.STDOUT)
+print(process.stdout)
+```
+  Notice that in Python 3.7+ you can capture the output and error by one simple option `capture_output=True`.
+  It is equivalent to the options `stdout=PIPE, stderr=PIPE` in older versions of Python.
 
-## To also capture stderr...
-
-result = subprocess.run(['ls', '-l'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-print(result.stdout)
-print(result.stderr)
-
-# To mix stdout and stderr into a single string
-result = subprocess.run(['ls', '-l'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-print(result.stdout)
-
-## Capture Output
-
-1. You can use the option `capture_output=True` in Python 3.7+.
-  And you can emulate this using `stdout=PIPE, stderr=PIPE` in Python 3.6.
+3. Sometimes running `subprocess.run(cmd)` in a JupyterLab notebook prints nothing even the command `cmd` indeed has output.
+  This is likely due to the fact that the command `cmd` output everything to stderr instead of stdout by mistake.
   
-
-https://stackoverflow.com/questions/53209127/subprocess-unexpected-keyword-argument-capture-output
 
 ## subprocess.Popen
 
@@ -83,6 +80,18 @@ def run_command(cmd):
     return rc
 ```
 
+## Comparison of Differenct Devices
+
+1. `sys.stdout` is the standard output stream.
+  `subprocess.STDOUT` refers to the standard out stream of subprocess.
+  It is either `subprocess.PIPE` or `None`.
+```
+os.devnull
+subprocess.DEVNULL
+with open(os.devnull, 'w') as devnull:
+    pass
+```
+
 
 ## References 
 
@@ -91,3 +100,5 @@ https://docs.python.org/3/library/subprocess.html#subprocess.Popen
 https://www.endpoint.com/blog/2015/01/28/getting-realtime-output-using-python
 
 https://codecalamity.com/run-subprocess-run/
+
+https://stackoverflow.com/questions/53209127/subprocess-unexpected-keyword-argument-capture-output

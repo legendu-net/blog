@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-27 09:33:12
+Date: 2019-08-27 09:39:18
 Author: Benjamin Du
 Slug: tips-on-subprocess
 Title: Tips on Subprocess
@@ -35,17 +35,21 @@ It is not meant to readers but rather for convenient reference of the author and
         import subprocess sp
         process = sp.run(['ls', '-l'], stdout=sp.PIPE)
         print(process.stdout)
+
     Similarly, to capture to the output, you have to use the option `stderr=PIPE`.
         :::python
         import subprocess as sp
         process = sp.run(['ls', '-l'], stdout=sp.PIPE, stderr=sp.PIPE)
         print(process.stdout)
         print(process.stderr)
+
     To capture both the output and the error in one place, you can use the options `stdout=PIPE, stderr=STDOUT`
+    
         :::python
         import subprocess as sp
         process = sp.run(['ls', '-l'], stdout=sp.PIPE, stderr=sp.STDOUT)
         print(process.stdout)
+
     Notice that in Python 3.7+ you can capture the output and error by one simple option `capture_output=True`.
     It is equivalent to the options `stdout=PIPE, stderr=PIPE` in older versions of Python.
 

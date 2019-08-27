@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-13 07:06:55
+Date: 2019-08-27 09:09:03
 Author: Ben Chuanlong Du
 Slug: pelican-tips
 Title: Pelican Tips
@@ -26,3 +26,7 @@ https://github.com/alexandrevicenzi/Flex
 ## Anchor Links for Titles
 
 https://github.com/getpelican/pelican/issues/1357
+
+## References
+
+https://sourceforge.net/p/pelican-edt/wiki/markdown_syntax/#md_ex_code

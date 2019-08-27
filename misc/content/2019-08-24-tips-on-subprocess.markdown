@@ -31,12 +31,14 @@ It is not meant to readers but rather for convenient reference of the author and
             subprocess.run(['ls', '-l'], stdout=devnull, stderr=subprocess.STDOUT)
 
 3. To capture the output, you have to use the option `stdout=PIPE`.
+
         :::python
         import subprocess sp
         process = sp.run(['ls', '-l'], stdout=sp.PIPE)
         print(process.stdout)
 
     Similarly, to capture to the output, you have to use the option `stderr=PIPE`.
+
         :::python
         import subprocess as sp
         process = sp.run(['ls', '-l'], stdout=sp.PIPE, stderr=sp.PIPE)
@@ -44,7 +46,7 @@ It is not meant to readers but rather for convenient reference of the author and
         print(process.stderr)
 
     To capture both the output and the error in one place, you can use the options `stdout=PIPE, stderr=STDOUT`
-    
+
         :::python
         import subprocess as sp
         process = sp.run(['ls', '-l'], stdout=sp.PIPE, stderr=sp.STDOUT)

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-25 20:07:41
+Date: 2019-08-27 08:56:44
 Author: Benjamin Du
 Slug: tips-on-subprocess
 Title: Tips on Subprocess
@@ -17,19 +17,19 @@ It is not meant to readers but rather for convenient reference of the author and
 
 2. To suppress the output of `subprocess.run`,
   you can redirect the output to `/dev/null`.
-```
-import os
-import subprocess
+  ```
+  import os
+  import subprocess
 
-with open(os.devnull, 'w') as devnull:
-    subprocess.run(['ls', '-l'], stdout=devnull)
-    # The above only redirects stdout...
-    # this will also redirect stderr to /dev/null as well
-    subprocess.run(['ls', '-l'], stdout=devnull, stderr=devnull)
-    # Alternatively, you can merge stderr and stdout streams and redirect
-    # the one stream to /dev/null
-    subprocess.run(['ls', '-l'], stdout=devnull, stderr=subprocess.STDOUT)
-```
+  with open(os.devnull, 'w') as devnull:
+      subprocess.run(['ls', '-l'], stdout=devnull)
+      # The above only redirects stdout...
+      # this will also redirect stderr to /dev/null as well
+      subprocess.run(['ls', '-l'], stdout=devnull, stderr=devnull)
+      # Alternatively, you can merge stderr and stdout streams and redirect
+      # the one stream to /dev/null
+      subprocess.run(['ls', '-l'], stdout=devnull, stderr=subprocess.STDOUT)
+  ```
 
 3. To capture the output, you have to use the option `stdout=PIPE`.
 ```

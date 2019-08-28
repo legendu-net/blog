@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-25 20:07:41
+Date: 2019-08-27 09:39:18
 Author: Benjamin Du
 Slug: tips-on-subprocess
 Title: Tips on Subprocess
@@ -12,46 +12,48 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 1. The method `subprocess.run` is preferred over the older high-level APIs 
-  (`subprocess.call`, `subprocess.check_call`, `subprocess.check_output`).
-  The method `subprocess.Popen` (which powers the high-level APIs) can be used if you need advanced control.
+    (`subprocess.call`, `subprocess.check_call`, `subprocess.check_output`).
+    The method `subprocess.Popen` (which powers the high-level APIs) can be used if you need advanced control.
 
 2. To suppress the output of `subprocess.run`,
-  you can redirect the output to `/dev/null`.
-```
-import os
-import subprocess
+    you can redirect the output to `/dev/null`.
+        :::Python
+        import os
+        import subprocess
 
-with open(os.devnull, 'w') as devnull:
-    subprocess.run(['ls', '-l'], stdout=devnull)
-    # The above only redirects stdout...
-    # this will also redirect stderr to /dev/null as well
-    subprocess.run(['ls', '-l'], stdout=devnull, stderr=devnull)
-    # Alternatively, you can merge stderr and stdout streams and redirect
-    # the one stream to /dev/null
-    subprocess.run(['ls', '-l'], stdout=devnull, stderr=subprocess.STDOUT)
-```
+        with open(os.devnull, 'w') as devnull:
+            subprocess.run(['ls', '-l'], stdout=devnull)
+            # The above only redirects stdout...
+            # this will also redirect stderr to /dev/null as well
+            subprocess.run(['ls', '-l'], stdout=devnull, stderr=devnull)
+            # Alternatively, you can merge stderr and stdout streams and redirect
+            # the one stream to /dev/null
+            subprocess.run(['ls', '-l'], stdout=devnull, stderr=subprocess.STDOUT)
 
 3. To capture the output, you have to use the option `stdout=PIPE`.
-```
-import subprocess sp
-process = sp.run(['ls', '-l'], stdout=sp.PIPE)
-print(process.stdout)
-```
-  Similarly, to capture to the output, you have to use the option `stderr=PIPE`.
-```
-import subprocess as sp
-process = sp.run(['ls', '-l'], stdout=sp.PIPE, stderr=sp.PIPE)
-print(process.stdout)
-print(process.stderr)
-```
-  To capture both the output and the error in one place, you can use the options `stdout=PIPE, stderr=STDOUT`
-```
-import subprocess as sp
-process = sp.run(['ls', '-l'], stdout=sp.PIPE, stderr=sp.STDOUT)
-print(process.stdout)
-```
-  Notice that in Python 3.7+ you can capture the output and error by one simple option `capture_output=True`.
-  It is equivalent to the options `stdout=PIPE, stderr=PIPE` in older versions of Python.
+
+        :::python
+        import subprocess sp
+        process = sp.run(['ls', '-l'], stdout=sp.PIPE)
+        print(process.stdout)
+
+    Similarly, to capture to the output, you have to use the option `stderr=PIPE`.
+
+        :::python
+        import subprocess as sp
+        process = sp.run(['ls', '-l'], stdout=sp.PIPE, stderr=sp.PIPE)
+        print(process.stdout)
+        print(process.stderr)
+
+    To capture both the output and the error in one place, you can use the options `stdout=PIPE, stderr=STDOUT`
+
+        :::python
+        import subprocess as sp
+        process = sp.run(['ls', '-l'], stdout=sp.PIPE, stderr=sp.STDOUT)
+        print(process.stdout)
+
+    Notice that in Python 3.7+ you can capture the output and error by one simple option `capture_output=True`.
+    It is equivalent to the options `stdout=PIPE, stderr=PIPE` in older versions of Python.
 
 3. Sometimes running `subprocess.run(cmd)` in a JupyterLab notebook prints nothing even the command `cmd` indeed has output in command-line.
   This is likely due to the fact that the command `cmd` output everything to stderr instead of stdout by mistake.
@@ -85,12 +87,11 @@ def run_command(cmd):
 1. `sys.stdout` is the standard output stream.
   `subprocess.STDOUT` refers to the standard out stream of subprocess.
   It is either `subprocess.PIPE` or `None`.
-```
-os.devnull
-subprocess.DEVNULL
-with open(os.devnull, 'w') as devnull:
-    pass
-```
+    :::python
+    os.devnull
+    subprocess.DEVNULL
+    with open(os.devnull, 'w') as devnull:
+        pass
 
 
 ## References 

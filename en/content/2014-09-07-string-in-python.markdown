@@ -1,5 +1,5 @@
 Status: published
-Date: 2017-11-18 09:49:58
+Date: 2019-08-29 00:38:10
 Author: Ben Chuanlong Du
 Slug: string-in-python
 Title: String in Python
@@ -60,3 +60,10 @@ Tags: programming, Python, string, str, character
         " " in "a b"
         # or
         'a b'.find(' ')
+
+## String Prefix
+
+1. f, r, b
+
+2. Notice that prefixes `f` and `r` can be used together 
+  and only these prefixes can be used together.

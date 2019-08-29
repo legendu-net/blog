@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-29 00:23:59
+Date: 2019-08-29 00:27:26
 Author: Benjamin Du
 Slug: argparse-tips
 Title: argparse Tips
@@ -24,4 +24,9 @@ It is not meant to readers but rather for convenient reference of the author and
 
 4. You can check whether an option is defined for a command or not using `'some_option' in args`
   where `args` is a Namespace object returned by `argparse.parse_args`.
+  So that you can use `args.level if 'level' in args else 'INFO'` 
+  to get the value for the option `args.level` with the fallback value `INFO`.
+  You can also convert a Namespace object to a dictionary using the function `vars`,
+  so an even easier way of get the value of an option with a fallback value is use `vars(args).get('level', 'INFO')`.
+
 

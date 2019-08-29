@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-20 23:27:47
+Date: 2019-08-29 08:46:26
 Author: Benjamin Du
 Slug: hyper-js-tips
 Title: Hyper Js Tips
@@ -12,6 +12,9 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 [Awesome Hyper](https://github.com/bnb/awesome-hyper)
+
+## [HyperJS Themes](https://hyper.is/themes)
+verminal is good one
 
 ## Shortcuts
 

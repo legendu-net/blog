@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-29 00:38:10
+Date: 2019-08-29 10:09:22
 Author: Ben Chuanlong Du
 Slug: string-in-python
 Title: String in Python
@@ -13,11 +13,13 @@ Tags: programming, Python, string, str, character
     The first way is of course to have the long string on the the same line,
     which can be ugly.
 
+        :::python
         long_string = 'This is a very looooooooooooooooooooooooooooooooooooooooooooooooooooooong string.'
 
     The second way is to use `+` to concatenate multiple string,
     which is not recommended.
 
+        :::python
         long_string = 'This is a very' +
             'loooooooooooooooooooooooooooooooooooong string.'
 
@@ -26,12 +28,14 @@ Tags: programming, Python, string, str, character
     whites spaces are kept literally in a triple-qutoe string,
     which might not be what you want.
 
+        :::python
         long_string = '''This is a very
             loooooooooooooooooooooooooooooooooooooong string.
             '''
 
     The fourth way is to use parentheses which avoids the side effect of white spaces.
 
+        :::python
         long _string = (
             'This is a very'
             'looooooooooooooooooooooooooooooooooooong string.'
@@ -40,6 +44,7 @@ Tags: programming, Python, string, str, character
     The last way is to use `\` to break a string into multiple lines
     if you don't like the parentheses way.
 
+        :::python
         long_string = 'This is a very' \
             'looooooooooooooooooooooooooooooooooong string.'
 
@@ -57,13 +62,12 @@ Tags: programming, Python, string, str, character
     You can either use the `in` keyword (preferred)
     or `str.find` to perform substring match.
 
+        :::python
         " " in "a b"
         # or
         'a b'.find(' ')
 
 ## String Prefix
 
-1. f, r, b
-
-2. Notice that prefixes `f` and `r` can be used together 
-  and only these prefixes can be used together.
+1. `b`, `r`, `u` and `f` are supported prefixes for strings in Python. 
+    Notice that prefixes `f` and `r` can be used together. 

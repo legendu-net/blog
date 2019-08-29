@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-23 01:33:58
+Date: 2019-08-29 19:30:28
 Author: Benjamin Du
 Slug: tips-on-xonsh
 Title: Tips on Xonsh
@@ -63,3 +63,5 @@ https://github.com/xonsh/xonsh/issues/1477#event-2481368935
 [Environment Variables](https://xon.sh/envvars.html)
 
 https://github.com/xonsh/xonsh/issues/1477#event-2481368935
+
+https://stackoverflow.com/questions/39724184/how-to-write-a-multi-command-alias-in-xonsh/39761905#39761905

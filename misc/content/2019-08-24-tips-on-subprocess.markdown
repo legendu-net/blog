@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-27 09:39:18
+Date: 2019-08-29 01:03:07
 Author: Benjamin Du
 Slug: tips-on-subprocess
 Title: Tips on Subprocess
@@ -93,6 +93,9 @@ def run_command(cmd):
     with open(os.devnull, 'w') as devnull:
         pass
 
+## Terminate a Python subprocess launched with `shell=True`
+
+https://stackoverflow.com/questions/4789837/how-to-terminate-a-python-subprocess-launched-with-shell-true
 
 ## References 
 

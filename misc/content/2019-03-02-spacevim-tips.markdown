@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-01 17:07:41
+Date: 2019-08-30 02:13:49
 Author: Benjamin Du
 Slug: spacevim-tips
 Title: SpaceVim Tips
@@ -136,6 +136,10 @@ https://github.com/SpaceVim/SpaceVim/issues/78
     <td> jump to the windows with the specific number </td>
   </tr>
 </table>
+
+## Lanugage Server Protocol
+
+https://spacevim.org/layers/language-server-protocol/
 
 ## References
 

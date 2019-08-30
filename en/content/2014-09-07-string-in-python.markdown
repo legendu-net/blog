@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-29 10:09:22
+Date: 2019-08-30 22:30:27
 Author: Ben Chuanlong Du
 Slug: string-in-python
 Title: String in Python
@@ -71,3 +71,10 @@ Tags: programming, Python, string, str, character
 
 1. `b`, `r`, `u` and `f` are supported prefixes for strings in Python. 
     Notice that prefixes `f` and `r` can be used together. 
+
+## f-String
+
+1. Be careful about security holes in f-String. 
+  Since f-String can run any code passed to it, 
+  it is open to injection attack. 
+  Avoid using f-String when user input involved.

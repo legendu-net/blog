@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-29 19:30:28
+Date: 2019-08-30 02:21:50
 Author: Benjamin Du
 Slug: tips-on-xonsh
 Title: Tips on Xonsh
@@ -36,6 +36,9 @@ echo f'{x}'
 ## Force (Shell) Subprocess
 
 1. use `os.system` or `subprocess.run`
+
+2. wrap the command in `$()`. 
+    Notice that `$()` cannot be used in the middle of arguments currently.
 
 2. wrap the command in `$[]`
 

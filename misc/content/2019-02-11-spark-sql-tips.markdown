@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-25 00:52:37
+Date: 2019-08-31 02:01:24
 Author: Benjamin Du
 Slug: spark-sql-tips
 Title: Spark SQL Tips
@@ -11,8 +11,12 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-[Spark SQL Guide](https://docs.databricks.com/spark/latest/spark-sql/index.html#spark-sql-language-manual)
+[Spark SQL Guide](https://docs.databricks.com/spark/latest/spark-sql/index.html)
 
+
+0. It is suggested that you use Spark SQL syntax as much as possible 
+  instead of the the Spark DataFrame syntax (even though DataFrame provides more static syntax check)
+  as SQL is a universal language.
 
 1. Spark SQL follows hive sql syntax.
     For example,
@@ -48,14 +52,27 @@ It is not meant to readers but rather for convenient reference of the author and
 println(spark.sql("show create table some_table").collect()(0)(0))
 ```
 
-7. You can use 
+## Spark SQL Create Table
+
+1. The `CREATE TABLE` clause is equivalent to the method `DataFrame.saveAsTable`,
+  which write the DataFrame into a Hive table (format of the Hive table can be specified).
+  You can also create (or replace) a global/temporary view, 
+  which is lazily computed.
+  Notice that a view can be cached too once computed if you explicitly do so
+  (by calling `spark.cacheTable` or use Spark SQL hint).
+
+
+## Spark SQL Hint
+
+1. You can use 
   [Spark SQl hint](https://docs.databricks.com/spark/latest/spark-sql/language-manual/select.html#hints)
   to fine control the behavior of Spark application.
   Specially, 
   a hint for skew join is supported in Spark Spark!
   You can use it to help Spark optimizing the joining when the involved columns are skewed.
-  
 
+https://jaceklaskowski.gitbooks.io/mastering-spark-sql/spark-sql-hint-framework.html#specifying-query-hints
+  
 ## References
 
 https://stackoverflow.com/questions/41254011/sparksql-read-parquet-file-directly

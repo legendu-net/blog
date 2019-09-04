@@ -752,7 +752,7 @@ def search(blogger, args):
         if token.lower() != 'the' and token.lower() != 'a'
     ]
     blogger.search(' '.join(args.phrase), ' AND '.join(filter_), args.dry_run)
-    show(blogger, args, showtitle = True)
+    show(blogger, args)
 
 
 def _disp_path(path: str, full: bool = True) -> str:
@@ -765,9 +765,11 @@ def show(blogger, args, showtitle = False) -> None:
     print(f'\nNumber of matched posts: {total}')
     for id, path in blogger.fetch(args.n):
         path = _disp_path(path, full=args.full_path)
-        print(f'\n{id}: {path}')
         if showtitle:
-            print(f'\nFile name: {_file_name(path)},\nFile Title is: {_file_title(path)}')
+            print(f'\n{id}: {path}')
+            print(f'\nFile name: {_file_name(path)},\nFile title is: {_file_title(path)}')
+        else:
+            print(f'\n{id}: {path}' + '    (' + f'{_file_title(path)}' + ')')
     print('')
 
 

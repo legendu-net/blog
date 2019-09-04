@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-09-04 18:14:22
+Date: 2019-09-04 18:15:22
 Author: Benjamin Du
 Slug: tips-on-npm
 Title: Tips on Npm
@@ -14,3 +14,6 @@ It is not meant to readers but rather for convenient reference of the author and
 1. Avoid using sudo with npm.
 
 https://medium.com/@ExplosionPills/dont-use-sudo-with-npm-still-66e609f5f92
+
+
+https://stackoverflow.com/questions/16151018/npm-throws-error-without-sudo

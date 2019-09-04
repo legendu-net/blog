@@ -773,7 +773,7 @@ def show(blogger, args, showtitle = False) -> None:
             print(f'\n{id}: {path}')
             print(f'\nFile name: {_file_name(path)},\nFile title is: {_file_title(path)}')
         else:
-            print(f'\n{id}: {path}  ({_file_title(path)})')
+            print(f'\n{id}: {_file_title(path)}    <{path}>')
     print('')
 
 

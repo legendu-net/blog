@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for SQLite3
-Date: 2019-07-29 23:13:48
+Date: 2019-09-04 19:35:25
 Slug: sqlite-tips
 Category: Software
 Tags: tips, SQLite3, database, FTS5, full-text search
@@ -36,6 +36,10 @@ It is not meant to readers but rather for convenient reference of the author and
 https://www.sqlite.org/lang_with.html
 
 https://stackoverflow.com/questions/34659643/split-a-string-into-rows-using-pure-sqlite
+
+## Issues
+
+https://stackoverflow.com/questions/25705671/python-attributeerror-module-object-has-no-attribute-connect
 
 ## References
 

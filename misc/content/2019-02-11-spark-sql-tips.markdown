@@ -65,16 +65,49 @@ println(spark.sql("show create table some_table").collect()(0)(0))
 ## Spark SQL Hint
 
 1. You can use 
-  [Spark SQl hint](https://docs.databricks.com/spark/latest/spark-sql/language-manual/select.html#hints)
+  [Spark SQL hint](https://docs.databricks.com/spark/latest/spark-sql/language-manual/select.html#hints)
   to fine control the behavior of Spark application.
   Specially, 
   a hint for skew join is supported in Spark Spark!
   You can use it to help Spark optimizing the joining when the involved columns are skewed.
 
-https://jaceklaskowski.gitbooks.io/mastering-spark-sql/spark-sql-hint-framework.html#specifying-query-hints
+### COALESCE and REPARTITION Hints
+
+```
+SELECT /*+ COALESCE(5) */ ...
+
+SELECT /*+ REPARTITION(3) */ ...
+```
+### Join Hints
+```
+SELECT /*+ MAPJOIN(b) */ ...
+
+SELECT /*+ BROADCASTJOIN(b) */ ...
+
+SELECT /*+ BROADCAST(b) */ ...
+
+SELECT /*+ RANGE_JOIN(points, 10) */ *
+FROM points JOIN ranges ON points.p >= ranges.start AND points.p < ranges.end;
+
+SELECT /*+ RANGE_JOIN(r1, 0.1) */ *
+FROM (SELECT * FROM ranges WHERE ranges.amount < 100) r1, ranges r2
+WHERE r1.start < r2.start + 100 AND r2.start < r1.start + 100;
+
+SELECT /*+ RANGE_JOIN(C, 500) */ *
+FROM a
+  JOIN b ON (a.b_key = b.id)
+  JOIN c ON (a.ts BETWEEN c.start_time AND c.end_time)
+```
+### Skew Hint
+```
+SELECT /*+ SKEW('orders') */ * FROM customers, orders WHERE o_custId = c_custId
+SELECT /*+ SKEW('orders'), BROADCAST(demographic) */ * FROM orders, customers, demographic WHERE o_custId = c_custId AND c_demoId = d_demoId
+```
   
 ## References
 
 https://stackoverflow.com/questions/41254011/sparksql-read-parquet-file-directly
 
 http://www.joefkelley.com/736/
+
+https://jaceklaskowski.gitbooks.io/mastering-spark-sql/spark-sql-hint-framework.html#specifying-query-hints

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-09 03:38:03
+Date: 2019-09-07 06:52:17
 Author: Benjamin Du
 Slug: tips-on-yaml
 Title: Tips on Yaml
@@ -15,12 +15,30 @@ https://yaml.org/
 
 https://yaml.org/spec/1.2/spec.html#directive/
 
+## YAML in Python
+
+http://sweetohm.net/article/introduction-yaml.en.html
+
+https://pyyaml.org/wiki/PyYAMLDocumentation
+
+
 1. PyYAML is the most popular Python library for parsing YAML.
 
 2. [SnakeYaml](https://bitbucket.org/asomov/snakeyaml/src/default/)
   is a high quality YAML library for JVM-based languages (Java, Scala, etc.)
   [circe-yaml](https://github.com/circe/circe-yaml)
   is a Scala library for parsing YAML.
+
+## Ranges in YAML
+
+https://stackoverflow.com/questions/48199439/use-range-with-stepsize-in-yaml-file
+
+
+## JINJA & YAML
+
+https://docs.saltstack.com/en/latest/topics/jinja/index.html
+
+https://medium.com/@deepak7093/dynamic-code-generator-using-yaml-config-and-jinja2-templates-31d8b9663fb0
 
 
 ## References

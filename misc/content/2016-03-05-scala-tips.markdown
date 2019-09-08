@@ -1,5 +1,5 @@
 Status: published
-Date: 2017-06-17 10:03:34
+Date: 2019-09-08 21:46:50
 Author: Ben Chuanlong Du
 Slug: scala-tips
 Title: Scala Tips
@@ -35,6 +35,10 @@ but rather for convenient reference of the author and future improvement.
 1. avoid using break, continue, return even though you can use them in Scala
 
 2. avoid using while loop but don't go too crazy
+
+## scala.util.Random
+
+It is a wrapper of `java.util.Random` which is NOT a high quality random number generator.
 
 ## Argument Parsing
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2018-12-20 10:13:28
+Date: 2019-09-08 17:23:44
 Author: Ben Chuanlong Du
 Slug: gradle-tips
 Title: General Tips for Gradle
@@ -63,6 +63,13 @@ shadowJar {
     exclude "LICENSE*"
 }
 ```
+
+## Shadow
+
+archiveClassifier 
+
+https://github.com/johnrengelman/shadow/issues/463#event-2615996541
+
 ## Gradle Sync
 
 1. support only local sync

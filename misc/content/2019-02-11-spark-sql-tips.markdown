@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-31 02:01:24
+Date: 2019-09-10 08:38:39
 Author: Benjamin Du
 Slug: spark-sql-tips
 Title: Spark SQL Tips
@@ -25,6 +25,7 @@ It is not meant to readers but rather for convenient reference of the author and
 
 2. JSON, ORC, Parquet and CSV files can be queried using Spark SQL without creating a table on the Spark DataFrame.
 
+        :::sql
         select
             *
         from
@@ -61,6 +62,53 @@ println(spark.sql("show create table some_table").collect()(0)(0))
   Notice that a view can be cached too once computed if you explicitly do so
   (by calling `spark.cacheTable` or use Spark SQL hint).
 
+## Union
+
+The following queries work.
+    :::sql
+    SELECT *
+    FROM mrkt_data.target_unit
+    WHERE impressions IS NULL
+    UNION
+    SELECT *
+    FROM mrkt_data.target_unit
+    WHERE impressions < 0
+
+    :::sql
+    (SELECT *
+         FROM mrkt_data.target_unit
+         WHERE impressions IS NULL
+         LIMIT 10)
+    UNION
+        (SELECT *
+         FROM mrkt_data.target_unit
+         WHERE impressions < 0
+         LIMIT 10)
+
+    :::sql
+    (SELECT *
+     FROM mrkt_data.target_unit
+     WHERE impressions IS NULL
+     LIMIT 10)
+    UNION ALL
+    (SELECT *
+     FROM mrkt_data.target_unit
+     WHERE impressions < 0
+     LIMIT 10)
+  However, the following one does not.
+
+      :::sql
+      SELECT *
+      FROM mrkt_data.target_unit
+      WHERE impressions IS NULL
+      LIMIT 10
+      UNION
+      SELECT *
+      FROM mrkt_data.target_unit
+      WHERE impressions < 0
+      LIMIT 10
+
+It is suggested that you always enclose subqueries in parentheses!
 
 ## Spark SQL Hint
 

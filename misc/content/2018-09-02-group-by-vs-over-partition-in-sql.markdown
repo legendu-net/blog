@@ -1,6 +1,5 @@
-UUID: f8b36b89-93d0-4f07-8929-0ec567d2564c
 Status: published
-Date: 2018-09-02 13:15:43
+Date: 2019-09-12 18:40:34
 Author: Ben Chuanlong Du
 Slug: group-by-vs-over-partition-in-sql
 Title: Group by vs Over Partition in SQL
@@ -14,8 +13,7 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-[SQL Server: Difference between PARTITION BY and GROUP BY]
-(http://stackoverflow.com/questions/2404565/sql-server-difference-between-partition-by-and-group-by)
+[SQL Server: Difference between PARTITION BY and GROUP BY](http://stackoverflow.com/questions/2404565/sql-server-difference-between-partition-by-and-group-by)
 
 1. `group by` alwasy aggreates values. 
     That is `group by` alwasy reduces a group of values to 1 value.

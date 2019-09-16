@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-29 01:03:07
+Date: 2019-09-16 22:13:56
 Author: Benjamin Du
 Slug: tips-on-subprocess
 Title: Tips on Subprocess
@@ -57,6 +57,9 @@ It is not meant to readers but rather for convenient reference of the author and
 
 3. Sometimes running `subprocess.run(cmd)` in a JupyterLab notebook prints nothing even the command `cmd` indeed has output in command-line.
   This is likely due to the fact that the command `cmd` output everything to stderr instead of stdout by mistake.
+
+
+4. It is suggested that you keep the option `check=False` as error code is more flexible than throwing exception in subprocess.
   
 
 ## subprocess.Popen

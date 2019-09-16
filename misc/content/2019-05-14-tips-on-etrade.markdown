@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-09-16 23:28:30
+Date: 2019-09-16 23:29:49
 Author: Benjamin Du
 Slug: tips-on-etrade
 Title: Tips on eTrade
@@ -40,3 +40,7 @@ You'll see "View Confirmation of Release" below the grant details.
 Generally when you sell ESPP no tax is paid upon selling them. 
 However, 
 coming tax season we will provide you a tax form. Where you can then work with an accountant or tax advisor on how to report that.
+
+## Questionso
+
+1. Can I withould tax when I sell RSU shares and pay in the next tax season?

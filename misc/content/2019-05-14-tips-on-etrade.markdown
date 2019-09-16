@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-22 08:26:45
+Date: 2019-09-16 23:28:30
 Author: Benjamin Du
 Slug: tips-on-etrade
 Title: Tips on eTrade
@@ -28,4 +28,15 @@ It is not meant to readers but rather for convenient reference of the author and
   You must have a Complete Investment Account in order to add External Funding Accounts.
   You can submit a Registration Change form to update your account to a Complete Investment Account. 
 
+## Tax
 
+When RSU shares vest, 
+shares are withheld and sold to cover your tax commitment. 
+The percentage withheld is dictated by your employer typically to match how your bonus are taxed. 
+They deliver those instructions to us and we must comply. 
+You can view this for yourself in the Release of Confirmation 
+by going to "Stock Plans" >> "Holdings" and expanding the blue arrow next to the grant date. 
+You'll see "View Confirmation of Release" below the grant details. 
+Generally when you sell ESPP no tax is paid upon selling them. 
+However, 
+coming tax season we will provide you a tax form. Where you can then work with an accountant or tax advisor on how to report that.

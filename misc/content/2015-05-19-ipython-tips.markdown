@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-02-28 01:55:14
+Date: 2019-09-16 22:09:36
 Author: Ben Chuanlong Du
 Slug: ipython-tips
-Title: IPython Tips
+Title: Tips on IPython
 Category: Programming
 Tags: programming, Python, tips, IPython
 

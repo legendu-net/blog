@@ -1,8 +1,8 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-08-15 23:57:14
+Date: 2019-09-16 22:09:36
 Slug: python-tips
-Title: Some Fragmentary Tips About Python
+Title: Tips on Python
 Category: Programming
 Tags: tips, Python, programming
 
@@ -79,6 +79,10 @@ It is not meant to readers but rather for convenient reference of the author and
   For example, if `x` is a global variable
   and you want to write to it in a method,
   you have to declare `global x` at the beginning of the method.
+
+## Bugs
+
+1. It seems to me that the `flush=True` option of the `print` function doesn't work as expected in Python 3.6.
 
 ## Tricks and Traps
 

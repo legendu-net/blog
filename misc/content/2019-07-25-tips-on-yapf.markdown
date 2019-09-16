@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-28 02:28:13
+Date: 2019-09-16 22:12:27
 Author: Benjamin Du
 Slug: tips-on-yapf
 Title: Tips on yapf
@@ -37,6 +37,12 @@ It is not meant to readers but rather for convenient reference of the author and
 EACH_DICT_ENTRY_ON_SEPARATE_LINE = True
 ALLOW_SPLIT_BEFORE_DICT_VALUE = False
 ```
+
+## Tricks and Traps
+
+1. When `--diff/-d` is supplied, YAPF returns zero when no changes were necessary, 
+  non-zero otherwise (including program error).
+  You can use this in a CI workflow to test that code has been YAPF-formatted.
 
 ## References
 

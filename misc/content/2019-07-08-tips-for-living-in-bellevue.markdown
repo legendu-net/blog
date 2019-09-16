@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-08 22:24:18
+Date: 2019-09-16 23:43:37
 Author: Benjamin Du
 Slug: tips-for-living-in-bellevue
 Title: Tips for Living in Bellevue
@@ -23,3 +23,14 @@ Gyu-Kaku Japanese BBQ
 Twilight 7 Asian Dining & Karaoke Lounge
 
 Dough Zone Dumplings
+
+## Super Market
+
+### QFC 
+
+### Jingjing Asian Market
+
+咸鸭蛋
+
+卤肉饭
+

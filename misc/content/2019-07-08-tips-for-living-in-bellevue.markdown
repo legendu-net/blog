@@ -39,4 +39,4 @@ Dolar
 
 ### QFC 
 
-### Jingjing Asian Market
+### [Jingjing Asian Market](http://www.legendu.net/misc/blog/jingjing-asian-market/)

@@ -12,20 +12,3 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
-
-携程  
-
-去哪儿 
-
-阿里旅行
-
-
-
-
-七天 
-
-如家 
-
-汉庭 
-
-速8

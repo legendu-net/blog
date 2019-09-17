@@ -7,13 +7,13 @@ Category: Life
 Tags: tips, life, printing, insurance, internet
 
 **
-Things on this page are fragmentary and immature notes/thoughts of the author. 
+Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
- 
-## Insurance 
 
-1. Geigo is good choice for people who do not have good driving history 
+## Insurance
+
+1. Geigo is good choice for people who do not have good driving history
 but a bad choice for people with good driving history.
 
 Geigo charges about 18% for cancelling policy,
@@ -23,12 +23,12 @@ which is terrible!!!
 
 ## Internet Service
 
-1. Century Link is a very bad one! 
-The speed is slow. 
+1. Century Link is a very bad one!
+The speed is slow.
 Service people are irresponsible.
 I have problem to use SSH and NX services.
 
-2. Time Warner is not good either but is OK. 
+2. Time Warner is not good either but is OK.
 
 ## Health
 
@@ -37,7 +37,7 @@ I have problem to use SSH and NX services.
 
 ## Printing
 
-1. Office 
+1. Office
 2. Library
 3. FedEx/UPS Offices
 
@@ -67,3 +67,22 @@ AA is OK.
 
 From Des Moines to Chicago, Southwest Airlines is good.
 
+## [Tips on Hotel](http://www.legendu.net/misc/blog/hotel-tips/)
+
+Tips on Traveling
+http://www.legendu.net/misc/blog/traveling-tips/
+
+Tips on Sports
+http://www.legendu.net/misc/blog/sports-tips/
+
+Tips on Property
+http://www.legendu.net/misc/blog/tips-on-property/
+
+Tips on Food
+http://www.legendu.net/misc/blog/food-tips/
+
+Tips on Express Delivery
+http://www.legendu.net/misc/blog/shunfeng-deliver/
+
+Tips on Safety
+http://www.legendu.net/misc/blog/safty-tips/

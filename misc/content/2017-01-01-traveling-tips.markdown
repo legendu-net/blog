@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-09-17 00:39:53
+Date: 2019-09-17 01:20:18
 Author: Ben Chuanlong Du
 Slug: traveling-tips
 Title: Traveling Tips
@@ -37,3 +37,9 @@ but rather for convenient reference of the author and future improvement.
 1. go to library for a rest
 
 2. starbucks
+
+## Airlines
+
+[中国东方航空(China Eastern Airlines)座位预定系统] (http://www.ceair.com/server/asr.html) 
+
+

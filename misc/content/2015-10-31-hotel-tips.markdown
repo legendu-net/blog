@@ -1,6 +1,5 @@
-UUID: d61cc459-fb6e-4984-84f0-00f803fef6c2
 Status: published
-Date: 2015-10-31 09:41:52
+Date: 2019-09-17 00:39:53
 Author: Ben Chuanlong Du
 Slug: hotel-tips
 Title: Hotel Tips

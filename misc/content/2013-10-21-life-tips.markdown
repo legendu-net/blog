@@ -1,8 +1,7 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Life Tips
-Date: 2015-03-16 12:57:03
+Date: 2019-09-17 00:39:53
 Slug: life-tips
 Category: Life
 Tags: tips, life, printing, insurance, internet

@@ -1,6 +1,5 @@
-UUID: 178b88e1-c3bf-4b62-b9bc-5dfc63420dec
 Status: published
-Date: 2017-01-01 21:51:01
+Date: 2019-09-17 00:39:53
 Author: Ben Chuanlong Du
 Slug: traveling-tips
 Title: Traveling Tips

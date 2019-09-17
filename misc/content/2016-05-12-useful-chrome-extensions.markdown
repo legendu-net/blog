@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-08 20:46:07
+Date: 2019-09-17 01:01:59
 Author: Ben Chuanlong Du
 Slug: useful-chrome-extensions
 Title: Useful Chrome Extensions
@@ -20,11 +20,14 @@ A list of useful plugins for Google Chrome.
 - AdBlock Plus (block ads)
 - Pocket (save pages to read later)
 - [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en)
+
+## [TabCopy](https://chrome.google.com/webstore/detail/tabcopy/micdllihgoppmejpecmkilggmaagfdmb?hl=en-US)
+Copy all URLs of open tabs.
+
 - Send from Gmail (send the link of current page via Gmail)
 - Git-Browser (version control)
 - Git Crx (version control)
 - Gitnu (version control)
 - feedly (RSS feed)
 - TV Clicker
-- PrintFriendly (print web pages to PDF)
 - Secure SSH (SSH client in Google)

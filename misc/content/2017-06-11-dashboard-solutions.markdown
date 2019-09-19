@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-08 09:37:08
+Date: 2019-09-19 03:14:06
 Author: Ben Chuanlong Du
 Slug: dashboard-solutions
 Title: Dashboard Solutions
@@ -13,9 +13,18 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+## [panel](https://github.com/pyviz/panel)
+
+A high-level app and dashboarding solution for Python. 
+Notice that panel does not support ipywidgets currently.
+
 ## [QuantStack/voila](https://github.com/QuantStack/voila)
 
-The best solution so far for quickly creating ad hoc dashboard leveraging JupyterLab notebooks.
+Turn Jupyter notebooks to standalone web applications and dashboards.
+Notice that voila works with ipywidgets only currently.
+It does not work with Bokeh/HoloViews currently.
+
+https://github.com/QuantStack/voila/issues/244
 
 ## [Redash](https://github.com/getredash/redash)
 
@@ -122,21 +131,11 @@ Dash is a great (even better) alternative to Bokeh.
 I though Dash is based on Plotly APIs but the developers says not 
 (see [this issue](https://github.com/plotly/dash/issues/192)).
 
+https://medium.com/@plotlygraphs/introducing-dash-5ecf7191b503
 
-## Jupyter/JupyterLab Dashboard
+https://dash.plot.ly/
 
-JupyterLab plans to support dashboard in future. 
-Currently, 
-you can use the Jupyter Dashboard.
-JupyterLab Dashboard will probably be the best dashboard for data scientist if implemented.
 
-### Docker Image
-
-[Jupyer Dashboard Docker Deploy](https://github.com/jupyter-incubator/dashboards_setup/tree/master/docker_deploy)
-
-## [Bowtie](https://github.com/jwkvam/bowtie)
-
-Bowtie is another alternative (less appealing) to Bokeh.
 
 ## HVF/franchise
 

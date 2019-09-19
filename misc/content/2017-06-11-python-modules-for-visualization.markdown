@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-26 23:49:57
+Date: 2019-09-19 03:06:29
 Author: Ben Chuanlong Du
 Slug: python-modules-for-visualization
 Title: Python Modules for Visualization
@@ -18,6 +18,10 @@ displays hundreds of charts, always providing the reproducible python code!
 It aims to showcase the awesome dataviz possibilities of python and to help you benefit it. 
 
 ## JS based Modules
+
+### [hvplot](https://github.com/pyviz/hvplot)
+
+A high-level plotting API for pandas, dask, xarray, and networkx built on HoloViews 
 
 ### [Cufflink](https://github.com/santosjorge/cufflinks)
 

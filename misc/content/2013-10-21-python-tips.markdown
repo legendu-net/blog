@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-09-16 22:09:36
+Date: 2019-09-20 19:36:39
 Slug: python-tips
 Title: Tips on Python
 Category: Programming
@@ -130,7 +130,11 @@ https://stackoverflow.com/questions/101268/hidden-features-of-python
   unlike functional programming languages.
   Forgotting a `return` statement is a common mistake in Python.
 
-3. Do NOT use the ternary expression in complicated expressions!!!
+3. According to [Python Operator Precedence](https://docs.python.org/2/reference/expressions.html#operator-precedence),
+  the ternary expression `if - else` has a very low precedence. 
+  However, it has higher precedence than the tuple operator `,`.
+  It is suggested that you always use parentheses to make the precedence clear 
+  when you use the ternary expression in a complicated expression.
 ```
 update = {
     'status': 'succeed', 

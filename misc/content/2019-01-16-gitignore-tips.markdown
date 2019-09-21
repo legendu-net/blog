@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-23 10:30:35
+Date: 2019-09-21 19:16:11
 Author: Ben Chuanlong Du
 Slug: gitignore-tips
 Title: Gitignore Examples
@@ -28,6 +28,7 @@ target/
 dist/
 .coverage
 .mypy
+.mypy_cache
 *.crc
 ```
 

@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-09-20 19:36:39
+Date: 2019-09-21 19:04:14
 Slug: python-tips
 Title: Tips on Python
 Category: Programming
@@ -162,6 +162,10 @@ The issue can be fixed by putting the ternary expression into parentheses or def
   otherwise, use `sys.exit(msg)` instead.
 
 
+6. You cannot use `return` to return result from a generator function.
+  Instead a `return` behaves like raising a StopIteration.
+  Please see this [issue](https://stackoverflow.com/questions/26595895/return-and-yield-in-the-same-function)
+  for more discussions.
 
 ## Design
 

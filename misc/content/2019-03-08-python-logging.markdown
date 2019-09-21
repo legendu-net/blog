@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-26 23:07:38
+Date: 2019-09-21 17:15:22
 Author: Benjamin Du
 Slug: python-logging
 Title: Python Logging
@@ -15,26 +15,25 @@ It is not meant to readers but rather for convenient reference of the author and
 
 The best logging package for Python!
 
-Log an exception using luguru and then throws an exception without logging redundant error messages.
-```
-def throw(_, error, message, *args, **kwargs):
-    message = message.format(*args, **kwargs)
-    logger.opt(depth=1).error(message)
-    raise error(message)
+1. Note that the default logging level is `DEBUG` in loguru
+  and it is not allowed to change the logging level of an created logger object in loguru.
+  You can refer to
+  [changing-the-level-of-an-existing-handler](https://loguru.readthedocs.io/en/latest/resources/recipes.html#changing-the-level-of-an-existing-handler)
+  and
+  [Change level of default handler](https://github.com/Delgan/loguru/issues/51)
+  on ways to changing logging level in loguru.
 
-logger.__class__.throw = throw
+2. Log an exception using luguru and then throws an exception without logging redundant error messages.
 
-logger.throw(ValueError, "Something bad happened")
-```
+        :::python
+        def throw(_, error, message, *args, **kwargs):
+            message = message.format(*args, **kwargs)
+            logger.opt(depth=1).error(message)
+            raise error(message)
 
-Note that the default logging level is `DEBUG` in loguru
-and it is not allowed to change the logging level of an created logger object in loguru.
-You can refer to
-[changing-the-level-of-an-existing-handler](https://loguru.readthedocs.io/en/latest/resources/recipes.html#changing-the-level-of-an-existing-handler)
-and
-[Change level of default handler](https://github.com/Delgan/loguru/issues/51)
-on ways to changing logging level in loguru.
+        logger.__class__.throw = throw
 
+        logger.throw(ValueError, "Something bad happened")
 
 ## [logging](https://docs.python.org/3/library/logging.html)
 

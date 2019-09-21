@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-09-21 18:52:10
+Date: 2019-09-21 18:59:08
 Author: Benjamin Du
 Slug: mypy-tips
 Title: Mypy Tips
@@ -17,6 +17,7 @@ It is not meant to readers but rather for convenient reference of the author and
 --check-untyped-defs
 
 You can use the option `--ignore-missing-imports` to disable the annoying error messages `No library stub file for module...`.
+Please see the [issue](https://github.com/python/mypy/issues/3905) for more details.
 
 You can use `# type: ignore` to silence some errors.
 Please see the [issue](https://github.com/python/mypy/issues/500) for more details.
@@ -35,3 +36,6 @@ https://mypy.readthedocs.io/en/latest/common_issues.html#displaying-the-type-of-
 https://mypy.readthedocs.io/en/latest/kinds_of_types.html#kinds-of-types
 
 https://realpython.com/python-type-checking/
+
+
+https://github.com/python/mypy/issues/3905

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-09-21 17:15:22
+Date: 2019-09-24 23:05:01
 Author: Benjamin Du
 Slug: python-logging
 Title: Python Logging
@@ -34,6 +34,13 @@ The best logging package for Python!
         logger.__class__.throw = throw
 
         logger.throw(ValueError, "Something bad happened")
+
+    Or if you do not care what kind of exception is thrown to user, 
+    you can use the following way which is more concise.
+
+        :::python
+        logger.error(message)
+        sys.exit()
 
 ## [logging](https://docs.python.org/3/library/logging.html)
 

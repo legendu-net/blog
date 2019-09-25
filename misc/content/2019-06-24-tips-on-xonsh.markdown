@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-30 02:21:50
+Date: 2019-09-25 19:15:24
 Author: Benjamin Du
 Slug: tips-on-xonsh
 Title: Tips on Xonsh
@@ -12,6 +12,10 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 https://github.com/xonsh/xonsh/wiki/Cheatsheet
+
+## Tricks and Traps
+
+1. `import xonsh` in a xonsh shell messes up console flush currently.
 
 ## Python Evaluation
 

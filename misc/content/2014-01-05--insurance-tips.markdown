@@ -1,15 +1,24 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Title:  Insurance Tips
 Author: Ben Chuanlong Du
-Date: 2014-12-20 23:30:49
+Date: 2019-09-25 21:42:03
 Slug: -insurance-tips
 Category: Life
 Tags: life, tips, car, insurance
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. It is not meant to readers but rather for convenient reference of the author and future improvement.**
+
+
+## Health Insurance
+
+1. High Deductible medical insurance + HSA seems to be a good choice.
+
+https://www.ehealthinsurance.com/health-plans/ppo
+
+https://www.investopedia.com/insurance/hsa-vs-fsa/
+
  
-## Insurance
+## Car Insurance
 
 1. partner is a bad insurance choice
 

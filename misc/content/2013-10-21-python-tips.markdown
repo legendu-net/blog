@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-09-21 19:04:14
+Date: 2019-09-27 00:07:31
 Slug: python-tips
 Title: Tips on Python
 Category: Programming
@@ -14,6 +14,8 @@ It is not meant to readers but rather for convenient reference of the author and
 <img src="http://dclong.github.io/media/python/python.png" height="200" width="240" align="right"/>
 
 ## Python Doc
+
+https://jeffknupp.com/blog/2018/10/11/write-better-python-functions/
 
 [Comprehensive Python Cheatsheet](https://gto76.github.io/python-cheatsheet/)
 

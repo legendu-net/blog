@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-09-27 00:07:31
+Date: 2019-09-27 00:14:56
 Slug: python-tips
 Title: Tips on Python
 Category: Programming
@@ -15,7 +15,19 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## Python Doc
 
+https://docs.quantifiedcode.com/python-anti-patterns/index.html
+
+
+## Functions 
+
 https://jeffknupp.com/blog/2018/10/11/write-better-python-functions/
+
+https://softwareengineering.stackexchange.com/questions/225682/is-it-a-bad-idea-to-return-different-data-types-from-a-single-function-in-a-dyna
+
+https://stackoverflow.com/questions/1839289/why-should-functions-always-return-the-same-type
+
+https://treyhunner.com/2018/04/keyword-arguments-in-python/
+
 
 [Comprehensive Python Cheatsheet](https://gto76.github.io/python-cheatsheet/)
 

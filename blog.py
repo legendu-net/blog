@@ -615,8 +615,8 @@ def trash(blogger, args):
     if args.files:
         for index, file in enumerate(args.files):
             print(f'\n{index}: {file}')
-        answer = input('\nAre you sure to delete the specified files in the srps table (yes or no): ')
-        if answer == 'yes':
+        answer = input('\nAre you sure to delete the specified files in the srps table (y/N): ')
+        if answer.lower() in ('y', 'yes'):
             blogger.trash(args.files)
     else:
         print('No file to delete is specified!\n')

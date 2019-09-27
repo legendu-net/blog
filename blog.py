@@ -1058,7 +1058,7 @@ def _subparse_search(subparsers):
         help='print out the SQL query without running it.')
     subparser_search.add_argument(
         'phrase',
-        nargs='+',
+        nargs='*',
         default=(),
         help='the phrase to match in posts. '
             'Notice that tokens "a" and "the" are removed from phrase, '

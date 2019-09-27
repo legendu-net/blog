@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-05-15 00:10:02
+Date: 2019-09-27 00:13:13
 Slug: curl-tips
 Title: Tips on cURL
 Category: Software
@@ -30,6 +30,11 @@ Another simple way is to use the option `--proxy` directly.
 This way is preferred if your command/script does not have other dependencies which also requires proxy to work.
     
     curl --proxy http://your.proxy.server:port ...
+
+## Tricks and Traps
+
+1. Use the `-L` option to follow redirect URLs. 
+    This is a really useful trick to use curl to download things from GitHub.
 
 ## Examples
 

@@ -1,0 +1,13 @@
+Status: published
+Author: Ben Chuanlong Du
+Title: Tips for "wget" 
+Date: 2019-09-27 10:36:33
+Slug: wget-tips
+Category: Software
+Tags: tips, wget, web, download
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author. 
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+ 

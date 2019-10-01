@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2018-04-29 23:11:09
+Date: 2019-09-27 11:05:17
 Slug: useful-tools-linux
 Title: Useful Tools in Linux
 Category: OS
@@ -232,13 +232,6 @@ to find software/tools for all kinds of purposes.
 1. Doodle
 2. Survata (for custom surveys)
 3. Google Docs (Google Form can a simple solution to custom surveys)
-
-### (Automated) Web Browsing
-5. wget
-5. curl (command line web browsing/scripting)
-6. mechanize (web browsing/scripting written in python)
-7. Selenium, iMacros
-2. Sikuli Script (automate anything based on image recognition)
 
 ### Finance
 1. gnucash

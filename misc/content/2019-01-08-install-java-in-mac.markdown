@@ -4,7 +4,7 @@ Author: Ben Chuanlong Du
 Slug: install-java8-in-mac
 Title: Install Java 8 in Mac 
 Category: macOS
-Tags: Java, macOS, Homebrew
+Tags: Java, macOS, Homebrew, JDK, mac
 
 **
 Things on this page are
@@ -13,21 +13,13 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-Uninstall the default Java (which has a higher version than 8).
+OpenJDK 8 can be installed on Mac using the following commands.
 
-    brew cask uninstall java
+        :::python3
+        brew tap AdoptOpenJDK/openjdk
+        brew cask install adoptopenjdk8
 
-Install Java 8.
-
-    brew tap caskroom/versions
-    brew cask install java8
-
-You can verify the version of Java using the command below.
-
-	java -version
-
-
-## References
-
-https://stackoverflow.com/questions/24342886/how-to-install-java-8-on-mac
-
+Other versions are also available.
+For more details,
+please refer to 
+https://github.com/AdoptOpenJDK/homebrew-openjdk.

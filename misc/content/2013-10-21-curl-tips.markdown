@@ -1,8 +1,8 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-05-15 00:10:02
+Date: 2019-09-27 00:13:13
 Slug: curl-tips
-Title: Tips on cURL
+Title: Tips on cURL and Wget
 Category: Software
 Tags: tips, cURL, downloading, web, wget
 
@@ -10,6 +10,14 @@ Tags: tips, cURL, downloading, web, wget
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+## cURL vs Wget
+[curl vs wget](https://daniel.haxx.se/docs/curl-vs-wget.html)
+has a detailed comparison between curl and wget.
+In short, 
+curl is more powerful and flexible and thus is preferred to wget
+unless you want to download content recursively from a site 
+(which curl does not support currently).
 
 ## Alternatives to `curl`
 
@@ -31,7 +39,12 @@ This way is preferred if your command/script does not have other dependencies wh
     
     curl --proxy http://your.proxy.server:port ...
 
-## Examples
+## Tricks and Traps
+
+1. Use the `-L` option to follow redirect URLs. 
+    This is a really useful trick to use curl to download things from GitHub.
+
+## cURL Examples
 
 ```
 curl -v --cookie-jar cjar \
@@ -121,6 +134,36 @@ Tip: if you go this route,
 it is often much simpler to deal with the mobile version of a website (if available),
 at least for the authentication step.
 
+
+## Tricks and Traps
+
+`-q`/`--quiet`: quiet mode which turns off wget's output.
+This option is helpful if you want to have the downloaded content as output only.
+`curl` by default is in quiet mode.
+You can force it (or overwrite other non-quiet options) using `-s`/`--silent`.
+
+## Wget Examples
+
+To filter for specific file extensions:
+```sh
+wget -A pdf,jpg -m -p -E -k -K -np http://site/PATH/
+```
+This will mirror the site, but the files without jpg or pdf extension will be automatically removed.
+
+Download all contents under the link.
+```
+wget -r --no-parent -e robots=off http://site/PATH/
+```
+
+Download all contents except HTML files under the link.
+```
+wget -r --no-parent -e robots=off -R "*.html"
+```
+
+wget --no-check-certificate
+
+
+wget --random-wait -r -p -e robots=off -U mozilla
 
 ## References
 

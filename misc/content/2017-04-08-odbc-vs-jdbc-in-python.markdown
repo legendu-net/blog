@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-01 19:37:29
+Date: 2019-10-02 18:37:49
 Author: Ben Chuanlong Du
 Slug: odbc-vs-jdbc-in-python
 Title: ODBC vs JDBC in Python
@@ -116,9 +116,8 @@ https://www.fullstackpython.com/databases.html
 
 http://docs.python-guide.org/en/latest/scenarios/db/
 
-## DBAPI
+## References
 
-the cursor obj has an member description which contains the column information and more ...
+https://docs.python-guide.org/scenarios/db/
 
-https://wiki.vip.corp.ebay.com/pages/viewpage.action?pageId=327124647
-
+https://www.python.org/dev/peps/pep-0249/

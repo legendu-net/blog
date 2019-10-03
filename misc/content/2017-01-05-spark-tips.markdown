@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-26 02:45:41
+Date: 2019-10-03 19:48:08
 Author: Ben Chuanlong Du
 Slug: spark-tips
 Title: Spark Tips
@@ -31,6 +31,9 @@ which are variables that are only “added” to, such as counters and sums.
     Or another way is to just submit your Spark application
     from a server that has very stable network connection.
 
+2. If you are sure that your Spark application is production ready,
+  it is better to submit it with the option `--deploy-mode cluster`.
+  However the default option (`--deploy-mode client`) is good for debugging.
 
 ## Spark Shell
 

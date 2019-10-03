@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-03 19:48:08
+Date: 2019-10-03 20:10:16
 Author: Ben Chuanlong Du
 Slug: spark-tips
 Title: Spark Tips
@@ -34,6 +34,9 @@ which are variables that are only “added” to, such as counters and sums.
 2. If you are sure that your Spark application is production ready,
   it is better to submit it with the option `--deploy-mode cluster`.
   However the default option (`--deploy-mode client`) is good for debugging.
+  And also, `--deploy-mode client` is much faster to submit generally speaking.
+  It is suggested that you use `--deploy-mode client` for ad hoc Spark applications
+  and `--deploy-mode cluster` for production ready applications that need to be run many times.
 
 ## Spark Shell
 

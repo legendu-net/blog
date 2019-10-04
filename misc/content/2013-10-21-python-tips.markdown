@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-09-27 00:14:56
+Date: 2019-10-04 04:19:33
 Slug: python-tips
 Title: Tips on Python
 Category: Programming
@@ -180,6 +180,10 @@ The issue can be fixed by putting the ternary expression into parentheses or def
   Instead a `return` behaves like raising a StopIteration.
   Please see this [issue](https://stackoverflow.com/questions/26595895/return-and-yield-in-the-same-function)
   for more discussions.
+
+7. `max(some_iterable, default=0)`
+
+8. `itertools.chain(iter1, iter2, ...)`
 
 ## Design
 

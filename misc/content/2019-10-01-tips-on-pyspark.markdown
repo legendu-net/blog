@@ -2,7 +2,7 @@ Status: published
 Date: 2019-10-04 03:32:56
 Author: Benjamin Du
 Slug: tips-on-pyspark
-Title: Tips on Pyspark
+Title: Tips on PySpark
 Category: Programming
 Tags: programming
 

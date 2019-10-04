@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-04 20:20:45
+Date: 2019-10-04 20:22:23
 Author: Benjamin Du
 Slug: trick-and-traps-for-python
 Title: Trick and Traps for Python
@@ -104,3 +104,4 @@ The issue can be fixed by putting the ternary expression into parentheses or def
 
 - [Common Mistakes](http://www.toptal.com/python/top-10-mistakes-that-python-programmers-make)
 
+- [Least Astonishment and The Mutble Default Argument](https://stackoverflow.com/questions/1132941/least-astonishment-and-the-mutable-default-argument)

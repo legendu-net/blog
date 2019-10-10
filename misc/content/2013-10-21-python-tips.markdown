@@ -18,7 +18,7 @@ It is not meant to readers but rather for convenient reference of the author and
 https://docs.quantifiedcode.com/python-anti-patterns/index.html
 
 
-## Functions 
+## Functions
 
 https://jeffknupp.com/blog/2018/10/11/write-better-python-functions/
 
@@ -36,37 +36,6 @@ https://treyhunner.com/2018/04/keyword-arguments-in-python/
 - [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
 - [PyVideo](http://pyvideo.org/)
 
-## Python Distirbutions
-
-1. When people talks about Python,
-  it usually means the CPython implementation
-  which you can download from <www.python.org>.
-  There are other interesting Python implementations
-  such as [PyPy](https://pypy.org/) (Python implementation in Python),
-  [Jython](http://www.jython.org/) (Python implementation in Java), etc. exists,
-  however,
-  they have relatively very small use groups.
-  Generally speaking,
-  you want to stay with CPython,
-  i.e., the Python people are taling about unless you have very strong reasons to go with another choice.
-  There are also different distributions among CPython implementations.
-  Anaconda Python is a good one if you do not have sudo permissions in the system.
-
-2. For the CPython implementation,
-  there are different distributions as well.
-  Besides the official Python distribution
-  (which comes by default in many operating systems),
-  Anaconda Python rules the unofficial distributions.
-  It is a great choice which provies an all-in-one installer
-  to use on machines that you don't have sudo permissions
-  as it installs to your home directory by default.
-  Anaconda Python supports 2 different flavors:
-  Anaconda (binded with many popular Python packages) and miniconda (with minimum Python packages).
-  It also invented another package management tool named `conda` to replace `pip`.
-  `conda` is a general purpose package management tool instead of for Python only.
-  It eases the pain of figuring out the right dependencies of Python packages
-  but it is a little bit bloated (with larger installation sizes) compared to `pip`.
-
 ## Environment Variable
 
 1. `os.getenv` gets the value of an environment variable
@@ -83,7 +52,7 @@ https://treyhunner.com/2018/04/keyword-arguments-in-python/
 
 3. Python eval
 
-4. `*args` and `**kwargs`
+4. `*args` and `**kwargs`. Arguments after `*` must be called by name.
 
 6. `sys.stdout.write`, `sys.stdout.flush`, `print`
 
@@ -94,114 +63,6 @@ https://treyhunner.com/2018/04/keyword-arguments-in-python/
   and you want to write to it in a method,
   you have to declare `global x` at the beginning of the method.
 
-## Bugs
-
-1. It seems to me that the `flush=True` option of the `print` function doesn't work as expected in Python 3.6.
-
-## Tricks and Traps
-
-https://docs.python-guide.org/writing/gotchas/
-
-https://stackoverflow.com/questions/101268/hidden-features-of-python
-
-
-1. Use type annotation to make your code more readable and easier to understand.
-
-2. Restrict the types of objects that your function/method can be applied to 
-  and throw a (ValueError) exception when a wrong type is provided.
-  This helps minimize surprisings.
-
-3. AVOID returning objects of different types from a Python function/method.
-
-4. Be CAREFULL about module name conflictions!
-  It happens when there are more than one Python scripts with the same name on Python module search paths.
-  This is often not a problem when developing Python packages due to absolute and relative import.
-  However, 
-  this issue can come up in a few situations and can be quite tricky for uers to figure out.
-    a. If an user run a Python script whose parent directory contains a Python script with a name conflicting with other (official) Python modules,
-      this issue will come up.
-    b. An even trickier situation is when a Python script is piped to a Python interpreter directly. 
-      According to [docs about sys.path](https://docs.python.org/3/library/sys.html#sys.path),
-      `sys.path[0]` is initailized to be the empty string on the startup of Python in this situation 
-      which directs Python to search modules in the current directly first.
-      Since an user can run the command in any directory, 
-      it is more likely for him/her to encounter the issue of conflicting module names. 
-  If a Python script is never intended to be imported as a module, 
-  one way to resolove the issue is to simply remove the first element from `sys.path`.
-  ```
-  import sys
-  sys.path.pop(0)
-  ```
-
-2. Almost all modern programming languages follow the convention
-  of not returnting anything (or in another words, retun void, None, etc.)
-  from a mutator method so that you cannot chain on a mutator method.
-  Functional programming languages enough chaining on methods
-  as they often have immutable objects and the methods return new objects
-  rather than changing the original objects.
-
-2. Python functions (except lambda functions) do not automatically return value
-  unlike functional programming languages.
-  Forgotting a `return` statement is a common mistake in Python.
-
-3. According to [Python Operator Precedence](https://docs.python.org/2/reference/expressions.html#operator-precedence),
-  the ternary expression `if - else` has a very low precedence. 
-  However, it has higher precedence than the tuple operator `,`.
-  It is suggested that you always use parentheses to make the precedence clear 
-  when you use the ternary expression in a complicated expression.
-```
-update = {
-    'status': 'succeed', 
-    'partitions': 52,
-    'size': 28836,
-    'end_time': 1563259850.937318
-}
-[key + ' = ' + f'{val}' if isinstance(val, (int, float)) else f"'{val}'" for key, val in update.items()]
-```
-returns
-```
-["'succeed'", 'partitions = 52', 'size = 28836', 'end_time = 1563259850.937318']
-```
-The issue can be fixed by putting the ternary expression into parentheses or define a (lambda) function for the ternary expression.
-```
-[key + ' = ' + (f'{update[key]}' if isinstance(update[key], (int, float)) else f"'{update[key]}'") for key in update]
-```
-
-4. Backslash (`\`) cannot be used in a f-string (introduced in Python 3.6).
-  There are multiple ways to resolve this issue.
-  First, you can precompute things needed to avoid using `\` in a f-string.
-  Second, you can use `chr(10)` (which returns the backslash) instead.
-
-5. If you need trackback information when throwing an exception use `raise ExceptionClass(msg)`,
-  otherwise, use `sys.exit(msg)` instead.
-
-
-6. You cannot use `return` to return result from a generator function.
-  Instead a `return` behaves like raising a StopIteration.
-  Please see this [issue](https://stackoverflow.com/questions/26595895/return-and-yield-in-the-same-function)
-  for more discussions.
-
-7. `max(some_iterable, default=0)`
-
-8. `itertools.chain(iter1, iter2, ...)`
-
-## Design
-
-1. There is no constant variables in Python.
-    If you need a constant variable in Python,
-    just define one and never change it.
-    It is suggested that you use UPPER_WITH_UNDERSCORE naming style for const variables in Python.
-    There is no private variables/method in Python either.
-    You can change/call any variable/method in a module/class.
-    However,
-    members that start with a single underscore (`_`) are considered as private by convention
-    and you should avoid using them directly.
-
-2. The bottom-most package in Java should be a file in Python.
-    Do not use inner classes in Python.
-    Just put classes in the same module.
-
-3. Python is a dynamic language and thus does not support function/method overloading.
 
 ## Numerical
 
@@ -276,11 +137,6 @@ return `ascii` number of characters
 - [PEP 8 -- Style Guide for Python](http://legacy.python.org/dev/peps/pep-0008/)
 
 
-### Programming Tips and Traps
-
-- [Common Mistakes](http://www.toptal.com/python/top-10-mistakes-that-python-programmers-make)
-
-
 http://builtoncement.org/
 
 https://pythonhosted.org/pyCLI/
@@ -292,32 +148,5 @@ https://pythonhosted.org/pyCLI/
 https://github.com/dlitz/pycrypto
 
 http://stackoverflow.com/questions/3504955/using-rsa-in-python
-
-
-## Data Structure
-
-1. The list object in Python does not have a `find` method which is inconvenient.
-    To do a clean "find" in a list in Python,
-    you can use the following style of code.
-
-        if x in alist:
-            index = alist.index(x)
-
-2. You can use `set(alist)` to get unique values of a list.
-    If you want to return a list (rather than a set) of unique values,
-    you can use `list(set(alist))`.
-    Another way is to use the method `numpy.unique`.
-
-3. The difference between list and tuple in Python is that
-    a list is mutable while a tuple is immutable.
-    So you can think of tuple as immutable version of list.
-    Tuples can be used in dictionarys in Python as keys
-    while lists cannot.
-
-## Collections
-
-1. defaultdict
-
-2. namedtuple
 
 

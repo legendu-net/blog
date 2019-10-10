@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-02-17 19:53:49
+Date: 2019-10-04 20:14:52
 Author: Benjamin Du
 Slug: popular-data-structures-in-python
 Title: Popular Data Structures in Python
 Category: Programming
-Tags: programming, Python, data structure
+Tags: programming, Python, data structure, list, dict, tuple
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -47,3 +47,33 @@ It is not meant to readers but rather for convenient reference of the author and
 ## str
 
 ## pandas.DataFrame
+
+
+
+
+## Data Structure
+
+1. The list object in Python does not have a `find` method which is inconvenient.
+    To do a clean "find" in a list in Python,
+    you can use the following style of code.
+
+        if x in alist:
+            index = alist.index(x)
+
+2. You can use `set(alist)` to get unique values of a list.
+    If you want to return a list (rather than a set) of unique values,
+    you can use `list(set(alist))`.
+    Another way is to use the method `numpy.unique`.
+
+3. The difference between list and tuple in Python is that
+    a list is mutable while a tuple is immutable.
+    So you can think of tuple as immutable version of list.
+    Tuples can be used in dictionarys in Python as keys
+    while lists cannot.
+
+## Collections
+
+1. defaultdict
+
+2. namedtuple
+

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-09-21 19:16:11
+Date: 2019-10-10 09:39:20
 Author: Ben Chuanlong Du
 Slug: gitignore-tips
 Title: Gitignore Examples
@@ -34,39 +34,46 @@ dist/
 
 ## Gitignore Example for Java
 ```
-### Java ###
+# Java 
 *.class
 
-# BlueJ files
+## BlueJ files
 *.ctxt
 
-# Mobile Tools for Java (J2ME)
+## Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+## Package Files
 *.jar
 *.war
 *.ear
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-
-### Gradle ###
+# Gradle 
 .gradle
 /build/
 /out/
 
-# Ignore Gradle GUI config
+## Ignore Gradle GUI config
 gradle-app.setting
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+## Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
 
-# Cache of project
+## Cache of project
 .gradletasknamecache
 
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
-```
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
 
+# Mac
+.DS_Store
+
+# IDE
+.idea/
+
+# Misc
+core
+*.log
+deprecated
+
+```

@@ -1,9 +1,8 @@
-UUID: 038d74d6-ae3a-4d15-a718-b72275cb56d0
 Status: published
-Date: 2018-09-18 00:05:42
+Date: 2019-10-11 01:11:28
 Author: Ben Chuanlong Du
 Slug: resolve-the-dns-contamination-issue-in-firefox
-Title: Resolve the Dns Contamination Issue in Firefox
+Title: Resolve the DNS Contamination Issue in Firefox
 Category: Software
 Tags: software, Firefox, proxy, DNS contamination, socks
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-17 22:16:35
+Date: 2019-10-11 18:37:29
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages Using pip
@@ -16,15 +16,16 @@ It is not meant to readers but rather for convenient reference of the author and
 You can check download statistics of Python Packages on PYPI at https://pypistats.org/.
 This is especially helpful if you want to choose from multiple packages.
 
-## Prefer `pip`
+## Prefer [pip](https://pip.pypa.io/en/stable/reference/)
 
-`pip` is preferred over OS tools
+[pip](https://pip.pypa.io/en/stable/reference/)
+is preferred over OS tools
 (e.g., `apt-get`, `yum`, `wajig`, `aptitude`, etc.) for managing Python packages.
 If you are using Anaconda Python,
 use `conda` (instead of `pip`) to manage Python packages
 especially when you encounter dependency issues.
 
-## Install pip
+## Install [pip](https://pip.pypa.io/en/stable/reference/)
 
 ### On Ubuntu
 

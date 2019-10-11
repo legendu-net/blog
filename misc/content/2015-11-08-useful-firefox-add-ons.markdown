@@ -1,6 +1,6 @@
 UUID: 7abb905a-186d-4944-98be-c8b08ea9e83d
 Status: published
-Date: 2019-10-11 01:13:23
+Date: 2019-10-11 01:20:29
 Author: Ben Chuanlong Du
 Slug: useful-firefox-add-ons
 Title: Useful Firefox Add-ons
@@ -76,13 +76,12 @@ Also Pentadactyl focuses more on 1:1 Vim compatibility.
 
 ## Proxy
 
-- Proxy Switcher and Manager
-
-  The best Proxy Switching plugin (for both Firefox and Chrome)
+Due to technical reasons, PAC configuration based proxy cannot be set up on Firefox currently.
 
 - Proxy SwitchyOmega
 
-  PAC configuration does not work on Firefox.
+  The best Proxy Switching plugin (for both Firefox and Chrome)
+
 
 ## Feeds
 

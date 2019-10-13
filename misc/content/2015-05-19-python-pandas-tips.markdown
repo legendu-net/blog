@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-18 00:46:22
+Date: 2019-10-12 17:40:23
 Author: Ben Chuanlong Du
 Slug: python-pandas-tips
 Title: Python pandas Tips
@@ -14,12 +14,36 @@ but rather for convenient reference of the author and future improvement.
 **
 
 ## `pandas` Settings
+
 ```Python
 import pandas as pd
 pd.set_option('display.max_rows', 1000)
 pd.set_option('display.max_columns', 1000)
 pd.set_option('display.max_colwidth', 100)
 ```
+
+## pandas.Series.str
+
+https://stackoverflow.com/questions/52065909/attributeerror-can-only-use-str-accessor-with-string-values-which-use-np-obje
+
+1. The attribute `pandas.Series.str` can only be used by `str` columns.
+    If you have control of the DataFrame, 
+    the preferred way is to cast the type the column to `str` in the DataFrame. 
+
+        :::Python
+        df.status = df.status.astype(str)
+
+    Generally speaking, 
+    it is a good idea to make sure that a column always have the same type in a pandas DataFrame.
+    If you do not want to cast the column to `str` in the DataFrame (for any reason),
+    you can do this in computation without changing the type of the original column.
+
+        :::Python
+        df = df[df.status.astype(str).str.contains('Exit')]
+
+
+2. `pandas.series.str.replace` supports regular expression.
+
 
 ## Tips
 
@@ -35,10 +59,6 @@ pd.set_option('display.max_colwidth', 100)
     It is suggested that you never use integers as column names or indexes.
     If you do not have a natural meaningful way for the index,
     it is recommended that you use "r1", "r2", ... as the index.
-
-3. `pandas.series.str.replace` supports regular expression.
-
-4. `pandas` also support time delta, you should compare with the MonthDelta module
 
 5. `pandas` keeps the underlying precision (instead of the display precision)
     while reading Excels files.

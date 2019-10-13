@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-09-10 08:38:39
+Date: 2019-10-11 18:15:13
 Author: Benjamin Du
 Slug: spark-sql-tips
 Title: Spark SQL Tips
@@ -151,6 +151,24 @@ FROM a
 SELECT /*+ SKEW('orders') */ * FROM customers, orders WHERE o_custId = c_custId
 SELECT /*+ SKEW('orders'), BROADCAST(demographic) */ * FROM orders, customers, demographic WHERE o_custId = c_custId AND c_demoId = d_demoId
 ```
+
+## Spark SQL Examples
+
+:::SQL
+CREATE TABLE trans (
+     col1 TYPE1,
+     col2 TYPE2,
+     col3 TYPE3
+) USING Parquet OPTIONS (
+  `serialization.format` '1',
+  path 'viewfs://...'
+)
+
+:::SQL
+CREATE TABLE trans 
+  USING Parquet
+  LOCATION '/path/to/table' AS
+select * from some_table where id = 1
   
 ## References
 

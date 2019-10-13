@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-09-25 19:15:24
+Date: 2019-10-13 11:42:29
 Author: Benjamin Du
 Slug: tips-on-xonsh
 Title: Tips on Xonsh
@@ -15,7 +15,21 @@ https://github.com/xonsh/xonsh/wiki/Cheatsheet
 
 ## Tricks and Traps
 
-1. `import xonsh` in a xonsh shell messes up console flush currently.
+1. While `$()` in xonsh works similar to `$()` in (all variants of) shell, 
+    it cannot be used in the middle of argument of a shell command. 
+    Please refer to 
+    [issue 1022](https://github.com/xonsh/xonsh/issues/1022)
+    and
+    [issue 3290](https://github.com/xonsh/xonsh/issues/3290)
+    for more details.
+    My suggestion is to stick to xonsh as much as possible (as Python is much better than shell)
+    unless you encounter the above issues.
+
+2. xonsh messes up console flush sometimes.
+    Please refer to 
+    [issue 3320](https://github.com/xonsh/xonsh/issues/3320)
+    for more details.
+
 
 ## Python Evaluation
 

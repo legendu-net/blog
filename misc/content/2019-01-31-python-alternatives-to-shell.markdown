@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-07 00:11:54
+Date: 2019-10-13 11:55:32
 Author: Ben Chuanlong Du
 Slug: shell-alternatives
 Title: Python Alternatives to Shell
@@ -36,7 +36,7 @@ but rather for convenient reference of the author and future improvement.
   </tr>
   <tr>
     <td> mkdir -p path/to/some/file </td>
-    <td> pathlib.Path.mkdir('path/to/some/file', exist_ok=True) </td>
+    <td> pathlib.Path('path/to/some/file').mkdir(exist_ok=True) </td>
     <td> !mkdir -p path/to/some/file </td>
     <td> mkdir -p path/to/some/file </td>
   </tr>
@@ -59,8 +59,20 @@ but rather for convenient reference of the author and future improvement.
     <td> ln -s file1 file2 </td>
   </tr>
   <tr>
+    <td> ln -s file1 file2 </td>
+    <td> pathlib.Path('file1').symlink_to('file2', target_is_directory=True) </td>
+    <td> !ln -s file1 file2 </td>
+    <td> ln -s file1 file2 </td>
+  </tr>
+  <tr>
     <td> ln -sT file1 file2 </td>
     <td> os.symlink('file1', 'file2', target_is_directory=False) </td>
+    <td> !ln -sT file1 file2 </td>
+    <td> ln -sT file1 file2 </td>
+  </tr>
+  <tr>
+    <td> ln -sT file1 file2 </td>
+    <td> pathlib.Path('file1').symlink_to('file2', target_is_directory=False) </td>
     <td> !ln -sT file1 file2 </td>
     <td> ln -sT file1 file2 </td>
   </tr>
@@ -138,5 +150,7 @@ I personally prefer IPython and xonsh to plumbum.
 https://github.com/ninjaaron/replacing-bash-scripting-with-python
 
 https://stackoverflow.com/questions/209470/how-to-implement-common-bash-idioms-in-python
-**
+
 https://stackoverflow.com/questions/123198/how-do-i-copy-a-file-in-python
+
+https://docs.python.org/3/library/pathlib.html#module-pathlib

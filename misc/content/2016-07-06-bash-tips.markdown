@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-28 22:40:01
+Date: 2019-10-13 10:51:51
 Author: Ben Chuanlong Du
 Slug: bash-tips
 Title: Bash Tips
@@ -12,6 +12,8 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+## Tips and Traps 
 
 1. [explainshell.com](http://www.explainshell.com/) 
     is a great place for learning shell. 
@@ -26,6 +28,10 @@ but rather for convenient reference of the author and future improvement.
 4. Do NOT use `;` to delimit paths passed to a shell command because `;` terminates shell commands.
   Use `,` to delimit paths if needed.
 
+5. `$(some_command)` is preferred over ```some_command```.
+    For more details, 
+    please refer to http://mywiki.wooledge.org/BashFAQ/082.
+    
 ## Redirect Output
 
 1. Redirect `stdout` to the file `output` and `stderr` to another file `error`.

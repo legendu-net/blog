@@ -98,7 +98,7 @@ PLUGIN_PATHS = [os.path.join(BLOG_DIR, 'plugins')]
 PLUGINS = [
         'latex',
         'summary', 
-        'ipynb.markup',
+        'pelican-ipynb.markup',
     ]
 IGNORE_FILES = [".ipynb_checkpoints"]  
 

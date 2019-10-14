@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-08-05 19:25:05
+Date: 2019-10-14 01:17:22
 Title: Tips on Git
 Slug: git-tips
 Category: Software
@@ -14,6 +14,13 @@ It is not meant to readers but rather for convenient reference of the author and
 https://www.gitignore.io/
 
 ## General Git Tips
+
+1. `-C` vs `--git-dir` vs `--work-tree`
+
+        :::Bash
+        git -C /path/to/repository status
+        # which is equivalent to
+        git --git-dir=jupyterhub-ds/.git --work-tree=jupyterhub-ds status
 
 0. Do not work on the master branch directly. 
     Use it purely as the production branch and merge mature features from other branches. 
@@ -92,21 +99,6 @@ corkscrew http://10.135.227.47 80 $*
         git rebase --continue
         git rebase --abort
 
-## Git Bash Shell on Windows
-
-1. git bash shell (on Windows) also uses shitf + insert to paste.
-
-2. Git bash shell use /c, /d, /e, etc. for root path of drives.
-
-3. It seems to me that
-    `git config --global core.fileModel`
-    has no effect on Windows.
-    You can use `git -c core.fileMode=false command` as an alternative.
-
-7. Git diff origin/master..HEAD
-
-8. Git diff 15dc8^!
-
 ## Shadow Clone
 
 1. use
@@ -120,12 +112,6 @@ corkscrew http://10.135.227.47 80 $*
     or
 
         git fetch --depth 1000000
-
-## Submodule
-
-    git submodule init
-
-    git submodule update --recursive --remote
 
 ## Git Syntax
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-15 21:03:59
+Date: 2019-10-15 22:00:46
 Author: Benjamin Du
 Slug: configuration-scripts-for-the-blog-project-on-notebooks.ai
 Title: Configuration Scripts for the Blog Project on Notebooks.Ai
@@ -12,6 +12,8 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 # TODO: save the following code as script and provide a comamnd download and run it!!!
+
+www.legendu.net/media/notebooks.ai.sh
 
     :::Bash
     #!/bin/bash

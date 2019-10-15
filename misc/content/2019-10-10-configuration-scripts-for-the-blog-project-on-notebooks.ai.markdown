@@ -11,9 +11,13 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
+# TODO: save the following code as script and provide a comamnd download and run it!!!
+
     :::Bash
     #!/bin/bash
 
+    ln -svf /app/ /workdir/
+    mkdir /workdir/pkgs
     apt-get update
     apt-get install wajig git
     pip3 install pelican

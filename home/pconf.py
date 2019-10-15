@@ -93,8 +93,6 @@ THEME = os.path.join(BLOG_DIR, 'themes/octopress_0')
 # plugins
 PLUGIN_PATHS = [os.path.join(BLOG_DIR, 'plugins')]
 PLUGINS = [
-        'latex',
-        'ipynb.markup',
     ]
 
 # The theme file should be updated so that the base header contains the line:

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-15 19:12:44
+Date: 2019-10-15 19:16:14
 Author: Benjamin Du
 Slug: configuration-scripts-for-the-blog-project-on-notebooks.ai
 Title: Configuration Scripts for the Blog Project on Notebooks.Ai
@@ -23,6 +23,27 @@ It is not meant to readers but rather for convenient reference of the author and
     if [[ ! -e blog ]]; then
         git clone git@github.com:dclong/blog.git
     fi
+    if [[ ! -e config ]]; then
+        git clone git@github.com:dclong/config.git
+    fi
+    config/linstall.py bash_it -ic
+    config/linstall.py svim -ic
+
+    #!/bin/bash
+
+    apt-get update
+    apt-get install wajig git
+    pip3 install pelican
+    mkdir -p archives
+    ln -svf /app/archives /root/
+    cd archives
+    # blog
+    if [[ ! -e blog ]]; then
+        git clone git@github.com:dclong/blog.git
+    fi
+    git submodule init
+    git submodule update --recursive --remote
+    # config
     if [[ ! -e config ]]; then
         git clone git@github.com:dclong/config.git
     fi

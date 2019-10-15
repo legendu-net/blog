@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-15 20:48:10
+Date: 2019-10-15 20:52:22
 Author: Benjamin Du
 Slug: tips-on-xonsh
 Title: Tips on Xonsh
@@ -32,6 +32,10 @@ https://github.com/xonsh/xonsh/wiki/Cheatsheet
 
 3. `source` sources in a xonsh script.
     `source-bash` sources in a Bash script.
+
+    https://xon.sh/aliases.html#source-bash
+
+    https://github.com/xonsh/xonsh/issues/2978
 
 ## Python Evaluation
 

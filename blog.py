@@ -122,19 +122,22 @@ def _fts_version():
 def _push_github(dir_: str, https: bool):
     path = os.path.join(BASE_DIR, dir_, 'output')
     os.chdir(path)
+    # commit
     if dir_ == 'home':
         shutil.copy('pages/index.html', 'index.html')
     cmd = 'git init && git add --all . && git commit -a -m ...'
     sp.run(cmd, shell=True, check=True)
-    if dir_ == 'home':
-        branch = 'master'
-    else:
+    # push
+    repos = 'dclong.github.io'
+    branch = 'master'
+    if dir_ != 'home':
+        repos = dir_
         branch = 'gh-pages'
         cmd = f'git branch {branch} && git checkout {branch} && git branch -d master'
         sp.run(cmd, shell=True, check=True)
-    url = f'git@github.com:dclong/{dir_}.git'
+    url = f'git@github.com:dclong/{repos}.git'
     if https:
-        url = f'https://github.com/dclong/{dir_}.git'
+        url = f'https://github.com/dclong/{repos}.git'
     cmd = f'git remote add origin {url} && git push origin {branch} --force'
     sp.run(cmd, shell=True, check=True)
 

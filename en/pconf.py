@@ -96,7 +96,7 @@ THEME = os.path.join(BLOG_DIR, 'themes/octopress_2')
 PLUGIN_PATHS = [os.path.join(BLOG_DIR, 'plugins')]
 PLUGINS = [
         'latex',
-        'summary', 
+        'ipynb.markup',
     ]
 
 # disqus comment

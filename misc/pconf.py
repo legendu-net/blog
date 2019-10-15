@@ -97,8 +97,7 @@ MARKUP = ('md', 'ipynb')
 PLUGIN_PATHS = [os.path.join(BLOG_DIR, 'plugins')]
 PLUGINS = [
         'latex',
-        'summary', 
-        'pelican-ipynb.markup',
+        'ipynb.markup',
     ]
 IGNORE_FILES = [".ipynb_checkpoints"]  
 

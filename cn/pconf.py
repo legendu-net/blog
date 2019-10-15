@@ -62,9 +62,11 @@ GITHUB_SHOW_USER_LINK = True
 #          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('LinkedIn', 'http://www.linkedin.com/pub/chuanlong-ben-du/21/9b2/123/'),
-            ('Twitter', 'https://twitter.com/longendu'),
-            ('Facebook', 'https://www.facebook.com/chuanlong.du'))
+SOCIAL = (
+    ('LinkedIn', 'https://www.linkedin.com/in/ben-chuanlong-du-1239b221/'),
+    ('Twitter', 'https://twitter.com/longendu'),
+    ('Facebook', 'https://www.facebook.com/chuanlong.du'),
+)
 
 DEFAULT_PAGINATION = 6
 
@@ -93,8 +95,8 @@ THEME = os.path.join(BLOG_DIR, 'themes/octopress_2')
 # plugins
 PLUGIN_PATHS = [os.path.join(BLOG_DIR, 'plugins')]
 PLUGINS = [
-        'render_math',
-        'summary', 
+        'latex',
+        'ipynb.markup',
     ]
 
 # disqus comment

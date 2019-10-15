@@ -8,6 +8,7 @@ from argparse import ArgumentParser
 import sqlite3
 import datetime
 import shutil
+import subprocess as sp
 import json
 from typing import Union, Sequence, List
 import pelican
@@ -121,21 +122,24 @@ def _fts_version():
 def _push_github(dir_: str, https: bool):
     path = os.path.join(BASE_DIR, dir_, 'output')
     os.chdir(path)
+    # commit
     if dir_ == 'home':
         shutil.copy('pages/index.html', 'index.html')
     cmd = 'git init && git add --all . && git commit -a -m ...'
-    os.system(cmd)
-    if dir_ == 'home':
-        branch = 'master'
-    else:
+    sp.run(cmd, shell=True, check=True)
+    # push
+    repos = 'dclong.github.io'
+    branch = 'master'
+    if dir_ != 'home':
+        repos = dir_
         branch = 'gh-pages'
         cmd = f'git branch {branch} && git checkout {branch} && git branch -d master'
-        os.system(cmd)
-    url = f'git@github.com:dclong/{dir_}.git'
+        sp.run(cmd, shell=True, check=True)
+    url = f'git@github.com:dclong/{repos}.git'
     if https:
-        url = f'https://github.com/dclong/{dir_}.git'
+        url = f'https://github.com/dclong/{repos}.git'
     cmd = f'git remote add origin {url} && git push origin {branch} --force'
-    os.system(cmd)
+    sp.run(cmd, shell=True, check=True)
 
 
 def _pelican_generate(dir_: str):

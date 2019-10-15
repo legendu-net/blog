@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-10 09:39:20
+Date: 2019-10-15 21:44:27
 Author: Ben Chuanlong Du
 Slug: gitignore-tips
 Title: Gitignore Examples
@@ -30,6 +30,7 @@ dist/
 .mypy
 .mypy_cache
 *.crc
+*.egg-info/
 ```
 
 ## Gitignore Example for Java

@@ -8,6 +8,7 @@ from argparse import ArgumentParser
 import sqlite3
 import datetime
 import shutil
+import subprocess as sp
 import json
 from typing import Union, Sequence, List
 import pelican
@@ -124,18 +125,18 @@ def _push_github(dir_: str, https: bool):
     if dir_ == 'home':
         shutil.copy('pages/index.html', 'index.html')
     cmd = 'git init && git add --all . && git commit -a -m ...'
-    os.system(cmd)
+    sp.run(cmd, shell=True, check=True)
     if dir_ == 'home':
         branch = 'master'
     else:
         branch = 'gh-pages'
         cmd = f'git branch {branch} && git checkout {branch} && git branch -d master'
-        os.system(cmd)
+        sp.run(cmd, shell=True, check=True)
     url = f'git@github.com:dclong/{dir_}.git'
     if https:
         url = f'https://github.com/dclong/{dir_}.git'
     cmd = f'git remote add origin {url} && git push origin {branch} --force'
-    os.system(cmd)
+    sp.run(cmd, shell=True, check=True)
 
 
 def _pelican_generate(dir_: str):

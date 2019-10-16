@@ -1,10 +1,16 @@
 Status: published
-Date: 2019-10-04 20:22:23
+Date: 2019-10-16 22:07:28
 Author: Benjamin Du
-Slug: trick-and-traps-for-python
-Title: Trick and Traps for Python
+Slug: python-tips-and-traps 
+Title: Python Tips and Traps
 Category: Programming
 Tags: programming, Python, tricks, traps, tips
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

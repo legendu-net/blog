@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-09-16 22:09:36
+Date: 2019-10-16 18:13:49
 Author: Ben Chuanlong Du
 Slug: ipython-tips
 Title: Tips on IPython
@@ -15,6 +15,10 @@ but rather for convenient reference of the author and future improvement.
 
 
 ## Tricks & Traps 
+
+1. The magic command `%rehashx` automatically create aliases for the contents of your `$PATH`.
+    After running `%rehashx`,
+    most system commands can be used directly.
 
 1. IPython accepts only script with the file extension `.ipy`.
 

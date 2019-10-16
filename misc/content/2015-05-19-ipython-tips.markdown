@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-16 18:13:49
+Date: 2019-10-16 18:14:59
 Author: Ben Chuanlong Du
 Slug: ipython-tips
 Title: Tips on IPython
@@ -45,6 +45,8 @@ but rather for convenient reference of the author and future improvement.
 1. it seems that IPython tries to beautify outputs.
 
 ## References
+
+[IPython Documentation](https://ipython.readthedocs.io/en/stable/index.html)
 
 https://stackoverflow.com/questions/19579546/can-i-access-python-variables-within-a-bash-or-script-ipython-notebook-c
 

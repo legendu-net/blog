@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-10-04 04:19:33
+Date: 2019-10-16 22:09:43
 Slug: python-tips
 Title: Tips on Python
 Category: Programming
@@ -85,10 +85,6 @@ https://treyhunner.com/2018/04/keyword-arguments-in-python/
 		type(obj).__name__
 
 ## File System
-
-1. You can get rid of file extension use the following code.
-
-        os.path.splitext(file_name)[0]
 
 2. `os.mkdir` acts like `mkdir` in Linux and `os.makedirs` acts like `mkdir -p` in Linux.
     Both of them throw an exception if the file already exists.

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-16 22:03:38
+Date: 2019-10-16 22:04:19
 Author: Benjamin Du
 Slug: exception-and-error-handling-in-python
 Title: Exception and Error Handling in Python
@@ -12,3 +12,5 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 https://docs.python.org/3/library/exceptions.html
+
+https://docs.python.org/3/tutorial/errors.html

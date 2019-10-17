@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-10-14 01:17:22
+Date: 2019-10-17 22:10:58
 Title: Tips on Git
 Slug: git-tips
 Category: Software
@@ -98,6 +98,14 @@ corkscrew http://10.135.227.47 80 $*
         git add <some-file>
         git rebase --continue
         git rebase --abort
+
+6. Use the following comamnd to clone into a specific directory.
+    Please refer to 
+    [How do you clone a Git repository into a specific foler?](https://stackoverflow.com/questions/651038/how-do-you-clone-a-git-repository-into-a-specific-folder)
+    for more discussions.
+
+        :::Bash
+        git clone git@github.com:user/repos.git dir_name
 
 ## Shadow Clone
 

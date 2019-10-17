@@ -14,7 +14,7 @@ DEFAULT_DATE_FORMAT = '%b %d, %Y'
 TIMEZONE = 'US/Pacific'
 DEFAULT_LANG = u'en'
 #-------------------------------------------------------------------------
-PATH = os.path.dirname(os.path.abspath(os.path.realpath(__file__)))
+PATH = os.path.dirname(os.path.realpath(__file__))
 BLOG_DIR = os.path.dirname(PATH)
 DELETE_OUTPUT_DIRECTORY = True
 # pages
@@ -83,7 +83,6 @@ STATIC_PATHS = [
             'favicon.png', 
             'media',
             'CNAME',
-            'readme.md',
         ]
 
 CODE_DIR = 'downloads/code'

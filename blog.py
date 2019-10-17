@@ -119,6 +119,19 @@ def _fts_version():
     return 'fts4'
 
 
+def _github_repos_url(dir_: str, https: bool = False) -> str:
+    repos = {
+        'home': 'dclong.github.io',
+        'en': 'en',
+        'cn': 'cn',
+        'misc': 'misc',
+    }[dir_]
+    url = f'git@github.com:dclong/{repos}.git'
+    if https:
+        url = f'https://github.com/dclong/{repos}.git'
+    return url
+
+
 def _push_github(dir_: str, https: bool):
     path = os.path.join(BASE_DIR, dir_, 'output')
     os.chdir(path)
@@ -128,16 +141,7 @@ def _push_github(dir_: str, https: bool):
     cmd = 'git init && git add --all . && git commit -a -m ...'
     sp.run(cmd, shell=True, check=True)
     # push
-    repos = 'dclong.github.io'
-    branch = 'master'
-    if dir_ != 'home':
-        repos = dir_
-        branch = 'gh-pages'
-        cmd = f'git branch {branch} && git checkout {branch} && git branch -d master'
-        sp.run(cmd, shell=True, check=True)
-    url = f'git@github.com:dclong/{repos}.git'
-    if https:
-        url = f'https://github.com/dclong/{repos}.git'
+    url = _github_repos_url(dir_, https)
     cmd = f'git remote add origin {url} && git push origin {branch} --force'
     sp.run(cmd, shell=True, check=True)
 

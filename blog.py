@@ -279,7 +279,8 @@ class Blogger:
             if post.suffix in ('.markdown', '.ipynb'):
                 self._load_post(post)
 
-    def _load_post(self, post: Path):
+    def _load_post(self, post: Union[str, Path]):
+        post = Path(post)
         suffix = post.suffix
         if suffix == '.ipynb':
             self._load_ipynb_post(post)

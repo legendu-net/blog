@@ -142,7 +142,7 @@ def _push_github(dir_: str, https: bool):
     sp.run(cmd, shell=True, check=True)
     # push
     url = _github_repos_url(dir_, https)
-    cmd = f'git remote add origin {url} && git push origin {branch} --force'
+    cmd = f'git remote add origin {url} && git push origin master --force'
     sp.run(cmd, shell=True, check=True)
 
 

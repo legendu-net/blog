@@ -91,7 +91,7 @@ def _blog_dir(post: Path):
     """Get the corresponding blog directory (one of home, en, cn and misc)
     of a post.
     """
-    return post.parent.parent.stem
+    return Path(post).parent.parent.stem
 
 
 def _slug(title: str):

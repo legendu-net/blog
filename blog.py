@@ -181,7 +181,7 @@ class Blogger:
         :param db: the path to the SQLite3 database file.
         """
         self._fts = _fts_version()
-        self._db = db if db else BASE_DIR / '.blogger.sqlite3'
+        self._db = db if db else str(BASE_DIR / '.blogger.sqlite3')
         self._conn = sqlite3.connect(self._db)
         self._create_vtable_posts()
 
@@ -853,16 +853,13 @@ def search(blogger, args):
     show(blogger, args)
 
 
-def _disp_path(path: str, full: bool = True) -> str:
-    return path if full else path.replace(BASE_DIR + '/', '')
-
-
 def show(blogger, args, showtitle = False) -> None:
     sql = 'SELECT count(*) FROM srps'
     total = blogger.query(sql)[0][0]
     print(f'\nNumber of matched posts: {total}')
     for id, path in blogger.fetch(args.n):
-        path = _disp_path(path, full=args.full_path)
+        if not args.full_path:
+            path = Path(path).relative_to(BASE_DIR)
         if showtitle:
             print(f'\n{id}: {path}')
             print(f'\nFile name: {_file_name(path)},\nFile title is: {_file_title(path)}')

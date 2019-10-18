@@ -86,12 +86,11 @@ def _update_time(post):
         fout.writelines(lines)
 
 
-def _blog_dir(post: str):
+def _blog_dir(post: Path):
     """Get the corresponding blog directory (one of home, en, cn and misc)
     of a post.
     """
-    path = os.path.dirname(os.path.dirname(post))
-    return os.path.basename(path)
+    return post.parent().parent().stem()
 
 
 def _slug(title: str):
@@ -272,16 +271,90 @@ class Blogger:
             self._load_posts(os.path.join(BASE_DIR, dir_, 'content'))
         self._conn.commit()
 
-    def _load_posts(self, post_dir):
+    def _load_posts(self, post_dir: str):
         if not os.path.isdir(post_dir):
             return
-        for post in os.listdir(post_dir):
-            if post.endswith('.markdown'):
-                post = os.path.join(post_dir, post)
+        for post in Path(post_dir).iterdir():
+            if post.suffix in ('.markdown', '.ipynb'):
                 self._load_post(post)
 
-    def _load_post(self, post):
-        with open(post, 'r') as fin:
+    def _load_ipynb_post(self, post: Path):
+        content = post.read_text()
+        cells = json.loads(content)['cells']
+        empty = 1 if len(cells) <= 1 else 0
+        if cells[0]['cell_type'] != 'markdown':
+            raise SyntaxError(f'The first cell of the notebook {post} is not a markdown cell!')
+        meta = cells[0]['source']
+        status = ''
+        date = ''
+        author = ''
+        slug = ''
+        title = ''
+        category = ''
+        tags = ''
+        for line in meta:
+            if not re.search('^- [a-zA-Z]+:'):
+                raise SyntaxError(f'The meta line {line} of the notebook {post} does not confront to the format "- MetaField: Value"!')
+            if line.startswith('- Status:'):
+                status = line[9:].strip()
+                continue
+            if line.startswith('- Date:'):
+                status = line[7:].strip()
+                continue
+            if line.startswith('- Author:'):
+                status = line[9:].strip()
+                continue
+            if line.startswith('- Slug:'):
+                status = line[7:].strip()
+                continue
+            if line.startswith('- Title:'):
+                status = line[8:].strip()
+                continue
+            if line.startswith('- Category:'):
+                status = line[11:].strip()
+                continue
+            if line.startswith('- Tags:'):
+                status = line[7:].strip()
+                continue
+        name_title_mismatch = self._is_name_title_mismatch(post, title)
+        sql = '''
+        INSERT INTO posts (
+            path,
+            dir,
+            status,
+            date,
+            author,
+            slug,
+            title,
+            category,
+            tags,
+            content,
+            empty,
+            updated,
+            name_title_mismatch
+        ) VALUES (
+            ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+        )
+        '''
+        self._conn.execute(sql, [
+            str(post),
+            _blog_dir(post),
+            status,
+            date,
+            author,
+            slug,
+            title,
+            category,
+            tags,
+            content,
+            empty,
+            0,
+            name_title_mismatch,
+        ])
+
+
+    def _load_markdwon_post(self, post: Path):
+        with post.open() as fin:
             lines = fin.readlines()
         index = 0
         for index, line in enumerate(lines):
@@ -295,8 +368,7 @@ class Blogger:
         title = ''
         category = ''
         tags = ''
-        for i in range(0, index):
-            line = lines[i]
+        for line in lines[:index]:
             if line.startswith('Status: '):
                 status = line[8:].strip()
             elif line.startswith('Date: '):
@@ -337,7 +409,7 @@ class Blogger:
         )
         '''
         self._conn.execute(sql, [
-            post,
+            str(post),
             _blog_dir(post),
             status,
             date,
@@ -357,7 +429,12 @@ class Blogger:
         is_empty = re.sub(r'\*\*.+\*\*', '', content).replace('**', '') == ''
         return 1 if is_empty else 0
 
-    def _is_name_title_mismatch(self, path, title) -> int:
+    def _is_name_title_mismatch(self, path: Path, title: str) -> int:
+        """Check whether the file anme and the title of the post does not match.
+        :param path: The path of the post.
+        :param title: The title of the post.
+        :return: 1 if mismatch and 0 otherwise.
+        """
         title_new = _format_title(_file_name(path).replace('-', ' '))
         title_old = title.replace('-', ' ')
         return 1 if title_old != title_new else 0
@@ -636,8 +713,8 @@ def find_name_title_mismatch(blogger, args):
     show(blogger, args, showtitle = True)
 
 
-def _file_name(post) -> str:
-    return os.path.basename(post)[11:-9].strip()
+def _file_name(post: Path) -> str:
+    return post.stem[11:]
 
 
 def _file_title(post) -> str:

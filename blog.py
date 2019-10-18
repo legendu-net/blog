@@ -8,6 +8,7 @@ from argparse import ArgumentParser
 import sqlite3
 import datetime
 import shutil
+from pathlib import Path
 import subprocess as sp
 import json
 from typing import Union, Sequence, List
@@ -90,7 +91,7 @@ def _blog_dir(post: Path):
     """Get the corresponding blog directory (one of home, en, cn and misc)
     of a post.
     """
-    return post.parent().parent().stem()
+    return post.parent.parent.stem
 
 
 def _slug(title: str):
@@ -278,6 +279,13 @@ class Blogger:
             if post.suffix in ('.markdown', '.ipynb'):
                 self._load_post(post)
 
+    def _load_post(self, post: Path):
+        suffix = post.suffix
+        if suffix == '.ipynb':
+            self._load_ipynb_post(post)
+        elif suffix == '.markdown':
+            self._load_markdown_post(post)
+
     def _load_ipynb_post(self, post: Path):
         content = post.read_text()
         cells = json.loads(content)['cells']
@@ -293,7 +301,7 @@ class Blogger:
         category = ''
         tags = ''
         for line in meta:
-            if not re.search('^- [a-zA-Z]+:'):
+            if not re.search('^- [a-zA-Z]+:', line):
                 raise SyntaxError(f'The meta line {line} of the notebook {post} does not confront to the format "- MetaField: Value"!')
             if line.startswith('- Status:'):
                 status = line[9:].strip()
@@ -353,7 +361,7 @@ class Blogger:
         ])
 
 
-    def _load_markdwon_post(self, post: Path):
+    def _load_markdown_post(self, post: Path):
         with post.open() as fin:
             lines = fin.readlines()
         index = 0

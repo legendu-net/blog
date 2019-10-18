@@ -29,10 +29,10 @@ NOW_DASH = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 TODAY_DASH = NOW_DASH[:10]
 EDITOR = 'code'
 VIM = 'nvim' if shutil.which('nvim') else 'vim'
-BASE_DIR = os.path.dirname(os.path.realpath(__file__))
+BASE_DIR = Path(__file__).resolve().parent
 INDEXES = [''] + [str(i) for i in range(1, 11)]
 DASHES = '\n' + '-' * 100 + '\n'
-FILE_WORDS = os.path.join(BASE_DIR, 'words.json')
+FILE_WORDS = BASE_DIR / 'words.json'
 
 
 def qmarks(n: Union[int, Sequence]) -> str:
@@ -133,7 +133,7 @@ def _github_repos_url(dir_: str, https: bool = False) -> str:
 
 
 def _push_github(dir_: str, https: bool):
-    path = os.path.join(BASE_DIR, dir_, 'output')
+    path = BASE_DIR / dir_ / 'output'
     os.chdir(path)
     # commit
     if dir_ == 'home':
@@ -151,9 +151,9 @@ def _pelican_generate(dir_: str):
 
     :param dir_: the sub blog directory to generate.
     """
-    blog_dir = os.path.join(BASE_DIR, dir_)
+    blog_dir = BASE_DIR / dir_
     os.chdir(blog_dir)
-    config = os.path.join(blog_dir, 'pconf.py')
+    config = blog_dir / 'pconf.py'
     settings = pelican.settings.read_settings(path=config)
     pelican.Pelican(settings).run()
 
@@ -181,7 +181,7 @@ class Blogger:
         :param db: the path to the SQLite3 database file.
         """
         self._fts = _fts_version()
-        self._db = db if db else os.path.join(BASE_DIR, '.blogger.sqlite3')
+        self._db = db if db else BASE_DIR / '.blogger.sqlite3'
         self._conn = sqlite3.connect(self._db)
         self._create_vtable_posts()
 
@@ -269,7 +269,7 @@ class Blogger:
         self._create_vtable_posts()
         self._conn.execute('DELETE FROM posts')
         for dir_ in (HOME, CN, EN, MISC):
-            self._load_posts(os.path.join(BASE_DIR, dir_, 'content'))
+            self._load_posts(BASE_DIR / dir_ / 'content')
         self._conn.commit()
 
     def _load_posts(self, post_dir: str):
@@ -453,7 +453,7 @@ class Blogger:
         """
         if isinstance(posts, str):
             posts = [posts]
-        path_ = os.path.join(BASE_DIR, 'trash')
+        path_ = BASE_DIR / 'trash'
         if not os.path.isdir(path_):
             os.mkdir(path_)
         for post in posts:
@@ -468,9 +468,9 @@ class Blogger:
     def move(self, post, target):
         """Move a post to the specified location.
         """
+        post = Path(post)
         if target in (EN, CN, MISC):
-            target = os.path.join(BASE_DIR, target, 'content',
-                                  os.path.basename(post))
+            target = BASE_DIR / target / 'content' / post.name
         if post == target:
             return
         shutil.move(post, target)
@@ -535,7 +535,7 @@ class Blogger:
         file = self.find_post(title, dir_)
         if not file:
             file = f'{TODAY_DASH}-{_slug(title)}.markdown'
-            file = os.path.join(BASE_DIR, dir_, 'content', file)
+            file = BASE_DIR / dir_ / 'content' / file
             self._create_post(file, title)
             self._load_post(file)
         print(f'\nThe following post is added.\n{file}\n')

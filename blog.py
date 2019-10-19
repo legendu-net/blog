@@ -738,13 +738,37 @@ def _file_name(post: Path) -> str:
     return post.stem[11:]
 
 
-def _file_title(post) -> str:
-    with open(post, 'r', encoding='utf-8') as fin:
-        lines = fin.readlines()
-    for line in lines:
-        if line.startswith('Title: '):
-            return line[7:].strip()
-    return ''
+def _post_title(post: Path) -> str:
+    suffix = post.suffix
+    if suffix == '.ipynb':
+        return _post_title_ipynb(post)
+    if suffix == '.markdown':
+        return _post_title_markdown(post)
+    raise ValueError(f'{post} is not a .markdown or .ipynb file.')
+
+
+def _post_title_ipynb(self, post: Path):
+    # TODO: dedup the code 
+    content = post.read_text()
+    cell = json.loads(content)['cells'][0]
+    if cell['cell_type'] != 'markdown':
+        raise SyntaxError(f'The first cell of the notebook {post} is not a markdown cell!')
+    meta = cells[0]['source']
+    for line in meta:
+        if not re.search('^- [a-zA-Z]+:', line):
+            raise SyntaxError(f'The meta line {line} of the notebook {post} does not confront to the format "- MetaField: Value"!')
+        if line.startswith('- Title:'):
+            return line[8:].strip()
+    raise SyntaxError(f'No title in the post {post}!')
+
+
+def _post_title_markdown(post: Path) -> str:
+    with post.open() as fin:
+        for line in fin:
+            if line.startswith('Title: '):
+                return line[7:].strip()
+    raise SyntaxError(f'No title in the post {post}!')
+
 
 def match_post_name(post):
     title_name = _format_title(_file_name(post).replace('-', ' '))
@@ -762,7 +786,7 @@ def match_post_name(post):
 
 def match_post_title(post):
     post_name = _file_name(post)
-    title = _file_title(post)
+    title = _post_title(post)
     slug_name = title.lower().replace(' ', '-')
     with open(post, 'r') as fin:
         lines = fin.readlines()
@@ -865,18 +889,14 @@ def search(blogger, args):
     show(blogger, args)
 
 
-def show(blogger, args, showtitle = False) -> None:
+def show(blogger, args) -> None:
     sql = 'SELECT count(*) FROM srps'
     total = blogger.query(sql)[0][0]
     print(f'\nNumber of matched posts: {total}')
     for id, path in blogger.fetch(args.n):
         if not args.full_path:
             path = Path(path).relative_to(BASE_DIR)
-        if showtitle:
-            print(f'\n{id}: {path}')
-            print(f'\nFile name: {_file_name(path)},\nFile title is: {_file_title(path)}')
-        else:
-            print(f'\n{id}: {_file_title(path)}    <{path}>')
+            print(f'\n{id}: {_post_title(path)}    < {path} >')
     print('')
 
 

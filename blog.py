@@ -896,7 +896,7 @@ def show(blogger, args) -> None:
     for id, path in blogger.fetch(args.n):
         if not args.full_path:
             path = Path(path).relative_to(BASE_DIR)
-            print(f'\n{id}: {_post_title(path)}    < {path} >')
+            print(f'\n{id}: {_post_title(path)}    |    {path}')
     print('')
 
 

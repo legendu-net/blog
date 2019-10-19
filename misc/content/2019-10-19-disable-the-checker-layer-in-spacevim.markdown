@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-19 01:05:57
+Date: 2019-10-19 01:08:02
 Author: Benjamin Du
 Slug: disable-the-checker-layer-in-spacevim
 Title: Disable the Checker Layer in SpaceVim

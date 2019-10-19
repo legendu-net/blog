@@ -213,7 +213,7 @@ class Blogger:
             tokenize = porter
         )
         '''
-        self._conn.execute(sql)
+        self.execute(sql)
 
     def _create_table_srps(self):
         sql = '''
@@ -221,7 +221,7 @@ class Blogger:
             path
         )
         '''
-        self._conn.execute(sql)
+        self.execute(sql)
 
     def clear(self):
         """Remove the SQLite3 database.
@@ -245,7 +245,7 @@ class Blogger:
         with open(post, 'w') as fout:
             fout.writelines(lines)
         sql = 'UPDATE posts SET category = ? WHERE path = ?'
-        self._conn.execute(sql, [category, post])
+        self.execute(sql, [category, post])
 
     def update_tags(self, post, from_tag, to_tag):
         """Update the tag from_tag of the post to the tag to_tag.
@@ -261,13 +261,13 @@ class Blogger:
         with open(post, 'w') as fout:
             fout.writelines(lines)
         sql = 'UPDATE posts SET tags = ? WHERE path = ?'
-        self._conn.execute(sql, [tags + ',', post])
+        self.execute(sql, [tags + ',', post])
 
     def reload_posts(self):
         """Reload posts into the SQLite3 database.
         """
         self._create_vtable_posts()
-        self._conn.execute('DELETE FROM posts')
+        self.execute('DELETE FROM posts')
         for dir_ in (HOME, CN, EN, MISC):
             self._load_posts(BASE_DIR / dir_ / 'content')
         self._conn.commit()
@@ -345,8 +345,8 @@ class Blogger:
             ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
         )
         '''
-        self._conn.execute(sql, [
-            str(post),
+        self.execute(sql, [
+            post,
             _blog_dir(post),
             status,
             date,
@@ -417,8 +417,8 @@ class Blogger:
             ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
         )
         '''
-        self._conn.execute(sql, [
-            str(post),
+        self.execute(sql, [
+            post,
             _blog_dir(post),
             status,
             date,
@@ -463,7 +463,7 @@ class Blogger:
             WHERE 
                 path in ({qmarks(posts)})
             '''
-        self._conn.execute(sql, posts)
+        self.execute(sql, posts)
 
     def move(self, post, target):
         """Move a post to the specified location.
@@ -476,7 +476,16 @@ class Blogger:
         shutil.move(post, target)
         _update_post_move(target)
         sql = 'UPDATE posts SET path = ?, dir = ? WHERE path = ?'
-        self._conn.execute(sql, [target, _blog_dir(target), post])
+        self.execute(sql, [target, _blog_dir(target), post])
+
+    def _reg_param(self, param):
+        if instance(param, (int, float, str)):
+            return param
+        return str(param)
+
+    def execute(self, operation: str, parameters=()):
+        param = [self._reg_param(param) for param in parameters]
+        self._conn.execute(operation, parameters)
 
     def edit(self, posts: Union[str, List[str]], editor: str) -> None:
         """Edit the specified posts using the specified editor.
@@ -507,17 +516,17 @@ class Blogger:
         """
         posts = [str(post) for post in posts]
         sql = f'UPDATE posts SET updated = ? WHERE path in ({qmarks(posts)})'
-        self._conn.execute(sql, [updated] + posts)
+        self.execute(sql, [updated] + posts)
 
     def _delete_updated(self) -> None:
         sql = 'DELETE FROM posts WHERE updated = 1'
-        self._conn.execute(sql)
+        self.execute(sql)
 
     def update(self):
         """Update information of the changed posts.
         """
         sql = 'SELECT path, content FROM posts WHERE updated = 1'
-        rows = self._conn.execute(sql).fetchall()
+        rows = self.execute(sql).fetchall()
         posts_same = [post for post, content in rows if not _changed(post, content)]
         self._update_updated(updated=0, posts=posts_same)
         self._delete_updated()
@@ -530,7 +539,7 @@ class Blogger:
         """Clean contents of the table srps.
         """
         sql = 'DELETE FROM srps'
-        self._conn.execute(sql)
+        self.execute(sql)
 
     def add(self, title: str, dir_: str) -> str:
         """Add a new post with the given title.
@@ -552,7 +561,7 @@ class Blogger:
         """
         # find all posts and get rid of leading dates
         sql = 'SELECT path FROM posts WHERE path LIKE ? AND dir = ?'
-        row = self._conn.execute(
+        row = self.execute(
             sql, [f'%{_slug(title)}.markdown', dir_]).fetchone()
         if row:
             return row[0]
@@ -562,7 +571,7 @@ class Blogger:
         """Find all empty posts into the table srps.
         """
         self._create_table_srps()
-        self._conn.execute('DELETE FROM srps')
+        self.execute('DELETE FROM srps')
         sql = f'''
             INSERT INTO srps
             SELECT
@@ -575,12 +584,12 @@ class Blogger:
         if dry_run:
             print(sql)
             return
-        self._conn.execute(sql)
+        self.execute(sql)
         self._conn.commit()
 
     def find_name_title_mismatch(self, dry_run=False):
         self._create_table_srps()
-        self._conn.execute('DELETE FROM srps')
+        self.execute('DELETE FROM srps')
         sql = f'''
             INSERT INTO srps
             SELECT
@@ -595,12 +604,12 @@ class Blogger:
         if dry_run:
             print(sql)
             return
-        self._conn.execute(sql)
+        self.execute(sql)
         self._conn.commit()
 
     def search(self, phrase: str, filter_: str = '', dry_run=False):
         self._create_table_srps()
-        self._conn.execute('DELETE FROM srps')
+        self.execute('DELETE FROM srps')
         conditions = []
         if phrase:
             conditions.append(f"posts MATCH '{phrase}'")
@@ -621,14 +630,14 @@ class Blogger:
         if dry_run:
             print(sql)
             return
-        self._conn.execute(sql)
+        self.execute(sql)
         self._conn.commit()
 
     def path(self, idx: Union[int, List[int]]) -> List[str]:
         if isinstance(idx, int):
             idx = [idx]
         sql = f'SELECT path FROM srps WHERE rowid in ({qmarks(idx)})'
-        return [row[0] for row in self._conn.execute(sql, idx).fetchall()]
+        return [row[0] for row in self.execute(sql, idx).fetchall()]
 
     def fetch(self, n: int):
         """Fetch search results.
@@ -636,10 +645,10 @@ class Blogger:
         :param n: the number of results to fetch.
         """
         sql = 'SELECT rowid, path FROM srps LIMIT {}'.format(n)
-        return self._conn.execute(sql).fetchall()
+        return self.execute(sql).fetchall()
 
     def query(self, sql: str, params: Sequence = ()):
-        return self._conn.execute(sql, params).fetchall()
+        return self.execute(sql, params).fetchall()
 
     def tags(self, dir_: str = '', where=''):
         sql = 'SELECT tags FROM posts {where}'
@@ -648,7 +657,7 @@ class Blogger:
         else:
             # todo you can support quicker specific filtering in future
             sql = sql.format(where=where)
-        cursor = self._conn.execute(sql)
+        cursor = self.execute(sql)
         tags = {}
         row = cursor.fetchone()
         while row is not None:
@@ -681,7 +690,7 @@ class Blogger:
         else:
             # todo you can support quicker specific filtering in future
             sql = sql.format(where=where)
-        cats = (row for row in self._conn.execute(sql).fetchall())
+        cats = (row for row in self.execute(sql).fetchall())
         return cats
 
 

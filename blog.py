@@ -481,10 +481,10 @@ class Blogger:
     def edit(self, posts: Union[str, List[str]], editor: str) -> None:
         """Edit the specified posts using the specified editor.
         """
-        if isinstance(posts, str):
+        if not isinstance(posts, list):
             posts = [posts]
-        self._mark_as(updated=1, posts=posts)
-        posts = ' '.join(f"'{p}'" for p in posts)
+        self._update_updated(updated=1, posts=posts)
+        posts = ' '.join(f"'{post}'" for post in posts)
         os.system(f'{editor} {posts}')
 
     def _create_post(self, post, title):
@@ -500,9 +500,12 @@ class Blogger:
             if _blog_dir(post) == MISC:
                 fout.writelines(DECLARATION)
 
-    def _mark_as(self, updated: int, posts: Union[str, List[str]]):
-        if isinstance(posts, str):
-            posts = [posts]
+    def _update_updated(self, updated: int, posts: List[Path]):
+        """Update the "updated" filed.
+        :param updated: The value (1 or 0) to update the "updated" filed to.
+        :param posts:
+        """
+        posts = [str(post) for post in posts]
         sql = f'UPDATE posts SET updated = ? WHERE path in ({qmarks(posts)})'
         self._conn.execute(sql, [updated] + posts)
 
@@ -516,7 +519,7 @@ class Blogger:
         sql = 'SELECT path, content FROM posts WHERE updated = 1'
         rows = self._conn.execute(sql).fetchall()
         posts_same = [post for post, content in rows if not _changed(post, content)]
-        self._mark_as(updated=0, posts=posts_same)
+        self._update_updated(updated=0, posts=posts_same)
         self._delete_updated()
         posts_updated = [post for post, content in rows if _changed(post, content)]
         for path in posts_updated:

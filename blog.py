@@ -215,11 +215,21 @@ class Blogger:
         post = Path(post)
         suffix = post.suffix
         if suffix == '.ipynb':
-            self._load_ipynb_post(post)
+            record = self._parse_ipynb_post(post)
         elif suffix == '.markdown':
-            self._load_markdown_post(post)
+            record self._parse_markdown_post(post)
+        else:
+            raise ValueError(f'{post} is not a .markdown or .ipynb file.')
+        sql = '''
+            INSERT INTO posts (
+                {', '.join(Blogger.POSTS_COLS)},
+            ) VALUES (
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+            )
+            '''
+        self.execute(sql, record)
 
-    def _load_ipynb_post(self, post: Path):
+    def _parse_ipynb_post(self, post: Path) -> List[str]:
         content = post.read_text()
         cells = json.loads(content)['cells']
         empty = 1 if len(cells) <= 1 else 0
@@ -258,7 +268,7 @@ class Blogger:
                 status = line[7:].strip()
                 continue
         name_title_mismatch = self._is_name_title_mismatch(post, title)
-        self._insert_record_posts([
+        return [
             post,
             _blog_dir(post),
             status,
@@ -272,21 +282,9 @@ class Blogger:
             empty,
             0,
             name_title_mismatch,
-        ])
+        ]
 
-    def _insert_record_posts(self, record: List):
-        """Insert a record into the posts table.
-        """
-        sql = '''
-            INSERT INTO posts (
-                {', '.join(Blogger.POSTS_COLS)},
-            ) VALUES (
-                ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
-            )
-            '''
-        self.execute(sql, record)
-
-    def _load_markdown_post(self, post: Path):
+    def _parse_markdown_post(self, post: Path) -> List[str]:
         with post.open() as fin:
             lines = fin.readlines()
         index = 0
@@ -322,7 +320,7 @@ class Blogger:
         content = ''.join(lines)
         empty = self._is_ess_empty(lines[index:])
         name_title_mismatch = self._is_name_title_mismatch(post, title)
-        self._insert_record_posts([
+        return [
             post,
             _blog_dir(post),
             status,
@@ -336,7 +334,7 @@ class Blogger:
             empty,
             0,
             name_title_mismatch,
-        ])
+        ]
 
     def _is_ess_empty(self, lines: List[str]) -> int:
         """Check whether the lines are essentially empty.

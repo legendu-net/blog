@@ -479,13 +479,13 @@ class Blogger:
         self.execute(sql, [target, _blog_dir(target), post])
 
     def _reg_param(self, param):
-        if instance(param, (int, float, str)):
+        if isinstance(param, (int, float, str)):
             return param
         return str(param)
 
     def execute(self, operation: str, parameters=()):
-        param = [self._reg_param(param) for param in parameters]
-        self._conn.execute(operation, parameters)
+        parameters = [self._reg_param(param) for param in parameters]
+        return self._conn.execute(operation, parameters)
 
     def edit(self, posts: Union[str, List[str]], editor: str) -> None:
         """Edit the specified posts using the specified editor.

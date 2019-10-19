@@ -747,13 +747,13 @@ def _post_title(post: Path) -> str:
     raise ValueError(f'{post} is not a .markdown or .ipynb file.')
 
 
-def _post_title_ipynb(self, post: Path):
+def _post_title_ipynb(post: Path):
     # TODO: dedup the code 
     content = post.read_text()
     cell = json.loads(content)['cells'][0]
     if cell['cell_type'] != 'markdown':
         raise SyntaxError(f'The first cell of the notebook {post} is not a markdown cell!')
-    meta = cells[0]['source']
+    meta = cell['source']
     for line in meta:
         if not re.search('^- [a-zA-Z]+:', line):
             raise SyntaxError(f'The meta line {line} of the notebook {post} does not confront to the format "- MetaField: Value"!')

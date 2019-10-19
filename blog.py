@@ -115,6 +115,21 @@ def _fts_version():
 class Blogger:
     """A class for managing blog.
     """
+    POSTS_COLS = [ 
+        'path',
+        'dir',
+        'status',
+        'date',
+        'author',
+        'slug',
+        'title',
+        'category',
+        'tags',
+        'content',
+        'empty',
+        'updated',
+        'name_title_mismatch'
+    ]
 
     def __init__(self, db: str = ''):
         """Create an instance of Blogger.
@@ -127,42 +142,17 @@ class Blogger:
         self._conn = sqlite3.connect(self._db)
         self._create_vtable_posts()
 
-    # def _root_dir(self):
-    #     sql = 'SELECT path FROM posts LIMIT 1'
-    #     row = self._conn.execute(sql).fetchone()
-    #     if row:
-    #         dir_ = os.path.dirname(row[0])
-    #         dir_ = os.path.dirname(dir_)
-    #         return os.path.dirname(dir_)
-    #     return ''
-
     def _create_vtable_posts(self):
         sql = f'''
-        CREATE VIRTUAL TABLE IF NOT EXISTS posts USING {self._fts} (
-            path,
-            dir,
-            status,
-            date,
-            author,
-            slug,
-            title,
-            category,
-            tags,
-            content,
-            empty,
-            updated,
-            name_title_mismatch,
-            tokenize = porter
-        )
-        '''
+            CREATE VIRTUAL TABLE IF NOT EXISTS posts USING {self._fts} (
+                {', '.join(Blogger.POSTS_COLS)},
+                tokenize = porter
+            )
+            '''
         self.execute(sql)
 
     def _create_table_srps(self):
-        sql = '''
-        CREATE TABLE IF NOT EXISTS srps (
-            path
-        )
-        '''
+        sql = 'CREATE TABLE IF NOT EXISTS srps (path)'
         self.execute(sql)
 
     def clear(self):
@@ -212,7 +202,7 @@ class Blogger:
         self.execute('DELETE FROM posts')
         for dir_ in (HOME, CN, EN, MISC):
             self._load_posts(BASE_DIR / dir_ / 'content')
-        self._conn.commit()
+        self.commit()
 
     def _load_posts(self, post_dir: str):
         if not os.path.isdir(post_dir):
@@ -268,26 +258,7 @@ class Blogger:
                 status = line[7:].strip()
                 continue
         name_title_mismatch = self._is_name_title_mismatch(post, title)
-        sql = '''
-        INSERT INTO posts (
-            path,
-            dir,
-            status,
-            date,
-            author,
-            slug,
-            title,
-            category,
-            tags,
-            content,
-            empty,
-            updated,
-            name_title_mismatch
-        ) VALUES (
-            ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
-        )
-        '''
-        self.execute(sql, [
+        self._insert_record_posts([
             post,
             _blog_dir(post),
             status,
@@ -303,6 +274,17 @@ class Blogger:
             name_title_mismatch,
         ])
 
+    def _insert_record_posts(self, record: List):
+        """Insert a record into the posts table.
+        """
+        sql = '''
+            INSERT INTO posts (
+                {', '.join(Blogger.POSTS_COLS)},
+            ) VALUES (
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+            )
+            '''
+        self.execute(sql, record)
 
     def _load_markdown_post(self, post: Path):
         with post.open() as fin:
@@ -340,26 +322,7 @@ class Blogger:
         content = ''.join(lines)
         empty = self._is_ess_empty(lines[index:])
         name_title_mismatch = self._is_name_title_mismatch(post, title)
-        sql = '''
-        INSERT INTO posts (
-            path,
-            dir,
-            status,
-            date,
-            author,
-            slug,
-            title,
-            category,
-            tags,
-            content,
-            empty,
-            updated,
-            name_title_mismatch
-        ) VALUES (
-            ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
-        )
-        '''
-        self.execute(sql, [
+        self._insert_record_posts([
             post,
             _blog_dir(post),
             status,
@@ -376,6 +339,9 @@ class Blogger:
         ])
 
     def _is_ess_empty(self, lines: List[str]) -> int:
+        """Check whether the lines are essentially empty.
+        :param lines: A list of lines.
+        """
         content = ''.join(line.strip() for line in lines)
         is_empty = re.sub(r'\*\*.+\*\*', '', content).replace('**', '') == ''
         return 1 if is_empty else 0
@@ -392,6 +358,7 @@ class Blogger:
 
     def trash(self, posts: Union[str, List[str]]):
         """Move the specified posts to the trash directory.
+        :param posts:
         """
         if isinstance(posts, str):
             posts = [posts]
@@ -516,42 +483,37 @@ class Blogger:
         self.execute('DELETE FROM srps')
         sql = f'''
             INSERT INTO srps
-            SELECT
-                path
-            FROM
-                posts
-            WHERE
-                empty = 1
+            SELECT path
+            FROM posts
+            WHERE empty = 1
             '''
         if dry_run:
             print(sql)
             return
         self.execute(sql)
-        self._conn.commit()
+        self.commit()
 
     def find_name_title_mismatch(self, dry_run=False):
         self._create_table_srps()
         self.execute('DELETE FROM srps')
         sql = f'''
             INSERT INTO srps
-            SELECT
-                path
-            FROM
-                posts
-            WHERE
-                name_title_mismatch = 1
-            AND
-                dir <> 'cn'
+            SELECT path
+            FROM posts
+            WHERE name_title_mismatch = 1 AND dir <> 'cn'
             '''
         if dry_run:
             print(sql)
             return
         self.execute(sql)
-        self._conn.commit()
+        self.commit()
 
     def search(self, phrase: str, filter_: str = '', dry_run=False):
-        self._create_table_srps()
-        self.execute('DELETE FROM srps')
+        """Search for posts containing the phrase.
+        :param phrase: The phrase to search for in posts.
+        :param filter_: Extra filtering conditions.
+        """
+        self._clear_srps()
         conditions = []
         if phrase:
             conditions.append(f"posts MATCH '{phrase}'")
@@ -562,10 +524,8 @@ class Blogger:
             where = 'WHERE ' + where
         sql = f'''
             INSERT INTO srps
-            SELECT
-                path
-            FROM
-                posts
+            SELECT path
+            FROM posts
             {where}
             ORDER BY rank
             '''
@@ -573,7 +533,25 @@ class Blogger:
             print(sql)
             return
         self.execute(sql)
-        self._conn.commit()
+        self.commit()
+
+    def _clear_srps(self):
+        self._create_table_srps()
+        self.execute('DELETE FROM srps')
+
+    def last(self, n: int):
+        """Get last (according to modification time) n posts.
+        :param n: The number of posts to get.
+        """
+        self._clear_srps()
+        sql = f'''
+            insert into srps
+            select path
+            from posts
+            where 
+            '''
+        self.execute(sql)
+        self.commit()
 
     def path(self, idx: Union[int, List[int]]) -> List[str]:
         if isinstance(idx, int):

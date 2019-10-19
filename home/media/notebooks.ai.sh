@@ -1,24 +1,23 @@
 #!/bin/bash
 
 ln -svf /app/ /workdir/
-mkdir /workdir/pkgs
-apt-get update
-apt-get install wajig git
-pip3 install pelican
+mkdir -p /app/pkgs
+apt-get update -y
+apt-get install -y wajig git
+pip3 install pelican loguru
 mkdir -p archives
 ln -svf /app/archives /root/
-cd archives
 # blog
-if [[ ! -e blog ]]; then
-    git clone git@github.com:dclong/blog.git
+if [[ ! -e archives/blog ]]; then
+    git clone git@github.com:dclong/blog.git archives/
 fi
-git submodule init
-git submodule update --recursive --remote
+git -C archives/blog submodule init
+git -C archives/blog submodule update --recursive --remote
 # config
-if [[ ! -e config ]]; then
-    git clone git@github.com:dclong/config.git
+if [[ ! -e archives/config ]]; then
+    git clone git@github.com:dclong/config.git archives/
 fi
-config/linstall.py poetry -ic
-config/linstall.py xonsh -ic
-config/linstall.py bash_it -ic
-config/linstall.py svim -ic
+python3 archives/config/linstall.py poetry -ic
+python3 archives/config/linstall.py xonsh -ic
+python3 archives/config/linstall.py bash_it -ic
+python3 archives/config/linstall.py svim -ic

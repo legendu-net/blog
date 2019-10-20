@@ -40,7 +40,10 @@ class Post:
     """A class abstracting a post.
     """
     def __init__(self, path: Union[str, Path]):
-        self.path = Path(path)
+        self.path = Path(path).resolve()
+
+    def __str__(self):
+        return str(self.path)
 
     def diff(self, content: str) -> bool:
         """Check whether there is any difference between this post's content and the given content.
@@ -493,14 +496,14 @@ class Blogger:
         parameters = [self._reg_param(param) for param in parameters]
         return self._conn.execute(operation, parameters)
 
-    def edit(self, posts: Union[str, List[str]], editor: str) -> None:
+    def edit(self, paths: Union[str, List[str]], editor: str) -> None:
         """Edit the specified posts using the specified editor.
         """
-        if not isinstance(posts, list):
-            posts = [posts]
-        self.update_records(paths=posts, mapping={'updated': 1})
-        posts = ' '.join(f"'{post}'" for post in posts)
-        os.system(f'{editor} {posts}')
+        if not isinstance(paths, list):
+            paths = [paths]
+        self.update_records(paths=paths, mapping={'updated': 1})
+        paths = ' '.join(f"'{path}'" for path in paths)
+        os.system(f'{editor} {paths}')
 
     def update_records(self, paths: List[str], mapping: dict) -> None:
         """Update records corresponding to the specified paths.
@@ -538,8 +541,8 @@ class Blogger:
         """
         file = self.find_post(title, dir_)
         if not file:
-            file = f'{TODAY_DASH}-{Post.slug(title)}.markdown'
-            post = Post(BASE_DIR / dir_ / 'content' / file)
+            file = BASE_DIR / dir_ / 'content' / f'{TODAY_DASH}-{Post.slug(title)}.markdown'
+            post = Post(file)
             post.create(title)
             self._load_post(post)
         print(f'\nThe following post is added.\n{file}\n')

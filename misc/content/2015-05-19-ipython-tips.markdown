@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-16 21:54:55
+Date: 2019-10-19 20:41:53
 Author: Ben Chuanlong Du
 Slug: ipython-tips
 Title: Tips on IPython
@@ -40,6 +40,7 @@ but rather for convenient reference of the author and future improvement.
 	but in relative path w.r.t. `/tmp`.
 	You can copy it to the home directory using the following command.
 
+        :::bash
 		!cp {os.path.join('/tmp', pkg)} ~
 
 1. it seems that IPython tries to beautify outputs.

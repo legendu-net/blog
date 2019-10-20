@@ -25,6 +25,7 @@ if [[ ! -e /app/archives/config ]]; then
 fi
 git -C /app/archives/config pull origin master
 python3 /app/archives/config/linstall.py poetry -ic
+python3 /app/archives/config/linstall.py ipy3 -ic
 # python3 /app/archives/config/linstall.py bash_it -ic
 python3 /app/archives/config/linstall.py svim -ic --disable-true-colors
 

@@ -25,7 +25,7 @@ It is not meant to readers but rather for convenient reference of the author and
 NOW_DASH = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 TODAY_DASH = NOW_DASH[:10]
 BASE_DIR = Path(__file__).resolve().parent
-WORDS = json.load((BASE_DIR / 'words.json').read_text())
+WORDS = json.loads((BASE_DIR / 'words.json').read_text())
 
 
 def qmarks(n: Union[int, Sequence]) -> str:
@@ -418,13 +418,13 @@ class Blogger:
 
     def update_category(self, post: Post, category: str):
         post.update_category(category)
-        self.update_records(paths=[post.path], mappings={'category': category})
+        self.update_records(paths=[post.path], mapping={'category': category})
 
     def update_tags(self, post: Post, from_tag: str, to_tag: str):
         """Update the tag from_tag of the post to the tag to_tag.
         """
         tags = post.update_tags(from_tag, to_tag)
-        self.update_records(paths=[post.path], mappings={'tags': tags + ','})
+        self.update_records(paths=[post.path], mapping={'tags': tags + ','})
 
     def reload_posts(self):
         """Reload posts into the SQLite3 database.
@@ -482,7 +482,7 @@ class Blogger:
         shutil.move(src, dst)
         post = Post(dst)
         post.update_after_move()
-        self.update_records(paths=[src], mappings={'path': dst, 'dir': post.blog_dir()})
+        self.update_records(paths=[src], mapping={'path': dst, 'dir': post.blog_dir()})
 
     def _reg_param(self, param):
         if isinstance(param, (int, float, str)):
@@ -498,7 +498,7 @@ class Blogger:
         """
         if not isinstance(posts, list):
             posts = [posts]
-        self.update_records(paths=posts, {'updated': 1})
+        self.update_records(paths=posts, mapping={'updated': 1})
         posts = ' '.join(f"'{post}'" for post in posts)
         os.system(f'{editor} {posts}')
 
@@ -509,7 +509,7 @@ class Blogger:
         """
         sql = f'''
             UPDATE posts 
-            SET {", ".join("key = ?" for key in mapping)} 
+            SET {', '.join(f'{key} = ?' for key in mapping)} 
             WHERE path in ({qmarks(paths)})
             '''
         self.execute(sql, list(mapping.values()) + paths)

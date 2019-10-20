@@ -5,7 +5,7 @@ mkdir -p /app/pkgs
 curl -sL https://deb.nodesource.com/setup_10.x | bash -
 apt-get update -y
 apt-get install -y wajig git nodejs
-pip3 install pelican loguru
+pip3 install pelican loguru py4j
 mkdir -p /app/archives
 ln -svf /app/archives /root/
 

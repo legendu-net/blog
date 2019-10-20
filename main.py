@@ -6,7 +6,7 @@ from pathlib import Path
 import subprocess as sp
 import pelican
 from argparse import ArgumentParser
-from blog import Blogger, BASE_DIR, HOME, EN, CN, MISC
+from blog import Post, Blogger, BASE_DIR, HOME, EN, CN, MISC
 EDITOR = 'code'
 VIM = 'nvim' if shutil.which('nvim') else 'vim'
 DASHES = '\n' + '-' * 100 + '\n'
@@ -150,7 +150,7 @@ def show(blogger, args) -> None:
     for id, path in blogger.fetch(args.n):
         if not args.full_path:
             path = Path(path).relative_to(BASE_DIR)
-            print(f'\n{id}: {blogger.post_title(path)}    |    {path}')
+            print(f'\n{id}: {Post(path).title()}    |    {path}')
     print('')
 
 
@@ -193,21 +193,17 @@ def update_tags(blogger, args):
     if args.indexes:
         args.files = blogger.path(args.indexes)
     if args.files:
-        for post in args.files:
-            blogger.update_tags(post, args.from_tag, args.to_tag)
+        for file in args.files:
+            blogger.update_tags(Post(file), args.from_tag, args.to_tag)
     else:
         sql = f'''
-            SELECT
-                path
-            FROM
-                posts
-            WHERE
-                tags LIKE '%, {args.from_tag},%'
-                OR tags LIKE '%: {args.from_tag},%'
+            SELECT path
+            FROM posts
+            WHERE tags LIKE '%, {args.from_tag},%' OR tags LIKE '%: {args.from_tag},%'
             '''
         posts = (row[0] for row in blogger.query(sql))
         for post in posts:
-            blogger.update_tags(post, args.from_tag, args.to_tag)
+            blogger.update_tags(Post(post), args.from_tag, args.to_tag)
     blogger.commit()
 
 

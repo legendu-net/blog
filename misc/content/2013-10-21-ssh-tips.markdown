@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: SSH Tips
-Date: 2019-04-24 00:29:40
+Date: 2019-10-20 10:29:13
 Slug: ssh-tips
 Category: Software
 Tags: tips, SSH, software, remote, Linux
@@ -13,8 +13,34 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## Tricks and Traps
 
-1. You can use the option `-o StrictHostKeyChecking=no` to turn off strict host key checking.
-    This is helpful for automation when you are in a relative safe environment. 
+1. SSH automatically maintains and checks a database containing identification 
+    for all hosts it has ever been used with. 
+    Host keys are stored in `~/.ssh/known_hosts` in the user's home directory. 
+    Additionally, 
+    the file `/etc/ssh/ssh_known_hosts` is automatically checked for known hosts. 
+    Any new hosts are automatically added to the user's file. 
+    If a host's identification ever changes, 
+    SSH warns about this and disables password authentication 
+    to prevent server spoofing or man-in-the-middle attacks, 
+    which could otherwise be used to circumvent the encryption. 
+    The option `-o StrictHostKeyChecking=no` can be used to turn off strict host key checking
+    (on both new host keys and changed host keys).
+
+        :::bash
+        ssh -o StrictHostKeyChecking=no your_server
+
+    You can also turn of strickt host key checking permanently by adding the following line into `~/.ssh/know_hosts`.
+
+        StrictHostKeyChecking no
+
+    This is helpful for automation when you are in a safe environment (e.g., private VPN). 
+    However, 
+    be aware of the risk and avoid using it in public environment.
+    For more details, 
+    please refer to
+    [ssh(1) - Linux man page](https://linux.die.net/man/1/ssh)
+    and
+    [SSH: Disable Host Checking for Scripts & Automation](http://bencane.com/2013/07/22/ssh-disable-host-checking-for-scripts-automation/).
 
 2. You can use the option `-o ProxyCommand='ssh proxy_server -W %h:%p'` 
     to SSH into a machine via a proxy server.

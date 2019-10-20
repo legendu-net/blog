@@ -8,6 +8,8 @@ pip3 install pelican loguru
 mkdir -p /app/archives
 ln -svf /app/archives /root/
 
+mkdir -p /root/.ssh
+cp /app/ssh/* /root/.ssh/
 # blog
 if [[ ! -e /app/archives/blog ]]; then
     git clone git@github.com:dclong/blog.git /app/archives/

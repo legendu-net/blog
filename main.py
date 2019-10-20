@@ -159,7 +159,7 @@ def reload(blogger, args):
 
 
 def add(blogger, args):
-    file = blogger.add(' '.join(args.title), args.sub_dir)
+    file = blogger.add_post(' '.join(args.title), args.sub_dir)
     args.indexes = None
     args.files = file
     edit(blogger, args)

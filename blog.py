@@ -84,7 +84,7 @@ class Post:
             if line.startswith('Date: '):
                 lines[idx] = f'Date: {NOW_DASH}\n'
                 break
-        with self.path.open() as fout:
+        with self.path.open('w') as fout:
             fout.writelines(lines)
 
     @staticmethod
@@ -349,7 +349,7 @@ class Post:
         """
         return title.replace(' ', '-').replace('/', '-')
 
-    def create_post(self, title: str):
+    def create(self, title: str):
         with self.path.open('w') as fout:
             fout.writelines('Status: published\n')
             fout.writelines(f'Date: {NOW_DASH}\n')
@@ -443,9 +443,9 @@ class Blogger:
                 self._load_post(post)
 
     def _load_post(self, post: Post):
-        sql = '''
+        sql = f'''
             INSERT INTO posts (
-                {', '.join(Blogger.POSTS_COLS)},
+                {', '.join(Blogger.POSTS_COLS)}
             ) VALUES (
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
             )
@@ -523,15 +523,15 @@ class Blogger:
         """
         sql = 'SELECT path, content FROM posts WHERE updated = 1'
         rows = self.execute(sql).fetchall()
-        # posts that wasn't changed
-        posts_same = [post for post, content in rows if not post.diff(content)]
-        self.update_records(paths=posts_same, mapping={'updated': 0})
-        # posts that was changed
+        # posts that were not changed
+        paths = [path for path, content in rows if not Post(path).diff(content)]
+        self.update_records(paths=paths, mapping={'updated': 0})
+        # posts that were changed
         self._delete_updated()
-        posts_updated = [post for post, content in rows if post.diff(content)]
-        for path in posts_updated:
-            path.update_time()
-            self._load_post(path)
+        posts = [Post(path) for path, content in rows if Post(path).diff(content)]
+        for post in posts:
+            post.update_time()
+            self._load_post(post)
 
     def add_post(self, title: str, dir_: str) -> str:
         """Add a new post with the given title.
@@ -540,7 +540,7 @@ class Blogger:
         if not file:
             file = f'{TODAY_DASH}-{Post.slug(title)}.markdown'
             post = Post(BASE_DIR / dir_ / 'content' / file)
-            post.create_post(title)
+            post.create(title)
             self._load_post(post)
         print(f'\nThe following post is added.\n{file}\n')
         return file

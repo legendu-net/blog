@@ -441,9 +441,9 @@ class Blogger:
     def _load_posts(self, post_dir: Path):
         if not post_dir.is_dir():
             return
-        for post in post_dir.iterdir():
-            if post.suffix in ('.markdown', '.ipynb'):
-                self._load_post(post)
+        for path in post_dir.iterdir():
+            if path.suffix in ('.markdown', '.ipynb'):
+                self._load_post(Post(path))
 
     def _load_post(self, post: Post):
         sql = f'''

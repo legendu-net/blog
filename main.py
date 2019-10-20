@@ -253,7 +253,7 @@ def _pelican_generate(dir_: str):
     blog_dir = BASE_DIR / dir_
     os.chdir(blog_dir)
     config = blog_dir / 'pconf.py'
-    settings = pelican.settings.read_settings(path=config)
+    settings = pelican.settings.read_settings(path=str(config))
     pelican.Pelican(settings).run()
 
 

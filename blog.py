@@ -92,7 +92,7 @@ class Post:
         # TODO: put the time into the databse as well
         with self.path.open() as fin:
             lines = fin.readlines()
-        update_meta_field(lines, 'Date', NOW_DASH)
+        self.update_meta_field(lines, 'Date', NOW_DASH)
         with self.path.open('w') as fout:
             fout.writelines(lines)
 
@@ -100,8 +100,8 @@ class Post:
         notebook = json.loads(self.path.read_text())
         if notebook['cells'][0]['cell_type'] != 'markdown':
             raise SyntaxError(f'The first cell of the notebook {self.path} is not a markdown cell!')
-        update_meta_field(notebook['cells'][0]['source'], '- Date', NOW_DASH)
-        self.path.write_text(json.dumps(notebook))
+        self.update_meta_field(notebook['cells'][0]['source'], '- Date', NOW_DASH)
+        self.path.write_text(json.dumps(notebook, indent=1))
 
     @staticmethod
     def format_title(title):

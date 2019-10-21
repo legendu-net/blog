@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-21 09:36:46
+Date: 2019-10-21 19:35:43
 Author: Ben Chuanlong Du
 Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
@@ -15,7 +15,10 @@ but rather for convenient reference of the author and future improvement.
 
 ## [GitPod](https://www.gitpod.io/)
 
-You can actually start a service in your Gitpod workspace.
+GitPod allows you to expose http services from your workspace.
+This means that if you have JupyterLab/Hub installed in your GitPod image,
+you can run a JupyterLab/Hub server within your GitPod worksapce and access it from public.
+You can use the command `gp url port` to get the public URL to visit the exposed port/service.
 
 ## [RMOTR Notebooks | notebooks.ai](https://notebooks.ai/)
 

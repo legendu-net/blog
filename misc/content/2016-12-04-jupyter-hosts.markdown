@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-20 23:36:18
+Date: 2019-10-21 08:49:02
 Author: Ben Chuanlong Du
 Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
@@ -17,19 +17,29 @@ but rather for convenient reference of the author and future improvement.
 
 You can actually start a service in your Gitpod workspace.
 
-
 ## [RMOTR Notebooks | notebooks.ai](https://notebooks.ai/)
 
 1. Installed software does not persist.
 
-## [Kyso](https://kyso.io/)
+## [Code Ocean](https://codeocean.com/)
 
-2. Doesn't seem to support Jupyter/JupyterLab/JupyterHub server. 
-    You can only view/render notebooks.
+### Pros
 
-## [Mode](https://mode.com/)
+1. Very flexible. Seems to be a good choice. 
 
-1. Doesn't seem to support Jupyter/JupyterLab/JupyterHub sever. 
+### Cons
+
+1. The pricing seems to be expensive ...
+
+## [Google Colaboratory](https://colab.research.google.com/)
+
+1. JupyterLab is not directly support (even though hacking around is possible).
+
+2. Google Drive can be mounted.
+
+## [Cocalc](https://cocalc.com/)
+
+1. The free plan is not usable as no internet access is provided for the free plan.
 
 ## [Quantopian](https://www.quantopian.com/)
 
@@ -40,10 +50,6 @@ There seems to be lots of good tutorials on Quant Fiance.
 ### Cons
 
 1. Jupyter only and too limited features. Not usable. 
-
-## [Cocalc](https://cocalc.com/)
-
-1. The free plan is not usable as no internet access is provided for the free plan.
 
 ## [Gryd](https://gryd.us/)
 
@@ -98,22 +104,6 @@ Not usable.
 2. Outdate Docker images and software (Python 3.5 only).
 
 3. `sudo` is not supported currently.
-
-## [Code Ocean](https://codeocean.com/)
-
-### Pros
-
-1. Very flexible. Seems to be a good choice. 
-
-### Cons
-
-1. The pricing seems to be expensive ...
-
-## [Google Colaboratory](https://colab.research.google.com/)
-
-1. JupyterLab is not directly support (even though hacking around is possible).
-
-2. Google Drive can be mounted.
 
 ## Amazon SageMath
 

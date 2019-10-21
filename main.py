@@ -860,10 +860,9 @@ def _subparse_git_diff(subparsers):
         aliases=['df', 'dif'],
         help='The git diff command.')
     subparser_git.add_argument(
-        '-f',
-        '--file',
-        dest='file',
-        default='',
+        'file',
+        nargs='*',
+        default=(),
         help='Path of the post to run git diff on.')
     subparser_git.set_defaults(func=_git_diff)
 
@@ -873,7 +872,7 @@ def _git_status(blogger, args):
 
 
 def _git_diff(blogger, args):
-    os.system(f'git diff {args.file}')
+    os.system(f'git diff {" ".join(args.file)}')
 
 
 def _git_pull(blogger, args):

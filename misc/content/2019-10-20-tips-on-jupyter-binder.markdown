@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-20 23:28:55
+Date: 2019-10-21 10:06:37
 Author: Benjamin Du
 Slug: tips-on-jupyter-binder
 Title: Tips on Jupyter Binder
@@ -22,3 +22,15 @@ It is not meant to readers but rather for convenient reference of the author and
 
 
 3. Generally speaking, binder is good for temporary usage when you only need Python packages.
+
+
+## References 
+
+https://mybinder.readthedocs.io/en/latest/index.html
+
+https://mybinder.readthedocs.io/en/latest/tutorials/dockerfile.html
+
+https://blog.jupyter.org/binder-2-0-a-tech-guide-2017-fd40515a3a84
+
+https://blog.jupyter.org/binder-with-zenodo-af68ed6648a6
+

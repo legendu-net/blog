@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-21 08:55:26
+Date: 2019-10-21 09:36:46
 Author: Ben Chuanlong Du
 Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
@@ -13,7 +13,7 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-## GitPod
+## [GitPod](https://www.gitpod.io/)
 
 You can actually start a service in your Gitpod workspace.
 
@@ -43,7 +43,15 @@ You can actually start a service in your Gitpod workspace.
 
 ## [Binder](https://mybinder.org/)
 
-Great for temporary usages. 
+### Pros
+
+1. Great for temporary usages. 
+
+2. Customization of Docker iamge is supported!
+
+### Cons
+
+1. No persistent storage at this time.
 
 ## [Quantopian](https://www.quantopian.com/)
 

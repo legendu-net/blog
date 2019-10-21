@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ln -svf /app/ /
+ln -svfT /app/ /workdir
 mkdir -p /app/pkgs
 curl -sL https://deb.nodesource.com/setup_10.x | bash -
 apt-get update -y

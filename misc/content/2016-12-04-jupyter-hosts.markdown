@@ -13,33 +13,76 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-## [Cocalc](https://cocalc.com/)
-
 ## [RMOTR Notebooks | notebooks.ai](https://notebooks.ai/)
+
+1. Installed software does not persist.
 
 ## [Kyso](https://kyso.io/)
 
+2. Doesn't seem to support Jupyter/JupyterLab/JupyterHub server. 
+    You can only view/render notebooks.
+
 ## [Mode](https://mode.com/)
+
+1. Doesn't seem to support Jupyter/JupyterLab/JupyterHub sever. 
 
 ## [Quantopian](https://www.quantopian.com/)
 
+### Pros
+
+There seems to be lots of good tutorials on Quant Fiance. 
+
+### Cons
+
+1. Jupyter only and too limited features. Not usable. 
+
 ## [Cocalc](https://cocalc.com/)
+
+1. The free plan is not usable as no internet access is provided for the free plan.
 
 ## [Gryd](https://gryd.us/)
 
+### Cons
+
+1. Supports only Jupyter but not JupyterLab/Hub.
+
+2. Outdate Docker images and software (Python 3.6 only).
+
+3. `sudo` is not supported currently.
+
+4. Installed software does not persist.
+
 ## [DataQuest](https://www.dataquest.io/)
 
+Course learning only.
+
 ## [Kaggle](https://www.kaggle.com/)
+
+Jupyter notebooks only. No terminal.
 
 ## [Authorea](https://authorea.com/)
 
 ## [Binder](https://mybinder.org/)
 
+Great for temporary usages. 
+
+### Cons
+
+1. Jupyter only. 
+
+2. `sudo` not supported
+
 ## [YHat ScienceBox](https://aws.amazon.com/marketplace/pp/B00KQY1T32/ref=mkt_wir_yhatsciencebox)
 
 ## [Datalore](https://datalore.io/)
 
-## [PythonAnywhere](_https://www.pythonanywhere.com/_)
+Not usable.
+
+## [PythonAnywhere](https://www.pythonanywhere.com/)
+
+### Cons
+
+1. `sudo` is not supported.
 
 ## [Microsoft Azure Notebooks](https://notebooks.azure.com/#)
 
@@ -53,14 +96,22 @@ but rather for convenient reference of the author and future improvement.
 
 ## [Code Ocean](https://codeocean.com/)
 
-## [Kogence](https://kogence.com/app/docs/Category:JupyterNotebook#Using_JupyterNotebook_on_Kogence)
+### Pros
+
+1. Very flexible. Seems to be a good choice. 
+
+### Cons
+
+1. The pricing seems to be expensive ...
 
 ## [Google Colaboratory](https://colab.research.google.com/)
+
+1. JupyterLab is not directly support (even though hacking around is possible).
+
+2. Google Drive can be mounted.
 
 ## Amazon SageMath
 
 ## [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio)
-
-## [R-Brain](https://r-brain.io/en/)
 
 ## Deploy Your Own Public JupyterHub Server

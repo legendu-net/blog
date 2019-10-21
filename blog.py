@@ -22,6 +22,8 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 '''
+MARKDOWN = '.markdown'
+IPYNB = '.ipynb'
 NOW_DASH = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 TODAY_DASH = NOW_DASH[:10]
 BASE_DIR = Path(__file__).resolve().parent
@@ -41,6 +43,8 @@ class Post:
     """
     def __init__(self, path: Union[str, Path]):
         self.path = Path(path).resolve()
+        if self.path.suffix not in (MARKDOWN, IPYNB):
+            raise ValueError(f'{self.path} is not a {MARKDOWN} or {IPYNB} file.')
 
     def __str__(self):
         return str(self.path)
@@ -78,6 +82,12 @@ class Post:
         self.path.write_text(text)
 
     def update_time(self) -> None:
+        suffix = self.path.suffix
+        if suffix == MARKDOWN:
+            return self._update_time_markdown()
+        return self._update_time_ipynb()
+
+    def _update_time_markdown(self) -> None:
         """Update the meta filed date in the post.
         """
         # TODO: put the time into the databse as well
@@ -140,11 +150,9 @@ class Post:
 
     def record(self):
         suffix = self.path.suffix
-        if suffix == '.ipynb':
-            return self._parse_ipynb()
-        if suffix == '.markdown':
+        if suffix == MARKDOWN:
             return self._parse_markdown()
-        raise ValueError(f'{self.path} is not a .markdown or .ipynb file.')
+        return self._parse_ipynb()
 
     def _parse_markdown(self) -> List[str]:
         with self.path.open() as fin:
@@ -317,11 +325,9 @@ class Post:
         :return: The title of the post.
         """
         suffix = self.path.suffix
-        if suffix == '.ipynb':
-            return self._title_ipynb()
-        if suffix == '.markdown':
+        if suffix == MARKDOWN:
             return self._title_markdown()
-        raise ValueError(f'{self.path} is not a .markdown or .ipynb file.')
+        return self._title_ipynb()
 
     def _title_ipynb(self):
         # TODO: dedup the code 
@@ -442,7 +448,7 @@ class Blogger:
         if not post_dir.is_dir():
             return
         for path in post_dir.iterdir():
-            if path.suffix in ('.markdown', '.ipynb'):
+            if path.suffix in (MARKDOWN, IPYNB):
                 self._load_post(Post(path))
 
     def _load_post(self, post: Post):

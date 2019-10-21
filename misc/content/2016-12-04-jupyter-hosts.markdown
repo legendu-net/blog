@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-21 08:49:02
+Date: 2019-10-21 08:55:26
 Author: Ben Chuanlong Du
 Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
@@ -41,6 +41,10 @@ You can actually start a service in your Gitpod workspace.
 
 1. The free plan is not usable as no internet access is provided for the free plan.
 
+## [Binder](https://mybinder.org/)
+
+Great for temporary usages. 
+
 ## [Quantopian](https://www.quantopian.com/)
 
 ### Pros
@@ -72,10 +76,6 @@ Course learning only.
 Jupyter notebooks only. No terminal.
 
 ## [Authorea](https://authorea.com/)
-
-## [Binder](https://mybinder.org/)
-
-Great for temporary usages. 
 
 ### Cons
 

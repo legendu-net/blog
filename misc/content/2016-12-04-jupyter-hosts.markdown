@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-20 19:52:29
+Date: 2019-10-20 23:36:18
 Author: Ben Chuanlong Du
 Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
@@ -12,6 +12,11 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+
+## GitPod
+
+You can actually start a service in your Gitpod workspace.
+
 
 ## [RMOTR Notebooks | notebooks.ai](https://notebooks.ai/)
 

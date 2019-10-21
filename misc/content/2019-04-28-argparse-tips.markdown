@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-29 00:27:26
+Date: 2019-10-21 18:15:23
 Author: Benjamin Du
 Slug: argparse-tips
 Title: argparse Tips
@@ -30,3 +30,13 @@ It is not meant to readers but rather for convenient reference of the author and
   so an even easier way of get the value of an option with a fallback value is use `vars(args).get('level', 'INFO')`.
 
 
+## Optional Positional Arguments
+
+By design, 
+positional arguments are always required (which is different from options).
+However, 
+you can leverage the `nargs` option to achive optional positional arguments.
+Basically, 
+you use `nargs=*` to let argparse knwo that the positonal argument takes 0 or more inputs.
+
+Below is an example ...

@@ -82,23 +82,26 @@ class Post:
         self.path.write_text(text)
 
     def update_time(self) -> None:
-        suffix = self.path.suffix
-        if suffix == MARKDOWN:
+        """Update the meta filed date in the post.
+        """
+        if self.path.suffix == MARKDOWN:
             return self._update_time_markdown()
         return self._update_time_ipynb()
 
     def _update_time_markdown(self) -> None:
-        """Update the meta filed date in the post.
-        """
         # TODO: put the time into the databse as well
         with self.path.open() as fin:
             lines = fin.readlines()
-        for idx, line in enumerate(lines):
-            if line.startswith('Date: '):
-                lines[idx] = f'Date: {NOW_DASH}\n'
-                break
+        update_meta_field(lines, 'Date', NOW_DASH)
         with self.path.open('w') as fout:
             fout.writelines(lines)
+
+    def _update_time_ipynb(self) -> None:
+        notebook = json.loads(self.path.read_text())
+        if notebook['cells'][0]['cell_type'] != 'markdown':
+            raise SyntaxError(f'The first cell of the notebook {self.path} is not a markdown cell!')
+        update_meta_field(notebook['cells'][0]['source'], '- Date', NOW_DASH)
+        self.path.write_text(json.dumps(notebook))
 
     @staticmethod
     def format_title(title):
@@ -149,8 +152,7 @@ class Post:
         return tags
 
     def record(self):
-        suffix = self.path.suffix
-        if suffix == MARKDOWN:
+        if self.path.suffix == MARKDOWN:
             return self._parse_markdown()
         return self._parse_ipynb()
 
@@ -286,7 +288,7 @@ class Post:
     @staticmethod
     def update_meta_field(lines: List[str], field: str, value: str) -> None:
         for idx, line in enumerate(lines):
-            if line.startswith(f'{field}: '):
+            if line.startswith(f'{field}:'):
                 lines[idx] = f'{field}: {value}\n'
                 break
         else:
@@ -324,8 +326,7 @@ class Post:
         """Get the title of the post.
         :return: The title of the post.
         """
-        suffix = self.path.suffix
-        if suffix == MARKDOWN:
+        if self.path.suffix == MARKDOWN:
             return self._title_markdown()
         return self._title_ipynb()
 

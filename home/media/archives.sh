@@ -5,7 +5,7 @@ if [[ $(id -u) == 0 ]]; then
 else
     prefix=sudo
 fi
-$prefix apt-get install python3 python3-setuptools python3-pip
+$prefix apt-get install -y python3 python3-setuptools python3-pip
 pip3 install --user loguru
 
 mkdir -p $HOME/archives

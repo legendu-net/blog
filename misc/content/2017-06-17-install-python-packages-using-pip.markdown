@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-22 22:12:35
+Date: 2019-10-22 22:18:01
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages Using pip
@@ -37,19 +37,16 @@ apt-get install python3-pip
 
 `pip` should have already been installed when you instal Python using Homebrew or Anaconda.
 
-### Universal Way
+## Bootstrapping the pip Installer
 
-`pip` can be installed directly from Python.
+The package [ensurepip](https://docs.python.org/3.8/library/ensurepip.html)
+provides support for bootstrapping the pip installer into an existing Python installation or virtual environment.
 
 ```Bash
 sudo python3 -m ensurepip
 ```
 
-This is a universal and convenient way of installing `pip` for Python.
-For example,
-it can be used to install `pip` for Python in Cygwin.
-
-## Proper WAY of USING pip
+## Proper Way of Using pip
 
 1. Upgrading pip via the system package management tools only.
 

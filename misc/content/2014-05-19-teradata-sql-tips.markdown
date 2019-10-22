@@ -2,7 +2,7 @@ UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Title: Teradata SQL Tips
 Author: Ben Chuanlong Du
-Date: 2019-10-22 01:02:18
+Date: 2019-10-22 01:13:47
 Slug: teradata-sql-tips
 Category: Programming
 Tags: programming, tips, Teradata SQL
@@ -32,6 +32,19 @@ but rather for convenient reference of the author and future improvement.
 
 ## Trick and Trap
 
+1. Must use on commit preserve rows to persist data if you create a volatile table.
+
+2. Data cast using parentheses is discouraged in Teradata SQL. 
+    Use the `CAST` function instead. 
+    Another way is to use suffix to indicate the type of literal values, 
+    e.g., `'1'XI8`.
+
+
+2. Below code get informtion about the table `cat123`.
+
+        :::sql
+        SELECT * FROM dbc.TablesV WHERE DataBaseName = '' AND TableName = 'cat123'
+
 1. Instead of using macros of other extensions of SQL
     (which many versions of SQL does not support),
     an better alternative is to call SQL in other languages (Python, R, etc.).
@@ -44,6 +57,15 @@ but rather for convenient reference of the author and future improvement.
 
 3. You cannot create a new table using `insert into`.
     `insert into` can only insert into an existing table.
+
+## Volatile
+
+There is no way to check if a specific Volatile Table exists besides HELP VOLATILE TABLE which returns all VT.
+identity, auto increment]: 
+1. better not to set value by yourself (even if you can) as confliction might happen later; 
+2. insert one by one works well however insert into using select seems not to work as expected ...
+    over (order by field) necessary for row_number() etc.? 
+    u can use order by 0 if no ordering wanted ..., and is probably faster ...
 
 ## Syntax
 
@@ -216,3 +238,30 @@ For example (note that `2016-09-31` does not exist)
 where dt between '2016-09-01' and '2016-09-31'  
 ```
 in Teradata throws the error message "a character string failed to convert to a numeric value".
+
+
+
+## References
+
+
+http://www.dwhpro.com/teradata-golden-tuning-tipps-2017/
+
+http://community.teradata.com/t5/Database/Teradata-IDENTITY-columns/td-p/8025
+
+http://www.info.teradata.com/HTMLPubs/DB_TTU_14_00/index.html#page/SQL_Reference/B035_1184_111A/Create_Table-Details.012.046.html
+
+http://teradatafaqs.blogspot.com/2013/05/teradata-generated-identity-column.html
+
+https://developer.teradata.com/uda/articles/working-with-identity-columns-and-unity-director-and-loader
+
+http://www.info.teradata.com/htmlpubs/DB_TTU_14_00/index.html#page/SQL_Reference/B035_1184_111A/Create_Table-Details.012.045.html
+
+https://community.teradata.com/t5/Analytics/identity-columns/td-p/143
+
+http://forgetcode.com/Teradata/1741-INSERT-SELECT
+
+http://forgetcode.com/Teradata/1779-ROW-NUMBER
+
+http://www.dwhpro.com/ a very good teradata blog
+
+http://kedar.nitty-witty.com/blog/no-more-spool-space-teradata-query-solution

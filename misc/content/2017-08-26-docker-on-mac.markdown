@@ -1,6 +1,6 @@
 UUID: 09253576-35e1-470f-8fd2-03dc2d659e47
 Status: published
-Date: 2019-04-23 10:57:17
+Date: 2019-10-22 00:36:20
 Author: Ben Chuanlong Du
 Slug: docker-on-mac
 Title: Docker on Mac
@@ -27,6 +27,14 @@ By default, Docker Desktop for Mac is set to use 2GB runtime memory,
 allocated from the total available memory on your Mac.
 This might not be enough in some situations (e.g., when you run BeakerX).
 You'd make set it to be a larger value.
+
+
+Default file location for user settings is
+`~/Library/Containers/com.docker.docker/Data/database/com.docker.driver.amd64-linux/etc/docker/daemon.json`
+However,
+you shouldn't edit it directly. 
+Instead, 
+You should go to the whale icon in the taskbar > Preferences > Daemon > Advanced.
 
 
 ## Advanced Settings

@@ -1,6 +1,5 @@
-UUID: b4216a06-2ec8-40a6-803f-26c564ad0799
 Status: published
-Date: 2018-04-30 14:07:41
+Date: 2019-10-22 00:42:23
 Author: Ben Chuanlong Du
 Slug: tips-for-docker-compose
 Title: Tips for Docker Compose
@@ -23,3 +22,10 @@ https://github.com/jupyter-incutbator/dashboards_setup/tree/master/docker_deploy
 
 
 pip install docker-compose
+
+
+## NFS
+
+https://forums.docker.com/t/docker-swarm-nfs-mount/39007
+
+https://stackoverflow.com/questions/45282608/how-to-directly-mount-nfs-share-volume-in-container-using-docker-compose-v3

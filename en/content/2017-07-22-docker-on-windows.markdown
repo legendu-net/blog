@@ -1,6 +1,6 @@
 UUID: 069ecb73-0fdb-49c0-bc65-4e1bbd3e356b
 Status: published
-Date: 2017-08-26 20:09:10
+Date: 2019-10-22 00:41:05
 Author: Ben Chuanlong Du
 Slug: docker-on-windows
 Title: Docker on Windows
@@ -32,6 +32,20 @@ First,
 Cygwin paths (when mounting volumes) are not recognized by Docker on Windows.
 Second, 
 some docker commands will simply fail.
+
+## Tips
+
+
+### Mounting Host Directories on Windows
+
+https://rominirani.com/docker-on-windows-mounting-host-directories-d96f3f056a2c
+
+### Portainer
+
+Portainer is an open-source management UI for Docker, 
+including Docker Swarm environment. 
+Portainer makes it easier for you to manage your Docker containers, 
+it allows you to manage containers, images, networks, and volumes from the web-based Portainer dashboard.
 
 ## Issues 
 

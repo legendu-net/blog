@@ -7,6 +7,12 @@ Title: Docker on Windows
 Category: Software
 Tags: Software, Docker, Widnows, Windows 10, Hyper-V, Virtualization
 
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+
+
 While Docker can be used on Windows (10 and later) now, 
 there are all kinds of issues. 
 It is suggested that you avoid running Docker on Windows at this time 

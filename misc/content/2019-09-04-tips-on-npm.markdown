@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-22 19:53:12
+Date: 2019-10-22 19:53:58
 Author: Benjamin Du
 Slug: tips-on-npm
 Title: Tips on npm
@@ -23,3 +23,6 @@ https://medium.com/@ExplosionPills/dont-use-sudo-with-npm-still-66e609f5f92
 https://stackoverflow.com/questions/16151018/npm-throws-error-without-sudo
 
 
+https://docs.npmjs.com/cli/install
+
+https://stackoverflow.com/questions/10081293/install-npm-into-home-directory-with-distribution-nodejs-package-ubuntu

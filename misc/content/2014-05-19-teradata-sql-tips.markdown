@@ -2,7 +2,7 @@ UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Title: Teradata SQL Tips
 Author: Ben Chuanlong Du
-Date: 2017-05-08 21:12:48
+Date: 2019-10-22 01:02:18
 Slug: teradata-sql-tips
 Category: Programming
 Tags: programming, tips, Teradata SQL
@@ -192,6 +192,15 @@ while `with no data` creates an empty table.
 ```SQL
 select * from dbc.dbcinfo;
 ```
+
+## Error Code
+
+http://info.teradata.com/htmlpubs/DB_TTU_16_00/index.html#page/Query_Management_Tools/B035-2414-086K/BTEQReturnCodes_USE_2414.html#wwID0EKJNM
+[TeraJDBC 15.10.00.14] [Error 9804] [SQLState HY000] Response Row size or Constant Row size overflow: might be because too large column definition
+using distinct (the result has only about 1,000 rows) causes the following error, how can I avoid the issue? 
+[Teradata Database] [TeraJDBC 15.10.00.22] [Error 2646] [SQLState HY000] No more spool space in chdu.
+No More Spool Space http://kedar.nitty-witty.com/blog/no-more-spool-space-teradata-query-solution
+Instead of distinct (which might cause "no more spool space" issue), you can try group by.
 
 ## Error Message
 1. unknown error, probably network issue

@@ -14,5 +14,6 @@ git clone git@github.com:dclong/config.git $HOME/archives/config
 git clone git@bitbucket.org:dclong/dsutil.git $HOME/archives/dsutil
 
 $HOME/archives/config/linstall.py sshc -ic
+$HOME/archives/config/linstall.py nodejs -ic
 $HOME/archives/config/linstall.py ipy3 -ic
 $HOME/archives/config/linstall.py svim -ic

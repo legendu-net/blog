@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-29 18:20:22
+Date: 2019-10-22 09:36:05
 Author: Ben Chuanlong Du
 Slug: jupyter-notebook-kernels
 Title: Jupyter Notebook Kernels
@@ -14,6 +14,10 @@ but rather for convenient reference of the author and future improvement.
 **
 
 [Jupyter Kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
+
+By default, 
+Python kernels are installed to `/usr/local/share/jupyter/kernels`
+and BeakerX kernels are installed to `/usr/share/jupyter/kernels`.
 
 ## SQL Kernels
 

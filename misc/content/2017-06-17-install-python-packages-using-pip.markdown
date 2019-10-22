@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-11 18:37:29
+Date: 2019-10-22 19:56:19
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages Using pip
@@ -48,6 +48,12 @@ python3 -m ensurepip
 This is a universal and convenient way of installing `pip` for Python.
 For example,
 it can be used to install `pip` for Python in Cygwin.
+
+## Proper WAY of USING pip
+
+https://github.com/pypa/pip/issues/5599
+
+https://stackoverflow.com/questions/49940813/pip-no-module-named-internal
 
 
 ## Install Python packages Locally

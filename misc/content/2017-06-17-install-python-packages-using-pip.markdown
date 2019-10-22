@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-22 19:56:19
+Date: 2019-10-22 22:12:35
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages Using pip
@@ -42,7 +42,7 @@ apt-get install python3-pip
 `pip` can be installed directly from Python.
 
 ```Bash
-python3 -m ensurepip
+sudo python3 -m ensurepip
 ```
 
 This is a universal and convenient way of installing `pip` for Python.
@@ -50,6 +50,11 @@ For example,
 it can be used to install `pip` for Python in Cygwin.
 
 ## Proper WAY of USING pip
+
+1. Upgrading pip via the system package management tools only.
+
+2. Do NOT use `sudo pip install pkg1 pkg2` install packages to system-wide locations. 
+    Instead, use `pip install --user pkg1 pkg2` to install packages to your local directory.
 
 https://github.com/pypa/pip/issues/5599
 

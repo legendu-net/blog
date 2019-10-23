@@ -6,7 +6,7 @@ else
     prefix=sudo
 fi
 $prefix apt-get update -y
-$prefix apt-get install -y python3 python3-setuptools python3-pip
+$prefix apt-get install -y python3 python3-setuptools python3-pip wajig docker.io
 pip3 install --user loguru
 
 mkdir -p $HOME/archives

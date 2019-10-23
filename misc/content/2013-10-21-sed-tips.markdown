@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-10-13 10:51:51
+Date: 2019-10-22 22:04:35
 Slug: sed-tips
 Title: Tips for "sed"
 Category: Software
@@ -17,50 +17,50 @@ unless you have to stick to shell script.
  
 1. Add `#!/bin/bash` to the first line of all `.txt` files.  
 
-        :::Bash
+        :::bash
         sed -i '1 s_^_#!/bin/bash\n_' *.txt
 
 2. Add `#!/bin/bash` to the last line of all `.txt` files.  
 
-        :::Bash
+        :::bash
         sed -i '$ s_$_\n#!/bin/bash_' *.txt
 
 3. Add `https://www.quandl.com/api/v1/datasets/CME/` to the beginning of each line in a file.
 
-        :::Bash
+        :::bash
         sed -i 's_^_https://www.quandl.com/api/v1/datasets/CME/_g' done.txt 
 
 4. Get rid of all spaces (helpful for comparing not well formatted code)
 对于格式问题 可以直接先删除空格等 然后再比较文件！！！very briliant idea!!! 
 
-        :::Bash
+        :::bash
         sed -i 's/ //g' *.r
 
 ## Examples of Cleaning CSV Data
 
 1. Replace all ` + ` with `_` in the first (header) line.
 
-        :::Bash
+        :::bash
         sed -i '1 s/ + /_/g' *.csv
 
 2. Replace all ` ` with `_` in the first (header) line.
 
-        :::Bash
+        :::bash
         sed -i '1 s/ /_/g' *.csv
 
 3. Replace all `-` with `_` in the first (header) line.
 
-        :::Bash
+        :::bash
         sed -i '1 s/-/_/g' *.csv
 
 4. Replace all `.` with `_` in the first (header) line.
 
-        :::Bash
+        :::bash
         sed -i '1 s/\./_/g' *.csv
 
 5. Print the first (header) line of all CSV documents seprated by dash lines.
 
-        :::Bash
+        :::bash
         echo "--------------------------------------------------";
         for f in *.csv; do
             head $f -n 1;
@@ -69,7 +69,7 @@ unless you have to stick to shell script.
 
 6. More examples.
 
-        :::Bash
+        :::bash
         sed -i 'd/^layout: page/' *.md
         sed -i '/^layout: page/d' *.md
         sed -i '/^comments: yes/d' *.md
@@ -82,7 +82,7 @@ unless you have to stick to shell script.
 1. insert "Author: Ben Chuanlong Du" as the 2 line into a text file. 
 Notice the `\` delimiter. You cannot use `/`.
 
-        :::Bash
+        :::bash
         sed -i '2 i\Author: Ben Chuanlong Du' path_to_file
 
 However, 
@@ -91,19 +91,19 @@ the above command does not do anything!
 
 2. Add a blank line at the beginning of file.
 
-        :::Bash
+        :::bash
         sed '1 i\\' file.txt
 
 ### sed
 
 4. Code for rick's problem (splitting a column into 2)
 
-        :::Bash
+        :::bash
         sed 's/\(s[0-9]\{1,2\}\)" "\(t[0-9]\{1,2\}\)/\1-\2/g' testing.txt
 
 16. Insert `#!/bin/bash` as the first line into file with the extension `.txt`. 
 
-        :::Bash
+        :::bash
         sed -i '1 s_^_#!/bin/bash\n_' *.txt
 
 
@@ -114,24 +114,30 @@ the above command does not do anything!
     Of course, 
     you have replace the regular expression `^user_id,.*` with an appropriate one.
 
-        :::Bash
+        :::bash
         sed -i '2,$ s/^user_id,.*$//g' data.csv 
 
 2. Get rid of escaped double quotes (`\"`).
 
-        :::Bash
+        :::bash
         sed -i 's/\\"//g' data.csv
 
 3. Replace `## Usage` with `## Usage in Linux/Unix`
 
-        :::Bash
+        :::bash
         sed -i 's_^## Usage.*$_## Usage in Linux/Unix_' *.ipynb
 
 4. Replace `valid users = ${DOCKER_USER}` with `valid users = dclong`.
 
-        :::Bash
+        :::bash
         sed "s/^valid users\s*=\s*\${DOCKER_USER}/valid users = dclong/g" smb.conf 
+
+5. Remove the lines containing Python 2.7 versions (e.g., `2.7.16`).
+
+        :::bash
+        sed -z 's/2\.7\.[[:digit:]]*\n//' .pyenv/version
 
 ## Questions
 
 1. sed recursively ... aaaa aa -> a?
+

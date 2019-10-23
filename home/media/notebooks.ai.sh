@@ -9,8 +9,8 @@ pip3 install pelican loguru py4j
 mkdir -p /app/archives
 ln -svf /app/archives /root/
 
-rm -f /root/.ssh
-ln -svfT /app/ssh /root/.ssh
+mkdir -p /root/.ssh
+cp /app/ssh/* /root/.ssh/
 # blog
 if [[ ! -e /app/archives/blog ]]; then
     git clone git@github.com:dclong/blog.git /app/archives/

@@ -1,3 +1,5 @@
 image: dclong/gitpod-py3
 ports:
   - port: 8000
+tasks:
+  - command: ln -svf /workspace/blog/main.py /home/gitpod/.local/bin/blog

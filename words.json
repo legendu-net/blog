@@ -19,7 +19,7 @@
     ["Pyqt", "PyQt"], ["Tmux", "tmux"], ["Uuid", "UUID"], ["Wget", "wget"], ["Yapf", "yapf"],
     ["Anbox", "AnBox"], ["Gnome", "GNOME"], 
     ["Latex", "LaTeX"], ["Mllib", "MLlib"], ["Mysql", "MySQL"],
-    ["Pyqt5", "PyQt5"], ["Rjava", "rJava"], ["Xmind", "XMind"], 
+    ["Pyenv", "pyenv"], ["Pyqt5", "PyQt5"], ["Rjava", "rJava"], ["Xmind", "XMind"], 
     ["Aerofs", "AeroFS"], ["Btsync", "BTSync"], ["Centos", "CentOS"], 
     ["Etrade", "eTrade"], ["Github", "GitHub"], ["Nodejs", "NodeJS"],
     ["Ffmpeg", "FFmpeg"], ["Wechat", "WeChat"], ["Pyodbc", "pyodbc"], ["Pypdf2", "PyPDF2"],

@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-10-22 10:33:48
+Date: 2019-10-23 18:20:23
 Author: Benjamin Du
 Slug: tips-on-pyenv
-Title: Tips on Pyenv
+Title: Tips on pyenv
 Category: Programming
 Tags: programming, Python, pyenv, versions
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-16 22:07:28
+Date: 2019-10-23 23:30:54
 Author: Benjamin Du
 Slug: python-tips-and-traps 
 Title: Python Tips and Traps
@@ -24,6 +24,19 @@ https://docs.python-guide.org/writing/gotchas/
 
 https://stackoverflow.com/questions/101268/hidden-features-of-python
 
+
+1. One of the trickiest problem in Python is conflicting package/module name. 
+    For example, 
+    if you have a Python script named `abc.py` in the current directory 
+    and your script depends on the Python module `collections.abc`,
+    you code will likely fail to run. 
+    Another (really tricky) eample is that if you have a Python script named `pyspark.py`
+    and submit it to  a Spark cluster to run (using `spark-submit`).
+    The PySpark application will likely throw an error saying that the `pyspark` module is not found.
+    Those are just 2 commonly seen examples. 
+    You can easily run into this issue when you run ad hoc Python scripts 
+    (unlikely to encounter this issue when you develop a Python package).
+    A possible way to avoid this issue is to always prefix your ad hoc Python script with a leading underscore (`_`).
 
 1. Use type annotation to make your code more readable and easier to understand.
 

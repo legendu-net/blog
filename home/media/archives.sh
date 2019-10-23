@@ -6,7 +6,7 @@ else
     prefix=sudo
 fi
 $prefix apt-get update -y
-$prefix apt-get install -y python3 python3-setuptools python3-pip wajig docker.io
+$prefix apt-get install -y python3 python3-setuptools python3-pip wajig
 pip3 install --user loguru
 
 mkdir -p $HOME/archives
@@ -16,5 +16,7 @@ git clone git@bitbucket.org:dclong/dsutil.git $HOME/archives/dsutil
 
 $HOME/archives/config/linstall.py sshc -y -ic
 $HOME/archives/config/linstall.py nodejs -y -ic
+$HOME/archives/config/linstall.py poetry -y -ic
 $HOME/archives/config/linstall.py ipy3 -y -ic
 $HOME/archives/config/linstall.py svim -y -ic
+$HOME/archives/config/linstall.py docker -y -ic

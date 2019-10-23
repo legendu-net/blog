@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-10-16 22:09:43
+Date: 2019-10-23 06:40:27
 Slug: python-tips
 Title: Tips on Python
 Category: Programming
@@ -124,19 +124,6 @@ return `ascii` number of characters
 7. Python does not support `++`, `--` but support `+=`, `-+`, etc.
 
 
-- [Python日报](http://py.memect.com/)
-- [Python Homepage](http://www.python.org/)
-- [Python Documentation](http://docs.python.org/py3k/)
-- [Useful Modules](https://wiki.python.org/moin/UsefulModules)
-- [LearningJython](http://wiki.python.org/jython/LearningJython)
-- [Jython Tutorial](http://www.jython.org/currentdocs.html)
-- [PEP 8 -- Style Guide for Python](http://legacy.python.org/dev/peps/pep-0008/)
-
-
-http://builtoncement.org/
-
-https://pythonhosted.org/pyCLI/
-
 ### Encryption
 
 - [pycrypto](https://pypi.python.org/pypi/pycrypto)
@@ -145,4 +132,21 @@ https://github.com/dlitz/pycrypto
 
 http://stackoverflow.com/questions/3504955/using-rsa-in-python
 
+
+## References
+
+- [The Hitchhiker's Guide to Python](https://docs.python-guide.org/writing/documentation/)
+- [Python日报](http://py.memect.com/)
+- [Python Homepage](http://www.python.org/)
+- [Python Documentation](http://docs.python.org/py3k/)
+- [Useful Modules](https://wiki.python.org/moin/UsefulModules)
+- [LearningJython](http://wiki.python.org/jython/LearningJython)
+- [Jython Tutorial](http://www.jython.org/currentdocs.html)
+- [PEP 8 -- Style Guide for Python](http://legacy.python.org/dev/peps/pep-0008/)
+- [Documentating Python](https://devguide.python.org/documenting/)
+
+
+http://builtoncement.org/
+
+https://pythonhosted.org/pyCLI/
 

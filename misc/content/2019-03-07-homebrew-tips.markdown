@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-23 20:59:14
+Date: 2019-10-23 00:14:59
 Author: Benjamin Du
 Slug: homebrew-tips
 Title: Tips on Homebrew
@@ -17,6 +17,7 @@ brew install
 brew uninstall
 brew link 
 brew search 
+brew list | xargs brew uninstall
 brew search python@3.6
 ```
 
@@ -29,7 +30,9 @@ brew search python@3.6
 brew install gcc
 ```
 
-## Install [Linuxbrew](https://docs.brew.sh/Homebrew-on-Linux)
+## [Install Linuxbrew](https://github.com/Homebrew/install)
+
+https://github.com/Homebrew/install
 
 ```Bash
 sh -c "$(curl --proxy http://your.proxy.servder:port -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"

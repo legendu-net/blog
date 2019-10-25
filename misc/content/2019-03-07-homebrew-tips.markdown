@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-23 00:14:59
+Date: 2019-10-25 00:44:53
 Author: Benjamin Du
 Slug: homebrew-tips
 Title: Tips on Homebrew
@@ -72,3 +72,4 @@ Or use the following command if Linuxbrew is installed to `~/.linuxbrew`.
 
 [Homebrew Discussion Forum](https://discourse.brew.sh/latest)
 
+[Homebrew Cheatsheet](https://devhints.io/homebrew)

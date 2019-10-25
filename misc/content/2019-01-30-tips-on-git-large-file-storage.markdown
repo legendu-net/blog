@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-16 18:29:19
+Date: 2019-10-25 02:42:50
 Author: Ben Chuanlong Du
 Slug: tips-for-git-large-file-storage
 Title: Tips for Git Large File Storage
@@ -16,6 +16,12 @@ It is not meant to readers but rather for convenient reference of the author and
 Please refer to 
 [git-lfs Installation](https://github.com/git-lfs/git-lfs/wiki/Installation)
 for instructions on how to install git-lfs.
+
+
+## Tips and Traps
+
+1. It seems to be that git-lfs automatically tracks large files now if it is installed and enabled,
+    which makes things more convenient.
 
 
 ## References

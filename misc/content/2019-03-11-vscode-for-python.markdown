@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-05-07 20:34:40
+Date: 2019-10-27 21:38:51
 Author: Benjamin Du
 Slug: vscode-for-python
 Title: Visual Studio Code for Python
 Category: Programming
-Tags: programming, Python, Visual Studio Code, vscode, IDE
+Tags: programming, Python, Visual Studio Code, vscode, IDE, Jupyter notebook
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -28,3 +28,6 @@ It is not meant to readers but rather for convenient reference of the author and
 
 https://code.visualstudio.com/docs/languages/python
 
+## Visual Studio Code for Jupyter Notebook
+
+https://code.visualstudio.com/docs/python/jupyter-support

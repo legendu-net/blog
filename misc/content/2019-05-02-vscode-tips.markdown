@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-17 04:21:48
+Date: 2019-10-27 23:19:12
 Author: Benjamin Du
 Slug: vscode-tips
 Title: Tips for Visual Studio Code
@@ -26,6 +26,8 @@ https://code.visualstudio.com/docs/remote/containers
 [Visual Stuido IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 
 [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+
+[Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal)
 
 https://marketplace.visualstudio.com/items?itemName=rafaelmaiolla.remote-vscode
 

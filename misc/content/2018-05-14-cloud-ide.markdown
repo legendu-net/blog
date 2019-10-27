@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-02 21:45:00
+Date: 2019-10-27 22:28:29
 Author: Ben Chuanlong Du
 Slug: cloud-ide
 Title: Cloud IDE
@@ -12,13 +12,18 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+## [VS Code Server](https://github.com/cdr/code-server)
 
-## [Cloud9](http://www.legendu.net/misc/blog/cloud9-tips/)
+## [GitPod](https://gitpod.io/)
 
-1. Looks much better Codenvy/Eclipse Che.
+GitPod (based on [theia](http://www.theia-ide.org/))
+is a web IDE for repositories on GitHub.
 
-2. Python autocompletion works in the official online version. 
-    However, debugging is supported only for Python2 currently.
+## [CodeSandbox](https://codesandbox.io/)
+
+CodeSandbox is a web IDE specifically for web application development.
+
+## [Visual Studio Code](https://code.visualstudio.com/) with the Plugin [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
 ## [theia](http://www.theia-ide.org/)
 
@@ -30,7 +35,6 @@ https://github.com/theia-ide/theia
 
 3. best to mount a directory that has mode 777
 
-
 [Enable username/password for Theia](https://github.com/theia-ide/theia-apps/issues/167)
 
 ### Docker for theia
@@ -41,6 +45,27 @@ docker pull theiaide/theia-full
 ```
 docker run -d -p 3000:3000 -v /workdir:/home/project:cached theiaide/theia-full
 ```
+
+## [ShareLatex ](https://www.sharelatex.com/)
+
+
+## [Codenvy](https://codenvy.io/) / [Eclipse Che](https://www.eclipse.org/che/)
+
+1. very slow
+
+2. vi keybindings is stupid
+
+3. Scala support is not ready
+
+Conclusion: basically unusable, not recommended
+
+## [Cloud9](http://www.legendu.net/misc/blog/cloud9-tips/)
+
+1. Looks much better Codenvy/Eclipse Che.
+
+2. Python autocompletion works in the official online version. 
+    However, debugging is supported only for Python2 currently.
+
 
 ## [Koding](https://www.koding.com/)
 
@@ -64,19 +89,7 @@ https://github.com/QuantumObject/docker-codiad
 
 An improbable web debugger through WebSockets for Python.
 
-## [ShareLatex ](https://www.sharelatex.com/)
-
 ## [CodiMD](https://hackmd-ce.herokuapp.com/)
-
-## [Codenvy](https://codenvy.io/) / [Eclipse Che](https://www.eclipse.org/che/)
-
-1. very slow
-
-2. vi keybindings is stupid
-
-3. Scala support is not ready
-
-Conclusion: basically unusable, not recommended
 
 ## References
 

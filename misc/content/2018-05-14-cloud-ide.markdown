@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-27 22:28:29
+Date: 2019-10-28 22:25:49
 Author: Ben Chuanlong Du
 Slug: cloud-ide
 Title: Cloud IDE
@@ -22,6 +22,12 @@ is a web IDE for repositories on GitHub.
 ## [CodeSandbox](https://codesandbox.io/)
 
 CodeSandbox is a web IDE specifically for web application development.
+
+## [StackBlitz](https://stackblitz.com/)
+
+StackBlitz provides web IDE for web application development.
+It is more than a cloud IDE
+but allows users to deploy web apps as well.
 
 ## [Visual Studio Code](https://code.visualstudio.com/) with the Plugin [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 

@@ -4,16 +4,16 @@ Slug: links
 Category: Links
 Tags: links, new, learning, people, forum, tools, resources, shopping, job
 
-- [News]({{site.url}}/miscellanea/news/)
+- [News](www.legendu.net/miscellanea/news/)
 
-- [Learning]({{ site.url }}/miscellanea/learning/) 
+- [Learning](www.legendu.net/miscellanea/learning/) 
 
-- [People]({{ site.url }}/miscellanea/people/) 
+- [People](www.legendu.net/miscellanea/people/) 
 
-- [Forum]({{ site.url }}/miscellanea/forum/) 
+- [Forum](www.legendu.net/miscellanea/forum/) 
 
-- [Tools and Resources]({{ site.url }}/miscellanea/tools/) 
+- [Tools and Resources](www.legendu.net/miscellanea/tools/) 
 
-- [Shopping]({{ site.url }}/miscellanea/shopping/) 
+- [Shopping](www.legendu.net/miscellanea/shopping/) 
 
-- [Job]({{ site.url }}/miscellanea/job/) 
+- [Job](www.legendu.net/miscellanea/job/) 

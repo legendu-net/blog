@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-10-28 22:17:32
+Date: 2019-10-28 22:20:51
 Author: Benjamin Du
 Slug: differences-between-kotlin-and-java
 Title: Differences Between Kotlin and Java
 Category: Programming
-Tags: programming
+Tags: programming, Kotlin, Java, JVM, difference, comparison
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

@@ -1,8 +1,7 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for Java Programming
-Date: 2019-03-19 19:42:58
+Date: 2019-10-28 22:17:32
 Slug: java-tips
 Category: Software
 Tags: tips

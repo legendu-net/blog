@@ -14,21 +14,6 @@ It is not meant to readers but rather for convenient reference of the author and
 
 [dclong/docker-vscode-server](https://github.com/dclong/docker-vscode-server)
 
-
-
-## Others' Docker Images
-
-docker run --user root -it -p 8080:8080 -v $HOME:/home/coder/project codercom/code-server:v2  --allow-https --auth password
-
-https://github.com/jefferyb/code-server-openshift/blob/master/Dockerfile
-
-https://github.com/monostream/code-server/blob/develop/Dockerfile
-
-https://github.com/linuxserver/docker-code-server/blob/master/Dockerfile
-
-
-https://github.com/keatontaylor/code-server-python-go
-
 ## Setup Password
 
 https://github.com/cdr/code-server/issues/940

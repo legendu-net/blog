@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-29 01:57:35
+Date: 2019-10-29 10:16:41
 Author: Benjamin Du
 Slug: vscode-tips
 Title: Tips for Visual Studio Code
@@ -23,15 +23,15 @@ https://code.visualstudio.com/docs/remote/containers
 
 ## Useful Extensions
 
+[Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal)
+
+[Python (by Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+
+[Python Extension Pack](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-extension-pack)
+
 [Visual Stuido IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 
 [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
-
-[Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal)
-
-https://marketplace.visualstudio.com/items?itemName=rafaelmaiolla.remote-vscode
-
-https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
 
 ## Fix the Caps Lock Mapping to Escape Issue
 

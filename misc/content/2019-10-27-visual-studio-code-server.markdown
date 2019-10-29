@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-29 02:07:16
+Date: 2019-10-29 09:44:27
 Author: Benjamin Du
 Slug: visual-studio-code-server
 Title: Visual Studio Code Server
@@ -12,10 +12,13 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 
+[dclong/docker-vscode-server](https://github.com/dclong/docker-vscode-server)
+
+
+
+## Others' Docker Images
+
 docker run --user root -it -p 8080:8080 -v $HOME:/home/coder/project codercom/code-server:v2  --allow-https --auth password
-
-
-## Docker Images
 
 https://github.com/jefferyb/code-server-openshift/blob/master/Dockerfile
 

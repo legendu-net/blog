@@ -11,4 +11,5 @@ pip3 install --user --upgrade /workdir/pkgs/dbay-*.*.*.whl
 pip3 install --user --upgrade /workdir/pkgs/dsutil-*.*.*.whl
 
 $HOME/archives/config/linstall.py git -c
+$HOME/archives/config/linstall.py svim -ic
 $HOME/archives/config/linstall.py ipy3 -c

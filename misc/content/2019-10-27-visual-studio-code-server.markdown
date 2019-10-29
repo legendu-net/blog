@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-27 23:18:28
+Date: 2019-10-29 02:07:16
 Author: Benjamin Du
 Slug: visual-studio-code-server
 Title: Visual Studio Code Server
@@ -25,6 +25,34 @@ https://github.com/linuxserver/docker-code-server/blob/master/Dockerfile
 
 
 https://github.com/keatontaylor/code-server-python-go
+
+## Setup Password
+
+https://github.com/cdr/code-server/issues/940
+
+## Settings
+
+https://github.com/cdr/code-server/issues/965
+
+https://github.com/cdr/code-server/issues/148
+
+## Install Extensions
+
+https://github.com/cdr/code-server/issues/171
+
+## JupyterLab Within VS Code 
+
+https://github.com/cdr/code-server/issues/524
+
+## Shortcuts
+
+https://github.com/cdr/code-server/issues/112
+
+https://github.com/cdr/code-server/issues/924
+
+## Useful Tools
+
+https://github.com/cdr/sshcode
 
 ## References
 

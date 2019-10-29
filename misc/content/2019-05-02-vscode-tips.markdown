@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-27 23:19:12
+Date: 2019-10-29 01:57:35
 Author: Benjamin Du
 Slug: vscode-tips
 Title: Tips for Visual Studio Code
@@ -44,6 +44,10 @@ A simple fix is to add the following configuration into the user's setting.json 
     "keyboard.dispatch": "keyCode"
 }
 ```
+
+## Install Extensions from Command-line
+
+https://stackoverflow.com/questions/34286515/how-to-install-visual-studio-code-extensions-from-command-line/34339780#34339780
 
 ## Change Indention/Shift Width
 

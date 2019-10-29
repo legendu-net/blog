@@ -3,9 +3,13 @@ import os
 import re
 import shutil
 from pathlib import Path
-import subprocess as sp
-import pelican
 from argparse import ArgumentParser
+import subprocess as sp
+try:
+    import pelican
+except ImportError:
+    sp.run('pip3 install --user pelican', shell=True, check=True)
+    import pelican
 from blog import Post, Blogger, BASE_DIR, HOME, EN, CN, MISC
 EDITOR = 'code'
 VIM = 'nvim' if shutil.which('nvim') else 'vim'

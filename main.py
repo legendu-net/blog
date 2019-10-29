@@ -251,7 +251,6 @@ def _push_github(dir_: str, https: bool):
 
 def _pelican_generate(dir_: str):
     """Generate the (sub) blog/site using Pelican.
-
     :param dir_: the sub blog directory to generate.
     """
     blog_dir = BASE_DIR / dir_
@@ -283,6 +282,14 @@ def auto_git_push(blogger, args):
     os.system(cmd)
 
 
+def update_plugins(blogger, args):
+    plugins = BASE_DIR / 'plugins'
+    cmd = f'''git -C {plugins} submodule init \
+            && git -C {plugins} submodule update --recursive --remote
+        '''
+    sp.run(cmd, shell=True, check=True)
+
+
 def install_vim(blogger, args):
     cmd = 'curl -sLf https://spacevim.org/install.sh | bash'
     os.system(cmd)
@@ -305,6 +312,7 @@ def parse_args(args=None, namespace=None):
     _subparse_edit(subparsers)
     _subparse_move(subparsers)
     _subparse_publish(subparsers)
+    _subparse_update_plugins(subparsers)
     _subparse_query(subparsers)
     _subparse_auto(subparsers)
     _subparse_space_vim(subparsers)
@@ -746,6 +754,12 @@ def _subparse_publish(subparsers):
         action='store_true',
         help='do not push the generated (sub) blog/site to GitHub.')
     subparser_publish.set_defaults(func=publish)
+
+
+def _subparse_update_plugins(subparsers):
+    subparser_update_plugins = subparsers.add_parser(
+        'update_plugins', aliases=['plugins', 'upp'], help='Update plugins.')
+    subparser_update_plugins.set_defaults(func=update_plugins)
 
 
 def _subparse_trash(subparsers):

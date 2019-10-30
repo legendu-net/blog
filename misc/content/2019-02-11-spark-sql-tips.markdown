@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-11 18:15:13
+Date: 2019-10-30 16:45:51
 Author: Benjamin Du
 Slug: spark-sql-tips
 Title: Spark SQL Tips
@@ -65,48 +65,28 @@ println(spark.sql("show create table some_table").collect()(0)(0))
 ## Union
 
 The following queries work.
-    :::sql
-    SELECT *
-    FROM mrkt_data.target_unit
-    WHERE impressions IS NULL
-    UNION
-    SELECT *
-    FROM mrkt_data.target_unit
-    WHERE impressions < 0
 
     :::sql
-    (SELECT *
-         FROM mrkt_data.target_unit
-         WHERE impressions IS NULL
-         LIMIT 10)
+    SELECT * FROM db.table WHERE col IS NULL
     UNION
-        (SELECT *
-         FROM mrkt_data.target_unit
-         WHERE impressions < 0
-         LIMIT 10)
+    SELECT * FROM db.table WHERE col < 0
 
     :::sql
-    (SELECT *
-     FROM mrkt_data.target_unit
-     WHERE impressions IS NULL
-     LIMIT 10)
+    (SELECT * FROM db.table WHERE col IS NULL LIMIT 10)
+    UNION
+    (SELECT * FROM db.table WHERE col < 0 LIMIT 10)
+
+    :::sql
+    (SELECT * FROM db.table WHERE col IS NULL LIMIT 10)
     UNION ALL
-    (SELECT *
-     FROM mrkt_data.target_unit
-     WHERE impressions < 0
-     LIMIT 10)
-  However, the following one does not.
+    (SELECT * FROM db.table WHERE col < 0 LIMIT 10)
+
+However, the following one does not.
 
       :::sql
-      SELECT *
-      FROM mrkt_data.target_unit
-      WHERE impressions IS NULL
-      LIMIT 10
+      SELECT * FROM db.table WHERE col IS NULL LIMIT 10
       UNION
-      SELECT *
-      FROM mrkt_data.target_unit
-      WHERE impressions < 0
-      LIMIT 10
+      SELECT * FROM db.table WHERE col < 0 LIMIT 10
 
 It is suggested that you always enclose subqueries in parentheses!
 
@@ -154,21 +134,21 @@ SELECT /*+ SKEW('orders'), BROADCAST(demographic) */ * FROM orders, customers, d
 
 ## Spark SQL Examples
 
-:::SQL
-CREATE TABLE trans (
-     col1 TYPE1,
-     col2 TYPE2,
-     col3 TYPE3
-) USING Parquet OPTIONS (
-  `serialization.format` '1',
-  path 'viewfs://...'
-)
+    :::SQL
+    CREATE TABLE trans (
+         col1 TYPE1,
+         col2 TYPE2,
+         col3 TYPE3
+    ) USING Parquet OPTIONS (
+      `serialization.format` '1',
+      path 'viewfs://...'
+    )
 
-:::SQL
-CREATE TABLE trans 
-  USING Parquet
-  LOCATION '/path/to/table' AS
-select * from some_table where id = 1
+    :::SQL
+    CREATE TABLE trans 
+      USING Parquet
+      LOCATION '/path/to/table' AS
+    select * from some_table where id = 1
   
 ## References
 

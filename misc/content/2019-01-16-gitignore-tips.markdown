@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-15 21:44:27
+Date: 2019-10-30 21:29:03
 Author: Ben Chuanlong Du
 Slug: gitignore-tips
 Title: Gitignore Examples
@@ -21,15 +21,17 @@ but rather for convenient reference of the author and future improvement.
 
 ## Gitignore Example for Python
 ```
-__pycache__/
+.DS_Store
+.idea/
 .ipynb_checkpoints/
-venv/
-target/
-dist/
 .coverage
 .mypy
 .mypy_cache
 *.crc
+__pycache__/
+venv/
+target/
+dist/
 *.egg-info/
 ```
 

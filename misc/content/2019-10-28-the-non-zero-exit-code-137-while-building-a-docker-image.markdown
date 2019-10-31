@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-31 13:15:21
+Date: 2019-10-31 11:32:13
 Author: Benjamin Du
 Slug: the-non-zero-exit-code-137-while-building-a-docker-image
 Title: the Non-Zero Exit Code 137 While Building a Docker Image
@@ -35,3 +35,6 @@ follow the instructions below to increase the memory limit for Docker.
     3. Click on the "Advanced" Tab.
     4. Increase memory and swap to the desired amount. 
 
+## References
+
+https://stackoverflow.com/questions/45363771/docker-build-from-dockerfile-with-more-memory

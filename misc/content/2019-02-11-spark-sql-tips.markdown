@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-31 03:05:54
+Date: 2019-10-31 11:28:19
 Author: Benjamin Du
 Slug: spark-sql-tips
 Title: Spark SQL Tips
@@ -152,11 +152,10 @@ SELECT /*+ SKEW('orders'), BROADCAST(demographic) */ * FROM orders, customers, d
       path 'viewfs://...'
     )
 
-    :::SQL
     CREATE TABLE trans 
-      USING Parquet
-      LOCATION '/path/to/table' AS
-    select * from some_table where id = 1
+        USING Parquet
+        LOCATION '/path/to/table' AS
+    SELECT * FROM some_table WHERE id = 1
   
 ## References
 

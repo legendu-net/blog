@@ -193,7 +193,7 @@ class Post:
         empty = self._is_ess_empty(lines[index:])
         name_title_mismatch = self.is_name_title_mismatch(title)
         return [
-            self.path,
+            self.path.relative_to(BASE_DIR),
             self.blog_dir(),
             status,
             date,
@@ -248,7 +248,7 @@ class Post:
                 continue
         name_title_mismatch = self.is_name_title_mismatch(title)
         return [
-            self.path,
+            self.path.relative_to(BASE_DIR),
             self.blog_dir(),
             status,
             date,

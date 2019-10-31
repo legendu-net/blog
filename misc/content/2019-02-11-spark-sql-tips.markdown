@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-30 16:45:51
+Date: 2019-10-31 02:41:28
 Author: Benjamin Du
 Slug: spark-sql-tips
 Title: Spark SQL Tips
@@ -17,6 +17,13 @@ It is not meant to readers but rather for convenient reference of the author and
 0. It is suggested that you use Spark SQL syntax as much as possible 
   instead of the the Spark DataFrame syntax (even though DataFrame provides more static syntax check)
   as SQL is a universal language.
+
+1. `spark.sql` returns a DataFrame. 
+    When the SQL statement passed in is a Data Query Language (DQL), such as `select`,
+    the result of the query is returned as a DataFrame.
+    When the SQL statement passed in is a Data Definition Language (DDL) or Data Manipulation Language (DML), 
+    such as `create`,
+    an empty DataFrame is returned.
 
 1. Spark SQL follows hive sql syntax.
     For example,

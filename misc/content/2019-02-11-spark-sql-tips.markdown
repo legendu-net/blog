@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-31 02:41:28
+Date: 2019-10-31 03:05:54
 Author: Benjamin Du
 Slug: spark-sql-tips
 Title: Spark SQL Tips
@@ -18,7 +18,8 @@ It is not meant to readers but rather for convenient reference of the author and
   instead of the the Spark DataFrame syntax (even though DataFrame provides more static syntax check)
   as SQL is a universal language.
 
-1. `spark.sql` returns a DataFrame. 
+1. `spark.sql` accepts only a single SQL statement (`;` is not allowed in the statement) 
+    and returns a DataFrame. 
     When the SQL statement passed in is a Data Query Language (DQL), such as `select`,
     the result of the query is returned as a DataFrame.
     When the SQL statement passed in is a Data Definition Language (DDL) or Data Manipulation Language (DML), 

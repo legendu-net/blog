@@ -151,10 +151,8 @@ def show(blogger, args) -> None:
     sql = 'SELECT count(*) FROM srps'
     total = blogger.query(sql)[0][0]
     print(f'\nNumber of matched posts: {total}')
-    for id, path in blogger.fetch(args.n):
-        if not args.full_path:
-            path = Path(path).relative_to(BASE_DIR)
-            print(f'\n{id}: {Post(path).title()}    |    {path}')
+    for rowid, path in blogger.fetch(args.n):
+        print(f'\n{rowid}: {Post(path).title()}    |    {path}')
     print('')
 
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-22 22:18:01
+Date: 2019-11-02 10:20:52
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages Using pip
@@ -182,6 +182,8 @@ https://github.com/pypa/pip/pull/6391
 4. `export LC_ALL=C` resolved an issues of pip3
 
 ## References
+
+https://adamj.eu/tech/2019/03/11/pip-install-from-a-git-repository/
 
 http://stackoverflow.com/questions/36394101/pip-install-locale-error-unsupported-locale-setting
 

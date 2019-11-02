@@ -8,7 +8,7 @@ import subprocess as sp
 try:
     import pelican
 except ImportError:
-    sp.run('pip3 install --user pelican', shell=True, check=True)
+    sp.run('python3 -m pip install --user pelican', shell=True)
     import pelican
 from blog import Post, Blogger, BASE_DIR, HOME, EN, CN, MISC
 EDITOR = 'code'

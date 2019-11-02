@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-02 10:20:52
+Date: 2019-11-02 10:22:54
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages Using pip
@@ -58,7 +58,7 @@ https://github.com/pypa/pip/issues/5599
 https://stackoverflow.com/questions/49940813/pip-no-module-named-internal
 
 
-## Install Python packages Locally
+## Install Python Packages Locally
 
 You can install Python packages to your local directory 
 by specifying the `--user` option to `pip`.
@@ -75,6 +75,10 @@ python setup.py install --user
 Notice that if your Python is installed by Homebrew or you are using Anaconda Python,
 the whole Python is installed to your local directory,
 so that you do not need to use the `--user` option when installing Python packages.
+
+## Install Python Packages from Git Repositories
+
+['pip install' From a Git Repository](https://adamj.eu/tech/2019/03/11/pip-install-from-a-git-repository/)
 
 ## Install a Specific Version of a Python Package
 

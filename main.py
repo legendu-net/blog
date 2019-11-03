@@ -271,13 +271,14 @@ def publish(blogger, args):
 
 
 def auto_git_push(blogger, args):
+    """Push commits of this repository to dclong/blog on GitHub.
+    """
     update(blogger, args)
-    cmd = f'git add {BASE_DIR}'
-    os.system(cmd)
-    cmd = 'git commit -m ...'
-    os.system(cmd)
-    cmd = 'git push origin master'
-    os.system(cmd)
+    cmd = f'''git -C {BASE_DIR} add . \
+            && git -C {BASE_DIR} commit -m ...'''
+    sp.run(cmd, shell=True, check=False)
+    cmd = f'''git -C {BASE_DIR} push origin master'''
+    sp.run(cmd, shell=True, check=True)
 
 
 def update_plugins(blogger, args):

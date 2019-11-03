@@ -274,9 +274,8 @@ def auto_git_push(blogger, args):
     """Push commits of this repository to dclong/blog on GitHub.
     """
     update(blogger, args)
-    cmd = f'''git -C {BASE_DIR} add .'''
-    sp.run(cmd, shell=True, check=True)
-    cmd = f'''git -C {BASE_DIR} commit -m ...'''
+    cmd = f'''git -C {BASE_DIR} add . \
+            && git -C {BASE_DIR} commit -m ...'''
     sp.run(cmd, shell=True, check=True)
     cmd = f'''git -C {BASE_DIR} push origin master'''
     sp.run(cmd, shell=True, check=True)

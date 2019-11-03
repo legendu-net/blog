@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-03 20:28:22
+Date: 2019-11-03 12:43:57
 Author: Benjamin Du
 Slug: software-version-management-tools
 Title: Software Version Management Tools
@@ -22,14 +22,14 @@ It is not meant to readers but rather for convenient reference of the author and
   </tr>
   <tr>
     <td> Python </td>
-    <td> [pyenv](https://github.com/pyenv/pyenv) </td>
+    <td> <a href="https://github.com/pyenv/pyenv"> pyenv </a> </td>
   </tr>
   <tr>
     <td> JVM Languages/Tools </td>
-    <td> [sdkman](https://sdkman.io/) </td>
+    <td> <a href="https://sdkman.io/"> sdkman </a> </td>
   </tr>
   <tr>
     <td> Ruby </td>
-    <td> [rvm](https://rvm.io/) </td>
+    <td> <a href="https://rvm.io/"> rvm </a> </td>
   </tr>
 </table>

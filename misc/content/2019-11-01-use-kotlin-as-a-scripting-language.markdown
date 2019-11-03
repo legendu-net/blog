@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-01 15:04:42
+Date: 2019-11-03 13:10:42
 Author: Benjamin Du
 Slug: use-kotlin-as-a-scripting-language
 Title: Use Kotlin as a Scripting Language
@@ -10,6 +10,8 @@ Tags: programming, Kotlin, scripting language, JVM
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+Run `kotlinc` to enter REPL of kotlin.
 
 [kscript](https://github.com/holgerbrandl/kscript)
 Scripting enhancements for Kotlin

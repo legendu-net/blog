@@ -276,7 +276,7 @@ def auto_git_push(blogger, args):
     update(blogger, args)
     cmd = f'''git -C {BASE_DIR} add . \
             && git -C {BASE_DIR} commit -m ...'''
-    sp.run(cmd, shell=True, check=True)
+    sp.run(cmd, shell=True, check=False)
     cmd = f'''git -C {BASE_DIR} push origin master'''
     sp.run(cmd, shell=True, check=True)
 

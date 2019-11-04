@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-25 01:15:11
+Date: 2019-11-04 18:34:19
 Author: Ben Chuanlong Du
 Slug: java-unit-testing
 Title: Java Unit Testing
@@ -21,6 +21,11 @@ assertEquals
 assertArrayEquals
 
 
+Use reflection to test private methods.
+
+
 ## References
 
 https://javarevisited.blogspot.com/2018/09/junit-testing-tips-constructor-is-called-before-test-methods.html
+
+https://medium.com/mindorks/how-to-unit-test-private-methods-in-java-and-kotlin-d3cae49dccd

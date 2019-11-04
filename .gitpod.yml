@@ -1,4 +1,4 @@
-image: dclong/gitpod-py3:191031
+image: dclong/gitpod-py3
 ports:
   - port: 8000
 tasks:

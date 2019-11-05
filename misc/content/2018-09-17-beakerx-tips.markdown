@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-20 19:02:28
+Date: 2019-11-05 19:12:11
 Author: Ben Chuanlong Du
 Slug: beakerx-tips
 Title: Beakerx Tips
@@ -42,3 +42,28 @@ https://github.com/twosigma/beakerx/blob/master/FAQ.md
 3. The SQLite3 JDBC driver is located at 
     `/usr/local/lib/python3.6/dist-packages/beakerx/kernel/sql/lib/sqlite-jdbc-3.21.0.jar`.
     You can manually replace it with a higher version to upgrade it.
+
+## Default JDBC Connection
+
+1. Add entry `BEAKERX_SQL_DEFAULT_JDBC` under `env` in the kernelspec file `kernel.json`.
+
+2. Add necessary JARs to the `-cp` option of `java` if needed (e.g., for Teradata SQL).
+
+
+```
+"argv": [
+	"java", "-cp", "/opt/conda/lib/python3.6/site-packages/beakerx/kernel/base/lib/*:/opt/conda/lib/python3.6/site-packages/beakerx/kernel/sql/lib/*", "com.twosigma.beakerx.sql.kernel.SQL",  "{connection_file}"
+],
+"display_name": "Postgres",
+"language": "SQL",
+"env": {
+	"PS1": "Postgres",
+	"BEAKERX_SQL_DEFAULT_JDBC": "jdbc:postgresql://some_url:port_number/database_name?user=username&password=password"
+}
+```
+
+https://github.com/twosigma/beakerx/issues/7518
+
+https://github.com/twosigma/beakerx/pull/7538
+
+https://github.com/twosigma/beakerx/pull/7538#issuecomment-420765574

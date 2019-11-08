@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-29 10:16:41
+Date: 2019-11-08 19:34:58
 Author: Benjamin Du
 Slug: vscode-tips
 Title: Tips for Visual Studio Code
@@ -14,6 +14,8 @@ It is not meant to readers but rather for convenient reference of the author and
 ## Useful Extensions
 
 [Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal)
+
+[vscode-neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim)
 
 [Python (by Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 

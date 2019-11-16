@@ -15,7 +15,8 @@ def install(url: str, sudo: bool = False, sys: bool = False, yes: bool = False) 
     version = _version(url)
     url = f"{url}/releases/download/{version}/{Path(url).name}-{re.sub('[a-zA-Z]', '', version)}-py3-none-any.whl"
     yes = '-y' if yes else ''
-    cmd = f"{'sudo' if sudo else ''} pip3 install {'' if sys else '--user'} --upgrade {yes} {url}"
+    cmd = f"{'sudo' if sudo else ''} pip3 install {'--sys' if sys else '--user'} --upgrade {yes} {url}"
+    print(f"Running the command: {cmd.strip()}\n")
     sp.run(cmd, shell=True, check=True)
 
 

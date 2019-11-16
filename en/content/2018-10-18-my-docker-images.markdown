@@ -321,8 +321,6 @@ sc.textFile
     > Desktop Environment: None  
     > Remote Desktop: None  
 
-    - [dclong/proxychains](https://hub.docker.com/r/dclong/proxychains/)  
-
     - [dclong/linuxbrew](https://hub.docker.com/r/dclong/linuxbrew/)  
 
     - [dclong/samba](https://hub.docker.com/r/dclong/samba/)  

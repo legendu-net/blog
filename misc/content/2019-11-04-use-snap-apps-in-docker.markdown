@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-04 18:26:30
+Date: 2019-11-17 12:24:36
 Author: Benjamin Du
 Slug: use-snap-apps-in-docker
 Title: Use Snap Apps in Docker
@@ -13,7 +13,7 @@ It is not meant to readers but rather for convenient reference of the author and
 
 Snap app is not 
 (and [will probably never be](https://bugs.launchpad.net/snappy/+bug/1841327)) 
-compatible with Docker by default,
+compatible with Docker by default.
 However, 
 there are some hackings to make snap app to work in Docker.
 Also, 

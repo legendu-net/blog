@@ -1,6 +1,7 @@
 
 image: dclong/jupyterhub-ds
 tasks:
+  - command: export PATH=/home/gitpod/.local/bin:$PATH
   - command: ln -svf /workspace/blog/main.py /home/gitpod/.local/bin/blog
   - command: nvim --headless +"call dein#install()" +qall
   - command: xinstall svim -ic

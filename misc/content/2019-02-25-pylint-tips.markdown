@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-25 21:11:08
+Date: 2019-11-18 10:29:26
 Author: Benjamin Du
 Slug: pylint-tips
 Title: pylint Tips
@@ -24,6 +24,15 @@ pylint -E some_script.py
 pylint --disable=R,C some_script.py
 ```
 
+## Configuration
+
+.pylintrc 
+```
+[TYPECHECK]
+ignored-classes=Fysom,MyClass
+```
 ## References
 
 https://stackoverflow.com/questions/31907762/pylint-to-show-only-warnings-and-errors
+
+https://stackoverflow.com/questions/35990313/avoid-pylint-warning-e1101-instance-of-has-no-member-for-class-with-dyn

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-11 22:33:22
+Date: 2019-11-18 10:27:53
 Author: Benjamin Du
 Slug: github-tips
 Title: Github Tips
@@ -17,6 +17,8 @@ It is not meant to readers but rather for convenient reference of the author and
 Deploy Keys are SSH keys which access restricted to a specific repository only.
 
 https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys
+
+## [Creating a personal access token for the command line](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
 
 ## References
 

@@ -1,6 +1,8 @@
-image: dclong/gitpod-py3
-ports:
-  - port: 8000
+
+image: dclong/jupyterhub-ds
 tasks:
   - command: ln -svf /workspace/blog/main.py /home/gitpod/.local/bin/blog
   - command: nvim --headless +"call dein#install()" +qall
+  - command: xinstall svim -ic
+ports:
+  - port: 8000

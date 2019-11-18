@@ -299,6 +299,7 @@ def parse_args(args=None, namespace=None):
     """
     parser = ArgumentParser(description='Write blog in command line.')
     subparsers = parser.add_subparsers(dest='sub_cmd', help='Sub commands.')
+    _subparse_jupyterlab(subparsers)
     _subparse_utag(subparsers)
     _subparse_ucat(subparsers)
     _subparse_tags(subparsers)
@@ -328,6 +329,17 @@ def parse_args(args=None, namespace=None):
 
 def clear(blogger, args):
     blogger.clear()
+
+
+def launch_jupyterlab(blogger, args):
+    cmd = "jupyter lab --allow-root --ip='0.0.0.0' --port=8888 --no-browser --notebook-dir=/workdir &"
+    sp.run(cmd, shell=True, check=True)
+
+
+def _subparse_jupyterlab(subparsers):
+    subparser_jlab = subparsers.add_parser(
+        'jupyterlab', aliases=['jupyter', 'jlab'], help='Launch the JupyterLab server.')
+    subparser_jlab.set_defaults(func=launch_jupyterlab)
 
 
 def _subparse_clear(subparsers):

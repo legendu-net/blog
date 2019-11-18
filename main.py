@@ -5,6 +5,7 @@ import shutil
 from pathlib import Path
 from argparse import ArgumentParser
 import subprocess as sp
+import getpass
 try:
     import pelican
 except ImportError:
@@ -758,6 +759,7 @@ def _subparse_publish(subparsers):
         '--https',
         dest='https',
         action='store_true',
+        default=(getpass.getuser() == "gitpod"),
         help='use the HTTPS protocol for Git.')
     subparser_publish.add_argument(
         '--no-push-github',

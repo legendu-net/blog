@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-11-18 10:27:53
+Date: 2019-11-19 10:26:04
 Author: Benjamin Du
 Slug: github-tips
-Title: Github Tips
+Title: GitHub Tips
 Category: Programming
 Tags: programming, GitHub, tips
 

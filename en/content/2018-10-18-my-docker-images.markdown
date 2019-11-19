@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-18 00:23:13
+Date: 2019-11-19 08:57:12
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -118,6 +118,24 @@ docker run -d \
     -v `pwd`:/workdir \
     -v `dirname $HOME`:/home_host \
     dclong/jupyterhub-ds
+```
+
+
+## Get Information of Running Jupyter/Lab Servers
+
+If you are using the Jupyter/Lab server (instead of JupyterHub which is recommended),
+you will be asked for a token at login.
+The tokens (and more information about the servers) can be found 
+by running the following command outside the Docker container,
+where `USER_IN_DOCKER` is the user in the Docker that started the Jupyter/Lab server.
+```
+docker exec -u USER_IN_DOCKER jupyterlab /scripts/list_jupyter.py
+```
+If you are inside the Docker container, 
+then run the following command to get the tokens (and more information about the servers).
+```
+su USER_IN_DOCKER
+/scripts/list_jupyter.py
 ```
 
 ## Use the JupyterHub Server

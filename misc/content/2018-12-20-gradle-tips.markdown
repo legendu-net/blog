@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-09-08 17:23:44
+Date: 2019-11-19 11:51:52
 Author: Ben Chuanlong Du
 Slug: gradle-tips
 Title: General Tips for Gradle
@@ -42,6 +42,20 @@ brew install gradle
     before testing running your project or generating a fat jar (using the `shadowjar` command).
     Otherwise, 
     you might run into weird issues such as resource file not found, etc.
+
+
+## The IDEA Plugin
+You can enable the Gradle IDEA plugin by having the following line in your `build.gradle` file.
+```
+apply plugin: 'idea'
+```
+This plugins add a task named `openIdea` and allows you to import a Gradle project from command line.
+Sometimes, importing a project from IntelliJ IDEA does not work as expected.
+However, 
+the command line always works.
+```
+./gradlew openIdea
+```
 
 ## Customize Tasks
 

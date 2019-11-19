@@ -1,6 +1,5 @@
-UUID: 34b1eb7c-8b45-45dd-8813-894b5724b3eb
 Status: published
-Date: 2019-01-10 09:16:10
+Date: 2019-11-19 11:51:52
 Author: Ben Chuanlong Du
 Slug: scala-with-gradle-in-intellij
 Title: Scala With Gradle in Intellij
@@ -35,6 +34,7 @@ but rather for convenient reference of the author and future improvement.
         plugins {
             id 'scala'
         }
+        apply plugin: 'idea'
 
         group 'net.legendu'
         version '1.0-SNAPSHOT'

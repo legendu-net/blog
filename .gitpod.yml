@@ -1,9 +1,8 @@
-
 image: dclong/jupyterhub-ds
 tasks:
-  - command: export PATH=/home/gitpod/.local/bin:$PATH
-  - command: ln -s /workspace/blog/main.py /workspace/.pip-modules/bin/blog
-  - command: nvim --headless +"call dein#install()" +qall
-  - command: xinstall svim -ic
+    - before: export PATH=/home/gitpod/.local/bin:$PATH
+        init: ln -s /workspace/blog/main.py /workspace/.pip-modules/bin/blog
+        command: nvim --headless +"call dein#install()" +qall && xinstall svim -ic
+    - command: pip3 install --user pelican
 ports:
-  - port: 8888
+    - port: 8888

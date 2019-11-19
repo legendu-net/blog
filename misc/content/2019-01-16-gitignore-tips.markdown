@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-30 21:29:03
+Date: 2019-11-19 11:46:16
 Author: Ben Chuanlong Du
 Slug: gitignore-tips
 Title: Gitignore Examples
@@ -23,6 +23,8 @@ but rather for convenient reference of the author and future improvement.
 ```
 .DS_Store
 .idea/
+*.ipr
+*.iws
 .ipynb_checkpoints/
 .coverage
 .mypy
@@ -73,6 +75,8 @@ hs_err_pid*
 
 # IDE
 .idea/
+*.ipr
+*.iws
 
 # Misc
 core

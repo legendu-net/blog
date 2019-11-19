@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-19 09:08:30
+Date: 2019-11-19 09:19:33
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -131,12 +131,17 @@ Otherwise,
 the tokens (and more information about the servers) can be found 
 by running the following command outside the Docker container,
 where `USER_IN_DOCKER` is the user in the Docker that started the Jupyter/Lab server.
-```
+```bash
 docker exec -u USER_IN_DOCKER jupyterlab /scripts/list_jupyter.py
+```
+If `USER_IN_DOCKER` is the current user in host,
+then you can use the following command.
+```bash
+docker exec -u $(id -un) jupyterlab /scripts/list_jupyter.py
 ```
 If you are inside the Docker container, 
 then run the following command to get the tokens (and more information about the servers).
-```
+```bash
 su USER_IN_DOCKER
 /scripts/list_jupyter.py
 ```

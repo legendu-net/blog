@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-19 08:57:12
+Date: 2019-11-19 09:08:30
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -125,7 +125,10 @@ docker run -d \
 
 If you are using the Jupyter/Lab server (instead of JupyterHub which is recommended),
 you will be asked for a token at login.
-The tokens (and more information about the servers) can be found 
+If you have started the Docker container in interactive mode (option `-i` instead of `-d`),
+the token for login is printed to the console.
+Otherwise,
+the tokens (and more information about the servers) can be found 
 by running the following command outside the Docker container,
 where `USER_IN_DOCKER` is the user in the Docker that started the Jupyter/Lab server.
 ```

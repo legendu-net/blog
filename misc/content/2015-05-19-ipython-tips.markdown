@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-19 20:41:53
+Date: 2019-11-20 11:06:39
 Author: Ben Chuanlong Du
 Slug: ipython-tips
 Title: Tips on IPython
@@ -44,6 +44,12 @@ but rather for convenient reference of the author and future improvement.
 		!cp {os.path.join('/tmp', pkg)} ~
 
 1. it seems that IPython tries to beautify outputs.
+
+## Most Useful Magic Commandso
+
+%rehashx
+
+%autocall
 
 ## References
 

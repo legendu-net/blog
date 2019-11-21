@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-11-20 09:14:09
+Date: 2019-11-20 17:11:16
 Author: Ben Chuanlong Du
 Slug: nbconvert-tips
-Title: Converting JupyterLab notebooks
+Title: Converting JupyterLab Notebooks
 Category: JupyterLab
 Tags: JupyterLab, notebook, nbconvert, tips, zmq.error.ZMQError
 

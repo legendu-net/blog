@@ -1,6 +1,6 @@
 image: dclong/gitpod
 tasks:
   - init: ln -s /workspace/blog/main.py /workspace/.pip-modules/bin/blog
-    command: pip3 install --user pelican && xinstall dsutil -ic
+    command: pip3 install --user pelican 
 ports:
   - port: 8888

@@ -2,7 +2,6 @@
 import os
 import re
 import shutil
-from pathlib import Path
 from argparse import ArgumentParser
 import subprocess as sp
 import getpass
@@ -325,6 +324,7 @@ def parse_args(args=None, namespace=None):
     _subparse_trash(subparsers)
     _subparse_find_name_title_mismatch(subparsers)
     _subparse_match_post(subparsers)
+    _subparse_exec_notebook(subparsers)
     return parser.parse_args(args=args, namespace=namespace)
 
 
@@ -341,6 +341,35 @@ def _subparse_jupyterlab(subparsers):
     subparser_jlab = subparsers.add_parser(
         'jupyterlab', aliases=['jupyter', 'jlab'], help='Launch the JupyterLab server.')
     subparser_jlab.set_defaults(func=launch_jupyterlab)
+
+
+def exec_notebook(bloger, args):
+    if args.indexes:
+        args.notebooks = blogger.path(args.indexes)
+    if args.notebooks:
+        cmd = ["jupyter", "nbconvert", "--to", "notebook", "--inplace", "--execute"] + args.notebooks
+        sp.run(cmd, check=True)
+
+
+def _subparse_exec_notebook(subparsers):
+    subparser_exec_notebook = subparsers.add_parser(
+        "exec_notebook", aliases=["exec"], help="Execute a notebook.")
+    subparser_exec_notebook.add_argument(
+        '-i',
+        '--indexes',
+        nargs='+',
+        dest='indexes',
+        type=int,
+        default=(),
+        help='row IDs in the search results.')
+    subparser_exec_notebook.add_argument(
+        "-n",
+        "--notebooks",
+        nargs="+",
+        dest="notebooks",
+        default=(),
+        help="Notebooks to execute.")
+    subparser_exec_notebook.set_defaults(func=exec_notebook)
 
 
 def _subparse_clear(subparsers):

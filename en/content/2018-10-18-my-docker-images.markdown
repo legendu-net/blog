@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-19 09:19:33
+Date: 2019-11-20 17:01:14
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -129,22 +129,35 @@ If you have started the Docker container in interactive mode (option `-i` instea
 the token for login is printed to the console.
 Otherwise,
 the tokens (and more information about the servers) can be found 
-by running the following command outside the Docker container,
-where `USER_IN_DOCKER` is the user in the Docker that started the Jupyter/Lab server.
+by running the following command outside the Docker container.
 ```bash
-docker exec -u USER_IN_DOCKER jupyterlab /scripts/list_jupyter.py
+docker exec jupyterlab /scripts/list_jupyter.py
 ```
-If `USER_IN_DOCKER` is the current user in host,
-then you can use the following command.
+The above command tries to be smart in the sense that 
+it first figures out the user that started the JupyterLab server 
+and then query running Jupyter/Lab servers of that user.
+An equivalently but more specifically command 
+(if the Docker is launched by the current user in the host)
+is as below
 ```bash
-docker exec -u $(id -un) jupyterlab /scripts/list_jupyter.py
+docker exec -u $(id -un) jupyterlab /scripts/sys/list_jupyter.py
 ```
 If you are inside the Docker container, 
 then run the following command to get the tokens (and more information about the servers).
 ```bash
-su USER_IN_DOCKER
 /scripts/list_jupyter.py
 ```
+Or equivalently if the Jupyter/Lab server is launched by the current user,
+```bash
+/scripts/sys/list_jupyter.py
+```
+
+To sum up, 
+most of time you can rely on `/scripts/list_jupyter.py`
+to find the tokens of the running Jupyter/Lab servers,
+no matter you are root or the user that launches the Docker/JupyterLab server,
+and no matter you are inside the Docker container or not.
+
 
 ## Use the JupyterHub Server
 

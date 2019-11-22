@@ -320,7 +320,7 @@ def parse_args(args=None, namespace=None):
     _subparse_git_status(subparsers)
     _subparse_git_diff(subparsers)
     _subparse_git_pull(subparsers)
-    _subparse_empty_post(subparsers)
+    _subparse_empty_posts(subparsers)
     _subparse_trash(subparsers)
     _subparse_find_name_title_mismatch(subparsers)
     _subparse_match_post(subparsers)
@@ -948,12 +948,12 @@ def _subparse_git_pull(subparsers):
     subparser_status.set_defaults(func=_git_pull)
 
 
-def empty_post(blogger, args):
-    blogger.empty_post(args.dry_run)
+def empty_posts(blogger, args):
+    blogger.empty_posts(args.dry_run)
     show(blogger, args)
 
 
-def _subparse_empty_post(subparsers):
+def _subparse_empty_posts(subparsers):
     subparser_status = subparsers.add_parser(
         'empty',
         aliases=['em'],
@@ -975,7 +975,7 @@ def _subparse_empty_post(subparsers):
         dest='full_path',
         action='store_true',
         help='whether to show full (instead of short/relative) path.')
-    subparser_status.set_defaults(func=empty_post)
+    subparser_status.set_defaults(func=empty_posts)
 
 
 if __name__ == '__main__':

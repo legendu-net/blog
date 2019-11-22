@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-20 17:01:14
+Date: 2019-11-22 09:20:31
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -343,10 +343,6 @@ sc.textFile
 
 ## List of Images and Detailed Information
 
-- [dclong/gitpod-svim](https://hub.docker.com/r/dclong/gitpod-svim/)
-
-    - [dclong/gitpod-py3](https://hub.docker.com/r/dclong/gitpod-py3/)
-
 - [dclong/deepin_b](https://hub.docker.com/r/dclong/deepin_b/)  
 
     - [dclong/deepin_cn](https://hub.docker.com/r/dclong/deepin_cn/)  
@@ -355,7 +351,7 @@ sc.textFile
 
 - [dclong/ubuntu_b](https://hub.docker.com/r/dclong/ubuntu_b/)  
 
-    > OS: Ubuntu 18.04  
+    > OS: Ubuntu 19.04  
     > Time Zone: US Pacific Time  
     > Desktop Environment: None  
     > Remote Desktop: None  
@@ -404,7 +400,7 @@ sc.textFile
 
     - [dclong/python](https://hub.docker.com/r/dclong/python/)  
 
-        > Python 3.6  
+        > Python 3.7  
 
         - [dclong/theia](https://hub.docker.com/r/dclong/theia/)  
 
@@ -422,19 +418,19 @@ sc.textFile
 
         - [dclong/jupyter](https://hub.docker.com/r/dclong/jupyter/)  
 
-             > Jupyter Notebook: 5.7.0  
+             > Jupyter Notebook: 6.0.2  
 
             - [dclong/jupyter-nodejs](https://hub.docker.com/r/dclong/jupyter-nodejs/)  
 
-                 > NodeJS: 10.15.0  
+                 > NodeJS: LTS
 
                 - [dclong/jupyterlab](https://hub.docker.com/r/dclong/jupyterlab)  
 
-                     > JupyterLab: 0.35.4  
+                     > JupyterLab: 1.2.3
 
                     - [dclong/jupyterhub](https://hub.docker.com/r/dclong/jupyterhub/)  
 
-                         > JupyterHub: 0.9.3  
+                         > JupyterHub: 1.0.0  
 
                         - [dclong/jupyterhub-ts](https://hub.docker.com/r/dclong/jupyterhub-ts/)  
 
@@ -443,7 +439,7 @@ sc.textFile
                         - [dclong/jupyterhub-jdk](https://hub.docker.com/r/dclong/jupyterhub-jdk/)  
 
                             > OpenJDK 8  
-                            > Maven: 3.3.9  
+                            > Maven: 3.6.0  
 
                             - [dclong/jupyterhub-py](https://hub.docker.com/r/dclong/jupyterhub-py/)  
 
@@ -465,11 +461,13 @@ sc.textFile
 
                                 - [dclong/jupyterhub-beakerx](https://hub.docker.com/r/dclong/jupyterhub-beakerx/)  
 
-                                    > SQL (based on JDBC) via BeakerX 1.1.0  
-                                    > Scala 2.11.12 via BeakerX 1.1.0  
-                                    > Java 8, Clojure, Groovy, Kotlin via BeakerX 1.1.0  
+                                    > SQL (based on JDBC) via BeakerX 1.4.1  
+                                    > Scala 2.11.12 via BeakerX 1.4.1  
+                                    > Java 8, Clojure, Groovy, Kotlin via BeakerX 1.4.1  
 
                                     - [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/)  
+
+                                        - [dclong/gitpod](https://hub.docker.com/r/dclong/gitpod/)
 
     - [dclong/ubuntu_cn](https://hub.docker.com/r/dclong/ubuntu_cn/)  
 

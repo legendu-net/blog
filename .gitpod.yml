@@ -1,5 +1,3 @@
 image: dclong/gitpod
-tasks:
-  - init: ln -s /workspace/blog/main.py /home/gitpod/.local/bin/blog
 ports:
   - port: 8888

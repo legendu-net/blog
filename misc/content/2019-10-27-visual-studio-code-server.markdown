@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-29 09:44:27
+Date: 2019-11-23 11:11:03
 Author: Benjamin Du
 Slug: visual-studio-code-server
 Title: Visual Studio Code Server
@@ -26,7 +26,14 @@ https://github.com/cdr/code-server/issues/148
 
 ## Install Extensions
 
+might require root to run docker though ...
+
+code-server --install-extension ms-python.python
+code-server --install-extension njpwerner.autodocstring
+
 https://github.com/cdr/code-server/issues/171
+
+
 
 ## JupyterLab Within VS Code 
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-15 19:09:53
+Date: 2019-11-23 15:33:07
 Author: Benjamin Du
 Slug: python-poetry-tips
 Title: Python Poetry Tips
@@ -62,6 +62,16 @@ However,
 one alternative is to run the following command (starting from poetry 1.0.0beta2).
 ```Bash
 source $(poetry env info -p)/bin/activate
+```
+
+## Run Test Suits Using Pytest
+```
+poetry run pytest
+```
+Or if you want to make it specific to collect test suits from the `test` directory 
+under the root directory of the project.
+```
+poetry run pytest test
 ```
 
 ## References

@@ -1,15 +1,17 @@
 Status: published
-Date: 2019-02-26 19:06:50
+Date: 2019-11-23 15:02:34
 Author: Benjamin Du
 Slug: pytest-tips
-Title: Pytest Tips
+Title: PyTest Tips
 Category: Programming
-Tags: programming, Python, pytest, fixtures, plugins
+Tags: programming, Python, PyTest, fixtures, plugins
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+Run `pytest` in the root directory of your project to run test suites. 
 
 ## Plugins
 

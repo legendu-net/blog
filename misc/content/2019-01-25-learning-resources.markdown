@@ -1,6 +1,6 @@
 UUID: 07d7f72f-1892-45cf-a97d-34e292608d3a
 Status: published
-Date: 2019-01-25 09:51:58
+Date: 2019-11-23 15:00:46
 Author: Ben Chuanlong Du
 Slug: learning-resources
 Title: Learning Resources
@@ -14,6 +14,7 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
+- [Learn X in Y Minutes](https://learnxinyminutes.com/)
 - [Education Ecosystem](https://www.education-ecosystem.com/)
 - [Coursera](https://www.coursera.org/course/)
 - [Video Lectures](http://videolectures.net/)

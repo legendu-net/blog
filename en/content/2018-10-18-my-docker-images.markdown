@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-22 09:20:31
+Date: 2019-11-23 15:49:49
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -401,10 +401,6 @@ sc.textFile
     - [dclong/python](https://hub.docker.com/r/dclong/python/)  
 
         > Python 3.7  
-
-        - [dclong/theia](https://hub.docker.com/r/dclong/theia/)  
-
-        - [dclong/wdb](https://hub.docker.com/r/dclong/wdb/)  
 
         - [dclong/python-jdk](https://hub.docker.com/r/dclong/python-jdk/)  
 

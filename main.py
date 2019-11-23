@@ -2,6 +2,7 @@
 import os
 import re
 import shutil
+from pathlib import Path
 from argparse import ArgumentParser
 import subprocess as sp
 import getpass
@@ -294,6 +295,16 @@ def install_vim(blogger, args):
     os.system(cmd)
 
 
+def link(blogger, args):
+    (Path().home() / ".local/bin/blog").symlink_to(Path(__file__).resolve())
+
+
+def _subparse_link(subparsers):
+    subparser_link = subparsers.add_parser(
+        'link', aliases=['ln'], help='Link main.py to blog in a searchable path.')
+    subparser_link.set_defaults(func=link)
+
+
 def parse_args(args=None, namespace=None):
     """Parse command-line arguments for the blogging util.
     """
@@ -325,6 +336,7 @@ def parse_args(args=None, namespace=None):
     _subparse_find_name_title_mismatch(subparsers)
     _subparse_match_post(subparsers)
     _subparse_exec_notebook(subparsers)
+    _subparse_link(subparsers)
     return parser.parse_args(args=args, namespace=namespace)
 
 

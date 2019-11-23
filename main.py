@@ -301,7 +301,7 @@ def link(blogger, args):
 
 def _subparse_link(subparsers):
     subparser_link = subparsers.add_parser(
-        'link', aliases=['ln'], help='Link main.py to blog in a searchable path.')
+        'link', aliases=['ln', 'lk'], help='Link main.py to blog in a searchable path.')
     subparser_link.set_defaults(func=link)
 
 

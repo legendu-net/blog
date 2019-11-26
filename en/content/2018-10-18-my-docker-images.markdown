@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-23 15:49:49
+Date: 2019-11-26 10:39:30
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -448,8 +448,6 @@ sc.textFile
                                 > JayDeBeApi pymysql pymongo sqlalchemy  
                                 > pysocks requests[socks] Scrapy beautifulsoup4 wget  ansible  
 
-                                - [dclong/holoviews](https://hub.docker.com/r/dclong/holoviews/)  
-
                                 - [dclong/jupyterhub-ai](https://hub.docker.com/r/dclong/jupyterhub-ai/)  
 
                                     > torch torchvision tensorflow keras h2o  
@@ -475,8 +473,6 @@ sc.textFile
 
             - [dclong/lubuntu-nodejs](https://hub.docker.com/r/dclong/lubuntu-nodejs/)  
 
-                - [dclong/lubuntu-vscode](https://hub.docker.com/r/dclong/lubuntu-vscode/)  
-
             - [dclong/lubuntu-py](https://hub.docker.com/r/dclong/lubuntu-py/)  
 
                 - [dclong/lubuntu-pycharm](https://hub.docker.com/r/dclong/lubuntu-pycharm/)  
@@ -488,7 +484,6 @@ sc.textFile
 
         - [dclong/xubuntu](https://hub.docker.com/r/dclong/xubuntu/)  
             - [dclong/xubuntu-nodejs](https://hub.docker.com/r/dclong/xubuntu-nodejs/)  
-                - [dclong/xubuntu-vscode](https://hub.docker.com/r/dclong/xubuntu-vscode/)  
             - [dclong/xubuntu-py](https://hub.docker.com/r/dclong/xubuntu-py/)  
                 - [dclong/xubuntu-pycharm](https://hub.docker.com/r/dclong/xubuntu-pycharm/)  
             - [dclong/xubuntu-jdk](https://hub.docker.com/r/dclong/xubuntu-jdk/)  

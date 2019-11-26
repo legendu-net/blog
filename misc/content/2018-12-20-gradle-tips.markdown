@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-19 11:51:52
+Date: 2019-11-26 10:00:04
 Author: Ben Chuanlong Du
 Slug: gradle-tips
 Title: General Tips for Gradle
@@ -97,6 +97,11 @@ I'd rather use rsync in shell.
 https://gradle-ssh-plugin.github.io/
 
 I'd rather use ssh/rsync in shell.
+
+## Gradle Home for IntelliJ IDEA
+
+/usr/local/Cellar/gradle/5.1/libexec/
+https://stackoverflow.com/questions/18495474/how-to-define-gradles-home-in-idea/34502612
 
 ## References
 

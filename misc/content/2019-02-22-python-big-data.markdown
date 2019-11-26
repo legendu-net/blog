@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-08 22:23:18
+Date: 2019-11-25 21:37:26
 Author: Benjamin Du
 Slug: python-big-data
 Title: Python Big Data
@@ -13,10 +13,6 @@ It is not meant to readers but rather for convenient reference of the author and
 
 
 ## Dask
-
-1. You have to install the complete version of Dask using the command `pip3 install dask[complete]`.
-  The default installation version (`pip3 install dask`) of Dask 
-  does not support extended memory (for handling big data) and schedulers (for performance).
 
 ## PySpark
 

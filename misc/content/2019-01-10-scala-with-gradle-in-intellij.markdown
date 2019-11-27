@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-26 11:05:16
+Date: 2019-11-26 18:11:29
 Author: Ben Chuanlong Du
 Slug: scala-with-gradle-in-intellij
 Title: Quickly Create a Scala Project Using Gradle in Intellij IDEA
@@ -19,15 +19,18 @@ but rather for convenient reference of the author and future improvement.
 
 2. Run `gradle init --type scala-library` in terminal in the above directory.
 
-3. Import the directory as a Gradle project in IntelliJ.
+3. Import the directory as a Gradle project in IntelliJ IDEA.
+    Alternatively,
+    you can add `apply plugin: 'idea'` into `build.gradle`
+    and then run the command `./gradlew openIdea` to import the directory as a Gradle project in Intellij IDEA.
 
 ## Hard Way
 
-1. Create a Gradle (default Java) project in IntelliJ. 
+1. Create a Gradle (default Java) project in IntelliJ IDEA. 
 
 2. Create a directory named `scala` under `src/main`.
 
-3. Mark the directory as source root directory.
+3. Mark the directory `src/main/scala` as source root directory.
 
 4. Open `build.gradle` and change its content to the following.
 

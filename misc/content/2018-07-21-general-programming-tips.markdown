@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-27 00:55:37
+Date: 2019-11-27 00:57:08
 Author: Ben Chuanlong Du
 Slug: general-programming-tips
 Title: General Tips on Programming
@@ -33,3 +33,5 @@ but rather for convenient reference of the author and future improvement.
     when you use loops **especiall while loops**.
     Forgetting to set/reset state of varialbes/objects in while loops is a common mistake 
     and can be tricky to debug sometimes (e.g., if randomization is used in a loop).
+    It is suggested that you avoid using plain for/while loops if possible
+    and use high-level alternatives such as `forEach`, `map`, `filter`, etc.

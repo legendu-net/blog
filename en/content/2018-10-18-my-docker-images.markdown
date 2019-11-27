@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-26 10:39:30
+Date: 2019-11-27 10:35:06
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -475,8 +475,6 @@ sc.textFile
 
             - [dclong/lubuntu-py](https://hub.docker.com/r/dclong/lubuntu-py/)  
 
-                - [dclong/lubuntu-pycharm](https://hub.docker.com/r/dclong/lubuntu-pycharm/)  
-
             - [dclong/lubuntu-jdk](https://hub.docker.com/r/dclong/lubuntu-jdk/)  
 
                 - [dclong/lubuntu-scala](https://hub.docker.com/r/dclong/lubuntu-scala/)  
@@ -485,7 +483,6 @@ sc.textFile
         - [dclong/xubuntu](https://hub.docker.com/r/dclong/xubuntu/)  
             - [dclong/xubuntu-nodejs](https://hub.docker.com/r/dclong/xubuntu-nodejs/)  
             - [dclong/xubuntu-py](https://hub.docker.com/r/dclong/xubuntu-py/)  
-                - [dclong/xubuntu-pycharm](https://hub.docker.com/r/dclong/xubuntu-pycharm/)  
             - [dclong/xubuntu-jdk](https://hub.docker.com/r/dclong/xubuntu-jdk/)  
                 - [dclong/xubuntu-scala](https://hub.docker.com/r/dclong/xubuntu-scala/)  
                     - [dclong/xubuntu-intellij](https://hub.docker.com/r/dclong/xubuntu-intellij/)  

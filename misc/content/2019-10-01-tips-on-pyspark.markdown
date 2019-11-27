@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-30 16:55:51
+Date: 2019-11-27 09:31:48
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
@@ -15,7 +15,7 @@ It is not meant to readers but rather for convenient reference of the author and
   and submit a PySpark job to the cluster using the `spark-submit` command.
 	For more details, 
 	please refer to
-	[Launching Applications with spark-submit](https://spark.apache.org/docs/latest/submitting-applications.html#launching-applications-with-spark-submit<Paste>).
+	[Launching Applications with spark-submit](https://spark.apache.org/docs/latest/submitting-applications.html#launching-applications-with-spark-submit).
     Below is an example of shell script for submitting a PySpark job using `spark-submit`.
 
         :::Bash

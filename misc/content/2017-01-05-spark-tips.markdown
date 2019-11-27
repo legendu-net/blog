@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-03 20:10:16
+Date: 2019-11-27 09:31:48
 Author: Ben Chuanlong Du
 Slug: spark-tips
 Title: Spark Tips
@@ -32,22 +32,40 @@ which are variables that are only “added” to, such as counters and sums.
     from a server that has very stable network connection.
 
 2. If you are sure that your Spark application is production ready,
-  it is better to submit it with the option `--deploy-mode cluster`.
-  However the default option (`--deploy-mode client`) is good for debugging.
-  And also, `--deploy-mode client` is much faster to submit generally speaking.
-  It is suggested that you use `--deploy-mode client` for ad hoc Spark applications
-  and `--deploy-mode cluster` for production ready applications that need to be run many times.
+    it is better to submit it with the option `--deploy-mode cluster`.
+    However the default option (`--deploy-mode client`) is good for debugging.
+    And also, `--deploy-mode client` is much faster to submit generally speaking.
+    It is suggested that you use `--deploy-mode client` for ad hoc Spark applications
+    and `--deploy-mode cluster` for production ready applications that need to be run many times.
+
+        #!/bin/bash
+        /apache/spark2.3/bin/spark-submit \
+            --files "file:///apache/hive/conf/hive-site.xml,file:///apache/hadoop/etc/hadoop/ssl-client.xml,file:///apache/hadoop/etc/hadoop/hdfs-site.xml,file:///apache/hadoop/etc/hadoop/core-site.xml,file:///apache/hadoop/etc/hadoop/federation-mapping.xml" \
+            --master yarn \
+            --deploy-mode cluster \
+            --queue your_queue \
+            --num-executors 200 \
+            --executor-memory 10G \
+            --driver-memory 15G \
+            --executor-cores 4 \
+            --conf spark.yarn.maxAppAttempts=2 \
+            --conf spark.dynamicAllocation.maxExecutors=1000 \
+            --conf spark.network.timeout=300s \
+            --conf spark.executor.memoryOverhead=2G \
+            --class your.package.SomeClass \
+            --jars /path/to/jar/dependencies \
+            /path/to/compiled/jar arg1 arg2 ...
 
 ## Spark Shell
 
 1. The `--jars` option of `spark-shell` can be used to add JAR dependencies.
 
 2. `spark-shell` accepts `--queue` (for specifying the queue to submit jobs) as parameter!
-    If you run `spark-shell` and encounter the issue of "ERROR SparkContext: Error initializing SparkContext" 
-    due to "application submitted by user to unknown queue",
-    you have to pass the queue that you can access to `spark-shell`.
+If you run `spark-shell` and encounter the issue of "ERROR SparkContext: Error initializing SparkContext" 
+due to "application submitted by user to unknown queue",
+you have to pass the queue that you can access to `spark-shell`.
 
-        spark-shell --queue my_queue
+    spark-shell --queue my_queue
 
 ## Spark Cluster Master URL
 

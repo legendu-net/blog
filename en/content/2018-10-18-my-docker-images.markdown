@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-27 10:35:06
+Date: 2019-11-27 17:38:33
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -340,6 +340,11 @@ sc = pyspark.SparkContext(appName="myAppName")
 ```
 sc.textFile
 ```
+
+## Docker Container Logs
+
+You can find logs of Docker contains under the directory `/var/log/docker/containers` on the host machine.
+The log file has the patten `/var/lib/docker/containers/[container-id]/[container-id]-json.log`.
 
 ## List of Images and Detailed Information
 

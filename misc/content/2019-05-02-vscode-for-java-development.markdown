@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-28 14:57:48
+Date: 2019-11-28 15:08:44
 Author: Benjamin Du
 Slug: vscode-for-jvm-languages
 Title: Virtual Studio Code for Java Development
@@ -19,6 +19,8 @@ https://code.visualstudio.com/docs/languages/java
 https://www.youtube.com/watch?v=RJIfsSmU9zk
 
 https://iseif.dev/2019/06/05/vscode-as-java-ide/
+
+https://github.com/redhat-developer/vscode-java
 
 ### Extensions 
 

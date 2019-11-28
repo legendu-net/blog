@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-20 05:18:46
+Date: 2019-11-28 10:20:17
 Author: Ben Chuanlong Du
 Slug: intellij-idea-tips
 Title: IntelliJ IDEA Tips
@@ -39,6 +39,10 @@ First,
 sbt is better supported in IntelliJ IDEA.
 The Maven archetype for Scala is too old in IntelliJ.
 You have to update the file pom.xml immediately after you create a Maven based Scala project in IntelliJ IDEA.
+
+## Install Plugins from Command-line
+
+https://stackoverflow.com/questions/24044513/intellij-idea-install-plugins-from-command-line
 
 ## Tricks & Traps 
 

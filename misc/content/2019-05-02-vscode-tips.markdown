@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-20 18:35:04
+Date: 2019-11-28 12:12:15
 Author: Benjamin Du
 Slug: vscode-tips
 Title: Tips for Visual Studio Code
@@ -19,13 +19,7 @@ It is not meant to readers but rather for convenient reference of the author and
 
 [vscode-neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim)
 
-[Python (by Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-
-[Python Extension Pack](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-extension-pack)
-
 [Visual Stuido IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
-
-[Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
 ## Fix the Caps Lock Mapping to Escape Issue
 

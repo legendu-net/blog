@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-29 10:42:12
+Date: 2019-11-28 12:12:15
 Author: Benjamin Du
 Slug: remote-development-in-visual-studio-code
 Title: Remote Development in Visual Studio Code
@@ -27,3 +27,6 @@ The second (prefered) approach is to leverage
 For more details, 
 please refer to 
 [Visual Studio Code Server](http://www.legendu.net/misc/blog/visual-studio-code-server/).
+Visual Studio Code Server is prefer to the Remote Development extension pack 
+as Visual Studio Code Server requires no installation or configuration on the client machine.
+A browser is all your need to use Visual Studio Code Server once it is setup.

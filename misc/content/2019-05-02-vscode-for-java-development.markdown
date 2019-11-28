@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-28 15:08:44
+Date: 2019-11-28 15:18:13
 Author: Benjamin Du
 Slug: vscode-for-jvm-languages
 Title: Virtual Studio Code for Java Development
@@ -25,6 +25,8 @@ https://github.com/redhat-developer/vscode-java
 ### Extensions 
 
 - [Debugger for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
+
+- [Lombok Annotations Support for VS Code](https://marketplace.visualstudio.com/items?itemName=GabrielBB.vscode-lombok)
 
 ## References
 

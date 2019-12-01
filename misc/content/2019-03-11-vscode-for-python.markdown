@@ -16,6 +16,13 @@ You can official doc in the left panel on using Python in VS Code.
 
 https://code.visualstudio.com/docs/languages/python
 
+## Shortcuts 
+
+Command + J: Show/Hide the terminal panel.
+
+Ctrl + Command + F: Enter/Exit full screen mode.
+
+
 ## Set Python Environment for Visual Studio Code Server
 
 1. File -> Preference -> Settings

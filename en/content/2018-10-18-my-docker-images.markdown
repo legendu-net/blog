@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-27 17:38:33
+Date: 2019-12-01 11:22:04
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -478,8 +478,6 @@ The log file has the patten `/var/lib/docker/containers/[container-id]/[containe
 
             - [dclong/lubuntu-nodejs](https://hub.docker.com/r/dclong/lubuntu-nodejs/)  
 
-            - [dclong/lubuntu-py](https://hub.docker.com/r/dclong/lubuntu-py/)  
-
             - [dclong/lubuntu-jdk](https://hub.docker.com/r/dclong/lubuntu-jdk/)  
 
                 - [dclong/lubuntu-scala](https://hub.docker.com/r/dclong/lubuntu-scala/)  
@@ -487,7 +485,6 @@ The log file has the patten `/var/lib/docker/containers/[container-id]/[containe
 
         - [dclong/xubuntu](https://hub.docker.com/r/dclong/xubuntu/)  
             - [dclong/xubuntu-nodejs](https://hub.docker.com/r/dclong/xubuntu-nodejs/)  
-            - [dclong/xubuntu-py](https://hub.docker.com/r/dclong/xubuntu-py/)  
             - [dclong/xubuntu-jdk](https://hub.docker.com/r/dclong/xubuntu-jdk/)  
                 - [dclong/xubuntu-scala](https://hub.docker.com/r/dclong/xubuntu-scala/)  
                     - [dclong/xubuntu-intellij](https://hub.docker.com/r/dclong/xubuntu-intellij/)  

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-30 19:07:02
+Date: 2019-11-28 12:12:15
 Author: Benjamin Du
 Slug: vscode-for-python
 Title: Visual Studio Code for Python
@@ -19,6 +19,17 @@ You can official doc in the left panel on using Python in VS Code.
 
 https://code.visualstudio.com/docs/languages/python
 
+## Useful Extensions
+
+[Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal)
+
+[Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
+
+[vscode-neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim)
+
+[Python (by Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+
+[Python Extension Pack](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-extension-pack)
 
 ## Python Project with poetry and VS Code
 

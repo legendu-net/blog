@@ -2,4 +2,5 @@ image: dclong/gitpod
 ports:
   - port: 8888
 tasks:
+  - command: ln -s /workspace/blog/main.py /home/gitpod/.local/bin/blog
   - command: nvim --headless +"call dein#install()" +qall

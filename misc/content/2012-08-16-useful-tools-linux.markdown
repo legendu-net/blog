@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-09-27 11:05:17
+Date: 2019-11-28 15:26:20
 Slug: useful-tools-linux
 Title: Useful Tools in Linux
 Category: OS
@@ -302,15 +302,6 @@ Opensource Desktop Publishing
 3. Claws Mail
 
 4. Sieve (mail filtering language)
-
-### Contacts
-
-1. cobook
-
-2. plaxo contact
-
-3. fullcontact
-
 
 ### PDF Tools
 

@@ -1,20 +1,24 @@
 Status: published
-Date: 2019-05-07 20:34:40
+Date: 2019-11-28 15:09:37
 Author: Benjamin Du
-Slug: vscode-for-jvm-languages
-Title: Virtual Studio Code for JVM Languages
+Slug: vscode-for-scala-development
+Title: Vscode for Scala Development
 Category: Programming
-Tags: programming, Java, JVM languages, Scala, vscode, Visual Studio Code
+Tags: programming, Scala, vscode, Visual Studio Code
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-[Java on Visual Studio Code April Update](https://devblogs.microsoft.com/visualstudio/java-on-visual-studio-code-april-update/)
+https://www.scala-lang.org/2019/04/16/metals.html
 
-## Extensions
+https://github.com/scalameta/metals-vscode
+
+### Extensions
 
 [Scala Language Server](https://marketplace.visualstudio.com/items?itemName=dragos.scala-lsp)
 
 [Scala Syntax](https://marketplace.visualstudio.com/items?itemName=scala-lang.scala)
+
+

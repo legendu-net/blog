@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-23 15:33:07
+Date: 2019-11-30 21:37:26
 Author: Benjamin Du
 Slug: python-poetry-tips
 Title: Python Poetry Tips
@@ -65,12 +65,12 @@ source $(poetry env info -p)/bin/activate
 ```
 
 ## Run Test Suits Using Pytest
-```
+```bash
 poetry run pytest
 ```
 Or if you want to make it specific to collect test suits from the `test` directory 
 under the root directory of the project.
-```
+```bash
 poetry run pytest test
 ```
 

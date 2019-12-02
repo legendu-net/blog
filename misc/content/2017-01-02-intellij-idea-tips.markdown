@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-28 10:20:17
+Date: 2019-12-01 17:15:04
 Author: Ben Chuanlong Du
 Slug: intellij-idea-tips
 Title: IntelliJ IDEA Tips
@@ -15,7 +15,9 @@ but rather for convenient reference of the author and future improvement.
 
 ## Installation in Ubuntu 
 
-https://www.ubuntupit.com/how-to-install-intellij-idea-in-ubuntu-linux/
+https://itsfoss.com/install-intellij-ubuntu-linux/
+
+You can use ubuntu-make to install IntelliJ IDEA in Docker.
 
 
 

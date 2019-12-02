@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-28 12:12:15
+Date: 2019-11-30 22:10:28
 Author: Benjamin Du
 Slug: vscode-for-python
 Title: Visual Studio Code for Python
@@ -14,20 +14,36 @@ It is not meant to readers but rather for convenient reference of the author and
 [Getting Started with Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial)
 You can official doc in the left panel on using Python in VS Code.
 
-[Remote Python Development in Visual Studio Code](https://devblogs.microsoft.com/python/remote-python-development-in-visual-studio-code/)
-
-
 https://code.visualstudio.com/docs/languages/python
 
+## Shortcuts 
+
+Command + J: Show/Hide the terminal panel.
+
+Ctrl + Command + F: Enter/Exit full screen mode.
+
+
+## Set Python Environment for Visual Studio Code Server
+
+1. File -> Preference -> Settings
+
+2. Click on Workspace.
+
+3. Search for `Python Path`.
+
+4. Change Python Path to the one you want to use.
+
+![](https://user-images.githubusercontent.com/824507/69910283-b7b41300-13bd-11ea-83f0-5f959c68532f.png)
+
 ## Useful Extensions
+
+[Python (by Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 [Terminal](https://marketplace.visualstudio.com/items?itemName=formulahendry.terminal)
 
 [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
 
 [vscode-neovim](https://marketplace.visualstudio.com/items?itemName=asvetliakov.vscode-neovim)
-
-[Python (by Microsoft)](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 [Python Extension Pack](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-extension-pack)
 

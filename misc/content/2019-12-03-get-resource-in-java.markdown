@@ -1,0 +1,27 @@
+Status: published
+Date: 2019-12-03 10:44:14
+Author: Benjamin Du
+Slug: get-resource-in-java
+Title: Get Resource in Java
+Category: Programming
+Tags: programming, Java, getResource, resources, getClass, getClassLoader, getResourceAsStream
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+
+1. `getResource` and `getResourceAsStream` tries to find files in the `resources` directory 
+    under `src/main/resources` or `src/test/resources` 
+    (depending on whether you are running the application or tests for the application).
+    If the specified file is not found,
+    `null` is returned (which might cause NullPointerExceptions if you make a mistake specifying the resource to use).
+
+2. `getClass.getResource` requires a leading `/` in the file name to find.
+
+        getClass().getResource("/some_file_to_find")
+
+    Another way is to use `getClass().getClassLoader().getResource`,
+    and you must not have a leading `/` for files.
+
+        getClass().getClassLoader().getResource("some_file_to_find")

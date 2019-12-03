@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-12-03 10:44:14
+Date: 2019-12-03 10:56:56
 Author: Benjamin Du
-Slug: get-resource-in-java
-Title: Get Resource in Java
+Slug: get-resources-in-java
+Title: Get Resources in Java
 Category: Programming
 Tags: programming, Java, getResource, resources, getClass, getClassLoader, getResourceAsStream
 
@@ -25,3 +25,7 @@ It is not meant to readers but rather for convenient reference of the author and
     and you must not have a leading `/` for files.
 
         getClass().getClassLoader().getResource("some_file_to_find")
+
+3. `getResource` returns an [URL](https://docs.oracle.com/javase/8/docs/api/java/net/URL.html) object.
+    You can use the `getFile` or `getPath` method to get the path of the file. 
+    Both of these 2 methods return a String.

@@ -1,14 +1,21 @@
 Status: published
-Date: 2019-12-03 10:19:50
+Date: 2019-12-04 09:54:41
 Slug: exceptions-in-java
 Author: Ben Chuanlong Du
 Title: Exceptions in Java
 Category: Programming
 Tags: exception, programming, Java
 
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+
+
 
 1. You can suppress warnings of unchecked exceptions by using 
 
+        :::java
         SuppressWarnings("unchecked") 
 
     but generally speaking, 
@@ -21,6 +28,7 @@ Tags: exception, programming, Java
     For example,
     The old style Java code
 
+        :::java
         } catch (FirstException ex) {
              logger.error(ex);
              throw ex;
@@ -31,10 +39,11 @@ Tags: exception, programming, Java
 
     becomes
 
-    } catch (FirstException | SecondException ex) {
-         logger.error(ex);
-        throw ex;
-    }
+        :::java
+        } catch (FirstException | SecondException ex) {
+             logger.error(ex);
+            throw ex;
+        }
 
     in Java 7+.
 
@@ -46,6 +55,7 @@ Tags: exception, programming, Java
     For example,
     old style Java code
 
+        :::java
         BufferedReader br = new BufferedReader(new FileReader(path));
         try {
            return br.readLine();
@@ -55,8 +65,9 @@ Tags: exception, programming, Java
 
     becomes
 
-    try (BufferedReader br = new BufferedReader(new FileReader(path)) {
-       return br.readLine();
-    }
+        :::java
+        try (BufferedReader br = new BufferedReader(new FileReader(path)) {
+           return br.readLine();
+        }
 
     in Java 7.

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-27 09:31:48
+Date: 2019-12-03 21:36:29
 Author: Ben Chuanlong Du
 Slug: spark-tips
 Title: Spark Tips
@@ -49,6 +49,7 @@ which are variables that are only “added” to, such as counters and sums.
             --driver-memory 15G \
             --executor-cores 4 \
             --conf spark.yarn.maxAppAttempts=2 \
+            --conf spark.dynamicAllocation.enabled=true \
             --conf spark.dynamicAllocation.maxExecutors=1000 \
             --conf spark.network.timeout=300s \
             --conf spark.executor.memoryOverhead=2G \

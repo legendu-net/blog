@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-27 09:31:48
+Date: 2019-12-03 21:36:29
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
@@ -31,6 +31,7 @@ It is not meant to readers but rather for convenient reference of the author and
                 --driver-memory 15G \
                 --executor-cores 4 \
                 --conf spark.yarn.maxAppAttempts=2 \
+                --conf spark.dynamicAllocation.enabled=true \
                 --conf spark.dynamicAllocation.maxExecutors=1000 \
                 --conf spark.network.timeout=300s \
                 --conf spark.executor.memoryOverhead=2G \

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-11 02:50:52
+Date: 2019-12-05 14:51:10
 Author: Benjamin Du
 Slug: spark-issue-high-disk-and-memory-spill-when-doing-shuffle
 Title: Spark Issue: High Disk and Memory Spill When Doing Shuffle
@@ -25,5 +25,6 @@ Insufficient executor memory (You can monitor this spill metrics from Spark UI)
 
 2. For jobs that don't need to persist data in memory we can reduce the cache storage size and enlarge the memory portion for Shuffle
 
+        :::bash
         --conf spark.shuffle.memoryFraction=0.4 
         --conf spark.storage.memoryFraction=0.1 

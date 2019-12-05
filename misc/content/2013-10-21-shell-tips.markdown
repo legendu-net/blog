@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: Some Tips for Shell Commands
-Date: 2019-07-03 04:25:47
+Date: 2019-12-04 19:06:58
 Slug: shell-tips
 Category: Linux
 Tags: tips, Linux, shell, terminal
@@ -84,20 +84,6 @@ It is not meant to readers but rather for convenient reference of the author and
     () ... $() ...
     use $0 and $BASH_SOURCE to write ... your example
 
-7. Examples of getting file name and extension.
-
-        FILE="example.tar.gz"
-        echo "${FILE%%.*}"
-        # returns example
-
-        echo "${FILE%.*}"
-        # returns example.tar
-
-        echo "${FILE#*.}"
-        # returns tar.gz
-
-        echo "${FILE##*.}"
-        # returns gz
 
 8. avoid using "global" bash variables in sub shell,
     many things are sub shell, very dangerous, and be careful!!!,

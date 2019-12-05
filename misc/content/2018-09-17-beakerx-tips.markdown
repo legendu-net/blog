@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-05 19:12:11
+Date: 2019-12-04 21:19:56
 Author: Ben Chuanlong Du
 Slug: beakerx-tips
 Title: Beakerx Tips
@@ -26,6 +26,8 @@ Currently Java 8 is request.
 https://github.com/twosigma/beakerx/issues/7666
 
 https://github.com/twosigma/beakerx/blob/master/FAQ.md
+
+3. All BeakerX kernels support both Bash and Python via cell magics (`%%bash` and `%%python`).
 
 ## SQL
 

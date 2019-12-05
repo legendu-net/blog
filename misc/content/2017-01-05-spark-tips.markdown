@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-03 21:36:29
+Date: 2019-12-04 16:44:00
 Author: Ben Chuanlong Du
 Slug: spark-tips
 Title: Spark Tips
@@ -12,6 +12,25 @@ fragmentary and immature notes/thoughts of the author.
 It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
+## General Tips
+
+1. If you have a really large Spark job which fails with high chance due too large complexity,
+    you can check whether there are independent sub jobs in the big job.
+    If so,
+    it is often a good idea to submit separate Spark applications for each independent sub jobs.
+    One typical example is when you do a large simulation. 
+    Each iterator in the simulation can be seen as an independent job (of other iterators).
+    If the whole simulation is too large and fails with high chance,
+    you can break down the simulation into smaller piece.
+    One useful trick is to use hash and/or modulus to help you cut the large job into smaller and reproducible ones. 
+    You can then submit a Spark application for each of the smaller jobs.
+    The advantage of this approach is 2 fold.
+    First, 
+    each of the smaller jobs can run reliably and have a much higher chance to suceed. 
+    Second, 
+    shall any of the smaller jobs fail, 
+    you run rerun that specific job (this is why reproducible is important) instead of rerunning the whole large simulation.
+
 
 ## Sharing Variables
 
@@ -38,6 +57,7 @@ which are variables that are only “added” to, such as counters and sums.
     It is suggested that you use `--deploy-mode client` for ad hoc Spark applications
     and `--deploy-mode cluster` for production ready applications that need to be run many times.
 
+        :::bash
         #!/bin/bash
         /apache/spark2.3/bin/spark-submit \
             --files "file:///apache/hive/conf/hive-site.xml,file:///apache/hadoop/etc/hadoop/ssl-client.xml,file:///apache/hadoop/etc/hadoop/hdfs-site.xml,file:///apache/hadoop/etc/hadoop/core-site.xml,file:///apache/hadoop/etc/hadoop/federation-mapping.xml" \
@@ -66,7 +86,8 @@ If you run `spark-shell` and encounter the issue of "ERROR SparkContext: Error i
 due to "application submitted by user to unknown queue",
 you have to pass the queue that you can access to `spark-shell`.
 
-    spark-shell --queue my_queue
+        :::bash
+        spark-shell --queue my_queue
 
 ## Spark Cluster Master URL
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-08 12:09:30
+Date: 2019-12-08 14:20:38
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -145,6 +145,13 @@ docker run -d \
     dclong/jupyterhub-ds
 ```
 
+## Debug Docker Containers
+
+You can change the option `docker run -d ...` to `docker run -it ...` to show logs of processes in the Docker container 
+which helps debugging. 
+If you have started a Docker container using `docker run -d ...`,
+you can refer to [Docker Container Logs](http://www.legendu.net/en/blog/my-docker-images/#docker-container-logs)
+on how to get logs of the container.
 
 ## Get Information of Running Jupyter/Lab Servers
 
@@ -368,7 +375,7 @@ sc.textFile
 
 ## Docker Container Logs
 
-You can find logs of Docker contains under the directory `/var/log/docker/containers` on the host machine.
+You can find logs of Docker contains under the directory `/var/log/docker/containers` on Linux host machines.
 The log file has the patten `/var/lib/docker/containers/[container-id]/[container-id]-json.log`.
 
 ## List of Images and Detailed Information

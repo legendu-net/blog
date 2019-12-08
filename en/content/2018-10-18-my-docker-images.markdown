@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-01 11:22:04
+Date: 2019-12-08 12:09:30
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -55,25 +55,50 @@ docker pull registry.docker-cn.com/dclong/jupyterhub-ds
 
 ### Start a Container
 
-Below are some Docker command arguments explained.
-These are for properly handling file permissions in the Docker container and on the host.
+Below are explanation of some environment variable passed by the option `-e` to the Docker command.
 Keep the default if you don't know what are the best to use.
-`DOCKER_PASSWORD` is probably the only argument you want to and should change.
+`DOCKER_PASSWORD` is probably the only one you want to and should change.
 
-- `DOCKER_USER`: The user to be created (dynamically) in the container.
-    By default, the name of the current user on the host is used.
-- `DOCKER_USER_ID`: The ID of the user to be created in the container.
-    By default, the ID of the current user on the host is used.
-- `DOCKER_PASSWORD`: The password of the user to be created.
-    By default, it's the same as the user name.
-    You'd better change it for security reasons.
-    Of course, users can always change it later using the command `passwd`.
-- `DOCKER_GROUP_ID`: The group of the user to be created.
-    By default, it's the group ID of the current user on the host.
-- `DOCKER_ADMIN_USER` (`dclong/jupyterhub-*` only): The admin of the JupyterLab server.
-    By default, it's the user to be created in the container.
-- `USER_MEM_LIMIT` (`dclong/jupyterhub-*` only): The memory limit that each user can use.
-    Note that this optional is not in effect now.
+- `DOCKER_USER`: The user to be created (dynamically) in the Docker container.
+    The shell command `id -un` gets the name of the current user (on the host),
+    so the option `-e DOCKER_USER=$(id -un)` instructs the script `/scripts/sys/init.sh`
+    to create a user in the Docker container whose name is the same as the current user on the host.
+    <font color="red">
+    WARNING: the shell script `/scripts/sys/init.sh` cannot create a user named `root` 
+    as it already exists in the Docker container.
+    If you start a Docker container using `root`, 
+    make sure to pass a different user name to the envrionment variable `DOCKER_USER`,
+    e.g., `-e DOCKER_USER=dclong`.
+    </font>
+    For more discussion, 
+    please refer to [this issue](https://github.com/dclong/docker-jupyterhub/issues/3).
+- `DOCKER_USER_ID`: The ID of the user to be created in the Docker container.
+    The shell command `id -u` gets the user ID of the current user (on the host),
+    so the option `-e DOCKER_USER_ID=$(id -u)` instructs the script `/scripts/sys/init.sh`
+    to create a user in the Docker container whose user ID is the same as the user ID of the current user on the host.
+    This means that the user in the Docker container is essentailly the current user on the host,
+    which helps resolve file permissions between the Docker container and the host.
+    This option is similar to the option `--user` of the command `docker run`,
+    and you want to keep it unchanged, generally speaking.
+- `DOCKER_PASSWORD`: The password of the user to be created in the Docker container.
+    The shell command `id -un` get the name of the current user (on the host),
+    so the option `-e DOCKER_PASSWORD=$(id -un)` instructs the script `/scripts/sys/init.sh`
+    to create a user in the Docker container whose password is the name of the current user on the host.
+    <font color="red">
+    WARNING: You'd better change the default value for security reasons.
+    Of course, users can always change it later using the command `passwd` inside the Docker container.
+    </font>
+- `DOCKER_GROUP_ID`: The group ID of the user to be created in the Docker container.
+    The shell command `id -g` gets the group ID of the current user (on the host),
+    so the option `-e DOCKER_GROUP_ID=$(id -g)` instructs the script `/scripts/sys/init.sh`
+    to create a user in the Docker container whose group ID is the same as the group ID of the current user on the host.
+    You want to keep this option unchanged, generally speaking.
+- `DOCKER_ADMIN_USER`: This environment variable applies to Docker images `dclong/jupyterhub*` only. 
+    It specifies the admin user of the JupyterHub server.
+    It should be the same as `DOCKER_USER` generally speaking.
+- `USER_MEM_LIMIT`: This environment variable applies to Docker images `dclong/jupyterhub*` only.
+    It limits the memory that each user can use.
+    Note: this optional is not in effect currently.
 
 The root directory of JupyterLab/Jupyter notebooks is `/workdir` in the container.
 You can mount directory on the host to it as you wish.

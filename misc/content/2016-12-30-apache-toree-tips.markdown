@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-13 19:54:22
+Date: 2019-12-09 13:02:42
 Author: Ben Chuanlong Du
 Slug: apache-toree-tips
 Title: Apache Toree Tips
@@ -30,6 +30,10 @@ anaconda3/bin/jupyter toree install --user --spark_home=/apache/spark
 
 
     %AddDeps com.databricks spark-csv_2.10 1.2.0 --transitive
+
+
+    %AddDeps tech.tablesaw tablesaw-core 0.11.6 --transitive
+
 
     kernel.magics.addDeps("com.databricks spark-csv_2.10 1.2.0 --transitive")
 

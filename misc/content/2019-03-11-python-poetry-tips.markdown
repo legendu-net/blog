@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-30 21:40:52
+Date: 2019-12-12 12:19:10
 Author: Benjamin Du
 Slug: python-poetry-tips
 Title: Python Poetry Tips
@@ -46,31 +46,6 @@ https://hackersandslackers.com/poetic-python-project-packaging/
 https://github.com/sdispater/poetry/pull/591
 
 https://github.com/sdispater/poetry/issues/241
-
-## Poetry Virtual Environment
-
-### Create a Virtual Environment
-
-Poetry supports the `env` subcomamnd starting from version 1.0.0.
-You can use `poetry env use python_version` to specify the Python version to use for the project.
-```Bash
-poetry env use python3
-```
-
-### Activate Vitual Environment
-
-`poetry shell` does not activate virtual environment currently, 
-which is a bug. 
-However, 
-one alternative is to run the following command (starting from poetry 1.0.0beta2).
-```Bash
-source $(poetry env info -p)/bin/activate
-```
-
-### Show Information of the Vitual Environment
-```bash
-poetry env info
-```
 
 ## Run Test Suits Using Pytest
 ```bash

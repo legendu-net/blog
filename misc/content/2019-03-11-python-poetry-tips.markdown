@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-12 12:19:10
+Date: 2019-12-12 12:24:34
 Author: Benjamin Du
 Slug: python-poetry-tips
 Title: Python Poetry Tips
@@ -56,6 +56,12 @@ under the root directory of the project.
 ```bash
 poetry run pytest test
 ```
+
+## Configuration
+
+https://python-poetry.org/docs/cli/#config
+
+https://python-poetry.org/docs/configuration/
 
 ## References
 

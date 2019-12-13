@@ -31,7 +31,7 @@
     ["Add-Ons", "Add-ons"],
     ["Ipython", "IPython"],
     ["Scalajs", "ScalaJS"],
-    ["Pycharm", "PyCharm"], ["Pymysql", "PyMySQL"], ["Pyspark", "PySpark"],
+    ["Py4Jdbc", "py4jdbc"], ["Pycharm", "PyCharm"], ["Pymysql", "PyMySQL"], ["Pyspark", "PySpark"],
     ["Rstudio", "RStudio"],
     ["Stringi", "stringi"],
     ["Kdevelop", "KDevelop"],

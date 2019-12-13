@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-12 12:12:56
+Date: 2019-12-12 20:30:17
 Author: Benjamin Du
 Slug: managing-virtual-environments-in-poetry
 Title: Managing Virtual Environments in Poetry
@@ -37,7 +37,6 @@ if you want to make Poetry always create virtual environment in the root directo
 poetry config --local virtualenvs.in-project true
 ```
 
-https://github.com/python-poetry/poetry/issues/108
 
 ## Create a Virtual Environment
 
@@ -61,3 +60,7 @@ source $(poetry env info -p)/bin/activate
 ```bash
 poetry env info
 ```
+
+## References
+
+https://github.com/python-poetry/poetry/issues/108

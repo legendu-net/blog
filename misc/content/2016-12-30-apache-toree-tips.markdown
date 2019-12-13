@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-09 13:02:42
+Date: 2019-12-12 20:32:58
 Author: Ben Chuanlong Du
 Slug: apache-toree-tips
 Title: Apache Toree Tips
@@ -49,7 +49,3 @@ anaconda3/bin/jupyter toree install --user --spark_home=/apache/spark
 
 
 Currently it supports only https://repo1.maven.org/maven2/, but not all projects deploy there.
-
-## Questions
-
-1. multiple version of Scala? How?

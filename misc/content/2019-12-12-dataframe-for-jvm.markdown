@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-12 21:04:11
+Date: 2019-12-13 10:55:31
 Author: Benjamin Du
 Slug: dataframe-for-jvm
 Title: Dataframe for JVM
@@ -20,9 +20,15 @@ It can be used in a non-distributed way of course.
 Spark DataFrame is mostly friendly for Scala (Spark/Scala) and Python (PySpark),
 and can be used in Jupyter/Lab notebooks.
 
+## pandas 
+
+Via Python/Java interfaces (jpype, py4j or pyjnius).
+
 ## Tablesaw
 
 Tablesaw is currently the most mature non-distributed DataFrame implementation for JVM languages.
+However, 
+its usability is still far behind Spark DataFrame and Python pandas DataFrame.
 
 
 ## [krangl](https://github.com/holgerbrandl/krangl)

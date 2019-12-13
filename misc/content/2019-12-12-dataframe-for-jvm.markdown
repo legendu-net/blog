@@ -1,0 +1,29 @@
+Status: published
+Date: 2019-12-12 21:04:11
+Author: Benjamin Du
+Slug: dataframe-for-jvm
+Title: Dataframe for JVM
+Category: Programming
+Tags: programming, DataFrame, Spark, Tablesaw, krangl, JVM
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+
+
+## Spark DataFrame
+
+Spark DataFrame is a great implementation of distributed DataFrame,
+if you don't mind having dependency on Spark.
+It can be used in a non-distributed way of course.
+Spark DataFrame is mostly friendly for Scala (Spark/Scala) and Python (PySpark),
+and can be used in Jupyter/Lab notebooks.
+
+## Tablesaw
+
+Tablesaw is currently the most mature non-distributed DataFrame implementation for JVM languages.
+
+
+## [krangl](https://github.com/holgerbrandl/krangl)
+krangl is a DataFrame implementation in Kotlin.

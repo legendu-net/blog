@@ -6,12 +6,6 @@ Title: Managing Virtual Environments in Poetry
 Category: Programming
 Tags: programming, Python, Poetry, virtual environment
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-It is not meant to readers but rather for convenient reference of the author and future improvement.
-**
-
-
 ## Where to Create Virtual Environments
 
 By default,

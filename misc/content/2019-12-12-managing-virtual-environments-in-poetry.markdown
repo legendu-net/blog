@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-14 11:04:58
+Date: 2019-12-14 12:35:10
 Author: Benjamin Du
 Slug: managing-virtual-environments-in-poetry
 Title: Managing Virtual Environments in Poetry
@@ -48,12 +48,9 @@ poetry env use python3
 
 ## Activate Vitual Environment
 
-`poetry shell` does not activate virtual environment currently, 
-which is a bug. 
-However, 
-one alternative is to run the following command (starting from poetry 1.0.0beta2).
-```Bash
-source $(poetry env info -p)/bin/activate
+The virtual environment shell can be activated using the following command.
+```bash
+poetry shell
 ```
 
 ## Show Information of the Vitual Environment

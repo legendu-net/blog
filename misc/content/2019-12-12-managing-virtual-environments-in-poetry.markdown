@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-12 20:30:17
+Date: 2019-12-14 11:04:58
 Author: Benjamin Du
 Slug: managing-virtual-environments-in-poetry
 Title: Managing Virtual Environments in Poetry
@@ -34,7 +34,7 @@ Notice that the above configure works for the current project only.
 Use the following command
 if you want to make Poetry always create virtual environment in the root directory of a project.
 ```bash
-poetry config --local virtualenvs.in-project true
+poetry config virtualenvs.in-project true
 ```
 
 

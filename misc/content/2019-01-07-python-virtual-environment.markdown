@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-03-13 04:03:06
+Date: 2019-12-14 11:04:58
 Author: Ben Chuanlong Du
 Slug: python-virtual-environment
 Title: Python Virtual Environment
@@ -13,7 +13,14 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-It is suggested that you use `venv` for managing virtual environments in Python3. 
+1. `venv` is preferred for managing virtual environments in Python3. 
+
+2. When developing a Python project,
+    it is recommended that you use poetry to manage the project
+    which helps managing virtual environments too,
+    so that you don't have to managing virtual environments by yourself.
+
+The discussion below is specifically for `venv`.
 
 ## Installation on Ubuntu
 

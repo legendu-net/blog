@@ -1,6 +1,5 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Date: 2016-11-20 20:08:09
+Date: 2019-12-14 11:56:44
 Slug: regular-expression-in-r
 Author: Ben Chuanlong Du
 Title: Regular Expression in R
@@ -11,6 +10,7 @@ Tags: R, regex, programming, CRAN, regular expression
 Things on this page are fragmentary and immature notes/thoughts of the author. 
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
 There are two flavors of regular expression in R.
 One is the regular expression (grep, sub, etc.) comes with base. 
 The other good one comes with the stringi package.

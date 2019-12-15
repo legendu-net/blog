@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-27 00:57:08
+Date: 2019-12-15 13:56:57
 Author: Ben Chuanlong Du
 Slug: general-programming-tips
 Title: General Tips on Programming
@@ -28,6 +28,8 @@ but rather for convenient reference of the author and future improvement.
     If you omit parentheses in the expression `(1L << 54) - 1` (where `<<` is the bitwise right shift operator),
     the expression is equivalent to `1L << 53` which might not be what you want.
     This kind of mistake is a common and tricky one.
+    If you use the Kotlin programming language, 
+    it is suggested that you use the bitwise methods instead of the bitwise operators.
 
 4. Always remembe to check whether you have correct set/reset state of variables 
     when you use loops **especiall while loops**.

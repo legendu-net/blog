@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-30 22:10:28
+Date: 2019-12-16 15:05:12
 Author: Benjamin Du
 Slug: vscode-for-python
 Title: Visual Studio Code for Python
@@ -10,11 +10,6 @@ Tags: programming, Python, Visual Studio Code, vscode, IDE, Jupyter notebook
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
-
-[Getting Started with Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial)
-You can official doc in the left panel on using Python in VS Code.
-
-https://code.visualstudio.com/docs/languages/python
 
 ## Shortcuts 
 
@@ -64,3 +59,9 @@ https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-par
 ## Visual Studio Code for Jupyter Notebook
 
 https://code.visualstudio.com/docs/python/jupyter-support
+
+## References
+
+[Getting Started with Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial)
+
+https://code.visualstudio.com/docs/languages/python

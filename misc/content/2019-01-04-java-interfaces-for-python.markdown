@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-02-18 19:53:47
+Date: 2019-12-16 14:43:32
 Author: Ben Chuanlong Du
 Slug: java-interfaces-for-python
 Title: Java Interfaces for Python
@@ -21,7 +21,8 @@ The most used one currently.
 
 ## [pyjnius](https://github.com/kivy/pyjnius)
 
-pyjnius looks like a great one. 
+`pyjnius` looks like a great one 
+as it is fast and simple to use.
 
 ### Installation
 
@@ -39,6 +40,12 @@ from jnius import autoclass
 YourClass = autoclass(path.to.YourClass)
 yourObj = YourClass()
 ```
+
+Note: Avoid using the same name for an instance varialbe and a method in the same class.
+Even though Java is able to distinguish between them 
+pyjnius is not able to. 
+A method will be hide by the instance variable with the same name 
+if you use the Jar via pyjnius in Python.
 
 ## py4j 
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-16 14:43:32
+Date: 2019-12-16 14:45:18
 Author: Ben Chuanlong Du
 Slug: java-interfaces-for-python
 Title: Java Interfaces for Python
@@ -46,6 +46,9 @@ Even though Java is able to distinguish between them
 pyjnius is not able to. 
 A method will be hide by the instance variable with the same name 
 if you use the Jar via pyjnius in Python.
+Generally speaking,
+it is a bad idea to have the same for an instance variable and a method
+as it might confuse other programming languages (e.g., Kotlin) and frameworks too.
 
 ## py4j 
 

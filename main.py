@@ -701,7 +701,12 @@ def _subparse_add(subparsers):
 
 def _subparse_edit(subparsers):
     subparser_edit = subparsers.add_parser(
-        'edit', aliases=['e' + i for i in INDEXES], help='edit a post.')
+        'edit', aliases=['e'], help='Edit a post.')
+    subparser_edit.add_argument(
+        'indexes',
+        nargs='*',
+        type=int,
+        help='Row IDs in the search results.')
     subparser_edit.add_argument(
         '-g',
         '--gp-open',
@@ -709,7 +714,7 @@ def _subparse_edit(subparsers):
         action='store_const',
         const='gp open',
         default=EDITOR,
-        help='edit the post using Theia\'s built-in editor.')
+        help='Edit the post using Theia\'s built-in editor.')
     subparser_edit.add_argument(
         '-v',
         '--vim',
@@ -718,13 +723,6 @@ def _subparse_edit(subparsers):
         const=VIM,
         default=EDITOR,
         help='edit the post using Vim.')
-    subparser_edit.add_argument(
-        '-i',
-        '--indexes',
-        dest='indexes',
-        nargs='+',
-        type=int,
-        help='row IDs in the search results.')
     subparser_edit.add_argument(
         '-f', '--files', dest='files', help='path of the post to be edited.')
     subparser_edit.set_defaults(func=edit)

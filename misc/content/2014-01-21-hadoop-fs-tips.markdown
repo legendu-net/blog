@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-05-15 07:44:37
+Date: 2019-12-16 14:58:14
 Slug: hadoop-fs-tips
 Title: Hadoop Filesystem Tips
 Category: Software
@@ -40,8 +40,27 @@ It is not meant to readers but rather for convenient reference of the author and
     hadoop fs -getmerge /hdfs/path /path/in/linux
     hadoop fs -copyFromLocal /path/in/linux /hdfs/path
     hadoop fs -put /path/in/linux /hdfs/path
-    hadoop fs -mv /user/saurzcode/dir1/abc.txt /user/saurzcode/dir2
+
+## Move/Rename Files/Directories
+
+Move/rename the source file/directory `/path/to/source` TO `/path/to/des`.
+
+    :::bash
+    hdfs dfs -mv /path/to/source /path/to/des
+
+Move the source file/directory `/path/to/source` INTO the directory `/path/to/des`.
+That is,
+move/rename the file/directory `/path/to/source` to `/path/to/des/source`.
+
+    :::bash
+    hdfs dfs -mv /path/to/source /path/to/des/
+
+## Tail
+
     hadoop fs -tail /user/saurzcode/dir1/abc.txt
+
+## Copy Files/Directories
+
     hadoop fs -cp /user/saurzcode/dir1/abc.txt /user/saurzcode/dir2
 
 2. The command `hdfs dfs -mkdir` supports the `-p` option similar to that of the `mkdir` command in Linux/Unix.

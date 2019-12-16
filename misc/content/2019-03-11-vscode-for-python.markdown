@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-16 15:05:12
+Date: 2019-12-16 15:06:38
 Author: Benjamin Du
 Slug: vscode-for-python
 Title: Visual Studio Code for Python
@@ -65,3 +65,5 @@ https://code.visualstudio.com/docs/python/jupyter-support
 [Getting Started with Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial)
 
 https://code.visualstudio.com/docs/languages/python
+
+[Using the "black" Python formatter in VS Code](https://gist.github.com/kstrauser/c0cf3c440c3bffed60cb8e85de7f6649)

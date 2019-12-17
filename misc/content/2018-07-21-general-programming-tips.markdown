@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-15 13:56:57
+Date: 2019-12-17 09:56:10
 Author: Ben Chuanlong Du
 Slug: general-programming-tips
 Title: General Tips on Programming
@@ -14,7 +14,7 @@ but rather for convenient reference of the author and future improvement.
 **
 
 
-1. Do NOT chasing the latest versions of libraries/software/tools. 
+1. Do NOT chase the latest versions of libraries/software/tools. 
   Wait for some time for them to be tested thoroughly before adopting them.
 
 2. Follow a good [Semantic Versioning](https://semver.org/) 

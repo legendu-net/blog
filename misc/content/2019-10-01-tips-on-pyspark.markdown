@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-17 13:47:23
+Date: 2019-12-17 13:57:33
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
@@ -67,3 +67,7 @@ It is not meant to readers but rather for convenient reference of the author and
 [Managing dependencies and artifacts in PySpark](https://bytes.grubhub.com/managing-dependencies-and-artifacts-in-pyspark-7641aa89ddb7)
 
 https://stackoverflow.com/questions/51450462/pyspark-addpyfile-to-add-zip-of-py-files-but-module-still-not-found
+
+https://becominghuman.ai/real-world-python-workloads-on-spark-standalone-clusters-2246346c7040
+
+https://community.cloudera.com/t5/Community-Articles/Running-PySpark-with-Conda-Env/ta-p/247551

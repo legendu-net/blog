@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-12-16 14:58:14
+Date: 2019-12-17 10:01:41
 Slug: hadoop-fs-tips
 Title: Hadoop Filesystem Tips
 Category: Software
@@ -12,29 +12,37 @@ It is not meant to readers but rather for convenient reference of the author and
 **
  
 
+## Cat
 
+    :::bash
     hadoop fs -cat
+
+## mkdir
+
+    :::bash
     hadoop fs -mkdir [-p] /path/to/create
 
 
-2. Upload a file/directory to HDFS.
+## Upload a file/directory to HDFS.
 
-        hadoop fs -put [-f]
+    :::bash
+    hadoop fs -put [-f]
 
-    The option `-f` overwrite existing files on HDFS. 
-    However, 
-    a tricky misunderstanding might happend when you upload a directory using the following command.
+The option `-f` overwrite existing files on HDFS. 
+However, 
+a tricky misunderstanding might happend when you upload a directory using the following command.
 
-        hadoop fs -put -f /local/path/to/some_directory /hdfs/path/to/some_directory
+    :::bash
+    hadoop fs -put -f /local/path/to/some_directory /hdfs/path/to/some_directory
 
-    Supppose `/hdfs/path/to/some_directory` already exists,
-    it is not the directory `/hdfs/path/to/some_directory` itself get overwritten 
-    but rather files in it get overwritten.
-    If files in `/local/path/to/some_directory` have diffrent names than files in `/hdfs/path/to/some_directory`
-    then nothing is overwritten.
-    This might not what you want and can get you bitten. 
-    It is suggested that you always remove a directory manually using the command `hdfs dfs -rm -r /hdfs/path/to/some_directory`
-    if you intend to overwrite the whole directory.
+Supppose `/hdfs/path/to/some_directory` already exists,
+it is not the directory `/hdfs/path/to/some_directory` itself get overwritten 
+but rather files in it get overwritten.
+If files in `/local/path/to/some_directory` have diffrent names than files in `/hdfs/path/to/some_directory`
+then nothing is overwritten.
+This might not what you want and can get you bitten. 
+It is suggested that you always remove a directory manually using the command `hdfs dfs -rm -r /hdfs/path/to/some_directory`
+if you intend to overwrite the whole directory.
 
     hadoop fs -get
     hadoop fs -getmerge /hdfs/path /path/in/linux
@@ -57,10 +65,12 @@ move/rename the file/directory `/path/to/source` to `/path/to/des/source`.
 
 ## Tail
 
+    :::bash
     hadoop fs -tail /user/saurzcode/dir1/abc.txt
 
 ## Copy Files/Directories
 
+    :::bash
     hadoop fs -cp /user/saurzcode/dir1/abc.txt /user/saurzcode/dir2
 
 2. The command `hdfs dfs -mkdir` supports the `-p` option similar to that of the `mkdir` command in Linux/Unix.
@@ -68,6 +78,7 @@ move/rename the file/directory `/path/to/source` to `/path/to/des/source`.
 3. Check size of a directory.
     However, the depth option is not supported currently.
 
+        :::bash
         hdfs dfs -du [-s] [-h] URI [URI …] 
 
 4. Remove a directory in HDFS without making a backup in trash.
@@ -75,6 +86,7 @@ move/rename the file/directory `/path/to/source` to `/path/to/des/source`.
     but it is useful when the directory that you want to remove 
     is too big to place into the trash directory.
 
+        :::bash
         hadoop fs -rm -r -skipTrash /tmp/chdu_item_desc
 
 ## Parquet Format

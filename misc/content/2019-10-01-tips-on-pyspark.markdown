@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-17 14:43:34
+Date: 2019-12-17 15:14:38
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
@@ -59,6 +59,8 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## Dependencies
 
+PEX sounds like a good tool!
+
 1. Create a directory named `lib`.
 
         :::bash
@@ -99,3 +101,7 @@ https://becominghuman.ai/real-world-python-workloads-on-spark-standalone-cluster
 https://community.cloudera.com/t5/Community-Articles/Running-PySpark-with-Conda-Env/ta-p/247551
 
 https://stackoverflow.com/questions/36461054/i-cant-seem-to-get-py-files-on-spark-to-work
+
+[Best Practices Writing Production-Grade PySpark Jobs](https://developerzen.com/best-practices-writing-production-grade-pyspark-jobs-cb688ac4d20f)
+
+[Packaging code with PEX — a PySpark example](https://medium.com/criteo-labs/packaging-code-with-pex-a-pyspark-example-9057f9f144f3)

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-03 21:36:29
+Date: 2019-12-17 13:47:23
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
@@ -57,6 +57,13 @@ It is not meant to readers but rather for convenient reference of the author and
     It is suggestion that adopt the trick of "prefixing an underscore to file names"
     when submitting a PySpark job.
 
+## Dependencies
+
+    :::bash
+    spark.sparkContext.addPyFile("/path/to/python/file")
+
 ## References
 
 [Managing dependencies and artifacts in PySpark](https://bytes.grubhub.com/managing-dependencies-and-artifacts-in-pyspark-7641aa89ddb7)
+
+https://stackoverflow.com/questions/51450462/pyspark-addpyfile-to-add-zip-of-py-files-but-module-still-not-found

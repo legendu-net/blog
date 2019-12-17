@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-12 12:24:34
+Date: 2019-12-17 11:26:15
 Author: Benjamin Du
 Slug: python-poetry-tips
 Title: Python Poetry Tips
@@ -15,31 +15,34 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## Usage
 
-```Bash
+:::bash
 poetry new proj
-```
 
-```Bash
+:::bash
 poetry init
-```
 
 ## Updating poetry
 
 Updating poetry to the latest stable version is as simple as calling the self:update command.
 
-```Bash
-poetry self:update
-```
+    :::bash
+    poetry self:update
 
 If you want to install prerelease versions, you can use the --preview option.
 
-```Bash
-poetry self:update --preview
-```
+    :::bash
+    poetry self:update --preview
 
 https://codingdose.info/2018/08/02/develop-and-publish-with-poetry/
 
 https://hackersandslackers.com/poetic-python-project-packaging/
+
+## export
+
+This command exports the lock file to other formats.
+
+    :::bash
+    poetry export -f requirements.txt > requirements.txt
 
 ## User Tasks
 
@@ -48,14 +51,15 @@ https://github.com/sdispater/poetry/pull/591
 https://github.com/sdispater/poetry/issues/241
 
 ## Run Test Suits Using Pytest
-```bash
-poetry run pytest
-```
+
+    :::bash
+    poetry run pytest
+
 Or if you want to make it specific to collect test suits from the `test` directory 
 under the root directory of the project.
-```bash
-poetry run pytest test
-```
+
+    :::bash
+    poetry run pytest test
 
 ## Configuration
 

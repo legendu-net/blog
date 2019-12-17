@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-08 14:20:38
+Date: 2019-12-16 16:12:27
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -365,12 +365,14 @@ import findspark
 # A symbolic link of the Spark Home is made to /opt/spark for convenience
 findspark.init('/opt/spark')
 
-import pyspark
-sc = pyspark.SparkContext(appName="myAppName")
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName('PySpark Example').enableHiveSupport().getOrCreate()
 ```
 3. Use Spark as usual.
 ```
-sc.textFile
+df1 = spark.table("some_hive_table")
+df2 = spark.sql("select * from some_table")
+...
 ```
 
 ## Docker Container Logs

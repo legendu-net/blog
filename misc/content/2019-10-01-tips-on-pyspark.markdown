@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-17 15:14:38
+Date: 2019-12-17 15:16:14
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
@@ -59,7 +59,8 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## Dependencies
 
-PEX sounds like a good tool!
+[PEX](https://github.com/pantsbuild/pex)
+sounds like a good tool!
 
 1. Create a directory named `lib`.
 

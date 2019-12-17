@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-14 12:35:10
+Date: 2019-12-17 11:08:52
 Author: Benjamin Du
 Slug: managing-virtual-environments-in-poetry
 Title: Managing Virtual Environments in Poetry
@@ -53,5 +53,7 @@ poetry env info
 ```
 
 ## References
+
+https://python-poetry.org/docs/managing-environments/
 
 https://github.com/python-poetry/poetry/issues/108

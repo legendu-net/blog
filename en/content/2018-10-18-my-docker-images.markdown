@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-17 10:11:39
+Date: 2019-12-17 10:22:25
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -25,9 +25,8 @@ You must have Docker installed.
 If you are on Ubuntu,
 the just use the command below to install the community edition of Docker.
 
-```Bash
-sudo apt-get install docker.io
-```
+    :::bash
+    sudo apt-get install docker.io
 
 If you'd rather install the enterprise edition
 or if you are on other platforms,
@@ -38,9 +37,8 @@ please refer to the offical Docker doc [Install Docker](https://docs.docker.com/
 Taking `dclong/jupyterhub-ds` as an example,
 you can pull it using the command below.
 
-```Bash
-docker pull dclong/jupyterhub-ds
-```
+    :::bash
+    docker pull dclong/jupyterhub-ds
 
 For people in mainland of China,
 please refer to the post
@@ -49,9 +47,8 @@ on ways to speed up pushing/pulling of Docker images.
 If you don't bother,
 then just use the command below.
 
-```Bash
-docker pull registry.docker-cn.com/dclong/jupyterhub-ds
-```
+    :::bash
+    docker pull registry.docker-cn.com/dclong/jupyterhub-ds
 
 ### Start a Container
 
@@ -108,42 +105,40 @@ The following command starts a container
 and mounts the current working directory and `/home` on the host machine 
 to `/workdir` and `/home_host` in the container respectively.
 
-```
-docker run -d \
-    --name jupyterhub-ds \
-    --log-opt max-size=50m \
-    -p 8000:8000 \
-    -p 5006:5006 \
-    -e DOCKER_USER=`id -un` \
-    -e DOCKER_USER_ID=`id -u` \
-    -e DOCKER_PASSWORD=`id -un` \
-    -e DOCKER_GROUP_ID=`id -g` \
-    -e DOCKER_ADMIN_USER=`id -un` \
-    -v `pwd`:/workdir \
-    -v `dirname $HOME`:/home_host \
-    dclong/jupyterhub-ds
-```
+    :::bash
+    docker run -d \
+        --name jupyterhub-ds \
+        --log-opt max-size=50m \
+        -p 8000:8000 \
+        -p 5006:5006 \
+        -e DOCKER_USER=`id -un` \
+        -e DOCKER_USER_ID=`id -u` \
+        -e DOCKER_PASSWORD=`id -un` \
+        -e DOCKER_GROUP_ID=`id -g` \
+        -e DOCKER_ADMIN_USER=`id -un` \
+        -v `pwd`:/workdir \
+        -v `dirname $HOME`:/home_host \
+        dclong/jupyterhub-ds
 
 The following command (only works on Linux) does the same as the above one 
 except that it limits the use of CPU and memory.
 
-```
-docker run -d \
-    --name jupyterhub-ds \
-    --log-opt max-size=50m \
-    --memory=$(($(head -n 1 /proc/meminfo | awk '{print $2}') * 4 / 5))k \
-    --cpus=$((`nproc` - 1)) \
-    -p 8000:8000 \
-    -p 5006:5006 \
-    -e DOCKER_USER=`id -un` \
-    -e DOCKER_USER_ID=`id -u` \
-    -e DOCKER_PASSWORD=`id -un` \
-    -e DOCKER_GROUP_ID=`id -g` \
-    -e DOCKER_ADMIN_USER=`id -un` \
-    -v `pwd`:/workdir \
-    -v `dirname $HOME`:/home_host \
-    dclong/jupyterhub-ds
-```
+    :::bash
+    docker run -d \
+        --name jupyterhub-ds \
+        --log-opt max-size=50m \
+        --memory=$(($(head -n 1 /proc/meminfo | awk '{print $2}') * 4 / 5))k \
+        --cpus=$((`nproc` - 1)) \
+        -p 8000:8000 \
+        -p 5006:5006 \
+        -e DOCKER_USER=`id -un` \
+        -e DOCKER_USER_ID=`id -u` \
+        -e DOCKER_PASSWORD=`id -un` \
+        -e DOCKER_GROUP_ID=`id -g` \
+        -e DOCKER_ADMIN_USER=`id -un` \
+        -v `pwd`:/workdir \
+        -v `dirname $HOME`:/home_host \
+        dclong/jupyterhub-ds
 
 ## Debug Docker Containers
 
@@ -162,27 +157,30 @@ the token for login is printed to the console.
 Otherwise,
 the tokens (and more information about the servers) can be found 
 by running the following command outside the Docker container.
-```bash
-docker exec jupyterlab /scripts/list_jupyter.py
-```
+
+    :::bash
+    docker exec jupyterlab /scripts/list_jupyter.py
+
 The above command tries to be smart in the sense that 
 it first figures out the user that started the JupyterLab server 
 and then query running Jupyter/Lab servers of that user.
 An equivalently but more specifically command 
 (if the Docker is launched by the current user in the host)
 is as below
-```bash
-docker exec -u $(id -un) jupyterlab /scripts/sys/list_jupyter.py
-```
+
+    :::bash
+    docker exec -u $(id -un) jupyterlab /scripts/sys/list_jupyter.py
+
 If you are inside the Docker container, 
 then run the following command to get the tokens (and more information about the servers).
-```bash
-/scripts/list_jupyter.py
-```
+
+    :::bash
+    /scripts/list_jupyter.py
+
 Or equivalently if the Jupyter/Lab server is launched by the current user,
-```bash
-/scripts/sys/list_jupyter.py
-```
+
+    :::bash
+    /scripts/sys/list_jupyter.py
 
 To sum up, 
 most of time you can rely on `/scripts/list_jupyter.py`
@@ -194,14 +192,14 @@ and no matter you are inside the Docker container or not.
 ## Use the JupyterHub Server
 
 1. Open your browser and and visit `your_host_ip:8000`
-  where `your_host_ip` is the URL/ip address of your server.
+    where `your_host_ip` is the URL/ip address of your server.
 
 2. Login to the JupyterHub server 
-  using your user name (by default your user name on the host machine)
-  and password (by default your user name on the host machine). 
+    using your user name (by default your user name on the host machine)
+    and password (by default your user name on the host machine). 
 
 3. It is strongly suggested (for security reasons) that you change your password (using the command `passwd`)
-  in the container.
+    in the container.
 
 4. Enjoy JupyterLab notebook!
 
@@ -221,23 +219,21 @@ there are some shell scripts in the directory `/scripts/` to create usres for yo
 - `/scripts/sys/create_user_docker.sh`: Create a new user with group name `docker`.
 
 You can use the option `-h` to print help doc for these commands.
-For example, `/scripts/sys/create_user_nogroup.sh -h` prints the below help doc.
 
-```Bash
-Create a new user with the group name "nogroup".
-Syntax: create_user_nogroup user user_id [password]
-Arguments:
-user: user name
-user_id: user id
-password: Optional password of the user. If not provided, then the user name is used as the password.
-```
+    :::bash
+    /scripts/sys/create_user_nogroup.sh -h
+    Create a new user with the group name "nogroup".
+    Syntax: create_user_nogroup user user_id [password]
+    Arguments:
+    user: user name
+    user_id: user id
+    password: Optional password of the user. If not provided, then the user name is used as the password.
 
 Now suppose you want to create a new user `dclong` with user ID `2000` and group name `nogroup`,
 you can use the following command.
 
-```Bash
-sudo /scripts/sys/create_user_nogroup.sh dclong 2000
-```
+    :::bash
+    sudo /scripts/sys/create_user_nogroup.sh dclong 2000
 
 Since we didn't specify a password for the user,
 the default password (same as the user name) is used.
@@ -248,9 +244,9 @@ the default password (same as the user name) is used.
 If you are running a Docker container with a desktop environment (`dclong/lubuntu*` or `dclong/xubuntu*`),
 you can connect to the desktop environment in the Docker container using NoMachine.
 
-  1. Download the NoMachine client from <https://www.nomachine.com/download>.
-  2. Install the NoMachine client on your computer.
-  3. Create a new connection from your computer 
+1. Download the NoMachine client from <https://www.nomachine.com/download>.
+2. Install the NoMachine client on your computer.
+3. Create a new connection from your computer 
     to the desktop environment in the Docker image using the NX protocol and port 4000.
     You will be asked for a user name and password.
     By default,
@@ -266,31 +262,31 @@ Currently [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/)
 1. Open a JupyterLab notebook with the BeakerX Scala kernel from the launcher.
 
 2. Download Spark (say, 2.3.1) dependencies. 
-```
-%%classpath add mvn
-org.apache.spark spark-core_2.11 2.3.1
-org.apache.spark spark-sql_2.11 2.3.1
-```
+
+        :::scala
+        %%classpath add mvn
+        org.apache.spark spark-core_2.11 2.3.1
+        org.apache.spark spark-sql_2.11 2.3.1
 
 3. Create a SparkSession object.
-```
-import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.functions._
 
-val spark = SparkSession.builder()
-    .master("local[2]")
-    .appName("Spark Example")
-    .config("spark.some.config.option", "some-value")
-    .getOrCreate()
+        :::scala
+        import org.apache.spark.sql.SparkSession
+        import org.apache.spark.sql.functions._
 
-import spark.implicits._
-```
+        val spark = SparkSession.builder()
+            .master("local[2]")
+            .appName("Spark Example")
+            .config("spark.some.config.option", "some-value")
+            .getOrCreate()
+
+        import spark.implicits._
 
 4. Use Spark as usual. 
-```
-val df = Range(0, 10).toDF
-df.show
-```
+
+        :::scala
+        val df = Range(0, 10).toDF
+        df.show
 
 ### Spark - The Almond Scala Kernel
 
@@ -299,29 +295,29 @@ Currently [dclong/jupyterhub-almond](https://hub.docker.com/r/dclong/jupyterhub-
 1. Open a JupyterLab notebook with the Almond Scala kernel from the launcher.
 
 2. Download Spark (say, 2.3.1) dependencies. 
-```
-interp.load.ivy("org.apache.spark" % "spark-core_2.11" % "2.3.1")
-```
+
+        :::scala
+        interp.load.ivy("org.apache.spark" % "spark-core_2.11" % "2.3.1")
 
 3. Create a SparkSession object.
-```
-import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.functions._
 
-val spark = SparkSession.builder()
-    .master("local[2]")
-    .appName("Spark Example")
-    .config("spark.some.config.option", "some-value")
-    .getOrCreate()
+        :::scala
+        import org.apache.spark.sql.SparkSession
+        import org.apache.spark.sql.functions._
 
-import spark.implicits._
-```
+        val spark = SparkSession.builder()
+            .master("local[2]")
+            .appName("Spark Example")
+            .config("spark.some.config.option", "some-value")
+            .getOrCreate()
+
+        import spark.implicits._
 
 4. Use Spark as usual. 
-```
-val df = Range(0, 10).toDF
-df.show
-```
+
+        :::scala
+        val df = Range(0, 10).toDF
+        df.show
 
 Please refer to 
 [almond-sh/examples](https://github.com/almond-sh/examples/blob/master/notebooks/spark.ipynb)
@@ -343,10 +339,10 @@ So, you can use Spark/Scala out-of-box in a JupyterLab notebook with the `Scala 
 1. Open a JupyterLab notebook with the `Scala - Apache Toree` kernel from the launcher.
 
 2. Use Spark as usual.
-```
-val df = Range(0, 10).toDF
-df.show
-```
+        
+        :::scala
+        val df = Range(0, 10).toDF
+        df.show
 
 ### PySpark - pyspark and findspark
 
@@ -360,20 +356,20 @@ support PySpark 2.4.
 
 2. Find and initialize PySpark.
 
-    :::python
-    import findspark
-    # A symbolic link of the Spark Home is made to /opt/spark for convenience
-    findspark.init('/opt/spark')
+        :::python
+        import findspark
+        # A symbolic link of the Spark Home is made to /opt/spark for convenience
+        findspark.init('/opt/spark')
 
-    from pyspark.sql import SparkSession
-    spark = SparkSession.builder.appName('PySpark Example').enableHiveSupport().getOrCreate()
+        from pyspark.sql import SparkSession
+        spark = SparkSession.builder.appName('PySpark Example').enableHiveSupport().getOrCreate()
 
 3. Use Spark as usual.
     
-    :::bash
-    df1 = spark.table("some_hive_table")
-    df2 = spark.sql("select * from some_table")
-    ...
+        :::python
+        df1 = spark.table("some_hive_table")
+        df2 = spark.sql("select * from some_table")
+        ...
 
 ## Docker Container Logs
 

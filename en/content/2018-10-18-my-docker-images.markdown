@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-16 16:12:27
+Date: 2019-12-17 10:11:39
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -351,29 +351,29 @@ df.show
 ### PySpark - pyspark and findspark
 
 The Docker image
+[dclong/jupyterhub-ds](https://github.com/dclong/docker-jupyterhub-ds)
+and
 [dclong/jupyterhub-toree](https://github.com/dclong/docker-jupyterhub-toree)
-has Spark (2.4.3) and the Python packages `pyspark` and `findspark` installed and configured.
-For convenience, 
-a symbolic link of the Spark home directory (`/opt/spark-2.4.3-bin-hadoop2.7`) is made to `/opt/spark`.
+support PySpark 2.4.
 
-1. Open a JupyterLab notebook with the `Scala - Apache Toree` kernel from the launcher.
+1. Open a JupyterLab notebook with the Python kernel from the launcher.
 
 2. Find and initialize PySpark.
 
-```
-import findspark
-# A symbolic link of the Spark Home is made to /opt/spark for convenience
-findspark.init('/opt/spark')
+    :::python
+    import findspark
+    # A symbolic link of the Spark Home is made to /opt/spark for convenience
+    findspark.init('/opt/spark')
 
-from pyspark.sql import SparkSession
-spark = SparkSession.builder.appName('PySpark Example').enableHiveSupport().getOrCreate()
-```
+    from pyspark.sql import SparkSession
+    spark = SparkSession.builder.appName('PySpark Example').enableHiveSupport().getOrCreate()
+
 3. Use Spark as usual.
-```
-df1 = spark.table("some_hive_table")
-df2 = spark.sql("select * from some_table")
-...
-```
+    
+    :::bash
+    df1 = spark.table("some_hive_table")
+    df2 = spark.sql("select * from some_table")
+    ...
 
 ## Docker Container Logs
 

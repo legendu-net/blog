@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-17 13:57:33
+Date: 2019-12-17 14:43:34
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
@@ -59,8 +59,34 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## Dependencies
 
-    :::bash
-    spark.sparkContext.addPyFile("/path/to/python/file")
+1. Create a directory named `lib`.
+
+        :::bash
+        mkdir lib
+
+2. Install dependencies into the library.
+
+        :::bash
+        pip3 install -r requirements.txt -t lib
+
+3. Zip the library.
+
+        cd lib
+        zip -r ../lib.zip .
+4. Call `SparkContext.addPyFile` to add the zip file before using the packages/moduels.
+
+        :::bash
+        spark.sparkContext.addPyFile("/path/to/python/file")
+
+Issues:
+
+1. This approach works with only pure Python package.
+    No dependecny on C/C++, Fortran is allowed.
+    It is OK for a Python package to rely on JAR files.
+
+2. No easy way to exclude dependencies.
+
+3. Does wheel work or not with this approach?
 
 ## References
 
@@ -71,3 +97,5 @@ https://stackoverflow.com/questions/51450462/pyspark-addpyfile-to-add-zip-of-py-
 https://becominghuman.ai/real-world-python-workloads-on-spark-standalone-clusters-2246346c7040
 
 https://community.cloudera.com/t5/Community-Articles/Running-PySpark-with-Conda-Env/ta-p/247551
+
+https://stackoverflow.com/questions/36461054/i-cant-seem-to-get-py-files-on-spark-to-work

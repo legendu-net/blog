@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-17 15:16:14
+Date: 2019-12-18 09:20:20
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
@@ -74,8 +74,10 @@ sounds like a good tool!
 
 3. Zip the library.
 
+        :::bash
         cd lib
         zip -r ../lib.zip .
+
 4. Call `SparkContext.addPyFile` to add the zip file before using the packages/moduels.
 
         :::bash

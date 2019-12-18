@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-17 15:03:06
+Date: 2019-12-18 15:57:03
 Author: Ben Chuanlong Du
 Slug: high-performance-computing-in-python
 Title: High Performance Computing in Python
@@ -27,9 +27,15 @@ keep in mind that some of the tips might be outdated.
 
 ## [Apache Ray](https://github.com/ray-project/ray)
 
+Ray does not handle large data well (as of 2018/05/28).
+
 ## [modin-project/modin](https://github.com/modin-project/modin)
 
 Notice that modin leverages the Apache Ray project.
+
+## Celery
+
+## RQ
 
 ## Dask
 
@@ -82,3 +88,15 @@ setup_pybind11(cfg)
 ## References
 
 https://stackoverflow.com/questions/582336/how-can-you-profile-a-python-script
+
+http://zhuoqiang.me/bring-cpp-class-to-python-through-cython.html
+
+https://stackoverflow.com/questions/145270/calling-c-c-from-python
+
+http://matthewrocklin.com/blog/work/2016/09/13/dask-and-celery
+
+https://stackoverflow.com/questions/13440875/pros-and-cons-to-use-celery-vs-rq/13441828
+
+https://groups.google.com/forum/#!topic/ray-dev/8E03APnG_zg
+
+http://www.algorithm.co.il/blogs/computer-science/10-python-optimization-tips-and-issues/

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-18 15:57:03
+Date: 2019-12-18 16:23:35
 Author: Ben Chuanlong Du
 Slug: high-performance-computing-in-python
 Title: High Performance Computing in Python
@@ -28,6 +28,15 @@ keep in mind that some of the tips might be outdated.
 ## [Apache Ray](https://github.com/ray-project/ray)
 
 Ray does not handle large data well (as of 2018/05/28).
+Please refer to 
+[the discussion](https://groups.google.com/forum/#!topic/ray-dev/8E03APnG_zg)
+for details.
+
+https://ray.readthedocs.io/en/latest/serialization.html
+
+https://ray.readthedocs.io/en/latest/configure.html#using-the-object-store-with-huge-pages
+
+https://arrow.apache.org/blog/2017/08/08/plasma-in-memory-object-store/
 
 ## [modin-project/modin](https://github.com/modin-project/modin)
 
@@ -35,7 +44,16 @@ Notice that modin leverages the Apache Ray project.
 
 ## Celery
 
-## RQ
+http://www.celeryproject.org/
+
+https://github.com/celery/celery
+
+## [RQ](http://python-rq.org/)
+
+RQ (Redis Queue) is a simple Python library for queueing jobs 
+and processing them in the background with workers. 
+It is backed by Redis and it is designed to have a low barrier to entry. 
+It can be integrated in your web stack easily.
 
 ## Dask
 

@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-12-18 21:55:56
+Date: 2019-12-18 22:48:05
 Author: Benjamin Du
 Slug: gradle-kotlin-dsl
-Title: Gradle Kotlin Dsl
+Title: Gradle Kotlin DSL
 Category: Programming
 Tags: programming, Gradle, Kotlin DSL, shadowJar
 
@@ -10,6 +10,10 @@ Tags: programming, Gradle, Kotlin DSL, shadowJar
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+AVOID using the Kotlin DSL for Gradle!
+The Kotlin DSL for Gradle is not mature and lack of documentation at this time.
+Stick with Groovy DSL for Gradle.
 
 ## shadowJar
 

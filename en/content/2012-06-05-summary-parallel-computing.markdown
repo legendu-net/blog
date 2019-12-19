@@ -1,10 +1,10 @@
 Status: published
 Title: Parallel Computing in Different Programming Languages
-Date: 2019-04-28 11:50:22
-Tags: Mathematica, lock, programming, C/C++, thread, Java, HPC, parallel, R, concurrency, mutex, GPU Computing
-Category: Programming
+Date: 2019-12-19 09:41:32
 Slug: summary-parallel-computing
 Author: Ben Chuanlong Du
+Category: Programming
+Tags: Mathematica, lock, programming, C/C++, thread, Java, HPC, parallel, R, concurrency, mutex, GPU Computing, high performance computing
 
 There many different ways for parallel computing. 
 This article focus on multithreading computing.

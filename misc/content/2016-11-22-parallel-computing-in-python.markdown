@@ -1,10 +1,10 @@
 Status: published
-Date: 2017-08-26 21:50:34
+Date: 2019-12-19 09:41:32
 Author: Ben Chuanlong Du
 Slug: parallel-computing-in-python
 Title: Parallel Computing in Python
 Category: Programming
-Tags: programming, Python, parallel computing, multithreading, multiprocess
+Tags: programming, Python, parallel computing, multithreading, multiprocess, HPC, high performance computing
 
 **
 Things on this page are

@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-12-18 09:20:20
+Date: 2019-12-19 09:44:16
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
 Category: Programming
-Tags: programming, PySpark, Python, Spark, tips
+Tags: programming, PySpark, Python, Spark, tips, HPC, high performance computing
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

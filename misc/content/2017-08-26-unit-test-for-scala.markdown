@@ -15,9 +15,26 @@ but rather for convenient reference of the author and future improvement.
 **
 
 1. Both ScalaTest and spec2 are good unit testing frameworks. 
-ScalaTest is more flexible is recommended.
+    ScalaTest is more flexible is recommended.
 
 ## ScalaTest
+
+only `assert` is supported. 
+
+    :::bash
+    assert(expr1 === expr2, optional_msg)
+
+The JUnit methods `assertTrue`, `assertEquals` and `assertArrayEquals` 
+are not supported by default.
+You have to import them from JUnit if you want use them.
+
+    :::bash
+    import org.scalatest.junit.AssertionsForJUnit
+    import org.junit.Assert.{assertEquals, assertNotNull}
+
+
+https://www.programcreek.com/scala/org.junit.Assert.assertEquals
+
 
 http://www.scalatest.org/
 

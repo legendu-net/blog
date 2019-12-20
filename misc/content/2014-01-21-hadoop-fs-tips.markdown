@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-12-17 10:01:41
+Date: 2019-12-19 18:43:44
 Slug: hadoop-fs-tips
 Title: Hadoop Filesystem Tips
 Category: Software
@@ -12,44 +12,51 @@ It is not meant to readers but rather for convenient reference of the author and
 **
  
 
-## Cat
+## cat - Print a File
 
     :::bash
-    hadoop fs -cat
+    hdfs dfs -cat
+
+## chmod - Change Permission of Files/Directories
+
+    :::bash
+    hdfs dfs -chmod -R 777 /hdfs/path
+
+## chown - Change the Owner of Files/Directories
+
+    :::bash
+    hdfs dfs -chown new_owner /hdfs/path
+
+Notice that a HDFS path (file or directory)
+can only be removed by its owner.
+Other users cannot remove the path even if the file permission of the path is set 777.
+If a HDFS path under user A's home (`/user/A/`) is changed to be owned by user B,
+then neither A nor B can remove the path.
+You have to change the owner of the path back to user A
+and then use user A to remove the path.
+
+## cp - Copy Files/Directories
+
+    :::bash
+    hdfs dfs -cp /user/saurzcode/dir1/abc.txt /user/saurzcode/dir2
+
+
+## get - Download a File/Directory
+
+    :::bash
+    hdfs dfs -get
+
+## getmerge 
+
+    :::bash
+    hdfs dfs -getmerge /hdfs/path /path/in/linux
 
 ## mkdir
 
     :::bash
-    hadoop fs -mkdir [-p] /path/to/create
+    hdfs dfs -mkdir [-p] /path/to/create
 
-
-## Upload a file/directory to HDFS.
-
-    :::bash
-    hadoop fs -put [-f]
-
-The option `-f` overwrite existing files on HDFS. 
-However, 
-a tricky misunderstanding might happend when you upload a directory using the following command.
-
-    :::bash
-    hadoop fs -put -f /local/path/to/some_directory /hdfs/path/to/some_directory
-
-Supppose `/hdfs/path/to/some_directory` already exists,
-it is not the directory `/hdfs/path/to/some_directory` itself get overwritten 
-but rather files in it get overwritten.
-If files in `/local/path/to/some_directory` have diffrent names than files in `/hdfs/path/to/some_directory`
-then nothing is overwritten.
-This might not what you want and can get you bitten. 
-It is suggested that you always remove a directory manually using the command `hdfs dfs -rm -r /hdfs/path/to/some_directory`
-if you intend to overwrite the whole directory.
-
-    hadoop fs -get
-    hadoop fs -getmerge /hdfs/path /path/in/linux
-    hadoop fs -copyFromLocal /path/in/linux /hdfs/path
-    hadoop fs -put /path/in/linux /hdfs/path
-
-## Move/Rename Files/Directories
+## mv - Move/Rename Files/Directories
 
 Move/rename the source file/directory `/path/to/source` TO `/path/to/des`.
 
@@ -63,15 +70,32 @@ move/rename the file/directory `/path/to/source` to `/path/to/des/source`.
     :::bash
     hdfs dfs -mv /path/to/source /path/to/des/
 
-## Tail
+## put/copyFromLocal - Upload a file/directory to HDFS.
 
     :::bash
-    hadoop fs -tail /user/saurzcode/dir1/abc.txt
+    hdfs dfs -put [-f]
 
-## Copy Files/Directories
+The option `-f` overwrite existing files on HDFS. 
+However, 
+a tricky misunderstanding might happend when you upload a directory using the following command.
 
     :::bash
-    hadoop fs -cp /user/saurzcode/dir1/abc.txt /user/saurzcode/dir2
+    hdfs dfs -put -f /local/path/to/some_directory /hdfs/path/to/some_directory
+
+Supppose `/hdfs/path/to/some_directory` already exists,
+it is not the directory `/hdfs/path/to/some_directory` itself get overwritten 
+but rather files in it get overwritten.
+If files in `/local/path/to/some_directory` have diffrent names than files in `/hdfs/path/to/some_directory`
+then nothing is overwritten.
+This might not what you want and can get you bitten. 
+It is suggested that you always remove a directory manually using the command `hdfs dfs -rm -r /hdfs/path/to/some_directory`
+if you intend to overwrite the whole directory.
+
+## tail - Show Last Lines of a File
+
+    :::bash
+    hdfs dfs -tail /user/saurzcode/dir1/abc.txt
+
 
 2. The command `hdfs dfs -mkdir` supports the `-p` option similar to that of the `mkdir` command in Linux/Unix.
 
@@ -87,7 +111,7 @@ move/rename the file/directory `/path/to/source` to `/path/to/des/source`.
     is too big to place into the trash directory.
 
         :::bash
-        hadoop fs -rm -r -skipTrash /tmp/chdu_item_desc
+        hdfs dfs -rm -r -skipTrash /tmp/chdu_item_desc
 
 ## Parquet Format
 

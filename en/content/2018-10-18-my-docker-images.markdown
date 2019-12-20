@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-17 10:22:25
+Date: 2019-12-20 14:22:08
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -142,11 +142,13 @@ except that it limits the use of CPU and memory.
 
 ## Debug Docker Containers
 
-You can change the option `docker run -d ...` to `docker run -it ...` to show logs of processes in the Docker container 
-which helps debugging. 
-If you have started a Docker container using `docker run -d ...`,
-you can refer to [Docker Container Logs](http://www.legendu.net/en/blog/my-docker-images/#docker-container-logs)
-on how to get logs of the container.
+You can change the option `docker run -d ...` to `docker run -it ...` 
+to show logs of processes in the Docker container which helps debugging. 
+If you have already started a Docker container using `docker run -d ...`,
+you can use the command 
+[docker logs](https://docs.docker.com/engine/reference/commandline/logs/)
+to get the log of the container
+(which contains logs of all processes in it).
 
 ## Get Information of Running Jupyter/Lab Servers
 
@@ -370,11 +372,6 @@ support PySpark 2.4.
         df1 = spark.table("some_hive_table")
         df2 = spark.sql("select * from some_table")
         ...
-
-## Docker Container Logs
-
-You can find logs of Docker contains under the directory `/var/log/docker/containers` on Linux host machines.
-The log file has the patten `/var/lib/docker/containers/[container-id]/[container-id]-json.log`.
 
 ## List of Images and Detailed Information
 

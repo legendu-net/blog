@@ -25,8 +25,6 @@ def query(blogger, args):
 
 
 def move(blogger, args):
-    if re.search(r'^m\d+$', args.sub_cmd):
-        args.index = int(args.sub_cmd[1:])
     if args.index:
         args.file = blogger.path(args.index)[0]
     if args.file:
@@ -82,8 +80,6 @@ def match_post(blogger, args):
 
 
 def edit(blogger, args):
-    if re.search(r'^e\d+$', args.sub_cmd):
-        args.indexes = [int(args.sub_cmd[1:])]
     if args.indexes:
         args.files = blogger.path(args.indexes)
     if args.files:
@@ -730,12 +726,11 @@ def _subparse_edit(subparsers):
 
 def _subparse_move(subparsers):
     subparser_move = subparsers.add_parser(
-        'move', aliases=['m' + i for i in INDEXES], help='Move a post.')
+        'move', aliases=['m'], help='Move a post.')
     subparser_move.add_argument(
-        '-i',
-        '--index',
-        dest='index',
+        'index',
         type=int,
+        nargs='?',
         help='rowid in the search results.')
     subparser_move.add_argument(
         '-f', '--file', dest='file', help='path of the post to be moved.')

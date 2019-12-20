@@ -41,6 +41,7 @@ def qmarks(n: Union[int, Sequence]) -> str:
 class Post:
     """A class abstracting a post.
     """
+
     def __init__(self, path: Union[str, Path]):
         self.path = Path(path).resolve()
         if self.path.suffix not in (MARKDOWN, IPYNB):

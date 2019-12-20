@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-19 09:44:16
+Date: 2019-12-20 11:30:37
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
@@ -56,6 +56,10 @@ It is not meant to readers but rather for convenient reference of the author and
     which hides the official `pyspark` module in Python.
     It is suggestion that adopt the trick of "prefixing an underscore to file names"
     when submitting a PySpark job.
+
+2. PySpark does not support converting `$"col"` to a Column implicitly. 
+    However, 
+    the function `pyspark.sql.functions.col` works the same as in Spark.
 
 ## Dependencies
 

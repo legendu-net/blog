@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-19 00:00:59
+Date: 2019-12-20 10:05:49
 Author: Ben Chuanlong Du
 Slug: scala-errors
 Title: Scala Errors
@@ -34,3 +34,19 @@ It is suggested that you never hardcode Scala versions but instead define Scala 
 in variables and use the version variables when specifying dependencies.
 
 https://alvinalexander.com/misc/fixing-scala-error-java-lang.nosuchmethoderror-scala.product-init
+
+## Exception in thread "main" java.lang.NoClassDefFoundError: ...
+
+This issue happens when you try to run the main function of a Scala object in IntelliJ IDEA.
+There are 2 possible causes. 
+First,
+it might due to conflicting versions of Scala.
+If so, 
+unify the version of Scala will resolve the issue.
+It is suggested that you never hardcode Scala versions but instead define Scala versions (full version and compact version)
+in variables and use the version variables when specifying dependencies.
+Second, 
+it might due to the fact that Scala is specified as `compileOnly` dependency (Gradle).
+If so, 
+specifying Scala as `compile` dependency resolves the issue.
+

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-22 20:33:40
+Date: 2019-12-22 20:55:30
 Author: Ben Chuanlong Du
 Slug: gradle-tips
 Title: General Tips for Gradle
@@ -46,7 +46,7 @@ brew upgrade gradle
     or update the version of an existing Gradle wrapper using the following command.
 
         :::bash
-        gradle wrapper --gradle-version 5.6.4
+        gradle wrapper --gradle-version 6.0.1
 
 ## The IDEA Plugin
 You can enable the Gradle IDEA plugin by having the following line in your `build.gradle` file.

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-22 20:27:50
+Date: 2019-12-22 20:33:40
 Author: Ben Chuanlong Du
 Slug: gradle-tips
 Title: General Tips for Gradle
@@ -42,7 +42,8 @@ brew upgrade gradle
     Otherwise, 
     you might run into weird issues such as resource file not found, etc.
 
-3. The version of the Gradle wrapper can be updated using the following command.
+3. You can generate a Gradle wrapper (with the given version) 
+    or update the version of an existing Gradle wrapper using the following command.
 
         :::bash
         gradle wrapper --gradle-version 5.6.4

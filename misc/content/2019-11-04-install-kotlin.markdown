@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-20 11:33:22
+Date: 2019-12-23 09:57:56
 Author: Benjamin Du
 Slug: general-tips-on-kotlin
 Title: Install Kotlin
@@ -10,13 +10,6 @@ Tags: programming, Kotlin, install, installation
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
-
-
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-It is not meant to readers but rather for convenient reference of the author and future improvement.
-**
-
 ## Ubuntu
 
 Unfortunately,

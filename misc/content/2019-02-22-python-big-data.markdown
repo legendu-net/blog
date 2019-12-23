@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-21 12:48:14
+Date: 2019-12-23 09:59:33
 Author: Benjamin Du
 Slug: python-big-data
 Title: Python Big Data
@@ -51,6 +51,10 @@ PySpark is prefereed to Dask.
 [Hands on the Python Module dask](http://www.legendu.net/misc/blog/hands-on-the-python-module-dask/)
 
 ## PySpark
+
+http://www.legendu.net/misc/blog/tips-on-pyspark/
+
+http://www.legendu.net/misc/blog/pyspark-optimus-data-profiling/
 
 ## References
 

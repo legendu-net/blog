@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-22 20:55:30
+Date: 2019-12-22 20:59:15
 Author: Ben Chuanlong Du
 Slug: gradle-tips
 Title: General Tips for Gradle
@@ -18,16 +18,16 @@ but rather for convenient reference of the author and future improvement.
 
 You can use the following command to install the latest version of gradle on Ubuntu.
 
-:::bash
-sudo add-apt-repository ppa:cwchien/gradle
-sudo apt-get update
-sudo apt upgrade gradle
+    :::bash
+    sudo add-apt-repository ppa:cwchien/gradle
+    sudo apt-get update
+    sudo apt upgrade gradle
 
 You can use the following command to install Gradle on Mac.
 
-:::bash
-brew install gradle
-brew upgrade gradle
+    :::bash
+    brew install gradle
+    brew upgrade gradle
 
 ## Tricks and Traps
 

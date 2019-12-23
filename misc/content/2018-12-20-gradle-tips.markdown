@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-22 18:41:18
+Date: 2019-12-22 20:27:50
 Author: Ben Chuanlong Du
 Slug: gradle-tips
 Title: General Tips for Gradle
@@ -14,21 +14,20 @@ but rather for convenient reference of the author and future improvement.
 **
 
 
-## Installation 
+## Install & Upgrade Gradle
 
 You can use the following command to install the latest version of gradle on Ubuntu.
 
-```
+:::bash
 sudo add-apt-repository ppa:cwchien/gradle
 sudo apt-get update
 sudo apt upgrade gradle
-```
 
 You can use the following command to install Gradle on Mac.
 
-```
+:::bash
 brew install gradle
-```
+brew upgrade gradle
 
 ## Tricks and Traps
 
@@ -45,7 +44,8 @@ brew install gradle
 
 3. The version of the Gradle wrapper can be updated using the following command.
 
-    gradle wrapper --gradle-version 5.6.4
+        :::bash
+        gradle wrapper --gradle-version 5.6.4
 
 ## The IDEA Plugin
 You can enable the Gradle IDEA plugin by having the following line in your `build.gradle` file.

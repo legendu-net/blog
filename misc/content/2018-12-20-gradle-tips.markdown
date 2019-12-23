@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-23 10:03:29
+Date: 2019-12-23 12:00:59
 Author: Ben Chuanlong Du
 Slug: gradle-tips
 Title: General Tips for Gradle
@@ -116,6 +116,10 @@ I'd rather use ssh/rsync in shell.
 /usr/local/Cellar/gradle/5.1/libexec/
 https://stackoverflow.com/questions/18495474/how-to-define-gradles-home-in-idea/34502612
 
+## Specifying Dependencies
+
+https://stackoverflow.com/questions/44493378/whats-the-difference-between-implementation-and-compile-in-gradle
+
 ## References
 
 https://askubuntu.com/questions/932083/how-do-i-upgrade-gradle
@@ -123,3 +127,5 @@ https://askubuntu.com/questions/932083/how-do-i-upgrade-gradle
 https://ftclausen.github.io/general/gradle_sync_task_is_not_incremental/
 
 https://docs.gradle.org/current/userguide/upgrading_version_4.html
+
+https://stackoverflow.com/questions/44493378/whats-the-difference-between-implementation-and-compile-in-gradle

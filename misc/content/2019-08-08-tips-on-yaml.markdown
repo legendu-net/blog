@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-09-07 06:52:17
+Date: 2019-12-22 18:49:52
 Author: Benjamin Du
 Slug: tips-on-yaml
-Title: Tips on Yaml
+Title: Tips on YAML
 Category: Programming
 Tags: programming, YAML, tips
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-26 10:00:04
+Date: 2019-12-22 18:41:18
 Author: Ben Chuanlong Du
 Slug: gradle-tips
 Title: General Tips for Gradle
@@ -43,6 +43,9 @@ brew install gradle
     Otherwise, 
     you might run into weird issues such as resource file not found, etc.
 
+3. The version of the Gradle wrapper can be updated using the following command.
+
+    gradle wrapper --gradle-version 5.6.4
 
 ## The IDEA Plugin
 You can enable the Gradle IDEA plugin by having the following line in your `build.gradle` file.
@@ -108,3 +111,5 @@ https://stackoverflow.com/questions/18495474/how-to-define-gradles-home-in-idea/
 https://askubuntu.com/questions/932083/how-do-i-upgrade-gradle
 
 https://ftclausen.github.io/general/gradle_sync_task_is_not_incremental/
+
+https://docs.gradle.org/current/userguide/upgrading_version_4.html

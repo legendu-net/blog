@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-23 12:00:59
+Date: 2019-12-23 12:05:25
 Author: Ben Chuanlong Du
 Slug: gradle-tips
 Title: General Tips for Gradle
@@ -118,6 +118,8 @@ https://stackoverflow.com/questions/18495474/how-to-define-gradles-home-in-idea/
 
 ## Specifying Dependencies
 
+https://docs.gradle.org/current/userguide/java_library_plugin.html#sec:java_library_configurations_graph
+
 https://stackoverflow.com/questions/44493378/whats-the-difference-between-implementation-and-compile-in-gradle
 
 ## References
@@ -127,5 +129,7 @@ https://askubuntu.com/questions/932083/how-do-i-upgrade-gradle
 https://ftclausen.github.io/general/gradle_sync_task_is_not_incremental/
 
 https://docs.gradle.org/current/userguide/upgrading_version_4.html
+
+https://docs.gradle.org/current/userguide/java_library_plugin.html#sec:java_library_configurations_graph
 
 https://stackoverflow.com/questions/44493378/whats-the-difference-between-implementation-and-compile-in-gradle

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-04 21:19:56
+Date: 2019-12-23 21:05:58
 Author: Ben Chuanlong Du
 Slug: beakerx-tips
 Title: Beakerx Tips
@@ -28,6 +28,8 @@ https://github.com/twosigma/beakerx/issues/7666
 https://github.com/twosigma/beakerx/blob/master/FAQ.md
 
 3. All BeakerX kernels support both Bash and Python via cell magics (`%%bash` and `%%python`).
+
+4. Output of the BeakerX Scala kernel can be disabled by calling `OutputCell.HIDDEN`.
 
 ## SQL
 
@@ -69,3 +71,5 @@ https://github.com/twosigma/beakerx/issues/7518
 https://github.com/twosigma/beakerx/pull/7538
 
 https://github.com/twosigma/beakerx/pull/7538#issuecomment-420765574
+
+https://github.com/twosigma/beakerx/issues/8199

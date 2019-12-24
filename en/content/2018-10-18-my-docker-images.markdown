@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-23 19:59:11
+Date: 2019-12-24 09:26:06
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -152,7 +152,7 @@ to get the log of the container
 
 ## Get Information of Running Jupyter/Lab Servers
 
-If you are using the Jupyter/Lab server (instead of JupyterHub which is recommended),
+If you are using the Jupyter/Lab server instead of JupyterHub,
 you will be asked for a token at login.
 If you have started the Docker container in interactive mode (option `-i` instead of `-d`),
 the token for login is printed to the console.

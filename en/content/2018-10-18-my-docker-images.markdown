@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-24 09:34:48
+Date: 2019-12-24 10:37:20
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -271,7 +271,8 @@ for more details.
 ### Spark - The BeakerX Scala Kernel
 
 Currently [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/) uses the BeakerX Scala kernel.
-Most of the Spark/Scala examples on this blog are based on the BeakerX Scala kernel.
+Most of the Spark/Scala examples (unde the tag [Spark](http://www.legendu.net/misc/tag/spark.html)) 
+on this blog are based on the BeakerX Scala kernel.
 
 1. Open a JupyterLab notebook with the BeakerX Scala kernel from the launcher.
 

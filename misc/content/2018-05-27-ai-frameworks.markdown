@@ -1,6 +1,5 @@
-UUID: edd7462e-e154-4d52-ac07-bc5d1f2e27cf
 Status: published
-Date: 2018-05-27 17:19:40
+Date: 2019-12-24 11:11:20
 Author: Ben Chuanlong Du
 Slug: ai-frameworks
 Title: AI Frameworks
@@ -14,8 +13,3 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-## UI
-
-H2O
-
-[AI-Blocks](https://mrnothing.github.io/AI-Blocks/index.html)

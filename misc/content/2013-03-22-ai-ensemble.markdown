@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-12-24 11:36:04
-Title: Ensemble Machine Learning Models
-Slug: ai-ensemble
+Date: 2019-12-24 11:04:24
+Slug: aggregation
 Author: Ben Chuanlong Du
-Category: AI
-Tags: AI, statistics, ensamble, data science, machine learning
+Title: Aggregation
+Category: Statistics
+Tags: statistics, ensamble, aggregation, data mining, machine learning
 
 The prediction error is a trade-off of bias and variance. 
 In statistics, 
@@ -12,8 +12,7 @@ we often talk about unbiased estimators (especially in linear regression).
 In this case we restrict the estimators/predictors to be in a (small) class,
 and find the optimal solution in this class (called BLUE or BLUP).
 
-Generally speaking, 
-unbiased predictors are not ideas in prediction problems.
+Generally speaking, unbiased predictors are not ideas in prediction problems.
 In many situations we can easily find predictors with small bias (usually very complexed predictors/models). 
 To improve the performance of predictors, 
 we often want to decrease their variance at the cost of increase bias. 

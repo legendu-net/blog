@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-24 10:50:11
+Date: 2019-12-24 11:11:20
 Title: AI Learning
 Slug: ai-learning
 Author: Ben Du
@@ -17,6 +17,16 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
+
+## UI-oriented Frameworks
+
+H2O
+
+[AI-Blocks](https://mrnothing.github.io/AI-Blocks/index.html)
+
+## AutoML
+
+http://www.legendu.net/misc/blog/automl-tips/
 
 ## Questions
 

@@ -1,9 +1,8 @@
-UUID: 04381731-a830-4dc2-8b63-bf800477ba1c
 Status: published
-Date: 2018-09-15 12:32:00
+Date: 2019-12-24 11:11:20
 Author: Ben Chuanlong Du
 Slug: automl-tips
-Title: Automl Tips
+Title: AutoML Tips
 Category: AI
 Tags: AI, machine learning, framework, AutoML, mlflow
 

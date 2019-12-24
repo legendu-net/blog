@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-24 15:11:50
+Date: 2019-12-24 15:20:59
 Title: AI Learning
 Slug: ai-learning
 Author: Ben Du
@@ -15,11 +15,17 @@ It is not meant to readers but rather for convenient reference of the author and
 The picture comes from [Machine Learning Algorithms Mindmap](https://jixta.wordpress.com/2015/07/17/machine-learning-algorithms-mindmap/).
 
 
-## UI-oriented Frameworks
+## Frameworks
+
+### UI Friendly Frameworks
 
 H2O
 
 [AI-Blocks](https://mrnothing.github.io/AI-Blocks/index.html)
+
+### Big-data (Spark) Friendly Frameworks
+
+https://mmlspark.blob.core.windows.net/website/index.html
 
 ## AutoML
 

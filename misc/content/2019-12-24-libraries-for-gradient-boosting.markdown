@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-24 15:09:09
+Date: 2019-12-24 15:19:42
 Author: Benjamin Du
 Slug: libraries-for-gradient-boosting
 Title: Libraries for Gradient Boosting
@@ -48,6 +48,14 @@ https://towardsdatascience.com/pyspark-and-xgboost-integration-tested-on-the-kag
 https://www.kdnuggets.com/2016/03/xgboost-implementing-winningest-kaggle-algorithm-spark-flink.html
 
 ## [LightGBM](https://github.com/microsoft/LightGBM)
+
+### LightGBM with Spark 
+
+https://github.com/Azure/mmlspark
+
+https://www.reddit.com/r/datascience/comments/9w2qn8/deploying_a_lightgbm_model_with_spark/
+
+https://towardsdatascience.com/build-xgboost-lightgbm-models-on-large-datasets-what-are-the-possible-solutions-bf882da2c27d
 
 ## CatBoost
 

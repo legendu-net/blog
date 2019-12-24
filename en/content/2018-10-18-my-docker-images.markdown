@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-24 09:26:06
+Date: 2019-12-24 09:28:03
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -242,15 +242,15 @@ the default password (same as the user name) is used.
 
 ## Easy Install of Other Kernels
 
-Install and configure PySpark.
+Install and configure PySpark for use with the Python kernel.
 
     :::bash
     xinstall spark -ic && xinstall pyspark -ic
 
-Install Rust kernel.
+Install the evcxr Rust kernel.
 
     :::bash
-    xinstall rust_kernel -ic
+    xinstall evcxr -ic
 
 Install the Almond Scala kernel.
 
@@ -258,6 +258,7 @@ Install the Almond Scala kernel.
     xinstall almond -ic
 
 Install the ITypeScript kernel.
+
     :::bash
     xinstall its -ic
 

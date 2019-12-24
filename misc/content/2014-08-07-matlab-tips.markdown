@@ -1,6 +1,5 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Date: 2015-04-07 20:35:33
+Date: 2019-12-24 10:43:54
 Author: Ben Chuanlong Du
 Slug: matlab-tips
 Title: MATLAB Tips
@@ -14,11 +13,11 @@ but rather for convenient reference of the author and future improvement.
 
 
 
-5. MATLAB uses float computing by default. 
-`3/5` return 0.6 in MATLAB instead of 0 
-as will be returned in some other programming languages (e.g., Python).
+1. MATLAB uses float computing by default. 
+    `3/5` return 0.6 in MATLAB instead of 0 
+    as will be returned in some other programming languages (e.g., Python).
 
-7. to get size of an object, md = whos(obj); md.bytes
+2. to get size of an object, md = whos(obj); md.bytes
 
 6. do we have `x *= 2` in matlab, if not, use ultisnips to do it!!! and python, R, Mathematica, bash, etc.
 
@@ -42,7 +41,7 @@ as will be returned in some other programming languages (e.g., Python).
 ## Statistics
 
 4. Use categorical to create a categorical array from data with values from a finite set of discrete categories. 
-To group numeric data into categories, use discretize.
+    To group numeric data into categories, use discretize.
 
 ## Data Structure
 

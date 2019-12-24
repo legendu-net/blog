@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-24 09:30:08
+Date: 2019-12-24 09:34:48
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -361,10 +361,17 @@ So, you can use Spark/Scala out-of-box in a JupyterLab notebook with the `Scala 
 ### PySpark - pyspark and findspark
 
 The Docker image
-[dclong/jupyterhub-ds](https://github.com/dclong/docker-jupyterhub-ds)
-and
 [dclong/jupyterhub-toree](https://github.com/dclong/docker-jupyterhub-toree)
-support PySpark 2.4.
+supports PySpark 2.4 out-of-box.
+To use PySpark in a container of the Docker image
+[dclong/jupyterhub-ds](https://github.com/dclong/docker-jupyterhub-ds)
+you need to install Spark and the Python package `pyspark` first,
+which can be achieved using the following command.
+
+    :::bash
+    xinstall --sudo spark -ic && xinstall pyspark -ic
+
+Follow the steps below to use PySpark after it is installed.
 
 1. Open a JupyterLab notebook with the Python kernel from the launcher.
 

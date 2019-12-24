@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-20 14:22:08
+Date: 2019-12-23 19:59:11
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -240,20 +240,30 @@ you can use the following command.
 Since we didn't specify a password for the user,
 the default password (same as the user name) is used.
 
+## Easy Install of Other Kernels
 
-## Remote Connection to Desktop in the Container
+Install and configure PySpark.
 
-If you are running a Docker container with a desktop environment (`dclong/lubuntu*` or `dclong/xubuntu*`),
-you can connect to the desktop environment in the Docker container using NoMachine.
+    :::bash
+    xinstall spark -ic && xinstall pyspark -ic
 
-1. Download the NoMachine client from <https://www.nomachine.com/download>.
-2. Install the NoMachine client on your computer.
-3. Create a new connection from your computer 
-    to the desktop environment in the Docker image using the NX protocol and port 4000.
-    You will be asked for a user name and password.
-    By default,
-    the user name used to start the Docker container on the host machine 
-    is used as both the user name and password in the Docker container.
+Install Rust kernel.
+
+    :::bash
+    xinstall rust_kernel -ic
+
+Install the Almond Scala kernel.
+
+    :::bash
+    xinstall almond -ic
+
+Install the ITypeScript kernel.
+    :::bash
+    xinstall its -ic
+
+Many other software/tools can be easily install by xinstall.
+Please refer to [dclong/xinstall](https://github.com/dclong/xinstall)
+for more details.
 
 ## Use Spark in JupyterLab Notebook
 
@@ -372,6 +382,20 @@ support PySpark 2.4.
         df1 = spark.table("some_hive_table")
         df2 = spark.sql("select * from some_table")
         ...
+
+## Remote Connection to Desktop in the Container
+
+If you are running a Docker container with a desktop environment (`dclong/lubuntu*` or `dclong/xubuntu*`),
+you can connect to the desktop environment in the Docker container using NoMachine.
+
+1. Download the NoMachine client from <https://www.nomachine.com/download>.
+2. Install the NoMachine client on your computer.
+3. Create a new connection from your computer 
+    to the desktop environment in the Docker image using the NX protocol and port 4000.
+    You will be asked for a user name and password.
+    By default,
+    the user name used to start the Docker container on the host machine 
+    is used as both the user name and password in the Docker container.
 
 ## List of Images and Detailed Information
 

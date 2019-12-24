@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-24 11:11:20
+Date: 2019-12-24 15:11:50
 Title: AI Learning
 Slug: ai-learning
 Author: Ben Du
@@ -11,11 +11,8 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-It is not meant to readers but rather for convenient reference of the author and future improvement.
-**
+![](https://jixta.files.wordpress.com/2015/11/machinelearningalgorithms.png)
+The picture comes from [Machine Learning Algorithms Mindmap](https://jixta.wordpress.com/2015/07/17/machine-learning-algorithms-mindmap/).
 
 
 ## UI-oriented Frameworks
@@ -27,6 +24,8 @@ H2O
 ## AutoML
 
 http://www.legendu.net/misc/blog/automl-tips/
+
+https://towardsdatascience.com/an-example-of-hyperparameter-optimization-on-xgboost-lightgbm-and-catboost-using-hyperopt-12bc41a271e
 
 ## Questions
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-24 13:51:40
+Date: 2019-12-24 14:50:39
 Author: Benjamin Du
 Slug: libraries-for-gradient-boosting
 Title: Libraries for Gradient Boosting
@@ -46,8 +46,15 @@ https://catboost.ai/news/best-in-class-inference-and-a-ton-of-speedups
 
 ## Comparisons
 
-Even though CatBoost claims to be faster than XGBoost and LightGBM,
-most other resources says the opposite. 
+The paper [Benchmarking and Optimization of Gradient Boosting Decision Tree Algorithms](https://arxiv.org/pdf/1809.04559.pdf)
+compares the 3 libraries from the 3 perspectives/questions below
+and claims that there is no clear win among the 3 libraries.
+
+    1. How much acceleration can be expected when using GPU-based training routines?
+    2. How well does this GPU-acceleration translate to reduced time-to-solution in the context of Bayesian hyper-parameter optimization?
+    3. How well do the resulting models generalize to unseen data?
+
+
 CatBoost is seldomly used in Kaggle competitions.
 LightGBM is faster than XGBoost and is used more and more in Kaggle competitions.
 If you need a mature and stable solution,

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-21 19:35:43
+Date: 2019-12-24 10:29:56
 Author: Ben Chuanlong Du
 Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
@@ -20,6 +20,21 @@ This means that if you have JupyterLab/Hub installed in your GitPod image,
 you can run a JupyterLab/Hub server within your GitPod worksapce and access it from public.
 You can use the command `gp url port` to get the public URL to visit the exposed port/service.
 
+## [Kaggle](https://www.kaggle.com/)
+
+1. Terminal supported
+1. Jupyter notebooks only, no JupyterLab support.
+3. Only Python an R kernels are supported.
+4. GPU available for request.
+
+## [Google Colaboratory](https://colab.research.google.com/)
+
+1. JupyterLab is not directly support (even though hacking around is possible).
+
+2. Google Drive can be mounted.
+
+3. Free GPU available.
+
 ## [RMOTR Notebooks | notebooks.ai](https://notebooks.ai/)
 
 1. Installed software does not persist.
@@ -33,12 +48,6 @@ You can use the command `gp url port` to get the public URL to visit the exposed
 ### Cons
 
 1. The pricing seems to be expensive ...
-
-## [Google Colaboratory](https://colab.research.google.com/)
-
-1. JupyterLab is not directly support (even though hacking around is possible).
-
-2. Google Drive can be mounted.
 
 ## [Cocalc](https://cocalc.com/)
 
@@ -81,10 +90,6 @@ There seems to be lots of good tutorials on Quant Fiance.
 ## [DataQuest](https://www.dataquest.io/)
 
 Course learning only.
-
-## [Kaggle](https://www.kaggle.com/)
-
-Jupyter notebooks only. No terminal.
 
 ## [Authorea](https://authorea.com/)
 

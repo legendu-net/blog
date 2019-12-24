@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-12-23 21:05:58
+Date: 2019-12-24 09:24:52
 Author: Ben Chuanlong Du
 Slug: beakerx-tips
-Title: Beakerx Tips
+Title: BeakerX Tips
 Category: Software
 Tags: software, BeakerX, JupyterLab, Maven
 
@@ -21,7 +21,7 @@ Currently Java 8 is request.
 1. The maven cache is save to the following directory
     `/tmp/share/beakerx/maven/cache/`.
 
-2. Set JVM properties for Beakerx.
+2. Set JVM properties for BeakerX.
 
 https://github.com/twosigma/beakerx/issues/7666
 

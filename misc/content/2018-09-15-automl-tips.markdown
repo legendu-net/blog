@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-24 11:11:20
+Date: 2019-12-24 16:53:55
 Author: Ben Chuanlong Du
 Slug: automl-tips
 Title: AutoML Tips
@@ -28,3 +28,6 @@ Driverless AI
 
 tpot looks like a good one
 
+## References
+
+https://towardsdatascience.com/an-example-of-hyperparameter-optimization-on-xgboost-lightgbm-and-catboost-using-hyperopt-12bc41a271e

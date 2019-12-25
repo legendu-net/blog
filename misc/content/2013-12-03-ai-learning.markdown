@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-24 15:20:59
+Date: 2019-12-24 16:53:00
 Title: AI Learning
 Slug: ai-learning
 Author: Ben Du
@@ -15,6 +15,10 @@ It is not meant to readers but rather for convenient reference of the author and
 The picture comes from [Machine Learning Algorithms Mindmap](https://jixta.wordpress.com/2015/07/17/machine-learning-algorithms-mindmap/).
 
 
+## Feature Engineering
+
+[Handling Categorical Variables in Machine Learning](http://www.legendu.net/misc/blog/handling-categorical-variables-in-machine-learning/)
+
 ## Frameworks
 
 ### UI Friendly Frameworks
@@ -27,9 +31,7 @@ H2O
 
 https://mmlspark.blob.core.windows.net/website/index.html
 
-## AutoML
-
-http://www.legendu.net/misc/blog/automl-tips/
+## [AutoML](http://www.legendu.net/misc/blog/automl-tips/)
 
 https://towardsdatascience.com/an-example-of-hyperparameter-optimization-on-xgboost-lightgbm-and-catboost-using-hyperopt-12bc41a271e
 
@@ -51,3 +53,5 @@ https://towardsdatascience.com/an-example-of-hyperparameter-optimization-on-xgbo
 1. mean, median, etc.
 
 1. SVD imputation using low dimension to approximate high dimension data
+
+## [Machine Learning Resources](http://www.legendu.net/misc/blog/machine-learning-resources/)

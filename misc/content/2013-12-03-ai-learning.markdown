@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-24 16:56:38
+Date: 2019-12-24 16:57:27
 Title: AI Learning
 Slug: ai-learning
 Author: Ben Du
@@ -58,5 +58,7 @@ https://mmlspark.blob.core.windows.net/website/index.html
 1. mean, median, etc.
 
 1. SVD imputation using low dimension to approximate high dimension data
+
+## [Tips on Kaggle](http://www.legendu.net/misc/blog/tips-on-kaggle/)
 
 ## [Machine Learning Resources](http://www.legendu.net/misc/blog/machine-learning-resources/)

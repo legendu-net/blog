@@ -33,7 +33,6 @@ https://mmlspark.blob.core.windows.net/website/index.html
 
 ## [AutoML](http://www.legendu.net/misc/blog/automl-tips/)
 
-https://towardsdatascience.com/an-example-of-hyperparameter-optimization-on-xgboost-lightgbm-and-catboost-using-hyperopt-12bc41a271e
 
 ## Questions
 

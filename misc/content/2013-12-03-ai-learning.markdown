@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-24 16:53:00
+Date: 2019-12-24 16:56:38
 Title: AI Learning
 Slug: ai-learning
 Author: Ben Du
@@ -19,7 +19,13 @@ The picture comes from [Machine Learning Algorithms Mindmap](https://jixta.wordp
 
 [Handling Categorical Variables in Machine Learning](http://www.legendu.net/misc/blog/handling-categorical-variables-in-machine-learning/)
 
+## [Regularization in Machine Learning Models](http://www.legendu.net/misc/blog/regularization-in-machine-learning-models/)
+
+## [Ensemble](http://www.legendu.net/misc/blog/ai-ensemble/)
+
 ## Frameworks
+
+[Libraries for Gradient Boosting](http://www.legendu.net/misc/blog/libraries-for-gradient-boosting/)
 
 ### UI Friendly Frameworks
 

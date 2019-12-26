@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-25 22:07:25
+Date: 2019-12-26 12:36:59
 Author: Ben Chuanlong Du
 Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
@@ -15,10 +15,22 @@ but rather for convenient reference of the author and future improvement.
 
 ## [GitPod](https://www.gitpod.io/)
 
-GitPod allows you to expose http services from your workspace.
+GitPod allows users to use their customized Docker images 
+and allow users to expose HTTP services from your workspace.
 This means that if you have JupyterLab/Hub installed in your GitPod image,
 you can run a JupyterLab/Hub server within your GitPod worksapce and access it from public.
-You can use the command `gp url port` to get the public URL to visit the exposed port/service.
+Once you start a new services listing on a port,
+a prompt will show up at the right-bottom corner and you can click it to visit the service.
+The prompt will disappear after a few seconds or after being clicked. 
+You can always use command `gp url port` to find the public URL of an exposed port/service.
+
+Note that GitPod has a timeout of 30 minutes (unless you have the Unlimited Plan) 
+if there's no activity on the GitPod IDE page. 
+This seriously limit the usability of the JupyterLab server launched from a GitPod workspace.
+You will have to go back to the IDE page once for a while 
+to make sure that your workspace won't timeout and get killed.
+I typically use JupyterLab launched from GitPod for ad hoc short-time tasks,
+e.g., writing a notebook-based article for my blog.
 
 ## [Kaggle](https://www.kaggle.com/)
 

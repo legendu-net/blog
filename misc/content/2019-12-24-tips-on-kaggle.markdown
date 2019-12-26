@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-25 13:10:29
+Date: 2019-12-25 20:25:17
 Author: Benjamin Du
 Slug: tips-on-kaggle
 Title: Tips on Kaggle
@@ -10,6 +10,13 @@ Tags: programming
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+## General Tips
+
+1. By default,
+    internet access from a Kaggle notebook/kernel is turned off.
+    You have to manually turn it on from the right-side panel 
+    in order to visit access internet.
 
 ## Tips for Competition on Kaggle
 
@@ -78,6 +85,13 @@ Cropping & Other Augmentations
 ### Start from Easy/Simple/Small Models
 
 ## Kaggle API
+
+### kaggle.json
+
+www.kaggle.com -> Your Account -> Create New API token. 
+This will download a ready-to-go JSON file to place in the direectory `$HOME/.kaggle`. 
+
+
 
 [Kaggle Public API](https://www.kaggle.com/docs/api)
 

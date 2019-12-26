@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-24 10:29:56
+Date: 2019-12-25 22:07:25
 Author: Ben Chuanlong Du
 Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
@@ -22,7 +22,6 @@ You can use the command `gp url port` to get the public URL to visit the exposed
 
 ## [Kaggle](https://www.kaggle.com/)
 
-1. Terminal supported
 1. Jupyter notebooks only, no JupyterLab support.
 3. Only Python an R kernels are supported.
 4. GPU available for request.

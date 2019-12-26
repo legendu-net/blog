@@ -95,11 +95,14 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 CSS_FILE = 'main_2.css'
 THEME = os.path.join(BLOG_DIR, 'themes/octopress_2')
 # plugins
+IPYNB_USE_METACELL = True
+MARKUP = ('md', 'ipynb')
 PLUGIN_PATHS = [os.path.join(BLOG_DIR, 'plugins')]
 PLUGINS = [
         'latex',
         'ipynb.markup',
     ]
+IGNORE_FILES = [".ipynb_checkpoints"]  
 
 # disqus comment
 DISQUS_SITENAME = 'dclong'

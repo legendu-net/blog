@@ -13,3 +13,12 @@ It is not meant to readers but rather for convenient reference of the author and
 
 
 ## Cosine Similarity
+
+## [Jaccard Index (Jaccard Similarity Coefficient)](https://en.wikipedia.org/wiki/Jaccard_index)
+
+
+## References
+
+https://en.wikipedia.org/wiki/Cosine_similarity
+
+https://en.wikipedia.org/wiki/Jaccard_index

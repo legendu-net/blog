@@ -6,12 +6,6 @@ Title: Trust a JupyterLab Notebook
 Category: Software
 Tags: Software, tools, JupyterLab, trust notebook
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-It is not meant to readers but rather for convenient reference of the author and future improvement.
-**
-
-
 By default, 
 IPython (kernel of Jupyter/Lab notebook) disables executation of untrusted code without explicit user input.
 If you have notebook whose output containings JavaScript (e.g., JS-based visualiation)

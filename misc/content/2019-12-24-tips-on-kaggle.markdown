@@ -13,6 +13,20 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## Tips for Competition on Kaggle
 
+## Choose the Right Competitions
+
+If you are a beginner, 
+tackle the "Getting Started" competitions.
+You can try "Research" and "Feature" competitions when you become experienced.
+
+## Set incremental goals
+
+## Review most voted kernels
+
+## Ask questions on the forums
+
+
+
 ### Keep a logbook or use a model versioning tool 
 
 It is a good to keep a logbook or use a model versioning tool 
@@ -126,15 +140,16 @@ They're all (mostly) cleaned and ready for analysis!
 
 ## Misc 
 
-https://www.kaggle.com/getting-started/44919
+[The Beginner’s Guide to Kaggle](https://elitedatascience.com/beginner-kaggle)
 
-https://elitedatascience.com/beginner-kaggle
+[如何在 Kaggle 首战中进入前 10%](https://dnc1994.com/2016/04/rank-10-percent-in-first-kaggle-competition/)
+
+https://www.kaggle.com/getting-started/44919
 
 https://towardsdatascience.com/how-to-improve-your-kaggle-competition-leaderboard-ranking-bcd16643eddf
 
 https://www.kdnuggets.com/2016/11/rank-ten-precent-first-kaggle-competition.html
 
-https://dnc1994.com/2016/04/rank-10-percent-in-first-kaggle-competition/
 
 https://towardsdatascience.com/how-to-improve-your-kaggle-competition-leaderboard-ranking-bcd16643eddf
 

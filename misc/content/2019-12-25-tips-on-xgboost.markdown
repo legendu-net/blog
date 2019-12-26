@@ -16,11 +16,13 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ### Number of Decision Trees (`n_estimators`)
 
-### Size of Decision Trees (`max_depth`)
+### max_features
 
-
+### Depth of Decision Trees (`max_depth`)
 
 ### Early Stopping (`early_stopping_rounds`)
+
+Prevent overfitting.
 
 ### learning_rate
 
@@ -31,6 +33,8 @@ I recommend not taking out too many rows,
 as performance will drop a lot. Take values from 0.8 to 1.
 
 ### colsample_bytree
+
+Maximum percentage of features used by each tree.
 
 number of columns used by each tree. In order to avoid some columns to take too much credit for the prediction (think of it like in recommender systems when you recommend the most purchased products and forget about the long tail), take out a good proportion of columns. Values from 0.3 to 0.8 if you have many columns (especially if you did one-hot encoding), or 0.8 to 1 if you only have a few columns.
 

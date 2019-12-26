@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-27 18:32:42
+Date: 2019-12-25 18:16:56
 Author: Benjamin Du
 Slug: data-sources
 Title: Data Sources
@@ -28,6 +28,8 @@ https://proxycrawl.com
 https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research
 
 https://www.nist.gov/
+
+### [WordNet](https://wordnet.princeton.edu/)
 
 ## Data Sources
 

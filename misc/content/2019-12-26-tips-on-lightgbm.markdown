@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-12-26 23:46:21
+Date: 2019-12-27 09:18:42
 Author: Benjamin Du
 Slug: tips-on-lightgbm
-Title: Tips on Lightgbm
-Category: Programming
-Tags: programming
+Title: Tips on LightGBM
+Category: AI
+Tags: AI, data science, machine learning, LightGBM
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -24,6 +24,7 @@ https://lightgbm.readthedocs.io/en/latest/Parameters-Tuning.html
 https://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.train.html
 
 ## Parameter Tuning
+
 https://sites.google.com/view/lauraepp/parameters
 
 https://lightgbm.readthedocs.io/en/latest/Parameters.html

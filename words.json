@@ -36,6 +36,7 @@
     ["Rstudio", "RStudio"],
     ["Stringi", "stringi"],
     ["Kdevelop", "KDevelop"],
+    ["Lightgbm", "LightGBM"],
     ["Macports", "MacPorts"], ["Noscript", "NoScript"],
     ["Spacevim", "SpaceVim"],
     ["Mobaxterm", "MobaXterm"],

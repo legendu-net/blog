@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-27 09:18:42
+Date: 2019-12-27 11:34:13
 Author: Benjamin Du
 Slug: tips-on-lightgbm
 Title: Tips on LightGBM
@@ -28,3 +28,9 @@ https://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.train.html
 https://sites.google.com/view/lauraepp/parameters
 
 https://lightgbm.readthedocs.io/en/latest/Parameters.html
+
+https://lightgbm.readthedocs.io/en/latest/_modules/lightgbm/sklearn.html
+
+https://www.kaggle.com/nicapotato/multi-class-lgbm-cv-and-seed-diversification
+
+https://sefiks.com/2018/10/13/a-gentle-introduction-to-lightgbm-for-applied-machine-learning/

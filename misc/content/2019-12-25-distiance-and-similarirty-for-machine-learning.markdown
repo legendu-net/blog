@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-12-25 16:51:04
+Date: 2019-12-27 09:19:38
 Author: Benjamin Du
-Slug: distiance-and-similarirty-for-machine-learning
-Title: Distiance and Similarirty for Machine Learning
+Slug: distance-and-similarity-for-machine-learning
+Title: Distance and Similarrty for Machine Learning
 Category: AI
 Tags: AI, data science, machine learning, similarity, distance
 

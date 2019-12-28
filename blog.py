@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # encoding: utf-8
 
+from typing import Union, Sequence, List, Iterable
 import os
 import os.path
 import re
@@ -9,7 +10,8 @@ import datetime
 import shutil
 from pathlib import Path
 import json
-from typing import Union, Sequence, List
+import itertools
+import subprocess as sp
 
 EN = 'en'
 CN = 'cn'
@@ -437,34 +439,28 @@ class Blogger:
         tags = post.update_tags(from_tag, to_tag)
         self.update_records(paths=[post.path], mapping={'tags': tags + ','})
 
-    # it seems better to have a generator of notebooks ...
+    def iter_content(self) -> Iterable[Path]:
+        """Iterate all files and subdirectories under the content directory of cn, en and misc.
+        :return: An iterator of Path object.
+        """
+        return itertools.chain.from_iterable(
+            (BASE_DIR / dir_ / "content").iterdir() for dir_ in (CN, EN, MISC))
+
     def trust_notebooks(self):
-        for dir_ in (HOME, CN, EN, MISC):
-            self._trust_notebooks(BASE_DIR / dir_ /content)
-
-    def _trust_notebooks(self, post_dir: Path):
-        if not post_dir.is_dir:
-            return
-        for path in post_dir.iterdir():
-            if path.suffix == ".ipynb":
-                pass
-
+        for path in self.iter_content():
+            if path.suffix() == ".ipynb":
+                cmd = f"jupyter trust {path}"
+                sp.run(cmd, shell=True, check=True)
 
     def reload_posts(self):
         """Reload posts into the SQLite3 database.
         """
         self._create_vtable_posts()
         self.execute('DELETE FROM posts')
-        for dir_ in (HOME, CN, EN, MISC):
-            self._load_posts(BASE_DIR / dir_ / 'content')
-        self.commit()
-
-    def _load_posts(self, post_dir: Path):
-        if not post_dir.is_dir():
-            return
-        for path in post_dir.iterdir():
+        for path in self.iter_content():
             if path.suffix in (MARKDOWN, IPYNB):
                 self._load_post(Post(path))
+        self.commit()
 
     def _load_post(self, post: Post):
         sql = f'''
@@ -537,7 +533,7 @@ class Blogger:
             WHERE path in ({qmarks(paths)})
             '''
         self.execute(sql, list(mapping.values()) + paths)
-    
+
     def _delete_updated(self) -> None:
         sql = 'DELETE FROM posts WHERE updated = 1'
         self.execute(sql)

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-27 23:09:38
+Date: 2019-12-27 23:10:06
 Author: Benjamin Du
 Slug: tips-on-lightgbm
 Title: Tips on LightGBM
@@ -34,6 +34,8 @@ https://sites.google.com/view/lauraepp/parameters
 https://lightgbm.readthedocs.io/en/latest/Parameters.html
 
 ## References
+
+https://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.Dataset.html#lightgbm-dataset
 
 https://lightgbm.readthedocs.io/en/latest/_modules/lightgbm/sklearn.html
 

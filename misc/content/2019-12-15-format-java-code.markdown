@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-12-15 10:21:35
+Date: 2019-12-28 13:07:10
 Author: Benjamin Du
 Slug: format-java-code
 Title: Format Java Code
 Category: Programming
-Tags: programming, Java, formatting, code style, EditorConfig
+Tags: programming, Java, formatting, code style, EditorConfig, IntelliJ IDEA
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

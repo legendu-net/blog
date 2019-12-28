@@ -13,6 +13,8 @@ It is not meant to readers but rather for convenient reference of the author and
 
 1. LightGBM supports distributed training on multiple machines (without Spark).
 
+    https://github.com/microsoft/LightGBM/tree/master/examples/parallel_learning
+
 ## Parameter Tuning
 
 https://sites.google.com/view/lauraepp/parameters

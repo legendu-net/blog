@@ -332,6 +332,7 @@ def parse_args(args=None, namespace=None):
     _subparse_find_name_title_mismatch(subparsers)
     _subparse_match_post(subparsers)
     _subparse_exec_notebook(subparsers)
+    _subparse_trust_notebooks(subparsers)
     _subparse_link(subparsers)
     return parser.parse_args(args=args, namespace=namespace)
 
@@ -357,6 +358,11 @@ def exec_notebook(bloger, args):
     if args.notebooks:
         cmd = ["jupyter", "nbconvert", "--to", "notebook", "--inplace", "--execute"] + args.notebooks
         sp.run(cmd, check=True)
+
+
+def _subparse_trust_notebooks(subparsers):
+    subparser_trust_notebooks = subparsers.add_parser(
+        "trust_notebooks", aliases=["trust"], help="Trust notebooks.")
 
 
 def _subparse_exec_notebook(subparsers):

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-28 11:41:02
+Date: 2019-12-28 11:49:09
 Author: Benjamin Du
 Slug: iterators-and-generators-in-python
 Title: Iterators and Generators in Python
@@ -9,8 +9,16 @@ Tags: programming, Python, generator, iterator
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
-**
 
+## Iterator vs Generator
+
+Generator is a special case of Iterator.
+Generator is easy and convenient to use but at additional cost (memory and speed).
+If you need performance, use plain iterator (with the help of the `itertools` module).
+If you need convenience and concise code, use generator.
+
+Please refer to [Python Generator vs Iterator](https://data-flair.training/blogs/python-generator-vs-iterator/)
+for more detailed discussions.
 
 ## When Not to Use Generator 
 
@@ -36,3 +44,5 @@ It is not meant to readers but rather for convenient reference of the author and
 ## References
 
 https://stackoverflow.com/questions/245792/when-is-not-a-good-time-to-use-python-generators
+
+https://data-flair.training/blogs/python-generator-vs-iterator/

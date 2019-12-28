@@ -447,10 +447,9 @@ class Blogger:
             (BASE_DIR / dir_ / "content").iterdir() for dir_ in (CN, EN, MISC))
 
     def trust_notebooks(self):
-        for path in self.iter_content():
-            if path.suffix() == ".ipynb":
-                cmd = f"jupyter trust {path}"
-                sp.run(cmd, shell=True, check=True)
+        for dir_ in (EN, CN, MISC):
+            cmd = f"jupyter trust {dir_}/content/*.ipynb"
+            sp.run(cmd, shell=True, check=True)
 
     def reload_posts(self):
         """Reload posts into the SQLite3 database.

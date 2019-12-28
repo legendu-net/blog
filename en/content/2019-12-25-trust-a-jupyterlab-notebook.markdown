@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-26 09:59:07
+Date: 2019-12-28 13:02:07
 Author: Benjamin Du
 Slug: trust-a-jupyterlab-notebook
 Title: Trust a JupyterLab Notebook
@@ -21,6 +21,8 @@ First, you can trust a notebook via command-line.
 
     :::bash
     jupyter trust path_to_notebook.ipynb
+    jupyter trust notebook1.ipynb notebook2.ipynb
+    jupyter trust *.ipynb
 
 Second, 
 you can trust a notebook using the `Trust Notebook` comamnd from the command tab in the left panel.

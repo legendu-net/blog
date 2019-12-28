@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-27 23:02:16
+Date: 2019-12-27 23:09:38
 Author: Benjamin Du
 Slug: tips-on-lightgbm
 Title: Tips on LightGBM
@@ -11,11 +11,17 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-1. It is strongly suggested that you specify categorical variables as categorical. 
+1. It is strongly suggested that you specify categorical features manually
+    as LightGBM only treat unordered categorial columns as categorical features by default.
 
 		:::bash
 		lgb_train = lgb.Dataset(x_train, y_train, feature_name=features,
 			categorical_feature=categorical_features)
+
+    It is also suggested that you encode a categorical variable 
+    as consecutive integers starting from zero. 
+    Be aware that all negative values in categorical features are treated as missing values. 
+    The output cannot be monotonically constrained with respect to a categorical feature.
 
 1. LightGBM supports distributed training on multiple machines (without Spark).
 

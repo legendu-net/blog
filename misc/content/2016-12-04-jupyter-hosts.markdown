@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-26 12:36:59
+Date: 2019-12-28 13:05:24
 Author: Ben Chuanlong Du
 Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
@@ -137,3 +137,7 @@ Not usable.
 ## [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio)
 
 ## Deploy Your Own Public JupyterHub Server
+
+[Running a notebook server](http://jupyter-notebook.readthedocs.io/en/latest/public_server.html)
+
+https://janakiev.com/blog/jupyter-notebook-server/

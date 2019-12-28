@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-27 11:50:24
+Date: 2019-12-27 23:02:16
 Author: Benjamin Du
 Slug: tips-on-lightgbm
 Title: Tips on LightGBM
@@ -10,6 +10,12 @@ Tags: AI, data science, machine learning, LightGBM
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+1. It is strongly suggested that you specify categorical variables as categorical. 
+
+		:::bash
+		lgb_train = lgb.Dataset(x_train, y_train, feature_name=features,
+			categorical_feature=categorical_features)
 
 1. LightGBM supports distributed training on multiple machines (without Spark).
 

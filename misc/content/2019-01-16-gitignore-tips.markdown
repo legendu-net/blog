@@ -23,6 +23,7 @@ but rather for convenient reference of the author and future improvement.
 ```
 .DS_Store
 .idea/
+.theia/
 *.ipr
 *.iws
 .ipynb_checkpoints/
@@ -75,6 +76,7 @@ hs_err_pid*
 .DS_Store
 
 # IDE
+.theia/
 .idea/
 *.ipr
 *.iws

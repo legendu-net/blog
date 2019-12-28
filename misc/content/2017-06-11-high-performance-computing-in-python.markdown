@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-18 16:23:35
+Date: 2019-12-28 10:51:44
 Author: Ben Chuanlong Du
 Slug: high-performance-computing-in-python
 Title: High Performance Computing in Python
@@ -22,6 +22,10 @@ keep in mind that some of the tips might be outdated.
 ## [Python Profilers](https://docs.python.org/3/library/profile.html)
 
 1. [cprofile](https://docs.python.org/3/library/profile.html#module-cProfile)
+
+## [AiiDa](http://www.aiida.net/)
+
+Automated interactive infrastructure and database for computational science.
 
 ## [mars](https://github.com/mars-project/mars)
 

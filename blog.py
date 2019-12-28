@@ -437,6 +437,19 @@ class Blogger:
         tags = post.update_tags(from_tag, to_tag)
         self.update_records(paths=[post.path], mapping={'tags': tags + ','})
 
+    # it seems better to have a generator of notebooks ...
+    def trust_notebooks(self):
+        for dir_ in (HOME, CN, EN, MISC):
+            self._trust_notebooks(BASE_DIR / dir_ /content)
+
+    def _trust_notebooks(self, post_dir: Path):
+        if not post_dir.is_dir:
+            return
+        for path in post_dir.iterdir():
+            if path.suffix == ".ipynb":
+                pass
+
+
     def reload_posts(self):
         """Reload posts into the SQLite3 database.
         """

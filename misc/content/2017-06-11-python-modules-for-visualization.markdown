@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-09-19 03:06:29
+Date: 2019-12-28 09:55:38
 Author: Ben Chuanlong Du
 Slug: python-modules-for-visualization
 Title: Python Modules for Visualization
@@ -66,6 +66,8 @@ http://stackoverflow.com/questions/10998621/rotate-axis-text-in-python-matplotli
 
 `pandas` integrates some visualization features based on matplotlib.
 It makes things convenient if you have to work with data frame a lot.
+
+### [Graphviz](https://github.com/xflr6/graphviz)
 
 ### Blender Python
 

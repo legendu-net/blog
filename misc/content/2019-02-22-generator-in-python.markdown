@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-02-22 08:55:04
+Date: 2019-12-28 11:41:02
 Author: Benjamin Du
-Slug: generator-in-python
-Title: Generator in Python
+Slug: iterators-and-generators-in-python
+Title: Iterators and Generators in Python
 Category: Programming
 Tags: programming, Python, generator, iterator
 

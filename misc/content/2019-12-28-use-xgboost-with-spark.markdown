@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-28 23:31:32
+Date: 2019-12-28 23:42:45
 Author: Benjamin Du
 Slug: use-xgboost-with-spark
 Title: Use Xgboost With Spark
@@ -11,6 +11,8 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
+The split-by-leaf mode (`grow_policy="lossguide"`) is not supported in distributed training,
+which makes XGBoost4J on Spark much slower than LightGBM on Spark.
 
 ## XGBoost with Spark
 

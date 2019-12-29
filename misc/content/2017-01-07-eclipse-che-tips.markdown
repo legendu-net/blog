@@ -1,6 +1,5 @@
-UUID: 238e6a1a-0b18-457c-98ad-1a7fbdc0c6d5
 Status: published
-Date: 2017-03-05 21:30:21
+Date: 2019-12-28 17:46:46
 Author: Ben Chuanlong Du
 Slug: eclipse-che-tips
 Title: Eclipse Che Tips
@@ -39,4 +38,13 @@ Ctrl + Insert: Copy
 Shift + Insert: Paste
 
 ## Question
-Doesn't seem easy to edit a file outside the current project?
+
+Does not seem easy to edit a file outside the current project?
+
+## References
+
+https://www.eclipse.org/che/docs/che-7/running-che-locally/
+
+https://www.eclipse.org/che/docs/che-7/using-a-visual-studio-code-extension-in-che/
+
+https://eclipsesource.com/blogs/2019/10/17/how-to-add-extensions-and-plugins-to-eclipse-theia/

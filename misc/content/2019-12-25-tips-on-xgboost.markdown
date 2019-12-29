@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-27 11:10:09
+Date: 2019-12-28 23:22:29
 Author: Benjamin Du
 Slug: tips-on-xgboost
 Title: Tips on XGBoost
@@ -25,6 +25,8 @@ It is not meant to readers but rather for convenient reference of the author and
 
 4. Feature engineering and ensemble are usually more important 
     (in terms of improving model performance) than parameter tuning.
+
+5. split-by-leaf mode (grow_policy='lossguide') makes XGBoost run much faster.
 
 ## Parameters
 

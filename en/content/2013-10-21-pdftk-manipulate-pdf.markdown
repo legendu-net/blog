@@ -1,22 +1,33 @@
 Status: published
 Author: Ben Chuanlong Du
-Title: Examples of Using pdftk to Manipulating PDF Files
-Date: 2019-05-12 15:25:00
+Title: Use pdftk to Manipulating PDF Files
+Date: 2019-12-29 11:54:53
 Slug: pdftk-examples
 Category: Software
 Tags: pdftk, software, examples, PDF
 
 
-Even though `pdftk` is a great command-line tool,
-it is suggested that you use Python libraries to manipulating PDFs.
+It is suggested that you use Python modules instead of `pdftk` to manipulating PDFs for several reasons.
+First, 
+even though `pdftk` is a great command-line tool,
+it is hard to remember its syntax.
+On the contratry, 
+Python code is easy to read and understand (even though it is more verbose).
+Second,
+it is not easy to have `pdftk` installed and configured on macOS.
 Please refer to 
-[Editing PDF Files](http://www.legendu.net/misc/blog/editing-PDF-files/)
-and
 [PyPDF2 Examples](http://www.legendu.net/misc/blog/pypdf2-examples/)
-for more details.
+for a simple example of extracting PDF pages using the Python package `PyPDF2`. 
+If you need to edit PDF pages,
+please refer to
+[Editing PDF Files](http://www.legendu.net/misc/blog/editing-PDF-files/)
+for possible tools.
+If you do have to stick with `pdftk`,
+below are concrete examples on how to use it.
 
 1. Fill in forms in an I-9 doc. 
 
+        :::bash
         # dump fields in the form (optional, for human examination only)
         pdftk i9.pdf dump_data_fields > fields.txt 
         # generate a FDF data file
@@ -38,25 +49,31 @@ for more details.
     from the PDF file "training.pdf" 
     as "chap_05.pdf"
 
+        :::bash
         pdftk training.pdf cat 149-186 output chap_05.pdf
 
 3. Combine all my i-20s (all PDF files in current directory) into a single file.
 
+        :::bash
         pdftk *.pdf cat output i-20_all.pdf
 
 4. Combine scaned pages into the right order.
 
+        :::bash
         pdftk A=20141206171918820.pdf B=20141206171951015.pdf cat A1 B1 A2-3 output i-20.pdf 
 
 5. Rotate the first PDF page to 90 degrees clockwise
 
+        :::bash
         pdftk in.pdf cat 1east 2-end output out.pdf
 
 6. Rotate all pages in the second PDF file to 180 degrees
 
+        :::bash
         pdftk A=m11.pdf B=m25.pdf cat A Bsouth output comed.pdf
 
 
 7. Rotate an entire PDF document to 180 degrees
 
+        :::bash
         pdftk in.pdf cat 1-endsouth output out.pdf

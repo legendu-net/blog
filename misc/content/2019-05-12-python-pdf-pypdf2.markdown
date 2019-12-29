@@ -1,10 +1,16 @@
 Status: published
-Date: 2019-05-20 19:10:07
+Date: 2019-12-29 11:54:53
 Author: Benjamin Du
-Slug: pypdf2-examples
-Title: PyPDF2 Examples
+Title: Extracting PDF pages using the Python Package PyPDF2
+Slug: python-pdf-pypdf2
 Category: Programming
-Tags: programming, Python, PyPDF2, example
+Tags: programming, Python, PyPDF2, example, PDF, extract pages
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

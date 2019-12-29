@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-28 23:23:11
+Date: 2019-12-28 23:34:18
 Author: Benjamin Du
 Slug: use-lightgbm-with-spark
 Title: Use LightGBM With Spark
@@ -16,6 +16,14 @@ https://github.com/Azure/mmlspark/blob/master/docs/lightgbm.md
 
 https://github.com/Azure/mmlspark
 MMLSpark requires Scala 2.11, Spark 2.4+, and Python 3.5+.
+
+
+https://github.com/Azure/mmlspark
+
+https://www.reddit.com/r/datascience/comments/9w2qn8/deploying_a_lightgbm_model_with_spark/
+
+https://towardsdatascience.com/build-xgboost-lightgbm-models-on-large-datasets-what-are-the-possible-solutions-bf882da2c27d
+
 
 ## References
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-24 15:19:42
+Date: 2019-12-28 23:32:48
 Author: Benjamin Du
 Slug: libraries-for-gradient-boosting
 Title: Libraries for Gradient Boosting
@@ -32,6 +32,8 @@ keep using the CPU. There’s no real workaround (yet).
 
 
 ## XGBoost with Spark
+
+https://towardsdatascience.com/build-xgboost-lightgbm-models-on-large-datasets-what-are-the-possible-solutions-bf882da2c27d
 
 https://xgboost.readthedocs.io/en/latest/jvm/xgboost4j_spark_tutorial.html
 

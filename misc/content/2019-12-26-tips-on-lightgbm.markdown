@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-28 22:37:18
+Date: 2019-12-28 23:00:33
 Author: Benjamin Du
 Slug: tips-on-lightgbm
 Title: Tips on LightGBM
@@ -26,6 +26,8 @@ It is not meant to readers but rather for convenient reference of the author and
 2. The sklearn wrapper of LightGBM lag behind the development of sklearn. 
     Be aware of the latest supported version of sklearn when you use sklearn wrapper of LightGBM.
     It is suggested that you the original API of LightGBM to avoid version issues.
+
+3. It is suggested that you always specify a evaluation set when you call the function `train`.
 
 2. LightGBM supports distributed training on multiple machines (without Spark).
 

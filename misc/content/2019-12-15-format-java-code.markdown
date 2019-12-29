@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-28 13:07:10
+Date: 2019-12-28 18:11:59
 Author: Benjamin Du
 Slug: format-java-code
 Title: Format Java Code
@@ -11,10 +11,14 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-[Java Code Style](https://dev.xwiki.org/xwiki/bin/view/Community/CodeStyle/JavaCodeStyle/)
+[Google Java Format](https://github.com/google/google-java-format)
 
+## Format Java Code in IntelliJ IDEA
 
-[Managing Code Style on a Directory Level with EditorConfig](https://blog.jetbrains.com/idea/2019/06/managing-code-style-on-a-directory-level-with-editorconfig/)
+https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html
 
+https://stackoverflow.com/questions/42979700/how-to-configure-google-java-code-formatter-in-intellij-idea-17
 
-[EditorConfig](https://editorconfig.org/)
+[Configuring Code Style in IntelliJ IDEA](https://www.jetbrains.com/help/idea/configuring-code-style.html)
+
+https://www.jetbrains.com/help/idea/code-style-java.html

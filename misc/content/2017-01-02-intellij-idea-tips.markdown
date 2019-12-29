@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-01 17:15:04
+Date: 2019-12-28 18:11:59
 Author: Ben Chuanlong Du
 Slug: intellij-idea-tips
 Title: IntelliJ IDEA Tips
@@ -19,32 +19,34 @@ https://itsfoss.com/install-intellij-ubuntu-linux/
 
 You can use ubuntu-make to install IntelliJ IDEA in Docker.
 
-
-
-1. The first scala project might very long time to generate the directories
-    depending on your network speed.
-    SBT needs to download some JARs and when the download is complete,
-    it will generate the `src` directory.
-    It suggests that you work in environment with good network connection
-    when using IntelliJ.
-
-
-2. sbt (rather than Maven) is required if you want to use Scala worksheet in IntelliJ IDEA.
-    You might see the following error if Maven is use.
-
-        scalac error: bad option: '-make:transitive' on mvn package via command line
-
-As a matter of fact,
-sbt is recommended over Maven for developing Scala,
-generally speaking.
-First,
-sbt is better supported in IntelliJ IDEA.
-The Maven archetype for Scala is too old in IntelliJ.
-You have to update the file pom.xml immediately after you create a Maven based Scala project in IntelliJ IDEA.
-
 ## Install Plugins from Command-line
 
 https://stackoverflow.com/questions/24044513/intellij-idea-install-plugins-from-command-line
+
+## General Tips
+
+1. It is suggested that you develop a Scala project using Gradle.
+    Maven is too verbose and sbt is too hard to use.
+
+2. You need good network connection when create a new Scala project 
+    since the project manage tool (Gradle, sbt or maven) has to fetch lots of JAR dependencies.
+
+3. It is suggested that you use JupyterLab notebook 
+    (instead of using Scala worksheet in IntelliJ IDEA) if you want to run Scala interactively.
+    The BeakerX Scala kernel is a good one.
+
+4. Close IntelliJ IDEA if you don't use it.
+    First, 
+    this save memory and make your machine run faster.
+    Second, 
+    this helps avoiding some tricky issues that happens when IntelliJ IDEA runs for a long time 
+    (especially on Mac where people typically don't quit applications and don't restart for a long time).
+    Some of the tricky issues can be resolved simplify by restarting IntelliJ IDEA,
+    so closing IntelliJ IDEA if you don't use it helps preventing these tricky issues from happening.
+
+5. If you encounter some tricky issues in IntellIJ IDEA that doesn't seem to be caused by coding errors,
+    you can first restart IntelliJ IDEA, 
+    and then do a clean build to see whether the issue is resolved.
 
 ## Tricks & Traps 
 
@@ -55,32 +57,6 @@ https://stackoverflow.com/questions/24044513/intellij-idea-install-plugins-from-
 3. Restart IntelliJ.
 
 4. Go to the menu `File -> Invalidate Caches/Restart -> Invalidate and Restart`.
-
-
-## General Tips
-
-1. Close IntelliJ IDEA if you don't use it.
-    First, 
-    this save memory and make your machine run faster.
-    Second, 
-    this helps avoiding some tricky issues that happens when IntelliJ IDEA runs for a long time 
-    (especially on Mac where people typically don't quit applications and don't restart for a long time).
-    Some of the tricky issues can be resolved simplify by restarting IntelliJ IDEA,
-    so closing IntelliJ IDEA if you don't use it helps preventing these tricky issues from happening.
-
-2. If you encounter some tricky issues in IntellIJ IDEA that doesn't seem to be caused by coding errors,
-    you can first restart IntelliJ IDEA, 
-    and then do a clean build to see whether the issue is resolved.
-
-## Scala Project Using Maven in IntelliJ
-
-https://www.ivankrizsan.se/2016/03/27/creating-a-scala-project-with-maven-dependency-management-for-gatling-testing-in-intellij-idea/
-
-
-
-## Reload Dependencies
-
-https://stackoverflow.com/questions/20413605/how-to-force-intellij-idea-to-reload-dependencies-from-build-sbt-after-they-chan
 
 ## Rename Project
 

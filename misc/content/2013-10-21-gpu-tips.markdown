@@ -1,25 +1,81 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for GPU Computing
-Date: 2013-10-20 00:00:00
+Date: 2019-12-30 15:39:35
 Slug: gpu-tips
 Category: Software
 Tags: tips
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. It is not meant to readers but rather for convenient reference of the author and future improvement.**
+**
+Things on this page are fragmentary and immature notes/thoughts of the author. 
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
  
+1. CUDA and OpenCL are the 2 frameworks for GPU computing.
+    CUDA is commerical and for Nvidia GPUs only 
+    while OpenCL is opensource and support more GPUs.
+    Generally speaking, 
+    CUDA has slight better performance than OpenCL on Nvidia GPUs.
+    It is suggested that you go with CUDA if you want to squeeze the most out of performance.
 
-1. Nvidia has very poor support on Linux, so avoid Nvidia graphics card and use AMD or Intel instead if you want to use Linux.
+## [Thrust](https://developer.nvidia.com/thrust)
 
-2. OpenCL has a brighter future than CUDA. not sure about MS C++ AMP ... not recommended
+Thrust is a parallel algorithms library which resembles the C++ Standard Template Library (STL). 
+Thrust’s high-level interface greatly enhances programmer productivity 
+while enabling performance portability between GPUs and multicore CPUs. 
+Interoperability with established technologies (such as CUDA, TBB, and OpenMP) facilitates integration with existing software. 
 
-4. AMD APP SDK seems to be the best tool, you can use it even if no GPU 
+## [ArrayFire](https://github.com/arrayfire/arrayfire)
 
-----------------------------------------------
 
-## good CUDA packages:
-1. thrust
-    - reduce
-    - scan
+## [jcuda](https://github.com/jcuda/jcuda)
 
+Java bindings for CUDA.
+
+## [RustaCUDA](https://github.com/bheisler/RustaCUDA)
+
+Rusty wrapper for the CUDA Driver API.
+
+## [accel](https://github.com/rust-accel/accel)
+
+## [emu](https://github.com/calebwin/emu)
+
+Emu is a framework for developing safe, robust GPU-accelerated applications in Rust. 
+
+## [ArrayFire-rust](https://github.com/arrayfire/arrayfire-rust)
+
+## [ocl](https://github.com/cogciprocate/ocl)
+
+## [pyculib](https://github.com/numba/pyculib)
+
+## [scikit-cuda](https://github.com/lebedov/scikit-cuda)
+
+## [cupy](https://github.com/cupy/cupy)
+
+## [jax](https://github.com/google/jax)
+
+## [cudf](https://github.com/rapidsai/cudf)
+
+## [cuml](https://github.com/rapidsai/cuml)
+
+https://weeraman.com/put-that-gpu-to-good-use-with-python-e5a437168c01
+
+https://docs.anaconda.com/anaconda/user-guide/tasks/gpu-packages/
+
+https://towardsdatascience.com/python-performance-and-gpus-1be860ffd58d
+
+https://developer.nvidia.com/how-to-cuda-python
+
+https://devblogs.nvidia.com/numba-python-cuda-acceleration/
+
+https://github.com/harrism/numba_examples/blob/master/mandelbrot_numba.ipynb
+
+## External Graphics Card
+
+https://www.pcworld.com/article/2984716/how-to-transform-your-laptop-into-a-gaming-powerhouse-with-an-external-graphics-card.html
+
+https://www.laptopmag.com/articles/best-egpus
+
+## References
+
+https://bheisler.github.io/post/state-of-gpgpu-in-rust/

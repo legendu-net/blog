@@ -1,16 +1,16 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Title: Optimization
-Date: 2013-03-22 00:00:00
+Title: Optimization Algorithms
+Date: 2019-12-30 12:17:07
 Tags: numerical analysis, optimization, Research
 Category: Research
-Slug: optimization
+Slug: science-optimization
 Author: Ben Chuanlong Du
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. It is not meant to readers but rather for convenient reference of the author and future improvement.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. 
+It is not meant to readers but rather for convenient reference of the author and future improvement.**
  
-An optimization problem can be changed to a problem of find the root of equations, 
-so I summary algorithm to find root here. 
+If the objective function has derivative, 
+then an optimization problem is equivalent to finding the root of the derivative of the object function. 
 
 ## Finding Root
 - Linear Search

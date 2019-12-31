@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-04-20 03:03:10
+Date: 2019-12-31 11:44:51
 Author: Benjamin Du
 Slug: rust-tips
 Title: Rust Tips
@@ -12,3 +12,11 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 http://www.arewelearningyet.com/
+
+## Cool Rust Projects
+
+https://github.com/rajasekarv/native_spark
+
+https://github.com/andygrove/ballista
+
+https://github.com/weld-project/weld

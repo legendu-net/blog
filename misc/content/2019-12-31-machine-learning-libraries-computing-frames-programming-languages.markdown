@@ -1,24 +1,44 @@
 Status: published
-Date: 2019-12-31 12:14:55
+Date: 2020-01-01 13:06:52
 Author: Benjamin Du
-Slug: computing-frames-and-programming-languages
-Title: Computing Frames and Programming Languages
-Category: Programming
-Tags: programming, computing frameworks, programming languages, GPU, Python, Rust
+Slug: machine-learning-libraries-computing-frames-programming-languages
+Title: Machine Learning Libraries, Computing Frames and Programming Languages
+Category: AI
+Tags: AI, machine learning, data science, computing frameworks, programming languages, GPU, Python, Rust
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
+
+## Machine Learning Frames
+
+scikit-learn
+
+PyTorch
+
+TensorFlow
+
+Keras
+
+Caffe
+
+Notice that H2O-3 (less popularity and lower quality compared to the above libraries),
+[AI-Blocks](https://mrnothing.github.io/AI-Blocks/index.html),
+and Nvidia Digit 
+provides user-friendly UI for training models.
+
+
+## Computing Frameworks
+
 Multi-threading & Multi-Processing are not discussed here 
 since they are relatively simple for scientific computing.
 
-## Computing Frameworks
-GPU
-Python Distributed Computing Frameworks (Ray, Celery, Dask, Modin, etc.)
-Spark
-TPU
+### GPU
+### Python Distributed Computing Frameworks (Ray, Celery, Dask, Modin, etc.)
+### Spark
+### TPU
 
 ## Programming Languages
 Python
@@ -27,7 +47,7 @@ JVM (Java, Scala, Kotlin)
 C/C++
 
 1. GPU is more accisible for average individual people.
-    GPU still dominates deep learning right now.
+    GPU is still the main tool for deep learning right now.
 
 
 2. Python Distributed Computing Frameworks (Ray, Modin, etc.)
@@ -44,7 +64,7 @@ C/C++
 4. Python and Rust are good choices. 
     C is not productive. 
     C++ is too complicated.
-    JVM-based languages are OK.
+    JVM-based languages are first-class citizens for production.
     Rust seems to have a bright future. 
 
 5. As the development of Kubernetes, 
@@ -53,3 +73,7 @@ C/C++
     people will start shifting away from JVM languages and seek for better performance and easier to use solutions.
     Rust is a good language choice for performance 
     while Python is a good choice for glue-language that is easy to use.
+
+## References
+
+(Machine Learning and Deep Learning frameworks and libraries for large-scale data mining: a survey)[https://link.springer.com/article/10.1007/s10462-018-09679-z]

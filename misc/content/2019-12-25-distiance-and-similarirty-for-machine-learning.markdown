@@ -16,6 +16,11 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## [Jaccard Index (Jaccard Similarity Coefficient)](https://en.wikipedia.org/wiki/Jaccard_index)
 
+## Eucleadian Distance
+
+## L1 Distance 
+
+## [Chebyshev Distance](https://en.wikipedia.org/wiki/Chebyshev_distance)
 
 ## References
 

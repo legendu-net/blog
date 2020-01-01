@@ -15,6 +15,13 @@ but rather for convenient reference of the author and future improvement.
 
 1. mlflow looks like another good one.
 
+hyper-parameter tuning, 
+grid search
+bayesian optimization 
+evolutionary algorithms
+genetic programming
+cross validation
+k-fold 
 
 auto-sklearn
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-24 16:57:27
+Date: 2020-01-01 13:20:19
 Title: AI Learning
 Slug: ai-learning
 Author: Ben Du
@@ -27,11 +27,7 @@ The picture comes from [Machine Learning Algorithms Mindmap](https://jixta.wordp
 
 [Libraries for Gradient Boosting](http://www.legendu.net/misc/blog/libraries-for-gradient-boosting/)
 
-### UI Friendly Frameworks
 
-H2O
-
-[AI-Blocks](https://mrnothing.github.io/AI-Blocks/index.html)
 
 ### Big-data (Spark) Friendly Frameworks
 

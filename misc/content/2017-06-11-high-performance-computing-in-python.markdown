@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-31 16:47:13
+Date: 2019-12-31 16:58:27
 Author: Ben Chuanlong Du
 Slug: high-performance-computing-in-python
 Title: High Performance Computing in Python
@@ -23,9 +23,11 @@ keep in mind that some of the tips might be outdated.
 
 1. [cprofile](https://docs.python.org/3/library/profile.html#module-cProfile)
 
-## [Horovid](https://github.com/horovod/horovod)
+## [Horovod](https://github.com/horovod/horovod)
 
 Distributed training framework for TensorFlow, Keras, PyTorch, and Apache MXNet. https://eng.uber.com/horovod/
+
+## [PetaStorm](https://github.com/uber/petastorm)
 
 ## [AiiDa](http://www.aiida.net/)
 

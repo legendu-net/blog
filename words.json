@@ -13,6 +13,7 @@
     ["Npm", "npm"], ["Nfs", "NFS"], ["Kde", "KDE"], ["Pdf", "PDF"],
     ["Ppt", "PPT"], ["Rdd", "RDD"], ["Rdds", "RDDs"],
     ["Sas", "SAS"], ["Sbt", "sbt"], ["Sed", "sed"], ["Sql", "SQL"], ["Ssd", "SSD"], ["Ssh", "SSH"], ["Ssl", "SSL"],
+    ["Tpu", "TPU"],
     ["Url", "URL"],
     ["Vba", "VBA"], ["Vpn", "VPN"], ["Wsl", "WSL"],
     ["Ar1X", "AR1X"], ["Curl", "cURL"], 

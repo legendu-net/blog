@@ -483,7 +483,7 @@ class Blogger:
         for post in posts:
             shutil.move(post, path)
         sql = f'''
-            DELETE FROM posts 
+            DELETE FROM posts
             WHERE path in ({qmarks(posts)})
             '''
         self.execute(sql, posts)

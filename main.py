@@ -33,8 +33,6 @@ def move(blogger, args):
 
 
 def trash(blogger, args):
-    if re.search(r'^t\d+$', args.sub_cmd):
-        args.indexes = int(args.sub_cmd[1:])
     if args.indexes:
         args.files = blogger.path(args.indexes)
     if args.all:
@@ -817,24 +815,25 @@ def _subparse_update_plugins(subparsers):
 
 def _subparse_trash(subparsers):
     subparser_trash = subparsers.add_parser(
-        'trash',
-        aliases=['t' + i for i in INDEXES],
-        help='move posts to the trash directory')
+        "trash",
+        aliases=["t"],
+        help="Move posts to the trash directory.")
     subparser_trash.add_argument(
-        '-i',
-        '--indexes',
-        dest='indexes',
-        nargs='+',
+        "indexes",
+        nargs="*",
         type=int,
-        help='row IDs of the files (in the search results) to be moved to the trash directory.')
+        help="Row IDs of the files (in the search results) to be moved to the trash directory.")
     subparser_trash.add_argument(
-        '-a',
-        '--all',
-        dest='all',
-        action='store_true',
-        help='move all files in the search results to the trash directory.')
+        "-a",
+        "--all",
+        dest="all",
+        action="store_true",
+        help="Move all files in the search results to the trash directory.")
     subparser_trash.add_argument(
-        '-f', '--files', dest='files', help='paths of the posts to be moved to the trash directory.')
+        "-f",
+        "--files",
+        dest="files",
+        help='paths of the posts to be moved to the trash directory.')
     subparser_trash.set_defaults(func=trash)
 
 

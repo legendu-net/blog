@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-28 10:51:44
+Date: 2019-12-31 16:47:13
 Author: Ben Chuanlong Du
 Slug: high-performance-computing-in-python
 Title: High Performance Computing in Python
@@ -23,13 +23,22 @@ keep in mind that some of the tips might be outdated.
 
 1. [cprofile](https://docs.python.org/3/library/profile.html#module-cProfile)
 
+## [Horovid](https://github.com/horovod/horovod)
+
+Distributed training framework for TensorFlow, Keras, PyTorch, and Apache MXNet. https://eng.uber.com/horovod/
+
 ## [AiiDa](http://www.aiida.net/)
 
 Automated interactive infrastructure and database for computational science.
 
 ## [mars](https://github.com/mars-project/mars)
 
+It sems to me that mars focus on tensor computation.
+Mars is a tensor-based unified framework for large-scale data computation which scales Numpy, Pandas and Scikit-learn. 
+
 ## [Apache Ray](https://github.com/ray-project/ray)
+
+A fast and simple framework for building and running distributed applications.
 
 Ray does not handle large data well (as of 2018/05/28).
 Please refer to 
@@ -42,9 +51,16 @@ https://ray.readthedocs.io/en/latest/configure.html#using-the-object-store-with-
 
 https://arrow.apache.org/blog/2017/08/08/plasma-in-memory-object-store/
 
+[Comparison of Ray to Dask](https://github.com/ray-project/ray/issues/642)
+
 ## [modin-project/modin](https://github.com/modin-project/modin)
 
+Modin is scaling pandas pipeline specifically.
+Modin is a DataFrame for datasets from 1KB to 1TB+.
 Notice that modin leverages the Apache Ray project.
+
+Modin seems to be a better solution than Dask if you work with data frames.
+[Query: What is the difference between Dask and Modin?](https://github.com/modin-project/modin/issues/515)
 
 ## Celery
 

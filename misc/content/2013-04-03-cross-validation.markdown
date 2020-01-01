@@ -1,13 +1,15 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Title: Cross Validation
-Date: 2013-04-03 00:00:00
-Tags: statistics, machine learning
-Category: Statistics
-Slug: cross-validation
 Author: Ben Chuanlong Du
+Date: 2013-04-03 00:00:00
+Title: Cross Validation in Machine Learning
+Slug: cross-validation-machine-learning
+Category: AI
+Tags: AI, data science, machine learning, cross validation
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. It is not meant to readers but rather for convenient reference of the author and future improvement.**
+**
+Things on this page are fragmentary and immature notes/thoughts of the author. 
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
  
 ## Training and Testing Data Set
 

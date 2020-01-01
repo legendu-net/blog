@@ -26,7 +26,7 @@ Caffe
 
 Notice that H2O-3 (less popularity and lower quality compared to the above libraries),
 [AI-Blocks](https://mrnothing.github.io/AI-Blocks/index.html),
-and Nvidia Digit 
+and [Nvidia DIGIGS](https://developer.nvidia.com/digits)
 provides user-friendly UI for training models.
 
 

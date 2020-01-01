@@ -1,5 +1,4 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
-Status: published
+Status: unpublished
 Title: Classification
 Date: 2013-03-22 00:00:00
 Tags: CART, machine learning, random forests, statistics, classification, SVM, neuron network, regression
@@ -7,8 +6,19 @@ Category: Statistics
 Slug: classification
 Author: Ben Chuanlong Du
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. It is not meant to readers but rather for convenient reference of the author and future improvement.**
+**
+Things on this page are fragmentary and immature notes/thoughts of the author. 
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
  
+
+## GBM
+
+## Neuron Network
+
+Use the backpropagation algorithm to learn parameters.
+Apply observations 1 by 1, which is a stochastic gradient descent algorithm.
+The complexity of Neuron Network is related to the number of nodes in the hidden layers. 
 
 ## Support Vector Machine (SVM)
 The basic version of SVM is a linear separation.
@@ -37,23 +47,15 @@ and $N$ is the number of observations.
 - SVM can be generalized to the multi-class problems. 
 
 
-- Logistic Regression 
+##  Logistic Regression 
 Linear separation. 
 Logistic Regression is a specially case of the generalized linear regression,
 where the response is binary. 
 The Newton's algorithm can be used to optimize the likelihood.
 Can be generalized to the multi-class classification problem using the multinomial distribution.
 
-- Neuron Network
-Use the backpropagation algorithm to learn parameters.
-Apply observations 1 by 1, which is a stochastic gradient descent algorithm.
-The complexity of Neuron Network is related to the number of nodes in the hidden layers. 
 
-- Tree
-
-- Nearest Neighbour
-
-- Naive Bayesian Classification
+## Naive Bayesian Classification
 Called naive becuase the assumption of conditional independent of covariates given the response variable. 
 Despite the assumption is obviously wrong, 
 the Naive Bayesian classification is very effective in text mining, 
@@ -67,34 +69,12 @@ There's actually Bayesian explanation to this Laplace smoothing approach.
 It's similar to use priors for parameters. 
 This is a very useful trick in many problems though very simple. 
 
-Multivariate Bernoulli Event Model
-
-Another better way is to also take into account of the number of times that each word appears in the email.
-This lead to a multivariate multinomial event model.
-There are other more complicated models which take into account of order of words in emails,
-however, for this specific example, they only do slightly better than the Multivariate Multinomial model mentioned here. 
-
-also a linear classifier, falls into the the category of logistic regression. 
-
-- Linear and Quadratic Discrimination
-Linear Discrimation because we use a line or hyper-plane to separate data.
-The linear discrimination assumes multinormal which is a very strong assumption and implies a logistic regression model. 
-In the contrast logistic regression does not implies linear discrimination. 
-Actually, exponential Family distributed given classes also implies a logistic regression.
-The reverse is not true.
-This means that logistic regression is a very robust assumption. 
-The advantage of Linear Discrimination is that with more assumptions, 
-less data is needed to fit a "OK" model. 
-However, when we have enough data, 
-we want to make fewer assumptions and the Linear Discrimination is often not a good choice. 
-
 ## Some Tips for Classification
 
-1. Use `-1` and `1` to code classes for binary case instead of `0` and `1`.
+1. Feature engineering is more important than model and parameter tuning.
 
 2. Do not forget the const/bias variable/feature.
 
-3. Create new variables/features if not many.
+3. Reguarization is critical 
 
-4. Select useful variables/features if there are too many.
-
+4. Python packages for classification often encode binary response variable as 0 and 1 (instead of -1 and 1).

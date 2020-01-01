@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-23 09:59:33
+Date: 2020-01-01 12:45:39
 Author: Benjamin Du
 Slug: python-big-data
 Title: Python Big Data
@@ -12,7 +12,7 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 There are multiple ways to handle big data in Python,
-among which Dask and PySpark are the w most popular ones.
+among which Dask and PySpark are the most popular ones.
 
 1. If you have relative large memory, 
     say more than 20G, 
@@ -46,16 +46,28 @@ and relative large memory (say, more than 20G).
 If you do have to leverage big data tools, 
 PySpark is prefereed to Dask.
 
-## Dask
+PS: the article
+[Benchmarking Python Distributed AI Backends with Wordbatch](https://towardsdatascience.com/benchmarking-python-distributed-ai-backends-with-wordbatch-9872457b785c)
+has a detailed comparison among Dask, Ray and PySpark.
+Dask is no good. 
+Both Ray and PySpark scale well 
+with Ray has slight performance advantge over PySpark.
+Also, Ray is easy to configure to Spark.
+Notice that [modin](https://github.com/modin-project/modin)
+is a project aiming at scaling pandas workflows by changing one line of code
+and it is based on Apache Ray.
+It will probably provide better performance than Dask if you work with data frames.
+
+## TODO
+
+Compare performance of modin and PySpark on data frames.
+
+## References
 
 [Hands on the Python Module dask](http://www.legendu.net/misc/blog/hands-on-the-python-module-dask/)
-
-## PySpark
 
 http://www.legendu.net/misc/blog/tips-on-pyspark/
 
 http://www.legendu.net/misc/blog/pyspark-optimus-data-profiling/
-
-## References
 
 https://www.dataquest.io/blog/pandas-big-data/

@@ -1,6 +1,6 @@
-Status: unpublished
+Status: Unpublished
 Title: Classification
-Date: 2013-03-22 00:00:00
+Date: 2020-01-02 13:14:19
 Tags: CART, machine learning, random forests, statistics, classification, SVM, neuron network, regression
 Category: Statistics
 Slug: classification

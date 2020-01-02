@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for GPU Computing
-Date: 2020-01-02 11:06:27
+Date: 2020-01-02 11:14:20
 Slug: gpu-tips
 Category: Software
 Tags: tips
@@ -97,3 +97,5 @@ https://github.com/PuneetGrov3r/MediumPosts/blob/master/SpeedUpYourAlgorithms/2)
 https://github.com/PuneetGrov3r/MediumPosts/blob/master/SpeedUpYourAlgorithms/3)%20Prallelization.ipynb
 
 https://github.com/PuneetGrov3r/MediumPosts/blob/master/SpeedUpYourAlgorithms/4)%20Dask.ipynb
+
+https://github.com/harrism/numba_examples/blob/master/mandelbrot_numba.ipynb

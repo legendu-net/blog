@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-26 18:39:12
+Date: 2020-01-02 13:10:18
 Author: Benjamin Du
 Slug: run-commands-on-a-remote-machine
 Title: Run Commands on a Remote Machine
@@ -41,6 +41,10 @@ is a pure Python implementation of SSHv2.
 It is a great tool to interact with a remote server in Python.
 
 ### [parallel-ssh](https://github.com/ParallelSSH/parallel-ssh)
+
+Asynchronous parallel SSH client library.
+Run SSH commands over many (hundreds/hundreds of thousands) 
+number of servers asynchronously and with minimal system load on the client host.
 
 ### [asyncssh](https://github.com/ronf/asyncssh)
 

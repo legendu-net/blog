@@ -1,6 +1,5 @@
-UUID: 1827a10a-70e9-4bf8-877e-aef9f672b4dd
 Status: published
-Date: 2017-08-17 08:44:24
+Date: 2020-01-02 13:10:18
 Author: Ben Chuanlong Du
 Slug: ansible-tips
 Title: Ansible Tips

@@ -1,10 +1,10 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for GPU Computing
-Date: 2020-01-02 11:14:20
+Date: 2020-01-03 09:22:43
 Slug: gpu-tips
-Category: Software
-Tags: tips
+Category: Programming
+Tags: tips, GPU, programming
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 

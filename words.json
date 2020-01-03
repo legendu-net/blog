@@ -7,7 +7,7 @@
     ["3d", "3D"], ["Id", "ID"], ["Io", "IO"], ["Js", "JS"], ["Ms", "MS"], ["Os", "OS"], ["Us", "US"],
     ["Aix", "AIX"], ["Ibm", "IBM"], ["Cpp", "C++"], 
     ["Dns", "DNS"], ["Dsl", "DSL"], 
-    ["Gdb", "GDB"], ["Gnu", "GNU"], ["Gui", "GUI"],
+    ["Gdb", "GDB"], ["Gnu", "GNU"], ["Gui", "GUI"], ["Gpu", "GPU"],
     ["Ide", "IDE"], ["Iml", "IML"], 
     ["Jar", "JAR"], ["Jni", "JNI"], 
     ["Npm", "npm"], ["Nfs", "NFS"], ["Kde", "KDE"], ["Pdf", "PDF"],

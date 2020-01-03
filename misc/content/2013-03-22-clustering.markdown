@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2020-01-01 13:31:58
+Date: 2020-01-03 09:21:45
 Title: Clustering Algorithms in Machine Learning
 Slug: clustering-algorithms-machine-learning
 Category: AI
@@ -11,7 +11,7 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
  
-## Centroid-Based Clustering
+## Centroid-based Clustering
 
 - K-means Clustering
 

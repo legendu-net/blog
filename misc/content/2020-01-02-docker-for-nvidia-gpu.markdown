@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-01-02 17:22:48
+Date: 2020-01-03 09:22:43
 Author: Benjamin Du
 Slug: docker-for-nvidia-gpu
-Title: Docker for Nvidia Gpu
+Title: Docker for Nvidia GPU
 Category: Software
 Tags: software, Docker, GPU
 

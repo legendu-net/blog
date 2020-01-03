@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-01-02 17:30:13
+Date: 2020-01-02 17:38:23
 Author: Benjamin Du
 Slug: tips-on-pytorch
-Title: Tips on Pytorch
+Title: Tips on PyTorch
 Category: Programming
 Tags: programming, Python, PyTorch, GPU, tips
 
@@ -39,3 +39,5 @@ Details of GPUs can be obtained using the following code.
 ## References
 
 https://stackoverflow.com/questions/48152674/how-to-check-if-pytorch-is-using-the-gpu
+
+https://medium.com/ai%C2%B3-theory-practice-business/use-gpu-in-your-pytorch-code-676a67faed09

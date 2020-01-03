@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-28 23:00:33
+Date: 2020-01-03 09:42:59
 Author: Benjamin Du
 Slug: tips-on-lightgbm
 Title: Tips on LightGBM
@@ -38,6 +38,9 @@ It is not meant to readers but rather for convenient reference of the author and
 https://sites.google.com/view/lauraepp/parameters
 
 https://lightgbm.readthedocs.io/en/latest/Parameters.html
+
+## GPU 
+https://lightgbm.readthedocs.io/en/latest/GPU-Tutorial.html
 
 ## References
 

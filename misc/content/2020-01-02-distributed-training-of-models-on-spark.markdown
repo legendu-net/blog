@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-02 12:58:53
+Date: 2020-01-03 09:25:35
 Author: Benjamin Du
 Slug: distributed-training-of-models-on-spark
 Title: Distributed Training of Models on Spark
@@ -18,6 +18,10 @@ http://www.legendu.net/misc/blog/use-xgboost-with-spark/
 ## LightGBM
 
 http://www.legendu.net/misc/blog/use-lightgbm-with-spark/
+
+## [BigDL](https://github.com/intel-analytics/BigDL)
+
+## [MMLSpark](https://github.com/Azure/mmlspark)
 
 ## Apache Ray
 

@@ -179,6 +179,10 @@ https://sites.google.com/view/lauraepp/parameters
 
 https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/
 
+## GPU
+
+https://xgboost.readthedocs.io/en/latest/gpu/
+
 ## Questions 
 
 Any difference between xgboost.cv and the cross validation in sklearn?

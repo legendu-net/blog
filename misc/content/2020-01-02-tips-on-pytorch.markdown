@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-02 17:38:23
+Date: 2020-01-03 16:20:33
 Author: Benjamin Du
 Slug: tips-on-pytorch
 Title: Tips on PyTorch
@@ -36,8 +36,34 @@ Details of GPUs can be obtained using the following code.
     In [6]: torch.cuda.is_available()
     Out[6]: True
 
+## Make Sure that PyTorch is Using GPU
+
+https://discuss.pytorch.org/t/solved-make-sure-that-pytorch-using-gpu-to-compute/4870
+
+## Configuration
+
+cudnn.benchmark = true -- uses the inbuilt cudnn auto-tuner to find the fastest convolution algorithms.
+                       -- If this is set to false, uses some in-built heuristics that might not always be fastest.
+
+Regarding cudnn.fastest, 
+I think it’s because by default it also tries not to use very much memory, 
+but when you enable fastest, 
+it doesn’t care.
+
+See https://github.com/soumith/cudnn.torch/blob/master/SpatialConvolution.lua#L167-L174
+
+regarding cudnn.benchmark, 
+if you have variable length sequences given as inputs, 
+benchmark will try to auto-tune for every new input shape, 
+and that will result in a huge slowdown.
+
+
+
+
 ## References
 
 https://stackoverflow.com/questions/48152674/how-to-check-if-pytorch-is-using-the-gpu
 
 https://medium.com/ai%C2%B3-theory-practice-business/use-gpu-in-your-pytorch-code-676a67faed09
+
+https://groups.google.com/forum/#!topic/torch7/CkB57025yRY

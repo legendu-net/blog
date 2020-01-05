@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-05 09:50:38
+Date: 2020-01-05 10:26:27
 Author: Benjamin Du
 Slug: distributed-training-of-models-on-spark
 Title: Distributed Training of Models on Spark
@@ -26,10 +26,11 @@ http://www.legendu.net/misc/blog/use-lightgbm-with-spark/
 ## Apache Ray
 
 You can run Apache Ray on top of Spark via 
-[analytics-zoo](https://github.com/intel-analytics/analytics-zoo).
+[analytics-zoo](https://github.com/intel-analytics/analytics-zoo),
+which enables you to run any Python machine lerning library in distributed fashion.
 But I'm not sure whether this is a good idea.
 
-## TensorFlow
+## [yahoo/TensorFlowOnSpark](https://github.com/yahoo/TensorFlowOnSpark)
 
 ## PyTorch
 
@@ -40,4 +41,12 @@ http://docs.h2o.ai/sparkling-water/2.2/latest-stable/doc/pysparkling.html
 http://h2o-release.s3.amazonaws.com/h2o/master/4273/docs-website/h2o-docs/faq/sparkling-water.html
 https://docs.databricks.com/_static/notebooks/h2o-sparkling-water-python.html
 
+## [SystemML](https://github.com/apache/systemml)
+
+## [elephas](https://github.com/maxpumperla/elephas)
+
+Distributed training with Keras and Spark.
+
 ## References
+
+https://towardsdatascience.com/deep-learning-with-apache-spark-part-1-6d397c16abd

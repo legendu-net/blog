@@ -1,0 +1,42 @@
+Status: published
+Date: 2020-01-05 10:51:31
+Author: Benjamin Du
+Slug: tips-for-training-deep-neural-networks
+Title: Tips for Training Deep Neural Networks
+Category: AI
+Tags: AI, machine learning, data science, deep learning, deep neural network, DNN
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+
+
+https://mp.weixin.qq.com/s?__biz=MzUxNjcxMjQxNg==&mid=2247488694&idx=1&sn=167b8b9897165d3dcb285ffd12ff7aef&scene=21#wechat_redirect
+
+https://mp.weixin.qq.com/s/aW9yF15lPQWIrQTPu8ki2A
+
+https://jeffmacaluso.github.io/post/DeepLearningRulesOfThumb/
+
+https://pcc.cs.byu.edu/2017/10/02/practical-advice-for-building-deep-neural-networks/
+
+http://theorangeduck.com/page/neural-network-not-working
+
+https://zhuanlan.zhihu.com/p/59918821
+
+https://ml-cheatsheet.readthedocs.io/en/latest/index.html
+
+https://karpathy.github.io/2019/04/25/recipe/
+
+## Regularization
+
+DNNs are prone to overfitting because of the added layers of abstraction, 
+which allow them to model rare dependencies in the training data. 
+Regularization methods such as Ivakhnenko's unit pruning[29] 
+or weight decay ( {\displaystyle \ell _{2}} \ell _{2}-regularization) 
+or sparsity ( {\displaystyle \ell _{1}} \ell _{1}-regularization) can be applied during training to combat overfitting.[111] 
+Alternatively dropout regularization randomly omits units from the hidden layers during training. 
+This helps to exclude rare dependencies.[112] 
+Finally, 
+data can be augmented via methods such as cropping and rotating 
+such that smaller training sets can be increased in size to reduce the chances of overfitting.[113]

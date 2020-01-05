@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-03 16:20:33
+Date: 2020-01-04 23:59:44
 Author: Benjamin Du
 Slug: tips-on-pytorch
 Title: Tips on PyTorch
@@ -9,9 +9,15 @@ Tags: programming, Python, PyTorch, GPU, tips
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
+
+## PyTorch Tutorials
+
+https://pytorch.org/tutorials/beginner/pytorch_with_examples.html
 **
 
 ## PyTorch on GPU
+
+https://pytorch.org/docs/master/notes/cuda.html
 
 You can use the command `torch.cuda.is_available()`
 to check whether GPU is available for PyTorch.
@@ -36,6 +42,11 @@ Details of GPUs can be obtained using the following code.
     In [6]: torch.cuda.is_available()
     Out[6]: True
 
+You can force synchronous computation by setting environment variable CUDA_LAUNCH_BLOCKING=1. 
+This can be handy when an error occurs on the GPU. 
+(With asynchronous execution, such an error isn’t reported until after the operation is actually executed, 
+so the stack trace does not show where it was requested.)
+
 ## Make Sure that PyTorch is Using GPU
 
 https://discuss.pytorch.org/t/solved-make-sure-that-pytorch-using-gpu-to-compute/4870
@@ -57,7 +68,17 @@ if you have variable length sequences given as inputs,
 benchmark will try to auto-tune for every new input shape, 
 and that will result in a huge slowdown.
 
+https://pytorch.org/docs/master/notes/cuda.html#device-agnostic-code
+This is the suggested way to control tensors on CPU/GPU. 
 
+## Questions
+
+> There are significant caveats to using CUDA models with multiprocessing; 
+> unless care is taken to meet the data handling requirements exactly, 
+> it is likely that your program will have incorrect or undefined behavior.
+
+Apache Ray is essentially multiprocessing, right? 
+How does Apache Ray work with PyTorch?
 
 
 ## References

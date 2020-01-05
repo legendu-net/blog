@@ -33,7 +33,7 @@
     ["Beakerx", "BeakerX"],
     ["Ipython", "IPython"],
     ["Scalajs", "ScalaJS"],
-    ["Py4Jdbc", "py4jdbc"], ["Pycharm", "PyCharm"], ["Pymysql", "PyMySQL"], ["Pyspark", "PySpark"],
+    ["Py4Jdbc", "py4jdbc"], ["Pycharm", "PyCharm"], ["Pymysql", "PyMySQL"], ["Pyspark", "PySpark"], ["Pytorch", "PyTorch"],
     ["Rstudio", "RStudio"],
     ["Stringi", "stringi"],
     ["Kdevelop", "KDevelop"],

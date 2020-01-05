@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-05 00:00:27
+Date: 2020-01-05 09:21:16
 Author: Benjamin Du
 Slug: use-pytorch-on-apache-ray
 Title: Use PyTorch on Apache Ray
@@ -41,3 +41,6 @@ print("Best config: ", analysis.get_best_config(metric="mean_accuracy"))
 # Get a dataframe for analyzing trial results.
 df = analysis.dataframe()
 ```
+## References
+
+https://github.com/ray-project/ray/issues/3609

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-20 11:30:37
+Date: 2020-01-05 09:52:34
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
@@ -60,6 +60,9 @@ It is not meant to readers but rather for convenient reference of the author and
 2. PySpark does not support converting `$"col"` to a Column implicitly. 
     However, 
     the function `pyspark.sql.functions.col` works the same as in Spark.
+
+3. [Pandas UDFs](https://spark.apache.org/docs/latest/sql-pyspark-pandas-with-arrow.html#pandas-udfs-aka-vectorized-udfs)
+    sounds interesting!
 
 ## Dependencies
 

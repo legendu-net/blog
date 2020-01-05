@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-01 13:06:52
+Date: 2020-01-05 09:43:30
 Author: Benjamin Du
 Slug: machine-learning-libraries-computing-frames-programming-languages
 Title: Machine Learning Libraries, Computing Frames and Programming Languages
@@ -28,6 +28,14 @@ Notice that H2O-3 (less popularity and lower quality compared to the above libra
 [AI-Blocks](https://mrnothing.github.io/AI-Blocks/index.html),
 and [Nvidia DIGIGS](https://developer.nvidia.com/digits)
 provides user-friendly UI for training models.
+
+
+It is suggested that you start with PyTorch and then TensorFlow. 
+Keras is not reliable enough even though it's very easy to use.
+
+Easy: Keras >= PyTorch > TensorFlow
+
+Stability/Reliability: PyTorch = TensorFlow > Keras
 
 
 ## Computing Frameworks

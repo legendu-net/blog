@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-25 18:16:56
+Date: 2020-01-05 10:28:27
 Author: Benjamin Du
 Slug: data-sources
 Title: Data Sources
@@ -21,6 +21,8 @@ https://www.google.com/publicdata/directory
 
 https://proxycrawl.com
 
+https://nlp.stanford.edu/sentiment/treebank.html
+
 ## Data for Deep Learning
 
 ### [MNIST](http://yann.lecun.com/exdb/mnist/)
@@ -28,6 +30,8 @@ https://proxycrawl.com
 https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research
 
 https://www.nist.gov/
+
+### [Standford NLP - Sentiment Treebank](https://nlp.stanford.edu/sentiment/treebank.html)
 
 ### [WordNet](https://wordnet.princeton.edu/)
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-01 13:20:19
+Date: 2020-01-05 10:39:39
 Title: AI Learning
 Slug: ai-learning
 Author: Ben Du
@@ -13,8 +13,6 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ![](https://jixta.files.wordpress.com/2015/11/machinelearningalgorithms.png)
 The picture comes from [Machine Learning Algorithms Mindmap](https://jixta.wordpress.com/2015/07/17/machine-learning-algorithms-mindmap/).
-
-Open Neural Network Exchange (ONNX)
 
 ## Feature Engineering
 

@@ -1,0 +1,36 @@
+Status: published
+Date: 2020-01-05 10:35:32
+Author: Benjamin Du
+Slug: tips-on-feature-engineering-for-machine-learning
+Title: Tips on Feature Engineering for Machine Learning
+Category: AI
+Tags: AI, machine learning, data science, feature engineering
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+
+https://towardsdatascience.com/automatic-feature-engineering-using-deep-learning-and-bayesian-inference-application-to-computer-7b2bb8dc7351
+
+Feature selection
+Feature extraction
+Adding features through domain expertise
+
+FeatureTools a Python library for feature engineering
+Deep neural network can extract features too
+
+whether feature engineering is still need ...
+
+Mostly yes, but there maybe some exceptions to this.
+
+One exception I can think of is a scenario when your training dataset is not sufficient to cover all variety that will be involved during run time. In this case, if you are able to design features that are able to model the problem well, then these features might work better than the features provided by deep learning. Because for deep learning data is everything; features are learnt only based on the available data. In contrast, in feature engineering, you can transfer your own understanding of the problem to the model through feature engineering. Assuming that you have a good understanding of the problem and you can model this well enough in the features that you design, then you can reach more generalizable models in the end.
+
+Other than such exceptional scenarios, we can expect deep learning to work better than and to replace feature engineering.
+
+
+## Categorical Variables
+
+http://www.legendu.net/misc/blog/handling-categorical-variables-in-machine-learning/
+
+## References

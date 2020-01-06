@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-05 09:43:30
+Date: 2020-01-06 00:51:58
 Author: Benjamin Du
 Slug: machine-learning-libraries-computing-frames-programming-languages
 Title: Machine Learning Libraries, Computing Frames and Programming Languages
@@ -22,7 +22,9 @@ TensorFlow
 
 Keras
 
-Caffe
+Caffe2 is often used for productionizing models trained in PyTorch
+and it is part of the PyTorch project now.
+
 
 Notice that H2O-3 (less popularity and lower quality compared to the above libraries),
 [AI-Blocks](https://mrnothing.github.io/AI-Blocks/index.html),
@@ -84,4 +86,7 @@ C/C++
 
 ## References
 
-(Machine Learning and Deep Learning frameworks and libraries for large-scale data mining: a survey)[https://link.springer.com/article/10.1007/s10462-018-09679-z]
+- (Machine Learning and Deep Learning frameworks and libraries for large-scale data mining: a survey)[https://link.springer.com/article/10.1007/s10462-018-09679-z]
+
+- [caffe2/AICamera](https://github.com/caffe2/AICamera) 
+    is a demonstration of using Caffe2 inside an Android application.

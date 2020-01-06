@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-05 23:47:39
+Date: 2020-01-06 01:10:51
 Author: Benjamin Du
 Slug: handle-imbalanced-data-in-machine-learning
 Title: Handle Imbalanced Data in Machine Learning
@@ -15,3 +15,7 @@ you did presentation on this before,
 list those summary here ...
 
 [scikit-learn-contrib/imbalanced-learn](https://github.com/scikit-learn-contrib/imbalanced-learn)
+
+## References
+
+https://www.youtube.com/watch?v=YMPMZmlH5Bo

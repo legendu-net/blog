@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-05 10:33:55
+Date: 2020-01-05 16:46:27
 Author: Benjamin Du
 Slug: representation-of-machine-learning-models
 Title: Representation of Machine Learning Models
@@ -17,9 +17,15 @@ https://github.com/onnx
 
 Open Neural Network Exchange.
 
-## Jar
+[Predictive Model Markup Language (PMML)](http://dmg.org/pmml/v4-4/GeneralStructure.html)
 
-Some libraries support exporting models into Jar files.
+https://github.com/jpmml/sklearn2pmml
+
+## [Plain Old Java Object (POJO)]
+
+H2O supports exporting models into POJO (JAR) files.
+
+## [MLeap](https://mleap-docs.combust.ml/)
 
 ## Pickle
 

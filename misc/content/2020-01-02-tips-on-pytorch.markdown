@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-06 10:24:00
+Date: 2020-01-06 10:25:44
 Author: Benjamin Du
 Slug: tips-on-pytorch
 Title: Tips on PyTorch
@@ -71,6 +71,12 @@ and that will result in a huge slowdown.
 
 https://pytorch.org/docs/master/notes/cuda.html#device-agnostic-code
 This is the suggested way to control tensors on CPU/GPU. 
+
+## Use PyTorch Models in Production
+
+https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217
+
+https://pytorch.org/tutorials/advanced/super_resolution_with_caffe2.html
 
 ## Questions
 

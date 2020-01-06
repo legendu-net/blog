@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-05 10:35:32
+Date: 2020-01-05 23:52:58
 Author: Benjamin Du
 Slug: tips-on-feature-engineering-for-machine-learning
 Title: Tips on Feature Engineering for Machine Learning
@@ -34,3 +34,5 @@ Other than such exceptional scenarios, we can expect deep learning to work bette
 http://www.legendu.net/misc/blog/handling-categorical-variables-in-machine-learning/
 
 ## References
+
+https://www.kdnuggets.com/2018/08/automated-feature-engineering-will-change-machine-learning.html

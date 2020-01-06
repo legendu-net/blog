@@ -50,7 +50,7 @@
     ["Autohotkey", "AutoHotkey"],
     ["Crunchbang", "CrunchBang"],
     ["Jupyterlab", "JupyterLab"],
-    ["Teamviewer", "TeamViewer"],
+    ["Teamviewer", "TeamViewer"], ["Tensorflow", "TensorFlow"],
     ["IJavascript", "IJavascript"], ["Itypescript", "ITypescript"], ["Proxychains", "ProxyChains"],
     ["Youcompleteme", "YouCompleteMe"],
     ["Intellij Idea", "IntelliJ IDEA"]

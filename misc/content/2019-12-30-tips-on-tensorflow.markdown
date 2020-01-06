@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-01-06 00:47:18
+Date: 2020-01-06 10:26:52
 Author: Benjamin Du
 Slug: tips-on-tensorflow
-Title: Tips on Tensorflow
+Title: Tips on TensorFlow
 Category: AI
 Tags: AI, data science, machine learning, TensorFlow, GPU
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-04 23:59:44
+Date: 2020-01-06 10:24:00
 Author: Benjamin Du
 Slug: tips-on-pytorch
 Title: Tips on PyTorch
@@ -9,11 +9,12 @@ Tags: programming, Python, PyTorch, GPU, tips
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
 
 ## PyTorch Tutorials
 
 https://pytorch.org/tutorials/beginner/pytorch_with_examples.html
-**
+
 
 ## PyTorch on GPU
 

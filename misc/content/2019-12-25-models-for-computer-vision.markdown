@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-06 17:00:18
+Date: 2020-01-07 09:50:39
 Author: Benjamin Du
 Slug: models-for-computer-vision
 Title: Models for Computer Vision
@@ -11,6 +11,8 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
+[torchvision](https://github.com/pytorch/vision)
+has implementation of popular deep learning models for computer vision.
 
 ## ResNet-50
 ResNet-50 is a 50-layer Residual Neural Network. 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-02 09:17:14
+Date: 2020-01-07 10:00:53
 Author: Benjamin Du
 Title: Extracting PDF pages using the Python Package PyPDF2
 Slug: python-pdf-pypdf2
@@ -50,6 +50,9 @@ to extract pages from the PDF file`scan.pdf` into 3 sub PDF files
       'cia.pdf': range(5, 16)
     }
     extract_pages('scan.pdf', subfiles)
+
+The above functions are included in 
+[dsutil.pdf](https://github.com/dclong/dsutil/blob/dev/dsutil/pdf.py).
 
 ## References
 

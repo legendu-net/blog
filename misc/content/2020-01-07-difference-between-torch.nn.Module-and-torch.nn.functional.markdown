@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-07 10:11:21
+Date: 2020-01-07 11:26:38
 Author: Benjamin Du
 Slug: difference-between-torch.nn.Module-and-torch.nn.functional
 Title: Difference Between torch.nn.Module and torch.nn.functional
@@ -24,6 +24,9 @@ However,
 for modules/layers that do not have parameters to optimize, 
 you can also use the functional equivalence (which is the underlying implementation of the modules/layers).
 
+
+Similarly for loss functions.
+
 ## References
 
 https://discuss.pytorch.org/t/what-is-the-difference-between-torch-nn-and-torch-nn-functional/33597
@@ -34,3 +37,4 @@ https://discuss.pytorch.org/t/what-is-the-difference-between-torch-nn-and-torch-
 
 https://discuss.pytorch.org/t/beginner-should-relu-sigmoid-be-called-in-the-init-method/18689
 
+https://stackoverflow.com/questions/54662984/pytorch-why-loss-functions-are-implemented-both-in-nn-modules-loss-and-nn-funct

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-06 16:06:20
+Date: 2020-01-06 16:07:23
 Author: Benjamin Du
 Slug: tips-for-training-deep-neural-networks
 Title: Tips for Training Deep Neural Networks
@@ -54,3 +54,7 @@ This helps to exclude rare dependencies.[112]
 Finally, 
 data can be augmented via methods such as cropping and rotating 
 such that smaller training sets can be increased in size to reduce the chances of overfitting.[113]
+
+## References
+
+https://towardsdatascience.com/epoch-vs-iterations-vs-batch-size-4dfb9c7ce9c9

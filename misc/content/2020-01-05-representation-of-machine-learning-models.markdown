@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-07 12:03:42
+Date: 2020-01-07 12:05:41
 Author: Benjamin Du
 Slug: representation-of-machine-learning-models
 Title: Representation of Machine Learning Models
@@ -34,3 +34,7 @@ Some Python libraries support serializaing a model into pickle format.
 ## Save and Load Models in PyTorch
 
 https://pytorch.org/docs/stable/notes/serialization.html#recommend-saving-models
+
+## PyTorch -> ONNX -> TensorFlow
+
+https://github.com/onnx/onnx-tensorflow/issues/491

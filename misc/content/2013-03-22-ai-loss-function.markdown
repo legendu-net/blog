@@ -1,5 +1,5 @@
 Status: published
-Date: 2015-02-24 14:05:32
+Date: 2020-01-07 11:12:36
 Author: Ben Chuanlong Du
 Title: Loss Function in Machine Learning Models
 Slug: ai-loss-function
@@ -24,3 +24,14 @@ Or sometimes called binary loss function.
 
 To make the loss function convex so that optimization is easy.
 
+## Loss Functions in PyTorch
+
+nn.CrossEntropyLoss
+
+[nn.NLLLoss](https://pytorch.org/docs/stable/nn.html#nllloss)
+
+https://discuss.pytorch.org/t/what-is-the-difference-between-using-the-cross-entropy-loss-and-using-log-softmax-followed-by-nll-loss/14825
+
+https://discuss.pytorch.org/t/build-your-own-loss-function-in-pytorch/235
+
+https://medium.com/udacity-pytorch-challengers/a-brief-overview-of-loss-functions-in-pytorch-c0ddb78068f7

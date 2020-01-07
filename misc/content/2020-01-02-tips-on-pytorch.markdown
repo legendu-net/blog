@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-07 10:29:59
+Date: 2020-01-07 10:53:40
 Author: Benjamin Du
 Slug: tips-on-pytorch
 Title: Tips on PyTorch
@@ -38,6 +38,33 @@ and that will result in a huge slowdown.
 
 https://pytorch.org/docs/master/notes/cuda.html#device-agnostic-code
 This is the suggested way to control tensors on CPU/GPU. 
+
+## Train and Evaluate Models in PyTorch
+
+model.train() tells your model that you are training the model. 
+So effectively layers like dropout, batchnorm etc. 
+which behave different on the train and test procedures know what is going on and hence can behave accordingly.
+
+More details: It sets the mode to train (see source code). 
+You can call either model.eval() or model.train(mode=False) to tell that you are testing. 
+It is somewhat intuitive to expect train function to train model but it does not do that. It just sets the mode.
+
+The bottom line is that 
+if you use dropout or batch normalization in PyTorch, 
+then you must explicitly set your model into evaluation mode 
+by calling the eval() function mode when computing model output values.
+
+It is suggested that you always call the method `.train()` explicitly 
+to turn on training mode before you train your model
+and call the method `.eval()` explicitly 
+to turn on evaluation mode before you run your model for outputs.
+
+
+https://jamesmccaffrey.wordpress.com/2019/01/23/pytorch-train-vs-eval-mode/
+
+https://stackoverflow.com/questions/51433378/what-does-model-train-do-in-pytorch
+
+https://discuss.pytorch.org/t/trying-to-understand-the-meaning-of-model-train-and-model-eval/20158/2
 
 ## Use PyTorch Models in Production
 

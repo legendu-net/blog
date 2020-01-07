@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-12-25 12:55:07
+Date: 2020-01-06 17:00:18
 Author: Benjamin Du
 Slug: models-for-computer-vision
 Title: Models for Computer Vision
 Category: AI
-Tags: AI, data science, machine learning, computer vision, neural network
+Tags: AI, data science, machine learning, computer vision, neural network, image classification, image processing
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -20,6 +20,8 @@ ResNet-101 is a 101-layer Residual Neural Network.
 
 ## ResNet 152
 ResNet-152 is a 152-layer Residual Neural Network. 
+
+[Residual Networks: Implementing ResNet in Pytorch](https://towardsdatascience.com/residual-network-implementing-resnet-a7da63c7b278)
 
 ## InceptionNets
 

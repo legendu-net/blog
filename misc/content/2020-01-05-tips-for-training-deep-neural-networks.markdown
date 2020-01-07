@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-05 10:51:31
+Date: 2020-01-06 16:06:20
 Author: Benjamin Du
 Slug: tips-for-training-deep-neural-networks
 Title: Tips for Training Deep Neural Networks
@@ -10,6 +10,20 @@ Tags: AI, machine learning, data science, deep learning, deep neural network, DN
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+## Terminology
+
+1 Epoch = 1 Forward pass + 1 Backward pass for ALL training samples.
+Batch Size = Number of training samples in 1 Forward/1 Backward pass. (With increase in Batch size, required memory space increases.)
+Number of iterations = Number of passes i.e. 1 Pass = 1 Forward pass + 1 Backward pass (Forward pass and Backward pass are not counted differently.)
+
+In neural networks generally, an epoch is a single pass through the full training set. 
+You don't just run through the training set once, 
+it can take thousands of epochs for your backpropagation algorithm to converge on a combination of weights with an acceptable level of accuracy. 
+Remember gradient descent only changes the weights by a small amount in the direction of improvement, 
+so backpropagation can't get there by running through the training examples just once.
+
+
 
 
 https://mp.weixin.qq.com/s?__biz=MzUxNjcxMjQxNg==&mid=2247488694&idx=1&sn=167b8b9897165d3dcb285ffd12ff7aef&scene=21#wechat_redirect

@@ -53,5 +53,7 @@
     ["Teamviewer", "TeamViewer"], ["Tensorflow", "TensorFlow"],
     ["IJavascript", "IJavascript"], ["Itypescript", "ITypescript"], ["Proxychains", "ProxyChains"],
     ["Youcompleteme", "YouCompleteMe"],
-    ["Intellij Idea", "IntelliJ IDEA"]
+    ["Intellij Idea", "IntelliJ IDEA"],
+    ["Torch.Nn.Module", "torch.nn.Module"],
+    ["Torch.Nn.Functional", "torch.nn.functional"]
 ]

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-07 09:59:01
+Date: 2020-01-07 10:11:21
 Author: Benjamin Du
 Slug: tips-on-pytorch
 Title: Tips on PyTorch
@@ -47,19 +47,6 @@ You can force synchronous computation by setting environment variable CUDA_LAUNC
 This can be handy when an error occurs on the GPU. 
 (With asynchronous execution, such an error isn’t reported until after the operation is actually executed, 
 so the stack trace does not show where it was requested.)
-
-## torch.nn vs torch.nn.functional
-
-`torch.nn` is internal implemented based on `torch.nn.functional`.
-`torch.nn` is easier to use while `torch.nn.functional` is more flexible.
-It is recommended to use `nn.Conv2D` because it uses the `nn.Module` abstraction 
-and nicely ties into the torch.optim framework well.
-
-https://discuss.pytorch.org/t/what-is-the-difference-between-torch-nn-and-torch-nn-functional/33597
-
-https://discuss.pytorch.org/t/how-to-choose-between-torch-nn-functional-and-torch-nn-module/2800
-
-https://discuss.pytorch.org/t/what-is-the-difference-between-torch-nn-and-torch-nn-functional/33597
 
 ## Make Sure that PyTorch is Using GPU
 

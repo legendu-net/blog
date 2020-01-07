@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-07 12:05:41
+Date: 2020-01-07 12:06:20
 Author: Benjamin Du
 Slug: representation-of-machine-learning-models
 Title: Representation of Machine Learning Models
@@ -38,3 +38,5 @@ https://pytorch.org/docs/stable/notes/serialization.html#recommend-saving-models
 ## PyTorch -> ONNX -> TensorFlow
 
 https://github.com/onnx/onnx-tensorflow/issues/491
+
+https://towardsdatascience.com/converting-a-simple-deep-learning-model-from-pytorch-to-tensorflow-b6b353351f5d

@@ -1,0 +1,49 @@
+Status: published
+Date: 2020-01-07 10:15:17
+Author: Benjamin Du
+Slug: use-pytorch-on-gpu
+Title: Use PyTorch on GPU
+Category: AI
+Tags: AI, data science, machine learning, PyTorch, GPU
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+
+
+## PyTorch on GPU
+
+https://pytorch.org/docs/master/notes/cuda.html
+
+You can use the command `torch.cuda.is_available()`
+to check whether GPU is available for PyTorch.
+Details of GPUs can be obtained using the following code.
+
+
+    :::bash
+    In [1]: import torch
+
+    In [2]: torch.cuda.current_device()
+    Out[2]: 0
+
+    In [3]: torch.cuda.device(0)
+    Out[3]: <torch.cuda.device at 0x7efce0b03be0>
+
+    In [4]: torch.cuda.device_count()
+    Out[4]: 1
+
+    In [5]: torch.cuda.get_device_name(0)
+    Out[5]: 'GeForce GTX 950M'
+
+    In [6]: torch.cuda.is_available()
+    Out[6]: True
+
+You can force synchronous computation by setting environment variable CUDA_LAUNCH_BLOCKING=1. 
+This can be handy when an error occurs on the GPU. 
+(With asynchronous execution, such an error isn’t reported until after the operation is actually executed, 
+so the stack trace does not show where it was requested.)
+
+## Make Sure that PyTorch is Using GPU
+
+https://discuss.pytorch.org/t/solved-make-sure-that-pytorch-using-gpu-to-compute/4870

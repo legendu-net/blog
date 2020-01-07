@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-01-05 11:02:16
+Date: 2020-01-07 12:10:45
 Author: Benjamin Du
 Slug: tips-on-nlp
-Title: Tips on Nlp
+Title: Tips on NLP
 Category: AI
 Tags: AI, machine learning, data science, NLP, nature language processing
 

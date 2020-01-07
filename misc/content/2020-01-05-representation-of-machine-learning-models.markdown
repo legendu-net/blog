@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-05 16:46:27
+Date: 2020-01-07 12:03:42
 Author: Benjamin Du
 Slug: representation-of-machine-learning-models
 Title: Representation of Machine Learning Models
@@ -30,3 +30,7 @@ H2O supports exporting models into POJO (JAR) files.
 ## Pickle
 
 Some Python libraries support serializaing a model into pickle format.
+
+## Save and Load Models in PyTorch
+
+https://pytorch.org/docs/stable/notes/serialization.html#recommend-saving-models

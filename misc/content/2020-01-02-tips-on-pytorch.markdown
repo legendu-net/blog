@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-07 10:11:21
+Date: 2020-01-07 10:29:59
 Author: Benjamin Du
 Slug: tips-on-pytorch
 Title: Tips on PyTorch
@@ -53,6 +53,8 @@ https://pytorch.org/tutorials/advanced/super_resolution_with_caffe2.html
 
 Apache Ray is essentially multiprocessing, right? 
 How does Apache Ray work with PyTorch?
+
+2. shall we every use `inplace=True` when manipulating Layers in PyTorch?
 
 ## PyTorch Ecosystem
 

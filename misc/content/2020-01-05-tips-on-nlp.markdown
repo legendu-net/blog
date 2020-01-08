@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-07 16:05:35
+Date: 2020-01-08 12:55:54
 Author: Benjamin Du
 Slug: tips-on-nlp
 Title: Tips on NLP
@@ -21,6 +21,8 @@ Chapter 8 of the book (Performance of Different Models on Different NLP Tasks) a
 fore each sub area of NLP. 
 
 [Ten trends in Deep learning NLP](https://blog.floydhub.com/ten-trends-in-deep-learning-nlp/)
+
+http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/
 
 
 https://nlpoverview.com/

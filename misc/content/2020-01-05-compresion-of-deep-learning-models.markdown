@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-05 10:39:57
+Date: 2020-01-08 11:26:35
 Author: Benjamin Du
 Slug: compresion-of-deep-learning-models
 Title: Compresion of Deep Learning Models
@@ -33,6 +33,10 @@ MobileNet
 这些需自己阅读比较多相关文献，才能设计出合理，速度更快的网络，比如引入fire module、NIN、除全连接层等一些设计思想，这边不进行具体详述。
 
 
+[Distilling knowledge from Neural Networks to build smaller and faster models](https://blog.floydhub.com/knowledge-distillation/)
+
 ## References
+
+https://blog.floydhub.com/knowledge-distillation/
 
 https://mp.weixin.qq.com/s?__biz=MzU0NTAyNTQ1OQ==&mid=2247484793&idx=1&sn=d18b5f6a0b278d24ee5589dec5d72f9a&chksm=fb7279a5cc05f0b3edce2f2e87467a34dd4e3cda042312082bc5591e438a4dca31044762977d&scene=21#wechat_redirect

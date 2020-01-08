@@ -11,11 +11,33 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
+https://blog.floydhub.com/
+is a great place for deep learning blogging.
+
 ## Overview of NLP
 
 [Deep Learning for NLP: An Overview of Recent Trends](https://medium.com/dair-ai/deep-learning-for-nlp-an-overview-of-recent-trends-d0d8f40a776d)
+Chapter 8 of the book (Performance of Different Models on Different NLP Tasks) also summarizes the state-of-the-art methods 
+fore each sub area of NLP. 
+
+[Ten trends in Deep learning NLP](https://blog.floydhub.com/ten-trends-in-deep-learning-nlp/)
+
 
 https://nlpoverview.com/
+
+https://arxiv.org/pdf/1703.03906.pdf
+
+The transformer architecture, which was first published at the end of 2017, 
+addresses this by creating a way to allow parallel inputs. 
+Each word can have a separate embedding and be process simultaneously 
+which greatly improves training times which facilitates training on much larger datasets.
+
+Google's BERT and OpenAI's GPT-2 models are based on Transformer.
+
+transformer-XL
+
+
+
 
 ## Semantics vs Syntactic
 
@@ -43,6 +65,24 @@ this model relies only on self-attention without the use of RNNs.
 As a result, 
 it is highly parallelizable and requires less time to train, while establishing state-of-the-art results on WMT2014.
 
+
+Large embeddings with 2048 dimensions
+achieved the best results, but only by a small
+margin. Even small embeddings with 128 dimensions seem to have sufficient capacity to
+capture most of the necessary semantic information.
+• LSTM Cells consistently outperformed GRU
+Cells.
+• Bidirectional encoders with 2 to 4 layers performed best. Deeper encoders were significantly more unstable to train, but show potential if they can be optimized well.
+• Deep 4-layer decoders slightly outperformed
+shallower decoders. Residual connections
+were necessary to train decoders with 8 layers and dense residual connections offer additional robustness.
+• Parameterized additive attention yielded the
+overall best results.
+A well-tuned beam search with length
+penalty is crucial. Beam widths of 5 to 10
+together with a length penalty of 1.0 seemed
+to work well.
+
 ## seq2seq 
 
 https://github.com/IBM/pytorch-seq2seq
@@ -64,6 +104,13 @@ provides state-of-the-art general-purpose architectures (BERT, GPT-2, RoBERTa, X
 for Natural Language Understanding (NLU) and Natural Language Generation (NLG) 
 with over 32+ pretrained models in 100+ languages and deep interoperability between TensorFlow 2.0 and PyTorch.
 
+[OpenNMT-py](https://github.com/OpenNMT/OpenNMT-py)
+
+https://github.com/jadore801120/attention-is-all-you-need-pytorch
+
+https://github.com/tensorflow/tensor2tensor/blob/master/tensor2tensor/models/transformer.py
+
+https://github.com/google/seq2seq
 
 ## References
 

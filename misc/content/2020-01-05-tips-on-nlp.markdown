@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-07 15:33:27
+Date: 2020-01-07 16:05:35
 Author: Benjamin Du
 Slug: tips-on-nlp
 Title: Tips on NLP
@@ -11,11 +11,11 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-## Trend in NLP
+## Overview of NLP
 
 [Deep Learning for NLP: An Overview of Recent Trends](https://medium.com/dair-ai/deep-learning-for-nlp-an-overview-of-recent-trends-d0d8f40a776d)
 
-https://github.com/huggingface/neuralcoref
+https://nlpoverview.com/
 
 ## Word2Vec
 
@@ -45,6 +45,14 @@ https://stats.stackexchange.com/questions/180076/why-is-hierarchical-softmax-bet
 ## Semantics vs Syntactic
 
 https://medium.com/huggingface/learning-meaning-in-natural-language-processing-the-semantics-mega-thread-9c0332dfe28e
+
+## Coreferences
+
+https://medium.com/huggingface/state-of-the-art-neural-coreference-resolution-for-chatbots-3302365dcf30
+
+https://huggingface.co/coref/
+
+https://github.com/huggingface/neuralcoref
 
 
 ## Libraries 

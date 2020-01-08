@@ -14,3 +14,5 @@ It is not meant to readers but rather for convenient reference of the author and
 https://openai.com/blog/better-language-models/
 
 https://medium.com/@asierarranz/i-have-created-a-website-to-query-the-gpt-2-openai-model-11dd30e1c8b0
+
+https://github.com/openai/gpt-2

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-07 10:53:40
+Date: 2020-01-13 14:16:00
 Author: Benjamin Du
 Slug: tips-on-pytorch
 Title: Tips on PyTorch
@@ -65,6 +65,12 @@ https://jamesmccaffrey.wordpress.com/2019/01/23/pytorch-train-vs-eval-mode/
 https://stackoverflow.com/questions/51433378/what-does-model-train-do-in-pytorch
 
 https://discuss.pytorch.org/t/trying-to-understand-the-meaning-of-model-train-and-model-eval/20158/2
+
+## PyTorch Tutorials
+
+https://towardsdatascience.com/understanding-pytorch-with-an-example-a-step-by-step-tutorial-81fc5f8c4e8e
+
+https://github.com/pytorch/examples
 
 ## Use PyTorch Models in Production
 

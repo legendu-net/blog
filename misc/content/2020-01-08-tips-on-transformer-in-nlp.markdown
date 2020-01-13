@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-13 14:16:42
+Date: 2020-01-13 14:17:48
 Author: Benjamin Du
 Slug: tips-on-transformer-in-nlp
 Title: Tips on Transformer in NLP
@@ -11,9 +11,9 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-https://blog.floydhub.com/the-transformer-in-pytorch/
-
 http://nlp.seas.harvard.edu/2018/04/03/attention.html
+
+https://blog.floydhub.com/the-transformer-in-pytorch/
 
 http://jalammar.github.io/illustrated-transformer/
 

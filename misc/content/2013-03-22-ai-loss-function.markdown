@@ -24,6 +24,13 @@ Or sometimes called binary loss function.
 
 To make the loss function convex so that optimization is easy.
 
+
+https://gombru.github.io/2019/04/03/ranking_loss/
+
+
+https://discuss.pytorch.org/t/writing-warp-loss-layer/3715
+
+
 ## Loss Functions in PyTorch
 
 nn.CrossEntropyLoss

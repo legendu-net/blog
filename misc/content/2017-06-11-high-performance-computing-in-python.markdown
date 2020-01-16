@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-31 16:58:27
+Date: 2020-01-16 11:48:11
 Author: Ben Chuanlong Du
 Slug: high-performance-computing-in-python
 Title: High Performance Computing in Python
@@ -25,9 +25,14 @@ keep in mind that some of the tips might be outdated.
 
 ## [Horovod](https://github.com/horovod/horovod)
 
-Distributed training framework for TensorFlow, Keras, PyTorch, and Apache MXNet. https://eng.uber.com/horovod/
+A framework for distributed training (on GPU) 
+for TensorFlow, Keras, PyTorch, and Apache MXNet. https://eng.uber.com/horovod/
 
 ## [PetaStorm](https://github.com/uber/petastorm)
+
+Petastorm is a parquet access library 
+that may be used from TF, PyTorch or pure Python
+to load data from parquet stores directly into ML framework.
 
 ## [AiiDa](http://www.aiida.net/)
 

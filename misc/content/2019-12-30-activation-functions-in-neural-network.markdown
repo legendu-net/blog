@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-30 11:20:00
+Date: 2020-01-17 14:20:03
 Author: Benjamin Du
 Slug: activation-functions-in-neural-network
 Title: Activation Functions in Neural Network
@@ -29,7 +29,9 @@ where $\Phi(x)$ is the cumulative distribution function of the standard normal d
 
 ## Swish
 
-$$ f(x) = x \dot sigmoid(x) $$
+$$ f(x) = x \dot \sigma(x) $$,
+where $\sigma(x)$ is the 
+[sigmoid function](https://en.wikipedia.org/wiki/Sigmoid_function).
 
 ## Sigmoid
 

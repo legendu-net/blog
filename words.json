@@ -41,7 +41,7 @@
     ["Lightgbm", "LightGBM"],
     ["Macports", "MacPorts"], ["Noscript", "NoScript"],
     ["Spacevim", "SpaceVim"],
-    ["Mobaxterm", "MobaXterm"],
+    ["Autogluon", "AutoGluon"], ["Mobaxterm", "MobaXterm"],
     ["Nbconvert", "nbconvert"], ["Nomachine", "NoMachine"],
     ["Pybuilder", "PyBuilder"],
     ["Rmarkdown", "RMarkdown"],

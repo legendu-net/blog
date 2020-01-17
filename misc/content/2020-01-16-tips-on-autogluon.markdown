@@ -1,10 +1,10 @@
 Status: published
-Date: 2020-01-17 10:29:45
+Date: 2020-01-17 11:31:17
 Author: Benjamin Du
 Slug: tips-on-autogluon
-Title: Tips on Autogluon
+Title: Tips on AutoGluon
 Category: AI
-Tags: AI, data science, machine learning, AutoGluon, AutoML, deep learning, ENAS, ProxylessNAS
+Tags: AI, data science, machine learning, AutoGluon, AutoML, deep learning, ENAS, ProxylessNAS, gluon, MXNet
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -20,6 +20,23 @@ However,
 you are still able to specify the probelm type 
 if AutoGluon fails to infer the right problem type.
 
+
+1. AutoGluon auto saves all models into the specified output directory during training.
+    And the save models can be load back using the `load` method of the corresponding predictor.
+
+## Customization
+
+[Search Space and Decorator](https://autogluon.mxnet.io/tutorials/course/core.html)
+
+[Search Algorithms](https://autogluon.mxnet.io/tutorials/course/algorithm.html)
+
+[Customize User Objects](https://autogluon.mxnet.io/tutorials/course/object.html)
+
+[Customize Training Script](https://autogluon.mxnet.io/tutorials/course/script.html)
+
+## Hyperparameter Tuning
+
+https://autogluon.mxnet.io/tutorials/torch/hpo.html
 
 ## Neural Architecture Search
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-08 12:55:54
+Date: 2020-01-17 11:35:28
 Author: Benjamin Du
 Slug: tips-on-nlp
 Title: Tips on NLP
@@ -23,6 +23,8 @@ fore each sub area of NLP.
 [Ten trends in Deep learning NLP](https://blog.floydhub.com/ten-trends-in-deep-learning-nlp/)
 
 http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/
+
+https://github.com/Oxer11/NLP-task-review
 
 
 https://nlpoverview.com/

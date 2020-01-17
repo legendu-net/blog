@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-17 11:31:17
+Date: 2020-01-17 11:34:52
 Author: Benjamin Du
 Slug: tips-on-autogluon
 Title: Tips on AutoGluon
@@ -23,6 +23,10 @@ if AutoGluon fails to infer the right problem type.
 
 1. AutoGluon auto saves all models into the specified output directory during training.
     And the save models can be load back using the `load` method of the corresponding predictor.
+
+## Questions
+
+Can I choose a model to save and choose a model to load?
 
 ## Customization
 
@@ -51,3 +55,5 @@ https://www.amazon.science/amazons-autogluon-helps-developers-get-up-and-running
 https://towardsdatascience.com/autogluon-deep-learning-automl-5cdb4e2388ec
 
 https://venturebeat.com/2020/01/09/amazons-autogluon-produces-ai-models-with-as-little-as-three-lines-of-code/
+
+https://autogluon.mxnet.io/tutorials/course/distributed.html

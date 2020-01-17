@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-06 00:51:58
+Date: 2020-01-17 10:30:31
 Author: Benjamin Du
 Slug: machine-learning-libraries-computing-frames-programming-languages
 Title: Machine Learning Libraries, Computing Frames and Programming Languages
@@ -19,6 +19,8 @@ scikit-learn
 PyTorch
 
 TensorFlow
+
+[Apache MXNet](https://github.com/apache/incubator-mxnet)
 
 Keras
 

@@ -53,6 +53,7 @@
     ["Jupyterlab", "JupyterLab"],
     ["Teamviewer", "TeamViewer"], ["Tensorflow", "TensorFlow"],
     ["IJavascript", "IJavascript"], ["Itypescript", "ITypescript"], ["Proxychains", "ProxyChains"],
+    ["Featuretools", "FeatureTools"],
     ["Youcompleteme", "YouCompleteMe"],
     ["Intellij Idea", "IntelliJ IDEA"],
     ["Torch.Nn.Module", "torch.nn.Module"],

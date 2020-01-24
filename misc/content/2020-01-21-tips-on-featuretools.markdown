@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-01-21 16:59:23
+Date: 2020-01-24 14:22:45
 Author: Benjamin Du
 Slug: tips-on-featuretools
-Title: Tips on Featuretools
+Title: Tips on FeatureTools
 Category: AI
 Tags: AI, data science, machine learning, feature, FeatureTools
 

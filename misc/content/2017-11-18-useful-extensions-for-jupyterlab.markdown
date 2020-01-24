@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-06 22:18:58
+Date: 2020-01-24 14:24:17
 Author: Ben Chuanlong Du
 Slug: useful-tools-extensions-for-jupyterlab
 Title: Useful Tools and Extensions for JupyterLab
@@ -62,6 +62,10 @@ Deregister nbdime with Git for global users.
 ### [jupyterlab-drawio](https://github.com/QuantStack/jupyterlab-drawio)
 
 www.draw.io is also interesting,
+
+### [wallneradam/jupyterlab-output-auto-scroll](https://github.com/wallneradam/jupyterlab-output-auto-scroll)
+
+Automatically scrolls scrollable output cells to bottom when content has changed
 
 ### [jupyterlab-latex](https://github.com/jupyterlab/jupyterlab-latex)
 

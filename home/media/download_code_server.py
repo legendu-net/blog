@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import urllib.request
 import json
+from argparse import Namespace, ArgumentParser
 
 
 class GitHubRepoRelease:
@@ -18,7 +19,43 @@ class GitHubRepoRelease:
         return urls
 
 
+def parse_args(args=None, namespace=None) -> Namespace:
+    """Parse command-line arguments.
+    """
+    parser = ArgumentParser(
+        description="Easy installation and configuration for Unix/Linux"
+    )
+    parser.add_argument(
+        "repo",
+        help="The GitHub repository of the format owner/project, e.g., dclong/xinstall."
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
+        dest="output",
+        default="",
+        help="If specified, download the URL and save it to the specified file."
+    )
+    parser.add_argument(
+        "-k",
+        "--keywords",
+        dest="keywords",
+        nargs="*",
+        default=(),
+        help="Keywords in the URL for the purpose of filtering. Note that the first URL is returned so you must specify keywords to narrow down to one URL."
+    )
+    return parser.parse_args(args=args, namespace=namespace)
+
+
+def main():
+    args = parse_args()
+    release = GitHubRepoRelease(args.repo)
+    url = release.download_urls(lambda url: all(kwd in url for kwd in args.keywords))[0]
+    print(url)
+    if args.output:
+        urllib.request.urlretrieve(url, args.output)
+
+
 if __name__ == '__main__':
-    release = GitHubRepoRelease("cdr/code-server")
-    url = release.download_urls(lambda url: "linux-x86_64" in url)[0]
-    urllib.request.urlretrieve(url, "/tmp/code.tar.gz")
+    main()
+

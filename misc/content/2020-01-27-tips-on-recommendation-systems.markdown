@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-27 11:51:07
+Date: 2020-01-27 12:00:51
 Author: Benjamin Du
 Slug: tips-on-recommendation-systems
 Title: Tips on Recommendation Systems
@@ -30,6 +30,8 @@ New methods like VAE, AE, or Deep Collaborative outperform classical methods lik
 ## References
 
 https://medium.com/snipfeed/how-variational-autoencoders-make-classical-recommender-systems-obsolete-4df8bae51546
+
+https://medium.com/snipfeed/how-to-implement-deep-generative-models-for-recommender-systems-29110be8971f
 
 [Variational Autoencoders for Collaborative Filtering](https://arxiv.org/pdf/1802.05814.pdf)
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-25 02:49:09
+Date: 2020-01-27 20:32:38
 Author: Ben Chuanlong Du
 Slug: jupyterlab-tips
 Title: JupyterLab Tips
@@ -22,6 +22,8 @@ https://blog.dominodatalab.com/lesser-known-ways-of-using-notebooks/
 http://arogozhnikov.github.io/2016/09/10/jupyter-features.html
 
 [Running a notebook server](http://jupyter-notebook.readthedocs.io/en/latest/public_server.html)
+
+[Jupyter Notebook Enhancements, Tips And Tricks](https://forums.fast.ai/t/jupyter-notebook-enhancements-tips-and-tricks/17064)
 
 ## General Tips
 

@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-07-19 01:34:21
+Date: 2020-01-27 20:34:47
 Title: SQL Tips
 Slug: sql-tips
 Category: Programming 
@@ -157,3 +157,7 @@ It is not meant to readers but rather for convenient reference of the author and
 1. Amost all versions of SQL support `--` as single-line comment.
     and `/* ... */` as multiple-line comment.
     MySQL also support `#` as single-line comment.
+
+## References
+
+[Ten SQL Tricks that You Didn’t Think Were Possible (Lukas Eder)](https://www.youtube.com/watch?v=mgipNdAgQ3o)

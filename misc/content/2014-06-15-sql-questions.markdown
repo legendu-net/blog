@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2016-11-20 19:10:30
+Date: 2020-01-27 20:34:47
 Title: SQL Questions
 Slug: sql-questions
 Category: Programming
@@ -13,21 +13,32 @@ It is not meant to readers but rather for convenient reference of the author and
 **
  
 1. 比如在 LEFT JOIN 中过滤条件写在 ON 和 WHERE 的区别。
+
 2. 函数和存储过程的区别？
+
 3. Table-value function 和 scalar-valued function 的区别.
+
 4. char、varchar、nvarchar之间的区别(包括用途和空间占用
+
 5. 有哪些操作会使用到TempDB;如果TempDB异常变大，可能的原因是什么，该如何处理;
-6.Index有哪些类型，它们的区别和实现原理是什么，索引有啥优点和缺点;如何为SQL
-语句创建合适的索引，索引创建时有哪些需要注意的项
+
+6. Index有哪些类型，它们的区别和实现原理是什么，索引有啥优点和缺点;如何为SQL
+    语句创建合适的索引，索引创建时有哪些需要注意的项
+
 7. 临时表、表变量、CTE(公用表表达式)有啥区别和联系，保存位置有啥不一样，使用
-时如何决定选哪种;
+    时如何决定选哪种;
+
 8. 视图和索引视图有什么区别
+
 9. 如何实现分区，分区的步骤，分区有什么好处，怎么实现 Sliding Window.
-10.如何比较两个同结构的表数据的差异
-11.SQL调优步骤，如何来判断SQL语句存在问题，怎么定位问题，如何解决这些问题;
-平时也可以看看 http://www.flybi.net/ 里面有很多这种问题
+
+10. 如何比较两个同结构的表数据的差异
+
+11. SQL调优步骤，如何来判断SQL语句存在问题，怎么定位问题，如何解决这些问题;
+    平时也可以看看 http://www.flybi.net/ 里面有很多这种问题
+
 13. 一个table，就两个field， ManagerID 和 direct Reporter ID
-要求是得出每个manager下面的有多少direct和indirect reporters
+    要求是得出每个manager下面的有多少direct和indirect reporters
 
 
 ## General SQL Questions

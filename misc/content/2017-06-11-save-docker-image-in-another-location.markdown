@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-28 10:19:17
+Date: 2020-01-28 10:35:54
 Author: Ben Chuanlong Du
 Slug: save-docker-image-in-another-location
 Title: Save Docker Image in Another Location
@@ -30,6 +30,10 @@ DOCKER_OPTS="-dns 8.8.8.8 -dns 8.8.4.4 -g /mnt"
     for more details)
 
 3. configure Docker directly
+
+sudo systemctl stop docker
+sudo systemctl restart docker
+
 
 ## References
 

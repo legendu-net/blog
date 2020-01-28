@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-28 11:17:01
+Date: 2020-01-28 11:21:46
 Author: Benjamin Du
 Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
@@ -53,8 +53,8 @@ It is not meant to readers but rather for convenient reference of the author and
 
 4. Test that GPU-enabled Docker containers can be run correctly.
 
-	:::bash
-	docker run --gpus all nvidia/cuda:10.2-base nvidia-smi
+        :::bash
+        docker run --gpus all nvidia/cuda:10.2-base nvidia-smi
 
 5. Extend official Nvidia Docker images to customize your own Docker images for GPU applications if needed.
 

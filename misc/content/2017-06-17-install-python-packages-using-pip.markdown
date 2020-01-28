@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-27 15:14:37
+Date: 2020-01-28 13:31:35
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages Using pip
@@ -179,6 +179,9 @@ the comamnd below installs the Python package dsutil from the GitHub repository 
 
     :::bash
     pip3 install git+ssh://git@github.com/dclong/dsutil 
+    # or
+    pip3 install git+https://github.com/dclong/xinstall
+
 
 If you are behind a corporate proxy,
 you might need 2FA to visit the enterprise GitHub of your company.

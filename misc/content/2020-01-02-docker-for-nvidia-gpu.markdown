@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-28 11:04:04
+Date: 2020-01-28 11:17:01
 Author: Benjamin Du
 Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
@@ -51,7 +51,14 @@ It is not meant to readers but rather for convenient reference of the author and
         # or depending on whether systemd is used to manage services
         sudo service docker restart
 
-2. Run official Nvidia Docker images.
+4. Test that GPU-enabled Docker containers can be run correctly.
+
+	:::bash
+	docker run --gpus all nvidia/cuda:10.2-base nvidia-smi
+
+5. Extend official Nvidia Docker images to customize your own Docker images for GPU applications if needed.
+
+6. Run GPU applications in Docker containers. 
     Please refer to 
     [nvidia-docker#usage](https://github.com/NVIDIA/nvidia-docker#usage) 
     for examples.

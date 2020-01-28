@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-05 17:37:34
+Date: 2020-01-27 16:35:20
 Author: Ben Chuanlong Du
 Title: Hyper Parameter Tuning and Automatical Machine Learning
 Slug: ai-hyper-parameter-auto-ml
@@ -66,6 +66,8 @@ Kaggle
 transformers
 
 ## References
+
+https://arxiv.org/pdf/1908.00709v1.pdf
 
 https://towardsdatascience.com/an-example-of-hyperparameter-optimization-on-xgboost-lightgbm-and-catboost-using-hyperopt-12bc41a271e
 

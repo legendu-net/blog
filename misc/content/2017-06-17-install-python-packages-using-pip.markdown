@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-02 10:22:54
+Date: 2020-01-27 15:14:37
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages Using pip
@@ -25,7 +25,7 @@ If you are using Anaconda Python,
 use `conda` (instead of `pip`) to manage Python packages
 especially when you encounter dependency issues.
 
-## Install [pip](https://pip.pypa.io/en/stable/reference/)
+## [Install pip](https://pip.pypa.io/en/stable/installing/)
 
 ### On Ubuntu
 
@@ -48,7 +48,15 @@ sudo python3 -m ensurepip
 
 ## Proper Way of Using pip
 
-1. Upgrading pip via the system package management tools only.
+1. pip can be upgrade using the following command. 
+
+        :::bash
+        pip3 install --upgrade pip
+
+    However,
+    you should avoid doing this (as it might causes issues) 
+    unless you have to upgrade and you are an experienced user.
+    It is recommended that you upgrade pip via the system package management tools only.
 
 2. Do NOT use `sudo pip install pkg1 pkg2` install packages to system-wide locations. 
     Instead, use `pip install --user pkg1 pkg2` to install packages to your local directory.
@@ -163,6 +171,31 @@ Just be ware of that.
 [ProxyChains](http://www.legendu.net/misc/blog/proxychains-tips/)
 is likely a solution when that issue happens.
 
+## Install from Source
+
+pip 20.0+ supports instaling a peotry managed Python project from GitHub directly.
+For example,
+the comamnd below installs the Python package dsutil from the GitHub repository dclong/dsutil directly.
+
+    :::bash
+    pip3 install git+ssh://git@github.com/dclong/dsutil 
+
+If you are behind a corporate proxy,
+you might need 2FA to visit the enterprise GitHub of your company.
+However, 
+2FA is usually not required for Git comamnd line (since it would too much hassle).
+The above way to install Python packages from GitHub repositories directly
+can be a good way to avoid 2FA authentication if you are behind a corporate proxy.
+
+
+Below are some more supported protocols.
+
+    :::bash
+    pip3 install git+ssh://
+    pip install git+https://...
+    pip install git+git://...
+    pip install git+ssh://...
+
 ## Caching
 
 1. You can disable pip caching using the option `--no-cache-dir`.
@@ -179,13 +212,15 @@ https://github.com/pypa/pip/pull/6391
 1. `pip` supports downloading without installation!
 
 2. Install from the current directory
-    ```
-    pip3 install .
-    ```
+
+        :::bash
+        pip3 install .
 
 4. `export LC_ALL=C` resolved an issues of pip3
 
 ## References
+
+https://stackoverflow.com/questions/38613316/how-to-upgrade-pip3
 
 https://adamj.eu/tech/2019/03/11/pip-install-from-a-git-repository/
 

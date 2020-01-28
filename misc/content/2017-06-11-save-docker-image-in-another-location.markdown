@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-28 10:35:54
+Date: 2020-01-28 10:45:00
 Author: Ben Chuanlong Du
 Slug: save-docker-image-in-another-location
 Title: Save Docker Image in Another Location
@@ -29,10 +29,18 @@ DOCKER_OPTS="-dns 8.8.8.8 -dns 8.8.4.4 -g /mnt"
     [Specifying a default Docker storage directory by using bind mount](https://www.ibm.com/support/knowledgecenter/SSBS6K_3.1.1/installing/docker_dir.html)
     for more details)
 
-3. configure Docker directly
+3. Add the options into the file `/etc/docker/daemon.json`.
 
-sudo systemctl stop docker
-sudo systemctl restart docker
+        :::json
+        {
+            "data-root": "/new/data/root/path"
+        }
+
+Restart Docker after whichever approach you take.
+
+    :::bash
+    sudo systemctl restart docker
+
 
 
 ## References

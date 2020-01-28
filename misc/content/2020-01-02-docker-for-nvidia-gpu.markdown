@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-03 09:22:43
+Date: 2020-01-27 23:31:41
 Author: Benjamin Du
 Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
@@ -11,12 +11,19 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-1. Install Nvidia driver on your Linux machine.
+1. Install Nvidia CUDA Tookit on your Linux machine
+    following instructions at https://developer.nvidia.com/cuda-downloads.
     For example,
-    you can install Nvidia driver using the command below on Ubuntu.
+    you can install Nvidia CUDA Tookit 10.2 on Ubuntu 16.04 using the following commands.
 
         :::bash
-        sudo apt-get install cuda-drivers
+        wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-ubuntu1604.pin
+        sudo mv cuda-ubuntu1604.pin /etc/apt/preferences.d/cuda-repository-pin-600
+        wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda-repo-ubuntu1604-10-2-local-10.2.89-440.33.01_1.0-1_amd64.deb
+        sudo dpkg -i cuda-repo-ubuntu1604-10-2-local-10.2.89-440.33.01_1.0-1_amd64.deb
+        sudo apt-key add /var/cuda-repo-10-2-local-10.2.89-440.33.01/7fa2af80.pub
+        sudo apt-get update
+        sudo apt-get -y install cuda
 
     You do not have to install the CUDA toolkit on your Linux host machine.
 
@@ -32,7 +39,6 @@ It is not meant to readers but rather for convenient reference of the author and
         distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
         curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
         curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
-
         sudo apt-get update && sudo apt-get install -y nvidia-container-toolkit
         sudo systemctl restart docker
 

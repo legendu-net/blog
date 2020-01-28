@@ -12,7 +12,9 @@ class GitHubRepoRelease:
         self._resp_http = urllib.request.urlopen(url)
         self.release = json.load(self._resp_http)
 
-    def download_urls(self, func=None):
+    def download_urls(self, func=None, keywords=()):
+        if keywords:
+            func = lambda url: all(kwd in url for kwd in keywords)
         urls = [asset["browser_download_url"] for asset in self.release["assets"]]
         if func:
             urls = [url for url in urls if func(url)]
@@ -37,6 +39,13 @@ def parse_args(args=None, namespace=None) -> Namespace:
         help="If specified, download the URL and save it to the specified file."
     )
     parser.add_argument(
+        "-p",
+        "--pip",
+        dest="pip",
+        action="store_true",
+        help="Install the Python package using pip."
+    )
+    parser.add_argument(
         "-k",
         "--keywords",
         dest="keywords",
@@ -50,7 +59,7 @@ def parse_args(args=None, namespace=None) -> Namespace:
 def main():
     args = parse_args()
     release = GitHubRepoRelease(args.repo)
-    url = release.download_urls(lambda url: all(kwd in url for kwd in args.keywords))[0]
+    url = release.download_urls(keywords=args.keywords)[0]
     print(url)
     if args.output:
         urllib.request.urlretrieve(url, args.output)

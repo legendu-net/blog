@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-21 23:37:16
+Date: 2020-01-28 10:19:17
 Author: Ben Chuanlong Du
 Slug: save-docker-image-in-another-location
 Title: Save Docker Image in Another Location
@@ -22,4 +22,18 @@ to save docker images into `/mnt` (instead of the default location).
 ```
 DOCKER_OPTS="-dns 8.8.8.8 -dns 8.8.4.4 -g /mnt"
 ```
+
+1. symbolic link
+
+2. bind mount (check 
+    [Specifying a default Docker storage directory by using bind mount](https://www.ibm.com/support/knowledgecenter/SSBS6K_3.1.1/installing/docker_dir.html)
+    for more details)
+
+3. configure Docker directly
+
+## References
+
+https://forums.docker.com/t/how-do-i-change-the-docker-image-installation-directory/1169
+
+https://www.ibm.com/support/knowledgecenter/SSBS6K_3.1.1/installing/docker_dir.html
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-28 10:45:00
+Date: 2020-01-28 19:41:40
 Author: Ben Chuanlong Du
 Slug: save-docker-image-in-another-location
 Title: Save Docker Image in Another Location
@@ -49,3 +49,4 @@ https://forums.docker.com/t/how-do-i-change-the-docker-image-installation-direct
 
 https://www.ibm.com/support/knowledgecenter/SSBS6K_3.1.1/installing/docker_dir.html
 
+https://stackoverflow.com/questions/19234831/where-are-docker-images-stored-on-the-host-machine

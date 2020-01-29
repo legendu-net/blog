@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-01-29 10:52:10
+Date: 2020-01-29 10:56:43
 Author: Benjamin Du
 Slug: tips-on-amazon-aws
-Title: Tips on Amazon Aws
+Title: Tips on Amazon AWS
 Category: Cloud
 Tags: Cloud, Amazon AWS
 

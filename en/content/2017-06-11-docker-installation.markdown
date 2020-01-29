@@ -1,19 +1,48 @@
-UUID: 51843213-1af4-416b-95e2-fdde1ac10f38
 Status: published
-Date: 2017-10-22 13:24:32
+Date: 2020-01-28 17:04:46
 Author: Ben Chuanlong Du
 Slug: docker-installation
-Title: Install the Latest Version of Docker CE on Ubuntu
+Title: Install Docker
 Category: Software
-Tags: software, docker, installation, ubuntu, latest, docker-ce
+Tags: software, Docker, installation, Ubuntu, latest, docker-ce, install Docker
 
-You can install the latest version of Docker CE on Ubuntu 16.04 using the commands below.
+## Install Docker on Debian Series of Linux Distributions
 
-    # add repository
+You can install Docker on Debian series of Linux distributions
+(Debian, Ubuntu, Linux Mint, etc.) 
+using the following commands.
+
+    :::bash
+    sudo apt-get update
+    sudo apt-get install docker.io
+
+## Install the Latest Version of Docker on Debian Series of Linux Distributions
+
+You can install the latest version of Docker CE 
+on Debian Series of Linux distributions (Debian, Ubuntu, Linux Mint, etc.)
+using the commands below.
+
     sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-    # install docker
-    wajig update
-    wajig install docker-ce
-    # add user to the docker group
-    gpasswd -a $(whoami) docker
+    sudo apt-get update
+    sudo apt-get install docker-ce
+
+By default,
+the `docker` command requires `sudo` previlage to run
+which is a little hassle since you have to type `sudo` every time and type your password for `sudo`.
+it is suggested that you add yourself into the `docker` group
+so that you can run the `docker` command without `sudo`.
+
+    :::bash
+    sudo gpasswd -a $(whoami) docker
     newgrp docker
+
+The command `newgrp docker` make the group `docker` to take effect.
+You can check that you are in the `docker` group by issuing the `id` command.
+If for whatever reason the group `docker` does take effect,
+logout and then login again to make the group `docker` in effect.
+
+## Install Docker in Other Operating Systems
+
+Please refer to the official doc 
+[Docker Engine overview](https://docs.docker.com/install/)
+on how to install Docker in other operating systems.

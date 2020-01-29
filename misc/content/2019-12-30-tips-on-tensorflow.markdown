@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-29 08:35:53
+Date: 2020-01-29 11:23:38
 Author: Benjamin Du
 Slug: tips-on-tensorflow
 Title: Tips on TensorFlow
@@ -22,6 +22,14 @@ https://www.anaconda.com/tensorflow-in-anaconda/
 
 
 cuDNN is required by TensorFlow
+
+## Docker Images
+
+https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/dockerfiles/dockerfiles
+
+
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/dockerfiles/dockerfiles/gpu.Dockerfile
+uses pip (instead of conda) to install Python packages.
 
 ## GPU Runs Out of Memory
 

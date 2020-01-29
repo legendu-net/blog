@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-06 10:26:52
+Date: 2020-01-29 08:35:53
 Author: Benjamin Du
 Slug: tips-on-tensorflow
 Title: Tips on TensorFlow
@@ -18,6 +18,10 @@ The article
 suggest installing TensorFlow using conda instead of pip
 as the version installed by conda leverages Intel Math Kernel Library and is about 8 times faster overall speaking.
 
+https://www.anaconda.com/tensorflow-in-anaconda/
+
+
+cuDNN is required by TensorFlow
 
 ## GPU Runs Out of Memory
 

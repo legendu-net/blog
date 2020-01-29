@@ -1,6 +1,6 @@
 UUID: 709db98e-f0f6-456c-8fbd-248f28157e98
 Status: published
-Date: 2017-11-29 20:28:31
+Date: 2020-01-29 01:23:50
 Author: Ben Chuanlong Du
 Slug: speedup-docker-pulling-and-pushing
 Title: Speedup Docker Pulling and Pushing
@@ -22,6 +22,20 @@ then you can use the following command to restart the daemon.
 ```
 sudo service docker restart
 ```
+
+## Use the USTC Mirror
+
+It seems to me that the official China mirror is gone.
+However, 
+there are still other good mirrors that you can use.
+For example, 
+you can usee the USTC mirror 
+by adding the following option into the file `/etc/docker/daemon.json`.
+
+    :::json
+    {
+        "registry-mirrors": ["https://docker.mirrors.ustc.edu.cn/"]
+    }
 
 
 ## Old Way 

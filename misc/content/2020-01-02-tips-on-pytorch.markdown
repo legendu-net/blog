@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-13 14:16:00
+Date: 2020-01-29 01:45:40
 Author: Benjamin Du
 Slug: tips-on-pytorch
 Title: Tips on PyTorch
@@ -10,6 +10,27 @@ Tags: programming, Python, PyTorch, GPU, tips
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+## PyTorch Installation
+
+cuda and cuDNN are not required to install PyTorch
+unless you build PyTorch from source.
+
+https://github.com/pytorch/pytorch/issues/17445
+
+https://github.com/pytorch/pytorch/issues/698
+
+https://discuss.pytorch.org/t/how-to-check-if-torch-uses-cudnn/21933
+
+https://discuss.pytorch.org/t/newbie-question-what-are-the-prerequisites-for-running-pytorch-with-gpu/698
+
+## Docker Images for PyTorch
+
+The official PyTorch image [pytorch/pytorch:latest](https://hub.docker.com/r/pytorch/pytorch) 
+(which is pytorch/pytorch:1.4-cuda10.1-cudnn7-runtime currently)
+is a good one.
+
+
 
 ## PyTorch Tutorials
 

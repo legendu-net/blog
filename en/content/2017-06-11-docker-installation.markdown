@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-28 17:04:46
+Date: 2020-01-28 17:07:38
 Author: Ben Chuanlong Du
 Slug: docker-installation
 Title: Install Docker
@@ -22,6 +22,7 @@ You can install the latest version of Docker CE
 on Debian Series of Linux distributions (Debian, Ubuntu, Linux Mint, etc.)
 using the commands below.
 
+    :::bash
     sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
     sudo apt-get update
     sudo apt-get install docker-ce
@@ -29,7 +30,7 @@ using the commands below.
 By default,
 the `docker` command requires `sudo` previlage to run
 which is a little hassle since you have to type `sudo` every time and type your password for `sudo`.
-it is suggested that you add yourself into the `docker` group
+It is suggested that you add yourself into the `docker` group
 so that you can run the `docker` command without `sudo`.
 
     :::bash

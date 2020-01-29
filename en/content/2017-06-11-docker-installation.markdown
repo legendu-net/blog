@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-28 17:07:38
+Date: 2020-01-28 17:27:21
 Author: Ben Chuanlong Du
 Slug: docker-installation
 Title: Install Docker
@@ -37,9 +37,9 @@ so that you can run the `docker` command without `sudo`.
     sudo gpasswd -a $(whoami) docker
     newgrp docker
 
-The command `newgrp docker` make the group `docker` to take effect.
-You can check that you are in the `docker` group by issuing the `id` command.
-If for whatever reason the group `docker` does take effect,
+The command `newgrp docker` makes the group `docker` take effect.
+You can confirm by issuing the `id` command.
+If for whatever reason the group `docker` does not take effect,
 logout and then login again to make the group `docker` in effect.
 
 ## Install Docker in Other Operating Systems

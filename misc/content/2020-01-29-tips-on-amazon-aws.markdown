@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-29 10:56:43
+Date: 2020-01-29 10:58:44
 Author: Benjamin Du
 Slug: tips-on-amazon-aws
 Title: Tips on Amazon AWS
@@ -10,6 +10,12 @@ Tags: Cloud, Amazon AWS
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+1. To save cost, 
+    it is suggested that you start a VM instance on demand
+    and stop it when you finish using it.
+
+2. You can change the VM instance type to scale up/down.
 
 ## CPU Instances
 

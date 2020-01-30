@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-28 11:35:45
+Date: 2020-01-30 00:44:14
 Author: Benjamin Du
 Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
@@ -57,10 +57,15 @@ It is not meant to readers but rather for convenient reference of the author and
         docker run --gpus all nvidia/cuda:10.2-base nvidia-smi
 
 5. Extend official Nvidia Docker images to customize your own Docker images for GPU applications if needed.
-    [nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04](https://hub.docker.com/layers/nvidia/cuda/10.1-cudnn7-devel-ubuntu18.04/images/sha256-557de4ba2cb674029ffb602bed8f748d44d59bb7db9daa746ea72a102406d3ec)
-    and
-    [nvidia/cuda:10.2-cudnn7-devel-ubuntu18.04](https://hub.docker.com/layers/nvidia/cuda/10.2-cudnn7-devel-ubuntu18.04/images/sha256-d3f5d6e8fe105dadb55aef7c80191d6281bbd18989a05124b108b7c8a522a5ad)
-    are good ones to extend from.
+    [nvidia/cuda:10.1-cudnn7-runtime-ubuntu18.04](https://hub.docker.com/layers/nvidia/cuda)
+    is the best Docker image to extend, generally speaking.
+    If you are using PyTorch (which has built-in CUDA and CUDNN),
+    you can use [nvidia/cuda:10.1-base-ubuntu18.04](https://hub.docker.com/layers/nvidia/cuda) to reduce the size of your Docker image.
+    If you want to use Python packages that do not have built-in CUDA and CUDNN support, 
+    you might have to install the library `cuda-10-1` manually.
+
+        :::bash
+        sudo apt-get install cuda-10-1
 
 6. Run GPU applications in Docker containers. 
     Please refer to 

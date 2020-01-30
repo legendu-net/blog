@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-28 13:05:24
+Date: 2020-01-30 09:27:48
 Author: Ben Chuanlong Du
 Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
@@ -40,11 +40,14 @@ e.g., writing a notebook-based article for my blog.
 
 ## [Google Colaboratory](https://colab.research.google.com/)
 
-1. JupyterLab is not directly support (even though hacking around is possible).
+1. No terminal unless you 
+    [hack it to run JupyterLab](https://numba.pydata.org/numba-doc/dev/reference/jit-compilation.html?highlight=target%20cuda)
 
-2. Google Drive can be mounted.
+2. Support root user.
 
-3. Free GPU available.
+3. Google Drive can be mounted.
+
+3. **Free GPU available!**
 
 ## [RMOTR Notebooks | notebooks.ai](https://notebooks.ai/)
 

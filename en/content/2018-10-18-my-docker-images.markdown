@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-24 10:37:20
+Date: 2020-01-30 19:23:25
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -422,8 +422,6 @@ you can connect to the desktop environment in the Docker container using NoMachi
     > Desktop Environment: None  
     > Remote Desktop: None  
 
-    - [dclong/linuxbrew](https://hub.docker.com/r/dclong/linuxbrew/)  
-
     - [dclong/samba](https://hub.docker.com/r/dclong/samba/)  
 
     - [dclong/nfs](https://hub.docker.com/r/dclong/nfs/)  
@@ -481,6 +479,12 @@ you can connect to the desktop environment in the Docker container using NoMachi
         - [dclong/jupyter](https://hub.docker.com/r/dclong/jupyter/)  
 
              > Jupyter Notebook: 6.0.2  
+
+            - [dclong/jupyter-nodejs](https://hub.docker.com/r/dclong/jupyter-nodejs/)  
+
+                - [dclong/jupyter-jdk](https://hub.docker.com/r/dclong/jupyter-jdk/)  
+
+                    - [dclong/vscode-server](https://hub.docker.com/r/dclong/vscode-server/)  
 
             - [dclong/jupyter-nodejs](https://hub.docker.com/r/dclong/jupyter-nodejs/)  
 

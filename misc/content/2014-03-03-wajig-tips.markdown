@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-03-07 19:22:21
+Date: 2020-01-30 18:36:28
 Slug: wajig-tips
 Title: Wajig Tips
 Category: Software
@@ -15,11 +15,18 @@ It is not meant to readers but rather for convenient reference of the author and
 
 
 1. You can type enter the CLI of `wajig` by typing `wajig` in terminal,
-so that you can use commands of `wajig` directly
-instead of typing `wajig` every time.
+    so that you can use commands of `wajig` directly
+    instead of typing `wajig` every time.
 
+        :::bash
         $ wajig
         wajig>
+
+## wajig install
+
+From the documentation,
+`wajig install` is equivalent to `apt-get install --no-install-recommends`.
+`wajig install-r` is equivalent to `apt-get install`.
 
 ## wajig search
 
@@ -31,6 +38,7 @@ instead of typing `wajig` every time.
 
 2. Let wajig also search description
 
+        :::bash
         wajig search -v youtube
 
 ## wajig download
@@ -38,37 +46,44 @@ instead of typing `wajig` every time.
 1. Download a package for install later.
     This is very helpful if the package is big.
 
+        :::bash
         wajig download pkg_name
 
 1. Remove all GNOME desktop related packages
 
+        :::bash
         wajig list | awk '{print $2}' | grep -i ^gnome | xargs wajig purge
 
 2. install a package of specific version using wajig
 
+        :::bash
         wajig search libssl/testing
 
 3. check which repository a package comes from
 
+        :::bash
         wajig policy geary
 
 6. To install backport packages, use
 
+        :::bash
         wajig install libreoffice/wheezy-backports
         apt-get -t wheezy-backports libreoffice
 
     It does not work if you use
 
+        :::bash
         wajig install libreoffice/stable-backports
 
 ## Download Packages (for Installation Later)
+
 If your network speed is a concern,
 you can download a package for installation later using the command below. 
-```
-wajig download pkg_name  
-```
+
+    :::bash
+    wajig download pkg_name  
 
 ## Issues
 
 1. it seems to me that `wajig purge package_name` fails to remove packages sometimes
-even though it seems to succeed.
+    even though it seems to succeed.

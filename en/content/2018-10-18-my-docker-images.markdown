@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-30 19:23:25
+Date: 2020-01-31 23:01:57
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -482,13 +482,11 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
             - [dclong/jupyter-nodejs](https://hub.docker.com/r/dclong/jupyter-nodejs/)  
 
+                 > NodeJS: LTS
+
                 - [dclong/jupyter-jdk](https://hub.docker.com/r/dclong/jupyter-jdk/)  
 
                     - [dclong/vscode-server](https://hub.docker.com/r/dclong/vscode-server/)  
-
-            - [dclong/jupyter-nodejs](https://hub.docker.com/r/dclong/jupyter-nodejs/)  
-
-                 > NodeJS: LTS
 
                 - [dclong/jupyterlab](https://hub.docker.com/r/dclong/jupyterlab)  
 

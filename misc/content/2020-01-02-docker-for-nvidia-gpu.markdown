@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-30 00:44:14
+Date: 2020-01-31 23:00:40
 Author: Benjamin Du
 Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
@@ -61,6 +61,10 @@ It is not meant to readers but rather for convenient reference of the author and
     is the best Docker image to extend, generally speaking.
     If you are using PyTorch (which has built-in CUDA and CUDNN),
     you can use [nvidia/cuda:10.1-base-ubuntu18.04](https://hub.docker.com/layers/nvidia/cuda) to reduce the size of your Docker image.
+    [floydhub/dockerfiles](https://github.com/floydhub/dockerfiles)
+    and
+    [PyTorch Dockerfile](https://github.com/pytorch/pytorch/blob/master/docker/pytorch/Dockerfile)
+    are good examples to refer to.
     If you want to use Python packages that do not have built-in CUDA and CUDNN support, 
     you might have to install the library `cuda-10-1` manually.
 

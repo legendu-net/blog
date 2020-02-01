@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-30 09:27:48
+Date: 2020-01-30 19:54:20
 Author: Ben Chuanlong Du
 Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
@@ -141,6 +141,11 @@ Not usable.
 
 ## Deploy Your Own Public JupyterHub Server
 
+It is very easy to deploy a Jupyter/Hub/Lab server.
+The difficult part is how to make your Jupyter/Hub/Lab secure.
+Please refer to
 [Running a notebook server](http://jupyter-notebook.readthedocs.io/en/latest/public_server.html)
+and
+[Installing and Running Jupyter Notebooks on a Server](https://janakiev.com/blog/jupyter-notebook-server/)
+on how to set up SSL encryption to enable HTTPS for your Jupyter/Hub/Lab server.
 
-https://janakiev.com/blog/jupyter-notebook-server/

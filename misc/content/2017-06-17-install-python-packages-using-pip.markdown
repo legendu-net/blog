@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-28 13:31:35
+Date: 2020-02-04 10:40:55
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages Using pip
@@ -91,25 +91,29 @@ so that you do not need to use the `--user` option when installing Python packag
 ## Install a Specific Version of a Python Package
 
 1. List all available versions of a Python package. 
-    ```
-    pip3 install pylibmc==
-    ```
+
+        :::bash
+        pip3 install pylibmc==
+
 2. Install a specific version of a Python package.
-    ```
-    pip3 install MySQL_python==1.2.2
-    ```
+
+        :::bash
+        pip3 install MySQL_python==1.2.2
+
 3. Install pyarrow with a verison of at least 0.14.0.
-    ```
-    pip3 install pyarrow>=0.14.0
-    ```
+    Notice that you must quote `pyarrow>=0.14.0` using single/double quotes.
+
+        :::bash
+        pip3 install 'pyarrow>=0.14.0'
+
 4. You can install the pre-release version of a package using the `--pre` option.
     For example, 
     the current version of pybuilder (0.11.7) is not compatible with Python 3.7.
     If you are using Python 3.7 and still want to use the pybuilder package, 
     you can install the pre-release version (0.12) which is compatible with Python 3.7.
-    ```
-    pip3 install --pre pybuilder
-    ```
+
+        :::bash
+        pip3 install --pre pybuilder
 
 ## Difference between --ignore-installed and --force-reinstall
 

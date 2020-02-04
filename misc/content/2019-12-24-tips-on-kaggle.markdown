@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-25 20:25:17
+Date: 2020-02-04 10:37:03
 Author: Benjamin Du
 Slug: tips-on-kaggle
 Title: Tips on Kaggle
@@ -84,20 +84,34 @@ Cropping & Other Augmentations
 
 ### Start from Easy/Simple/Small Models
 
-## Kaggle API
+## Download Datasets from Kaggle Using Kaggle API
 
-### kaggle.json
+1. Install the Python package kaggle. 
 
-www.kaggle.com -> Your Account -> Create New API token. 
-This will download a ready-to-go JSON file to place in the direectory `$HOME/.kaggle`. 
+2. Generate a token file `kaggle.json` and place it into your directory `$HOME/.kaggle`.
+    www.kaggle.com -> Your Account -> Create New API token. 
+
+3. Make sure that `$HOME/.kaggle/kaggle.json` is readable only by you.
+
+        :::bash
+        chmod 600 $HOME/.kaggle/kaggle.json
+
+4. Search for datasets on Kaggle using the following command.
+
+        :::bash
+        kaggle datasets list -s [keywords]
+
+5. Download a dataset using the command below.
+
+        :::bash
+        kaggle datasets download user/dataset
 
 
-
-[Kaggle Public API](https://www.kaggle.com/docs/api)
-
-[Kaggle-API](https://github.com/Kaggle/kaggle-api)
-
+For more details, 
+please refer to [Kaggle Public API](https://www.kaggle.com/docs/api)
+and
 [Easy way to use Kaggle datasets in Google Colab](https://www.kaggle.com/general/51898)
+.
 
 ## Useful Datasets for Learning
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-04 08:33:14
+Date: 2020-02-04 10:38:39
 Author: Benjamin Du
 Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
@@ -102,3 +102,5 @@ https://github.com/NVIDIA/nvidia-docker#ubuntu-16041804-debian-jessiestretchbust
 [How Do I Install the Nvidia Driver](https://github.com/NVIDIA/nvidia-docker/wiki/Frequently-Asked-Questions#how-do-i-install-the-nvidia-driver).
 
 https://www.linuxuprising.com/2019/06/2-tools-for-monitoring-nvidia-gpus-on.html
+
+[How to measure GPU usage?](https://askubuntu.com/questions/387594/how-to-measure-gpu-usage)

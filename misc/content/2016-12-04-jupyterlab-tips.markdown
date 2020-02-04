@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-27 20:32:38
+Date: 2020-02-04 10:55:37
 Author: Ben Chuanlong Du
 Slug: jupyterlab-tips
 Title: JupyterLab Tips
@@ -30,6 +30,9 @@ http://arogozhnikov.github.io/2016/09/10/jupyter-features.html
 
 1. You might lose data if you edit a notebook in multiple places 
     (e.g., in different browsers or on different machines)!
+    If you do have to work on the same notebook across multiple machine at the same time,
+    a simple trick is to always close the tab of a notebook after you have updated it.
+    This ensures that you sync the changes of the notebook to JupyterLab server.
 
 2. If you have a notebook open on a machine 
     but have it edited before on another machine, 
@@ -41,6 +44,21 @@ http://arogozhnikov.github.io/2016/09/10/jupyter-features.html
     To avoid data loss,
     you'd better close notebook tabs and reopen them
     if you switch to another machine to use JupyterLab. 
+
+3. If you work across multiple machines, 
+    the resolution of a terminal might not be messed up when you use Vim in it.
+    A simple way to resolve the issue is create a new terminal.
+
+4. If a notebook is running and outputing results, 
+    disconnecting and reconnecting to it will lose future outputs
+    even if the notebook continues to run.
+    And what is even trickier is that the kernel icon won't display itself as busy,
+    which can confuse users that the notebook was iterrupted or has finished running.
+    This issue is being tracked at 
+    [issue 6003](https://github.com/jupyterlab/jupyterlab/issues/6003)
+    and
+    [issue 5382](https://github.com/jupyterlab/jupyterlab/issues/5382).
+    Be cautions about it before it is fixed.
 
 2. Shutdown a kernel will kill the kernel associated with a notebook
     but it won't affect content in the notebook if no code is running. 

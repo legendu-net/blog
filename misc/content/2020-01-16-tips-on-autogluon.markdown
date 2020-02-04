@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-17 11:34:52
+Date: 2020-02-04 13:56:11
 Author: Benjamin Du
 Slug: tips-on-autogluon
 Title: Tips on AutoGluon
@@ -23,6 +23,12 @@ if AutoGluon fails to infer the right problem type.
 
 1. AutoGluon auto saves all models into the specified output directory during training.
     And the save models can be load back using the `load` method of the corresponding predictor.
+
+
+2. GPU support in AutoGluon is for image/text but not Tabular data currently.
+    For more details,
+    please refer to
+    [issue 262](https://github.com/awslabs/autogluon/issues/262).
 
 ## Questions
 

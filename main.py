@@ -992,10 +992,9 @@ def _subparse_empty_posts(subparsers):
 def symlink():
     blog = Path.home() / ".local/bin/blog"
     main = Path(__file__).resolve()
-    if blog != main:
-        if blog.is_symlink():
-            blog.unlink()
-        blog.symlink_to(main)
+    if blog.is_symlink():
+        blog.unlink()
+    blog.symlink_to(main)
 
 
 if __name__ == '__main__':

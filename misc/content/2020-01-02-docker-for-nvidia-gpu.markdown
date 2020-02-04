@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-03 09:14:43
+Date: 2020-02-03 16:09:38
 Author: Benjamin Du
 Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
@@ -10,6 +10,8 @@ Tags: software, Docker, GPU, Nvidia
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+1. You can use the command `nvtop` to check the usage of GPU.
 
 1. Install Nvidia `cuda-drivers` (or equivalent) on your Linux machine
     following instructions at 

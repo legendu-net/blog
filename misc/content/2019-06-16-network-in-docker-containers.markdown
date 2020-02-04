@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-08-06 22:07:34
+Date: 2020-02-04 10:27:27
 Author: Benjamin Du
 Slug: network-in-docker-containers
 Title: Network in Docker Containers
@@ -15,7 +15,9 @@ It is not meant to readers but rather for convenient reference of the author and
   especially behind a corporate firewall.
   While the Linux way of handling DNS is to configure the file `/etc/resolv.conf` 
   (or via other related configuration files or tools),
-  the Docker way is to pass DNS servers to the container (will be added to `/etc/resolv.conf`) via the option `--dns`. 
+  the Docker way is to pass DNS servers via the option `--dns`
+  (which will be added to `/etc/resolv.conf`) 
+  when starting the Docker container.
   Multiple DNS servers can be passed using multiple `--dsn` options.
 
 
@@ -58,3 +60,5 @@ https://stackoverflow.com/questions/24151129/network-calls-fail-during-image-bui
 https://github.com/moby/moby/issues/26330
 
 https://stackoverflow.com/questions/44761246/temporary-failure-in-name-resolution-errno-3-with-docker?rq=1
+
+[Can't install pip packages inside a docker container with Ubuntu](https://stackoverflow.com/questions/28668180/cant-install-pip-packages-inside-a-docker-container-with-ubuntu)

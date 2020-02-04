@@ -12,6 +12,7 @@ except ImportError:
     sp.run('python3 -m pip install --user pelican', shell=True, check=True)
     import pelican
 from blog import Post, Blogger, BASE_DIR, HOME, EN, CN, MISC
+USER = getpass.getuser()
 EDITOR = 'code'
 VIM = 'nvim' if shutil.which('nvim') else 'vim'
 DASHES = '\n' + '-' * 100 + '\n'
@@ -797,7 +798,7 @@ def _subparse_publish(subparsers):
         '--https',
         dest='https',
         action='store_true',
-        default=(getpass.getuser() == "gitpod"),
+        default=(USER == "gitpod"),
         help='use the HTTPS protocol for Git.')
     subparser_publish.add_argument(
         '--no-push-github',
@@ -988,7 +989,17 @@ def _subparse_empty_posts(subparsers):
     subparser_status.set_defaults(func=empty_posts)
 
 
+def symlink():
+    blog = Path.home() / ".local/bin/blog"
+    main = Path(__file__).resolve()
+    if blog != main:
+        if blog.is_symlink():
+            blog.unlink()
+        blog.symlink_to(main)
+
+
 if __name__ == '__main__':
+    symlink()
     blogger = Blogger()
     args = parse_args()
     args.func(blogger, args)

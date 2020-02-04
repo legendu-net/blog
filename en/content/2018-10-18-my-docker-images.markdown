@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-31 23:01:57
+Date: 2020-02-03 16:07:51
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -476,6 +476,16 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
         - [dclong/dryscrape](https://hub.docker.com/r/dclong/dryscrape/)  
 
+        - [dclong/cuda](https://hub.docker.com/r/dclong/cuda/)  
+
+            - [dclong/cuda_b](https://hub.docker.com/r/dclong/cuda_b/)  
+
+                - [dclong/cuda-pytorch](https://hub.docker.com/r/dclong/cuda-pytorch/)  
+
+                - [dclong/cuda-autogluon](https://hub.docker.com/r/dclong/cuda-autogluon/)  
+
+                    - [dclong/cuda-ai](https://hub.docker.com/r/dclong/cuda-ai/)  
+
         - [dclong/jupyter](https://hub.docker.com/r/dclong/jupyter/)  
 
              > Jupyter Notebook: 6.0.2  
@@ -499,6 +509,16 @@ you can connect to the desktop environment in the Docker container using NoMachi
                         - [dclong/jupyterhub-ts](https://hub.docker.com/r/dclong/jupyterhub-ts/)  
 
                         - [dclong/jupyterhub-julia](https://hub.docker.com/r/dclong/jupyterhub-julia/)  
+
+                        - [dclong/jupyterhub-cuda](https://hub.docker.com/r/dclong/jupyterhub-cuda/)  
+
+                            - [dclong/jupyterhub-cuda_b](https://hub.docker.com/r/dclong/jupyterhub-cuda_b/)  
+
+                                - [dclong/jupyterhub-cuda-pytorch](https://hub.docker.com/r/dclong/jupyterhub-cuda-pytorch/)  
+
+                                - [dclong/jupyterhub-cuda-autoglugon](https://hub.docker.com/r/dclong/jupyterhub-cuda-autoglugon/)  
+
+                                    - [dclong/jupyterhub-cuda-ai](https://hub.docker.com/r/dclong/jupyterhub-cuda-ai/)  
 
                         - [dclong/jupyterhub-jdk](https://hub.docker.com/r/dclong/jupyterhub-jdk/)  
 

@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for GPU Computing
-Date: 2020-01-16 11:48:11
+Date: 2020-02-05 10:32:13
 Slug: gpu-tips
 Category: Programming
 Tags: tips, GPU, programming
@@ -94,17 +94,19 @@ https://devblogs.nvidia.com/numba-python-cuda-acceleration/
 
 https://github.com/harrism/numba_examples/blob/master/mandelbrot_numba.ipynb
 
+### Java
+
+- [aparapi](https://github.com/Syncleus/aparapi)
+
+- [jcuda](https://github.com/jcuda/jcuda)
+
+    Java bindings for CUDA.
+
 ## External Graphics Card
 
 https://www.pcworld.com/article/2984716/how-to-transform-your-laptop-into-a-gaming-powerhouse-with-an-external-graphics-card.html
 
 https://www.laptopmag.com/articles/best-egpus
-
-### Java
-
-- [jcuda](https://github.com/jcuda/jcuda)
-
-    Java bindings for CUDA.
 
 
 ## References

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-06 12:03:25
+Date: 2020-02-06 12:21:21
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
@@ -46,7 +46,9 @@ It is not meant to readers but rather for convenient reference of the author and
 
         spark = SparkSession.builder.appName('Test PySpark').enableHiveSupport().getOrCreate()
         sql = """
-                select * from some_table limit 100000
+                SELECT * 
+                FROM some_table 
+                TableSample 100000 Rows
             """
         spark.sql(sql).write.mode("overwrite").parquet("output")
 

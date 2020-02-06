@@ -9,7 +9,7 @@
     ["Aix", "AIX"], ["Aws", "AWS"], 
     ["Ibm", "IBM"], ["Cpp", "C++"], 
     ["Dns", "DNS"], ["Dsl", "DSL"], 
-    ["Gdb", "GDB"], ["Gnu", "GNU"], ["Gui", "GUI"], ["Gpu", "GPU"],
+    ["Gdb", "GDB"], ["Gnu", "GNU"], ["Gui", "GUI"], ["Gpu", "GPU"], ["Gpt", "GPT"],
     ["Ide", "IDE"], ["Iml", "IML"], 
     ["Jar", "JAR"], ["Jni", "JNI"], 
     ["Nlp", "NLP"], ["Npm", "npm"], ["Nfs", "NFS"], 

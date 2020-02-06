@@ -2,7 +2,7 @@ UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips About GPG
-Date: 2016-07-13 22:17:57
+Date: 2020-02-06 01:50:37
 Slug: gpg-tips
 Category: Software
 Tags: tips
@@ -12,9 +12,16 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
  
-```sh
-gpg -c file
-```
+1. Symmetric encryption (using passphrase).
+
+        :::bash
+        gpg -c file
+
+2. Decrypt a symmetric encrypted file.
+    You will be prompt to enter your passphrase.
+
+        :::bash
+        gpg file.gpg
 
 1. You can use the following command to encrypt a file as ascii armor.
 ```sh

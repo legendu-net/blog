@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-01-08 12:05:43
+Date: 2020-02-05 16:28:22
 Author: Benjamin Du
 Slug: the-bert-model-in-nlp
-Title: the Bert Model in NLP
+Title: The Bert Model in NLP
 Category: AI
 Tags: AI, machine learning, data science, BERT, Transformer
 
@@ -10,6 +10,22 @@ Tags: AI, machine learning, data science, BERT, Transformer
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+## Implementations
+
+[huggingface/transformers](https://github.com/huggingface/transformers)
+has PyTorch implementation of transfomer based models 
+(such as 
+[BERT](https://github.com/huggingface/transformers/blob/master/src/transformers/modeling_bert.py)
+and
+[DistilBERT](https://github.com/huggingface/transformers/blob/master/src/transformers/modeling_distilbert.py)
+).
+
+[TensorFlow Implementation of BERT with Pretrained Models](https://github.com/google-research/bert)
+
+## References
+
+https://arxiv.org/pdf/1810.04805.pdf
 
 https://medium.com/huggingface/multi-label-text-classification-using-bert-the-mighty-transformer-69714fa3fb3d
 

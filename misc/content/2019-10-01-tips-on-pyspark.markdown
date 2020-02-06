@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-05 09:52:34
+Date: 2020-02-06 12:03:25
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
@@ -45,7 +45,10 @@ It is not meant to readers but rather for convenient reference of the author and
         from pyspark.sql import SparkSession
 
         spark = SparkSession.builder.appName('Test PySpark').enableHiveSupport().getOrCreate()
-        spark.sql('select * from some_table limit 5').write.mode('overwrite').parquet('output')
+        sql = """
+                select * from some_table limit 100000
+            """
+        spark.sql(sql).write.mode("overwrite").parquet("output")
 
     Notice that I have prefixed an underscore to the name of the file.
     This is a simple but useful trick to avoid unintentional module conflictions in Python. 

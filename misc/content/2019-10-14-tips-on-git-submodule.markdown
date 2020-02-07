@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-14 01:17:22
+Date: 2020-02-06 16:55:29
 Author: Benjamin Du
 Slug: tips-on-git-submodule
 Title: Tips on Git Submodule
@@ -13,5 +13,6 @@ It is not meant to readers but rather for convenient reference of the author and
 
 
 
-git submodule init
-git submodule update --recursive --remote
+    :::bash
+    git submodule init
+    git submodule update --recursive --remote

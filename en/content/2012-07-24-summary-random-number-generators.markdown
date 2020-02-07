@@ -76,6 +76,6 @@ C++ implementations are available but I don't see a popular Java implementation 
 
 ### Rust 
 
-sfmt 
+[sfmt](https://lib.rs/crates/sfmt)
 
-mersenne_twister
+[mersenne_twister](https://lib.rs/crates/mersenne_twister)

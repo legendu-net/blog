@@ -73,3 +73,9 @@ C++ implementations are available but I don't see a popular Java implementation 
 
 1. Use the [random](https://docs.python.org/3/library/random.html) model.
     It is based on a Mersenne Twister random number generator.
+
+### Rust 
+
+sfmt 
+
+mersenne_twister

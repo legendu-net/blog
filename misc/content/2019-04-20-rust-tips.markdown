@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-07 11:14:36
+Date: 2020-02-07 11:28:45
 Author: Benjamin Du
 Slug: rust-tips
 Title: Rust Tips
@@ -9,6 +9,11 @@ Tags: programming, Rust, tips
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
+
+
+
+[Programming in Rust: the good, the bad, the ugly.](https://hackernoon.com/programming-in-rust-the-good-the-bad-the-ugly-d06f8d8b7738)
+summarizes good/bad/ugly things about Rust.
 **
 ## Rust IDE
 

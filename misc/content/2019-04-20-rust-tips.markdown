@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-31 11:44:51
+Date: 2020-02-06 17:19:12
 Author: Benjamin Du
 Slug: rust-tips
 Title: Rust Tips
@@ -10,6 +10,13 @@ Tags: programming, Rust, tips
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+## Rust IDE
+
+VSCode plus the Rust extenstion seems to be a good option.
+
+https://medium.com/cloud-native-the-gathering/whats-the-best-ide-for-developing-in-rust-5087d46006f5
+
+## Machine Learning
 
 http://www.arewelearningyet.com/
 

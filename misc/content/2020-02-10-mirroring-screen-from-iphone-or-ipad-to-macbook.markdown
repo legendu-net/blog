@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-02-10 09:31:14
+Date: 2020-02-10 10:09:20
 Author: Benjamin Du
 Slug: mirroring-screen-from-iphone-or-ipad-to-macbook
-Title: Mirroring Screen from iPhone Or iPad to Macbook
+Title: Mirroring Screen from iPhone or iPad to Macbook
 Category: OS
 Tags: OS, macOS, Apple, MacBook, iPhone, iPad, screen, mirror
 

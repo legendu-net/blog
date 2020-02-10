@@ -1,6 +1,8 @@
 [
     ["A", "a"], 
-    ["As", "as"], ["By", "by"], ["In", "in"], ["Of", "of"], ["To", "to"], ["On", "on"], ["Vs", "vs"], 
+    ["As", "as"], ["By", "by"], ["In", "in"], 
+    ["Of", "of"], ["Or", "or"], 
+    ["To", "to"], ["On", "on"], ["Vs", "vs"], 
     ["And", "and"], ["But", "but"], ["For", "for"], 
     ["The", "the"], 
     ["Jvm", "JVM"], 

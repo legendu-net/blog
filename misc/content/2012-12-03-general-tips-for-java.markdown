@@ -1,7 +1,6 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Title: General Tips for Java
-Date: 2016-11-20 19:19:03
+Date: 2020-02-10 10:01:08
 Slug: general-tips-for-java
 Author: Ben Chuanlong Du
 Category: Programming
@@ -10,14 +9,6 @@ Tags: tips, programming, Java
 ## Package Dependency Management
 
 1. It is suggested that you use gradle (instead of maven or sbt) for JVM projects.
-
-## JVM Profiler
-
-1. [VisualVM](https://plugins.jetbrains.com/plugin/7115-visualvm-launcher)
-    is a free JVM profiling tool. 
-    There is also a plugin 
-    [VisualVM Launcher](https://plugins.jetbrains.com/plugin/7115-visualvm-launcher)
-    which integrates it with IntelliJ IDEA.
 
 ## Containers
 

@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-02-10 09:41:56
+Date: 2020-02-10 09:59:52
 Author: Benjamin Du
 Slug: tips-on-virtualvm
-Title: Tips on Virtualvm
+Title: Tips on VirtualVM
 Category: Programming
 Tags: programming, VirtualVM, Java, performace, profiling
 

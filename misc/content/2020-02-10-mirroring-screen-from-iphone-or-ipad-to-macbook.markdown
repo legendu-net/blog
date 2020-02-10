@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-10 10:09:20
+Date: 2020-02-10 10:10:05
 Author: Benjamin Du
 Slug: mirroring-screen-from-iphone-or-ipad-to-macbook
 Title: Mirroring Screen from iPhone or iPad to Macbook
@@ -14,7 +14,7 @@ It is not meant to readers but rather for convenient reference of the author and
 
 https://www.youtube.com/watch?v=Zc41jJAhozc
 
-2. QuickTime
+## QuickTime
 
 ## Reflector 2
 

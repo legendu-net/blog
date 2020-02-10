@@ -1,6 +1,6 @@
 Status: published
 Title: General Tips for Java
-Date: 2020-02-10 10:01:08
+Date: 2020-02-10 10:07:24
 Slug: general-tips-for-java
 Author: Ben Chuanlong Du
 Category: Programming
@@ -8,22 +8,16 @@ Tags: tips, programming, Java
 
 ## Package Dependency Management
 
-1. It is suggested that you use gradle (instead of maven or sbt) for JVM projects.
+1. It is suggested that you use Gradle (instead of Maven or sbt) for JVM projects.
 
-## Containers
+## Collections
 
 1. You can use `Arrays.fill` to set a value to all elements of an array at once.
 
 
 ## Code Flow Control
 
-1. To jump out a single loop, 
-    you can use statement `break;`. 
-    However, this doesn't work if there're nest loops. 
-    To jump out nested loops,
-    you can modify the loop variables so that the conditions of all loops are violated.
-
-2.  There is not `goto` statement in Java, 
+1.  There is not `goto` statement in Java, 
     however you have several ways to make the program in Java jump to other place.
 
     - The `break` and `continue` statements allow you 

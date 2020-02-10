@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-07 20:48:27
+Date: 2020-02-09 15:14:50
 Author: Benjamin Du
 Slug: take-screenshot-in-python
 Title: Take Screenshots in Python
@@ -13,10 +13,13 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## Pillow
 
-PIL.ImageGrab.grab(bbox=(10, 10, 510, 510))
+    :::python
+    PIL.ImageGrab.grab(bbox=(10, 10, 510, 510))
+
+You can further crop the screenshot into smaller images using the `Image.crop`.
 
 ## PyQt5
 
+## References
 
-
-
+https://pillow.readthedocs.io/en/stable/reference/Image.html

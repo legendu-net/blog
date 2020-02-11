@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-01-08 12:50:25
+Date: 2020-02-11 15:58:32
 Author: Benjamin Du
 Slug: tips-on-lstm
-Title: Tips on Lstm
+Title: Tips on LSTM
 Category: AI
 Tags: AI, data science, machine learning, LSTM, RNN
 

@@ -1,8 +1,7 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Title: Tips About GPG
-Date: 2020-02-06 01:50:37
+Title: Tips on GPG
+Date: 2020-02-11 15:57:06
 Slug: gpg-tips
 Category: Software
 Tags: tips

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-03 09:42:59
+Date: 2020-02-11 11:26:10
 Author: Benjamin Du
 Slug: tips-on-lightgbm
 Title: Tips on LightGBM
@@ -33,6 +33,10 @@ It is not meant to readers but rather for convenient reference of the author and
 
     https://github.com/microsoft/LightGBM/tree/master/examples/parallel_learning
 
+
+[Parameters](https://lightgbm.readthedocs.io/en/latest/Parameters.html#parameters)
+[Metric Parameters](https://lightgbm.readthedocs.io/en/latest/Parameters.html#metric-parameters)
+
 ## Parameter Tuning
 
 https://sites.google.com/view/lauraepp/parameters
@@ -40,9 +44,12 @@ https://sites.google.com/view/lauraepp/parameters
 https://lightgbm.readthedocs.io/en/latest/Parameters.html
 
 ## GPU 
+
 https://lightgbm.readthedocs.io/en/latest/GPU-Tutorial.html
 
 ## References
+
+[LightGMB Benchmark](https://lightgbm.readthedocs.io/en/latest/Experiments.html)
 
 https://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.Dataset.html#lightgbm-dataset
 

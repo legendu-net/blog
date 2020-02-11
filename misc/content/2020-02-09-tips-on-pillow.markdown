@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-09 15:14:58
+Date: 2020-02-10 23:08:38
 Author: Benjamin Du
 Slug: tips-on-pillow
 Title: Tips on Pillow
@@ -12,8 +12,12 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 
+## References
+
 https://pillow.readthedocs.io/en/stable/reference/Image.html
 
 https://python-pillow.org/
 
 https://stackoverflow.com/questions/9983263/how-to-crop-an-image-using-pil
+
+https://pillow.readthedocs.io/en/stable/

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-12 10:36:25
+Date: 2020-02-12 14:33:03
 Author: Benjamin Du
 Slug: packaging-python-dependencies-for-pyspark-using-conda-pack
 Title: Packaging Python Dependencies for PySpark Using Conda-Pack
@@ -12,4 +12,9 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 
-https://github.com/conda/conda-pack/
+
+[Usage with Apache Spark on YARN](https://conda.github.io/conda-pack/spark.html)
+
+https://jcrist.github.io/skein/
+
+https://github.com/jcrist/skein/

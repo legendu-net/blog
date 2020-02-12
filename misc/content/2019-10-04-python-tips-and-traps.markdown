@@ -1,16 +1,10 @@
 Status: published
-Date: 2019-10-23 23:30:54
+Date: 2020-02-11 19:32:52
 Author: Benjamin Du
 Slug: python-tips-and-traps 
 Title: Python Tips and Traps
 Category: Programming
 Tags: programming, Python, tricks, traps, tips
-
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-It is not meant to readers but rather for convenient reference of the author and future improvement.
-**
-
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -117,6 +111,15 @@ The issue can be fixed by putting the ternary expression into parentheses or def
 7. `max(some_iterable, default=0)`
 
 8. `itertools.chain(iter1, iter2, ...)`
+
+## Issues and Solutions
+
+### Cannot Import an Installed Module
+
+I have met the issue that some packages cannot be imported even if they have been installed.
+The issue was due to file permissions (the installed Python packages are not readable).
+A simple fix (even not optimal) is to make these Python packages readable, 
+e.g., make the permissions `777` (sudo required).
 
 
 ## Referneces

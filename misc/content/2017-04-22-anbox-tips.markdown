@@ -1,6 +1,6 @@
 UUID: a1aa59dd-c335-4260-ae38-a013125a6099
 Status: published
-Date: 2017-04-23 00:00:03
+Date: 2020-02-12 10:16:57
 Author: Ben Chuanlong Du
 Slug: anbox-tips
 Title: AnBox Tips
@@ -15,9 +15,14 @@ but rather for convenient reference of the author and future improvement.
 **
 
 
-Unfortunately ARM-only apps are not supported in Anbox in a x86-based Linux OS at this time.
+1. AnBox cannot be run on macOS.
+    
+2. There is limited support of ARM-only app on x86-based Linux OS.
+    Some ARM-only apps might be able to run on x86-based Linux OS 
+    via libhoudini.
 
-[Anbox - Android in a Box](http://anbox.io/)
+
+## Installation
 
 ```bash
 sudo snap install --classic anbox-installer 
@@ -26,7 +31,13 @@ anbox-installer
 
 ## References
 
-
-https://anbox.io/
+[Anbox - Android in a Box](http://anbox.io/)
 
 https://medium.com/@xeroxism/install-anbox-and-run-android-apps-on-linux-36b665def84
+
+https://github.com/anbox/anbox/issues/119
+https://www.linuxuprising.com/2018/07/anbox-how-to-install-google-play-store.html
+https://magazine.odroid.com/article/linux-gaming-anbox-android-in-a-box/
+https://zhsj.me/blog/view/anbox-and-houdini
+https://github.com/geeks-r-us/anbox-playstore-installer/
+https://www.linuxuprising.com/2018/07/anbox-how-to-install-google-play-store.html

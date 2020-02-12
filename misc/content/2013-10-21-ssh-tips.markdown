@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: SSH Tips
-Date: 2019-10-20 10:29:13
+Date: 2020-02-11 17:04:47
 Slug: ssh-tips
 Category: Software
 Tags: tips, SSH, software, remote, Linux
@@ -29,7 +29,7 @@ It is not meant to readers but rather for convenient reference of the author and
         :::bash
         ssh -o StrictHostKeyChecking=no your_server
 
-    You can also turn of strickt host key checking permanently by adding the following line into `~/.ssh/know_hosts`.
+    You can also turn of strickt host key checking permanently by adding the following line into `~/.ssh/config`.
 
         StrictHostKeyChecking no
 

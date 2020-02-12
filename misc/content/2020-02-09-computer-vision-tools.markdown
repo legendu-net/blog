@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-11 10:35:30
+Date: 2020-02-12 14:11:33
 Author: Benjamin Du
 Slug: computer-vision-tools
 Title: Computer Vision Tools
@@ -17,6 +17,8 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## [DarkNet](https://pjreddie.com/darknet/) & [YOLO](https://arxiv.org/pdf/1506.02640.pdf)
 
+
+
 https://martinapugliese.github.io/recognise-objects-yolo/
 
 https://towardsdatascience.com/hands-on-machine-learning-example-real-time-object-detection-with-yolo-v2-ebdd8441c12a
@@ -24,3 +26,7 @@ https://towardsdatascience.com/hands-on-machine-learning-example-real-time-objec
 https://github.com/pjreddie/darknet
 
 https://github.com/ultralytics/yolov3
+
+[表情包生成器](https://github.com/xtyxtyx/sorry)
+
+[Nokia Message Generator](https://github.com/dcalsky/zzkia)

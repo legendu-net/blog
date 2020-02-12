@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-30 19:11:29
+Date: 2020-02-11 19:23:18
 Author: Ben Chuanlong Du
 Slug: tips-on-creating-docker-images
 Title: Tips on Creating Docker Images
@@ -56,3 +56,21 @@ but rather for convenient reference of the author and future improvement.
 
 4. by default ubuntu Docker image does not include the multiverse repository ..., manually include it if you need it ...
 
+## Git + SSH to Avoid Two-way Authentication Behind Corporate Firewall
+
+Sometimes, 
+you need to access an enterprise GitHub to build a Docker image. 
+The issue is that an enterprise GitHub often requires 2FA to visit.
+Fortunately,
+command-line access to GitHub using Git + SSH often does not require 2FA. 
+One possible way to access an enterprise GitHub 
+when building a Docker imagee is to copy your SSH private key into `/root/.ssh/` 
+for accessing GitHub repositories
+and then remove it after building the Docker image.
+In order to make SSH work without human intervention,
+you have to disable strict checking of SSH. 
+This can be done by having the following lines into the file `/root/.ssh/config`.
+
+    :::bash
+    Host *
+    StrictHostKeyChecking no

@@ -1,7 +1,7 @@
 UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Title: FFmpeg
-Date: 2016-07-12 23:21:30
+Date: 2020-02-11 01:01:43
 Tags: multimedia, Linux, video, audio
 Category: OS
 Slug: ffmpeg
@@ -18,3 +18,8 @@ It is not meant to readers but rather for convenient reference of the author and
 
 3. capture screen 
 
+## References
+
+[How to create a video from images with FFmpeg?](https://stackoverflow.com/questions/24961127/how-to-create-a-video-from-images-with-ffmpeg)
+
+[Convert video to images with FFmpeg in Linux](https://averagelinuxuser.com/convert-video-to-images-with-ffmpeg-in-linux/)

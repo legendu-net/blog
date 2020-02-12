@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-30 18:11:16
+Date: 2020-02-10 23:19:48
 Author: Benjamin Du
 Slug: python-for-desktop-applications
 Title: Python for Desktop Applications
@@ -16,6 +16,16 @@ It is not meant to readers but rather for convenient reference of the author and
 PyQt5
 
 PySide2
+
+## Simple Python Packages for GUI Applications
+
+[Gooey](https://github.com/chriskiehl/Gooey)
+turns (almost) any Python command line program 
+into a full GUI application with one line.
+
+[PySimpleGUI](https://github.com/PySimpleGUI/PySimpleGUI)
+creates custom layout GUI's simply.
+
 
 ## Solutions Based on Chromium/Electron
 

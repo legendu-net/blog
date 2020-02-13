@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-12 17:36:05
+Date: 2020-02-13 14:15:22
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
@@ -41,6 +41,7 @@ It is not meant to readers but rather for convenient reference of the author and
 
     If you use a conda-pack Python environment named `env.tar.gz`,
     you can submit a PySpark application using the following shell script.
+
         :::bash
         #!/bin/bash
 

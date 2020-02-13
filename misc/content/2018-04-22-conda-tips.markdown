@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-13 11:33:43
+Date: 2020-02-13 14:15:22
 Author: Ben Chuanlong Du
 Slug: conda-tips
 Title: Tips on Conda
@@ -74,6 +74,9 @@ The virtual environment can be packed
 ([conda-pack](https://conda.github.io/conda-pack/index.html) required) 
 into a `tar.gz` file 
 and be used on other machines with the same type of OS.
+Notice that all packages in a conda virtual environment 
+must be managed by conda (rather than pip)
+so that it can be packed by conda-pack.
 
     :::bash
     conda activate myenv

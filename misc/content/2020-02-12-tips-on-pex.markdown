@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-13 08:57:05
+Date: 2020-02-13 10:09:34
 Author: Benjamin Du
 Slug: tips-on-pex
 Title: Tips on pex
@@ -12,7 +12,9 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 
-1. Python with the same version as the one that generated the pex file
+1. pex to Python is like JAR to Java.
+
+2. Python with the same version as the one that generated the pex file
     need to be installed in on the machine to run the pex file.
     And the Python executable must be searchable by `/usr/bin/env`.
     It is kind of like that Java need to be installed on the machine to run a JAR application.
@@ -31,6 +33,27 @@ It is not meant to readers but rather for convenient reference of the author and
 > 1: numpy==1.18.1
 >    But this pex only contains:
 >      numpy-1.18.1-cp37-cp37m-macosx_10_9_x86_64.whl
+
+## pex vs conda-pack
+
+1. A pex file contain only Python packages but not a Python interpreger in it 
+    while a conda-pack environment has a Python interpreter as well,
+    so with the same Python packages a conda-pack environment is much larger than a pex file.
+
+2. A conda-pack environment is a `tar.gz` file and need to be decompressed before being used
+    while a pex file can be used directly.
+
+3. If a Python interpreter exists,
+    pex is a better option than conda-pack. 
+    However, 
+    conda-pack is the ONLY CHOICE if you need a specific version of Python interpreter 
+    which does not exist and you do not have permission to install one
+    (e.g., when you need to use a specific version of Python interpreter with an enterprise PySpark cluster). 
+    If the pex file or conda-pack environment needs to be distributed to machines on demand,
+    there are some overhead before running your application. 
+    With the same Python packages, 
+    a conda-pack environment has large overhead/latency than the pex file
+    as the conda-pack environment is usually much larger and need to be decompressed before being used.
 
 ## References
 

@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-02-12 14:33:08
+Date: 2020-02-12 15:18:30
 Author: Benjamin Du
 Slug: tips-on-conda-pack
-Title: Tips on Conda Pack
+Title: Tips on conda-pack
 Category: Programming
 Tags: programming, conda-pack, conda, dependency, virtual environment
 
@@ -12,6 +12,9 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 
+## References
+
+https://conda.github.io/conda-pack/cli.html
 
 https://github.com/conda/conda-pack/
 

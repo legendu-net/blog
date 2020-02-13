@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-13 10:36:13
+Date: 2020-02-13 10:41:38
 Author: Ben Chuanlong Du
 Slug: conda-tips
 Title: Tips on Conda
@@ -65,3 +65,5 @@ https://anaconda.org/legendu/sqlalchemy-teradata
 ## References
 
 https://conda.io/docs/user-guide/tutorials/build-pkgs-skeleton.html
+
+https://stackoverflow.com/questions/41060382/using-pip-to-install-packages-to-anaconda-environment

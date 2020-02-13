@@ -1,8 +1,8 @@
 Status: published
-Date: 2018-04-22 09:09:46
+Date: 2020-02-13 10:25:46
 Author: Ben Chuanlong Du
 Slug: conda-tips
-Title: Conda Tips
+Title: Tips on Conda
 Category: Programming
 Tags: programming, Python, conda, tips
 
@@ -22,6 +22,21 @@ but rather for convenient reference of the author and future improvement.
         sudo -E env "PATH=$PATH" <command> [arguments]
 
 2. By defaut, conda installs things into /opt/conda.
+
+## Conda Environment
+
+Create a conda virtual environment with Python 3.7, numpy, pandas and scikit-learn installed.
+    :::bash
+    conda create -y -n myenv python=3.7 numpy pandas scikit-learn
+
+The virtual environment can be packed 
+([conda-pack](https://conda.github.io/conda-pack/index.html) required) 
+into a `tar.gz` file 
+and be used on other machines with the same type of OS.
+
+    :::bash
+    conda activate myenv
+    conda pack -o myenv.tar.gz
 
 ## Administering a multi-user conda installation
 

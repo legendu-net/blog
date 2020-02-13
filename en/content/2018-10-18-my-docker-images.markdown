@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-03 16:07:51
+Date: 2020-02-12 22:18:07
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -571,6 +571,20 @@ you can connect to the desktop environment in the Docker container using NoMachi
             - [dclong/xubuntu-jdk](https://hub.docker.com/r/dclong/xubuntu-jdk/)  
                 - [dclong/xubuntu-scala](https://hub.docker.com/r/dclong/xubuntu-scala/)  
                     - [dclong/xubuntu-intellij](https://hub.docker.com/r/dclong/xubuntu-intellij/)  
+
+## Build my Docker Images
+
+Run the Python code below to build my Docker images.
+The python package [dsutil](https://github.com/dclong/dsutil) is required.
+
+    :::python
+    #!/usr/bin/env python3
+    from dsutil import docker
+
+    docker.build_images("dclong/conda")
+    docker.build_images("dclong/vscode-server")
+    docker.build_images("dclong/gitpod")
+    docker.build_images("dclong/jupyterhub-ai")
 
 ## Known Issues 
 

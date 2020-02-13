@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-10-31 11:32:13
+Date: 2020-02-12 22:18:07
 Author: Benjamin Du
 Slug: the-non-zero-exit-code-137-while-building-a-docker-image
-Title: the Non-Zero Exit Code 137 While Building a Docker Image
+Title: The Non-Zero Exit Code 137 While Building a Docker Image
 Category: Software
 Tags: software, Docker, exit code, 137, OOM, out-of-memory
 

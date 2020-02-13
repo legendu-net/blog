@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-02-12 12:45:30
+Date: 2020-02-12 22:14:28
 Author: Benjamin Du
 Slug: tips-on-pex
-Title: Tips on Pex
+Title: Tips on pex
 Category: Programming
 Tags: programming, Python, pex, dependency, virtual environment
 
@@ -31,3 +31,7 @@ It is not meant to readers but rather for convenient reference of the author and
 > 1: numpy==1.18.1
 >    But this pex only contains:
 >      numpy-1.18.1-cp37-cp37m-macosx_10_9_x86_64.whl
+
+## References
+
+https://punchplatform.com/2019/10/08/packaging-python/

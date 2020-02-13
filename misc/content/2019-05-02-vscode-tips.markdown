@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-28 12:12:15
+Date: 2020-02-13 12:16:47
 Author: Benjamin Du
 Slug: vscode-tips
 Title: Tips for Visual Studio Code
@@ -10,6 +10,10 @@ Tags: software, vscode, Visual Studio Code, tips, IDE
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+A MS brading/telementry/licensing free edition named 
+[vscodium](https://github.com/VSCodium/vscodium)
+is available.
 
 ## Useful Extensions
 

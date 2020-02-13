@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-04 10:40:55
+Date: 2020-02-13 11:28:52
 Author: Ben Chuanlong Du
 Slug: install-python-packages
 Title: Install Python Packages Using pip
@@ -224,6 +224,16 @@ https://github.com/pypa/pip/pull/6391
         pip3 install .
 
 4. `export LC_ALL=C` resolved an issues of pip3
+
+## Installation Location
+
+https://stackoverflow.com/questions/2915471/install-a-python-package-into-a-different-directory-using-pip
+
+https://stackoverflow.com/questions/29980798/where-does-pip-install-its-packages
+
+https://stackoverflow.com/questions/20952797/pip-installing-in-global-site-packages-instead-of-virtualenv
+
+https://stackoverflow.com/questions/20942982/virtualenv-pip-trying-to-install-packages-globally
 
 ## References
 

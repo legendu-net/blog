@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-02-26 23:41:04
+Date: 2020-02-13 11:27:14
 Slug: baidu-cloud-tips
 Title: Baidu Yun Tips
 Category: Internet
@@ -25,6 +25,8 @@ It is not meant to readers but rather for convenient reference of the author and
     So the suggestion is to stick with one of them.
 
 ## Alternatives
+
+https://github.com/Kyle-Kyle/baidudl
 
 https://github.com/iikira/BaiduPCS-Go
 

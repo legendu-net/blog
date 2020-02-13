@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-13 11:04:33
+Date: 2020-02-13 11:33:43
 Author: Ben Chuanlong Du
 Slug: conda-tips
 Title: Tips on Conda
@@ -25,6 +25,8 @@ but rather for convenient reference of the author and future improvement.
 
 ## Conda Environment
 
+https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
 ### Create a Conda Virtual Environment
 
 Create a conda virtual environment with Python 3.7, numpy, pandas and scikit-learn installed.
@@ -48,7 +50,18 @@ with the Python package `optimuspyspark` installed.
     pip install optimuspyspark
 
 Be careful though, 
-as the packages installed this way might not be packed when you use conda-pack ...
+as pip in a virtual environment sometimes installs packages into global location rather than your virtual environment. 
+This won't affect usage of your virtual environment locally, 
+generally speaking.
+However,
+if you want to package your virtual environemnt using conda-pack 
+and use it somewhere else,
+the Python packages installed outside the virtual environemnt won't be packed.
+Make sure to use `conda list -n env_name` 
+to check that the Python packages are installed into the virtual environment 
+before you pack it using `conda-pack`.
+If the issue appears, 
+you can always manually specify the installation location for `pip`.
 
 ### Activate a Conda Virtual Environment
 
@@ -89,3 +102,5 @@ https://anaconda.org/legendu/sqlalchemy-teradata
 https://conda.io/docs/user-guide/tutorials/build-pkgs-skeleton.html
 
 https://stackoverflow.com/questions/41060382/using-pip-to-install-packages-to-anaconda-environment
+
+https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html

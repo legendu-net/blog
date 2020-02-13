@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-06 13:52:46
+Date: 2020-02-12 17:36:05
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
@@ -18,26 +18,50 @@ It is not meant to readers but rather for convenient reference of the author and
 	[Launching Applications with spark-submit](https://spark.apache.org/docs/latest/submitting-applications.html#launching-applications-with-spark-submit).
     Below is an example of shell script for submitting a PySpark job using `spark-submit`.
 
-        :::Bash
+        :::bash
         #!/bin/bash
 
         /apache/spark2.3/bin/spark-submit \
-                --files "file:///apache/hive/conf/hive-site.xml,file:///apache/hadoop/etc/hadoop/ssl-client.xml,file:///apache/hadoop/etc/hadoop/hdfs-site.xml,file:///apache/hadoop/etc/hadoop/core-site.xml,file:///apache/hadoop/etc/hadoop/federation-mapping.xml" \
-                --master yarn \
-                --deploy-mode cluster \
-                --queue your_queue \
-                --num-executors 200 \
-                --executor-memory 10G \
-                --driver-memory 15G \
-                --executor-cores 4 \
-                --conf spark.yarn.maxAppAttempts=2 \
-                --conf spark.dynamicAllocation.enabled=true \
-                --conf spark.dynamicAllocation.maxExecutors=1000 \
-                --conf spark.network.timeout=300s \
-                --conf spark.executor.memoryOverhead=2G \
-                --conf spark.pyspark.driver.python=/usr/share/anaconda3/bin/python \
-                --conf spark.pyspark.python=/usr/share/anaconda3/bin/python \
-                /path/to/_pyspark.py
+            --files "file:///apache/hive/conf/hive-site.xml,file:///apache/hadoop/etc/hadoop/ssl-client.xml,file:///apache/hadoop/etc/hadoop/hdfs-site.xml,file:///apache/hadoop/etc/hadoop/core-site.xml,file:///apache/hadoop/etc/hadoop/federation-mapping.xml" \
+            --master yarn \
+            --deploy-mode cluster \
+            --queue YOUR_QUEUE \
+            --num-executors 200 \
+            --executor-memory 10G \
+            --driver-memory 15G \
+            --executor-cores 4 \
+            --conf spark.yarn.maxAppAttempts=2 \
+            --conf spark.dynamicAllocation.enabled=true \
+            --conf spark.dynamicAllocation.maxExecutors=1000 \
+            --conf spark.network.timeout=300s \
+            --conf spark.executor.memoryOverhead=2G \
+            --conf spark.pyspark.driver.python=/usr/share/anaconda3/bin/python \
+            --conf spark.pyspark.python=/usr/share/anaconda3/bin/python \
+            /path/to/_pyspark.py
+
+    If you use a conda-pack Python environment named `env.tar.gz`,
+    you can submit a PySpark application using the following shell script.
+        :::bash
+        #!/bin/bash
+
+        /apache/spark2.3/bin/spark-submit \
+            --files "file:///apache/hive/conf/hive-site.xml,file:///apache/hadoop/etc/hadoop/ssl-client.xml,file:///apache/hadoop/etc/hadoop/hdfs-site.xml,file:///apache/hadoop/etc/hadoop/core-site.xml,file:///apache/hadoop/etc/hadoop/federation-mapping.xml" \
+            --master yarn \
+            --deploy-mode cluster \
+            --queue YOUR_QUEUE \
+            --num-executors 200 \
+            --executor-memory 10G \
+            --driver-memory 15G \
+            --executor-cores 4 \
+            --conf spark.yarn.maxAppAttempts=2 \
+            --conf spark.dynamicAllocation.enabled=true \
+            --conf spark.dynamicAllocation.maxExecutors=1000 \
+            --conf spark.network.timeout=300s \
+            --conf spark.executor.memoryOverhead=2G \
+            --conf spark.pyspark.driver.python=./env/bin/python \
+            --conf spark.pyspark.python=./env/bin/python \
+            --archives env.tar.gz#env \
+            $1
 
     And below is a simple example of `_pyspark.py`.
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-13 10:41:38
+Date: 2020-02-13 11:04:33
 Author: Ben Chuanlong Du
 Slug: conda-tips
 Title: Tips on Conda
@@ -25,18 +25,12 @@ but rather for convenient reference of the author and future improvement.
 
 ## Conda Environment
 
+### Create a Conda Virtual Environment
+
 Create a conda virtual environment with Python 3.7, numpy, pandas and scikit-learn installed.
+
     :::bash
     conda create -n myenv python=3.7 numpy pandas scikit-learn
-
-The virtual environment can be packed 
-([conda-pack](https://conda.github.io/conda-pack/index.html) required) 
-into a `tar.gz` file 
-and be used on other machines with the same type of OS.
-
-    :::bash
-    conda activate myenv
-    conda pack -o myenv.tar.gz
 
 If you have issues creating a conda virtual environment 
 (e.g., due to package not found in the current conda channel),
@@ -47,12 +41,40 @@ For example,
 the below code creates a conda virtual environment 
 with the Python package `optimuspyspark` installed.
 
-:::bash
-conda create -n optimus
-conda activate optimus
-conda install pip
-pip install optimuspyspark
+    :::bash
+    conda create -n optimus
+    conda activate optimus
+    conda install pip
+    pip install optimuspyspark
 
+Be careful though, 
+as the packages installed this way might not be packed when you use conda-pack ...
+
+### Activate a Conda Virtual Environment
+
+    :::bash
+    conda activate myenv
+
+### Pack a Conda Virtual Environment
+
+The virtual environment can be packed 
+([conda-pack](https://conda.github.io/conda-pack/index.html) required) 
+into a `tar.gz` file 
+and be used on other machines with the same type of OS.
+
+    :::bash
+    conda activate myenv
+    conda pack -o myenv.tar.gz
+
+### Deactivate a Conda Environment
+
+    :::bash
+    conda deactivate myenv
+
+### Remove a Conda Environment
+
+    :::bash
+    conda env remove -n myenv
 
 ## Administering a multi-user conda installation
 

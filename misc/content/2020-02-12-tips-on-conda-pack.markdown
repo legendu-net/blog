@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-12 15:18:30
+Date: 2020-02-13 08:57:32
 Author: Benjamin Du
 Slug: tips-on-conda-pack
 Title: Tips on conda-pack
@@ -14,11 +14,9 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## References
 
-https://conda.github.io/conda-pack/cli.html
-
-https://github.com/conda/conda-pack/
-
 https://conda.github.io/conda-pack/
 
 https://conda.github.io/conda-pack/cli.html
+
+https://github.com/conda/conda-pack/
 

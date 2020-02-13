@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-12 22:14:28
+Date: 2020-02-13 08:57:05
 Author: Benjamin Du
 Slug: tips-on-pex
 Title: Tips on pex
@@ -33,5 +33,7 @@ It is not meant to readers but rather for convenient reference of the author and
 >      numpy-1.18.1-cp37-cp37m-macosx_10_9_x86_64.whl
 
 ## References
+
+https://github.com/pantsbuild/pex
 
 https://punchplatform.com/2019/10/08/packaging-python/

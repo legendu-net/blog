@@ -1,6 +1,5 @@
-UUID: 034312eb-e34c-430c-a68c-c3c9908b2e45
 Status: published
-Date: 2016-12-04 21:33:14
+Date: 2020-02-14 14:14:35
 Author: Ben Chuanlong Du
 Slug: auto-typing-tools
 Title: Auto Typing Tools
@@ -38,6 +37,7 @@ Text snippet for any GUI application.
 ## machanize
 
 ## Selenium
+https://hub.docker.com/u/selenium
 
 ## Sikuli
 

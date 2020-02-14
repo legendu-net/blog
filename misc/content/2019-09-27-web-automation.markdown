@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-09-27 11:05:17
+Date: 2020-02-14 14:14:35
 Author: Benjamin Du
 Slug: web-automation
 Title: Web Automation
@@ -13,7 +13,11 @@ It is not meant to readers but rather for convenient reference of the author and
 
 
 ## Selenium
+
 Selenium is a great web automation tool!
+
+[Here](https://hub.docker.com/u/selenium)
+are official Docker images for selenium.
 
 ## [Puppeteer](https://github.com/GoogleChrome/puppeteer)
 

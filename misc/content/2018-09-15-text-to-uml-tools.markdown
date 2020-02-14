@@ -1,9 +1,9 @@
 UUID: 0086a548-fb20-42e9-9c1f-319d3e84ffeb
 Status: published
-Date: 2018-09-15 15:23:34
+Date: 2020-02-14 14:12:02
 Author: Ben Chuanlong Du
 Slug: text-to-uml-tools
-Title: Text to Uml Tools
+Title: Text to UML Tools
 Category: Software
 Tags: software, tools, Text to UML, PlantUML
 
@@ -30,3 +30,8 @@ You can download the the reference guide at
 
 1. You can find more text UML tools in the article  
     [Text to UML tools – Fastest way to create your models](https://modeling-languages.com/text-uml-tools-complete-list/)
+
+## More UML Tools
+
+[Gaphor](https://github.com/gaphor/gaphor)
+is the simple UML tool.

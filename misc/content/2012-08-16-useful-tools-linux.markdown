@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-11-28 15:26:20
+Date: 2020-02-14 12:47:46
 Slug: useful-tools-linux
 Title: Useful Tools in Linux
 Category: OS
@@ -549,8 +549,6 @@ wajig install libgoo-canvas-perl shutter shutter
 
 1. 1. JustInMind Prototyper
 
-2. Ruby On Rails (RoR)
-
 4. Django
 
 3. Node.JS
@@ -558,8 +556,6 @@ wajig install libgoo-canvas-perl shutter shutter
 4. ActiveJDBC
 
 5. web2py
-
-3. SAS Stored Process (Web Application) and SAS Visual Analytics
 
 ## Software Host
 
@@ -592,4 +588,4 @@ https://www.apertium.org/index.eng.html?dir=eng-cat#translation
 ## Misc
 
 1. KeyMon: displays the mouse button or key being clicked/pressed,
-useful when you video tape your screen
+    useful when you video tape your screen

@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2020-02-14 12:47:46
+Date: 2020-02-15 09:27:42
 Slug: useful-tools-linux
 Title: Useful Tools in Linux
 Category: OS
@@ -405,23 +405,17 @@ wajig install libgoo-canvas-perl shutter shutter
 
 3. dd or cat
 
-### Video/Audio Player/Editing
+### Video/Audio Player
 
 1. vlc
-
-2. MPlayer, SMPlayer
-
-1. Kdenlive
-
-2. Lightworks
-
-3. ffmpeg
 
 4. HandBrake
 
 5. exiftool (command line multimedia meta data editor)
 
 6. Exiv2 (image meta data library and tools written in C++)
+
+### [Software for Editing Videos](http://www.legendu.net/misc/blog/software-for-editing-videos/)
 
 ### Audio
 

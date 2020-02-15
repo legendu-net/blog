@@ -1,16 +1,19 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
-Title: FFmpeg
-Date: 2020-02-11 01:01:43
-Tags: multimedia, Linux, video, audio
-Category: OS
-Slug: ffmpeg
+Date: 2020-02-15 09:27:42
+Title: Tips on FFmpeg
+Slug: ffmpeg-tips
+Category: Programming
+Tags: programming, multimedia, Linux, video, audio, image, FFmpeg
 Author: Ben Chuanlong Du
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+It is suggested that you use **OpenCV for Python** 
+(instead of FFmpeg) 
+to manipulate multimedia.
  
 1. extrac audio from video
 

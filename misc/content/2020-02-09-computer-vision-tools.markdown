@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-12 14:11:33
+Date: 2020-02-14 14:42:59
 Author: Benjamin Du
 Slug: computer-vision-tools
 Title: Computer Vision Tools
@@ -10,6 +10,8 @@ Tags: programming, computer vision, tesseract
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+## [OpenCV](https://github.com/opencv/opencv)
 
 ## [Pillow](https://github.com/python-pillow/Pillow)
 

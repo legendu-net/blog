@@ -1,23 +1,23 @@
 Status: published
-Date: 2020-02-14 14:42:59
+Date: 2020-02-15 09:35:02
 Author: Benjamin Du
 Slug: computer-vision-tools
 Title: Computer Vision Tools
 Category: Programming
-Tags: programming, computer vision, tesseract 
+Tags: programming, computer vision, CV, OpenCV, Pillow, tesseract DarkNet, YOLO
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-## [OpenCV](https://github.com/opencv/opencv)
+## [OpenCV](https://github.com/opencv/opencv)  | [OpenCV for Python](https://github.com/skvark/opencv-python)
 
 ## [Pillow](https://github.com/python-pillow/Pillow)
 
 ## [tesseract](https://github.com/tesseract-ocr/tesseract)
 
-## [DarkNet](https://pjreddie.com/darknet/) & [YOLO](https://arxiv.org/pdf/1506.02640.pdf)
+## [DarkNet](https://pjreddie.com/darknet/)  |  [YOLO](https://arxiv.org/pdf/1506.02640.pdf)
 
 
 

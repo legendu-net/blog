@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-02-14 17:11:34
+Date: 2020-02-15 09:32:10
 Author: Benjamin Du
 Slug: tips-on-opencv
-Title: Tips on Opencv
+Title: Tips on OpenCV
 Category: Programming
 Tags: programming, OpenCV, tips, computer vision, CV
 

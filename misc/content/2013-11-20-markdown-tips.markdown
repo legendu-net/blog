@@ -1,7 +1,7 @@
 Status: published
 Title: Markdown Tips
 Author: Ben Chuanlong Du
-Date: 2019-03-28 18:53:06
+Date: 2020-02-17 11:53:22
 Slug: markdown-tips
 Category: Programming
 Tags: programming, markdown, LaTeX, equation, tips
@@ -11,6 +11,9 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
  
+[TableConvert Online](https://tableconvert.com/)
+helps generating Markdown tables easily.
+
 1. There are 2 ways to include (other Markdown) files in a Markdown file. 
     The first way is to use the tool [markdown-include](https://github.com/sethen/markdown-include).
     Another way is to use the tool pandoc.

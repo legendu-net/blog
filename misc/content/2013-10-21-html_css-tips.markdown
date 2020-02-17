@@ -1,8 +1,7 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Title: Some Tips for HTML and CSS
-Date: 2015-02-24 13:33:13
+Date: 2020-02-17 11:54:35
 Slug: html_css-tips
 Category: Programming
 Tags: tips, HTML, CSS, web, programming
@@ -12,6 +11,9 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
  
+[TableConvert Online](https://tableconvert.com/)
+helps generating HTML tables easily.
+
 1. HTML is not case sensitive, 
     but it's suggested that you alway use lower case for tags.
 

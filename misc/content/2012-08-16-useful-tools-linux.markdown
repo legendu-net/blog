@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2020-02-15 09:27:42
+Date: 2020-02-17 11:42:15
 Slug: useful-tools-linux
 Title: Useful Tools in Linux
 Category: OS
@@ -196,11 +196,13 @@ to find software/tools for all kinds of purposes.
 ## Database Management System (DBMS)
 
 ### Relational DBMS
+
 1. MySQL
-    - MySQL Workbench
+
 2. SQLite (embedded database)
 
 ### Object/Document-oriented DBMS
+
 1. MongoDB
 4. CouchDB
 3. OrientDB (written in Java)
@@ -212,6 +214,7 @@ to find software/tools for all kinds of purposes.
 ## Daily Work Tools (Office Tools, etc.)
 
 ### Well Supported Printers
+
 1. HP
 2. Brother
 

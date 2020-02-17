@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-15 09:32:10
+Date: 2020-02-17 11:38:59
 Author: Benjamin Du
 Slug: tips-on-opencv
 Title: Tips on OpenCV
@@ -15,6 +15,10 @@ It is not meant to readers but rather for convenient reference of the author and
 
     :::bash
     pip3 install python3-opencv
+
+## Examples
+
+[Extract Images from Video Using OpenCV in Python](http://www.legendu.net/misc/blog/python-opencv-video-to-image/)
 
 ## References
 

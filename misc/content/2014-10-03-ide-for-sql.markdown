@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-06-25 23:47:10
+Date: 2020-02-17 11:41:17
 Author: Ben Chuanlong Du
 Slug: ide-for-sql
 Title: IDE for SQL
@@ -14,23 +14,23 @@ but rather for convenient reference of the author and future improvement.
 **
 
 
-## [ApexSQL](https://www.apexsql.com/)
+## [dbeaver](http://www.legendu.net/misc/blog/tips-for-dbeaver)
 
-ApexSQL is a nice and free SQL formatting tool for VisualStudio SQL Server.
+The best universal IDE for (almost all versions of) database.
 
 ## [DataGrip](https://www.jetbrains.com/datagrip/)
 
 DataGrip (from JetBrains) looks like a good one
-
-## [dbeaver](http://www.legendu.net/misc/blog/tips-for-dbeaver)
-
-The best universal IDE for (almost all versions of) database.
 
 ## DbVisualizer
 
 Both free and pro editions are available.
 Functionalities of the free is too limited. 
 It is suggested that you use dbeaver if you prefer a free SQL IDE.
+
+## [ApexSQL](https://www.apexsql.com/)
+
+ApexSQL is a nice and free SQL formatting tool for VisualStudio SQL Server.
 
 ## Teradata Studio
 

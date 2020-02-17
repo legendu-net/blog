@@ -1,7 +1,6 @@
-UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
 Title: Read CPU Temperature in Linux
-Date: 2012-05-19 00:00:00
+Date: 2020-02-17 11:24:31
 Tags: modprobe, sensors, CPU, Linux, temperature
 Category: Linux
 Slug: linux-read-cpu-temperature
@@ -11,10 +10,12 @@ Author: Ben Chuanlong Du
 
 First you have to install package "lm-sensors". 
 
+    :::bash
     wajig install lm-sensors
 
 To detect the cpu temperature, type the following command.
 
+    :::bash
     modprobe coretemp
     sensors
 

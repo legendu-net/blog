@@ -1,19 +1,21 @@
 Status: published
-Date: 2019-03-11 23:07:13
+Date: 2020-02-17 13:12:30
 Author: Benjamin Du
 Slug: python-build-tools
 Title: Python Build Tools
 Category: Programming
-Tags: programming, Python, build tools
+Tags: programming, Python, building tools, dependency managment, packaging
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-poetry, pybuilder and pydoit seem to be good ones.
+## [poetry](https://github.com/sdispater/poetry)
+[poetry](https://github.com/sdispater/poetry)
+is the best dependency management/packaging tool for Python
+and is widely adopted.
 
-## [sdispater/poetry](https://github.com/sdispater/poetry)
 
 ## [pybuilder/pybuilder](https://github.com/pybuilder/pybuilder)
 

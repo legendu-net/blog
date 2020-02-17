@@ -1,8 +1,8 @@
 Status: published
-Date: 2019-05-12 11:12:42
+Date: 2020-02-17 13:12:30
 Author: Benjamin Du
 Slug: pyqt5-tips
-Title: PyQt5 Tips
+Title: Tips on PyQt5
 Category: Programming
 Tags: programming, PyQt5, GUI, Python, Qt5
 

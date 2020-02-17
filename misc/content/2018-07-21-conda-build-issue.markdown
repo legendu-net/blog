@@ -1,10 +1,10 @@
 Status: published
-Date: 2018-07-21 12:19:14
+Date: 2020-02-17 13:06:32
 Author: Ben Chuanlong Du
 Slug: conda-build-issue
 Title: Conda Build Issue
 Category: Programming
-Tags: programming, Anaconda, Python, conda build, sqlalchemy-teradata
+Tags: programming, Anaconda, Python, conda build, sqlalchemy-teradata, conda
 
 **
 Things on this page are

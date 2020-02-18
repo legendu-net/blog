@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-15 09:35:02
+Date: 2020-02-18 10:20:33
 Author: Benjamin Du
 Slug: computer-vision-tools
 Title: Computer Vision Tools
@@ -14,6 +14,8 @@ It is not meant to readers but rather for convenient reference of the author and
 ## [OpenCV](https://github.com/opencv/opencv)  | [OpenCV for Python](https://github.com/skvark/opencv-python)
 
 ## [Pillow](https://github.com/python-pillow/Pillow)
+
+## [scikit-image](https://scikit-image.org/)
 
 ## [tesseract](https://github.com/tesseract-ocr/tesseract)
 

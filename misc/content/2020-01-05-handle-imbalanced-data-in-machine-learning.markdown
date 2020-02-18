@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-06 11:01:19
+Date: 2020-02-18 10:40:49
 Author: Benjamin Du
 Slug: handle-imbalanced-data-in-machine-learning
 Title: Handle Imbalanced Data in Machine Learning
@@ -10,6 +10,9 @@ Tags: AI, data science, machine learning, imbalanced data
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+[scikit-learn-contrib/imbalanced-learn](https://github.com/scikit-learn-contrib/imbalanced-learn)
+is a Python Package to Tackle the Curse of Imbalanced Datasets in Machine Learning.
 
 ## Type of Imbalanced Data
 
@@ -125,8 +128,6 @@ identify anomalies in data (by learning random forests)
 
 
 
-
-[scikit-learn-contrib/imbalanced-learn](https://github.com/scikit-learn-contrib/imbalanced-learn)
 
 ## References
 

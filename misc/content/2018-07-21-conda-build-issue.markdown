@@ -1,9 +1,5 @@
 Status: published
-<<<<<<< HEAD
-Date: 2020-02-18 11:35:41
-=======
-Date: 2020-02-18 10:59:19
->>>>>>> a76ddf143b9cd38a5a163e3202682eefba169a95
+Date: 2020-02-18 11:55:27
 Author: Ben Chuanlong Du
 Slug: conda-build-issue
 Title: Conda Build Issue

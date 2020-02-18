@@ -10,6 +10,7 @@
     ["3d", "3D"], ["Id", "ID"], ["Io", "IO"], ["Js", "JS"], ["Ms", "MS"], ["Os", "OS"], ["Us", "US"],
     ["Aix", "AIX"], ["Aws", "AWS"], ["Api", "API"], 
     ["Ibm", "IBM"], ["Cpp", "C++"], 
+    ["Cpu", "CPU"], 
     ["Dns", "DNS"], ["Dsl", "DSL"], 
     ["Gdb", "GDB"], ["Gnu", "GNU"], ["Gui", "GUI"], ["Gpu", "GPU"], ["Gpt", "GPT"],
     ["Ide", "IDE"], ["Iml", "IML"], 

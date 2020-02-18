@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-02-17 11:44:26
+Date: 2020-02-18 11:56:57
 Author: Benjamin Du
 Slug: sort-top-by-cpu-or-memory-usage
-Title: Sort top by Cpu or Memory Usage
+Title: Sort top by CPU or Memory Usage
 Category: OS
 Tags: OS, Linux, top, macOS, top, CPU, memory
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-17 16:11:27
+Date: 2020-02-18 10:47:16
 Author: Ben Chuanlong Du
 Slug: conda-build-issue
 Title: Conda Build Issue
@@ -19,9 +19,10 @@ There are a few related issues:
 [issues/2790](https://github.com/conda/conda-build/issues/2790),
 [issues/2826](https://github.com/conda/conda-build/issues/2826).
 It seems that the recipe uses an outdated URL.
-Change the URL to the following updated one resolves the issue.
+Change the URL to 
+[this one](https://files.pythonhosted.org/packages/13/ba/bd5ebedd251630a822cfa2ad819caa99f6b494726aa05c8ef69bbb39330e/sqlalchemy_teradata-0.1.0.dev0.tar.gz)
+resolves the issue.
 
-https://files.pythonhosted.org/packages/13/ba/bd5ebedd251630a822cfa2ad819caa99f6b494726aa05c8ef69bbb39330e/sqlalchemy_teradata-0.1.0.dev0.tar.gz
 
 
 ## Example

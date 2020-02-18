@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-18 10:47:16
+Date: 2020-02-18 10:59:19
 Author: Ben Chuanlong Du
 Slug: conda-build-issue
 Title: Conda Build Issue
@@ -32,6 +32,10 @@ https://docs.conda.io/projects/conda-build/en/latest/user-guide/tutorials/buildi
 https://github.com/conda/conda-recipes
 
 ## References
+
+https://www.anaconda.com/patching-source-code-to-conda-build-recipes/
+
+https://docs.conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs-skeleton.html
 
 https://docs.conda.io/projects/conda-build/en/latest/concepts/recipe.html
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-24 14:22:45
+Date: 2020-02-18 15:12:37
 Author: Benjamin Du
 Slug: tips-on-featuretools
 Title: Tips on FeatureTools
@@ -10,6 +10,8 @@ Tags: AI, data science, machine learning, feature, FeatureTools
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+https://medium.com/dataexplorations/tool-review-can-featuretools-simplify-the-process-of-feature-engineering-5d165100b0c3
 
 https://github.com/FeatureLabs/predict-restaurant-rating/blob/master/predict-restaurant-rating.ipynb
 

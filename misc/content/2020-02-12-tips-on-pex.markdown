@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-18 16:53:05
+Date: 2020-02-19 01:30:10
 Author: Benjamin Du
 Slug: tips-on-pex
 Title: Tips on pex
@@ -28,13 +28,24 @@ It is not meant to readers but rather for convenient reference of the author and
     You will get the following error message 
     if you try to run the pex environment (generated on macOS) in a Linux OS.
 
-3. You can specify the version of Python interpreter 
-    using the option `--python-shebang` and/or the PEX_PYTHON environment variable. 
-    The `--python-shebang` option allows you to specify an explicit shebang line 
-    (e.g. --python-shebang="/usr/bin/env python3") 
-    and the `PEX_PYTHON` environment variable allows you to specify an explicit Python 
-    (e.g. PEX_PYTHON=python3.4) 
+3. If theree are multiple versions of Python installed in your system,
+    you use the option `--python` to specify the Python interpreter 
+    (e.g., `--python=python3.7`)
+    to use when building a pex environment file.
+    The specified Python interpreter is written into the shebang 
+    (e.g., `#!/usr/bin/env python3.7`) 
+    for running the built pex environment file.
+    There are 2 ways to customize thee shebang used for running the built pex environment file.
+    The first way is via the option `--python-shebang` at BUILDING time
+    which allows you to specify an explicit shebang line
+    (e.g. `--python-shebang=/usr/share/anaconda3/bin/python`).
+    The second way is via the `PEX_PYTHON` environment variable at RUN time
+    which allows you to specify an explicit Python 
+    (e.g. `PEX_PYTHON=python3`) 
     even if the pex file says something else.
+    It is suggested that you use the environment variable `PEX_PYTHON`
+    to control the Python interpreter to run the PEX environment file
+    as it is more flexible.
 
 4. It is suggested that you turn on verbosity mode 
     using the option `-v` 

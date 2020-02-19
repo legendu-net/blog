@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-19 01:38:08
+Date: 2020-02-19 01:43:10
 Author: Benjamin Du
 Slug: packaging-python-dependencies-for-pyspark-using-pex
 Title: Packaging Python Dependencies for PySpark Using Pex
@@ -9,7 +9,31 @@ Tags: programming, PySpark, Python, dependency, packaging, pex
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
-**
+
+
+    :::bash
+    #!/bin/bash
+
+    /apache/spark2.3/bin/spark-submit \
+        --files "file:///apache/hive/conf/hive-site.xml,file:///apache/hadoop/etc/hadoop/ssl-client.xml,file:///apache/hadoop/etc/hadoop/hdfs-site.xml,file:///apache/hadoop/etc/hadoop/core-site.xml,file:///apache/hadoop/etc/hadoop/federation-mapping.xml" \
+        --master yarn \
+        --deploy-mode cluster \
+        --queue YOUR_QUEUE \
+        --num-executors 200 \
+        --executor-memory 10G \
+        --driver-memory 15G \
+        --executor-cores 4 \
+        --conf spark.yarn.maxAppAttempts=2 \
+        --conf spark.dynamicAllocation.enabled=true \
+        --conf spark.dynamicAllocation.maxExecutors=1000 \
+        --conf spark.network.timeout=300s \
+        --conf spark.executor.memoryOverhead=2G \
+        --conf spark.pyspark.driver.python=./env.pex \
+        --conf spark.pyspark.python=./env.pex \
+        --conf spark.executorEnv.PEX_ROOT=./tmp \
+        --files env.pex \
+        $1
+
 
 By default,
 the pex root directory 
@@ -61,6 +85,13 @@ The details instructions of the hacking way are listed below.
     > Py4JError: An error occurred while calling None.org.apache.spark.api.python.PythonAccumulatorV2. Trace:
     > py4j.Py4JException: Constructor org.apache.spark.api.python.PythonAccumulatorV2([class java.lang.String, class java.lang.Integer, class java.lang.String]) does not exist
 
+
+If you found this to be too much hassle
+or if you do not mind of the higher overhead/latency,
+conda-pack is a better option to use with PySpark.
+Please refer to
+[Packaging Python Dependencies for PySpark Using Conda-Pack](http://www.legendu.net/misc/blog/packaging-python-dependencies-for-pyspark-using-conda-pack/)
+for more details on how to use conda-pack with PySpark.
 
 ## References
 

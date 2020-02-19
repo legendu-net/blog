@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-19 08:29:18
+Date: 2020-02-19 10:12:32
 Author: Benjamin Du
 Slug: tips-on-pex
 Title: Tips on pex
@@ -62,18 +62,18 @@ It is not meant to readers but rather for convenient reference of the author and
 1. Start a Python Docker image with the right version of Python interpreter installed.
     For example,
 
-    :::bash
-    docker run -it -v $(pwd):/workdir python:3.5-buster /bin/bash
+        :::bash
+        docker run -it -v $(pwd):/workdir python:3.5-buster /bin/bash
 
 2. Install pex.
 
-    :::bash
-    pip3 install pex
+        :::bash
+        pip3 install pex
 
 3. Build a pex environment file.
 
-    :::bash
-    pex --python=python3 -v pyspark findspark -o env.pex
+        :::bash
+        pex --python=python3 -v pyspark findspark -o env.pex
 
 ## pex vs conda-pack
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-18 16:15:19
+Date: 2020-02-18 16:53:05
 Author: Benjamin Du
 Slug: tips-on-pex
 Title: Tips on pex
@@ -35,6 +35,10 @@ It is not meant to readers but rather for convenient reference of the author and
     and the `PEX_PYTHON` environment variable allows you to specify an explicit Python 
     (e.g. PEX_PYTHON=python3.4) 
     even if the pex file says something else.
+
+4. It is suggested that you turn on verbosity mode 
+    using the option `-v` 
+    (can be specified multiple times, e.g., `-vvv` to increase verbosity).
 
 > root@013f556f0076:/workdir# ./my_virtualenv.pex 
 > Failed to execute PEX file. Needed manylinux2014_x86_64-cp-37-cp37m compatible dependencies for:

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-13 10:09:34
+Date: 2020-02-18 16:15:19
 Author: Benjamin Du
 Slug: tips-on-pex
 Title: Tips on pex
@@ -27,6 +27,14 @@ It is not meant to readers but rather for convenient reference of the author and
     it won't run on a Linux OS.
     You will get the following error message 
     if you try to run the pex environment (generated on macOS) in a Linux OS.
+
+3. You can specify the version of Python interpreter 
+    using the option `--python-shebang` and/or the PEX_PYTHON environment variable. 
+    The `--python-shebang` option allows you to specify an explicit shebang line 
+    (e.g. --python-shebang="/usr/bin/env python3") 
+    and the `PEX_PYTHON` environment variable allows you to specify an explicit Python 
+    (e.g. PEX_PYTHON=python3.4) 
+    even if the pex file says something else.
 
 > root@013f556f0076:/workdir# ./my_virtualenv.pex 
 > Failed to execute PEX file. Needed manylinux2014_x86_64-cp-37-cp37m compatible dependencies for:

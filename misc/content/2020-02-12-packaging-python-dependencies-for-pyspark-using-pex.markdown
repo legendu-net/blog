@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-19 01:52:50
+Date: 2020-02-19 10:11:03
 Author: Benjamin Du
 Slug: packaging-python-dependencies-for-pyspark-using-pex
 Title: Packaging Python Dependencies for PySpark Using Pex
@@ -81,7 +81,7 @@ The details instructions of the hacking way are listed below.
 
         :::python
         import findspark
-        findspark.init("/hadoop/spark")
+        findspark.init("/apache/spark")
 
     For more details, 
     please refer to 

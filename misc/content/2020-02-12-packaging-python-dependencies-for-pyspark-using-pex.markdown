@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-19 01:30:10
+Date: 2020-02-19 01:38:08
 Author: Benjamin Du
 Slug: packaging-python-dependencies-for-pyspark-using-pex
 Title: Packaging Python Dependencies for PySpark Using Pex
@@ -10,12 +10,6 @@ Tags: programming, PySpark, Python, dependency, packaging, pex
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
-
-pip3 install git+https://github.com/dclong/pex
-
-https://github.com/pantsbuild/pex
-
-https://medium.com/criteo-labs/packaging-code-with-pex-a-pyspark-example-9057f9f144f3
 
 By default,
 the pex root directory 
@@ -51,4 +45,28 @@ The details instructions of the hacking way are listed below.
 3. Now you can use the `pex` comamnd to build pex environment files as usual. 
     The built pex environment files use `./tmp` as thee pex root directory by default.
 
+4. If you run into the following Py4JError,
+    then either set the environment variable PYTHONPATH (Python path in Spark),
+    or use `findspark` to locate Spark in your Python code.
+
+        :::python
+        import findspark
+        findspark.init("/hadoop/spark")
+
+    For more details, 
+    please refer to 
+    [Run pyspark scripts with python3 instead of pyspark](https://hang-hu.github.io/spark/2018/10/31/Run-pyspark-scripts-with-python3-instead-of-pyspark.html)
+    .
+
+    > Py4JError: An error occurred while calling None.org.apache.spark.api.python.PythonAccumulatorV2. Trace:
+    > py4j.Py4JException: Constructor org.apache.spark.api.python.PythonAccumulatorV2([class java.lang.String, class java.lang.Integer, class java.lang.String]) does not exist
+
+
+## References
+
+https://github.com/pantsbuild/pex
+
+https://medium.com/criteo-labs/packaging-code-with-pex-a-pyspark-example-9057f9f144f3
+
+[Run pyspark scripts with python3 instead of pyspark](https://hang-hu.github.io/spark/2018/10/31/Run-pyspark-scripts-with-python3-instead-of-pyspark.html)
 

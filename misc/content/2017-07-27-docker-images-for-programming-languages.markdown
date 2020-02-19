@@ -1,11 +1,10 @@
-UUID: 0a3ff37a-9bc9-4d70-802d-4c518b2c3fe3
 Status: published
-Date: 2017-07-27 12:24:53
+Date: 2020-02-18 16:46:42
 Author: Ben Chuanlong Du
 Slug: docker-images-for-programming-languages
 Title: Docker Images for Programming Languages
 Category: Programming
-Tags: programming
+Tags: programming, Docker, Python, Scala
 
 **
 Things on this page are
@@ -15,13 +14,38 @@ but rather for convenient reference of the author and future improvement.
 **
 
 
-### Python 
+## Python 
 
-1. [continuumio/anaconda](https://hub.docker.com/r/continuumio/anaconda/)
+### [continuumio/miniconda3](https://hub.docker.com/r/continuumio/miniconda3)
 
-Anaconda Python distribution.
+- It is hard to figure out the version of Python from the version of the Docker image.
 
-### Scala
+### [continuumio/anaconda3](https://hub.docker.com/r/continuumio/anaconda3/)
+
+- It is hard to figure out the version of Python from the version of the Docker image.
+
+### [Python](https://hub.docker.com/_/python)
+
+- Different versions of Python with the Debian Linux OS in Docker image.
+- Easy to figure out the version of Python from the version of the Docker image.
+    It is perticularly good if you need a specific (especially old) version of Python. 
+
+### [dclong/python](https://hub.docker.com/r/dclong/python)
+
+- Python 3.7 with Ubuntu 19.04 in Docker.
+
+- Extra useful Python packages 
+    (e.g., [xinstall](https://github.com/dclong/xinstall),
+    mypy, pylint, yapf, pytest and ipython)
+    installed.
+
+- Extra essentiall tools (SSH, Git, Wajig, sudo etc.) installed.
+
+- Ready for development and serve as the ancester image for 
+    [dclong/jupyterhub-ds](https://github.com/dclong/docker-jupyterhub-ds)
+
+
+## Scala
 
 http://www.slideshare.net/marcuslonnberg/ship-your-scala-code-often-and-easy-with-docker
 

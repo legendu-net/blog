@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-19 15:50:10
+Date: 2020-02-19 15:56:43
 Author: Benjamin Du
 Slug: Use-tablesample-in-sql
 Title: Use TableSample in SQL
@@ -10,6 +10,9 @@ Tags: programming, SQL, Spark, Spark SQL, PostgreSQL, TableSample
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+The limit clause (or the method `DataFrame.limit` if you are using Spark)
+is a better alternative if randomness is not critical.
 
 ## PostgreSQL
 

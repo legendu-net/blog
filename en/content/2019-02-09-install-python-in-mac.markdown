@@ -1,10 +1,14 @@
 Status: published
-Date: 2019-05-24 01:46:40
+Date: 2020-02-19 10:18:07
 Author: Benjamin Du
 Slug: install-python-in-mac
 Title: Install Python in Mac
 Category: Software
 Tags: software, install, Python, macOS
+
+
+
+
 There are a few ways to install Python in Mac. 
 
 1. Install system-wide via the official Python installation package.
@@ -15,6 +19,11 @@ There are a few ways to install Python in Mac.
 
 A few comments about different ways of installation.
 
+1. Avoid installing multiple versions of Python in your system. 
+    It usually brings more troubles than conveniences.
+    Docker is usually a much better option 
+    when you need different versions of Python.
+    
 1. Anaconda and Homebrew installs Python locally rather than system-wide.
   You have to install Python using an official installation package manually 
   (downloading the installation package and double click to install)

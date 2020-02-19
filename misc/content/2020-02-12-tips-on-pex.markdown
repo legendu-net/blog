@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-19 01:30:10
+Date: 2020-02-19 08:29:18
 Author: Benjamin Du
 Slug: tips-on-pex
 Title: Tips on pex
@@ -28,6 +28,12 @@ It is not meant to readers but rather for convenient reference of the author and
     You will get the following error message 
     if you try to run the pex environment (generated on macOS) in a Linux OS.
 
+    > root@013f556f0076:/workdir# ./my_virtualenv.pex 
+    > Failed to execute PEX file. Needed manylinux2014_x86_64-cp-37-cp37m compatible dependencies for:
+    > 1: numpy==1.18.1
+    >    But this pex only contains:
+    >      numpy-1.18.1-cp37-cp37m-macosx_10_9_x86_64.whl
+
 3. If theree are multiple versions of Python installed in your system,
     you use the option `--python` to specify the Python interpreter 
     (e.g., `--python=python3.7`)
@@ -51,11 +57,23 @@ It is not meant to readers but rather for convenient reference of the author and
     using the option `-v` 
     (can be specified multiple times, e.g., `-vvv` to increase verbosity).
 
-> root@013f556f0076:/workdir# ./my_virtualenv.pex 
-> Failed to execute PEX file. Needed manylinux2014_x86_64-cp-37-cp37m compatible dependencies for:
-> 1: numpy==1.18.1
->    But this pex only contains:
->      numpy-1.18.1-cp37-cp37m-macosx_10_9_x86_64.whl
+## Steps to Build a pex Environment File
+
+1. Start a Python Docker image with the right version of Python interpreter installed.
+    For example,
+
+    :::bash
+    docker run -it -v $(pwd):/workdir python:3.5-buster /bin/bash
+
+2. Install pex.
+
+    :::bash
+    pip3 install pex
+
+3. Build a pex environment file.
+
+    :::bash
+    pex --python=python3 -v pyspark findspark -o env.pex
 
 ## pex vs conda-pack
 

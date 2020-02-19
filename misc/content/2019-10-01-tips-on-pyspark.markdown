@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-13 14:15:22
+Date: 2020-02-19 15:54:33
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
@@ -68,6 +68,7 @@ It is not meant to readers but rather for convenient reference of the author and
 
         :::Python
         from pyspark.sql import SparkSession
+        from pyspark.sql.functions import *
 
         spark = SparkSession.builder.appName('Test PySpark').enableHiveSupport().getOrCreate()
         sql = """

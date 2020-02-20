@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-18 15:13:13
+Date: 2020-02-20 10:01:27
 Author: Ben Chuanlong Du
 Slug: high-performance-computing-in-python
 Title: High Performance Computing in Python
@@ -23,6 +23,26 @@ keep in mind that some of the tips might be outdated.
 
 1. [cprofile](https://docs.python.org/3/library/profile.html#module-cProfile)
 
+## [Apache Ray](https://github.com/ray-project/ray)
+
+A fast and simple framework for building and running distributed applications.
+
+Ray does not handle large data well (as of 2018/05/28).
+Please refer to 
+[the discussion](https://groups.google.com/forum/#!topic/ray-dev/8E03APnG_zg)
+for details.
+
+https://ray.readthedocs.io/en/latest/serialization.html
+
+https://ray.readthedocs.io/en/latest/configure.html#using-the-object-store-with-huge-pages
+
+https://arrow.apache.org/blog/2017/08/08/plasma-in-memory-object-store/
+
+[Comparison of Ray to Dask](https://github.com/ray-project/ray/issues/642)
+
+## [pai](https://github.com/microsoft/pai)
+Resource scheduling and cluster management for AI.
+
 ## [Horovod](https://github.com/horovod/horovod)
 
 A framework for distributed training (on GPU) 
@@ -42,23 +62,6 @@ Automated interactive infrastructure and database for computational science.
 
 It sems to me that mars focus on tensor computation.
 Mars is a tensor-based unified framework for large-scale data computation which scales Numpy, Pandas and Scikit-learn. 
-
-## [Apache Ray](https://github.com/ray-project/ray)
-
-A fast and simple framework for building and running distributed applications.
-
-Ray does not handle large data well (as of 2018/05/28).
-Please refer to 
-[the discussion](https://groups.google.com/forum/#!topic/ray-dev/8E03APnG_zg)
-for details.
-
-https://ray.readthedocs.io/en/latest/serialization.html
-
-https://ray.readthedocs.io/en/latest/configure.html#using-the-object-store-with-huge-pages
-
-https://arrow.apache.org/blog/2017/08/08/plasma-in-memory-object-store/
-
-[Comparison of Ray to Dask](https://github.com/ray-project/ray/issues/642)
 
 ## [modin-project/modin](https://github.com/modin-project/modin)
 
@@ -132,7 +135,21 @@ setup_pybind11(cfg)
 
 A claimless Python to c++ converter.
 
-## PyCUDA & PyGPU
+## [cudf](https://github.com/rapidsai/cudf)
+
+cuDF - GPU DataFrame Library.
+
+## [cupy](https://github.com/cupy/cupy)
+
+NumPy-like API accelerated with CUDA.
+
+## [PyCUDA](https://github.com/inducer/pycuda)
+
+CUDA integration for Python, plus shiny features.
+
+## DataFrame Specific
+
+cudf, dask, numba, PySpark DataFrame
 
 ## References
 

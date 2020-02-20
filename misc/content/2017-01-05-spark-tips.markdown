@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-12-04 16:44:00
+Date: 2020-02-20 15:13:31
 Author: Ben Chuanlong Du
 Slug: spark-tips
 Title: Spark Tips
@@ -75,6 +75,29 @@ which are variables that are only “added” to, such as counters and sums.
             --conf spark.executor.memoryOverhead=2G \
             --class your.package.SomeClass \
             --jars /path/to/jar/dependencies \
+            /path/to/compiled/jar arg1 arg2 ...
+
+    If you have used Kotlin in your Spark application,
+    you need to include `kotlin-stdlib.jar` via the `--jars` option.
+
+        :::bash
+        #!/bin/bash
+        /apache/spark2.3/bin/spark-submit \
+            --files "file:///apache/hive/conf/hive-site.xml,file:///apache/hadoop/etc/hadoop/ssl-client.xml,file:///apache/hadoop/etc/hadoop/hdfs-site.xml,file:///apache/hadoop/etc/hadoop/core-site.xml,file:///apache/hadoop/etc/hadoop/federation-mapping.xml" \
+            --master yarn \
+            --deploy-mode cluster \
+            --queue your_queue \
+            --num-executors 200 \
+            --executor-memory 10G \
+            --driver-memory 15G \
+            --executor-cores 4 \
+            --conf spark.yarn.maxAppAttempts=2 \
+            --conf spark.dynamicAllocation.enabled=true \
+            --conf spark.dynamicAllocation.maxExecutors=1000 \
+            --conf spark.network.timeout=300s \
+            --conf spark.executor.memoryOverhead=2G \
+            --class your.package.SomeClass \
+            --jars /path/to/kotlin-stdlib.jar \
             /path/to/compiled/jar arg1 arg2 ...
 
 ## Spark Shell

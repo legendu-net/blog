@@ -1,6 +1,6 @@
 Status: published
 Author: Ben Chuanlong Du
-Date: 2019-10-17 22:10:58
+Date: 2020-02-20 11:51:11
 Title: Tips on Git
 Slug: git-tips
 Category: Software
@@ -42,18 +42,6 @@ https://www.gitignore.io/
     The HTTP protocol requires a password every time you access a private repository 
     or you push to a repository (not matter private or not).
 
-
-## More Proxy/Tunnel Related
-
-```
-proxychains git ...
-```
-
-```
-#! /bin/bash
-
-corkscrew http://10.135.227.47 80 $*
-```
 
 1. Do not amend public commits.
 
@@ -120,6 +108,26 @@ corkscrew http://10.135.227.47 80 $*
     or
 
         git fetch --depth 1000000
+
+## Clone a Specific Tag
+
+    :::bash
+    git clone --depth 1 --branch 2.4.5 https://github.com/apache/spark.git                                                 
+
+https://stackoverflow.com/questions/20280726/how-to-git-clone-a-specific-tag
+
+## Proxy/Tunnel Related
+
+You can use Git with ProxyChains.
+
+    :::bash
+    proxychains git ...
+
+What is corkscrew?
+    :::bash
+    #!/bin/bash
+
+    corkscrew http://10.135.227.47 80 $*
 
 ## Git Syntax
 

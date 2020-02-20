@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-19 10:12:32
+Date: 2020-02-20 15:24:54
 Author: Benjamin Du
 Slug: tips-on-pex
 Title: Tips on pex
@@ -11,6 +11,26 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
+
+## Steps to Build a pex Environment File
+
+1. Start a Python Docker image with the right version of Python interpreter installed.
+    For example,
+
+        :::bash
+        docker run -it -v $(pwd):/workdir python:3.5-buster /bin/bash
+
+2. Install pex.
+
+        :::bash
+        pip3 install pex
+
+3. Build a pex environment file.
+
+        :::bash
+        pex --python=python3 -v pyspark findspark -o env.pex
+
+## General Tips
 
 1. pex to Python is like JAR to Java.
 
@@ -57,23 +77,21 @@ It is not meant to readers but rather for convenient reference of the author and
     using the option `-v` 
     (can be specified multiple times, e.g., `-vvv` to increase verbosity).
 
-## Steps to Build a pex Environment File
-
-1. Start a Python Docker image with the right version of Python interpreter installed.
-    For example,
-
-        :::bash
-        docker run -it -v $(pwd):/workdir python:3.5-buster /bin/bash
-
-2. Install pex.
+5. By default, 
+    a pex environment file does not inherit the contents of `sys.path`.
+    There are 2 ways to make a pex environment file inherit the contents of `sys.path`. 
+    One way is to issue one of the options at bulid time.
 
         :::bash
-        pip3 install pex
+        --inherit-path
+        --inherit-path=prefer
+        --inherit-path=fallback
 
-3. Build a pex environment file.
-
-        :::bash
-        pex --python=python3 -v pyspark findspark -o env.pex
+    Another way is to export the environment variable `PEX_INHERIT_PATH` at run time.
+    For more discussions,
+    please refer to 
+    [this issue](https://github.com/pantsbuild/pex/issues/904#event-3057832565)
+    .
 
 ## pex vs conda-pack
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-19 15:54:33
+Date: 2020-02-19 16:07:38
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Tips on PySpark
@@ -133,6 +133,14 @@ Issues:
 
 ## References
 
+https://spark.apache.org/docs/latest/api/python/pyspark.sql.html
+
+https://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.DataFrame
+
+https://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Column
+
+https://spark.apache.org/docs/latest/api/python/pyspark.sql.html#module-pyspark.sql.functions
+
 [Managing dependencies and artifacts in PySpark](https://bytes.grubhub.com/managing-dependencies-and-artifacts-in-pyspark-7641aa89ddb7)
 
 https://stackoverflow.com/questions/51450462/pyspark-addpyfile-to-add-zip-of-py-files-but-module-still-not-found
@@ -146,3 +154,4 @@ https://stackoverflow.com/questions/36461054/i-cant-seem-to-get-py-files-on-spar
 [Best Practices Writing Production-Grade PySpark Jobs](https://developerzen.com/best-practices-writing-production-grade-pyspark-jobs-cb688ac4d20f)
 
 [Packaging code with PEX — a PySpark example](https://medium.com/criteo-labs/packaging-code-with-pex-a-pyspark-example-9057f9f144f3)
+

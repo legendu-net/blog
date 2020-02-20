@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-19 16:38:26
+Date: 2020-02-19 16:44:50
 Author: Benjamin Du
 Slug: subtle-differences-among-Spark-DataFrame-and-PySpark-DataFrame
 Title: Subtle Differences Among Spark DataFrame and PySpark Dataframe
@@ -24,9 +24,6 @@ It is not meant to readers but rather for convenient reference of the author and
     | Dot reference       | X                  | df\.col\_name      |
 
     
-2. `DataFrame.where` and `DataFrame.filter` are equivalent in PySpark 
-    while a Spark/Scala DataFrame does not have the `where` method.
-
 3. `===` (null safe equality comparison) is supported in Spark/Scala but not available in PySpark.
 
 ## References

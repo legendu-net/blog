@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-19 10:11:03
+Date: 2020-02-20 15:04:45
 Author: Benjamin Du
 Slug: packaging-python-dependencies-for-pyspark-using-pex
 Title: Packaging Python Dependencies for PySpark Using Pex
@@ -72,7 +72,8 @@ The details instructions of the hacking way are listed below.
         :::bash
         pip3 install git+https://github.com/dclong/pex
 
-3. Now you can use the `pex` comamnd to build pex environment files as usual. 
+3. Now you can use the `pex` comamnd to 
+    [build pex environment files as usual](http://www.legendu.net/misc/blog/tips-on-pex/). 
     The built pex environment files use `./tmp` as thee pex root directory by default.
 
 4. If you run into the following Py4JError,

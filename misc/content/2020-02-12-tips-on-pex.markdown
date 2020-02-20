@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-19 10:12:32
+Date: 2020-02-20 15:04:45
 Author: Benjamin Du
 Slug: tips-on-pex
 Title: Tips on pex
@@ -74,6 +74,7 @@ It is not meant to readers but rather for convenient reference of the author and
 
         :::bash
         pex --python=python3 -v pyspark findspark -o env.pex
+        pex --python=python3 --python-shebang=/usr/share/anaconda3/bin/python --inherit-path=fallback -v pyspark -o env.pex
 
 ## pex vs conda-pack
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-23 11:11:03
+Date: 2020-02-21 11:48:49
 Author: Benjamin Du
 Slug: visual-studio-code-server
 Title: Visual Studio Code Server
@@ -33,7 +33,7 @@ code-server --install-extension njpwerner.autodocstring
 
 https://github.com/cdr/code-server/issues/171
 
-
+https://github.com/ThorbenJensen/code-server-blueprint/blob/master/Dockerfile
 
 ## JupyterLab Within VS Code 
 

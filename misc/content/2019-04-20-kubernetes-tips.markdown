@@ -1,10 +1,10 @@
 Status: published
-Date: 2020-02-21 14:32:28
+Date: 2020-02-21 15:02:06
 Author: Benjamin Du
 Slug: kubernetes-tips
 Title: Kubernetes Tips
-Category: Programming
-Tags: programming, Kubernetes, k8s
+Category: Software
+Tags: Software, Kubernetes, k8s, minikube, kubectl
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -40,5 +40,8 @@ https://github.com/kubernetes/kubernetes
 		minikube status
 
 
+minikube dashboard
+
+minikube ip
 
 [Kubertenes Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)

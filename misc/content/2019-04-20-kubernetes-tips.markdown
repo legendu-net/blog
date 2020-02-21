@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-05-04 01:53:39
+Date: 2020-02-21 14:23:36
 Author: Benjamin Du
 Slug: kubernetes-tips
 Title: Kubernetes Tips
@@ -21,3 +21,21 @@ https://github.com/kubernetes/kubernetes
 
 
 [4 Steps to Install Kubernetes on Ubuntu 16.04 and 18.04](https://matthewpalmer.net/kubernetes-app-developer/articles/install-kubernetes-ubuntu-tutorial.html)
+
+
+1. Install VirtualBox
+
+3. [Install Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/)
+
+4. Start minikube. 
+	
+		:::bash
+		minikube start --vm-driver=virtualbox
+
+5. Check status of minikube.
+
+		:::bash
+		minikube status
+
+
+

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-21 10:37:43
+Date: 2020-02-21 10:42:19
 Author: Benjamin Du
 Slug: packaging-python-dependencies-for-pyspark-using-pex
 Title: Packaging Python Dependencies for PySpark Using Pex
@@ -39,6 +39,9 @@ when submitting your PySpark application.
 Notice that you have to set the environment variable 
 for both executors and the master 
 if you submit your spark application in the `cluster` deploy mode (`--deploy-mode cluster`).
+For more discussions please refer to
+[this issue](https://github.com/pantsbuild/pex/issues/905)
+.
 
     :::bash
     #!/bin/bash

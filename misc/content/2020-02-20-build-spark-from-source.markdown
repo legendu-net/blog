@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-20 12:17:56
+Date: 2020-02-20 16:25:13
 Author: Benjamin Du
 Slug: build-spark-from-source
 Title: Build Spark from Source
@@ -48,3 +48,10 @@ https://spark.apache.org/docs/latest/building-spark.html
             -Dscala-2.11 \
             -DskipTests \
             clean package
+
+    This will generate a `Spark-2.4.5-*.tgz` file that you use to deploy.
+    Just copy it to your Spark client and unzip it to the right location.
+
+5. If you are building Spark for using in your company, 
+    you probably need to replace the directory `conf` 
+    with the customized one for your company.

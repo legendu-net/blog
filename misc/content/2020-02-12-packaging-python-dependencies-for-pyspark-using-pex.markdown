@@ -1,9 +1,5 @@
 Status: published
-<<<<<<< HEAD
-Date: 2020-02-20 15:04:45
-=======
-Date: 2020-02-20 15:38:47
->>>>>>> ffbd036725288eea54882547d6f81fa199e33183
+Date: 2020-02-21 09:59:45
 Author: Benjamin Du
 Slug: packaging-python-dependencies-for-pyspark-using-pex
 Title: Packaging Python Dependencies for PySpark Using Pex

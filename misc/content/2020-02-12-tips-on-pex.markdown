@@ -1,9 +1,5 @@
 Status: published
-<<<<<<< HEAD
-Date: 2020-02-20 15:04:45
-=======
-Date: 2020-02-20 15:24:54
->>>>>>> ffbd036725288eea54882547d6f81fa199e33183
+Date: 2020-02-21 09:59:45
 Author: Benjamin Du
 Slug: tips-on-pex
 Title: Tips on pex
@@ -33,6 +29,7 @@ It is not meant to readers but rather for convenient reference of the author and
 
         :::bash
         pex --python=python3 -v pyspark findspark -o env.pex
+        pex --python=python3 --python-shebang=/usr/share/anaconda3/bin/python --inherit-path=fallback -v pyspark -o env.pex
 
 ## General Tips
 
@@ -87,20 +84,6 @@ It is not meant to readers but rather for convenient reference of the author and
     One way is to issue one of the options at bulid time.
 
         :::bash
-<<<<<<< HEAD
-        docker run -it -v $(pwd):/workdir python:3.5-buster /bin/bash
-
-2. Install pex.
-
-        :::bash
-        pip3 install pex
-
-3. Build a pex environment file.
-
-        :::bash
-        pex --python=python3 -v pyspark findspark -o env.pex
-        pex --python=python3 --python-shebang=/usr/share/anaconda3/bin/python --inherit-path=fallback -v pyspark -o env.pex
-=======
         --inherit-path
         --inherit-path=prefer
         --inherit-path=fallback
@@ -110,7 +93,6 @@ It is not meant to readers but rather for convenient reference of the author and
     please refer to 
     [this issue](https://github.com/pantsbuild/pex/issues/904#event-3057832565)
     .
->>>>>>> ffbd036725288eea54882547d6f81fa199e33183
 
 ## pex vs conda-pack
 

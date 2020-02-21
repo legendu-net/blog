@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-21 09:59:45
+Date: 2020-02-21 10:37:43
 Author: Benjamin Du
 Slug: tips-on-pex
 Title: Tips on pex
@@ -35,11 +35,6 @@ It is not meant to readers but rather for convenient reference of the author and
 
 1. pex to Python is like JAR to Java.
 
-2. Python with the same version as the one that generated the pex file
-    need to be installed in on the machine to run the pex file.
-    And the Python executable must be searchable by `/usr/bin/env`.
-    It is kind of like that Java need to be installed on the machine to run a JAR application.
-
 2. Python packages that have native code (C/C++, Fortran, etc.) dependencies work well in pex.
     However,
     you have to make sure that pex runs on the same type of OS. 
@@ -54,6 +49,11 @@ It is not meant to readers but rather for convenient reference of the author and
     > 1: numpy==1.18.1
     >    But this pex only contains:
     >      numpy-1.18.1-cp37-cp37m-macosx_10_9_x86_64.whl
+
+2. Python with the same version as the one that generated the pex file
+    need to be installed in on the machine to run the pex file.
+    And the Python executable must be searchable by `/usr/bin/env` if you use the default settings.
+    It is kind of like that Java need to be installed on the machine to run a JAR application.
 
 3. If theree are multiple versions of Python installed in your system,
     you use the option `--python` to specify the Python interpreter 
@@ -74,10 +74,6 @@ It is not meant to readers but rather for convenient reference of the author and
     to control the Python interpreter to run the PEX environment file
     as it is more flexible.
 
-4. It is suggested that you turn on verbosity mode 
-    using the option `-v` 
-    (can be specified multiple times, e.g., `-vvv` to increase verbosity).
-
 5. By default, 
     a pex environment file does not inherit the contents of `sys.path`.
     There are 2 ways to make a pex environment file inherit the contents of `sys.path`. 
@@ -93,6 +89,10 @@ It is not meant to readers but rather for convenient reference of the author and
     please refer to 
     [this issue](https://github.com/pantsbuild/pex/issues/904#event-3057832565)
     .
+
+4. It is suggested that you turn on verbosity mode 
+    using the option `-v` 
+    (can be specified multiple times, e.g., `-vvv` to increase verbosity).
 
 ## pex vs conda-pack
 

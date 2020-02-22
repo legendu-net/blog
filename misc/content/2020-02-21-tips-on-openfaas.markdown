@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-02-21 17:04:44
+Date: 2020-02-21 17:06:17
 Author: Benjamin Du
 Slug: tips-on-openfaas
-Title: Tips on Openfaas
+Title: Tips on OpenFaaS
 Category: Software
 Tags: Software, Kubernetes, k8s, OpenFaaS, serverless, function
 

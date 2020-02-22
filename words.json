@@ -49,6 +49,7 @@
     ["Kdevelop", "KDevelop"],
     ["Lightgbm", "LightGBM"],
     ["Macports", "MacPorts"], ["Noscript", "NoScript"],
+    ["Openfaas", "OpenFaaS"],
     ["Spacevim", "SpaceVim"],
     ["Autogluon", "AutoGluon"], 
     ["Java-Home", "JAVA-HOME"],

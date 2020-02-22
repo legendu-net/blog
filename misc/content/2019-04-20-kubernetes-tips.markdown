@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-21 15:02:06
+Date: 2020-02-21 17:04:44
 Author: Benjamin Du
 Slug: kubernetes-tips
 Title: Kubernetes Tips
@@ -45,3 +45,19 @@ minikube dashboard
 minikube ip
 
 [Kubertenes Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+
+## Some Kubernetes Distributions
+
+- k3s - a light-weight Kubernetes distribution ideal for edge and development - compatible with Raspberry Pi & ARM64 (Packet, AWS Graviton)
+
+- k3d - makes k3s available on any computer where Docker is also running
+
+- microk8s - a Kubernetes distribution, specifically for Ubuntu users.
+
+- minikube - a popular, but heavy-weight option that creates a Linux virtual machine your computer using VirtualBox or similar
+
+- Docker for Mac/Windows - Docker's Desktop edition has an option to run a local Kubernetes cluster
+
+## References
+
+- [helm](https://github.com/helm/helm) is the Kubernetes Package Manager

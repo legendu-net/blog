@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-10 23:19:48
+Date: 2020-02-24 10:29:28
 Author: Benjamin Du
 Slug: python-for-desktop-applications
 Title: Python for Desktop Applications
@@ -30,3 +30,10 @@ creates custom layout GUI's simply.
 ## Solutions Based on Chromium/Electron
 
 [PLYNTH](https://www.plynth.net/)
+
+## GUI Automation
+
+[PyAutoGUI](https://github.com/asweigart/pyautogui)
+is a cross-platform GUI automation Python module for human beings. 
+Used to programmatically control the mouse & keyboard.
+

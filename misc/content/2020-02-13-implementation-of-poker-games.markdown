@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-13 14:07:40
+Date: 2020-02-24 22:26:41
 Author: Benjamin Du
 Slug: implementation-of-poker-games
 Title: Implementation of Poker Games
@@ -16,3 +16,9 @@ It is not meant to readers but rather for convenient reference of the author and
 [Fully functional Pokerbot that works on PartyPoker and PokerStars.
 - Python
 - PyQT
+
+[RLCard: A Toolkit for Reinforcement Learning in Card Games](https://arxiv.org/pdf/1910.04376.pdf)
+
+[playing-card-detection](https://github.com/geaxgx/playing-card-detection)
+
+[OpenCV-Playing-Card-Detector](https://github.com/EdjeElectronics/OpenCV-Playing-Card-Detector)

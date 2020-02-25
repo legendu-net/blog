@@ -1,0 +1,49 @@
+Status: published
+Date: 2020-02-25 13:44:44
+Author: Benjamin Du
+Slug: popular-and-useful-modules-and-functions-in-pytorch
+Title: Popular and Useful Modules and Functions in PyTorch
+Category: AI
+Tags: AI, data science, machine learning, deep learning, PyTorch
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author.
+It is not meant to readers but rather for convenient reference of the author and future improvement.
+**
+
+## Functions
+
+[torch.flatten](https://pytorch.org/docs/stable/torch.html#torch.flatten)
+
+[torch.nn.functional.relu](https://pytorch.org/docs/stable/nn.functional.html#relu)
+
+
+[torch.nn.functional.leaky_relu](https://pytorch.org/docs/stable/nn.functional.html#leaky-relu)
+
+[torch.nn.functional.gelu](https://pytorch.org/docs/stable/nn.functional.html#gelu)
+
+[torch.nn.functional.logsigmoid](https://pytorch.org/docs/stable/nn.functional.html#logsigmoid)
+
+[torch.nn.functional.softmin](https://pytorch.org/docs/stable/nn.functional.html#softmin)
+
+[torch.nn.functional.softmax](https://pytorch.org/docs/stable/nn.functional.html#softmax)
+
+[torch.nn.functional.log_softmax](https://pytorch.org/docs/stable/nn.functional.html#log-softmax)
+
+[torch.nn.functional.sigmoid](https://pytorch.org/docs/stable/nn.functional.html#sigmoid)
+
+[torch.nn.functional.batch_norm](https://pytorch.org/docs/stable/nn.functional.html#batch-norm)
+
+[torch.nn.functional.normalize](https://pytorch.org/docs/stable/nn.functional.html#normalize)
+
+## Modules
+
+[torch.nn.Sequential](https://pytorch.org/docs/stable/nn.html#sequential)
+[torch.nn.Conv2d](https://pytorch.org/docs/stable/nn.html#conv2d)
+[torch.nn.Dropout2d](https://pytorch.org/docs/stable/nn.html#dropout2d)
+[torch.nn.Linear](https://pytorch.org/docs/stable/nn.html#linear)
+
+
+## Referneces
+
+[Using Dropout in Pytorch: nn.Dropout vs. F.dropout](https://stackoverflow.com/questions/53419474/using-dropout-in-pytorch-nn-dropout-vs-f-dropout)

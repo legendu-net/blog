@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-25 13:44:44
+Date: 2020-02-25 14:40:51
 Author: Benjamin Du
 Slug: popular-and-useful-modules-and-functions-in-pytorch
 Title: Popular and Useful Modules and Functions in PyTorch
@@ -43,7 +43,17 @@ It is not meant to readers but rather for convenient reference of the author and
 [torch.nn.Dropout2d](https://pytorch.org/docs/stable/nn.html#dropout2d)
 [torch.nn.Linear](https://pytorch.org/docs/stable/nn.html#linear)
 
+## Transforms
+
+[torchvison.transforms.ToTensor](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.ToTensor)
+
+[torchvision.transforms.Normalize](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.Normalize)
+
+[torchvision.transforms.Compose](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.Compose)
+
 
 ## Referneces
 
 [Using Dropout in Pytorch: nn.Dropout vs. F.dropout](https://stackoverflow.com/questions/53419474/using-dropout-in-pytorch-nn-dropout-vs-f-dropout)
+
+[How does transforms.ToTensor() work and computation of mean and std values](https://discuss.pytorch.org/t/how-does-transforms-totensor-work-and-computation-of-mean-and-std-values/9085)

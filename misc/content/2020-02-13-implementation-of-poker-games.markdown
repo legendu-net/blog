@@ -16,3 +16,5 @@ It is not meant to readers but rather for convenient reference of the author and
 [Fully functional Pokerbot that works on PartyPoker and PokerStars.
 - Python
 - PyQT
+
+https://github.com/EdjeElectronics/OpenCV-Playing-Card-Detector

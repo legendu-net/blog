@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-06 15:55:46
+Date: 2020-02-24 22:24:05
 Author: Benjamin Du
 Slug: convolutional-neural-networks
 Title: Convolutional Neural Networks
@@ -13,3 +13,10 @@ It is not meant to readers but rather for convenient reference of the author and
 
 [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/convolutional-networks/)
 is a great introduction of CNN.
+
+[ConvNet Architectures](http://cs231n.github.io/convolutional-networks/#convnet-architectures)
+
+
+## References
+
+http://vision.stanford.edu/teaching/cs231n/

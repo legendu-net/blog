@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-17 11:38:59
+Date: 2020-02-24 23:29:43
 Author: Benjamin Du
 Slug: tips-on-opencv
 Title: Tips on OpenCV
@@ -14,7 +14,8 @@ It is not meant to readers but rather for convenient reference of the author and
 ## Installation
 
     :::bash
-    pip3 install python3-opencv
+    sudo apt-get install libsm6 libxrender-dev
+    pip3 install opencv-python
 
 ## Examples
 

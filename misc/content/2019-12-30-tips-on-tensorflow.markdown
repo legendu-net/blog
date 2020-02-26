@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-26 14:27:06
+Date: 2020-02-26 14:54:29
 Author: Benjamin Du
 Slug: tips-on-tensorflow
 Title: Tips on TensorFlow
@@ -24,7 +24,14 @@ https://www.anaconda.com/tensorflow-in-anaconda/
 
 cuDNN is required by TensorFlow
 
-pip install tensorflow
+    :::bash
+    pip install tensorflow
+
+https://www.tensorflow.org/install/gpu
+
+https://www.tensorflow.org/install/docker
+
+https://www.tensorflow.org/install/pip
 
 ## Docker Images
 

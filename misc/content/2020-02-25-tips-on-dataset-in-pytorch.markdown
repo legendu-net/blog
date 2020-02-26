@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-25 13:24:44
+Date: 2020-02-25 22:07:56
 Author: Benjamin Du
 Slug: tips-on-dataset-in-pytorch
 Title: Tips on Dataset in PyTorch
@@ -12,3 +12,5 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 https://github.com/pytorch/vision/blob/master/torchvision/datasets/mnist.py
+
+[VisionDataset](https://github.com/pytorch/vision/blob/master/torchvision/datasets/vision.py#L6)

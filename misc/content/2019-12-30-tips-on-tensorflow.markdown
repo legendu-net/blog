@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-29 11:23:38
+Date: 2020-02-26 14:27:06
 Author: Benjamin Du
 Slug: tips-on-tensorflow
 Title: Tips on TensorFlow
@@ -16,12 +16,15 @@ It is not meant to readers but rather for convenient reference of the author and
 The article
 [Stop Installing Tensorflow using pip for performance sake!](https://towardsdatascience.com/stop-installing-tensorflow-using-pip-for-performance-sake-5854f9d9eb0c)
 suggest installing TensorFlow using conda instead of pip
-as the version installed by conda leverages Intel Math Kernel Library and is about 8 times faster overall speaking.
+as the version installed by conda leverages Intel Math Kernel Library 
+and is about 8 times faster **on CPU**.
 
 https://www.anaconda.com/tensorflow-in-anaconda/
 
 
 cuDNN is required by TensorFlow
+
+pip install tensorflow
 
 ## Docker Images
 

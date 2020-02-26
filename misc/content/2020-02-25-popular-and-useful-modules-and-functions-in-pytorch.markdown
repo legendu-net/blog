@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-25 15:05:30
+Date: 2020-02-25 16:20:31
 Author: Benjamin Du
 Slug: popular-and-useful-modules-and-functions-in-pytorch
 Title: Popular and Useful Modules and Functions in PyTorch
@@ -14,6 +14,12 @@ It is not meant to readers but rather for convenient reference of the author and
 ## Functions
 
 [torch.load](https://pytorch.org/docs/stable/torch.html#torch.load)
+
+[torch.from_numpy](https://pytorch.org/docs/master/torch.html#torch.from_numpy)
+
+[torch.tensor](https://pytorch.org/docs/master/torch.html#torch.tensor)
+
+[torch.as_tensor](https://pytorch.org/docs/master/torch.html#torch.as_tensor)
 
 [torch.flatten](https://pytorch.org/docs/stable/torch.html#torch.flatten)
 

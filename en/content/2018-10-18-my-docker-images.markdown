@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-17 13:36:18
+Date: 2020-02-26 10:22:11
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -514,11 +514,11 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
                             - [dclong/jupyterhub-cuda_b](https://hub.docker.com/r/dclong/jupyterhub-cuda_b/)  
 
-                                - [dclong/jupyterhub-cuda-pytorch](https://hub.docker.com/r/dclong/jupyterhub-cuda-pytorch/)  
+                                - [dclong/jupyterhub-pytorch](https://hub.docker.com/r/dclong/jupyterhub-pytorch/)  
 
-                                - [dclong/jupyterhub-cuda-autoglugon](https://hub.docker.com/r/dclong/jupyterhub-cuda-autoglugon/)  
+                                - [dclong/jupyterhub-autoglugon](https://hub.docker.com/r/dclong/jupyterhub-autoglugon/)  
 
-                                    - [dclong/jupyterhub-cuda-ai](https://hub.docker.com/r/dclong/jupyterhub-cuda-ai/)  
+                                    - [dclong/jupyterhub-ai](https://hub.docker.com/r/dclong/jupyterhub-ai/)  
 
                         - [dclong/jupyterhub-jdk](https://hub.docker.com/r/dclong/jupyterhub-jdk/)  
 
@@ -535,11 +535,6 @@ you can connect to the desktop environment in the Docker container using NoMachi
                                 > tabulate  
                                 > JayDeBeApi pymysql pymongo sqlalchemy  
                                 > pysocks requests[socks] Scrapy beautifulsoup4 wget  ansible  
-
-                                - [dclong/jupyterhub-ai](https://hub.docker.com/r/dclong/jupyterhub-ai/)  
-
-                                    > torch torchvision tensorflow keras h2o  
-                                    > gensim pytext    
 
                                 - [dclong/jupyterhub-beakerx](https://hub.docker.com/r/dclong/jupyterhub-beakerx/)  
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-26 15:22:35
+Date: 2020-02-27 10:53:45
 Author: Benjamin Du
 Slug: tips-on-tensorflow
 Title: Tips on TensorFlow
@@ -40,6 +40,27 @@ https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/dockerfile
 
 https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/dockerfiles/dockerfiles/gpu.Dockerfile
 uses pip (instead of conda) to install Python packages.
+
+## General Tips
+
+1. With TensorFlow 2.0, 
+    you should use `tf.keras` instead of the separate Keras package.
+
+https://www.pyimagesearch.com/2019/10/21/keras-vs-tf-keras-whats-the-difference-in-tensorflow-2-0/
+
+## Tutorials
+
+https://www.tensorflow.org/guide/keras/
+
+https://www.tensorflow.org/tutorials/keras/classification
+https://www.tensorflow.org/tutorials/quickstart/beginner
+https://www.tensorflow.org/guide/keras/functional
+https://www.tensorflow.org/guide/keras/train_and_evaluate
+https://www.tensorflow.org/guide/keras/custom_layers_and_models
+https://www.tensorflow.org/guide/keras/masking_and_padding
+
+[Inside TensorFlow: tf.Keras (part 1)](https://www.youtube.com/watch?v=UYRBHFAvLSs&feature=youtu.be)
+[Inside TensorFlow: tf.Keras (part 2)](https://www.youtube.com/watch?v=uhzGTijaw8A&feature=youtu.be)
 
 ## GPU Runs Out of Memory
 

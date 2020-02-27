@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-26 10:22:11
+Date: 2020-02-27 10:20:31
 Author: Ben Chuanlong Du
 Slug: my-docker-images
 Title: My Docker Images
@@ -516,7 +516,7 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
                                 - [dclong/jupyterhub-pytorch](https://hub.docker.com/r/dclong/jupyterhub-pytorch/)  
 
-                                - [dclong/jupyterhub-autoglugon](https://hub.docker.com/r/dclong/jupyterhub-autoglugon/)  
+                                - [dclong/jupyterhub-autogluon](https://hub.docker.com/r/dclong/jupyterhub-autogluon/)  
 
                                     - [dclong/jupyterhub-ai](https://hub.docker.com/r/dclong/jupyterhub-ai/)  
 

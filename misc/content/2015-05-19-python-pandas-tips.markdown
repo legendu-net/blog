@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-12 17:40:23
+Date: 2020-02-27 14:34:31
 Author: Ben Chuanlong Du
 Slug: python-pandas-tips
 Title: Python pandas Tips
@@ -22,37 +22,20 @@ pd.set_option('display.max_columns', 1000)
 pd.set_option('display.max_colwidth', 100)
 ```
 
-## pandas.Series.str
-
-https://stackoverflow.com/questions/52065909/attributeerror-can-only-use-str-accessor-with-string-values-which-use-np-obje
-
-1. The attribute `pandas.Series.str` can only be used by `str` columns.
-    If you have control of the DataFrame, 
-    the preferred way is to cast the type the column to `str` in the DataFrame. 
-
-        :::Python
-        df.status = df.status.astype(str)
-
-    Generally speaking, 
-    it is a good idea to make sure that a column always have the same type in a pandas DataFrame.
-    If you do not want to cast the column to `str` in the DataFrame (for any reason),
-    you can do this in computation without changing the type of the original column.
-
-        :::Python
-        df = df[df.status.astype(str).str.contains('Exit')]
-
-
-2. `pandas.series.str.replace` supports regular expression.
-
-
 ## Tips
 
-1. Avoid column names that conflict with pandas internal member names,
-    otherwise you will not be able to access the column using the dot syntax.
+1. Avoid using column/element names that conflict with pandas internal member names,
+    otherwise you will not be able to access the column/element using the dot syntax.
     For example,
     if you name a column `size`
     you can to refer to the column as `df.size`
     because `df.size` is a method that returns the number of element in the DataFrame.
+    The issue is that you won't be able to remember all members of the DataFrame/Series class. 
+    One simple solution is to **always suffix column/element names in a DataFrame/Series with a underscore (`_`)**. 
+    If you cannot follow (or don't like) this suggestion,
+    then it is suggested that you always access columns of a DataFrame and element of a Series
+    using the syntax `df["col_name"]` and `series["element_name"]` 
+    (which is more verbose than the dot syntax of course).
 
 2. Be careful when you use integers as column names or indexes
     as it might affect the way of slicing.

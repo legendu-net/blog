@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-27 10:53:45
+Date: 2020-02-27 10:57:44
 Author: Benjamin Du
 Slug: tips-on-tensorflow
 Title: Tips on TensorFlow
@@ -61,6 +61,7 @@ https://www.tensorflow.org/guide/keras/masking_and_padding
 
 [Inside TensorFlow: tf.Keras (part 1)](https://www.youtube.com/watch?v=UYRBHFAvLSs&feature=youtu.be)
 [Inside TensorFlow: tf.Keras (part 2)](https://www.youtube.com/watch?v=uhzGTijaw8A&feature=youtu.be)
+[TensorFlow 2.0 Full Tutorial - Python Neural Networks for Beginners](https://www.youtube.com/watch?v=6g4O5UOH304)
 
 ## GPU Runs Out of Memory
 

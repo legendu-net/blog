@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips for GPU Computing
-Date: 2020-02-05 10:32:13
+Date: 2020-02-27 14:08:07
 Slug: gpu-tips
 Category: Programming
 Tags: tips, GPU, programming
@@ -16,6 +16,10 @@ It is not meant to readers but rather for convenient reference of the author and
 - [Horovod](https://github.com/horovod/horovod)
 
 - [Apache Ray](https://github.com/ray-project/ray)
+
+- [ZeRO + DeepSpeed](https://github.com/microsoft/DeepSpeed)
+    is a deep learning optimization library 
+    that makes distributed training on GPU clusters easy, efficient, and effective.
 
 ## High-level Libraries with Built-in GPU Support 
 

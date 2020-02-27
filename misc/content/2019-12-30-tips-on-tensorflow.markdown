@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-26 14:54:29
+Date: 2020-02-26 15:22:35
 Author: Benjamin Du
 Slug: tips-on-tensorflow
 Title: Tips on TensorFlow
@@ -48,3 +48,7 @@ https://stackoverflow.com/questions/36927607/how-can-i-solve-ran-out-of-gpu-memo
 https://stackoverflow.com/questions/34199233/how-to-prevent-tensorflow-from-allocating-the-totality-of-a-gpu-memory
 
 https://superuser.com/questions/980216/what-happens-when-the-gpu-memory-is-not-enough
+
+## Deep Learning Libraries Based on TensorFlow
+
+[trax](https://github.com/google/trax)

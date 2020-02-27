@@ -21,7 +21,13 @@ and
 [DistilBERT](https://github.com/huggingface/transformers/blob/master/src/transformers/modeling_distilbert.py)
 ).
 
-[TensorFlow Implementation of BERT with Pretrained Models](https://github.com/google-research/bert)
+https://github.com/codertimo/BERT-pytorch
+
+[Official Implementation of BERT in TensorFlow](https://github.com/tensorflow/models/tree/master/official/nlp/bert)
+
+## Tutorials
+
+https://mccormickml.com/2019/07/22/BERT-fine-tuning/
 
 ## References
 

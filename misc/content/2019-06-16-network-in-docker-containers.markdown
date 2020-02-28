@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-04 10:27:27
+Date: 2020-02-27 14:53:00
 Author: Benjamin Du
 Slug: network-in-docker-containers
 Title: Network in Docker Containers
@@ -22,7 +22,8 @@ It is not meant to readers but rather for convenient reference of the author and
 
 
 2. Due to possible DNS issues in Docker containers, 
-  it is suggested that you use IP addresses (e.g., proxy servers) instead of URL names where possible. 
+  it is suggested that you use IP addresses instead of URL names where possible. 
+  Notably, `127.0.0.1` is preferred over `localhost` in various configure files (e.g., ProxyChains).
 
 
 ## Configure Proxy for Docker Containers

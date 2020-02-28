@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-20 10:01:27
+Date: 2020-02-27 17:08:12
 Author: Ben Chuanlong Du
 Slug: high-performance-computing-in-python
 Title: High Performance Computing in Python
@@ -149,7 +149,8 @@ CUDA integration for Python, plus shiny features.
 
 ## DataFrame Specific
 
-cudf, dask, numba, PySpark DataFrame
+cudf, dask, 
+[modin](https://github.com/modin-project/modin), numba, PySpark DataFrame
 
 ## References
 

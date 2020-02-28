@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-11-12 09:12:45
+Date: 2020-02-27 14:54:35
 Author: Ben Chuanlong Du
 Slug: proxychains-tips
 Title: ProxyChains Tips
@@ -92,9 +92,13 @@ socks5     proxy_ip_3 1080
 ## Tricks and Traps 
 
 1. It is suggested that you use IP addresses instead of URL names when configuring ProxyChains. 
-  The reason is that IP addresses always work while URL names might not work if all the following situations are met.
+    The reason is that IP addresses always work while URL names might not work if all the following situations are met.
+
     - The proxy is for internal use in an enterprise, which is often the case.
+
     - You use ProxyChains in a Docker container and forget to configure DNS for your Docker container.
+
+    Notably, `127.0.0.1` is preferred over `localhost`.
 
 2. no special requirement on `$HOME/.ssh/config`
 

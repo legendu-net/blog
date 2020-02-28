@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-17 10:30:31
+Date: 2020-02-27 13:55:01
 Author: Benjamin Du
 Slug: machine-learning-libraries-computing-frames-programming-languages
 Title: Machine Learning Libraries, Computing Frames and Programming Languages
@@ -12,55 +12,9 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 
-## Machine Learning Frames
-
-scikit-learn
-
-PyTorch
-
-TensorFlow
-
-[Apache MXNet](https://github.com/apache/incubator-mxnet)
-
-Keras
-
-Caffe2 is often used for productionizing models trained in PyTorch
-and it is part of the PyTorch project now.
-
-
-Notice that H2O-3 (less popularity and lower quality compared to the above libraries),
-[AI-Blocks](https://mrnothing.github.io/AI-Blocks/index.html),
-and [Nvidia DIGIGS](https://developer.nvidia.com/digits)
-provides user-friendly UI for training models.
-
-
-It is suggested that you start with PyTorch and then TensorFlow. 
-Keras is not reliable enough even though it's very easy to use.
-
-Easy: Keras >= PyTorch > TensorFlow
-
-Stability/Reliability: PyTorch = TensorFlow > Keras
-
-
-## Computing Frameworks
-
-Multi-threading & Multi-Processing are not discussed here 
-since they are relatively simple for scientific computing.
-
-### GPU
-### Python Distributed Computing Frameworks (Ray, Celery, Dask, Modin, etc.)
-### Spark
-### TPU
-
-## Programming Languages
-Python
-Rust
-JVM (Java, Scala, Kotlin)
-C/C++
 
 1. GPU is more accisible for average individual people.
     GPU is still the main tool for deep learning right now.
-
 
 2. Python Distributed Computing Frameworks (Ray, Modin, etc.)
     servers as a mid solution between GPU and Spark. 
@@ -68,7 +22,8 @@ C/C++
     Ray, Modin, etc is easier to use and maintain than Spark.
 
 3. Even though there are many libraries making it possible to run deep learning on Spark,
-    I still don't it is the right choice unless you have really large data that cannot be handle by other frameworks.
+    I still don't it is the right choice unless you have really large data 
+    that cannot be handled by other frameworks.
     There are rarely such situations.
     Real big data mostly occur in the ETL and preprocessing stage 
     rather than in the model training stage.
@@ -86,9 +41,57 @@ C/C++
     Rust is a good language choice for performance 
     while Python is a good choice for glue-language that is easy to use.
 
+
+## Machine Learning Frames
+
+scikit-learn
+
+LightGBM / XGBoost
+
+PyTorch
+
+TensorFlow 2
+
+[Apache MXNet](https://github.com/apache/incubator-mxnet)
+
+Caffe2 is often used for productionizing models trained in PyTorch
+and it is part of the PyTorch project now.
+
+
+Notice that H2O-3 (less popularity and lower quality compared to the above libraries),
+[AI-Blocks](https://mrnothing.github.io/AI-Blocks/index.html),
+and [Nvidia DIGIGS](https://developer.nvidia.com/digits)
+provides user-friendly UI for training models.
+
+
+## Computing Frameworks
+
+Multi-threading & Multi-Processing are not discussed here 
+since they are relatively simple for scientific computing.
+
+### GPU
+
+[ZeRO + DeepSpeed](https://github.com/microsoft/DeepSpeed)
+is a deep learning optimization library 
+that makes distributed training on GPU clusters easy, efficient, and effective.
+
+Apache Ray
+
+### Python Distributed Computing Frameworks (Ray, Celery, Dask, Modin, etc.)
+### Spark
+### TPU
+
+## Programming Languages
+Python
+Rust
+JVM (Java, Scala, Kotlin)
+C/C++
+
 ## References
 
 - (Machine Learning and Deep Learning frameworks and libraries for large-scale data mining: a survey)[https://link.springer.com/article/10.1007/s10462-018-09679-z]
 
 - [caffe2/AICamera](https://github.com/caffe2/AICamera) 
     is a demonstration of using Caffe2 inside an Android application.
+
+- [Comparison of AI Frameworks](https://pathmind.com/wiki/comparison-frameworks-dl4j-tensorflow-pytorch)

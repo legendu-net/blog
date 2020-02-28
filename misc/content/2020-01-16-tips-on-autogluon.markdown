@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-04 13:56:11
+Date: 2020-02-27 15:28:00
 Author: Benjamin Du
 Slug: tips-on-autogluon
 Title: Tips on AutoGluon
@@ -46,7 +46,7 @@ Can I choose a model to save and choose a model to load?
 
 ## Hyperparameter Tuning
 
-https://autogluon.mxnet.io/tutorials/torch/hpo.html
+[Use AutoGluon for Hyperparameter Optimization for MNIST Training in PyTorch](https://autogluon.mxnet.io/tutorials/torch/hpo.html)
 
 ## Neural Architecture Search
 

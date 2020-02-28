@@ -1,17 +1,24 @@
 Status: published
-Date: 2020-01-05 09:21:16
+Date: 2020-02-28 14:54:08
 Author: Benjamin Du
-Slug: use-pytorch-on-apache-ray
-Title: Use PyTorch on Apache Ray
+Slug: train-pytorch-distributedly-using-apache-ray
+Title: Train PyTorch Distributedly Using Apache Ray
 Category: AI
-Tags: AI, data science, machine learning, Apache Ray, PyTorch
+Tags: AI, data science, machine learning, deep learning, PyTorch, distributed, Apache Ray
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-https://github.com/ray-project/ray/issues/3520
+## Training a Model Implemented in PyTorch
+
+[Distributed PyTorch Using Apache Ray](https://ray.readthedocs.io/en/latest/raysgd/raysgd_pytorch.html)
+
+[RaySGD: Distributed Training Wrappers](https://ray.readthedocs.io/en/latest/raysgd/raysgd.html)
+
+
+## Hyperparameter Optimization for Models Implemented in PyTorch
 
 Is the following example running distributed or not?
 Do I need to use tags to tell Ray to run it on multiple machines?
@@ -41,6 +48,10 @@ print("Best config: ", analysis.get_best_config(metric="mean_accuracy"))
 # Get a dataframe for analyzing trial results.
 df = analysis.dataframe()
 ```
+
 ## References
 
 https://github.com/ray-project/ray/issues/3609
+
+https://github.com/ray-project/ray/issues/3520
+

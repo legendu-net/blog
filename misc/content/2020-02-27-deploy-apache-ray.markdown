@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-28 10:42:50
+Date: 2020-02-28 14:50:41
 Author: Benjamin Du
 Slug: deploy-apache-ray
 Title: Deploy Apache Ray
@@ -27,6 +27,13 @@ The command
 includes the Redis password for authentication to join the cluster.
 
 ## Private Cluster
+
+https://github.com/ray-project/ray/blob/master/python/ray/autoscaler/local/example-full.yaml
+
+1. The Ray autoscaler installs Ray on the head and worker nodes by default.
+    That is if you don't set values for the fileds `head_setup_commands` and `setup_commands`,
+    Ray is automatically installed/updated on the head and worker nodes.
+    You can disable this behavior by set a dummy command (e.g., `echo "Starting Ray ..."`) for the 2 fileds.
 
 https://github.com/ray-project/ray/issues/4902
 
@@ -57,6 +64,8 @@ https://ray.readthedocs.io/en/latest/using-ray-on-a-cluster.html
 https://github.com/ray-project/ray/issues/2660
 
 ## Kubernetes
+
+https://ray.readthedocs.io/en/latest/autoscaling.html#kubernetes
 
 https://github.com/ray-project/ray/blob/master/python/ray/autoscaler/kubernetes/example-full.yaml
 

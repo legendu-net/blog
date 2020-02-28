@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-27 22:15:11
+Date: 2020-02-28 14:54:08
 Author: Benjamin Du
 Slug: tips-on-apache-ray
 Title: Tips on Apache Ray
@@ -43,15 +43,11 @@ https://github.com/ray-project/tutorial
 
 [Development Tips](https://ray.readthedocs.io/en/latest/development.html)
 
-[RaySGD: Distributed Training Wrappers](https://ray.readthedocs.io/en/latest/raysgd/raysgd.html)
-
 [Distributed Iterators](https://ray.readthedocs.io/en/latest/iter.html)
 
 [Distributed Scikit-learn / Joblib](https://ray.readthedocs.io/en/latest/joblib.html)
 
 [https://ray.readthedocs.io/en/latest/multiprocessing.html](Distributed multiprocessing.Pool)
-
-[Distributed PyTorch Using Apache Ray](https://ray.readthedocs.io/en/latest/raysgd/raysgd_pytorch.html)
 
 https://github.com/ParallelSSH/parallel-ssh
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-27 16:00:24
+Date: 2020-02-27 17:06:49
 Author: Benjamin Du
 Slug: tips-on-apache-ray
 Title: Tips on Apache Ray
@@ -11,6 +11,8 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
+## [Manual Cluster Setup](https://ray.readthedocs.io/en/latest/using-ray-on-a-cluster.html)
+
 ## Configure a Private Ray Cluster
 
 https://ray.readthedocs.io/en/latest/using-ray-on-a-cluster.html
@@ -20,6 +22,20 @@ https://ray.readthedocs.io/en/latest/autoscaling.html
 https://ray.readthedocs.io/en/latest/autoscaling.html#quick-start-private-cluster
 
 https://ray.readthedocs.io/en/latest/using-ray-on-a-cluster.html
+
+[Fault Tolerance](https://ray.readthedocs.io/en/latest/fault-tolerance.html#fault-tolerance)
+
+[Development Tips](https://ray.readthedocs.io/en/latest/development.html)
+
+[RaySGD: Distributed Training Wrappers](https://ray.readthedocs.io/en/latest/raysgd/raysgd.html)
+
+[Distributed Iterators](https://ray.readthedocs.io/en/latest/iter.html)
+
+[Distributed Scikit-learn / Joblib](https://ray.readthedocs.io/en/latest/joblib.html)
+
+[https://ray.readthedocs.io/en/latest/multiprocessing.html](Distributed multiprocessing.Pool)
+
+[Distributed PyTorch Using Apache Ray](https://ray.readthedocs.io/en/latest/raysgd/raysgd_pytorch.html)
 
 ## Tutorials and Examples
 
@@ -49,3 +65,9 @@ https://arrow.apache.org/docs/python/plasma.html#the-plasma-in-memory-object-sto
 https://readthedocs.org/projects/ray/downloads/pdf/latest/
 
 https://ray.readthedocs.io/en/latest/package-ref.html
+
+https://towardsdatascience.com/benchmarking-python-distributed-ai-backends-with-wordbatch-9872457b785c
+
+https://ray.readthedocs.io/en/latest/tune.html
+
+https://ray.readthedocs.io/en/latest/rllib.html

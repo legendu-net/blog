@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-27 20:11:55
+Date: 2020-02-27 21:50:15
 Author: Benjamin Du
 Slug: tips-on-apache-ray
 Title: Tips on Apache Ray
@@ -21,9 +21,18 @@ for details.
 
 [How to scale Python multiprocessing to a cluster with one line of code](https://medium.com/distributed-computing-with-ray/how-to-scale-python-multiprocessing-to-a-cluster-with-one-line-of-code-d19f242f60ff)
 demonstrates how you can scale a Python multiprocess application 
-to run an Apache Ray cluster 
+to run on an Apache Ray cluster 
 with only one line change of your code 
 (change `import multiprocessing.Pool` to `ray.util.multiprocessing.Pool`).
+Of course,
+you have to export the environment variable `RAY_ADDRESS=auto` 
+before running the Python code 
+or you have to make an another line of change 
+which is to change `Pool()` to `Pool(ray_address="auto")`.
+For more details,
+please refer to
+[Distributed multiprocessing.Pool](https://ray.readthedocs.io/en/latest/multiprocessing.html)
+.
 
 
 ## References

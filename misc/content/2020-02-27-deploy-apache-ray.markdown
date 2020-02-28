@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-27 20:11:55
+Date: 2020-02-28 10:15:20
 Author: Benjamin Du
 Slug: deploy-apache-ray
 Title: Deploy Apache Ray
@@ -26,7 +26,23 @@ The command
 (e.g., ray start --address='10.148.186.18:12030' --redis-password='5241590000000000')
 includes the Redis password for authentication to join the cluster.
 
-## Configure a Private Ray Cluster
+## Private Cluster
+
+https://github.com/ray-project/ray/issues/4902
+
+https://github.com/ray-project/ray/issues/4559
+
+https://github.com/ray-project/ray/issues/3408
+
+https://github.com/ray-project/ray/issues/4811
+
+https://github.com/ray-project/ray/issues/5326
+
+https://github.com/ray-project/ray/issues/5437
+
+https://github.com/ray-project/ray/issues/5442
+
+https://github.com/ray-project/ray/issues/3190
 
 https://ray.readthedocs.io/en/latest/using-ray-on-a-cluster.html
 
@@ -36,6 +52,9 @@ https://ray.readthedocs.io/en/latest/autoscaling.html#quick-start-private-cluste
 
 https://ray.readthedocs.io/en/latest/using-ray-on-a-cluster.html
 
+## GCP
+
+https://github.com/ray-project/ray/issues/2660
 
 ## Kubernetes
 

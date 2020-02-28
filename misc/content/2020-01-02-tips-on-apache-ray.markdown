@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-27 17:06:49
+Date: 2020-02-27 20:01:40
 Author: Benjamin Du
 Slug: tips-on-apache-ray
 Title: Tips on Apache Ray
@@ -11,17 +11,17 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-## [Manual Cluster Setup](https://ray.readthedocs.io/en/latest/using-ray-on-a-cluster.html)
 
-## Configure a Private Ray Cluster
+## Tutorials and Examples
 
-https://ray.readthedocs.io/en/latest/using-ray-on-a-cluster.html
+[How to scale Python multiprocessing to a cluster with one line of code](https://medium.com/distributed-computing-with-ray/how-to-scale-python-multiprocessing-to-a-cluster-with-one-line-of-code-d19f242f60ff)
+demonstrates how you can scale a Python multiprocess application 
+to run an Apache Ray cluster 
+with only one line change of your code 
+(change `import multiprocessing.Pool` to `ray.util.multiprocessing.Pool`).
 
-https://ray.readthedocs.io/en/latest/autoscaling.html
 
-https://ray.readthedocs.io/en/latest/autoscaling.html#quick-start-private-cluster
-
-https://ray.readthedocs.io/en/latest/using-ray-on-a-cluster.html
+## References
 
 [Fault Tolerance](https://ray.readthedocs.io/en/latest/fault-tolerance.html#fault-tolerance)
 
@@ -36,25 +36,6 @@ https://ray.readthedocs.io/en/latest/using-ray-on-a-cluster.html
 [https://ray.readthedocs.io/en/latest/multiprocessing.html](Distributed multiprocessing.Pool)
 
 [Distributed PyTorch Using Apache Ray](https://ray.readthedocs.io/en/latest/raysgd/raysgd_pytorch.html)
-
-## Tutorials and Examples
-
-[How to scale Python multiprocessing to a cluster with one line of code](https://medium.com/distributed-computing-with-ray/how-to-scale-python-multiprocessing-to-a-cluster-with-one-line-of-code-d19f242f60ff)
-demonstrates how you can scale a Python multiprocess application 
-to run an Apache Ray cluster 
-with only one line change of your code 
-(change `import multiprocessing.Pool` to `ray.util.multiprocessing.Pool`).
-
-
-## Kubernetes
-
-https://github.com/ray-project/ray/blob/master/python/ray/autoscaler/kubernetes/example-full.yaml
-
-## Ray with Spark 
-
-
-
-## References
 
 https://github.com/ParallelSSH/parallel-ssh
 

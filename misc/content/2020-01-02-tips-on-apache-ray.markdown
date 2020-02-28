@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-27 21:50:15
+Date: 2020-02-27 22:15:11
 Author: Benjamin Du
 Slug: tips-on-apache-ray
 Title: Tips on Apache Ray
@@ -33,6 +33,8 @@ For more details,
 please refer to
 [Distributed multiprocessing.Pool](https://ray.readthedocs.io/en/latest/multiprocessing.html)
 .
+
+https://github.com/ray-project/tutorial
 
 
 ## References

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-28 10:15:20
+Date: 2020-02-28 10:42:50
 Author: Benjamin Du
 Slug: deploy-apache-ray
 Title: Deploy Apache Ray
@@ -23,7 +23,7 @@ You do not need to configure SSH keys for nodes in the cluster for manual config
 When you start the master node manually (using the command `ray start --head`), 
 it will print a command to add new nodes into the cluster.
 The command 
-(e.g., ray start --address='10.148.186.18:12030' --redis-password='5241590000000000')
+(e.g., `ray start --address='10.148.186.18:12030' --redis-password='5241590000000000'`)
 includes the Redis password for authentication to join the cluster.
 
 ## Private Cluster

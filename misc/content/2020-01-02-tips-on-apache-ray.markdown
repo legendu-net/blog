@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-27 20:01:40
+Date: 2020-02-27 20:11:55
 Author: Benjamin Du
 Slug: tips-on-apache-ray
 Title: Tips on Apache Ray
@@ -11,6 +11,11 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
+## Deploy Apache Ray
+
+Please refer to 
+[Deploy Apache Ray](http://www.legendu.net/misc/blog/deploy-apache-ray/)
+for details.
 
 ## Tutorials and Examples
 

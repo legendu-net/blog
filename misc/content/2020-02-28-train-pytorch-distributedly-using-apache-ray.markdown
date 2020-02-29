@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-28 14:54:08
+Date: 2020-02-28 16:35:40
 Author: Benjamin Du
 Slug: train-pytorch-distributedly-using-apache-ray
 Title: Train PyTorch Distributedly Using Apache Ray
@@ -13,12 +13,16 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## Training a Model Implemented in PyTorch
 
+https://github.com/ray-project/ray/tree/master/python/ray/util/sgd/pytorch/examples
+
 [Distributed PyTorch Using Apache Ray](https://ray.readthedocs.io/en/latest/raysgd/raysgd_pytorch.html)
 
 [RaySGD: Distributed Training Wrappers](https://ray.readthedocs.io/en/latest/raysgd/raysgd.html)
 
 
 ## Hyperparameter Optimization for Models Implemented in PyTorch
+
+https://ray.readthedocs.io/en/latest/tune-examples.html
 
 Is the following example running distributed or not?
 Do I need to use tags to tell Ray to run it on multiple machines?

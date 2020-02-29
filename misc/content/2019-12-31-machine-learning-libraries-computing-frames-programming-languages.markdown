@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-28 16:47:03
+Date: 2020-02-28 17:06:31
 Author: Benjamin Du
 Slug: machine-learning-libraries-computing-frames-programming-languages
 Title: Machine Learning Libraries, Computing Frames and Programming Languages
@@ -104,3 +104,7 @@ C/C++
 [Scalable Deep Learning on Distributed Infrastructures: Challenges, Techniques and Tools](https://arxiv.org/pdf/1903.11314.pdf)
 
 [A Hitchhiker’s Guide On Distributed Training of Deep Neural Networks](https://arxiv.org/pdf/1810.11787.pdf)
+
+[Distributed training of Deep Learning models with PyTorch](https://medium.com/intel-student-ambassadors/distributed-training-of-deep-learning-models-with-pytorch-1123fa538848)
+
+[Awesome Distributed Deep Learning](https://github.com/bharathgs/Awesome-Distributed-Deep-Learning)

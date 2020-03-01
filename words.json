@@ -36,6 +36,7 @@
     ["Etrade", "eTrade"], ["Ffmpeg", "FFmpeg"], ["Github", "GitHub"],
     ["Github", "GitHub"], ["Nodejs", "NodeJS"],
     ["Opencv", "OpenCV"],
+    ["Ulimit", "ulimit"],
     ["Pyodbc", "pyodbc"], ["Pypdf2", "PyPDF2"],
     ["Wechat", "WeChat"], 
     ["Yyyymm", "YYYYMM"],

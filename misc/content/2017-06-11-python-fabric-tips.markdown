@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-29 22:19:41
+Date: 2020-02-29 22:26:41
 Author: Ben Chuanlong Du
 Slug: python-fabric-tips
 Title: Cluster Management Made Easy with the Python Package Fabric
@@ -33,3 +33,7 @@ Supressing outputs (of shell commands) containing unicode can help avoid potenti
 ## Question
 
 Is it possible to surpress logging information?
+
+## References
+
+http://www.legendu.net/misc/blog/run-commands-on-remote-machines/

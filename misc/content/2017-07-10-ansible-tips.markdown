@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-29 22:19:41
+Date: 2020-02-29 22:26:41
 Author: Ben Chuanlong Du
 Slug: ansible-tips
 Title: Cluster Management Made Easy with Ansible
@@ -76,6 +76,9 @@ when you have host key checking enabled in Ansible.
 
 ## References
 
+http://www.legendu.net/misc/blog/run-commands-on-remote-machines/
+
 https://github.com/ansible/ansible
 
 https://serversforhackers.com/running-ansible-programmatically
+

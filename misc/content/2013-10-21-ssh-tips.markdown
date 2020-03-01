@@ -12,7 +12,13 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 ## Tips and Traps
 
-1. SSH automatically maintains and checks a database containing identification 
+1. The permissions of the directory `~/.ssh` and its subcontents
+    on **both the local machine and the remote server** must be properly set 
+    in order for SSH login via public key to work.
+    A good pratice is to set the permission of `~/.ssh` to `700` (on both the local machine and the rmeote server)
+    and set permissions of files under `~/.ssh` to  `600`.
+    
+2. SSH automatically maintains and checks a database containing identification 
     for all hosts it has ever been used with. 
     Host keys are stored in `~/.ssh/known_hosts` in the user's home directory. 
     Additionally, 

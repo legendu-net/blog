@@ -1,9 +1,8 @@
-UUID: b51522dc-975f-4eb6-a2c2-c39e4c75b502
 Status: published
-Date: 2017-12-31 21:39:17
+Date: 2020-02-29 17:14:25
 Author: Ben Chuanlong Du
 Slug: samba-tips
-Title: Samba Tips
+Title: Tips on Samba
 Category: Linux
 Tags: Linux, SAMBA, remote file system, file sharing
 

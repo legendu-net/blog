@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: Tips on Linux
-Date: 2020-02-29 17:11:25
+Date: 2020-02-29 17:13:18
 Slug: linux-tips
 Category: Linux
 Tags: tips, Linux
@@ -65,16 +65,6 @@ but rather for convenient reference of the author and future improvement.
     I create a directory named archives in my home directory,
     put all my persoanl data including configuration files there
     (except cloud, such as Dropbox, TeamDrive, etc.) 
-
-## Links
-
-5. Linux does not support variant symbolic links, i.e., you can use environment variables in symbolic links.
-    and link them to places where needed.
-    This way, 
-    I can just make a copy of the archives directory 
-    which is even more convenient.
-    Avoid copying unnecessary files.
-
 
 ## Terminal
 

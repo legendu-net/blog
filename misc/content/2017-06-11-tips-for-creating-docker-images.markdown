@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-11 19:23:18
+Date: 2020-02-29 21:22:04
 Author: Ben Chuanlong Du
 Slug: tips-on-creating-docker-images
 Title: Tips on Creating Docker Images
@@ -18,11 +18,11 @@ but rather for convenient reference of the author and future improvement.
     the `ADD` command also untars the file if it is a `tar` file.
     It is suggested that you avoid use the `ADD` command unless you are clear about the side effect.
 
-5. Docker caches building operations. 
+2. Docker caches building operations. 
     When cache for an operation is available, 
     Docker use the cache layer directly and avoid building the layer again.
 
-7. The command `ARG` creates environment variables for build-time 
+3. The command `ARG` creates environment variables for build-time 
     while the command `ENV` creates environment variables for run-time.
     Notice that substring does not work with environment variables created by `ARG`!
     For example, 
@@ -45,16 +45,17 @@ but rather for convenient reference of the author and future improvement.
     run the comamnd `npm cache clean --force` to remove local caches 
     to reduce the size of built Docker images.
 
-4. You have to tag an image into a Docker repository 
+7. You have to tag an image into a Docker repository 
     so that you can push the image into the repository. 
 
-1. it might be a good idea to expose an additional port in Docker, if not sure how many services will be used ...
+8. It is a good idea to expose additional ports to a Docker container
+    just in case you might need to start other services later in the Docker container.
 
-2. to avoid duplicate of files, use different branches instead of directories seems like a good idea
+9. The `docker build` command does not support symbolic links 
+    to files outside the root directory of `docker build`.
 
-3. does not support symbolic links
-
-4. by default ubuntu Docker image does not include the multiverse repository ..., manually include it if you need it ...
+10. By default the `ubuntu` Docker image does not include the multiverse repository.
+    You can include it manually if you need it.
 
 ## Git + SSH to Avoid Two-way Authentication Behind Corporate Firewall
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-06 16:07:23
+Date: 2020-02-29 21:05:17
 Author: Benjamin Du
 Slug: tips-for-training-deep-neural-networks
 Title: Tips for Training Deep Neural Networks
@@ -41,6 +41,8 @@ https://zhuanlan.zhihu.com/p/59918821
 https://ml-cheatsheet.readthedocs.io/en/latest/index.html
 
 https://karpathy.github.io/2019/04/25/recipe/
+
+When the minibatch size is multiplied by k, multiply the learning rate by k.
 
 ## Regularization
 

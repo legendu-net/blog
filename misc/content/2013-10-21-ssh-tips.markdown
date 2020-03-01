@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
 Title: SSH Tips
-Date: 2020-02-11 17:04:47
+Date: 2020-02-29 21:37:59
 Slug: ssh-tips
 Category: Software
 Tags: tips, SSH, software, remote, Linux
@@ -10,8 +10,7 @@ Tags: tips, SSH, software, remote, Linux
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
-
-## Tricks and Traps
+## Tips and Traps
 
 1. SSH automatically maintains and checks a database containing identification 
     for all hosts it has ever been used with. 
@@ -49,45 +48,22 @@ It is not meant to readers but rather for convenient reference of the author and
     please refer to
     [SSH Proxies and Jump Hosts](https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Proxies_and_Jump_Hosts).
 
+        :::bash
         ssh -o ProxyCommand='ssh proxy_server -W %h:%p' target_server
 
-2. It seems that if you use the local ip address,
-    the port number is not important.
+3. When using `sshfs` and `fuse`, 
+    make sure to add your user account into the `fuse` group.
 
-3. It might be that the server cannot stand the traffic ...
-    it seems that it dies if I copy lots of files into it ...
-
-4. when use sshfs and fuse, you want to add your user account into the fuse group,
-
+        :::bash
         gpasswd -a dclong fuse
         newgrp fuse
 
-5. best to set no password for public keys,
-    though it's not very secure,
-    it saves lots of potential problems, such as keyring management,
-    ssh key for cron and so on
+4. It is suggested that you do not set any password for your SSH keys. 
+    First, setting passwords for SSH keys defeats the purpose of using SSH keys.
+    Seconds, 
+    settings passwords for SSH keys might causes problems to other applicatons 
+    (e.g., keyring management, cron jobs, duplicity, etc.) rely on SSH.
 
-6. must use no passphrase for ssh so that ssh works
-    for duplicity and so on,
-    many program rely on this, so you'd better not set passphrase for ssh
-
-7. about debian laptop not recognized on local network, it's really strange
-    probably because of debian sid
-
-8. ip can be important if you use ssh,
-    make sure your ip is allowed to ...
-
-## Questions
-
-
-1. the connection via ssh to my toshiba is very unstable, I'm not sure what have cuased the problem?
-The internet seems OK, or maybe it is because I'm copying larges files over local network
-
-/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
-
-/usr/bin/ssh-copy-id: ERROR: ssh: Could not resolve hostname y570.stat.iastate.edu -p 323: Name or service not known
-
-3. SSH: ‘No Route to Host’ error
 
 ## References
 

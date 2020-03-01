@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-29 17:35:17
+Date: 2020-02-29 17:47:12
 Author: Benjamin Du
 Slug: user-access-control-on-linux
 Title: User Access Control on Linux
@@ -39,3 +39,5 @@ Please refer to
 for more details on how to add user to a group.
 
 https://medium.com/@viraj.khatavkar/understanding-the-sudoers-file-8d71961b28ac
+
+https://help.ubuntu.com/community/Sudoers

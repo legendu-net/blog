@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-03-01 01:58:04
+Date: 2020-03-01 11:36:44
 Author: Benjamin Du
 Slug: train-pytorch-distributedly-using-apache-ray
 Title: Train PyTorch Distributedly Using Apache Ray
@@ -52,6 +52,17 @@ print("Best config: ", analysis.get_best_config(metric="mean_accuracy"))
 # Get a dataframe for analyzing trial results.
 df = analysis.dataframe()
 ```
+
+- data parallelism vs model parallelism  
+- use Ring Allreduce (RA) (instead of Parameter Server or Peer to Peer) 
+    for synchronization among processes (CPU/GPU on the same node or different nodes)
+- Distributed Optimization Algorithm
+    - synchronized SGD 
+    - asynchronized SGD 
+    - 1-bit SGD
+    - The Hogwild algorithm
+    - Downpour SGD
+    - synchronized SGD + large minibatch to reduce update frequency of parameters
 
 ## References
 

@@ -1,17 +1,19 @@
 Status: published
-Date: 2020-01-03 09:50:08
+Date: 2020-02-29 22:22:19
 Author: Benjamin Du
-Slug: run-commands-on-a-remote-machine
-Title: Run Commands on a Remote Machine
+Slug: run-commands-on-remote-machines
+Title: Run Commands on Remote Machines
 Category: Programming
-Tags: programming, Shell, Python, SSH
+Tags: programming, Shell, Python, SSH, remote, Fabric, Ansible, ClusterSSH, parallel-ssh
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-## SSH
+## On a Sinsgle Machine
+
+### SSH
 
 1. The pipeline command is run locally.
     If you want the pipeline command to run remotely, 
@@ -33,22 +35,11 @@ It is not meant to readers but rather for convenient reference of the author and
 
 https://stackoverflow.com/questions/305035/how-to-use-ssh-to-run-a-shell-script-on-a-remote-machine
 
-## Python
-
 ### [paramiko/paramiko](https://github.com/paramiko/paramiko)
+
 [paramiko/paramiko](https://github.com/paramiko/paramiko)
 is a pure Python implementation of SSHv2. 
 It is a great tool to interact with a remote server in Python.
-
-### [parallel-ssh](https://github.com/ParallelSSH/parallel-ssh)
-
-Asynchronous parallel SSH client library.
-Run SSH commands over many (hundreds/hundreds of thousands) 
-number of servers asynchronously and with minimal system load on the client host.
-
-### [fabric](https://github.com/fabric/fabric/)
-
-### Ansible
 
 ### [asyncssh](https://github.com/ronf/asyncssh)
 
@@ -56,6 +47,21 @@ number of servers asynchronously and with minimal system load on the client host
 
 ### [sshtunnel](https://github.com/pahaz/sshtunnel)
 
+## On a Cluster of Machines
+
+### [Ansible](https://github.com/ansible/ansible)
+
+### [parallel-ssh](https://github.com/ParallelSSH/parallel-ssh)
+
+Asynchronous parallel SSH client library.
+Run SSH commands over many (hundreds/hundreds of thousands) 
+number of servers asynchronously and with minimal system load on the client host.
+
+### [ClusterSSH](https://github.com/duncs/clusterssh)
+
+### [fabric](https://github.com/fabric/fabric/)
+
+Ansible is a better alternative than fabric.
 
 ## References 
 

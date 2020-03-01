@@ -1,9 +1,8 @@
-UUID: 3e45f953-ca85-4bdb-b8d3-53404241590a
 Status: published
-Date: 2017-07-10 23:58:31
+Date: 2020-02-29 22:19:41
 Author: Ben Chuanlong Du
 Slug: python-fabric-tips
-Title: Python Fabric Tips
+Title: Cluster Management Made Easy with the Python Package Fabric
 Category: Programming
 Tags: Python, programming, Fabric, Ansible
 

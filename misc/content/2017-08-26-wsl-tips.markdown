@@ -1,9 +1,8 @@
-UUID: d9973977-83cd-43d0-9bee-cde1ba8c5c42
 Status: published
-Date: 2019-03-04 23:07:55
+Date: 2020-02-29 17:10:27
 Author: Ben Chuanlong Du
 Slug: wsl-tips
-Title: WSL Tips
+Title: Tips on WSL
 Category: Linux
 Tags: Linux, WSL, Windows, BashOnWindows, Bash on Windows, tips
 

@@ -1,7 +1,7 @@
 Status: published
 Author: Ben Chuanlong Du
-Title: Tips for Debian
-Date: 2019-03-07 09:29:38
+Title: Tips on Debian
+Date: 2020-02-29 17:08:42
 Slug: debian-tips
 Category: Linux
 Tags: tips, Linux, Debian

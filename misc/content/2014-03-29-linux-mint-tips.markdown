@@ -1,9 +1,8 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
-Date: 2016-06-06 18:48:54
+Date: 2020-02-29 17:08:42
 Slug: linux-mint-tips
-Title: Linux Mint Tips
+Title: Tips on Linux Mint
 Category: OS
 Tags: OS, operating system, Linux Mint, tips
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-28 17:06:31
+Date: 2020-02-29 21:03:42
 Author: Benjamin Du
 Slug: machine-learning-libraries-computing-frames-programming-languages
 Title: Machine Learning Libraries, Computing Frames and Programming Languages
@@ -96,6 +96,7 @@ C/C++
 
 - [Comparison of AI Frameworks](https://pathmind.com/wiki/comparison-frameworks-dl4j-tensorflow-pytorch)
 
+[Accelerating Deep Learning Using Distributed SGD — An Overview](https://towardsdatascience.com/accelerating-deep-learning-using-distributed-sgd-an-overview-e66c4aee1a0c)
 
 [Demystifying Parallel and Distributed Deep Learning: An In-Depth Concurrency Analysis](https://spcl.inf.ethz.ch/Publications/.pdf/distdl-preprint.pdf)
 
@@ -108,3 +109,7 @@ C/C++
 [Distributed training of Deep Learning models with PyTorch](https://medium.com/intel-student-ambassadors/distributed-training-of-deep-learning-models-with-pytorch-1123fa538848)
 
 [Awesome Distributed Deep Learning](https://github.com/bharathgs/Awesome-Distributed-Deep-Learning)
+
+[Intro to Distributed Deep Learning Systems](https://medium.com/@Petuum/intro-to-distributed-deep-learning-systems-a2e45c6b8e7)
+
+[Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour](https://arxiv.org/pdf/1706.02677.pdf)

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-28 17:06:31
+Date: 2020-02-29 21:03:42
 Author: Benjamin Du
 Slug: train-pytorch-distributedly-using-apache-ray
 Title: Train PyTorch Distributedly Using Apache Ray
@@ -59,8 +59,14 @@ https://github.com/ray-project/ray/issues/3609
 
 https://github.com/ray-project/ray/issues/3520
 
+[Accelerating Deep Learning Using Distributed SGD — An Overview](https://towardsdatascience.com/accelerating-deep-learning-using-distributed-sgd-an-overview-e66c4aee1a0c)
+
 [Distributed training of Deep Learning models with PyTorch](https://medium.com/intel-student-ambassadors/distributed-training-of-deep-learning-models-with-pytorch-1123fa538848)
 
 https://github.com/dmmiller612/sparktorch
 
 [Awesome Distributed Deep Learning](https://github.com/bharathgs/Awesome-Distributed-Deep-Learning)
+
+[Intro to Distributed Deep Learning Systems](https://medium.com/@Petuum/intro-to-distributed-deep-learning-systems-a2e45c6b8e7)
+
+[Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour](https://arxiv.org/pdf/1706.02677.pdf)

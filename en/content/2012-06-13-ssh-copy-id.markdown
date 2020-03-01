@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-29 21:37:59
+Date: 2020-02-29 22:25:13
 Slug: ssh-copy-id
 Author: Ben Chuanlong Du
 Title: Copy SSH Public Key Using "ssh-copy-id"
@@ -22,8 +22,8 @@ you will get an error message.
 Suppose sshd runs on port 323 on `host_machine`, 
 the following command copies the ssh public key to it. 
 
-:::bash
-ssh-copy-id -i ~/.ssh/id_rsa.pub "host_machine -p 323"
+    :::bash
+    ssh-copy-id -i ~/.ssh/id_rsa.pub "host_machine -p 323"
 
 You can of course SSH into the server 
 and add your SSH public key(s) into the `~/.ssh/authorized_keys` file manually.

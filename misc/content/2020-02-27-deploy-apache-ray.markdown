@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-28 14:50:41
+Date: 2020-03-02 13:50:46
 Author: Benjamin Du
 Slug: deploy-apache-ray
 Title: Deploy Apache Ray
@@ -25,6 +25,11 @@ it will print a command to add new nodes into the cluster.
 The command 
 (e.g., `ray start --address='10.148.186.18:12030' --redis-password='5241590000000000'`)
 includes the Redis password for authentication to join the cluster.
+
+By default, 
+the Ray dashboard is visitable only on the head node.
+To make it visitable by public IP,
+you can include the option `--webui-host=0.0.0.0` when starting Ray on the head node.
 
 ## Private Cluster
 

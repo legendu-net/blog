@@ -1,17 +1,11 @@
 Status: published
-Date: 2020-03-02 12:06:50
+Date: 2020-03-02 12:21:03
 Author: Ben Chuanlong Du
 Slug: change-shell-in-mac
 Title: Change Shell in Mac
 Category: OS
 Tags: macOS, shell, Hyper.js, Bash, zsh
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-It is not meant to readers
-but rather for convenient reference of the author and future improvement.
-**
 
 You can check the current shell in use by running the following command.
 

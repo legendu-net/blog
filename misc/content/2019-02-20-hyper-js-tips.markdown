@@ -1,10 +1,10 @@
 Status: published
-Date: 2019-08-29 08:46:26
+Date: 2020-03-02 12:20:43
 Author: Benjamin Du
 Slug: hyper-js-tips
-Title: Hyper Js Tips
+Title: Tips on Hyper
 Category: Software
-Tags: software, Hyper, hyper.js, terminal
+Tags: software, Hyper, terminal
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -13,8 +13,18 @@ It is not meant to readers but rather for convenient reference of the author and
 
 [Awesome Hyper](https://github.com/bnb/awesome-hyper)
 
-## [HyperJS Themes](https://hyper.is/themes)
+## [Themes for Hyper](https://hyper.is/themes)
 verminal is good one
+
+## General Tips
+
+1. Updating the environment variable `SHELL` (using the command `chsh`)
+    to change the default shell doesn't work for Hyper.
+    You have to set the default shell for Hyper in its configuration file directly.
+    For more details,
+    please refer to
+    [Change Shell in Mac](http://www.legendu.net/en/blog/change-shell-in-mac/)
+    .
 
 ## Shortcuts
 
@@ -29,6 +39,8 @@ verminal is good one
 * **Cmd+] and Cmd+[ navigates among split panes in order of use.**
 
 ## References
+
+https://github.com/zeit/hyper
 
 https://github.com/zeit/hyper/issues/890
 

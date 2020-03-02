@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-07-19 00:33:35
+Date: 2020-03-01 22:24:43
 Author: Ben Chuanlong Du
 Slug: my-list-of-python-modules
 Title: My List of Python Modules
@@ -128,6 +128,8 @@ http://www.legendu.net/misc/blog/odbc-vs-jdbc-in-python/
 ## Misc
 
 1. inspect: check class, function definition and so on.
+
+2. tqdm: A Fast, Extensible Progress Bar for Python and CLI
 
 ## References
 

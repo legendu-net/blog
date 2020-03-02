@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-03-02 13:50:46
+Date: 2020-03-02 13:51:23
 Author: Benjamin Du
 Slug: deploy-apache-ray
 Title: Deploy Apache Ray
@@ -75,3 +75,7 @@ https://ray.readthedocs.io/en/latest/autoscaling.html#kubernetes
 https://github.com/ray-project/ray/blob/master/python/ray/autoscaler/kubernetes/example-full.yaml
 
 ## Ray with Spark 
+
+## References
+
+https://github.com/ray-project/ray/issues/7025

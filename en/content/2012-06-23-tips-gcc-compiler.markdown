@@ -1,11 +1,10 @@
-UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
-Title: Tips for C++ Compilers
-Date: 2014-03-07 11:33:07
-Tags: C++, programming, GCC, thread, compiler, link
-Category: Programming
-Slug: tips-gcc-compiler
 Author: Ben Chuanlong Du
+Date: 2020-03-03 11:00:37
+Slug: tips-gcc-compiler
+Title: Tips on C++ Compilers
+Category: Programming
+Tags: C++, programming, GCC, thread, compiler, link
 
 ## GCC
 1. User option `-lpthread` to link the thread library when your code use the thread library. 
@@ -37,4 +36,4 @@ error or warning, but you will probably get the following error when you run the
 
 ## Clang
 
-1. use libc++ instead libstdc++
+1. use `libc++` instead `libstdc++`

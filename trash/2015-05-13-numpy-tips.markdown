@@ -13,10 +13,3 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-1. NaN NAN nan in numpy are all the same
-
-2. numpy.sum, numpy.prod
-
-## matrix
-
-numpy.Matrix.diagonal

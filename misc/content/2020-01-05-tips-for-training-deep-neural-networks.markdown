@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-02-29 21:05:17
+Date: 2020-03-03 11:02:27
 Author: Benjamin Du
-Slug: tips-for-training-deep-neural-networks
-Title: Tips for Training Deep Neural Networks
+Slug: training-deep-neural-networks
+Title: Training Deep Neural Networks
 Category: AI
 Tags: AI, machine learning, data science, deep learning, deep neural network, DNN
 

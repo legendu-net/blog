@@ -37,11 +37,12 @@ MARKDOWN = {
 
 # Title menu options
 MENUITEMS = [
-        ('Home', SITEURL),
-        ('English', os.path.join(SITEURL, 'en')), 
-        ('中文', os.path.join(SITEURL, 'cn')), 
-        ('Miscellanea', os.path.join(SITEURL, 'misc')), 
-        ('About', os.path.join(SITEURL, 'pages/about')), 
+        ("Home", SITEURL),
+        ("English", os.path.join(SITEURL, "en")), 
+        ("中文", os.path.join(SITEURL, "cn")), 
+        ("Miscellanea", os.path.join(SITEURL, "misc")), 
+        ("Outdated", os.path.join(SITEURL, "outdated")), 
+        ("About", os.path.join(SITEURL, "pages/about")), 
     ]
 
 NEWEST_FIRST_ARCHIVES = True

@@ -17,6 +17,7 @@ EN = 'en'
 CN = 'cn'
 HOME = 'home'
 MISC = 'misc'
+OUTDATED = 'outdated'
 DECLARATION = '''
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -492,12 +493,14 @@ class Blogger:
         """Move a post to the specified location.
         """
         src = Path(src)
-        if dst in (EN, CN, MISC):
+        if dst in (EN, CN, MISC, OUTDATED):
             dst = BASE_DIR / dst / 'content' / src.name
         else:
             dst = Path(dst)
         if src == dst:
             return
+        print(src)
+        print(dst)
         shutil.move(src, dst)
         post = Post(dst)
         post.update_after_move()

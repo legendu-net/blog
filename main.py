@@ -11,7 +11,7 @@ try:
 except ImportError:
     sp.run('python3 -m pip install --user pelican', shell=True, check=True)
     import pelican
-from blog import Post, Blogger, BASE_DIR, HOME, EN, CN, MISC
+from blog import Post, Blogger, BASE_DIR, HOME, EN, CN, MISC, OUTDATED
 USER = getpass.getuser()
 EDITOR = 'code'
 VIM = 'nvim' if shutil.which('nvim') else 'vim'
@@ -766,6 +766,14 @@ def _subparse_move(subparsers):
         action='store_const',
         const=MISC,
         help='move to the misc sub blog directory.')
+    subparser_move.add_argument(
+        '-o',
+        '--out',
+        '--outdated',
+        dest='target',
+        action='store_const',
+        const=OUTDATED,
+        help='move to the outdated sub blog directory.')
     subparser_move.set_defaults(func=move)
 
 
@@ -794,6 +802,14 @@ def _subparse_publish(subparsers):
         action='append_const',
         const=MISC,
         help='add the misc sub blog directory into the publish list.')
+    subparser_publish.add_argument(
+        '-o',
+        '--out',
+        '--outdated',
+        dest='sub_dirs',
+        action='append_const',
+        const=OUTDATED,
+        help='add the outdated sub blog directory into the publish list.')
     subparser_publish.add_argument(
         '--https',
         dest='https',

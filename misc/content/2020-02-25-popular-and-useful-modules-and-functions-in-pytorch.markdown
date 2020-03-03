@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-26 10:20:09
+Date: 2020-03-03 09:49:24
 Author: Benjamin Du
 Slug: popular-and-useful-modules-and-functions-in-pytorch
 Title: Popular and Useful Modules and Functions in PyTorch
@@ -48,10 +48,10 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## Modules
 
-[torch.nn.Sequential](https://pytorch.org/docs/stable/nn.html#sequential)
-[torch.nn.Conv2d](https://pytorch.org/docs/stable/nn.html#conv2d)
-[torch.nn.Dropout2d](https://pytorch.org/docs/stable/nn.html#dropout2d)
-[torch.nn.Linear](https://pytorch.org/docs/stable/nn.html#linear)
+- [torch.nn.Sequential](https://pytorch.org/docs/stable/nn.html#sequential)
+- [torch.nn.Conv2d](https://pytorch.org/docs/stable/nn.html#conv2d)
+- [torch.nn.Dropout2d](https://pytorch.org/docs/stable/nn.html#dropout2d)
+- [torch.nn.Linear](https://pytorch.org/docs/stable/nn.html#linear)
 
 ## Transforms
 

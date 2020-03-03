@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-03-03 11:18:32
+Date: 2020-03-03 11:41:04
 Author: Benjamin Du
 Slug: common-issues-in-pytorch
 Title: Common Issues in PyTorch
@@ -15,6 +15,9 @@ It is not meant to readers but rather for convenient reference of the author and
 
 This means that the input data and the model are on different devices (CPU and CUDA). 
 Moving them to the same device resolves the issue.
+Please refer to 
+[Move a Tensor to a Specific Device in PyTorch](http://www.legendu.net/misc/blog/common-issues-in-pytorch/)
+on how to move a Tensor to a specific device.
 
 https://discuss.pytorch.org/t/input-type-torch-floattensor-and-weight-type-torch-cuda-floattensor-should-be-the-same/48633
 

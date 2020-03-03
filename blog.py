@@ -499,8 +499,6 @@ class Blogger:
             dst = Path(dst)
         if src == dst:
             return
-        print(src)
-        print(dst)
         shutil.move(src, dst)
         post = Post(dst)
         post.update_after_move()

@@ -222,6 +222,7 @@ def _github_repos_url(dir_: str, https: bool = False) -> str:
         'en': 'en',
         'cn': 'cn',
         'misc': 'misc',
+        'outdated': 'outdated',
     }[dir_]
     url = f'git@github.com:dclong/{repos}.git'
     if https:

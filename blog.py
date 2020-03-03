@@ -492,9 +492,7 @@ class Blogger:
     def move(self, src: Union[str, Path], dst: str) -> None:
         if isinstance(src, (str, Path)):
             self._move_1(src, dst)
-        if isinstance(dst, str):
-            dst = Path(dst)
-        if len(src) > 1 and not dst.is_dir():
+        if len(src) > 1 and not os.path.isdir(dst):
             sys.exit("dst must be a directory when moving multiple files")
         for file in src:
             self._move_1(file, dst)

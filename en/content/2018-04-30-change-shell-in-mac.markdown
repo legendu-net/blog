@@ -1,10 +1,10 @@
 Status: published
-Date: 2020-03-02 12:21:03
+Date: 2020-03-02 14:46:43
 Author: Ben Chuanlong Du
 Slug: change-shell-in-mac
 Title: Change Shell in Mac
 Category: OS
-Tags: macOS, shell, Hyper.js, Bash, zsh
+Tags: macOS, shell, Hyper, Bash, zsh
 
 
 You can check the current shell in use by running the following command.
@@ -19,7 +19,7 @@ thee following command changes the default shell to Bash.
     :::bash
     chsh -s /bin/bash
 
-Notice that [Hyper.js](https://hyper.is/)
+Notice that [Hyper](https://hyper.is/)
 does not honor the the environment variable `SHELL`
 and thus the above way of changing the default shell does not work for Hyper.js.
 One way to change the default shell in Hyper.js 

@@ -26,10 +26,10 @@ def query(blogger, args):
 
 
 def move(blogger, args):
-    if args.index:
-        args.file = blogger.path(args.index)[0]
-    if args.file:
-        blogger.move(args.file, args.target)
+    if args.indexes:
+        args.files = blogger.path(args.indexes)
+    if args.files:
+        blogger.move(args.files, args.target)
     blogger.commit()
 
 
@@ -734,12 +734,16 @@ def _subparse_move(subparsers):
     subparser_move = subparsers.add_parser(
         'move', aliases=['m'], help='Move a post.')
     subparser_move.add_argument(
-        'index',
+        'indexes',
         type=int,
-        nargs='?',
+        nargs='*',
         help='rowid in the search results.')
     subparser_move.add_argument(
-        '-f', '--file', dest='file', help='path of the post to be moved.')
+        '-f', 
+        '--files', 
+        nargs='*',
+        dest='files', 
+        help='path of the post to be moved.')
     subparser_move.add_argument(
         '-t',
         '--target',

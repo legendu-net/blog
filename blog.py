@@ -490,9 +490,20 @@ class Blogger:
         self.execute(sql, posts)
 
     def move(self, src: Union[str, Path], dst: str) -> None:
+        if isinstance(src, (str, Path)):
+            self._move_1(src, dst)
+        if isinstance(dst, str):
+            dst = Path(dst)
+        if len(src) > 1 and not dst.is_dir():
+            sys.exit("dst must be a directory when moving multiple files")
+        for file in src:
+            self._move_1(file, dst)
+
+    def _move_1(self, src: Union[str, Path], dst: str) -> None:
         """Move a post to the specified location.
         """
-        src = Path(src)
+        if isinstance(src, str):
+            src = Path(src)
         if dst in (EN, CN, MISC, OUTDATED):
             dst = BASE_DIR / dst / 'content' / src.name
         else:

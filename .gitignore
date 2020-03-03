@@ -11,4 +11,6 @@ cn/output
 cn/cache
 misc/output
 misc/cache
+outdated/output
+outdated/cache
 dask-worker-space/

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-29 10:47:15
+Date: 2020-03-02 18:01:37
 Author: Benjamin Du
 Slug: public-cloud-offering-gpu-support
 Title: Public Cloud Offering GPU Support
@@ -21,5 +21,5 @@ https://colab.research.google.com/notebooks/intro.ipynb#recent=true
 ## Amazon AWS
 
 Below is a list of instances that have 1 GPU on Amazon AWS.
-g3s.xlarge and g4dn.xlarge are good ones for occasional use.
+g3s.xlarge and g4dn.xlarge (**recommended**) are good ones for occasional use.
 ![](https://user-images.githubusercontent.com/824507/73386836-607ad380-4284-11ea-862a-d04a19b98ee2.png)

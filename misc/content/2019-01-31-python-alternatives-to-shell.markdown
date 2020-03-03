@@ -140,7 +140,7 @@ but rather for convenient reference of the author and future improvement.
   <tr>
     <td> mv file1 file2 </td>
     <td> Path("file1").rename("file2") </td>
-    <td> pathlib </td>
+    <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.rename"> pathlib </a> </td>
   </tr>
   <tr>
     <td> mv file1 file2 </td>

@@ -23,6 +23,8 @@ for easily generating tables in different programming languges (HTML, Markdown, 
 
 [UnDraw](https://undraw.co/) offers free to use pictures for web desgin, etc.
 
+[HTML color codes and names](https://www.computerhope.com/htmcolor.htm)
+
 ## Answer Engine
 
 - [Wolfram Alpha](http://www.wolframalpha.com/)

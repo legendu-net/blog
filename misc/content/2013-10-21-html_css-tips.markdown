@@ -14,6 +14,8 @@ It is not meant to readers but rather for convenient reference of the author and
 [TableConvert Online](https://tableconvert.com/)
 helps generating HTML tables easily.
 
+[HTML color codes and names](https://www.computerhope.com/htmcolor.htm)
+
 1. HTML is not case sensitive, 
     but it's suggested that you alway use lower case for tags.
 

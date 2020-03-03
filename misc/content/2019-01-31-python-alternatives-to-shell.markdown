@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-03-03 15:45:00
+Date: 2020-03-03 15:52:15
 Author: Ben Chuanlong Du
 Slug: shell-alternatives
 Title: Python Alternatives to Shell
@@ -20,9 +20,9 @@ It is not meant to readers but rather for convenient reference of the author and
     <th> Alternative </th>
     <th> Python </th>
   </tr>
-  <tr bgcolor="#348017">
+  <tr>
     <td> mkdir -p /path/to/some/file </td>
-    <td> Path("path/to/some/file").mkdir(exist_ok=True) </td>
+    <td bgcolor="#348017"> Path("path/to/some/file").mkdir(exist_ok=True) </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir"> pathlib </a> </td>
   </tr>
   <tr>
@@ -40,9 +40,9 @@ It is not meant to readers but rather for convenient reference of the author and
     <td> mkdir -p /path/to/some/file </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
-  <tr bgcolor="#348017">
+  <tr>
     <td> cp file1 file2 </td>
-    <td> shutil.copy2("file1", "file2") </td>
+    <td bgcolor="#348017"> shutil.copy2("file1", "file2") </td>
     <td> <a href="https://docs.python.org/3/library/shutil.html#shutil.copy2"> shutil </a> </td>
   </tr>
   <tr>
@@ -60,9 +60,9 @@ It is not meant to readers but rather for convenient reference of the author and
     <td> cp file1 file2 </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
-  <tr bgcolor="#348017">
+  <tr>
     <td> ln -s file1 file2 </td>
-    <td> Path("file1").symlink_to("file2", target_is_directory=True) </td>
+    <td bgcolor="#348017"> Path("file1").symlink_to("file2", target_is_directory=True) </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.symlink_to"> pathlib </a> </td>
   </tr>
   <tr>
@@ -80,9 +80,9 @@ It is not meant to readers but rather for convenient reference of the author and
     <td> ln -s file1 file2 </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
-  <tr bgcolor="#348017">
+  <tr>
     <td> ln -sT file1 file2 </td>
-    <td> Path("file1").symlink_to("file2", target_is_directory=False) </td>
+    <td bgcolor="#348017"> Path("file1").symlink_to("file2", target_is_directory=False) </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.symlink_to"> pathlib </a> </td>
   </tr>
   <tr>
@@ -100,9 +100,9 @@ It is not meant to readers but rather for convenient reference of the author and
     <td> ln -sT file1 file2 </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
-  <tr bgcolor="#348017">
+  <tr>
     <td> rm file </td>
-    <td> Path("/path/to/file").unlink() </td>
+    <td bgcolor="#348017"> Path("/path/to/file").unlink() </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.unlink"> pathlib </a> </td>
   </tr>
   <tr>
@@ -120,9 +120,9 @@ It is not meant to readers but rather for convenient reference of the author and
     <td> rm file </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
-  <tr bgcolor="#348017">
+  <tr>
     <td> rmdir /path/to/dir </td>
-    <td> Path("/path/to/dir").rmdir() </td>
+    <td bgcolor="#348017"> Path("/path/to/dir").rmdir() </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.rmdir"> pathlib </a> </td>
   </tr>
   <tr>
@@ -140,9 +140,9 @@ It is not meant to readers but rather for convenient reference of the author and
     <td> rm -rf dir </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
-  <tr bgcolor="#348017">
+  <tr>
     <td> mv file1 file2 </td>
-    <td> Path("file1").rename("file2") </td>
+    <td bgcolor="#348017"> Path("file1").rename("file2") </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.rename"> pathlib </a> </td>
   </tr>
   <tr>
@@ -165,9 +165,9 @@ It is not meant to readers but rather for convenient reference of the author and
     <td> mv file1 file2 </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
-  <tr bgcolor="#348017">
+  <tr>
     <td> chmod 600 /path/to/file </td>
-    <td> Path("/path/to/file").chmod(0o600) </td>
+    <td bgcolor="#348017"> Path("/path/to/file").chmod(0o600) </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.chmod"> pathlib </a> </td>
   </tr>
 </table>

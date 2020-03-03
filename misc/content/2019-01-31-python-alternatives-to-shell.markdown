@@ -1,5 +1,5 @@
 Status: published
-Date: 2019-10-13 11:55:32
+Date: 2020-03-03 15:04:23
 Author: Ben Chuanlong Du
 Slug: shell-alternatives
 Title: Python Alternatives to Shell
@@ -24,81 +24,143 @@ but rather for convenient reference of the author and future improvement.
 <table style="width:100%">
   <tr>
     <th> Shell Command </th>
-    <th> Python Alternative </th>
-    <th> IPython Alternative </th>
-    <th> Python xonsh Alternative </th>
+    <th> Alternative </th>
+    <th> Python </th>
   </tr>
   <tr>
-    <td> mkdir -p path/to/some/file </td>
-    <td> os.makedirs('path/to/some/file', exist_ok=True) </td>
-    <td> !mkdir -p path/to/some/file </td>
-    <td> mkdir -p path/to/some/file </td>
+    <td> mkdir -p /path/to/some/file </td>
+    <td> Path("path/to/some/file").mkdir(exist_ok=True) </td>
+    <td> Python </td>
   </tr>
   <tr>
-    <td> mkdir -p path/to/some/file </td>
-    <td> pathlib.Path('path/to/some/file').mkdir(exist_ok=True) </td>
-    <td> !mkdir -p path/to/some/file </td>
-    <td> mkdir -p path/to/some/file </td>
+    <td> mkdir -p /path/to/some/file </td>
+    <td> os.makedirs("/path/to/some/file", exist_ok=True) </td>
+    <td> Python </td>
+  </tr>
+  <tr>
+    <td> mkdir -p /path/to/some/file </td>
+    <td> !mkdir -p /path/to/some/file </td>
+    <td> IPython </td>
+  </tr>
+  <tr>
+    <td> mkdir -p /path/to/some/file </td>
+    <td> mkdir -p /path/to/some/file </td>
+    <td> xonsh </td>
   </tr>
   <tr>
     <td> cp file1 file2 </td>
-    <td> shutil.copy2('file1', 'file2') </td>
+    <td> shutil.copy2("file1", "file2") </td>
+    <td> Python </td>
+  </tr>
+  <tr>
+    <td> cp file1 file2 </td>
+    <td> shutil.copyfile("file1", "file2") </td>
+    <td> Python </td>
+  </tr>
+  <tr>
+    <td> cp file1 file2 </td>
     <td> !cp file1 file2 </td>
-    <td> cp file1 file2 </td>
+    <td> IPython </td>
   </tr>
   <tr>
     <td> cp file1 file2 </td>
-    <td> shutil.copyfile('file1', 'file2') </td>
-    <td> !cp file1 file2 </td>
     <td> cp file1 file2 </td>
+    <td> xonsh </td>
   </tr>
   <tr>
     <td> ln -s file1 file2 </td>
-    <td> os.symlink('file1', 'file2', target_is_directory=True) </td>
+    <td> Path("file1").symlink_to("file2", target_is_directory=True) </td>
+    <td> Python </td>
+  </tr>
+  <tr>
+    <td> ln -s file1 file2 </td>
+    <td> os.symlink("file1", "file2", target_is_directory=True) </td>
+    <td> Python </td>
+  </tr>
+  <tr>
+    <td> ln -s file1 file2 </td>
     <td> !ln -s file1 file2 </td>
-    <td> ln -s file1 file2 </td>
+    <td> IPython </td>
   </tr>
   <tr>
     <td> ln -s file1 file2 </td>
-    <td> pathlib.Path('file1').symlink_to('file2', target_is_directory=True) </td>
-    <td> !ln -s file1 file2 </td>
     <td> ln -s file1 file2 </td>
+    <td> xonsh </td>
   </tr>
   <tr>
     <td> ln -sT file1 file2 </td>
-    <td> os.symlink('file1', 'file2', target_is_directory=False) </td>
+    <td> Path("file1").symlink_to("file2", target_is_directory=False) </td>
+    <td> Python </td>
+  </tr>
+  <tr>
+    <td> ln -sT file1 file2 </td>
+    <td> os.symlink("file1", "file2", target_is_directory=False) </td>
+    <td> Python </td>
+  </tr>
+  <tr>
+    <td> ln -sT file1 file2 </td>
     <td> !ln -sT file1 file2 </td>
-    <td> ln -sT file1 file2 </td>
+    <td> IPython </td>
   </tr>
   <tr>
     <td> ln -sT file1 file2 </td>
-    <td> pathlib.Path('file1').symlink_to('file2', target_is_directory=False) </td>
-    <td> !ln -sT file1 file2 </td>
     <td> ln -sT file1 file2 </td>
+    <td> xonsh </td>
   </tr>
   <tr>
     <td> rm file </td>
     <td> os.remove(file) </td>
-    <td> !rm file </td>
+    <td> Python </td>
+  </tr>
+  <tr>
     <td> rm file </td>
+    <td> !rm file </td>
+    <td> IPython </td>
+  </tr>
+  <tr>
+    <td> rm file </td>
+    <td> rm file </td>
+    <td> xonsh </td>
   </tr>
   <tr>
     <td> rm -rf dir </td>
     <td> shutil.rmtree(dir) </td>
-    <td> !rm -rf dir </td>
+    <td> Python </td>
+  </tr>
+  <tr>
     <td> rm -rf dir </td>
+    <td> !rm -rf dir </td>
+    <td> IPython </td>
+  </tr>
+  <tr>
+    <td> rm -rf dir </td>
+    <td> rm -rf dir </td>
+    <td> xonsh </td>
   </tr>
   <tr>
     <td> mv file1 file2 </td>
-    <td> os.rename('file1', 'file2') </td>
-    <td> !mv file1 file2 </td>
-    <td> mv file1 file2 </td>
+    <td> Path("file1").rename("file2") </td>
+    <td> pathlib </td>
   </tr>
   <tr>
     <td> mv file1 file2 </td>
-    <td> shutil.move('file1', 'file2') </td>
-    <td> !mv file1 file2 </td>
+    <td> shutil.move("file1", "file2") </td>
+    <td> shutil </td>
+  </tr>
+  <tr>
     <td> mv file1 file2 </td>
+    <td> os.rename("file1", "file2") </td>
+    <td> Python </td>
+  </tr>
+  <tr>
+    <td> mv file1 file2 </td>
+    <td> !mv file1 file2 </td>
+    <td> IPython </td>
+  </tr>
+  <tr>
+    <td> mv file1 file2 </td>
+    <td> mv file1 file2 </td>
+    <td> xonsh </td>
   </tr>
 </table>
 

@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-03-02 18:19:40
+Date: 2020-03-02 18:33:18
 Author: Benjamin Du
 Slug: hardware-for-ai
 Title: Hardware for Ai
@@ -15,12 +15,19 @@ It is not meant to readers but rather for convenient reference of the author and
 for deep learning is kind of like LLVM for programming languages.
 
 
+[Nvidia TensorRT](https://developer.nvidia.com/tensorrt)
+
+
 ## Embedded/Edge AI
 
 Jetson Nano
 
 Google Coral
 
+Intel Neural Compute Stick 2
+
 https://heartbeat.fritz.ai/edge-tpu-google-coral-usb-accelerator-cf0d79c7ec56
 
 https://blog.usejournal.com/google-coral-edge-tpu-vs-nvidia-jetson-nano-a-quick-deep-dive-into-edgeai-performance-bc7860b8d87a
+
+https://mp.weixin.qq.com/s/NtnTQIecFq1L1ffPnirMIA

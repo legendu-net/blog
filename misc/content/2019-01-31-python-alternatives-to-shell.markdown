@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-03-03 15:04:23
+Date: 2020-03-03 15:45:00
 Author: Ben Chuanlong Du
 Slug: shell-alternatives
 Title: Python Alternatives to Shell
@@ -20,7 +20,7 @@ It is not meant to readers but rather for convenient reference of the author and
     <th> Alternative </th>
     <th> Python </th>
   </tr>
-  <tr>
+  <tr bgcolor="#348017">
     <td> mkdir -p /path/to/some/file </td>
     <td> Path("path/to/some/file").mkdir(exist_ok=True) </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir"> pathlib </a> </td>
@@ -40,7 +40,7 @@ It is not meant to readers but rather for convenient reference of the author and
     <td> mkdir -p /path/to/some/file </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
-  <tr>
+  <tr bgcolor="#348017">
     <td> cp file1 file2 </td>
     <td> shutil.copy2("file1", "file2") </td>
     <td> <a href="https://docs.python.org/3/library/shutil.html#shutil.copy2"> shutil </a> </td>
@@ -60,7 +60,7 @@ It is not meant to readers but rather for convenient reference of the author and
     <td> cp file1 file2 </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
-  <tr>
+  <tr bgcolor="#348017">
     <td> ln -s file1 file2 </td>
     <td> Path("file1").symlink_to("file2", target_is_directory=True) </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.symlink_to"> pathlib </a> </td>
@@ -80,7 +80,7 @@ It is not meant to readers but rather for convenient reference of the author and
     <td> ln -s file1 file2 </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
-  <tr>
+  <tr bgcolor="#348017">
     <td> ln -sT file1 file2 </td>
     <td> Path("file1").symlink_to("file2", target_is_directory=False) </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.symlink_to"> pathlib </a> </td>
@@ -100,7 +100,7 @@ It is not meant to readers but rather for convenient reference of the author and
     <td> ln -sT file1 file2 </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
-  <tr>
+  <tr bgcolor="#348017">
     <td> rm file </td>
     <td> Path("/path/to/file").unlink() </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.unlink"> pathlib </a> </td>
@@ -120,7 +120,7 @@ It is not meant to readers but rather for convenient reference of the author and
     <td> rm file </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
-  <tr>
+  <tr bgcolor="#348017">
     <td> rmdir /path/to/dir </td>
     <td> Path("/path/to/dir").rmdir() </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.rmdir"> pathlib </a> </td>
@@ -140,7 +140,7 @@ It is not meant to readers but rather for convenient reference of the author and
     <td> rm -rf dir </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
-  <tr>
+  <tr bgcolor="#348017">
     <td> mv file1 file2 </td>
     <td> Path("file1").rename("file2") </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.rename"> pathlib </a> </td>
@@ -165,16 +165,12 @@ It is not meant to readers but rather for convenient reference of the author and
     <td> mv file1 file2 </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
-  <tr>
+  <tr bgcolor="#348017">
     <td> chmod 600 /path/to/file </td>
     <td> Path("/path/to/file").chmod(0o600) </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.chmod"> pathlib </a> </td>
   </tr>
 </table>
-
-## [xonsh](https://github.com/xonsh/xonsh)
-
-xonsh is the best and simplest Python approach to replace (most part of) shell so far.
 
 ## [IPython](https://github.com/ipython/ipython)
 
@@ -184,7 +180,8 @@ https://ipython.readthedocs.io/en/stable/interactive/magics.html
 
 https://github.com/ivanov/vim-ipython
 
-1. Use the IPython shell or JupyterLab notebook (preferred) instead of Shell for complicated interactive operations.
+1. Use the IPython shell or JupyterLab notebook (preferred) 
+    instead of Shell for complicated interactive operations.
 
 2. Be careful about illegal shell commands.
     For example,
@@ -208,12 +205,23 @@ https://github.com/ivanov/vim-ipython
     This provide the advantage of leveraging the JupyterLab notebook UI.
 
 
+## [xonsh](https://github.com/xonsh/xonsh)
+
+`xonsh` is another great Python approach to replace shell.
+Unlike IPython, 
+xonsh does not require the prefix `!` to run arbitrary shell command. 
+However, 
+there is one flaw of xonsh.
+You cannot use `$()` and friends in the middle of an argument,
+which limits its usability serious for complicated shell commands.
+Please refer to 
+[this issue](https://github.com/xonsh/xonsh/issues/3290)
+for more details.
+
 ## [plumbum](https://github.com/tomerfiliba/plumbum)
 
 Yet another Python approach as a replacement of shell.
 I personally prefer IPython and xonsh to plumbum.
-
-
 
 ## References
 

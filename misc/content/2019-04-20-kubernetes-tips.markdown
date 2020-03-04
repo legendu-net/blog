@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-03-03 20:13:43
+Date: 2020-03-03 22:38:00
 Author: Benjamin Du
 Slug: kubernetes-tips
 Title: Tips on Kubernetes
@@ -35,6 +35,48 @@ Microk8s seems like a good option.
 - minikube - a popular, but heavy-weight option that creates a Linux virtual machine your computer using VirtualBox or similar
 
 - Docker for Mac/Windows - Docker's Desktop edition has an option to run a local Kubernetes cluster
+
+## Example
+
+```
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: helloworldserivce
+spec:
+  selector:
+    app: hello-world
+  ports:
+    - protocol: "TCP"
+      port: 8080
+      targetPort: 80
+      nodePort: 30001
+  type: LoadBalancer
+
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: hello-world
+  template:
+    metadata:
+      labels:
+        app: hello-world
+    spec:
+      containers:
+      - name: hello-world
+        image: tutum/hello-world
+        ports:
+        - containerPort: 80
+
+```
 
 ## References
 

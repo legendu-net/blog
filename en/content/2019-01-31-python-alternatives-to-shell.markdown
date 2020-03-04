@@ -20,15 +20,15 @@ Tags: programming, IPython, shell, bash, xonsh, plumbum, Python, shell alternati
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir"> pathlib </a> </td>
   </tr>
   <tr>
-    <td> os.makedirs("/path/to/some/file", exist_ok=True) </td>
+    <td> os.makedirs("/path/to/file", exist_ok=True) </td>
     <td> <a href="https://docs.python.org/3/library/os.html#os.makedirs"> os </a> </td>
   </tr>
   <tr>
-    <td> !mkdir -p /path/to/some/file </td>
+    <td> !mkdir -p /path/to/file </td>
     <td> <a href="https://ipython.readthedocs.io/en/stable/overview.html#enhanced-interactive-python-shell"> IPython </a> </td>
   </tr>
   <tr>
-    <td> mkdir -p /path/to/some/file </td>
+    <td> mkdir -p /path/to/file </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
   <tr>
@@ -37,77 +37,66 @@ Tags: programming, IPython, shell, bash, xonsh, plumbum, Python, shell alternati
     <td> <a href="https://docs.python.org/3/library/shutil.html#shutil.copy2"> shutil </a> </td>
   </tr>
   <tr>
-    <td> cp file1 file2 </td>
+    <td rowspan="4"> cp file1 file2 </td>
     <td> shutil.copyfile("file1", "file2") </td>
     <td> <a href="https://docs.python.org/3/library/shutil.html#shutil.copyfile"> shutil </a> </td>
   </tr>
   <tr>
-    <td> cp file1 file2 </td>
     <td> !cp file1 file2 </td>
     <td> <a href="https://ipython.readthedocs.io/en/stable/overview.html#enhanced-interactive-python-shell"> IPython </a> </td>
   </tr>
   <tr>
     <td> cp file1 file2 </td>
-    <td> cp file1 file2 </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
   <tr>
-    <td> ln -s file1 file2 </td>
+    <td rowspan="4"> ln -s file1 file2 </td>
     <td bgcolor="#348017"> Path("file1").symlink_to("file2", target_is_directory=True) </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.symlink_to"> pathlib </a> </td>
   </tr>
   <tr>
-    <td> ln -s file1 file2 </td>
     <td> os.symlink("file1", "file2", target_is_directory=True) </td>
     <td> <a href="https://docs.python.org/3/library/os.html#os.symlink"> os </a> </td>
   </tr>
   <tr>
-    <td> ln -s file1 file2 </td>
     <td> !ln -s file1 file2 </td>
     <td> <a href="https://ipython.readthedocs.io/en/stable/overview.html#enhanced-interactive-python-shell"> IPython </a> </td>
   </tr>
   <tr>
     <td> ln -s file1 file2 </td>
-    <td> ln -s file1 file2 </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
   <tr>
-    <td> ln -sT file1 file2 </td>
+    <td rowspan="4"> ln -sT file1 file2 </td>
     <td bgcolor="#348017"> Path("file1").symlink_to("file2", target_is_directory=False) </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.symlink_to"> pathlib </a> </td>
   </tr>
   <tr>
-    <td> ln -sT file1 file2 </td>
     <td> os.symlink("file1", "file2", target_is_directory=False) </td>
     <td> <a href="https://docs.python.org/3/library/os.html#os.symlink"> os </a> </td>
   </tr>
   <tr>
-    <td> ln -sT file1 file2 </td>
     <td> !ln -sT file1 file2 </td>
     <td> <a href="https://ipython.readthedocs.io/en/stable/overview.html#enhanced-interactive-python-shell"> IPython </a> </td>
   </tr>
   <tr>
     <td> ln -sT file1 file2 </td>
-    <td> ln -sT file1 file2 </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
   <tr>
-    <td> rm file </td>
+    <td rowspan="4"> rm file </td>
     <td bgcolor="#348017"> Path("/path/to/file").unlink() </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.unlink"> pathlib </a> </td>
   </tr>
   <tr>
-    <td> rm file </td>
     <td> os.remove(file) </td>
     <td> <a href="https://docs.python.org/3/library/os.html#os.remove"> os </a> </td>
   </tr>
   <tr>
-    <td> rm file </td>
     <td> !rm file </td>
     <td> <a href="https://ipython.readthedocs.io/en/stable/overview.html#enhanced-interactive-python-shell"> IPython </a> </td>
   </tr>
   <tr>
-    <td> rm file </td>
     <td> rm file </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
@@ -117,42 +106,36 @@ Tags: programming, IPython, shell, bash, xonsh, plumbum, Python, shell alternati
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.rmdir"> pathlib </a> </td>
   </tr>
   <tr>
-    <td> rm -rf dir </td>
+    <td rowspan="3"> rm -rf dir </td>
     <td> shutil.rmtree(dir) </td>
     <td> <a href="https://docs.python.org/3/library/shutil.html#shutil.rmtree"> shutil </a> </td>
   </tr>
   <tr>
-    <td> rm -rf dir </td>
     <td> !rm -rf dir </td>
     <td> <a href="https://ipython.readthedocs.io/en/stable/overview.html#enhanced-interactive-python-shell"> IPython </a> </td>
   </tr>
   <tr>
     <td> rm -rf dir </td>
-    <td> rm -rf dir </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
   <tr>
-    <td> mv file1 file2 </td>
+    <td rowspan="5"> mv file1 file2 </td>
     <td bgcolor="#348017"> Path("file1").rename("file2") </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.rename"> pathlib </a> </td>
   </tr>
   <tr>
-    <td> mv file1 file2 </td>
     <td> shutil.move("file1", "file2") </td>
     <td> <a href="https://docs.python.org/3/library/shutil.html#shutil.rmtree"> shutil </a> </td>
   </tr>
   <tr>
-    <td> mv file1 file2 </td>
     <td> os.rename("file1", "file2") </td>
     <td> <a href="https://docs.python.org/3/library/os.html#os.rename"> os </a> </td>
   </tr>
   <tr>
-    <td> mv file1 file2 </td>
     <td> !mv file1 file2 </td>
     <td> <a href="https://ipython.readthedocs.io/en/stable/overview.html#enhanced-interactive-python-shell"> IPython </a> </td>
   </tr>
   <tr>
-    <td> mv file1 file2 </td>
     <td> mv file1 file2 </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>

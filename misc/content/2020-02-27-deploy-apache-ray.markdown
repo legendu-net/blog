@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-03-02 13:51:23
+Date: 2020-03-04 08:55:26
 Author: Benjamin Du
 Slug: deploy-apache-ray
 Title: Deploy Apache Ray
@@ -69,6 +69,10 @@ https://ray.readthedocs.io/en/latest/using-ray-on-a-cluster.html
 https://github.com/ray-project/ray/issues/2660
 
 ## Kubernetes
+
+[Deploying on Kubernetes](https://ray.readthedocs.io/en/latest/deploy-on-kubernetes.html)
+
+https://github.com/ray-project/ray/tree/master/doc/kubernetes
 
 https://ray.readthedocs.io/en/latest/autoscaling.html#kubernetes
 

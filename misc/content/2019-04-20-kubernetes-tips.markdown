@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-02-21 17:04:44
+Date: 2020-03-03 20:13:43
 Author: Benjamin Du
 Slug: kubernetes-tips
-Title: Kubernetes Tips
+Title: Tips on Kubernetes
 Category: Software
 Tags: Software, Kubernetes, k8s, minikube, kubectl
 

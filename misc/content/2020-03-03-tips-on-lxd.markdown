@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-03-04 10:45:34
+Date: 2020-03-04 10:46:18
 Author: Benjamin Du
 Slug: tips-on-lxd
 Title: Tips on LXD
@@ -18,22 +18,19 @@ It is not meant to readers but rather for convenient reference of the author and
 
 ## [Installation](https://ubuntu.com/tutorials/tutorial-setting-up-lxd-1604#2-install-lxd)
 
-sudo apt-get install lxd zfsutils-linux
-gpasswd -a $(id -un) lxd
-newgrp lxd
+    sudo apt-get install lxd zfsutils-linux
+    gpasswd -a $(id -un) lxd
+    newgrp lxd
 
 ## [Setup LXD](https://ubuntu.com/tutorials/tutorial-setting-up-lxd-1604#3-setup-lxd)
 
-sudo lxd init
+    sudo lxd init
 
 ## [Launch a container](https://ubuntu.com/tutorials/tutorial-setting-up-lxd-1604#4-launch-a-container)
 
-lxc list
-
-
-lxc launch ubuntu:16.04
-
-lxc exec stirring-beagle -- ls -la
+    lxc list
+    lxc launch ubuntu:16.04
+    lxc exec stirring-beagle -- ls -la
 
 
 ## Publish LXD Images
@@ -47,8 +44,6 @@ https://medium.com/@tcij1013/lxc-lxd-cheetsheet-effb5389922d
 https://github.com/lxc/lxd/issues/6805
 
 [LXDHub](https://lxdhub.xyz/remote/images/images)
-
-
 
 ## References
 

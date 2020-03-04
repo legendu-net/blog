@@ -1,9 +1,8 @@
-UUID: 82c4422a-6d6f-4bcd-92a5-99245a393cc1
 Status: published
-Date: 2017-03-02 00:34:31
+Date: 2020-03-03 20:43:17
 Author: Ben Chuanlong Du
-Slug: remote-desktop-on-linux
-Title: Remote Desktop on Linux
+Slug: remote-desktop-using-nomachine-on-linux
+Title: Remote Desktop Using NoMachine on Linux
 Category: Linux
 Tags: Linux, remote desktop, NX, NoMachine, VNC
 
@@ -14,6 +13,10 @@ It is not meant to readers
 but rather for convenient reference of the author and future improvement.
 **
 
-## NoMachine
+## Installation
 
-1. Do not install a desktop manager (lightdm, kdm, xdm, etc.) if you use NoMachine.
+1. Install a desktop environment, say, `lxqt`.
+    Do NOT install a desktop manager (lightdm, kdm, xdm, etc.).
+
+2. [Download NoMachine](https://www.nomachine.com/download)
+    and install it.

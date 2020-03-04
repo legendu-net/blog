@@ -1,4 +1,3 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Author: Ben Chuanlong Du
 Date: 2013-12-31 09:48:54

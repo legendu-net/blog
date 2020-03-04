@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-03-03 22:16:42
+Date: 2020-03-04 10:47:57
 Author: Benjamin Du
 Slug: tips-minikube
 Title: Tips on Minikube
@@ -10,6 +10,9 @@ Tags: Software, Minikube, k8s, Kubernetes
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
+Microk8s is a more lightweight solution than Minikube 
+(even thought Microk8s is only for Linux.)
 
 
 ## Installation

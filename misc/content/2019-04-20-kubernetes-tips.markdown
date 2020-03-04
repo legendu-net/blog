@@ -20,33 +20,11 @@ https://github.com/kubernetes/minikube
 https://github.com/kubernetes/kubernetes
 
 
-[4 Steps to Install Kubernetes on Ubuntu 16.04 and 18.04](https://matthewpalmer.net/kubernetes-app-developer/articles/install-kubernetes-ubuntu-tutorial.html)
-
-
-1. [Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
-
-2. Install VirtualBox
-
-3. [Install Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/)
-
-4. Start minikube. 
-	
-		:::bash
-		minikube start --vm-driver=virtualbox
-
-5. Check status of minikube.
-
-		:::bash
-		minikube status
-
-
-minikube dashboard
-
-minikube ip
-
 [Kubertenes Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 
 ## Some Kubernetes Distributions
+
+Microk8s seems like a good option.
 
 - k3s - a light-weight Kubernetes distribution ideal for edge and development - compatible with Raspberry Pi & ARM64 (Packet, AWS Graviton)
 
@@ -61,3 +39,5 @@ minikube ip
 ## References
 
 - [helm](https://github.com/helm/helm) is the Kubernetes Package Manager
+
+[Multipass and MicroK8s: the Quickest Route to Ubuntu and Kubernetes?](https://dzone.com/articles/-multipass-and-microk8s-the-quickest-route-to-ubun)

@@ -11,7 +11,13 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-You can consider Multipass as a lightweight Ubuntu specific Docker equivalence. 
+It is suggested that you use LXD instead of Multipass.
+LXD is more lightweight than Multipass and does not require a CPU 
+which supports virtualization.
+
+## General Tips
+
+1. You can consider Multipass as a lightweight Ubuntu specific Docker equivalence. 
 
 ## Find available images
 
@@ -71,3 +77,7 @@ multipass delete dancing-chipmunk
 https://github.com/canonical/multipass
 
 https://discourse.ubuntu.com/t/working-with-multipass-instances/8422
+
+[Use Canonical's Multipass to display Linux GUI applications on macOS desktop](https://techsparx.com/linux/multipass/display-gui-on-mac.html)
+
+[Ubuntu Multipass - Better than Docker?](https://www.freshbrewed.science/ubuntu-multipass-better-than-docker/index.html)

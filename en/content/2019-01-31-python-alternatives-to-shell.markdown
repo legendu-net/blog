@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-03-03 15:52:56
+Date: 2020-03-03 16:05:20
 Author: Ben Chuanlong Du
 Slug: shell-alternatives
 Title: Python Alternatives to Shell
@@ -15,22 +15,19 @@ Tags: programming, IPython, shell, bash, xonsh, plumbum, Python, shell alternati
     <th> Python </th>
   </tr>
   <tr>
-    <td> mkdir -p /path/to/some/file </td>
+    <td rowspan="4"> mkdir -p /path/to/file </td>
     <td bgcolor="#348017"> Path("path/to/some/file").mkdir(exist_ok=True) </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir"> pathlib </a> </td>
   </tr>
   <tr>
-    <td> mkdir -p /path/to/some/file </td>
     <td> os.makedirs("/path/to/some/file", exist_ok=True) </td>
     <td> <a href="https://docs.python.org/3/library/os.html#os.makedirs"> os </a> </td>
   </tr>
   <tr>
-    <td> mkdir -p /path/to/some/file </td>
     <td> !mkdir -p /path/to/some/file </td>
     <td> <a href="https://ipython.readthedocs.io/en/stable/overview.html#enhanced-interactive-python-shell"> IPython </a> </td>
   </tr>
   <tr>
-    <td> mkdir -p /path/to/some/file </td>
     <td> mkdir -p /path/to/some/file </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>

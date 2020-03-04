@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-02-13 12:16:47
+Date: 2020-03-03 17:27:11
 Author: Benjamin Du
 Slug: vscode-tips
 Title: Tips for Visual Studio Code
@@ -14,6 +14,11 @@ It is not meant to readers but rather for convenient reference of the author and
 A MS brading/telementry/licensing free edition named 
 [vscodium](https://github.com/VSCodium/vscodium)
 is available.
+
+## Tricks & Traps
+
+1. It seems that Visual Studio Code installed using snap in Kubuntu 18.10 has issues.
+    It is suggested that you install Visual Studio Code using the `.deb` package instead of snap.
 
 ## Useful Extensions
 
@@ -49,11 +54,9 @@ https://stackoverflow.com/questions/34174207/how-to-change-indentation-in-visual
 
 https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line
 
-## Tricks & Traps
+## Shortcuts
 
-1. It seems that Visual Studio Code installed using snap in Kubuntu 18.10 has issues.
-    It is suggested that you install Visual Studio Code using the `.deb` package instead of snap.
-
+Shift + CMD + V: Switch between view mode of Markdown. You can use it to open Markdown preview in VS Code.
 
 ## References
 

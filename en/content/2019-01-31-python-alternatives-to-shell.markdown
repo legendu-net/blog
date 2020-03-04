@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-03-03 16:05:20
+Date: 2020-03-03 16:17:10
 Author: Ben Chuanlong Du
 Slug: shell-alternatives
 Title: Python Alternatives to Shell
@@ -32,12 +32,11 @@ Tags: programming, IPython, shell, bash, xonsh, plumbum, Python, shell alternati
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
   <tr>
-    <td> cp file1 file2 </td>
+    <td rowspan="4"> cp file1 file2 </td>
     <td bgcolor="#348017"> shutil.copy2("file1", "file2") </td>
     <td> <a href="https://docs.python.org/3/library/shutil.html#shutil.copy2"> shutil </a> </td>
   </tr>
   <tr>
-    <td rowspan="4"> cp file1 file2 </td>
     <td> shutil.copyfile("file1", "file2") </td>
     <td> <a href="https://docs.python.org/3/library/shutil.html#shutil.copyfile"> shutil </a> </td>
   </tr>

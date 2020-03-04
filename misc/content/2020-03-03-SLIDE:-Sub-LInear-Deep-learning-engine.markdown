@@ -12,3 +12,5 @@ It is not meant to readers but rather for convenient reference of the author and
 **
 
 [Slide : In Defense of Smart Algorithms over Hardware Acceleration for Large-scale Deep Learning Systems](https://www.cs.rice.edu/~as143/Papers/SLIDE_MLSys.pdf)
+
+[Hash Your Way To a Better Neural Network](https://spectrum.ieee.org/tech-talk/computing/hardware/algorithms-and-hardware-for-deep-learning)

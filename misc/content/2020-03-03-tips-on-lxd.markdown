@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-03-03 21:55:18
+Date: 2020-03-04 10:45:34
 Author: Benjamin Du
 Slug: tips-on-lxd
-Title: Tips on Lxd
+Title: Tips on LXD
 Category: Programming
 Tags: programming
 

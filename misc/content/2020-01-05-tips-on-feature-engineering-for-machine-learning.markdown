@@ -4,7 +4,7 @@ Author: Benjamin Du
 Slug: tips-on-feature-engineering-for-machine-learning
 Title: Tips on Feature Engineering for Machine Learning
 Category: AI
-Tags: AI, machine learning, data science, feature engineering
+Tags: AI, machine learning, data science, feature engineering, feature hashing
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -32,6 +32,14 @@ Other than such exceptional scenarios, we can expect deep learning to work bette
 ## Categorical Variables
 
 http://www.legendu.net/misc/blog/handling-categorical-variables-in-machine-learning/
+
+## Feature Hashing
+
+https://en.wikipedia.org/wiki/Feature_hashing
+
+https://medium.com/value-stream-design/introducing-one-of-the-best-hacks-in-machine-learning-the-hashing-trick-bf6a9c8af18f
+
+https://booking.ai/dont-be-tricked-by-the-hashing-trick-192a6aae3087
 
 ## References
 

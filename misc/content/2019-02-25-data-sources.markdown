@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-05 10:28:27
+Date: 2020-03-04 16:45:49
 Author: Benjamin Du
 Slug: data-sources
 Title: Data Sources
@@ -34,6 +34,8 @@ https://www.nist.gov/
 ### [Standford NLP - Sentiment Treebank](https://nlp.stanford.edu/sentiment/treebank.html)
 
 ### [WordNet](https://wordnet.princeton.edu/)
+
+### [CoLA: The Corpus of Linguistic Acceptability](https://nyu-mll.github.io/CoLA/)
 
 ## Data Sources
 

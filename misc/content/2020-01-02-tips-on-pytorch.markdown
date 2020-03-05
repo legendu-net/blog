@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-29 01:45:40
+Date: 2020-03-04 16:44:20
 Author: Benjamin Du
 Slug: tips-on-pytorch
 Title: Tips on PyTorch
@@ -117,6 +117,9 @@ torchvision: Popular deep learning models for computer vision.
 torchtext: Data loaders and abstractions for text and NLP.
 
 torchaudio: Data manipulation and transformation for audio signal processing, powered by PyTorch.
+
+[pytorch_geometric](https://github.com/rusty1s/pytorch_geometric)
+is a geometric deep learning extension library for PyTorch.
 
 [PyTorch Hub](https://pytorch.org/hub/) has pretrained deep learning models 
 that anyone can download.

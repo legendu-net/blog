@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-01-07 12:06:20
+Date: 2020-03-05 15:32:24
 Author: Benjamin Du
 Slug: representation-of-machine-learning-models
 Title: Representation of Machine Learning Models
@@ -11,15 +11,22 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
 
-## [ONNX](https://onnx.ai/)
+## [Open Neural Network Exchange (ONNX)](https://onnx.ai/)
 
 https://github.com/onnx
 
-Open Neural Network Exchange.
+https://github.com/onnx/onnxmltools
 
-[Predictive Model Markup Language (PMML)](http://dmg.org/pmml/v4-4/GeneralStructure.html)
+## [Predictive Model Markup Language (PMML)](http://dmg.org/pmml/v4-4/GeneralStructure.html)
 
 https://github.com/jpmml/sklearn2pmml
+
+[PMML4S](https://github.com/autodeployai/pmml4s)
+is a PMML (Predictive Model Markup Language) scoring library for Scala. It provides both Scala and Java Evaluator API for PMML.
+
+[JPMML-Evaluator](https://github.com/jpmml/jpmml-evaluator)
+is a Java evaluator API for PMML.
+
 
 ## [Plain Old Java Object (POJO)]
 

@@ -3,7 +3,7 @@ Author: Ben Chuanlong Du
 Date: 2016-07-13 22:42:20
 Slug: transfer-files-over-network-in-linux
 Title: Transfer Files over Network in Linux
-Category: internet
+Category: Internet
 Tags: internet, Linux, network, web, transfer, file system, nfs, SSH
 
 **

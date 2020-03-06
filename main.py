@@ -175,11 +175,11 @@ def update_category(blogger, args):
     if args.indexes:
         args.files = blogger.path(args.indexes)
     if args.files:
-        for post in args.files:
-            blogger.update_category(post, args.to_cat)
+        for file in args.files:
+            blogger.update_category(file, args.to_cat)
     elif args.from_cat:
         sql = 'SELECT path FROM posts WHERE category = ?'
-        posts = (row[0] for row in blogger.query(sql))
+        posts = (row[0] for row in blogger.query(sql, [from_cat]))
         for post in posts:
             blogger.update_category(post, args.to_cat)
     blogger.commit()

@@ -430,7 +430,9 @@ class Blogger:
         """
         self._conn.commit()
 
-    def update_category(self, post: Post, category: str):
+    def update_category(self, post: Union[Post, str, Path], category: str):
+        if isinstance(post, (str, Path)):
+            post = Post(pos)
         post.update_category(category)
         self.update_records(paths=[post.path], mapping={'category': category})
 

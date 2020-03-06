@@ -4,7 +4,7 @@ Date: 2015-05-06 23:55:58
 Author: Ben Chuanlong Du
 Slug: ibm-aix-questions
 Title: IBM AIX Questions
-Category: Unix
+Category: OS
 Tags: Unix, IBM, AIX, questions
 
 **

@@ -4,7 +4,7 @@ Date: 2015-05-06 23:55:20
 Author: Ben Chuanlong Du
 Slug: ibm-aix-tips
 Title: IBM AIX Tips
-Category: Unix
+Category: OS
 Tags: Unix, IBM, AIX, tips
 
 **

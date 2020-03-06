@@ -3,7 +3,7 @@ Date: 2019-05-02 02:40:46
 Author: Benjamin Du
 Slug: change-modified-time-of-files
 Title: Change Modified Time of Files
-Category: Linux
+Category: OS
 Tags: Linux, modified timestamp, touch
 
 **

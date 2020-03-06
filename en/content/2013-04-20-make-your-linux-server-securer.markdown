@@ -3,7 +3,7 @@ Status: published
 Title: Make Your Linux Server Securer
 Date: 2015-02-03 19:57:25
 Tags: security, Linux, server
-Category: Linux
+Category: OS
 Slug: make-your-linux-server-securer
 Author: Ben Chuanlong Du
 

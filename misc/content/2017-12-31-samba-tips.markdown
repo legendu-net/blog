@@ -3,7 +3,7 @@ Date: 2020-02-29 17:14:25
 Author: Ben Chuanlong Du
 Slug: samba-tips
 Title: Tips on Samba
-Category: Linux
+Category: OS
 Tags: Linux, SAMBA, remote file system, file sharing
 
 **

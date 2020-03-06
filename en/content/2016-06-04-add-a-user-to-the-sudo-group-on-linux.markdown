@@ -4,7 +4,7 @@ Date: 2017-04-10 19:05:41
 Author: Ben Chuanlong Du
 Slug: add-a-user-to-the-sudo-group-on-linux
 Title: Add Users to a Group in Linux
-Category: Linux
+Category: OS
 Tags: Linux, sudo, user, groups, gpasswd, usermod
 
 There are several ways to add users to a group in Linux. 

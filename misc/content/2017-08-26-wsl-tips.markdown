@@ -3,7 +3,7 @@ Date: 2020-02-29 17:10:27
 Author: Ben Chuanlong Du
 Slug: wsl-tips
 Title: Tips on WSL
-Category: Linux
+Category: OS
 Tags: Linux, WSL, Windows, BashOnWindows, Bash on Windows, tips
 
 **

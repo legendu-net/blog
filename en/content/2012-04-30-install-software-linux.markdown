@@ -3,7 +3,7 @@ Status: published
 Title: Install Softwares in Linux
 Date: 2012-04-30 00:00:00
 Tags: Linux, softwares, permission
-Category: Linux
+Category: OS
 Slug: install-software-linux
 Author: Ben Chuanlong Du
 

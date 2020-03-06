@@ -4,7 +4,7 @@ Date: 2019-06-23 01:27:02
 Author: Ben Chuanlong Du
 Slug: yum-tips
 Title: Yum Tips
-Category: Linux
+Category: OS
 Tags: Linux, yum, rpm, RedHat, CentOS, package management
 
 **

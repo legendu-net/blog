@@ -4,7 +4,7 @@ Author: Ben Chuanlong Du
 Title: Tips for Ubuntu
 Date: 2017-02-19 12:20:43
 Slug: ubuntu-tips
-Category: Linux
+Category: OS
 Tags: tips, Ubuntu, Linux, OS
 
 **

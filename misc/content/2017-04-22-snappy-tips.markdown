@@ -4,7 +4,7 @@ Date: 2017-04-22 21:55:58
 Author: Ben Chuanlong Du
 Slug: snappy-tips
 Title: Snappy Tips
-Category: Linux
+Category: OS
 Tags: Linux, snappy, snap, tips
 
 **

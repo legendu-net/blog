@@ -4,7 +4,7 @@ Date: 2017-03-19 10:00:54
 Author: Ben Chuanlong Du
 Slug: find-tips
 Title: Find Tips
-Category: Linux
+Category: OS
 Tags: linux, find, tips, search
 
 **

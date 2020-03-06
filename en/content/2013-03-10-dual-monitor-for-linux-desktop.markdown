@@ -4,7 +4,7 @@ Date: 2015-02-20 10:59:38
 Slug: dual-monitor-for-linux-desktop
 Author: Ben Chuanlong Du
 Title: Dual Monitor for Linux Desktop
-Category: Linux
+Category: OS
 Tags: DE, Linux, monitor, dual
 
 

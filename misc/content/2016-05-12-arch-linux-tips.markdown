@@ -3,7 +3,7 @@ Date: 2020-02-29 17:09:02
 Author: Ben Chuanlong Du
 Slug: arch-linux-tips
 Title: Tips on Arch Linux
-Category: Linux
+Category: OS
 Tags: Linux, tips, Arch Linux, pacman
 
 **

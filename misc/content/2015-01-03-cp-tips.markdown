@@ -4,7 +4,7 @@ Date: 2015-01-03 21:07:54
 Author: Ben Chuanlong Du
 Slug: cp-tips
 Title: Copying Files in Linux
-Category: Linux 
+Category: OS
 Tags: linux, cp, command-line, rsync, scp
 
 **

@@ -4,7 +4,7 @@ Title: Compress and Decompressing Archives in Linux
 Date: 2016-06-19 12:17:21
 Slug: compress-and-decompress-in-linux
 Author: Ben Chuanlong Du
-Category: Linux
+Category: OS
 Tags: Linux, decompress, compress, archive, split, multiple, zip, tar, gz, bz2, dtrx, rar, 7zip
 
 

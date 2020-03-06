@@ -4,7 +4,7 @@ Title: Working Remotely in Linux
 Date: 2017-03-01 23:20:51
 Slug: work-remotely-linux
 Author: Ben Chuanlong Du
-Category: Linux
+Category: OS
 Tags: software, remote, Linux
 
 ## From Linux to Linux:

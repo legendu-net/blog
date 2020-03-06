@@ -4,7 +4,7 @@ Date: 2017-10-22 12:37:19
 Author: Ben Chuanlong Du
 Slug: get-group-names-on-linux-unix
 Title: Get Group Names on Linux/Unix
-Category: Linux
+Category: OS
 Tags: Linux, Mac OSX, group, python, getent, dscl
 
 ## Linux

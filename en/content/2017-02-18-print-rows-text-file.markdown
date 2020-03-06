@@ -4,7 +4,7 @@ Date: 2017-11-01 23:51:11
 Author: Ben Chuanlong Du
 Slug: print-rows-from-a-text-file
 Title: Print Rows from a Text File
-Category: Linux
+Category: OS
 Tags: Linux, shell, command line, head, tail, sed, awk, rows, lines, text manipulation
 
 Please refer to 

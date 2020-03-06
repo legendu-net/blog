@@ -4,7 +4,7 @@ Date: 2017-03-19 10:30:15
 Author: Ben Chuanlong Du
 Slug: map-keys-in-linux
 Title: Map Keys in Linux
-Category: Linux
+Category: OS
 Tags: Linux, keyboard, mapping, swap, setxkbmap, Cinnamon, GNOME, keys
 
 Note: For Vim users, it is appealing to make the `Caps Lock` function like `Escape`.

@@ -3,7 +3,7 @@ Status: published
 Date: 2016-07-13 22:09:04
 Slug: desktop-environments-for-linux
 Author: Ben Chuanlong Du
-Category: Linux
+Category: OS
 Title: Desktop Environments for Linux
 Tags: DE, Linux, desktop environment, Xfce, GNOME, KDE, Unity, lightdm, gdm3, kdm, mdm
 

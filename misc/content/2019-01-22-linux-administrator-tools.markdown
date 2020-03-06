@@ -3,7 +3,7 @@ Date: 2020-02-17 11:24:31
 Author: Ben Chuanlong Du
 Slug: linux-administrator-tools
 Title: Linux Administrator Tools
-Category: Linux
+Category: OS
 Tags: Linux, admin, administrator, tools
 
 **

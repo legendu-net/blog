@@ -4,7 +4,7 @@ Date: 2017-11-12 11:31:51
 Slug: schedule-task-using-crontab-in-linux
 Author: Ben Chuanlong Du
 Title: Schedule Task Using Crontab in Linux
-Category: Linux
+Category: OS
 Tags: task, crontab, schedule, linux, scheduling, AirFlow
 
 The information of scheuled tasks are saved in the file `/etc/crontab`. 

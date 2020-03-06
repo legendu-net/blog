@@ -3,7 +3,7 @@ Author: Ben Chuanlong Du
 Date: 2019-05-10 19:13:40
 Slug: compare-two-directories-on-linux
 Title: Compare Two Directories on Linux
-Category: Linux
+Category: OS
 Tags: difference, directory, folder, Linux, md5sum, md5deep, diff, ssh
 
 

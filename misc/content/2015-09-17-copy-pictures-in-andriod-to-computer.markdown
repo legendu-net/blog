@@ -4,7 +4,7 @@ Date: 2015-12-06 09:09:35
 Author: Ben Chuanlong Du
 Slug: copy-pictures-in-android-to-computer
 Title: Copy Pictures in Android to Computer
-Category: Linux
+Category: OS
 Tags: Linux, scp, rsync, pictures, image, photo, media, Android
 
 **

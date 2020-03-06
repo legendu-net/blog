@@ -4,7 +4,7 @@ Date: 2017-10-22 13:30:05
 Author: Ben Chuanlong Du
 Slug: account-management-in-linux
 Title: Account Management in Linux
-Category: Linux
+Category: OS
 Tags: Linux, account management, group managment, adduser, useradd, gpasswd, getent
 
 **

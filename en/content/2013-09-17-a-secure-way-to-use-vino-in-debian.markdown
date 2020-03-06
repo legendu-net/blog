@@ -4,7 +4,7 @@ Title: A Secure Way to Use Vino in Debian
 Date: 2015-02-03 19:41:59
 Slug: a-secure-way-to-use-vino-in-debian
 Author: Ben Chuanlong Du
-Category: Linux
+Category: OS
 Tags: vino, Linux, vnc, network
 
 VNC on Linux is not secure. 

@@ -4,7 +4,7 @@ Date: 2017-04-22 13:24:33
 Author: Ben Chuanlong Du
 Slug: centos-tips
 Title: CentOS Tips
-Category: Linux
+Category: OS
 Tags: Linux, CentOS, tips
 
 **

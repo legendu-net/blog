@@ -4,7 +4,7 @@ Date: 2015-03-13 11:00:27
 Slug: choose-a-script-language
 Author: Ben Chuanlong Du
 Title: The Best Scripting Language?
-Category: Linux
+Category: OS
 Tags: scripting language, Linux, shell, Julia, Python
 
 **

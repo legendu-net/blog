@@ -3,7 +3,7 @@ Date: 2020-03-03 20:43:17
 Author: Ben Chuanlong Du
 Slug: remote-desktop-using-nomachine-on-linux
 Title: Remote Desktop Using NoMachine on Linux
-Category: Linux
+Category: OS
 Tags: Linux, remote desktop, NX, NoMachine, VNC
 
 **

@@ -4,7 +4,7 @@ Author: Ben Chuanlong Du
 Title: Questions About Ubuntu
 Date: 2016-07-13 23:04:35
 Slug: ubuntu-questions
-Category: Linux
+Category: OS
 Tags: questions, Ubuntu, Linux, OS
 
 **

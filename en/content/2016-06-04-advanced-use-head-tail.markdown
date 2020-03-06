@@ -3,7 +3,7 @@ Date: 2019-03-29 09:29:01
 Author: Ben Chuanlong Du
 Slug: advanced-use-head-tail
 Title: Advanced Use of "head" and "tail" 
-Category: Linux
+Category: OS
 Tags: Linux, shell, command line, head, tail, sed, awk, rows, lines, text manipulation
 
 Besides passing an unsigned integer as parameter to the option `-n`, 

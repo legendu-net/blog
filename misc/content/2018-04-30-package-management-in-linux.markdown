@@ -4,7 +4,7 @@ Date: 2018-04-30 18:17:41
 Author: Ben Chuanlong Du
 Slug: package-management-in-linux
 Title: Package Management in Linux
-Category: Linux
+Category: OS
 Tags: Linux, package management, wajig, apt-get, dpkg
 
 **

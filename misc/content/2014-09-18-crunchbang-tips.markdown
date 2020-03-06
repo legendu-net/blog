@@ -4,7 +4,7 @@ Date: 2016-07-13 22:19:19
 Author: Ben Chuanlong Du
 Slug: crunchbang-tips
 Title: CrunchBang Tips
-Category: Linux
+Category: OS
 Tags: Linux, tips, CrunchBang, OS
 
 **

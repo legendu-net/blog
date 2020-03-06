@@ -4,7 +4,7 @@ Author: Ben Chuanlong Du
 Title: Some Questions About Linux
 Date: 2016-07-09 19:01:47
 Slug: linux-questions
-Category: Linux
+Category: OS
 Tags: questions, Linux
 
 

@@ -3,7 +3,7 @@ Date: 2020-02-29 22:25:13
 Slug: ssh-copy-id
 Author: Ben Chuanlong Du
 Title: Copy SSH Public Key Using "ssh-copy-id"
-Category: Linux
+Category: OS
 Tags: Linux, SSH, server, remote, port, ssh-copy-id
 
 You can use the following command to copy your SSH public key to a Linux server.

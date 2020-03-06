@@ -4,7 +4,7 @@ Title: Prevent Linux Command from Being Interruptted
 Date: 2016-07-13 22:48:16
 Slug: prevent-linux-command-from-being-interruptted
 Author: Ben Chuanlong Du
-Category: Linux
+Category: OS
 Tags: Shell, Terminal, Linux, remote
 
 **

@@ -3,7 +3,7 @@ Date: 2019-04-18 17:57:21
 Author: Ben Chuanlong Du
 Slug: rename-tips
 Title: Tips About "rename" 
-Category: Linux
+Category: OS
 Tags: Linux, rename, shell, tip
 
 **

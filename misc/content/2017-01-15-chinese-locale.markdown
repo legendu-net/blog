@@ -4,7 +4,7 @@ Date: 2017-01-15 19:46:38
 Author: Ben Chuanlong Du
 Slug: chinese-locale
 Title: Chinese Locale in Linux
-Category: Linux
+Category: OS
 Tags: Linux, Chinese, Locale
 
 **

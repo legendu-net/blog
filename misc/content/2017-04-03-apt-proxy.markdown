@@ -3,7 +3,7 @@ Date: 2019-03-07 23:42:48
 Author: Ben Chuanlong Du
 Slug: apt-proxy
 Title: Configure Proxy for Apt
-Category: Linux
+Category: OS
 Tags: Linux, apt, source list, proxy
 
 **

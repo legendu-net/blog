@@ -3,7 +3,7 @@ Date: 2019-03-07 23:42:48
 Author: Ben Chuanlong Du
 Slug: configure-ssh-to-use-a-proxy-server
 Title: Configure SSH to Use a Proxy Server
-Category: Linux
+Category: OS
 Tags: Linux, SSH, proxy server
 
 Suppose you have a production server that you want to visit via SSH,

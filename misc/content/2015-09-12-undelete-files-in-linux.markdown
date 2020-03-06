@@ -4,7 +4,7 @@ Date: 2015-09-12 01:39:06
 Author: Ben Chuanlong Du
 Slug: undelete-files-in-linux
 Title: Undelete Files in Linux
-Category: Linux
+Category: OS
 Tags: Linux, undelete, recover, files, filesystem, restore, trash
 
 **

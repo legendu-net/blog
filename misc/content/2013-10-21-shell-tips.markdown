@@ -3,7 +3,7 @@ Author: Ben Chuanlong Du
 Title: Some Tips for Shell Commands
 Date: 2019-12-04 19:06:58
 Slug: shell-tips
-Category: Linux
+Category: OS
 Tags: tips, Linux, shell, terminal
 
 **

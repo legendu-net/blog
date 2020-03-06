@@ -4,7 +4,7 @@ Title: Missing Grub Menu of Windows Operating System
 Date: 2015-02-03 19:10:47
 Slug: missing-grub-windows
 Author: Ben Chuanlong Du
-Category: Linux
+Category: OS
 Tags: Windows, Linux, OS, Debian
 
 I came across this problem after I installed both Debian and Windows 7 system on my laptop.

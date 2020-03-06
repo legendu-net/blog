@@ -4,7 +4,7 @@ Date: 2015-02-20 10:30:22
 Slug: rescue-linux-from-gui-freezing
 Author: Ben Chuanlong Du
 Title: Rescue Linux from GUI Freezing
-Category: Linux
+Category: OS
 Tags: GUI, DE, Dropbox, X, Linux, SSH, desktop environment
 
 <img src="http://dclong.github.io/media/computer/computer.gif" height="200" width="240" align="right"/>

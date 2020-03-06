@@ -4,7 +4,7 @@ Author: Ben Chuanlong Du
 Date: 2015-02-24 13:40:26
 Slug: debian-questions
 Title: Questions About Debian
-Category: Linux
+Category: OS
 Tags: question, Linux, Debian
 
 **

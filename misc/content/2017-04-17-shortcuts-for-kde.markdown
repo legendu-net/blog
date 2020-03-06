@@ -3,7 +3,7 @@ Date: 2019-03-04 08:53:41
 Author: Ben Chuanlong Du
 Slug: shortcuts-for-kde
 Title: Shortcuts for KDE
-Category: Linux
+Category: OS
 Tags: Linux, KDE, desktop environment, shortcuts
 
 **

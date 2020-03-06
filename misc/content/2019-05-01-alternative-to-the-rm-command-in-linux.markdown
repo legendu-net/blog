@@ -3,7 +3,7 @@ Date: 2019-05-02 02:41:04
 Author: Benjamin Du
 Slug: alternative-to-the-rm-command-in-linux
 Title: Alternative to the rm Command in Linux
-Category: Linux
+Category: OS
 Tags: Linux, Shell, rm, Trash, mv
 
 **

@@ -3,7 +3,7 @@ Date: 2019-02-18 17:37:15
 Author: Ben Chuanlong Du
 Slug: install-java8-in-mac
 Title: Install Java 8 in Mac 
-Category: macOS
+Category: OS
 Tags: Java, macOS, Homebrew, JDK, mac
 
 **

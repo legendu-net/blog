@@ -3,7 +3,7 @@ Date: 2020-01-30 19:54:20
 Author: Ben Chuanlong Du
 Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
-Category: JupyterLab
+Category: Software
 Tags: Data Science, JuptyerLab, Jupyter, notebook
 
 **

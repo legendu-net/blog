@@ -432,7 +432,7 @@ class Blogger:
 
     def update_category(self, post: Union[Post, str, Path], category: str):
         if isinstance(post, (str, Path)):
-            post = Post(pos)
+            post = Post(post)
         post.update_category(category)
         self.update_records(paths=[post.path], mapping={'category': category})
 

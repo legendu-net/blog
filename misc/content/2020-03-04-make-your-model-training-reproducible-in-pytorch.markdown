@@ -1,5 +1,5 @@
 Status: published
-Date: 2020-03-04 14:31:04
+Date: 2020-03-05 17:11:01
 Author: Benjamin Du
 Slug: make-your-model-training-reproducible-in-pytorch
 Title: Make Your Model Training Reproducible in PyTorch
@@ -10,6 +10,7 @@ Tags: AI, data science, machcine learning, deep learning, PyTorch, reproducible,
 Things on this page are fragmentary and immature notes/thoughts of the author.
 It is not meant to readers but rather for convenient reference of the author and future improvement.
 **
+
 The PyTorch doc 
 [Reproducibility](https://pytorch.org/docs/stable/notes/randomness.html)
 has very detailed instructions on how to make your model training reproducible.

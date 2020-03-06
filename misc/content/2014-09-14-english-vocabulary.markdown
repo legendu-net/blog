@@ -4,7 +4,7 @@ Date: 2016-07-13 22:55:30
 Author: Ben Chuanlong Du
 Slug: english-vocabulary
 Title: English Vocabulary
-Category: Language
+Category: Life
 Tags: language, English, vocabulary
 
 **

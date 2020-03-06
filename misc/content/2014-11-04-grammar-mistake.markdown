@@ -4,7 +4,7 @@ Date: 2014-11-04 11:22:11
 Author: Ben Chuanlong Du
 Slug: grammar mistake
 Title: Grammar Mistake
-Category: Language
+Category: Life
 Tags: language, English, grammar, mistake
 
 **

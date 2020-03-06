@@ -3,7 +3,7 @@ Date: 2019-03-08 18:57:48
 Author: Ben Chuanlong Du
 Slug: socks-proxy-to-http-proxy
 Title: Socks Proxy to HTTP Proxy
-Category: Network
+Category: Internet
 Tags: network, socks proxy, http proxy, polipo
 
 **

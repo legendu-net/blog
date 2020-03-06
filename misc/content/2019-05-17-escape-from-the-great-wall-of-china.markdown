@@ -3,7 +3,7 @@ Date: 2019-05-17 03:29:44
 Author: Benjamin Du
 Slug: escape-from-the-great-firewall-of-china
 Title: Escape from the Great Firewall of China
-Category: Network
+Category: Internet
 Tags: network, internet, great firewall of China, proxy, VPN
 
 **

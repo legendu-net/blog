@@ -4,7 +4,7 @@ Date: 2015-05-19 23:09:50
 Author: Ben Chuanlong Du
 Slug: useful-windows-shortcuts
 Title: Useful Windows Shortcuts
-Category: Windows
+Category: OS
 Tags: Windows, shortcut
 
 **

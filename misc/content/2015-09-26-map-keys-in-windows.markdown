@@ -4,7 +4,7 @@ Date: 2016-06-01 22:17:13
 Author: Ben Chuanlong Du
 Slug: map-keys-in-windows
 Title: Map Keys in Windows
-Category: Windows
+Category: OS
 Tags: Windows, keys, mapping, swap, Caps Lock, Escape
 
 **

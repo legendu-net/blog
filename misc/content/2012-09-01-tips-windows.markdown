@@ -4,7 +4,7 @@ Date: 2014-12-16 20:04:38
 Slug: tips-windows
 Author: Ben Chuanlong Du
 Title: Tips for Windows Operating System
-Category: Windows
+Category: OS
 Tags: tips, anti-virus, Windows, Dropbox, OS
 
 <img src="http://dclong.github.io/media/windows/windows.png" height="200" width="240" align="right"/>

@@ -3,7 +3,7 @@ Status: published
 Title: Matrix Decomposition
 Date: 2013-10-24 23:14:16
 Tags: statistics, math, algebra, decomposition, matrix
-Category: Statistics
+Category: AI
 Slug: matrix-decomposition
 Author: Ben Chuanlong Du
 

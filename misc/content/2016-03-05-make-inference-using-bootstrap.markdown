@@ -4,7 +4,7 @@ Date: 2016-03-05 20:04:20
 Author: Ben Chuanlong Du
 Slug: make-inference-using-bootstrap
 Title: Make Inference Using Bootstrap
-Category: Statistics
+Category: AI
 Tags: statistics, bootstrap, inference, resample
 
 **

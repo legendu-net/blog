@@ -3,7 +3,7 @@ Status: published
 Title: Model Fitting
 Date: 2012-11-20 00:00:00
 Tags: model, R, SAS, formula, statistics
-Category: Statistics
+Category: AI
 Slug: model-fitting
 Author: Ben Chuanlong Du
 

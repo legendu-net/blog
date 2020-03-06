@@ -3,7 +3,7 @@ Status: published
 Title: Linear Models
 Date: 2013-10-24 23:15:05
 Tags: model, statistics, regression
-Category: Statistics
+Category: AI
 Slug: linear-models
 Author: Ben Chuanlong Du
 

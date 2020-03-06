@@ -4,7 +4,7 @@ Date: 2015-01-21 11:28:02
 Author: Ben Chuanlong Du
 Slug: time-series-tips
 Title: Time Series Tips
-Category: Statistics
+Category: AI
 Tags: statistics, Time Series Analysis, unit root test
 
 **

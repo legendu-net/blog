@@ -4,7 +4,7 @@ Date: 2016-07-13 22:22:54
 Author: Ben Chuanlong Du
 Slug: bayesian-vs-frequentist
 Title: Bayesian vs Frequentist
-Category: Statistics
+Category: AI
 Tags: statistics, Bayesian, frequentist, large sample-based, likelihood, asymptotic, simulation
 
 **

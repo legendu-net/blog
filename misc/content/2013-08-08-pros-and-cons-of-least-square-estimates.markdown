@@ -4,7 +4,7 @@ Date: 2015-02-24 13:58:18
 Slug: pros-and-cons-of-least-square-estimates
 Author: Ben Chuanlong Du
 Title: Least Square Estimates
-Category: Statistics
+Category: AI
 Tags: linear regression, least square, modeling, statisitcs
 
 **

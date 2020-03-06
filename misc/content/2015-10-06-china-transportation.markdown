@@ -1,12 +1,10 @@
-UUID: a75b12d0-ed90-4487-ba38-1034f57dd3d2
 Status: published
-Date: 2015-10-23 08:24:41
+Date: 2020-03-05 17:00:42
 Author: Ben Chuanlong Du
 Slug: china-transportation
 Title: China Transportation
-Category: 生活
-Tags: commute, 中国, 交通, 公共, 生活, 
-Search: commute, transportation, China, public, life
+Category: Life
+Tags: commute, 中国, 交通, 公共, 生活, transportation, China, public, life 
 
 **
 Things on this page are

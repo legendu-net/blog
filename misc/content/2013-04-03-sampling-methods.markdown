@@ -3,7 +3,7 @@ Status: published
 Title: Sampling Methods
 Date: 2013-04-03 00:00:00
 Tags: statistics, sampling, survey
-Category: Statistics
+Category: AI
 Slug: sampling-methods
 Author: Ben Chuanlong Du
 

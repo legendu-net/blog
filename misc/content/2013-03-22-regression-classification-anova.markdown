@@ -3,7 +3,7 @@ Status: published
 Title: Regression Classification ANOVA
 Date: 2013-03-22 00:00:00
 Tags: anova, machine learning, statistics, classification, regression, data mining
-Category: Statistics
+Category: AI
 Slug: regression-classification-anova
 Author: Ben Chuanlong Du
 

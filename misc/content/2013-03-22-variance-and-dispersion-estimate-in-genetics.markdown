@@ -4,7 +4,7 @@ Date: 2015-02-24 14:05:04
 Slug: variance-and-dispersion-estimate-in-genetics
 Author: Ben Chuanlong Du
 Title: Variance and Dispersion Estimate in Genetics
-Category: Statistics
+Category: AI
 Tags: statistics, genetics, biostatistics, variance, dispersion, estimate, estimation
 
 **

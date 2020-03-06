@@ -4,7 +4,7 @@ Date: 2015-02-24 14:03:01
 Slug: general-tips-for-modeling
 Author: Ben Chuanlong Du
 Title: General Tips for Modeling
-Category: Statistics
+Category: AI
 Tags: tips, modeling, statistics
 
 **

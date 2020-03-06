@@ -3,7 +3,7 @@ Status: published
 Title: Estimate FDR
 Date: 2013-03-22 00:00:00
 Tags: FDR, biostatistics, statistics, estimation
-Category: Statistics
+Category: AI
 Slug: estimate-fdr
 Author: Ben Chuanlong Du
 

@@ -4,7 +4,7 @@ Date: 2015-03-13 15:26:10
 Author: Ben Chuanlong Du
 Slug: ar1x-process
 Title: AR1X Process
-Category: Statistics
+Category: AI
 Tags: statistics, AR1X, time series, linear regression, model
 
 **

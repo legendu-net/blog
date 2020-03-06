@@ -2,7 +2,7 @@ Status: Unpublished
 Title: Classification
 Date: 2020-01-02 13:14:19
 Tags: CART, machine learning, random forests, statistics, classification, SVM, neuron network, regression
-Category: Statistics
+Category: AI
 Slug: classification
 Author: Ben Chuanlong Du
 

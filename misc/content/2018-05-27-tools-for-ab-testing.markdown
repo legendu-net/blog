@@ -4,7 +4,7 @@ Date: 2018-05-27 16:39:55
 Author: Ben Chuanlong Du
 Slug: tools-for-ab-testing
 Title: Tools for A/B Testing
-Category: Statistics
+Category: AI
 Tags: statistics, A/B testing, AB testing
 
 **

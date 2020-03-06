@@ -4,7 +4,7 @@ Author: Ben Chuanlong Du
 Date: 2016-07-13 22:40:14
 Slug: statistics-tips
 Title: Statistics
-Category: Statistics
+Category: AI
 Tags: tips, statistics, modele, modeling
 
 **

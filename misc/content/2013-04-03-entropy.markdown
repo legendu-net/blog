@@ -3,7 +3,7 @@ Status: published
 Title: Entropy
 Date: 2013-04-03 00:00:00
 Tags: statistics
-Category: Statistics
+Category: AI
 Slug: entropy
 Author: Ben Chuanlong Du
 

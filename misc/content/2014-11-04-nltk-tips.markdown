@@ -4,7 +4,7 @@ Date: 2016-07-13 22:20:46
 Author: Ben Chuanlong Du
 Slug: nltk tips
 Title: NLTK Tips
-Category: Machine Learning
+Category: AI
 Tags: machine learning, data mining, text mining, data science, NLP
 
 **

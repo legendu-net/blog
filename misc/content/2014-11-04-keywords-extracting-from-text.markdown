@@ -4,7 +4,7 @@ Date: 2014-11-23 20:37:11
 Author: Ben Chuanlong Du
 Slug: keywords extracting from text
 Title: Keywords Extracting from Text
-Category: Machine Learning
+Category: AI
 Tags: machine learning, text mining, data mining, data science
 
 **

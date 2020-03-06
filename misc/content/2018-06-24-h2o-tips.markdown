@@ -4,7 +4,7 @@ Date: 2018-06-24 21:51:21
 Author: Ben Chuanlong Du
 Slug: h2o-tips
 Title: H2O Tips
-Category: Machine Learning
+Category: AI
 Tags: machine learning, H2O, software, framework
 
 **

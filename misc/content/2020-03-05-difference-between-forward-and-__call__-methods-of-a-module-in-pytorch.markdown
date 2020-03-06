@@ -1,8 +1,8 @@
 Status: published
-Date: 2020-03-05 09:51:36
+Date: 2020-03-05 16:05:30
 Author: Benjamin Du
 Slug: difference-between-forward-and-__call__-methods-of-a-module-in-pytorch
-Title: Difference Between Forward and __Call__ Methods of a Module in PyTorch
+Title: Difference Between forward and __call__ Methods of a Module in PyTorch
 Category: AI
 Tags: AI, data science, machine learning, deep learning, PyTorch, forward, __call__
 

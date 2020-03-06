@@ -1,15 +1,15 @@
 Status: published
-Date: 2017-02-18 11:57:33
+Date: 2020-03-05 16:19:58
 Author: Ben Chuanlong Du
-Slug: sql-on-text-file
-Title: SQL on Text File
+Slug: q-query-text-file-sql
+Title: Use q to Query Text File Using SQL Syntax
 Category: Programming
 Tags: programming, SQL, structured text, CSV, TSV
 
 
-[q](http://harelba.github.io/q/) is a great tool 
-for working on structured text files 
-using SQL syntax in command line.
+It is suggested that you use Python 
+instead of [q](http://harelba.github.io/q/) 
+to manipulate text files!
 
 ## Installation on Ubuntu
 
@@ -85,3 +85,7 @@ wajig install python3-q-text-as-data
         LOAD DATA INFILE '/tmp/data.txt' 
         INTO TABLE foo
         ;
+    
+## References
+
+http://harelba.github.io/q/

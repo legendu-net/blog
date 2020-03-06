@@ -4,7 +4,7 @@ Date: 2018-01-01 14:27:41
 Author: Ben Chuanlong Du
 Slug: english-learning
 Title: English Learning
-Category: English
+Category: Life
 Tags: English, language, learning, ShanBay, Vocabulary, iciba, Merriam-Webster
 
 **

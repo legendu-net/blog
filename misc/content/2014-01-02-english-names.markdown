@@ -4,7 +4,7 @@ Author: Ben Chuanlong Du
 Date: 2014-07-12 20:20:24
 Slug: english-names
 Title: English Names
-Category: English
+Category: Life
 Tags: English, name, abbreviation
 
 **

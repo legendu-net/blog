@@ -3,7 +3,7 @@ Status: published
 Title: Culture of My Summer Intern Team
 Date: 2013-08-01 00:00:00
 Tags: work, office, team culture
-Category: Work
+Category: Career
 Slug: team-culture-of-Credit-portfolio-risk-analysis
 Author: Ben Chuanlong Du
 

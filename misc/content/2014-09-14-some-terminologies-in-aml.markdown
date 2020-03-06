@@ -4,7 +4,7 @@ Date: 2016-07-13 22:11:07
 Author: Ben Chuanlong Du
 Slug: some-terminologies-in-aml
 Title: Some Terminologies in Anti-money Laundering (AML)
-Category: Work
+Category: Career
 Tags: work, terminology, AML, Anti-money Laundering, compliance
 
 **

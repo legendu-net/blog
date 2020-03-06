@@ -4,7 +4,7 @@ Date: 2019-01-19 10:13:29
 Author: Ben Chuanlong Du
 Slug: jira-tips
 Title: Jira Tips
-Category: Work
+Category: Career
 Tags: Work, JIRA, spider plot
 
 **

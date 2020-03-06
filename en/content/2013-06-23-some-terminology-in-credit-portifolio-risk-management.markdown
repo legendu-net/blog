@@ -4,7 +4,7 @@ Date: 2016-07-13 22:26:26
 Slug: some-terminology-in-credit-portifolio-risk-management
 Author: Ben Chuanlong Du
 Title: Some Terminologies in Business Investment
-Category: Work
+Category: Career
 Tags: terminology, business, Work, investment, credit risk, finance, bank
 
 ## Stock Ticker

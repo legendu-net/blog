@@ -434,10 +434,8 @@ def _subparse_ucat(subparsers):
         aliases=['ucat' + i for i in INDEXES],
         help='update category of posts.')
     subparser_ucat.add_argument(
-        '-i',
-        '--indexes',
-        nargs='+',
-        dest='indexes',
+        'indexes',
+        nargs='*',
         type=int,
         default=(),
         help='row IDs in the search results.')

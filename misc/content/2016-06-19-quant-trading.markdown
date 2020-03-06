@@ -4,7 +4,7 @@ Date: 2016-06-20 00:28:55
 Author: Ben Chuanlong Du
 Slug: quant-trading
 Title: Quant Trading
-Category: Trading
+Category: Finance
 Tags: quantitative trading, investment, money, stock, ETF
 
 **

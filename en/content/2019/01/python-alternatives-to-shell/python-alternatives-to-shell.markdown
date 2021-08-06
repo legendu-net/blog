@@ -5,7 +5,7 @@ Slug: shell-alternatives
 Title: Python Alternatives to Shell
 Category: Computer Science
 Tags: programming, IPython, shell, bash, xonsh, plumbum, Python, shell alternatives
-Modified: 2021-07-26 14:15:26
+Modified: 2021-08-05 18:54:14
 
 ## Python Equivalent of Shell Commands
 
@@ -116,6 +116,24 @@ Modified: 2021-07-26 14:15:26
   </tr>
   <tr>
     <td> rm -rf dir </td>
+    <td> <a href="https://xon.sh/"> xonsh </a> </td>
+  </tr>
+  <tr>
+    <td rowspan="3"> rm -rf file_or_dir </td>
+    <td> 
+    if p.is_file(): <br> &nbsp &nbsp &nbsp &nbsp
+        p.unlink() <br>
+    else: <br> &nbsp &nbsp &nbsp &nbsp
+        shutil.rmtree(p)
+    </td>
+    <td> <a href="https://docs.python.org/3/library/shutil.html#shutil.rmtree"> pathlib + shutil </a> </td>
+  </tr>
+  <tr>
+    <td> !rm -rf file_or_dir </td>
+    <td> <a href="https://ipython.readthedocs.io/en/stable/overview.html#enhanced-interactive-python-shell"> IPython </a> </td>
+  </tr>
+  <tr>
+    <td> rm -rf file_or_dir </td>
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
   <tr>

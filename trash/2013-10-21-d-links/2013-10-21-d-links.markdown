@@ -1,0 +1,15 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Author: Ben Chuanlong Du
+Title: Some Links for D Programming Language
+Date: 2016-07-13 21:41:02
+Slug: d-links
+Category: Computer Science
+Tags: links, D, programming
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author. 
+Please read with your own judgement!
+**
+ 
+- [D Programming Language Tutorial](http://ddili.org/ders/d.en/index.html)

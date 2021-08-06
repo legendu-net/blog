@@ -1,0 +1,31 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Date: 2016-07-13 22:14:33
+Author: Ben Chuanlong Du
+Slug: to-read
+Title: To Read
+Category: Links
+Tags: links, reading
+
+**
+Things on this page are
+fragmentary and immature notes/thoughts of the author.
+It is not meant to readers
+but rather for convenient reference of the author and future improvement.
+**
+
+http://cos.name/cn/topic/155204
+
+http://cos.name/cn/topic/155196
+
+http://cos.name/cn/topic/150278
+
+http://cos.name/cn/topic/155493
+
+http://www.datasavantconsulting.com/roland/Spectre/maclist2.html#util
+
+ftp://ftp.sas.com/pub/neural/functions/cat.txt
+
+http://www.sasanalysis.com/2011/01/top-10-most-powerful-functions-for-proc.html
+
+http://projecteuler.net/problems 

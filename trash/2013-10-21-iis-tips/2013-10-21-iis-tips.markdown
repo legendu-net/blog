@@ -1,0 +1,18 @@
+UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
+Status: published
+Author: Ben Chuanlong Du
+Date: 2015-02-24 13:59:34
+Slug: iis-tips
+Title: Some Tips for IIS
+Category: Software
+Tags: tips, software, IIS, web hosting, .NET, Windows
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author. 
+Please read with your own judgement!**
+ 
+1. to turn on iis, go to "Turn Windows features on or off"
+and select Internet Information Service
+
+2. You probably also have to enable other services as well,
+e.g., MS .NET Framewrok 3.5.1

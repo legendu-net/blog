@@ -5,7 +5,7 @@ Slug: git-implementations-and-bindings-in-python
 Title: Git Implementations and Bindings in Python
 Category: Computer Science
 Tags: Computer Science, programming, Git, Python, Dulwich, pygit2, GitPython 
-Modified: 2021-06-02 12:31:26
+Modified: 2021-08-06 11:06:44
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 There are multiple Git implementations/bindings in Python:
@@ -34,3 +34,8 @@ is Python bindings for libgit2.
 ## [GitPython](https://github.com/gitpython-developers/GitPython)
 [GitPython](https://github.com/gitpython-developers/GitPython)
 is a python library used to interact with Git repositories.
+
+## References 
+
+- [Hands on Dulwich](http://www.legendu.net/misc/blog/hands-on-Dulwich)
+- [Hands on GitPython](http://www.legendu.net/misc/blog/hands-on-GitPython)

@@ -4,15 +4,42 @@ Date: 2013-10-30 11:09:57
 Title: Tips on Git
 Slug: git-tips
 Category: Software
-Tags: tips, Git, software, version control, distributed
-Modified: 2021-05-30 11:09:57
+Tags: tips, Git, software, version control, distributed, access, token, GitHub, GitLab
+Modified: 2021-08-06 22:56:41
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
-https://www.gitignore.io/
+## Access Token for Git
+
+There are a few advantages of using (GitHub, etc.) access tokens for Git,
+especially in an enterprise environemnt.
+
+1. Access tokens can provided more fined access control.
+    For example, 
+    you can generate an access token for reading only.
+
+2. In an enterprise environemtn, 
+    2FA is usually needed to visit GitHub (or GitLab, etc). 
+    There are a 2 ways to avoid 2FA. 
+    The first way is to add your SSH public key into GitHub,
+    and the second way is to use an GitHub access token.
+    An (read only) access token come handy 
+    if you want to make releases via GitHub
+    as it does not require users to set up thrir SSH public keys in GitHub.
+    With an GitHub access token,
+    you can clone a repository like below.
+
+        git clone https://ACCESS-TOKEN@github.your.company.com/user_name/repo_name.git
+
+    Notice that some package management tools,
+    e.g., `pip` support installing packages from a Git URL directly.
+    This means that if your GitHub repository is a Python library,
+    users can install the Python library using the following command.
+
+        pip3 install -U git+https://ACCESS-TOKEN@github.your.company.com/user_name/repo_name.git
 
 ## General Git Tips
 
@@ -59,8 +86,6 @@ https://www.gitignore.io/
 
 6. Generally speaking,
     it is not a good idea to puts things into the global Git ignoring file.
-
-7. not a good idea to track .gitignore ... this depends
 
 10. When you want to change a part of the code,
     and this change might also be applied to other branches,
@@ -289,6 +314,9 @@ What is corkscrew?
 
 ### Configuration
 
+1. https://www.gitignore.io/
+    can help generate `.gitignore` files for different programming languages.
+
 16. Git in Windows automatically convert Linux/OSX line termiantors to Windows line terminators. 
     To turn off auto line terminator conversion globally, use the following command.
 
@@ -323,6 +351,7 @@ What is corkscrew?
 
 ## References
 
+- [Tips on Git Submodule](http://www.legendu.net/misc/blog/tips-on-git-submodule)
 - [Git reset, revert and rebase commands](https://opensource.com/article/18/6/git-reset-revert-rebase-commands)
 - [Git Documentation](http://git-scm.com/documentation)
 - [Using Git to manage a web site](http://toroid.org/ams/git-website-howto)

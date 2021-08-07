@@ -5,7 +5,7 @@ Slug: android-emulators
 Title: Android Emulators
 Category: Software
 Tags: software, Android, emulation, emulator, AnBox, VirtualBox, xDroid
-Modified: 2021-08-05 09:14:13
+Modified: 2021-08-05 23:12:02
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -93,7 +93,7 @@ Please read with your own judgement!
   </tr>
   <tr>
     <td> 
-    <a href="https://www.genymotion.com"> xDroid </a>
+    <a href="https://www.linzhuotech.com/index.php/home/index/xdroid.html"> xDroid </a>
     <a href="#footnote1">[8]</a>
     </td>
     <td> Partially </td>

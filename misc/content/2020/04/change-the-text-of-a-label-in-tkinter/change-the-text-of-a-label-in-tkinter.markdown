@@ -5,7 +5,7 @@ Slug: tkinter-label-tips
 Title: The Label Widget in Tkinter
 Category: Computer Science
 Tags: Computer Science, Python, programming, Tkinter, GUI, Label, text, config
-Modified: 2020-04-12 09:53:35
+Modified: 2021-08-08 16:25:26
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -72,7 +72,7 @@ there is no `imagevariable` option for a Label.
 
 ## Size 
 
-If you don’t specify a size, 
+If you don't specify a size, 
 the label is made just large enough to hold its contents. 
 You can also use the height and width options to explicitly set the size. 
 If you display text in the label, these options define the size of the label in text units. 

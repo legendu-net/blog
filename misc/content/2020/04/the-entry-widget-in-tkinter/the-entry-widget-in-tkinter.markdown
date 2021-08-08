@@ -5,7 +5,7 @@ Slug: the-entry-widget-in-tkinter
 Title: The Entry Widget in Tkinter
 Category: Computer Science
 Tags: Computer Science, Python, programming, Tkinter, GUI, Entry
-Modified: 2020-04-12 21:56:51
+Modified: 2021-08-08 16:25:26
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

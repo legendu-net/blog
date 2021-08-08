@@ -5,12 +5,27 @@ Slug: use-tkinter-to-build-gui-applications-in-python
 Title: Use Tkinter to Build GUI Applications in Python
 Category: Computer Science
 Tags: Computer Science, Python, Tkinter, GUI
-Modified: 2021-04-09 09:41:03
+Modified: 2021-08-08 16:25:26
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
+
+## Installation 
+
+Tkinter should be available by default after Python is installed.
+However,
+please continue read if you encounter the following error.
+
+> import _tkinter # If this fails your Python may not be configured for Tk
+> ImportError: No module named _tkinter
+
+1. On macOS, 
+    installing python-tk might fix the issue. 
+
+        :::bash
+        brew install python-tk
 
 ## General Tips
 
@@ -138,18 +153,20 @@ https://www.youtube.com/playlist?list=PL6gx4Cwl9DGBwibXFtPtflztSNPGuIB_d
 
 ## References
 
-[The Checkbutton Widget in Tkinter](http://www.legendu.net/misc/blog/the-checkbutton-widget-in-tkinter/)
+- [The Checkbutton Widget in Tkinter](http://www.legendu.net/misc/blog/the-checkbutton-widget-in-tkinter/)
 
-[The Entry Widget in Tkinter](http://www.legendu.net/misc/blog/the-entry-widget-in-tkinter/)
+- [The Entry Widget in Tkinter](http://www.legendu.net/misc/blog/the-entry-widget-in-tkinter/)
 
-[The Label Widget in Tkinter](http://www.legendu.net/misc/blog/tkinter-label-tips/)
+- [The Label Widget in Tkinter](http://www.legendu.net/misc/blog/tkinter-label-tips/)
 
-https://docs.python.org/3/library/tkinter.html
+- [Tkinter: “Python may not be configured for Tk”](https://stackoverflow.com/questions/5459444/tkinter-python-may-not-be-configured-for-tk)
 
-https://docs.python.org/3/library/tk.html
+- https://docs.python.org/3/library/tkinter.html
 
-http://effbot.org/tkinterbook/
+- https://docs.python.org/3/library/tk.html
 
-http://stupidpythonideas.blogspot.com/2013/10/why-your-gui-app-freezes.html
+- http://effbot.org/tkinterbook/
 
-https://www.reddit.com/r/Python/comments/7rp4xj/threading_a_tkinter_gui_is_hell_my_least_favorite/
+- http://stupidpythonideas.blogspot.com/2013/10/why-your-gui-app-freezes.html
+
+- https://www.reddit.com/r/Python/comments/7rp4xj/threading_a_tkinter_gui_is_hell_my_least_favorite/

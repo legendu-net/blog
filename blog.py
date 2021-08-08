@@ -788,7 +788,7 @@ def _git_diff(blogger, args):
 
 def _git_pull(blogger, args):
     logger.info("Pulling origin/master ...")
-    sp.run("git pull origin master", shell=True, check=True)
+    sp.run("git pull origin master && git status", shell=True, check=True)
     reload(blogger, args)
 
 

@@ -5,7 +5,7 @@ Slug: editing-PDF-files
 Title: Editing PDF Files
 Category: Software
 Tags: software, PDF, tools, edit, convert, PDFfiller
-Modified: 2021-07-15 14:57:14
+Modified: 2021-08-09 12:43:49
 
 **
 Things on this page are
@@ -19,11 +19,11 @@ Please read with your own judgement!
 
 - Free for occassional use
 - No credit card required
-- support checkmarks and signatures
+- Support checkmarks and signatures
 
 ### [Free PDF Convert](https://www.freepdfconvert.com/) 
 
-great for convert PDF files to office files, etc. 
+Great for convert PDF files to MS Office files, etc. 
 so that you can edit it. 
 But unfortunately non-free 1 file per 30 minutes
 
@@ -35,19 +35,19 @@ Free for non-commerical use.
 
 ### Wondershare PDFelement
 
-great one, support Chinese, need to purchase a licence unfortunately
+Great one, support Chinese, need to purchase a licence unfortunately
 
 ### [PDFfiller](https://www.pdffiller.com/)
 
-a good one but does not support Chinese currently
+A good one but does not support Chinese currently
 
 ### Bluebeam Revue eXtreme 
 
-great, support Chinese, commerical, 30 days free trial
+Great, support Chinese, commerical, 30 days free trial
 
 ### flpsed
 
-a good WYSIWYG PDF editor, too simple, does not support Chinese
+A good WYSIWYG PDF editor, too simple, does not support Chinese
 
 ## Python Libraries
 

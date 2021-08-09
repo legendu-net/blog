@@ -5,7 +5,7 @@ Slug: shell-alternatives
 Title: Python Alternatives to Shell
 Category: Computer Science
 Tags: programming, IPython, shell, bash, xonsh, plumbum, Python, shell alternatives
-Modified: 2021-08-05 18:54:14
+Modified: 2021-08-09 01:27:19
 
 ## Python Equivalent of Shell Commands
 
@@ -168,10 +168,6 @@ Modified: 2021-08-05 18:54:14
 
 IPython is the best and simpliest Python approach to replace (all part of) shell so far.
 
-https://ipython.readthedocs.io/en/stable/interactive/magics.html
-
-https://github.com/ivanov/vim-ipython
-
 1. Use the IPython shell or JupyterLab notebook (preferred) 
     instead of Shell for complicated interactive operations.
 
@@ -217,10 +213,12 @@ I personally prefer IPython and xonsh to plumbum.
 
 ## References
 
-https://github.com/ninjaaron/replacing-bash-scripting-with-python
+- [IPython Magics](https://ipython.readthedocs.io/en/stable/interactive/magics.html)
 
-https://stackoverflow.com/questions/209470/how-to-implement-common-bash-idioms-in-python
+- https://github.com/ninjaaron/replacing-bash-scripting-with-python
 
-https://stackoverflow.com/questions/123198/how-do-i-copy-a-file-in-python
+- https://stackoverflow.com/questions/209470/how-to-implement-common-bash-idioms-in-python
 
-https://docs.python.org/3/library/pathlib.html#module-pathlib
+- https://stackoverflow.com/questions/123198/how-do-i-copy-a-file-in-python
+
+- https://docs.python.org/3/library/pathlib.html#module-pathlib

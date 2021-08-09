@@ -5,14 +5,16 @@ Slug: install-gnu-utils-using-homebrew
 Title: Install GNU Utils Using Homebrew
 Category: OS
 Tags: macOS, Homebrew, GNU
-Modified: 2021-08-02 09:35:28
+Modified: 2021-08-09 01:23:37
 
 
 Installing GNU tools is a way to try to get Linux command experience in macOS. 
 However, 
 not every Linux command has an identical-experience version in macOS.
+**
 It is suggested that you use a Linux virtual machine 
 if you really want to have Linux experience in macOS.
+**
 Notice that some hardwares (USB) can be accessed directly in virtual machines,
 which makes Linux virtual machines even more useful.
 For example, 

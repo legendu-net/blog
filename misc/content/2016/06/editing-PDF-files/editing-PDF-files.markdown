@@ -5,7 +5,7 @@ Slug: editing-PDF-files
 Title: Editing PDF Files
 Category: Software
 Tags: software, PDF, tools, edit, convert, PDFfiller
-Modified: 2021-08-09 22:00:51
+Modified: 2021-08-09 23:12:40
 
 **
 Things on this page are
@@ -73,7 +73,7 @@ Please read with your own judgement!
 
   <tr>
     <td rowspan="3"> Linux Desktop </td>
-    <td> PDFArranger </td>
+    <td> <a hyperlink="https://github.com/pdfarranger/pdfarranger"> PDFArranger </a> </td>
     <td>  
       <ul>
         <li>
@@ -101,7 +101,7 @@ Please read with your own judgement!
     </td>
   </tr>
   <tr>
-    <td> Evince </td>
+    <td> <a hyperlink="https://help.gnome.org/users/evince/stable/"> Evince </a> </td>
     <td>  
       <ul>
         <li>

@@ -5,7 +5,7 @@ Slug: shell-equivalent-in-different-operating-systems
 Title: Shell Equivalent in Different Operating Systems
 Category: Computer Science
 Tags: Computer Science, OS, Linux, macOS, Windows, Shell, PowerShell
-Modified: 2021-08-02 12:17:30
+Modified: 2021-08-09 23:06:20
 PowerShell examples are used for Windows in the table below.
 
 <div style="overflow-x:auto;">

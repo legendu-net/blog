@@ -71,6 +71,6 @@ samba requires kernelspace while WSL only implements a userspace.
 
 ## References
 
-[简明的WSL教程](https://zhuanlan.zhihu.com/p/24537874)
+- [Docker not running on Ubuntu WSL - Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running? [closed]](https://stackoverflow.com/questions/61592709/docker-not-running-on-ubuntu-wsl-cannot-connect-to-the-docker-daemon-at-unix)
 
-https://towardsdatascience.com/dual-boot-is-dead-windows-and-linux-are-now-one-27555902a128
+- https://towardsdatascience.com/dual-boot-is-dead-windows-and-linux-are-now-one-27555902a128

@@ -5,7 +5,7 @@ Slug: wsl-tips
 Title: Tips on WSL
 Category: OS
 Tags: Linux, WSL, Windows, BashOnWindows, Bash on Windows, tips
-Modified: 2020-06-26 23:23:44
+Modified: 2021-08-13 13:24:59
 
 **
 Things on this page are
@@ -15,7 +15,10 @@ Please read with your own judgement!
 
 ## Installation 
 
-https://devtidbits.com/2017/06/08/run-ubuntu-16-04-on-windows-10-creators-update/
+[Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+
+    :::bash
+    wsl --install
 
 ## Access Linux Filesystems from Windows 
 
@@ -68,6 +71,6 @@ samba requires kernelspace while WSL only implements a userspace.
 
 ## References
 
-[简明的WSL教程](https://zhuanlan.zhihu.com/p/24537874)
+- [Docker not running on Ubuntu WSL - Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running? [closed]](https://stackoverflow.com/questions/61592709/docker-not-running-on-ubuntu-wsl-cannot-connect-to-the-docker-daemon-at-unix)
 
-https://towardsdatascience.com/dual-boot-is-dead-windows-and-linux-are-now-one-27555902a128
+- https://towardsdatascience.com/dual-boot-is-dead-windows-and-linux-are-now-one-27555902a128

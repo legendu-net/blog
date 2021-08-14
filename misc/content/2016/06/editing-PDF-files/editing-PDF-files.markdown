@@ -5,7 +5,7 @@ Slug: editing-PDF-files
 Title: Editing PDF Files
 Category: Software
 Tags: software, PDF, tools, edit, convert, PDFfiller
-Modified: 2021-08-09 12:43:49
+Modified: 2021-08-09 23:12:40
 
 **
 Things on this page are
@@ -13,71 +13,221 @@ fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
-## Web Tools
+<div style="overflow-x:auto;">
+<style>
+    tr:nth-child(even) {background-color: #f2f2f2}
+</style>
+<table style="width:100%">
+  <tr>
+    <th> Type </th>
+    <th> Name </th>
+    <th> Comments </th>
+  </tr>
 
-### [DocuSign](https://www.docusign.com/)
+  <tr>
+    <td rowspan="4"> Web Tools </td>
+    <td> <a hyperlink="https://www.docusign.com/"> DocuSign </a>  </td>
+    <td>  
+      <ul>
+        <li> Free for occassional use </li>
+        <li> No credit card required </li>
+        <li> Support checkmarks and signatures </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td> <a hyperlink="https://www.freepdfconvert.com/"> Free PDF Convert </a> </td>
+    <td> 
+      <ul>
+        <li> Great for convert PDF files to MS Office files, etc. </li>
+        <li> non-free: 1 file per 30 minutes </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td> <a hyperlink="https://www.adobe.com/acrobat/online/rearrange-pdf.html"> Adobe Rearrage PDF </a> </td>
+    <td>  
+      <ul>
+        <li>
+          Sign in needed
+        </li>
+        <li>
+          Paid service but free trial available
+        </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td> <a hyperlink="https://www.ilovepdf.com/"> I Love PDF </a> </td>
+    <td>  
+      <ul>
+        <li>
+          No need to sign in 
+        </li>
+        <li>
+          Paid service but free trial available
+        </li>
+      </ul>
+    </td>
+  </tr>
 
-- Free for occassional use
-- No credit card required
-- Support checkmarks and signatures
+  <tr>
+    <td rowspan="3"> Linux Desktop </td>
+    <td> <a hyperlink="https://github.com/pdfarranger/pdfarranger"> PDFArranger </a> </td>
+    <td>  
+      <ul>
+        <li>
+        Opensource and free
+        </li>
+        <li>
+        Easy to use
+        </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>  
+    Okular
+    </td>
+    <td>  
+      <ul>
+        <li>
+        support annotating PDFs
+        </li>
+        <li>
+        does NOT support removing/adding PDF pages
+        </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td> <a hyperlink="https://help.gnome.org/users/evince/stable/"> Evince </a> </td>
+    <td>  
+      <ul>
+        <li>
+        most popular PDF viewer in Linux
+        </li>
+        <li>
+        does NOT support editing PDF files in any way
+        </li>
+      </ul>
+    </td>
+  </tr>
 
-### [Free PDF Convert](https://www.freepdfconvert.com/) 
+  <tr>
+    <td> macOS Desktop </td>
+    <td> Preview </td>
+    <td>  
+      <ul>
+        <li>
+        Default PDF viewer on macOS
+        </li>
+        <li>
+        Support rotating, adding and removing pages
+        </li>
+      </ul>
+    </td>
+  </tr>
 
-Great for convert PDF files to MS Office files, etc. 
-so that you can edit it. 
-But unfortunately non-free 1 file per 30 minutes
-
-## Desktop Applications
-
-### Master PDF Editor
-
-Free for non-commerical use. 
-
-### Wondershare PDFelement
-
-Great one, support Chinese, need to purchase a licence unfortunately
-
-### [PDFfiller](https://www.pdffiller.com/)
-
-A good one but does not support Chinese currently
-
-### Bluebeam Revue eXtreme 
-
-Great, support Chinese, commerical, 30 days free trial
-
-### flpsed
-
-A good WYSIWYG PDF editor, too simple, does not support Chinese
-
-## Python Libraries
-
-### [mstamy2/PyPDF2](https://github.com/mstamy2/PyPDF2)
-
-A utility to read and write PDFs with Python.
-
-### [pdfplumber](https://github.com/jsvine/pdfplumber)
-[pdfplumber](https://github.com/jsvine/pdfplumber)
-plumbs a PDF for detailed information about each char, rectangle, line, et cetera,
-and easily extract text and tables.
-
-### [jalan/pdftotext](https://github.com/jalan/pdftotext)
-It is great at parsing text from PDFs which also keeps the original layout as much as possible.
-
-### [pdfminer/pdfminer.six](https://github.com/pdfminer/pdfminer.six)
-
-A Python library for parsing PDF.
-It is good for manipulating PDF files 
-but weak at parsing text from PDF files.
-
-### [socialcopsdev/camelot/](https://github.com/socialcopsdev/camelot/)
-
-A Python library for extracting data tables in PDF files.
-
-### [chezou/tabula-py](https://github.com/chezou/tabula-py)
-
-A Python binding for [tabulapdf/tabula](https://github.com/tabulapdf/tabula).
-
-### [chrismattmann/tika-python](https://github.com/chrismattmann/tika-python)
+  <tr>
+    <td rowspan="4"> Windows Desktop </td>
+    <td> Master PDF Editor </td>
+    <td>  
+    Free for non-commerical use. 
+    </td>
+  </tr>
+  <tr>
+    <td> Wondershare PDFelement </td>
+    <td>  
+    Great one
+    <ul>
+      <li>
+      support Chinese font when filling forms
+      </li>
+      <li>
+      need to purchase a licence
+      </li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td> <a hyperlink="https://www.pdffiller.com/"> PDFfiller </a> </td>
+    <td>  
+    good one 
+    <ul>
+      <li>
+      does NOT support Chinese font when filling forms
+      </li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td> <a hyperlink="https://www.pdffiller.com/"> Bluebeam Revue eXtreme 
+    </a> </td>
+    <td>  
+    Great one
+    <ul>
+      <li>
+      support Chinese fonts when filling forms
+      </li>
+      <li>
+      need to purchase a license but 30 days free trial available
+      </li>
+    </ul>
+    </td>
+  </tr>
+    
+  <tr>
+    <td rowspan="7"> Python Libraries </td>
+    <td> 
+    <a hyperlink="https://github.com/mstamy2/PyPDF2"> PyPDF2 </a>
+    </td>
+    <td>  
+      A utility to read and write PDFs with Python.
+    </td>
+  </tr>
+  <tr>
+    <td> 
+      <a hyperlink="https://github.com/jsvine/pdfplumber"> pdfplumber </a>
+    </td>
+    <td>  
+    Plumbs a PDF for detailed information about each char, rectangle, line, et cetera,
+    and easily extract text and tables.
+    </td>
+  </tr>
+  <tr>
+    <td> <a hyperlink="https://github.com/jalan/pdftotext"> pdftotext </a> </td>
+    <td>  
+    Great at parsing text from PDFs which also keeps the original layout as much as possible.
+    </td>
+  </tr>
+  <tr>
+    <td> <a hyperlink="https://github.com/pdfminer/pdfminer.six"> pdfminer.six </a> </td>
+    <td>  
+    A Python library for parsing PDF.
+    It is good for manipulating PDF files 
+    but weak at parsing text from PDF files.
+    </td>
+  </tr>
+  <tr>
+    <td> <a hyperlink="https://github.com/socialcopsdev/camelot/"> camelot </a> </td>
+    <td>  
+    A Python library for extracting data tables in PDF files.
+    </td>
+  </tr>
+  <tr>
+    <td> <a hyperlink="https://github.com/chezou/tabula-py"> tabula-py </a> </td>
+    <td>  
+    A Python binding for [tabulapdf/tabula](https://github.com/tabulapdf/tabula).
+    </td>
+  </tr>
+  <tr>
+    <td> <a hyperlink="https://github.com/chrismattmann/tika-python"> tika-python </a> </td>
+    <td>  
+    </td>
+  </tr>
+</table>
+</div>
 
 ## Java Libraries
 
@@ -102,5 +252,11 @@ A command-line tool for filling fileds in PDF docs.
 - [Hands on the Python Library pdfplumber](http://www.legendu.net/misc/blog/hands-on-the-python-library-pdfplumber)
 
 - [Extracting PDF pages using the Python Package PyPDF2](http://www.legendu.net/en/blog/python-pdf-pypdf2)
+
+- [Use pdftk to Manipulating PDF Files](http://www.legendu.net/en/blog/pdftk-examples)
+
+- [View and Edit PDF Documents Using Okular](http://www.legendu.net/misc/blog/okular-tips)
+
+- [Hands on the Python Library Pdfplumber](http://www.legendu.net/misc/blog/hands-on-the-python-library-pdfplumber)
 
 - http://stanford.edu/~mgorkove/cgi-bin/rpython_tutorials/Using_Python_to_Extract_Tables_From_PDFs.php

@@ -25,7 +25,7 @@ If you have
 you can install OpenCV for Python with the following single command.
 
     :::bash
-    sudo xinstall cv2 -ic
+    xinstall --sudo cv2 -ic
 
 ## Examples
 

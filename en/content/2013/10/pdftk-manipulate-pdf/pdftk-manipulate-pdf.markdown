@@ -5,7 +5,7 @@ Date: 2013-10-06 11:44:58
 Slug: pdftk-examples
 Category: Software
 Tags: pdftk, software, examples, PDF
-Modified: 2020-04-06 11:44:58
+Modified: 2021-08-09 22:00:51
 
 
 It is suggested that you **use Python modules instead of `pdftk`** to manipulating PDFs for several reasons.
@@ -78,3 +78,7 @@ below are concrete examples on how to use it.
 
         :::bash
         pdftk in.pdf cat 1-endsouth output out.pdf
+
+## References 
+
+- [Editing PDF Files](http://www.legendu.net/misc/blog/editing-PDF-files)

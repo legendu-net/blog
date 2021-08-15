@@ -1,45 +1,46 @@
 Status: published
 Date: 2017-08-10 09:05:45
 Author: Ben Chuanlong Du
-Slug: docker-in-WSL
-Title: Docker in WSL
+Slug: docker-in-WSL2
+Title: Docker in WSL 2
 Category: Software
-Tags: software, Docker, WSL, Windows, Bash, BashOnWindows, Bash on Windows
-Modified: 2021-08-15 11:00:35
+Tags: software, Docker, WSL, WSL 2, Windows, Bash, BashOnWindows, Bash on Windows
+Modified: 2021-08-15 16:52:00
 
 **
 Things on this page are
 fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
+## Tips and Traps
 
-1. Docker can be installed in WSL starting from the Win 10 Creator update,
-    however, 
-    there are still all kinds of issues running Docker in WSL.
+1. Docker in WSL 2 works great.
 
-2. The most important part is dockerd will only run on an elevated console (run as Admin) 
-    and cgroup should be always mounted before running the docker daemon.
+## Install Docker in WSL 2 
 
+1. Install WSL 2 following instructions in 
+    [Tips on WSL 2](http://www.legendu.net/misc/blog/wsl-tips/)
+    .
 
-## Use Docker on Windows in WSL
+2. Install `docker.io` in WSL 2. 
 
-### Install Docker on Windows
+        :::bash
+        sudo apt-get install docker.io
 
-To install the Docker engine on Windows, 
-just go to docker.com and download the appropriate distribution. 
-Also, 
-make sure hardware virtualization is enabled and Hyper-V is installed, 
-lest the engine won’t start.
+2. Install Docker desktop for Windows.
 
-### Run Docker in WSL
+3. Set Docker to use WSL 2 based engine. 
 
-With Windows 10 Creators Update*, 
-accomplishing all of this has become a lot simpler, 
-since it allows you to run Windows executables from Bash. 
-Just add these two lines to your .bashrc and you are done!
+    1. Open Docker desktop settings.
+    2. Check the checkbox "Use the WSL 2 based engine" in the general tab.
+    3. Click "Apply & Restart".
 
-    PATH="$HOME/bin:$HOME/.local/bin:$PATH"
-    PATH="$PATH:/mnt/c/Program\ Files/Docker/Docker/resources/bin"
+    ![docker-wsl2-engine](https://docs.docker.com/docker-for-windows/images/wsl2-enable.png)
+
+For more details,
+please refer to
+[Docker Desktop WSL 2 backend](https://docs.docker.com/docker-for-windows/wsl/)
+.
 
 ## Related Articles 
 
@@ -47,4 +48,6 @@ Just add these two lines to your .bashrc and you are done!
 
 ## References
 
-https://towardsdatascience.com/dual-boot-is-dead-windows-and-linux-are-now-one-27555902a128
+- [Tips on WSL 2](http://www.legendu.net/misc/blog/wsl-tips/)
+
+- https://towardsdatascience.com/dual-boot-is-dead-windows-and-linux-are-now-one-27555902a128

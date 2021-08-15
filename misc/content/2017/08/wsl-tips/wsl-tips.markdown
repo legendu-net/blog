@@ -2,10 +2,10 @@ Status: published
 Date: 2017-08-26 23:23:44
 Author: Ben Chuanlong Du
 Slug: wsl-tips
-Title: Tips on WSL
+Title: Tips on WSL 2
 Category: OS
-Tags: Linux, WSL, WSL2, Windows, BashOnWindows, Bash on Windows, tips
-Modified: 2021-08-15 11:00:35
+Tags: Linux, WSL, WSL 2, Windows, BashOnWindows, Bash on Windows, tips
+Modified: 2021-08-15 16:52:00
 
 **
 Things on this page are

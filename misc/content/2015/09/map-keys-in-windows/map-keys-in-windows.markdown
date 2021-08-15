@@ -5,8 +5,8 @@ Author: Ben Chuanlong Du
 Slug: map-keys-in-windows
 Title: Map Keys in Windows
 Category: OS
-Tags: Windows, keys, mapping, swap, Caps Lock, Escape
-Modified: 2016-06-01 22:17:13
+Tags: Windows, keys, mapping, swap, Caps Lock, Escape, SharpKeys
+Modified: 2021-08-15 13:03:09
 
 **
 Things on this page are
@@ -19,14 +19,25 @@ it is suggested that you Swap the Caps Lock key with the Escape key.
 The swaped key mapping will even pass to virtual machines,
 so that if you use Linux VMs you don't have swap the two keys in the VMs again.
 
-1. AutoHotkey
 
-2. editing registry manually (not recommended)
 
-sometimes it won't work even if you follow popular instructions found online
-
-3. SharpKeys (great!)
+## [SharpKeys](https://github.com/randyrants/sharpkeys)
 
 SharpKeys modify the registry to map keys. 
 SharpKeys is great!!! modifying the registry by myself didn't make it work 
 but Sharpkeys works perfectly and is stunningly easy
+
+## Editing Registry Manually
+
+Sometimes it won't work even if you follow popular instructions found online.
+Not recommended.
+
+## [AutoHotkey](https://github.com/Lexikos/AutoHotkey_L)
+
+Not recommended for this purpose.
+
+## References
+
+- [Map Keys in Linux](http://www.legendu.net/en/blog/map-keys-in-linux/)
+
+- [Map Keys in macOS](http://www.legendu.net/en/blog/map-keys-in-mac/)

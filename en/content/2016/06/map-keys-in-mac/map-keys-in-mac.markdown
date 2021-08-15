@@ -1,12 +1,11 @@
-UUID: a96776f9-5501-4c6a-9e2b-ccf0f8f1718b
 Status: published
 Date: 2016-06-26 07:30:03
 Author: Ben Chuanlong Du
-Slug: map-keys-in-mac
-Title: Map Keys in Mac
+Slug: map-keys-in-macos
+Title: Map Keys in macOS
 Category: OS
 Tags: Mac, Apple, macOS, mapping, keys, Seil
-Modified: 2018-01-26 07:30:03
+Modified: 2021-08-15 13:03:09
 
 Update: As of MacOS Sierra 10.12.1,
 the remapping of `Caps Lock` to `Escape` can be done natively in the Keyboard System Preferences pane.
@@ -44,3 +43,9 @@ I find it is necessary to swap the `Caps Lock` key with the `Escape` key.
     1. Click on `Other keys` in `Seil`
     2. Check `Change Escape`
     3. fill 57 (keycode of the Caps Lock key) in the keycode text box.
+
+## References
+
+- [Map Keys in Linux](http://www.legendu.net/en/blog/map-keys-in-linux/)
+
+- [Map Keys in Windows](http://www.legendu.net/misc/blog/map-keys-in-windows)

@@ -6,7 +6,7 @@ Slug: map-keys-in-linux
 Title: Map Keys in Linux
 Category: OS
 Tags: Linux, keyboard, mapping, swap, setxkbmap, Cinnamon, GNOME, keys
-Modified: 2021-08-03 23:12:02
+Modified: 2021-08-15 13:03:09
 
 Note: For Vim users, it is appealing to make the `Caps Lock` function like `Escape`.
 It is suggested that you make `Caps Lock` an additonal `Escape`
@@ -63,6 +63,10 @@ sudo dpkg-reconfigure keyboard-configuration
 This way is better as it will take effect on the virtual consoles as well as in the GUI DE.
 
 ## More References
+
+- [Map Keys in macOS](http://www.legendu.net/en/blog/map-keys-in-mac/)
+
+- [Map Keys in Windows](http://www.legendu.net/misc/blog/map-keys-in-windows)
 
 - <http://askubuntu.com/questions/444714/how-do-i-swap-escape-and-caps-lock-in-14-04/446725#446725>
 

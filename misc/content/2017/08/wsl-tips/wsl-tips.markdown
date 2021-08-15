@@ -4,8 +4,8 @@ Author: Ben Chuanlong Du
 Slug: wsl-tips
 Title: Tips on WSL
 Category: OS
-Tags: Linux, WSL, Windows, BashOnWindows, Bash on Windows, tips
-Modified: 2021-08-13 13:24:59
+Tags: Linux, WSL, WSL2, Windows, BashOnWindows, Bash on Windows, tips
+Modified: 2021-08-15 11:00:35
 
 **
 Things on this page are
@@ -20,6 +20,21 @@ Please read with your own judgement!
     :::bash
     wsl --install
 
+## GUI for WSL 
+
+1. [cmder](http://cmder.net/) is a good alternative UI for WSL (and also PowerShell and CMD).
+
+2. The opensource software Windows Terminal from software is the best terminal emulator for Windows.
+    Please refer to posts 
+    [My WSL2 and Windows Terminal setup](https://garrytrinder.github.io/2020/12/my-wsl2-windows-terminal-setup)
+    and
+    [Getting started with Windows New Terminal + WSL (Windows Subsystem for Linux)](https://medium.com/@bhavsec/getting-started-with-windows-new-terminal-and-wsl-6b8fbd10ce17)
+    on how to set it up for WSL.
+
+## Enable SSH into WSL
+
+[THE EASY WAY how to SSH into Bash and WSL2 on Windows 10 from an external machine](https://www.hanselman.com/blog/the-easy-way-how-to-ssh-into-bash-and-wsl2-on-windows-10-from-an-external-machine)
+
 ## Access Linux Filesystems from Windows 
 
 https://blogs.msdn.microsoft.com/commandline/2016/11/17/do-not-change-linux-files-using-windows-apps-and-tools/
@@ -28,8 +43,6 @@ With the 1903 update, users can access Linux Filesystem from Windows directly.
 
 
 ## General Tips
-
-1. [cmder](http://cmder.net/) is a good alternative UI for WSL (and also PowerShell and CMD).
 
 2. All windows disks are mounted under `/mnt`. 
     You can visit all Windows files/directories that do not require admin privilige in WSL. 
@@ -72,5 +85,7 @@ samba requires kernelspace while WSL only implements a userspace.
 ## References
 
 - [Docker not running on Ubuntu WSL - Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running? [closed]](https://stackoverflow.com/questions/61592709/docker-not-running-on-ubuntu-wsl-cannot-connect-to-the-docker-daemon-at-unix)
+
+- [Docker in WSL](http://www.legendu.net/misc/blog/docker-in-WSL)
 
 - https://towardsdatascience.com/dual-boot-is-dead-windows-and-linux-are-now-one-27555902a128

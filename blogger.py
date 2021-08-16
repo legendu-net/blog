@@ -445,11 +445,13 @@ class Post:
             category=record.category,
             tags=record.tags
         )
-        content = ",\n".join(f'"{line}\\n"' for line in record.content.split("\n"))
-        text = text.replace('"${DISCLAIMER}"', content)
+        notebook = json.loads(text)
+        notebook["cells"][1]["source"] = record.content.split("\n")
+        path = self.path.with_suffix(IPYNB)
+        with path.open("w") as fout:
+            json.dump(notebook, fout, indent=1)
         self.path.unlink()
-        self.path = self.path.with_suffix(IPYNB)
-        self.path.write_text(text)
+        self.path = path
 
 
 class Blogger:

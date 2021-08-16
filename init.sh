@@ -1,3 +1,7 @@
+#!/bin/bash
+# symbolic link
+ln -svf $(pwd)/blog.py ~/.local/bin/blog
+
 # deps
 python3 -m pip install \
     loguru \

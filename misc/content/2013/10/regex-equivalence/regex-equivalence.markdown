@@ -941,6 +941,62 @@ Please read with your own judgement!
             \\.
         </td>
     </tr>
+    <tr>
+        <td> 
+            Lookahead
+        </td>
+        <td> </td>
+        <td> <a href="https://docs.python.org/3/library/re.html#index-20"> (?=...) </a> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> 
+            \\.
+        </td>
+    </tr>
+    <tr>
+        <td> 
+            Negative lookahead
+        </td>
+        <td> </td>
+        <td> <a href="https://docs.python.org/3/library/re.html#index-21"> (?!...) </a> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> 
+            \\.
+        </td>
+    </tr>
+    <tr>
+        <td> 
+            Positive lookbehind
+        </td>
+        <td> </td>
+        <td> <a href="https://docs.python.org/3/library/re.html#index-22"> (?&lt;=...) </a> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> 
+            \\.
+        </td>
+    </tr>
+    <tr>
+        <td> 
+            Negative lookbehind
+        </td>
+        <td> </td>
+        <td> <a href="https://docs.python.org/3/library/re.html#index-23"> (?&lt;!...) </a> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> 
+            \\.
+        </td>
+    </tr>
 </table>
 </div>
 
@@ -964,5 +1020,6 @@ Please read with your own judgement!
     For example, 
     instead of `.*` you can use `.*?` to do a non-greedy match.
 ## References
+- [re — Regular expression operations](https://docs.python.org/3/library/re.html)
 
-[Regular Expression in Bash](http://www.legendu.net/misc/blog/regular-expression-in-bash/)
+- [Regular Expression in Bash](http://www.legendu.net/misc/blog/regular-expression-in-bash/)

@@ -5,7 +5,7 @@ Slug: docker-in-WSL2
 Title: Docker in WSL 2
 Category: Software
 Tags: software, Docker, WSL, WSL 2, Windows, Bash, BashOnWindows, Bash on Windows
-Modified: 2021-08-18 22:11:11
+Modified: 2021-08-18 23:23:33
 
 **
 Things on this page are
@@ -25,6 +25,10 @@ Please read with your own judgement!
     please refer to
     [How to Boost Docker with WSL2](https://towardsdatascience.com/how-to-improve-docker-performance-with-wsl2-3a54402ab0f2)
     .
+
+2. Docker containers launched from a WSL (e.g., Ubuntu) shell will continue to run 
+    after the WSL shell is terminated,
+    as long as the Docker daemon is alive. 
 
 ## Install Docker in WSL 2 
 

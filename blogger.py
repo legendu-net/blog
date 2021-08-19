@@ -446,11 +446,13 @@ class Post:
             tags=record.tags
         )
         notebook = json.loads(text)
-        notebook["cells"][1]["source"] = record.content.split("\n")
+        notebook["cells"][1]["source"] = re.split(r"(?<=\n)", record.content)
         path = self.path.with_suffix(IPYNB)
         with path.open("w") as fout:
             json.dump(notebook, fout, indent=1)
-        self.path.unlink()
+        dir_ = BASE_DIR / "trash" / self.path.parent.name
+        dir_.mkdir(parents=True, exist_ok=True)
+        self.path.rename(dir_ / self.path.name)
         self.path = path
 
 

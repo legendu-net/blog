@@ -5,7 +5,7 @@ Slug: wsl-tips
 Title: Tips on WSL 2
 Category: OS
 Tags: Linux, WSL, WSL 2, Windows, BashOnWindows, Bash on Windows, tips
-Modified: 2021-08-15 16:52:00
+Modified: 2021-08-18 23:10:30
 
 **
 Things on this page are
@@ -15,10 +15,25 @@ Please read with your own judgement!
 
 ## Installation 
 
-[Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+Run the following command in an command window with administrator privileges to install WSL 2.
 
-    :::bash
+    :::shell
     wsl --install
+
+Run the following command to check the version of WSL.
+
+    :::shell
+    wsl -l -v
+
+Run the following command in a PowerShell to check build information of WSL 2.
+
+    :::PowerShell
+    (gcm wsl).Version
+
+For more details,
+please refer to
+[Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+.
 
 ## GUI for WSL 
 

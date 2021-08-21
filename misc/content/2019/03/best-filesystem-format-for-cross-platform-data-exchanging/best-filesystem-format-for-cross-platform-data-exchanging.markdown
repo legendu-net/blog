@@ -5,12 +5,12 @@ Slug: best-filesystem-format-for-cross-platform-data-exchanging
 Title: Best Filesystem Format for Cross-Platform Data Exchanging
 Category: OS
 Tags: OS, macOS, Linux, Windows, external drive, filesystem, exFAT, ext4
-Modified: 2020-09-11 10:24:51
+Modified: 2021-08-21 13:56:46
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
-**
+
 ## FAT32
 
 FAT32 is an outdated filesystem. 
@@ -78,9 +78,24 @@ Below are details steps to access an external hard drive in a VirtualBox VM.
 5. The hard drive will auto mount on some Linux distributions (e.g., Ubuntu). 
     If not, just manually mount it.
 
+The above process is even more symplified on Window 10 with WSL 2. 
+You can mount an external EXT4 formatted hard drive to WSL 2
+using the command `wsl --mount <DiskPath>` 
+and umount it from WSL 2 using the command `wsl --unmount <Diskpath>`. 
+In case you want to see all available hard drives in the Windows system,
+you can run `wmic diskdrive list brief`
+.
+The WSL 2 filesystem can be accessed from Windows
+by typing `\\wsl$` into the address bar of Windows Explorer.
+For more details on mounting
+
 ## References
 
 https://dzone.com/articles/how-to-mount-usb-drives-on-virtualbox
+
+[WSL mount external storage and network drives](https://www.scivision.dev/mount-usb-drives-windows-subsystem-for-linux/)
+
+[Get started mounting a Linux disk in WSL 2 (preview)](https://docs.microsoft.com/en-us/windows/wsl/wsl2-mount-disk)
 
 https://www.virtualbox.org/wiki/Downloads
 

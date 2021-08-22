@@ -5,7 +5,7 @@ Slug: tips-on-pillow
 Title: Tips on Pillow
 Category: Computer Science
 Tags: programming, Pillow, image, mask
-Modified: 2020-04-26 12:07:50
+Modified: 2021-08-21 23:02:29
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -15,6 +15,7 @@ Please read with your own judgement!
 ## PIL.Image.Image.crop
 
 Notice that the bounding box is inclusive/EXCLUSIVE like the `range` function.
+`PIL.Image.Image.crop` does not accept a bounding box of zero size!
 
 ## PIL.Image.Image.resize
 

@@ -5,7 +5,7 @@ Slug: useful-tools-linux
 Title: Useful Tools in Linux
 Category: OS
 Tags: shell, remote, PDF, software, tools, terminal, application, Linux
-Modified: 2021-07-19 11:16:08
+Modified: 2021-08-21 23:04:25
 
 **
 Things on this page are

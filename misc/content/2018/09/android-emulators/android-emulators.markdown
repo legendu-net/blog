@@ -40,7 +40,7 @@ Please read with your own judgement!
     </td>
     <td> Yes </td>
     <td> Windows, macOS </td>
-    <td> Yes </td>
+    <td> No </td>
     <td> Yes </td>
     <td> Active </td>
   </tr>

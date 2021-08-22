@@ -1,4 +1,3 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Title: Cool Shell/Terminal Commands
 Date: 2012-09-18 21:38:38
@@ -6,7 +5,7 @@ Tags: shell, terminal, Linux
 Category: OS
 Slug: cool-shell-commands
 Author: Ben Chuanlong Du
-Modified: 2014-06-18 21:38:38
+Modified: 2021-08-22 00:12:26
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 

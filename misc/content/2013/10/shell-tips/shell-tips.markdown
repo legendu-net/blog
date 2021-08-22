@@ -5,7 +5,7 @@ Date: 2013-10-23 12:19:10
 Slug: shell-tips
 Category: OS
 Tags: tips, Linux, shell, terminal
-Modified: 2020-10-23 12:19:10
+Modified: 2021-08-22 00:12:26
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -169,7 +169,21 @@ cp a/. b
 5. always use interactive version of `mv` and `cp` ...
     and always use `trash` instead of `rm`
 
-### rm
+### du & dust
+
+### grep & ripgrep
+
+### ps & procs
+
+### cat & [bat](https://github.com/sharkdp/bat)
+
+`bat` is a much better alternative to `cat`.
+
+### rm & [rip](https://github.com/nivekuil/rip)
+
+`rm` is dangerous. 
+It is suggested that you use the `rip` command (implemented in Rust)
+as much as possible.
 
 1. Remove a file whose name starts with `--` and has special characters.
 

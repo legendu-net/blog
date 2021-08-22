@@ -29,7 +29,7 @@ column_limit = "88"
 [tool.yapfignore]
 ignore_patterns = [
     "**/.ipynb_checkpoints/*",
-    "blog/themes/**/*",
+    "blog/themes/**/*.py",
 ]
 [tool.pylint.master]
 ignore = ".venv,.ipynb_checkpoints"

@@ -3,8 +3,9 @@
 from pathlib import Path
 from pelican_jupyter import markup as nb_markup
 from loguru import logger
+
 HOME_URL = "http://www.legendu.net"
-SITEURL = f"{HOME_URL}/outdated" 
+SITEURL = f"{HOME_URL}/outdated"
 SITESUBTITLE = "Change is eternal."
 AUTHOR = "Ben Chuanlong Du"
 SITENAME = "Ben Chuanlong Du's Blog"
@@ -24,19 +25,22 @@ ARTICLE_URL = "blog/{slug}/"
 ARTICLE_SAVE_AS = "blog/{slug}/index.html"
 
 MARKDOWN = {
-    "extension_configs": {
-        "markdown.extensions.codehilite": {"css_class": "highlight"},
-        "markdown.extensions.extra": {},
-        "markdown.extensions.meta": {},
-        "markdown.extensions.toc": {},
-    },
+    "extension_configs":
+        {
+            "markdown.extensions.codehilite": {
+                "css_class": "highlight"
+            },
+            "markdown.extensions.extra": {},
+            "markdown.extensions.meta": {},
+            "markdown.extensions.toc": {},
+        },
     "output_format": "html5",
 }
 
 # title menu options
 MENUITEMS = [
     ("Home", HOME_URL),
-    ("Blog", SITEURL), 
+    ("Blog", SITEURL),
     ("Archives", f"{SITEURL}/archives.html"),
     ("Links", f"{SITEURL}/pages/links.html"),
 ]
@@ -63,17 +67,16 @@ SOCIAL = (
 DEFAULT_PAGINATION = 6
 
 STATIC_PATHS = [
-            "images", 
-            "figures", 
-            "downloads", 
-            "favicon.png", 
-            "media",
-            "CNAME",
-            "readme.md",
-        ]
+    "images",
+    "figures",
+    "downloads",
+    "favicon.png",
+    "media",
+    "CNAME",
+    "readme.md",
+]
 CODE_DIR = "downloads/code"
 NOTEBOOK_DIR = "downloads/notebooks"
-
 
 # theme and plugins
 BLOG_DIR = Path(__file__).resolve().parent.parent
@@ -83,18 +86,13 @@ print(THEME)
 
 # plugins
 #PLUGIN_PATHS = ["plugins"]
-PLUGINS = [
-    "render_math", 
-    "tipue_search"
-]
+PLUGINS = ["render_math", "tipue_search"]
 ## jupyter
 MARKUP = ("md", "ipynb")
 IPYNB_MARKUP_USE_FIRST_CELL = True
-IGNORE_FILES = [".ipynb_checkpoints"]  
+IGNORE_FILES = [".ipynb_checkpoints"]
 ## mathjax
-MATH_JAX = {"auto_insert": True,
-        "tex_extensions": ["color.js", "mhchem.js"]
-    }
+MATH_JAX = {"auto_insert": True, "tex_extensions": ["color.js", "mhchem.js"]}
 
 # disqus comment
 DISQUS_SITENAME = "dclong"
@@ -111,7 +109,6 @@ TWITTER_FOLLOW_BUTTON = True
 TWITTER_TWEET_COUNT = 3
 TWITTER_SHOW_REPLIES = "false"
 TWITTER_SHOW_FOLLOWER_COUNT = "true"
-
 
 # rss/atom feeds
 FEED_DOMAIN = SITEURL

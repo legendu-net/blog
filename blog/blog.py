@@ -609,7 +609,12 @@ def _subparse_edit(subparsers):
     )
     option_editor(subparser_edit)
     subparser_edit.add_argument(
-        "-f", "--files", nargs="+", default=[], dest="files", help="Path of the post to be edited."
+        "-f",
+        "--files",
+        nargs="+",
+        default=[],
+        dest="files",
+        help="Path of the post to be edited."
     )
     subparser_edit.set_defaults(func=edit)
 

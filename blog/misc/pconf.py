@@ -3,6 +3,7 @@
 from pathlib import Path
 from pelican_jupyter import markup as nb_markup
 from loguru import logger
+
 HOME_URL = "http://www.legendu.net"
 SITEURL = f"{HOME_URL}/misc"
 SITESUBTITLE = "It is never too late to learn."
@@ -24,19 +25,22 @@ ARTICLE_URL = "blog/{slug}/"
 ARTICLE_SAVE_AS = "blog/{slug}/index.html"
 
 MARKDOWN = {
-    "extension_configs": {
-        "markdown.extensions.codehilite": {"css_class": "highlight"},
-        "markdown.extensions.extra": {},
-        "markdown.extensions.meta": {},
-        "markdown.extensions.toc": {},
-    },
+    "extension_configs":
+        {
+            "markdown.extensions.codehilite": {
+                "css_class": "highlight"
+            },
+            "markdown.extensions.extra": {},
+            "markdown.extensions.meta": {},
+            "markdown.extensions.toc": {},
+        },
     "output_format": "html5",
 }
 
 # Title menu options
 MENUITEMS = [
     ("Home", HOME_URL),
-    ("Blog", SITEURL), 
+    ("Blog", SITEURL),
     ("Archives", f"{SITEURL}/archives.html"),
     ("Links", f"{SITEURL}/pages/links.html"),
 ]
@@ -68,14 +72,14 @@ DEFAULT_PAGINATION = 6
 
 # This requires Pelican 3.3+
 STATIC_PATHS = [
-            "images", 
-            "figures", 
-            "downloads", 
-            "favicon.png", 
-            "media",
-            "CNAME",
-            "readme.md",
-        ]
+    "images",
+    "figures",
+    "downloads",
+    "favicon.png",
+    "media",
+    "CNAME",
+    "readme.md",
+]
 
 CODE_DIR = "downloads/code"
 NOTEBOOK_DIR = "downloads/notebooks"
@@ -90,13 +94,13 @@ PLUGINS = ["render_math"]
 ## jupyter
 MARKUP = ("md", "ipynb")
 IPYNB_MARKUP_USE_FIRST_CELL = True
-IGNORE_FILES = [".ipynb_checkpoints"]  
+IGNORE_FILES = [".ipynb_checkpoints"]
 ## mathjax
 MATH_JAX = {
-        "auto_insert": True,
-        "process_summary": False,
-        "tex_extensions": ["color.js", "mhchem.js"]
-    }
+    "auto_insert": True,
+    "process_summary": False,
+    "tex_extensions": ["color.js", "mhchem.js"]
+}
 
 # disqus comment
 DISQUS_SITENAME = "dclong"

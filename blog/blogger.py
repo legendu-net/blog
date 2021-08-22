@@ -46,6 +46,7 @@ def is_post(path: Union[Path, str]) -> bool:
         path = Path(path)
     return path.suffix in (MARKDOWN, IPYNB)
 
+
 class Post:
     """A class abstracting a post.
     """
@@ -62,10 +63,10 @@ class Post:
 
     def is_markdown(self):
         return self.path.suffix == MARKDOWN
-    
+
     def is_notebook(self):
         return self.path.suffix == IPYNB
-    
+
     def diff(self, content: str) -> bool:
         """Check whether there is any difference between this post's content and the given content.
         :param content: The content to compare against.
@@ -123,7 +124,6 @@ class Post:
         text = self.path.read_text().replace(DISCLAIMER, "")
         self.path.write_text(text)
 
-
     @staticmethod
     def format_title(title):
         title = title.title()
@@ -153,7 +153,7 @@ class Post:
         :param to_tag: The tag to change to.
         :return: The new list of tags in the post.
         """
-        # TODO: need to be updated: 1. support both markdown and notebook; 
+        # TODO: need to be updated: 1. support both markdown and notebook;
         # 2. leverage update_meta_field? Is it possible?
         with self.path.open() as fin:
             lines = fin.readlines()
@@ -173,7 +173,7 @@ class Post:
         if self.is_markdown():
             return self._parse_markdown()
         return self._parse_notebook()
-    
+
     def _read_lines_markdown(self) -> tuple[list[str], list[str]]:
         """Read lines of a markdown post.
         
@@ -299,7 +299,7 @@ class Post:
         content = "".join(line.strip() for line in lines)
         is_empty = re.sub(r"\*\*.+\*\*", "", content).replace("**", "") == ""
         return 1 if is_empty else 0
-    
+
     def update_meta_field(self, mapping: dict[str, str]) -> None:
         if self.is_markdown():
             meta, content = self._read_lines_markdown()
@@ -641,9 +641,7 @@ class Blogger:
         self._delete_updated()
         posts = [Post(path) for path, content in rows if Post(path).diff(content)]
         for post in posts:
-            post.update_meta_field({
-                "Modified": NOW_DASH
-            })
+            post.update_meta_field({"Modified": NOW_DASH})
             self._load_post(post)
 
     def add_post(self, title: str, dir_: str, notebook: bool = True) -> Path:

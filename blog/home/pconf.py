@@ -3,6 +3,7 @@
 from pathlib import Path
 from pelican_jupyter import markup as nb_markup
 from loguru import logger
+
 SITEURL = "http://www.legendu.net"
 SITESUBTITLE = "And let it direct your passion with reason."
 AUTHOR = "Ben Chuanlong Du"
@@ -21,24 +22,27 @@ ARTICLE_URL = "blog/{slug}/"
 ARTICLE_SAVE_AS = "blog/{slug}/index.html"
 
 MARKDOWN = {
-    "extension_configs": {
-        "markdown.extensions.codehilite": {"css_class": "highlight"},
-        "markdown.extensions.extra": {},
-        "markdown.extensions.meta": {},
-        "markdown.extensions.toc": {},
-    },
+    "extension_configs":
+        {
+            "markdown.extensions.codehilite": {
+                "css_class": "highlight"
+            },
+            "markdown.extensions.extra": {},
+            "markdown.extensions.meta": {},
+            "markdown.extensions.toc": {},
+        },
     "output_format": "html5",
 }
 
 # Title menu options
 MENUITEMS = [
-        ("Home", SITEURL),
-        ("English", f"{SITEURL}/en"),
-        ("中文", f"{SITEURL}/cn"),
-        ("Miscellanea", f"{SITEURL}/misc"),
-        ("Outdated", f"{SITEURL}/outdated"),
-        ("About", f"{SITEURL}/pages/about"),
-    ]
+    ("Home", SITEURL),
+    ("English", f"{SITEURL}/en"),
+    ("中文", f"{SITEURL}/cn"),
+    ("Miscellanea", f"{SITEURL}/misc"),
+    ("Outdated", f"{SITEURL}/outdated"),
+    ("About", f"{SITEURL}/pages/about"),
+]
 NEWEST_FIRST_ARCHIVES = True
 ARTICLE_ORDER_BY = "reversed-modified"
 
@@ -62,17 +66,16 @@ SOCIAL = (
 DEFAULT_PAGINATION = 6
 
 STATIC_PATHS = [
-            "images", 
-            "figures", 
-            "downloads", 
-            "favicon.png", 
-            "media",
-            "CNAME",
-        ]
+    "images",
+    "figures",
+    "downloads",
+    "favicon.png",
+    "media",
+    "CNAME",
+]
 CODE_DIR = "downloads/code"
 
-
-# theme 
+# theme
 BLOG_DIR = Path(__file__).resolve().parent.parent
 CSS_FILE = "main.css"
 THEME = BLOG_DIR / "themes/octopress_0"
@@ -80,9 +83,7 @@ THEME = BLOG_DIR / "themes/octopress_0"
 # plugins
 PLUGINS = ["render_math"]
 ## mathjax
-MATH_JAX = {"auto_insert": True,
-        "tex_extensions": ["color.js", "mhchem.js"]
-    }
+MATH_JAX = {"auto_insert": True, "tex_extensions": ["color.js", "mhchem.js"]}
 
 # disqus comment
 DISQUS_SITENAME = "dclong"

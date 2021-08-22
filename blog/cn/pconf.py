@@ -4,8 +4,9 @@ from pathlib import Path
 from pelican_jupyter import markup as nb_markup
 import math
 from loguru import logger
+
 HOME_URL = "http://www.legendu.net"
-SITEURL = f"{HOME_URL}/cn" 
+SITEURL = f"{HOME_URL}/cn"
 SITESUBTITLE = u"山不在高，有仙则名；水不在深，有龙则灵。"
 AUTHOR = "Ben Chuanlong Du"
 SITENAME = "Ben Chuanlong Du's Blog"
@@ -25,22 +26,25 @@ ARTICLE_URL = "blog/{slug}/"
 ARTICLE_SAVE_AS = "blog/{slug}/index.html"
 
 MARKDOWN = {
-    "extension_configs": {
-        "markdown.extensions.codehilite": {"css_class": "highlight"},
-        "markdown.extensions.extra": {},
-        "markdown.extensions.meta": {},
-        "markdown.extensions.toc": {},
-    },
+    "extension_configs":
+        {
+            "markdown.extensions.codehilite": {
+                "css_class": "highlight"
+            },
+            "markdown.extensions.extra": {},
+            "markdown.extensions.meta": {},
+            "markdown.extensions.toc": {},
+        },
     "output_format": "html5",
 }
 
 # Title menu options
 MENUITEMS = [
-        ("Home", HOME_URL),
-        ("Blog", SITEURL), 
-        ("Archives", f"{SITEURL}/archives.html"), 
-        ("About", f"{HOME_URL}/pages/about"), 
-    ]
+    ("Home", HOME_URL),
+    ("Blog", SITEURL),
+    ("Archives", f"{SITEURL}/archives.html"),
+    ("About", f"{HOME_URL}/pages/about"),
+]
 NEWEST_FIRST_ARCHIVES = True
 ARTICLE_ORDER_BY = "reversed-modified"
 
@@ -67,14 +71,14 @@ SOCIAL = (
 DEFAULT_PAGINATION = 6
 
 STATIC_PATHS = [
-            "images", 
-            "figures", 
-            "downloads", 
-            "favicon.png", 
-            "media",
-            "CNAME",
-            "readme.md",
-        ]
+    "images",
+    "figures",
+    "downloads",
+    "favicon.png",
+    "media",
+    "CNAME",
+    "readme.md",
+]
 CODE_DIR = "downloads/code"
 NOTEBOOK_DIR = "downloads/notebooks"
 
@@ -86,9 +90,7 @@ THEME = BLOG_DIR / "themes/octopress_2"
 # plugins
 PLUGINS = ["render_math"]
 ## mathjax
-MATH_JAX = {"auto_insert": True,
-        "tex_extensions": ["color.js", "mhchem.js"]
-    }
+MATH_JAX = {"auto_insert": True, "tex_extensions": ["color.js", "mhchem.js"]}
 
 # disqus comment
 DISQUS_SITENAME = "dclong"
@@ -105,7 +107,6 @@ TWITTER_FOLLOW_BUTTON = True
 TWITTER_TWEET_COUNT = 3
 TWITTER_SHOW_REPLIES = "false"
 TWITTER_SHOW_FOLLOWER_COUNT = "true"
-
 
 # rss/atom feeds
 FEED_DOMAIN = SITEURL

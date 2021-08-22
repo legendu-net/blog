@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # encoding: utf-8
 from __future__ import annotations
-from argparse import ArgumentDefaultsHelpFormatter
-from typing import Union, List, Iterable, Sequence
+from typing import Union, Sequence
 from collections import namedtuple
 import os
 import re
@@ -12,7 +11,6 @@ import datetime
 import shutil
 from pathlib import Path
 import json
-import itertools
 import subprocess as sp
 from loguru import logger
 from tqdm import tqdm

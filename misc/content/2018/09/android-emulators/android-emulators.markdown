@@ -5,7 +5,7 @@ Slug: android-emulators
 Title: Android Emulators
 Category: Software
 Tags: software, Android, emulation, emulator, AnBox, VirtualBox, xDroid
-Modified: 2021-08-05 23:12:02
+Modified: 2021-08-22 14:35:04
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -18,6 +18,7 @@ Please read with your own judgement!
     <th> Name </th>
     <th> Free </th>
     <th> OS </th>
+    <th> Hyper-v Compat on Win</th>
     <th> ARM-only App Support </th>
     <th> Development </th>
   </tr>
@@ -28,6 +29,7 @@ Please read with your own judgement!
     </td>
     <td> No </td>
     <td> Windows, macOS, Linux </td>
+    <td> Partial </td>
     <td> Limited </td>
     <td> Active </td>
   </tr>
@@ -39,6 +41,7 @@ Please read with your own judgement!
     <td> Yes </td>
     <td> Windows, macOS </td>
     <td> Yes </td>
+    <td> Yes </td>
     <td> Active </td>
   </tr>
   <tr>
@@ -48,6 +51,7 @@ Please read with your own judgement!
     </td>
     <td> Yes </td>
     <td> Windows </td>
+    <td> No </td>
     <td> Yes </td>
     <td> Active </td>
   </tr>
@@ -58,6 +62,7 @@ Please read with your own judgement!
     </td>
     <td> Yes </td>
     <td> Linux </td>
+    <td> NA </td>
     <td> Limited </td>
     <td> Inactive </td>
   </tr>
@@ -68,46 +73,62 @@ Please read with your own judgement!
     </td>
     <td> Yes </td>
     <td> Windows, macOS </td>
+    <td> No </td>
+    <td> Yes </td>
+    <td> Active </td>
+  </tr>
+  <tr>
+    <td> 
+    <a href="https://syzs.qq.com/"> 腾讯手游助手 </a>
+    <a href="#footnote5">[6]</a>
+    </td>
+    <td> Yes </td>
+    <td> Windows, macOS </td>
+    <td> No </td>
     <td> Yes </td>
     <td> Active </td>
   </tr>
   <tr>
     <td> 
     <a href="https://www.android-x86.org"> Android-x86 + VirtualBox </a>
-    <a href="#footnote6">[6]</a>
+    <a href="#footnote6">[7]</a>
     </td>
     <td> Yes </td>
     <td> Windows, macOS, Linux </td>
+    <td> Yes </td>
     <td> Limited </td>
     <td> Active </td>
   </tr>
   <tr>
     <td> 
     <a href="https://developer.android.com/studio"> Android SDK + Android Studio </a>
-    <a href="#footnote7">[7]</a>
+    <a href="#footnote7">[8]</a>
     </td>
     <td> Yes </td>
     <td> Windows, macOS, Linux </td>
+    <td> ? </td>
     <td> Yes </td>
     <td> Active </td>
   </tr>
   <tr>
     <td> 
     <a href="https://www.linzhuotech.com/index.php/home/index/xdroid.html"> xDroid </a>
-    <a href="#footnote1">[8]</a>
+    <a href="#footnote1">[9]</a>
     </td>
     <td> Partially </td>
     <td> Linux </td>
+    <td> NA </td>
     <td> Limited </td>
     <td> Active </td>
   </tr>
   <tr>
     <td> 
     <a href="https://github.com/budtmo/docker-android"> docker-android </a>
-    <a href="#footnote1">[9]</a>
+    <a href="#footnote1">[10]</a>
     </td>
     <td> Yes </td>
     <td> Windows, macOS, Linux </td>
+    <td> Yes </td>
     <td> Limited </td>
     <td> Active </td>
   </tr>
@@ -141,7 +162,7 @@ is an Android emulator develop by the Chinese company Wangyi for Windows and mac
 An English version is also availabe at https://mumu.163.com/global/download/en/.
 Tribal Pioneer works on MuMu App Player on macOS!!!
 
-[6] [Android X86](https://www.android-x86.org/)
+[7] [Android X86](https://www.android-x86.org/)
 is a project to port Android Open Source Project to x86 platform.
 It works across operating systems (Windows, macOS and Linux).
 Android X86 supports provides ISO and RPM files
@@ -151,17 +172,17 @@ which will add an Android operating system to your device.
 You can of course install it into a virutal environemnt (e.g., using VirtualBox)
 which is essentially what other out-of-the-box applications does.
 
-[7] Android SDK and Android Studio works together to emulate software found on Android 
+[8] Android SDK and Android Studio works together to emulate software found on Android 
 using the resources of your PC. 
 Android developers mostly use Android SDK tools for testing and development purposes, 
 but it'll work for casual use and play as well.
 
-[8] xDroid is an Android emulator 
+[9] xDroid is an Android emulator 
 (seems to be a commerical software based on AnBox) 
 for Linux only.
 The x86_64 version is free for personal use.
 
-[9] Docker-Android is a docker image 
+[10] Docker-Android is a docker image 
 built to be used for everything 
 related to mobile website testing and Android project.
 

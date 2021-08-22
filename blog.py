@@ -120,7 +120,7 @@ def match_post(blogger, args):
 
 def edit(blogger, args):
     if args.indexes:
-        args.files = blogger.path(args.indexes)
+        args.files += blogger.path(args.indexes)
     if args.files:
         blogger.edit(args.files, args.editor)
     else:
@@ -609,7 +609,7 @@ def _subparse_edit(subparsers):
     )
     option_editor(subparser_edit)
     subparser_edit.add_argument(
-        "-f", "--files", dest="files", help="Path of the post to be edited."
+        "-f", "--files", nargs="+", default=[], dest="files", help="Path of the post to be edited."
     )
     subparser_edit.set_defaults(func=edit)
 

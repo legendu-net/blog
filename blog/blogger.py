@@ -280,7 +280,7 @@ class Post:
 
     def is_name_title_mismatch(self, title: str) -> int:
         """Check whether the file anme and the title of the post does not match.
-        :param path: The path of the post.
+
         :param title: The title of the post.
         :return: 1 if mismatch and 0 otherwise.
         """
@@ -569,7 +569,7 @@ class Blogger:
         :param dst: The destination path or directory to move posts to.
         """
         if isinstance(src, (str, Path)):
-            self._move_1(file, dst)
+            self._move_1(src, dst)
             return
         if len(src) > 1 and not os.path.isdir(dst):
             sys.exit("dst must be a directory when moving multiple files")
@@ -692,7 +692,7 @@ class Blogger:
 
     def find_name_title_mismatch(self, dry_run=False):
         self.clear_srps()
-        sql = f"""
+        sql = """
             INSERT INTO srps
             SELECT path
             FROM posts
@@ -706,8 +706,11 @@ class Blogger:
 
     def search(self, phrase: str, filter_: str = "", dry_run=False):
         """Search for posts containing the phrase.
+
         :param phrase: The phrase to search for in posts.
         :param filter_: Extra filtering conditions.
+        :param dry_run: Dry run the search,
+            i.e., print out SQL queries without executing them.
         """
         self.clear_srps()
         conditions = []
@@ -743,10 +746,11 @@ class Blogger:
         """
         self.clear_srps()
         sql = f"""
-            insert into srps
-            select path
-            from posts
-            where 
+            INSERT INTO srps
+            SELECT path, title, dir, slug
+            FROM posts
+            ORDER BY modified DESC
+            LIMIT {n}
             """
         self.execute(sql)
         self.commit()
@@ -770,6 +774,7 @@ class Blogger:
 
     def tags(self, dir_: str = "", where=""):
         """Get all tags and their frequencies in all posts.
+
         :param dir_:
         :param where:
         """

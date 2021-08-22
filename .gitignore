@@ -22,3 +22,4 @@ metastore_db/
 .pytype/
 .DS_Store
 .vscode/
+dist/

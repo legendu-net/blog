@@ -1,3 +1,5 @@
+"""Utils for the blog module.
+"""
 from typing import Union, List, Sequence
 import os
 from pathlib import Path
@@ -31,7 +33,7 @@ def install_if_not_exist(pkgs: Union[str, List[str]], pip: str = "python3 -m pip
     :param pkgs: A (list of) Python package(s) to install.
     :param pip: The pip command to use (to install packages).
     """
-    frame = dsutil.shell.to_frame(f"{pip} list", split="\s+", header=0, skip=1)
+    frame = dsutil.shell.to_frame(f"{pip} list", split=r"\s+", header=0, skip=1)
     if isinstance(pkgs, str):
         pkgs = [pkgs]
     for pkg in pkgs:
@@ -62,6 +64,11 @@ def _github_repos_url(dir_: str, https: bool = False) -> str:
 
 
 def push_github(dir_: str, https: bool):
+    """Push compiled output to GitHub to generate GitHub pages.
+
+    :param dir_: The name of sub blog directories (en, cn, etc.).
+    :param https: If true, use the https protocol for Git.
+    """
     path = BASE_DIR / dir_ / "output"
     os.chdir(path)
     # commit
@@ -77,7 +84,11 @@ def push_github(dir_: str, https: bool):
 
 def pelican_generate(dir_: str, fatal: str):
     """Generate the (sub) blog/site using Pelican.
-    :param dir_: the sub blog directory to generate.
+
+    :param dir_: The name of sub blog directories (en, cn, etc.).
+    :param fatal: Pass values to the --fatal option of pelican.
+        If empty the --fatal option is disabled,
+        which means the compiling will ingore warnings and errors.
     """
     blog_dir = BASE_DIR / dir_
     os.chdir(blog_dir)
@@ -91,6 +102,10 @@ def pelican_generate(dir_: str, fatal: str):
 
 
 def option_indexes(subparser):
+    """Add the positional option "indexes".
+
+    :param subparser: A sub parser for command-line options.
+    """
     subparser.add_argument(
         "indexes",
         nargs="*",
@@ -101,12 +116,20 @@ def option_indexes(subparser):
 
 
 def option_files(subparser):
+    """Add the option --files.
+
+    :param subparser: A sub parser for command-line options.
+    """
     subparser.add_argument(
         "--files", nargs="+", dest="filels", default=(), help="Paths to files."
     )
 
 
 def option_where(subparser):
+    """Add the option --where.
+
+    :param subparser: A sub parser for command-line options.
+    """
     subparser.add_argument(
         "-w",
         "--where",
@@ -117,6 +140,10 @@ def option_where(subparser):
 
 
 def option_dir(subparser):
+    """Add the option --sub-dir.
+
+    :param subparser: A sub parser for command-line options.
+    """
     subparser.add_argument(
         "-d",
         "--sub-dir",
@@ -127,24 +154,40 @@ def option_dir(subparser):
 
 
 def option_num(subparser):
+    """Add the option -n.
+
+    :param subparser: A sub parser for command-line options.
+    """
     subparser.add_argument(
         "-n", dest="n", type=int, default=5, help="Number of matched records to show."
     )
 
 
 def option_from(subparser):
+    """Add the option --from.
+
+    :param subparser: A sub parser for command-line options.
+    """
     subparser.add_argument(
         "--from", dest="from", default="", help="the category/tag to change from."
     )
 
 
 def option_to(subparser):
+    """Add the option --to.
+
+    :param subparser: A sub parser for command-line options.
+    """
     subparser.add_argument(
         "--to", dest="to", default="", help="the category/tag to change to."
     )
 
 
 def option_full_path(subparser):
+    """Add the option --full-path.
+
+    :param subparser: A sub parser for command-line options.
+    """
     subparser.add_argument(
         "-F",
         "--full-path",
@@ -155,6 +198,10 @@ def option_full_path(subparser):
 
 
 def option_dry_run(subparser):
+    """Add the option --dry-run.
+
+    :param subparser: A sub parser for command-line options.
+    """
     subparser.add_argument(
         "--dry-run",
         dest="dry_run",
@@ -164,6 +211,10 @@ def option_dry_run(subparser):
 
 
 def option_editor(subparser):
+    """Add the option --editor.
+
+    :param subparser: A sub parser for command-line options.
+    """
     subparser.add_argument(
         "-v",
         "--vim",
@@ -192,6 +243,10 @@ def option_editor(subparser):
 
 
 def option_all(subparser):
+    """Add the option --all.
+
+    :param subparser: A sub parser for command-line options.
+    """
     subparser.add_argument(
         "-a",
         "--all",

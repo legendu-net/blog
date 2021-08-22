@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-from typing import Sequence
-import os
 import re
 from pathlib import Path
 from argparse import ArgumentParser, Namespace
@@ -721,14 +719,14 @@ def _subparse_publish(subparsers):
         "--fatal",
         dest="fatal",
         default="errors",
-        help="The --fatal argument for pelican."
+        help="Pass values (errors, by default) to the --fatal option of pelican."
     )
     subparser_publish.add_argument(
         "-F",
         "--no-fatal",
         dest="fatal",
         action="store_const",
-        const=None,
+        const="",
         help="Disable the --fatal argument for pelican."
     )
     subparser_publish.set_defaults(func=publish)

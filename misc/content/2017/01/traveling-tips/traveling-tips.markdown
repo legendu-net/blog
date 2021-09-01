@@ -4,7 +4,7 @@ Author: Ben Chuanlong Du
 Slug: traveling-tips
 Title: Traveling Without Hassle
 Category: Life
-Tags: life, traveling, tips, luggage
+Tags: life, traveling, tips, luggage, trip
 Modified: 2020-05-22 13:31:43
 
 **
@@ -30,6 +30,8 @@ Please read with your own judgement!
 5. food, drink
 
 7. breathing mask
+
+8. medicine if any
 
 
 ## Places To Rest in Cities

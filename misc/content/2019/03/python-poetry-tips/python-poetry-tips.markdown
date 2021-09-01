@@ -5,7 +5,7 @@ Slug: python-poetry-tips
 Title: Manage Your Python Project Using Poetry
 Category: Computer Science
 Tags: programming, Python, poetry, build tool, dependency management
-Modified: 2021-06-02 11:17:44
+Modified: 2021-09-01 09:41:01
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -147,6 +147,8 @@ Pleaser refer to
 for examples of configuration for Python Poetry.
 
 ## Restrict Operating Systems in Python Poetry
+
+[How can I specify dependencies on operating system in Python Poetry?](https://stackoverflow.com/questions/64094979/how-can-i-specify-dependencies-on-operating-system-in-python-poetry/68968188#68968188)
 
 ```
 [tool.poetry]

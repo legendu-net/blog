@@ -4,32 +4,93 @@ Author: Benjamin Du
 Slug: popular-databases
 Title: Popular Databases
 Category: Computer Science
-Tags: Computer Science, programming, database
-Modified: 2021-06-10 10:33:02
+Tags: Computer Science, programming, database, MySQL, ClickHouse, TiDB, neo4j, Elasticsearch, TiDB, TDengine, Redis
+Modified: 2021-09-03 11:24:10
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## [ClickHouse](https://github.com/ClickHouse/ClickHouse)
-[ClickHouse](https://github.com/ClickHouse/ClickHouse)
-ClickHouse® is an open-source column-oriented database management system 
+
+<table style="width:100%">
+  <tr>
+    <th> Name </th>
+    <th> Opensource/Free </th>
+    <th> Best Use Case </th>
+    <th> Comment </th>
+  </tr>
+  <tr>
+    <td> 
+    <a href="https://github.com/mysql"> MySQL </a>
+    <a href="#footnote7">[1]</a>
+    </td>
+    <td> Opensource </td>
+    <td> </td>
+    <td> the most popular opensource database </td>
+  </tr>
+  <tr>
+    <td> 
+    <a href="https://github.com/ClickHouse/ClickHouse"> ClickHouse </a>
+    <a href="#footnote7">[2]</a>
+    </td>
+    <td> Opensource </td>
+    <td> OLAP for big data </td>
+    <td> Has very good performance </td>
+  </tr>
+  <tr>
+    <td> 
+    <a href="https://github.com/pingcap/tidb"> TiDB </a>
+    <a href="#footnote7">[3]</a>
+    </td>
+    <td> Opensource </td>
+    <td> OLAP for big data </td>
+    <td> good performance, support integration with Spark </td>
+  </tr>
+  <tr>
+    <td> 
+    <a href="https://github.com/redis"> Redis </a>
+    <a href="#footnote7">[3]</a>
+    </td>
+    <td> Opensource </td>
+    <td> In-memory caching for real-time applications </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> 
+    <a href="https://github.com/neo4j"> neo4j </a>
+    <a href="#footnote7">[4]</a>
+    </td>
+    <td> Opensource </td>
+    <td> Graph applications </td>
+    <td> The most popular graph database </td>
+  </tr>
+  <tr>
+    <td> 
+    <a href="https://github.com/elastic"> Elasticsearch </a>
+    <a href="#footnote7">[5]</a>
+    </td>
+    <td> Opensource </td>
+    <td> Out-of-the-box search engine for large documents </td>
+    <td> Designed as a search engine but also popularly used as a database </td>
+  </tr>
+  <tr>
+    <td> 
+    <a href="https://github.com/taosdata/TDengine"> TDengine </a>
+    <a href="#footnote7">[5]</a>
+    </td>
+    <td> Opensource </td>
+    <td> IoT </td>
+    <td> IoT, good performance </td>
+  </tr>
+</table>
+
+[2] [ClickHouse](https://github.com/ClickHouse/ClickHouse)
+is an open-source column-oriented database management system 
 that allows generating analytical data reports in real time.
-
-## mysql
-
-## MongoDB
-MongoDB is a document-oriented, disk-based database optimized 
-for operational simplicity, schema-free design and very large data volumes. 
-
-## Redis
-
-Redis is an in-memory, persistent data structure store 
-that enables developers to perform common operations with minimal complexity and maximum performance.
 
 ## [yugabyte-db](https://github.com/YugaByte/yugabyte-db)
 [yugabyte-db](https://github.com/YugaByte/yugabyte-db)
 
-## neo4j
-
-## Elasticsearch
+## MongoDB
+MongoDB is a document-oriented, disk-based database optimized 
+for operational simplicity, schema-free design and very large data volumes. 
 
 ## References
 

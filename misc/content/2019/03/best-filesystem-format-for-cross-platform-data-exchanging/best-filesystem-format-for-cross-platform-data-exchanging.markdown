@@ -4,12 +4,13 @@ Author: Benjamin Du
 Slug: best-filesystem-format-for-cross-platform-data-exchanging
 Title: Best Filesystem Format for Cross-Platform Data Exchanging
 Category: OS
-Tags: OS, macOS, Linux, Windows, external drive, filesystem, exFAT, ext4
-Modified: 2021-09-03 11:49:56
+Tags: OS, macOS, Linux, Windows, external, drive, filesystem, exFAT, ext4, mount, WSL
+Modified: 2021-09-03 11:55:19
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
+**
 
 ## FAT32
 
@@ -87,7 +88,10 @@ you can run `wmic diskdrive list brief`
 .
 The WSL 2 filesystem can be accessed from Windows
 by typing `\\wsl$` into the address bar of Windows Explorer.
-For more details on mounting
+For more details,
+please refer to
+[Get started mounting a Linux disk in WSL 2 (preview)](https://docs.microsoft.com/en-us/windows/wsl/wsl2-mount-disk)
+.
 
 ## References
 

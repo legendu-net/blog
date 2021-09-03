@@ -5,7 +5,7 @@ Slug: best-filesystem-format-for-cross-platform-data-exchanging
 Title: Best Filesystem Format for Cross-Platform Data Exchanging
 Category: OS
 Tags: OS, macOS, Linux, Windows, external drive, filesystem, exFAT, ext4
-Modified: 2021-08-21 13:56:46
+Modified: 2021-09-03 11:49:56
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -78,7 +78,7 @@ Below are details steps to access an external hard drive in a VirtualBox VM.
 5. The hard drive will auto mount on some Linux distributions (e.g., Ubuntu). 
     If not, just manually mount it.
 
-The above process is even more symplified on Window 10 with WSL 2. 
+The above process is even more symplified on Window 11+ with WSL 2. 
 You can mount an external EXT4 formatted hard drive to WSL 2
 using the command `wsl --mount <DiskPath>` 
 and umount it from WSL 2 using the command `wsl --unmount <Diskpath>`. 

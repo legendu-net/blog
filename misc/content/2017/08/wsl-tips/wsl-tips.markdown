@@ -5,7 +5,7 @@ Slug: wsl-tips
 Title: Tips on WSL 2
 Category: OS
 Tags: Linux, WSL, WSL 2, Windows, BashOnWindows, Bash on Windows, tips
-Modified: 2021-08-18 23:10:30
+Modified: 2021-09-03 11:49:56
 
 **
 Things on this page are
@@ -13,7 +13,7 @@ fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
-## Installation 
+## Installation & Update 
 
 Run the following command in an command window with administrator privileges to install WSL 2.
 
@@ -30,10 +30,19 @@ Run the following command in a PowerShell to check build information of WSL 2.
     :::PowerShell
     (gcm wsl).Version
 
+Run the following command to update WSL 2.
+
+    :::shell
+    wsl --update
+
 For more details,
 please refer to
 [Windows Subsystem for Linux Installation Guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 .
+
+## General Tips
+
+1. You can shutdown WSL using the command `wsl --shutdown`.
 
 ## GUI for WSL 
 

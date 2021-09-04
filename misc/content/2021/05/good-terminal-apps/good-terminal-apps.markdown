@@ -4,8 +4,8 @@ Author: Benjamin Du
 Slug: good-terminal-apps
 Title: Good Terminal Apps
 Category: Computer Science
-Tags: Computer Science, terminal, software, hyper, kitty
-Modified: 2021-05-11 08:45:30
+Tags: Computer Science, terminal, software, tools, hyper, kitty
+Modified: 2021-09-04 09:50:57
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [hyper](https://github.com/vercel/hyper)
@@ -20,8 +20,7 @@ Cross-platform, fast, feature-rich, GPU based terminal.
 
 A cross-platform, OpenGL terminal emulator.
 
-## [zellij](https://github.com/zellij-org/zellij)
 
-A terminal workspace with batteries included.
+## References
 
-
+- [Terminal Multiplexer](http://www.legendu.net/misc/blog/terminal-multiplexers)

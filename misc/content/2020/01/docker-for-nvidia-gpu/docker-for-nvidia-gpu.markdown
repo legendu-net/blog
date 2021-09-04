@@ -5,7 +5,7 @@ Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
 Category: Software
 Tags: software, Docker, GPU, Nvidia
-Modified: 2020-11-18 01:02:42
+Modified: 2021-09-03 17:25:31
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -118,16 +118,18 @@ https://github.com/floydhub/dockerfiles
 
 ## References
 
-[Nvidia CUDA Linux Repositories](https://developer.download.nvidia.com/compute/cuda/repos/)
+- [CUDA Installation Guide for Microsoft Windows](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
 
-[How to install CUDA on Ubuntu 20.04 Focal Fossa Linux](https://linuxconfig.org/how-to-install-cuda-on-ubuntu-20-04-focal-fossa-linux)
+- [Nvidia CUDA Linux Repositories](https://developer.download.nvidia.com/compute/cuda/repos/)
 
-https://github.com/NVIDIA/nvidia-docker
+- [How to install CUDA on Ubuntu 20.04 Focal Fossa Linux](https://linuxconfig.org/how-to-install-cuda-on-ubuntu-20-04-focal-fossa-linux)
 
-https://github.com/NVIDIA/nvidia-docker#ubuntu-16041804-debian-jessiestretchbuster
+- https://github.com/NVIDIA/nvidia-docker
 
-[How Do I Install the Nvidia Driver](https://github.com/NVIDIA/nvidia-docker/wiki/Frequently-Asked-Questions#how-do-i-install-the-nvidia-driver).
+- https://github.com/NVIDIA/nvidia-docker#ubuntu-16041804-debian-jessiestretchbuster
 
-https://www.linuxuprising.com/2019/06/2-tools-for-monitoring-nvidia-gpus-on.html
+- [How Do I Install the Nvidia Driver](https://github.com/NVIDIA/nvidia-docker/wiki/Frequently-Asked-Questions#how-do-i-install-the-nvidia-driver).
 
-[How to measure GPU usage?](https://askubuntu.com/questions/387594/how-to-measure-gpu-usage)
+- https://www.linuxuprising.com/2019/06/2-tools-for-monitoring-nvidia-gpus-on.html
+
+- [How to measure GPU usage?](https://askubuntu.com/questions/387594/how-to-measure-gpu-usage)

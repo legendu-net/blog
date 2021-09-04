@@ -5,7 +5,7 @@ Title: Tips on GPU Computing
 Slug: gpu-tips
 Category: Computer Science
 Tags: tips, GPU, programming, Nvidia
-Modified: 2021-06-22 23:41:00
+Modified: 2021-09-03 17:25:31
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
@@ -187,6 +187,8 @@ https://www.laptopmag.com/articles/best-egpus
 
 
 ## References
+
+- [CUDA Installation Guide for Microsoft Windows](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
 
 - [Comparative performance analysis ofVulkan and CUDA programming modelimplementations for GPUs](https://core.ac.uk/reader/323473500)
 

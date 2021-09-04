@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-09-03 22:42:09
-Modified: 2021-09-03 22:42:09
+Modified: 2021-09-03 22:48:45
 Author: Benjamin Du
 Slug: python-importerror-attempted-relative-import-with-no-known-parent-package
 Title: ImportError: Attempted Relative Import With No Known Parent Package
@@ -23,3 +23,6 @@ A simple way to do this is to define the `PYTHONPATH` environemnt variable.
     :::bash
     PYTHONPATH=/root/xinstall/ python3 -m xinstall.main -h
 
+## References
+
+[ImportError: Attempted Relative Import With No Known Parent Package (Python)](https://techwithtech.com/importerror-attempted-relative-import-with-no-known-parent-package/)

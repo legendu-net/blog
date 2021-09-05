@@ -5,7 +5,7 @@ Slug: shell-equivalent-in-different-operating-systems
 Title: Shell Equivalent in Different Operating Systems
 Category: Computer Science
 Tags: Computer Science, OS, Linux, macOS, Windows, Shell, PowerShell
-Modified: 2021-09-04 10:31:04
+Modified: 2021-09-05 11:51:50
 PowerShell examples are used for Windows in the table below.
 
 <div style="overflow-x:auto;">
@@ -41,15 +41,15 @@ PowerShell examples are used for Windows in the table below.
     </code> </td>
   </tr>
   <tr>
-    <td> Windows CMD </td>
-    <td> <code> 
-    where command_name
-    </code> </td>
-  </tr>
-  <tr>
     <td> Windows PowerShell </td>
     <td> <code> 
     Get-command command_name
+    </code> </td>
+  </tr>
+  <tr>
+    <td> Windows CMD[1] </td>
+    <td> <code> 
+    where command_name
     </code> </td>
   </tr>
 
@@ -108,6 +108,11 @@ PowerShell examples are used for Windows in the table below.
     </code> </td>
   </tr>
 
-    
 </table>
 </div>
+
+[1] Windows CMD command might not work well in Windows PowerShell. 
+    For example,
+    the `where` command sometimes works but sometimes doesn't work in a PowerShell.
+    Since PowerShell becomes more popular than Windows CMD,
+    `Get-command` is recommended over `where`.

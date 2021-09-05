@@ -5,7 +5,7 @@ Slug: docker-image-and-container-management
 Title: Manage Docker Images and Containers 
 Category: Software
 Tags: software, Docker, Docker image, container, management, remove
-Modified: 2021-02-15 10:29:33
+Modified: 2021-09-05 12:41:55
 
 1. It is suggested that you use [osquery](https://osquery.io/)
     or [dsutil.docker](https://github.com/dclong/dsutil/blob/dev/dsutil/docker)

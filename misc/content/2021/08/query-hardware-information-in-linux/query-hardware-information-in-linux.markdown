@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-08-21 23:05:47
-Modified: 2021-08-21 23:05:47
+Modified: 2021-09-05 12:41:55
 Author: Benjamin Du
 Slug: query-hardware-information-in-linux
 Title: Query Hardware Information in Linux

@@ -5,12 +5,41 @@ Slug: osquery-tips
 Title: Query and Monitor OS Information using osquery
 Category: Software
 Tags: software, osquery, tips
-Modified: 2020-05-22 15:27:24
+Modified: 2021-09-05 12:41:55
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
+
+1. List all tables.
+
+    .\osqueryi .tables
+
+2. Check the schema of a table (e.g., "process").
+
+    .\osqueryi ".schema processes"
+
+## Querying System Information
+
+    .\osqueryi.exe "select * from system_info"
+
+## Querying Docker
+
+Please refer to 
+[Manage Docker Images and Containers](http://www.legendu.net/en/blog/docker-image-and-container-managemen)
+for more details.
+
+## Information About Network Cards
+
+```
+osqueryi 'select * from interface_details'
+```
+
+`friendly_name`, `description` and `manufacturer` information are not populated yet.
+```
+osqueryi 'select interface, friendly_name, description, manufacturer from interface_details'
+```
 
 ## Find/Locate Files
 
@@ -152,24 +181,6 @@ but ignore those under directories with the name `.ipynb_checkpoints`.
 
     :::bash
     find . -type f -iname '*.py' -not -path '*/.ipynb_checkpoints/*'
-
-## References
-
-https://www.cyberciti.biz/faq/find-command-exclude-ignore-files/
-
-https://linuxconfig.org/how-to-explicitly-exclude-directory-from-find-command-s-search
-
-## Information About Network Cards
-
-```
-osqueryi 'select * from interface_details'
-```
-
-`friendly_name`, `description` and `manufacturer` information are not populated yet.
-```
-osqueryi 'select interface, friendly_name, description, manufacturer from interface_details'
-```
-
 
 ## References
 

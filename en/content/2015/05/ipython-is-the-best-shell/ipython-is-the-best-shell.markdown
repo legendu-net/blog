@@ -5,11 +5,9 @@ Slug: ipython-is-the-best-shell
 Title: IPython Is the Best Shell
 Category: Computer Science
 Tags: programming, Python, tips, IPython, Shell
-Modified: 2020-10-24 13:00:31
+Modified: 2021-09-05 12:57:52
 
-## Tips & Traps 
-
-### Profile of IPython
+## Profile of IPython
 
 1. IPython leverages SQLite3 for configuration.
     SQLite3 is notorious for the database locking issues on network fileystesm (NFS, SAMBA, etc).
@@ -25,7 +23,7 @@ Modified: 2020-10-24 13:00:31
         # generate an IPython configuration dir in the specified location
         ipython profile create [profilename] --profile-dir ~/.ipython
 
-### Start IPython
+## Start IPython
 
 1. It is suggested that you run IPython using the comamnd `/path/to/python -m IPython`
     unless you are sure that `ipython` pointing to the right Python version.
@@ -54,7 +52,7 @@ Modified: 2020-10-24 13:00:31
     it is better to export it as `$HOME/.ipython/` rather than leave it blank
     (which causes IPython to use the current directory as the configuration directory in rare buggy situations).
 
-### Help Doc
+## Help Doc
 
 1. A prefixing/suffixing question mark (`?`) shows the help doc of an object in IPython.
     Two prefixing/suffixing questions marks (`??`) shows even more information. 
@@ -70,7 +68,7 @@ Modified: 2020-10-24 13:00:31
         os.*dir*?
         ?os.*dir*
 
-### Shell 
+## Shell 
 
 1. If you run a shell command, 
     it is suggested that you always prefix it with `!` 
@@ -81,19 +79,19 @@ Modified: 2020-10-24 13:00:31
     can be mixed with Python code in IPython!!
     This makes things very convenient sometimes.
 
-2. Python variables can used in a shell command like an environment variable. 
+3. Python variables can used in a shell command. 
     For example, 
-	if there is a Python named `pkg` which refers to a local package file,
+	if there is a Python variable named `pkg` which refers to a local package file,
 	then you can use `!cp $pkg ~` to copy it to the home directory. 
 	Another even more general approach is to use the curly braces
 	which accepts an arbitrary Python expresion.
 	Still, 
 	let's assume that `pkg` is a Python variable which refers to a local package file 
-	but in relative path w.r.t. `/tmp`.
+	but it is a relative path w.r.t. `/tmp`.
 	You can copy it to the home directory using the following command.
 
         :::bash
-		!cp {os.path.join('/tmp', pkg)} ~
+		!cp {Path("tmp") / pkg} ~
 
     And also, 
     Python variables can be accessed in the first line 
@@ -104,6 +102,14 @@ Modified: 2020-10-24 13:00:31
         :::bash
         %%bash -s "$myPythonVar" "$myOtherVar"
         echo "This bash script knows about $1 and $2"
+
+    Shell environment variables can also be used in a shell command in IPython.
+    However, 
+    you must use double dollar signs (instead of a single dollar sign) for shell variables.
+
+        :::ipython
+        x = 1
+        echo $$HOME {x}
 
 3. When you use the prefix `!` to run a shell command,
     background jobs by suffixing `&` is not supported!
@@ -135,15 +141,13 @@ Modified: 2020-10-24 13:00:31
 
     The last (not recommend) way is to use the cell magic `%%script` with the option `--bg`.
 
-4. You can use both Shell environment variables and Python variables in a shell command.
-    However, 
-    you must use double dollar signs for shell variables.
+4. Make sure to use `\` instead of `/` for paths when you work in Windows.
+    For more discussions,
+    please refer to
+    ["." Is Not Recognized as An Internal or External Command](http://www.legendu.net/misc/blog/.-is-not-recognized-as-an-internal-or-external-command)
+    .
 
-        :::ipython
-        x = 1
-        echo $$HOME {x}
-
-### Magics
+## Magics
 
 1. `%lsmagic` lists all magic commands.
 
@@ -195,7 +199,7 @@ Modified: 2020-10-24 13:00:31
     However, 
     this is not a good idea generally speaking.
 
-### Misc
+## Misc
 
 1. IPython accepts only script with the file extension `.ipy`.
 
@@ -210,32 +214,34 @@ Modified: 2020-10-24 13:00:31
 
 ## References
 
-http://www.legendu.net/misc/blog/set-environment-varibles-in-ipython/
+- http://www.legendu.net/misc/blog/set-environment-varibles-in-ipython/
 
-http://www.legendu.net/misc/blog/disable-jedi-in-ipython/
+- http://www.legendu.net/misc/blog/disable-jedi-in-ipython/
 
-http://www.legendu.net/en/blog/shell-alternatives/
+- http://www.legendu.net/en/blog/shell-alternatives/
 
-[Wait, IPython Can Do That?!](https://ep2019.europython.eu/media/conference/slides/cBeHNyZ-wait-ipython-can-do-that.pdf)
+- [Wait, IPython Can Do That?!](https://ep2019.europython.eu/media/conference/slides/cBeHNyZ-wait-ipython-can-do-that.pdf)
 
-[​​​​28 Jupyter Notebook Tips, Tricks, and Shortcuts](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/)
+- [​​​​28 Jupyter Notebook Tips, Tricks, and Shortcuts](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/)
 
-[IPython and Jupyter in Depth: High productivity, interactive Python - PyCon 2017](https://www.youtube.com/watch?v=VQBZ2MqWBZI)
+- [IPython and Jupyter in Depth: High productivity, interactive Python - PyCon 2017](https://www.youtube.com/watch?v=VQBZ2MqWBZI)
 
-[IPython Documentation](https://ipython.readthedocs.io/en/stable/index.html)
+- [IPython Documentation](https://ipython.readthedocs.io/en/stable/index.html)
 
-[IPython Magics](https://ipython.readthedocs.io/en/stable/interactive/magics.html)
+- [IPython Magics](https://ipython.readthedocs.io/en/stable/interactive/magics.html)
 
-[Introduction to IPython configuration](https://ipython.readthedocs.io/en/stable/config/intro.html)
+- [Introduction to IPython configuration](https://ipython.readthedocs.io/en/stable/config/intro.html)
 
-https://stackoverflow.com/questions/19579546/can-i-access-python-variables-within-a-bash-or-script-ipython-notebook-c
+- https://stackoverflow.com/questions/19579546/can-i-access-python-variables-within-a-bash-or-script-ipython-notebook-c
 
-https://ipython.org/ipython-doc/3/interactive/shell.html
+- https://ipython.org/ipython-doc/3/interactive/shell.html
 
-https://ipython.readthedocs.io/en/stable/interactive/magics.html
+- https://ipython.readthedocs.io/en/stable/interactive/magics.html
 
-https://github.com/ipython/ipython/wiki/Cookbook:-Storing-aliases
+- https://github.com/ipython/ipython/wiki/Cookbook:-Storing-aliases
 
-[Can I access python variables within a `%%bash` or `%%script` ipython notebook cell?](https://stackoverflow.com/questions/19579546/can-i-access-python-variables-within-a-bash-or-script-ipython-notebook-c)
+- [Can I access python variables within a `%%bash` or `%%script` ipython notebook cell?](https://stackoverflow.com/questions/19579546/can-i-access-python-variables-within-a-bash-or-script-ipython-notebook-c)
 
-[system commands: python variables don't get evaluated when environment variables are also used](https://github.com/ipython/ipython/issues/6527)
+- [system commands: python variables don't get evaluated when environment variables are also used](https://github.com/ipython/ipython/issues/6527)
+
+- ["." Is Not Recognized as An Internal or External Command](http://www.legendu.net/misc/blog/.-is-not-recognized-as-an-internal-or-external-command)

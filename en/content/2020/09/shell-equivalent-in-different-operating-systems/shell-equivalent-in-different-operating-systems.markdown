@@ -5,7 +5,7 @@ Slug: shell-equivalent-in-different-operating-systems
 Title: Shell Equivalent in Different Operating Systems
 Category: Computer Science
 Tags: Computer Science, OS, Linux, macOS, Windows, Shell, PowerShell
-Modified: 2021-09-05 11:51:50
+Modified: 2021-09-05 13:26:49
 PowerShell examples are used for Windows in the table below.
 
 <div style="overflow-x:auto;">
@@ -106,6 +106,22 @@ PowerShell examples are used for Windows in the table below.
     <td> <code> 
     (New-Object System.Net.WebClient).DownloadFile("http://prdownloads.sourceforge.net/swig/swigwin-4.0.1.zip","swigwin-4.0.1.zip");
     </code> </td>
+  </tr>
+
+  <tr>
+    <td rowspan="2"> Watch a command </td>
+    <td rowspan="1"> Linux/Unix </td>
+    <td> <code> 
+    watch command_to_watch
+    </code> </td>
+  </tr>
+  <tr>
+    <td> Windows </td>
+    <td> 
+    <a href="http://wragg.io/watch-for-changes-with-powershell/"> 
+    Watch for changes with PowerShell
+    </a>
+    </td>
   </tr>
 
 </table>

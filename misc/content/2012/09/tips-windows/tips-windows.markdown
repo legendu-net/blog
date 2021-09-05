@@ -5,7 +5,7 @@ Title: Windows Operating System
 Slug: tips-windows
 Category: OS
 Tags: tips, anti-virus, Windows, Dropbox, OS
-Modified: 2020-05-30 19:30:05
+Modified: 2021-09-05 11:36:40
 
 <img src="http://dclong.github.io/media/windows/windows.png" height="200" width="240" align="right"/>
 
@@ -15,15 +15,29 @@ is the official Windows Package Manager CLI.
 [Chocolatey](https://chocolatey.org/) 
 is a cool community-driven software management tool for Windows.
 
-## Tricky Problem
+## Tips and Traps
 
-1. When Dropbox is synchronizing a file, 
+1. When a file is being synchronized by Dropbox,
     it might be unaccessible temporarily. 
     If this happens, 
-    you can simplify retry 
-    or you can quit Dropbox and try again.
+    you can simplify retry accessing it or you can quit Dropbox and try again.
 
-## Tips
+2. Though you can also use `/` as the delimiter for paths in Windows system sometimes, 
+    you can only use `\` as the delimiter for paths when you use DOS command, 
+    because `/` has been already used for other meanings in DOS command.
+
+3. `?` stand for a single character in DOS command, 
+    and `??` stand for one or two characters.
+
+4. A good way to manage Windows udpate is to disable Windows update for 7 days,
+    update Windows and then disable Windows update for another 7 days,
+    and repeat this cycle.
+    This way you can keep your Windows up-to-date 
+    while avoding being interrupted by Windows Auto Update too much.
+    It is critical to disable Windows Auto Update/Restart (best for 7 days)
+    before you run a long-running task on Windows.
+
+## Add a Right-click Menu
 
 To add an entry into the right-click menu in Windows, 
 edit the registry following the steps below.
@@ -43,29 +57,3 @@ edit the registry following the steps below.
     (e.g., `C:\Program Files\RStudio\bin\rstudio.exe`)
     that you want to launch.
 
-
-2. Though you can also use `/` as the delimiter for paths in Windows system sometimes, 
-    you can only use `\` as the delimiter for paths when you use DOS command, 
-    because `/` has been already used for other meanings in DOS command.
-
-3. `?` stand for a single character in DOS command, 
-    and `??` stand for one or two characters.
-
-4. By default Windows 7 updates automatically unless you turn the auto update off. 
-    This can be annoying if you do some long time computing in Windows, 
-    because the auto-updating might force the computer to reboot 
-    when the computing is still running. 
-    A way to solve this problem is to turn off the auto-updating 
-    before you do computing in Windows. 
-    However it is a convenient way, 
-    because you have to turn on the auto-updating after the computing is done. 
-    A better way is to lock your computer, 
-    in this way the auto-updating will be halt and won't screw up your running program. 
-    What's more, this can also prevent your privacy from other people. 
-    (Actually I have to check whether it is because of lock or it is just because of the computer is too busy.)
-
-
-## VBScript
-
-1. An VBScript is accesible anywhere if it is placed into a searchable path 
-    (a path included in the path environment). 

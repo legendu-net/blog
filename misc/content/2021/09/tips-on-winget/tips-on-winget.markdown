@@ -1,9 +1,9 @@
 Status: published
 Date: 2021-09-05 13:00:45
-Modified: 2021-09-05 13:00:45
+Modified: 2021-09-06 14:08:09
 Author: Benjamin Du
 Slug: tips-on-winget
-Title: Tips on Winget
+Title: Tips on winget
 Category: Computer Science
 Tags: Computer Science, OS, Windows, winget
 
@@ -11,8 +11,9 @@ Tags: Computer Science, OS, Windows, winget
 
 You can search for packages on https://winget.run/.
 
-winget search grep
-winget install grep
+    :::bash
+    winget search grep
+    winget install grep
 
 Notice that winget does not handle the PATH environment 
 if you install a command-line tool.

@@ -5,7 +5,7 @@ Slug: useful-tools-linux
 Title: Useful Tools in Linux
 Category: OS
 Tags: shell, remote, PDF, software, tools, terminal, application, Linux
-Modified: 2021-08-21 23:04:25
+Modified: 2021-09-06 12:11:21
 
 **
 Things on this page are
@@ -376,12 +376,7 @@ Opensource Desktop Publishing
 
 ### Screenshot
 
-[Shutter](http://shutter-project.org/)
-is the best screenshot application for Linux (only).
-You can install it on Ubuntu using the following command.
-```
-wajig install libgoo-canvas-perl shutter shutter
-```
+[Take Screenshot Using Shutter on Linux](http://www.legendu.net/misc/blog/take-screenshot-using-shutter-on-linux)
 
 ### CD/DVD burning
 

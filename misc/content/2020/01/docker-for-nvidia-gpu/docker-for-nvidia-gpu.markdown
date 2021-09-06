@@ -5,7 +5,7 @@ Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
 Category: Software
 Tags: software, Docker, GPU, Nvidia
-Modified: 2021-09-06 15:06:56
+Modified: 2021-09-06 16:25:41
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -40,28 +40,37 @@ Please read with your own judgement!
 
 2. Make sure that you have Docker 19.03+ installed on your Linux machine.
 
-3. Install [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) on your Linux machine.
+3. Install 
+    [nvidia-docker](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#setting-up-nvidia-container-toolkit) 
+    on your Linux machine.
     For example,
-    you can install it on Ubuntu 16.04/18.04
-    and Debian Jessie/Stretch/Buster using the following comamnds.
+    you can install it on the Debian-series of Linux distributions 
+    (Debian, Ubuntu, Linux Mint, etc.)
+    using the following comamnds.
 
         :::bash
         # Add the package repositories
-        distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
         curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
-        curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+        curl -s -L https://nvidia.github.io/nvidia-docker/$(. /etc/os-release;echo $ID$VERSION_ID)
+        /nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
         sudo apt-get update 
-        sudo apt-get install -y nvidia-container-toolkit
+        sudo apt-get install -y nvidia-docker2
+
+4. Restart Docker.
+    You can use one of the following command 
+    (depending on whether systemd is used to manage services).
+
+        :::bash
         sudo systemctl restart docker
-        # or depending on whether systemd is used to manage services
+        # or 
         sudo service docker restart
 
-4. Test that GPU-enabled Docker containers can be run correctly.
+5. Test that GPU-enabled Docker containers can be run correctly.
 
         :::bash
         docker run --gpus all nvidia/cuda:10.2-base nvidia-smi
 
-5. Extend official Nvidia Docker images to customize your own Docker images for GPU applications if needed.
+6. Extend official Nvidia Docker images to customize your own Docker images for GPU applications if needed.
     [nvidia/cuda:10.1-cudnn7-runtime-ubuntu18.04](https://hub.docker.com/layers/nvidia/cuda)
     is the best Docker image to extend, generally speaking.
     If you are using PyTorch (which has built-in CUDA and CUDNN),
@@ -76,7 +85,7 @@ Please read with your own judgement!
         :::bash
         sudo apt-get install cuda-10-1
 
-6. Run GPU applications in Docker containers. 
+7. Run GPU applications in Docker containers. 
     Please refer to 
     [nvidia-docker#usage](https://github.com/NVIDIA/nvidia-docker#usage) 
     for examples.
@@ -91,7 +100,7 @@ Please read with your own judgement!
 1. You can use the following command to query the live GPU usage on both Windows and Linux. 
 
         :::shell
-         !nvidia-smi --query-gpu=timestamp,name,pci.bus_id,driver_version,pstate,pcie.link.gen.max,pcie.link.gen.current,temperature.gpu,utilization.gpu,utilization.memory,memory.total,memory.free,memory.used --format=csv -l 5
+        nvidia-smi --query-gpu=timestamp,name,pci.bus_id,driver_version,pstate,pcie.link.gen.max,pcie.link.gen.current,temperature.gpu,utilization.gpu,utilization.memory,memory.total,memory.free,memory.used --format=csv -l 5
     For more discussions,
     please refer to
     [Useful nvidia-smi Queries](https://nvidia.custhelp.com/app/answers/detail/a_id/3751/~/useful-nvidia-smi-queries)

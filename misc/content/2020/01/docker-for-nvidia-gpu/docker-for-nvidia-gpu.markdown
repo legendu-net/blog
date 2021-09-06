@@ -5,7 +5,7 @@ Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
 Category: Software
 Tags: software, Docker, GPU, Nvidia
-Modified: 2021-09-06 14:46:08
+Modified: 2021-09-06 15:06:56
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -30,10 +30,13 @@ Please read with your own judgement!
         :::bash
         nvidia-smi 
 
-    Notice that if the command `nvidia-smi` is available but raises the error message 
-    "NVIDAI-SMI has failed because it couldn't communicate with the NVIDIA driver. 
-    Make sure that the latest NVIDIA driver is installed and running.",
-    reboot your Ubuntu server and try again.
+    If the command `nvidia-smi` is available 
+    but raises the following error message, 
+
+    > NVIDAI-SMI has failed because it couldn't communicate with the NVIDIA driver.  
+    > Make sure that the latest NVIDIA driver is installed and running.`
+
+    reboot your Linux machine and try again.
 
 2. Make sure that you have Docker 19.03+ installed on your Linux machine.
 

@@ -6,7 +6,7 @@ Title: Tips on Installing Debian Series Linux Distributions
 Category: OS
 Tags: install, Linux, software, Debian
 Modified: 2021-09-06 12:59:17
-
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Before Installation
 

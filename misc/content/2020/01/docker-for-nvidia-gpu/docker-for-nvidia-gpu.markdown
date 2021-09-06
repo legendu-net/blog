@@ -5,7 +5,7 @@ Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
 Category: Software
 Tags: software, Docker, GPU, Nvidia
-Modified: 2021-09-05 20:14:43
+Modified: 2021-09-06 14:46:08
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -17,25 +17,13 @@ Please read with your own judgement!
 
 1. Install Nvidia `cuda-drivers` (or equivalent) on your Linux machine
     following instructions at 
-    [CUDA Downloads](https://developer.nvidia.com/cuda-downloads).
-    For example,
-    you can install Nvidia CUDA Tookit 10.2 on Ubuntu 16.04 using the following commands.
-
-        :::bash
-        wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/cuda-ubuntu1604.pin
-        sudo mv cuda-ubuntu1604.pin /etc/apt/preferences.d/cuda-repository-pin-600
-        wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda-repo-ubuntu1604-10-2-local-10.2.89-440.33.01_1.0-1_amd64.deb
-        sudo dpkg -i cuda-repo-ubuntu1604-10-2-local-10.2.89-440.33.01_1.0-1_amd64.deb
-        sudo apt-key add /var/cuda-repo-10-2-local-10.2.89-440.33.01/7fa2af80.pub
-        sudo apt-get update
-        sudo apt-get -y install cuda-drivers
-
-    Notice that instead of doing `sudo apt-get -y install cuda`,
-    the last comamnd installs `cuda-drivers` only.
-    This is because the CUDA toolkit (the package `cuda`) is not needed on your Linux host machine to run GPU-enabled Docker container
-    starting from Docker 19.03.
+    [CUDA Downloads](https://developer.nvidia.com/cuda-downloads?target_os=Linux).
+    Notice that instead of installing `cuda` (using `sudo apt-get install cuda`),
+    it is suggested that you install `cuda-drivers` only (using `sudo apt-get install cuda-drivers`).
+    This is because the CUDA toolkit (the package `cuda`) is not needed on your Linux host machine to 
+    run GPU-enabled Docker container starting from Docker 19.03.
     Of course, 
-    it doesn't hurt to install the package `cuda` which has a whole lot other packages included.
+    it doesn't hurt to install the package `cuda` besides using more disk spaces.
 
 2. Confirm that the CUDA drivers have been installed correctly. 
 

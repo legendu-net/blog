@@ -93,7 +93,7 @@
     ["Teamviewer", "TeamViewer"], ["Tensorflow", "TensorFlow"],
     ["Virtualbox", "VirtualBox"],
     ["IJavascript", "IJavascript"], ["Itypescript", "ITypescript"], 
-    ["Proxychains", "ProxyChains"],
+    ["Packagekitd", "PackageKitD"], ["Proxychains", "ProxyChains"],
     ["Spark-shell", "spark-shell"],
     ["Featuretools", "FeatureTools"],
     ["Projectlibre", "ProjectLibre"],

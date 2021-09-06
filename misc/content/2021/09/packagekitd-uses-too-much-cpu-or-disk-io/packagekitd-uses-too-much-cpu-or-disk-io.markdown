@@ -1,11 +1,11 @@
 Status: published
 Date: 2021-09-06 12:31:21
-Modified: 2021-09-06 12:35:27
+Modified: 2021-09-06 14:10:59
 Author: Benjamin Du
 Slug: packagekitd-uses-too-much-cpu-or-disk-io
-Title: Packagekitd Uses Too Much CPU or Disk IO
+Title: PackageKitD Uses Too Much CPU or Disk IO
 Category: Computer Science
-Tags: Computer Science, OS, Linux, packagekitd, IO, CPU, disk, issue
+Tags: Computer Science, OS, Linux, PackageKitD, IO, CPU, disk, issue
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 

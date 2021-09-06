@@ -5,7 +5,7 @@ Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
 Category: Software
 Tags: software, Docker, GPU, Nvidia
-Modified: 2021-09-05 13:30:32
+Modified: 2021-09-05 20:14:43
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -97,15 +97,19 @@ Please read with your own judgement!
         :::bash
         lspci -v | grep VGA
 
-1. You can use the command `nvidia-smi` to query GPU metrics on both Windows and Linux. 
+1. You can use the following command to query the live GPU usage on both Windows and Linux. 
+
+        :::shell
+         !nvidia-smi --query-gpu=timestamp,name,pci.bus_id,driver_version,pstate,pcie.link.gen.max,pcie.link.gen.current,temperature.gpu,utilization.gpu,utilization.memory,memory.total,memory.free,memory.used --format=csv -l 5
     For more discussions,
     please refer to
     [Useful nvidia-smi Queries](https://nvidia.custhelp.com/app/answers/detail/a_id/3751/~/useful-nvidia-smi-queries)
     .
-    On Linux,
-    you can use the command `watch nvidia-smi` or `nvtop` to check the live usage of GPUs.
+    In additional,
+    you can use the command `nvtop` to check the live usage of GPUs on Linux.
     `nvtop` is recommended 
     as it presents simple visualizations in addition to the current usage statistics.
+    `nvtop` can be install on Ubuntu using the following command.
 
         :::bash
         apt-get install nvtop

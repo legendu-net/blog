@@ -5,12 +5,24 @@ Slug: GPU-related-issues-and-solutions
 Title: GPU Related Issues and Solutions
 Category: Computer Science
 Tags: programming, GPU, issues, solutions
-Modified: 2020-01-03 09:22:43
+Modified: 2021-09-05 20:36:16
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
+
+## CUDA Out of Memory
+
+torch.cuda.memory_summary()
+
+[How to avoid "CUDA out of memory" in PyTorch](https://stackoverflow.com/questions/59129812/how-to-avoid-cuda-out-of-memory-in-pytorch)
+
+1. reduce training/testing batch size
+2. clear PyTorch caches
+3. add `torch.cuda.empty_cache()` before training each epoch
+
+[OOM error where ~50% of the GPU RAM cannot be utilised/reserved #35901](https://github.com/pytorch/pytorch/issues/35901)
 
 ## ptxas application ptx input, line 9; fatal   : Unsupported .version 6.5; current version is '6.4'
 

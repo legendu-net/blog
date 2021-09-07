@@ -5,7 +5,7 @@ Slug: tips-on-git-submodule
 Title: Tips on Git Submodule
 Category: Software
 Tags: Software, Git, submodule
-Modified: 2021-08-06 22:56:41
+Modified: 2021-09-06 22:12:41
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -18,6 +18,10 @@ Please read with your own judgement!
     git submodule init
     git submodule add git@github.com:dclong/docker_image_builder.git
     git submodule update --recursive --remote
+
+To remove a Git submodule.
+
+    git rm submodule
 
 ## Module Already Exists in Index.
 

@@ -5,7 +5,7 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2021-02-18 09:10:17
+Modified: 2021-09-07 13:08:32
 
 ## Tips
 
@@ -382,15 +382,11 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
         - [dclong/scala](https://hub.docker.com/r/dclong/scala/)  
 
-        - [dclong/h2o](https://hub.docker.com/r/dclong/h2o/)  
-
     - [dclong/r-base](https://hub.docker.com/r/dclong/r-base/)  
 
         - [dclong/r-pop](https://hub.docker.com/r/dclong/r-pop/)  
 
             - [dclong/rstudio](https://hub.docker.com/r/dclong/rstudio/)  
-
-    - [dclong/qt5](https://hub.docker.com/r/dclong/qt5/)  
 
     - [dclong/conda](https://hub.docker.com/r/dclong/conda/)  
 
@@ -407,19 +403,7 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
         - [dclong/mlflow](https://hub.docker.com/r/dclong/mlflow/)  
 
-        - [dclong/flask](https://hub.docker.com/r/dclong/flask/)  
-
         - [dclong/dryscrape](https://hub.docker.com/r/dclong/dryscrape/)  
-
-        - [dclong/jupyter](https://hub.docker.com/r/dclong/jupyter/)  
-
-             > Jupyter Notebook: latest version.
-
-            - [dclong/jupyter-nodejs](https://hub.docker.com/r/dclong/jupyter-nodejs/)  
-
-                 > NodeJS: LTS
-
-                - [dclong/jupyter-jdk](https://hub.docker.com/r/dclong/jupyter-jdk/)  
 
         - [dclong/python-nodejs](https://hub.docker.com/r/dclong/python-nodejs/)  
 
@@ -482,19 +466,9 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
         - [dclong/lubuntu](https://hub.docker.com/r/dclong/lubuntu/)  
 
-            - [dclong/lubuntu-qt5](https://hub.docker.com/r/dclong/lubuntu-qt5/)  
-
-                - [dclong/lubuntu-pyside2](https://hub.docker.com/r/dclong/lubuntu-pyside2/)  
+            - [dclong/lubuntu-pyside2](https://hub.docker.com/r/dclong/lubuntu-pyside2/)  
 
             - [dclong/lubuntu-jdk](https://hub.docker.com/r/dclong/lubuntu-jdk/)  
-
-                - [dclong/lubuntu-intellij](https://hub.docker.com/r/dclong/lubuntu-intellij/)  
-
-        - [dclong/xubuntu](https://hub.docker.com/r/dclong/xubuntu/)  
-            - [dclong/xubuntu-nodejs](https://hub.docker.com/r/dclong/xubuntu-nodejs/)  
-            - [dclong/xubuntu-jdk](https://hub.docker.com/r/dclong/xubuntu-jdk/)  
-                - [dclong/xubuntu-scala](https://hub.docker.com/r/dclong/xubuntu-scala/)  
-                    - [dclong/xubuntu-intellij](https://hub.docker.com/r/dclong/xubuntu-intellij/)  
 
 ## Build my Docker Images
 

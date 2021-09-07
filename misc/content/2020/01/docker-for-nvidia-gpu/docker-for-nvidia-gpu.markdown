@@ -5,7 +5,7 @@ Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
 Category: Software
 Tags: software, Docker, GPU, Nvidia
-Modified: 2021-09-06 16:25:41
+Modified: 2021-09-06 21:36:55
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -49,10 +49,9 @@ Please read with your own judgement!
     using the following comamnds.
 
         :::bash
-        # Add the package repositories
+        distribution=$(. /etc/os-release; echo $ID$VERSION_ID)
         curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
-        curl -s -L https://nvidia.github.io/nvidia-docker/$(. /etc/os-release;echo $ID$VERSION_ID)
-        /nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+        curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
         sudo apt-get update 
         sudo apt-get install -y nvidia-docker2
 

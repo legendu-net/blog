@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-09-06 12:31:21
-Modified: 2021-09-06 14:10:59
+Modified: 2021-09-08 12:59:04
 Author: Benjamin Du
 Slug: packagekitd-uses-too-much-cpu-or-disk-io
 Title: PackageKitD Uses Too Much CPU or Disk IO
@@ -13,4 +13,6 @@ Tags: Computer Science, OS, Linux, PackageKitD, IO, CPU, disk, issue
 
 [Re: packagekitd Hogging CPU](https://www.spinics.net/linux/fedora/fedora-users/msg507630.html)
 
-I tried to disable auto update in Ubuntu to see whether the issue still exists ...
+I tried to disable auto update in Ubuntu but it doesn't help.
+I still see the packagekitd process on startup 
+and it uses high disk IO.

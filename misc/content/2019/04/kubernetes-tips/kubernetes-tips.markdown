@@ -5,7 +5,7 @@ Slug: kubernetes-tips
 Title: Tips on Kubernetes
 Category: Software
 Tags: Software, Kubernetes, k8s, minikube, kubectl, Microk8s
-Modified: 2021-07-23 10:47:34
+Modified: 2021-09-08 14:27:46
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -113,13 +113,15 @@ kubectl get account chdu -o yaml
 
 kubectl get application jupyterhub -o yaml
 
-kubectl get namespace some_namespace -o yaml
+kubectl get namespace your_namespace -o yaml
 
-kubectl get rc,pod,svc -n some_namespace
+kubectl get rc,pod,svc -n your_namespace
 
-kubectl exec -it pod_name -n some_namespace -- /bin/bash
+kubectl exec -it pod_name -n your_namespace -- /bin/bash
 
-kubectl delete deployment deployment_name -n some_namespace
+kubectl delete deployment deployment_name -n your_namespace
+
+kubectl -n your_namespace delete pods pod_name
 
 ## References
 

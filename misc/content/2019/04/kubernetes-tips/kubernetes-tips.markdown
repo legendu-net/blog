@@ -117,11 +117,25 @@ kubectl get namespace your_namespace -o yaml
 
 kubectl get rc,pod,svc -n your_namespace
 
-kubectl exec -it pod_name -n your_namespace -- /bin/bash
+Run command in a pod.
 
-kubectl delete deployment deployment_name -n your_namespace
+  kubectl exec -it pod_name -n your_namespace -- /bin/bash
 
-kubectl -n your_namespace delete pods pod_name
+Delete a pod.
+Notice that a new pod will be created to replace the deleted pod
+if there's no enough replicas.
+If you want to delete a pod completely (without replacement),
+you have to delete the corresponding deployment instead.
+
+  kubectl -n your_namespace delete pods pod_name
+
+List deployments in a namespace.
+
+  kubectl -n ms get deployments
+
+Delete a deployment.
+
+  kubectl -n your_namespace delete deployment deployment_name 
 
 ## References
 

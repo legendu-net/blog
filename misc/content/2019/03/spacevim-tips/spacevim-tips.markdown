@@ -5,12 +5,14 @@ Slug: spacevim-tips
 Title: SpaceVim - A Modern Vim Distribution
 Category: Software
 Tags: software, SpaceVim, Vim, tips
-Modified: 2021-06-18 10:28:17
+Modified: 2021-09-08 19:35:47
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
+
+
 ## Installation
 ```
 curl -sLf https://spacevim.org/install.sh | bash

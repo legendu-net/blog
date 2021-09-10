@@ -5,7 +5,7 @@ Slug: kubernetes-tips
 Title: Tips on Kubernetes
 Category: Software
 Tags: Software, Kubernetes, k8s, minikube, kubectl, Microk8s
-Modified: 2021-09-08 14:27:46
+Modified: 2021-09-09 17:11:13
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -120,6 +120,14 @@ kubectl get rc,pod,svc -n your_namespace
 Run command in a pod.
 
   kubectl exec -it pod_name -n your_namespace -- /bin/bash
+
+Copy files to a pod.
+
+  kubectl -n your_namespace cp local_path_1 ... local_path_n pod_name:/destination/dir/
+
+Copy files to a pod.
+
+  kubectl -n your_namespace cp pod_name:/some/path/1 pod_name:/some/path/2 /local/destination/dir
 
 Delete a pod.
 Notice that a new pod will be created to replace the deleted pod

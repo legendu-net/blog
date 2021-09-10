@@ -5,17 +5,21 @@ Title: Windows Operating System
 Slug: tips-windows
 Category: OS
 Tags: tips, anti-virus, Windows, Dropbox, OS
-Modified: 2021-09-05 11:36:40
+Modified: 2021-09-10 10:13:26
 
 <img src="http://dclong.github.io/media/windows/windows.png" height="200" width="240" align="right"/>
 
-[winget](https://github.com/microsoft/winget-cli)
-is the official Windows Package Manager CLI.
-
-[Chocolatey](https://chocolatey.org/) 
-is a cool community-driven software management tool for Windows.
-
 ## Tips and Traps
+
+1. You can download a Windows 10 Virtual Machine at 
+    [Get a Windows 10 development environment](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/) 
+    !
+
+1. [winget](https://github.com/microsoft/winget-cli)
+    is the official Windows Package Manager CLI
+    and
+    [Chocolatey](https://chocolatey.org/) 
+    is a cool community-driven software management tool for Windows.
 
 1. When a file is being synchronized by Dropbox,
     it might be unaccessible temporarily. 

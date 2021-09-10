@@ -5,7 +5,7 @@ Date: 2014-03-04 22:11:05
 Slug: synchronization-and-backup-solutions
 Category: Software
 Tags: software, synchronization, backup, Baidu Yun, Dropbox, TeamDrive, Syncthing
-Modified: 2021-09-03 14:31:01
+Modified: 2021-09-08 23:54:24
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -51,6 +51,18 @@ Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
     1. Best solution for small data backup 
     2. every thing is in the same folder, no way to sync a folder with higher priority over others
         while you can do this with TeamDrive or BTSync
+    </td>
+  </tr>
+  <tr>
+    <td> 
+    <a href="https://www.dropbox.com/"> Baidu Net Disk </a>
+    </td>
+    <td> free for 2T space and limited download speed  </td>
+    <td> Windows, macOS, Linux </td>
+    <td> Sync </td>
+    <td> Yes </td>
+    <td> 
+    Best solution for large data backup
     </td>
   </tr>
   <tr>

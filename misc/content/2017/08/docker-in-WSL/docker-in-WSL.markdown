@@ -5,25 +5,22 @@ Slug: docker-in-WSL2
 Title: Docker in WSL 2
 Category: Software
 Tags: software, Docker, WSL, WSL 2, Windows, Bash, BashOnWindows, Bash on Windows
-Modified: 2021-09-03 11:49:56
+Modified: 2021-09-09 12:22:54
 
 **
 Things on this page are
 fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
+
 ## Tips and Traps
 
 1. Docker on WSL 2 works great.
     However,
-    the performance of IO is extremely bad if it involves the Windows filesystem 
-    (and this is also true for IO in WSL 2 as Docker on WSL 2 share the same kernel as WSL 2)
-    .
-    It is suggested that you work with the WSL 2 filesystem (instead of the Windows filesystem)
-    if IO performance is critical to your use case. 
-    For more details,
+    the performance of IO is extremely bad if it access the Windows filesystem.
+    For more discussions,
     please refer to
-    [How to Boost Docker with WSL2](https://towardsdatascience.com/how-to-improve-docker-performance-with-wsl2-3a54402ab0f2)
+    [WSL 2 Filesystem](http://www.legendu.net/misc/blog/wsl-2-filesystem)
     .
 
 2. Docker containers launched from a WSL (e.g., Ubuntu) shell will continue to run 

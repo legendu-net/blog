@@ -5,7 +5,7 @@ Slug: wsl-tips
 Title: Tips on WSL 2
 Category: OS
 Tags: Linux, WSL, WSL 2, Windows, BashOnWindows, Bash on Windows, tips
-Modified: 2021-09-03 11:49:56
+Modified: 2021-09-09 12:45:13
 
 **
 Things on this page are
@@ -113,3 +113,5 @@ samba requires kernelspace while WSL only implements a userspace.
 - [Docker in WSL](http://www.legendu.net/misc/blog/docker-in-WSL)
 
 - https://towardsdatascience.com/dual-boot-is-dead-windows-and-linux-are-now-one-27555902a128
+
+- [WSL 2 Filesystem](http://www.legendu.net/misc/blog/wsl-2-filesystem)

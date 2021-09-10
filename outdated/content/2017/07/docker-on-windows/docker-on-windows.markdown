@@ -5,9 +5,13 @@ Slug: docker-on-windows
 Title: Docker on Windows
 Category: Software
 Tags: Software, Docker, Widnows, Windows 10, Hyper-V, Virtualization
-Modified: 2021-02-08 14:45:17
+Modified: 2021-09-10 10:13:26
 It is suggested that you use Docker in WSL 
 rather than using Docker for Windows.
+
+
+It is suggested that you use Docker on WSL 2.
+
 
 
 While Docker can be used on Windows (10 and later) now, 
@@ -18,9 +22,9 @@ unless you absolutely have to.
 ## Installtion
 
 1. Docker is natively supported on Win 10 and later. 
-However, 
-you need to enable Hyper-V and Virtualization (enabled by default usually).
-Follow the steps below to enable Hyper-V.
+    However, 
+    you need to enable Hyper-V and Virtualization (enabled by default usually).
+    Follow the steps below to enable Hyper-V.
 
     a. In the Control Panel, click Programs > Programs and Features.
 
@@ -31,10 +35,10 @@ Follow the steps below to enable Hyper-V.
 ## Usage
 
 1. Best to run Docker commands in CMD rather than in cygwin.
-First, 
-Cygwin paths (when mounting volumes) are not recognized by Docker on Windows.
-Second, 
-some docker commands will simply fail.
+    First, 
+    Cygwin paths (when mounting volumes) are not recognized by Docker on Windows.
+    Second, 
+    some docker commands will simply fail.
 
 ## Tips
 
@@ -53,7 +57,7 @@ it allows you to manage containers, images, networks, and volumes from the web-b
 ## Issues 
 
 1. It seems that file permission mapping does NOT work on Windows.
-(not sure, need to confirm ...)
+    (not sure, need to confirm ...)
 
 2. There is issue to mount volumes to a docker container on Windows. 
 

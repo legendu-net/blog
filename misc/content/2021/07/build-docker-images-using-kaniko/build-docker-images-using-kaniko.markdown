@@ -1,13 +1,23 @@
 Status: published
 Date: 2021-07-20 17:09:59
-Modified: 2021-07-20 17:09:59
+Modified: 2021-09-09 13:50:54
 Author: Benjamin Du
 Slug: build-docker-images-using-kaniko
 Title: Build Docker Images Using Kaniko
 Category: Computer Science
 Tags: Computer Science, programming, Kaniko, Docker, build, image, buildah
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+
+1. `gcr.io/kaniko-project/executor` 
+    is the official Docker image.
+
+2. The credential file for authentication should be placed into `$HOME/.docker/config.json`,
+    where `$HOME` is the home directory of the user that you are going to use to run Kaniko.
+    For example, 
+    if you use the root account to use Kaniko,
+    the credntial file should be placed at `/root/.docker/config.json`.
 
 [Introducing kaniko: Build container images in Kubernetes and Google Container Builder without privileges](https://cloud.google.com/blog/products/containers-kubernetes/introducing-kaniko-build-container-images-in-kubernetes-and-google-container-builder-even-without-root-access)
 

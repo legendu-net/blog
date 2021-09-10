@@ -5,8 +5,13 @@ Slug: shell-equivalent-in-different-operating-systems
 Title: Shell Equivalent in Different Operating Systems
 Category: Computer Science
 Tags: Computer Science, OS, Linux, macOS, Windows, Shell, PowerShell
-Modified: 2021-09-05 13:26:49
+Modified: 2021-09-08 23:41:25
 PowerShell examples are used for Windows in the table below.
+
+It is suggested that you use Linux commands when possible 
+as Linux command are more universal and useful.
+You can achieve this by using WSL 2 on Windows 
+and by using Docker or virtual machine on macOS.
 
 <div style="overflow-x:auto;">
 <style>
@@ -124,6 +129,29 @@ PowerShell examples are used for Windows in the table below.
     </td>
   </tr>
 
+  <tr>
+    <td rowspan="3"> Manage partitions of a disk </td>
+    <td rowspan="1"> Linux </td>
+    <td> <code> 
+    fdisk
+    </code> </td>
+  </tr>
+  <tr>
+    <td> macOS </td>
+    <td> 
+    fdisk 
+    <a href="#footnote1">[2]</a>
+    </a>
+    </td>
+  </tr>
+  <tr>
+    <td> Windows </td>
+    <td> 
+    fdisk via WSL 2 or virtual machine
+    </a>
+    </td>
+  </tr>
+
 </table>
 </div>
 
@@ -132,3 +160,7 @@ PowerShell examples are used for Windows in the table below.
     the `where` command sometimes works but sometimes doesn't work in a PowerShell.
     Since PowerShell becomes more popular than Windows CMD,
     `Get-command` is recommended over `where`.
+
+[2] The macOS version of fdisk does not function similar to the Linux version of fdisk. 
+It is not as intuitive and easy to use as the Linux version.
+It is suggested that you use the Linux version of fdisk instead.

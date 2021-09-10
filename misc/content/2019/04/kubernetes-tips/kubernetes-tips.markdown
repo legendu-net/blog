@@ -5,7 +5,7 @@ Slug: kubernetes-tips
 Title: Tips on Kubernetes
 Category: Software
 Tags: Software, Kubernetes, k8s, minikube, kubectl, Microk8s
-Modified: 2021-07-23 10:47:34
+Modified: 2021-09-09 17:11:13
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -113,13 +113,37 @@ kubectl get account chdu -o yaml
 
 kubectl get application jupyterhub -o yaml
 
-kubectl get namespace some_namespace -o yaml
+kubectl get namespace your_namespace -o yaml
 
-kubectl get rc,pod,svc -n some_namespace
+kubectl get rc,pod,svc -n your_namespace
 
-kubectl exec -it pod_name -n some_namespace -- /bin/bash
+Run command in a pod.
 
-kubectl delete deployment deployment_name -n some_namespace
+  kubectl exec -it pod_name -n your_namespace -- /bin/bash
+
+Copy files to a pod.
+
+  kubectl -n your_namespace cp local_path_1 ... local_path_n pod_name:/destination/dir/
+
+Copy files to a pod.
+
+  kubectl -n your_namespace cp pod_name:/some/path/1 pod_name:/some/path/2 /local/destination/dir
+
+Delete a pod.
+Notice that a new pod will be created to replace the deleted pod
+if there's no enough replicas.
+If you want to delete a pod completely (without replacement),
+you have to delete the corresponding deployment instead.
+
+  kubectl -n your_namespace delete pods pod_name
+
+List deployments in a namespace.
+
+  kubectl -n ms get deployments
+
+Delete a deployment.
+
+  kubectl -n your_namespace delete deployment deployment_name 
 
 ## References
 

@@ -5,7 +5,7 @@ Date: 2013-10-23 12:19:10
 Slug: shell-tips
 Category: OS
 Tags: tips, Linux, shell, terminal
-Modified: 2021-08-22 00:12:26
+Modified: 2021-09-09 12:01:50
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -14,19 +14,11 @@ Please read with your own judgement!
 
 [explainshell.com](http://www.explainshell.com/)
 
-
 0. command-not-found - Suggest installation of packages in interactive bash sessions
-
-1. [Hyper](https://hyper.is/), terminator, terra, terminology, TermKit, XiKi (inactive)
-
-3. screen, tmux
 
 4. nohup, disown
 
 5. nautilus-open-terminal
-
-6. script (logging terminal activities)
-
 
 ## Configuration
 
@@ -355,13 +347,10 @@ Mac
 
 ## References
 
+- [Good Terminal Apps](http://www.legendu.net/misc/blog/good-terminal-apps)
+- [Terminal Multiplexers](http://www.legendu.net/misc/blog/terminal-multiplexers)
 - http://www.legendu.net/misc/blog/programming-in-shell
 - http://www.legendu.net/misc/blog/terminator-tips/
 - http://www.legendu.net/misc/blog/terminology-tips/
-
-- [你可能不知道的Shell](http://coolshell.cn/articles/8619.html)
-- [28个Unix/Linux的命令行神器](http://coolshell.cn/articles/7829.html)
-- [35 Terminal ( text ) based application for Linux](http://www.linuxnov.com/35-terminal-text-based-application-for-linux/)
 - [Rolo](http://rolo.sourceforge.net/)
-- [http://abook.sourceforge.net/](http://abook.sourceforge.net/)
 - [Five Really Handy Google Command Line Tricks](http://lifehacker.com/5568817/five-really-handy-google-command-line-tricks)

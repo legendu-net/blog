@@ -5,18 +5,11 @@ Slug: docker-image-and-container-management
 Title: Manage Docker Images and Containers 
 Category: Software
 Tags: software, Docker, Docker image, container, management, remove
-Modified: 2021-09-05 12:41:55
+Modified: 2021-09-13 10:52:44
 
 1. It is suggested that you use [osquery](https://osquery.io/)
     or [dsutil.docker](https://github.com/dclong/dsutil/blob/dev/dsutil/docker)
-    to manage Docker images, containers, etc.
-
-2. If you want to manage Docker images and containers inside a Docker container,
-    simply add the option `-v /var/run/docker.sock:/var/run/docker.sock` 
-    to the `docker run` command of the Docker container.
-    For more discussions,
-    please refer to
-    [How To Run Docker in Docker Container [3 Easy Methods]](https://devopscube.com/run-docker-in-docker/#:~:text=To%20run%20docker%20inside%20docker,sock%20as%20a%20volume.&text=Just%20a%20word%20of%20caution,privileges%20over%20your%20docker%20daemon)
+    to query Docker images, containers, etc.
 
 ## Remove Containers
 
@@ -130,7 +123,11 @@ But it will not work in the following two cases.
 
 ## Volume
 
-1. ALWAYS create a directory in the Docker container first
+1. You can mount both a file and a directory into a Docker container. 
+    However, 
+    ALWAYS use absolutely paths for mounting (using the option `-v`).
+
+2. ALWAYS create a directory in the Docker container first
     before you mount a volume into it.
     If the directory (to mount into) in the Docker container does not exists,
     it will be created automatically by the root user
@@ -155,6 +152,12 @@ But it will not work in the following two cases.
         [this discussion](https://stackoverflow.com/questions/30642844/how-to-list-docker-mounted-volumes-from-within-the-container)
     to list mounted volumens.
     Another way is to use [osquery](https://osquery.io/).
+
+## Overwrite Entrypoint 
+
+Please refer to 
+[Overwrite Entrypoint in Docker](http://www.legendu.net/misc/blog/overwrite-entrypoint-in-docker)
+for detailed discussions.
 
 ## Permission
 
@@ -184,6 +187,12 @@ Copying file between a docker container and the host.
     docker cp foo.txt mycontainer:/foo.txt
     docker cp mycontainer:/foo.txt foo.txt
 
+
+## Run Docker Containers in a Docker Container
+
+Please refer to
+[Run Docker Containers Inside a Docker Container](http://www.legendu.net/misc/blog/run-docker-containers-inside-a-docker-container)
+for more detailed discussions.
 
 ## Misc
 

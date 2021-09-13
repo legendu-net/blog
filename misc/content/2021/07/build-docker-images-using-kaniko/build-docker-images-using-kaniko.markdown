@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-07-20 17:09:59
-Modified: 2021-09-09 13:50:54
+Modified: 2021-09-13 10:40:11
 Author: Benjamin Du
 Slug: build-docker-images-using-kaniko
 Title: Build Docker Images Using Kaniko
@@ -9,15 +9,54 @@ Tags: Computer Science, programming, Kaniko, Docker, build, image, buildah
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+1. Kaniko works differently from Docker. 
+    It runs inside a Docker container and detect and extract new layers to build Docker images. 
+    Since Kaniko manipulates the filesystem (layers) inside the Docker container,
+    it can have unexpected side effect if not used carefully. 
+    For this reason,
+    the developer team suggests users to use Kaniko only via official Docker images.
+    The official Docker image
+    `gcr.io/kaniko-project/executor` 
+    limits itself to run the command `/kaniko/executor` only
+    so that users won't screw up things accidentally.
+    The official Docker image
+    `gcr.io/kaniko-project/executor:debug`
+    adds a shell (`/busybox/sh`) in addition to to the command `/kaniko/executor`.
+    However,
+    `/busybox/sh` in `gcr.io/kaniko-project/executor:debug`
+    is minimal and limited too.
+    For example,
+    the `cd` command is not provided 
+    and users can work in the directory `/workspace` only.
+    Even if some users have tried customizing their own Kaniko Docker images 
+    and reported successful experiences,
+    it is NOT guranteed that customized Kaniko Docker images will always work.
+    Any additional tool (besides `/kaniko/executor` and `/busybox/sh`) 
+    might fail to work due to changed filesystems (layers) during the building of a Docker image,
+    and even worse, might intervent the building of Docker images.
 
-1. `gcr.io/kaniko-project/executor` 
-    is the official Docker image.
+2. The credential file `config.json` for authentication 
+    should be mounted to `/kaniko/.docker/config.json` 
+    when running an official Kaniko Docker image.
+    Some users customize their own Kaniko Docker images,
+    in which situations, 
+    the credential file `config.json` might need to be mounted/placed at `$HOME/.docker/config.json`,
+    where `$HOME` is the home directory of the user that is used to run `/kaniko/executor`.
+    In most situations, 
+    customized Kaniko Docker images use the root user 
+    whose home directory is `/root`.
+    However, 
+    be aware that the directory `/root` might not survive during the building of Docker images 
+    and thus can make authentication to fail.
 
-2. The credential file for authentication should be placed into `$HOME/.docker/config.json`,
-    where `$HOME` is the home directory of the user that you are going to use to run Kaniko.
-    For example, 
-    if you use the root account to use Kaniko,
-    the credntial file should be placed at `/root/.docker/config.json`.
+3. There are a few useful options to the command `/kaniko/executor`. 
+    `--cleanup` cleans up the filesystem (layers)
+    after building a Docker image 
+    so that you can use the same Kaniko Docker container to build multiple Docker images.
+    `--log-timestamp` adds timestamps into logs 
+    which is useful to debugging and measuring performancing of pulling, pushing and building.
+
+## References
 
 [Introducing kaniko: Build container images in Kubernetes and Google Container Builder without privileges](https://cloud.google.com/blog/products/containers-kubernetes/introducing-kaniko-build-container-images-in-kubernetes-and-google-container-builder-even-without-root-access)
 

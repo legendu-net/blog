@@ -5,7 +5,7 @@ Slug: tips-on-creating-docker-images
 Title: Tips on Creating Docker Images
 Category: Software
 Tags: software, Docker, image, build, create
-Modified: 2020-02-29 21:22:04
+Modified: 2021-09-13 14:23:53
 
 **
 Things on this page are
@@ -60,17 +60,26 @@ Please read with your own judgement!
 ## Git + SSH to Avoid Two-way Authentication Behind Corporate Firewall
 
 Sometimes, 
-you need to access an enterprise GitHub to build a Docker image. 
-The issue is that an enterprise GitHub often requires 2FA to visit.
-Fortunately,
-command-line access to GitHub using Git + SSH often does not require 2FA. 
-One possible way to access an enterprise GitHub 
-when building a Docker imagee is to copy your SSH private key into `/root/.ssh/` 
-for accessing GitHub repositories
-and then remove it after building the Docker image.
+you need to access an enterprise GitHub or private Git repositories to build Docker images,
+which requires SSH key authentication during the building process.
+Docker has built-in support of SSH key forwarding. 
+For more details,
+please refer to
+[Build secrets and SSH forwarding in Docker 18.09](https://medium.com/@tonistiigi/build-secrets-and-ssh-forwarding-in-docker-18-09-ae8161d066)
+,
+[Kaniko, How to Build Container Image with SSH](https://medium.com/hiredscore-engineering/kaniko-builds-with-private-repository-634d5e7fa4a5)
+and
+[Using SSH to access private data in builds](https://docs.docker.com/develop/develop-images/build_enhancements/#using-ssh-to-access-private-data-in-builds)
+.
+However, 
+I wasn't able to make it work following the instructions.
+
+Another possible way to enable SSH key authentication when building a Docker image
+is to copy your SSH private key into the directory `/root/.ssh/` inside the Docker container
+and remove it after the Docker image building is complete.
 In order to make SSH work without human intervention,
 you have to disable strict checking of SSH. 
-This can be done by having the following lines into the file `/root/.ssh/config`.
+This can be done by having the following lines into the file `/root/.ssh/config` inside the Docker container.
 
     :::bash
     Host *

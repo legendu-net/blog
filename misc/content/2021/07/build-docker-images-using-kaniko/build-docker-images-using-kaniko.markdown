@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-07-20 17:09:59
-Modified: 2021-09-13 10:40:11
+Modified: 2021-09-13 14:03:42
 Author: Benjamin Du
 Slug: build-docker-images-using-kaniko
 Title: Build Docker Images Using Kaniko

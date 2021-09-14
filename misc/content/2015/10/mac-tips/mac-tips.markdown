@@ -5,7 +5,7 @@ Slug: mac-tips
 Title: Tips on macOS
 Category: OS
 Tags: macOS, tips, Apple
-Modified: 2020-05-23 22:14:55
+Modified: 2021-09-14 16:48:23
 
 **
 Things on this page are
@@ -66,7 +66,7 @@ For more details please refer to
 
 ## Useful Applications
 
-### [CheatShee](https://mediaatelier.com/CheatSheet/)
+### [CheatSheet](https://mediaatelier.com/CheatSheet/)
 
 Just hold the ⌘-Key a bit longer to get a list of all active short cuts of the current application. It's as simple as that.
 

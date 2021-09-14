@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-07-20 17:09:59
-Modified: 2021-09-14 10:35:55
+Modified: 2021-09-14 11:32:20
 Author: Benjamin Du
 Slug: build-docker-images-using-kaniko
 Title: Build Docker Images Using Kaniko
@@ -97,6 +97,9 @@ Tags: Computer Science, programming, Kaniko, Docker, build, image, buildah
     It is suggested that you build **only 1 image in a Kaniko pod/container**.
     When you need to build another Docker image, 
     start a new Kaniko pod/container.
+
+5. Always, specify `--push-try` (e.g., `--push-retry=2`)
+    and `--image-fs-extract-retry` when Kaniko > 1.6.0 is released.
 
 ## Kaniko Build Contexts
 

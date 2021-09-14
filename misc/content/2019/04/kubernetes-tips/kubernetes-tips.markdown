@@ -5,7 +5,7 @@ Slug: kubernetes-tips
 Title: Tips on Kubernetes
 Category: Software
 Tags: Software, Kubernetes, k8s, minikube, kubectl, Microk8s
-Modified: 2021-09-09 17:11:13
+Modified: 2021-09-13 22:54:19
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -30,10 +30,18 @@ Microk8s seems like a good option.
 
 - Docker for Mac/Windows - Docker's Desktop edition has an option to run a local Kubernetes cluster
 
-## Tips and Traps
+## Define a Command and Arguments for a Container
 
-1. https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/
-  Define a Command and Arguments for a Container
+[Define a Command and Arguments for a Container](https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/)
+
+Define `command` as `["/busybox/sh", "-c", "tail -f /dev/null"]`
+instead of 
+`["/busybox/sh", "-c", "tail", "-f", "/dev/null"]`
+.
+
+## One-time Job
+
+[Running one-time jobs during Kubernetes deployments](https://gaunacode.com/deploying-onetime-jobs-to-kubernetes)
 
 ## Request Resource 
 

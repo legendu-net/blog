@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-07-20 17:09:59
-Modified: 2021-09-13 14:03:42
+Modified: 2021-09-13 22:39:08
 Author: Benjamin Du
 Slug: build-docker-images-using-kaniko
 Title: Build Docker Images Using Kaniko
@@ -35,6 +35,23 @@ Tags: Computer Science, programming, Kaniko, Docker, build, image, buildah
     might fail to work due to changed filesystems (layers) during the building of a Docker image,
     and even worse, might intervent the building of Docker images.
 
+2. It might be helpful to keep a Kaniko pod running for testing, debugging and for building multiple Docker images.
+    You couldn't do this with the Docker image 
+    `gcr.io/kaniko-project/executor`,
+    however, 
+    it is doable with the Docker image
+    `gcr.io/kaniko-project/executor:debug`.
+    Basically,
+    you have to define a command which runs forever for the container.
+    The simplest way is to run the shell command `tail -f /dev/null`,
+    so you can define the command as 
+    `["/busybox/sh", "-c", "tail -f /dev/null"]`
+    .
+    Notice that using 
+    `["/busybox/sh", "-c", "tail", "-f", "/dev/null"]`
+    as the command won't work 
+    even if `docker run --entrypoint /busybox/sh gcr.io/kaniko-project/executor:debug -c tail -f /dev/null` runs OK.
+
 2. The credential file `config.json` for authentication 
     should be mounted to `/kaniko/.docker/config.json` 
     when running an official Kaniko Docker image.
@@ -55,6 +72,7 @@ Tags: Computer Science, programming, Kaniko, Docker, build, image, buildah
     so that you can use the same Kaniko Docker container to build multiple Docker images.
     `--log-timestamp` adds timestamps into logs 
     which is useful to debugging and measuring performancing of pulling, pushing and building.
+
 
 ## References
 

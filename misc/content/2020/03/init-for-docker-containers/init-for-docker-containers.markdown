@@ -5,7 +5,7 @@ Slug: init-for-docker-containers
 Title: Init for Docker Containers
 Category: Software
 Tags: software, Docker, container, init, s6, s6-overlay, tini, Supervisord, dumb-init
-Modified: 2020-03-05 11:08:32
+Modified: 2021-09-14 11:01:54
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -20,6 +20,9 @@ The [s6-overlay-builder](https://github.com/just-containers/s6-overlay)
 project is a series of init scripts and utilities to ease creating Docker images using s6 as a process supervisor.
 
 
+Docker has built-in supports to resolve the init process issue now.
+`--init`	
+Run an init inside the container that forwards signals and reaps processes
 
 
 ## [tini](https://github.com/krallin/tini)
@@ -30,5 +33,9 @@ A tiny but valid `init` for containers
 A minimal init system for Linux containers.
 
 ## References
+
+https://docs.docker.com/engine/reference/commandline/run/
+
+https://github.com/krallin/tini
 
 [Supervisor with Docker: Lessons learned](https://advancedweb.hu/supervisor-with-docker-lessons-learned/)

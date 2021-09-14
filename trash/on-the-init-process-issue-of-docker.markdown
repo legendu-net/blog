@@ -8,12 +8,3 @@ Category: Computer Science
 Tags: Computer Science, programming, Docker, init, process, tini
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-
---init	
-Run an init inside the container that forwards signals and reaps processes
-
-## References
-
-https://docs.docker.com/engine/reference/commandline/run/
-
-https://github.com/krallin/tini

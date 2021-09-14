@@ -101,6 +101,7 @@
     ["Intellij Idea", "IntelliJ IDEA"],
     ["Torch.Nn.Module", "torch.nn.Module"],
     ["Restructuretext", "RestructureText"],
+    ["Crashloopbackoff", "CrashLoopBackOff"], 
     ["Outofmemoryerror", "OutOfMemoryError"],
     ["Broadcasthashjoin", "BroadcastHashJoin"],
     ["Torch.Nn.Functional", "torch.nn.functional"],

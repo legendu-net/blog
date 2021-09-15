@@ -5,7 +5,7 @@ Slug: kubernetes-tips
 Title: Tips on Kubernetes
 Category: Software
 Tags: Software, Kubernetes, k8s, minikube, kubectl, Microk8s
-Modified: 2021-09-13 22:54:19
+Modified: 2021-09-15 16:51:13
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -29,6 +29,10 @@ Microk8s seems like a good option.
 - minikube - a popular, but heavy-weight option that creates a Linux virtual machine your computer using VirtualBox or similar
 
 - Docker for Mac/Windows - Docker's Desktop edition has an option to run a local Kubernetes cluster
+
+## Authentication 
+
+[Pull an Image from a Private Registry](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)
 
 ## Define a Command and Arguments for a Container
 

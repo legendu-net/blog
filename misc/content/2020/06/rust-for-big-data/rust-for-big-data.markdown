@@ -16,6 +16,8 @@ Please read with your own judgement!
 
 ## [fluvio](https://github.com/infinyon/fluvio)
 
+## [DataBend](https://github.com/datafuselabs/databend)
+
 https://github.com/apache/arrow/tree/e33fec73fdbe395baae6899fe1a4eb2e4f46705f/rust/datafusion
 
 https://github.com/ballista-compute/ballista

@@ -5,7 +5,7 @@ Slug: hadoop-fs-tips
 Title: Hadoop Filesystem Tips
 Category: Software
 Tags: big data, Hadoop, filesystem, file system, tips
-Modified: 2021-02-21 23:37:52
+Modified: 2021-09-16 08:31:16
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
@@ -157,8 +157,14 @@ if you intend to overwrite the whole directory.
 
 Notice that the checksum command on HDFS returns different result from the md5sum command on Linux.
 
+## setfacl
 
-## Merge Multiple Files¶
+Grant permission to a user.
+
+    :::bash
+    hadoop fs -setfacl -R -m user:user_name:rwx /path/to/grant/permission
+
+## Merge Multiple Files
 
 Use hadoop-streaming job (with single reducer) 
 to merge all part files data to single hdfs file on cluster itself 

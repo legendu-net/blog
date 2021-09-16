@@ -1,11 +1,12 @@
 Status: published
 Date: 2021-04-30 11:49:58
+Modified: 2021-09-16 08:31:16
 Author: Benjamin Du
 Slug: tips-on-pyspark
-Title: General Tips on PySpark
+Title: Process Big Data Using PySpark
 Category: Computer Science
 Tags: programming, PySpark, Python, Spark, tips, HPC, high performance computing
-Modified: 2021-03-30 11:49:58
+
 1. PySpark 2.4 and older does not support Python 3.8.
     You have to use Python 3.7 with PySpark 2.4 or older.
 
@@ -221,8 +222,6 @@ Building a portable Python environment using python-build-standalone is the reco
 
 ## References
 
-[awesome-spark](https://github.com/awesome-spark/awesome-spark)
-
 https://spark.apache.org/docs/latest/api/python/pyspark.sql.html
 
 https://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.DataFrame
@@ -231,16 +230,8 @@ https://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Col
 
 https://spark.apache.org/docs/latest/api/python/pyspark.sql.html#module-pyspark.sql.functions
 
-[Managing dependencies and artifacts in PySpark](https://bytes.grubhub.com/managing-dependencies-and-artifacts-in-pyspark-7641aa89ddb7)
-
-https://stackoverflow.com/questions/51450462/pyspark-addpyfile-to-add-zip-of-py-files-but-module-still-not-found
-
-https://becominghuman.ai/real-world-python-workloads-on-spark-standalone-clusters-2246346c7040
-
-https://community.cloudera.com/t5/Community-Articles/Running-PySpark-with-Conda-Env/ta-p/247551
-
-https://stackoverflow.com/questions/36461054/i-cant-seem-to-get-py-files-on-spark-to-work
-
 [Best Practices Writing Production-Grade PySpark Jobs](https://developerzen.com/best-practices-writing-production-grade-pyspark-jobs-cb688ac4d20f)
 
 [Packaging code with PEX — a PySpark example](https://medium.com/criteo-labs/packaging-code-with-pex-a-pyspark-example-9057f9f144f3)
+
+[awesome-spark](https://github.com/awesome-spark/awesome-spark)

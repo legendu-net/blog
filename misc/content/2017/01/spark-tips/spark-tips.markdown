@@ -1,11 +1,11 @@
 Status: published
 Date: 2017-01-05 23:55:46
 Author: Ben Chuanlong Du
-Slug: processing-big-data-using-spark
-Title: Processing Big Data Using Spark
+Slug: process-big-data-using-spark
+Title: Process Big Data Using Spark
 Category: Computer Science
 Tags: programming, Spark, big data, tips
-Modified: 2021-01-05 23:55:46
+Modified: 2021-09-16 08:31:16
 
 **
 Things on this page are

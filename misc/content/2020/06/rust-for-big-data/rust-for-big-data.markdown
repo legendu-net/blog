@@ -1,11 +1,11 @@
 Status: published
 Date: 2020-06-13 22:57:16
+Modified: 2021-09-15 20:48:48
 Author: Benjamin Du
 Slug: rust-for-big-data
 Title: Rust for Big Data
 Category: Computer Science
 Tags: Computer Science, Rust, big data, Ballista, DataFusion, datafuse, fluvio
-Modified: 2021-09-15 20:48:48
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

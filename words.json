@@ -66,6 +66,7 @@
     ["Stringi", "stringi"],
     ["Xfinity", "XFinity"],
     ["Ai-Based", "AI-based"],
+    ["Buildkit", "BuildKit"],
     ["Kdevelop", "KDevelop"],
     ["Lightgbm", "LightGBM"],
     ["Macports", "MacPorts"], ["Noscript", "NoScript"],

@@ -5,7 +5,7 @@ Slug: GPU-related-issues-and-solutions
 Title: GPU Related Issues and Solutions
 Category: Computer Science
 Tags: programming, GPU, issues, solutions
-Modified: 2021-09-16 09:54:29
+Modified: 2021-09-16 11:37:51
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -44,6 +44,8 @@ torch.cuda.memory_summary()
 3. add `torch.cuda.empty_cache()` before training each epoch
 
 4. Free GPU memory from other applications (see the previous section)
+
+5. [Reduce Memory Needed to Train Deep Learning Models](http://www.legendu.net/misc/blog/reduce-memory-needed-to-train-deep-learning-model)
 
 [OOM error where ~50% of the GPU RAM cannot be utilised/reserved #35901](https://github.com/pytorch/pytorch/issues/35901)
 

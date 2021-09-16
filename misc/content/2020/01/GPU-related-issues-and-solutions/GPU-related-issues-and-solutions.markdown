@@ -5,12 +5,31 @@ Slug: GPU-related-issues-and-solutions
 Title: GPU Related Issues and Solutions
 Category: Computer Science
 Tags: programming, GPU, issues, solutions
-Modified: 2021-09-05 20:36:16
+Modified: 2021-09-16 09:54:29
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
+
+
+## A Large Portion of GPU Memory is Already Used
+
+If you train models using GPU on your own desktop computer
+(no matter Linux or Windows),
+you might notice that even before you do anything with model training,
+there's already a large portion of GPU memory used by other applications
+(check it using `nvidia-smi`).
+It is suggested that you take the following actions to free GPU memories 
+before training your models.
+
+1. Close non-needed applications (especially those apps which uses GPU).
+
+2. Switch to TTY (using the shortcut Ctrl + Shift + F1, F2, etc.) if you are using Linux,
+    which can already help free most used GPU memories.
+
+3. Boot your Linux machine into text model if you absolutely want squeeze all GPU memory 
+    out of other applications (mostly X11).
 
 ## CUDA Out of Memory
 
@@ -19,8 +38,12 @@ torch.cuda.memory_summary()
 [How to avoid "CUDA out of memory" in PyTorch](https://stackoverflow.com/questions/59129812/how-to-avoid-cuda-out-of-memory-in-pytorch)
 
 1. reduce training/testing batch size
+
 2. clear PyTorch caches
+
 3. add `torch.cuda.empty_cache()` before training each epoch
+
+4. Free GPU memory from other applications (see the previous section)
 
 [OOM error where ~50% of the GPU RAM cannot be utilised/reserved #35901](https://github.com/pytorch/pytorch/issues/35901)
 

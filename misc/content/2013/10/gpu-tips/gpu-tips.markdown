@@ -5,7 +5,7 @@ Title: Tips on GPU Computing
 Slug: gpu-tips
 Category: Computer Science
 Tags: tips, GPU, programming, Nvidia
-Modified: 2021-09-05 11:23:41
+Modified: 2021-09-16 09:54:29
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 

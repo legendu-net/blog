@@ -5,7 +5,7 @@ Slug: use-pytorch-on-gpu
 Title: Use PyTorch on GPU
 Category: AI
 Tags: AI, data science, machine learning, deep learning, PyTorch, GPU
-Modified: 2020-04-21 11:51:30
+Modified: 2021-09-16 09:54:29
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

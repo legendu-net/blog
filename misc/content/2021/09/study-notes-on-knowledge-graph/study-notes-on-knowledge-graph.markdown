@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-09-16 11:38:52
-Modified: 2021-09-16 11:38:52
+Modified: 2021-09-16 21:17:31
 Author: Benjamin Du
 Slug: study-notes-on-knowledge-graph
 Title: Study Notes on Knowledge Graph
@@ -15,3 +15,11 @@ Tags: Computer Science, Knowledge Graph, KG, machine learning, deep learning, da
  
 RDF: Resource Description Framework
 OWL: Web Ontology Language
+
+## Products 
+
+neo4j
+
+RDFox
+
+Amazon Neptune

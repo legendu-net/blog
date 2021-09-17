@@ -5,7 +5,7 @@ Slug: python-sklearn-tips
 Title: Tips on Scikit-Learn
 Category: AI
 Tags: AI, data science, machine learning, Scikit-learn, sklearn, pipeline
-Modified: 2020-12-01 10:06:27
+Modified: 2021-09-16 21:12:30
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -17,10 +17,12 @@ Please read with your own judgement!
     [Cross Validation Pipeline](https://chrisalbon.com/machine_learning/model_evaluation/cross_validation_pipeline/)
     for more details.
 
-3. [Label encoding](https://scikit-learn.org/stable/modules/preprocessing_targets.html#label-encoding)
+2. [Label encoding](https://scikit-learn.org/stable/modules/preprocessing_targets.html#label-encoding)
     is an easy way to convert a categorical response/target variable to a numeric one and back to the raw value space.
     For transform of response/target varible in regression,
     please refer to [Transforming Target in Tegression](https://scikit-learn.org/stable/modules/compose.html#transforming-target-in-regression).
+
+3. [Skorch](https://github.com/skorch-dev/skorch)
 
 ## References
 

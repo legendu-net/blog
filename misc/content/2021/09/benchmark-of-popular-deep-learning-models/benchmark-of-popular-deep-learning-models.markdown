@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-09-16 11:21:11
-Modified: 2021-09-16 11:37:51
+Modified: 2021-09-16 13:21:39
 Author: Benjamin Du
 Slug: benchmark-of-popular-deep-learning-models
 Title: Benchmark of Popular Deep Learning Models
@@ -11,9 +11,9 @@ Tags: Computer Science, data science, AI, machine learning, deep learning
 
 ## Memory 
 
-1. ResNet 152 can be train with 8G GPU memory,
-    however,
-    deeper ResNet does not fit into 8G GPU memory.
+1. ResNet152 inferencing requies about (a little bit less than) 2G GPU memory
+    and training can be done with 8G GPU memory (need to set a small batch size).
+    Deeper ResNet cannot be trained with 8G GPU memory.
 
 ## Speed
 

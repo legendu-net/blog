@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-04-10 12:17:46
-Modified: 2021-07-28 13:39:34
+Modified: 2021-09-18 00:48:46
 Author: Benjamin Du
 Slug: rust-tips
 Title: Tips on Rust
@@ -96,6 +96,11 @@ https://skipworth.io/posts/rust-wc-threads/
 https://crates.io/crates/scoped-threadpool
 
 ## [Rust GUI](http://www.legendu.net/misc/blog/develop-a-gui-application-in-rust)
+
+## Optimize Compiling of Rust Projects
+
+[Fast Rust Builds](https://matklad.github.io/2021/09/04/fast-rust-builds.html)
+has a detailed discuss on how to optimize the compiling time of rust projects.
 
 ## Cool Rust Projects
 

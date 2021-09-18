@@ -1,14 +1,18 @@
 Status: published
 Date: 2020-09-02 09:22:34
+Modified: 2021-09-17 11:35:17
 Author: Benjamin Du
 Slug: shell-equivalent-in-different-operating-systems
 Title: Shell Equivalent in Different Operating Systems
 Category: Computer Science
 Tags: Computer Science, OS, Linux, macOS, Windows, Shell, PowerShell
-Modified: 2021-09-08 23:41:25
-PowerShell examples are used for Windows in the table below.
 
-It is suggested that you use Linux commands when possible 
+It suggested that you use IPython shell instead of Bash/Zsh shells.
+Please refer to 
+[IPython Is the Best Shell](http://www.legendu.net/en/blog/ipython-is-the-best-shell/)
+for detailed discussions.
+If you have to use shell commands,
+it is suggested that you use Linux commands when possible 
 as Linux command are more universal and useful.
 You can achieve this by using WSL 2 on Windows 
 and by using Docker or virtual machine on macOS.
@@ -32,7 +36,7 @@ and by using Docker or virtual machine on macOS.
     </code> </td>
   </tr>
   <tr>
-    <td> Windows </td>
+    <td> Windows PowerShell </td>
     <td> <code> 
     $env:Path += ";.\swigwin-4.0.1";
     </code> </td>
@@ -88,7 +92,7 @@ and by using Docker or virtual machine on macOS.
     </code> </td>
   </tr>
   <tr>
-    <td> Windows </td>
+    <td> Windows PowerShell </td>
     <td> <code> 
     Expand-Archive .\swigwin-4.0.1.zip .;
     </code> </td>
@@ -107,7 +111,7 @@ and by using Docker or virtual machine on macOS.
     </code> </td>
   </tr>
   <tr>
-    <td> Windows </td>
+    <td> Windows PowerShell </td>
     <td> <code> 
     (New-Object System.Net.WebClient).DownloadFile("http://prdownloads.sourceforge.net/swig/swigwin-4.0.1.zip","swigwin-4.0.1.zip");
     </code> </td>
@@ -147,7 +151,7 @@ and by using Docker or virtual machine on macOS.
   <tr>
     <td> Windows </td>
     <td> 
-    fdisk via WSL 2 or virtual machine
+    fdisk (via WSL 2 or virtual machine)
     </a>
     </td>
   </tr>

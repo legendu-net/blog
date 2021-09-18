@@ -5,7 +5,7 @@ Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
 Category: Software
 Tags: software, Docker, GPU, Nvidia
-Modified: 2021-09-06 21:36:55
+Modified: 2021-09-18 16:27:20
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -100,9 +100,12 @@ Please read with your own judgement!
 
         :::shell
         nvidia-smi --query-gpu=timestamp,name,pci.bus_id,driver_version,pstate,pcie.link.gen.max,pcie.link.gen.current,temperature.gpu,utilization.gpu,utilization.memory,memory.total,memory.free,memory.used --format=csv -l 5
+
     For more discussions,
     please refer to
     [Useful nvidia-smi Queries](https://nvidia.custhelp.com/app/answers/detail/a_id/3751/~/useful-nvidia-smi-queries)
+    and 
+    [Visualize Nvidia GPU Usage](http://www.legendu.net/misc/blog/visualize-Nvidia-GPU-usage)
     .
     In additional,
     you can use the command `nvtop` to check the live usage of GPUs on Linux.

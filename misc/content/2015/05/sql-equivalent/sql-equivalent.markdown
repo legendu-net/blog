@@ -5,7 +5,7 @@ Slug: sql-equivalent
 Title: SQL Equivalent
 Category: Computer Science
 Tags: programming, SQL, database, equivalent, querying
-Modified: 2021-07-26 16:22:41
+Modified: 2021-09-17 20:17:53
 
 **
 Things on this page are
@@ -19,7 +19,7 @@ is a great tool that transalte any SQL statement(s) to a different dialetc using
 
 <div style="overflow-x:auto;">
 <style>
-    tr:nth-child(even) {background-color: #f2f2f2}
+    tr:nth-child(even) {background-color: #A3E4D7}
 </style>
 <table style="width:100%">
   <tr>
@@ -214,7 +214,7 @@ is a great tool that transalte any SQL statement(s) to a different dialetc using
   <tr>
     <td> Spark/Hive </td>
     <td> <code> 
-        DESCRIBE table_name
+        DESCRIBE [EXTENDED] table_name
     </code> </td>
   </tr>
   <tr>

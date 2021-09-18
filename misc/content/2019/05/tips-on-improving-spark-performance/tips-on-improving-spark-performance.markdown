@@ -5,7 +5,7 @@ Slug: improve-spark-performance
 Title: Improve the Performance of Spark
 Category: Computer Science
 Tags: programming, Computer Science, Spark, tuning, Spark SQL, SQL, performance, database, big data
-Modified: 2020-10-05 09:10:38
+Modified: 2021-09-17 19:29:36
 
 
 **
@@ -15,11 +15,33 @@ Please read with your own judgement!
 
 
 1. Use Parquet as the data store format.
-
     While Spark/Hive supports many different data formats, 
     Parquet is the optimal data format to use.
+    When creating a Hive table, 
+    use the Spark SQL syntax to create a Spark-based Parquet format instead of Hive-based Parquet format.
+    That is you use a query like
 
-2. Use partitioned or bucketed table (on the right columns) when the table is large (>100,000 rows).
+        :::sql
+        CREATE TABLE table_name (id Int, name String) USING Parquet
+    
+    instead of 
+
+        :::sql
+        CREATE TABLE table_name (id Int, name String) STORE AS Parquet
+    
+    or
+
+        :::sql
+        CREATE TABLE table_name (id Int, name String)
+
+    The last 2 SQL queries uses Hive-based Parquet format 
+    which might not benefit from some Spark execution optimizations.
+
+2. Use partition or bucket columns on large tables.
+    For more details discussions,
+    please refer to
+    [Partition and Bucketing in Spark](http://www.legendu.net/misc/blog/partition-bucketing-in-spark)
+    .
 
 3. Accelerate table scan by adding proper filter conditions.
 

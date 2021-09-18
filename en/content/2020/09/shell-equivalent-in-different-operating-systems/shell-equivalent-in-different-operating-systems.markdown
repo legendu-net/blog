@@ -19,7 +19,7 @@ and by using Docker or virtual machine on macOS.
 
 <div style="overflow-x:auto;">
 <style>
-    tr:nth-child(even) {background-color: #f2f2f2}
+    tr:nth-child(even) {background-color: #A3E4D7}
 </style>
 <table style="width:100%">
   <tr>

@@ -5,12 +5,60 @@ Slug: GPU-related-issues-and-solutions
 Title: GPU Related Issues and Solutions
 Category: Computer Science
 Tags: programming, GPU, issues, solutions
-Modified: 2021-09-16 11:37:51
+Modified: 2021-09-17 16:05:46
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
+
+
+## Tips
+
+1. Training a model requires significantly more CPU/GPU memories than running inference using the model. 
+
+2. torch.cuda.empty_cache() doesn't help if memory is not enough 
+
+3. It is suggested that you train deep learning models on Linux 
+(even if you can also do it on Windows).
+
+4. If neural network's performance is not improving during training,
+you can try increasing batch size or reduce learning rate.
+
+5. 8G GPU memory is too small for training large deep learning models. 
+
+Trade compute for memory using
+TORCH.UTILS.CHECKPOINT
+https://pytorch.org/docs/stable/checkpoint.html
+
+6. The consumption of GPU memory has an approximately linear relationship with the batch size used for training. 
+
+## Batch Norm Layers
+
+The momentum parameter can be tuned to 
+make the running estimates more smoothed.
+
+
+## GPU Memory
+
+The displayed memory usage by using `nvidia-smi` includes the CUDA context + the actual memory used to store tensors + cached memory + other applications.
+To get more accurate memory usage by PyTorch,
+Try to check the memory using torch.cuda.memory_allocated() and torch.cuda.memory_cached().
+
+
+You could use [Automatic Mixed Precision](https://pytorch.org/docs/stable/amp.html) to use float16, where applicable.
+
+You could use a smaller batch size and accumulate the gradients. 
+Then after a few iterations you could update the parameters using your optimizer.
+It would yield the same behavior regarding the gradients, 
+but note that other layers like BatchNorm will behave differently, 
+since they see smaller batches.
+If that’s problematic, e.g. when your batch size is really small, 
+then you could change the momentum a bit or use other normalization layers, 
+e.g. GroupNorm which should be more stable regarding smaller batch sizes.
+For more discussions,
+please refer to 
+[Why do we need to set the gradients manually to zero in pytorch?](https://discuss.pytorch.org/t/why-do-we-need-to-set-the-gradients-manually-to-zero-in-pytorch/4903)
 
 
 ## A Large Portion of GPU Memory is Already Used

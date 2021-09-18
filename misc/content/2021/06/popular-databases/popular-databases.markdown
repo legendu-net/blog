@@ -5,7 +5,7 @@ Slug: popular-databases
 Title: Popular Databases
 Category: Computer Science
 Tags: Computer Science, programming, database, MySQL, ClickHouse, TiDB, neo4j, Elasticsearch, TiDB, TDengine, Redis
-Modified: 2021-09-03 11:24:10
+Modified: 2021-09-18 00:39:33
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
@@ -46,16 +46,16 @@ Modified: 2021-09-03 11:24:10
   <tr>
     <td> 
     <a href="https://github.com/redis"> Redis </a>
-    <a href="#footnote7">[3]</a>
+    <a href="#footnote7">[4]</a>
     </td>
     <td> Opensource </td>
-    <td> In-memory caching for real-time applications </td>
+    <td> Distributed in-memory cache for real-time applications </td>
     <td> </td>
   </tr>
   <tr>
     <td> 
     <a href="https://github.com/neo4j"> neo4j </a>
-    <a href="#footnote7">[4]</a>
+    <a href="#footnote7">[5]</a>
     </td>
     <td> Opensource </td>
     <td> Graph applications </td>
@@ -64,7 +64,7 @@ Modified: 2021-09-03 11:24:10
   <tr>
     <td> 
     <a href="https://github.com/elastic"> Elasticsearch </a>
-    <a href="#footnote7">[5]</a>
+    <a href="#footnote7">[6]</a>
     </td>
     <td> Opensource </td>
     <td> Out-of-the-box search engine for large documents </td>
@@ -73,7 +73,7 @@ Modified: 2021-09-03 11:24:10
   <tr>
     <td> 
     <a href="https://github.com/taosdata/TDengine"> TDengine </a>
-    <a href="#footnote7">[5]</a>
+    <a href="#footnote7">[7]</a>
     </td>
     <td> Opensource </td>
     <td> IoT </td>
@@ -91,6 +91,19 @@ that allows generating analytical data reports in real time.
 ## MongoDB
 MongoDB is a document-oriented, disk-based database optimized 
 for operational simplicity, schema-free design and very large data volumes. 
+
+## Distributed In-memory Cache
+
+A distributed in-memory cache is essentially a distributed key-value storage/database.
+You can think it as a hashmap over network.
+
+[Redis](https://github.com/redis)
+is the most popular in-memory cache which is implemented in C.
+[memcached](https://github.com/memcached/memcached)
+is another (not so popular) in-memory cache and is also implemented in C.
+[pelikan](https://github.com/twitter/pelikan)
+is Twitter's unified cache backend
+which is implemented in C and Rust.
 
 ## References
 

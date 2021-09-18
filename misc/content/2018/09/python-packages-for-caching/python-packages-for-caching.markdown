@@ -5,7 +5,7 @@ Slug: python-packages-for-caching
 Title: Serialization and Caching in Python
 Category: Computer Science
 Tags: programming, Python, packages, caching, lru_cache, diskcache, memcached
-Modified: 2020-08-06 00:59:06
+Modified: 2021-09-18 00:20:32
 
 **
 Things on this page are

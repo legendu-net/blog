@@ -5,7 +5,7 @@ Slug: shell-equivalent-in-different-operating-systems
 Title: Shell Equivalent in Different Operating Systems
 Category: Computer Science
 Tags: Computer Science, OS, Linux, macOS, Windows, Shell, PowerShell
-Modified: 2021-09-08 23:41:25
+Modified: 2021-09-17 19:53:17
 PowerShell examples are used for Windows in the table below.
 
 It is suggested that you use Linux commands when possible 
@@ -15,7 +15,7 @@ and by using Docker or virtual machine on macOS.
 
 <div style="overflow-x:auto;">
 <style>
-    tr:nth-child(even) {background-color: #f2f2f2}
+    tr:nth-child(even) {background-color: #A3E4D7}
 </style>
 <table style="width:100%">
   <tr>

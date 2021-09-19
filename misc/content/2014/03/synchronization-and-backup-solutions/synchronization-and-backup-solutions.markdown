@@ -5,7 +5,7 @@ Date: 2014-03-04 22:11:05
 Slug: synchronization-and-backup-solutions
 Category: Software
 Tags: software, synchronization, backup, Baidu Yun, Dropbox, TeamDrive, Syncthing
-Modified: 2021-09-08 23:54:24
+Modified: 2021-09-19 12:03:07
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -35,7 +35,8 @@ Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
     <th> Name </th>
     <th> Opensource/free </th>
     <th> OS </th>
-    <th> Type </th>
+    <th> GUI/CLI </th>
+    <th> Sync/Backup </th>
     <th> Directly Accessible from Mainland of China </th>
     <th> Comments </th>
   </tr>
@@ -45,6 +46,7 @@ Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
     </td>
     <td> free for 3 devices and 2G space  </td>
     <td> Windows, macOS, Linux </td>
+    <td> GUI </td>
     <td> Sync </td>
     <td> No </td>
     <td> 
@@ -55,10 +57,11 @@ Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
   </tr>
   <tr>
     <td> 
-    <a href="https://www.dropbox.com/"> Baidu Net Disk </a>
+    <a href="https://pan.baidu.com/disk/home"> Baidu Net Disk </a>
     </td>
     <td> free for 2T space and limited download speed  </td>
     <td> Windows, macOS, Linux </td>
+    <td> GUI </td>
     <td> Sync </td>
     <td> Yes </td>
     <td> 
@@ -67,10 +70,11 @@ Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
   </tr>
   <tr>
     <td> 
-    <a href=""> TeamDrive </a>
+    <a href="https://synqion.com/"> Synqion (TeamDrive) </a>
     </td>
     <td> free for 2G space </td>
     <td> Windows, macOS, Linux </td>
+    <td> GUI </td>
     <td> Sync </td>
     <td> Yes </td>
     <td> 
@@ -81,10 +85,11 @@ Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
   </tr>
   <tr>
     <td> 
-    <a href=""> Syncthing </a>
+    <a href="https://syncthing.net/"> Syncthing </a>
     </td>
     <td> free </td>
     <td> Windows, macOS, Linux </td>
+    <td> Both </td>
     <td> Sync </td>
     <td> Yes </td>
     <td> 
@@ -95,10 +100,11 @@ Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
   </tr>
   <tr>
     <td> 
-    <a href=""> Google Drive </a>
+    <a href="https://www.google.com/drive/"> Google Drive </a>
     </td>
     <td> free for 15G space </td>
     <td> Windows, macOS </td>
+    <td> GUI </td>
     <td> Sync </td>
     <td> No </td>
     <td> 
@@ -107,10 +113,11 @@ Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
   </tr>
   <tr>
     <td> 
-    <a href=""> OneDrive </a>
+    <a href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage"> OneDrive </a>
     </td>
     <td> free for 15G space </td>
     <td> Windows, macOS </td>
+    <td> GUI </td>
     <td> Sync </td>
     <td> No </td>
     <td> 
@@ -119,10 +126,11 @@ Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
   </tr>
   <tr>
     <td> 
-    <a href=""> NAS / NFS </a>
+    <a> NAS / NFS </a>
     </td>
     <td> free </td>
     <td> Windows, macOS, Linux </td>
+    <td> Both </td>
     <td> network file system </td>
     <td> Yes </td>
     <td> 
@@ -133,10 +141,25 @@ Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
   </tr>
   <tr>
     <td> 
-    <a href=""> Unison </a>
+    <a href="https://mutagen.io/"> Mutagen </a>
     </td>
     <td> Opensource </td>
     <td> Windows, macOS, Linux </td>
+    <td> CLI </td>
+    <td> sync </td>
+    <td> Yes </td>
+    <td> 
+    1. fast file synchronization;
+    2. network forwarding 
+    </td>
+  </tr>
+  <tr>
+    <td> 
+    <a href="https://github.com/bcpierce00/unison"> Unison </a>
+    </td>
+    <td> Opensource </td>
+    <td> Windows, macOS, Linux </td>
+    <td> CLI </td>
     <td> 2-way sync </td>
     <td> Yes </td>
     <td> 
@@ -149,6 +172,7 @@ Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
     </td>
     <td> Opensource </td>
     <td> Windows, macOS, Linux </td>
+    <td> CLI </td>
     <td> 2-way sync </td>
     <td> Yes </td>
     <td> 
@@ -157,10 +181,11 @@ Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
   </tr>
   <tr>
     <td> 
-    <a href=""> Rsnapshot </a>
+    <a href="https://github.com/rsnapshot/rsnapshot"> Rsnapshot </a>
     </td>
     <td> free </td>
     <td> Windows, macOS, Linux </td>
+    <td> CLI </td>
     <td> Backup </td>
     <td> Yes </td>
     <td> 
@@ -171,10 +196,11 @@ Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
   </tr>
   <tr>
     <td> 
-    <a href=""> duplicity </a>
+    <a href="http://www.nongnu.org/duplicity/"> duplicity </a>
     </td>
     <td> free </td>
     <td> Windows, macOS, Linux </td>
+    <td> CLI </td>
     <td> Backup </td>
     <td> Yes </td>
     <td> 
@@ -184,10 +210,11 @@ Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
   </tr>
   <tr>
     <td> 
-    <a href=""> backupPC </a>
+    <a href="https://github.com/backuppc/backuppc"> backupPC </a>
     </td>
     <td> free </td>
     <td> Windows, macOS, Linux </td>
+    <td> ? </td>
     <td> Backup </td>
     <td> Yes </td>
     <td> 
@@ -196,10 +223,11 @@ Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
   </tr>
   <tr>
     <td> 
-    <a href=""> Bacula </a>
+    <a href="https://www.bacula.org/"> Bacula </a>
     </td>
     <td> Opensource </td>
     <td> Windows, macOS, Linux </td>
+    <td> ? </td>
     <td> Backup </td>
     <td> Yes </td>
     <td> 

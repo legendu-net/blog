@@ -416,6 +416,7 @@ class Post:
             fout.writelines(f"Category: {CATEGORY}\n")
             fout.writelines(f"Tags: {TAGS}\n")
             if self.blog_dir() == MISC:
+                fout.writelines("\n")
                 fout.writelines(DISCLAIMER)
 
     @staticmethod

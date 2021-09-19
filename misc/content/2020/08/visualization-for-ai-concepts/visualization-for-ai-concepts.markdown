@@ -5,12 +5,25 @@ Slug: visualization-for-ai-concepts
 Title: Visualization for AI Concepts
 Category: Computer Science
 Tags: Computer Science, AI, concept, visualization, data science, machine learning, shap, visual, design, neural network, deep learning
-Modified: 2021-09-19 13:50:06
+Modified: 2021-09-19 14:00:55
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
+
+Tools for (approximately) visualizing the architures of existing neural networks
+or for visualizing the traing process (training/validation loss/accuracy, activation, etc.)
+are extremely helpful!
+However,
+I personally don't think visual neural network design platforms/frameworks are of any practical value.
+The reason is that average users won't care that much about the architecture design of neural networks,
+but instead they just use pretrained models or fine tune them.
+When users (mainly researchers) need to twist the architecture of an existing neural work
+or design an new neural network,
+visual neural network design tools are not able to provide the kind of customization and control of complicated neural network architectures. 
+It would much easier to customize or design a neural network using coding.
+
 
 [Exploring Neural Networks with Activation Atlases](https://distill.pub/2019/activation-atlas/)
 

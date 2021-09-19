@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-04-10 12:17:46
-Modified: 2021-09-18 00:48:46
+Modified: 2021-09-18 18:49:52
 Author: Benjamin Du
 Slug: rust-tips
 Title: Tips on Rust
@@ -129,6 +129,8 @@ https://github.com/valeriansaliou/sonic
 [Rust Crash Course | Rustlang](https://www.youtube.com/watch?v=zF34dRivLOw)
 
 https://github.com/rust-unofficial/awesome-rust
+
+https://kerkour.com/
 
 ## References
 

@@ -418,6 +418,7 @@ class Post:
             if self.blog_dir() == MISC:
                 fout.writelines("\n")
                 fout.writelines(DISCLAIMER)
+                fout.writelines("\n")
 
     @staticmethod
     def _replace_meta(title, slug, category, tags) -> str:

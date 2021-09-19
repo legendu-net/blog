@@ -5,7 +5,7 @@ Slug: spacevim-tips
 Title: SpaceVim - A Modern Vim Distribution
 Category: Software
 Tags: software, SpaceVim, Vim, tips
-Modified: 2021-09-08 19:35:47
+Modified: 2021-09-19 11:38:04
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -166,3 +166,5 @@ merged = false
 ## References
 
 - [SpaceVim Documentation](https://spacevim.org/documentation/)
+
+- [Disable the Checkers Layer in SpaceVim](http://www.legendu.net/misc/blog/disable-the-checkers-layer-in-spacevi)

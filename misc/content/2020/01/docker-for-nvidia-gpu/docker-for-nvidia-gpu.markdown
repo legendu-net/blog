@@ -5,7 +5,7 @@ Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
 Category: Software
 Tags: software, Docker, GPU, Nvidia
-Modified: 2021-09-18 16:27:20
+Modified: 2021-09-19 21:19:46
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -141,7 +141,3 @@ https://github.com/floydhub/dockerfiles
 - https://github.com/NVIDIA/nvidia-docker#ubuntu-16041804-debian-jessiestretchbuster
 
 - [How Do I Install the Nvidia Driver](https://github.com/NVIDIA/nvidia-docker/wiki/Frequently-Asked-Questions#how-do-i-install-the-nvidia-driver).
-
-- https://www.linuxuprising.com/2019/06/2-tools-for-monitoring-nvidia-gpus-on.html
-
-- [How to measure GPU usage?](https://askubuntu.com/questions/387594/how-to-measure-gpu-usage)

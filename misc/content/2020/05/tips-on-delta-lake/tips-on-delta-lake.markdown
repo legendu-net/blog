@@ -5,7 +5,7 @@ Slug: tips-on-delta-lake
 Title: Tips on Delta Lake
 Category: Computer Science
 Tags: Computer Science, big data, Spark, delta lake, Databricks
-Modified: 2020-06-19 19:49:16
+Modified: 2021-09-20 11:12:54
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -13,6 +13,25 @@ Please read with your own judgement!
 **
 
 ![Delta Lake](https://miro.medium.com/max/1400/1*EQsNOZqNPsx5eelVJRh9jQ.png)
+
+## Delta Table 
+
+convert to delta [db_name.]table_name
+[partitioned by ...]
+[vacuum [retain number hours]]
+
+vaccum 
+
+describe history db_name.table_name
+
+can select from historical snapshot 
+can also rollback to a historical snapshot 
+rollback is kind of dangerous as once rollback,
+commits after the rollback version are remove so that you cannot undo the rollback!
+
+
+
+## References 
 
 [Delta Lake PySpark Examples](https://github.com/delta-io/delta/tree/master/examples/python)
 

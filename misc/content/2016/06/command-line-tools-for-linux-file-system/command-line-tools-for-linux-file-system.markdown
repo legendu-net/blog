@@ -5,7 +5,7 @@ Slug: command-line-tools-for-linux-file-system
 Title: Command Line Tools for Linux File System
 Category: OS
 Tags: Linux, file system, filesystem, shell, terminal, command line
-Modified: 2021-08-02 09:19:26
+Modified: 2021-09-20 17:08:25
 
 **
 Things on this page are
@@ -45,3 +45,11 @@ for the macOS version.
         dd if=... of=... bs=1M; sync
 
 6. badblocks
+
+7. lsblk
+
+## References 
+
+[How To – Linux List Disk Partitions Command](https://www.cyberciti.biz/faq/linux-list-disk-partitions-command/)
+
+[10 Commands to Check Disk Partitions and Disk Space on Linux](https://www.binarytides.com/linux-command-check-disk-partitions/)

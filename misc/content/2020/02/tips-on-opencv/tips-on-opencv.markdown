@@ -5,7 +5,7 @@ Slug: tips-on-opencv
 Title: Tips on OpenCV
 Category: Computer Science
 Tags: programming, OpenCV, tips, computer vision, CV
-Modified: 2021-08-13 17:59:32
+Modified: 2021-09-20 13:19:39
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -25,7 +25,7 @@ If you have
 you can install OpenCV for Python with the following single command.
 
     :::bash
-    xinstall --sudo cv2 -ic
+    xinstall --sudo cv -ic
 
 ## Examples
 

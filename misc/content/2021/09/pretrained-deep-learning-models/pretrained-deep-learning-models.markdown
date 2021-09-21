@@ -9,6 +9,7 @@ Tags: Computer Science, Deep Learning, AI, machine learning, data science
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-1. torchvision has pretrained models
+1. [torchvision pretrained models](https://pytorch.org/vision/stable/models.html)
 
-[Model Zoo](https://modelzoo.co/)
+2. [Model Zoo](https://modelzoo.co/)
+

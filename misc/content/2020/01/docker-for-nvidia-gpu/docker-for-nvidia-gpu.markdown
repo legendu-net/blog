@@ -5,7 +5,7 @@ Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
 Category: Software
 Tags: software, Docker, GPU, Nvidia
-Modified: 2021-09-19 21:19:46
+Modified: 2021-09-20 21:03:00
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -118,7 +118,6 @@ Please read with your own judgement!
 
 ## Docker & Ubuntu Repositories
 
-https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64/
 
 [nvidia/cuda:11.0-cudnn-base-ubuntu20.04](https://gitlab.com/nvidia/container-images/cuda/-/blob/master/dist/11.0/ubuntu20.04-x86_64/base/Dockerfile)
 
@@ -126,7 +125,9 @@ https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/
 
 [nvidia/cuda:11.0-cudnn-devel-ubuntu20.04](https://gitlab.com/nvidia/container-images/cuda/-/blob/master/dist/11.0/ubuntu20.04-x86_64/devel/Dockerfile)
 
-https://github.com/floydhub/dockerfiles
+[Docker Images - FloydHub](https://github.com/floydhub/dockerfiles)
+
+[Docker Image - Kaggle](https://github.com/Kaggle/docker-python)
 
 ## References
 
@@ -141,3 +142,5 @@ https://github.com/floydhub/dockerfiles
 - https://github.com/NVIDIA/nvidia-docker#ubuntu-16041804-debian-jessiestretchbuster
 
 - [How Do I Install the Nvidia Driver](https://github.com/NVIDIA/nvidia-docker/wiki/Frequently-Asked-Questions#how-do-i-install-the-nvidia-driver).
+
+- https://developer.download.nvidia.com/compute/machine-learning/repos/

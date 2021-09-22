@@ -5,7 +5,7 @@ Slug: visualization-for-ai-concepts
 Title: Visualization for AI Concepts
 Category: Computer Science
 Tags: Computer Science, AI, concept, visualization, data science, machine learning, shap, visual, design, neural network, deep learning
-Modified: 2021-09-21 22:23:55
+Modified: 2021-09-21 22:28:54
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -36,12 +36,12 @@ it can also be used with PyTorch.
 
 ### ModuleNotFoundError: No module named 'past'
 
-When you call `WriterSummary.add_graph` to add a graph to TensorBoard, 
+When you call `SummaryWriter.add_graph` to add a graph to TensorBoard, 
 it might throw the error "ModuleNotFoundError: No module named 'past'"
 due to a few causes.
 One case of the error that I encounted was due to passing an object which is not a PyTorch model.
 The object was a customized trainer class which wraps a model. 
-Pass the innter wrapped model to `WriterSummary.add_graph` solved the problem.
+Pass the innter wrapped model to `SummaryWriter.add_graph` solved the problem.
 
 ## Other Useful Visualization Tools
 

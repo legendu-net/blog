@@ -5,7 +5,7 @@ Slug: visualization-for-ai-concepts
 Title: Visualization for AI Concepts
 Category: Computer Science
 Tags: Computer Science, AI, concept, visualization, data science, machine learning, shap, visual, design, neural network, deep learning
-Modified: 2021-09-21 22:28:54
+Modified: 2021-09-21 22:53:19
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -33,6 +33,13 @@ it can also be used with PyTorch.
 [Visualizing Models, Data, and Training with Tensorboard](https://pytorch.org/tutorials/intermediate/tensorboard_tutorial.html)
 
 [torch.utils.tensorboard](https://pytorch.org/docs/stable/tensorboard.html?highlight=tensorboard)
+
+### Add Non-matplotlib Figures
+
+1. Make a plot use your favorite visualization library.
+2. Save the plot to a PNG image.
+3. Load the image. 
+4. Add it to TensorBoard using `SummaryWriter.add_image`.
 
 ### ModuleNotFoundError: No module named 'past'
 

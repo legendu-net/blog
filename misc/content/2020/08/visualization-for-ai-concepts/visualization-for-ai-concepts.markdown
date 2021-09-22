@@ -5,7 +5,7 @@ Slug: visualization-for-ai-concepts
 Title: Visualization for AI Concepts
 Category: Computer Science
 Tags: Computer Science, AI, concept, visualization, data science, machine learning, shap, visual, design, neural network, deep learning
-Modified: 2021-09-19 14:00:55
+Modified: 2021-09-21 22:23:55
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -15,6 +15,7 @@ Please read with your own judgement!
 Tools for (approximately) visualizing the architures of existing neural networks
 or for visualizing the traing process (training/validation loss/accuracy, activation, etc.)
 are extremely helpful!
+TensorBoard is one of the best tools for this purpose.
 However,
 I personally don't think visual neural network design platforms/frameworks are of any practical value.
 The reason is that average users won't care that much about the architecture design of neural networks,
@@ -24,52 +25,61 @@ or design an new neural network,
 visual neural network design tools are not able to provide the kind of customization and control of complicated neural network architectures. 
 It would much easier to customize or design a neural network using coding.
 
+## Use TensorBoard to Visualize PyTorch Training Process
+
+Even though TensorBoard was develop for TensorFlow in the beginning,
+it can also be used with PyTorch. 
+
+[Visualizing Models, Data, and Training with Tensorboard](https://pytorch.org/tutorials/intermediate/tensorboard_tutorial.html)
+
+[torch.utils.tensorboard](https://pytorch.org/docs/stable/tensorboard.html?highlight=tensorboard)
+
+### ModuleNotFoundError: No module named 'past'
+
+When you call `WriterSummary.add_graph` to add a graph to TensorBoard, 
+it might throw the error "ModuleNotFoundError: No module named 'past'"
+due to a few causes.
+One case of the error that I encounted was due to passing an object which is not a PyTorch model.
+The object was a customized trainer class which wraps a model. 
+Pass the innter wrapped model to `WriterSummary.add_graph` solved the problem.
+
+## Other Useful Visualization Tools
+
+1. [A Visual Production to Probability and Statistics](https://seeing-theory.brown.edu/)
+
+2. [slundberg/shap](https://github.com/slundberg/shap)
+    is a Python library 
+    providing a unified approach to explain the output of any machine learning model.
+
+3. [ResidentMario/missingno](https://github.com/ResidentMario/missingno)
+    is a Python library 
+    for missing data visualization.
+
+
+## Alternative Visual AI Tools
+
+1. [Nvidia Digits](https://developer.nvidia.com/digits)
+
+2. [visdom](https://github.com/fossasia/visdom) 
+    is a flexible tool for creating, organizing, and sharing visualizations of live, rich data. 
+    It supports Torch and Numpy.
+
+3. [Deep Learning Studio](https://deepcognition.ai/deep-learning-studio/)
+    let users build AI deep learning models without coding.
+
+4. [Design, Train & Share AI Models from your browser](https://aifiddle.io/)
+
+5. [PrototypeML](https://prototypeml.com/)
+    is a powerful & intuitive visual neural network design platform for PyTorch.
+
+## Python Libraries
+
+### [pydot/pydot](https://github.com/pydot/pydot)
+
+## References
 
 [Exploring Neural Networks with Activation Atlases](https://distill.pub/2019/activation-atlas/)
 
 [Tools to Design or Visualize Architecture of Neural Network](https://github.com/ashishpatel26/Tools-to-Design-or-Visualize-Architecture-of-Neural-Network)
 
 [Nvidia Digits](https://developer.nvidia.com/digits)
-
-## Web Sites 
-
-https://seeing-theory.brown.edu/
-
-## Desgin a Neural Network Visually
-
-[Deep Learning Studio](https://deepcognition.ai/deep-learning-studio/)
-let users build AI deep learning models without coding.
-
-[Design, Train & Share AI Models from your browser](https://aifiddle.io/)
-
-[Nvidia Digits](https://developer.nvidia.com/digits)
-
-[PrototypeML](https://prototypeml.com/)
-is a powerful & intuitive visual neural network design platform for PyTorch.
-
-
-## Visualize Training/Validation Loss/Accuracy
-
-[Visualizing Models, Data, and Training with Tensorboard](https://pytorch.org/tutorials/intermediate/tensorboard_tutorial.html)
-
-[torch.utils.tensorboard](https://pytorch.org/docs/stable/tensorboard.html?highlight=tensorboard)
-
-[visdom](https://github.com/fossasia/visdom) 
-is a flexible tool for creating, organizing, and sharing visualizations of live, rich data. 
-It supports Torch and Numpy.
-
-
-
-## Python Libraries
-
-### [pydot/pydot](https://github.com/pydot/pydot)
-
-### [slundberg/shap](https://github.com/slundberg/shap)
-
-A unified approach to explain the output of any machine learning model.
-
-### [ResidentMario/missingno](https://github.com/ResidentMario/missingno)
-
-Missing data visualization module for Python.
-
-## References

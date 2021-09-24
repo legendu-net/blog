@@ -5,7 +5,7 @@ Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
 Category: Software
 Tags: software, Docker, GPU, Nvidia
-Modified: 2021-09-20 21:03:00
+Modified: 2021-09-24 10:33:37
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -116,18 +116,21 @@ Please read with your own judgement!
         :::bash
         apt-get install nvtop
 
-## Docker & Ubuntu Repositories
+## Docker Imges
 
+Below are a few good examples of Docker images supporting Nvidia GPU.
 
-[nvidia/cuda:11.0-cudnn-base-ubuntu20.04](https://gitlab.com/nvidia/container-images/cuda/-/blob/master/dist/11.0/ubuntu20.04-x86_64/base/Dockerfile)
+- [dclong/docker-jupyterhub-pytorch](https://github.com/dclong/docker-jupyterhub-pytorch)
 
-[nvidia/cuda:11.0-cudnn-runtime-ubuntu20.04](https://gitlab.com/nvidia/container-images/cuda/-/blob/master/dist/11.0/ubuntu20.04-x86_64/runtime/Dockerfile)
+- [nvidia/cuda:11.0-cudnn-base-ubuntu20.04](https://gitlab.com/nvidia/container-images/cuda/-/blob/master/dist/11.0/ubuntu20.04-x86_64/base/Dockerfile)
 
-[nvidia/cuda:11.0-cudnn-devel-ubuntu20.04](https://gitlab.com/nvidia/container-images/cuda/-/blob/master/dist/11.0/ubuntu20.04-x86_64/devel/Dockerfile)
+- [nvidia/cuda:11.0-cudnn-runtime-ubuntu20.04](https://gitlab.com/nvidia/container-images/cuda/-/blob/master/dist/11.0/ubuntu20.04-x86_64/runtime/Dockerfile)
 
-[Docker Images - FloydHub](https://github.com/floydhub/dockerfiles)
+- [nvidia/cuda:11.0-cudnn-devel-ubuntu20.04](https://gitlab.com/nvidia/container-images/cuda/-/blob/master/dist/11.0/ubuntu20.04-x86_64/devel/Dockerfile)
 
-[Docker Image - Kaggle](https://github.com/Kaggle/docker-python)
+- [Docker Images - FloydHub](https://github.com/floydhub/dockerfiles)
+
+- [Docker Image - Kaggle](https://github.com/Kaggle/docker-python)
 
 ## References
 

@@ -1,13 +1,13 @@
 Status: published
 Date: 2021-09-09 12:18:40
-Modified: 2021-09-09 12:45:13
+Modified: 2021-09-24 11:02:41
 Author: Benjamin Du
 Slug: wsl-2-filesystem
 Title: WSL2 Filesystem
 Category: Computer Science
 Tags: Computer Science, software, tools, WSL 2, filesystem, file system
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 
 ## Performance Issue
 
@@ -44,5 +44,7 @@ please refer to the section "Mount Disk into WSL 2".
 1. Open Windows explore.
 2. Type in `\\wsl` in the address bar.
 3. Click into the right directory to access files.
+
+## References
 
 https://devblogs.microsoft.com/commandline/access-linux-filesystems-in-windows-and-wsl-2/

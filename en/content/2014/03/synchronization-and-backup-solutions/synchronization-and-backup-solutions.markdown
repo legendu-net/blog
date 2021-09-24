@@ -5,7 +5,7 @@ Date: 2014-03-04 22:11:05
 Slug: synchronization-and-backup-solutions
 Category: Software
 Tags: software, synchronization, backup, Baidu Yun, Dropbox, TeamDrive, Syncthing
-Modified: 2021-09-19 12:03:07
+Modified: 2021-09-24 10:52:17
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -20,15 +20,10 @@ Please read with your own judgement!
     If not followed then symbolic links are likely broken on other device.
     The simple suggestion is do not place symbolic links in your synchronization folders.
 
-2. Backup large non-privacy files on Baidu Yun or Wei Yun.
-
-2. Backup large privacy critial files on Mega or encrypt them first and then backup to Baidu Yun or Wei Yun.
-
-3. Build a local home server (e.g., using NFS or SAMBA) for sharing files.
-
-1. Among non-native sync & backup apps TeamDrive, Mega Sync, OneDrive (official client) are usable in mainland of China.
-
-Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
+2. Backup (relatively) small files to Dropbox (or a similar tool),
+  and Backup large non-privacy files on Baidu Yun.
+  If a large file is sensitive, 
+  encrypt it first before uploding it to Baidu Yun.
 
 <table style="width:100%">
   <tr>
@@ -238,15 +233,7 @@ Dropbox, TeamDrive, Mega, Syncthing, Baidu Yun, Wei Yun
 
 ## References
 
-https://alliance.seas.upenn.edu/~bcpierce/wiki/?n=Main.UnisonFAQTips
+- [How to synchronize files between two servers bidirectionally](http://xmodulo.com/synchronize-files-between-two-servers.html)
 
-http://xmodulo.com/synchronize-files-between-two-servers.html
-
-http://superuser.com/questions/31512/how-to-synchronize-the-home-folder-between-multiple-computers
-
-csync: https://www.csync.org/
-
-http://thanhsiang.org/faqing/node/192
-
-http://fak3r.com/2009//howto-build-your-own-open-source-dropbox-clone/ 14.09.2016
+- [csync](https://www.csync.org/)
 

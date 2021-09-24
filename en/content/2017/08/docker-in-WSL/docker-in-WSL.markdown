@@ -5,7 +5,7 @@ Slug: docker-in-WSL2
 Title: Docker in WSL 2
 Category: Software
 Tags: software, Docker, WSL, WSL 2, Windows, Bash, BashOnWindows, Bash on Windows
-Modified: 2021-09-09 12:22:54
+Modified: 2021-09-24 11:01:29
 
 **
 Things on this page are
@@ -48,16 +48,12 @@ Please read with your own judgement!
     2. Check the checkbox "Use the WSL 2 based engine" in the general tab.
     3. Click "Apply & Restart".
 
-    ![docker-wsl2-engine](https://docs.docker.com/docker-for-windows/images/wsl2-enable.png)
+    ![docker-wsl2-engine](https://docs.docker.com/desktop/windows/images/wsl2-enable.png)
 
 For more details,
 please refer to
 [Docker Desktop WSL 2 backend](https://docs.docker.com/docker-for-windows/wsl/)
 .
-
-## Related Articles 
-
-[Running Docker containers on Bash on Windows](https://blog.jayway.com/2017/04/19/running-docker-on-bash-on-windows/)
 
 ## References
 

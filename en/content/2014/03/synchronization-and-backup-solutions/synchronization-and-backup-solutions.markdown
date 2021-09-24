@@ -5,12 +5,7 @@ Date: 2014-03-04 22:11:05
 Slug: synchronization-and-backup-solutions
 Category: Software
 Tags: software, synchronization, backup, Baidu Yun, Dropbox, TeamDrive, Syncthing
-Modified: 2021-09-24 10:52:17
-
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+Modified: 2021-09-24 12:14:58
 
 ## Tips and Traps
 

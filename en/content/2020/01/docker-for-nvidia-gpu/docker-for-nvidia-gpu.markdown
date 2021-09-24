@@ -5,13 +5,7 @@ Slug: docker-for-nvidia-gpu
 Title: Docker for Nvidia GPU
 Category: Software
 Tags: software, Docker, GPU, Nvidia
-Modified: 2021-09-24 10:33:37
-
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
-
+Modified: 2021-09-24 12:14:10
 
 ## Instruction on Using Nvidia GPU (CUDA) for Computing in Docker
 

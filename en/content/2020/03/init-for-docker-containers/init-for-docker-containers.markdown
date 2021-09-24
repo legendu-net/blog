@@ -32,17 +32,10 @@ The [s6-overlay-builder](https://github.com/just-containers/s6-overlay)
 project is a series of init scripts and utilities to ease creating Docker images using s6 as a process supervisor.
 
 
-## [tini](https://github.com/krallin/tini)
-A tiny but valid `init` for containers
-
-## [dumb-init](https://github.com/Yelp/dumb-init)
-
-A minimal init system for Linux containers.
-
 ## References
 
-https://docs.docker.com/engine/reference/commandline/run/
+- https://docs.docker.com/engine/reference/commandline/run/
 
-https://github.com/krallin/tini
+- https://github.com/krallin/tini
 
-[Supervisor with Docker: Lessons learned](https://advancedweb.hu/supervisor-with-docker-lessons-learned/)
+- [Supervisor with Docker: Lessons learned](https://advancedweb.hu/supervisor-with-docker-lessons-learned/)

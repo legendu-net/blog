@@ -1,13 +1,13 @@
 Status: published
 Date: 2021-07-20 17:09:59
-Modified: 2021-09-14 11:32:20
+Modified: 2021-09-24 11:47:55
 Author: Benjamin Du
 Slug: build-docker-images-using-kaniko
 Title: Build Docker Images Using Kaniko
 Category: Computer Science
 Tags: Computer Science, programming, Kaniko, Docker, build, image, buildah
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 
 1. Kaniko works differently from Docker. 
     It runs inside a Docker container and detect and extract new layers to build Docker images. 
@@ -58,16 +58,20 @@ Tags: Computer Science, programming, Kaniko, Docker, build, image, buildah
     it is doable with the Docker image
     `gcr.io/kaniko-project/executor:debug`.
     Basically,
-    you have to define a command which runs forever for the container.
-    The simplest way is to run the shell command `tail -f /dev/null`,
+    you have to define a Kubernetes command (entrypoint in Docker) 
+    which runs forever for the container.
+    A simple shell command that runs forever is `tail -f /dev/null`,
     so you can define the command as 
-    `["/busybox/sh", "-c", "tail -f /dev/null"]`
+    `["tail", "-f", "/dev/null"]`
     .
-    Notice that using 
+    The above command implicity invokes `/busybox/sh`.
+    If you'd like to invoke `/busybox/sh` directly,
+    make sure to use
+    `["/busybox/sh", "-c", "tail -f /dev/null"]`
+    instead of
     `["/busybox/sh", "-c", "tail", "-f", "/dev/null"]`
-    as the command won't work 
-    even if `docker run --entrypoint /busybox/sh gcr.io/kaniko-project/executor:debug -c tail -f /dev/null` runs OK.
-    A much simpler way is to directly define `["tail", "-f", "/dev/null"]` as the command.
+    as the latter one won't work with Kubernetes
+    even if `docker run --entrypoint /busybox/sh gcr.io/kaniko-project/executor:debug -c tail -f /dev/null` runs OK locally.
 
 2. The credential file `config.json` for authentication 
     should be mounted to `/kaniko/.docker/config.json` 
@@ -119,10 +123,12 @@ Tags: Computer Science, programming, Kaniko, Docker, build, image, buildah
 ## Connection Reset by Peer
 
 `--image-fs-extract-retry=2` (need a version > 1.6.0)
+
 `--push-retry=2`
 
 What seems to help is the following annotations for the registry Nginx Ingress (taken from the Gitlab Helm chart):
 
+    :::json
     nginx.ingress.kubernetes.io/proxy-body-size: "0"
     nginx.ingress.kubernetes.io/proxy-read-timeout: "900"
     nginx.ingress.kubernetes.io/proxy-request-buffering: "off"
@@ -138,14 +144,14 @@ What seems to help is the following annotations for the registry Nginx Ingress (
 
 ## References
 
-[Introducing kaniko: Build container images in Kubernetes and Google Container Builder without privileges](https://cloud.google.com/blog/products/containers-kubernetes/introducing-kaniko-build-container-images-in-kubernetes-and-google-container-builder-even-without-root-access)
+- [Introducing kaniko: Build container images in Kubernetes and Google Container Builder without privileges](https://cloud.google.com/blog/products/containers-kubernetes/introducing-kaniko-build-container-images-in-kubernetes-and-google-container-builder-even-without-root-access)
 
-[Official Kaniko Dockerfile](https://github.com/GoogleContainerTools/kaniko/blob/master/deploy/Dockerfile)
+- [Official Kaniko Dockerfile](https://github.com/GoogleContainerTools/kaniko/blob/master/deploy/Dockerfile)
 
-[A quick look at Google's Kaniko project](https://blog.alexellis.io/quick-look-at-google-kaniko/)
+- [A quick look at Google's Kaniko project](https://blog.alexellis.io/quick-look-at-google-kaniko/)
 
-[Use kaniko to build Docker images](https://docs.gitlab.com/ee/ci/docker/using_kaniko.html)
+- [Use kaniko to build Docker images](https://docs.gitlab.com/ee/ci/docker/using_kaniko.html)
 
-[Best practices for running Buildah in a container](https://developers.redhat.com/blog/2019/08/14/best-practices-for-running-buildah-in-a-container)
+- [Best practices for running Buildah in a container](https://developers.redhat.com/blog/2019/08/14/best-practices-for-running-buildah-in-a-container)
 
-[Building Container Image inside Container using Buildah](https://insujang.github.io/2020-11-09/building-container-image-inside-container-using-buildah/)
+- [Building Container Image inside Container using Buildah](https://insujang.github.io/2020-11-09/building-container-image-inside-container-using-buildah/)

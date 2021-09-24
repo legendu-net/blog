@@ -7,7 +7,7 @@ Title: Run Docker Containers Inside a Docker Container
 Category: Computer Science
 Tags: Computer Science, programming, Docker, container, socks, container in container
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 
 You can run Docker containers inside a Docker container. 
 To allow this,

@@ -5,7 +5,7 @@ Slug: visualization-for-ai-concepts
 Title: Visualization for AI Concepts
 Category: Computer Science
 Tags: Computer Science, AI, concept, visualization, data science, machine learning, shap, visual, design, neural network, deep learning
-Modified: 2021-09-21 22:53:19
+Modified: 2021-09-23 22:08:34
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -49,6 +49,10 @@ due to a few causes.
 One case of the error that I encounted was due to passing an object which is not a PyTorch model.
 The object was a customized trainer class which wraps a model. 
 Pass the innter wrapped model to `SummaryWriter.add_graph` solved the problem.
+
+### Customize TensorBoard 
+
+[A more customizable and interactive TensorBoard](https://github.com/tensorflow/tensorboard/issues/5333)
 
 ## Other Useful Visualization Tools
 

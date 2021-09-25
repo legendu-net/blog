@@ -5,7 +5,7 @@ Slug: visualization-for-ai-concepts
 Title: Visualization for AI Concepts
 Category: Computer Science
 Tags: Computer Science, AI, concept, visualization, data science, machine learning, shap, visual, design, neural network, deep learning
-Modified: 2021-09-23 22:08:34
+Modified: 2021-09-24 23:11:26
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -52,7 +52,13 @@ Pass the innter wrapped model to `SummaryWriter.add_graph` solved the problem.
 
 ### Customize TensorBoard 
 
+The article [Read TensorBoard Logs](http://www.legendu.net/misc/blog/read-tensorboard-logs)
+demonstrate a few ways to read TensorBoard logs 
+(for generating customized visualization).
+The issue
 [A more customizable and interactive TensorBoard](https://github.com/tensorflow/tensorboard/issues/5333)
+in the TensorBoard GitHub repository 
+propose to make TensorBoard more customizable and interactive.
 
 ## Other Useful Visualization Tools
 

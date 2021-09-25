@@ -7,7 +7,7 @@ Title: GitHub Action Task Stuck At Expected
 Category: Computer Science
 Tags: Computer Science, programming, GitHub, Actions, task, check, stuck, expected
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 
 Github pull request - Waiting for status to be reported
 

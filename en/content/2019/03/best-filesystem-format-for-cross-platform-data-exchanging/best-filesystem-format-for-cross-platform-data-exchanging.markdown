@@ -5,7 +5,7 @@ Slug: best-filesystem-format-for-cross-platform-data-exchanging
 Title: Best Filesystem Format for Cross-Platform Data Exchanging
 Category: OS
 Tags: OS, macOS, Linux, Windows, external, drive, filesystem, exFAT, ext4, mount, WSL
-Modified: 2021-09-03 11:55:19
+Modified: 2021-09-24 19:49:11
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -95,12 +95,8 @@ please refer to
 
 ## References
 
-https://dzone.com/articles/how-to-mount-usb-drives-on-virtualbox
+- https://dzone.com/articles/how-to-mount-usb-drives-on-virtualbox
 
-[WSL mount external storage and network drives](https://www.scivision.dev/mount-usb-drives-windows-subsystem-for-linux/)
+- [WSL mount external storage and network drives](https://www.scivision.dev/mount-usb-drives-windows-subsystem-for-linux/)
 
-[Get started mounting a Linux disk in WSL 2 (preview)](https://docs.microsoft.com/en-us/windows/wsl/wsl2-mount-disk)
-
-https://www.virtualbox.org/wiki/Downloads
-
-https://askubuntu.com/questions/11840/how-do-i-use-chmod-on-an-ntfs-or-fat32-partition
+- [Get started mounting a Linux disk in WSL 2 (preview)](https://docs.microsoft.com/en-us/windows/wsl/wsl2-mount-disk)

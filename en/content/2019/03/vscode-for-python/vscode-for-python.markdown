@@ -5,12 +5,8 @@ Slug: vscode-for-python
 Title: Visual Studio Code for Python
 Category: Computer Science
 Tags: programming, Python, Visual Studio Code, vscode, IDE, Jupyter notebook
-Modified: 2021-09-26 14:04:05
+Modified: 2021-09-26 21:51:47
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
 
 ## Extensions
 

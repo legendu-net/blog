@@ -5,13 +5,7 @@ Slug: resolve-the-dns-contamination-issue-in-firefox
 Title: Resolve the DNS Contamination Issue in Firefox
 Category: Software
 Tags: software, Firefox, proxy, DNS contamination, socks
-Modified: 2021-09-26 10:28:15
-
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+Modified: 2021-09-26 21:54:44
 
 The local DNS you use in China is probably contaminated
 and popular sites like Google, Facebook, etc. are not interpreted correctly.

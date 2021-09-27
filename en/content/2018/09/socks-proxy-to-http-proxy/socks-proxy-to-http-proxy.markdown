@@ -5,13 +5,7 @@ Slug: socks-proxy-to-http-proxy
 Title: Convert a Socks Proxy to a HTTP Proxy
 Category: Internet
 Tags: network, socks proxy, http proxy, polipo
-Modified: 2021-09-26 10:57:56
-
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+Modified: 2021-09-26 21:54:00
 
 There are multiple tools available 
 to convert a Socks proxy to a HTTP/HTTPS proxy. 

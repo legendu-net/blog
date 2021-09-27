@@ -1,17 +1,11 @@
 Status: published
 Date: 2016-05-04 20:59:32
+Modified: 2021-09-26 21:56:03
 Author: Ben Chuanlong Du
 Slug: things-to-do-after-installing-linux
 Title: Things to Do After Installing Linux
 Category: OS
 Tags: Linux, OS, installation
-Modified: 2021-09-25 14:08:07
-
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
 
 1. Choose a fast mirror.
     If you are using Ubuntu, 
@@ -40,7 +34,7 @@ Please read with your own judgement!
 
 5. Swap the `Caps Lock` key with the `Escape` key.
 
-3. install must have software
+6. install must have software
 
     - aria2, uGet
     - install and configure Chrome/Firefox 

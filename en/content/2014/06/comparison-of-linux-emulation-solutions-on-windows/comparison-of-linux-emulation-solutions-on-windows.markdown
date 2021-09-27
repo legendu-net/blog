@@ -1,17 +1,12 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Title: Comparision of Linux Emulation Solutions on Windows
 Author: Ben Chuanlong Du
 Date: 2014-06-13 22:21:09
+Modified: 2021-09-26 21:57:22
 Slug: comparision-of-linux-emulation-solutions-on-windows
 Category: Software
 Tags: Virtual Machine, Cygwin, MobaXterm, VirtualBox, Linux Emulation
-Modified: 2021-09-25 13:42:57
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
  
 1. Virtual machine based on Virtualbox, etc. is an overkill, 
     generally speaking.

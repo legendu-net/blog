@@ -1,18 +1,12 @@
-UUID: 03a0e2cd-fce2-48ec-9fdd-4addcaad0021
 Status: published
 Title: Fonts for Linux
 Date: 2013-04-13 00:07:00
+Modified: 2021-09-26 22:00:58
 Slug: fonts-for-linux
 Author: Ben Chuanlong Du
 Category: OS
 Tags: fonts, LaTeX, Chinese, Linux, Tex Live, TexLive, nerd fonts
-Modified: 2021-09-25 13:18:45
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
- 
 
 1. `ttf-arphic-uming`, `ttf-wqy-microhei`, `ttf-wqy-zenhei`, `xfonts-wqy` and `ttf-opensymbol` 
     are some packages related to Chinese fonts.

@@ -5,13 +5,7 @@ Slug: ssh-tunnel
 Title: SSH Tunnel
 Category: Software
 Tags: software, SSH tunnel, socks proxy, reverse, SSH
-Modified: 2021-09-26 11:01:14
-
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+Modified: 2021-09-26 21:53:22
 
 
 1. The StackOverflow discussion 

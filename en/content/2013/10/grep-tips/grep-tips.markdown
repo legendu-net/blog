@@ -1,16 +1,12 @@
 Status: published
 Author: Ben Chuanlong Du
 Date: 2013-10-22 14:53:28
-Modified: 2021-09-25 13:28:11
+Modified: 2021-09-26 21:59:25
 Title: Search for Files in Command-line Using grep
 Slug: grep-tips
 Category: OS
 Tags: tips, grep, egrep
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
 
 The article 
 [14 Practical examples of the grep command](http://www.librebyte.net/en/gnulinux/14-practical-examples-of-the-grep-command/)

@@ -5,12 +5,8 @@ Author: Ben Chuanlong Du
 Title: Make Linux Run Faster
 Category: OS
 Tags: RAM, speedup, SSD, software, optimization, hardware, Linux, fast, performance
-Modified: 2021-09-26 13:44:30
+Modified: 2021-09-26 21:52:24
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
  
 ## Upgrading Hardware
 

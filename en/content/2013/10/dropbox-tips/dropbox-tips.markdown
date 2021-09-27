@@ -1,16 +1,12 @@
 Status: published
 Author: Ben Chuanlong Du
 Date: 2013-10-22 13:36:17
+Modified: 2021-09-26 21:58:30
 Title: Synchronize Files Using Dropbox
 Slug: dropbox-tips
 Category: Software
-Tags: tips, Dropbox, Synchronizaion, backup, cloud
-Modified: 2021-09-25 13:32:49
+Tags: tips, Dropbox, synchronizaion, backup, cloud, sync
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
  
 1. Dropbox won't sync files that you don't have read permissions.
 

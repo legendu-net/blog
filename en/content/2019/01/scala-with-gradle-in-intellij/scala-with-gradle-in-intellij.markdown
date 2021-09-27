@@ -1,17 +1,11 @@
 Status: published
 Date: 2019-01-26 18:11:29
-Modified: 2021-09-26 11:11:15
+Modified: 2021-09-26 21:52:54
 Author: Ben Chuanlong Du
 Slug: scala-with-gradle-in-intellij
 Title: Quickly Create a Scala Project Using Gradle in Intellij IDEA
 Category: Computer Science
 Tags: programming, Scala, Gradle, IntelliJ IDEA, JVM
-
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
 
 ## Easy Way
 

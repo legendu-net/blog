@@ -1,11 +1,11 @@
 Status: published
 Date: 2020-10-26 12:49:19
-Modified: 2021-09-17 11:21:26
+Modified: 2021-09-27 00:32:40
 Author: Benjamin Du
 Slug: tips-on-backend-development
 Title: Tips on Backend Development
 Category: Computer Science
-Tags: Computer Science, programming web, development, backend, framework, Python, django, flask, tornado, Java, NodeJS
+Tags: Computer Science, programming web, development, backend, framework, Python, django, flask, tornado, Java, NodeJS, web
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -93,5 +93,9 @@ A fast Python http server inspired by japronto written in rust.
 ### Flask
 
 ## Rust
+
+https://github.com/sycamore-rs/sycamore
+
+tokio
 
 [Are We Web Yet](http://www.arewewebyet.org/)

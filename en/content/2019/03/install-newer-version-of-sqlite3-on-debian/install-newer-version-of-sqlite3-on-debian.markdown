@@ -5,12 +5,8 @@ Slug: install-newer-version-of-sqlite3-on-debian
 Title: Install Newer Version of SQLite3 on Debian Jessie
 Category: OS
 Tags: Linux, SQLite3, Debian, backports, SQLite
-Modified: 2021-09-26 16:30:42
+Modified: 2021-09-26 21:51:13
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
 
 1. Open `/etc/apt/sources.list` and add the following line to the end.
 

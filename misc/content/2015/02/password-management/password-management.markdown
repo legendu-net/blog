@@ -5,7 +5,7 @@ Slug: password-management
 Title: Password Management
 Category: Software
 Tags: software, password management, KeePassXC, MiniKeePass, KeePassDroid
-Modified: 2021-06-14 08:55:19
+Modified: 2021-09-27 10:48:23
 
 **
 Things on this page are
@@ -52,3 +52,7 @@ it seems that multi-screen makes keepassx auto enter not work well
 
 2. keepassx favorate, most frequently used? or others that support this feature?
 	you either have to do this by yourself or ask people to add this feature
+
+## References 
+
+- [Tips on KeePassXC](http://www.legendu.net/misc/blog/tips-on-keepassxc)

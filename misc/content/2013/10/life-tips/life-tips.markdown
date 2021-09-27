@@ -5,19 +5,14 @@ Date: 2013-10-22 13:31:43
 Slug: life-tips
 Category: Life
 Tags: tips, life, printing, insurance, internet
-Modified: 2020-05-22 13:31:43
+Modified: 2021-09-25 13:43:55
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
-## Insurance
-
-1. Geigo is good choice for people who do not have good driving history
-    but a bad choice for people with good driving history.
-    Geigo charges about 18% for cancelling policy,
-    which is terrible!!!
+## [Insurance](http://www.legendu.net/misc/blog/insurance-tips)
 
 ## Internet Service
 

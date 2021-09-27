@@ -5,7 +5,7 @@ Slug: shell-alternatives
 Title: Python Alternatives to Shell
 Category: Computer Science
 Tags: programming, IPython, shell, bash, xonsh, plumbum, Python, shell alternatives
-Modified: 2021-09-20 17:18:17
+Modified: 2021-09-26 12:11:37
 
 ## Python Equivalent of Shell Commands
 
@@ -14,6 +14,11 @@ Modified: 2021-09-20 17:18:17
     <th> Shell Command </th>
     <th> Alternative </th>
     <th> Python </th>
+  </tr>
+  <tr>
+    <td rowspan="1"> which git </td>
+    <td bgcolor="#348017"> shutil.which("git") </td>
+    <td> <a href="https://docs.python.org/3/library/shutil.html#shutil.which"> shutil </a> </td>
   </tr>
   <tr>
     <td rowspan="4"> mkdir -p /path/to/file </td>

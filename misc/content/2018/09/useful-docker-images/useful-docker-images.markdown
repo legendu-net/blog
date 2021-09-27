@@ -5,7 +5,7 @@ Slug: useful-docker-images
 Title: Useful Docker Images
 Category: Software
 Tags: software, Docker, Docker images, useful
-Modified: 2020-07-14 09:54:21
+Modified: 2021-09-26 10:24:36
 
 **
 Things on this page are
@@ -17,10 +17,9 @@ Please read with your own judgement!
 
 ### IDE
 
-2. [eclipse/che](https://hub.docker.com/r/eclipse/che/)
+[dclong/vscode-server](https://hub.docker.com/repository/docker/dclong/vscode-server)
 
-
-### wine 
+### WINE 
 
 suchja/wine 
 
@@ -44,8 +43,6 @@ https://store.docker.com/community/images/kdelfour/cloud9-docker
 5. devurandom/firefox
 
 7. sitespeedio/sitespeed.io
-
-8. brook/ubuntu-14.04.3-baidupcs
 
 2. [haugene/transmission-openvpn](https://hub.docker.com/r/haugene/transmission-openvpn/)
 

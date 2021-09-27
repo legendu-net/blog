@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-09-06 12:47:10
-Modified: 2021-09-06 12:47:10
+Modified: 2021-09-26 12:13:54
 Author: Benjamin Du
 Slug: PCIe-Bus-Error:-severity=Corrected,-type=Physical-Layer
 Title: Pcie Bus Error: Severity=Corrected, Type=Physical Layer
@@ -28,7 +28,8 @@ Use the following command to check kernel logs.
 
 1. Remove log files clogging your hardrive.
  
-2. Edit the grub file to add the `pci=nomsi` parameter to the `GRUB_CMDLINE_LINUX_DEFAULT` directive.
+2. Edit the grub file `/etc/default/grub` 
+    to add the `pci=nomsi` parameter to the `GRUB_CMDLINE_LINUX_DEFAULT` directive.
 
 3. Update the grub.
 

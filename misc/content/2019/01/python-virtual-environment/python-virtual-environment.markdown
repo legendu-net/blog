@@ -13,20 +13,20 @@ fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
-1. `venv` is preferred for managing virtual environments in Python3. 
+1. [venv](https://docs.python.org/3/library/venv.html#module-venv)
+    is a standard Python library
+    and is the recommended way for managing virtual environments in Python3. 
 
 2. When developing a Python project,
-    it is recommended that you use poetry to manage the project
+    it is recommended that you use 
+    [Poetry](http://www.legendu.net/misc/blog/python-poetry-tips)
+    to manage the project
     which helps managing virtual environments too,
     so that you don't have to managing virtual environments by yourself.
 
-The discussion below is specifically for `venv`.
-
-## Installation on Ubuntu
-
-```bash
-wajig install python3-venv
-```
+The discussion below is specifically for
+[venv](https://docs.python.org/3/library/venv.html#module-venv)
+.
 
 ## Create a Virtual Environment
 
@@ -94,7 +94,6 @@ source <DIR>/bin/activate
 
 ## References
 
-https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments
+- https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments
 
-
-[Best Practice for Virtual Environment and Git Repository](http://libzx.so/main/learning/2016/03/13/best-practice-for-virtualenv-and-git-repos.html)
+- [Best Practice for Virtual Environment and Git Repository](http://libzx.so/main/learning/2016/03/13/best-practice-for-virtualenv-and-git-repos.html)

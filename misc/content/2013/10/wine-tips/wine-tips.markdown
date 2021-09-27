@@ -5,7 +5,7 @@ Title: Windows Emulation Using WINE
 Slug: wine-tips
 Category: Software
 Tags: WINE, tips, Linux
-Modified: 2021-07-26 22:12:36
+Modified: 2021-09-26 10:20:16
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 

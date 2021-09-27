@@ -5,7 +5,7 @@ Slug: file-converting-tools
 Title: File Converting and Generating Tools
 Category: Software
 Tags: software, file converting, pandoc, markdown, HTML, PDF
-Modified: 2020-06-14 10:13:41
+Modified: 2021-09-26 10:21:05
 
 **
 Things on this page are
@@ -23,7 +23,7 @@ Please read with your own judgement!
 
 2. wkhtmltopdf (html to PDF, support URL, best)
 
-2. knitr (an R package)
+2. rmarkdown (an R package)
 
 3. ImageMagick (convert between types of images)
 

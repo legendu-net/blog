@@ -5,12 +5,17 @@ Slug: tips-on-tinyproxy
 Title: Tips on TinyProxy
 Category: Computer Science
 Tags: Computer Science, proxy, proxy server, TinyProxy
-Modified: 2020-10-17 21:09:17
+Modified: 2021-09-26 13:55:37
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
+
+## Tips and Traps
+
+1. [dannydirect/tinyproxy](https://hub.docker.com/r/dannydirect/tinyproxy/)
+    is a good Docker image for tinyproxy.
 
 ## Tutorials 
 
@@ -388,7 +393,4 @@ Below is an example of configuration file.
 
 ## References
 
-http://tinyproxy.github.io/
-
-https://github.com/tinyproxy/tinyproxy
-
+- [tinyproxy](https://github.com/tinyproxy/tinyproxy)

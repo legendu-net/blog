@@ -3,10 +3,10 @@ Status: published
 Date: 2019-02-01 19:45:52
 Author: Ben Chuanlong Du
 Slug: javascript-alternatives-to-shell
-Title: Javascript Alternatives to Shell
+Title: JavaScript Alternatives to Shell
 Category: Computer Science
 Tags: programming, JavaScript, shell
-Modified: 2019-02-01 19:45:52
+Modified: 2021-09-26 14:03:01
 
 **
 Things on this page are

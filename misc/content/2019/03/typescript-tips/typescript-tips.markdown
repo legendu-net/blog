@@ -5,7 +5,7 @@ Slug: typescript-tips
 Title: Tips on TypeScript
 Category: Computer Science
 Tags: programming, TypeScript, tips
-Modified: 2020-10-26 11:47:33
+Modified: 2021-09-26 16:28:43
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

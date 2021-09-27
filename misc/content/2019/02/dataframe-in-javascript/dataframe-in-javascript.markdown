@@ -1,12 +1,11 @@
-UUID: 7b87c55c-26af-49f9-b290-e6bf28715096
 Status: published
 Date: 2019-02-01 19:42:16
+Modified: 2021-09-26 14:01:44
 Author: Ben Chuanlong Du
 Slug: dataframe-in-javascript
-Title: Dataframe in Javascript
+Title: Dataframe in JavaScript
 Category: Computer Science
 Tags: programming, JavaScript, DataFrame, apache arrow
-Modified: 2019-02-01 19:42:16
 
 **
 Things on this page are

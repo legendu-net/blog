@@ -1,11 +1,11 @@
 Status: published
 Date: 2019-01-13 09:48:04
+Modified: 2021-09-26 11:59:35
 Author: Ben Chuanlong Du
 Slug: python-module-tips
 Title: Tips on Python Module 
 Category: Computer Science
 Tags: programming, Python, module, tips, module access
-Modified: 2021-04-13 09:48:04
 
 **
 Things on this page are
@@ -15,7 +15,7 @@ Please read with your own judgement!
 
 ## Import a Module
 
-1. There are 3 different ways import Python modules.
+1. There are 3 different ways to import Python modules.
 
         :::python
         import module_name
@@ -23,13 +23,13 @@ Please read with your own judgement!
         from module import pkg_mod_or_fun
 
 2. The module `importlib.resources` (since Python 3.7+) leverages Python's import system to provide access to resources within packages. 
-  If you can import a package, 
-  you can access resources within that package. 
-  Resources can be opened or read, in either binary or text mode.
-  Resources are roughly akin to files inside directories, 
-  though it’s important to keep in mind that this is just a metaphor. 
-  Resources and packages do not have to exist as physical files and directories on the file system. 
-  `importlib.resources` is analogue to `getClass.getResource` in Java.
+    If you can import a package, 
+    you can access resources within that package. 
+    Resources can be opened or read, in either binary or text mode.
+    Resources are roughly akin to files inside directories, 
+    though it’s important to keep in mind that this is just a metaphor. 
+    Resources and packages do not have to exist as physical files and directories on the file system. 
+    `importlib.resources` is analogue to `getClass.getResource` in Java.
 
 1. One of the trickiest problem in Python is conflicting package/module names. 
     It happens when there are more than one Python scripts with the same name on Python module search paths.
@@ -117,12 +117,9 @@ https://stackoverflow.com/questions/44834/can-someone-explain-all-in-python
 
 http://xion.io/post/code/python-all-wild-imports.html
 
-
-
 ## Import Warning
 
 https://stackoverflow.com/questions/43393764/python-3-6-project-structure-leads-to-runtimewarning
-
 
 ## Misc
 

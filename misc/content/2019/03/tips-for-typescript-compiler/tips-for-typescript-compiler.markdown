@@ -2,10 +2,10 @@ Status: published
 Date: 2019-03-08 11:47:35
 Author: Benjamin Du
 Slug: tips-for-typescript-compiler
-Title: Tips on Typescript Compiler
+Title: Tips on TypeScript Compiler
 Category: Computer Science
 Tags: programming, TypeScript, compiler, ES6, JavaScript
-Modified: 2020-04-08 11:47:35
+Modified: 2021-09-26 16:47:54
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

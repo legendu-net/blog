@@ -5,15 +5,20 @@ Slug: commonly-used-file-formats-for-configuration
 Title: Commonly Used File Formats for Configuration
 Category: Computer Science
 Tags: programming, configuration, JSON, YAML, TOML, XML, file format
-Modified: 2020-11-27 10:12:19
+Modified: 2021-09-26 16:11:03
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
-
-
-It seems that many people recommend TOML over JSON and YAML.
 **
+
+1. JSON is more commonly used for application data and configurations  
+    which are not intended to be read by human directly.
+
+2. TOML and YAML are more popular for application configurations 
+    which are maintained by human directly.
+    Both of them supports comments (in contract to JSON)
+    which improves readability.
 
 ## JSON
 

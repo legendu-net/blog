@@ -5,7 +5,7 @@ Slug: nbconvert-tips
 Title: Converting JupyterLab Notebooks
 Category: Software
 Tags: JupyterLab, notebook, nbconvert, tips, zmq.error.ZMQError
-Modified: 2020-10-01 19:24:15
+Modified: 2021-09-26 12:01:56
 
 **
 Things on this page are

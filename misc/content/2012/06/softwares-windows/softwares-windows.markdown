@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Title: Software I Use in Windows System
 Category: Software
 Tags: anti-virus, Windows, software, archive, Linux, virtualization
-Modified: 2020-02-17 11:28:45
+Modified: 2021-09-25 12:05:03
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -28,13 +28,7 @@ for tips on how to use portable apps.
 
 2. Docker in WSL
 
-2. VirtualBox
-
-## Archive Tools
-
-1. zip (come with with Windows)
-
-1. 7zip 
+3. VirtualBox
 
 ## Communication
 
@@ -42,27 +36,14 @@ for tips on how to use portable apps.
 
 2. WeChat
 
-3. Skype 
-
 ## Network 
 
-1. IIS (for webhosting)
-
-3. Cisco VPN Client (for connecting to work network)  
-
-4. Chrome and Firefox (for surfing web)
+1. Chrome and Firefox
 
 ## PDF
 
-5. Adobe Reader (for reading pdf documents)
-
-6. Latex and Texstudio (for word processing)
+1. Adobe Reader (for reading pdf documents)
 
 ## Anit-virus
 
-8. Microsoft Security Essentials
-
-## Downloading Tools
-
-1. QQ Xuanfeng
-
+1. Microsoft Security Essentials

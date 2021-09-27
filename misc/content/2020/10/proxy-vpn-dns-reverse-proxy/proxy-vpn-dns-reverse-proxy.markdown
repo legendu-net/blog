@@ -5,7 +5,7 @@ Slug: proxy-vpn-dns-reverse-proxy
 Title: Proxy, Reverse Proxy, Load Balancer, VPN and DNS
 Category: Computer Science
 Tags: Computer Science, proxy, reverse proxy, DNS, VPN, network, internet, web, load balancing
-Modified: 2021-05-03 10:47:34
+Modified: 2021-09-26 13:52:38
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -13,18 +13,19 @@ Please read with your own judgement!
 **
 
 
+1. socks proxy 
 
-3. socks proxy 
-
-4. [nginx](https://github.com/nginx/nginx)
+2. [nginx](https://github.com/nginx/nginx)
     and
     [caddy](https://github.com/caddyserver/caddy)
     are good choices for reverse proxy.
 
-5. sshuttle is a poor man's VPN.
+3. sshuttle is a poor man's VPN.
 
-6. [TunnelTo](https://tunnelto.dev/) (written in Rust leveraging tokio)
+4. [TunnelTo](https://tunnelto.dev/) (written in Rust leveraging tokio)
     allows you to expose your local web server to the internet with a public URL.
+
+5. [TinyProxy](http://www.legendu.net/misc/blog/tips-on-tinyproxy)
 
 ## Proxy vs VPN
 

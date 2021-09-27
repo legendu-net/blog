@@ -5,12 +5,7 @@ Slug: regular-expression-in-bash
 Title: Regular Expression in Bash
 Category: Computer Science
 Tags: programming, Bash, regular expression, regex
-Modified: 2021-09-26 16:55:06
-
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+Modified: 2021-09-26 21:49:49
 
 
 You can use `=~` for regular expression matching in Bash.

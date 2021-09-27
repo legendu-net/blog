@@ -5,13 +5,7 @@ Slug: make-windows-restart-regularly
 Title: Make Windows Restart Regularly
 Category: OS
 Tags: OS, Windows, Microsoft, restart
-Modified: 2021-09-26 16:57:09
-
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
-
+Modified: 2021-09-26 21:49:19
 
 My Windows PC in my office slows down signficantly after running for several days.
 I have cleaned up the startup applications to the most I can. 

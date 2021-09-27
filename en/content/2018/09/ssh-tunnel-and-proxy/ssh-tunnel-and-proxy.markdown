@@ -5,7 +5,7 @@ Slug: ssh-tunnel
 Title: SSH Tunnel
 Category: Software
 Tags: software, SSH tunnel, socks proxy, reverse, SSH
-Modified: 2021-09-26 21:53:22
+Modified: 2021-09-26 22:22:45
 
 
 1. The StackOverflow discussion 
@@ -88,18 +88,18 @@ You can follow the steps below to access the public network from machine B.
 
 1. Create a Reversed SSH tunnel from machine A to machine B.
 
-    :::bash
-    ssh -i /path_to_key -o ProxyCommand='ssh bastion_server -W %h:%p' -R 20000:localhost:22 ip_b
+        :::bash
+        ssh -i /path_to_key -o ProxyCommand='ssh bastion_server -W %h:%p' -R 20000:localhost:22 ip_b
 
 2. Create a SSH Tunnel on machine B.
 
-    :::bash
-    ssh -i /path_to_key -fND 1080 localhost
+        :::bash
+        ssh -i /path_to_key -fND 1080 localhost
 
 3. Use the created SSH Tunnel as a socks5 proxy to visit the public network via proxychains.
 
-    :::bash
-    proxychains pip3 install pytorch
+        :::bash
+        proxychains pip3 install pytorch
 
 ## References
 

@@ -78,6 +78,7 @@
     ["Dataframe", "DataFrame"],
     ["Getpocket", "GetPocket"], ["Gitpython", "GitPython"],
     ["Java-Home", "JAVA-HOME"],
+    ["Keepassxc", "KeePassXC"],
     ["Mobaxterm", "MobaXterm"],
     ["Nbconvert", "nbconvert"], ["Nomachine", "NoMachine"],
     ["Pybuilder", "PyBuilder"], ["Pdftotext", "pdftotext"],

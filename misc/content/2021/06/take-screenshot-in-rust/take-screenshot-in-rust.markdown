@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-06-17 22:50:10
-Modified: 2021-07-29 10:45:24
+Modified: 2021-09-29 00:17:57
 Author: Benjamin Du
 Slug: take-screenshot-in-rust
 Title: Take Screenshot in Rust

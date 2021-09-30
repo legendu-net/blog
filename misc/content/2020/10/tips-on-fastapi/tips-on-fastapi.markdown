@@ -5,7 +5,7 @@ Slug: tips-on-fastapi
 Title: Tips on FastApi
 Category: Computer Science
 Tags: Computer Science, FastApi, programming, Python, web, framework, backend
-Modified: 2020-10-26 09:46:28
+Modified: 2021-09-29 10:33:02
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

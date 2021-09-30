@@ -1,6 +1,6 @@
 Status: published
 Date: 2020-10-26 12:49:19
-Modified: 2021-09-27 00:32:40
+Modified: 2021-09-29 10:33:02
 Author: Benjamin Du
 Slug: tips-on-backend-development
 Title: Tips on Backend Development
@@ -72,6 +72,11 @@ is a high-level Python Web framework that encourages rapid development and clean
 is a modern, fast (high-performance), web framework for building APIs 
 with Python 3.6+ based on standard Python type hints.
 It is a much better alternative than Flask!
+
+### [sanic](https://github.com/sanic-org/sanic)
+Sanic is a Python web server and web framework that is written to go fast. 
+It allows the usage of the async/await syntax,
+which makes your code non-blocking and speedy.
 
 ### [Tornado](https://github.com/tornadoweb/tornado)
 [Tornado](https://github.com/tornadoweb/tornado)

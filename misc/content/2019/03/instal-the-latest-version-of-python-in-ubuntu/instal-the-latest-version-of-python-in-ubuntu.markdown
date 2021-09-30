@@ -1,11 +1,11 @@
 Status: published
 Date: 2019-03-27 02:26:33
 Author: Benjamin Du
-Slug: instal-the-latest-version-of-python-in-ubuntu
-Title: Instal the Latest Version of Python in Ubuntu
+Slug: install-the-latest-version-of-python-in-ubuntu
+Title: Install the Latest Version of Python in Ubuntu
 Category: OS
 Tags: OS, Linux, Ubuntu, Python 3, installation, PPA
-Modified: 2021-09-26 16:27:42
+Modified: 2021-09-29 23:31:38
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

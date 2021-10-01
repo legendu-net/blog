@@ -5,7 +5,7 @@ Slug: tips-on-creating-docker-images
 Title: Tips on Creating Docker Images
 Category: Software
 Tags: software, Docker, image, build, create
-Modified: 2021-09-13 14:23:53
+Modified: 2021-10-01 12:37:49
 
 **
 Things on this page are
@@ -13,12 +13,7 @@ fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
-1. The `COPY` command copies a file or directory to the Docker image to be built.
-    In addition to copying the file/directory, 
-    the `ADD` command also untars the file if it is a `tar` file.
-    It is suggested that you avoid use the `ADD` command unless you are clear about the side effect.
-
-2. Docker caches building operations. 
+1. Docker caches building operations. 
     When cache for an operation is available, 
     Docker use the cache layer directly and avoid building the layer again.
 
@@ -56,6 +51,29 @@ Please read with your own judgement!
 
 10. By default the `ubuntu` Docker image does not include the multiverse repository.
     You can include it manually if you need it.
+
+## COPY vs ADD
+
+1. The `COPY` command copies a file or directory to the Docker image to be built.
+    In addition to copying the file/directory, 
+    the `ADD` command also untars the file if it is a `tar` file.
+    It is suggested that you avoid use the `ADD` command unless you are clear about the side effect.
+
+
+[How to copy multiple files in one layer using a Dockerfile?](https://stackoverflow.com/questions/30256386/how-to-copy-multiple-files-in-one-layer-using-a-dockerfile)
+
+COPY README.md package.json gulpfile.js __BUILD_NUMBER ./
+COPY --from=dclong/rust-utils /root/.cargo/bin/* /usr/local/bin/
+
+
+Directories are special! If you write
+
+COPY dir1 dir2 ./
+that actually works like
+
+COPY dir1/* dir2/* ./
+If you want to copy multiple directories (not their contents) under a destination directory in a single command, you'll need to set up the build context so that your source directories are under a common parent and then COPY that parent.
+
 
 ## Git + SSH to Avoid Two-way Authentication Behind Corporate Firewall
 

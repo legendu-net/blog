@@ -5,61 +5,23 @@ Slug: tips-on-pytorch
 Title: Tips on PyTorch
 Category: Computer Science
 Tags: programming, Python, PyTorch, GPU, tips
-Modified: 2021-09-16 10:20:46
+Modified: 2021-10-01 11:27:30
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
-## PyTorch Installation
-
-cuda and cuDNN are not required to install PyTorch
-unless you build PyTorch from source.
-
-https://github.com/pytorch/pytorch/issues/17445
-
-https://github.com/pytorch/pytorch/issues/698
-
-https://discuss.pytorch.org/t/how-to-check-if-torch-uses-cudnn/21933
-
-https://discuss.pytorch.org/t/newbie-question-what-are-the-prerequisites-for-running-pytorch-with-gpu/698
-
 ## Docker Images for PyTorch
 
-The official PyTorch image [pytorch/pytorch:latest](https://hub.docker.com/r/pytorch/pytorch) 
-(which is pytorch/pytorch:1.4-cuda10.1-cudnn7-runtime currently)
-is a good one.
-
-
+- [pytorch/pytorch:latest](https://hub.docker.com/r/pytorch/pytorch) (official PyTorch image) 
+- [dclong/jupyterhub-pytorch](https://hub.docker.com/repository/docker/dclong/jupyterhub-pytorch)
 
 ## PyTorch Tutorials
 
+[WELCOME TO PYTORCH TUTORIALS](https://pytorch.org/tutorials/index.html)
+
 https://pytorch.org/tutorials/beginner/pytorch_with_examples.html
-
-torch.Sequential is an easy and quick way to construct simple neural netowrks.
-For more complicated neural network architextures, 
-you'd better implement your own class extending torch.nn.Module.
-
-## Configuration
-
-cudnn.benchmark = true -- uses the inbuilt cudnn auto-tuner to find the fastest convolution algorithms.
-                       -- If this is set to false, uses some in-built heuristics that might not always be fastest.
-
-Regarding cudnn.fastest, 
-I think it’s because by default it also tries not to use very much memory, 
-but when you enable fastest, 
-it doesn’t care.
-
-See https://github.com/soumith/cudnn.torch/blob/master/SpatialConvolution.lua#L167-L174
-
-regarding cudnn.benchmark, 
-if you have variable length sequences given as inputs, 
-benchmark will try to auto-tune for every new input shape, 
-and that will result in a huge slowdown.
-
-https://pytorch.org/docs/master/notes/cuda.html#device-agnostic-code
-This is the suggested way to control tensors on CPU/GPU. 
 
 ## Train and Evaluate Models in PyTorch
 
@@ -88,17 +50,23 @@ https://stackoverflow.com/questions/51433378/what-does-model-train-do-in-pytorch
 
 https://discuss.pytorch.org/t/trying-to-understand-the-meaning-of-model-train-and-model-eval/20158/2
 
-## PyTorch Tutorials
-
-https://towardsdatascience.com/understanding-pytorch-with-an-example-a-step-by-step-tutorial-81fc5f8c4e8e
-
-https://github.com/pytorch/examples
-
 ## Use PyTorch Models in Production
+
+1. save model
+    - Python pickle 
+    - ONNX
+    - TorchScript
+2. save models parameters
 
 https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217
 
-https://pytorch.org/tutorials/advanced/super_resolution_with_caffe2.html
+[TRANSFERING A MODEL FROM PYTORCH TO CAFFE2 AND MOBILE USING ONNX](https://pytorch.org/tutorials/advanced/super_resolution_with_caffe2.html)
+
+[TORCH.ONNX](https://pytorch.org/docs/master/onnx.html)
+
+[onnxruntime](https://github.com/microsoft/onnxruntime)
+
+[INTRODUCTION TO TORCHSCRIPT](https://pytorch.org/tutorials/beginner/Intro_to_TorchScript_tutorial.html)
 
 ## Questions
 
@@ -131,6 +99,26 @@ Scale your models.
 Write less boilerplate 
 
 Note: PyTorch Lightning is very close to what I've done ...
+
+## Configuration
+
+cudnn.benchmark = true -- uses the inbuilt cudnn auto-tuner to find the fastest convolution algorithms.
+                       -- If this is set to false, uses some in-built heuristics that might not always be fastest.
+
+Regarding cudnn.fastest, 
+I think it’s because by default it also tries not to use very much memory, 
+but when you enable fastest, 
+it doesn’t care.
+
+See https://github.com/soumith/cudnn.torch/blob/master/SpatialConvolution.lua#L167-L174
+
+regarding cudnn.benchmark, 
+if you have variable length sequences given as inputs, 
+benchmark will try to auto-tune for every new input shape, 
+and that will result in a huge slowdown.
+
+https://pytorch.org/docs/master/notes/cuda.html#device-agnostic-code
+This is the suggested way to control tensors on CPU/GPU. 
 
 ## References
 

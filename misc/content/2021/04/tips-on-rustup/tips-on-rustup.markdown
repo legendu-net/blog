@@ -5,7 +5,7 @@ Slug: tips-on-rustup
 Title: Tips on rustup
 Category: Computer Science
 Tags: Computer Science, programming, Rust, rustup, rustfmt, toochain, stable, beta, nightly
-Modified: 2021-07-28 13:55:39
+Modified: 2021-09-30 12:41:28
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -55,6 +55,10 @@ rustup component add rust-src
 ## Install rustfmt
 
 rustup component add rustfmt
+
+## Install Clippy
+
+rustup component add clippy
 
 
 ## References 

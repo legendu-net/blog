@@ -5,7 +5,7 @@ Slug: data-for-computer-vision-research
 Title: Data for Computer Vision Research
 Category: AI
 Tags: AI, data science, machine learning, deep learning, Computer Vision, CV, data
-Modified: 2021-09-20 15:49:52
+Modified: 2021-10-01 11:20:21
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -33,6 +33,7 @@ VOC-2012
 
 [The KITTI Vision Benchmark Suite](http://www.cvlibs.net/datasets/kitti/index.php)
 
+[Penn-Fudan Database for Pedestrian Detection and Segmentation](https://www.cis.upenn.edu/~jshi/ped_html/)
 
 ## References
 

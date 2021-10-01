@@ -5,7 +5,7 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2021-06-09 23:34:03
+Modified: 2021-09-30 12:44:32
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
@@ -82,6 +82,9 @@ It is extremely lightweight and makes it easy to convert a sequential computatio
 It also guarantees data-race freedom. 
 
 ## Command-line Parsing
+
+### [structopt](https://crates.io/crates/structopt)
+Parse command line argument by defining a struct.
 
 ### [clap](https://crates.io/crates/clap)
 [clap](https://crates.io/crates/clap)

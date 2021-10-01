@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-09-20 15:41:42
-Modified: 2021-09-20 16:50:29
+Modified: 2021-10-01 11:56:23
 Author: Benjamin Du
 Slug: object-detection-using-deep-learning
 Title: Object Detection Using Deep Learning
@@ -47,13 +47,22 @@ Faster R-CNN Mask R-CNN YoLo
 Region-Based Convolutional Neural Networks, or R-CNNs, are a family of techniques for addressing object localization and recognition tasks, designed for model performance.
 You Only Look Once, or YOLO, is a second family of techniques for object recognition designed for speed and real-time use.
 
+## Finetune Object Detection Models in PyTorch
+
+[Fine-tuning Faster-RCNN using pytorch](https://www.kaggle.com/yerramvarun/fine-tuning-faster-rcnn-using-pytorch)
+
+[Beagle Detector: Fine-tune Faster-RCNN](https://haochen23.github.io/2020/06/fine-tune-faster-rcnn-pytorch.html#.YVdUzEbMKdY)
+
+[TORCHVISION OBJECT DETECTION FINETUNING TUTORIAL](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html)
+
+
 ## References
 
-A Gentle Introduction to Object Recognition With Deep Learning
-https://machinelearningmastery.com/object-recognition-with-deep-learning/
+[Non-maximum Suppression (NMS)](https://towardsdatascience.com/non-maximum-suppression-nms-93ce178e177c)
 
-From R-CNN to Mask R-CNN
-https://medium.com/@umerfarooq_26378/from-r-cnn-to-mask-r-cnn-d6367b196cfd
+[A Gentle Introduction to Object Recognition With Deep Learning](https://machinelearningmastery.com/object-recognition-with-deep-learning/)
+
+[From R-CNN to Mask R-CNN](https://medium.com/@umerfarooq_26378/from-r-cnn-to-mask-r-cnn-d6367b196cfd)
 
 [Mask R-CNN: A Beginner's Guide](https://viso.ai/deep-learning/mask-r-cnn/)
 

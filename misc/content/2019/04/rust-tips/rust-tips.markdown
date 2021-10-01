@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-04-10 12:17:46
-Modified: 2021-09-18 18:49:52
+Modified: 2021-09-30 17:54:51
 Author: Benjamin Du
 Slug: rust-tips
 Title: Tips on Rust
@@ -46,6 +46,10 @@ please refer to
 
 - [rustc](http://www.legendu.net/misc/blog/tips-on-rustc): compiler for Rust
 
+- clippy
+
+- rustfmt
+
 ## IDE for Rust
 
 Please refer to 
@@ -53,6 +57,8 @@ Please refer to
 for more details.
 
 ## General Tips and Traps
+
+1. [Common newbie mistakes or bad practices](https://users.rust-lang.org/t/common-newbie-mistakes-or-bad-practices/64821)
 
 1. do not use `..=` which has performance issues. 
     use `..` instead.

@@ -5,7 +5,7 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2021-09-13 10:32:12
+Modified: 2021-10-01 12:47:56
 
 ## Tips
 
@@ -32,7 +32,7 @@ Modified: 2021-09-13 10:32:12
     `mmddHH` (historical version of the latest tag),
     `next_mmddHH` (historical version of the next tag),
     and `debian_mmddHH` (historical version of the debian tag),
-    where `mmd`, `dd` and `HH` stand for the month, day and hour (24-hour format) 
+    where `mm`, `dd` and `HH` stand for the month, day and hour (24-hour format) 
     when the Docker image was built. 
     Those historical versions of Docker images might be helpful in some rare situations.
     Generally speaking,

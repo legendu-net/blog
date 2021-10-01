@@ -5,7 +5,7 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2021-10-01 12:47:56
+Modified: 2021-10-01 16:56:48
 
 ## Tips
 
@@ -356,19 +356,12 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
 ## List of Images and Detailed Information
 
-- [dclong/deepin_b](https://hub.docker.com/r/dclong/deepin_b/)  
-
-    - [dclong/deepin_cn](https://hub.docker.com/r/dclong/deepin_cn/)  
-
-        - [dclong/deepin](https://hub.docker.com/r/dclong/deepin/)  
-
 - [dclong/ubuntu_b](https://hub.docker.com/r/dclong/ubuntu_b/)  
 
     > OS: Ubuntu 20.04. 
     > Time Zone: US Pacific Time  
     > Desktop Environment: None  
     > Remote Desktop: None  
-    > Has Debian branch: Yes
 
     - [dclong/samba](https://hub.docker.com/r/dclong/samba/)  
 
@@ -397,7 +390,7 @@ you can connect to the desktop environment in the Docker container using NoMachi
     - [dclong/python](https://hub.docker.com/r/dclong/python/)  
 
         > Python 3.8.x  
-        > Python 3.7.9  
+        > Python 3.7.12  
 
         - [dclong/python-jdk](https://hub.docker.com/r/dclong/python-jdk/)  
 
@@ -409,7 +402,7 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
             - [dclong/jupyterlab](https://hub.docker.com/r/dclong/jupyterlab)  
 
-                > JupyterLab: 3.0.x
+                > JupyterLab: 3.1.x
 
                 - [dclong/jupyterhub](https://hub.docker.com/r/dclong/jupyterhub/)  
 
@@ -431,14 +424,12 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
                         > OpenJDK 8  
                         > Maven: 3.6.x  
-                        > Has Debian branch: Yes, have to switch to openjdk-11
 
                         - [dclong/jupyterhub-more](https://hub.docker.com/r/dclong/jupyterhub-more/)  
 
-                            > Almond (latest stable)
-                            > Kotlin
-                            > Rust (only for the `debian` tag)  
-                            > Has Debian branch: Yes, for Rust kernel
+                            > Kotlin  
+                            > TypeScript  
+                            > Rust  
 
                             - [dclong/vscode-server](https://hub.docker.com/r/dclong/vscode-server/)  
 
@@ -447,14 +438,14 @@ you can connect to the desktop environment in the Docker container using NoMachi
                             - [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/)  
 
                                 > Python packages:  
-                                > loguru pysnooper 
-                                > numpy scipy pandas pyarrow  
-                                > scikit-learn lightgbm  
-                                > graphviz matplotlib bokeh holoviews[recommended] hvplot 
-                                > tabulate  
-                                > JPype1 sqlparse  
-                                > requests[socks] lxml notifiers  
-                                > dsutil  
+                                >     - loguru pysnooper  
+                                >     - numpy scipy pandas pyarrow  
+                                >     - scikit-learn lightgbm  
+                                >     - graphviz matplotlib bokeh holoviews[recommended] hvplot  
+                                >     - tabulate  
+                                >     - JPype1 sqlparse  
+                                >     - requests[socks] lxml notifiers  
+                                >     - dsutil  
 
                                 - [dclong/gitpod](https://hub.docker.com/r/dclong/gitpod/)
 
@@ -469,6 +460,13 @@ you can connect to the desktop environment in the Docker container using NoMachi
             - [dclong/lubuntu-pyside2](https://hub.docker.com/r/dclong/lubuntu-pyside2/)  
 
             - [dclong/lubuntu-jdk](https://hub.docker.com/r/dclong/lubuntu-jdk/)  
+
+- [dclong/deepin_b](https://hub.docker.com/r/dclong/deepin_b/)  
+
+    - [dclong/deepin_cn](https://hub.docker.com/r/dclong/deepin_cn/)  
+
+        - [dclong/deepin](https://hub.docker.com/r/dclong/deepin/)  
+
 
 ## Build my Docker Images
 

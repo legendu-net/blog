@@ -5,9 +5,13 @@ Slug: good-terminal-apps
 Title: Good Terminal Apps
 Category: Computer Science
 Tags: Computer Science, terminal, software, tools, hyper, kitty
-Modified: 2021-09-24 10:57:56
+Modified: 2021-10-02 01:53:04
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## [alacritty](https://github.com/alacritty/alacritty)
+
+A cross-platform, OpenGL terminal emulator written in Rust.
 
 ## [hyper](https://github.com/vercel/hyper)
 
@@ -16,10 +20,6 @@ A terminal built on web technologiesa.
 ## [kitty](https://github.com/kovidgoyal/kitty)
 
 Cross-platform, fast, feature-rich, GPU based terminal.
-
-## [alacritty](https://github.com/alacritty/alacritty)
-
-A cross-platform, OpenGL terminal emulator.
 
 ## [terminology](https://github.com/borisfaure/terminology)
 

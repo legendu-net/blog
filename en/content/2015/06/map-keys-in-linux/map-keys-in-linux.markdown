@@ -1,4 +1,3 @@
-UUID: 9ba8c173-8851-4beb-bda4-a68e1360a23f
 Status: published
 Date: 2015-06-19 10:30:15
 Author: Ben Chuanlong Du
@@ -6,7 +5,7 @@ Slug: map-keys-in-linux
 Title: Map Keys in Linux
 Category: OS
 Tags: Linux, keyboard, mapping, swap, setxkbmap, Cinnamon, GNOME, keys
-Modified: 2021-08-15 13:03:09
+Modified: 2021-10-02 20:46:17
 
 Note: For Vim users, it is appealing to make the `Caps Lock` function like `Escape`.
 It is suggested that you make `Caps Lock` an additonal `Escape`
@@ -49,9 +48,9 @@ which is the worst scenario.
 It is suggested that you turn off the mapping on the Linux host
 when you work in a VM or a remote desktop.
 
-### Keyboard Configuration
+## Keyboard Configuration
 
-Keyboard in configured in by the file `/etc/default/keyboard` on Linux.
+Keyboard is configured by the file `/etc/default/keyboard` on Linux.
 For example,
 you can find the line that starts with `XKBOPTIONS`,
 and add `ctrl:nocaps` to make Caps Lock an additional Control key
@@ -68,12 +67,6 @@ This way is better as it will take effect on the virtual consoles as well as in 
 
 - [Map Keys in Windows](http://www.legendu.net/misc/blog/map-keys-in-windows)
 
-- <http://askubuntu.com/questions/444714/how-do-i-swap-escape-and-caps-lock-in-14-04/446725#446725>
+- [How to permanently swap esc and caps lock in xfce / xubuntu?](https://unix.stackexchange.com/questions/66775/how-to-permanently-swap-esc-and-caps-lock-in-xfce-xubuntu)
 
-- <http://www.fascinatingcaptain.com/howto/remap-keyboard-keys-for-ubuntu/>
-
-- <http://askubuntu.com/questions/885045/how-to-swap-ctrl-and-alt-keys-in-ubuntu-16-04/885047>
-
-- <http://askubuntu.com/questions/453793/remapping-caps-lock-in-14-04-trusty-tahr>
-
-- <http://askubuntu.com/questions/444714/how-do-i-swap-escape-and-caps-lock-in-14-04/446725#446725>
+- [How do I swap Escape and Caps Lock in 14.04?](http://askubuntu.com/questions/444714/how-do-i-swap-escape-and-caps-lock-in-14-04/446725#446725)

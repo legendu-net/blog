@@ -5,7 +5,7 @@ Slug: python-pandas-tips
 Title: Python pandas Tips
 Category: Computer Science
 Tags: programming, Python, pandas, DataFrame, data frame, tips
-Modified: 2020-12-02 21:55:44
+Modified: 2021-10-03 23:23:19
 
 **
 Things on this page are
@@ -24,7 +24,19 @@ pd.set_option('display.max_colwidth', 100)
 
 ## Tips and Traps
 
-1. Avoid using column/element names that conflict with pandas internal member names,
+1. Do NOT use `DataFrame.iterrows`. 
+    Please refer to the 
+    [issue](https://github.com/pandas-dev/pandas/issues/43874)
+    for discussions on it shouldn't be used.
+    There are lots of alternative
+    `DataFrame.to_dict()`, `DataFrame.to_records()`, `DataFrame.itertuples()` and `DataFrame.to_numpy()` 
+    are all much faster alternatives.
+    For a detailed comparison of speed of different ways of iterating rows of a pandas DataFrame,
+    please refer to
+    [Here’s the most efficient way to iterate through your Pandas Dataframe](https://towardsdatascience.com/heres-the-most-efficient-way-to-iterate-through-your-pandas-dataframe-4dad88ac92ee)
+    .
+
+2. Avoid using column/element names that conflict with pandas internal member names,
     otherwise you will not be able to access the column/element using the dot syntax.
     For example,
     if you name a column `size`

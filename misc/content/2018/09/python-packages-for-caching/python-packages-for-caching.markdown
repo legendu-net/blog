@@ -5,25 +5,13 @@ Slug: python-packages-for-caching
 Title: Serialization and Caching in Python
 Category: Computer Science
 Tags: programming, Python, packages, caching, lru_cache, diskcache, memcached
-Modified: 2021-09-18 00:20:32
+Modified: 2021-10-03 23:32:52
 
 **
 Things on this page are
 fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
-
-## Serialization
-
-1. Pickle is preferred to marshall.
-
-2. Use Parquet for pandas DataFrame.
-
-pickle: geneal purpose serialization/deserialization which supports almost all Python objects. 
-
-Parquet (via PyArrow): specific for DataFrame objects. 
-
-JSON: safe, human readable but limited to simple data types in Python.
 
 ## functools.lru_cache
 
@@ -39,22 +27,6 @@ https://github.com/tkem/cachetools
 DiskCache: Disk Backed Cache
 http://www.grantjenks.com/docs/diskcache/tutorial.html
 
-
-
-## pickle 
-
-pickle is a Python object serialization package. 
-
-## shelve 
-
-shelve is a package for persisting Python object 
-
-## joblib
-
-`joblib` is a package for running Python functions as pipeline jobs.
-It supports transparent disk-caching of functions and lazy re-evaluation (memoize pattern).
-
-
 ## memcached & pymemcache
 
 https://pypi.org/project/pymemcache/
@@ -66,4 +38,6 @@ but intended for use in speeding up dynamic web applications by alleviating data
 
 ## References 
 
-https://docs.python-guide.org/scenarios/serialization/
+- [Serialization and deserialization in Python](http://www.legendu.net/misc/blog/serialization-and-deserialization-in-python)
+
+- https://docs.python-guide.org/scenarios/serialization/

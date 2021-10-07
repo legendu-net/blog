@@ -5,15 +5,36 @@ Slug: regex-equivalence
 Title: Regular Expression Equivalent
 Category: Computer Science
 Tags: tips, regex, equivalent, regular expression, regexp, Python, R, CRAN, Perl, SAS, grep, egrep
-Modified: 2021-03-30 12:29:42
+Modified: 2021-10-07 11:11:38
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
 Please read with your own judgement!
 **
 
-[Regular Expression Tester](https://regex101.com/)
+1. The order of precedence of operators in POSIX extended regular expression is as follows.
 
+    1. Collation-related bracket symbols `[==]`, `[::]`, `[..]`
+    2. Escaped characters `\`
+    3. Character set (bracket expression) `[]`
+    4. Grouping `()`
+    5. Single-character-ERE duplication `*`, `+`, `?`, `{m,n}`
+    6. Concatenation
+    7. Anchoring `^`, `$`
+    8. Alternation `|`
+
+2. Some regular expression patterns are defined using a single leading backslash, 
+    e.g., `\s`, `\b`, etc.
+    However, 
+    since special characters (e.g., `\`) need to be escaped in strings in most programming languages,
+    you will need the string `"\\s"` to represent the regular expression pattern `\s`,
+    and similar for other regular expression patterns with a leading backslash. 
+    Python is specialy as it provides raw strings (without escaping) to make it easier to write regular expression patterns. 
+    It even goes one step further to auto correct non-properly escape strings. 
+    For more discussions on Python regular expressions, 
+    pleaser fer to
+    [Regular Expression in Python](http://www.legendu.net/en/blog/regular-expression-python)
+    .
 
 1. In some programming languages,
     you have to compile a plain/text pattern into a regular expression pattern object
@@ -106,7 +127,8 @@ Please read with your own judgement!
             <code>\s</code>
         </td>
         <td> 
-            <code>\s</code>
+            <code>"\\s" or r"\s" </code> 
+            <sup> [5] </sup>
         </td>
         <td> 
         </td>
@@ -126,10 +148,10 @@ Please read with your own judgement!
     <tr>
         <td> Non-white <br> space </td>
         <td> 
-            <code>\S</code>
+            <code> \S </code>
         </td>
         <td> 
-            <code>\S</code>
+            <code> "\\S" or r"\S" </code>
         </td>
         <td> 
         </td>
@@ -292,7 +314,7 @@ Please read with your own judgement!
             <code>\d</code>
         </td>
         <td> 
-            <code>\d</code>
+            <code> "\\d" or r"\d" </code>
         </td>
         <td> 
         </td>
@@ -315,7 +337,7 @@ Please read with your own judgement!
             <code>\D</code>
         </td>
         <td> 
-            <code>\D</code>
+            <code> "\\D" or r"\D" </code>
         </td>
         <td> 
         </td>
@@ -513,10 +535,10 @@ Please read with your own judgement!
             Word characters
         </td>
         <td> 
-            <code>\w</code>
+            <code> \w</code>
         </td>
         <td> 
-            <code>\w</code>
+            <code> "\\w" or r"\w" </code>
         </td>
         <td> 
         </td>
@@ -539,7 +561,7 @@ Please read with your own judgement!
             <code>\b</code>
         </td>
         <td> 
-            <code>\b</code>
+            <code> "\\b" or r"\b" </code>
         </td>
         <td> 
         </td>
@@ -1019,7 +1041,29 @@ Please read with your own judgement!
     in Perl style syntax you can use the modifer `?` after a quantifier to perform a non-greedy match.
     For example, 
     instead of `.*` you can use `.*?` to do a non-greedy match.
+
+[5]: As a matter of fact,
+    `"\s"` also works in Python and it is equivalent to `"\\s"` and `r"\s"`.
+    However,
+    it is suggested that you avoid using `"\s"` as causes confusions
+    especially when you call other programming languges (e.g., Spark SQL) 
+    to run regular expression operations from Python.
+    The raw string pattern `r"\s"` is preferred for its unambiguity and simplicity. 
+    For more discussions on Python regular expressions,
+    please refer to
+    [Regular Expression in Python](http://www.legendu.net/en/blog/regular-expression-python)
+    .
+
 ## References
-- [re — Regular expression operations](https://docs.python.org/3/library/re.html)
+
+- [Regular Expression Tester](https://regex101.com/)
+
+- [Regular Expression in Python](http://www.legendu.net/en/blog/regular-expression-python)
+
+- [Official Python Docs on Regular Expression](https://docs.python.org/3/library/re.html)
 
 - [Regular Expression in Bash](http://www.legendu.net/misc/blog/regular-expression-in-bash/)
+
+- [POSIX Extended Regular Expression Syntax](https://www.boost.org/doc/libs/1_56_0/libs/regex/doc/html/boost_regex/syntax/basic_extended.html#boost_regex.syntax.basic_extended.operator_precedence)
+
+- [Operator Precedence of POSIX Extended Regular Expression](https://www.boost.org/doc/libs/1_56_0/libs/regex/doc/html/boost_regex/syntax/basic_extended.html#boost_regex.syntax.basic_extended.operator_precedence)

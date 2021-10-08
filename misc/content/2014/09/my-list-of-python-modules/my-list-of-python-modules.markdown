@@ -5,7 +5,7 @@ Slug: my-list-of-python-modules
 Title: My List of Python Modules
 Category: Computer Science
 Tags: programming, Python, module, package
-Modified: 2021-04-13 09:48:04
+Modified: 2021-10-07 16:50:08
 
 **
 Things on this page are
@@ -51,9 +51,7 @@ Please read with your own judgement!
 
 ## Date/Time
 
-1. datetime
-
-2. monthdelta
+[Python Modules for Date and Time](http://www.legendu.net/misc/blog/python-modules-for-date-and-time)
 
 ## [High Performance Computing](http://www.legendu.net/misc/blog/high-performance-computing-in-python/)
 

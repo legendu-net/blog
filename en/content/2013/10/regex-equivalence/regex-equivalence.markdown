@@ -35,6 +35,17 @@ Please read with your own judgement!
     pleaser fer to
     [Regular Expression in Python](http://www.legendu.net/en/blog/regular-expression-python)
     .
+    
+3. It becomes tricky if you use a programming language to call another programming language to 
+    perform regular expression operations.
+    Taking `\s` for example,
+    since `\` needs to be escaped in both programming languages, 
+    you will end up using `\\\\s` to represent `\s`. 
+    If you use Python to call other languages to perform regular expression patterns, 
+    things can be simplifed by using raw strings in Python.
+    For example, 
+    instead of `"\\\\s"`,
+    you can use `r"\\s"` in Python.
 
 1. In some programming languages,
     you have to compile a plain/text pattern into a regular expression pattern object

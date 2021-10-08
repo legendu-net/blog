@@ -5,7 +5,7 @@ Slug: tips-on-pytorch
 Title: Tips on PyTorch
 Category: Computer Science
 Tags: programming, Python, PyTorch, GPU, tips
-Modified: 2021-10-01 11:27:30
+Modified: 2021-10-08 11:19:48
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -22,6 +22,22 @@ Please read with your own judgement!
 [WELCOME TO PYTORCH TUTORIALS](https://pytorch.org/tutorials/index.html)
 
 https://pytorch.org/tutorials/beginner/pytorch_with_examples.html
+
+## Initialize Weights and Biases
+
+In general,
+you do not have to initialize weights manually in PyTorch
+as PyTorch automatically set weights and bias for layers following good practices.
+If you do want to initialize weights by yourself, 
+please refer to 
+for some good practices. 
+And below are some example PyTorch code snippets for initalizing weights.
+
+torch.nn.init.xavier_uniform(conv1.weight)
+conv1.weight.data.fill_(0.01)
+conv1.bias.data.fill_(0.01)
+
+
 
 ## Train and Evaluate Models in PyTorch
 

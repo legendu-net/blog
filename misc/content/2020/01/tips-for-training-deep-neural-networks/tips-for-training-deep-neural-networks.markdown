@@ -5,7 +5,7 @@ Slug: training-deep-neural-networks
 Title: Training Deep Neural Networks
 Category: AI
 Tags: AI, machine learning, data science, deep learning, deep neural network, DNN
-Modified: 2020-04-21 13:44:37
+Modified: 2021-10-08 11:19:48
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -29,6 +29,19 @@ try 64, 128, 256.
 A too large batch size might also causes CPU/CUDA memory issues. 
 For testing, 
 you can use as large a batch size as possible as long as it does not run into memory issues. 
+
+## Initailize Weights 
+
+The general rule for setting the weights in a neural network is to set them to be close to zero without being too small.
+
+Good practice is to start your weights in the range of [-y, y] where y=1/sqrt(n)
+(n is the number of inputs to a given neuron).
+
+https://stackoverflow.com/questions/49433936/how-to-initialize-weights-in-pytorch
+How to initialize weights in PyTorch?
+
+normal distribution to initialize the weights
+The normal distribution should have a mean of 0 and a standard deviation of y=1/sqrt(n), where n is the number of inputs to NN
 
 ## Terminology
 

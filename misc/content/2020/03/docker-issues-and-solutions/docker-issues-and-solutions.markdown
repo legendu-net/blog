@@ -53,6 +53,39 @@ Please refer to
 [The Non-Zero Exit Code 137 While Building a Docker Image](http://www.legendu.net/misc/blog/the-non-zero-exit-code-137-while-building-a-docker-image/)
 for more details.
 
+## Debuging Docker Container Exit
+
+1. List Docker container IDs. 
+
+        :::bash
+        docker ps -a
+
+2. Check logs of a Docker container.
+
+        :::bash
+        docker logs container_id
+
+3. Inspect a Docker container.
+
+        :::bash
+        docker inspect container_id
+
+If the above does not help you identify the cause of Docker container exit,
+you can inspect the logs of the Docker daemon.
+The StackOverflow question
+[Where is the Docker daemon log?](https://stackoverflow.com/questions/30969435/where-is-the-docker-daemon-log)
+has a good discussion on where/how to find Docker daemon logs.
+In case you need to figure out which init system your Linux OS is using,
+please refer to the post
+[Check Whether a Linux Is Using Upstart Systemd or SysV](http://www.legendu.net/misc/blog/check-whether-a-linux-is-using-upstart-systemd-or-sysv)            
+.
+
+[Why Does My Docker Container Stop?](https://www.tutorialworks.com/why-containers-stop/)
+
 ## References
 
-https://github.com/docker/cli/issues/1136
+- https://github.com/docker/cli/issues/1136
+
+- [The Non-Zero Exit Code 137 While Building a Docker Image](http://www.legendu.net/misc/blog/the-non-zero-exit-code-137-while-building-a-docker-image/)
+
+- [Why Does My Docker Container Stop?](https://www.tutorialworks.com/why-containers-stop/)

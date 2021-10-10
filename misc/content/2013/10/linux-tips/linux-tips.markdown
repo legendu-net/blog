@@ -5,7 +5,7 @@ Date: 2013-10-29 17:13:18
 Slug: linux-tips
 Category: OS
 Tags: tips, Linux
-Modified: 2021-08-21 23:06:48
+Modified: 2021-10-10 14:03:20
 
 **
 Things on this page are
@@ -128,10 +128,6 @@ Please read with your own judgement!
 
 3. use pushd and popd
 
-
-## FTP
-
-1. ftp transfer non-text use binary mode
 
 ## File Association
 

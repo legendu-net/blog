@@ -5,7 +5,7 @@ Slug: tips-for-installing-debian
 Title: Tips on Installing Debian Series Linux Distributions
 Category: OS
 Tags: install, Linux, software, Debian
-Modified: 2021-09-06 12:59:17
+Modified: 2021-10-10 14:03:20
 
 
 ## Before Installation

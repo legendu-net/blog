@@ -14,6 +14,7 @@
     ["Ibm", "IBM"], ["Cpp", "C++"], 
     ["Cpu", "CPU"], ["Cte", "CTE"], 
     ["Dns", "DNS"], ["Dsl", "DSL"], 
+    ["Ftp", "FTP"], 
     ["Gdb", "GDB"], ["Gnu", "GNU"], ["Gui", "GUI"], ["Gpu", "GPU"], ["Gpt", "GPT"],
     ["Ide", "IDE"], ["Iml", "IML"], 
     ["Jar", "JAR"], ["Jni", "JNI"], ["Jit", "JIT"], ["Jvm", "JVM"], 

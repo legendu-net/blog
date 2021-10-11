@@ -1,9 +1,9 @@
 Status: published
 Date: 2021-10-10 14:00:53
-Modified: 2021-10-10 14:07:58
+Modified: 2021-10-11 10:34:21
 Author: Benjamin Du
 Slug: ftp-on-linux
-Title: Ftp on Linux
+Title: FTP on Linux
 Category: Computer Science
 Tags: Computer Science, Linux, FTP, SFTP
 
@@ -11,7 +11,8 @@ Tags: Computer Science, Linux, FTP, SFTP
 
 ## Installation in Ubuntu
 
-wajig install ftp
+    :::bash
+    wajig install ftp
 
 ## FTP
 

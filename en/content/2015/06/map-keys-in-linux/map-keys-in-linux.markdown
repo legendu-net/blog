@@ -5,7 +5,7 @@ Slug: map-keys-in-linux
 Title: Map Keys in Linux
 Category: OS
 Tags: Linux, keyboard, mapping, swap, setxkbmap, Cinnamon, GNOME, keys
-Modified: 2021-10-02 20:46:17
+Modified: 2021-10-11 10:29:36
 
 Note: For Vim users, it is appealing to make the `Caps Lock` function like `Escape`.
 It is suggested that you make `Caps Lock` an additonal `Escape`
@@ -35,6 +35,21 @@ Some desktop environment (e.g., Cinnamon, GNOME, etc.) let you define behavior o
 
 6. Choose the behavior you want.
 
+## Keyboard Configuration
+
+Keyboard is configured by the file `/etc/default/keyboard` on Linux.
+For example,
+you can find the line that starts with `XKBOPTIONS`,
+and add `ctrl:nocaps` to make Caps Lock an additional Control key
+or `ctrl:swapcaps` to swap Caps Lock and Control.
+Run the following command after updating the file `/etc/default/keyboard` to make it in effect.
+```
+sudo dpkg-reconfigure keyboard-configuration
+```
+This is the recommended way if you want to make key swaping persistent. 
+Another advantage it has over GUI configuration and `setxkbmap` (see the next section)
+is that the key swaping works in TTY (without X11 or Wayland).
+
 ## setxkbmap
 
 Swap the Caps and the Escape keys.
@@ -47,19 +62,6 @@ the key mapping partially pass to virtual machines or remote desktops,
 which is the worst scenario.
 It is suggested that you turn off the mapping on the Linux host
 when you work in a VM or a remote desktop.
-
-## Keyboard Configuration
-
-Keyboard is configured by the file `/etc/default/keyboard` on Linux.
-For example,
-you can find the line that starts with `XKBOPTIONS`,
-and add `ctrl:nocaps` to make Caps Lock an additional Control key
-or `ctrl:swapcaps` to swap Caps Lock and Control.
-Run the following command after updating the file `/etc/default/keyboard` to make it in effect.
-```
-sudo dpkg-reconfigure keyboard-configuration
-```
-This way is better as it will take effect on the virtual consoles as well as in the GUI DE.
 
 ## More References
 

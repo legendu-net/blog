@@ -1,15 +1,19 @@
 Status: published
 Date: 2021-10-05 11:43:26
-Modified: 2021-10-07 09:48:12
+Modified: 2021-10-11 10:36:05
 Author: Benjamin Du
 Slug: check-whether-a-linux-is-using-upstart-systemd-or-sysv
-Title: Check Whether a Linux Is Using Upstart Systemd or SysV
+Title: Check Whether a Linux Is Using upstart, systemd or SysV
 Category: Computer Science
 Tags: Computer Science, OS, Linux, systemd, upstart, SysV
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-ps -p1 | grep "init\|upstart\|systemd"
+
+The simplest way to check whether a Linux system is running systemd, upstart or SysV 
+is by running the following command.
+
+    :::bash
+    ps -p1 | grep "init\|upstart\|systemd"
 
 ## References 
 

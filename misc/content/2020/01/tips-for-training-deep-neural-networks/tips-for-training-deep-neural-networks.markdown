@@ -30,18 +30,30 @@ A too large batch size might also causes CPU/CUDA memory issues.
 For testing, 
 you can use as large a batch size as possible as long as it does not run into memory issues. 
 
-## Initailize Weights 
+## Initialize Weights 
 
 The general rule for setting the weights in a neural network is to set them to be close to zero without being too small.
 
 Good practice is to start your weights in the range of [-y, y] where y=1/sqrt(n)
 (n is the number of inputs to a given neuron).
 
+normal distribution to initialize the weights
+The normal distribution should have a mean of 0 and a standard deviation of y=1/sqrt(n), where n is the number of inputs to NN
+
 https://stackoverflow.com/questions/49433936/how-to-initialize-weights-in-pytorch
 How to initialize weights in PyTorch?
 
-normal distribution to initialize the weights
-The normal distribution should have a mean of 0 and a standard deviation of y=1/sqrt(n), where n is the number of inputs to NN
+## NAN Values
+
+1. Check whether there are NAN values in your raw data. 
+    I encountered a tricky situation 
+    where my training data (tensors) was prepared using pandas DataFrame
+    and NAN values were generated due to missuse of the method `DataFrame.iterrows`.
+
+[Nan Loss coming after some time](https://discuss.pytorch.org/t/nan-loss-coming-after-some-time/11568)
+
+[Getting Nan after first iteration with custom loss](https://discuss.pytorch.org/t/getting-nan-after-first-iteration-with-custom-loss/25929)
+
 
 ## Computer Vision Specific Tips
 

@@ -30,14 +30,19 @@ you do not have to initialize weights manually in PyTorch
 as PyTorch automatically set weights and bias for layers following good practices.
 If you do want to initialize weights by yourself, 
 please refer to 
+[Initialize Weights](https://www.legendu.net/misc/blog/training-deep-neural-networks/#initialize-weights)
 for some good practices. 
 And below are some example PyTorch code snippets for initalizing weights.
 
 torch.nn.init.xavier_uniform(conv1.weight)
 conv1.weight.data.fill_(0.01)
 conv1.bias.data.fill_(0.01)
-
-
+torch.nn.init.normal_(self.fc1.weight, mean=0.0, std=0.01)
+torch.nn.init.zeros_(self.fc1.bias)
+torch.nn.init.normal_(self.fc2.weight, mean=0.0, std=0.01)
+torch.nn.init.zeros_(self.fc2.bias)
+torch.nn.init.normal_(self.fc3.weight, mean=0.0, std=0.01)
+torch.nn.init.zeros_(self.fc3.bias)
 
 ## Train and Evaluate Models in PyTorch
 

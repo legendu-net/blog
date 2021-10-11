@@ -5,7 +5,7 @@ Slug: data-for-computer-vision-research
 Title: Data for Computer Vision Research
 Category: AI
 Tags: AI, data science, machine learning, deep learning, Computer Vision, CV, data
-Modified: 2021-10-01 11:20:21
+Modified: 2021-10-08 12:50:34
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

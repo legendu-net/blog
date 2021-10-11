@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-09-20 17:09:03
-Modified: 2021-09-20 17:33:47
+Modified: 2021-10-08 13:51:03
 Author: Benjamin Du
 Slug: compute-vision-tasks
 Title: Compute Vision Tasks

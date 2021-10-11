@@ -5,7 +5,7 @@ Slug: training-deep-neural-networks
 Title: Training Deep Neural Networks
 Category: AI
 Tags: AI, machine learning, data science, deep learning, deep neural network, DNN
-Modified: 2021-10-08 11:19:48
+Modified: 2021-10-08 12:57:31
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -42,6 +42,19 @@ How to initialize weights in PyTorch?
 
 normal distribution to initialize the weights
 The normal distribution should have a mean of 0 and a standard deviation of y=1/sqrt(n), where n is the number of inputs to NN
+
+## Computer Vision Specific Tips
+
+1. explore your data
+
+2. check image dimensions. 
+    It is often a good idea to resize all images to a unify size before training.
+    If some original images are really large (say, 4k images),
+    it might be beneficial to downscaling images. 
+    This has 2 potential benefits.
+    - dramatically increase training speed
+    - avoid generating "noisy" data caused by random crop data augumentation
+
 
 ## Terminology
 

@@ -63,8 +63,9 @@ for more details.
 ## General Tips and Traps
 
 1. [Common newbie mistakes or bad practices](https://users.rust-lang.org/t/common-newbie-mistakes-or-bad-practices/64821)
+    [Common Newbie Mistakes and Bad Practices in Rust: Bad Habits](https://adventures.michaelfbryan.com/posts/rust-best-practices/bad-habits/)
 
-1. do not use `..=` which has performance issues. 
+2. do not use `..=` which has performance issues. 
     use `..` instead.
 
 

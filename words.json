@@ -99,6 +99,7 @@
     ["Libreoffice", "LibreOffice"],
     ["Packagekitd", "PackageKitD"], ["Proxychains", "ProxyChains"],
     ["Spark-shell", "spark-shell"],
+    ["Command-Line", "Command-line"],
     ["Featuretools", "FeatureTools"],
     ["Projectlibre", "ProjectLibre"],
     ["Youcompleteme", "YouCompleteMe"],

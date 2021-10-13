@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-04-10 12:17:46
-Modified: 2021-10-11 09:45:13
+Modified: 2021-10-11 22:48:57
 Author: Benjamin Du
 Slug: rust-tips
 Title: Tips on Rust
@@ -55,6 +55,10 @@ please refer to
 Please refer to 
 [IDE for Rust](http://www.legendu.net/misc/blog/IDE-for-Rust)
 for more details.
+
+## Key Concepts in Rust
+
+[Moves, copies and clones in Rust](https://hashrust.com/blog/moves-copies-and-clones-in-rust/)
 
 ## General Tips and Traps
 

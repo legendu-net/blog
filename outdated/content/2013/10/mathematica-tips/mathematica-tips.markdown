@@ -8,7 +8,7 @@ Category: Computer Science
 Tags: tips, programming, Mathematica, Wolfram
 Modified: 2019-03-29 09:27:31
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
  
 1. Drawing tools, 
     under a plot, click more, click drawing tools ...

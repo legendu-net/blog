@@ -5,12 +5,14 @@ Title: Tips on tmux
 Slug: tmux-tips
 Category: Software
 Tags: tips, tmux, software, remote, screen, terminal
-Modified: 2020-05-22 15:04:34
+Modified: 2021-10-12 10:23:10
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
 Please read with your own judgement!
 **
+
+Zellij is a better alternative.
  
 1. ctrl + b ?: help
 

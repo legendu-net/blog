@@ -5,7 +5,7 @@ Slug: summary-random-number-generators
 Author: Ben Chuanlong Du
 Category: AI
 Tags: WELL, RNG, statistics, SFMT, dimension, MT, PCG, Java, Python
-Modified: 2021-10-13 01:21:59
+Modified: 2021-10-13 17:06:20
 
 <img src="http://www.legendu.net/media/rng/random-number-generator.png" height="200" width="240" align="right"/>
 
@@ -78,3 +78,6 @@ C++ implementations are available but I don't see a popular Java implementation 
 ### Rust 
 
 [rand](https://crates.io/crates/rand)
+
+[rand_xoshiro](https://crates.io/crates/rand_xoshiro)
+

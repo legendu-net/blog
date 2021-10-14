@@ -5,18 +5,21 @@ Slug: unit-testing-formal-verification-rust
 Title: Unit Testing and Formal Verification in Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, testing, unit test, verification, analysis, formal verification
-Modified: 2021-07-15 23:29:02
+Modified: 2021-10-13 19:35:48
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 assert!
+
 assert_eq!
+
 [matches!](https://doc.rust-lang.org/core/macro.matches.html)
 
-assert_eq!(Rank::from_char('2').unwrap(), Rank::_2);
-let err = Rank::from_char('z').unwrap_err().downcast().unwrap();
-assert_eq!(err, RankError::NotARank('z')));
-assert!(matches!(Rank::from_char('Z'), Err(_))
+    :::Rust
+    assert_eq!(Rank::from_char('2').unwrap(), Rank::_2);
+    let err = Rank::from_char('z').unwrap_err().downcast().unwrap();
+    assert_eq!(err, RankError::NotARank('z')));
+    assert!(matches!(Rank::from_char('Z'), Err(_))
 
 
 [Rust Design-for-Testability: a survey](https://alastairreid.github.io/rust-testability/)

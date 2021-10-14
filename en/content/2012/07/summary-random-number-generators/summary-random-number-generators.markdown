@@ -5,7 +5,7 @@ Slug: summary-random-number-generators
 Author: Ben Chuanlong Du
 Category: AI
 Tags: WELL, RNG, statistics, SFMT, dimension, MT, PCG, Java, Python
-Modified: 2021-10-13 17:06:20
+Modified: 2021-10-13 20:39:04
 
 <img src="http://www.legendu.net/media/rng/random-number-generator.png" height="200" width="240" align="right"/>
 
@@ -58,8 +58,33 @@ PCG is a family of simple fast space-efficient statistically good algorithms
 for random number generation. 
 Unlike many general-purpose RNGs, 
 they are also hard to predict.
-C++ implementations are available but I don't see a popular Java implementation at this time.
+C++ implementations are available,
+and the Rust crate 
+[rand_pcg](https://crates.io/crates/rand_pcg)
+(which is part of the popular Rust crate [rand](https://crates.io/crates/rand))
+has implementation of 
+[PCG32](https://rust-random.github.io/rand/rand_pcg/type.Pcg32.html)
+and 
+[PCG64](https://rust-random.github.io/rand/rand_pcg/type.Pcg64.html)
+.
+I don't see a popular Java implementation for PCG at this time.
 
+## [Xoroshiro](https://en.wikipedia.org/wiki/Xoroshiro128%2B)
+
+Xoroshiro is a family of fast, space-efficient and high quality PRNGs.
+The Rust crate
+[rand_xoshiro](https://crates.io/crates/rand_xoshiro)
+(which is part of the popular Rust crate [rand](https://crates.io/crates/rand))
+has implementations of 
+[Xoshiro256Plus](https://docs.rs/rand_xoshiro/0.6.0/rand_xoshiro/struct.Xoshiro256Plus.html)
+and
+[Xoshiro256PlusPlus](https://docs.rs/rand_xoshiro/0.6.0/rand_xoshiro/struct.Xoshiro256PlusPlus.html)
+.
+[Xoshiro256PlusPlus](https://docs.rs/rand_xoshiro/0.6.0/rand_xoshiro/struct.Xoshiro256PlusPlus.html)
+is a very good PRNG for statistical simulation purpose. 
+Specially,
+it supports jumping ahead
+which means that you can implement a fast and **correct** parallel PRNG based on it.
 
 ## Libraries for Random Number Generators
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2020-06-13 22:57:16
-Modified: 2021-09-15 20:48:48
+Modified: 2021-10-14 21:10:54
 Author: Benjamin Du
 Slug: rust-for-big-data
 Title: Rust for Big Data
@@ -20,12 +20,17 @@ Please read with your own judgement!
 
 ## [kamu-cli](https://github.com/kamu-data/kamu-cli)
 
-## [datafusion](https://github.com/apache/arrow/tree/e33fec73fdbe395baae6899fe1a4eb2e4f46705f/rust/datafusion)
+## [datafusion](http://www.legendu.net/misc/blog/tips-on-datafusion)
 
 ## [ballista](https://github.com/ballista-compute/ballista)
+
+## [polars](http://www.legendu.net/misc/blog/tips-on-polars)   
 
 ## References
 
 - [Difference between Apache parquet and arrow](https://stackoverflow.com/questions/56472727/difference-between-apache-parquet-and-arrow)
 
 - https://arrow.apache.org/
+
+- [Database-like ops benchmark](https://h2oai.github.io/db-benchmark/)
+

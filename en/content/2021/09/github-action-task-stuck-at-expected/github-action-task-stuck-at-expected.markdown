@@ -13,4 +13,13 @@ Github pull request - Waiting for status to be reported
 
 ![](https://i.stack.imgur.com/xHqbI.png)
 
-The simplest solution is to close the PR and reopen it.
+1. The simplest manually solution is to close the PR and reopen it.
+
+2. In my case, 
+    the issue was due to `GITHUB_TOKEN` was used for the GitHub Action
+    [create-pull-request](https://github.com/peter-evans/create-pull-request)
+    .
+    Creating a repository secret 
+    and use it to authenticate the GitHub Action
+    [create-pull-request](https://github.com/peter-evans/create-pull-request)
+    resolved the issue.

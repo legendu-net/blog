@@ -19,6 +19,15 @@ Please read with your own judgement!
 2. `GITHUB_TOKEN` is an automatically generated secret 
     that lets you make authenticated calls to the GitHub API in your workflow runs. 
     Actions generates a new token for each job and expires the token when a job completes.
+    `GITHUB_TOKEN` can also be used for the GitHub Action `peter-evans/create-pull-request` to create PRs automatically.
+    However,
+    GitHub bot is the owner of a PR created by the GitHub action 
+    [create-pull-request](https://github.com/peter-evans/create-pull-request) with `GITHUB_TOKEN` 
+    which might have issues triggering other pipelines listening to PR events.
+    A simple solution to this problem is to manually create a repository secret (e.g., `GITHUBACTIONS`)
+    and use it to autenticate the GitHub Action 
+    [create-pull-request](https://github.com/peter-evans/create-pull-request) with `GITHUB_TOKEN` 
+    .
 
 2. OS: ubuntu-latest, windows-latest, macOS-latest
 

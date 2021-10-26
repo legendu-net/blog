@@ -5,7 +5,7 @@ Slug: tips-on-github-actions
 Title: Tips on GitHub Actions
 Category: Computer Science
 Tags: Computer Science, GitHub Actions, CICD
-Modified: 2021-09-09 15:32:26
+Modified: 2021-10-25 18:35:23
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -37,6 +37,20 @@ Please read with your own judgement!
     Please refer to 
     [Is it possible to install and configure Docker on MacOS runner?](https://github.community/t/is-it-possible-to-install-and-configure-docker-on-macos-runner/16981)
     for more details.
+
+## Issues and Solutions
+
+### Error: The process '/usr/bin/git' failed with exit code 1
+
+Sympton: A GitHub Actions workflow fail to checkout a branch of a repository 
+and throws the following error message.
+
+> Error: The process '/usr/bin/git' failed with exit code 1
+
+Possible Causes and Solutions: It's possible that you use a branch name 
+(e.g., used `main` while the repo does not have a `main` branch) which does not exist. 
+If so, 
+use the correct branch name might fix the issue.
 
 ## Branch Matching
 

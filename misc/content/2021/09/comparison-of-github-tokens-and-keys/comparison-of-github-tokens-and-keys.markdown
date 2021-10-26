@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-09-09 15:21:21
-Modified: 2021-10-19 23:40:16
+Modified: 2021-10-25 18:51:22
 Author: Benjamin Du
 Slug: comparison-of-github-tokens-and-keys
 Title: Comparison of GitHub Tokens and Keys
@@ -19,7 +19,7 @@ Tags: Computer Science, programming, GitHub, Git, security, token, key, SSH, pub
   </tr>
 
   <tr>
-    <td> GitHub SSH Key </td>
+    <td> GitHub <br> SSH Key </td>
     <td> A SSH public key </td>
     <td> All repos </td>
     <td> Read and Write </td>
@@ -27,27 +27,35 @@ Tags: Computer Science, programming, GitHub, Git, security, token, key, SSH, pub
   </tr>
 
   <tr>
-    <td> GitHub Deploy Key </td>
+    <td> GitHub <br> Deploy Key </td>
     <td> A SSH public key </td>
-    <td> Single repo </td>
+    <td> Any repo <br> configures <br> the key </td>
     <td> Read (optionally write) </td>
     <th> SSH </th>
   </tr>
 
   <tr>
-    <td> GitHub Personal Access Token </td>
-    <td> </td>
-    <td> All public repos (optionally private repos) </td>
+    <td> GitHub PAT </td>
+    <td> Personal access token </td>
+    <td> Any repo <br> configures <br> the PAT </td>
     <td> Read and Write </td>
     <th> HTTPS </th>
   </tr>
 
   <tr>
-    <td> GitHub Repository Secret </td>
-    <td> Repo secret for <br> authenticating <br> GitHub actions, etc.</td>
+    <td> Repository Secret </td>
+    <td> Repo secret (SSH keys, PATs or anything) for <br> authenticating GitHub APIs </td>
     <td> Single repo </td>
-    <td> Read and Write </td>
-    <th> HTTPS </th>
+    <td> Depends </td>
+    <th> Depends </th>
+  </tr>
+
+  <tr>
+    <td> Organization Secret </td>
+    <td> Org secret (SSH keys, PATs, or anything) for authenticating GitHub APIs </td>
+    <td> All repos <br> in the org </td>
+    <td> Depends </td>
+    <th> Depends </th>
   </tr>
 
 </table>

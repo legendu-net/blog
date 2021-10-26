@@ -5,12 +5,12 @@ Slug: schedule-cron-tasks-in-a-docker-container
 Title: Schedule Cron Tasks in a Docker Container
 Category: Software
 Tags: software, Docker, crontab, cron, deamon, container
-Modified: 2021-06-01 09:40:48
+Modified: 2021-10-25 20:14:17
 
 
 Cron tasks work in a Docker container. 
 However,
-you have to manually start the cron deamon using `cron` or `sudo cron` 
+you have to manually start the cron deamon (root or sudo required) using `cron` or `sudo cron` 
 if it is not configured (via the Docker entrypoint) to start on the start of the Docker container.
 For tutorials on crontab, 
 please refer to the post

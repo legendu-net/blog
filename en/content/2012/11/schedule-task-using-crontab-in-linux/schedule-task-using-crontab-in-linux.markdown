@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Title: Schedule Task Using Crontab in Linux
 Category: OS
 Tags: task, crontab, schedule, linux, scheduling, AirFlow
-Modified: 2021-05-27 11:28:08
+Modified: 2021-10-25 20:14:17
 
 
 Note: Crontab is great for simple scheduling requests. 
@@ -13,6 +13,25 @@ For complicated scheduling with many dependencies
 you probably want to go with 
 [AirFlow](http://www.legendu.net/misc/blog/apache-airflow-tips)
 .
+
+## Installation
+
+Cron is usually installed by default.
+It not (e.g., if you are using a Docker image),
+you can install it using the following command (on Ubuntu).
+
+    :::bash
+    wajig update && wajig install cron
+
+## Alternative to Cron
+
+1. AirFow is a more rigorous job scheduling system. 
+
+2. When cron is not available,
+    a simple alternative is to 
+    write a simple Python script to run a task at certain times.
+
+## Tips and Traps
 
 1. There are 6 fields that you need to fill for a task to be schedule: 
     `m`, `h`, `dom`, `mon`, `dow` and `command`,

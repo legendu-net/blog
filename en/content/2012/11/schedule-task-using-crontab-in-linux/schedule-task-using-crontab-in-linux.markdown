@@ -2,10 +2,10 @@ Status: published
 Date: 2012-11-27 11:28:08
 Slug: schedule-task-using-crontab-in-linux
 Author: Ben Chuanlong Du
-Title: Schedule Task Using Crontab in Linux
+Title: Schedule Task Using Cron in Linux
 Category: OS
 Tags: task, crontab, schedule, linux, scheduling, AirFlow
-Modified: 2021-10-27 20:21:28
+Modified: 2021-10-28 09:57:27
 
 
 Note: Cron is great for simple scheduling requests. 

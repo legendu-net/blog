@@ -5,10 +5,10 @@ Author: Ben Chuanlong Du
 Title: Schedule Task Using Crontab in Linux
 Category: OS
 Tags: task, crontab, schedule, linux, scheduling, AirFlow
-Modified: 2021-10-25 20:14:17
+Modified: 2021-10-27 20:21:28
 
 
-Note: Crontab is great for simple scheduling requests. 
+Note: Cron is great for simple scheduling requests. 
 For complicated scheduling with many dependencies 
 you probably want to go with 
 [AirFlow](http://www.legendu.net/misc/blog/apache-airflow-tips)

@@ -5,13 +5,19 @@ Slug: unit-testing-formal-verification-rust
 Title: Unit Testing and Formal Verification in Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, testing, unit test, verification, analysis, formal verification
-Modified: 2021-10-13 19:35:48
+Modified: 2021-10-30 12:08:20
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
-assert!
+[std::assert!](https://doc.rust-lang.org/std/macro.assert.html)
 
-assert_eq!
+[assert_eq!](https://doc.rust-lang.org/std/macro.assert_eq.html)
+
+Both
+[std::assert!](https://doc.rust-lang.org/std/macro.assert.html)
+and
+[assert_eq!](https://doc.rust-lang.org/std/macro.assert_eq.html)
+support an option error message on failure.
 
 [matches!](https://doc.rust-lang.org/core/macro.matches.html)
 
@@ -37,6 +43,9 @@ assert_eq!
 [Library-ification and analyzing Rust](http://smallcultfollowing.com/babysteps/blog/2020/04/09/libraryification/)
 
 [This is a static simulator for Rust programs. It runs a set of test cases and attempts to prove that all assertions pass on all valid inputs.](https://github.com/GaloisInc/crucible/tree/master/crux-mir)
+
+## Running Test
+[Controlling How Tests Are Run](https://doc.rust-lang.org/book/ch11-02-running-tests.html)
 
 ## References 
 

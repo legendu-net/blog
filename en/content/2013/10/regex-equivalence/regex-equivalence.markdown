@@ -5,12 +5,7 @@ Slug: regex-equivalence
 Title: Regular Expression Equivalent
 Category: Computer Science
 Tags: tips, regex, equivalent, regular expression, regexp, Python, R, CRAN, Perl, SAS, grep, egrep
-Modified: 2021-10-07 11:11:38
-
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
+Modified: 2021-10-31 11:04:04
 
 1. The order of precedence of operators in POSIX extended regular expression is as follows.
 

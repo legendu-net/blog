@@ -79,6 +79,8 @@ https://github.com/cdr/code-server/issues/171
 
 - [SQL Language Server](https://marketplace.visualstudio.com/items?itemName=joe-re.sql-language-server)
 
+- [vscode-sqlfluff](https://github.com/sqlfluff/vscode-sqlfluff)
+
 ## Useful Extensions for Android Development
 
 - [Android](https://marketplace.visualstudio.com/items?itemName=adelphes.android-dev-ext)

@@ -17,4 +17,8 @@ Tags: Computer Science, programming, engineering, 2FA, 2-way, two-way, authentic
     Avoid purchasing cutting-edge technologies in those situations 
     but rather wait for new technologies to be well tested before adopting them.
 
+## References
+
+[General Tips on Programming](http://www.legendu.net/misc/blog/general-programming-tips/)
+
 [General Tips on Debugging](http://www.legendu.net/misc/blog/general-tips-on-debugging)

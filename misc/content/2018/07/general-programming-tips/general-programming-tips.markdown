@@ -5,7 +5,7 @@ Slug: general-programming-tips
 Title: General Tips on Programming
 Category: Computer Science
 Tags: programming, tips, semantic versioning
-Modified: 2021-10-25 16:21:29
+Modified: 2021-11-03 09:38:21
 
 **
 Things on this page are
@@ -46,5 +46,9 @@ Please read with your own judgement!
     and a default value might take a long time to run,
     it is better to set the defautl value to `None` 
     and then calculalte the default value when the corresponding command is called.
+
+## References
+
+[General Tips for Engineering](http://www.legendu.net/misc/blog/general-tips-for-engineering/)
 
 [General Tips on Debugging](http://www.legendu.net/misc/blog/general-tips-on-debugging)

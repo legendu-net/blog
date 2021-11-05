@@ -10,3 +10,7 @@ Tags: Computer Science, programming, debugging, debug
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. Get a minimal example (which does not work) and debug based on it.
+
+## References 
+
+[General Tips on Programming](http://www.legendu.net/misc/blog/general-programming-tips/)

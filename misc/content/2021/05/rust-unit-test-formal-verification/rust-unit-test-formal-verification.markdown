@@ -5,7 +5,7 @@ Slug: unit-testing-formal-verification-rust
 Title: Unit Testing and Formal Verification in Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, testing, unit test, verification, analysis, formal verification
-Modified: 2021-10-13 19:35:48
+Modified: 2021-11-06 22:11:25
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
@@ -54,6 +54,10 @@ cargo test -- --show-output
 cargo test -- --ignored
 
 cargo test -- --ignored --show-output
+
+cargo test --release 
+
+cargo test --release -- --ignored
 
 ## References 
 

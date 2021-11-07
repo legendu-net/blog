@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-06-16 22:50:37
-Modified: 2021-06-24 12:54:44
+Modified: 2021-11-06 21:49:23
 Author: Benjamin Du
 Slug: make-a-rust-project-both-a-library-and-a-binary
 Title: Make a Rust Project Both a Library and a Binary
@@ -9,12 +9,14 @@ Tags: Computer Science, programming, Rust, library, binary, crate, file system, 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
+```
 .
 ├── Cargo.toml
 └── src
     ├── main.rs
     │   
     └── lib.rs
+```
 
 ```
 [package]

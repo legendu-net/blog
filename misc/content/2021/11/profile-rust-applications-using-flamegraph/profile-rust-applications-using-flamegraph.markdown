@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-09 10:28:40
-Modified: 2021-11-09 10:28:40
+Modified: 2021-11-09 21:55:23
 Author: Benjamin Du
 Slug: profile-rust-applications-using-flamegraph
 Title: Profile Rust Applications Using Flamegraph
@@ -25,6 +25,12 @@ unless you are using the root account.
 ```
 sudo ~/.cargo/bin/flamegraph -o flamegraph.svg /path/to/rust_app_binary
 ```
+Notice that it is best to
+1. Run the above command on the debug version of the binary 
+    as the debug version contains symbol informations 
+    which helps you locate which part of code runs slower.
+2. It is best to view the generated SVG file using a browser (e.g., Chrome)
+    instead of using a image viewer app.
 
 ## perf
 

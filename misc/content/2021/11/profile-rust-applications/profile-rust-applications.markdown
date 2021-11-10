@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2021-11-09 10:21:29
+Modified: 2021-11-09 10:28:18
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -10,34 +10,17 @@ Tags: Computer Science, programming, Rust, profile, profiling
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
-## FlameGraph
+## [FlameGraph](http://www.legendu.net/misc/blog/profile-rust-applications-using-flamegraph)
 
-[flamegraph](https://github.com/flamegraph-rs/flamegraph)
-
-```
-wajig update 
-wajig install linux-tools-common linux-tools-generic linux-tools-`uname -r`
-cargo install flamegraph
-```
-Run the following command to generate a SVG visualization of performance profiling.
-Do not use `cargo flamegraph` directly 
-unless you are using the root account.
-```
-sudo ~/.cargo/bin/flamegraph -o flamegraph.svg /path/to/rust_app_binary
-```
-
-## perf
-
-[Running `perf` in docker & kubernetes](https://medium.com/@geekidea_81313/running-perf-in-docker-kubernetes-7eb878afcd42)
-
-[Security implications of changing “perf_event_paranoid”](https://unix.stackexchange.com/questions/519070/security-implications-of-changing-perf-event-paranoid)
-
-[Run perf without root-rights](https://superuser.com/questions/980632/run-perf-without-root-rights)
+[FlameGraph](http://www.legendu.net/misc/blog/profile-rust-applications-using-flamegraph)
+is a great profiler for Rust application.
 
 ## References
 
-[The Rust Performance Book - Profiling](https://nnethercote.github.io/perf-book/profiling.html)
+- [The Rust Performance Book - Profiling](https://nnethercote.github.io/perf-book/profiling.html)
 
-https://easyperf.net/blog/2019/02/09/Top-Down-performance-analysis-methodology
+- [Top-Down performance analysis methodology](https://easyperf.net/blog/2019/02/09/Top-Down-performance-analysis-methodology)
 
-https://crates.io/crates/profiling
+- [Rust Crate - profiling](https://crates.io/crates/profiling)
+
+- [Is it possible to print the callgraph of a Cargo workspace?](https://users.rust-lang.org/t/is-it-possible-to-print-the-callgraph-of-a-cargo-workspace/50369)

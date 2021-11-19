@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-09 10:28:40
-Modified: 2021-11-18 23:11:45
+Modified: 2021-11-18 23:33:03
 Author: Benjamin Du
 Slug: profile-rust-applications-using-flamegraph
 Title: Profile Rust Applications Using Flamegraph
@@ -28,6 +28,17 @@ then add the `--sudo` option.
 
     :::bash
     cargo flamegraph --sudo
+
+If you encounter issues 
+(see 
+[#62](https://github.com/flamegraph-rs/flamegraph/issues/62)
+and
+[#159](https://github.com/flamegraph-rs/flamegraph/issues/159)
+) with the above commands,
+you can try run the `flamegraph` on rust binary directly.
+
+    :::bash
+    sudo ~/.cargo/bin/flamegraph target/release/your_binary
 
 Notice that it is best to
 1. Enable debug info (if you are profiling the release build which is the default).

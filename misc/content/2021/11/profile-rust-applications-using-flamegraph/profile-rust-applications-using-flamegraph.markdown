@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-09 10:28:40
-Modified: 2021-11-09 21:55:23
+Modified: 2021-11-18 23:11:45
 Author: Benjamin Du
 Slug: profile-rust-applications-using-flamegraph
 Title: Profile Rust Applications Using Flamegraph
@@ -19,17 +19,25 @@ cargo install flamegraph
 ## Usage
 
 Run the following command to generate a SVG visualization of performance profiling.
-Do not use `cargo flamegraph` directly 
-unless you are using the root account.
 
-```
-sudo ~/.cargo/bin/flamegraph -o flamegraph.svg /path/to/rust_app_binary
-```
+    :::bash
+    cargo flamegraph
+
+If `sudo` permission is needed, 
+then add the `--sudo` option.
+
+    :::bash
+    cargo flamegraph --sudo
+
 Notice that it is best to
-1. Run the above command on the debug version of the binary 
-    as the debug version contains symbol informations 
-    which helps you locate which part of code runs slower.
-2. It is best to view the generated SVG file using a browser (e.g., Chrome)
+1. Enable debug info (if you are profiling the release build which is the default).
+    You can achive this by adding the following configuration into your `Cargo.toml` file.
+
+        :::bash
+        [profile.release]
+        debug = true
+
+2. View the generated SVG file using a browser (e.g., Chrome)
     instead of using a image viewer app.
 
 ## perf

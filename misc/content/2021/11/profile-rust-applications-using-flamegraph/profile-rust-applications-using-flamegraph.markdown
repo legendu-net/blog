@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-09 10:28:40
-Modified: 2021-11-18 23:33:03
+Modified: 2021-11-19 08:00:13
 Author: Benjamin Du
 Slug: profile-rust-applications-using-flamegraph
 Title: Profile Rust Applications Using Flamegraph
@@ -44,7 +44,6 @@ Notice that it is best to
 1. Enable debug info (if you are profiling the release build which is the default).
     You can achive this by adding the following configuration into your `Cargo.toml` file.
 
-        :::bash
         [profile.release]
         debug = true
 

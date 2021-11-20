@@ -5,7 +5,7 @@ Slug: tips-on-cargo
 Title: Tips on Cargo
 Category: Computer Science
 Tags: Computer Science, programming, Rust, cargo, format, fmt, rustfmt
-Modified: 2021-06-16 18:07:04
+Modified: 2021-11-20 15:02:11
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

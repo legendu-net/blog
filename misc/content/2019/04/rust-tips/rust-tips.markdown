@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-04-10 12:17:46
-Modified: 2021-11-20 13:27:15
+Modified: 2021-11-20 15:05:35
 Author: Benjamin Du
 Slug: rust-tips
 Title: Tips on Rust
@@ -49,6 +49,15 @@ please refer to
 - clippy
 
 - rustfmt
+
+## Conditional Compilation in Rust 
+
+https://users.rust-lang.org/t/conditional-compilation-for-debug-release/1098
+Conditional compilation for debug/release
+
+    :::bash
+    #[cfg(debug_assertions)]
+    ...
 
 ## IDE for Rust
 

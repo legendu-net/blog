@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-10-26 22:38:20
-Modified: 2021-10-26 22:38:20
+Modified: 2021-11-20 09:50:03
 Author: Benjamin Du
 Slug: benchmark-a-rust-app
 Title: Benchmark a Rust App

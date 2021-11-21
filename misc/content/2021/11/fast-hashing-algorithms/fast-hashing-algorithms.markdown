@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-21 00:36:07
-Modified: 2021-11-21 00:36:07
+Modified: 2021-11-21 01:38:29
 Author: Benjamin Du
 Slug: fast-hashing-algorithms
 Title: Fast Hashing Algorithms
@@ -23,6 +23,8 @@ Tags: Computer Science, programming, hash, hashing, HashMap, modulus, modulo, mu
 
 - [Fibonacci Hashing: The Optimization that the World Forgot (or: a Better Alternative to Integer Modulo)](https://probablydance.com/2018/06/16/fibonacci-hashing-the-optimization-that-the-world-forgot-or-a-better-alternative-to-integer-modulo/)
 
+- [Fastest Lookup Time Map for Short Keys](https://users.rust-lang.org/t/fastest-lookup-time-map-for-short-keys/2028)
+
 - [FNV Hash](http://www.isthe.com/chongo/tech/comp/fnv/index.html)
 
 - [Swiss Tables and absl::Hash](https://abseil.io/blog/20180927-swisstables)
@@ -30,3 +32,4 @@ Tags: Computer Science, programming, hash, hashing, HashMap, modulus, modulo, mu
 - [OPTIMIZING HASHMAPS EVEN MORE](https://blog.yoshuawuyts.com/optimizing-hashmaps-even-more/)
 
 - [HashMap in Rust](http://www.legendu.net/misc/blog/rust-hashmap/)
+

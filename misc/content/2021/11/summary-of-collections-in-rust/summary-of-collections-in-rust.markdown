@@ -38,3 +38,20 @@ and when to use them.
 
 ## References 
 
+- [Iterator in Rust](http://www.legendu.net/misc/blog/rust-collection-iterator/)
+
+- [String in Rust](http://www.legendu.net/misc/blog/rust-str/)
+
+- [Array in Rust](http://www.legendu.net/misc/blog/rust-collection-array/)
+
+- [Range in Rust](http://www.legendu.net/misc/blog/rust-collection-range/)
+
+- [Tuple in Rust](http://www.legendu.net/misc/blog/rust-collection-tuple/)
+
+- [HashMap in Rust](http://www.legendu.net/misc/blog/rust-hashmap/)
+
+- [Vector in Rust](http://www.legendu.net/misc/blog/rust-vector/)
+
+- [Set in Rust](http://www.legendu.net/misc/blog/set-in-rust/)
+
+- [Data Frame Implementations in Rust](http://www.legendu.net/misc/blog/data-frame-implementations-in-rust/)

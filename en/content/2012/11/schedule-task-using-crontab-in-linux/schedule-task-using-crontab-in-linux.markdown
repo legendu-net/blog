@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Title: Schedule Task Using Cron in Linux
 Category: OS
 Tags: task, crontab, schedule, linux, scheduling, AirFlow
-Modified: 2021-10-28 09:57:27
+Modified: 2021-11-22 10:39:22
 
 
 Note: Cron is great for simple scheduling requests. 
@@ -73,9 +73,19 @@ you can install it using the following command (on Ubuntu).
     `cron` will automatically reload tasks that were changed.
     The log of cron jobs can be found at 
     `/var/log/syslog` (Ubuntu) or `/var/log/cron` (CentOS).
-    If you do not have read permission to the log files, 
-    you can redict the standard output and error messages of a cron job when you schedule it. 
-    Please find an example below.
+    If you do not have read permission to cron log files, 
+    you'd better redict the output and error messages of a cron job 
+    to a log file which you have read access.
+
+4. If your cron job consists of multiple shell commands,
+    it is best to put those commands into a shell script 
+    and call the shell script when you schedule your cron job. 
+    This has multiple benefits. 
+
+    - Avoid careless mistakes caused by concatenating multiples commands using `&&`, `||` or `;`. 
+    - Have better control and logging of each command.
+    - Easier to update the job (if you do not have to update the schedule) 
+        as you can update the shell script without touching `crontab`.
 
 4. You can schedule a frequently run task using crontab 
     and then reduce the running frequency of the application in your scripts.

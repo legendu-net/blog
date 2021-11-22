@@ -5,7 +5,7 @@ Slug: video-conference-tools
 Title: Video Conference Tools
 Category: Software
 Tags: software, video conference, Slack, meeting, Skype, Zoom
-Modified: 2018-09-15 15:14:07
+Modified: 2021-11-18 19:57:25
 
 **
 Things on this page are
@@ -13,34 +13,30 @@ fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
-
 1. Zoom
 
-2. WeChat
+Best choice
 
-1. Slack
+2. Slack
+
+another very good choice
    
+3. Skype 
+    - support screen sharing
+
+2. WeChat
+    - do not support screen sharing
+
+3. QQ
+    - support screen sharing
+
 2. Apache OpenMeeting
 
 3. Jitsi
 
-4. UberConference (free for up to 10 callers)
-
-5. TeamViewer
-
-6. Skype (support screen sharing)
-
 7. iVisit, iChat, NetMeeting
 
 8. Breeze
-
-9.  MeetingBurner (free for 10 attendees)
-
-
-
-UberConference is a good (free for up to 10 callers) but for US only?
-
-
 
 10. GoToMeeting (free for up to 4 people)
 

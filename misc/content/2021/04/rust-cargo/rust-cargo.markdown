@@ -5,7 +5,7 @@ Slug: tips-on-cargo
 Title: Tips on Cargo
 Category: Computer Science
 Tags: Computer Science, programming, Rust, cargo, format, fmt, rustfmt
-Modified: 2021-06-16 18:07:04
+Modified: 2021-11-20 15:02:11
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -18,30 +18,76 @@ Please read with your own judgement!
     cargo init
     cargo new project_name
 
-Install a package from GitHub (the default branch).
+## Install a Rust Crate (Package) 
 
+Install a Rust crate from GitHub (the default branch).
+
+    :::bash
     cargo install --git https://github com/RustPython/RustPython
     
-Use the option `--version` to install a specific version of a package.
+Specify the option `--version` to install a specific version of a package.
 
+    :::bash
     cargo install --version 0.8.1 evcxr_jupyter
 
-## Build 
+## Build a Project 
 
-cargo build --release
+Build the debug version of the project.
 
+    :::bash
+    cargo build 
 
-either src/lib.rs, src/main.rs, a [lib] section, or [[bin]] section must be present
+Build the release version of the project.
 
+    :::bash
+    cargo build --release
 
-## Run 
+https://doc.rust-lang.org/cargo/commands/cargo-build.html
+
+## Run The Current Package
+
     cargo run
+    cargo run --release
 
-## Run Test
+For more details,
+please refer to
+[cargo-run](https://doc.rust-lang.org/cargo/commands/cargo-run.html) 
+.
+
+## Run Unit Tests
 
     cargo test
     cargo test name_of_test_fun
     cargo test test_mod::inner_mod::name_of_test_fun
+
+    cargo test --release 
+
+If building the project with optimization is not too slow, 
+it is suggested that your turn on optimization for the test profile 
+in your `Cargo.toml` file.
+
+    [profile.test]
+    opt-level = 3
+
+https://doc.rust-lang.org/cargo/commands/cargo-test.html
+
+## Suppress Warnings Using RUSTFLAGS
+
+Before cargo officially supports an option to disable warnings,
+you can use the environment variable `RUSTFLAGS` to disable warnings during compiling.
+
+    :::bash
+    RUSTFLAGS=-Awarnings cargo build
+    RUSTFLAGS=-Awarnings cargo build --release
+    RUSTFLAGS=-Awarnings cargo test
+    RUSTFLAGS=-Awarnings cargo test --release
+
+A better way is to use the command `cargo rustc` 
+(instead of `cargo build`)
+which allows users to pass compiler flags to it. 
+
+    :::bash
+    cargo rustc --lib -- -Awarnings
 
 ## Extensions to Cargo
 
@@ -78,3 +124,11 @@ It also supports CICD tools such as GitHub Actions
 and Travis CI.
 
 
+
+## References 
+
+[How can I only show warnings if there are no errors?](https://stackoverflow.com/questions/53355265/how-can-i-only-show-warnings-if-there-are-no-errors)
+
+[Can tests be built in release mode using Cargo?](https://stackoverflow.com/questions/29818084/can-tests-be-built-in-release-mode-using-cargo)
+
+[What's the difference between Cargo's build and rustc commands?](https://doc.rust-lang.org/cargo/commands/cargo-build.html)

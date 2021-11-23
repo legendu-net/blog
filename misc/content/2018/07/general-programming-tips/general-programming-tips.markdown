@@ -57,6 +57,16 @@ Please read with your own judgement!
   It is suggested that you leverage profession profiling/benchmark tools
   instead of writing your code to profile/benchmark your application.
 
+## Engineering 
+
+1. Batch/robot accounts are much more convenient to use than personal accounts in an enterprise environment 
+    as personal accounts are often required to do 2FA.
+
+2. Availability and stability are way more important than productivity and cool technology
+    in critical business applications. 
+    Avoid purchasing cutting-edge technologies in those situations 
+    but rather wait for new technologies to be well tested before adopting them.
+
 ## References
 
 [General Tips for Engineering](http://www.legendu.net/misc/blog/general-tips-for-engineering/)

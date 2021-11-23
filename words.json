@@ -13,7 +13,7 @@
     ["Ps", "ps"], ["Rm", "rm"], ["Us", "US"],
     ["Aix", "AIX"], ["Aws", "AWS"], ["Api", "API"], 
     ["Ibm", "IBM"], ["Cpp", "C++"], 
-    ["Cpu", "CPU"], ["Cte", "CTE"], 
+    ["Cpu", "CPU"], ["Cte", "CTE"], ["Csv", "CSV"], 
     ["Dns", "DNS"], ["Dsl", "DSL"], 
     ["Ftp", "FTP"], 
     ["Gdb", "GDB"], ["Gnu", "GNU"], ["Gui", "GUI"], ["Gpu", "GPU"], ["Gpt", "GPT"],

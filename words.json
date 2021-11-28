@@ -11,7 +11,7 @@
     ["Ip", "IP"], ["Id", "ID"], ["Io", "IO"], 
     ["Js", "JS"], ["Ms", "MS"], ["Os", "OS"], 
     ["Ps", "ps"], ["Rm", "rm"], ["Us", "US"],
-    ["Aix", "AIX"], ["Aws", "AWS"], ["Api", "API"], 
+    ["Aix", "AIX"], ["Abi", "ABI"], ["Api", "API"], ["Aws", "AWS"], 
     ["Ibm", "IBM"], ["Cpp", "C++"], 
     ["Cpu", "CPU"], ["Cte", "CTE"], ["Csv", "CSV"], 
     ["Dns", "DNS"], ["Dsl", "DSL"], 

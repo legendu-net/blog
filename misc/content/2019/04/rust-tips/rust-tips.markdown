@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-04-10 12:17:46
-Modified: 2021-11-20 15:05:35
+Modified: 2021-11-28 11:37:09
 Author: Benjamin Du
 Slug: rust-tips
 Title: Tips on Rust
@@ -142,6 +142,10 @@ https://github.com/valeriansaliou/sonic
 
 ## Tutorials
 
+[Rust Language Cheat Sheet](https://cheats.rs/)
+
+[How to learn modern Rust](https://github.com/joaocarvalhoopen/How_to_learn_modern_Rust)
+
 [Jon Gjengset's Video Tutorials (Medium to Advanced)](https://www.youtube.com/channel/UC_iD0xppBwwsrM9DegC5cQQ)
 
 [Rust on YouTube](https://www.youtube.com/channel/UCaYhcUwRBNscFNUKTjgPFiA)
@@ -155,6 +159,8 @@ https://kerkour.com/
 ## References
 
 - [Rust Reference](https://doc.rust-lang.org/stable/reference/)
+
+- [Rust Language Cheat Sheet](https://cheats.rs/)
 
 - [The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html)
 

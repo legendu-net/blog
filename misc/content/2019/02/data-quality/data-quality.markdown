@@ -5,7 +5,7 @@ Slug: data-quality
 Title: Data Quality
 Category: Computer Science
 Tags: database, big data, data quality, data check, data profiling, data validation, validation
-Modified: 2020-12-07 08:54:40
+Modified: 2021-11-22 12:13:22
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

@@ -5,7 +5,7 @@ Slug: general-programming-tips
 Title: General Tips on Programming
 Category: Computer Science
 Tags: programming, tips, semantic versioning
-Modified: 2021-11-03 09:38:21
+Modified: 2021-11-22 12:13:42
 
 **
 Things on this page are
@@ -31,7 +31,7 @@ Please read with your own judgement!
     If you use the Kotlin programming language, 
     it is suggested that you use the bitwise methods instead of the bitwise operators.
 
-4. Always remembe to check whether you have correct set/reset state of variables 
+4. Always remember to check whether you have correct set/reset state of variables 
     when you use loops **especiall while loops**.
     Forgetting to set/reset state of varialbes/objects in while loops is a common mistake 
     and can be tricky to debug sometimes (e.g., if randomization is used in a loop).
@@ -46,6 +46,26 @@ Please read with your own judgement!
     and a default value might take a long time to run,
     it is better to set the defautl value to `None` 
     and then calculalte the default value when the corresponding command is called.
+
+## Performance and Memory Profiling 
+
+1. Always profile your application 
+  if you are not certain about the real performance of different algorithms/implementations.
+
+2. Warm up is important when profiling speed of applications.
+  Profession tools/frameworks often handle this automatically.
+  It is suggested that you leverage profession profiling/benchmark tools
+  instead of writing your code to profile/benchmark your application.
+
+## Engineering 
+
+1. Batch/robot accounts are much more convenient to use than personal accounts in an enterprise environment 
+    as personal accounts are often required to do 2FA.
+
+2. Availability and stability are way more important than productivity and cool technology
+    in critical business applications. 
+    Avoid purchasing cutting-edge technologies in those situations 
+    but rather wait for new technologies to be well tested before adopting them.
 
 ## References
 

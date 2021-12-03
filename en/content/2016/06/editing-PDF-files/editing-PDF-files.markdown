@@ -5,7 +5,7 @@ Slug: editing-PDF-files
 Title: Editing PDF Files
 Category: Software
 Tags: software, PDF, tools, edit, convert, PDFfiller
-Modified: 2021-08-09 23:12:40
+Modified: 2021-12-02 16:30:29
 
 **
 Things on this page are
@@ -26,7 +26,7 @@ Please read with your own judgement!
 
   <tr>
     <td rowspan="4"> Web Tools </td>
-    <td> <a hyperlink="https://www.docusign.com/"> DocuSign </a>  </td>
+    <td> <a href="https://www.docusign.com/"> DocuSign </a>  </td>
     <td>  
       <ul>
         <li> Free for occassional use </li>
@@ -36,7 +36,7 @@ Please read with your own judgement!
     </td>
   </tr>
   <tr>
-    <td> <a hyperlink="https://www.freepdfconvert.com/"> Free PDF Convert </a> </td>
+    <td> <a href="https://www.freepdfconvert.com/"> Free PDF Convert </a> </td>
     <td> 
       <ul>
         <li> Great for convert PDF files to MS Office files, etc. </li>
@@ -45,7 +45,7 @@ Please read with your own judgement!
     </td>
   </tr>
   <tr>
-    <td> <a hyperlink="https://www.adobe.com/acrobat/online/rearrange-pdf.html"> Adobe Rearrage PDF </a> </td>
+    <td> <a href="https://www.adobe.com/acrobat/online/rearrange-pdf.html"> Adobe Rearrage PDF </a> </td>
     <td>  
       <ul>
         <li>
@@ -58,7 +58,7 @@ Please read with your own judgement!
     </td>
   </tr>
   <tr>
-    <td> <a hyperlink="https://www.ilovepdf.com/"> I Love PDF </a> </td>
+    <td> <a href="https://www.ilovepdf.com/"> I Love PDF </a> </td>
     <td>  
       <ul>
         <li>
@@ -73,7 +73,7 @@ Please read with your own judgement!
 
   <tr>
     <td rowspan="3"> Linux Desktop </td>
-    <td> <a hyperlink="https://github.com/pdfarranger/pdfarranger"> PDFArranger </a> </td>
+    <td> <a href="https://github.com/pdfarranger/pdfarranger"> PDFArranger </a> </td>
     <td>  
       <ul>
         <li>
@@ -101,7 +101,7 @@ Please read with your own judgement!
     </td>
   </tr>
   <tr>
-    <td> <a hyperlink="https://help.gnome.org/users/evince/stable/"> Evince </a> </td>
+    <td> <a href="https://help.gnome.org/users/evince/stable/"> Evince </a> </td>
     <td>  
       <ul>
         <li>
@@ -151,7 +151,7 @@ Please read with your own judgement!
     </td>
   </tr>
   <tr>
-    <td> <a hyperlink="https://www.pdffiller.com/"> PDFfiller </a> </td>
+    <td> <a href="https://www.pdffiller.com/"> PDFfiller </a> </td>
     <td>  
     good one 
     <ul>
@@ -162,7 +162,7 @@ Please read with your own judgement!
     </td>
   </tr>
   <tr>
-    <td> <a hyperlink="https://www.pdffiller.com/"> Bluebeam Revue eXtreme 
+    <td> <a href="https://www.pdffiller.com/"> Bluebeam Revue eXtreme 
     </a> </td>
     <td>  
     Great one
@@ -180,7 +180,7 @@ Please read with your own judgement!
   <tr>
     <td rowspan="7"> Python Libraries </td>
     <td> 
-    <a hyperlink="https://github.com/mstamy2/PyPDF2"> PyPDF2 </a>
+    <a href="https://github.com/mstamy2/PyPDF2"> PyPDF2 </a>
     </td>
     <td>  
       A utility to read and write PDFs with Python.
@@ -188,7 +188,7 @@ Please read with your own judgement!
   </tr>
   <tr>
     <td> 
-      <a hyperlink="https://github.com/jsvine/pdfplumber"> pdfplumber </a>
+      <a href="https://github.com/jsvine/pdfplumber"> pdfplumber </a>
     </td>
     <td>  
     Plumbs a PDF for detailed information about each char, rectangle, line, et cetera,
@@ -196,13 +196,13 @@ Please read with your own judgement!
     </td>
   </tr>
   <tr>
-    <td> <a hyperlink="https://github.com/jalan/pdftotext"> pdftotext </a> </td>
+    <td> <a href="https://github.com/jalan/pdftotext"> pdftotext </a> </td>
     <td>  
     Great at parsing text from PDFs which also keeps the original layout as much as possible.
     </td>
   </tr>
   <tr>
-    <td> <a hyperlink="https://github.com/pdfminer/pdfminer.six"> pdfminer.six </a> </td>
+    <td> <a href="https://github.com/pdfminer/pdfminer.six"> pdfminer.six </a> </td>
     <td>  
     A Python library for parsing PDF.
     It is good for manipulating PDF files 
@@ -210,19 +210,19 @@ Please read with your own judgement!
     </td>
   </tr>
   <tr>
-    <td> <a hyperlink="https://github.com/socialcopsdev/camelot/"> camelot </a> </td>
+    <td> <a href="https://github.com/socialcopsdev/camelot/"> camelot </a> </td>
     <td>  
     A Python library for extracting data tables in PDF files.
     </td>
   </tr>
   <tr>
-    <td> <a hyperlink="https://github.com/chezou/tabula-py"> tabula-py </a> </td>
+    <td> <a href="https://github.com/chezou/tabula-py"> tabula-py </a> </td>
     <td>  
     A Python binding for [tabulapdf/tabula](https://github.com/tabulapdf/tabula).
     </td>
   </tr>
   <tr>
-    <td> <a hyperlink="https://github.com/chrismattmann/tika-python"> tika-python </a> </td>
+    <td> <a href="https://github.com/chrismattmann/tika-python"> tika-python </a> </td>
     <td>  
     </td>
   </tr>

@@ -81,4 +81,4 @@ below are concrete examples on how to use it.
 
 ## References 
 
-- [Editing PDF Files](http://www.legendu.net/misc/blog/editing-PDF-files)
+- [Editing PDF Files](http://www.legendu.net/en/blog/editing-PDF-files)

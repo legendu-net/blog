@@ -112,5 +112,6 @@
     ["Broadcasthashjoin", "BroadcastHashJoin"],
     ["Torch.Nn.Functional", "torch.nn.functional"],
     ["Modulenotfounderror", "ModuleNotFoundRrror"],
-    ["Python-Build-Standalone", "python-build-standalone"]
+    ["Python-Build-Standalone", "python-build-standalone"],
+    ["Illegalargumentexception", "IllegalArgumentException"]
 ]

@@ -5,7 +5,7 @@ Slug: jupyterlab-tips
 Title: Tips on JupyterLab
 Category: Software
 Tags: software, JupyterLab, Jupyter, tips
-Modified: 2021-12-04 20:20:12
+Modified: 2021-12-05 11:17:02
 
 **
 Things on this page are
@@ -72,7 +72,8 @@ Please read with your own judgement!
 
 ## Lauch a JupyterLab Server 
 
-jupyter-lab --allow-root --ip='0.0.0.0' --port=8888 --no-browser --notebook-dir=$HOME
+    :::bash
+    jupyter-lab --allow-root --ip='0.0.0.0' --port=8888 --no-browser --notebook-dir=$HOME
 
 ## Format a Jupyter/Lab Notebook 
 
@@ -103,14 +104,13 @@ for more details.
 
 - [IPython and Jupyter in Depth: High productivity, interactive Python - PyCon 2017](https://www.youtube.com/watch?v=VQBZ2MqWBZI)
 
-https://blog.dominodatalab.com/lesser-known-ways-of-using-notebooks/
+- https://blog.dominodatalab.com/lesser-known-ways-of-using-notebooks/
 
-http://arogozhnikov.github.io/2016/09/10/jupyter-features.html
+- http://arogozhnikov.github.io/2016/09/10/jupyter-features.html
 
-[Running a notebook server](http://jupyter-notebook.readthedocs.io/en/latest/public_server.html)
+- [Running a notebook server](http://jupyter-notebook.readthedocs.io/en/latest/public_server.html)
 
-[Jupyter Notebook Enhancements, Tips And Tricks](https://forums.fast.ai/t/jupyter-notebook-enhancements-tips-and-tricks/17064)
-
+- [Jupyter Notebook Enhancements, Tips And Tricks](https://forums.fast.ai/t/jupyter-notebook-enhancements-tips-and-tricks/17064)
 
 - https://datascience.berkeley.edu/10-data-science-newsletters-subscribe/ 
 - https://github.com/jupyter-incubator/declarativewidgets

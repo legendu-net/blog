@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-29 12:32:33
-Modified: 2021-11-29 12:32:33
+Modified: 2021-12-05 11:19:49
 Author: Benjamin Du
 Slug: yarn-for-spark
 Title: Yarn for Spark
@@ -10,14 +10,22 @@ Tags: Computer Science, programming, Spark, big data, yarn
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
-yarn application --list
+1. List all Spark applications.
 
-yarn application -status application_1459542433815_0002
+        :::bash
+        yarn application --list
 
-To view logs of application,
+2. Show status of a Spark application.
 
-yarn logs -applicationId application_1459542433815_0002
+        :::bash
+        yarn application -status application_1459542433815_0002
 
-To kill the application, use following command.
+3. view logs of a Spark application.
 
-yarn application -kill application_1459542433815_0002
+        :::bash
+        yarn logs -applicationId application_1459542433815_0002
+
+4. kill a Spark application.
+
+        :::bash
+        yarn application -kill application_1459542433815_0002

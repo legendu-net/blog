@@ -5,7 +5,7 @@ Slug: jupyterlab-tips
 Title: Tips on JupyterLab
 Category: Software
 Tags: software, JupyterLab, Jupyter, tips
-Modified: 2021-06-17 08:57:55
+Modified: 2021-12-04 20:20:12
 
 **
 Things on this page are

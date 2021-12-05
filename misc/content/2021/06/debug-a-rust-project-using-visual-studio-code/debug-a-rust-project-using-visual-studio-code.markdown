@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-06-16 22:44:54
-Modified: 2021-11-30 17:51:59
+Modified: 2021-12-04 19:25:54
 Author: Benjamin Du
 Slug: debug-a-rust-app
 Title: Debug a Rust Application
@@ -26,21 +26,23 @@ which in combination with standard gdb/x86 features like hardware data watchpoin
 
 ## References
 
-[Debugging Rust in VSCode](https://jason-williams.co.uk/debugging-rust-in-vscode)
+- [Rust Autocomplete and Debugging in VS Code](https://www.youtube.com/watch?v=2VPSzb7RNtY)
 
-[Debugging Rust with VS Code](https://dev.to/rogertorres/debugging-rust-with-vs-code-11dj)
+- [Debugging Rust in VSCode](https://jason-williams.co.uk/debugging-rust-in-vscode)
 
-[Debugging Rust programs with lldb on MacOS](https://bryce.fisher-fleig.org/debugging-rust-programs-with-lldb/)
+- [Debugging Rust with VS Code](https://dev.to/rogertorres/debugging-rust-with-vs-code-11dj)
 
-[Debugging Rust apps with GDB](https://blog.logrocket.com/debugging-rust-apps-with-gdb/)
+- [Debugging Rust programs with lldb on MacOS](https://bryce.fisher-fleig.org/debugging-rust-programs-with-lldb/)
 
-[Debugging Rust Tests](https://whamcloud.github.io/Online-Help/docs/Contributor_Docs/cd_Debugging_Rust_Tests.html)
+- [Debugging Rust apps with GDB](https://blog.logrocket.com/debugging-rust-apps-with-gdb/)
 
-[How to debug unit test of rust?](https://github.com/vadimcn/vscode-lldb/issues/35)
+- [Debugging Rust Tests](https://whamcloud.github.io/Online-Help/docs/Contributor_Docs/cd_Debugging_Rust_Tests.html)
 
-[vscode-lldb Manual -- Cargo Support](https://github.com/vadimcn/vscode-lldb/blob/v1.4.5/MANUAL.md#cargo-support)
+- [How to debug unit test of rust?](https://github.com/vadimcn/vscode-lldb/issues/35)
 
-[How to debug Cargo tests (with CLI or IDE)?](https://github.com/rust-lang/cargo/issues/6821)
+- [vscode-lldb Manual -- Cargo Support](https://github.com/vadimcn/vscode-lldb/blob/v1.4.5/MANUAL.md#cargo-support)
+
+- [How to debug Cargo tests (with CLI or IDE)?](https://github.com/rust-lang/cargo/issues/6821)
 
 
 

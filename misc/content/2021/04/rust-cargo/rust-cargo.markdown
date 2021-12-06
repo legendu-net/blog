@@ -5,7 +5,7 @@ Slug: tips-on-cargo
 Title: Tips on Cargo
 Category: Computer Science
 Tags: Computer Science, programming, Rust, cargo, format, fmt, rustfmt
-Modified: 2021-11-20 15:02:11
+Modified: 2021-12-05 21:10:48
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -127,8 +127,10 @@ and Travis CI.
 
 ## References 
 
-[How can I only show warnings if there are no errors?](https://stackoverflow.com/questions/53355265/how-can-i-only-show-warnings-if-there-are-no-errors)
+- [Top 10 Rust Cargo Commands](https://dev.to/davidadewoyin/top-rust-cargo-commands-2b70)
 
-[Can tests be built in release mode using Cargo?](https://stackoverflow.com/questions/29818084/can-tests-be-built-in-release-mode-using-cargo)
+- [How can I only show warnings if there are no errors?](https://stackoverflow.com/questions/53355265/how-can-i-only-show-warnings-if-there-are-no-errors)
 
-[What's the difference between Cargo's build and rustc commands?](https://doc.rust-lang.org/cargo/commands/cargo-build.html)
+- [Can tests be built in release mode using Cargo?](https://stackoverflow.com/questions/29818084/can-tests-be-built-in-release-mode-using-cargo)
+
+- [What's the difference between Cargo's build and rustc commands?](https://doc.rust-lang.org/cargo/commands/cargo-build.html)

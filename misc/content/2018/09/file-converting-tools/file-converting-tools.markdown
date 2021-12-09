@@ -4,7 +4,7 @@ Author: Ben Chuanlong Du
 Slug: file-converting-tools
 Title: File Converting and Generating Tools
 Category: Software
-Tags: software, file converting, pandoc, markdown, HTML, PDF
+Tags: software, file converting, pandoc, markdown, HTML, PDF, ImageMagic, convert
 Modified: 2021-09-26 10:21:05
 
 **
@@ -13,24 +13,25 @@ fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
-1. [Sphinx](https://github.com/sphinx-doc/sphinx)
+## ImageMagick 
+ImageMagic provides a command convert which helps convert between different types of images.
 
-1. pandoc (mark-up language)
+## [HTML2Image](http://www.guangmingsoft.net/htmlsnapshot/html2image.htm)
 
-2. markdown (markdown to HTML)
+## [Sphinx](https://github.com/sphinx-doc/sphinx)
 
-2. tex4ht (convert Latex code to HTML)
+## pandoc (mark-up language)
 
-2. wkhtmltopdf (html to PDF, support URL, best)
+## markdown (markdown to HTML)
 
-2. rmarkdown (an R package)
+## tex4ht (convert Latex code to HTML)
 
-3. ImageMagick (convert between types of images)
+## wkhtmltopdf (html to PDF, support URL, best)
 
-4. [HTML2Image](http://www.guangmingsoft.net/htmlsnapshot/html2image.htm)
+## rmarkdown (an R package)
 
-5. [CutyCapt](http://cutycapt.sourceforge.net/)
+## [CutyCapt](http://cutycapt.sourceforge.net/)
 
-4. pdflatex
+## pdflatex
 
-5. dos2unix, unix2dos
+## dos2unix, unix2dos

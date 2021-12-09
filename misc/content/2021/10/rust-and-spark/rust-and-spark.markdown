@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-10-10 23:58:37
-Modified: 2021-11-29 00:16:00
+Modified: 2021-12-05 12:59:56
 Author: Benjamin Du
 Slug: rust-and-spark
 Title: Rust and Spark
@@ -15,10 +15,33 @@ In the pandas UDF,
 you can call `subprocess.run` to run any shell command 
 and capture its output.
 
+    :::python
+    from pathlib import Path
+    import subprocess as sp
+    import pandas as pd
+
+    CMD = "./pineapple test --id1-path {} --htype1 3 --n0 2 --n2 5 --ratio2 0.001"
 
 
-[Spark and Rust - How to Build Fast, Distributed and Flexible Analytics Pipelines with Side Effects](https://blog.phylum.io/spark-and-rust-how-to-build-fast-distributed-and-flexible-analytics-pipelines)
+    def run_cmd(cmd: str) -> str:
+        try:
+            proc = sp.run(cmd, shell=True, check=True, capture_output=True)
+        except sp.CalledProcessError as err:
+            print(f"Here: {err}\nOutput: {err.stdout}\nError: {err.stderr}")
+            print("Content of Directory:")
+            for p in Path(".").glob("*"):
+                print(f"    {p}")
+            raise err
+        return proc.stdout.strip().decode()
 
-RDD's have a relatively little-known method, pipe(). It isn't documented in depth, but it is deceptively simple. It will pipe the RDD's contents into the stdin of a provided command and read back its stdout as an RDD of strings. The documentation mentions it would be suited for "Perl or bash script(s)", but nobody is stopping us from doing different things as long as we respect that protocol!
 
+    @pandas_udf("string", PandasUDFType.SCALAR)
+    def test_score_r4(id1):
+        path = Path(tempfile.mkdtemp()) / "id1.txt"
+        path.write_text("\n".join(str(id_) for id_ in id1))
+        output = run_cmd(CMD.format(path))
+        return pd.Series(output.split())
 
+## References
+
+- [Spark and Rust - How to Build Fast, Distributed and Flexible Analytics Pipelines with Side Effects](https://blog.phylum.io/spark-and-rust-how-to-build-fast-distributed-and-flexible-analytics-pipelines)

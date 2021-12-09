@@ -5,7 +5,7 @@ Slug: useful-tools-extensions-for-jupyterlab
 Title: Useful Tools and Extensions for JupyterLab
 Category: Software
 Tags: software, JupyterLab, extension, plugin, JupyterHub, nbdime
-Modified: 2021-06-17 08:57:55
+Modified: 2021-12-04 20:20:12
 
 **
 Things on this page are
@@ -68,7 +68,12 @@ is a text-based user interface for running and editing Jupyter notebooks.
 
 ## Useful Extensions for JupyterLab
 
+### [magma-nvim](https://github.com/dccsillag/magma-nvim)
+[magma-nvim](https://github.com/dccsillag/magma-nvim)
+is a NeoVim plugin for running code interactively with Jupyter.
+
 ### [jupyterlab-vim](https://github.com/axelfahy/jupyterlab-vim)
+
 [jupyterlab-vim](https://github.com/axelfahy/jupyterlab-vim)
 provides Vim keybindings for notebook cells in JupyterLab.
 

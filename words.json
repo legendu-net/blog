@@ -92,7 +92,7 @@
     ["Crunchbang", "CrunchBang"],
     ["Javascript", "JavaScript"], ["Jupyterlab", "JupyterLab"], ["Jupyterhub", "JupyterHub"],
     ["namedtuple", "namedtuple"],
-    ["Pdfplumber", "pdfplumber"],
+    ["Pdfplumber", "pdfplumber"], ["Pandas_Udf", "pandas_udf"],
     ["Rustpython", "RustPython"],
     ["Teamviewer", "TeamViewer"], ["Tensorflow", "TensorFlow"], ["Typescript", "TypeScript"],
     ["Virtualbox", "VirtualBox"],
@@ -103,6 +103,7 @@
     ["Command-Line", "Command-line"],
     ["Featuretools", "FeatureTools"],
     ["Projectlibre", "ProjectLibre"],
+    ["Runtimeerror", "RuntimeError"],
     ["Youcompleteme", "YouCompleteMe"],
     ["Intellij Idea", "IntelliJ IDEA"],
     ["Torch.Nn.Module", "torch.nn.Module"],
@@ -112,5 +113,6 @@
     ["Broadcasthashjoin", "BroadcastHashJoin"],
     ["Torch.Nn.Functional", "torch.nn.functional"],
     ["Modulenotfounderror", "ModuleNotFoundRrror"],
-    ["Python-Build-Standalone", "python-build-standalone"]
+    ["Python-Build-Standalone", "python-build-standalone"],
+    ["Illegalargumentexception", "IllegalArgumentException"]
 ]

@@ -5,7 +5,7 @@ Slug: hadoop-fs-tips
 Title: Hadoop Filesystem Tips
 Category: Software
 Tags: big data, Hadoop, filesystem, file system, tips
-Modified: 2021-09-16 08:31:16
+Modified: 2021-12-09 10:33:27
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
@@ -28,7 +28,9 @@ Please read with your own judgement!
 
 ## General Tips 
 
-1. `*` represents all files/directories 
+1. The HDFS command supports wildcards. 
+    However, 
+    `*` represents all files/directories 
     including hidden ones (which is different from Linux/Unix shell).
 
 2. The success file `_SUCCESS` is generated when a Spark/Hadoop application succeed.

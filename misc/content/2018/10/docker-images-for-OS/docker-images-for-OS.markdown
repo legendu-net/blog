@@ -17,10 +17,6 @@ Please read with your own judgement!
 
 This is the default/offical Ubuntu Docker image.
 
-## [phusion/baseimage](https://hub.docker.com/r/phusion/baseimage/)
-
-It cliams to be better than the default/official Ubuntu Docker image. 
-
 ## [CentOS](https://hub.docker.com/r/_/centos/)
 
 ## [Linux Deepin](https://hub.docker.com/r/bestwu/deepin/)

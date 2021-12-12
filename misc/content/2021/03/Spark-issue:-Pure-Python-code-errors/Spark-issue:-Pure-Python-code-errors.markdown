@@ -5,7 +5,7 @@ Slug: Spark-issue:-Pure-Python-code-errors
 Title: Spark Issue: Pure Python Code Errors
 Category: Computer Science
 Tags: Computer Science, programming, Spark, issue, big data, Spark issue, Python, error, exception
-Modified: 2021-12-11 16:25:17
+Modified: 2021-12-11 16:37:43
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -85,7 +85,7 @@ Fix issue in the pandas UDF.
 
 The argument `--id1-path` is not a valid argument to the command called by Python.
 
-## Solutions 10 
+## Solution 10 
 
 Fix the non-valide argument of the command called by Python. 
 
@@ -97,7 +97,26 @@ Fix the non-valide argument of the command called by Python.
 
 The command invoked by Python failed. 
 
-## Solutions 11
+## Solution 11
 
 Figure out why the command invoked by Python failed and fix the issue. 
  
+## Symptom 12 
+
+> TypeError: object of type 'generator' has no len()
+
+## Cause 12
+
+Calling the function `len` on a generator.
+
+## Solution 12
+
+Assume `it` is an iterator 
+(a generator is a special case of iterator)
+,
+use `sum(1 for _ in it)`
+instead of `len(it)`.
+.
+Of course,
+you have to make sure that the iterator is finite.
+

@@ -5,7 +5,7 @@ Slug: Spark-issue:-Pure-Python-code-errors
 Title: Spark Issue: Pure Python Code Errors
 Category: Computer Science
 Tags: Computer Science, programming, Spark, issue, big data, Spark issue, Python, error, exception
-Modified: 2021-12-11 16:37:43
+Modified: 2021-12-11 17:20:55
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -119,4 +119,26 @@ instead of `len(it)`.
 .
 Of course,
 you have to make sure that the iterator is finite.
+
+## Symptom 13
+> pyarrow.lib.ArrowInvalid: Could not convert ... with type function: tried to convert to int
+
+## Cause 13
+
+The Python object (e.g., a function object) cannot be converted to int in PyArrow.
+
+## Solution 13
+
+Fix the issue in the Python code.
+For example,
+did you use a function without passing parameters to it?
+
+## Symptom 14 
+> pyarrow.lib.ArrowInvalid: Value 2147483651 too large to fit in C integer type
+
+## Cause 14
+Cast a long integer (64 bits) in Python to int (32 bits) in PyArrow.
+
+## Solution 14
+Use long integer instead for the return type in pandas UDF.
 

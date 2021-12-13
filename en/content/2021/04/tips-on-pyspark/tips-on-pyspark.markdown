@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-04-30 11:49:58
-Modified: 2021-09-16 08:31:16
+Modified: 2021-12-13 12:27:08
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Process Big Data Using PySpark
@@ -209,6 +209,20 @@ Tags: programming, PySpark, Python, Spark, tips, HPC, high performance computing
     and then run the above code in notebook again.
     This way, the Python objects (e.g., pandas DataFrame you have created)
     will still be alive for you to use.
+
+5. When you run Spark or PySpark in a Jupyter/Lab notebook, 
+    it is recommended that you show ERROR messages only. 
+    Otherwise, 
+    there might be too much logging information polluting your notebook. 
+    You can set the log level of Spark to `ERROR` using the following line of code.
+
+        :::python
+        spark.sparkContext.setLogLevel("ERROR")
+
+    For more details, 
+    please refer to 
+    [Configure Log4J for Spark](http://www.legendu.net/misc/blog/configure-log4j-for-spark/)
+    .
 
 ## Python Dependencies for PySpark
 

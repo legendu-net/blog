@@ -5,7 +5,7 @@ Slug: improve-spark-performance
 Title: Improve the Performance of Spark
 Category: Computer Science
 Tags: programming, Computer Science, Spark, tuning, Spark SQL, SQL, performance, database, big data
-Modified: 2021-12-05 14:29:15
+Modified: 2021-12-11 17:51:29
 
 
 **
@@ -108,21 +108,6 @@ Please read with your own judgement!
     you must cache/persist it to ensure the correct logic
     (otherwise the DataFrame will have different values each time it is used).
 
-3. Enable dynamic allocation but with a limit on the max number of executors.
-
-        :::bash
-        ...
-        --conf spark.dynamicAllocation.enabled=true \
-        --conf spark.dynamicAllocation.maxExecutors=1000 \
-        ...
-
-4. Enable adaptive query execution in Spark 3.0+.
-
-        :::bash
-        ...
-        --conf spark.adaptive.query.execution=true \
-        ...
-
 2. Prefer the method `reduceByKey` over the method `groupByKey` when aggregating a RDD object in Spark.
 
 2. Be cautious about the method `RDD.collect` as it retrieves all data in an RDD/DataFrame to the driver.
@@ -144,7 +129,8 @@ you might want to consider using the Kryo serializer.
 
 ## Joins
 
-1. Spark automatically decides which kind of joins (Broadcast Join, Sort Merge Join, Bucket Join) to perform. 
+1. Spark automatically decides 
+    which kind of joins (Broadcast Join, Sort Merge Join, Bucket Join) to perform. 
     Generally speaking,
     you should not change the default threshold for deciding which join to use.
 
@@ -153,46 +139,99 @@ you might want to consider using the Kryo serializer.
     BroadcastJoin won't happend even if you explicitly Broadcast a DataFrame.
 
 2. Do NOT split a medium sized table and boradcast each splitted part. 
-  Just let Spark pick the right join (which will be the Sort Merge Join) in this case.
-  Also notice that the splitting tricky might not work in non-inner joins.
+    Just let Spark pick the right join (which will be the Sort Merge Join) in this case.
+    Also notice that the splitting tricky might not work in non-inner joins.
 
 3. Make sure that keys to join in Spark DataFrames have the same type!
-  When joining 2 large DataFrames in Spark, 
-  Bucket Join is usually the best approach.
-  However, 
-  if the keys in the 2 DataFrame have inconsistent types 
-  the bucket table will do a type cast 
-  which makes Spark think the value of the original column is not enough resulting in Sort Merge Join (instead of Bucket Join).
+    When joining 2 large DataFrames in Spark, 
+    Bucket Join is usually the best approach.
+    However, 
+    if the keys in the 2 DataFrame have inconsistent types 
+    the bucket table will do a type cast 
+    which makes Spark think the value of the original column 
+    is not enough resulting in Sort Merge Join (instead of Bucket Join).
 
-## Speculation
+## Tune Spark Job Configurations
 
-1. Generally speaking, 
-  it is not a good idea to turn on speculation in Spark. 
-  The reason is that is is usually very tricky to define "slowness".
-  There are 3 levels of time out: process -> node -> rack
-  through `spark.locality.wait.<level_name>`.
-  The default setting is 3s in the global timeout setting (`spark.locality.wait`)
-  which is comparatively too short in shared computer clusters in many companies.
+[Part 3: Cost Efficient Executor Configuration for Apache Spark](https://medium.com/expedia-group-tech/part-3-efficient-executor-configuration-for-apache-spark-b4602929262)
 
+[How to control the parallelism of Spark job](http://www.openkb.info/2018/06/how-to-control-parallelism-of-spark-job.html)
+
+[How does Spark achieve parallelism within one task on multi-core or hyper-threaded machines](https://stackoverflow.com/questions/36671644/how-does-spark-achieve-parallelism-within-one-task-on-multi-core-or-hyper-thread)
+
+
+### Dynamic Allocation
+1. Enable dynamic allocation but with a limit on the max number of executors.
+
+        :::bash
+        ...
+        --conf spark.dynamicAllocation.enabled=true \
+        --conf spark.dynamicAllocation.maxExecutors=1000 \
+        ...
+
+### AQE in Spark 3+
+1. Enable adaptive query execution in Spark 3.0+.
+
+        :::bash
+        ...
+        --conf spark.adaptive.query.execution=true \
+        ...
+
+### Speculation
+3. Generally speaking, 
+    it is not a good idea to turn on **speculation** in Spark. 
+    The reason is that is is usually very tricky to define "slowness".
+    There are 3 levels of time out: process -> node -> rack
+    through `spark.locality.wait.<level_name>`.
+    The default setting is 3s in the global timeout setting (`spark.locality.wait`)
+    which is comparatively too short in shared computer clusters in many companies.
+
+### `spark.task.cpus` vs `spark.executor.cores`	
+1. The default value of `spark.task.cpus` is 1. 
+    When a value greater than 1 is set,
+    it allows multithreading inside each task. 
+    The option `spark.task.cpus` interacts with `spark.executor.cores`
+    (alias of `--executor-cores`)
+    to control the number of parallel tasks in each executor.
+    Let `k = spark.executor.cores / spark.tasks.cpus` (integer division),
+    then at most `k` tasks will run in parallel in each executor.
+    If `spark.executor.cores` is not a multiple of `spark.task.cpus`,
+    then `r = spark.executor.cores % spark.tasks.cpus` virtual cores
+    are wasted in each executor.
+    So,
+    you should always set `spark.executor.exores`
+    to be a multiple of `spark.executor.cores`.
+
+2. Generally speaking,
+    you should avoid having big tasks and then try to leveraging multithreading to speed up each tasks. 
+    Instead,
+    you should have smaller single-threaded tasks 
+    and leverage Spark for parallism.
+
+3. Multhreading does not seem to work if you call a shell command 
+    (which supports multithreading)
+    from PySpark 
+    even if you set `spark.task.cpus`
+    to be greater than 1!
 
 ## UDFs vs map/flatMap
 
 1. Most spark operations are column-oriented. 
-  If you want to do some operation that is hard to expression as column expressions
-  but is rather very easy to express as row expressions,
-  you can either use UDFs or the `map`/`flatMap` methods.
-  Currently, 
-  the methods `map`/`flatMap` of DataFrame are still experimental
-  so you'd use UDFs at this time.
+    If you want to do some operation that is hard to expression as column expressions
+    but is rather very easy to express as row expressions,
+    you can either use UDFs or the `map`/`flatMap` methods.
+    Currently, 
+    the methods `map`/`flatMap` of DataFrame are still experimental
+    so you'd use UDFs at this time.
 
 ## When to Reshuffle
 
-1. Situations (e.g., merging small files or splitting huge files) that requires explicitly increasing or decreasing the number of RDD partiitons.
+1. Situations (e.g., merging small files or splitting huge files) 
+    that requires explicitly increasing or decreasing the number of RDD partiitons.
 
 2. Before multiple bucket joins, it is usually benefical to repartition DataFrames by the same key.
 
 [Cost Based Optimizer in Apache Spark 2.2](https://databricks.com/blog/2017/08/31/cost-based-optimizer-in-apache-spark-2-2.html)
-
 
 ## References
 

@@ -1,12 +1,11 @@
-UUID: c94b42b3-dd2c-4e35-9b2f-74dff7adaed9
 Status: published
 Date: 2017-07-27 12:16:56
 Author: Ben Chuanlong Du
 Slug: docker-images-for-remote-desktop
 Title: Docker Images for Remote Desktop
 Category: Software
-Tags: software, docker, remote desktop, KDE, Ubuntu
-Modified: 2017-07-27 12:16:56
+Tags: software, docker, remote desktop, KDE, Ubuntu, VNC, NoMachine, x11docker
+Modified: 2021-12-11 14:05:51
 
 **
 Things on this page are
@@ -14,13 +13,26 @@ fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
+## Tips and Traps
+
+1. [x11docker](https://github.com/mviereck/x11docker)
+    runs GUI applications and desktops in docker and podman containers. 
+
+2. [NoMachine](http://www.legendu.net/misc/blog/remote-desktop-using-nomachine-on-linux)
+    is recommended for remote Desktop.
+
+2. If VNC is used for accessing remote desktop environment in a Docker container,
+    you might haveto manually set the resolution while starting the docker container 
+    so that you get the best experience.
+
 ### KDE Plasma
 
 [kdeneon/plasma](https://hub.docker.com/r/kdeneon/plasma/)
 
 ### Ubuntu
 
-For vnc, probably not a scaling problem but has to set resolution while starting the docker ...
+1. [dclong/lubuntu](https://hub.docker.com/r/dclong/lubuntu/)
+
 
 1. [consol/ubuntu-xfce-vnc](https://store.docker.com/community/images/consol/ubuntu-xfce-vnc)
 
@@ -44,3 +56,8 @@ For vnc, probably not a scaling problem but has to set resolution while starting
     Works, free NX client is a little bit ugly
     had to create a new user, don't know the password
 
+## Deepin
+
+[dockerfile-x11docker-deepin](https://github.com/mviereck/dockerfile-x11docker-deepin)
+
+[deepin-desktop-docker](https://gitee.com/daze456/deepin-desktop-docker)

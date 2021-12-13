@@ -5,7 +5,7 @@ Slug: Spark-issue:-Pure-Python-code-errors
 Title: Spark Issue: Pure Python Code Errors
 Category: Computer Science
 Tags: Computer Science, programming, Spark, issue, big data, Spark issue, Python, error, exception
-Modified: 2021-12-11 17:20:55
+Modified: 2021-12-12 21:31:54
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -18,28 +18,28 @@ This post collects some typical pure Python errors in PySpark applications.
 > object has no attribute
 
 ## Solution 1
-> Fix the attribute name.
+Fix the attribute name.
 
 
 ## Symptom 2
 > No such file or directory
 
 ## Solution 2
-> Correct the path to the file/directory or upload the file using `--file` of the spark-submit command.
+Correct the path to the file/directory or upload the file using `--file` of the spark-submit command.
 
 
 ## Symptom 3
 > error: the following arguments are required
 
 ## Solution 3
-> Add the required arguments to the command invoking your Python script. 
+Add the required arguments to the command invoking your Python script. 
 
 
 ## Symptom 4
 > error: unrecognized arguments
 
 ## Solution 4
-> Correct tthe argument name or remove non-exist arguments from the command invoking your Python script.
+Correct tthe argument name or remove non-exist arguments from the command invoking your Python script.
 
 
 ## Symptom 5
@@ -51,19 +51,19 @@ This post collects some typical pure Python errors in PySpark applications.
 > ModuleNotFoundError: No module named
 
 ## Solution 6
-> Fix typo in the module name or install missing modules.
+Fix typo in the module name or install missing modules.
 
 ## Symptom 7
 > SyntaxError: invalid syntax
 
 ## Solution 7
-> Fix syntax error in your Python script.
+Fix syntax error in your Python script.
 
 ## Symptom 8
 > NameError: name .* is not defined
 
 ## Solution 8
-> Fix typo in variable/function name or import/define it.
+Fix typo in variable/function name or import/define it.
 
 ## Symptom 9
 

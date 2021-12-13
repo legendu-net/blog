@@ -35,6 +35,10 @@ The aim of Pentadactyl is to create a complex beast,
 where hackers with too much free time can do any (un-)imaginable thing. 
 Also Pentadactyl focuses more on 1:1 Vim compatibility.
 
+## [FireNVim](https://addons.mozilla.org/en-US/firefox/addon/firenvim/)
+[FireNVim](https://addons.mozilla.org/en-US/firefox/addon/firenvim/)
+lets you use NeoVim directly from your browser. 
+Contrary to other extensions, it does not open a new OS window.
 
 ## Notes, Task, etc.
 

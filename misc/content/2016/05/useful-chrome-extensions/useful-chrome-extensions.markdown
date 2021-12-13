@@ -5,7 +5,7 @@ Slug: useful-chrome-extensions
 Title: Useful Chrome Extensions
 Category: Software
 Tags: software, Google Chrome, extension, add-on, plug-in, addon, plugin, web browser
-Modified: 2020-05-30 20:26:25
+Modified: 2021-12-12 21:34:52
 
 **
 Things on this page are
@@ -20,6 +20,10 @@ Tampermonkey is used to run so called userscripts (sometimes also called Greasem
 Userscripts are little computer programs that for example add download buttons to YouTube pages, 
 cleanup your Facebook timeline or help playing an online game.
 
+## [FireNVim](https://chrome.google.com/webstore/detail/firenvim/egpjdkipkomnmjhjmdamaniclmdlobbo/related)
+[FireNVim](https://chrome.google.com/webstore/detail/firenvim/egpjdkipkomnmjhjmdamaniclmdlobbo/related)
+lets you use NeoVim directly from your browser. 
+Contrary to other extensions, it does not open a new OS window.
 
 ## [Read Aloud: A Text to Speech Voice Reader](https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp/related?hl=en)
 

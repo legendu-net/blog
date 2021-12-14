@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-12-04 20:03:49
-Modified: 2021-12-12 23:20:38
+Modified: 2021-12-13 11:52:29
 Author: Benjamin Du
 Slug: firenvim-brings-neovim-into-your-browser
 Title: Firenvim Brings NeoVim into Your Browser
@@ -16,8 +16,14 @@ Tags: Computer Science, Vim, NeoVim, Firenvim, browser
 
 Use the following command to adjust font and its size.
 
-    :::bash
+    :::vim
     :set guifont=Monaco:h16
+
+Use the following commands to adjust the frame size for editing.
+
+    :::vim
+    :set lines=80 
+    :set columns=100 
 
 ## References 
 

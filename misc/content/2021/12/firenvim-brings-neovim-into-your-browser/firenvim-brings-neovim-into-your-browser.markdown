@@ -25,6 +25,18 @@ Use the following commands to adjust the frame size for editing.
     :set lines=80 
     :set columns=100 
 
+## Troubleshooting
+
+### Disable Hardware Acceleration
+
+`:set lines=30` is very slow due to hardware acceleration in browsers.
+Disabling hardware acceleration helps.
+Please refer to
+[How to Turn Hardware Acceleration On and Off in Chrome](https://www.howtogeek.com/412738/how-to-turn-hardware-acceleration-on-and-off-in-chrome/)
+and
+[Hardware acceleration and WindowBlinds causes Firefox to crash](https://support.mozilla.org/en-US/kb/hardware-acceleration-and-windowblinds-crash)
+on how to disable hardware acceleration in Chrome and Firefox.
+
 ## References 
 
 [Firenvim: Neovim inside Your Browser](https://jdhao.github.io/2020/01/01/firenvim_nvim_inside_browser/)

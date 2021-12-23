@@ -5,7 +5,7 @@ Slug: ipython-is-the-best-shell
 Title: IPython Is the Best Shell
 Category: Computer Science
 Tags: programming, Python, tips, IPython, Shell
-Modified: 2021-09-05 12:57:52
+Modified: 2021-12-23 10:25:17
 
 ## Profile of IPython
 
@@ -69,6 +69,10 @@ Modified: 2021-09-05 12:57:52
         ?os.*dir*
 
 ## Shell 
+
+1. It is well known that 
+    `echo $?` prints the exit code of the last command in shell.
+    Notice that this does NOT work as expected in IPython shell!!
 
 1. If you run a shell command, 
     it is suggested that you always prefix it with `!` 

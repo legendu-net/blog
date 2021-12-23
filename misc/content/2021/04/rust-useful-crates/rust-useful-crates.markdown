@@ -61,6 +61,13 @@ provides numeric traits for generic mathematics in Rust.
 [enum_primitive](https://crates.io/crates/enum_primitive)
 is a macro to generate `num::FromPrimitive` instances for enum that works in Rust 1.0+.
 
+## Graph Data Structure
+
+https://github.com/petgraph/petgraph
+Graph data structure library for Rust.
+
+https://crates.io/crates/petgraph
+
 ## Parallell, Concurrency and Async
 ### [futures](https://crates.io/crates/futures)
 [futures](https://crates.io/crates/futures)

@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-06-25 16:02:10
-Modified: 2021-09-20 00:00:35
+Modified: 2021-12-24 10:15:25
 Author: Benjamin Du
 Slug: computer-vision-libraries-in-rust
 Title: Computer Vision Libraries in Rust
@@ -46,3 +46,10 @@ It features multiple platform backends,
 such as v4l2 for Linux.
 
 https://github.com/rust-cv
+
+## [kajiya](https://github.com/EmbarkStudios/kajiya)
+The general goal of 
+[kajiya](https://github.com/EmbarkStudios/kajiya)
+is to get as close as possible to path-traced reference at real-time rates in dynamic scenes, 
+without any precomputed light transport, or manually placed light probes.
+

@@ -5,7 +5,7 @@ Slug: useful-tools-linux
 Title: Useful Tools in Linux
 Category: OS
 Tags: shell, remote, PDF, software, tools, terminal, application, Linux
-Modified: 2021-12-04 18:49:11
+Modified: 2021-12-24 11:08:51
 
 **
 Things on this page are
@@ -369,6 +369,10 @@ Opensource Desktop Publishing
 1. git
 
 ## Multimedia Tools
+
+### [OBS Studio](https://github.com/obsproject/obs-studio)
+[OBS Studio](https://github.com/obsproject/obs-studio)
+Free and open source software for live streaming and screen recording
 
 ### Music Player
 

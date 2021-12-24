@@ -5,7 +5,7 @@ Slug: network-tips
 Title: Tips on Network
 Category: Internet
 Tags: internet, web, network, tips
-Modified: 2021-07-31 08:54:07
+Modified: 2021-12-24 10:12:50
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
@@ -42,8 +42,11 @@ https://engineering.hashnode.com/after-4-years-with-nginx-we-switched-to-caddy-h
 
 ## Expose Local Web Service to Public
 
-[TunnelTo](https://tunnelto.dev/)
+1. [TunnelTo](https://tunnelto.dev/)
 allows you to expose your local web server to the internet with a public URL.
+
+2. [ngrok](https://ngrok.com/)
+    exposes local servers behind NATs and firewalls to the public internet over secure tunnels.
 
 
 ## General Tips

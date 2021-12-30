@@ -15,10 +15,15 @@ Please read with your own judgement!
 
 
 ## [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
-
-Tampermonkey is used to run so called userscripts (sometimes also called Greasemonkey scripts). 
+[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
+is used to run so called userscripts (sometimes also called Greasemonkey scripts). 
 Userscripts are little computer programs that for example add download buttons to YouTube pages, 
 cleanup your Facebook timeline or help playing an online game.
+
+## [Get cookies.txt](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid?hl=en)
+[Get cookies.txt](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid?hl=en)
+exports your cookies to the Netscape cookie file format a.k.a. `cookies.txt`
+which is compatible with wget, curl, youtube-dl and more.
 
 ## [FireNVim](https://chrome.google.com/webstore/detail/firenvim/egpjdkipkomnmjhjmdamaniclmdlobbo/related)
 [FireNVim](https://chrome.google.com/webstore/detail/firenvim/egpjdkipkomnmjhjmdamaniclmdlobbo/related)

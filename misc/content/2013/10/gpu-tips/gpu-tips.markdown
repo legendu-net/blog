@@ -5,7 +5,7 @@ Title: Tips on GPU Computing
 Slug: gpu-tips
 Category: Computer Science
 Tags: tips, GPU, programming, Nvidia
-Modified: 2021-12-24 10:17:38
+Modified: 2021-12-25 13:16:19
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
@@ -69,8 +69,8 @@ You can list GPU devices using the following command on linux.
 is a very lightweight wrapper around Vulkan.
 
 - [rust-gpu](https://github.com/EmbarkStudios/rust-gpu)
-[rust-gpu](https://github.com/EmbarkStudios/rust-gpu)
-aims at making Rust a first-class language and ecosystem for GPU shaders.
+    [rust-gpu](https://github.com/EmbarkStudios/rust-gpu)
+    aims at making Rust a first-class language and ecosystem for GPU shaders.
 
 - [wgpu-rs](https://github.com/gfx-rs/wgpu-rs)
 [wgpu-rs](https://github.com/gfx-rs/wgpu-rs)

@@ -5,7 +5,7 @@ Slug: spark-sql-tips
 Title: Spark SQL
 Category: Computer Science
 Tags: programming, big data, Spark, Spark SQL, Hive
-Modified: 2021-09-17 19:29:14
+Modified: 2022-01-01 14:35:30
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -23,7 +23,7 @@ Please read with your own judgement!
     with the help of Delta Lake.
     There are lots of other cool features introduced in Delta Lake too!
 
-0. It is suggested that you use Spark SQL syntax as much as possible 
+2. It is suggested that you use Spark SQL syntax as much as possible 
   instead of the the Spark DataFrame syntax (even though DataFrame provides more static syntax check)
   as SQL is a universal language.
 
@@ -34,6 +34,10 @@ Please read with your own judgement!
     When the SQL statement passed in is a Data Definition Language (DDL) or Data Manipulation Language (DML), 
     such as `create`,
     an empty DataFrame is returned.
+
+4. Both `=` and `==` can be used as the equal sign in Spark SQL.
+    It is suggested that you use `==` (as the equal sign)
+    which is consistent with other programming languages.
 
 1. The syntax of Spark SQL is mostly the same as the syntax of Hive SQL but with some subtle differences.
     Spark supports Hive SQL too,

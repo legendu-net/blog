@@ -1,9 +1,9 @@
 Status: published
 Date: 2022-01-01 13:41:55
-Modified: 2022-01-01 13:41:55
+Modified: 2022-01-02 08:51:44
 Author: Benjamin Du
 Slug: convert-heic-images-in-linux
-Title: Convert Heic Images in Linux
+Title: Convert HEIC Images in Linux
 Category: Computer Science
 Tags: Computer Science, programming, iOS, HEIC, image, photo, Linux, convert, HEIF
 

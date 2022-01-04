@@ -5,7 +5,7 @@ Slug: unit-testing-formal-verification-rust
 Title: Unit Testing and Formal Verification in Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, testing, unit test, verification, analysis, formal verification
-Modified: 2021-11-23 13:37:01
+Modified: 2022-01-03 18:49:36
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
@@ -28,6 +28,25 @@ support an option error message on failure.
     let err = Rank::from_char('z').unwrap_err().downcast().unwrap();
     assert_eq!(err, RankError::NotARank('z')));
     assert!(matches!(Rank::from_char('Z'), Err(_))
+
+Assert 2 arrays/vectors contain the same values.
+
+    :::Rust
+    let a = [3, 4, 5, 6];
+    let v = vec![0, 1, 2, 3, 4, 5, 6];
+    assert_eq!(&a[..], &v[v.len() - 4..]);
+
+Assert 2 float numbers are the same.
+
+    assert!((x - y).abs() < 1E-6)
+
+Assert an Option value is None.
+
+    assert!(an_option_value.is_none())
+
+Assert an Option value is Some(v).
+
+    assert_eq!(an_option_value.unwrap(), v)
 
 
 [Rust Design-for-Testability: a survey](https://alastairreid.github.io/rust-testability/)

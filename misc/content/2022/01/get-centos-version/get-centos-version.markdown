@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-01-01 13:47:32
-Modified: 2022-01-02 08:53:09
+Modified: 2022-01-03 18:54:21
 Author: Benjamin Du
 Slug: get-centos-version
 Title: Get CentOS Version

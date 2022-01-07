@@ -5,7 +5,7 @@ Slug: Spark-issue:-Pure-Python-code-errors
 Title: Spark Issue: Pure Python Code Errors
 Category: Computer Science
 Tags: Computer Science, programming, Spark, issue, big data, Spark issue, Python, error, exception
-Modified: 2021-12-12 21:31:54
+Modified: 2022-01-06 22:33:12
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -142,3 +142,11 @@ Cast a long integer (64 bits) in Python to int (32 bits) in PyArrow.
 ## Solution 14
 Use long integer instead for the return type in pandas UDF.
 
+## Symptom 15
+> IndentationError: unexpected indent
+
+## Cause 15
+Syntax error in the Python code.
+
+## Solution 15
+Fix the syntax error in the Python code.

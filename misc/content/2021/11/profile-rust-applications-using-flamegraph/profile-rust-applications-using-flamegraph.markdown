@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-09 10:28:40
-Modified: 2022-01-13 00:49:49
+Modified: 2022-01-13 13:28:01
 Author: Benjamin Du
 Slug: profile-rust-applications-using-flamegraph
 Title: Profile Rust Applications Using Flamegraph
@@ -70,5 +70,7 @@ Notice that it is best to
 echo 0 |sudo tee /proc/sys/kernel/kptr_restrict
 
 ## References
+
+- [Profile Rust Applications](http://www.legendu.net/misc/blog/profile-rust-applications/)
 
 - [flamegraph](https://github.com/flamegraph-rs/flamegraph)

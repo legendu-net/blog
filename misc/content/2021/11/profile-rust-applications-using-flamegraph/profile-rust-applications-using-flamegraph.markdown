@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-09 10:28:40
-Modified: 2021-11-19 08:00:13
+Modified: 2022-01-13 00:49:49
 Author: Benjamin Du
 Slug: profile-rust-applications-using-flamegraph
 Title: Profile Rust Applications Using Flamegraph
@@ -41,6 +41,14 @@ you can try run the `flamegraph` on rust binary directly.
     sudo ~/.cargo/bin/flamegraph target/release/your_binary
 
 Notice that it is best to
+
+1. Start a Docker container with the option `--cap-add SYS_ADMIN`
+    if you use `flamegraph` in a Docker container.
+    For more discussions,
+    please refer to
+    [running `perf` in docker & kubernetes](https://medium.com/@geekidea_81313/running-perf-in-docker-kubernetes-7eb878afcd42)
+    .
+
 1. Enable debug info (if you are profiling the release build which is the default).
     You can achive this by adding the following configuration into your `Cargo.toml` file.
 

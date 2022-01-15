@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2022-01-13 13:28:01
+Modified: 2022-01-14 16:49:08
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -38,6 +38,8 @@ is a heap memory profiler for Linux
 
 
 ## References
+
+- [How To Write Fast Rust Code](http://likebike.com/posts/How_To_Write_Fast_Rust_Code.html)
 
 - [The Rust Performance Book - Profiling](https://nnethercote.github.io/perf-book/profiling.html)
 

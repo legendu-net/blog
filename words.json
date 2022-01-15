@@ -111,6 +111,7 @@
     ["Withreplacement", "WithReplacement"],
     ["Crashloopbackoff", "CrashLoopBackOff"], 
     ["Outofmemoryerror", "OutOfMemoryError"],
+    ["Runtimeexception", "RuntimeException"],
     ["Broadcasthashjoin", "BroadcastHashJoin"],
     ["Torch.Nn.Functional", "torch.nn.functional"],
     ["Modulenotfounderror", "ModuleNotFoundRrror"],

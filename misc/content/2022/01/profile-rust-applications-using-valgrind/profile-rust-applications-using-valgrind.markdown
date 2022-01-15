@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-01-13 01:02:06
-Modified: 2022-01-13 13:28:01
+Modified: 2022-01-15 14:06:32
 Author: Benjamin Du
 Slug: profile-rust-applications-using-valgrind
 Title: Profile Rust Applications Using Valgrind
@@ -23,9 +23,22 @@ Tags: Computer Science, programming, Rust, profile, profiler, Valgrind, KCacheGr
 
 [KCacheGrind](https://github.com/KDE/kcachegrind)
 
+## General Tips and Traps 
+
+1. Profiling an application using valgrind is about 50x slower
+    than running the application.
+
+2. Valgrind seems to have some issues with Rust applications.
+    Only performance data of public methods are dumped.
+    A hack way to fix this issue 
+    is to mark all methods 
+    that you want to profile as `pub` in your Rust code.
+
 ## References 
 
 - [Profile Rust Applications](http://www.legendu.net/misc/blog/profile-rust-applications/)
+
+- [Profile Rust Applications Using Flamegraph](http://www.legendu.net/misc/blog/profile-rust-applications-using-flamegraph/)
 
 - [Profiling with Valgrind](https://developer.mantidproject.org/ProfilingWithValgrind.html)
 

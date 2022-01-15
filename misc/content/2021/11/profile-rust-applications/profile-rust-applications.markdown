@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2022-01-14 16:49:08
+Modified: 2022-01-15 14:06:32
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -14,6 +14,8 @@ Tags: Computer Science, programming, Rust, profile, profiling, speed, memory, CP
 
 1. [The Rust Performance Book](https://nnethercote.github.io/perf-book/title-page.html)
     has a comprehensive guide on optimizing Rust code.
+    [Rust Performance Pitfalls](https://llogiq.github.io/2017/06/01/perf-pitfalls.html)
+    discusses about some performance pitfalls that you want to avoid.
 
 2. [rustfilt](https://crates.io/crates/rustfilt)
     demangles Rust symbol names using 
@@ -39,15 +41,19 @@ is a heap memory profiler for Linux
 
 ## References
 
-- [How To Write Fast Rust Code](http://likebike.com/posts/How_To_Write_Fast_Rust_Code.html)
-
 - [The Rust Performance Book - Profiling](https://nnethercote.github.io/perf-book/profiling.html)
+
+- [Rust Performance Pitfalls](https://llogiq.github.io/2017/06/01/perf-pitfalls.html)
+
+- [How To Write Fast Rust Code](http://likebike.com/posts/How_To_Write_Fast_Rust_Code.html)
 
 - [Top-Down performance analysis methodology](https://easyperf.net/blog/2019/02/09/Top-Down-performance-analysis-methodology)
 
-- [Rust Crate - profiling](https://crates.io/crates/profiling)
+- [Profile Rust Applications Using Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
 
-- [Is it possible to print the callgraph of a Cargo workspace?](https://users.rust-lang.org/t/is-it-possible-to-print-the-callgraph-of-a-cargo-workspace/50369)
+- [Profile Rust Applications Using Flamegraph](http://www.legendu.net/misc/blog/profile-rust-applications-using-flamegraph/)
+
+- [Rust Crate - profiling](https://crates.io/crates/profiling)
 
 - [How-to Optimize Rust Programs on Linux](http://www.codeofview.com/fix-rs/2017/01/24/how-to-optimize-rust-programs-on-linux/)
 

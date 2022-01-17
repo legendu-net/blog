@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-09 10:28:40
-Modified: 2022-01-15 14:06:32
+Modified: 2022-01-17 12:25:55
 Author: Benjamin Du
 Slug: profile-rust-applications-using-flamegraph
 Title: Profile Rust Applications Using Flamegraph
@@ -10,7 +10,7 @@ Tags: Computer Science, programming, Rust, flamegraph, perf, profile, profiling
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
-is an alternative to flamegraph.
+is an good alternative to flamegraph.
 It is easier to setup than flamegraph.
 However, 
 flamegraph has better integration with cargo.

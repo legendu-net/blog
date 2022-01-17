@@ -7,7 +7,7 @@ Title: Spark Issue: RuntimeException: Unsupported Literal Type Class
 Category: Computer Science
 Tags: Computer Science, programming, Spark, issue, Spark issue, big data, RuntimeException, type, unsupported
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 
 ## Symptom 
 

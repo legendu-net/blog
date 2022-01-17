@@ -1,19 +1,19 @@
 Status: published
 Date: 2022-01-15 14:23:15
-Modified: 2022-01-15 14:23:15
+Modified: 2022-01-17 12:33:30
 Author: Benjamin Du
 Slug: spark-issue:-shell-related
 Title: Spark Issue: Shell Related
 Category: Computer Science
 Tags: Computer Science, programming, Spark, issue, Spark issue, shell, command, big data 
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 
 ## Symptom 1
 
 > /bin/sh: hdfs: command not found
 
-## Possibles Causes of Symptom 1
+## Possible Causes of Symptom 1
 
 The command `hdfs` is not on the search path. 
 
@@ -26,7 +26,7 @@ The command `hdfs` is not on the search path.
 
 ## Sympton 2 
 
-> ... died with <Signals.SIGILL: 4>.
+> ... died with &lt;Signals.SIGILL: 4&gt;.
 
 ## Possible Causes of Symptom 2
 

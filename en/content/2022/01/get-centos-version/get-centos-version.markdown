@@ -7,7 +7,7 @@ Title: Get CentOS Version
 Category: Computer Science
 Tags: Computer Science, programming, CentOS, Linux, version
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 
 You can get the version of CentOS
 using the following command.

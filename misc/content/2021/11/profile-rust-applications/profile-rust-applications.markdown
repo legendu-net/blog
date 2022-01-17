@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2022-01-15 14:06:32
+Modified: 2022-01-17 12:18:34
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -23,12 +23,28 @@ Tags: Computer Science, programming, Rust, profile, profiling, speed, memory, CP
     . 
 
 ## CPU Profiling
+
+### [Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
+Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
+is a great profiler for Rust applications.
+
 ### [FlameGraph](http://www.legendu.net/misc/blog/profile-rust-applications-using-flamegraph)
 
 [FlameGraph](http://www.legendu.net/misc/blog/profile-rust-applications-using-flamegraph)
-is a great profiler for Rust application.
+is another good profiler for Rust applications 
+which is has integration support for cargo.
+However,
+the underlying tool `perf` 
+(that FlameGraph relies on)
+has a few disadvantages.
 
-### Valgrind
+1. It takes some efforts to install and configure `perf`.
+2. `perf` has a 
+    [bug](https://bugzilla.kernel.org/show_bug.cgi?id=201477)
+    which affects its usability. 
+
+It is suggested that you use `Valgrind` 
+if you encounter issues with `perf`.
 
 ## Memory Profiling
 

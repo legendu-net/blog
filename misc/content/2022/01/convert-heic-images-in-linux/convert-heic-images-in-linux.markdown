@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-01-01 13:41:55
-Modified: 2022-01-02 08:51:44
+Modified: 2022-01-16 21:25:10
 Author: Benjamin Du
 Slug: convert-heic-images-in-linux
 Title: Convert HEIC Images in Linux
@@ -9,16 +9,17 @@ Tags: Computer Science, programming, iOS, HEIC, image, photo, Linux, convert, HE
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+## Installation on Ubuntu
 
-sudo apt-get install heif-gdk-pixbuf
+    :::bash
+    wajig install heif-gdk-pixbuf libheif-examples
 
+## Usage
 
-sudo apt-get install libheif-examples
-
-
-heif-convert input.HEIC output.JPG
+    :::bash
+    heif-convert input.HEIC output.JPG
 
 
 ## References
 
-https://ubuntuhandbook.org/index.php/2021/06/open-heic-convert-jpg-png-ubuntu-20-04/
+- https://ubuntuhandbook.org/index.php/2021/06/open-heic-convert-jpg-png-ubuntu-20-04/

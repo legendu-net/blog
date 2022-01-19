@@ -5,12 +5,30 @@ Slug: hadoop-fs-tips
 Title: Hadoop Filesystem Tips
 Category: Software
 Tags: big data, Hadoop, filesystem, file system, tips
-Modified: 2021-12-09 10:33:27
+Modified: 2022-01-18 16:14:51
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
 Please read with your own judgement!
 **
+
+## Tips and Traps 
+
+1. It is suggested that you never use the `-skipTrash` option
+    unless you are absolutely aware of what you are doing. 
+    I made mistakes a couple of times in the past 
+    to remove HDFS paths accidentally with the `-skipTrash` option
+    which means that those HDFS files couldn't be recovered from trash.
+
+2. The HDFS command supports wildcards. 
+    However, 
+    `*` represents all files/directories 
+    including hidden ones (which is different from Linux/Unix shell).
+
+3. The success file `_SUCCESS` is generated when a Spark/Hadoop application succeed.
+    It can be used to check whether the data produced by a Spark application is ready.
+    The success file `_HIVESUCCESS` is generated when a Hive table is refreshed successfully.
+    It can be used to check whether a Hive table is ready for consumption.
 
 
 ## hadoop fs vs hadoop dfs vs hdfs dfs
@@ -25,18 +43,6 @@ Please read with your own judgement!
     `hadoop dfs` has been deprecated in favor of `hdfs dfs`.
     `hdfs dfs` is recommended when you work with HDFS only.
 
-
-## General Tips 
-
-1. The HDFS command supports wildcards. 
-    However, 
-    `*` represents all files/directories 
-    including hidden ones (which is different from Linux/Unix shell).
-
-2. The success file `_SUCCESS` is generated when a Spark/Hadoop application succeed.
-    It can be used to check whether the data produced by a Spark application is ready.
-    The success file `_HIVESUCCESS` is generated when a Hive table is refreshed successfully.
-    It can be used to check whether a Hive table is ready for consumption.
 
 ## cat - Print a File
 
@@ -180,18 +186,11 @@ and then use hdfs get to fetch single file to local system.
         -mapper cat \
         -reducer cat
 
-## Parquet Format
-
-Hadoop commands do not support merging Parquet files. 
-You can use [apache/parquet-mr](https://github.com/apache/parquet-mr) to merge Parquet files.
-
 ## Hadoop FS compress 
 
 http://stackoverflow.com/questions/5571156/hadoop-how-to-compress-mapper-output-but-not-the-reducer-output
 
 http://www.ericlin.me/disable-hive-output-compression
-
-
 
 1. no update, have to update locally and upload to hadoop
 
@@ -209,12 +208,18 @@ http://www.ericlin.me/disable-hive-output-compression
 
 ## References
 
-https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html
+- [Hadoop Filesystem - Java APIs](https://hadoop.apache.org/docs/stable/api/org/apache/hadoop/fs/FileSystem.html#delete-org.apache.hadoop.fs.Path-boolean-)
 
-https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/FileSystemShell.html
+- [PySpark and HDFS Commands](https://newbedev.com/pyspark-and-hdfs-commands)
 
-https://stackoverflow.com/questions/6504107/the-way-to-check-a-hdfs-directorys-size
+- [Spark – Rename and Delete a File or Directory From HDFS](https://sparkbyexamples.com/spark/spark-rename-and-delete-file-directory-from-hdfs/)
 
-https://dzone.com/articles/top-10-hadoop-shell-commands
+- https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html
 
-https://stackoverflow.com/questions/18142960/whats-the-difference-between-hadoop-fs-shell-commands-and-hdfs-dfs-shell-co
+- https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/FileSystemShell.html
+
+- https://stackoverflow.com/questions/6504107/the-way-to-check-a-hdfs-directorys-size
+
+- https://dzone.com/articles/top-10-hadoop-shell-commands
+
+- https://stackoverflow.com/questions/18142960/whats-the-difference-between-hadoop-fs-shell-commands-and-hdfs-dfs-shell-co

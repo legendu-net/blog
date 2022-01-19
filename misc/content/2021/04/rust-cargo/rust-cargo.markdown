@@ -5,7 +5,7 @@ Slug: tips-on-cargo
 Title: Tips on Cargo
 Category: Computer Science
 Tags: Computer Science, programming, Rust, cargo, format, fmt, rustfmt
-Modified: 2021-12-05 21:10:48
+Modified: 2022-01-18 17:10:10
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -97,6 +97,13 @@ If `rustfmt` has been installed (using `rustup component add rustfmt`),
 you can run the following command to format code in a Rust project.
 
     cargo fmt 
+
+Notice that `cargo fmt` might have issues with Rust code 
+that are nested in many layers
+and there's no good configuration to make it work.
+It is suggested that you do not nest Rust code too deeply. 
+This not only make things easier for `cargo fmt`
+but also makes your Rust code cleaner and more readable.
 
 ### [cargo-edit](https://github.com/killercup/cargo-edit)
 

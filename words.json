@@ -54,7 +54,7 @@
     ["Opencv", "OpenCV"],
     ["Ulimit", "ulimit"],
     ["Pyodbc", "pyodbc"], ["Pypdf2", "PyPDF2"], ["Pyyaml", "PyYAML"], ["Pytype", "pytype"], 
-    ["Sqlite", "SQLite"],
+    ["Sigbus", "SIGBUS"], ["Sqlite", "SQLite"],
     ["Wechat", "WeChat"], ["Winget", "winget"], 
     ["Yyyymm", "YYYYMM"],
     ["Autokey", "AutoKey"], ["Add-Ons", "Add-ons"], ["Asyncio", "asyncio"],

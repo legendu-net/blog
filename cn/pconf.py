@@ -5,7 +5,7 @@ from pelican_jupyter import markup as nb_markup
 import math
 from loguru import logger
 
-HOME_URL = "http://www.legendu.net"
+HOME_URL = "https://www.legendu.net"
 SITEURL = f"{HOME_URL}/cn"
 SITESUBTITLE = u"山不在高，有仙则名；水不在深，有龙则灵。"
 AUTHOR = "Ben Chuanlong Du"

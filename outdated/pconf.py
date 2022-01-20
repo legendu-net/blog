@@ -4,7 +4,7 @@ from pathlib import Path
 from pelican_jupyter import markup as nb_markup
 from loguru import logger
 
-HOME_URL = "http://www.legendu.net"
+HOME_URL = "https://www.legendu.net"
 SITEURL = f"{HOME_URL}/outdated"
 SITESUBTITLE = "Change is eternal."
 AUTHOR = "Ben Chuanlong Du"

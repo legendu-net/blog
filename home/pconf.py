@@ -4,7 +4,7 @@ from pathlib import Path
 from pelican_jupyter import markup as nb_markup
 from loguru import logger
 
-SITEURL = "http://www.legendu.net"
+SITEURL = "https://www.legendu.net"
 SITESUBTITLE = "And let it direct your passion with reason."
 AUTHOR = "Ben Chuanlong Du"
 SITENAME = "Ben Chuanlong Du's Blog"

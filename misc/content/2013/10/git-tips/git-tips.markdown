@@ -5,7 +5,7 @@ Title: Tips on Git
 Slug: git-tips
 Category: Software
 Tags: tips, Git, software, version control, distributed, access, token, GitHub, GitLab
-Modified: 2021-08-06 22:56:41
+Modified: 2022-01-22 15:04:07
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -348,6 +348,15 @@ What is corkscrew?
 1. Stash your work
 
         git stash
+
+## Useful Tools for Git and Git Repositoris
+
+https://github.com/mergestat/mergestat
+
+Query git repositories with SQL. 
+Generate reports, perform status checks, analyze codebases.
+
+
 
 ## References
 

@@ -5,7 +5,7 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2021-11-09 20:12:28
+Modified: 2022-01-22 15:02:29
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
@@ -60,6 +60,43 @@ provides numeric traits for generic mathematics in Rust.
 ### [enum_primitive](https://crates.io/crates/enum_primitive)
 [enum_primitive](https://crates.io/crates/enum_primitive)
 is a macro to generate `num::FromPrimitive` instances for enum that works in Rust 1.0+.
+
+## Bits Operations 
+
+https://crates.io/crates/bitflags
+A Rust macro to generate structures which behave like a set of bitflags
+
+https://crates.io/crates/bitvec
+Addresses memory by bits, for packed collections and bitfields
+
+https://crates.io/crates/byteorder
+Library for reading/writing numbers in big-endian and little-endian.
+
+https://crates.io/crates/bytes
+A utility library for working with bytes.
+
+## Hash code and Hash Maps
+
+https://crates.io/crates/hashbrown
+A Rust port of Google's SwissTable hash map
+
+https://crates.io/crates/indexmap
+
+A hash table with consistent order and fast iteration. The indexmap is a hash table where the iteration order of the key-value pairs is independent of the hash values of the keys. It has the usual hash table functionality, it preserves insertion order except after removals, and it allows lookup of its elements by either hash table key or numerical index.
+
+
+
+## Binary Encoding
+
+### [atoi-rs](https://github.com/pacman82/atoi-rs)
+
+[atoi-rs](https://github.com/pacman82/atoi-rs)
+parses integers directly from [u8] slices in safe code
+.
+
+https://crates.io/crates/parquet
+Apache Parquet implementation in Rust
+
 
 ## Graph Data Structure
 

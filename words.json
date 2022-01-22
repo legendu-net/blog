@@ -43,6 +43,7 @@
     ["Yapf", "yapf"], ["Yaml", "YAML"],
     ["Ci/Cd", "CI/CD"], ["Cicd", "CICD"], 
     ["Anbox", "AnBox"], 
+    ["Https", "HTTPS"], 
     ["Isort", "isort"], 
     ["Gnome", "GNOME"], 
     ["Latex", "LaTeX"], ["Mllib", "MLlib"], ["Mysql", "MySQL"], ["Macos", "macOS"],

@@ -27,8 +27,9 @@ def query(blogger, args):
 
 
 def _subparse_query(subparsers):
+    desc = "Run a SQL query."
     subparser_query = subparsers.add_parser(
-        "query", aliases=["q"], help="Run a SQL query."
+        "query", aliases=["q"], help=desc, description=desc
     )
     subparser_query.add_argument("sql", nargs="+", help="the SQL to run")
     subparser_query.set_defaults(func=query)
@@ -67,8 +68,9 @@ def trash(blogger, args):
 
 
 def _subparse_trash(subparsers):
+    desc = "Move posts to the trash directory."
     subparser_trash = subparsers.add_parser(
-        "trash", aliases=["t"], help="Move posts to the trash directory."
+        "trash", aliases=["t"], help=desc, description=desc
     )
     option_indexes(subparser_trash)
     option_all(subparser_trash)
@@ -82,10 +84,12 @@ def find_name_title_mismatch(blogger, args):
 
 
 def _subparse_find_name_title_mismatch(subparsers):
+    desc = "Find posts where their name and title are mismatched."
     subparser_find_name_title_mismatch = subparsers.add_parser(
         "findmismatch",
         aliases=["fm"],
-        help="Find posts where their name and title are mismatched."
+        help=desc,
+        description=desc,
     )
     option_dry_run(subparser_find_name_title_mismatch)
     option_num(subparser_find_name_title_mismatch)
@@ -287,10 +291,9 @@ def symlink():
 
 
 def _subparse_link(subparsers):
+    desc = "Link main.py to blog in a searchable path."
     subparser_link = subparsers.add_parser(
-        "symlink",
-        aliases=["link", "ln", "lk"],
-        help="Link main.py to blog in a searchable path."
+        "symlink", aliases=["link", "ln", "lk"], help=desc, description=desc
     )
     subparser_link.set_defaults(func=lambda blogger, args: symlink())
 
@@ -305,8 +308,12 @@ def launch_jupyterlab(blogger, args):
 
 
 def _subparse_jupyterlab(subparsers):
+    desc = "Launch the JupyterLab server."
     subparser_jlab = subparsers.add_parser(
-        "jupyterlab", aliases=["jupyter", "jlab"], help="Launch the JupyterLab server."
+        "jupyterlab",
+        aliases=["jupyter", "jlab"],
+        help=desc,
+        description=desc,
     )
     subparser_jlab.set_defaults(func=launch_jupyterlab)
 
@@ -328,8 +335,12 @@ def format_notebook(bloger, args):
 
 
 def _subparse_format_notebook(subparsers):
+    desc = "Format notebooks."
     subparser_format_notebook = subparsers.add_parser(
-        "format_notebook", aliases=["format", "fmt", "f"], help="Format notebooks."
+        "format_notebook",
+        aliases=["format", "fmt", "f"],
+        help=desc,
+        description=desc,
     )
     option_indexes(subparser_format_notebook)
     option_files(subparser_format_notebook)
@@ -338,14 +349,22 @@ def _subparse_format_notebook(subparsers):
 
 
 def _subparse_trust_notebooks(subparsers):
+    desc = "Trust notebooks."
     subparser_trust_notebooks = subparsers.add_parser(
-        "trust_notebooks", aliases=["trust"], help="Trust notebooks."
+        "trust_notebooks",
+        aliases=["trust"],
+        help=desc,
+        description=desc,
     )
 
 
 def _subparse_exec_notebook(subparsers):
+    desc = "Execute a notebook."
     subparser_exec_notebook = subparsers.add_parser(
-        "exec_notebook", aliases=["exec"], help="Execute a notebook."
+        "exec_notebook",
+        aliases=["exec"],
+        help=desc,
+        description=desc,
     )
     option_indexes(subparser_exec_notebook)
     option_files(subparser_exec_notebook)
@@ -353,18 +372,23 @@ def _subparse_exec_notebook(subparsers):
 
 
 def _subparse_clear(subparsers):
+    desc = "Remove the underlying SQLite3 database."
     subparser_clear = subparsers.add_parser(
-        "clear", aliases=["c"], help="Remove the underlying SQLite3 database."
+        "clear",
+        aliases=["c"],
+        help=desc,
+        description=desc,
     )
     subparser_clear.set_defaults(func=clear)
 
 
 def _subparse_utag(subparsers):
-    # parser for the update_tags command
+    desc = "update tags of posts."
     subparser_utag = subparsers.add_parser(
         "update_tags",
         aliases=["utag" + i for i in INDEXES],
-        help="update tags of posts."
+        help=desc,
+        description=desc,
     )
     option_indexes(subparser_utag)
     option_files(subparser_utag)
@@ -374,11 +398,12 @@ def _subparse_utag(subparsers):
 
 
 def _subparse_ucat(subparsers):
-    # parser for the update_category command
+    desc = "Update category of posts."
     subparser_ucat = subparsers.add_parser(
         "update_category",
         aliases=["ucat" + i for i in INDEXES],
-        help="Update category of posts."
+        help=desc,
+        description=desc,
     )
     option_indexes(subparser_ucat)
     option_files(subparser_ucat)
@@ -388,8 +413,12 @@ def _subparse_ucat(subparsers):
 
 
 def _subparse_tags(subparsers):
+    desc = "List all tags and their frequencies."
     subparser_tags = subparsers.add_parser(
-        "tags", aliases=["t"], help="List all tags and their frequencies."
+        "tags",
+        aliases=["t"],
+        help=desc,
+        description=desc,
     )
     option_where(subparser_tags)
     option_dir(subparser_tags)
@@ -397,8 +426,12 @@ def _subparse_tags(subparsers):
 
 
 def _subparse_cats(subparsers):
+    desc = "List all categories and their frequencies."
     subparser_cats = subparsers.add_parser(
-        "cats", aliases=["c"], help="List all categories and their frequencies."
+        "cats",
+        aliases=["c"],
+        help=desc,
+        description=desc,
     )
     option_where(subparser_cats)
     option_dir(subparser_cats)
@@ -406,22 +439,34 @@ def _subparse_cats(subparsers):
 
 
 def _subparse_update(subparsers):
+    desc = "Update information of changed posts."
     subparser_update = subparsers.add_parser(
-        "update", aliases=["u"], help="Update information of changed posts."
+        "update",
+        aliases=["u"],
+        help=desc,
+        description=desc,
     )
     subparser_update.set_defaults(func=update)
 
 
 def _subparse_reload(subparsers):
+    desc = "Reload information of posts."
     subparser_reload = subparsers.add_parser(
-        "reload", aliases=["r"], help="Reload information of posts."
+        "reload",
+        aliases=["r"],
+        help=desc,
+        description=desc,
     )
     subparser_reload.set_defaults(func=reload)
 
 
 def _subparse_list(subparsers):
+    desc = "List last search results."
     subparser_list = subparsers.add_parser(
-        "list", aliases=["l"], help="List last search results."
+        "list",
+        aliases=["l"],
+        help=desc,
+        description=desc,
     )
     option_num(subparser_list)
     option_full_path(subparser_list)
@@ -429,15 +474,19 @@ def _subparse_list(subparsers):
 
 
 def _subparse_search(subparsers):
-    subparser_search = subparsers.add_parser(
-        "search",
-        aliases=["s"],
-        help="Search for posts. "
+    desc = (
+        "Search for posts. "
         "Tokens separated by spaces ( ) or plus signs (+) in the search phrase "
         "are matched in order with tokens in the text. "
         "ORDERLESS match of tokens can be achieved by separating them with the AND keyword. "
         "You can also limit match into specific columns. "
         "For more information, please refer to https://sqlite.org/fts5.html"
+    )
+    subparser_search = subparsers.add_parser(
+        "search",
+        aliases=["s"],
+        help=desc,
+        description=desc,
     )
     option_dry_run(subparser_search)
     subparser_search.add_argument(
@@ -559,7 +608,10 @@ def _subparse_search(subparsers):
 
 
 def _subparse_add(subparsers):
-    subparser_add = subparsers.add_parser("add", aliases=["a"], help="Add a new post.")
+    desc = "Add a new post."
+    subparser_add = subparsers.add_parser(
+        "add", aliases=["a"], help=desc, description=desc
+    )
     option_editor(subparser_add)
     subparser_add.add_argument(
         "-e",
@@ -601,7 +653,13 @@ def _subparse_add(subparsers):
 
 
 def _subparse_edit(subparsers):
-    subparser_edit = subparsers.add_parser("edit", aliases=["e"], help="Edit a post.")
+    desc = "Edit a post."
+    subparser_edit = subparsers.add_parser(
+        "edit",
+        aliases=["e"],
+        help=desc,
+        description=desc,
+    )
     subparser_edit.add_argument(
         "indexes", nargs="*", type=int, help="Row IDs in the search results."
     )
@@ -618,7 +676,13 @@ def _subparse_edit(subparsers):
 
 
 def _subparse_move(subparsers):
-    subparser_move = subparsers.add_parser("move", aliases=["m"], help="Move a post.")
+    desc = "Move a post."
+    subparser_move = subparsers.add_parser(
+        "move",
+        aliases=["m"],
+        help=desc,
+        description=desc,
+    )
     subparser_move.add_argument(
         "indexes", type=int, nargs="*", help="Rowid in the search results."
     )
@@ -665,8 +729,12 @@ def _subparse_move(subparsers):
 
 
 def _subparse_publish(subparsers):
+    desc = "Publish the blog."
     subparser_publish = subparsers.add_parser(
-        "publish", aliases=["p"], help="Publish the blog."
+        "publish",
+        aliases=["p"],
+        help=desc,
+        description=desc,
     )
     subparser_publish.add_argument(
         "-c",
@@ -733,10 +801,12 @@ def _subparse_publish(subparsers):
 
 
 def _subparse_match_post(subparsers):
+    desc = "match post name and title"
     subparser_match_post = subparsers.add_parser(
         "matchpost",
         aliases=["mp" + i for i in INDEXES],
-        help="match post name and title"
+        help=desc,
+        description=desc,
     )
     option_indexes(subparser_match_post)
     option_all(subparser_match_post)
@@ -758,22 +828,34 @@ def _subparse_match_post(subparsers):
 
 
 def _subparse_auto(subparsers):
+    desc = "Auto push the Git repository."
     subparser_auto = subparsers.add_parser(
-        "auto_git_push", aliases=["auto", "agp", "ap"], help="Run a SQL query."
+        "auto_git_push",
+        aliases=["auto", "agp", "ap"],
+        help=desc,
+        description=desc,
     )
     subparser_auto.set_defaults(func=auto_git_push)
 
 
 def _subparse_git_status(subparsers):
+    desc = "The git status command."
     subparser_status = subparsers.add_parser(
-        "status", aliases=["st", "sts"], help="The git status command."
+        "status",
+        aliases=["st", "sts"],
+        help=desc,
+        description=desc,
     )
     subparser_status.set_defaults(func=_git_status)
 
 
 def _subparse_git_diff(subparsers):
+    desc = "The git diff command."
     subparser_git = subparsers.add_parser(
-        "diff", aliases=["df", "dif"], help="The git diff command."
+        "diff",
+        aliases=["df", "dif"],
+        help=desc,
+        description=desc,
     )
     subparser_git.add_argument(
         "file", nargs="*", default=(), help="Path of the post to run git diff on."
@@ -796,8 +878,12 @@ def _git_pull(blogger, args):
 
 
 def _subparse_git_pull(subparsers):
+    desc = "The git pull command."
     subparser_status = subparsers.add_parser(
-        "pull", aliases=["pu"], help="The git pull command."
+        "pull",
+        aliases=["pu"],
+        help=desc,
+        description=desc,
     )
     subparser_status.set_defaults(func=_git_pull)
 
@@ -808,8 +894,12 @@ def empty_posts(blogger, args):
 
 
 def _subparse_empty_posts(subparsers):
+    desc = "Find empty post."
     subparser_status = subparsers.add_parser(
-        "empty", aliases=["em"], help="Find empty post."
+        "empty",
+        aliases=["em"],
+        help=desc,
+        description=desc,
     )
     option_dry_run(subparser_status)
     option_num(subparser_status)
@@ -827,10 +917,12 @@ def convert(blogger, args):
 
 
 def _subparse_convert(subparsers):
+    desc = "Convert markdown/notebook to notebooks/markdown."
     subparser_convert = subparsers.add_parser(
         "convert",
         aliases=["conv"],
-        help="Convert markdown/notebook to notebooks/markdown."
+        help=desc,
+        description=desc,
     )
     option_indexes(subparser_convert)
     option_files(subparser_convert)

@@ -5,7 +5,7 @@ Title: Tips on tmux
 Slug: tmux-tips
 Category: Software
 Tags: tips, tmux, software, remote, screen, terminal
-Modified: 2022-01-21 15:48:51
+Modified: 2022-01-21 18:12:58
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
@@ -15,7 +15,7 @@ Please read with your own judgement!
 Zellij is a better alternative.
 
     :::bash
-    !ls
+    !fselect * from . where is_file = 1
  
 1. ctrl + b ?: help
 

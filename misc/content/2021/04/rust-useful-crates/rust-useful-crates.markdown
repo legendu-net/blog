@@ -5,7 +5,7 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2022-01-22 15:02:29
+Modified: 2022-01-22 16:58:47
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
@@ -63,8 +63,9 @@ is a macro to generate `num::FromPrimitive` instances for enum that works in Rus
 
 ## Bits Operations 
 
-https://crates.io/crates/bitflags
-A Rust macro to generate structures which behave like a set of bitflags
+### [bitflags](https://crates.io/crates/bitflags)
+[bitflags](https://crates.io/crates/bitflags)
+is a Rust macro to generate structures which behave like a set of bitflags.
 
 https://crates.io/crates/bitvec
 Addresses memory by bits, for packed collections and bitfields
@@ -161,9 +162,6 @@ as well as anything that requires non-const function calls to be computed.
 [derive_builder](https://crates.io/crates/derive_builder)
 provides a Rust procedural macro to automatically implement the builder pattern for arbitrary structs.
 
-### [bitflags](https://crates.io/crates/bitflags)
-[bitflags](https://crates.io/crates/bitflags)
-is a Rust macro to generate structures which behave like a set of bitflags.
 
 ## References
 
@@ -172,4 +170,3 @@ https://crates.io/
 [12 Killer Rust Libraries You Should Know](https://jondot.medium.com/12-killer-rust-libraries-you-should-know-c60bab07624f)
 
 [Awesome Rust](https://github.com/rust-unofficial/awesome-rust)
-

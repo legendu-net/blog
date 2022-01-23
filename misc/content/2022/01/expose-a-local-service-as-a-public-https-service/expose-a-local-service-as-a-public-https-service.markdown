@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-01-22 14:33:10
-Modified: 2022-01-22 14:33:10
+Modified: 2022-01-22 16:48:52
 Author: Benjamin Du
 Slug: expose-local-services-to-public-using-ngrok
 Title: Expose Local Services to Public Using ngrok
@@ -25,9 +25,9 @@ in your local network using the following command.
         --memory=$(($(head -n 1 /proc/meminfo | awk '{print $2}') * 4 / 5))k \
         --cpus=$(($(nproc) - 1)) \
         -p 2020:8080 \
-        -e DOCKER_USER=member \
+        -e DOCKER_USER=$(id -un) \
         -e DOCKER_USER_ID=$(id -u) \
-        -e DOCKER_PASSWORD=InRustWeTrust \
+        -e DOCKER_PASSWORD=$(id -un) \
         -e DOCKER_GROUP_ID=$(id -g) \
         -v "$(pwd)":/workdir \
         dclong/vscode-server /scripts/sys/init.sh

@@ -5,7 +5,7 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2022-01-22 16:58:47
+Modified: 2022-01-24 11:12:24
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
@@ -95,9 +95,13 @@ A hash table with consistent order and fast iteration. The indexmap is a hash ta
 parses integers directly from [u8] slices in safe code
 .
 
-https://crates.io/crates/parquet
-Apache Parquet implementation in Rust
+### [parquet](https://crates.io/crates/parquet)
+[parquet](https://crates.io/crates/parquet)
+is an Apache Parquet implementation in Rust.
 
+### [bincode](https://github.com/bincode-org/bincode)
+[bincode](https://github.com/bincode-org/bincode)
+is a binary encoder / decoder implementation in Rust.
 
 ## Graph Data Structure
 

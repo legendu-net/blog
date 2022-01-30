@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-20 22:36:35
-Modified: 2021-11-20 22:36:35
+Modified: 2022-01-29 23:13:48
 Author: Benjamin Du
 Slug: summary-of-collections-in-rust
 Title: Summary of Collections in Rust
@@ -20,7 +20,27 @@ and when to use them.
 - Sets: HashSet, BTreeSet (sorted set)
 - Misc: BinaryHeap (priority queue)
 
-## Third-party Collections 
+![](https://user-images.githubusercontent.com/824507/151688238-88410b52-723d-4d31-bcb1-0a6c8580fb95.png)
+
+## Third-party Collections and Related Tools
+
+## Construct Arrays
+
+- [array-init](https://crates.io/crates/array-init)
+    [array-init](https://crates.io/crates/array-init)
+    is helpful for initializing arrays from lambda functions or iterators.
+
+- [arrayvec](https://crates.io/crates/arrayvec)
+    [arrayvec](https://crates.io/crates/arrayvec)
+    provides a vector with fixed capacity, 
+    backed by an array (which is stored on the stack).
+    Notice that you cannot collect an iterator into an Array.
+    However,
+    you can collect an iterator into an ArrayVec.
+    For more discussions,
+    please refer to
+    [How do I collect into an array?](https://stackoverflow.com/questions/26757355/how-do-i-collect-into-an-array)
+    .
 
 - [Crate - indexmap](https://crates.io/crates/indexmap)
     A pure-Rust hash table which preserves (in a limited sense) insertion order.

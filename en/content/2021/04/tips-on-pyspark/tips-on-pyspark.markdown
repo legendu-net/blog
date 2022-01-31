@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-04-30 11:49:58
-Modified: 2021-12-13 12:27:08
+Modified: 2022-01-31 09:47:18
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Process Big Data Using PySpark
@@ -228,8 +228,8 @@ Tags: programming, PySpark, Python, Spark, tips, HPC, high performance computing
 
 Listed below are several ways to handle dependencies for PySpark.
 
-1. [Build a portable Python environment using python-build-standalone](http://www.legendu.net/misc/blog/packaging-Python-Dependencies-for-PySpark-Using-python-build-standalone)
-2. [Build a portable Python environment using conda-pack](http://www.legendu.net/misc/blog/packaging-python-dependencies-for-pyspark-using-conda-pack)
+1. [Build a portable Python environment using python-build-standalone](http://www.legendu.net/en/blog/packaging-Python-Dependencies-for-PySpark-Using-python-build-standalone)
+2. [Build a portable Python environment using conda-pack](http://www.legendu.net/en/blog/packaging-python-dependencies-for-pyspark-using-conda-pack)
 3. [Packaging Python dependencies using pex](http://www.legendu.net/misc/blog/packaging-python-dependencies-for-pyspark-using-pex)
 
 Building a portable Python environment using python-build-standalone is the recommended approach.

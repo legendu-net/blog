@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-01-18 10:11:28
-Modified: 2022-01-18 11:07:53
+Modified: 2022-02-10 09:00:02
 Author: Benjamin Du
 Slug: spark-issue:-SIGBUS
 Title: Spark Issue: SIGBUS
@@ -44,6 +44,8 @@ There are several things which might cause a SIGBUS error.
     You can simplfy retry your Spark/PySpark application.
     If you still encounter the same issue,
     try with increased `spark.executor.memory` and `spark.driver.memoryOverhead`.
+    If your Spark application consists of a few big jobs,
+    try splitting big jobs into smaller ones might also help.
 
 ## References 
 

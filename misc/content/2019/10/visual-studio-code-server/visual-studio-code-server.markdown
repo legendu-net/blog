@@ -5,7 +5,7 @@ Slug: visual-studio-code-server
 Title: Visual Studio Code Server
 Category: Software
 Tags: Software, Visual Studio Code, server, VS Code, IDE, web, vscode
-Modified: 2021-04-24 11:28:44
+Modified: 2022-03-12 17:54:05
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -51,7 +51,7 @@ https://github.com/cdr/code-server/issues/148
 ## Extensions
 
 Please refer to 
-[Useful Visual Studio Code Extensions](http://www.legendu.net/misc/blog/useful-visual-studio-code-extensions)
+[Useful Visual Studio Code Extensions](http://www.legendu.net/en/blog/useful-visual-studio-code-extensions)
 .
 
 ## [Debug Python Project](http://www.legendu.net/misc/blog/debug-python-project-in-visual-studio-code)

@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-04-30 11:49:58
-Modified: 2022-01-31 09:47:18
+Modified: 2022-03-22 10:09:09
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Process Big Data Using PySpark
@@ -168,6 +168,7 @@ Tags: programming, PySpark, Python, Spark, tips, HPC, high performance computing
         findspark.init("/opt/spark")
         from pyspark.sql import SparkSession, DataFrame
         spark = SparkSession.builder.appName("PySpark_Notebook") \
+            .master("local[*]") \
             .config("spark.driver.memory", "50g") \
             .enableHiveSupport().getOrCreate()
         

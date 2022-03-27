@@ -5,38 +5,38 @@ Slug: tips-on-lightgbm
 Title: Tips on LightGBM
 Category: AI
 Tags: AI, data science, machine learning, LightGBM
-Modified: 2020-12-03 01:26:29
+Modified: 2022-03-26 22:21:23
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
-1. It is strongly suggested that you specify categorical features manually
-    as LightGBM only treat unordered categorial columns as categorical features by default.
+1. It is strongly suggested that you load data into a pandas DataFrame
+    and handle categorical variables
+    by specifying a `dtype` of `"category"` for those categorical variables.
 
 		:::bash
-		lgb_train = lgb.Dataset(x_train, y_train, feature_name=features,
-			categorical_feature=categorical_features)
+        df.cat_var = df.cat_var.astype("category")
 
-    It is also suggested that you encode a categorical variable 
-    as consecutive integers starting from zero. 
-    Be aware that all negative values in categorical features are treated as missing values. 
-    The output cannot be monotonically constrained with respect to a categorical feature.
+    This is the easiest way to handle categorical variables in LightGBM.
+    For more details,
+    please refer to 
+    [Handle Categorical Variables in LightGBM](http://www.legendu.net/misc/blog/handle-categorical-variables-in-lightgbm)
+    .
 
 2. The sklearn wrapper of LightGBM lag behind the development of sklearn. 
-    Be aware of the latest supported version of sklearn when you use sklearn wrapper of LightGBM.
-    It is suggested that you the original API of LightGBM to avoid version issues.
+    Be aware of the latest supported version of sklearn 
+    when you use sklearn wrapper of LightGBM.
+    It is suggested that you use the original API of LightGBM to avoid version issues.
 
-3. It is suggested that you always specify a evaluation set when you call the function `train`.
+3. It is suggested that you always specify an validation dataset 
+    when you train a model using the function `train`.
 
 2. LightGBM supports distributed training on multiple machines (without Spark).
 
     https://github.com/microsoft/LightGBM/tree/master/examples/parallel_learning
 
-
-[Parameters](https://lightgbm.readthedocs.io/en/latest/Parameters.html#parameters)
-[Metric Parameters](https://lightgbm.readthedocs.io/en/latest/Parameters.html#metric-parameters)
 
 ## Hyper Parameter Tuning
 
@@ -52,6 +52,12 @@ https://lightgbm.readthedocs.io/en/latest/Parameters.html
 https://lightgbm.readthedocs.io/en/latest/GPU-Tutorial.html
 
 ## References
+
+[Handle Categorical Variables in LightGBM](http://www.legendu.net/misc/blog/handle-categorical-variables-in-lightgbm)
+
+[Parameters](https://lightgbm.readthedocs.io/en/latest/Parameters.html#parameters)
+
+[Metric Parameters](https://lightgbm.readthedocs.io/en/latest/Parameters.html#metric-parameters)
 
 [LightGMB Benchmark](https://lightgbm.readthedocs.io/en/latest/Experiments.html)
 

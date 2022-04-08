@@ -5,15 +5,18 @@ Slug: popular-databases
 Title: Popular Databases
 Category: Computer Science
 Tags: Computer Science, programming, database, MySQL, ClickHouse, TiDB, neo4j, Elasticsearch, TiDB, TDengine, Redis
-Modified: 2021-09-18 00:39:33
+Modified: 2022-04-06 08:15:12
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 <table style="width:100%">
   <tr>
     <th> Name </th>
+    <th> Language </th>
     <th> Opensource/Free </th>
-    <th> Best Use Case </th>
+    <th> PACELC </th>
+    <th> Advantages </th>
+    <th> Disadvantages </th>
     <th> Comment </th>
   </tr>
   <tr>
@@ -21,17 +24,47 @@ Modified: 2021-09-18 00:39:33
     <a href="https://github.com/mysql"> MySQL </a>
     <a href="#footnote7">[1]</a>
     </td>
+    <th> SQL </th>
     <td> Opensource </td>
+    <th> PC/EC </th>
     <td> </td>
-    <td> the most popular opensource database </td>
+    <td> </td>
+    <td> the most popular opensource RDBMS </td>
+  </tr>
+  <tr>
+    <td> 
+    <a href=""> Cassandra </a>
+    <a href="#footnote7">[1]</a>
+    </td>
+    <th> CQL (Cassandra <br> Query Language) </th>
+    <td> Opensource </td>
+    <th> PA/EL </th>
+    <td> real-time </td>
+    <td> no join </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> 
+    <a href=""> HBase </a>
+    <a href="#footnote7">[1]</a>
+    </td>
+    <th> </th>
+    <td> Opensource </td>
+    <th> PC/EC </th>
+    <td> real-time </td>
+    <td> no join </td>
+    <td> </td>
   </tr>
   <tr>
     <td> 
     <a href="https://github.com/ClickHouse/ClickHouse"> ClickHouse </a>
     <a href="#footnote7">[2]</a>
     </td>
+    <th> SQL </th>
     <td> Opensource </td>
+    <th> </th>
     <td> OLAP for big data </td>
+    <td> </td>
     <td> Has very good performance </td>
   </tr>
   <tr>
@@ -39,8 +72,11 @@ Modified: 2021-09-18 00:39:33
     <a href="https://github.com/pingcap/tidb"> TiDB </a>
     <a href="#footnote7">[3]</a>
     </td>
+    <th> SQL </th>
     <td> Opensource </td>
+    <th> </th>
     <td> OLAP for big data </td>
+    <td> </td>
     <td> good performance, support integration with Spark </td>
   </tr>
   <tr>
@@ -48,8 +84,11 @@ Modified: 2021-09-18 00:39:33
     <a href="https://github.com/redis"> Redis </a>
     <a href="#footnote7">[4]</a>
     </td>
+    <th> DSL (hashmap <br> API-like) </th>
     <td> Opensource </td>
+    <th> </th>
     <td> Distributed in-memory cache for real-time applications </td>
+    <td> Queries or joins </td>
     <td> </td>
   </tr>
   <tr>
@@ -57,8 +96,11 @@ Modified: 2021-09-18 00:39:33
     <a href="https://github.com/neo4j"> neo4j </a>
     <a href="#footnote7">[5]</a>
     </td>
+    <th> Cypher (Graph <br> Query Language) </th>
     <td> Opensource </td>
+    <th> </th>
     <td> Graph applications </td>
+    <td> </td>
     <td> The most popular graph database </td>
   </tr>
   <tr>
@@ -66,8 +108,11 @@ Modified: 2021-09-18 00:39:33
     <a href="https://github.com/elastic"> Elasticsearch </a>
     <a href="#footnote7">[6]</a>
     </td>
+    <td> DSL, SQL </td>
     <td> Opensource </td>
+    <th> </th>
     <td> Out-of-the-box search engine for large documents </td>
+    <td> </td>
     <td> Designed as a search engine but also popularly used as a database </td>
   </tr>
   <tr>
@@ -75,8 +120,11 @@ Modified: 2021-09-18 00:39:33
     <a href="https://github.com/taosdata/TDengine"> TDengine </a>
     <a href="#footnote7">[7]</a>
     </td>
+    <td> SQL </td>
     <td> Opensource </td>
+    <th> </th>
     <td> IoT </td>
+    <td> </td>
     <td> IoT, good performance </td>
   </tr>
 </table>

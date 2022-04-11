@@ -5,7 +5,7 @@ Slug: ssh-tunnel
 Title: SSH Tunnel
 Category: Software
 Tags: software, SSH tunnel, socks proxy, reverse, SSH
-Modified: 2021-09-26 22:22:45
+Modified: 2022-04-10 17:58:24
 
 
 1. The StackOverflow discussion 
@@ -71,25 +71,54 @@ Machine B is only accssible from machine A using SSH through 2FA.
 You can create and persist a SSH tunnel from machine A to machine B 
 (2FA is still required when creating the SSH tunnel).
 Then you can avoid 2FA when connecting from machine A to machine B 
-by using the created SSH tunnel as socks5 proxy through tools such as proxychains. 
+by using the created SSH tunnel as socks5 proxy through tools such as ProxyChains. 
 
-## Advanced Usage 3: SSH Reverse Tunnel Using Proxy
+If you do not want to rely another another tools (such as ProxyChains),
+you can configure SSH to persist and reuse connections.
+For more discussions on this, 
+please refer to the 
+[SSH Tunnel - Multiplexing / ControlMaster](https://www.legendu.net/en/blog/ssh-tips/#multiplexing-controlmaster)
+.
+
+## Advanced Usage 3: Access Service in an Indirectly Accessible Remote Server
+
+Suppose you have 2 machines A and B. 
+Machine B cannot visit the public network nor machine A.
+However, 
+machine B is accssible (directly or via a bastion server) 
+from machine A using SSH and machine A can visit the public network. 
+You can follow the steps below to access service running on machine B.
+
+1. Start the service on machine B if it is not already running.
+    Let use the JupyterLab server as an example here,
+    and assume it is running on the port 8888 on machine B.
+
+2. Run the following command on machine A 
+    to forward visits of the port 3333 on machine A to the port 8888 on machine B.
+
+        :::bash
+        ssh -L 3333:localhost:8888 ip_of_machine_b
+
+3. You can then visit `ip_of_machine_a:3333` to access the JupyterLab service running on machine B.
+
+## Advanced Usage 4: SSH Reverse Tunnel + SSH Tunnel
 
     :::bash
     ssh -o ProxyCommand='ssh bastion_server -W %h:%p' -R 20000:localhost:22 target_server
 
-## Advanced Usage 4: SSH Reverse Tunnel + SSH Tunnel
+## Advanced Usage 5: SSH Reverse Tunnel + SSH Tunnel
 
 Suppose you have 2 machines A and B. 
 Machine B cannot visit the public network nor machine A.
-However, machine B is accssible (directly or via a bastion server) from machine A using SSH
-and machine A can visit the public network. 
+However, 
+machine B is accssible (directly or via a bastion server) from machine A 
+using SSH and machine A can visit the public network. 
 You can follow the steps below to access the public network from machine B.
 
 1. Create a Reversed SSH tunnel from machine A to machine B.
 
         :::bash
-        ssh -i /path_to_key -o ProxyCommand='ssh bastion_server -W %h:%p' -R 20000:localhost:22 ip_b
+        ssh -i /path_to_key -o ProxyCommand='ssh bastion_server -W %h:%p' -R 20000:localhost:22 ip_of_machine_b
 
 2. Create a SSH Tunnel on machine B.
 

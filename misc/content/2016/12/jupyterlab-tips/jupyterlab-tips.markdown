@@ -5,7 +5,7 @@ Slug: jupyterlab-tips
 Title: Tips on JupyterLab
 Category: Software
 Tags: software, JupyterLab, Jupyter, tips
-Modified: 2021-12-05 11:17:02
+Modified: 2022-04-10 18:19:36
 
 **
 Things on this page are
@@ -74,6 +74,26 @@ Please read with your own judgement!
 
     :::bash
     jupyter-lab --allow-root --ip='0.0.0.0' --port=8888 --no-browser --notebook-dir=$HOME
+
+## List Running JupyterLab Servers 
+
+    :::bash
+    jupyter server list
+
+Or you can use the following Python script. 
+
+    :::python
+    #!/usr/bin/env python3
+    import json
+    from jupyter_server import serverapp
+
+    servers = list(serverapp.list_running_servers())
+    print(json.dumps(servers, indent=4))
+
+For more details on how to use the Python script,
+please refer to
+[Get Information of Running Jupyter/Lab Servers](https://www.legendu.net/en/blog/my-docker-images/#get-information-of-running-jupyterlab-servers)
+.
 
 ## Format a Jupyter/Lab Notebook 
 

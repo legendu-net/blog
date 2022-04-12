@@ -5,7 +5,7 @@ Slug: tips-on-cargo
 Title: Tips on Cargo
 Category: Computer Science
 Tags: Computer Science, programming, Rust, cargo, format, fmt, rustfmt
-Modified: 2022-01-18 17:10:10
+Modified: 2022-04-12 08:50:41
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -130,7 +130,10 @@ It also supports CICD tools such as GitHub Actions
 (via [audit-check](https://github.com/actions-rs/audit-check))
 and Travis CI.
 
-
+### [cargo-generate](https://github.com/cargo-generate/cargo-generate)
+[cargo-generate](https://github.com/cargo-generate/cargo-generate)
+is a developer tool to help you get up and running quickly with a new Rust project 
+by leveraging a pre-existing git repository as a template.
 
 ## References 
 

@@ -5,7 +5,7 @@ Slug: improve-spark-performance
 Title: Improve the Performance of Spark
 Category: Computer Science
 Tags: programming, Computer Science, Spark, tuning, Spark SQL, SQL, performance, database, big data
-Modified: 2021-12-11 17:51:29
+Modified: 2022-04-12 17:56:58
 
 
 **
@@ -13,6 +13,14 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
+## Plan Your Work
+
+1. Have a clear idea about what you want to do is very important, 
+    especially when you are working on an explorative project. 
+    It often saves you time to plan your work a little 
+    before jumping into it.
+
+## Data Storage
 
 1. Use Parquet as the data store format.
     While Spark/Hive supports many different data formats, 
@@ -43,20 +51,84 @@ Please read with your own judgement!
     [Partition and Bucketing in Spark](http://www.legendu.net/misc/blog/partition-bucketing-in-spark)
     .
 
-3. Accelerate table scan by adding proper filter conditions.
+## SQL Query / DataFrame API
 
+1. Accelerate table scan by adding proper filter conditions.
     Use proper filter conditions in your SQL statement to avoid full table scan. 
     Proper filter conditions on Partition, Bucket and Sort columns 
     helps Spark SQL engine to fast locate target dataset to avoid full table scan,
     which accelerates execution.
 
-4. Persist a DataFrame which is used multiple times and expensive to recompute.
+2. Several smaller queries (achieving the same functionality) is preferred to 
+    a big query (using complex features and/or subqueries).
+    For example,
+    `window_function(...) over (partition by ... order by ...)` 
+    can be achieved using a `group by` followed with a inner join.
+    The latter approach (using `group by` + `inner join`) runs faster in Spark SQL generally speaking.
+
+3. Be cautious about the method `RDD.collect` as it retrieves all data in an RDD/DataFrame to the driver.
+    This will likely cause an out-of-memory issue if the RDD/DataFrame is big.
+    Even if not, 
+    it will make your Spark application run slowly.
+
+
+### Reduce (Unnecessary) Data Before Computation
+
+1. Apply filtering conditions to keep only needed columns and rows.
+
+2. Prefer the method `reduceByKey` over the method `groupByKey` when aggregating a RDD object in Spark.
+
+### Using Cache / Persist
+
+1. Persist a DataFrame which is used multiple times and expensive to recompute.
     Remembe to unpersist it too when the DataFrame is no longer needed. 
     Even Spark evict data from memory using the LRU (least recently used) strategy
     when the caching layer becomes full,
     it is still beneficial to unpersist data as soon as it is no used any more to reduce memory usage.
 
-5. Add cast for join key to use bucket
+2. Spark DataFrame is lazily computed but computed again if needed.
+    It can greatly boost the perfromance of your Spark application
+    if you cache/persist the intermediate Spark DataFrame 
+    which is used in mutliple places.
+    Notably,
+    if a Spark DataFrame containing randomly generately values
+    and is used in multiple places,
+    you must cache/persist it to ensure the correct logic
+    (otherwise the DataFrame will have different values each time it is used).
+
+### Optimize Joins
+
+1. Spark automatically decides 
+    which kind of joins (Broadcast Join, Sort Merge Join, Bucket Join) to perform. 
+    Generally speaking,
+    you should not change the default threshold for deciding which join to use.
+    However,
+    you should hint/help Spark to use the right join when applicable.
+
+    - Do NOT split a medium sized table and boradcast each splitted part. 
+        Just let Spark pick the right join (which will be the Sort Merge Join) in this case.
+        Also notice that the splitting tricky might not work in non-inner joins.
+
+    - BroadcastHashJoin, i.e., map-side join is fast. 
+        Use BroadcastHashJoin if possible. 
+        Notice that BroadcastHashJoin only works for inner joins. 
+        If you have a outer join,
+        BroadcastHashJoin won't happend even if you explicitly Broadcast a DataFrame.
+
+    - Notice that BroadcastJoin only works for inner joins. 
+        If you have a outer join,
+        BroadcastJoin won't happend even if you explicitly Broadcast a DataFrame.
+
+3. Make sure that keys to join in Spark DataFrames have the same type!
+    When joining 2 large DataFrames in Spark, 
+    Bucket Join is usually the best approach.
+    However, 
+    if the keys in the 2 DataFrame have inconsistent types 
+    the bucket table will do a type cast 
+    which makes Spark think the value of the original column 
+    is not enough resulting in Sort Merge Join (instead of Bucket Join).
+
+4. Add cast for join key to use bucket
 
     Joining columns of different types prevents Spark SQL from doing the best optimization.
     A simple fix is to cast columns to be the same type when joining them.
@@ -85,35 +157,30 @@ Please read with your own judgement!
         ON 
             A.id = B.id 
 
-5. BroadcastHashJoin, i.e., map-side join is fast. 
-    Use BroadcastHashJoin if possible. 
-    Notice that BroadcastHashJoin only works for inner joins. 
-    If you have a outer join,
-    BroadcastHashJoin won't happend even if you explicitly Broadcast a DataFrame.
 
-1. Several smaller queries (achieving the same functionality) is preferred to 
-    a big query (using complex features and/or subqueries).
-    For example,
-    `window_function(...) over (partition by ... order by ...)` 
-    can be achieved using a `group by` followed with a inner join.
-    The latter approach (using `group by` + `inner join`) runs faster in Spark SQL generally speaking.
+## Size of Tasks in a Spark Application 
 
-2. Spark DataFrame is lazily computed but computed again if needed.
-    It can greatly boost the perfromance of your Spark application
-    if you cache/persist the intermediate Spark DataFrame 
-    which is used in mutliple places.
-    Notably,
-    if a Spark DataFrame containing randomly generately values
-    and is used in multiple places,
-    you must cache/persist it to ensure the correct logic
-    (otherwise the DataFrame will have different values each time it is used).
+1. Best to have tasks each of which can be finished in a few minutes. 
+    Having long running tasks (>30 minutes) 
+    will likely degrade the performance of the whole application.
 
-2. Prefer the method `reduceByKey` over the method `groupByKey` when aggregating a RDD object in Spark.
+2. 100K is the ball park of upper limit of number of tasks. 
+    If you have an application which has more than 100k (very small) tasks, 
+    the performance is degraded. 
+    However, 
+    having too few tasks reduces the parallelism 
+    and might hurt the performance of your Spark application too. 
+    Generally speaking,
+    it is safe to keep the number of tasks to 3k - 100k. 
+    If you are unsure, 10k is a good start point. 
 
-2. Be cautious about the method `RDD.collect` as it retrieves all data in an RDD/DataFrame to the driver.
-    This will likely cause an out-of-memory issue if the RDD/DataFrame is big.
-    Even if not, 
-    it will make your Spark application run slowly.
+## Execuation Plan
+
+1. Avoid having too large execution plans. 
+    Specially, 
+    avoid mixing repartition/coalesce with other execution plans. 
+    Better to do a cache/checkpoint (or manually write data to disk) 
+    before you do repartition/coalesce. 
 
 ## Data Serialization
 
@@ -126,30 +193,6 @@ So unless one uses customized classes inside RDD/DataFrame,
 there is little benefit to switch to kryo for serialization.
 When you do use customized classes and/or complicated nested data structures in big DataFrames, 
 you might want to consider using the Kryo serializer.
-
-## Joins
-
-1. Spark automatically decides 
-    which kind of joins (Broadcast Join, Sort Merge Join, Bucket Join) to perform. 
-    Generally speaking,
-    you should not change the default threshold for deciding which join to use.
-
-2. Notice that BroadcastJoin only works for inner joins. 
-    If you have a outer join,
-    BroadcastJoin won't happend even if you explicitly Broadcast a DataFrame.
-
-2. Do NOT split a medium sized table and boradcast each splitted part. 
-    Just let Spark pick the right join (which will be the Sort Merge Join) in this case.
-    Also notice that the splitting tricky might not work in non-inner joins.
-
-3. Make sure that keys to join in Spark DataFrames have the same type!
-    When joining 2 large DataFrames in Spark, 
-    Bucket Join is usually the best approach.
-    However, 
-    if the keys in the 2 DataFrame have inconsistent types 
-    the bucket table will do a type cast 
-    which makes Spark think the value of the original column 
-    is not enough resulting in Sort Merge Join (instead of Bucket Join).
 
 ## Tune Spark Job Configurations
 

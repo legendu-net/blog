@@ -5,37 +5,30 @@ Slug: git-implementations-and-bindings-in-python
 Title: Git Implementations and Bindings in Python
 Category: Computer Science
 Tags: Computer Science, programming, Git, Python, Dulwich, pygit2, GitPython 
-Modified: 2021-08-06 11:06:44
+Modified: 2022-04-27 09:49:43
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 There are multiple Git implementations/bindings in Python:
-[Dulwich](https://github.com/dulwich/dulwich),
-[pygit2](https://github.com/libgit2/pygit2)
+[pygit2](https://github.com/libgit2/pygit2),
+[Dulwich](https://github.com/dulwich/dulwich)
 and
 [GitPython](https://github.com/gitpython-developers/GitPython)
 .
-Both 
-[Dulwich](https://github.com/dulwich/dulwich)
-and
-[pygit2](https://github.com/libgit2/pygit2)
-are good choices.
-[Dulwich](https://github.com/dulwich/dulwich)
-is preferred as it has a more freindly licence agreement.
 
-## [Dulwich](https://github.com/dulwich/dulwich)
-[Dulwich](https://github.com/dulwich/dulwich)
-is a Python implementation of the Git file formats and protocols, which does not depend on Git itself.
-All functionality is available in pure Python. Optional C extensions can be built for improved performance.
+Below is a simple comparison of the 3 packages.
 
-## [pygit2](https://github.com/libgit2/pygit2)
-[pygit2](https://github.com/libgit2/pygit2)
-is Python bindings for libgit2.
+|                | pygit2              | dulwich       | GitPython                   |
+|----------------|---------------------|---------------|-----------------------------|
+| Implementation | bindings to libgit2 | pure Python   | bindings to the git command |
+| License        | GPLv2               | Apache, GPLv2 | BSD 3                       |
+| Feature        | complete            | incomplete    | complete                    |
 
-## [GitPython](https://github.com/gitpython-developers/GitPython)
-[GitPython](https://github.com/gitpython-developers/GitPython)
-is a python library used to interact with Git repositories.
+pygit2 is preferred if the GPLv2 license is not an issue,
+otherwise GitPython is preferred.
 
 ## References 
 
 - [Hands on Dulwich](http://www.legendu.net/misc/blog/hands-on-Dulwich)
 - [Hands on GitPython](http://www.legendu.net/misc/blog/hands-on-GitPython)
+

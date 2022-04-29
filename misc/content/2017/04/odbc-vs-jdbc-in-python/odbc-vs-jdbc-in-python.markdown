@@ -5,7 +5,7 @@ Slug: odbc-vs-jdbc-in-python
 Title: ODBC vs JDBC in Python
 Category: Computer Science
 Tags: programming, Python, ODBC, JDBC, database, SQL, TurbODBC, pyarrow, pyarrow.jvm, Java, Arrow Flight
-Modified: 2020-11-30 12:06:09
+Modified: 2022-04-28 23:23:08
 
 **
 Things on this page are
@@ -41,8 +41,18 @@ Arrow Flight is the future!
 
 ## JDBC Packages in Python
 
-1. [JDBC + pyarrow.jvm](https://uwekorn.com/2019/11/17/fast-jdbc-access-in-python-using-pyarrow-jvm.html)
+1. [JDBC + pyarrow.jvm](https://uwekorn.com/2020/12/30/fast-jdbc-revisited.html)
     is currently the best way to query SQL databases. 
+
+2. [jpype.dbapi2](https://jpype.readthedocs.io/en/latest/dbapi2.html#)
+    provides an implementation of 
+    the Python [DBAPI2](https://peps.python.org/pep-0249/)
+    .
+    However, 
+    it is about 20x slower than the approach of JDBC + pyarrow.jvm.
+
+3. [JayDeBeApi](https://github.com/baztian/jaydebeapi)
+    is outdated and unmaintained.
 
 4. PyAthenaJDBC is a JDBC package specifically for Amazon Athena.
 

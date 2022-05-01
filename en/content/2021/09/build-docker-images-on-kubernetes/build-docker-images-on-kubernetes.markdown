@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-09-14 18:12:30
-Modified: 2021-09-24 11:47:55
+Modified: 2022-04-30 11:35:06
 Author: Benjamin Du
 Slug: build-docker-images-on-kubernetes
 Title: Build Docker Images on Kubernetes
@@ -10,8 +10,8 @@ Tags: Computer Science, Software, tools, Kubernetes, k8s, Docker, container, ima
 
 
 1. [BuildKit](http://www.legendu.net/misc/blog/build-docker-images-using-buildkit-on-kubernetes)
-    is most promising one among all tools for building Docker images on Kubernetes
-    (even though it needs to resolve a few permission issues).
+    is a good tool for building Docker images on a Kubernetes cluster 
+    where you have root access.
 
 2. [Kaniko](http://www.legendu.net/misc/blog/build-docker-images-using-kaniko)
     is another usable tool 

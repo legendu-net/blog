@@ -5,7 +5,7 @@ Slug: linux-network-tools
 Title: Linux Network Tools
 Category: Software
 Tags: Software, Linux, network, tool, download, VPN
-Modified: 2022-01-23 01:43:31
+Modified: 2022-05-01 11:38:34
 
 **
 Things on this page are
@@ -55,18 +55,25 @@ tcpdump
 
 ## VPN
 
-1. [ngrok](https://ngrok.com/)
+1. [WireGuard](https://www.wireguard.com/) is a better alternative to OpenVPN.
+
+2. [tailscale](https://tailscale.com/)
+    is an easy-to-use and secure VPN that network that just works.
+    It is based on WireGuard.
+
+3. [ngrok](https://ngrok.com/)
     exposes local servers behind NATs and firewalls to the public internet over secure tunnels.
+
 2. [LogMeIn Hamachi](https://www.vpn.net/)
     [LogMeIn Hamachi](https://www.vpn.net/) 
     is a on-demand virtual networking service 
     that enables secure remote access to your business network 
     anywhere there is an Internet connection.
     It is extremely easy to set up.
-3. [WireGuard](https://www.wireguard.com/) is a better alternative to OpenVPN.
-4. ExpressVPN
-5. PrivateInternetAccess
 
+4. ExpressVPN
+
+5. PrivateInternetAccess
 
 ## Anonymous Tools
 1. VPN

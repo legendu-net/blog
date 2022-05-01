@@ -4,8 +4,8 @@ Date: 2014-03-22 14:23:43
 Title: Tips on Housing
 Slug: housing-tips
 Category: Life
-Tags: life, housing, tips, rent, apartment
-Modified: 2020-05-22 14:23:43
+Tags: life, housing, tips, rent, apartment, shopping
+Modified: 2022-04-30 14:28:28
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
@@ -108,4 +108,8 @@ two blocks (vertical distance) from the subway is acceptable.
 1. Never flush things except water down the sink. 
 If you really have to flush things, 
 use the toilet to flush it.
+
+## Shopping for Housing 
+
+[DealMoon - Housing & Living](https://www.dealmoon.com/guide/cate/11)
 

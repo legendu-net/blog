@@ -4,8 +4,8 @@ Author: Ben Chuanlong Du
 Slug: map-keys-in-linux
 Title: Map Keys in Linux
 Category: OS
-Tags: Linux, keyboard, mapping, swap, setxkbmap, Cinnamon, GNOME, keys
-Modified: 2021-10-11 10:29:36
+Tags: Linux, keyboard, mapping, swap, setxkbmap, Cinnamon, GNOME, keys, Caps Lock, Escape
+Modified: 2022-04-30 16:02:35
 
 Note: For Vim users, it is appealing to make the `Caps Lock` function like `Escape`.
 It is suggested that you make `Caps Lock` an additonal `Escape`
@@ -18,8 +18,29 @@ Some desktop environment (e.g., Cinnamon, GNOME, etc.) let you define behavior o
 
 ### GNOME
 
-[How to use Caps Lock key as ESC on ubuntu 18](https://dev.to/yuyabu/how-to-use-caps-lock-key-as-esc-on-ubuntu-18-1g7l)
+1. Install gnome-tweak-tool.
+    You can use the following command 
+    on Debian/Ubuntu based Linux distributions.
 
+        :::bash
+        wajig install gnome-tweak-tool
+
+2. Start gnome-tweaks by running the following command.
+
+        :::bash
+        gnome-tweaks
+
+3. Click on the "Keyboard & Mouse" button in the left panel 
+    and then the "Additional Layout Options" button 
+    under the Keyboard section. 
+    ![gnome-tweaks-1](https://user-images.githubusercontent.com/824507/166125171-41a73a26-ec96-46bc-a72a-3ca2f771078b.png)
+
+4. In the prompt dialog, 
+    click on the triangle button next to "Caps Lock behavior"
+    and then select the behavior you want for Caps Lock.
+    ![gnome-tweaks-2](https://user-images.githubusercontent.com/824507/166125255-5f95211e-9c19-447e-9979-3cb01dd4ef7a.png)
+
+5. Restart your Linux machine.
 
 ### Cinnamon
 

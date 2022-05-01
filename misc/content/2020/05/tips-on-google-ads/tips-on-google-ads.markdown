@@ -5,7 +5,7 @@ Slug: tips-on-google-ads
 Title: Tips on Google Ads
 Category: Computer Science
 Tags: Computer Science, Google, Ads, AdWords
-Modified: 2020-10-25 18:56:25
+Modified: 2022-04-30 15:27:55
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -28,3 +28,7 @@ https://blog.hubspot.com/marketing/google-adwords-ppc
 [About audience targeting](https://support.google.com/google-ads/answer/2497941?hl=en)
 
 [Product Listing Ads Promote your products with Google Shopping](https://services.google.com/fh/files/misc/product_listing_ads_intro.pdf)
+
+[Manage a Shopping campaign with product groups](https://support.google.com/google-ads/answer/6275317?hl=en)
+
+ItemID, Brand, Category, Product Type, CustomLabels, Condition, Channel, Channel Exclusivity

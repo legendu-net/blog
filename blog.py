@@ -17,7 +17,7 @@ from blogger import Post, Blogger, HOME, EN, CN, MISC, OUTDATED
 USER = getpass.getuser()
 DASHES = "\n" + "-" * 100 + "\n"
 INDEXES = [""] + [str(i) for i in range(1, 11)]
-SITE = "http://www.legendu.net"
+SITE = "https://www.legendu.net"
 
 
 def query(blogger, args):

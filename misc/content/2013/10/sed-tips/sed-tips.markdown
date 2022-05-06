@@ -5,7 +5,7 @@ Title: Tips on "sed"
 Slug: sed-tips
 Category: Software
 Tags: tips, software, text manipulation, shell, Linux, sed
-Modified: 2020-05-22 15:47:51
+Modified: 2022-05-06 13:45:47
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 

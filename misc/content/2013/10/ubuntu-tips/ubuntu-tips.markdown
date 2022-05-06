@@ -5,12 +5,20 @@ Date: 2013-10-19 12:20:43
 Slug: ubuntu-tips
 Category: OS
 Tags: tips, Ubuntu, Linux, OS
-Modified: 2021-08-21 23:06:48
+Modified: 2022-05-04 11:46:27
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
 Please read with your own judgement!
 **
+
+## Installation 
+
+Please refer to
+[Tips on Installing Debian Series Linux Distributions](https://www.legendu.net/en/blog/tips-for-installing-debian/)
+for detailed discussions.
+
+## Misc
  
 [How to solve boot problems with Ubuntu after kernel upgrade](http://www.dedoimedo.com/computers/ubuntu-initrd-bug.html)
 
@@ -42,14 +50,6 @@ Please read with your own judgement!
 6. For some reason I don't know, lightdm fails to restart after running "sudo service lightdm restart".
     However, it starts if I login into tty and start it manually by "sudo service lightdm start".
     I think this probably means that something is wrong stopping the lightdm service. 
-
-## Installation
-
-1. Ubuntu image is Hybrid, 
-    which means that you can dd/cat it into a flash drive directly to make a bootable flash drive.
-
-2. Ubuntu have good hardware support. 
-    You can probably also use a wireless network while installing Ubuntu.
 
 ## VPN
 

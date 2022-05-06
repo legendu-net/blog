@@ -4,13 +4,34 @@ Title: Tips on Debian
 Date: 2013-10-29 17:08:42
 Slug: debian-tips
 Category: OS
-Tags: tips, Linux, Debian
-Modified: 2020-02-29 17:08:42
+Tags: OS, Linux, Debian
+Modified: 2022-05-04 11:46:15
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. 
 Please read with your own judgement!**
- 
 
+Debian is much harder to use than Ubuntu and Ubuntu-based Linux distributions.
+It is suggested that you use Ubuntu or an Ubuntu-based Linux distribution
+instead of Debian. 
+
+## Installation
+
+Please refer to
+[Tips on Installing Debian Series Linux Distributions](https://www.legendu.net/en/blog/tips-for-installing-debian/)
+for detailed discussions.
+
+## Wireless
+
+[Wireless for Debian](https://www.legendu.net/misc/blog/wirelss-for-debian)
+
+## VirtualBox
+
+It's suggested that you
+- always install Linux headers corresponding to the Debian image you have installed on your machine
+- install virtualbox in the same repository as the Linux image
+
+
+## Misc
 [Debian Apt Sources List Generator](http://debgen.simplylinux.ch/)
 
  
@@ -29,26 +50,8 @@ Please read with your own judgement!**
 4. do not use the unstable/sid version unless you are a package developer
 
 5. use all package sources instead of just stable, testing or sid
-and use pin
+    and use pin
 
 6. wajig install pkg/wheezy-backports 
-not wajig install pkg/stable-backports
-you can use stable-backports in source.list, however
-
-## Installation
-
-2. You'd better not install back ported Linux images, 
-because this makes it harder to use Virtualbox.
-It's suggested that 
-    - you use the Linux image in the testing repository.
-    - you always install headers corresponding to images you installed on your machine. 
-    - you install virtualbox in the same repository as the Linux image
-
-24. If you install Linux using command line tools 
-and then install a desktop environment, you might not boot into DE automatically 
-because you also have to install a DE manager, e.g., gdm or lightdm
-without the login/DE manager, Linux won't boot into DE.
-so removing login/DE manager is a dirty trick to suppress X if you don't know 
-how to editing init scripts.
-You can always manually start X using `startx`
-
+    not wajig install pkg/stable-backports
+    you can use stable-backports in source.list, however

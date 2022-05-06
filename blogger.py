@@ -32,9 +32,10 @@ TODAY_DASH = NOW_DASH[:10]
 YYYYMM_slash = TODAY_DASH[:7].replace("-", "/")
 WORDS = json.loads((BASE_DIR / "words.json").read_text())
 POSTS_COLS = [
-    "path", "dir", "status", "date", "author", "slug", "title", "category", "tags",
-    "content", "empty", "updated", "name_title_mismatch"
+    "path", "dir", "status", "date", "modified", "author", "slug", "title", "category",
+    "tags", "content", "empty", "updated", "name_title_mismatch"
 ]
+SRPS_COLS = ["path", "title", "dir", "slug"]
 
 Record = namedtuple("Record", POSTS_COLS)
 
@@ -228,8 +229,8 @@ class Post:
         name_title_mismatch = self.is_name_title_mismatch(title)
         # TODO: add modified into the database ...
         return Record(
-            self.path.relative_to(BASE_DIR), self.blog_dir(), status, date, author,
-            slug, title, category, tags, content, empty, 0, name_title_mismatch
+            self.path.relative_to(BASE_DIR), self.blog_dir(), status, date, modified,
+            author, slug, title, category, tags, content, empty, 0, name_title_mismatch
         )
 
     def _parse_notebook(self) -> Record:
@@ -259,7 +260,7 @@ class Post:
             elif line.startswith("- Date:"):
                 date = line[7:].strip()
             elif line.startswith("- Modified:"):
-                date = line[11:].strip()
+                modified = line[11:].strip()
             elif line.startswith("- Author:"):
                 author = line[9:].strip()
             elif line.startswith("- Slug:"):
@@ -272,8 +273,8 @@ class Post:
                 tags = line[7:].strip()
         name_title_mismatch = self.is_name_title_mismatch(title)
         return Record(
-            self.path.relative_to(BASE_DIR), self.blog_dir(), status, date, author,
-            slug, title, category, tags, content, empty, 0, name_title_mismatch
+            self.path.relative_to(BASE_DIR), self.blog_dir(), status, date, modified,
+            author, slug, title, category, tags, content, empty, 0, name_title_mismatch
         )
 
     def is_name_title_mismatch(self, title: str) -> int:
@@ -459,13 +460,6 @@ class Post:
 class Blogger:
     """A class for managing blog.
     """
-    POSTS_COLS = [
-        "path", "dir", "status", "date", "author", "slug", "title", "category", "tags",
-        "content", "empty", "updated", "name_title_mismatch"
-    ]
-
-    SRPS_COLS = ["path", "title", "dir", "slug"]
-
     def __init__(self, db: str = ""):
         """Create an instance of Blogger.
 
@@ -481,14 +475,14 @@ class Blogger:
     def _create_vtable_posts(self):
         sql = f"""
             CREATE VIRTUAL TABLE IF NOT EXISTS posts USING {self._fts} (
-                {", ".join(Blogger.POSTS_COLS)},
+                {", ".join(POSTS_COLS)},
                 tokenize = porter
             )
             """
         self.execute(sql)
 
     def _create_table_srps(self):
-        sql = f"CREATE TABLE IF NOT EXISTS srps ({', '.join(Blogger.SRPS_COLS)})"
+        sql = f"CREATE TABLE IF NOT EXISTS srps ({', '.join(SRPS_COLS)})"
         self.execute(sql)
 
     def clear(self):
@@ -535,9 +529,9 @@ class Blogger:
     def _load_post(self, post: Post):
         sql = f"""
             INSERT INTO posts (
-                {", ".join(Blogger.POSTS_COLS)}
+                {", ".join(POSTS_COLS)}
             ) VALUES (
-                ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
             )
             """
         self.execute(sql, post.record())
@@ -680,7 +674,7 @@ class Blogger:
         self.clear_srps()
         sql = f"""
             INSERT INTO srps
-            SELECT {", ".join(Blogger.SRPS_COLS)}
+            SELECT {", ".join(SRPS_COLS)}
             FROM posts
             WHERE empty = 1
             """

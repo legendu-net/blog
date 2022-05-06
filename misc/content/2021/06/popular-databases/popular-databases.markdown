@@ -5,11 +5,8 @@ Slug: popular-databases
 Title: Popular Databases
 Category: Computer Science
 Tags: Computer Science, programming, database, MySQL, ClickHouse, TiDB, neo4j, Elasticsearch, TiDB, TDengine, Redis
-<<<<<<< HEAD
-Modified: 2022-04-06 08:15:12
-=======
-Modified: 2022-04-08 09:36:52
->>>>>>> 4f28eba27fc2b5d32fd1ac09c6abbc89642cacf2
+Modified: 2022-05-06 13:56:16
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
@@ -165,6 +162,6 @@ which is implemented in C and Rust.
 
 - [Why Uber Engineering Switched from Postgres to MySQL](https://eng.uber.com/postgres-to-mysql-migration/)
 
-[Yes We Can! Distributed ACID Transactions with High Performance](https://blog.yugabyte.com/yes-we-can-distributed-acid-transactions-with-high-performance/)
+- [Yes We Can! Distributed ACID Transactions with High Performance](https://blog.yugabyte.com/yes-we-can-distributed-acid-transactions-with-high-performance/)
 
-[A Beginner’s Guide to CAP Theorem for Data Engineering](https://www.analyticsvidhya.com/blog/2020/08/a-beginners-guide-to-cap-theorem-for-data-engineering/)
+- [A Beginner’s Guide to CAP Theorem for Data Engineering](https://www.analyticsvidhya.com/blog/2020/08/a-beginners-guide-to-cap-theorem-for-data-engineering/)

@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Title: Make Linux Run Faster
 Category: OS
 Tags: RAM, speedup, SSD, software, optimization, hardware, Linux, fast, performance
-Modified: 2021-09-26 21:52:24
+Modified: 2022-05-04 09:53:48
 
  
 ## Upgrading Hardware
@@ -35,7 +35,7 @@ Modified: 2021-09-26 21:52:24
 
 3. Use the `noatime` option for filesystems. 
     Add the `noatime` option into your fstab for all non-swap partitions.  
-    This is not recommended
+    This is NOT recommended
     unless you really want to squeeze the performance of Linux machine.
 
 ## Software-based Optimization

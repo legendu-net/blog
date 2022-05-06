@@ -5,7 +5,7 @@ Date: 2013-10-03 10:42:46
 Slug: virtualbox-tips
 Category: Software
 Tags: tips, virtualbox, virtualization
-Modified: 2021-07-26 18:23:41
+Modified: 2022-05-04 10:18:09
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
@@ -16,6 +16,15 @@ Please read with your own judgement!
 sudo mount -t vboxsf -o uid=$(whoami),gid=$(whoami),fmask=177,dmask=077
 ```
  
+1. If the graphics resolution is not correct
+    and you cannot see the whole desktop 
+    when installing a Linux distribution in VirtualBox,
+    quit the installation,
+    enable the EFI mode for the virtual machine in VirtualBox,
+    and try installing the Linux distribution again.
+
+    ![virtualbox-efi](https://user-images.githubusercontent.com/824507/166753101-f3723b7f-d3a1-4199-8a39-e9ff106e5fdb.png)
+
 1. use command line to export guest machines (see vbvm.export.sh),
     not recommended, directly copy everything is easier,
     especially for windows machines

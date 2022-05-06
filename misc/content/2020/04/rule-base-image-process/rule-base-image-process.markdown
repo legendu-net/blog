@@ -2,10 +2,10 @@ Status: published
 Date: 2020-04-07 16:29:17
 Author: Benjamin Du
 Slug: rule-base-image-process
-Title: Rule-Base Image Process
+Title: Rule-base Image Process
 Category: Computer Science
 Tags: Computer Science, image processing, computer vision, CV, machine learning, data science
-Modified: 2020-04-07 16:29:17
+Modified: 2022-05-03 23:13:11
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

@@ -14,19 +14,40 @@ fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
-## Build From Source
+There are many different ways to install packages in Linux.
 
-## Pre-built Binary
+1. Build From Source
 
-## apt-get / wajig 
+2. Pre-built Binary
 
-## [Nix](https://nixos.org/nix/)
+3. Use distribution specific tools.
+    For example,
+    you can use `apt-get` or `wajig` for Debian-based Linux Distributions.
 
-## LinuxBrew
+4. [Homebrew](https://www.legendu.net/misc/blog/homebrew-tips) and
+    [Nix](https://nixos.org/nix/)
+    are 2 popular package management tools for Linux
+    when you do not have the root permission.
+    Homebrew is preferred to Nix for multiple reasons.
 
-## snap
+    - Homebrew works for both macOS and Linux. 
+        For people who have already been using Homebrew on macOS,
+        there's no learning effort at all.
 
-## [FlatPak on FlatHub](https://flathub.org/home)
+    - Homebrew has more packages.
+
+5. Use cross‐platform and dependency‐free app formats,
+    e.g.,
+    [snap](https://snapcraft.io/), 
+    [FlatPak](https://flatpak.org/)
+    and 
+    [AppImage](https://appimage.org/)
+    .
+    snap is more popular than flatpak and AppImage.
+    For details of comparisons,
+    please refer to
+    [What are the differences between snaps, appimage, flatpak and others?](https://askubuntu.com/questions/866511/what-are-the-differences-between-snaps-appimage-flatpak-and-others)
+    .
 
 ## AppImage
 

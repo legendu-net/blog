@@ -2,10 +2,10 @@ Status: published
 Date: 2013-03-11 01:05:59
 Author: Ben Chuanlong Du
 Slug: tips-for-installing-debian
-Title: Tips on Installing Debian Series Linux Distributions
+Title: Tips on Installing Debian Series of Linux Distributions
 Category: OS
 Tags: install, Linux, software, Debian
-Modified: 2022-05-04 22:27:05
+Modified: 2022-05-06 14:24:02
 
 
 ## Before Installation

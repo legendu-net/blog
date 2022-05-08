@@ -1,12 +1,11 @@
-UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
-Title: Install Softwares in Linux
+Title: Permission Issues when Installing Softwares in Linux
 Date: 2012-04-30 00:00:00
-Tags: Linux, softwares, permission
+Tags: Linux, softwares, permission, issue, chmod
 Category: OS
 Slug: install-software-linux
 Author: Ben Chuanlong Du
-Modified: 2022-05-04 10:18:09
+Modified: 2022-05-06 14:50:36
 
 Sometime when you install softwares in Linux, 
 you get an error message saying that you do not have permission while you used sudo or the root account. 

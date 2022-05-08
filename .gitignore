@@ -22,4 +22,5 @@ metastore_db/
 .pytype/
 .DS_Store
 .vscode/
+.jukit/
 dist/

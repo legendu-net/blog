@@ -5,7 +5,7 @@ Slug: useful-firefox-add-ons
 Title: Useful Firefox Add-ons
 Category: Software
 Tags: software, Firefox, add-ons, plugins, extensions, Mozilla
-Modified: 2021-07-26 17:59:58
+Modified: 2022-05-08 11:12:30
 
 **
 Things on this page are
@@ -36,9 +36,15 @@ where hackers with too much free time can do any (un-)imaginable thing.
 Also Pentadactyl focuses more on 1:1 Vim compatibility.
 
 ## [FireNVim](https://addons.mozilla.org/en-US/firefox/addon/firenvim/)
+
 [FireNVim](https://addons.mozilla.org/en-US/firefox/addon/firenvim/)
 lets you use NeoVim directly from your browser. 
-Contrary to other extensions, it does not open a new OS window.
+Contrary to other extensions, 
+it does not open a new OS window.
+For detailed discussions,
+please refer to
+[Firenvim Brings NeoVim into Your Browser](https://www.legendu.net/misc/blog/firenvim-brings-neovim-into-your-browser/)
+.
 
 ## Notes, Task, etc.
 

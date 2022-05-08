@@ -5,7 +5,7 @@ Slug: develop-a-gui-application-in-rust
 Title: Develop a GUI Application in Rust
 Category: Computer Science
 Tags: Computer Science, Rust, GUI
-Modified: 2021-09-04 10:20:53
+Modified: 2022-05-08 00:29:19
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -23,8 +23,9 @@ Please refer to
 [tauri](http://www.legendu.net/misc/blog/use-tauri-to-build-a-desktop-application)
 for more discussions.
 
-## [sixtyfps](https://github.com/sixtyfpsui/sixtyfps)
-SixtyFPS is a toolkit to efficiently develop fluid graphical user interfaces for any display: 
+## [slint](https://github.com/slint-ui/slint)
+[slint](https://github.com/slint-ui/slint)
+is a toolkit to efficiently develop fluid graphical user interfaces for any display: 
 embedded devices and desktop applications. 
 It supports multiple programming languages, such as Rust, C++ or JavaScript.
 

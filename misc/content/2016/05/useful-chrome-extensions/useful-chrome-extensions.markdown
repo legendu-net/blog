@@ -28,7 +28,12 @@ which is compatible with wget, curl, youtube-dl and more.
 ## [FireNVim](https://chrome.google.com/webstore/detail/firenvim/egpjdkipkomnmjhjmdamaniclmdlobbo/related)
 [FireNVim](https://chrome.google.com/webstore/detail/firenvim/egpjdkipkomnmjhjmdamaniclmdlobbo/related)
 lets you use NeoVim directly from your browser. 
-Contrary to other extensions, it does not open a new OS window.
+Contrary to other extensions, 
+it does not open a new OS window.
+For detailed discussions,
+please refer to
+[Firenvim Brings NeoVim into Your Browser](https://www.legendu.net/misc/blog/firenvim-brings-neovim-into-your-browser/)
+.
 
 ## [Read Aloud: A Text to Speech Voice Reader](https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp/related?hl=en)
 

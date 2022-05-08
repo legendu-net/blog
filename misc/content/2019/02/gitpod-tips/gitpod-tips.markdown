@@ -5,7 +5,7 @@ Slug: gitpod-tips
 Title: Tips on Gitpod
 Category: Software
 Tags: Software, programming, GitPod, GitHub, Theia IDE
-Modified: 2020-05-20 09:49:30
+Modified: 2022-05-08 00:16:26
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -22,6 +22,10 @@ Please read with your own judgement!
 
 4. support installling VS Code extensions (*.vsix) by drag and drop.
     Installing from VS Code Marketplace is not supported at this time.
+
+## Fix Permission Issues
+
+![gitpod-permission](https://user-images.githubusercontent.com/824507/167285701-e8f4407b-2e19-41af-8c7d-e948a092191e.png)
 
 ## References
 

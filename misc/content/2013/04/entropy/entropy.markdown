@@ -5,7 +5,7 @@ Title: Entropy
 Slug: entropy
 Category: AI
 Tags: statistics, AI, entropy, data science, machine learning, deep learning, Shannon entropy, cross entropy, K-L divergence
-Modified: 2022-05-04 09:50:54
+Modified: 2022-05-08 16:26:29
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 

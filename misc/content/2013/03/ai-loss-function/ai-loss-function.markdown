@@ -1,11 +1,11 @@
 Status: published
 Date: 2013-03-07 11:12:36
 Author: Ben Chuanlong Du
-Title: Loss Functions in Machine Learning Models
+Title: Loss Functions for Machine Learning Models
 Slug: ai-loss-function
 Category: AI
 Tags: AI, loss function, statistics, machine learning, cross entry, log likelihood
-Modified: 2021-10-07 16:57:25
+Modified: 2022-05-08 16:26:29
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
@@ -14,11 +14,11 @@ Please read with your own judgement!
  
 ## Tips and Traps
 
-1. Loss is non-negative. 
-    If you get a negative loss during your training,
-    there must be something wrong with your code. 
+1. A Loss function is always non-negative. 
+    If you get a negative loss when training a model,
+    there must be something wrong with the code. 
     For example, 
-    maybe you choosed a loss function incorrectly.
+    maybe you chosed a loss function incorrectly.
 
 ## Loss Functions
 
@@ -28,31 +28,17 @@ Or sometimes called binary loss function.
 
 ### SSE
 
-### Entropy
+### Cross-entropy
 
-### Likelihood Function
-
-To make the loss function convex so that optimization is easy.
-
-
-https://gombru.github.io/2019/04/03/ranking_loss/
-
-
-https://discuss.pytorch.org/t/writing-warp-loss-layer/3715
+### Negative Log Likelihood
 
 ## Comparisons of Loss Functions
 
 ### Cross Entropy vs Negative Log Likelihood
 
-The cross entropy loss function is the negative log likelihood loss function 
-applied on softmax output.
-So, 
-if the last layer of your neural network is a softmax layer
-you want to use the negative log likelihood loss function 
-(instead of the cross entropy loss function);
-and if the last layer of your neural network is a full-connected layer 
-(without applying softmax)
-yu wantto use the cross entropy loss function.
+Please refer to
+[Entropy](https://www.legendu.net/misc/blog/entropy)
+for detailed discussions.
 
 ### MSE (L2 Loss) vs L1 Loss
 
@@ -91,3 +77,8 @@ https://medium.com/udacity-pytorch-challengers/a-brief-overview-of-loss-function
 https://pytorch.org/docs/stable/nn.html
 
 [PyTorch Loss Functions: The Ultimate Guide](https://neptune.ai/blog/pytorch-loss-functions)
+
+https://gombru.github.io/2019/04/03/ranking_loss/
+
+https://discuss.pytorch.org/t/writing-warp-loss-layer/3715
+

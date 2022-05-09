@@ -5,7 +5,7 @@ Slug: investment-tips
 Title: Investment
 Category: Finance
 Tags: finance, investment, WeChat official account, money, tips, economics, stock
-Modified: 2022-05-08 17:15:45
+Modified: 2022-05-08 17:23:19
 
 **
 Things on this page are
@@ -31,11 +31,17 @@ https://jingyan.baidu.com/article/49711c61858939fa441b7cd9.html
 
 ## Good Forums for Investment
 
-- [WallStreetBets on Reddit](https://www.reddit.com/r/wallstreetbets/)
+- [USNews - Money](https://money.usnews.com/investing?int=top_nav_Investing)
+
+- [Reddit - WallStreetBets](https://www.reddit.com/r/wallstreetbets/)
+
+- [Reddit - Personal Finance](https://www.reddit.com/r/personalfinance/)
 
 - [Value Investor Club](https://valueinvestorsclub.com/)
 
 - [Corner Of Berkshire & Fairfax](https://thecobf.com/)
+
+- [BogleHeads.org](https://www.bogleheads.org/forum/index.php)
 
 - The Motley Fool - CAPS Community
 
@@ -52,6 +58,10 @@ https://jingyan.baidu.com/article/49711c61858939fa441b7cd9.html
 投研帮
 
 摩尔金融
+
+## Technical Analysis
+
+[Data Wrangling for Fundamental Stock Analysis](https://alpha2phi.medium.com/data-wrangling-for-fundamental-stock-analysis-d9f5a3d36056)
 
 ## References
 

@@ -5,7 +5,7 @@ Slug: investment-tips
 Title: Investment
 Category: Finance
 Tags: finance, investment, WeChat official account, money, tips, economics, stock
-Modified: 2020-10-17 12:24:21
+Modified: 2022-05-08 17:15:45
 
 **
 Things on this page are
@@ -29,6 +29,24 @@ https://jingyan.baidu.com/article/49711c61858939fa441b7cd9.html
 
 [美投讲美股](https://www.youtube.com/channel/UCBUH38E0ngqvmTqdchWunwQ)
 
+## Good Forums for Investment
+
+- [WallStreetBets on Reddit](https://www.reddit.com/r/wallstreetbets/)
+
+- [Value Investor Club](https://valueinvestorsclub.com/)
+
+- [Corner Of Berkshire & Fairfax](https://thecobf.com/)
+
+- The Motley Fool - CAPS Community
+
+- Yahoo! Finance
+
+- Stockaholics.net
+
+- StockTwits
+
+- TheLion.com
+
 ## Good WeChat Official Accounts
 
 投研帮
@@ -37,8 +55,11 @@ https://jingyan.baidu.com/article/49711c61858939fa441b7cd9.html
 
 ## References
 
-[美投讲美股](https://www.youtube.com/channel/UCBUH38E0ngqvmTqdchWunwQ)
+- [7 Reddit-Esque Stock Message Boards](https://money.usnews.com/investing/stock-market-news/slideshows/reddit-esque-stock-market-forums)
 
-[How The Economic Machine Works by Ray Dalio](https://www.youtube.com/watch?v=PHe0bXAIuk0)
+- [美投讲美股](https://www.youtube.com/channel/UCBUH38E0ngqvmTqdchWunwQ)
 
-[Yahoo Finance](https://finance.yahoo.com/news/)
+- [How The Economic Machine Works by Ray Dalio](https://www.youtube.com/watch?v=PHe0bXAIuk0)
+
+- [Yahoo Finance](https://finance.yahoo.com/news/)
+

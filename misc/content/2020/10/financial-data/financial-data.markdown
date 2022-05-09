@@ -5,7 +5,7 @@ Slug: financial-data
 Title: Financial Data
 Category: Computer Science
 Tags: Computer Science, data, finance, financial, IMF, Federal Reserve, FRB
-Modified: 2021-05-06 12:47:30
+Modified: 2022-05-08 17:15:45
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -17,9 +17,14 @@ Please read with your own judgement!
 
 [Factors Affecting Reserve Balances - H.4.1](https://www.federalreserve.gov/releases/h41/)
 
-World Bank Open Data Datasets covering population demographics 
+### World Bank 
+
+Open Data Datasets covering population demographics 
 and a huge number of economic and development indicators from across the world.
-IMF Data The International Monetary Fund publishes data 
+
+### IMF Data 
+
+The International Monetary Fund publishes data 
 on international finances, debt rates, foreign exchange reserves, commodity prices and investments.
 
 ## References 

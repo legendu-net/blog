@@ -5,7 +5,7 @@ Slug: investment-tips
 Title: Investment
 Category: Finance
 Tags: finance, investment, WeChat official account, money, tips, economics, stock
-Modified: 2022-05-08 17:23:19
+Modified: 2022-05-08 21:51:50
 
 **
 Things on this page are
@@ -25,6 +25,22 @@ Please read with your own judgement!
 
 https://jingyan.baidu.com/article/49711c61858939fa441b7cd9.html
 
+## Tools 
+
+https://www.sec.gov
+
+https://www.sec.gov/edgar/searchedgar/companysearch.html
+
+[NasDaq](https://www.nasdaq.com/)
+
+[NYSE](https://www.nyse.com/index)
+
+[China Concept Stock - Earning Report](http://tech.sina.com.cn/focus/finance_report/)
+
+[FinViz Screener](https://finviz.com/screener.ashx)
+
+[Yahoo Finance Screener](https://finance.yahoo.com/screener)
+
 ## US Stocks
 
 [美投讲美股](https://www.youtube.com/channel/UCBUH38E0ngqvmTqdchWunwQ)
@@ -32,6 +48,8 @@ https://jingyan.baidu.com/article/49711c61858939fa441b7cd9.html
 ## Good Forums for Investment
 
 - [USNews - Money](https://money.usnews.com/investing?int=top_nav_Investing)
+
+- [CNBC News](https://www.cnbc.com/)
 
 - [Reddit - WallStreetBets](https://www.reddit.com/r/wallstreetbets/)
 
@@ -45,6 +63,14 @@ https://jingyan.baidu.com/article/49711c61858939fa441b7cd9.html
 
 - The Motley Fool - CAPS Community
 
+- [SeekingAlpha](https://seekingalpha.com/)
+
+- [ETFReplay](https://www.etfreplay.com/)
+
+- [ETFdb](https://etfdb.com/)
+
+- [ETF.com](https://www.etf.com/)
+
 - Yahoo! Finance
 
 - Stockaholics.net
@@ -53,7 +79,12 @@ https://jingyan.baidu.com/article/49711c61858939fa441b7cd9.html
 
 - TheLion.com
 
-## Good WeChat Official Accounts
+## Good Forums / WeChat Official Accounts for A-shares
+
+[美国投资界常逛的网站或论坛有哪些（比如某些优质的博客）？](https://www.zhihu.com/question/62023711)
+
+
+[雪球](https://xueqiu.com/)
 
 投研帮
 

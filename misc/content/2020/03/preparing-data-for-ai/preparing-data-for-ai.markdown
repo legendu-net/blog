@@ -5,7 +5,7 @@ Slug: preparing-data-for-ai
 Title: Preparing Data for AI
 Category: Computer Science
 Tags: Computer Science, data science, AI, machine learning, deep learning, data labeling, crowdsourcing
-Modified: 2021-10-08 12:15:57
+Modified: 2022-05-10 00:21:40
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -33,9 +33,13 @@ Please read with your own judgement!
 [LabelMe](http://labelme2.csail.mit.edu/Release3.0/index.php?message=1)
 provides an online annotation tool to build image databases for computer vision research. 
 
+[DiffGram](https://diffgram.com/main/)
+is opensource and thus free for a self-hosted service.
 
 
 ## Commercial Labeling Tools/Platforms
+
+[DiffGram](https://diffgram.com/main/)
 
 Appen
 

@@ -5,7 +5,7 @@ Slug: dashboard-solutions
 Title: Dashboard Solutions
 Category: Software
 Tags: software, dashboard, Jupyter, JupyterLab, Superset, Redash, plotly, dash, Bokeh Server
-Modified: 2021-01-08 14:01:55
+Modified: 2022-05-09 10:54:27
 
 **
 Things on this page are
@@ -32,6 +32,9 @@ Notice that voila works with ipywidgets only currently.
 It does not work with Bokeh/HoloViews currently.
 
 https://github.com/QuantStack/voila/issues/244
+
+[voila-gridstack](https://github.com/voila-dashboards/voila-gridstack)
+provides dashboard template for Voila based on GridStackJS.
 
 [MavenWorks](https://github.com/Mavenomics/MavenWorks)
 

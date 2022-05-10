@@ -5,7 +5,7 @@ Slug: investment-tips
 Title: Investment
 Category: Finance
 Tags: finance, investment, WeChat official account, money, tips, economics, stock
-Modified: 2022-05-08 21:51:50
+Modified: 2022-05-09 12:24:45
 
 **
 Things on this page are
@@ -80,6 +80,12 @@ https://www.sec.gov/edgar/searchedgar/companysearch.html
 - TheLion.com
 
 ## Good Forums / WeChat Official Accounts for A-shares
+
+- 新闻联播
+
+- [人民日报](https://cn.chinadaily.com.cn/)
+
+- 新华社
 
 [美国投资界常逛的网站或论坛有哪些（比如某些优质的博客）？](https://www.zhihu.com/question/62023711)
 

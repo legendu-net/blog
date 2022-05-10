@@ -6,7 +6,7 @@ Slug: wechat-questions
 Title: WeChat Questions
 Category: Software
 Tags: software, WeChat, chatting, Tencent, questions
-Modified: 2015-05-07 01:46:35
+Modified: 2022-05-09 23:56:01
 
 **
 Things on this page are
@@ -17,6 +17,8 @@ Please read with your own judgement!
 1. Is it possible to export contacts in WeChat. 
 If so, how?
 I think you can save contact to your phone
+
+[2021最详细微信聊天记录备份＆免费导出方案（全平台）](https://zhuanlan.zhihu.com/p/212901830)
 
 2. How to permanently keep WeChat chatting history?
 And best way to export it?

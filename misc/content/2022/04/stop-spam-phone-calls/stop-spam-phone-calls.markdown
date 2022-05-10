@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-04-28 11:55:44
-Modified: 2022-05-10 10:08:28
+Modified: 2022-05-10 12:19:36
 Author: Benjamin Du
 Slug: stop-spam-phone-calls
 Title: Stop Spam Phone Calls
@@ -13,6 +13,9 @@ Tags: Life, phone, call, spam, fraud
 1. [National Do Not Call Registry](https://www.donotcall.gov/)
 
 2. block a phone number if it's spam phone call
+
+3. Add people you know into your contact, 
+    and then silent unknown calls on your phone.
 
 ## References
 

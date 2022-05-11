@@ -5,20 +5,26 @@ Slug: calling-rust-from-python
 Title: Calling Rust from Python
 Category: Computer Science
 Tags: programming, Python, Rust, PyO3, maturin
-Modified: 2022-05-11 01:04:39
+Modified: 2022-05-11 09:34:29
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
+## Tools
+
 [pyo3](https://github.com/PyO3/pyo3)
 
-[rust-cpython](https://github.com/dgrunwald/rust-cpython)
+Rust bindings for Python, including tools for creating native Python extension modules. 
+Running and interacting with Python code from a Rust binary is also supported.
 
-https://www.benfrederickson.com/writing-python-extensions-in-rust-using-pyo3/
 
-https://bheisler.github.io/post/calling-rust-in-python/
+[maturin](https://github.com/PyO3/maturin)
+
+Build and publish crates with pyo3, rust-cpython and cffi bindings as well as rust binaries 
+as python packages.
+
 
 ## A Single Library for Rust and Python 
 
@@ -28,6 +34,6 @@ https://bheisler.github.io/post/calling-rust-in-python/
 
 ## Calling Python from Rust 
 
-[Calling Rust from Python using PyO3](https://saidvandeklundert.net/learn/2021-11-18-calling-rust-from-python-using-pyo3/)
+- [Calling Rust from Python using PyO3](https://saidvandeklundert.net/learn/2021-11-18-calling-rust-from-python-using-pyo3/)
 
-[inline-python](https://github.com/fusion-engineering/inline-python)
+- [inline-python](https://github.com/fusion-engineering/inline-python)

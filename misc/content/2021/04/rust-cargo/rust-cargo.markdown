@@ -89,9 +89,9 @@ which allows users to pass compiler flags to it.
     :::bash
     cargo rustc --lib -- -Awarnings
 
-## Extensions to Cargo
+## Cargo Extensions / Addons 
 
-### Format Code
+### rustfmt - Format Code
 
 If `rustfmt` has been installed (using `rustup component add rustfmt`),
 you can run the following command to format code in a Rust project.
@@ -104,6 +104,11 @@ and there's no good configuration to make it work.
 It is suggested that you do not nest Rust code too deeply. 
 This not only make things easier for `cargo fmt`
 but also makes your Rust code cleaner and more readable.
+
+### [cargo-nextest](https://github.com/nextest-rs/nextest)
+
+[cargo-nextest](https://github.com/nextest-rs/nextest)
+is a next-generation test runner for Rust.
 
 ### [cargo-edit](https://github.com/killercup/cargo-edit)
 

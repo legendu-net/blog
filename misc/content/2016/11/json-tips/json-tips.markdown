@@ -5,7 +5,7 @@ Title: Tips on JSON
 Slug: json-tips
 Category: Computer Science
 Tags: Computer Science, programming, Python, JSON, serialization, deserialization, orjson, json, database, Java, C++, JavaScript
-Modified: 2021-04-09 09:49:14
+Modified: 2022-05-13 07:47:33
 
 **
 Things on this page are
@@ -13,13 +13,26 @@ fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
+## Shortcomes of JSON
+
+It is suggested that you avoid using the JSON format if you can!
+TOML and YAML are better text-based alternatives.
+If readability is not a concern,
+a binary serialization format is preferred.
+
 1. Empty rows are not allowed in a list in JSON.
 
-2. No comments allowed in a JSON file.
-    However, 
-    you can put comments into a field.
-    Another better option is to use YAML 
-    or JSON5 (if you use JavaScript).
+2. Comments are NOT allowed in a JSON file.
+    A hacking way is to put comments into a field.
+    There are of course much better alternative serialization formats
+    such as TOML and YAML which support comments.
+
+3. Keys in a JSON file must be strings (instead of numerical values)!
+    Some languages/libraries IMPLICITLY convert keys to strings
+    when serializing data to JSON format,
+    which is error-prone.
+
+4. The JSON format is limited expressing complicated objects.
 
 ## JSON Parsing Libraries in Python
 

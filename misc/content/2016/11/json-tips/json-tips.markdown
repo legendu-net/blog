@@ -5,7 +5,7 @@ Title: Tips on JSON
 Slug: json-tips
 Category: Computer Science
 Tags: Computer Science, programming, Python, JSON, serialization, deserialization, orjson, json, database, Java, C++, JavaScript
-Modified: 2022-05-13 07:47:33
+Modified: 2022-05-13 11:25:22
 
 **
 Things on this page are

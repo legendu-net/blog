@@ -5,17 +5,23 @@ Slug: parse-toml-file-in-python
 Title: Parse TOML File in Python
 Category: Computer Science
 Tags: Computer Science, programming, Python, TOML, parse, load, dump, tomlkit
-Modified: 2022-05-13 10:47:45
-There are 2 popular Python libraries 
-[tomlkit](https://github.com/sdispater/tomlkit)
-and
-[toml](https://github.com/uiri/toml)
-for parsing TOML formatted files in Python.
-[tomlkit](https://github.com/sdispater/tomlkit)
-is preferred to 
-[toml](https://github.com/uiri/toml)
-as it is more flexible and style-preserving.
+Modified: 2022-05-13 11:42:19
 
+
+1. There are 2 popular Python libraries 
+    [tomlkit](https://github.com/sdispater/tomlkit)
+    and
+    [toml](https://github.com/uiri/toml)
+    for parsing TOML formatted files in Python.
+    [tomlkit](https://github.com/sdispater/tomlkit)
+    is preferred to 
+    [toml](https://github.com/uiri/toml)
+    as it is more flexible and style-preserving.
+
+2. A TOML file always interpret a key (even a bare ASCII integer) as string. 
+    For this reason, a dict with numerical keys cannot be serialized using toml.
+
+3. Indentions are allowed in a TOML file.
 
 ## References 
 

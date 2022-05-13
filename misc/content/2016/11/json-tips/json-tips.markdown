@@ -5,7 +5,7 @@ Title: Tips on JSON
 Slug: json-tips
 Category: Computer Science
 Tags: Computer Science, programming, Python, JSON, serialization, deserialization, orjson, json, database, Java, C++, JavaScript
-Modified: 2022-05-13 11:25:22
+Modified: 2022-05-13 11:35:23
 
 **
 Things on this page are
@@ -15,7 +15,7 @@ Please read with your own judgement!
 
 ## Shortcomes of JSON
 
-It is suggested that you avoid using the JSON format if you can!
+It is suggested that you avoid using the JSON format!
 TOML and YAML are better text-based alternatives.
 If readability is not a concern,
 a binary serialization format is preferred.

@@ -1,9 +1,9 @@
 Status: published
 Date: 2022-05-09 23:39:30
-Modified: 2022-05-09 23:39:30
+Modified: 2022-05-18 00:20:19
 Author: Benjamin Du
 Slug: tips-on-gcp
-Title: Tips on Gcp
+Title: Tips on GCP
 Category: Computer Science
 Tags: Computer Science, programming, Google, cloud, GCP
 

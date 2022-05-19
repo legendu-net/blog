@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-04-30 11:49:58
-Modified: 2022-03-22 10:09:09
+Modified: 2022-05-19 02:25:00
 Author: Benjamin Du
 Slug: tips-on-pyspark
 Title: Process Big Data Using PySpark
@@ -144,8 +144,9 @@ Tags: programming, PySpark, Python, Spark, tips, HPC, high performance computing
 1. The trick is to use the Python library `findspark` to find and initiate Spark for use in notebook. 
 
         :::python
+        from pathlib import Path
         import findspark
-        findspark.init("/opt/spark")
+        findspark.init(str(next(Path("/opt/").glob("spark-*"))))
         from pyspark.sql import SparkSession, DataFrame
         spark = SparkSession.builder.appName("PySpark_Notebook") \
             .enableHiveSupport().getOrCreate()
@@ -156,16 +157,18 @@ Tags: programming, PySpark, Python, Spark, tips, HPC, high performance computing
     it might not so obvious if you import a module which creates a SparkSession object.
 
         :::python
+        from pathlib import Path
         import findspark
-        findspark.init("/opt/spark")
+        findspark.init(str(next(Path("/opt/").glob("spark-*"))))
 
 2. When working with relatively large data in a local version of Spark in Jupyter/Lab notebook,
     you might easily encounter OOM errors. 
     The trick to increase the driver memory using the option `.config("spark.driver.memory", "50g")`.
 
         :::python
+        from pathlib import Path
         import findspark
-        findspark.init("/opt/spark")
+        findspark.init(str(next(Path("/opt/").glob("spark-*"))))
         from pyspark.sql import SparkSession, DataFrame
         spark = SparkSession.builder.appName("PySpark_Notebook") \
             .master("local[*]") \
@@ -177,8 +180,9 @@ Tags: programming, PySpark, Python, Spark, tips, HPC, high performance computing
     to add JARs to a Spark/PySpark application in Jupyter/Lab notebook.
 
         :::python
+        from pathlib import Path
         import findspark
-        findspark.init("/opt/spark")
+        findspark.init(str(next(Path("/opt/").glob("spark-*"))))
         from pyspark.sql import SparkSession, DataFrame
         spark = SparkSession.builder.appName("PySpark_Notebook") \
             .config("spark.jars", "/path/to/file.jar") \

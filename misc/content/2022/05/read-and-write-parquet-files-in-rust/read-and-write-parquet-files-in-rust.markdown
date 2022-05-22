@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-05-22 08:44:04
-Modified: 2022-05-22 09:50:18
+Modified: 2022-05-22 11:41:03
 Author: Benjamin Du
 Slug: read-and-write-parquet-files-in-rust
 Title: Read and Write Parquet Files in Rust
@@ -13,7 +13,7 @@ There are a few crates in Rust which can help read and write Parquet files.
 [Parquet](https://crates.io/crates/parquet)
 and
 [polars](https://crates.io/crates/polars)
-are 2 high-level easy-to-use crates.
+are 2 high-level and easy-to-use crates.
 
 ## [parquet](https://crates.io/crates/parquet)
 

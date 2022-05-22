@@ -5,7 +5,7 @@ Slug: useful-firefox-add-ons
 Title: Useful Firefox Add-ons
 Category: Software
 Tags: software, Firefox, add-ons, plugins, extensions, Mozilla
-Modified: 2022-05-08 11:12:30
+Modified: 2022-05-21 21:32:37
 
 **
 Things on this page are
@@ -117,13 +117,14 @@ allowing you to download protected files directly to a separate machine.
 Allows you to initiate a direct download of a file given a url.
 
 - PrintFriendly
+    Make any web page Print Friendly & PDF
 
 - Open in Chrome
 
 - IETab
 
 - Live HTTP Headers  
-View HTTP headers of a page and while browsing.
+    View HTTP headers of a page and while browsing.
 
 ## Downloading Tools
 

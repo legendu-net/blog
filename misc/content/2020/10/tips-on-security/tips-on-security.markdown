@@ -4,19 +4,25 @@ Author: Benjamin Du
 Slug: tips-on-security
 Title: Tips on Security
 Category: Computer Science
-Tags: Computer Science, security, NVD
-Modified: 2020-10-15 18:30:00
+Tags: Computer Science, security, NVD, vulnerability, data breach
+Modified: 2022-05-21 21:56:55
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
+## General Tips
+
 1. Proxy is not as secure as VPN.
+
+## Websites for Checking Vulnerabilities and Data Breaches
 
 [NATIONAL VULNERABILITY DATABASE](https://nvd.nist.gov/)
 
 http://vulnhub.com/
+
+https://haveibeenpwned.com/
 
 ## Web Security 
 

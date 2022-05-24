@@ -5,7 +5,7 @@ Slug: unit-testing-formal-verification-rust
 Title: Unit Testing and Formal Verification in Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, testing, unit test, verification, analysis, formal verification
-Modified: 2022-01-03 18:49:36
+Modified: 2022-05-23 10:02:44
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
@@ -48,6 +48,12 @@ Assert an Option value is Some(v).
 
     assert_eq!(an_option_value.unwrap(), v)
 
+## Setup and Teardown
+
+[Test setup and teardown in Rust without a framework.](https://medium.com/@ericdreichert/test-setup-and-teardown-in-rust-without-a-framework-ba32d97aa5ab)
+
+
+## Test vs Verification
 
 [Rust Design-for-Testability: a survey](https://alastairreid.github.io/rust-testability/)
 

@@ -241,16 +241,10 @@ Building a portable Python environment using python-build-standalone is the reco
 
 ## References
 
-https://spark.apache.org/docs/latest/api/python/pyspark.sql.html
+- [PySpark API Reference](https://spark.apache.org/docs/latest/api/python/reference/)
 
-https://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.DataFrame
+- [Best Practices Writing Production-Grade PySpark Jobs](https://developerzen.com/best-practices-writing-production-grade-pyspark-jobs-cb688ac4d20f)
 
-https://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Column
+- [Packaging code with PEX — a PySpark example](https://medium.com/criteo-labs/packaging-code-with-pex-a-pyspark-example-9057f9f144f3)
 
-https://spark.apache.org/docs/latest/api/python/pyspark.sql.html#module-pyspark.sql.functions
-
-[Best Practices Writing Production-Grade PySpark Jobs](https://developerzen.com/best-practices-writing-production-grade-pyspark-jobs-cb688ac4d20f)
-
-[Packaging code with PEX — a PySpark example](https://medium.com/criteo-labs/packaging-code-with-pex-a-pyspark-example-9057f9f144f3)
-
-[awesome-spark](https://github.com/awesome-spark/awesome-spark)
+- [awesome-spark](https://github.com/awesome-spark/awesome-spark)

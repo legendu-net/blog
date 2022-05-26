@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-04-10 12:17:46
-Modified: 2021-11-28 11:37:09
+Modified: 2022-05-25 21:42:59
 Author: Benjamin Du
 Slug: rust-tips
 Title: Tips on Rust
@@ -74,9 +74,18 @@ for more details.
 1. [Common newbie mistakes or bad practices](https://users.rust-lang.org/t/common-newbie-mistakes-or-bad-practices/64821)
     [Common Newbie Mistakes and Bad Practices in Rust: Bad Habits](https://adventures.michaelfbryan.com/posts/rust-best-practices/bad-habits/)
 
-2. do not use `..=` which has performance issues. 
-    use `..` instead.
-
+2. `Iterator::for_each` is preferred over a `for` loop;
+    `Range` (`..`) is preferred over `RangeInclusive` (`..=`).
+    For detailed discussions,
+    please refer to
+    [Big performance problem with closed intervals looping #45222](https://github.com/rust-lang/rust/issues/45222)
+    ,
+    [Performance difference among Range, RangeInclusive and reversed](https://users.rust-lang.org/t/performance-difference-among-range-rangeinclusive-and-reversed/20283)
+    ,
+    [Why is iterator so much faster?](https://www.reddit.com/r/rust/comments/eiwhkn/why_is_iterator_so_much_faster/)
+    and
+    [Why does iteration over an inclusive range generate longer assembly in Rust?](https://stackoverflow.com/questions/70672533/why-does-iteration-over-an-inclusive-range-generate-longer-assembly-in-rust)
+    .
 
 ## Pattern Matching
 Pattern matching 

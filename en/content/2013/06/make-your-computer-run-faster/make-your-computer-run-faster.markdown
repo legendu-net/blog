@@ -5,14 +5,21 @@ Author: Ben Chuanlong Du
 Title: Make Linux Run Faster
 Category: OS
 Tags: RAM, speedup, SSD, software, optimization, hardware, Linux, fast, performance
-Modified: 2022-05-04 09:53:48
+Modified: 2022-05-28 13:19:17
 
  
+## Benchmark Tools for Linux
+
+[phoronix-test-suite](https://github.com/phoronix-test-suite/phoronix-test-suite/)
+is currently the best benchmark tool for Linux.
+You can use it to figure out the bottleneck of performance of your Linux machine.
+Please refer to
+[Benchmark Your Linux Machine Using phoronix-test-suite](https://www.legendu.net/misc/blog/benchmark-your-linux-machine-using-phoronix-test-suite)
+for more discussions.
+
 ## Upgrading Hardware
 
 1. Get larger RAM for your computer.
-    This is the most important thing to considered
-    when upgrading the hardware for your computer.
 
 2. Get a SSD disk.
 
@@ -20,23 +27,56 @@ Modified: 2022-05-04 09:53:48
 
 ## Configuration
 
-1. If your Linux system has a large swap partition, 
-    configure `vm.swapness` to be a proper value (10 or even less).
+1. Configure GRUB to fix PCIe BUS errors if any. 
+    Please refer to
+    [Pcie Bus Error: Severity=Corrected, Type=Physical Layer](http://www.legendu.net/misc/blog/PCIe-Bus-Error:-severity=Corrected,-type=Physical-Layer/)
+    for detailed discussions
+    .
+    Notice that you might have to do this 
+    every time you upgrade your Linux kernel.
+
+2. Reduce GRUB timeout to a smaller value.
+    Please refer to
+    [Reduce GRUB Timeout](https://www.legendu.net/misc/blog/reduce-grub-timeout)
+    for detailed discussions
+    .
+
+2. Configure `vm.swapness` to be a proper value (10 or even less),
+    if your Linux system has a large swap partition.
     For more details,
     please refer to
     [SwapFaq](https://help.ubuntu.com/community/SwapFaq)
     .
 
-2. Configure grub. 
-    For more discussion,
-    please refer to
-    [Pcie Bus Error: Severity=Corrected, Type=Physical Layer](http://www.legendu.net/misc/blog/PCIe-Bus-Error:-severity=Corrected,-type=Physical-Layer/)
-    .
+3. Choose a fast mirror.
+    If you are using Ubuntu, 
+    a fast mirror will be automatically decided based on your location. 
+    However, 
+    if you are using other Linux distribution (e.g., Linux Mint),
+    you might have to choose a fast mirror manually.
 
-3. Use the `noatime` option for filesystems. 
-    Add the `noatime` option into your fstab for all non-swap partitions.  
-    This is NOT recommended
+4. Use the `noatime` option for filesystems. 
+    Add the `noatime` option into your fstab for all non-swap partitions.
+    This is 
+    <span style="color:red">
+    NOT recommended
+    </span>
     unless you really want to squeeze the performance of Linux machine.
+
+5. Remove non-necessary autostart applications
+    and configure a delay to must-have autostart applications.
+    Please refer to
+    [Manage Autostart Applications](https://www.legendu.net/misc/blog/manage-autostart-apps)
+    for detailed discussions.
+
+6. Disable non-needed systemd services.
+    Please refer to
+    [Manage systemd Services and Units](https://www.legendu.net/misc/blog/manage-systemd-services-units)
+    for detailed discussions.
+
+7. If you use the GNOME desktop environment,
+    configuare "Gnome Shell Search" to disable unnecessary applications.
+    ![gnome-shell-search-config](https://user-images.githubusercontent.com/824507/170840843-f085a295-4071-4ee8-929f-62d1e57c67f6.png)
 
 ## Software-based Optimization
 
@@ -59,13 +99,6 @@ Modified: 2022-05-04 09:53:48
 
         :::bash
         wajig purge linux-image-<verson>
-
-### Booting Time
-
-[Bootchart](https://www.bootchart.org/)
-is a tool for performance analysis and visualization of the GNU/Linux boot process. 
-Resource utilization and process information are collected during the boot process 
-and are later rendered in a PNG, SVG or EPS encoded chart.
 
 ### Lightweight Alternatives
 
@@ -95,3 +128,7 @@ and are later rendered in a PNG, SVG or EPS encoded chart.
         wajig install localepurge
         localpurge
 
+
+## References
+
+- [PackageKitD Uses Too Much CPU or Disk IO](https://www.legendu.net/misc/blog/packagekitd-uses-too-much-cpu-or-disk-io/)

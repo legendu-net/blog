@@ -1,6 +1,6 @@
 Status: published
 Date: 2016-05-04 20:59:32
-Modified: 2022-05-04 11:46:15
+Modified: 2022-05-28 10:31:51
 Author: Ben Chuanlong Du
 Slug: things-to-do-after-installing-linux
 Title: Things to Do After Installing Linux
@@ -88,20 +88,13 @@ Note: The tips here are for Debian-based Linux distributions
 
 ## Other Debian-based Linux Distributions
 
-1. Choose a fast mirror.
-    If you are using Ubuntu, 
-    a fast mirror will be automatically decided based on your location. 
-    However, if you are using other Linux distribution (e.g., Linux Mint),
-    you might have to choose a fast mirror manually.
-
-2. Configure `vm.swapness` to be a proper value (10 or even less),
-    if your Linux system has a large swap partition.
-    For more details,
+1. Tune settings to make your Linux machine run faster.
+    For more discussions, 
     please refer to
-    [SwapFaq](https://help.ubuntu.com/community/SwapFaq)
+    [Make Linux Run Faster](https://www.legendu.net/en/blog/make-your-computer-run-faster/)
     .
 
-3. Install a good alternative package manager.
+2. Install a good alternative package manager.
     `apt-get` is a very good package manager for Debian series Linux distributions,
     however, `wajig` is much superior choice.
         

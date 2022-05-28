@@ -5,7 +5,7 @@ Date: 2013-10-19 12:20:43
 Slug: ubuntu-tips
 Category: OS
 Tags: tips, Ubuntu, Linux, OS
-Modified: 2022-05-04 11:46:27
+Modified: 2022-05-28 10:47:02
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
@@ -24,10 +24,10 @@ for detailed discussions.
 
 [Ubuntu Sources List Generator](https://repogen.simplylinux.ch/)
 
-1. use CTRL + D in a folder to add it as a bookmark
-
-1. If a user never logged in before, the removal disk won't be mounted.
-    But you can always mount the disk manually.
+1. If a user never logged in before, 
+    removal disks won't be mounted.
+    However,
+    you can always mount the disk manually.
 
 2. If a user never logged in before, the vino-server is not usable. 
     There is a solution if gdm is used, 
@@ -35,25 +35,9 @@ for detailed discussions.
     One good way is to let ubuntu login automatically and then lock screen automatically.
     You can also think about whether the way you used in Debian is applicable to Ubuntu.
 
-3. It seems that account services override the lightdm configuration file. 
-
-4. Unity in Ubuntu crashes frequently. 
-    This might due to Firefox not unity itself. 
-    You might want to check the log information. 
-    And if it's indeed the problem of firefox, 
-    it might due to plugins installed in firefox. 
-
-5. lightdm fails to start on Y450. 
-    This is probably due to xfce environment installed. 
-    You can remove it and check whether it works OK then. 
-
 6. For some reason I don't know, lightdm fails to restart after running "sudo service lightdm restart".
     However, it starts if I login into tty and start it manually by "sudo service lightdm start".
     I think this probably means that something is wrong stopping the lightdm service. 
-
-## VPN
-
-1. openvpn
 
 ## Check Whether a Ubuntu Server Has a Desktop Installed
 

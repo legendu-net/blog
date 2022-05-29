@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-05-22 08:44:04
-Modified: 2022-05-23 21:01:43
+Modified: 2022-05-29 09:43:41
 Author: Benjamin Du
 Slug: read-and-write-parquet-files-in-rust
 Title: Read and Write Parquet Files in Rust
@@ -16,6 +16,11 @@ is the best one.
 As a matter of fact,
 polars is a DataFrame implementation in Rust
 which is way beyond Parquet IO.
+The 
+[parquet](https://crates.io/crates/parquet)
+crate might still be useful if you want to scan Parquet files row by row.
+Other Parquet related crates are low-level ones
+and are not average user oriented.
 
 ## [polars](https://crates.io/crates/polars)
 The 

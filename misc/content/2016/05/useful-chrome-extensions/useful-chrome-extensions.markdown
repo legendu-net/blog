@@ -5,7 +5,7 @@ Slug: useful-chrome-extensions
 Title: Useful Chrome Extensions
 Category: Software
 Tags: software, Google Chrome, extension, add-on, plug-in, addon, plugin, web browser
-Modified: 2021-12-12 21:34:52
+Modified: 2022-05-29 01:26:20
 
 **
 Things on this page are
@@ -44,6 +44,8 @@ please refer to
 ## AdBlock Plus (block ads)
 
 ## Pocket (save pages to read later)
+
+## [Video Downloader Cococut](https://chrome.google.com/webstore/detail/video-downloader-cococut/gddbgllpilhpnjpkdbopahnpealaklle/related)
 
 ## [Full Page Screen Capture](https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl)
 

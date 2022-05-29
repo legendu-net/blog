@@ -4,8 +4,8 @@ Author: Benjamin Du
 Slug: tips-on-security
 Title: Tips on Security
 Category: Computer Science
-Tags: Computer Science, security, NVD, vulnerability, data breach
-Modified: 2022-05-21 21:56:55
+Tags: Computer Science, security, NVD, vulnerability, data breach, Shodan
+Modified: 2022-05-28 22:59:10
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -17,6 +17,8 @@ Please read with your own judgement!
 1. Proxy is not as secure as VPN.
 
 ## Websites for Checking Vulnerabilities and Data Breaches
+
+[Shodan - Search Engine for the Internet of Everything](https://www.legendu.net/misc/blog/shodan-search-engine-for-iot)
 
 [NATIONAL VULNERABILITY DATABASE](https://nvd.nist.gov/)
 

@@ -1,9 +1,9 @@
 Status: published
 Date: 2021-09-29 01:17:39
-Modified: 2021-09-29 01:17:39
+Modified: 2022-05-28 23:29:06
 Author: Benjamin Du
-Slug: shop-at-homedepot
-Title: Shop At Homedepot
+Slug: shopping-at-homedepot
+Title: Shopping At Homedepot
 Category: Computer Science
 Tags: life, shopping, home, HomeDepot, house
 

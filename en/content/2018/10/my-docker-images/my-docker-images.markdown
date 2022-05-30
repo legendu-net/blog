@@ -5,7 +5,7 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2021-11-28 14:59:19
+Modified: 2022-05-30 10:16:13
 
 ## Tips
 
@@ -358,7 +358,7 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
 - [dclong/base](https://hub.docker.com/r/dclong/base/)  
 
-    > OS: Ubuntu 20.04. 
+    > OS: Ubuntu LTS
     > Time Zone: US Pacific Time  
     > Desktop Environment: None  
     > Remote Desktop: None  
@@ -391,8 +391,7 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
     - [dclong/python](https://hub.docker.com/r/dclong/python/)  
 
-        > Python 3.8.x  
-        > Python 3.7.12  
+        > Python 3.10.x  
 
         - [dclong/python-jdk](https://hub.docker.com/r/dclong/python-jdk/)  
 
@@ -404,11 +403,11 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
             - [dclong/jupyterlab](https://hub.docker.com/r/dclong/jupyterlab)  
 
-                > JupyterLab: 3.1.x
+                > JupyterLab: 3.2.x
 
                 - [dclong/jupyterhub](https://hub.docker.com/r/dclong/jupyterhub/)  
 
-                    > JupyterHub: latest version.
+                    > JupyterHub: latest stable version.
 
                     - [dclong/jupyterhub-ts](https://hub.docker.com/r/dclong/jupyterhub-ts/)  
 
@@ -424,18 +423,18 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
                     - [dclong/jupyterhub-jdk](https://hub.docker.com/r/dclong/jupyterhub-jdk/)  
 
-                        > OpenJDK 8  
+                        > OpenJDK: 8  
                         > Maven: 3.6.x  
 
                         - [dclong/jupyterhub-more](https://hub.docker.com/r/dclong/jupyterhub-more/)  
 
-                            > Kotlin  
-                            > TypeScript  
+                            > Go  
                             > Rust  
+                            > JavaScript/ TypeScript  
 
                             - [dclong/vscode-server](https://hub.docker.com/r/dclong/vscode-server/)  
 
-                                > The latest release of [code-server](https://github.com/cdr/code-server).  
+                                > [code-server](https://github.com/cdr/code-server): 4.3.x  
 
                             - [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/)  
 

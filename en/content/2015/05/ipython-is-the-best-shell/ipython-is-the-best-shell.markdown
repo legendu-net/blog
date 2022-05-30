@@ -5,7 +5,26 @@ Slug: ipython-is-the-best-shell
 Title: IPython Is the Best Shell
 Category: Computer Science
 Tags: programming, Python, tips, IPython, Shell
-Modified: 2021-12-23 10:25:17
+Modified: 2022-05-29 19:35:31
+
+
+## IPython is the Best Shell!
+
+1. Use IPython as much as possible. 
+    - IPython has virtues of both shell and Python. 
+    - You should avoid using shell scripts for complicate tasks any way.
+
+2. If you do want to use a Unix/Linux shell,
+    I'd suggest you stick to Bash 
+    unless Linux distributions start switching to zsh 
+    for a few reasons.
+
+    - Linux environment is more popular than a macOS environemnt
+        both for production and dev (due to Docker).
+    - Most Linux distributions are still using Bash as the default shell.
+    - It's easier to switch from zsh to bash on macOS
+        than to install and configure zsh on Linux machines 
+        especially in a production environment.
 
 ## Profile of IPython
 

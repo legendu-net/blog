@@ -1,11 +1,11 @@
 Status: published
 Date: 2022-05-21 21:35:27
-Modified: 2022-05-28 23:28:48
+Modified: 2022-05-29 22:19:53
 Author: Benjamin Du
 Slug: shopping-smartly
 Title: Shopping Smartly
 Category: Life
-Tags: Life, shopping, CamelCamelCamel, DealMoon, Homedepot, Costco
+Tags: Life, shopping, CamelCamelCamel, DealMoon, Homedepot, Costco, SlickDeals, deal, alert
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -13,6 +13,11 @@ Tags: Life, shopping, CamelCamelCamel, DealMoon, Homedepot, Costco
 [CamelCamelCamel - Amazon Price Tracker](https://camelcamelcamel.com/)
 
 [DealMoon - Housing & Living](https://www.dealmoon.com/guide/cate/11)
+
+[Deal Alerts @ SlickDeals](https://slickdeals.net/deal-alerts/)
+
+[AliExpress](AliExpress.com)
+No international transaction fees using Visa credit cards.
 
 ## References
 

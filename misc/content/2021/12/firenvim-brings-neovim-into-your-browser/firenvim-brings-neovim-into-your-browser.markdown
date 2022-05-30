@@ -1,16 +1,36 @@
 Status: published
 Date: 2021-12-04 20:03:49
-Modified: 2021-12-13 11:52:29
+Modified: 2022-05-29 14:52:29
 Author: Benjamin Du
 Slug: firenvim-brings-neovim-into-your-browser
-Title: Firenvim Brings NeoVim into Your Browser
+Title: FireNVim Brings NeoVim into Your Browser
 Category: Computer Science
-Tags: Computer Science, Vim, NeoVim, Firenvim, browser
+Tags: Computer Science, Vim, NeoVim, FireNVim, browser
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## [Trouble Shooting Firenvim](https://github.com/glacambre/firenvim/blob/master/TROUBLESHOOTING.md#troubleshooting-firenvim)
+## Installation 
+
+1. Install NeoVim and SpaceVim.
+
+        :::bash
+        xinstall nvim -ic
+        xinstall svim -ic
+
+2. Install the FireNVim plugin for your browser.
+
+3. Run the command `nvim` 
+    and then inside NeoVim run the command `:call firenvim#install(0)`.
+
+The above installation configures FireNVim to never automatially prompt up.
+You have to manually bring it up 
+using the shortcut `Ctrl + e` (Linux and Windows) 
+or `Command + e`  (macOS)
+.
+In case it doesn't work,
+please refer to
 [Trouble Shooting Firenvim](https://github.com/glacambre/firenvim/blob/master/TROUBLESHOOTING.md#troubleshooting-firenvim)
+for instructions on how to trouble shoot it.
 
 ## Font Size 
 

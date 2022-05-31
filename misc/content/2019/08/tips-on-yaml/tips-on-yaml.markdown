@@ -1,11 +1,11 @@
 Status: published
 Date: 2019-08-27 21:35:35
+Modified: 2022-05-30 19:16:24
 Author: Benjamin Du
 Slug: tips-on-yaml
 Title: Tips on YAML
 Category: Computer Science
 Tags: programming, YAML, tips
-Modified: 2022-05-13 11:51:25
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -20,6 +20,12 @@ Please read with your own judgement!
 ## Ranges in YAML
 
 https://stackoverflow.com/questions/48199439/use-range-with-stepsize-in-yaml-file
+
+## [YAML for Rust](https://www.legendu.net/misc/blog/parse-yaml-in-rust)
+
+Please refer to
+[Parse YAML in Rust](https://www.legendu.net/misc/blog/parse-yaml-in-rust)
+for discussions.
 
 ## [YAML for Python](http://www.legendu.net/misc/blog/tips-on-pyyaml)
 

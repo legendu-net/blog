@@ -5,7 +5,7 @@ Slug: tips-on-rustup
 Title: Tips on rustup
 Category: Computer Science
 Tags: Computer Science, programming, Rust, rustup, rustfmt, toochain, stable, beta, nightly
-Modified: 2021-09-30 12:41:28
+Modified: 2022-06-02 16:30:04
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -19,7 +19,7 @@ Please read with your own judgement!
 
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- -y
 
-Rust tools (`rustc`, cargo`, `rustup`, etc) 
+Rust tools (`rustc`, `cargo`, `rustup`, etc) 
 will be added to Cargo's bin directory, 
 located at `$HOME/.cargo/bin`.
 

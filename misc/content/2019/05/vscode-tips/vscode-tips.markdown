@@ -41,7 +41,7 @@ A simple fix is to add the following configuration into the user's setting.json 
 ## Extensions
 
 Please refer to 
-[Useful Visual Studio Code Extensions](http://www.legendu.net/misc/blog/useful-visual-studio-code-extensions)
+[Useful Visual Studio Code Extensions](http://www.legendu.net/en/blog/useful-visual-studio-code-extensions)
 .
 
 ## Change Indention/Shift Width

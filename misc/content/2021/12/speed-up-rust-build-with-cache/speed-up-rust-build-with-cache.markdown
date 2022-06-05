@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-12-04 17:41:10
-Modified: 2022-05-29 16:12:17
+Modified: 2022-06-05 01:22:52
 Author: Benjamin Du
 Slug: speed-up-rust-build-with-cache
 Title: Speed Up Rust Build With Cache
@@ -8,6 +8,10 @@ Category: Computer Science
 Tags: Computer Science, programming, Rust, build, cache, Cargo, Cachepot, Rust Cache
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+The article
+[How to alleviate the pain of Rust compile times](https://vfoley.xyz/rust-compile-speed-tips/)
+has a good summary on ways to speed up compilation of Rust projects.
 
 ## Tips and Traps
 
@@ -34,6 +38,8 @@ Tags: Computer Science, programming, Rust, build, cache, Cargo, Cachepot, Rust C
     for rust/cargo projects with sensible defaults.
 
 ## References
+
+- [Improve Rust compile times with sccache](https://www.bitfalter.com/rust-development-environment-improvements)
 
 - [Speed up Rust Builds with Cachepot](https://kflansburg.com/posts/rust-cachepot/)
 

@@ -5,7 +5,7 @@ Slug: tips-on-cargo
 Title: Tips on Cargo
 Category: Computer Science
 Tags: Computer Science, programming, Rust, cargo, format, fmt, rustfmt
-Modified: 2022-04-12 08:50:41
+Modified: 2022-06-05 22:05:42
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -61,6 +61,10 @@ please refer to
     cargo test test_mod::inner_mod::name_of_test_fun
 
     cargo test --release 
+
+Report the execution time of each test case.
+
+    cargo test -- -Zunstable-options --report-time
 
 If building the project with optimization is not too slow, 
 it is suggested that your turn on optimization for the test profile 

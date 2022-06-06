@@ -5,7 +5,7 @@ Slug: install-gnu-utils-using-homebrew
 Title: Install GNU Utils Using Homebrew
 Category: OS
 Tags: macOS, Homebrew, GNU
-Modified: 2021-08-09 01:23:37
+Modified: 2022-06-06 13:33:09
 
 
 Installing GNU tools is a way to try to get Linux command experience in macOS. 

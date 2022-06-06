@@ -5,7 +5,7 @@ Title: Install Packages Using Homebrew on macOS and Linux
 Slug: homebrew-tips
 Category: Software
 Tags: software, Homebrew, macOS, Linuxbrew
-Modified: 2022-04-13 09:32:58
+Modified: 2022-06-06 13:33:09
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -15,6 +15,16 @@ Please read with your own judgement!
 ## [Installation](https://github.com/Homebrew/install)
 
 ### macOS
+
+By default,
+Homebrew is installed to the location `/opt/homebrew`.
+You can add the command `brew` into $PATH
+by adding the following configuration into your shell configuration 
+(e.g., `.bashrc` for bash)
+.
+
+    :::bash
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ### Linux
 

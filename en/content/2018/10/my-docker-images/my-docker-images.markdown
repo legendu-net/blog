@@ -5,7 +5,7 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2022-05-30 10:16:13
+Modified: 2022-06-06 12:46:52
 
 ## Tips
 
@@ -498,4 +498,15 @@ in the GitHub repository
 
 ## Known Issues 
 
-There are no known issues at this time.
+1. NeoVim fails to work 
+    if a Docker image (with NeoVim installed) is run on Mac with the M1 chip
+    even if you pass the option `--platform linux/amd64` to `docker run`.
+    A possible fix is to manually uninstall NeoVim using the following command
+
+        :::bash
+        wajig purge neovim
+
+    and then install Vim instead.
+        
+        :::bash
+        wajig install vim

@@ -331,7 +331,7 @@ def exec_notebook(bloger, args):
 def format_notebook(bloger, args):
     _resolve_files(args)
     if args.files:
-        dsutil.jupyter.format_notebook(args.files)
+        aiutil.jupyter.format_notebook(args.files, style_file=args.yapf_config)
 
 
 def _subparse_format_notebook(subparsers):
@@ -345,6 +345,12 @@ def _subparse_format_notebook(subparsers):
     option_indexes(subparser_format_notebook)
     option_files(subparser_format_notebook)
     option_all(subparser_format_notebook)
+    subparser_format_notebook.add_argument(
+        "--yapf-config",
+        dest="yapf_config",
+        default="",
+        help="The configuration file to use for yapf."
+    )
     subparser_format_notebook.set_defaults(func=format_notebook)
 
 

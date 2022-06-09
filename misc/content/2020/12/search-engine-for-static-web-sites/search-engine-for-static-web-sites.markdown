@@ -5,7 +5,7 @@ Slug: search-engine-for-static-web-sites
 Title: Search Engine for Static Web Sites
 Category: Computer Science
 Tags: Computer Science, search engine, search, static, web, client, frontend
-Modified: 2021-05-03 10:23:35
+Modified: 2022-06-09 09:01:58
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -17,6 +17,10 @@ Below is a list of search engines which run on the client side.
 ## [tinysearch](https://github.com/tinysearch/tinysearch)
 
 Tiny, full-text search engine for static websites built with Rust and Wasm.
+
+## [stork](https://github.com/jameslittle230/stork)
+
+Stork is a library for creating beautiful, fast, and accurate full-text search interfaces on the web.
 
 ## [lunr.js](https://github.com/olivernn/lunr.js)
 

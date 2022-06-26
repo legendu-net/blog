@@ -1,0 +1,185 @@
+Status: published
+Author: Ben Chuanlong Du
+Date: 2014-03-22 14:23:43
+Title: Tips on Housing
+Slug: housing-tips
+Category: Life
+Tags: life, housing, tips, rent, apartment, shopping
+Modified: 2022-06-13 08:41:16
+
+**
+Things on this page are fragmentary and immature notes/thoughts of the author. 
+Please read with your own judgement!
+**
+ 
+## Rent an Apartment
+
+### Fees 
+
+#### Utilities
+
+1. Which utilities are included in the rent? Water, electric, trash, etc.
+
+2. administration fee, application fee? I hate these fees.
+
+2. Facing which direction?
+
+- South is probably the best, especially the sun room
+
+    
+3. Internet
+
+    - everyone claims their internet speed is fast
+    - TV cable is usually faster than phone cable
+    - ask for the name of internet supplier
+    - Century Link is very bad, slow, limited services
+    - Time Warner Cable is bad
+
+### Facilities
+
+- Garage (In states where the winter is long and fierce, it is better get a garage.)
+
+- Laundry (Some apartments do not have a laundry room which is not convenient.)
+
+- Gym
+
+- Trash (get clear about where the trash can is and how to dispose trash)
+
+- sink (make sure it works, try it!, some sink might be clogged)
+
+- disposal (make sure there is disposal in the kitchen, some kitchen especially in cities don't have one)
+
+## Appliances
+
+- microwave
+
+5. Floor
+    - Generally higher floor is more quiet
+    - higher floor is safer (security, flood, etc) and ususally cleaner (less bugs, etc.)
+
+### Safety
+
+1. Gated Community or Not
+
+    - Gated is safer though not convenient for driving
+
+## Furnitures
+
+1. Coffee table, some can adjust height and convenient to put a laptop on it when watching TV
+
+
+### Location
+
+#### Quiet or Not
+
+- too close to noisy road?
+
+- too close to airport?
+
+- too close to a pulic facility?
+
+- big apartment? smaller is usually more quiet
+
+- higher level is usually more quiet
+
+1. Is the house in or close to woods? If so, there might be many bugs especially in southern states.
+
+2. If a house/apartment is too close to a highway/subway, 
+it might be too noisy.
+From my experience, 
+two blocks (vertical distance) from the subway is acceptable.
+
+3. Close to restaurant, shoppings, gym or not
+
+4. How old is the apartment?
+
+## Housing
+
+1. whether it is a new house or not and facilitaties
+
+2. radiation, etc., whether it is close to any high vol electric wires
+
+3. whether it is close to a busy road, better not, if so, any stop signs
+
+4. Safe or not, neighbours, etc.
+
+## Misc
+
+1. Never flush things except water down the sink. 
+If you really have to flush things, 
+use the toilet to flush it.
+
+## Shopping for Housing 
+
+### Good Shopping Sites
+
+- [DealMoon - Housing & Living](https://www.dealmoon.com/guide/cate/11)
+
+- [Shopping At Homedepot](https://www.legendu.net/misc/blog/shop-at-homedepot/)
+
+### Human Ergonomics
+
+- Seat Cushion
+
+    - https://www.amazon.com/massage-seat-cushion/s?k=massage+seat+cushion  
+
+    - https://www.amazon.com/Seat-Cushion-Pillow-Office-Chair/dp/B07HD8B9SP?th=1  
+
+    - https://www.bestproductsreviews.com/butt-cushion?targetid=dsa-437115340933&matchtype=&device=c&campaignid=13697721320&creative=530350157976&adgroupid=132788019068&feeditemid=&loc_physical_ms=9033255&loc_interest_ms=&network=g&devicemodel=&placement=&keyword=$&target=&aceid=&adposition=&trackid=us_all_top_1_1&mId=407-132-4411&trackOld=true&gclid=Cj0KCQjw1tGUBhDXARIsAIJx01nWEMfZIYEZtIw0TXaHO5FEaPmVXiQqDfbk_YH47SRZLnanGjcOzMkaApuiEALw_wcB  
+
+### Electronical
+
+- Backup Battery
+
+    - https://generark.com/products/homepower2?variant=40210280808639
+
+    - https://generark.com/products/homepower-one?currency=USD&variant=40698021281983&utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping&gclid=CjwKCAjws8yUBhA1EiwAi_tpEa-AzzgC7m0ocrDpVZtxNP3mvhAHnx41iuCwhPCI1YzS_D8at6ebWhoCwRQQAvD_BwE
+
+- Type C Male to Magsafe 2/1 5Pin Female Power Adapter Converter
+
+    - https://www.aliexpress.com/item/2255801066564841.html?spm=a2g0o.cart.0.0.5ae138da7BM2Nh&gps-id=shoppingCartRecommend&scm=1007.13440.276583.0&scm_id=1007.13440.276583.0&scm-url=1007.13440.276583.0&pvid=016a108c-196b-44db-86ba-df3b33c22840&_t=gps-id:shoppingCartRecommend,scm-url:1007.13440.276583.0,pvid:016a108c-196b-44db-86ba-df3b33c22840,tpp_buckets:668%232846%238115%232000&pdp_ext_f=%7B%22sku_id%22%3A%2210000015479728498%22%2C%22sceneId%22%3A%223440%22%7D&pdp_npi=2%40dis%21USD%21%2118.89%21%21%21%21%21%402101d1b316549731428703580ee2a3%2110000015479728498%21rec  
+
+    - https://www.aliexpress.com/item/3256803586300334.html?spm=a2g0o.cart.0.0.5ae138da7BM2Nh&gps-id=shoppingCartRecommend&scm=1007.13440.276583.0&scm_id=1007.13440.276583.0&scm-url=1007.13440.276583.0&pvid=016a108c-196b-44db-86ba-df3b33c22840&_t=gps-id:shoppingCartRecommend,scm-url:1007.13440.276583.0,pvid:016a108c-196b-44db-86ba-df3b33c22840,tpp_buckets:668%232846%238115%232000&pdp_ext_f=%7B%22sku_id%22%3A%2212000027113029254%22%2C%22sceneId%22%3A%223440%22%7D&pdp_npi=2%40dis%21USD%21%218.64%21%21%21%21%21%402101d1b316549731428703580ee2a3%2112000027113029254%21rec  
+
+    - https://www.aliexpress.com/item/3256802039800830.html?spm=a2g0o.cart.0.0.5ae138da7BM2Nh&gps-id=shoppingCartRecommend&scm=1007.13440.276583.0&scm_id=1007.13440.276583.0&scm-url=1007.13440.276583.0&pvid=016a108c-196b-44db-86ba-df3b33c22840&_t=gps-id:shoppingCartRecommend,scm-url:1007.13440.276583.0,pvid:016a108c-196b-44db-86ba-df3b33c22840,tpp_buckets:668%232846%238115%232000&pdp_ext_f=%7B%22sku_id%22%3A%2212000019430584032%22%2C%22sceneId%22%3A%223440%22%7D&pdp_npi=2%40dis%21USD%21%2121.55%21%21%21%21%21%402101d1b316549731428703580ee2a3%2112000019430584032%21rec  
+
+- [暗盒修复器](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220528221640&SearchText=%E6%9A%97%E7%9B%92%E4%BF%AE%E5%A4%8D%E5%99%A8&spm=a2g0o.productlist.1000002.0)
+
+### Pest & Animal Control
+
+- https://www.amazon.com/EcoClear-Products-620101-All-Natural-Non-Toxic/dp/B00RU6YHJW/ref=sr_1_22?dchild=1&keywords=rat+dehydration&qid=1626710097&sr=8-22
+
+- https://www.amazon.com/Eaton-704-AP-Anticoagulant-Flavor-rodenticide/dp/B07GBQKLWZ/ref=sr_1_35?dchild=1&keywords=rat+dehydration&qid=1626710097&sr=8-35
+
+### Kitchen & Bathroom 
+
+- Adjustable Water Tap Extension
+
+    - [水龙头延伸器](https://www.taobao.com/list/item/644116039039.htm?spm=a21wu.10013406.taglist-content.3)
+
+    - [360 Degree Adjustable Water Tap Extension Filter Shower Bathroom Faucet Extender Water Saving Splash-proof Kitchen Accessories](https://www.aliexpress.com/item/3256801830482715.html?ug_edm_item_id=3256801830482715&pdp_npi=2%40dis%21USD%21US%20%242.98%21US%20%242.09%21%21%21%21%21%40214120dd16536319322175611d6e12%21%21edm&edm_click_module=alg_products&tracelog=rowan&rowan_id1=aeug_edm_24677_1_en_US_2022-05-26&rowan_msg_id=6846biz_pay_after_purchase:0:0_571776534$fca08cf84c854af68a5e761db1358a29&ck=in_edm_other)
+
+    - [水龙头万向延长管](https://www.taobao.com/list/item/671978900714.htm?spm=a21wu.12321156.recommend-tpp.2)
+
+- Deodorant Drain Core Toilet Bathroom Floor Drainer Inner Core Sewer Pest Control Silicone Anti-odor Artifact Water Seal No Smell
+
+    - https://www.aliexpress.com/item/3256802372457960.html?ug_edm_item_id=3256802372457960&pdp_npi=2%40dis%21USD%21US%20%241.98%21US%20%241.54%21%21%21%21%21%40214120dd16536319322175611d6e12%21%21edm&edm_click_module=alg_products&tracelog=rowan&rowan_id1=aeug_edm_24677_1_en_US_2022-05-26&rowan_msg_id=6846biz_pay_after_purchase:0:0_571776534$fca08cf84c854af68a5e761db1358a29&ck=in_edm_other  
+
+- [管道疏通器](https://www.taobao.com/list/item/45128283973.htm?spm=a21wu.10013406.taglist-content.25)
+
+### Misc
+
+- [隔板托](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220528221123&SearchText=%E9%9A%94%E6%9D%BF%E6%89%98&spm=a2g0o.home.1000002.0)
+
+- [柜门修复板](https://www.aliexpress.com/item/3256802915471215.html?spm=a2g0o.productlist.0.0.26da1f4fCWSFGy&algo_pvid=4d650380-d46d-4039-8d2e-5e01d362f5cc&algo_exp_id=4d650380-d46d-4039-8d2e-5e01d362f5cc-8&pdp_ext_f=%7B%22sku_id%22%3A%2212000024093936846%22%7D&pdp_npi=2%40dis%21USD%21%211.85%21%21%21%21%21%402101e9ce16538047992661761e8079%2112000024093936846%21sea)
+
+- [门吸铁石](https://www.aliexpress.com/wholesale?catId=0&initiative_id=AS_20220528221427&SearchText=%E9%97%A8%E5%90%B8%E9%93%81%E7%9F%B3&spm=a2g0o.productlist.1000002.0)
+
+- [雪花扳手](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220528221525&SearchText=%E9%9B%AA%E8%8A%B1%E6%89%B3%E6%89%8B&spm=a2g0o.productlist.1000002.0)
+
+- [防撞颗粒](https://www.taobao.com/list/product/%E9%9D%99%E9%9F%B3%E9%98%B2%E6%92%9E%E9%A2%97%E7%B2%92.htm)
+
+- [开关防水盒](https://www.taobao.com/list/product/%E5%BC%80%E5%85%B3%E9%98%B2%E6%B0%B4%E7%9B%92.htm?spm=a21wu.10013406-global.searchbar.d_2_searchbox)
+
+- [密封胶泥](https://www.taobao.com/list/product/%E5%AF%86%E5%B0%81%E8%83%B6%E6%B3%A5.htm?spm=a21wu.10013406-global.searchbar.d_2_searchbox)
+

@@ -1,0 +1,28 @@
+---
+_11_highcard:
+  - - 9d
+    - 8d Ah 3c 2s 7h
+    - 2c Kc Qc Jc Tc
+    - .nan
+  - - 2j
+    - 8d Qs 3c 2s 7h
+    - 2c Kc Qc Jc Tc
+    - .nan
+_11_other:
+  - - Ac
+    - 6d 5c 3c 2s 3j
+    - Qc Jh Td 9d 2j
+    - .nan
+  - - 2j
+    - 8d 6h 5c 4s 7h
+    - 2c Kc Qc Jc Tc
+    - .nan
+_11_pair:
+  - - Ac
+    - Td 5c 3c 2s Th
+    - Qc Jh Ts 9d 2j
+    - .nan
+  - - Ac
+    - 5d 5c 3c 2s Th
+    - Qc Jh Ts 9d 2j
+    - .nan

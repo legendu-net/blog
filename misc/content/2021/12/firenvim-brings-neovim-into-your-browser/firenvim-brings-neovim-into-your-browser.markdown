@@ -1,0 +1,64 @@
+Status: published
+Date: 2021-12-04 20:03:49
+Modified: 2022-05-29 14:52:29
+Author: Benjamin Du
+Slug: firenvim-brings-neovim-into-your-browser
+Title: FireNVim Brings NeoVim into Your Browser
+Category: Computer Science
+Tags: Computer Science, Vim, NeoVim, FireNVim, browser
+
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## Installation 
+
+1. Install NeoVim and SpaceVim.
+
+        :::bash
+        xinstall nvim -ic
+        xinstall svim -ic
+
+2. Install the FireNVim plugin for your browser.
+
+3. Run the command `nvim` 
+    and then inside NeoVim run the command `:call firenvim#install(0)`.
+
+The above installation configures FireNVim to never automatially prompt up.
+You have to manually bring it up 
+using the shortcut `Ctrl + e` (Linux and Windows) 
+or `Command + e`  (macOS)
+.
+In case it doesn't work,
+please refer to
+[Trouble Shooting Firenvim](https://github.com/glacambre/firenvim/blob/master/TROUBLESHOOTING.md#troubleshooting-firenvim)
+for instructions on how to trouble shoot it.
+
+## Font Size 
+
+Use the following command to adjust font and its size.
+
+    :::vim
+    :set guifont=Monaco:h16
+
+Use the following commands to adjust the frame size for editing.
+
+    :::vim
+    :set lines=80 
+    :set columns=100 
+
+## Troubleshooting
+
+### Disable Hardware Acceleration
+
+`:set lines=30` is very slow due to hardware acceleration in browsers.
+Disabling hardware acceleration helps.
+Please refer to
+[How to Turn Hardware Acceleration On and Off in Chrome](https://www.howtogeek.com/412738/how-to-turn-hardware-acceleration-on-and-off-in-chrome/)
+and
+[Hardware acceleration and WindowBlinds causes Firefox to crash](https://support.mozilla.org/en-US/kb/hardware-acceleration-and-windowblinds-crash)
+on how to disable hardware acceleration in Chrome and Firefox.
+
+## References 
+
+[Firenvim: Neovim inside Your Browser](https://jdhao.github.io/2020/01/01/firenvim_nvim_inside_browser/)
+
+[firenvim](https://github.com/glacambre/firenvim)

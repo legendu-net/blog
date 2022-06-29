@@ -3,6 +3,7 @@ core.*
 .blogger.sqlite3-journal
 *.pyc
 *.swp
+*.swo
 log
 *.log
 .ipynb_checkpoints/

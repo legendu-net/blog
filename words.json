@@ -101,6 +101,7 @@
     ["namedtuple", "namedtuple"],
     ["Pdfplumber", "pdfplumber"], ["Pandas_Udf", "pandas_udf"],
     ["Rule-Based", "Rule-based"], ["Rustpython", "RustPython"],
+    ["Serde-Yaml", "serde-yaml"],
     ["Teamviewer", "TeamViewer"], ["Tensorflow", "TensorFlow"], ["Typescript", "TypeScript"],
     ["Virtualbox", "VirtualBox"],
     ["IJavascript", "IJavaScript"], ["Itypescript", "ITypeScript"], 

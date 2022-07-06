@@ -1,14 +1,16 @@
 Status: published
 Date: 2022-05-21 21:35:27
-Modified: 2022-05-29 22:19:53
+Modified: 2022-07-06 07:38:17
 Author: Benjamin Du
 Slug: shopping-smartly
 Title: Shopping Smartly
 Category: Life
-Tags: Life, shopping, CamelCamelCamel, DealMoon, Homedepot, Costco, SlickDeals, deal, alert
+Tags: Life, shop, shopping, smart, smartly, CamelCamelCamel, DealMoon, Homedepot, Costco, SlickDeals, deal, alert
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+
+[CapitalOne Shopping](https://capitaloneshopping.com/)
 
 [CamelCamelCamel - Amazon Price Tracker](https://camelcamelcamel.com/)
 

@@ -5,7 +5,7 @@ Slug: data-sources
 Title: Data Sources
 Category: AI
 Tags: AI, machine learning, data, resource, financial data
-Modified: 2022-05-08 16:53:51
+Modified: 2022-07-05 22:03:13
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -29,6 +29,8 @@ https://proxycrawl.com
 ## [Data for Learning to Rank](http://www.legendu.net/misc/blog/data-for-learning-to-rank)
 
 ## [Financial Data](http://www.legendu.net/misc/blog/financial-data)
+
+## [Curated Datasets @ Observable](https://observablehq.com/@observablehq/curated-datasets)
 
 ## Education
 

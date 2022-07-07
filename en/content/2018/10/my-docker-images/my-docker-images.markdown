@@ -5,7 +5,7 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2022-06-12 11:07:07
+Modified: 2022-07-06 09:23:45
 
 ## Tips
 
@@ -135,7 +135,8 @@ and mounts the current working directory and `/home` on the host machine
 to `/workdir` and `/home_host` in the container respectively.
 
     :::bash
-    docker run -d \
+    docker run -d --init \
+        --platform linux/amd64 \
         --hostname jupyterhub-ds \
         --log-opt max-size=50m \
         -p 8000:8000 \
@@ -153,7 +154,8 @@ The following command (only works on Linux) does the same as the above one
 except that it limits the use of CPU and memory.
 
     :::bash
-    docker run -d \
+    docker run -d --init \
+        --platform linux/amd64 \
         --name jupyterhub-ds \
         --log-opt max-size=50m \
         --memory=$(($(head -n 1 /proc/meminfo | awk '{print $2}') * 4 / 5))k \

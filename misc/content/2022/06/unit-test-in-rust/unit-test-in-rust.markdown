@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-06-16 15:34:08
-Modified: 2022-06-16 15:34:08
+Modified: 2022-07-07 22:10:52
 Author: Benjamin Du
 Slug: unit-test-in-rust
 Title: Unit Test in Rust
@@ -49,6 +49,21 @@ Assert an Option value is Some(v).
     assert_eq!(an_option_value.unwrap(), v)
 
 ## Setup and Teardown
+
+[How to run setup code before any tests run in Rust?](https://stackoverflow.com/questions/58006033/how-to-run-setup-code-before-any-tests-run-in-rust)
+
+There's nothing built-in that would do this but this should help (you will need to call initialize() in the beginning of every test):
+
+    :::Rust
+    use std::sync::Once;
+
+    static INIT: Once = Once::new();
+
+    pub fn initialize() {
+        INIT.call_once(|| {
+            // initialization code here
+        });
+    }
 
 [Test setup and teardown in Rust without a framework.](https://medium.com/@ericdreichert/test-setup-and-teardown-in-rust-without-a-framework-ba32d97aa5ab)
 

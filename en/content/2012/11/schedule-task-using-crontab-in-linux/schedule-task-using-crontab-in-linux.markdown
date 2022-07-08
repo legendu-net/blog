@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Title: Schedule Task Using Cron in Linux
 Category: OS
 Tags: task, crontab, schedule, linux, scheduling, AirFlow
-Modified: 2021-11-22 10:39:22
+Modified: 2022-07-07 22:08:14
 
 
 Note: Cron is great for simple scheduling requests. 
@@ -114,6 +114,19 @@ you can install it using the following command (on Ubuntu).
 
         5   *   *     *     *     /home/dclong/schedule.sh >> /home/dclong/cron.log 2> &1
 
+3. Run a command at 22:00 on the 1st day of every month. 
+
+        0   22  1     *     *     command_to_run
+
+4. There is no intrinsic way to run commands weekly using cron. 
+    One way to approximate that is to run a command multiple times per month.
+    For example, 
+    the setup below runs a command at 22:00 on the 1st and 15th day of every month
+    (biweekly approximately)
+    .
+
+        0   22  1,15     *     *     command_to_run
+
 ## Start a Crontab Service on Ubuntu
 
 ```
@@ -135,6 +148,8 @@ sudo cat /var/log/syslog | grep cron
 ## References
 
 - [crontab guru](https://crontab.guru/)
+
+- [How to Run a cron Job Every Two Weeks / Months / Days](https://www.systutorials.com/how-to-run-a-cron-job-every-two-weeks-months-days/)
 
 - https://stackoverflow.com/questions/18919151/crontab-day-of-the-week-syntax
 

@@ -18,6 +18,10 @@ Tags: Computer Science, programming, Rust, bench, benchmark, cargo, cargo-bench,
 
 1. can only benchmark public functions/methods
 
+2. Criterion.rs supports the same filtering behavior that the standard-library testing and benchmarking tools support, 
+    so you should be able to just run `cargo bench NAME` 
+    and it will only run benchmarks with "NAME" in the benchmark name or function name.
+
 ## References
 
 - [criterion](https://crates.io/crates/criterion)

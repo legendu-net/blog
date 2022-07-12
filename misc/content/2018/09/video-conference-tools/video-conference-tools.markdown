@@ -5,7 +5,7 @@ Slug: video-conference-tools
 Title: Video Conference Tools
 Category: Software
 Tags: software, video conference, Slack, meeting, Skype, Zoom
-Modified: 2021-11-18 19:57:25
+Modified: 2022-07-11 16:56:40
 
 **
 Things on this page are
@@ -15,7 +15,13 @@ Please read with your own judgement!
 
 1. Zoom
 
-Best choice
+Best choice for enterprise.
+However,
+Zoom provides only 40-minute meetings for the "Free" plan.
+
+2. Microsoft Teams
+
+A great choice.
 
 2. Slack
 

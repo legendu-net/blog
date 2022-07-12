@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-12-24 09:50:50
-Modified: 2022-01-29 23:46:21
+Modified: 2022-07-11 17:09:37
 Author: Benjamin Du
 Slug: rust-async-multithreading-parallel
 Title: Async, Multithreading and Parallel Computing in Rust

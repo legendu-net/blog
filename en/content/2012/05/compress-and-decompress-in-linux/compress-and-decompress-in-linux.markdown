@@ -50,7 +50,7 @@ dtrx file_name
         :::bash
         tar -zcvf archive_name.tar.gz --exclude='abc' --exclude='xyz' /path/to/file_or_dir
 
-## .gz
+## gz
 
 ```bash
 # decompress

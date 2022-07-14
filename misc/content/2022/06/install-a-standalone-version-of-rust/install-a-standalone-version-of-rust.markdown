@@ -1,9 +1,9 @@
 Status: published
 Date: 2022-06-02 15:21:12
-Modified: 2022-06-02 16:52:30
+Modified: 2022-07-13 18:08:50
 Author: Benjamin Du
-Slug: install-a-standalone-version-of-rust
-Title: Install a Standalone Version of Rust in Linux
+Slug: install-rust-globally
+Title: Install Rust Globally in Linux
 Category: Computer Science
 Tags: Computer Science, programming, Rust, standalone, Linux, rust-src
 
@@ -25,7 +25,20 @@ Taking Ubuntu 22.04 as example,
 the above comamnd installs Rust 1.58.1 
 while the latest stable Rust version is 1.61.0 as of May 2022.
 
-## Install a Standalone Rust Manually
+## Using Environment Variable + rustup 
+
+By default,
+rustup installs Rust locally.
+However,
+you can configure environment variables to install Rust globally.
+
+    :::bash
+    export RUSTUP_HOME=/usr/local/rustup
+    export CARGO_HOME=/usr/local/cargo
+    export PATH=/usr/local/cargo/bin:$PATH
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+## Manually Install Rust Globally
 
 1. Download Rust.
 

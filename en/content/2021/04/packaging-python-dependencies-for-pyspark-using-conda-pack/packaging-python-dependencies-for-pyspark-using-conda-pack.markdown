@@ -2,7 +2,7 @@ Status: published
 Date: 2021-04-30 12:13:17
 Author: Benjamin Du
 Slug: packaging-python-dependencies-for-pyspark-using-conda-pack
-Title: Packaging Python Dependencies for PySpark Using Conda-Pack
+Title: Packaging Python Dependencies for PySpark Using conda-pack
 Category: Computer Science
 Tags: programming, PySpark, Python, conda, conda-pack, dependency, Spark, big data, portable
 Modified: 2021-07-18 22:12:43

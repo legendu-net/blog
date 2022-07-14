@@ -5,7 +5,7 @@ Slug: conda-tips
 Title: Tips on Conda
 Category: Computer Science
 Tags: programming, Python, conda, tips, Anaconda Python
-Modified: 2020-06-22 09:36:27
+Modified: 2022-07-13 17:25:10
 
 **
 Things on this page are
@@ -40,6 +40,11 @@ Create a conda virtual environment with Python 3.7, numpy, pandas and scikit-lea
 
     :::bash
     conda create -n myenv python=3.7 numpy pandas scikit-learn
+    
+Create a conda virtual environment from a YAML configuration file.
+
+    :::bash
+    conda env create -n myenv --file myenv.yml
 
 If you have issues creating a conda virtual environment 
 (e.g., due to package not found in the current conda channel),

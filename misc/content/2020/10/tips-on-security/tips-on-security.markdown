@@ -5,7 +5,7 @@ Slug: tips-on-security
 Title: Tips on Security
 Category: Computer Science
 Tags: Computer Science, security, NVD, vulnerability, data breach, Shodan
-Modified: 2022-05-28 22:59:10
+Modified: 2022-07-14 22:40:20
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -39,3 +39,5 @@ https://www.oreilly.com/library/view/ceh-certified-ethical/9781260454567/
 ## References 
 
 https://dzone.com/articles/proxychains-anonsurf-and-macchanger-enhance-your-a
+
+- [System Design: How to store passwords in the database?](https://www.youtube.com/watch?v=zt8Cocdy15c)

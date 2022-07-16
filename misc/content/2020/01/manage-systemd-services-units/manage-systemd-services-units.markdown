@@ -1,6 +1,6 @@
 Status: published
 Date: 2020-01-24 10:37:18
-Modified: 2022-05-28 10:47:02
+Modified: 2022-07-16 12:45:06
 Author: Benjamin Du
 Slug: manage-systemd-services-units
 Title: Manage systemd Services and Units
@@ -40,23 +40,30 @@ Please read with your own judgement!
 1. bluetooth
 
         :::bash
-        systemctl disable bluetooth
+        sudo systemctl disable bluetooth
 
 2. openvpn
 
         :::bash
-        systemctl disable openvpn
+        sudo systemctl disable openvpn
 
 3. virtualbox
 
         :::bash
-        systemctl disable virtualbox
+        sudo systemctl disable virtualbox
 
 
 4. packagekit
 
         :::bash
-        systemctl disable packagekit
+        sudo systemctl mask packagekit
+
+    Notice that subcommand `systemctl mask` (instead of `systemctl disable`) is used
+    as `systemctl disable` does not work in this case.
+    For the difference between `systemctl disable` and `systemctl mask`,
+    please refer to
+    [What is the difference between "systemctl mask" and "systemctl disable"?](https://askubuntu.com/questions/816285/what-is-the-difference-between-systemctl-mask-and-systemctl-disable)
+    .
 
 ### Controversial Ones
 
@@ -75,3 +82,5 @@ Please read with your own judgement!
 - [Convenient way to check if system is using systemd or sysvinit in BASH? [duplicate]](https://unix.stackexchange.com/questions/121654/convenient-way-to-check-if-system-is-using-systemd-or-sysvinit-in-bash)
 
 - [How To Use Systemctl to Manage Systemd Services and Units](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units)
+
+- [What is the difference between "systemctl mask" and "systemctl disable"?](https://askubuntu.com/questions/816285/what-is-the-difference-between-systemctl-mask-and-systemctl-disable)

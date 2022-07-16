@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-12-04 20:03:49
-Modified: 2022-05-29 14:52:29
+Modified: 2022-07-16 15:57:17
 Author: Benjamin Du
 Slug: firenvim-brings-neovim-into-your-browser
 Title: FireNVim Brings NeoVim into Your Browser
@@ -31,6 +31,10 @@ In case it doesn't work,
 please refer to
 [Trouble Shooting Firenvim](https://github.com/glacambre/firenvim/blob/master/TROUBLESHOOTING.md#troubleshooting-firenvim)
 for instructions on how to trouble shoot it.
+<span style="color:red">
+Note: If you update the FireNVim plugin for your browser to a newer version,
+you will also have to repeat step 2 above.
+</span>
 
 ## Font Size 
 

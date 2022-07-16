@@ -5,7 +5,7 @@ Slug: curl-tips
 Title: Tips on cURL and Wget
 Category: Software
 Tags: tips, cURL, downloading, web, wget
-Modified: 2020-01-26 13:02:55
+Modified: 2022-07-15 22:37:28
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -53,7 +53,7 @@ This way is preferred if your command/script does not have other dependencies wh
 1. Get redirected URL.
 
         :::bash
-        curl -sSL -o /dev/null -w %{url_effective} https://github.com/dclong/dsutil/releases/latest
+        curl -sSL -o /dev/null -w %{url_effective} https://github.com/legendu-net/icon/releases/latest
 
 2. Use browser cookie.
 
@@ -173,4 +173,6 @@ Download all contents except HTML files under the link.
 
 ## References
 
-https://stackoverflow.com/questions/9445489/performing-http-requests-with-curl-using-proxy
+- https://stackoverflow.com/questions/9445489/performing-http-requests-with-curl-using-proxy
+
+- [Get final URL after curl is redirected](https://stackoverflow.com/questions/3074288/get-final-url-after-curl-is-redirected)

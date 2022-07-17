@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-10-26 22:38:20
-Modified: 2022-06-21 00:09:22
+Modified: 2022-07-17 00:38:23
 Author: Benjamin Du
 Slug: benchmark-a-rust-app
 Title: Benchmark a Rust App
@@ -21,6 +21,11 @@ Tags: Computer Science, programming, Rust, bench, benchmark, cargo, cargo-bench,
 2. Criterion.rs supports the same filtering behavior that the standard-library testing and benchmarking tools support, 
     so you should be able to just run `cargo bench NAME` 
     and it will only run benchmarks with "NAME" in the benchmark name or function name.
+
+## Iai
+[Iai](https://crates.io/crates/iai)
+is an experimental benchmarking harness 
+that uses Cachegrind to perform extremely precise single-shot measurements of Rust code.
 
 ## References
 

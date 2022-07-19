@@ -2,7 +2,7 @@ Status: published
 Date: 2022-07-11 16:57:55
 Modified: 2022-07-11 16:57:55
 Author: Benjamin Du
-Slug: garbage-collection-for-rust
+Slug: garbage-collection-memory-management-for-rust
 Title: Garbage Collection for Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, concurrent, data structure, epoch, GC, garbage collection
@@ -17,8 +17,24 @@ The
 crate 
 provides epoch-based garbage collection for building concurrent data structures.
 
+## [bumpalo](https://crates.io/crates/bumpalo)
+[bumpalo](https://crates.io/crates/bumpalo)
+is a fast bump allocation arena for Rust.
+Bump allocation is a fast, but limited approach to allocation. We have a chunk of memory, and we maintain a pointer within that memory. Whenever we allocate an object, we do a quick check that we have enough capacity left in our chunk to allocate the object and then update the pointer by the object's size. That's it!
+
+## [sharded-slab](https://crates.io/crates/sharded-slab)
+[sharded-slab](https://crates.io/crates/sharded-slab)
+is a lock-free concurrent slab.
+Slabs provide pre-allocated storage for many instances of a single data type. When a large number of values of a single type are required, this can be more efficient than allocating each item individually. Since the allocated items are the same size, memory fragmentation is reduced, and creating and removing new items can be very cheap.
+
+## [slab](https://crates.io/crates/slab)
+[slab](https://crates.io/crates/slab)
+provides pre-allocated storage for a uniform data type.
+
 
 ## References 
+
+- [Rust Crates - Memory Management Related](https://crates.io/categories/memory-management?sort=downloads)
 
 - [[KAIST CS492C, 2020 Fall] Safe Memory Reclamation (crossbeam-epoch)](https://www.youtube.com/watch?v=rL9Z8eQEgek)
 

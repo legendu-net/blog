@@ -18,3 +18,5 @@ Tags: Virtual Machine, Cygwin, MobaXterm, VirtualBox, Linux Emulation
 
 3. Cygwin, MobaXterm, etc. are outdated 
     as WSL 2 is an integrated solution in Windows 10+.
+
+[x86 Virtualization in Browser](https://copy.sh/v86/)

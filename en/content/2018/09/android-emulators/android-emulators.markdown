@@ -195,3 +195,5 @@ related to mobile website testing and Android project.
 - [Android Emulators @ GameTechWiki](https://emulation.gametechwiki.com/index.php/Android_emulators)
 
 - [Tips on Virtualbox](http://www.legendu.net/misc/blog/virtualbox-tip)
+
+- [x86 Virtualization in Browser](https://copy.sh/v86/)

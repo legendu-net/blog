@@ -23,6 +23,9 @@ and when to use them.
 
 ## Third-party Collections and Related Tools
 
+- [heapless](https://crates.io/crates/heapless)
+    provides `static` friendly data structures that don't require dynamic memory allocation.
+
 - [dashmap](https://crates.io/crates/dashmap)
     is a blazing fast concurrent HashMap for Rust.
 

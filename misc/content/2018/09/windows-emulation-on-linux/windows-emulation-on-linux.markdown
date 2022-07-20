@@ -43,4 +43,6 @@ please refer to
 
 ## References 
 
+- [x86 Virtualization in Browser](https://copy.sh/v86/)
+
 - [Windows Emulation Using WINE](http://www.legendu.net/misc/blog/wine-tips)

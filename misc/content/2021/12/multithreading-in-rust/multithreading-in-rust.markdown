@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-12-24 09:50:50
-Modified: 2022-07-11 17:09:37
+Modified: 2022-07-18 16:53:54
 Author: Benjamin Du
 Slug: rust-async-multithreading-parallel
 Title: Async, Multithreading and Parallel Computing in Rust
@@ -21,4 +21,13 @@ It is an alternative to std::sync::mpsc with more features and better performanc
 Tokio is a library for async IO operations.
 
 
+
+## [threadpool](https://crates.io/crates/threadpool)
+[threadpool](https://crates.io/crates/threadpool)
+provides a thread pool for running a number of jobs on a fixed set of worker threads.
+
+
+## [scheduled-thread-pool](https://crates.io/crates/scheduled-thread-pool)
+[scheduled-thread-pool](https://crates.io/crates/scheduled-thread-pool)
+provides a thread pool which can schedule execution at a specific delay and repeat it periodically.
 

@@ -4,8 +4,8 @@ Date: 2012-05-19 23:12:07
 Slug: compress-and-decompress-in-linux
 Author: Ben Chuanlong Du
 Category: OS
-Tags: Linux, decompress, compress, archive, split, multiple, zip, tar, gz, bz2, dtrx, rar, 7zip
-Modified: 2020-07-19 23:12:07
+Tags: Linux, decompress, compress, archive, split, multiple, zip, tar, gz, bz2, dtrx, rar, 7zip, zstd
+Modified: 2022-07-21 00:40:33
 
 
 ## Tips and Traps
@@ -16,12 +16,25 @@ Modified: 2020-07-19 23:12:07
     cannot be unzipped correctly in Linux.
     Not sure what happend though. 
 
-## Universal Way
+2. Zstd is currently the best compression/decompression tool.
+    It supports different levels of compression.
+    For a similar compression ratio,
+    it is generally much faster than other compression tools.
 
-```bash
-# decompress
-dtrx file_name
-```
+## tar.zstd
+
+1. Extract archive.
+
+        :::bash
+        tar -I zstd -xvf archive.tar.zst
+
+2. Create an archive. 
+
+        :::bash
+        # max compression
+        tar cf - Dropbox/ | zstd -19 -T0 > Dropbox.tar.zstd
+        # good balance bewteen compression ratio and speed
+        tar cf - Dropbox/ | zstd -9 -T0 > Dropbox.tar.zstd
 
 ## tar.gz or tgz
 
@@ -74,13 +87,6 @@ tar -jxvf archive_name.tar.bz2
 # extract the archive contents to a directory named "exdir"
 tar -jxvf archive_name.tar.bz2 -C exdir
 ```
-
-## tar.zst
-
-1. Extract archive.
-
-        :::bash
-        tar -I zstd -xvf archive.tar.zst
 
 ## zip
 
@@ -190,10 +196,14 @@ split -n 5 -d xp_2.tar.gz xp_2.tar.gz_part
 
 ## References
 
-[18 Tar Command Examples in Linux](https://www.tecmint.com/18-tar-command-examples-in-linux/)
+- [Compression Update: ZSTD & ZLIB](https://indico.cern.ch/event/695984/contributions/2872933/attachments/1590457/2516802/ZSTD_and_ZLIB_Updates_-_January_20186.pdf)
 
-[Exclude Certain Files When Creating A Tarball Using Tar Command](https://www.cyberciti.biz/faq/exclude-certain-files-when-creating-a-tarball-using-tar-command/)
+- [Comparison of Compression Algorithms](https://linuxreviews.org/Comparison_of_Compression_Algorithms)
 
-[6.4 Excluding Some Files](https://www.gnu.org/software/tar/manual/html_node/exclude.html)
+- [18 Tar Command Examples in Linux](https://www.tecmint.com/18-tar-command-examples-in-linux/)
 
-[How to Exclude Files from a Zip Archive](https://osxdaily.com/2013/04/30/how-to-exclude-files-from-a-zip-archive/)
+- [Exclude Certain Files When Creating A Tarball Using Tar Command](https://www.cyberciti.biz/faq/exclude-certain-files-when-creating-a-tarball-using-tar-command/)
+
+- [6.4 Excluding Some Files](https://www.gnu.org/software/tar/manual/html_node/exclude.html)
+
+- [How to Exclude Files from a Zip Archive](https://osxdaily.com/2013/04/30/how-to-exclude-files-from-a-zip-archive/)

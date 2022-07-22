@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-08-08 11:56:50
-Modified: 2021-12-04 18:49:11
+Modified: 2022-07-21 09:42:46
 Author: Benjamin Du
 Slug: tools-with-dark-power
 Title: Tools With Dark Power
@@ -14,7 +14,7 @@ Tags: Computer Science, software, tools, dark, power, hack, hacker, hacking, for
 is a fast, simple, recursive content discovery tool 
 (by forced browsing) written in Rust.
 
-# wget
+## wget
 
     alias wget.site='wget --random-wait -r -p -e robots=off -U mozilla' 
     alias wget.dir='wget -r --no-parent -e robots=off'
@@ -26,4 +26,6 @@ is a fast, simple, recursive content discovery tool
 ## tor
 
 ## wireshark
+
+## [Bypass Paywalls and Limits on Information](https://www.legendu.net/misc/blog/bypass-paywalls-and-limits-on-information/)
 

@@ -5,7 +5,7 @@ Title: Banking Account
 Slug: banking-account-tips
 Category: Life
 Tags: life, business, banking account, checking account, money market account, savings account, BOA
-Modified: 2020-05-22 14:21:04
+Modified: 2022-07-23 19:57:18
 
 **
 Things on this page are
@@ -13,6 +13,9 @@ fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
+## HSBC 
+
+No international transaction fee if you transfer money to another (international) HSBC bank account.
 
 ## BOA
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-07-16 18:37:46
-Modified: 2022-07-18 00:26:49
+Modified: 2022-07-23 19:47:00
 Author: Benjamin Du
 Slug: compress-and-decompress-files-in-rust
 Title: Compress and Decompress Files in Rust
@@ -12,6 +12,20 @@ Tags: Computer Science, programming, Rust, compress, decompress, zip, tar, DEFLA
 Please refer to
 [Rust Crates - Compression Related](https://crates.io/categories/compression?sort=downloads)
 for details.
+It is suggested that you use the Rust crate
+[zstd](https://crates.io/crates/zstd)
+as 
+[Zstandard](https://en.wikipedia.org/wiki/Zstd)
+is the best compression/decompression algorithm currently.
+For more discussions on this,
+please refer to
+[Compress and Decompressing Archives in Linux](http://www.legendu.net/en/blog/compress-and-decompress-in-linux/)
+.
+
+1. [zstd](https://crates.io/crates/zstd)
+  is a rust binding for the 
+  [zstd compression library](https://github.com/facebook/zstd)
+  .
 
 1. [tar](https://crates.io/crates/tar)
     is a Rust implementation of a TAR file reader and writer. 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-05-21 21:35:27
-Modified: 2022-07-06 07:38:17
+Modified: 2022-07-23 19:27:24
 Author: Benjamin Du
 Slug: shopping-smartly
 Title: Shopping Smartly
@@ -19,7 +19,9 @@ Tags: Life, shop, shopping, smart, smartly, CamelCamelCamel, DealMoon, Homedepot
 [Deal Alerts @ SlickDeals](https://slickdeals.net/deal-alerts/)
 
 [AliExpress](AliExpress.com)
-No international transaction fees using Visa credit cards.
+No international transaction fees using Master credit cards.
+
+[eBay Refurbished](https://www.ebay.com/b/Certified-Refurbished/bn_7040708936?_trkparms=%26clkid%3D2259258771560524076)
 
 ## References
 

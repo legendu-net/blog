@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-21 00:36:07
-Modified: 2021-11-21 01:38:29
+Modified: 2022-07-23 21:30:03
 Author: Benjamin Du
 Slug: fast-hashing-algorithms
 Title: Fast Hashing Algorithms
@@ -13,7 +13,14 @@ Tags: Computer Science, programming, hash, hashing, HashMap, modulus, modulo, mu
     integer modulo is a very BAD (in terms of speed) hashing function
     while the multiplicative hashing is a much better alternative.
 
+2. By default, 
+  Rust hash tables use Siphash 1-3, a hash function that is high quality but fairly slow. 
+  In contrast, 
+  the Rust compiler uses as hash function called FxHasher, which is surprisingly simple yet effective.
+
 ## References 
+
+- [A brutally effective hash function in Rust](https://nnethercote.github.io/2021/12/08/a-brutally-effective-hash-function-in-rust.html)
 
 - [What integer hash function are good that accepts an integer hash key?](https://stackoverflow.com/questions/664014/what-integer-hash-function-are-good-that-accepts-an-integer-hash-key)
 

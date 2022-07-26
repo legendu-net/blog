@@ -5,7 +5,7 @@ Slug: tips-on-github-actions
 Title: Tips on GitHub Actions
 Category: Computer Science
 Tags: Computer Science, GitHub Actions, CICD
-Modified: 2021-10-25 18:35:23
+Modified: 2022-07-25 00:27:46
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -29,14 +29,22 @@ Please read with your own judgement!
     [create-pull-request](https://github.com/peter-evans/create-pull-request) with `GITHUB_TOKEN` 
     .
 
-2. OS: ubuntu-latest, windows-latest, macOS-latest
+3. OS: ubuntu-latest, windows-latest, macOS-latest
 
-3. Docker container is available in Ubuntu and Windows but not macOS in GitHub Actions due to license issues.
+4. Docker container is available in Ubuntu and Windows but not macOS in GitHub Actions due to license issues.
     To use Docker in macOS in GitHub Actions,
     you have to install it manually.
     Please refer to 
     [Is it possible to install and configure Docker on MacOS runner?](https://github.community/t/is-it-possible-to-install-and-configure-docker-on-macos-runner/16981)
     for more details.
+    
+5. Good practices for GitHub repository with GitHub Actions workflows:
+    - Have 2 protected branches `main` and `dev`,
+        where `main` is reserved for releasing 
+        and `dev` is reserved for development.
+    - Fork the `dev` branch for development.
+    - A PR from `dev` to `main` should be made 
+        when it is ready to release a new version.
 
 ## Issues and Solutions
 

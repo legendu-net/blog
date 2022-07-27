@@ -84,6 +84,7 @@
     ["Unittest", "unittest"],
     ["Autogluon", "AutoGluon"], 
     ["Dataframe", "DataFrame"],
+    ["Holoviews", "HoloViews"],
     ["Lazyframe", "LazyFrame"],
     ["Getpocket", "GetPocket"], ["Gitpython", "GitPython"],
     ["Java-Home", "JAVA-HOME"],

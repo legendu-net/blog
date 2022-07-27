@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-07-21 15:34:07
-Modified: 2022-07-22 00:56:50
+Modified: 2022-07-26 16:49:09
 Author: Benjamin Du
 Slug: download-a-single-file-from-a-github-repository
 Title: Download a Single File from a GitHub Repository
@@ -15,7 +15,7 @@ Tags: Computer Science, programming, GitHub, repository, download, single, file
 
 
     :::bash
-    curl -sSL https://raw.githubusercontent.com/legendu-net/icon/master/install_icon.sh | bash
+    curl -sSL https://raw.githubusercontent.com/legendu-net/icon/master/install_icon.sh
 
 ## References
 

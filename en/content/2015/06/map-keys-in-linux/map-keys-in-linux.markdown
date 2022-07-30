@@ -5,7 +5,7 @@ Slug: map-keys-in-linux
 Title: Map Keys in Linux
 Category: OS
 Tags: Linux, keyboard, mapping, swap, setxkbmap, Cinnamon, GNOME, keys, Caps Lock, Escape
-Modified: 2022-04-30 16:02:35
+Modified: 2022-07-28 09:43:57
 
 Note: For Vim users, it is appealing to make the `Caps Lock` function like `Escape`.
 It is suggested that you make `Caps Lock` an additonal `Escape`
@@ -18,12 +18,12 @@ Some desktop environment (e.g., Cinnamon, GNOME, etc.) let you define behavior o
 
 ### GNOME
 
-1. Install gnome-tweak-tool.
+1. Install `gnome-tweaks`.
     You can use the following command 
     on Debian/Ubuntu based Linux distributions.
 
         :::bash
-        wajig install gnome-tweak-tool
+        wajig install gnome-tweaks
 
 2. Start gnome-tweaks by running the following command.
 

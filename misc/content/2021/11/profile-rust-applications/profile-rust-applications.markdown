@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2022-07-29 22:08:00
+Modified: 2022-07-30 00:05:46
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -25,7 +25,7 @@ Tags: Computer Science, programming, Rust, profile, profiling, speed, memory, CP
 ## CPU Profiling
 
 ### [Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
-Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
+[Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
 is a great profiler for Rust applications.
 
 ### [FlameGraph](http://www.legendu.net/misc/blog/profile-rust-applications-using-flamegraph)

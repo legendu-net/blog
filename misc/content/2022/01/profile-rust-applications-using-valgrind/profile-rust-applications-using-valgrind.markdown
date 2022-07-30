@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-01-13 01:02:06
-Modified: 2022-07-29 17:40:40
+Modified: 2022-07-30 00:06:32
 Author: Benjamin Du
 Slug: profile-rust-applications-using-valgrind
 Title: Profile Rust Applications Using Valgrind
@@ -17,7 +17,8 @@ Tags: Computer Science, programming, Rust, profile, profiler, Valgrind, KCacheGr
 ## Profile Your Application Using CallGrind
 
     :::bash
-    valgrind --tool=callgrind --dump-instr=yes --simulate-cache=yes --collect-jumps=yes your-program [program options]
+    valgrind --tool=callgrind --dump-instr=yes --simulate-cache=yes --collect-jumps=yes \
+        your-program [program options]
 
 ## Visualization
 

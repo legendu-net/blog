@@ -5,7 +5,7 @@ Author: Ben Chuanlong Du
 Title: Make Linux Run Faster
 Category: OS
 Tags: RAM, speedup, SSD, software, optimization, hardware, Linux, fast, performance
-Modified: 2022-06-11 15:50:27
+Modified: 2022-07-28 09:44:40
 
  
 ## Benchmark Tools for Linux
@@ -34,7 +34,7 @@ leveraging extended Berkeley Packet Filters (eBPF).
 
 1. Configure GRUB to fix PCIe BUS errors if any. 
     Please refer to
-    [Pcie Bus Error: Severity=Corrected, Type=Physical Layer](https://www.legendu.net/misc/blog/PCIe-Bus-Error:-severity=Corrected,-type=Physical-Layer/)
+    [Pcie Bus Error: Severity=Corrected, Type=Physical Layer](https://www.legendu.net/misc/blog/pcie-bus-error:-severity=Corrected,-type=Physical-Layer/)
     for detailed discussions
     .
     Notice that you might have to do this 

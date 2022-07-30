@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-09-06 12:47:10
-Modified: 2022-05-28 11:26:11
+Modified: 2022-07-28 10:18:43
 Author: Benjamin Du
 Slug: pcie-bus-error:-severity=Corrected,-type=Physical-Layer
 Title: PCIe BUS Error: Severity=Corrected, Type=Physical Layer
@@ -33,6 +33,17 @@ Below are step-by-step symptoms from superficial to root causes.
     shows the following error message frequently.
 
     > PCIe-Bus-Error:-severity=Corrected,-type=Physical-Layer
+
+A faster alternative way to check whether your machine is experiencing this issue
+is to directly search for the keyword `PCIe-Bus-Error` in log files.
+
+    :::bash
+    ls /var/log/*log | xargs grep PCI-Bus-Error
+
+If you see lots of occurences of the following line,
+then your machine is likely experiencing the issue.
+
+> PCIe-Bus-Error:-severity=Corrected,-type=Physical-Layer
 
 ## Solution
 

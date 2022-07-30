@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-06-02 15:21:12
-Modified: 2022-07-13 18:08:50
+Modified: 2022-07-30 01:11:45
 Author: Benjamin Du
 Slug: install-rust-globally
 Title: Install Rust Globally in Linux
@@ -14,7 +14,7 @@ There are basically 2 ways to install a global standalone version of Rust in Lin
 ## Using a Package Management Tool
 
 Some Linux distributions provide packages for Rust.
-Talking Debian/Ubuntu based Linux distributions as an example,
+Taking Debian/Ubuntu based Linux distributions as an example,
 you can install a global version of Rust using the command below.
 
     :::bash

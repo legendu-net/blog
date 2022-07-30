@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-09 10:28:40
-Modified: 2022-01-17 12:25:55
+Modified: 2022-07-29 22:08:00
 Author: Benjamin Du
 Slug: profile-rust-applications-using-flamegraph
 Title: Profile Rust Applications Using Flamegraph
@@ -9,11 +9,41 @@ Tags: Computer Science, programming, Rust, flamegraph, perf, profile, profiling
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-[Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
-is an good alternative to flamegraph.
-It is easier to setup than flamegraph.
-However, 
-flamegraph has better integration with cargo.
+
+## Tips and Traps
+
+1. [Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
+    is an better alternative to flamegraph.
+    It is suggested that you use 
+    [Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
+    instead of Flamegraph.
+    For more discussions,
+    please refer to
+    [CPU Profiling](https://www.legendu.net/misc/blog/profile-rust-applications/#cpu-profiling)
+    .
+
+2. It is suggested that you use Flamegraph in a virtual machine (via multipass) or a Docker container.
+    This is because Flamegraph relies on `perf` which require sudo permission to install and configure,
+    which is easier and safer to do in an isolated environment.
+    If you use a Docker container, 
+    <span style="color:red"> 
+    make sure that the Linux kernel inside the Docker image is the same as the Linux kernel on the host machine
+    </span>
+    !
+    Otherwise,
+    you will either fail to install `perf` 
+    or install a non-compatible one.
+
+3. You have to configure `perf_even_paranoid` to be `-1`.
+    This can be done by setting the value in the file 
+    `/proc/sys/kernel/perf_even_paranoid`
+    to be `-1`.
+
+## Installation on Debian
+
+    wajig update
+    wajig install linux-perf
+    cargo install flamegraph
 
 ## Installation on Ubuntu
 ```
@@ -84,3 +114,5 @@ echo 0 |sudo tee /proc/sys/kernel/kptr_restrict
 - [flamegraph](https://github.com/flamegraph-rs/flamegraph)
 
 - [Is it possible to print the callgraph of a Cargo workspace?](https://users.rust-lang.org/t/is-it-possible-to-print-the-callgraph-of-a-cargo-workspace/50369)
+
+- [2022-03-20 – Dealing with slow `perf script` on Debian](https://michcioperz.com/post/slow-perf-script/)

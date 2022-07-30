@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2022-01-17 12:18:34
+Modified: 2022-07-29 22:08:00
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -33,18 +33,17 @@ is a great profiler for Rust applications.
 [FlameGraph](http://www.legendu.net/misc/blog/profile-rust-applications-using-flamegraph)
 is another good profiler for Rust applications 
 which is has integration support for cargo.
-However,
-the underlying tool `perf` 
-(that FlameGraph relies on)
-has a few disadvantages.
 
-1. It takes some efforts to install and configure `perf`.
-2. `perf` has a 
-    [bug](https://bugzilla.kernel.org/show_bug.cgi?id=201477)
-    which affects its usability. 
+[Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
+is recommended for several reasons.
 
-It is suggested that you use `Valgrind` 
-if you encounter issues with `perf`.
+1. Valgrind is easier to install, configure and use.
+    Flamegraph relies on `perf` which is not user-friendly.
+
+2. The Flamegraph project is no longer in active development.
+
+3. Valgrind is more powerful and flexible 
+    and can be used for profiling other porgramming languages too.
 
 ## Memory Profiling
 
@@ -74,4 +73,6 @@ is a heap memory profiler for Linux
 - [How-to Optimize Rust Programs on Linux](http://www.codeofview.com/fix-rs/2017/01/24/how-to-optimize-rust-programs-on-linux/)
 
 - [Is it possible to print the callgraph of a Cargo workspace?](https://users.rust-lang.org/t/is-it-possible-to-print-the-callgraph-of-a-cargo-workspace/50369)
+
+- [Linux performance testing with perf, gprof and Valgrind](https://blog.appliscale.io/2018/04/30/tools-4-linux-performance-testing/)
 

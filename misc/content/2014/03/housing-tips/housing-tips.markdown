@@ -5,7 +5,7 @@ Title: Tips on Housing
 Slug: housing-tips
 Category: Life
 Tags: life, housing, tips, rent, apartment, shopping
-Modified: 2022-06-13 08:41:16
+Modified: 2022-07-30 16:56:10
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
@@ -174,8 +174,6 @@ use the toilet to flush it.
 - [柜门修复板](https://www.aliexpress.com/item/3256802915471215.html?spm=a2g0o.productlist.0.0.26da1f4fCWSFGy&algo_pvid=4d650380-d46d-4039-8d2e-5e01d362f5cc&algo_exp_id=4d650380-d46d-4039-8d2e-5e01d362f5cc-8&pdp_ext_f=%7B%22sku_id%22%3A%2212000024093936846%22%7D&pdp_npi=2%40dis%21USD%21%211.85%21%21%21%21%21%402101e9ce16538047992661761e8079%2112000024093936846%21sea)
 
 - [门吸铁石](https://www.aliexpress.com/wholesale?catId=0&initiative_id=AS_20220528221427&SearchText=%E9%97%A8%E5%90%B8%E9%93%81%E7%9F%B3&spm=a2g0o.productlist.1000002.0)
-
-- [雪花扳手](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220528221525&SearchText=%E9%9B%AA%E8%8A%B1%E6%89%B3%E6%89%8B&spm=a2g0o.productlist.1000002.0)
 
 - [防撞颗粒](https://www.taobao.com/list/product/%E9%9D%99%E9%9F%B3%E9%98%B2%E6%92%9E%E9%A2%97%E7%B2%92.htm)
 

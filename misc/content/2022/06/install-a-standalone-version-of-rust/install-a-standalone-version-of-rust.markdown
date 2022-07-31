@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-06-02 15:21:12
-Modified: 2022-07-30 01:11:45
+Modified: 2022-07-30 21:21:55
 Author: Benjamin Du
 Slug: install-rust-globally
 Title: Install Rust Globally in Linux
@@ -42,13 +42,13 @@ you can configure environment variables to install Rust globally.
 
 1. Download Rust.
 
-    :::bash
-    curl -sSL https://static.rust-lang.org/dist/rust-1.61.0-x86_64-unknown-linux-gnu.tar.gz -o /tmp/rust.tar.gz
+        :::bash
+        curl -sSL https://static.rust-lang.org/dist/rust-1.61.0-x86_64-unknown-linux-gnu.tar.gz -o /tmp/rust.tar.gz
 
 2. Untar the downloaded file.
 
-    :::bash
-    tar -zxvf /tmp/rust.tar.gz
+        :::bash
+        tar -zxvf /tmp/rust.tar.gz
 
 3. Go to the untarred directory 
     `rust-1.61.0-x86_64-unknown-linux-gnu`

@@ -7,7 +7,7 @@ Title: Install Rust Globally in Linux
 Category: Computer Science
 Tags: Computer Science, programming, Rust, standalone, Linux, rust-src
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 
 There are basically 2 ways to install a global standalone version of Rust in Linux.
 

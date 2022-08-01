@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2022-07-30 00:05:46
+Modified: 2022-07-31 11:39:06
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -35,7 +35,7 @@ is another good profiler for Rust applications
 which is has integration support for cargo.
 
 [Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
-is recommended for several reasons.
+is preferred for several reasons.
 
 1. Valgrind is easier to install, configure and use.
     Flamegraph relies on `perf` which is not user-friendly.

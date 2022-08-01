@@ -5,7 +5,7 @@ Slug: tips-on-lxd
 Title: Tips on LXD
 Category: Computer Science
 Tags: Computer Science, Docker, container, LXD, LXC
-Modified: 2022-07-29 16:19:44
+Modified: 2022-07-31 17:53:33
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

@@ -5,16 +5,12 @@ Slug: tips-on-multipass
 Title: Tips on Multipass
 Category: Software
 Tags: software, Multipass, Ubuntu, virtual machine, Docker, virtualization, LXD
-Modified: 2022-07-29 21:33:48
+Modified: 2022-07-31 17:54:16
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
-
-It is suggested that you use LXD instead of Multipass.
-LXD is more lightweight than Multipass and does not require a CPU 
-which supports virtualization.
 
 ## Multipass vs LXD
 

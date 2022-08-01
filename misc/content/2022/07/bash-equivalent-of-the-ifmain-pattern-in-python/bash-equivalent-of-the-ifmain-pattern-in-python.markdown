@@ -1,9 +1,9 @@
 Status: published
 Date: 2022-07-28 14:39:20
-Modified: 2022-07-28 15:04:14
+Modified: 2022-07-31 17:53:03
 Author: Benjamin Du
 Slug: bash-equivalent-of-the-ifmain-pattern-in-python
-Title: Bash Equivalent of the Ifmain Pattern in Python
+Title: Bash Equivalent of the ifmain Pattern in Python
 Category: Computer Science
 Tags: Computer Science, programming, Shell, Bash, ifmain, Python, module, script, function, import, source
 

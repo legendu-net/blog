@@ -6,6 +6,7 @@ ln -svf $(pwd)/blog.py ~/.local/bin/blog
 if [ $(hostname) != "jupyterhub-pelican" ]; then
     python3 -m pip install \
         loguru \
+        pyyaml \
         beautifulsoup4 typogrify \
         pelican "pelican-jupyter==0.10.0" pelican-render-math \
         aiutil[jupyter]

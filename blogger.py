@@ -11,6 +11,7 @@ import datetime
 import shutil
 from pathlib import Path
 import json
+import yaml
 import subprocess as sp
 from loguru import logger
 from tqdm import tqdm
@@ -30,7 +31,8 @@ IPYNB = ".ipynb"
 NOW_DASH = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 TODAY_DASH = NOW_DASH[:10]
 YYYYMM_slash = TODAY_DASH[:7].replace("-", "/")
-WORDS = json.loads((BASE_DIR / "words.json").read_text())
+with open("words.yaml") as _:
+    WORDS = yaml.load(_, Loader=yaml.FullLoader)
 POSTS_COLS = [
     "path", "dir", "status", "date", "modified", "author", "slug", "title", "category",
     "tags", "content", "empty", "updated", "name_title_mismatch"

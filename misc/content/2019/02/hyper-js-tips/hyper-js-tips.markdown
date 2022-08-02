@@ -5,7 +5,7 @@ Slug: hyper-js-tips
 Title: Tips on Hyper
 Category: Software
 Tags: software, Hyper, terminal
-Modified: 2020-03-02 12:20:43
+Modified: 2022-08-02 00:32:20
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -26,6 +26,17 @@ verminal is good one
     please refer to
     [Change Shell in Mac](http://www.legendu.net/en/blog/change-shell-in-mac/)
     .
+
+2. If you install Hyper on Linux 
+    or install it using Homebrew on macOS,
+    the `hyper` command is available.
+    However,
+    if you install Hyper on macOS using a DMG file, 
+    the `hyper` command is not exposed by default.
+    You can follow instructions in the following screenshot 
+    to add the `hyper` command into the search path.
+
+    ![hyper-cli-path](https://user-images.githubusercontent.com/824507/182229511-b5a6aeb4-903d-4ee6-a7fb-67685c61e3df.png)
 
 ## Shortcuts
 

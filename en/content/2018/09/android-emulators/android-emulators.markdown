@@ -5,7 +5,7 @@ Slug: android-emulators
 Title: Android Emulators
 Category: Software
 Tags: software, Android, emulation, emulator, AnBox, VirtualBox, xDroid
-Modified: 2021-09-08 23:57:16
+Modified: 2022-08-01 10:29:05
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -119,6 +119,17 @@ Please read with your own judgement!
     <td> Linux </td>
     <td> NA </td>
     <td> Limited </td>
+    <td> Active </td>
+  </tr>
+  <tr>
+    <td> 
+    <a href="https://waydro.id/"> Waydroid </a>
+    <a href="#footnote1">[9]</a>
+    </td>
+    <td> Yes </td>
+    <td> Linux </td>
+    <td> NA </td>
+    <td> Yes </td>
     <td> Active </td>
   </tr>
   <tr>

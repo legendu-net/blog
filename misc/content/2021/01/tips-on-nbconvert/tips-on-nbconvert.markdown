@@ -5,7 +5,7 @@ Slug: tips-on-nbconvert
 Title: Tips on nbconvert
 Category: Computer Science
 Tags: Computer Science, Jupyter, JupyterLab, notebook, nbconvert, template
-Modified: 2021-01-08 13:59:41
+Modified: 2022-08-02 16:43:09
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -17,12 +17,18 @@ Please read with your own judgement!
     The simple way to fix this issue is to limit the number of processes converting notebooks.
     It is suggested that you keep in within 3.
 
-2. Convert a notebook to HTML.
+2. It is recommended that you use the template 
+    provided by the Python library 
+    [pretty-jupyter](https://github.com/JanPalasek/pretty-jupyter)
+    when converting a notebook to HTML
+    .
+    [pretty-jupyter](https://github.com/JanPalasek/pretty-jupyter)
+    is currently the best template for Jupyter/Lab notebooks
+    which provides beautiful and dynamic reports.
 
         :::bash
-        jupyter nbconvert --to HTML notebook.ipynb
-        # or
-        jupyter nbconvert notebook.ipynb
+        pip3 install pretty_jupyter
+        jupyter nbconvert --to HTML --template pj notebook.ipynb
 
 2. You can execute a notebook without converting it to a different format using the following command.
 

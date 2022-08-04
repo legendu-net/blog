@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "arrowdb"
+version = "0.1.0"
+description = "Querying database using arrow.jvm."
+authors = ["Ben Du <longendu@yahoo.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+numpy = ">=1.22.4"
+pandas = ">=0.22"
+JPype1 = ">=1.1.2"
+sqlparse = ">=0.2.4"
+loguru = ">=0.2.5"
+pandas-profiling = ">=2.8.0"
+pyarrow = ">=2.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=3.0"
+pylint = ">=2.12.2"
+pytype = ">=2020.0.0"
+yapf = ">=0.32.0"
+toml = ">=0.10.2"
+
+[tool.yapf]
+based_on_style = "facebook"
+column_limit = 88
+
+[tool.yapfignore]
+ignore_patterns = [
+    "*/.ipynb_checkpoints/",
+    ".venv/",
+    "venv/",
+]
+
+[tool.pyright]
+include = ["arrowdb", "tests"]
+exclude = [
+    "**/node_modules",
+    "**/__pycache__",
+    "**/typestubs",
+    "**/.pytype",
+    ".venv",
+]
+venvPath = "."
+venv = ".venv"
+
+reportMissingImports = true
+reportMissingTypeStubs = false
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

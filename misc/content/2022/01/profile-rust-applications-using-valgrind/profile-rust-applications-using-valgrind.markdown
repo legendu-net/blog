@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-01-13 01:02:06
-Modified: 2022-07-30 00:06:32
+Modified: 2022-08-04 09:16:00
 Author: Benjamin Du
 Slug: profile-rust-applications-using-valgrind
 Title: Profile Rust Applications Using Valgrind
@@ -26,7 +26,7 @@ Tags: Computer Science, programming, Rust, profile, profiler, Valgrind, KCacheGr
 
 ## General Tips and Traps 
 
-1. Profiling an application using valgrind is about 50x slower
+1. Profiling an application using valgrind is about 50-200 times slower
     than running the application.
 
 2. Valgrind seems to have some issues with Rust applications.

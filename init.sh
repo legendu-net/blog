@@ -1,6 +1,6 @@
 #!/bin/bash
 # symbolic link
-ln -svf $(pwd)/blog.py ~/.local/bin/blog
+ln -sTvf $(pwd)/blog.py ~/.local/bin/blog
 
 # deps
 if [ $(hostname) != "jupyterhub-pelican" ]; then

@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-10-26 22:38:20
-Modified: 2022-08-08 00:46:09
+Modified: 2022-08-08 00:47:26
 Author: Benjamin Du
 Slug: benchmark-a-rust-app
 Title: Benchmark a Rust App
@@ -56,4 +56,7 @@ Tags: Computer Science, programming, Rust, bench, benchmark, cargo, cargo-bench,
 
 - [cargo-benchcmp](https://github.com/BurntSushi/cargo-benchcmp)
 
+- [Useful tip for benchmarking/testing optional Cargo features](https://users.rust-lang.org/t/useful-tip-for-benchmarking-testing-optional-cargo-features/60365)
+
 - https://github.com/madsmtm/objc2/blob/master/objc2/benches/autorelease.rs
+

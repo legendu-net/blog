@@ -5,7 +5,7 @@ Slug: docker-in-WSL2
 Title: Docker in WSL 2
 Category: Software
 Tags: software, Docker, WSL, WSL 2, Windows, Bash, BashOnWindows, Bash on Windows
-Modified: 2021-09-24 12:13:24
+Modified: 2022-08-07 19:47:58
 
 ## Tips and Traps
 
@@ -14,7 +14,7 @@ Modified: 2021-09-24 12:13:24
     the performance of IO is extremely bad if it access the Windows filesystem.
     For more discussions,
     please refer to
-    [WSL 2 Filesystem](http://www.legendu.net/misc/blog/wsl-2-filesystem)
+    [WSL 2 Filesystem](https://www.legendu.net/en/blog/wsl-2-filesystem/)
     .
 
 2. Docker containers launched from a WSL (e.g., Ubuntu) shell will continue to run 

@@ -1,9 +1,9 @@
 Status: published
 Date: 2022-08-02 01:15:16
-Modified: 2022-08-02 01:15:16
+Modified: 2022-08-08 11:15:10
 Author: Benjamin Du
 Slug: no-blas-or-lapack-found-when-installing-scipy
-Title: No Blas or Lapack Found When Installing Scipy
+Title: No BLAS or LAPACK Found When Installing Scipy
 Category: Computer Science
 Tags: Computer Science, programming, Python, scipy, BLAS, LAPACK, issue
 

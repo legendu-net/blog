@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2022-07-31 11:39:06
+Modified: 2022-08-08 10:30:27
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -24,9 +24,22 @@ Tags: Computer Science, programming, Rust, profile, profiling, speed, memory, CP
 
 ## CPU Profiling
 
+### [pprof](https://crates.io/crates/pprof)
+[Pprof](https://crates.io/crates/pprof)
+is an internal perf tools for rust programs.
+It provides integration with 
+[Criterion](https://crates.io/crates/criterion)
+which is the most popular benchmark tool in Rust.
+Please refer to
+[pprof-rs/examples/criterion.rs](https://github.com/tikv/pprof-rs/blob/master/examples/criterion.rs)
+for such an example.
+
 ### [Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
 [Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
 is a great profiler for Rust applications.
+The crate
+[cargo-valgrind](https://crates.io/crates/cargo-valgrind)
+provides integration of valgrind and cargo.
 
 ### [FlameGraph](http://www.legendu.net/misc/blog/profile-rust-applications-using-flamegraph)
 

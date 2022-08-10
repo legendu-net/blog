@@ -1,3 +1,4 @@
+# adverb
 - ["A", "a"]
 - ["As", "as"]
 - ["By", "by"]
@@ -15,6 +16,7 @@
 - ["The", "the"]
 - ["From", "from"]
 - ["Into", "into"]
+# 2 symbols
 - ["3d", "3D"]
 - ["Ai", "AI"]
 - ["Gh", "gh"]
@@ -27,6 +29,7 @@
 - ["Ps", "ps"]
 - ["Rm", "rm"]
 - ["Us", "US"]
+# 3 symbols
 - ["Aix", "AIX"]
 - ["Abi", "ABI"]
 - ["Api", "API"]
@@ -76,9 +79,11 @@
 - ["Vba", "VBA"]
 - ["Vpn", "VPN"]
 - ["Wsl", "WSL"]
+# 4 symbols
 - ["Apis", "APIs"]
 - ["Ar1X", "AR1X"]
 - ["Bios", "BIOS"]
+- ["Blas", "BLAS"]
 - ["Curl", "cURL"]
 - ["Grub", "GRUB"]
 - ["Heic", "HEIC"]
@@ -103,6 +108,7 @@
 - ["Wasi", "WASI"]
 - ["Yapf", "yapf"]
 - ["Yaml", "YAML"]
+# 5 symbols
 - ["Ci/Cd", "CI/CD"]
 - ["Cicd", "CICD"]
 - ["Anbox", "AnBox"]
@@ -118,12 +124,14 @@
 - ["Rjava", "rJava"]
 - ["Sshfs", "sshfs"]
 - ["Xmind", "XMind"]
+# 6 symbols
 - ["Aerofs", "AeroFS"]
 - ["Btsync", "BTSync"]
 - ["Centos", "CentOS"]
 - ["Etrade", "eTrade"]
 - ["Ffmpeg", "FFmpeg"]
 - ["Github", "GitHub"]
+- ["Lapack", "LAPACK"]
 - ["Mkdocs", "mkdocs"]
 - ["Neovim", "NeoVim"]
 - ["Nodejs", "NodeJS"]
@@ -140,6 +148,7 @@
 - ["Wechat", "WeChat"]
 - ["Winget", "winget"]
 - ["Yyyymm", "YYYYMM"]
+# 7 symbols
 - ["Autokey", "AutoKey"]
 - ["Add-Ons", "Add-ons"]
 - ["Asyncio", "asyncio"]
@@ -160,6 +169,7 @@
 - ["Sqlite3", "SQLite3"]
 - ["Stringi", "stringi"]
 - ["Xfinity", "XFinity"]
+# 8 symbols
 - ["Ai-Based", "AI-based"]
 - ["Buildkit", "BuildKit"]
 - ["Kdevelop", "KDevelop"]
@@ -172,6 +182,7 @@
 - ["Spacevim", "SpaceVim"]
 - ["Sshuttle", "sshuttle"]
 - ["Unittest", "unittest"]
+# 9 symbols
 - ["Autogluon", "AutoGluon"]
 - ["Dataframe", "DataFrame"]
 - ["Holoviews", "HoloViews"]
@@ -192,6 +203,7 @@
 - ["Tinyproxy", "TinyProxy"]
 - ["Typeerror", "TypeError"]
 - ["Virtualvm", "VirtualVM"]
+# 10 symbols
 - ["Autohotkey", "AutoHotkey"]
 - ["Crunchbang", "CrunchBang"]
 - ["Dataframes", "DataFrames"]
@@ -208,30 +220,41 @@
 - ["Tensorflow", "TensorFlow"]
 - ["Typescript", "TypeScript"]
 - ["Virtualbox", "VirtualBox"]
+# 11 symbols
 - ["IJavascript", "IJavaScript"]
 - ["Itypescript", "ITypeScript"]
 - ["Libreoffice", "LibreOffice"]
 - ["Packagekitd", "PackageKitD"]
 - ["Proxychains", "ProxyChains"]
 - ["Spark-shell", "spark-shell"]
+# 12 symbols
 - ["Command-Line", "Command-line"]
 - ["Featuretools", "FeatureTools"]
 - ["Projectlibre", "ProjectLibre"]
 - ["Runtimeerror", "RuntimeError"]
+# 13 symbols
 - ["Getquotausage", "GetQuotaUsage"]
 - ["Youcompleteme", "YouCompleteMe"]
 - ["Intellij Idea", "IntelliJ IDEA"]
+# 14 symbols
 - ["Arrowtypeerror", "ArrowTypeError"]
+# 15 symbols
 - ["Torch.Nn.Module", "torch.nn.Module"]
 - ["Restructuretext", "RestructureText"]
 - ["Withreplacement", "WithReplacement"]
+# 16 symbols
 - ["Crashloopbackoff", "CrashLoopBackOff"]
 - ["Outofmemoryerror", "OutOfMemoryError"]
 - ["Runtimeexception", "RuntimeException"]
+# 17 symbols
 - ["Analysisexception", "AnalysisException"]
 - ["Broadcasthashjoin", "BroadcastHashJoin"]
+# 18 symbols
 - ["Urisyntaxexception", "UriSyntaxException"]
+# 19 symbols
 - ["Torch.Nn.Functional", "torch.nn.functional"]
 - ["Modulenotfounderror", "ModuleNotFoundRrror"]
+# 23 symbols
 - ["Python-Build-Standalone", "python-build-standalone"]
+# 24 symbols
 - ["Illegalargumentexception", "IllegalArgumentException"]

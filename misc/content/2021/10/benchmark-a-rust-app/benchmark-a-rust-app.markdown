@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-10-26 22:38:20
-Modified: 2022-08-08 00:47:26
+Modified: 2022-08-08 11:08:08
 Author: Benjamin Du
 Slug: benchmark-a-rust-app
 Title: Benchmark a Rust App
@@ -35,6 +35,13 @@ Tags: Computer Science, programming, Rust, bench, benchmark, cargo, cargo-bench,
         instead of of issues with Criterion,
         it makes the benchmark results unstable and less trustable,
         unfortunately.
+
+4. There are lots of Criterion extensions enhancing features of Criterion.
+    - cargo-criterion
+    - [criterion-perf-events](https://crates.io/crates/criterion-perf-events)
+        This is a measurement plugin for Criterion.rs to measure events of the Linux perf interface.
+    - [criterion-linux-perf](https://crates.io/crates/criterion-linux-perf)
+        A measurement plugin for Criterion.rs that provides measurements using Linux's perf interface
 
 ## [Iai](https://crates.io/crates/iai)
 1. [Iai](https://crates.io/crates/iai)

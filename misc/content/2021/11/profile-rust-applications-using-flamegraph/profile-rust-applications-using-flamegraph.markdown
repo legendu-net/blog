@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-09 10:28:40
-Modified: 2022-07-29 22:08:00
+Modified: 2022-08-10 09:31:54
 Author: Benjamin Du
 Slug: profile-rust-applications-using-flamegraph
 Title: Profile Rust Applications Using Flamegraph
@@ -35,9 +35,20 @@ Tags: Computer Science, programming, Rust, flamegraph, perf, profile, profiling
     or install a non-compatible one.
 
 3. You have to configure `perf_even_paranoid` to be `-1`.
-    This can be done by setting the value in the file 
+    This can be done by manually setting the value in the file 
     `/proc/sys/kernel/perf_even_paranoid`
     to be `-1`.
+    Or equivalently,
+    you can run the following command
+
+        :::bash
+        sudo sysctl -w kernel.perf_event_paranoid=-1
+
+    Changes made by the above approaches are temporary.
+    To persist the above setting,
+    you can add a line `kernel.perf_event_paranoid = -1`
+    into the file `/etc/sysctl.conf`
+    .
 
 ## Installation on Debian
 

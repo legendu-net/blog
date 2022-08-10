@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-01-13 01:02:06
-Modified: 2022-08-04 09:16:00
+Modified: 2022-08-08 10:30:27
 Author: Benjamin Du
 Slug: profile-rust-applications-using-valgrind
 Title: Profile Rust Applications Using Valgrind
@@ -46,3 +46,5 @@ Tags: Computer Science, programming, Rust, profile, profiler, Valgrind, KCacheGr
 - [Callgrind: a call-graph generating cache and branch prediction profiler](https://valgrind.org/docs/manual/cl-manual.html)
 
 - [KCacheGrind](https://github.com/KDE/kcachegrind)
+
+- [Rust and Valgrind](https://nnethercote.github.io/2022/01/05/rust-and-valgrind.html)

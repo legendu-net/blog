@@ -11,13 +11,20 @@ Tags: Computer Science, Vim, NeoVim, FireNVim, browser
 
 ## Installation 
 
+1. Install [icon](https://github.com/legendu-net/icon).
+
+        :::bash
+        curl -sSL https://raw.githubusercontent.com/legendu-net/icon/main/install_icon.sh | sudo bash -
+
 1. Install NeoVim and SpaceVim.
 
         :::bash
-        xinstall nvim -ic
-        xinstall svim -ic
+        icon nvim -ic
+        icon svim -ic
 
-2. Install the FireNVim plugin for your browser.
+2. Install the FireNVim for your browser.
+    - [FireNVim - Chrome](https://chrome.google.com/webstore/detail/firenvim/egpjdkipkomnmjhjmdamaniclmdlobbo?hl=en)
+    - [FireNVim - Firefox](https://addons.mozilla.org/en-US/firefox/addon/firenvim/)
 
 3. Run the command `nvim` 
     and then inside NeoVim run the command `:call firenvim#install(0)`.

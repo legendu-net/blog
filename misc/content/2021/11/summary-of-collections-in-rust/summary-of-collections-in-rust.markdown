@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-20 22:36:35
-Modified: 2022-06-24 18:12:52
+Modified: 2022-08-11 09:01:52
 Author: Benjamin Du
 Slug: summary-of-collections-in-rust
 Title: Summary of Collections in Rust
@@ -19,7 +19,7 @@ and when to use them.
 - Sets: HashSet, BTreeSet (sorted set)
 - Misc: BinaryHeap (priority queue)
 
-![](https://user-images.githubusercontent.com/824507/151688238-88410b52-723d-4d31-bcb1-0a6c8580fb95.png)
+![rust-collection-summary](https://user-images.githubusercontent.com/824507/151688238-88410b52-723d-4d31-bcb1-0a6c8580fb95.png)
 
 ## Third-party Collections and Related Tools
 

@@ -19,4 +19,4 @@ and people suggest installing Nvidia's driver for machines with Nvidia GPUs.
 My machine does have a Nvidia GPU
 and switching from the nouvea driver to Nvidia's proprietary driver indeed fixed the issue for me.
 
-![](https://user-images.githubusercontent.com/824507/150741998-8d02afa3-8d65-485c-b413-4a487aec9d45.png)
+![ubuntu-additional-drivers](https://user-images.githubusercontent.com/824507/150741998-8d02afa3-8d65-485c-b413-4a487aec9d45.png)

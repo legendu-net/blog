@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2022-08-08 10:30:27
+Modified: 2022-08-14 09:48:28
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -33,6 +33,13 @@ which is the most popular benchmark tool in Rust.
 Please refer to
 [pprof-rs/examples/criterion.rs](https://github.com/tikv/pprof-rs/blob/master/examples/criterion.rs)
 for such an example.
+However,
+Criterion performs measuring/benchmarking instead of profiling by default.
+To generate profiling report/visualization,
+you can run the following command.
+
+    :::bash
+    cargo bench --bench bench_main name_of_benchmark -- --profile-time
 
 ### [Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
 [Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)

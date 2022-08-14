@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-10-26 22:38:20
-Modified: 2022-08-08 11:08:08
+Modified: 2022-08-14 13:37:21
 Author: Benjamin Du
 Slug: benchmark-a-rust-app
 Title: Benchmark a Rust App
@@ -29,12 +29,11 @@ Tags: Computer Science, programming, Rust, bench, benchmark, cargo, cargo-bench,
 3. Even if Criterion is currently the best available benchmarking tool available in Rust,
     it still have a few issues.
     - It can only benchmark public functions/methods with Rust stable
-    - The benchmark results of the same function (without code change)
+    - If you benchmark WALL/CPU times, 
+        the benchmark results of the same function (without code change)
         might vary significantly with 2 benchmarks running at very close times.
-        Even though this is due to varying execution environemnt 
-        instead of of issues with Criterion,
-        it makes the benchmark results unstable and less trustable,
-        unfortunately.
+        It is suggested that you benchmark Linux perf events instead,
+        which gives you stable benchmark results.
 
 4. There are lots of Criterion extensions enhancing features of Criterion.
     - cargo-criterion

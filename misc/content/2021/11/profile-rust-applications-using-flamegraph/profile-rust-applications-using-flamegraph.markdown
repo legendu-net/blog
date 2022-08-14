@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-09 10:28:40
-Modified: 2022-08-10 09:31:54
+Modified: 2022-08-14 01:55:05
 Author: Benjamin Du
 Slug: profile-rust-applications-using-flamegraph
 Title: Profile Rust Applications Using Flamegraph
@@ -34,9 +34,9 @@ Tags: Computer Science, programming, Rust, flamegraph, perf, profile, profiling
     you will either fail to install `perf` 
     or install a non-compatible one.
 
-3. You have to configure `perf_even_paranoid` to be `-1`.
+3. You have to configure `perf_event_paranoid` to be `-1`.
     This can be done by manually setting the value in the file 
-    `/proc/sys/kernel/perf_even_paranoid`
+    `/proc/sys/kernel/perf_event_paranoid`
     to be `-1`.
     Or equivalently,
     you can run the following command
@@ -85,7 +85,7 @@ and
 you can try run the `flamegraph` on rust binary directly.
 
     :::bash
-    sudo ~/.cargo/bin/flamegraph target/release/your_binary
+    sudo ~/.cargo/bin/flamegraph -- target/release/your_binary [options]
 
 Notice that it is best to
 

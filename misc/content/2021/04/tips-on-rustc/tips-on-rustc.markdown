@@ -5,13 +5,17 @@ Slug: tips-on-rustc
 Title: Tips on rustc
 Category: Computer Science
 Tags: Computer Science, programming, Rust, rustc, optimization, cargo
-Modified: 2022-08-11 15:20:34
+Modified: 2022-08-13 14:22:49
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
+
+## Optimization 
+
+[Cheap tricks for high-performance Rust](https://deterministic.space/high-performance-rust.html)
 
 [Optimizations: the speed size tradeoff](https://docs.rust-embedded.org/book/unsorted/speed-vs-size.html)
 
@@ -27,6 +31,8 @@ Please read with your own judgement!
 ## References
 
 - [Optimizations: the speed size tradeoff](https://docs.rust-embedded.org/book/unsorted/speed-vs-size.html)
+
+- [Cheap tricks for high-performance Rust](https://deterministic.space/high-performance-rust.html)
 
 - [Inline In Rust](https://matklad.github.io/2021/07/09/inline-in-rust.html)
 

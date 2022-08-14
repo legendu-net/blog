@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-09-06 12:09:39
-Modified: 2021-10-10 13:59:57
+Modified: 2022-08-14 09:44:34
 Author: Benjamin Du
 Slug: take-screenshot-on-linux
 Title: Take Screenshot on Linux
@@ -14,12 +14,10 @@ Tags: Computer Science, software, tools, Linux, Shutter, screenshot, flameshot, 
 is a Qt-based cross-platform screenshot tool that provides many annotation features for your screenshots.
 It is one of the best screenshot applications.
 
-### Installation On Ubuntu
+### Installation Using snap
 
     :::bash
-    sudo add-apt-repository ppa:nemonein/ksnip
-    sudo apt update
-    sudo apt install ksnip
+    sudo snap install ksnip
 
 ## [flameshot](https://github.com/flameshot-org/flameshot)
 [Flameshot](https://github.com/flameshot-org/flameshot)

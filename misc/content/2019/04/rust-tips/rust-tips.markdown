@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-04-10 12:17:46
-Modified: 2022-06-25 16:15:55
+Modified: 2022-08-14 20:55:35
 Author: Benjamin Du
 Slug: rust-tips
 Title: Tips on Rust
@@ -33,14 +33,6 @@ please refer to
 [PPA for preparing rust toolchain updates for Firefox](https://launchpad.net/~ubuntu-mozilla-security/+archive/ubuntu/rust-updates)
 .
 
-### Install Rust for Multiple Users
-
-[Installing rustup for all linux users](https://github.com/rust-lang/rustup/issues/1085)
-
-[Does rustup.rs support shared .multirust (or whatever) directory?](https://github.com/rust-lang/rustup/issues/313)
-
-[Add Document of "How to Install Rust Environment for Multiple Users on Linux?"](https://github.com/rust-lang/rustup/issues/2383)
-
 ## Rust Toolchains
 
 - [cargo](http://www.legendu.net/misc/blog/tips-on-cargo): package manager for Rust
@@ -61,12 +53,6 @@ Conditional compilation for debug/release
     :::bash
     #[cfg(debug_assertions)]
     ...
-
-## IDE for Rust
-
-Please refer to 
-[IDE for Rust](http://www.legendu.net/misc/blog/IDE-for-Rust)
-for more details.
 
 ## Key Concepts in Rust
 

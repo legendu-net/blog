@@ -35,6 +35,9 @@ pd.set_option('display.max_colwidth', 100)
     please refer to
     [Here’s the most efficient way to iterate through your Pandas Dataframe](https://towardsdatascience.com/heres-the-most-efficient-way-to-iterate-through-your-pandas-dataframe-4dad88ac92ee)
     .
+    According to the benchmark in the article,
+    `DataFrame.to_dict` is the most efficient way
+    and is thus preferred.
 
 2. Avoid using column/element names that conflict with pandas internal member names,
     otherwise you will not be able to access the column/element using the dot syntax.

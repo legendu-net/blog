@@ -23,6 +23,15 @@ and when to use them.
 
 ## Third-party Collections and Related Tools
 
+Contiguous Data in Rust
+https://github.com/paulkernfeld/contiguous-data-in-rust
+
+ndarray
+https://crates.io/crates/ndarray
+
+An n-dimensional array for general elements and for numerics. Lightweight array views and slicing; views support chunking and splitting.
+
+
 - [heapless](https://crates.io/crates/heapless)
     provides `static` friendly data structures that don't require dynamic memory allocation.
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-01-22 14:33:10
-Modified: 2022-01-22 16:48:52
+Modified: 2022-08-19 21:55:55
 Author: Benjamin Du
 Slug: expose-local-services-to-public-using-ngrok
 Title: Expose Local Services to Public Using ngrok
@@ -13,6 +13,23 @@ You can expose a local service to public using `ngrok`.
 Follow instructions in the 
 [official documentation of ngrok](https://dashboard.ngrok.com/get-started/setup)
 to setup `ngrok`. 
+
+1. Install ngrok.
+
+        :::bash
+        sudo snap install ngrok
+
+2. Login to [ngrok.com](ngrok.com).
+
+3. Connect your account following instructions. 
+
+        :::bash
+        ngrok config your_token
+
+4. Start a http tunnel forwarding to you local port.
+
+        :::bash
+        ngrok http your_choice_of_port
 
 For example, 
 suppose you have launch a code-server service

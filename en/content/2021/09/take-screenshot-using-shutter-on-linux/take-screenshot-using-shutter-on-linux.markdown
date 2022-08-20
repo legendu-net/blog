@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-09-06 12:09:39
-Modified: 2022-08-14 09:44:34
+Modified: 2022-08-19 21:47:57
 Author: Benjamin Du
 Slug: take-screenshot-on-linux
 Title: Take Screenshot on Linux

@@ -5,7 +5,7 @@ Slug: tips-on-rustc
 Title: Tips on rustc
 Category: Computer Science
 Tags: Computer Science, programming, Rust, rustc, optimization, cargo
-Modified: 2022-08-19 21:45:32
+Modified: 2022-08-20 14:33:09
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -13,7 +13,7 @@ Please read with your own judgement!
 **
 
 
-## Optimization 
+## Optimization & High Performance 
 
 [Cheap tricks for high-performance Rust](https://deterministic.space/high-performance-rust.html)
 
@@ -30,6 +30,7 @@ Please read with your own judgement!
 [cargo-pgo](https://github.com/Kobzol/cargo-pgo)
 Cargo subcommand that makes it easier to use PGO and BOLT to optimize Rust binaries.
 
+[Comparing Rust's and C++'s Concurrency Library](https://blog.m-ou.se/rust-cpp-concurrency/)
 
 1. By default, 
     the Rust compiler `rustc` does no speed/size optimizations (`-C opt-level=0`).

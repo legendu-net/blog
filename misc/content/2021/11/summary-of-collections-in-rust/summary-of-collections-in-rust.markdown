@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-20 22:36:35
-Modified: 2022-08-11 09:01:52
+Modified: 2022-08-26 10:46:42
 Author: Benjamin Du
 Slug: summary-of-collections-in-rust
 Title: Summary of Collections in Rust
@@ -22,6 +22,12 @@ and when to use them.
 ![rust-collection-summary](https://user-images.githubusercontent.com/824507/151688238-88410b52-723d-4d31-bcb1-0a6c8580fb95.png)
 
 ## Third-party Collections and Related Tools
+
+heapless / [arrayvec](https://crates.io/crates/arrayvec): stores on the stack only. Limited capacity, capacity set at creation.
+
+smallvec: stores some elements on the stack, falls back to the heap if the stack capacity is exceeded.
+
+tinyvec: provides both, implemented in 100% safe code. For example, smallvec had 5 memory safety bugs to date; they are guaranteed to never happen with tinyvec. The drawback is that the stack storage is zero-initialized on creation, which incurs some cost; for small capacities it's usually negligible, but adds up if you want to store thousands of elements.
 
 Contiguous Data in Rust
 https://github.com/paulkernfeld/contiguous-data-in-rust

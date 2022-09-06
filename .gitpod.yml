@@ -1,4 +1,4 @@
-#image: dclong/gitpod:052710
+#image: dclong/gitpod:blog_090523
 image: dclong/gitpod:blog
 ports:
   - port: 8888

@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-12-04 20:03:49
-Modified: 2022-07-16 15:57:17
+Modified: 2022-09-02 10:05:31
 Author: Benjamin Du
 Slug: firenvim-brings-neovim-into-your-browser
 Title: FireNVim Brings NeoVim into Your Browser
@@ -72,4 +72,4 @@ on how to disable hardware acceleration in Chrome and Firefox.
 
 [Firenvim: Neovim inside Your Browser](https://jdhao.github.io/2020/01/01/firenvim_nvim_inside_browser/)
 
-[firenvim](https://github.com/glacambre/firenvim)
+[FireNvim @ GitHub](https://github.com/glacambre/firenvim)

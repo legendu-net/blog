@@ -5,7 +5,7 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2022-07-06 09:23:45
+Modified: 2022-09-05 18:47:40
 
 ## Tips
 
@@ -270,26 +270,26 @@ the default password (same as the user name) is used.
 Install and configure PySpark for use with the Python kernel.
 
     :::bash
-    sudo xinstall spark -ic && xinstall pyspark -ic
+    icon spark -ic && icon pyspark -ic
 
 Install the evcxr Rust kernel.
 
     :::bash
-    xinstall evcxr -ic
+    icon evcxr -ic
 
 Install the Almond Scala kernel.
 
     :::bash
-    xinstall almond -ic
+    icon almond -ic
 
 Install the ITypeScript kernel.
 
     :::bash
-    xinstall its -ic
+    icon its -ic
 
-Many other software/tools can be easily install by xinstall.
-Please refer to [dclong/xinstall](https://github.com/dclong/xinstall)
-for more details.
+Many other software/tools can be easily install by 
+[icon](https://github.com/legendu-net/icon)
+.
 
 ## Debug Docker Containers
 
@@ -318,8 +318,8 @@ you need to install Spark and the Python package `pyspark` first,
 which can be achieved using the following command.
 
     :::bash
-    xinstall --sudo spark -ic --loc /opt/  
-    xinstall pyspark -ic
+    icon spark -ic --loc /opt/  
+    icon pyspark -ic
 
 Follow the steps below to use PySpark after it is installed.
 
@@ -374,14 +374,6 @@ you can connect to the desktop environment in the Docker container using NoMachi
         - [dclong/typescript](https://hub.docker.com/r/dclong/typescript/)  
 
     - [dclong/jdk](https://hub.docker.com/r/dclong/jdk/)  
-
-        - [dclong/scala](https://hub.docker.com/r/dclong/scala/)  
-
-    - [dclong/r-base](https://hub.docker.com/r/dclong/r-base/)  
-
-        - [dclong/r-pop](https://hub.docker.com/r/dclong/r-pop/)  
-
-            - [dclong/rstudio](https://hub.docker.com/r/dclong/rstudio/)  
 
     - [dclong/conda](https://hub.docker.com/r/dclong/conda/)  
 

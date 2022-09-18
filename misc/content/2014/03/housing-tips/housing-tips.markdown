@@ -5,7 +5,7 @@ Title: Tips on Housing
 Slug: housing-tips
 Category: Life
 Tags: life, housing, tips, rent, apartment, shopping
-Modified: 2022-07-30 16:56:10
+Modified: 2022-09-18 16:47:07
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
@@ -134,14 +134,6 @@ use the toilet to flush it.
     - https://generark.com/products/homepower2?variant=40210280808639
 
     - https://generark.com/products/homepower-one?currency=USD&variant=40698021281983&utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping&gclid=CjwKCAjws8yUBhA1EiwAi_tpEa-AzzgC7m0ocrDpVZtxNP3mvhAHnx41iuCwhPCI1YzS_D8at6ebWhoCwRQQAvD_BwE
-
-- Type C Male to Magsafe 2/1 5Pin Female Power Adapter Converter
-
-    - https://www.aliexpress.com/item/2255801066564841.html?spm=a2g0o.cart.0.0.5ae138da7BM2Nh&gps-id=shoppingCartRecommend&scm=1007.13440.276583.0&scm_id=1007.13440.276583.0&scm-url=1007.13440.276583.0&pvid=016a108c-196b-44db-86ba-df3b33c22840&_t=gps-id:shoppingCartRecommend,scm-url:1007.13440.276583.0,pvid:016a108c-196b-44db-86ba-df3b33c22840,tpp_buckets:668%232846%238115%232000&pdp_ext_f=%7B%22sku_id%22%3A%2210000015479728498%22%2C%22sceneId%22%3A%223440%22%7D&pdp_npi=2%40dis%21USD%21%2118.89%21%21%21%21%21%402101d1b316549731428703580ee2a3%2110000015479728498%21rec  
-
-    - https://www.aliexpress.com/item/3256803586300334.html?spm=a2g0o.cart.0.0.5ae138da7BM2Nh&gps-id=shoppingCartRecommend&scm=1007.13440.276583.0&scm_id=1007.13440.276583.0&scm-url=1007.13440.276583.0&pvid=016a108c-196b-44db-86ba-df3b33c22840&_t=gps-id:shoppingCartRecommend,scm-url:1007.13440.276583.0,pvid:016a108c-196b-44db-86ba-df3b33c22840,tpp_buckets:668%232846%238115%232000&pdp_ext_f=%7B%22sku_id%22%3A%2212000027113029254%22%2C%22sceneId%22%3A%223440%22%7D&pdp_npi=2%40dis%21USD%21%218.64%21%21%21%21%21%402101d1b316549731428703580ee2a3%2112000027113029254%21rec  
-
-    - https://www.aliexpress.com/item/3256802039800830.html?spm=a2g0o.cart.0.0.5ae138da7BM2Nh&gps-id=shoppingCartRecommend&scm=1007.13440.276583.0&scm_id=1007.13440.276583.0&scm-url=1007.13440.276583.0&pvid=016a108c-196b-44db-86ba-df3b33c22840&_t=gps-id:shoppingCartRecommend,scm-url:1007.13440.276583.0,pvid:016a108c-196b-44db-86ba-df3b33c22840,tpp_buckets:668%232846%238115%232000&pdp_ext_f=%7B%22sku_id%22%3A%2212000019430584032%22%2C%22sceneId%22%3A%223440%22%7D&pdp_npi=2%40dis%21USD%21%2121.55%21%21%21%21%21%402101d1b316549731428703580ee2a3%2112000019430584032%21rec  
 
 - [暗盒修复器](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220528221640&SearchText=%E6%9A%97%E7%9B%92%E4%BF%AE%E5%A4%8D%E5%99%A8&spm=a2g0o.productlist.1000002.0)
 

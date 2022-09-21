@@ -56,8 +56,8 @@ JINJA_FILTERS = {
 }
 
 # github include settings
-GITHUB_USER = "dclong"
-GITHUB_REPO_COUNT = 3
+GITHUB_USER = "legendu-net"
+GITHUB_REPO_COUNT = 5
 GITHUB_SKIP_FORK = True
 GITHUB_SHOW_USER_LINK = True
 

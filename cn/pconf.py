@@ -115,4 +115,4 @@ FEED_ATOM = "atom.xml"
 SITESEARCH = "https://www.bing.com/search"
 
 # google analytics
-GOOGLE_ANALYTICS = "UA-30259661-1"
+GOOGLE_ANALYTICS = "242729304"

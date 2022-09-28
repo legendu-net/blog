@@ -1,6 +1,6 @@
 Status: published
 Date: 2020-11-09 11:10:06
-Modified: 2022-08-11 08:50:54
+Modified: 2022-09-26 10:49:41
 Author: Benjamin Du
 Slug: the-right-way-to-export-PATH-in-shell
 Title: The Right Way to Export PATH in Shell
@@ -21,6 +21,7 @@ Below is an example snippet of adding paths into the environment variable `$PATH
         $(ls -d $HOME/.*/bin 2> /dev/null)
         $(ls -d $HOME/Library/Python/3.*/bin 2> /dev/null)
         $(ls -d /usr/local/*/bin 2> /dev/null)
+        $(ls -d /opt/*/bin 2> /dev/null)
     )
     for ((_i=${#_PATHS[@]}-1; _i>=0; _i--)); do
         _PATH=${_PATHS[$_i]}

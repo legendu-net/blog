@@ -5,9 +5,38 @@ Slug: popular-databases
 Title: Popular Databases
 Category: Computer Science
 Tags: Computer Science, programming, database, MySQL, ClickHouse, TiDB, neo4j, Elasticsearch, TiDB, TDengine, Redis
-Modified: 2022-05-06 13:56:16
+Modified: 2022-10-08 11:22:29
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+
+## Types of Databases
+
+- relational 
+- non-relational 
+  - key value database
+    - document database
+    - wide column database
+  - graph database
+  - search engine database
+  - time series database
+
+Advantages of Relational Databases
+- consitency
+- security
+- ease of backup and recovery
+
+Advantages of Non-relational Databases
+- flexibility
+- scalability
+- cost of effectiveness
+
+## Storage Format
+
+- row storage
+- columnar storage
+
+columnar storage is good for analytical operations
 
 
 <table style="width:100%">
@@ -155,6 +184,8 @@ is Twitter's unified cache backend
 which is implemented in C and Rust.
 
 ## References
+
+- [Relational vs. Non-Relational Databases](https://www.youtube.com/watch?v=E9AgJnsEvG4)
 
 - [6.1 The Challenge of Distributed Database Systems](https://berb.github.io/diploma-thesis/original/061_challenge.html)
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 00:34:09
-Modified: 2022-10-09 00:34:09
+Modified: 2022-10-09 00:42:20
 Author: Benjamin Du
 Slug: gRPC-GraphQL-and-RESTful-APIs
 Title: Grpc Graphql and Restful APIs
@@ -17,6 +17,11 @@ has the best performance
 
 but not cannot be used for communication between frontend and backend directly,
 even thought it is doable.
+
+- RESTful
+- GraphQL
+- gRPC
+- WebSocket
 
 ## References
 

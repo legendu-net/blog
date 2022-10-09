@@ -1,6 +1,6 @@
 Status: published
 Date: 2020-10-26 12:49:19
-Modified: 2022-10-09 00:37:18
+Modified: 2022-10-09 00:44:12
 Author: Benjamin Du
 Slug: tips-on-backend-development
 Title: Tips on Backend Development
@@ -14,9 +14,7 @@ Please read with your own judgement!
 
 ## API
 
-- RESTful
-- GraphQL
-- gRPC
+[gRPC GraphQL and RESTful APIs](https://www.legendu.net/misc/blog/gRPC-GraphQL-and-RESTful-APIs)
 
 ## Java Backend Frameworks
 

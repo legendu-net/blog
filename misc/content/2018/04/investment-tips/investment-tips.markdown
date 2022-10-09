@@ -17,6 +17,16 @@ Please read with your own judgement!
 
 1. Spend less money than you can make.
 
+### Strategy for Bear Market
+
+[渡過10個熊市的美國投資冠軍 這次熊市下的建議｜瓦特股市 Marching Park STOCK【股市知識】](https://www.youtube.com/watch?v=krMO0e9WhnI)
+
+## Resources
+
+[Big Figures to Follow in Investment](https://www.legendu.net/misc/blog/big-figures-to-follow-in-investment)
+
+[Good Tutorials for Investment](https://www.legendu.net/misc/blog/good-tutorials-for-investment)
+
 ## A 股
 
 哪些股票值得持有 10 年？

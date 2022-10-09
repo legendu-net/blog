@@ -1,6 +1,6 @@
 Status: published
 Date: 2020-10-26 12:49:19
-Modified: 2021-09-29 10:33:02
+Modified: 2022-10-09 00:37:18
 Author: Benjamin Du
 Slug: tips-on-backend-development
 Title: Tips on Backend Development
@@ -16,6 +16,7 @@ Please read with your own judgement!
 
 - RESTful
 - GraphQL
+- gRPC
 
 ## Java Backend Frameworks
 

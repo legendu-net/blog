@@ -5,7 +5,7 @@ Slug: develop-a-gui-application-in-rust
 Title: Develop a GUI Application in Rust
 Category: Computer Science
 Tags: Computer Science, Rust, GUI
-Modified: 2022-05-08 00:29:19
+Modified: 2022-10-08 12:12:16
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -43,6 +43,13 @@ A cross-platform GUI library for Rust focused on simplicity and type-safety. Ins
 
 ## [gtk-rs](https://github.com/gtk-rs/gtk-rs)
 Works well on Linux but not as well on macOS and Windows.
+
+## [winit](https://crates.io/crates/winit)
+[winit](https://crates.io/crates/winit)
+is a window creation and management library. 
+It can create windows and lets you handle events 
+(for example: the window being resized, a key being pressed, a mouse movement, etc.) 
+produced by window.
 
 ## [druid](https://github.com/linebender/druid)
 Druid is an experimental Rust-native UI toolkit. 

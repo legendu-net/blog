@@ -5,10 +5,13 @@ Slug: popular-databases
 Title: Popular Databases
 Category: Computer Science
 Tags: Computer Science, programming, database, MySQL, ClickHouse, TiDB, neo4j, Elasticsearch, TiDB, TDengine, Redis
-Modified: 2022-10-08 11:22:29
+Modified: 2022-10-08 21:51:44
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+The YouTube video
+[How to Choose The Right Database](https://www.youtube.com/watch?v=kkeFE6iRfMM)
+has great advices on how to choose the right databases.
 
 ## Types of Databases
 

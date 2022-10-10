@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-08 16:59:59
-Modified: 2022-10-08 16:59:59
+Modified: 2022-10-09 17:16:15
 Author: Benjamin Du
 Slug: latency-numbers-programmers-should-know
 Title: Latency Numbers Programmers Should Know
@@ -20,68 +20,109 @@ Tags: Computer Science, programming, latency, number, time, system design
 <tbody>
   <tr>
     <td class="tg-0pky">&lt;=1ns</td>
-    <td class="tg-0pky">CPU registers; CPU clock cycle; L1 cache</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">1 - 10ns</td>
-    <td class="tg-0pky">L2 cache; branch mispredict</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">10 - 100ns</td>
-    <td class="tg-0pky">L3 cache; mutex lock/unlock; main memory referencing; </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">100 - 1000ns</td>
-    <td class="tg-0pky">trapping of system call; md5 hash of an u64;</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">1 - 10us</td>
     <td class="tg-0pky">
-        process context switching; <br>
-        compress 1kb with zippy; <br> 
-        memory copy of 64kb 
+      <ul>
+        <li>accessing CPU registers</li>
+        <li>CPU clock cycle</li>
+        <li>L1 cache</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">1-10ns</td>
+    <td class="tg-0pky">
+      <ul>
+        <li>L2 cache</li>
+        <li>branch mispredict</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">10-100ns</td>
+    <td class="tg-0pky">
+      <ul>
+        <li>L3 cache</li>
+        <li>mutex lock/unlock</li>
+        <li>main memory referencing</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">100-1000ns</td>
+    <td class="tg-0pky">
+      <ul>
+        <li>trapping of system call</li>
+        <li>md5 hash of an u64</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">1-10us</td>
+    <td class="tg-0pky">
+      <ul>
+        <li>process context switching</li>
+        <li>compress 1k with zippy</li>
+        <li>memory copy of 64k</li>
+      </ul>
     </td>
   </tr>
   <tr>
     <td class="tg-0pky">10-100us</td>
     <td class="tg-0pky">
-        network proxy / http request; <br>
-        read 1M from memory; <br>
-        SSD latency / read a 8k-page; 
+      <ul>
+        <li>network proxy / http request</li>
+        <li>read 1M from memory</li>
+        <li>SSD latency (read a 8k page)</li>
+      </ul>
     </td>
   </tr>
   <tr>
     <td class="tg-0pky">100-1000us</td>
     <td class="tg-0pky">
-        SSD write latency / write a page; <br>
-        intra-zone networking round trip; <br>
-        redis get operation / memcache (measured by client including network round trip) 
+      <ul>
+        <li>SSD write latency / write a page</li>
+        <li>intra-zone networking round trip</li>
+        <li>memcache/redis get operation (measured by client including network round trip)</li>
+      </ul>
     </td>
   </tr>
   <tr>
     <td class="tg-0pky">1-10ms</td>
-    <td class="tg-0pky">inter-zone networking latency; hard drive latency; </td>
+    <td class="tg-0pky">
+      <ul>
+        <li>inter-zone networking latency</li>
+        <li>hard drive latency</li>
+      </ul>
+    </td>
   </tr>
   <tr>
     <td class="tg-0pky">10-100ms</td>
     <td class="tg-0pky">
-        network round trip between US coasts; <br>
-        network round trip between US east coast to Europe; <br>
-        read 1GB from memory
+      <ul>
+        <li>network round trip between US coasts</li>
+        <li>network round trip between US east coast and Europe</li>
+        <li>read 1G from memory</li>
+      </ul>
     </td>
   </tr>
   <tr>
     <td class="tg-0pky">100-1000ms</td>
     <td class="tg-0pky">
-        bcypt a password; <br> 
-        TLS handshake (250-500ms); <br>
-        network round trip from US west coast to Singapore; <br>
-        read 1G from SSD
+      <ul>
+        <li>bcypt a password</li>
+        <li>TLS handshae (250-500ms)</li>
+        <li>network round trip from US west coast to Singapore</li>
+        <li>read 1G from SSD</li>
+      </ul>
     </td>
   </tr>
   <tr>
     <td class="tg-0pky">&gt;=1s</td>
-    <td class="tg-0pky">transfer 1G over the network in the same region (10S)</td>
+    <td class="tg-0pky">
+      <ul>
+        <li>transfer 1G over a network in the same region</li>
+      </ul>
+    </td>
   </tr>
 </tbody>
 </table>

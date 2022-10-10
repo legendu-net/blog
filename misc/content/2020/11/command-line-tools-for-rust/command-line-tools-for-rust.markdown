@@ -5,19 +5,21 @@ Slug: command-line-tools-for-rust
 Title: Command-line Tools for Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, command, line, tool, command-line
-Modified: 2022-10-09 00:32:31
+Modified: 2022-10-09 17:20:29
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
-https://github.com/rust-lang/rust-clippy
-A bunch of lints to catch common mistakes and improve your Rust code
+## [rust-clippy](https://github.com/rust-lang/rust-clippy)
+[rust-clippy](https://github.com/rust-lang/rust-clippy)
+is a bunch of lints to catch common mistakes and improve your Rust code.
 
 
-https://github.com/rust-lang/rustfmt
-Format Rust code
+## [rustfmt](https://github.com/rust-lang/rustfmt)
+[rustfmt](https://github.com/rust-lang/rustfmt)
+is Rust's code (official) formatting tool.
 
 ## [cargo-careful](https://github.com/RalfJung/cargo-careful)
 [cargo-careful](https://github.com/RalfJung/cargo-careful)

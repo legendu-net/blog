@@ -5,7 +5,7 @@ Slug: popular-databases
 Title: Popular Databases
 Category: Computer Science
 Tags: Computer Science, programming, database, MySQL, ClickHouse, TiDB, neo4j, Elasticsearch, TiDB, TDengine, Redis
-Modified: 2022-10-08 21:51:44
+Modified: 2022-10-09 17:16:54
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -41,6 +41,7 @@ Advantages of Non-relational Databases
 
 columnar storage is good for analytical operations
 
+## Comparison of Databases
 
 <table style="width:100%">
   <tr>

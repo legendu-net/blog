@@ -9,8 +9,7 @@ Tags: Computer Science, programming, latency, number, time, system design
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
-<table class="tg">
+<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
 <thead>
   <tr>
     <th class="tg-0pky">Latency</th>

@@ -1,9 +1,9 @@
 Status: published
 Date: 2022-10-08 12:12:31
-Modified: 2022-10-08 12:12:31
+Modified: 2022-10-09 17:56:43
 Author: Benjamin Du
 Slug: tips-on-grpc
-Title: Tips on Grpc
+Title: Tips on gRPC
 Category: Computer Science
 Tags: Computer Science, programming, gRPC, RPC, API, protocol buffer, protobuf
 

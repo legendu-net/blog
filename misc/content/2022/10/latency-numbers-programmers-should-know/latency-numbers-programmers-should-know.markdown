@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-08 16:59:59
-Modified: 2022-10-09 17:16:15
+Modified: 2022-10-09 17:57:17
 Author: Benjamin Du
 Slug: latency-numbers-programmers-should-know
 Title: Latency Numbers Programmers Should Know
@@ -82,7 +82,8 @@ Tags: Computer Science, programming, latency, number, time, system design
       <ul>
         <li>SSD write latency / write a page</li>
         <li>intra-zone networking round trip</li>
-        <li>memcache/redis get operation (measured by client including network round trip)</li>
+        <li>memcache/redis get operation <br>
+          (measured by client including network round trip)</li>
       </ul>
     </td>
   </tr>

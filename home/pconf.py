@@ -60,7 +60,6 @@ GITHUB_SHOW_USER_LINK = True
 SOCIAL = (
     ("LinkedIn", "https://www.linkedin.com/in/ben-chuanlong-du-1239b221/"),
     ("Twitter", "https://twitter.com/longendu"),
-    ("Facebook", "https://www.facebook.com/chuanlong.du")
 )
 
 DEFAULT_PAGINATION = 6

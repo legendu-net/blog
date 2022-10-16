@@ -140,7 +140,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     </td>
   </tr>
   <tr>
-    <td>Grocery</td>
+    <td>Other <br> Grocery</td>
     <td></td>
     <td></td>
     <td></td>
@@ -155,6 +155,27 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>
       <span style="color:red">Chase-U</span><br>
       <span style="color:green">AMEX-M</span><br>
+    </td>
+    <td>
+      <span style="color:green">BOA-M</span>
+    </td>
+  </tr>
+  <tr>
+    <td>Macys</td>
+    <td>
+      <span style="color:green">AMEX-M</span><br>
+    </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <span style="color:green">BOA-V</span>
+    </td>
+    <td>
+      <span style="color:green">AMEX-M</span><br>
+      <span style="color:red">Chase-U</span>
     </td>
     <td>
       <span style="color:green">BOA-M</span>
@@ -290,27 +311,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:red">Chase-U</span>
-    </td>
-    <td>
-      <span style="color:green">BOA-M</span>
-    </td>
-  </tr>
-  <tr>
-    <td>Macys</td>
-    <td>
-      <span style="color:green">AMEX-M</span><br>
-    </td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>
-      <span style="color:green">BOA-V</span>
-    </td>
-    <td>
-      <span style="color:green">AMEX-M</span><br>
       <span style="color:red">Chase-U</span>
     </td>
     <td>

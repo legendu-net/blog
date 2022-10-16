@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2022-08-19 21:45:32
+Modified: 2022-10-15 21:03:23
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications

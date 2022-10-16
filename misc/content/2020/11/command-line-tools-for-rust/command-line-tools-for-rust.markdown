@@ -5,7 +5,7 @@ Slug: command-line-tools-for-rust
 Title: Command-line Tools for Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, command, line, tool, command-line
-Modified: 2022-10-09 17:20:29
+Modified: 2022-10-15 20:59:01
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -27,3 +27,6 @@ is a tool to run your Rust code extra carefully
 -- opting into a bunch of nightly-only extra checks that help detect Undefined Behavior, 
 and using a standard library with debug assertions.
 
+## [cargo-pgo](https://github.com/Kobzol/cargo-pgo)
+
+Cargo subcommand for optimizing binaries with PGO and BOLT.

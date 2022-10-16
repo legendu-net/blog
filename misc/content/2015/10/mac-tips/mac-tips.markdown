@@ -103,3 +103,14 @@ https://github.com/eczarny/spectacle
 
 https://support.apple.com/en-us/HT202351
 
+
+## References
+
+- [Map Keys in macOS](https://www.legendu.net/en/blog/map-keys-in-macos)
+- [Install Python in macOS](https://www.legendu.net/en/blog/install-python-in-mac)
+- [Remove System Applications in macOS](misc/content/2020/03/remove-system-applications-in-mac/remove-system-applications-in-mac.markdown)
+- [Change Shell in macOS](https://www.legendu.net/en/blog/change-shell-in-mac)
+- [Proxychains-Ng Issues on macOS](https://www.legendu.net/misc/blog/proxychains-ng-issues-on-mac)
+- [Shortcuts in macOS](https://www.legendu.net/misc/blog/shortcuts-for-mac)
+- [Add New Document to Right-Click Menu in macOS](https://www.legendu.net/misc/blog/add-new-document-to-right-click-menu-in-mac)
+- [Screen Resolution in macOS](https://www.legendu.net/misc/blog/screen-resolution-in-macOS)

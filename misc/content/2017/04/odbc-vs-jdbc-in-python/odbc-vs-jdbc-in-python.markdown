@@ -1,11 +1,11 @@
 Status: published
 Date: 2017-04-30 12:06:09
 Author: Ben Chuanlong Du
-Slug: odbc-vs-jdbc-in-python
-Title: ODBC vs JDBC in Python
+Slug: sql-database-client-server-protocols
+Title: SQL Database Client-server Protocols
 Category: Computer Science
-Tags: programming, Python, ODBC, JDBC, database, SQL, TurbODBC, pyarrow, pyarrow.jvm, Java, Arrow Flight
-Modified: 2022-04-28 23:23:08
+Tags: programming, Python, ODBC, JDBC, database, SQL, TurbODBC, pyarrow, pyarrow.jvm, Java, Arrow Flight, API, protocol
+Modified: 2022-10-16 15:55:29
 
 **
 Things on this page are
@@ -13,7 +13,8 @@ fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
-1. Apache Arrow Flight is the future protocol for querying Databases!
+1. [Apache Arrow Flight](https://www.legendu.net/misc/blog/tips-on-apache-arrow-flight-sql)
+    is the future protocol for querying Databases!
     It use columnar data and leverages Apache Arrow to avoid unnecessary copy of data,
     which makes it able to query large data much (about 100x) faster than ODBC and JDBC.
 
@@ -25,19 +26,6 @@ Please read with your own judgement!
     However,
     it is not an easy job to install and configure ODBC drivers for non-open source databases (e.g., Teradata),
     in which situations JDBC is more convenient.
-
-
-## Arrow Flight 
-
-Arrow Flight is the future!
-
-[It’s Time to Replace ODBC & JDBC](https://www.dremio.com/is-time-to-replace-odbc-jdbc/)
-
-[Xoriant Open Source Contribution to Apache Arrow – JDBC Adapter](https://www.xoriant.com/blog/big-data-analytics/xoriant-open-source-contribution-apache-arrow-jdbc-adapter.html)
-
-[arrow-jdbc](https://mvnrepository.com/artifact/org.apache.arrow/arrow-jdbc/2.0.0)
-
-[arrow-memory](https://mvnrepository.com/artifact/org.apache.arrow/arrow-memory/2.0.0)
 
 ## JDBC Packages in Python
 
@@ -139,7 +127,11 @@ http://docs.python-guide.org/en/latest/scenarios/db/
 
 ## References
 
-[DB-API V2.0](https://www.python.org/dev/peps/pep-0249/)
+- [It’s Time to Replace ODBC & JDBC](https://www.dremio.com/blog/is-time-to-replace-odbc-jdbc/)
+
+- [https://www.youtube.com/watch?v=OLsXlKb_XRQ](Apache Arrow Flight SQL: High Performance, Simplicity, and Interoperability for Data Transfers)
+
+- [DB-API V2.0](https://www.python.org/dev/peps/pep-0249/)
 
 https://www.fullstackpython.com/object-relational-mappers-orms.html
 

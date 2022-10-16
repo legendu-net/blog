@@ -2,7 +2,7 @@ Status: published
 Date: 2019-02-19 10:18:07
 Author: Benjamin Du
 Slug: install-python-in-mac
-Title: Install Python in Mac
+Title: Install Python in macOS
 Category: Software
 Tags: software, install, Python, macOS
 Modified: 2020-02-19 10:18:07

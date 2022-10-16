@@ -2,7 +2,7 @@ Status: published
 Date: 2020-03-24 18:27:49
 Author: Benjamin Du
 Slug: remove-system-applications-in-mac
-Title: Remove System Applications in Mac
+Title: Remove System Applications in macOS
 Category: Computer Science
 Tags: Computer Science, macOS, uninstall, remove, application
 Modified: 2020-03-24 18:27:49

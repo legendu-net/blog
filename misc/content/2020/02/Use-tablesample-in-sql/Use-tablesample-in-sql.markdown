@@ -5,7 +5,7 @@ Slug: Use-tablesample-in-sql
 Title: Use TableSample in SQL
 Category: Computer Science
 Tags: programming, SQL, Spark, Spark SQL, PostgreSQL, TableSample
-Modified: 2021-06-14 08:57:08
+Modified: 2022-10-13 12:00:09
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -27,7 +27,8 @@ CANNOT use
 
 Notice that `WHERE` is applied after `TABLESAMPLE`.
 If you want to filter a table first and then do a sampling, 
-you can create a temporary table first.
+you can create a temporary table first
+or you can leverage common table expression (CTE).
 
 ## Spark SQL
 

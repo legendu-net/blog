@@ -5,7 +5,7 @@ Slug: python-pandas-tips
 Title: Python pandas Tips
 Category: Computer Science
 Tags: programming, Python, pandas, DataFrame, data frame, tips
-Modified: 2022-04-25 22:17:06
+Modified: 2022-10-12 10:56:35
 
 **
 Things on this page are
@@ -17,9 +17,9 @@ Please read with your own judgement!
 
 ```Python
 import pandas as pd
-pd.set_option('display.max_rows', 1000)
-pd.set_option('display.max_columns', 1000)
-pd.set_option('display.max_colwidth', 100)
+pd.set_option("display.max_rows", 1000)
+pd.set_option("display.max_columns", 1000)
+pd.set_option("display.max_colwidth", 100)
 ```
 
 ## Tips and Traps

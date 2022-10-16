@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 16:34:06
-Modified: 2022-10-09 16:34:06
+Modified: 2022-10-15 18:31:25
 Author: Benjamin Du
 Slug: recommendation-of-credit-card-usage
 Title: Recommendation of Credit Card Usage
@@ -103,7 +103,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td>
-      <span style="color:green">BOA-M</span>
+      <span style="color:red">BOA-V</span>
     </td>
     <td></td>
     <td>

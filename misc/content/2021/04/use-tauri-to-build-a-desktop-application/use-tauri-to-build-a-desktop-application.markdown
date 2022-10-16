@@ -5,7 +5,7 @@ Slug: use-tauri-to-build-a-desktop-application
 Title: Use Tauri to Build a Desktop Application
 Category: Computer Science
 Tags: Computer Science, programming, Tauri, Rust, JavaScript, JS, GUI, desktop, webview, web
-Modified: 2021-06-22 17:58:35
+Modified: 2022-10-15 18:27:54
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -36,9 +36,19 @@ based on the Svelte template at https://github.com/sveltejs/template.
 
 
 ## References
+
 - [tauri](https://github.com/tauri-apps/tauri)
+
 - [Tauri Documentation](https://tauri.studio/en/docs/getting-started/intro)
+
 - https://tauri.studio/en/docs/usage/intro/
+
 - [Announcing Tauri Beta - More efficient crossplatform apps with better features](https://dev.to/tauri/announcing-tauri-beta-more-efficient-crossplatform-apps-with-better-features-1nbd)
+
 - [Migrating from 0.x](https://tauri.studio/en/docs/usage/guides/migration/)
 
+- https://github.com/webview/webview_rust
+
+- https://github.com/webview/webview
+
+- [Tauri + Svelte = cross-platform native GUI apps compiled to WASM](https://forum.safedev.org/t/tauri-svelte-cross-platform-native-gui-apps-compiled-to-wasm/2870)

@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 16:34:06
-Modified: 2022-10-15 18:31:25
+Modified: 2022-10-16 12:37:13
 Author: Benjamin Du
 Slug: recommendation-of-credit-card-usage
 Title: Recommendation of Credit Card Usage
@@ -119,11 +119,32 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     </td>
   </tr>
   <tr>
-    <td>Grocery</td>
+    <td>Supermarket</td>
     <td></td>
     <td></td>
     <td></td>
     <td>AMEX-G</td>
+    <td>
+      <span style="color:green">BOA-M</span>
+    </td>
+    <td></td>
+    <td>
+      <span style="color:green">BOA-V</span>
+    </td>
+    <td>
+      <span style="color:red">Chase-U</span><br>
+      <span style="color:green">AMEX-M</span><br>
+    </td>
+    <td>
+      <span style="color:green">BOA-M</span>
+    </td>
+  </tr>
+  <tr>
+    <td>Grocery</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td>
       <span style="color:green">BOA-M</span>
     </td>
@@ -174,12 +195,34 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     </td>
     <td></td>
     <td></td>
-    <td>AMEX-G</td>
+    <td></td>
     <td></td>
     <td></td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
+    <td>
+      <span style="color:red">Chase-U</span>
+    </td>
+    <td>
+      <span style="color:green">BOA-M</span>
+    </td>
+  </tr>
+  <tr>
+    <td>Flight</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <span style="color:red">Chase-R</span><br>
+    </td>
+    <td>
+      <span style="color:green">BOA-V</span>
+    </td>
+    <td>
+      AMEX-G
+    </td>
+    <td></td>
     <td>
       <span style="color:red">Chase-U</span>
     </td>

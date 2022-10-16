@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-08 14:30:32
-Modified: 2022-10-15 20:56:16
+Modified: 2022-10-16 12:37:47
 Author: Benjamin Du
 Slug: app-platforms
 Title: App Platforms
@@ -37,7 +37,7 @@ Build full-stack web and mobile apps in hours. Easy to start, easy to scale.
 - MariaDB
 - no GraphQL
 
-[Shuttle](https://www.shuttle.rs/)
+## [Shuttle](https://www.shuttle.rs/)
 Stateful Serverless for Rust
 Shuttle is a web application platform that uses traits and annotations to configure your backend deployment - including databases.
 

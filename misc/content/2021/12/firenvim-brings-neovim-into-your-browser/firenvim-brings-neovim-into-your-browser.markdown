@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-12-04 20:03:49
-Modified: 2022-09-27 18:16:05
+Modified: 2022-10-15 19:41:01
 Author: Benjamin Du
 Slug: firenvim-brings-neovim-into-your-browser
 Title: FireNVim Brings NeoVim into Your Browser
@@ -22,7 +22,7 @@ Tags: Computer Science, Vim, NeoVim, FireNVim, browser
         icon nvim -ic
         icon svim -ic
 
-2. Install the FireNVim for your browser.
+2. Install the FireNVim plugin for your browser.
     - [FireNVim - Chrome](https://chrome.google.com/webstore/detail/firenvim/egpjdkipkomnmjhjmdamaniclmdlobbo?hl=en)
     - [FireNVim - Firefox](https://addons.mozilla.org/en-US/firefox/addon/firenvim/)
 

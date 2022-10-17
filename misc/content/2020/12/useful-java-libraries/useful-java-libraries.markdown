@@ -5,7 +5,7 @@ Slug: useful-java-libraries
 Title: Useful Java Libraries
 Category: Computer Science
 Tags: Computer Science, Java, JVM, library, package, Guava, Apache Commons
-Modified: 2022-10-16 15:52:38
+Modified: 2022-10-17 12:08:18
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -20,16 +20,14 @@ is a high-quality general purpose Java opensource library mainly developed by Go
 It has good immutable collection implementations
 which are preferred to Java's built-in immutable collections (introduced in Java 9+).
 
+### [Apache Commons](https://commons.apache.org/)
+[Apache Commons](https://commons.apache.org/)
+is an another high-quality general purpose Java library.
+
 ## [Guice](https://github.com/google/guice)
 
 Guice is a lightweight dependency injection framework for Java 8+.
 It is developed by Google.
-
-### [Apache Commons](https://commons.apache.org/)
-
-#### Apache CommonMath
-
-1. StatUtils.varance is OK.
 
 ## Misc
 ### [picocli](https://github.com/remkop/picocli)

@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-16 16:12:18
-Modified: 2022-10-16 16:12:18
+Modified: 2022-10-17 13:48:56
 Author: Benjamin Du
 Slug: binary-serialization-format
 Title: Binary Serialization Format
@@ -13,30 +13,29 @@ Tags: Computer Science, programming, binary, serialization, protobuf, Protocol B
 
 1. Protobuf is best for message serialization.
     Some companies (e.g., Google) also use it extensively for disk serialization.
+
+2. FlatBuffers has better CPU performance.
+
+3. [Apache Parquet](https://github.com/apache/parquet-format)
+    is the most popular binary serialization format for data frames.
     
-2. For text serialization format,
+4. For text serialization format,
     please refer to
     [Serialization and deserialization in Python](https://www.legendu.net/misc/blog/serialization-and-deserialization-in-python/)
     .
 
-## Protobuf 
-We also don't want to force users to bundle the protobuf runtime with their app.
-The protobuf serialization is optimized for on-the-wire transmission size rather than the runtime performance of local interop within the same process.
-Other protocols like Cap'n'Proto or Flatbuffers didn't have as mature implementations across all of Java/Objective-C/Dart for code generation.
+## Protobuf vs FlatBuffers 
 
-## FlatBuffers 
+Flatbuffers are mmap-able and don't have any parsing overhead compared to protos. 
+Large protos not only have CPU overhead but cause a memory usage spike 
+when proto is parsed during the resource loading phase. 
+The memory usage spike can lead to more page faults and increased end user latency. 
+Flatbuffers have none of these disadvantages.
+
+## [messagepack](https://msgpack.org/index.html)
 
 
-## messagepack
-https://msgpack.org/index.html
-
-
-flatbuf has better CPU performance
-
-Prefer using [flatbuffers](http://go/flatbuffers) instead of protos for resources.
-
-Flatbuffers are mmap-able and don't have any parsing overhead compared to protos. Large protos not only have CPU overhead but cause a memory usage spike when proto is parsed during the resource loading phase. The memory usage spike can lead to more page faults and increased end user latency. Flatbuffers have none of these disadvantages.
-
+## [Apache Parquet](https://github.com/apache/parquet-format)
 
 ## References
 

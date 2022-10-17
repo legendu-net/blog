@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-16 15:05:09
-Modified: 2022-10-16 15:05:09
+Modified: 2022-10-17 12:07:53
 Author: Benjamin Du
 Slug: useful-python-dev-dependencies
 Title: Useful Python Dev Dependencies
@@ -9,12 +9,12 @@ Tags: Computer Science, programming, Python, dev, development, stub, pandas
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-[pandas-stubs](https://pypi.org/project/pandas-stubs/)
+- [pandas-stubs](https://pypi.org/project/pandas-stubs/)
 
-yapf
+- [yapf](https://github.com/google/yapf)
 
-pylint
+- [pylint](https://github.com/PyCQA/pylint)
 
-pytype
+- [pytype](https://github.com/google/pytype)
 
-pytest
+- [pytest](https://github.com/pytest-dev/pytest)

@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-12-04 20:03:49
-Modified: 2022-10-15 19:41:01
+Modified: 2022-10-16 20:07:38
 Author: Benjamin Du
 Slug: firenvim-brings-neovim-into-your-browser
 Title: FireNVim Brings NeoVim into Your Browser
@@ -28,10 +28,15 @@ Tags: Computer Science, Vim, NeoVim, FireNVim, browser
 
 3. Run the command `nvim` 
     and then inside NeoVim run the command `:call firenvim#install(0)`.
+    
+4. If you are using Linux, 
+    configure your brower to trigger FireNVim on the shortcut `ctrl + e`.
+    - For chrome, you can configure this via chrome://extensions/shortcuts.
+    ![](https://user-images.githubusercontent.com/824507/196080758-ce9a706e-c746-4642-92ca-0e5eebe8e9b3.png)
 
 The above installation configures FireNVim to never automatially prompt up.
 You have to manually bring it up 
-using the shortcut `Ctrl + e` (Linux and Windows) 
+using the shortcut `ctrl + e` (Linux and Windows) 
 or `Command + e`  (macOS)
 .
 In case it doesn't work,

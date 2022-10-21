@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-06-02 15:21:12
-Modified: 2022-07-30 21:21:55
+Modified: 2022-10-20 23:02:12
 Author: Benjamin Du
 Slug: install-rust-globally
 Title: Install Rust Globally in Linux
@@ -8,8 +8,8 @@ Category: Computer Science
 Tags: Computer Science, programming, Rust, standalone, Linux, rust-src
 
 
-
-There are basically 2 ways to install a global standalone version of Rust in Linux.
+There are 3 ways to install a global standalone version of Rust in Linux.
+The recommended way is to use `rustup` with customized environment variables.
 
 ## Using a Package Management Tool
 

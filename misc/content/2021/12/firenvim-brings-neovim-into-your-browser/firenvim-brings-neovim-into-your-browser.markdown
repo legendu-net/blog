@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-12-04 20:03:49
-Modified: 2022-10-16 20:07:38
+Modified: 2022-10-20 22:59:59
 Author: Benjamin Du
 Slug: firenvim-brings-neovim-into-your-browser
 Title: FireNVim Brings NeoVim into Your Browser
@@ -16,7 +16,9 @@ Tags: Computer Science, Vim, NeoVim, FireNVim, browser
         :::bash
         curl -sSL https://raw.githubusercontent.com/legendu-net/icon/main/install_icon.sh | sudo bash -
 
-1. Install [NeoVim](https://github.com/neovim/neovim) and [SpaceVim](https://github.com/SpaceVim/SpaceVim).
+2. Install and configure 
+    [NeoVim](https://github.com/neovim/neovim) and [SpaceVim](https://github.com/SpaceVim/SpaceVim)
+    using icon.
 
         :::bash
         icon nvim -ic

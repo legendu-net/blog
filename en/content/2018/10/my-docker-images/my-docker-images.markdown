@@ -5,7 +5,7 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2022-09-05 18:47:40
+Modified: 2022-10-20 23:10:06
 
 ## Tips
 
@@ -16,14 +16,6 @@ Modified: 2022-09-05 18:47:40
     while Docker images with the `debian` tag are based on on Debian testing.
     The `debian` tag is for some rare situations where a new version of some software is required
     while it is hard to get it work in Ubuntu LTS or even newer release. 
-    For example,
-    [dclong/jupyterhub-ds:debian](https://github.com/dclong/docker-jupyterhub-ds)
-    has a valid Rust kernel for JupyterLab
-    while a Rust kernel might not exists or might not work in 
-    [dclong/jupyterhub-ds](https://github.com/dclong/docker-jupyterhub-ds)
-    or
-    [dclong/jupyterhub-ds:next](https://github.com/dclong/docker-jupyterhub-ds)
-    due to installation issues on Ubuntu (LTS).
     Generally speaking,
     the `latest` (the default when you do not specify a tag) is recommended for most users. 
 
@@ -42,9 +34,6 @@ Modified: 2022-09-05 18:47:40
 3. The Docker image 
     [dclong/jupyterhub-ds](https://github.com/dclong/docker-jupyterhub-ds)
     is recommended for most data science related work.
-    Specially,
-    [dclong/jupyterhub-ds:debian](https://github.com/dclong/docker-jupyterhub-ds)
-    contains a Rust kernel for JupyterLab.
     The Docker image
     [dclong/jupyterhub-pytorch](https://github.com/dclong/docker-jupyterhub-pytorch)
     is recommended for deep leaning related work.
@@ -397,7 +386,7 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
             - [dclong/jupyterlab](https://hub.docker.com/r/dclong/jupyterlab)  
 
-                > JupyterLab: 3.2.x
+                > JupyterLab: 3.4.x
 
                 - [dclong/jupyterhub](https://hub.docker.com/r/dclong/jupyterhub/)  
 
@@ -428,7 +417,7 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
                             - [dclong/vscode-server](https://hub.docker.com/r/dclong/vscode-server/)  
 
-                                > [code-server](https://github.com/cdr/code-server): 4.3.x  
+                                > [code-server](https://github.com/cdr/code-server): 4.7.x  
 
                             - [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/)  
 

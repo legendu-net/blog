@@ -59,7 +59,7 @@ GITHUB_SHOW_USER_LINK = True
 # social widget
 SOCIAL = (
     ("LinkedIn", "https://www.linkedin.com/in/ben-chuanlong-du-1239b221/"),
-    ("DockerHub", "https://hub.docker.com/u/dclong"),
+    ("Docker Hub", "https://hub.docker.com/u/dclong"),
     ("Stack Overflow", "https://stackoverflow.com/users/7808204/benjamin-du?tab=profile"),
     ("Twitter", "https://twitter.com/longendu"),
 )

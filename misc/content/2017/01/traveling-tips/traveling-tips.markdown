@@ -5,7 +5,7 @@ Slug: traveling-tips
 Title: Traveling Without Hassle
 Category: Life
 Tags: life, traveling, tips, luggage, trip
-Modified: 2020-05-22 13:31:43
+Modified: 2022-10-27 00:37:34
 
 **
 Things on this page are
@@ -17,22 +17,45 @@ Please read with your own judgement!
 
 ## Luggage
 
-8. ID/passport, boading passing, etc.
+### IDs
 
-3. laptop/charger, phone/charger, toothbrush charger, secure token
+- ID/passport
+- boading passing
 
-4. suit/pants, shirt, sleeping T-shirt/pants, roll cleaner, tie, leather shoes, stocks, sandal
+### Electronics
 
-2. teeth brush, toothpaste, towel, shaver, nail clipper
+- laptop with charger
+- secure token
+- phone with charger
+- toothbrush with charger
 
-6. pen, notes
+### Office 
+- pen
+- notes
 
-5. food, drink
+### Clothes
 
-7. breathing mask
+- sleeping T-shirt/pants
+- shirt
+- pants
+- roll cleaner, 
+- stocks
+- sandal
 
-8. medicine if any
+### Utils
+- teeth brush, toothpaste
+- towel
+- shaver
+- nail clipper
 
+### Food
+- food
+- drink
+
+### Health
+- CPAP
+- breathing mask
+- medicine if any
 
 ## Places To Rest in Cities
 

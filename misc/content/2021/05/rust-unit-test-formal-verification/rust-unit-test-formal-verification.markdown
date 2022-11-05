@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-05-13 09:33:19
-Modified: 2022-06-16 15:48:34
+Modified: 2022-11-05 10:04:22
 Author: Benjamin Du
 Slug: unit-testing-formal-verification-rust
 Title: Unit Testing and Formal Verification in Rust
@@ -10,6 +10,8 @@ Tags: Computer Science, programming, Rust, testing, unit test, verification, ana
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Test vs Verification
+
+[From Fuzzing to Proof: Using Kani with the Bolero Property-Testing Framework](https://model-checking.github.io/kani-verifier-blog/2022/10/27/using-kani-with-the-bolero-property-testing-framework.html)
 
 [Rust Design-for-Testability: a survey](https://alastairreid.github.io/rust-testability/)
 

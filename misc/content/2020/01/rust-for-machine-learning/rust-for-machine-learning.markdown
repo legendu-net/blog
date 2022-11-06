@@ -5,7 +5,7 @@ Slug: rust-for-machine-learning
 Title: Rust for Machine Learning
 Category: AI
 Tags: AI, data science, machine learning, Rust, AI, deep learning
-Modified: 2022-11-05 17:51:31
+Modified: 2022-11-05 18:45:24
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -21,6 +21,11 @@ is a Rust language binding for TensorFlow.
 is a Rust bindings for the C++ API of PyTorch.
 
 ## [linfa](https://github.com/rust-ml/linfa)
+
+## [BastionAI](https://github.com/mithril-security/bastionai)
+BastionAI is a confidential deep learning framework 
+that enables data scientists to train their models on sensitive data, 
+while ensuring the data providers no third party will have access to these.
 
 ## References
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-06-17 17:11:24
-Modified: 2022-06-20 20:09:19
+Modified: 2022-11-05 22:34:17
 Author: Benjamin Du
 Slug: global-data-in-rust
 Title: Global Data in Rust
@@ -15,3 +15,7 @@ has a guide explaining how to use "global data" in Rust.
 
 
 [array_macro](https://crates.io/crates/array-macro)
+
+## References
+
+- [Const Syntax](https://blog.yoshuawuyts.com/const-syntax/)

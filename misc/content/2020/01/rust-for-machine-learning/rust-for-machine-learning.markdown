@@ -20,13 +20,14 @@ is a Rust language binding for TensorFlow.
 [tch-rs](https://github.com/LaurentMazare/tch-rs)
 is a Rust bindings for the C++ API of PyTorch.
 
+## [linfa](https://github.com/rust-ml/linfa)
+
 ## References
 
-https://github.com/vaaaaanquish/Awesome-Rust-MachineLearning#deep-neural-network
-vaaaaanquish
-/
-Awesome-Rust-MachineLearning
+- [Rust Machine learning Resources](https://rustrepo.com/catalog/rust-machine-learning_newest_1)
 
-[Are We Learning Yes](http://www.arewelearningyet.com/)
+- [Best of ML Rust](https://github.com/e-tornike/best-of-ml-rust)
 
+- [vaaaaanquish/Awesome-Rust-MachineLearning](https://github.com/vaaaaanquish/Awesome-Rust-MachineLearning#deep-neural-network)
 
+- [Are We Learning Yes](http://www.arewelearningyet.com/)

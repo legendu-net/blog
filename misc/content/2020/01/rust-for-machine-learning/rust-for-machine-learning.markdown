@@ -5,7 +5,7 @@ Slug: rust-for-machine-learning
 Title: Rust for Machine Learning
 Category: AI
 Tags: AI, data science, machine learning, Rust, AI, deep learning
-Modified: 2020-10-27 22:43:48
+Modified: 2022-11-05 17:51:31
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -21,6 +21,11 @@ is a Rust language binding for TensorFlow.
 is a Rust bindings for the C++ API of PyTorch.
 
 ## References
+
+https://github.com/vaaaaanquish/Awesome-Rust-MachineLearning#deep-neural-network
+vaaaaanquish
+/
+Awesome-Rust-MachineLearning
 
 [Are We Learning Yes](http://www.arewelearningyet.com/)
 

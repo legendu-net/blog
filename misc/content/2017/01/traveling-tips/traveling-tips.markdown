@@ -5,7 +5,7 @@ Slug: traveling-tips
 Title: Traveling Without Hassle
 Category: Life
 Tags: life, traveling, tips, luggage, trip
-Modified: 2022-10-27 00:37:34
+Modified: 2022-11-05 18:21:07
 
 **
 Things on this page are
@@ -19,7 +19,7 @@ Please read with your own judgement!
 
 ### IDs
 
-- ID/passport
+- ID, passport
 - boading passing
 
 ### Electronics
@@ -29,7 +29,9 @@ Please read with your own judgement!
 - phone with charger
 - toothbrush with charger
 
-### Office 
+### Office
+- company badge
+- company credit card 
 - pen
 - notes
 
@@ -43,6 +45,7 @@ Please read with your own judgement!
 - sandal
 
 ### Utils
+- sunglasses 
 - teeth brush, toothpaste
 - towel
 - shaver

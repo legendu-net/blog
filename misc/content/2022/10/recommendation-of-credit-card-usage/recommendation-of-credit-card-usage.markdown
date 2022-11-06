@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 16:34:06
-Modified: 2022-10-16 12:56:18
+Modified: 2022-11-05 18:17:29
 Author: Benjamin Du
 Slug: recommendation-of-credit-card-usage
 Title: Recommendation of Credit Card Usage
@@ -154,7 +154,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     </td>
     <td>
       <span style="color:red">Chase-U</span><br>
-      <span style="color:green">AMEX-M</span><br>
     </td>
     <td>
       <span style="color:green">BOA-M</span>
@@ -166,7 +165,9 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">AMEX-M</span><br>
     </td>
     <td></td>
-    <td></td>
+    <td>
+      <span style="color:green">AMEX-M</span><br>
+    </td>
     <td></td>
     <td></td>
     <td></td>
@@ -174,7 +175,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:green">AMEX-M</span><br>
       <span style="color:red">Chase-U</span>
     </td>
     <td>

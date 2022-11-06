@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-09 10:28:40
-Modified: 2022-08-14 01:55:05
+Modified: 2022-11-05 20:32:12
 Author: Benjamin Du
 Slug: profile-rust-applications-using-flamegraph
 Title: Profile Rust Applications Using Flamegraph
@@ -27,12 +27,16 @@ Tags: Computer Science, programming, Rust, flamegraph, perf, profile, profiling
     which is easier and safer to do in an isolated environment.
     If you use a Docker container, 
     <span style="color:red"> 
-    make sure that the Linux kernel inside the Docker image is the same as the Linux kernel on the host machine
+    make sure that the Docker image is compatible with the Linux kernel on the host machine
     </span>
     !
     Otherwise,
     you will either fail to install `perf` 
     or install a non-compatible one.
+    Generally speaking,
+    it is a good choice to run a Ubuntu Docker container 
+    on a Ubunut host machine 
+    with matching releasing versions.
 
 3. You have to configure `perf_event_paranoid` to be `-1`.
     This can be done by manually setting the value in the file 

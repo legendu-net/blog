@@ -8,8 +8,9 @@ Tags: tips, tmux, software, remote, screen, terminal
 Modified: 2022-01-22 10:57:00
 
 **
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
+Things under legendu.net/outdated are outdated technologies 
+that the author does not plan to update any more. 
+Please look for better alternatives.
 **
 
 Zellij is a better alternative.

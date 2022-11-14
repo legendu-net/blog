@@ -8,9 +8,9 @@ Tags: machine learning, H2O, software, framework, data science, AI
 Modified: 2020-05-22 15:18:11
 
 **
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
+Things under legendu.net/outdated are outdated technologies 
+that the author does not plan to update any more. 
+Please look for better alternatives.
 **
 
 ## Install H2O Using conda 

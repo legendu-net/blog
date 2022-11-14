@@ -8,9 +8,9 @@ Tags: macOS, Apple, iTerm2, color schemes
 Modified: 2021-09-25 13:58:06
 
 **
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
+Things under legendu.net/outdated are outdated technologies 
+that the author does not plan to update any more. 
+Please look for better alternatives.
 **
 
 Hyper.js is a much better cross-platform alternative!

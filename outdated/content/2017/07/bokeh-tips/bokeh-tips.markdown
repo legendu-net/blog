@@ -8,9 +8,9 @@ Tags: programming, Python, visualization, Bokeh, Bokeh server, tips
 Modified: 2021-09-25 13:50:33
 
 **
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
+Things under legendu.net/outdated are outdated technologies 
+that the author does not plan to update any more. 
+Please look for better alternatives.
 **
 
 HoloViews and hvplot are much better alternatives which supports Bokeh as the backend.

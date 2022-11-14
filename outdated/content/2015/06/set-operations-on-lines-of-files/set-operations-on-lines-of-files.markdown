@@ -8,9 +8,9 @@ Category: Computer Science
 Tags: programming, set operations, file, lines, sort, uniq, comm, shell
 
 **
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
+Things under legendu.net/outdated are outdated technologies 
+that the author does not plan to update any more. 
+Please look for better alternatives.
 **
 
 It is suggested that you **use Python instead of shell** script 

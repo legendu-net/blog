@@ -8,6 +8,8 @@ Slug: alike-objects-in-r
 Author: Ben Chuanlong Du
 Modified: 2013-12-05 00:19:25
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 ## Matrix VS Data Frame: 
 

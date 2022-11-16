@@ -99,6 +99,9 @@ class Post:
         blog_dir = self.blog_dir()
         if blog_dir in (MISC, OUTDATED):
             DISCLAIMER = DISCLAIMER_MISC if blog_dir == MISC else DISCLAIMER_OUTDATED
+            DISCLAIMER_OTHER = DISCLAIMER_OUTDATED if blog_dir == MISC else DISCLAIMER_MISC
+            if notebook["cells"][1]["source"][0] == DISCLAIMER_OTHER:
+                notebook["cells"][1]["source"][0] = DISCLAIMER
             if notebook["cells"][1]["source"][0] != DISCLAIMER:
                 notebook["cells"].insert(
                     1, {
@@ -124,8 +127,11 @@ class Post:
             index = [line.strip() for line in lines].index("")
             with self.path.open("w") as fout:
                 fout.writelines(lines[:index])
-                fout.writelines(DISCLAIMER)
-                fout.writelines(lines[index:])
+                fout.writelines("\n" + DISCLAIMER + "\n")
+                index_5 = index + 5
+                fout.writelines(line for line in lines[index:index_5] if not line.strip() in (DISCLAIMER_MISC, DISCLAIMER_OUTDATED
+                                                                                  ))
+                fout.writelines(lines[index_5:])
             return
         text = self.path.read_text().replace(DISCLAIMER_MISC, "").replace(DISCLAIMER_OUTDATED, "")
         self.path.write_text(text)
@@ -587,6 +593,7 @@ class Blogger:
         elif isinstance(dst, str):
             dst = Path(dst)
         if src.resolve() == dst.resolve():
+            Post(dst).update_after_move()
             return
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.move(src, dst)

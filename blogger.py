@@ -23,7 +23,8 @@ CN = "cn"
 HOME = "home"
 MISC = "misc"
 OUTDATED = "outdated"
-DISCLAIMER = "**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**"
+DISCLAIMER_MISC = "**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**"
+DISCLAIMER_OUTDATED = "**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**"
 CATEGORY = "Computer Science"
 TAGS = "Computer Science, programming"
 MARKDOWN = ".markdown"
@@ -95,7 +96,9 @@ class Post:
 
     def _update_after_move_notebook(self) -> None:
         notebook = self._read_notebook()
-        if self.blog_dir() == MISC:
+        blog_dir = self.blog_dir()
+        if blog_dir in (MISC, OUTDATED):
+            DISCLAIMER = DISCLAIMER_MISC if blog_dir == MISC else DISCLAIMER_OUTDATED
             if notebook["cells"][1]["source"][0] != DISCLAIMER:
                 notebook["cells"].insert(
                     1, {
@@ -105,7 +108,7 @@ class Post:
                     }
                 )
             self._write_notebook(notebook)
-        elif notebook["cells"][1]["source"][0] == DISCLAIMER:
+        elif notebook["cells"][1]["source"][0] in (DISCLAIMER_MISC, DISCLAIMER_OUTDATED):
             notebook["cells"].pop(1)
         self._write_notebook(notebook)
 
@@ -113,7 +116,9 @@ class Post:
         self.path.write_text(json.dumps(notebook, indent=1))
 
     def _update_after_move_markdown(self) -> None:
-        if self.blog_dir() == MISC:
+        blog_dir = self.blog_dir()
+        if blog_dir in (MISC, OUTDATED):
+            DISCLAIMER = DISCLAIMER_MISC if blog_dir == MISC else DISCLAIMER_OUTDATED
             with self.path.open() as fin:
                 lines = fin.readlines()
             index = [line.strip() for line in lines].index("")
@@ -122,7 +127,7 @@ class Post:
                 fout.writelines(DISCLAIMER)
                 fout.writelines(lines[index:])
             return
-        text = self.path.read_text().replace(DISCLAIMER, "")
+        text = self.path.read_text().replace(DISCLAIMER_MISC, "").replace(DISCLAIMER_OUTDATED, "")
         self.path.write_text(text)
 
     @staticmethod
@@ -402,9 +407,9 @@ class Post:
             title=title, slug=Post.slug(title), category=CATEGORY, tags=TAGS
         )
         if self.blog_dir() == MISC:
-            text = text.replace("${DISCLAIMER}", DISCLAIMER)
+            text = text.replace("${DISCLAIMER_MISC}", DISCLAIMER_MISC)
         else:
-            text = text.replace("${DISCLAIMER}", "")
+            text = text.replace("${DISCLAIMER_MISC}", "")
         with self.path.open("w") as fout:
             fout.write(text)
 
@@ -420,7 +425,7 @@ class Post:
             fout.writelines(f"Tags: {TAGS}\n")
             if self.blog_dir() == MISC:
                 fout.writelines("\n")
-                fout.writelines(DISCLAIMER)
+                fout.writelines(DISCLAIMER_MISC)
                 fout.writelines("\n")
 
     @staticmethod

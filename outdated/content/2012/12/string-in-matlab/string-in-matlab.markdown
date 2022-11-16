@@ -8,6 +8,8 @@ Title: String in MATLAB
 Tags: string, programming, MATLAB
 Modified: 2015-02-20 10:40:42
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 1. To display special characters (e.g. `\n`, `\t` and so on),
 you have to use `sprintf` to format it first. 

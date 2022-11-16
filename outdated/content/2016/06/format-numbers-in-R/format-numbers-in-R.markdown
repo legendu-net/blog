@@ -8,6 +8,8 @@ Category: Programming
 Tags: programming, R, CRAN, formatting, numbers
 Modified: 2016-06-11 16:55:27
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

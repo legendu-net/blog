@@ -8,6 +8,8 @@ Category: Software
 Tags: tips, software, octopress, tips
 Modified: 2016-08-15 21:43:18
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

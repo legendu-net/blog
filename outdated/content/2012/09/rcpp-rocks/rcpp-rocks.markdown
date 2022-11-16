@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: C++, list, programming, HPC, Rcpp, R, RcppArmadillo, Armadillo, rock
 Modified: 2014-08-16 19:26:30
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 Please see [here](https://bitbucket.org/dclong/r-learn/src/) 
 for some simple examples for learning Rcpp and related packages.

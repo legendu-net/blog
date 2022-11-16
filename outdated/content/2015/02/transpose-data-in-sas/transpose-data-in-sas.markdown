@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, SAS, data manipulation, transpose
 Modified: 2015-08-26 22:09:17
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 You can use the transpose procedure to tranpose a fat/thin data to a thin/fat data in SAS.
 For example, 
 suppose we have a data set s1 in SAS.

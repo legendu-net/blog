@@ -8,6 +8,8 @@ Slug: develop-r-packages-using-roxygen2
 Author: Ben Chuanlong Du
 Modified: 2017-07-27 12:41:29
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 You have to install the R package `roxygen2` first.
 ```R

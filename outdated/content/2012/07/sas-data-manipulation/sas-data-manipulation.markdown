@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, SAS, SQL, data step, data manipulation
 Modified: 2015-08-02 12:40:28
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 <img src="http://dclong.github.io/media/sas/sas.jpg" height="200" width="240" align="right"/>
 
 ## Data Manipulation

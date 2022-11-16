@@ -8,6 +8,8 @@ Slug: parallel-computing-in-MATLAB
 Author: Ben Chuanlong Du
 Modified: 2014-06-19 19:45:42
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 1. It is very easy to do parallel computing in MATLAB. 
 Usually what you have to do is to change `for` to `parfor` 

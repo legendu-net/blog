@@ -7,6 +7,8 @@ Category: Software
 Tags: tips, tmux, software, remote, screen, terminal
 Modified: 2022-01-22 10:57:00
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

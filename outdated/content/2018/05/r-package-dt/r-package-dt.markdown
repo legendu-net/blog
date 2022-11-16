@@ -8,6 +8,8 @@ Category: Programming
 Tags: programming, cran, DT, datatables.js
 Modified: 2018-05-27 16:16:48
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

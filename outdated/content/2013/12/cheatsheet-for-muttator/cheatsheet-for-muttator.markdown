@@ -8,7 +8,8 @@ Category: Software
 Tags: software, Muttator, Vim, tips, Mozilla
 Modified: 2013-12-19 21:19:59
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
  
 Adopted from http://waxandwane.org/muttator.html
 

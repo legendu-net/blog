@@ -7,6 +7,8 @@ Slug: tips-ruby
 Author: Ben Chuanlong Du
 Modified: 2020-04-06 11:28:52
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 <img src="http://dclong.github.io/media/ruby/ruby.png" height="200" width="200" align="right"/>
 
 ## Array

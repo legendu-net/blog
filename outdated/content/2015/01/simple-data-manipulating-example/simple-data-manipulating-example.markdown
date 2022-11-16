@@ -7,6 +7,8 @@ Category: Computer Science
 Tags: programming, SAS, IML, R, CRAN, example
 Modified: 2020-05-22 13:33:00
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

@@ -8,6 +8,8 @@ Category: Software
 Tags: questions, CRAN, Rcpp
 Modified: 2016-11-20 20:30:22
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

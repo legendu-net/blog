@@ -8,6 +8,8 @@ Category: Programming
 Tags: R, filesystem, programming, CRAN, file system
 Modified: 2016-07-06 21:25:28
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

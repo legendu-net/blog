@@ -7,6 +7,8 @@ Category: Software
 Tags: Linux, Windows, virtualization, software, Cygwin, ports
 Modified: 2019-02-10 13:28:49
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 [Cygwin Ports Project](http://cygwinports.org/)
 
 

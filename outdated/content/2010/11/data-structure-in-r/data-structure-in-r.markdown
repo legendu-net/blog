@@ -8,6 +8,8 @@ Category: Programming
 Tags: programming, list, data structure, container, matrix, vector, R, CRAN
 Modified: 2016-07-09 18:57:36
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

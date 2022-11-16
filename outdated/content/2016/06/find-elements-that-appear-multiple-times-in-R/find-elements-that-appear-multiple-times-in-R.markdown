@@ -8,6 +8,8 @@ Category: Programming
 Tags: programming, CRAN, R, frequency, table, multiple times, unique
 Modified: 2016-06-11 15:31:16
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

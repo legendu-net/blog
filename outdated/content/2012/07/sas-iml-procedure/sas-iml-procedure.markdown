@@ -8,6 +8,8 @@ Slug: sas-iml-procedure
 Author: Ben Chuanlong Du
 Modified: 2015-02-19 15:30:52
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 <img src="http://dclong.github.io/media/sas/sas.jpg" height="200" width="240" align="right"/>
 
 

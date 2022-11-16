@@ -8,6 +8,8 @@ Category: Software
 Tags: software, Cygwin, Terminator, backports, cygwinports
 Modified: 2016-07-09 22:24:39
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

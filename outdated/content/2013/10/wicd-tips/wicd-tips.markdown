@@ -7,6 +7,8 @@ Category: Software
 Tags: tips, wicd, network, Linux
 Modified: 2020-05-22 14:40:58
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

@@ -8,6 +8,8 @@ Category: Software
 Tags: software, Eclim, tips, Vim, Eclipse
 Modified: 2020-03-21 10:54:21
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

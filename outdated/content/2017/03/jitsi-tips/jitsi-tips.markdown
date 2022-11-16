@@ -7,6 +7,8 @@ Category: Software
 Tags: software, jitsi, communication, video, audio, conference, chat
 Modified: 2020-05-22 14:53:53
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

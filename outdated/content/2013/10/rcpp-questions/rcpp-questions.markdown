@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: questions, Rcpp, programming, C++
 Modified: 2016-06-11 17:37:32
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

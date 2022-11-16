@@ -8,6 +8,8 @@ Category: Programming
 Tags: programming, data structure, algebra, matrix, R, vector, CRAN
 Modified: 2015-05-14 22:04:52
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 [Abuse of Vector in R]: http://dclong.github.io/en/2012/05/abuse-vector-r/
 I talked in the post [Abuse of Vector in R]() that 
 it is often the case that we want keep the matrix sturcture when 

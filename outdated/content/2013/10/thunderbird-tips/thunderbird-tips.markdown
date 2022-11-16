@@ -8,6 +8,8 @@ Category: Software
 Tags: tips, software, thunderbird, email client
 Modified: 2017-03-04 14:29:35
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

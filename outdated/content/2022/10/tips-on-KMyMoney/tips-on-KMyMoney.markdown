@@ -7,6 +7,8 @@ Title: Tips on Kmymoney
 Category: Computer Science
 Tags: Computer Science, programming
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 
 Mint.com is much better alternative. 

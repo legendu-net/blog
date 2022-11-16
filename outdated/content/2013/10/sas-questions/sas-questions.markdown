@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: questions, programming, SAS
 Modified: 2016-07-13 22:55:14
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

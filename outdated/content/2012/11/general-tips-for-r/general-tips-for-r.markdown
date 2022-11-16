@@ -8,6 +8,8 @@ Slug: general-tips-for-r
 Author: Ben Chuanlong Du
 Modified: 2013-12-05 00:29:52
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 1. Many R functions have lots of arguments which allows you get a full
 control of their behaviors, so before you ask whether there is any R

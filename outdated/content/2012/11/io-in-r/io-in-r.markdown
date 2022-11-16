@@ -8,6 +8,8 @@ Category: Programming
 Tags: R, IO, programming, CRAN
 Modified: 2016-07-09 18:20:45
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 ## read.table, read.csv, read.delim, etc.
 1. It is suggested that you use `read.csv`/`read.delim` and avoid using `read.table`.
 This is because that the `comment.char` is off for `read.csv`/`read.delim` and on for `read.table` by default. 

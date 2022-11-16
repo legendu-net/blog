@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, SAS, missing
 Modified: 2015-03-13 00:59:10
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 I recent come across a problem.
 I have a table `A` in SAS with columns `x`, `y` and `z`.
 The table almost exhaust the Cartesian product of `x` and `y` but has some rows missing.

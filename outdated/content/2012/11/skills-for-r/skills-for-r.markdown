@@ -8,6 +8,8 @@ Category: Programming
 Tags: R, skills, programming, CRAN
 Modified: 2015-05-14 21:59:32
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 1. Unlike C/C++, Java and SAS, 
 you do not have semicolon to indicate the end of a command, 

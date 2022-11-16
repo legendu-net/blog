@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, SAS, quantile
 Modified: 2015-03-13 16:49:45
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

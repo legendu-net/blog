@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, Scala, Jupyter, JupyterLab, jupyter-scala, kernel
 Modified: 2016-12-10 01:52:37
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 Note: Apache Toree is a better alternative than Jupyter Scala.
 It is suggested that you use Apache Toree instead of Jupyter Scala.
 

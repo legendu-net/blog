@@ -7,6 +7,8 @@ Category: OS
 Tags: macOS, Apple, iTerm2, color schemes
 Modified: 2021-09-25 13:58:06
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

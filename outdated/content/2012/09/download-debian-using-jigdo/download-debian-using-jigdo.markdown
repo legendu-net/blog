@@ -8,6 +8,8 @@ Category: OS
 Tags: jigdo-lite, wget, debian image, jigdo, Linux
 Modified: 2015-02-03 19:59:19
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 [Weekly Builds of Debian Testing Image]: http://cdimage.debian.org/cdimage/weekly-builds/amd64/jigdo-dvd/
 
 <img src="http://dclong.github.io/media/linux/debian.png" height="200" width="240" align="right"/>

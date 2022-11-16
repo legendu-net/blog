@@ -8,6 +8,8 @@ Category: Programming
 Tags: R, programming, characters, string, CRAN
 Modified: 2016-11-20 19:36:57
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

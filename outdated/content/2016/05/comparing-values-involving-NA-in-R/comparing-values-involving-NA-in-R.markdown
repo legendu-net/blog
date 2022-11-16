@@ -8,6 +8,8 @@ Category: Programming
 Tags: programming, R, comparison, NA, missing, CRAN
 Modified: 2016-07-10 20:33:23
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 The best way to compare values containing `NA` in R is to define customized comparison functions.
 Here is an example.
 ```R

@@ -7,6 +7,8 @@ Category: Computer Science
 Tags: programming, Scala, functional programming, big data, Spark
 Modified: 2020-03-24 19:09:23
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

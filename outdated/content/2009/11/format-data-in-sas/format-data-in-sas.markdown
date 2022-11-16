@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: SAS, formatting data, programming, label
 Modified: 2015-05-17 18:52:19
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

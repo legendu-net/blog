@@ -8,6 +8,8 @@ Category: Programming
 Tags: programming, CRAN, R, issue, trick, trap, vector, zero-length, 0-length
 Modified: 2017-04-10 19:21:27
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 The corner case of 0-length vectors is not well considered in R. 
 It causes issues in several situations. 
 First, `1:n` is probably not what you want when `n = 0`. 

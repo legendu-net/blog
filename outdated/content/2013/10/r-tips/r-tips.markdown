@@ -7,6 +7,8 @@ Category: Programming
 Tags: tips, programming, CRAN, R
 Modified: 2020-02-29 17:08:42
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

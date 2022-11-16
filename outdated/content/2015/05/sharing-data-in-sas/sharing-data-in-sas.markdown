@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, SAS, data, dataset, macro
 Modified: 2015-05-17 17:09:52
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

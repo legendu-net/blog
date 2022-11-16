@@ -8,6 +8,8 @@ Slug: general-tips-for-MATLAB
 Author: Ben Chuanlong Du
 Modified: 2014-09-08 10:35:47
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 ## Skills
 

@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: character, programming, SAS, procedure, data step, tip
 Modified: 2015-08-02 12:05:07
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 **
 Things under legendu.net/outdated are outdated technologies 

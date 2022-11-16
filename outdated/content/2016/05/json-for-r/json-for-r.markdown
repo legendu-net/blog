@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, R, JSON, NoSQL, database, jsonlite, rjson
 Modified: 2016-08-15 20:56:58
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

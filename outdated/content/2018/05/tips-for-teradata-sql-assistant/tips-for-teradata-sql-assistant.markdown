@@ -7,6 +7,8 @@ Category: Software
 Tags: software, Teradata SQL Assistant, Teradata SQL, IDE
 Modified: 2020-04-12 22:02:34
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

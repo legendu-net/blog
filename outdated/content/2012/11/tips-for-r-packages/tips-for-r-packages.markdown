@@ -8,6 +8,8 @@ Category: Programming
 Tags: programming, repository, package, OmegaHat, CRAN, R, Bioconductor, biocLite
 Modified: 2016-10-23 22:30:01
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

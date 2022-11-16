@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: SAS, programming, error, tips
 Modified: 2015-05-17 17:26:53
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
 It is not meant to readers 

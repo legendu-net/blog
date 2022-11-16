@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: trick, trap, programming, MATLAB
 Modified: 2015-02-20 10:41:22
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 1. Sometimes you might find that you can use some built-in function in
 MATLAB at first, but later you cannot use it any. If so, you should

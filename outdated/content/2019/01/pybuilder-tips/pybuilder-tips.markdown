@@ -7,6 +7,8 @@ Category: Computer Science
 Tags: programming, PyBuilder, Python, project management
 Modified: 2020-04-12 11:54:46
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

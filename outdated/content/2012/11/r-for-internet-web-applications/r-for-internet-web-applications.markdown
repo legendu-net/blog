@@ -8,6 +8,8 @@ Category: Programming
 Tags: email, R, Web, programming, network, internet, CRAN
 Modified: 2015-05-14 22:22:58
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 <img src="http://dclong.github.io/media/r/r.png" height="200" width="240" align="right"/>
 
 ## Sending/Receiving Emails

@@ -7,6 +7,8 @@ Category: Software
 Tags: software, Zeppelin, JDBC, Teradata
 Modified: 2020-05-10 10:00:59
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

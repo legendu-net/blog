@@ -8,6 +8,8 @@ Tags: programming, Jupyter, JupyterLab, SQL, BeakerX
 Modified: 2021-02-10 23:47:18
 You can run the following magics in a cell to connect to Teradata from a BeakerX SQL kernel.
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
     :::bash
     %classpath add jar /workdir/jars/teradata/tdgssconfig.jar
     %classpath add jar /workdir/jars/teradata/terajdbc4.jar

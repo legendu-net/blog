@@ -7,6 +7,8 @@ Category: Computer Science
 Tags: smtp, programming, Verizon, PDF, Ruby, email
 Modified: 2020-04-06 11:28:52
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 <img src="http://dclong.github.io/media/ruby/ruby.png" height="200" width="240" align="right"/>
 
 A few days ago, I started writing my first Ruby program which read my Verizon

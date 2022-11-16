@@ -7,6 +7,8 @@ Category: Software
 Tags: software, terminal, tips, Linux, terminator
 Modified: 2021-09-25 11:39:16
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

@@ -8,6 +8,8 @@ Slug: load-script-ruby
 Author: Ben Chuanlong Du
 Modified: 2012-08-25 00:00:00
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 <img src="http://dclong.github.io/media/ruby/ruby.png" height="200" width="240" align="right"/>
 
 By default the current working directoly is not in the search path of Ruby. 

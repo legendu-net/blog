@@ -8,6 +8,8 @@ Category: OS
 Tags: Unix, IBM, AIX, tips
 Modified: 2015-05-06 23:55:20
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

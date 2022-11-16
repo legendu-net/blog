@@ -7,6 +7,8 @@ Category: Programming
 Tags: R, regex, programming, CRAN, regular expression
 Modified: 2019-12-14 11:56:44
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

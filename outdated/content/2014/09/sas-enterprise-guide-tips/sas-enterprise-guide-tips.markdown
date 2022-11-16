@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, SAS, SAS Enterprise Guide, GUI, SEG
 Modified: 2015-06-14 18:44:56
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

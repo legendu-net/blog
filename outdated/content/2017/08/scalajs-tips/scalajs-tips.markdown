@@ -7,6 +7,8 @@ Category: Computer Science
 Tags: programming, ScalaJS, Scala, JavaScript, JS
 Modified: 2020-05-22 15:05:15
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

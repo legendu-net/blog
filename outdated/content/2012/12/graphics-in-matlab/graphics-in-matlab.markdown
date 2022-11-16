@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: image, visualization, programming, plot, graphics, MATLAB
 Modified: 2015-03-03 10:08:36
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 1. To display a new graph on on top of an old one, 
 you can use command `hold on`. 

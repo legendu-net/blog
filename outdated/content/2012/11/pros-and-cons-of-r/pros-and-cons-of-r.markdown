@@ -8,6 +8,8 @@ Category: Programming
 Tags: pros, programming, cons, advantage, disadvantage, R, CRAN
 Modified: 2016-07-13 22:02:54
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

@@ -8,6 +8,8 @@ Category: Programming
 Tags: programming, CRAN, R Markdown, Markdown, R
 Modified: 2017-04-09 17:52:05
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

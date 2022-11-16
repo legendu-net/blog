@@ -8,6 +8,8 @@ Category: Programming
 Tags: programming, CRAN, SQL, database, RJDBC, teradataR, RODBC
 Modified: 2017-04-08 15:47:42
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

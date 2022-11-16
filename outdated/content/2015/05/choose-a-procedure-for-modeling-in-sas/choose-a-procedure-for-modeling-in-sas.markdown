@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, SAS, procedure, proc
 Modified: 2015-05-10 21:12:54
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

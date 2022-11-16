@@ -8,6 +8,8 @@ Category: Programming
 Tags: CRAN, R, package, essential, Bioconductor
 Modified: 2016-10-23 22:27:25
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

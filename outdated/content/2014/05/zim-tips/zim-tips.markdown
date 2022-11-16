@@ -7,6 +7,8 @@ Category: Software
 Tags: software, tips, notes, Zim
 Modified: 2020-05-22 13:11:56
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

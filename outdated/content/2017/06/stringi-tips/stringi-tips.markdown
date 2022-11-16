@@ -8,6 +8,8 @@ Category: Programming
 Tags: programming, stringi, CRAN
 Modified: 2017-09-06 08:03:00
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

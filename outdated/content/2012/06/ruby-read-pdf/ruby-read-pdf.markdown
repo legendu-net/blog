@@ -7,6 +7,8 @@ Category: Computer Science
 Tags: library, programming, package, PDF, Ruby
 Modified: 2019-04-18 17:57:21
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 <img src="http://dclong.github.io/media/ruby/ruby.png" height="200" width="240" align="right"/>
 
 "pdf-reader" is a good Ruby libary for reading pdf document. 

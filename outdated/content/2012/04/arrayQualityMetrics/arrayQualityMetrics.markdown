@@ -8,6 +8,9 @@ Category: Programming
 Tags: research, programming, biostatistics, package, arrayQualityMetrics, R, CRAN
 Modified: 2016-06-11 19:11:28
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
+
 I had to use the R package "arrayQualityMetrics" to check the quality of some gene chips. 
 Installing this package in Linux takes a few steps. 
 The following is the brief instruction on how to install R package "arayQualityMetrics" in Debian.    

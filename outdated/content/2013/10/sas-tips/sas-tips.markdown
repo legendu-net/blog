@@ -7,6 +7,8 @@ Category: Computer Science
 Tags: tips, SAS, programming
 Modified: 2019-05-10 19:13:40
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

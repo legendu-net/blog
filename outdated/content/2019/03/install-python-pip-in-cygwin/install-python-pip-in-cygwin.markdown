@@ -10,6 +10,8 @@ Modified: 2019-03-04 23:56:02
 python3 -m ensurepip
 ```
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 ## References
 
 https://stackoverflow.com/questions/30863501/installing-new-versions-of-python-on-cygwin-does-not-install-pip<Paste>

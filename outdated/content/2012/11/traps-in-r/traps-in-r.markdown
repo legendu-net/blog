@@ -8,6 +8,8 @@ Category: Programming
 Tags: R, global variable, programming, traps, CRAN
 Modified: 2017-04-09 23:47:21
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 1. [Zero-Length Vector Issue in R](http://www.legendu.net/en/blog/zero-length-vector-issue-in-R/)
 
 1. A really tricky problem about is global and local variables. 

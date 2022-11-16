@@ -7,6 +7,8 @@ Category: Software
 Tags: IDE, programming, Eclipse, software, editor, 
 Modified: 2020-05-22 13:41:22
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 1. There are at least 3 ways to jump to errors quickly in Eclipse
 

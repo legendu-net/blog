@@ -8,6 +8,8 @@ Category: Programming
 Tags: R, Rcpp, programming, CRAN
 Modified: 2016-10-23 17:13:18
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 <img src="http://dclong.github.io/media/r/r.png" height="200" width="240" align="right"/>
 
 The following are some tips for using the old fashioned way (using `.C` and `.Call`) 

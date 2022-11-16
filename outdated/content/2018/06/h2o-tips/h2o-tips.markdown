@@ -7,6 +7,8 @@ Category: AI
 Tags: machine learning, H2O, software, framework, data science, AI
 Modified: 2020-05-22 15:18:11
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

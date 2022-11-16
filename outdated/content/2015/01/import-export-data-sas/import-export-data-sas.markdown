@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, SAS, import, procedure, Excel
 Modified: 2015-05-30 14:20:50
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 ## Import Data to SAS
 

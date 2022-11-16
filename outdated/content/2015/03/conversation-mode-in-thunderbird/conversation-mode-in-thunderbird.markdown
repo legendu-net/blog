@@ -8,6 +8,8 @@ Category: software
 Tags: software, Thunderbird, conversation mode
 Modified: 2015-03-10 20:19:01
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 There is a Thunderbird add-on `Conversation` 
 which enables you read emails in the Gmail-like conversation mode.

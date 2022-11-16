@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, SAS, Cartesian product
 Modified: 2014-10-23 15:52:51
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 Suppose we have 2 variables `x = ("a", "b", "c")` and `y = (1, 2, 3)`,
 and we want to create a dataset containing the Cartesian product of `x` and `y` in SAS.
 This can be achieved by manually input the Cartesian product of x and y in a data step.

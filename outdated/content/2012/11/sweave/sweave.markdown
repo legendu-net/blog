@@ -8,6 +8,8 @@ Slug: sweave
 Author: Ben Chuanlong Du
 Modified: 2016-07-13 00:05:31
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 1. Do not use sweave unless you are sure that you have run to the same
 code again and again on different data sets, and you want the report

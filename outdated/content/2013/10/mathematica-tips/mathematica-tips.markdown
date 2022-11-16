@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: tips, programming, Mathematica, Wolfram
 Modified: 2019-03-29 09:27:31
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
  
 1. Drawing tools, 

@@ -8,6 +8,8 @@ Slug: filesystem-in-matlab
 Author: Ben Chuanlong Du
 Modified: 2015-05-14 22:02:00
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 1. Function `path` can be used to either display or modify the search path of MATLAB. 
 Its functionality in MATLAB is similar to the functionality of environment variable `PATH` 

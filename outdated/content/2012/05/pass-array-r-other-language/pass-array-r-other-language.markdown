@@ -8,6 +8,9 @@ Category: Computer Science
 Tags: Python, C++, programming, statistics, Java, string, data frame, R, OOP, MATLAB, CRAN
 Modified: 2015-01-13 13:14:35
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
+
 <img src="http://dclong.github.io/media/r/r.png" height="200" width="240" align="right"/>
 Here I compare R with other languages such as C/C++, Java, MATLAB, Python and so
 on data manipulation. I list a few advantages and disadvantages of R on data

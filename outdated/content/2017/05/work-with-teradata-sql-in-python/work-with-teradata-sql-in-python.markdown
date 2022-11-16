@@ -7,6 +7,8 @@ Category: Computer Science
 Tags: programming, Python, Teradata SQL, Teradata
 Modified: 2020-05-17 11:47:48
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

@@ -8,6 +8,9 @@ Slug: combination-and-permutation-in-r
 Author: Ben Chuanlong Du
 Modified: 2010-11-20 00:00:00
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
+
 
 1. `expand.grid` creates a data frame from all possible combinations of supplied vectors or factors. 
 For example,

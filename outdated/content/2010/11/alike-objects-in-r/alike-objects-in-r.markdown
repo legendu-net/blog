@@ -11,6 +11,7 @@ Modified: 2013-12-05 00:19:25
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 
+
 ## Matrix VS Data Frame: 
 
 1. The data in a matrix must be of the same type while different columns 

@@ -7,6 +7,8 @@ Category: Software
 Tags: software, Atom, IDE, editor, plugin, addon, add-on
 Modified: 2020-05-06 14:20:40
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

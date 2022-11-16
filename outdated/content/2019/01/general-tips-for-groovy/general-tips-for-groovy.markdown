@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, Groovy, tips
 Modified: 2019-01-22 22:58:11
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

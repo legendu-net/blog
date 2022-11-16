@@ -8,6 +8,8 @@ Category: Programming
 Tags: R, ftp, sftp, programming, submit, package, CRAN
 Modified: 2015-03-03 10:16:02
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 <img src="http://dclong.github.io/media/r/r.png" height="200" width="240" align="right"/>
 Submit using [web form](http://xmpalantir.wu.ac.at/cransubmit/) or using ftp following the steps below.
 

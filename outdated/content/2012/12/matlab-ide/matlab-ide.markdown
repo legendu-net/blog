@@ -8,6 +8,8 @@ Slug: MATLAB-ide
 Author: Ben Chuanlong Du
 Modified: 2012-12-04 00:00:00
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 1. Command `help` offers help on functions, classes, packages and so on, 
 but it support command style only, 

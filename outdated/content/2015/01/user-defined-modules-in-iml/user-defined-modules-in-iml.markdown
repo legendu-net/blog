@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, SAS, IML, function, module, user-defined
 Modified: 2015-03-13 14:49:32
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, SAS, IML, function, module
 Modified: 2015-03-02 18:09:00
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

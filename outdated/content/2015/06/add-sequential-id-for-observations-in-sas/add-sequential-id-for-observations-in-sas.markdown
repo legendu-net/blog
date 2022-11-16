@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, SAS, SQL, sequential, ID, observation
 Modified: 2015-06-20 23:25:05
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

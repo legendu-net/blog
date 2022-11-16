@@ -8,6 +8,8 @@ Slug: r-system-and-configurations
 Author: Ben Chuanlong Du
 Modified: 2012-11-21 00:00:00
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 <img src="http://dclong.github.io/media/r/r.png" height="200" width="240" align="right"/>
 
 1. To allow opening R from a directory in R in Windows system, we can

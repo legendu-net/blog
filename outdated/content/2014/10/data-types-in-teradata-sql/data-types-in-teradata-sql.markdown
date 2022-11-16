@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, Teradata SQL, data type, cast, date
 Modified: 2016-10-23 13:01:10
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

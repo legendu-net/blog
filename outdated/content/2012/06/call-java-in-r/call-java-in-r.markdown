@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, Java, array, rJava, R, vector, package
 Modified: 2016-10-23 22:53:22
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 The package "rJava" offers a convenient way to call Java code from R. 
 The following are some tips for using the "rJava" package.
 

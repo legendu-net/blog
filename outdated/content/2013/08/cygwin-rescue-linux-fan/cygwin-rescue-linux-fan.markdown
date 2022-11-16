@@ -8,6 +8,8 @@ Category: Software
 Tags: Linux, Windows, virtualization, software, Cygwin 
 Modified: 2017-03-19 10:37:20
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 1. It is suggested that you use 32 bit Cygwin as it has a better package support.
 
 2. Some tools (e.g., terminator) are not included in the regular release of Cygwin, 

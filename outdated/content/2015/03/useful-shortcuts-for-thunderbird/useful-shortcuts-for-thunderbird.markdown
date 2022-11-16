@@ -8,6 +8,8 @@ Category: Software
 Tags: software, Thunderbird, email client, shortcut, hotkey  
 Modified: 2015-03-10 19:18:24
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 ## Message
 1. F8: Message Preview Pane 

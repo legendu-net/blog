@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, SAS, coding style
 Modified: 2015-05-17 16:21:10
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

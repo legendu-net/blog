@@ -8,6 +8,8 @@ Slug: MATLAB-different
 Author: Ben Chuanlong Du
 Modified: 2016-07-13 00:09:40
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 1. MATLAB support command style (like Linux terminal commands).
 This means that you do not have to use parentheses when you call some

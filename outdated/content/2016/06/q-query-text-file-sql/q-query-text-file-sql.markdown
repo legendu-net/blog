@@ -7,6 +7,8 @@ Category: Programming
 Tags: programming, SQL, structured text, CSV, TSV
 Modified: 2020-03-05 16:19:58
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 It is suggested that you use Python 
 instead of [q](http://harelba.github.io/q/) 

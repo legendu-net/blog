@@ -8,6 +8,8 @@ Category: Software
 Tags: IDE, R, statistics, software, configuration, RStudio, CRAN
 Modified: 2015-02-26 12:45:00
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 Rstudio is the best cross-platform IDE for R so far. 
 It is a lot like the IDE of MATLAB.
 Once I came across the problem that Rstudio did not start. 

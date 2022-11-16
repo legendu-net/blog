@@ -7,6 +7,8 @@ Category: Computer Science
 Tags: programming, Apache Toree, Jupyter Notebook, JupyterLab, Jupyter Lab, Spark
 Modified: 2019-12-12 20:32:58
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

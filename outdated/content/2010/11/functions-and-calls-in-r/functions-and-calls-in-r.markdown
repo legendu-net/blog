@@ -6,7 +6,11 @@ Author: Ben Chuanlong Du
 Title: Functions and Calls in R
 Category: Programming
 Tags: R, function, programming, call, CRAN
-Modified: 2016-12-10 01:23:25
+Modified: 2022-11-16 00:48:24
+
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
+
 
 1. `"["` is a function in R.
 It takes elements from a container (vector, matrix, list, etc.)

@@ -8,6 +8,8 @@ Category: Software
 Tags: software, RStudio, IDE, CRAN, R, questions
 Modified: 2017-03-04 14:39:38
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

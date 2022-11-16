@@ -8,6 +8,8 @@ Slug: send-email-in-MATLAB
 Author: Ben Chuanlong Du
 Modified: 2012-12-04 00:00:00
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 It is very easy to send emails in MATLAB. 
 To do this, you can just call `sendmail`. 

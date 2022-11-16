@@ -9,6 +9,8 @@ Modified: 2021-09-10 10:13:26
 It is suggested that you use Docker in WSL 
 rather than using Docker for Windows.
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 It is suggested that you use Docker on WSL 2.
 

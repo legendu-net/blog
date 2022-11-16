@@ -8,6 +8,8 @@ Slug: compile-matlab-code
 Author: Ben Chuanlong Du
 Modified: 2015-06-07 23:48:09
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 1. MATLAB code can be compile to C/C++ code or stand alone applications. 
 Usually you can run the stand-alone application in Windows system directly, 

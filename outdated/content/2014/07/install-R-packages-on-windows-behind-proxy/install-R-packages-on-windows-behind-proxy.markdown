@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: programming, R, Windows, install package, proxy
 Modified: 2016-12-10 01:57:25
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 There are 3 ways to install R packages behind a proxy on Windows.
 

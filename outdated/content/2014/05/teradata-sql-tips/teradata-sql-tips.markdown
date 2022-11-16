@@ -7,6 +7,8 @@ Category: Computer Science
 Tags: programming, tips, Teradata SQL, database
 Modified: 2021-02-15 12:10:03
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

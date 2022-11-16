@@ -8,6 +8,9 @@ Category: Computer Science
 Tags: array, R, C/C++, programming, Java
 Modified: 2015-03-02 13:10:12
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
+
 <img src="http://dclong.github.io/media/r/r.png" height="200" width="240" align="right"/>
 A matrix or an array in R is essentially a vector with dimension attribute. 
 For this reason, no matter you pass a vector, matrix or an array

@@ -8,6 +8,8 @@ Tags: Software, Docker, Docker Swarm
 Modified: 2021-06-10 09:32:40
 https://zonca.github.io/2016/05/jupyterhub-docker-swarm.html
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 https://ender74.github.io/Sharing-Volumes-With-Docker-Swarm/
 
 ## Volume

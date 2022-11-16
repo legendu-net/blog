@@ -7,6 +7,8 @@ Category: OS
 Tags: Linux, rename, shell, tip
 Modified: 2020-07-12 11:04:38
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 **
 Things under legendu.net/outdated are outdated technologies 
 that the author does not plan to update any more. 

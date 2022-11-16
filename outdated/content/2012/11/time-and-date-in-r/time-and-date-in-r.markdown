@@ -8,6 +8,8 @@ Category: Programming
 Tags: R, date, time, programming, CRAN
 Modified: 2015-01-14 16:46:40
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 1. The function `as.Date` and `strptime` convert string to dates. 
 For these functions to work right, 

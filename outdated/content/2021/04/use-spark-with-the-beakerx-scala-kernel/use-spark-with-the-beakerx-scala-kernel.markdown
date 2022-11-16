@@ -7,6 +7,8 @@ Category: Computer Science
 Tags: Computer Science, Spark, Scala, BeakerX, JupyterLab
 Modified: 2020-03-23 17:23:46
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 1. Open a JupyterLab notebook with the BeakerX Scala kernel from the launcher.
 
 2. Download Spark (say, 2.3.1) dependencies. 

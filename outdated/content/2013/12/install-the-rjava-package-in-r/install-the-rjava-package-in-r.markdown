@@ -8,6 +8,8 @@ Category: Software
 Tags: R, rJava, Java, Linux
 Modified: 2016-12-10 01:44:32
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
  
 The most convenient way is to install the corresponding Linux package if exists.
 

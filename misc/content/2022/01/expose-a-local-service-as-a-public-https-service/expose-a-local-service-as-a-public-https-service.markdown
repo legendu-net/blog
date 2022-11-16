@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-01-22 14:33:10
-Modified: 2022-08-19 21:55:55
+Modified: 2022-11-14 10:19:55
 Author: Benjamin Du
 Slug: expose-local-services-to-public-using-ngrok
 Title: Expose Local Services to Public Using ngrok
@@ -19,12 +19,13 @@ to setup `ngrok`.
         :::bash
         sudo snap install ngrok
 
-2. Login to [ngrok.com](ngrok.com).
+2. Login to [https://ngrok.com](ngrok.com) 
+    to identify your ngrok token.
 
 3. Connect your account following instructions. 
 
         :::bash
-        ngrok config your_token
+        ngrok config add-authtoken your_token
 
 4. Start a http tunnel forwarding to you local port.
 

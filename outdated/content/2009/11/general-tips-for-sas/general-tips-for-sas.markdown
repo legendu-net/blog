@@ -10,8 +10,9 @@ Modified: 2015-08-02 12:05:07
 
 
 **
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-It is not meant to readers but rather for convenient reference of the author and future improvement. 
+Things under legendu.net/outdated are outdated technologies 
+that the author does not plan to update any more. 
+Please look for better alternatives. 
 **
 
 1. Do not go crazy in encapsulating/reusing code in SAS.

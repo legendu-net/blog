@@ -7,7 +7,7 @@ Title: Expose Local Services to Public Using ngrok
 Category: Computer Science
 Tags: Computer Science, programming, local, public, HTTPS, ngrok
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 
 You can expose a local service to public using `ngrok`.
 Follow instructions in the 

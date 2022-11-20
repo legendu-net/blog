@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-06-20 12:01:24
-Modified: 2021-06-23 11:14:17
+Modified: 2022-11-20 15:56:33
 Author: Benjamin Du
 Slug: rpc-implementation-in-rust
 Title: RPC Implementation in Rust
@@ -18,11 +18,16 @@ and to act as a core building block for production systems written in Rust.
 [grpc-rust](https://github.com/stepancheg/grpc-rust)
 is a Rust implementation of gRPC protocol, under development.
 
-[tarpc](https://github.com/google/tarpc)
+## [tarpc](https://github.com/google/tarpc)
 [tarpc](https://github.com/google/tarpc)
 is an RPC framework for rust with a focus on ease of use. 
 Defining a service can be done in just a few lines of code, 
 and most of the boilerplate of writing a server is taken care of for you.
 
+## [volo](https://github.com/cloudwego/volo)
+Rust RPC framework with high-performance and strong-extensibility for building micro-services.
 
 
+## References
+
+- [Protobuf Implementations in Rust](https://www.legendu.net/misc/blog/protobuf-implementations-in-rust)

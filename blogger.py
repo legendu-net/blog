@@ -450,6 +450,11 @@ class Post:
         """
         if self.is_markdown():
             self._md_to_nb()
+        else:
+            self._nb_to_md()
+
+    def _nb_to_md(self):
+        raise NotImplementedError("Post._nb_to_md is not implemented yet!")
 
     def _md_to_nb(self):
         record = self.record()

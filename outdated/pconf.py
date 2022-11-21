@@ -119,4 +119,4 @@ DIRECT_TEMPLATE = ["search"]
 #SEARCH_URL = "search"
 
 # google analytics
-GOOGLE_ANALYTICS = "242729304"
+GOOGLE_ANALYTICS = "G-3STS9BVPF6"

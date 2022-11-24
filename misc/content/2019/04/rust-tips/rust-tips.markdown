@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-04-10 12:17:46
-Modified: 2022-10-15 21:03:23
+Modified: 2022-11-23 19:03:53
 Author: Benjamin Du
 Slug: rust-tips
 Title: Tips on Rust
@@ -155,6 +155,8 @@ https://github.com/rust-unofficial/awesome-rust
 https://kerkour.com/
 
 ## References
+
+- [12 Rust Tips and Tricks you might not know yet](https://federicoterzi.com/blog/12-rust-tips-and-tricks-you-might-not-know-yet/)
 
 - [Rust Programming Language Users Forum](https://users.rust-lang.org/)
 

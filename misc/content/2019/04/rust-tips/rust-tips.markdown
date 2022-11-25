@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-04-10 12:17:46
-Modified: 2022-11-23 19:03:53
+Modified: 2022-11-25 11:42:31
 Author: Benjamin Du
 Slug: rust-tips
 Title: Tips on Rust
@@ -137,6 +137,10 @@ https://github.com/rust-unofficial/awesome-rust
 https://github.com/yewstack/yew
 
 https://github.com/valeriansaliou/sonic
+
+## Good Blogging on Rust
+
+- [Baby Steps](http://smallcultfollowing.com/babysteps/)
 
 ## Tutorials
 

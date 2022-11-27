@@ -2,21 +2,30 @@ Status: published
 Date: 2015-05-09 08:43:45
 Author: Ben Chuanlong Du
 Slug: working-with-spreadsheet-with-python
-Title: Working With Spreadsheet with Python
+Title: Working with Spreadsheet in Python
 Category: Computer Science
 Tags: programming, Python, Spreadsheet, Excel, pandas, xlsxwriter
-Modified: 2022-11-27 00:08:26
+Modified: 2022-11-27 09:45:57
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+It is suggested that you avoid using Excel files (or other spreadsheet tools) for storing data.
+Parquet file is currently the best format for storing table-like data.
+If you do want to interact and manipulate your data using Excel (or other spreadsheet tools),
+dump your data into CSV files
+and then load them into Excel when needed.
+However, 
+if you do want to work with spreadsheet in Python,
+below are some options.
 
 ## [Quadratic](https://app.quadratichq.com/)
 [Quadratic](https://app.quadratichq.com/)
 is a data science spreadsheet
 which has Python (JavaScript and SQL) built-in.
+
+## [Google Spreadsheet](https://www.google.com/sheets/about/)
+
+Please refer to
+[Use Python with Google Spreadsheet](https://www.legendu.net/misc/blog/use-python-with-google-spreadsheet/)
+for detailed discussions.
 
 ## [pandas](https://github.com/pandas-dev/pandas)
 

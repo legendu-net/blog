@@ -5,13 +5,18 @@ Slug: working-with-spreadsheet-with-python
 Title: Working With Spreadsheet with Python
 Category: Computer Science
 Tags: programming, Python, Spreadsheet, Excel, pandas, xlsxwriter
-Modified: 2022-07-19 12:57:46
+Modified: 2022-11-27 00:08:26
 
 **
 Things on this page are
 fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
+
+## [Quadratic](https://app.quadratichq.com/)
+[Quadratic](https://app.quadratichq.com/)
+is a data science spreadsheet
+which has Python (JavaScript and SQL) built-in.
 
 ## [pandas](https://github.com/pandas-dev/pandas)
 

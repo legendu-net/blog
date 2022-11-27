@@ -1,6 +1,6 @@
 Status: published
 Date: 2020-10-26 12:49:19
-Modified: 2022-10-09 17:22:43
+Modified: 2022-11-27 00:17:05
 Author: Benjamin Du
 Slug: tips-on-backend-development
 Title: Tips on Backend Development
@@ -98,8 +98,6 @@ A fast Python http server inspired by japronto written in rust.
 
 ## Rust
 
-https://github.com/sycamore-rs/sycamore
-
-tokio
-
-[Are We Web Yet](http://www.arewewebyet.org/)
+Please refer to
+[Rust for Backend Development](https://www.legendu.net/misc/blog/rust-for-backend-development)
+for detailed discussions.

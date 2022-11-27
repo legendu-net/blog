@@ -12,6 +12,9 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
+## [Wavacity Audio Editor](https://wavacity.com/)
+[Wavacity Audio Editor](https://wavacity.com/)
+is a free opensource audio editor for the web. 
 
 ## [JackAudio](https://jackaudio.org/)
 [JackAudio](https://jackaudio.org/)

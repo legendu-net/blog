@@ -2,10 +2,12 @@ Status: published
 Date: 2021-05-09 11:00:33
 Author: Benjamin Du
 Slug: wasi-runtimes
-Title: WASI Runtimes
+Title: WebAssembly Runtimes
 Category: Computer Science
 Tags: Computer Science, programming, Lucet, WASI, WebAssembly, WASM, runtime
 Modified: 2022-11-27 00:14:08
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 

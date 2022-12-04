@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-04-10 12:17:46
-Modified: 2022-11-25 11:42:31
+Modified: 2022-12-04 10:37:47
 Author: Benjamin Du
 Slug: rust-tips
 Title: Tips on Rust
@@ -141,6 +141,8 @@ https://github.com/valeriansaliou/sonic
 ## Good Blogging on Rust
 
 - [Baby Steps](http://smallcultfollowing.com/babysteps/)
+
+- [EventHelix - Rust](https://www.eventhelix.com/rust/)
 
 ## Tutorials
 

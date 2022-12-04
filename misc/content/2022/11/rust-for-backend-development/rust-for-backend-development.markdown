@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-11-27 00:20:12
-Modified: 2022-11-27 00:20:12
+Modified: 2022-12-04 13:03:57
 Author: Benjamin Du
 Slug: rust-for-backend-development
 Title: Rust for Backend Development
@@ -24,6 +24,8 @@ Actix Web is a powerful, pragmatic, and extremely fast web framework for Rust.
 ## tokio
 
 ## References
+
+- [Building an API in Rust with Rocket.rs and Diesel.rs (Clean Architecture)](https://medium.com/@jeynesbrook/building-an-api-in-rust-with-rocket-rs-and-diesel-rs-clean-architecture-8f6092ee2606)
 
 - [The current state of Rust web frameworks](https://blog.logrocket.com/current-state-rust-web-frameworks/)
 

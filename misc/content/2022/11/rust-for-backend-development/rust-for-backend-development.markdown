@@ -17,6 +17,13 @@ without sacrificing flexibility, usability, or type safety.
 ## [Actix](https://actix.rs/)
 Actix Web is a powerful, pragmatic, and extremely fast web framework for Rust.
 
+## [axum](https://github.com/tokio-rs/axum)
+[axum](https://github.com/tokio-rs/axum)
+Ergonomic and modular web framework built with Tokio, Tower, and Hyper
+axum is a web application framework that focuses on ergonomics and modularity.
+
+
+
 ## [spin](https://github.com/fermyon/spin)
 
 ## [sycamore](https://github.com/sycamore-rs/sycamore)
@@ -24,6 +31,8 @@ Actix Web is a powerful, pragmatic, and extremely fast web framework for Rust.
 ## tokio
 
 ## References
+
+- [Which Rust web framework to choose in 2022 (with code examples)](https://kerkour.com/rust-web-framework-2022)
 
 - [Building an API in Rust with Rocket.rs and Diesel.rs (Clean Architecture)](https://medium.com/@jeynesbrook/building-an-api-in-rust-with-rocket-rs-and-diesel-rs-clean-architecture-8f6092ee2606)
 

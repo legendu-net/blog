@@ -5,7 +5,7 @@ Slug: ipython-is-the-best-shell
 Title: IPython Is the Best Shell
 Category: Computer Science
 Tags: programming, Python, tips, IPython, Shell
-Modified: 2022-05-29 19:35:31
+Modified: 2022-12-04 21:40:47
 
 
 ## IPython is the Best Shell!
@@ -33,6 +33,20 @@ Modified: 2022-05-29 19:35:31
     This means that you might encounter issues running IPython
     if the configuration file of IPython is stored on a network filesystem.
     You should avoid storing IPython configuration files on network filesystems!!
+    To avoid such kind of issues,
+    you can store IPython configuration files on the local disk or in memory.
+    For example,
+    the following command stores IPython historical commands 
+    to the file `/tmp/ipython_host.sqlite` (on the local disk).
+
+        ipython --HistoryManager.hist_file=/tmp/ipython_hist.sqlite
+
+    And the following command stores IPython historical commands in memory.
+
+        ipython --HistoryManager.hist_file=:memory:
+        
+    Notice that in JupyterLab this is done 
+    with the option `c.HistoryManager.hist_file`.
 
 2. You can the below command to generate (default) IPython configuration files.
 

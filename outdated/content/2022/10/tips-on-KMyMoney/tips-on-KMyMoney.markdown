@@ -1,15 +1,14 @@
 Status: published
 Date: 2022-10-09 18:46:15
-Modified: 2022-10-09 18:46:15
+Modified: 2022-12-04 21:57:42
 Author: Benjamin Du
 Slug: tips-on-KMyMoney
 Title: Tips on Kmymoney
 Category: Computer Science
 Tags: Computer Science, programming
 
+
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-
 
 Mint.com is much better alternative. 
 It is suggest that you use mint.com instead.

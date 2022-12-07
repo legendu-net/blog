@@ -22,10 +22,6 @@ Please read with your own judgement!
 
 ## JSON
 
-## [jsonnet](https://github.com/google/jsonnet)
-[jsonnet](https://github.com/google/jsonnet)
-is the data templating language.
-
 ## [YAML](https://yaml.org/)
 
 ## [TOML](https://github.com/toml-lang/toml)
@@ -34,6 +30,26 @@ is the data templating language.
 
 ## [translate/translate](https://github.com/translate/translate)
 
+## Configuration Languages
+    
+When you need your application to be very "configurable" in ways that you cannot imagine today, then what you really need is a plugins system. You need to develop your application in a way that someone else can code a new plugin and hook it into your application in the future.
+
+Every Sufficiently Advanced Configuration Language is Wrong
+https://matt-rickard.com/advanced-configuration-languages-are-wrong
+
+Against The Use Of Programming Languages in Configuration Files
+https://taint.org/2011/02/18/001527a.html
+
+At what point does a config file become a programming language?
+https://stackoverflow.com/questions/648246/at-what-point-does-a-config-file-become-a-programming-language/
+
+### Use a General Purpose Programming Language
+
+### [jsonnet](https://github.com/google/jsonnet)
+[jsonnet](https://github.com/google/jsonnet)
+is the data templating language.
+
+### [Dhall](https://github.com/dhall-lang/dhall-lang)
 
 ## References
 

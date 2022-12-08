@@ -30,4 +30,4 @@ then you use the following code in IPython or a JupyterLab notebook.
 
 ## References
 
-- https://ubuntuhandbook.org/index.php/2021/06/open-heic-convert-jpg-png-ubuntu-20-04/
+- [How to Open iOS HEIC Photos or Convert to JPG/PNG in Ubuntu 20.04 | 22.04](https://ubuntuhandbook.org/index.php/2021/06/open-heic-convert-jpg-png-ubuntu-20-04/)

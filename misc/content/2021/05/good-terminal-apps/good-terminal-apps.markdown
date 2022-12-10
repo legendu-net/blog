@@ -5,9 +5,15 @@ Slug: good-terminal-apps
 Title: Good Terminal Apps
 Category: Computer Science
 Tags: Computer Science, terminal, software, tools, hyper, kitty
-Modified: 2021-10-02 01:53:04
+Modified: 2022-12-10 13:04:44
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## [wezterm](https://github.com/wez/wezterm)
+[wezterm](https://github.com/wez/wezterm)
+is a GPU-accelerated cross-platform terminal emulator and multiplexer 
+implemented in Rust
+.
 
 ## [alacritty](https://github.com/alacritty/alacritty)
 

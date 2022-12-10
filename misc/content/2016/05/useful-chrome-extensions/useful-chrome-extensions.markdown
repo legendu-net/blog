@@ -5,7 +5,7 @@ Slug: useful-chrome-extensions
 Title: Useful Chrome Extensions
 Category: Software
 Tags: software, Google Chrome, extension, add-on, plug-in, addon, plugin, web browser
-Modified: 2022-05-29 01:26:20
+Modified: 2022-12-10 12:55:54
 
 **
 Things on this page are
@@ -34,6 +34,10 @@ For detailed discussions,
 please refer to
 [Firenvim Brings NeoVim into Your Browser](https://www.legendu.net/misc/blog/firenvim-brings-neovim-into-your-browser/)
 .
+
+## [Bookmarks Clean Up](https://chrome.google.com/webstore/detail/bookmarks-clean-up/oncbjlgldmiagjophlhobkogeladjijl?hl=en)
+Find and remove duplicated bookmarks manually and in batches, 
+get rid of broken bookmark links and empty folders.
 
 ## [Read Aloud: A Text to Speech Voice Reader](https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp/related?hl=en)
 

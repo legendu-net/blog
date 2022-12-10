@@ -9,22 +9,38 @@ Tags: Life, shop, shopping, smart, smartly, CamelCamelCamel, DealMoon, Homedepot
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
-[CapitalOne Shopping](https://capitaloneshopping.com/)
-
+## Price Check / Match
 [CamelCamelCamel - Amazon Price Tracker](https://camelcamelcamel.com/)
 
-[DealMoon - Housing & Living](https://www.dealmoon.com/guide/cate/11)
+## Shopping Assistants 
+[CapitalOne Shopping](https://capitaloneshopping.com/)
 
-[Deal Alerts @ SlickDeals](https://slickdeals.net/deal-alerts/)
+## Deals
 
-[AliExpress](AliExpress.com)
-No international transaction fees using Master credit cards.
+- [DealMoon - Housing & Living](https://www.dealmoon.com/guide/cate/11)
+- [Deal Alerts @ SlickDeals](https://slickdeals.net/deal-alerts/)
+- [Dealigg](http://www.dealigg.com/)
+- [DealSea](http://dealsea.com/)
+- [Deals2Buy](http://www.deals2buy.com/)
 
-[eBay Refurbished](https://www.ebay.com/b/Certified-Refurbished/bn_7040708936?_trkparms=%26clkid%3D2259258771560524076)
+## Popular E-commerce Websites
+
+- [Amazon](www.amazon.com/)
+- [AliExpress](AliExpress.com)
+    No international transaction fees using Master credit cards.
+
+- [Ebay](http://www.ebay.com/)
+    [eBay Refurbished](https://www.ebay.com/b/Certified-Refurbished/bn_7040708936?_trkparms=%26clkid%3D2259258771560524076)
 
 ## References
 
-[Shop At Homedepot](https://www.legendu.net/misc/blog/shop-at-homedepot/)
-
-[Shopping on Costco](https://www.legendu.net/misc/blog/shopping-on-costco/)
+- [Shop At Homedepot](https://www.legendu.net/misc/blog/shop-at-homedepot/)
+- [Shopping on Costco](https://www.legendu.net/misc/blog/shopping-on-costco/)
+- [Mutex](mutex.me)
+- [BestBuy](www.bestbuy.com/)
+- [Sears](www.sears.com/)
+- [Walmart](http://www.walmart.com/)
+- [TigerDirect](http://www.tigerdirect.com/)
+- [Rakuten](http://www.rakuten.com/)
+- [AddAll](http://www.addall.com/)
+- [Black Friday](blackfriday.com)

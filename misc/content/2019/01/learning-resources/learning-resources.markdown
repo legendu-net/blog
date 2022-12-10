@@ -1,4 +1,3 @@
-UUID: 07d7f72f-1892-45cf-a97d-34e292608d3a
 Status: published
 Date: 2019-01-09 17:38:45
 Author: Ben Chuanlong Du
@@ -29,3 +28,16 @@ Please read with your own judgement!
 
 
 [MIT Open Courses Ware](https://ocw.mit.edu/index.htm)
+
+## Online Video Tutorial
+
+- [W3School](http://www.w3schools.com/)
+- [LeetCode](http://leetcode.com/)
+- [Video Lectures](http://videolectures.net/)
+- [Speaker Deck](https://speakerdeck.com/)
+- [Channel 9](http://channel9.msdn.com/)
+- [TED](http://www.ted.com/talks)
+- [Coursera](https://www.coursera.org/course/)
+- [Welcome to BrightTALK](https://www.brighttalk.com/mybrighttalk)
+- [Cheat Sheet](http://www.cheatography.com/)
+- [Cheat Sheet](http://www.addedbytes.com/cheat-sheets/)

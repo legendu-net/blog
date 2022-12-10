@@ -12,20 +12,12 @@ Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
-
 1. socks proxy 
-
-2. [nginx](https://github.com/nginx/nginx)
-    and
-    [caddy](https://github.com/caddyserver/caddy)
-    are good choices for reverse proxy.
 
 3. sshuttle is a poor man's VPN.
 
 4. [TunnelTo](https://tunnelto.dev/) (written in Rust leveraging tokio)
     allows you to expose your local web server to the internet with a public URL.
-
-5. [TinyProxy](http://www.legendu.net/misc/blog/tips-on-tinyproxy)
 
 ## Proxy vs VPN
 
@@ -77,4 +69,6 @@ please refer to
 
 ## References
 
-[Proxy vs Reverse Proxy Server Explained](https://www.youtube.com/watch?v=SqqrOspasag)
+- [Good Choices of Reverse Proxies](https://www.legendu.net/misc/blog/good-choices-of-reverse-proxies)
+
+- [Proxy vs Reverse Proxy Server Explained](https://www.youtube.com/watch?v=SqqrOspasag)

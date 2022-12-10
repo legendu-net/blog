@@ -29,7 +29,12 @@ Please read with your own judgement!
     when a push is made into the master branch. 
     An official tagged release should be made on creation of a new tag.
     A new tag should only be created on the lastest commit of the master branch!
-
+    
+4. Adblock Plus might cause some GitHub pages (e.g., the page showing changes of a PR)
+    fail to render correctly.
+    If you ever encounter such an issue,
+    turn off Adblock Plus (or similar extensions) and try again.
+    Or you can try again in the incognito mode.
 
 ## [Creating a PR Template for Your Repository](https://docs.github.com/en/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository)
 

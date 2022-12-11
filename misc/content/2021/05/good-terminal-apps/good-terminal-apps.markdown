@@ -4,10 +4,15 @@ Author: Benjamin Du
 Slug: good-terminal-apps
 Title: Good Terminal Apps
 Category: Computer Science
-Tags: Computer Science, terminal, software, tools, hyper, kitty
-Modified: 2022-12-10 13:04:44
+Tags: Computer Science, terminal, software, tools, Warp, wezterm, alacritty, hyper, kitty
+Modified: 2022-12-11 10:54:01
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## [Warp](https://www.warp.dev/)
+[Warp](https://www.warp.dev/)
+is a blazingly fast, rust-based terminal 
+reimagined from the ground up to work like a modern app.
 
 ## [wezterm](https://github.com/wez/wezterm)
 [wezterm](https://github.com/wez/wezterm)

@@ -1,4 +1,3 @@
-UUID: a09984bf-507d-4e0d-a039-4aa95a96fc22
 Status: published
 Date: 2015-09-12 01:39:06
 Author: Ben Chuanlong Du
@@ -6,7 +5,7 @@ Slug: undelete-files-in-linux
 Title: Undelete Files in Linux
 Category: OS
 Tags: Linux, undelete, recover, files, filesystem, restore, trash
-Modified: 2015-09-12 01:39:06
+Modified: 2022-12-11 12:30:43
 
 **
 Things on this page are
@@ -14,7 +13,35 @@ fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
+The best way to "recover deleted files"
+is really to avoid permanently delete files.
+It is suggested that you avoid using the `rm` command
+(unless you are 100% sure what you are doing)
+.
+Insted,
+you can use a file manager provided by a Linux desktop to delete files.
+This way, 
+deleted files are moved to the Trash directory,
+which can be recovered easily.
+If you must use a command-line tool,
+it is suggested that you use 
+[rip](https://github.com/nivekuil/rip)
+which moves deleted files into a temp directory 
+(which allows easy recovery).
+You can also easily write your own script for this purpose.
+The 
+[%trash magic for IPython](https://github.com/legendu-net/icon/blob/dev/utils/data/ipython/startup.ipy#L111)
+is such an example
+.
+
 ```bash
 sudo mount -o remount,ro /dev/sdb1
 sudo extundelete --restore-all /dev/sdb1 
 ```
+
+## References
+
+- [How to recover a removed file under Linux?](https://superuser.com/questions/150027/how-to-recover-a-removed-file-under-linux)
+
+- [3 Ways to Recover Deleted Files by RM Command on Ubuntu](https://recoverit.wondershare.com/file-recovery/recover-deleted-files-by-rm-command-on-ubuntu.html)
+

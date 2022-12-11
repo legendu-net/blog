@@ -5,7 +5,7 @@ Slug: undelete-files-in-linux
 Title: Undelete Files in Linux
 Category: OS
 Tags: Linux, undelete, recover, files, filesystem, restore, trash
-Modified: 2022-12-11 12:30:43
+Modified: 2022-12-11 15:58:55
 
 **
 Things on this page are

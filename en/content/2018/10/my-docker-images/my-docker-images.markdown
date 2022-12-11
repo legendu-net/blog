@@ -5,7 +5,7 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2022-10-20 23:10:06
+Modified: 2022-12-11 11:01:06
 
 ## Tips
 
@@ -41,6 +41,51 @@ Modified: 2022-10-20 23:10:06
 4. There is an issue with the `dclong/xubuntu*` Docker images due to Xfce on Ubuntu 18.04.
     It is suggested that you use the corresponding `dclong/lubuntu*` Docker images instead (which are based on LXQt)
     if a desktop environment is needed.
+
+## Recommended Docker Images
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Area</th>
+    <th class="tg-0lax">Docker Image</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">Cloud IDE <a href="https://github.com/coder/code-server" target="_blank" rel="noopener noreferrer">code-server</a> (based on VSCode)</td>
+    <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-vscode-server" target="_blank" rel="noopener noreferrer">dclong/vscode-server</a></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Traditional ML</td>
+    <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-jupyterhub-ds" target="_blank" rel="noopener noreferrer">dclong/jupyterhub-ds</a></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Deep Learning</td>
+    <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-jupyterhub-pytorch" target="_blank" rel="noopener noreferrer">dclong/jupyterhub-pytorch</a></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Build portable Python using <a href="https://github.com/indygreg/python-build-standalone" target="_blank" rel="noopener noreferrer">python-build-standalone</a></td>
+    <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-python-portable" target="_blank" rel="noopener noreferrer">dclong/python-portable</a></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Build portable Anaconda Python environment</td>
+    <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-conda-build" target="_blank" rel="noopener noreferrer">dclong/conda-build</a></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Math / Calculus</td>
+    <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-jupyterhub-sagemath" target="_blank" rel="noopener noreferrer">dclong/jupyterhub-sagemath</a></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Editing <a href="https://github.com/legendu-net/blog" target="_blank" rel="noopener noreferrer">legendu.net/blog</a> using GitPod</td>
+    <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-gitpod/tree/blog" target="_blank" rel="noopener noreferrer">dclong/gitpod:blog</a></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Editing other GitHub repos using GitPod</td>
+    <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-gitpod" target="_blank" rel="noopener noreferrer">dclong/gitpod</a></td>
+  </tr>
+</tbody>
+</table>
 
 ## Usage
 

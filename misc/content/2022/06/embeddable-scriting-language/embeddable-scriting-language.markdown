@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-06-12 17:23:48
-Modified: 2022-06-12 17:23:48
+Modified: 2022-12-15 15:17:21
 Author: Benjamin Du
 Slug: embeddable-scriting-language
 Title: Embeddable Scriting Language
@@ -10,6 +10,9 @@ Tags: Computer Science, programming, script, scripting, language, Rust, Lua, Jav
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Lua
+
+https://github.com/khvzak/mlua
+High level Lua 5.4/5.3/5.2/5.1 (including LuaJIT) and Roblox Luau bindings to Rust with async/await support
 
 ## JavaScript
 

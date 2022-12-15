@@ -5,7 +5,7 @@ Slug: ssh-tunnel
 Title: SSH Tunnel
 Category: Software
 Tags: software, SSH tunnel, socks proxy, reverse, SSH
-Modified: 2022-04-10 17:58:24
+Modified: 2022-12-15 15:09:53
 
 
 1. The StackOverflow discussion 
@@ -97,7 +97,7 @@ You can follow the steps below to access service running on machine B.
     to forward visits of the port 3333 on machine A to the port 8888 on machine B.
 
         :::bash
-        ssh -L 3333:localhost:8888 ip_of_machine_b
+        ssh -fNL 3333:localhost:8888 ip_of_machine_b
 
 3. You can then visit `ip_of_machine_a:3333` to access the JupyterLab service running on machine B.
 

@@ -96,8 +96,9 @@ which allows users to pass compiler flags to it.
 
 ## Cargo Extensions / Addons 
 
-### rustfmt - Format Code
-
+### [rustfmt](https://github.com/rust-lang/rustfmt) - Format Code
+[rustfmt](https://github.com/rust-lang/rustfmt)
+is Rust's code (official) formatting tool.
 If `rustfmt` has been installed (using `rustup component add rustfmt`),
 you can run the following command to format code in a Rust project.
 
@@ -109,6 +110,10 @@ and there's no good configuration to make it work.
 It is suggested that you do not nest Rust code too deeply. 
 This not only make things easier for `cargo fmt`
 but also makes your Rust code cleaner and more readable.
+
+### [rust-clippy](https://github.com/rust-lang/rust-clippy)
+[rust-clippy](https://github.com/rust-lang/rust-clippy)
+is a bunch of lints to catch common mistakes and improve your Rust code.
 
 ### [cargo-nextest](https://github.com/nextest-rs/nextest)
 
@@ -144,6 +149,22 @@ and Travis CI.
 [cargo-generate](https://github.com/cargo-generate/cargo-generate)
 is a developer tool to help you get up and running quickly with a new Rust project 
 by leveraging a pre-existing git repository as a template.
+
+
+### [cargo-shuttle](https://github.com/shuttle-hq/shuttle)
+[Shuttle] (https://www.shuttle.rs/)
+is a Rust-native cloud development platform that lets you deploy your Rust apps for free.
+
+
+### [cargo-careful](https://github.com/RalfJung/cargo-careful)
+[cargo-careful](https://github.com/RalfJung/cargo-careful)
+is a tool to run your Rust code extra carefully 
+-- opting into a bunch of nightly-only extra checks that help detect Undefined Behavior, 
+and using a standard library with debug assertions.
+
+### [cargo-pgo](https://github.com/Kobzol/cargo-pgo)
+
+Cargo subcommand for optimizing binaries with PGO and BOLT.
 
 ## References 
 

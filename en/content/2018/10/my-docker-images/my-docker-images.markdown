@@ -5,7 +5,7 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2022-12-11 11:01:06
+Modified: 2022-12-16 20:52:55
 
 ## Tips
 
@@ -446,8 +446,6 @@ you can connect to the desktop environment in the Docker container using NoMachi
                     - [dclong/jupyterhub-cuda](https://hub.docker.com/r/dclong/jupyterhub-cuda/)  
 
                         - [dclong/jupyterhub-pytorch](https://hub.docker.com/r/dclong/jupyterhub-pytorch/)  
-
-                        - [dclong/jupyterhub-cuda-dev](https://hub.docker.com/r/dclong/jupyterhub-cuda-dev/)  
 
                     - [dclong/jupyterhub-jdk](https://hub.docker.com/r/dclong/jupyterhub-jdk/)  
 

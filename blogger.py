@@ -413,9 +413,9 @@ class Post:
             title=title, slug=Post.slug(title), category=CATEGORY, tags=TAGS
         )
         if self.blog_dir() == MISC:
-            text = text.replace("${DISCLAIMER_MISC}", DISCLAIMER_MISC)
+            text = text.replace("${DISCLAIMER}", DISCLAIMER_MISC)
         else:
-            text = text.replace("${DISCLAIMER_MISC}", "")
+            text = text.replace("${DISCLAIMER}", "")
         with self.path.open("w") as fout:
             fout.write(text)
 

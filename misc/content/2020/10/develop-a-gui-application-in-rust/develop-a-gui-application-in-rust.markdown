@@ -18,6 +18,11 @@ Please refer to
 [tauri](http://www.legendu.net/misc/blog/use-tauri-to-build-a-desktop-application)
 for more discussions.
 
+## [dioxus](https://github.com/dioxuslabs/dioxus)
+[Dioxus](https://github.com/dioxuslabs/dioxus)
+is a portable, performant, 
+and ergonomic framework for building cross-platform user interfaces in Rust.
+
 ## [slint](https://github.com/slint-ui/slint)
 [slint](https://github.com/slint-ui/slint)
 is a toolkit to efficiently develop fluid graphical user interfaces for any display: 
@@ -76,6 +81,8 @@ is an easy-to-use, 2D GUI library written entirely in Rust.
 is a Rust bindings for Dear ImGui. 
 
 ## References
+
+- [Rust: state of GUI, December 2022](https://kas-gui.github.io/blog/state-of-GUI-2022.html)
 
 - [The state of Rust GUI libraries](https://blog.logrocket.com/state-of-rust-gui-libraries/)
 

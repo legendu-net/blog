@@ -24,16 +24,30 @@ DISPLAY_PAGES_ON_MENU = False
 ARTICLE_URL = "blog/{slug}/"
 ARTICLE_SAVE_AS = "blog/{slug}/index.html"
 
+#MARKDOWN = {
+#    "extension_configs":
+#        {
+#            "markdown.extensions.codehilite": {
+#                "css_class": "highlight"
+#            },
+#            "markdown.extensions.extra": {},
+#            "markdown.extensions.meta": {},
+#            "markdown.extensions.toc": {},
+#        },
+#    "output_format": "html5",
+#}
 MARKDOWN = {
-    "extension_configs":
-        {
-            "markdown.extensions.codehilite": {
-                "css_class": "highlight"
-            },
-            "markdown.extensions.extra": {},
-            "markdown.extensions.meta": {},
-            "markdown.extensions.toc": {},
-        },
+    "extensions": [
+        "markdown.extensions.extra", # include extensions: abbr, attr_list, def_list, fenced_code, footnotes, tables
+        "markdown.extensions.codehilite", # to generate code color scheme using pygments
+        "markdown.extensions.meta", # to parse key:value pairs at the begining of file
+        "markdown.extensions.sane_lists",# for better list 
+        "markdown.extensions.toc", # add Table of Content
+        "markdown.extensions.nl2br", # easily to add new line, but make attr_list and legacy_attrs hard to control
+    ],
+    "extension_configs": {
+        "markdown.extensions.codehilite": {"css_class": "highlight"},
+    },
     "output_format": "html5",
 }
 

@@ -10,6 +10,13 @@ Modified: 2022-01-24 11:12:24
 
 https://crates.io/crates?sort=downloads
 
+## String Manipulation 
+### [lazy_format](https://crates.io/crates/lazy_format)
+[lazy_format](https://crates.io/crates/lazy_format)
+is a [no_std] library for lazily formatting things,
+which avoids allocating temporary strings 
+when writing to a buffered stream. 
+
 ## Databases
 
 ### [serde](https://crates.io/crates/serde)

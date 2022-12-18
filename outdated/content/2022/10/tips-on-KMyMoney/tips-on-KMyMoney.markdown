@@ -1,12 +1,13 @@
 Status: published
 Date: 2022-10-09 18:46:15
-Modified: 2022-12-04 21:57:42
+Modified: 2022-12-17 22:32:46
 Author: Benjamin Du
 Slug: tips-on-KMyMoney
 Title: Tips on Kmymoney
 Category: Computer Science
 Tags: Computer Science, programming
 
+Hi
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 

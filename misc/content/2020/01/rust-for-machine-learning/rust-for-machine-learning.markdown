@@ -27,6 +27,14 @@ BastionAI is a confidential deep learning framework
 that enables data scientists to train their models on sensitive data, 
 while ensuring the data providers no third party will have access to these.
 
+## [tract](https://github.com/sonos/tract)
+[tract](https://github.com/sonos/tract)
+is a Neural Network inference toolkit developed in Rust. 
+It can read Tensorflow 1, ONNX or NNEF, 
+optimize them and run data through them.
+
+
+
 ## References
 
 - [Rust Machine learning Resources](https://rustrepo.com/catalog/rust-machine-learning_newest_1)

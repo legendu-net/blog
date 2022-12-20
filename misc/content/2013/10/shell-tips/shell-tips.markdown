@@ -163,7 +163,7 @@ cp a/. b
 
 ### du & dust
 
-### grep & ripgrep
+### grep & [ripgrep](https://www.legendu.net/misc/blog/ripgrep-is-a-better-alternative-to-find)
 
 ### ps & procs
 

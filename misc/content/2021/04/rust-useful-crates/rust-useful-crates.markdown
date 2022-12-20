@@ -148,11 +148,9 @@ is a simple to use, efficient, and full-featured Command Line Argument Parser.
 
 ## File System
 
-### [ripgrep](https://github.com/BurntSushi/ripgrep)
-[ripgrep](https://github.com/BurntSushi/ripgrep)
+### [ripgrep](https://www.legendu.net/misc/blog/ripgrep-is-a-better-alternative-to-find)
+[ripgrep](https://www.legendu.net/misc/blog/ripgrep-is-a-better-alternative-to-find)
 recursively searches directories for a regex pattern while respecting your gitignore.
-
-
 
 ## Other
 

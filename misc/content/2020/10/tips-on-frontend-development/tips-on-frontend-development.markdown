@@ -5,7 +5,7 @@ Slug: tips-on-frontend-development
 Title: Tips on Frontend Development
 Category: Computer Science
 Tags: Computer Science, web, programming, frontend, RESTful, RESTful API, API
-Modified: 2021-04-26 13:10:46
+Modified: 2022-12-20 11:38:26
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -45,6 +45,12 @@ for more details.
 
 [React](https://github.com/facebook/react)
 is a declarative, efficient, and flexible JavaScript library for building user interfaces.
+It is the most popular frontend framework currently.
+
+### [Next](https://github.com/vercel/next.js/)
+[Next](https://github.com/vercel/next.js/)
+is frontend Framework (based on React) 
+to create a React application that supports universal rendering.
 
 ### [Vue](https://github.com/vuejs/vue)
 
@@ -55,10 +61,6 @@ is a progressive, incrementally-adoptable JavaScript framework for building UI o
 [Nuxt](https://github.com/nuxt/nuxt.js)
 is an intuitive Vue Framework,
 which makes web development simple and powerful.
-
-### [Next](https://github.com/vercel/next.js/)
-[Next](https://github.com/vercel/next.js/)
-is frontend Framework to create a React application that supports universal rendering.
 
 ## CSS
 
@@ -83,4 +85,7 @@ https://thrive.design/the-6-best-css-frameworks-for-2020/
 
 - Progressive Web Apps (PWAs)
 
-https://themindstudios.com/blog/spa-vs-mpa/
+## References
+
+- [Single-Page Applications vs Multi-Page Applications: The Battle of the Web Apps](https://themindstudios.com/blog/spa-vs-mpa/)
+

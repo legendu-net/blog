@@ -5,7 +5,7 @@ Slug: undelete-files-in-linux
 Title: Undelete Files in Linux
 Category: OS
 Tags: Linux, undelete, recover, files, filesystem, restore, trash
-Modified: 2022-12-11 15:58:55
+Modified: 2022-12-20 12:05:13
 
 **
 Things on this page are
@@ -24,15 +24,13 @@ This way,
 deleted files are moved to the Trash directory,
 which can be recovered easily.
 If you must use a command-line tool,
-it is suggested that you use 
-[rip](https://github.com/nivekuil/rip)
-which moves deleted files into a temp directory 
-(which allows easy recovery).
-You can also easily write your own script for this purpose.
-The 
-[%trash magic for IPython](https://github.com/legendu-net/icon/blob/dev/utils/data/ipython/startup.ipy#L111)
-is such an example
-.
+it is suggested that you use one of the following safer alternatives to `rm`.
+
+- [rip](https://github.com/nivekuil/rip)
+- [trash-cli](https://github.com/andreafrancia/trash-cli)
+- [%trash magic for IPython](https://github.com/legendu-net/icon/blob/dev/utils/data/ipython/startup.ipy#L111)
+
+## Recover Files Using `extundelete`
 
 ```bash
 sudo mount -o remount,ro /dev/sdb1
@@ -44,4 +42,3 @@ sudo extundelete --restore-all /dev/sdb1
 - [How to recover a removed file under Linux?](https://superuser.com/questions/150027/how-to-recover-a-removed-file-under-linux)
 
 - [3 Ways to Recover Deleted Files by RM Command on Ubuntu](https://recoverit.wondershare.com/file-recovery/recover-deleted-files-by-rm-command-on-ubuntu.html)
-

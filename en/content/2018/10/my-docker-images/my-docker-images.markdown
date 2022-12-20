@@ -5,7 +5,7 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2022-12-16 20:52:55
+Modified: 2022-12-20 12:23:58
 
 ## Tips
 
@@ -83,6 +83,13 @@ Modified: 2022-12-16 20:52:55
   <tr>
     <td class="tg-0lax">Editing other GitHub repos using GitPod</td>
     <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-gitpod" target="_blank" rel="noopener noreferrer">dclong/gitpod</a></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">JVM languages</td>
+    <td class="tg-0lax">
+        <a href="https://github.com/legendu-net/docker-jupyterhub-kotlin" target="_blank" rel="noopener noreferrer">dclong/jupyterhub-kotlin</a> <br>
+        <a href="https://github.com/legendu-net/docker-jupyterhub-ganymede" target="_blank" rel="noopener noreferrer">dclong/jupyterhub-ganymede</a>
+    </td>
   </tr>
 </tbody>
 </table>

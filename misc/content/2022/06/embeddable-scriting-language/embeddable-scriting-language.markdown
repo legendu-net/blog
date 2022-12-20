@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-06-12 17:23:48
-Modified: 2022-12-15 15:17:21
+Modified: 2022-12-20 11:54:30
 Author: Benjamin Du
 Slug: embeddable-scriting-language
 Title: Embeddable Scriting Language
@@ -11,8 +11,8 @@ Tags: Computer Science, programming, script, scripting, language, Rust, Lua, Jav
 
 ## Lua
 
-https://github.com/khvzak/mlua
-High level Lua 5.4/5.3/5.2/5.1 (including LuaJIT) and Roblox Luau bindings to Rust with async/await support
+1. [Lua Bindings for Rust](https://www.legendu.net/misc/blog/lua-bindings-for-rust)
+    discusses Lua bindings for Rust.
 
 ## JavaScript
 
@@ -26,7 +26,6 @@ please refer to
 [Rhai](https://github.com/rhaiscript/rhai)
 is an embedded scripting language and evaluation engine for Rust 
 that gives a safe and easy way to add scripting to any application.
-
 
 ## [rune](https://github.com/rune-rs/rune)
 [Rune](https://github.com/rune-rs/rune)

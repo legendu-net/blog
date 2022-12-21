@@ -5,7 +5,7 @@ Slug: tips-on-jupyter-book
 Title: Tips on Jupyter-Book
 Category: Computer Science
 Tags: Computer Science, jupyter-book, Markdown, notebook, Jupyter, JupyterLab
-Modified: 2020-10-20 14:47:06
+Modified: 2022-12-20 17:51:52
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -21,16 +21,20 @@ By default,
 The configuration file `_config.yml` in the current directory (if exists) is used.
 So `jb build --config _config.yml *.ipynb` is equivalent to `jb build *.ipynb`.
 
-[GitHub Repository](https://github.com/executablebooks/jupyter-book)
+## References 
 
-[The command-line interface](https://jupyterbook.org/reference/cli.html?highlight=verbose#the-command-line-interface)
+- [Jupyter Book 101: Beautiful, publication-quality documents from computational material](https://www.youtube.com/watch?v=lZ2FHTkyaMU)
 
-[Build Your Book](https://jupyterbook.org/start/build.html)
+- [jupyter-book - Official Doc](https://jupyterbook.org/intro.html)
 
-[Configure book settings](https://jupyterbook.org/customize/config.html?highlight=timeout)
+- [jupyter-book @ GitHub](https://github.com/executablebooks/jupyter-book)
 
-[Hide or remove content](https://jupyterbook.org/interactive/hiding.html?highlight=hide%20code#hide-or-remove-content)
+- [The command-line interface](https://jupyterbook.org/reference/cli.html?highlight=verbose#the-command-line-interface)
 
-[Execute and cache your pages](https://jupyterbook.org/content/execute.html?highlight=timeout)
+- [Build Your Book](https://jupyterbook.org/start/build.html)
 
-https://jupyterbook.org/intro.html
+- [Configure book settings](https://jupyterbook.org/customize/config.html?highlight=timeout)
+
+- [Hide or remove content](https://jupyterbook.org/interactive/hiding.html?highlight=hide%20code#hide-or-remove-content)
+
+- [Execute and cache your pages](https://jupyterbook.org/content/execute.html?highlight=timeout)

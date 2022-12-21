@@ -5,7 +5,7 @@ Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
 Category: Software
 Tags: Data Science, JuptyerLab, Jupyter, notebook, deepnote
-Modified: 2020-11-14 18:35:33
+Modified: 2022-12-20 14:57:28
 
 **
 Things on this page are
@@ -53,10 +53,6 @@ e.g., writing a notebook-based article for my blog.
 3. Google Drive can be mounted.
 
 3. **Free GPU available!**
-
-## [RMOTR Notebooks | notebooks.ai](https://notebooks.ai/)
-
-1. Installed software does not persist.
 
 ## [Code Ocean](https://codeocean.com/)
 

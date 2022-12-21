@@ -7,16 +7,14 @@ Category: Software
 Tags: Data Science, JuptyerLab, Jupyter, notebook, deepnote
 Modified: 2022-12-20 14:57:28
 
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 **
 Things on this page are
 fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
-## [DeepNote](https://deepnote.com/)
-
-Sounds like the best available one now. 
-It also supports real-time collaboration among users!
 
 ## [GitPod](https://www.gitpod.io/)
 
@@ -37,12 +35,6 @@ to make sure that your workspace won't timeout and get killed.
 I typically use JupyterLab launched from GitPod for ad hoc short-time tasks,
 e.g., writing a notebook-based article for my blog.
 
-## [Kaggle](https://www.kaggle.com/)
-
-1. Jupyter notebooks only, no JupyterLab support.
-3. Only Python an R kernels are supported.
-4. GPU available for request.
-
 ## [Google Colaboratory](https://colab.research.google.com/)
 
 1. No terminal unless you 
@@ -53,6 +45,25 @@ e.g., writing a notebook-based article for my blog.
 3. Google Drive can be mounted.
 
 3. **Free GPU available!**
+
+## [Kaggle](https://www.kaggle.com/)
+
+1. Jupyter notebooks only, no JupyterLab support.
+3. Only Python an R kernels are supported.
+4. GPU available for request.
+
+## [DeepNote](https://deepnote.com/)
+
+### Pros
+
+1. Allow customized Docker images.
+
+### Cons
+
+1. DeepNote uses a customized interface instead of Jupyter/Lab interface
+    causing
+    - no easy way to navigate through the file system
+    - no easy way to switch among different kernels
 
 ## [Code Ocean](https://codeocean.com/)
 

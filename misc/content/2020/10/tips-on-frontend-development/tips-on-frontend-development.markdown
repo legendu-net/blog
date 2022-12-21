@@ -4,13 +4,16 @@ Author: Benjamin Du
 Slug: tips-on-frontend-development
 Title: Tips on Frontend Development
 Category: Computer Science
-Tags: Computer Science, web, programming, frontend, RESTful, RESTful API, API
+Tags: Computer Science, web, programming, frontend, development, dev, RESTful, RESTful API, API
 Modified: 2022-12-20 11:38:26
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
+
+[The State of Frontend in 2022](https://newsletter.pragmaticengineer.com/p/state-of-frontend-2022)
+has a good discussion about the state and trend of frontend technologies as of 2022.
 
 ## Useful Tools for Web Development
 

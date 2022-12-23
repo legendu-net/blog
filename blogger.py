@@ -73,7 +73,7 @@ class Post:
         """Check whether there is any difference between this post's content and the given content.
         :param content: The content to compare against.
         """
-        return self.path.read_text() != content
+        return self.record().content != content
 
     def blog_dir(self):
         """Get the corresponding blog directory (home, en, cn or misc) of a post.
@@ -240,7 +240,6 @@ class Post:
         empty = self._is_ess_empty(content)
         content = title + "\n" + category + "\n" + tags + "\n" + "".join(content)
         name_title_mismatch = self.is_name_title_mismatch(title)
-        # TODO: add modified into the database ...
         return Record(
             self.path.relative_to(BASE_DIR), self.blog_dir(), status, date, modified,
             author, slug, title, category, tags, content, empty, 0, name_title_mismatch
@@ -323,8 +322,6 @@ class Post:
         mapping = {f"- {field}": value for field, value in mapping.items()}
         notebook = self._read_notebook()
         meta = notebook["cells"][0]["source"]
-        if not meta[-1].endswith("\n"):
-            meta[-1] += "\n"
         self._update_meta_field_lines(meta, mapping)
         self._write_notebook(notebook)
 
@@ -336,6 +333,9 @@ class Post:
                 line = lines[idx]
                 if line.startswith(f"{field}:"):
                     lines[idx] = f"{field}: {value}\n"
+                    break
+                elif line.startswith(f"- {field}:"):
+                    lines[idx] = f"- {field}: {value}\n"
                     break
             else:
                 lines.append(f"{field}: {value}\n")
@@ -554,22 +554,28 @@ class Blogger:
             """
         self.execute(sql, post.record())
 
-    def trash(self, posts: Union[str, List[str]]):
+    def trash(self, paths: Union[str, List[str]]):
         """Move the specified posts to the trash directory.
-        :param posts:
+
+        :param paths: Paths of posts to be removed.
         """
-        if isinstance(posts, str):
-            posts = [posts]
-        path = BASE_DIR / "trash"
-        if not path.is_dir():
-            path.mkdir(0o700, True, True)
-        for post in posts:
-            shutil.move(post, path)
+        if isinstance(paths, str):
+            paths = [paths]
+        dir_ = BASE_DIR / "trash"
+        if not dir_.is_dir():
+            dir_.mkdir(0o700, True, True)
+        for path in paths:
+            shutil.move(path, dir_)
+        self.delete_by_path(paths)
+
+    def delete_by_path(self, paths: Union[str, List[str]]):
+        if isinstance(paths, str):
+            paths = [paths]
         sql = f"""
             DELETE FROM posts
-            WHERE path in ({qmarks(posts)})
+            WHERE path in ({qmarks(paths)})
             """
-        self.execute(sql, posts)
+        self.execute(sql, paths)
 
     def move(
         self, src: Union[str, Path, Sequence[Union[str, Path]]], dst: Union[str]
@@ -638,22 +644,22 @@ class Blogger:
             """
         self.execute(sql, list(mapping.values()) + paths)
 
-    def _delete_updated(self) -> None:
-        sql = "DELETE FROM posts WHERE updated = 1"
-        self.execute(sql)
-
-    def update(self):
+    def update(self, reset: bool):
         """Update information of the changed posts.
+        
+        :param reset: If true, reset updated = 0 for updated = 1 but not changed posts.
         """
         sql = "SELECT path, content FROM posts WHERE updated = 1"
         rows = self.execute(sql).fetchall()
         # posts that were not changed
-        paths = [path for path, content in rows if not Post(path).diff(content)]
-        self.update_records(paths=paths, mapping={"updated": 0})
+        if reset:
+            paths = [path for path, content in rows if not Post(path).diff(content)]
+            self.update_records(paths=paths, mapping={"updated": 0})
         # posts that were changed
-        self._delete_updated()
-        posts = [Post(path) for path, content in rows if Post(path).diff(content)]
-        for post in posts:
+        paths = [path for path, content in rows if Post(path).diff(content)]
+        self.delete_by_path(paths)
+        for path in paths:
+            post = Post(path)
             post.update_meta_field({"Modified": NOW_DASH})
             self._load_post(post)
 
@@ -773,14 +779,6 @@ class Blogger:
             idx = [idx]
         sql = f"SELECT path FROM srps WHERE rowid in ({qmarks(idx)})"
         return [row[0] for row in self.execute(sql, idx).fetchall()]
-
-    def fetch(self, n: int):
-        """Fetch search results.
-
-        :param n: the number of results to fetch.
-        """
-        sql = "SELECT rowid, path FROM srps LIMIT {}".format(n)
-        return self.execute(sql).fetchall()
 
     def query(self, sql: str, params: Sequence = ()):
         return self.execute(sql, params).fetchall()

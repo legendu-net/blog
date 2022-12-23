@@ -17,6 +17,13 @@ has a good discussion about the state and trend of frontend technologies as of 2
 
 ## Useful Tools for Web Development
 
+1. [Rome](https://github.com/rome/tools)
+    provides unified developer tools for JavaScript, TypeScript, and the web.
+    It is designed to replace Babel, ESLint, webpack, Pretier, Jest and others.
+2. Eslint
+3. Prettier
+4. Webpack
+
 ## Misc
 
 [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)

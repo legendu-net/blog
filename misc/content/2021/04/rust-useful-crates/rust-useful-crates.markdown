@@ -5,7 +5,7 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2022-01-24 11:12:24
+Modified: 2022-12-21 10:11:34
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
@@ -146,11 +146,11 @@ Parse command line argument by defining a struct.
 [clap](https://crates.io/crates/clap)
 is a simple to use, efficient, and full-featured Command Line Argument Parser.
 
-## File System
+## Command-line Tools
 
-### [ripgrep](https://www.legendu.net/misc/blog/ripgrep-is-a-better-alternative-to-find)
-[ripgrep](https://www.legendu.net/misc/blog/ripgrep-is-a-better-alternative-to-find)
-recursively searches directories for a regex pattern while respecting your gitignore.
+Please refer to
+[Great Command Line Tools Developed in Rust](https://www.legendu.net/misc/blog/great-command-line-tools-developed-in-rust)
+for detailed discussions.
 
 ## Other
 
@@ -171,6 +171,12 @@ as well as anything that requires non-const function calls to be computed.
 [derive_builder](https://crates.io/crates/derive_builder)
 provides a Rust procedural macro to automatically implement the builder pattern for arbitrary structs.
 
+## Protobuf and RPc
+
+### [prost](https://github.com/tokio-rs/prost)
+[prost](https://github.com/tokio-rs/prost)
+is a Protocol Buffers implementation for the Rust Language. 
+It helps generate simple, idiomatic Rust code from proto2 and proto3 files.
 
 ## References
 

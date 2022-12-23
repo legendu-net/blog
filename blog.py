@@ -131,7 +131,7 @@ def edit(blogger, args):
 
 
 def search(blogger, args):
-    update(blogger, args)
+    blogger.update(reset=False)
     filter_ = []
     args.filter = " ".join(args.filter)
     if args.filter:
@@ -191,6 +191,11 @@ def show(blogger, args) -> None:
     print("")
 
 
+def last(blogger, args):
+    blogger.last(args.n)
+    show(blogger, args)
+
+
 def reload(blogger, args):
     blogger.reload_posts()
 
@@ -200,6 +205,9 @@ def add(blogger, args):
     args.indexes = None
     args.files = file
     edit(blogger, args)
+    blogger._load_post(Post(file))
+    blogger.search(phrase="", filter_=f"path = '{file.relative_to(BASE_DIR)}'")
+    show(blogger, Namespace(n=1, full_path=False))
 
 
 def categories(blogger, args):
@@ -251,7 +259,7 @@ def tags(blogger, args):
 
 
 def update(blogger, args):
-    blogger.update()
+    blogger.update(reset=True)
     blogger.commit()
 
 
@@ -464,6 +472,19 @@ def _subparse_reload(subparsers):
         description=desc,
     )
     subparser_reload.set_defaults(func=reload)
+
+
+def _subparse_last(subparsers):
+    desc = "List recently changed posts."
+    subparser_last = subparsers.add_parser(
+        "last",
+        aliases=[],
+        help=desc,
+        description=desc,
+    )
+    option_num(subparser_last)
+    option_full_path(subparser_last)
+    subparser_last.set_defaults(func=last)
 
 
 def _subparse_list(subparsers):
@@ -679,6 +700,7 @@ def _subparse_edit(subparsers):
         help="Path of the post to be edited."
     )
     subparser_edit.set_defaults(func=edit)
+
 
 
 def _subparse_move(subparsers):
@@ -953,6 +975,7 @@ def parse_args(args=None, namespace=None) -> Namespace:
     _subparse_update(subparsers)
     _subparse_reload(subparsers)
     _subparse_list(subparsers)
+    _subparse_last(subparsers)
     _subparse_search(subparsers)
     _subparse_add(subparsers)
     _subparse_edit(subparsers)

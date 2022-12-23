@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-01-13 09:48:04
-Modified: 2021-09-26 11:59:35
+Modified: 2022-12-22 16:21:57
 Author: Ben Chuanlong Du
 Slug: python-module-tips
 Title: Tips on Python Module 
@@ -129,4 +129,4 @@ https://stackoverflow.com/questions/43393764/python-3-6-project-structure-leads-
 
 ## References 
 
-https://github.com/pypa
+- https://github.com/pypa

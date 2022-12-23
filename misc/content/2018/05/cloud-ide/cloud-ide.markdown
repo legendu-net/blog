@@ -13,7 +13,7 @@ fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
 
-## [VS Code Server](https://github.com/cdr/code-server)
+## [Code Server](https://github.com/cdr/code-server)
 
 ## [GitPod](https://gitpod.io/)
 

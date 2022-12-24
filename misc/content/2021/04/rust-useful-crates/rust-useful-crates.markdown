@@ -5,7 +5,7 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2022-12-21 10:11:34
+Modified: 2022-12-23 20:47:48
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
@@ -16,6 +16,12 @@ https://crates.io/crates?sort=downloads
 is a [no_std] library for lazily formatting things,
 which avoids allocating temporary strings 
 when writing to a buffered stream. 
+
+### [Askama](https://github.com/djc/askama)
+[Askama](https://github.com/djc/askama)
+implements a template rendering engine based on Jinja. 
+It generates Rust code from your templates at compile time 
+based on a user-defined struct to hold the template's context.
 
 ## Databases
 
@@ -39,6 +45,12 @@ and fast graph database based on the RocksDB and Sled key-value stores.
 It is written in Rust. 
 It also provides a set of utility functions for reading, writing, and processing RDF files.
 Oxigraph is in heavy development and SPARQL query evaluation has not been optimized yet.
+
+### [skytable](https://github.com/skytable/skytable)
+[Skytable](https://github.com/skytable/skytable)
+is a free and open-source NoSQL database 
+that aims to provide flexible data modeling at scale. 
+Simplicity, performance and flexibility are the guiding design principles.
 
 ### [bolt-rs](https://github.com/lucis-fluxum/bolt-rs)
 [bolt-rs](https://github.com/lucis-fluxum/bolt-rs)

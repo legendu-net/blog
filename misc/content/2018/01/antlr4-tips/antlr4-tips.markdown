@@ -4,7 +4,7 @@ Author: Ben Chuanlong Du
 Slug: antlr4-tips
 Title: Tips on ANTLR4
 Category: Computer Science
-Tags: programming, ANTLR4, Python, compiler, parser, lexer
+Tags: programming, ANTLR, Python, compiler, parser, lexer
 Modified: 2020-05-22 15:10:30
 
 **
@@ -19,3 +19,7 @@ Please read with your own judgement!
 wajig install antlr4
 sudo pip3 install antlr4-python3-runtime==4.5
 ```
+
+## References 
+
+- [ANTLR Official Homepage](https://www.antlr.org/index.html)

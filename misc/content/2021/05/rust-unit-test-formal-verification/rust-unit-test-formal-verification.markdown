@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-05-13 09:33:19
-Modified: 2022-11-05 10:04:22
+Modified: 2022-12-23 20:58:39
 Author: Benjamin Du
 Slug: unit-testing-formal-verification-rust
 Title: Unit Testing and Formal Verification in Rust
@@ -11,25 +11,17 @@ Tags: Computer Science, programming, Rust, testing, unit test, verification, ana
 
 ## Test vs Verification
 
-[From Fuzzing to Proof: Using Kani with the Bolero Property-Testing Framework](https://model-checking.github.io/kani-verifier-blog/2022/10/27/using-kani-with-the-bolero-property-testing-framework.html)
-
 [Rust Design-for-Testability: a survey](https://alastairreid.github.io/rust-testability/)
-
-[Rust Verification Tools](https://project-oak.github.io/rust-verification-tools/)
 
 [Rust testing or verifying: Why not both?](https://alastairreid.github.io/why-not-both/)
 
-[Rust verification tools](https://alastairreid.github.io/rust-verification-tools/#:~:text=Prusti%20is%20a%20really%20interesting,to%20help%20it%20verify%20code.)
-
 [KLEE Symbolic Execution Engine](https://github.com/klee/klee)
-
-[SeaHorn is an automated analysis framework for LLVM-based languages.](https://github.com/seahorn/seahorn)
 
 [Library-ification and analyzing Rust](http://smallcultfollowing.com/babysteps/blog/2020/04/09/libraryification/)
 
-[This is a static simulator for Rust programs. It runs a set of test cases and attempts to prove that all assertions pass on all valid inputs.](https://github.com/GaloisInc/crucible/tree/master/crux-mir)
-
 ## References 
+
+- [Verify Rust Code](https://www.legendu.net/misc/blog/verify-rust-code)
 
 - [Unit Test in Rust](https://www.legendu.net/misc/blog/unit-test-in-rust)
 

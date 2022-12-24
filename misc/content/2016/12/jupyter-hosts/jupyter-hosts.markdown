@@ -5,7 +5,7 @@ Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
 Category: Software
 Tags: Data Science, JuptyerLab, Jupyter, notebook, deepnote
-Modified: 2022-12-20 14:57:28
+Modified: 2022-12-23 19:32:54
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 

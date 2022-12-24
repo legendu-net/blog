@@ -6,7 +6,7 @@ from argparse import ArgumentParser, Namespace
 import subprocess as sp
 import getpass
 from loguru import logger
-import aiutil.jupyter
+from aiutil.notebook.util import format_notebook
 from utils import (
     BASE_DIR, push_github, pelican_generate, option_files, option_indexes, option_where,
     option_dir, option_num, option_from, option_to, option_editor, option_all,
@@ -196,7 +196,7 @@ def last(blogger, args):
     show(blogger, args)
 
 
-def reload(blogger, args):
+def reload(blogger, _):
     blogger.reload_posts()
 
 
@@ -205,13 +205,13 @@ def add(blogger, args):
     args.indexes = None
     args.files = file
     edit(blogger, args)
-    blogger._load_post(Post(file))
+    blogger.load_post(Post(file))
     blogger.search(phrase="", filter_=f"path = '{file.relative_to(BASE_DIR)}'")
     show(blogger, Namespace(n=1, full_path=False))
 
 
 def categories(blogger, args):
-    cats = blogger.categories(dir_=args.sub_dir, where=args.where)
+    cats = blogger.categories(where=args.where)
     for cat in cats:
         print(cat)
 
@@ -253,12 +253,12 @@ def update_tags(blogger, args):
 
 
 def tags(blogger, args):
-    tags = blogger.tags(dir_=args.sub_dir, where=args.where)
+    tags = blogger.tags(where=args.where)
     for tag in tags:
         print(tag)
 
 
-def update(blogger, args):
+def update(blogger, _):
     blogger.update(reset=True)
     blogger.commit()
 
@@ -306,27 +306,11 @@ def _subparse_link(subparsers):
     subparser_link.set_defaults(func=lambda blogger, args: symlink())
 
 
-def clear(blogger, args):
+def clear(blogger, _):
     blogger.clear()
 
 
-def launch_jupyterlab(blogger, args):
-    cmd = "jupyter lab --allow-root --ip='0.0.0.0' --port=8888 --no-browser --notebook-dir=/workdir &"
-    sp.run(cmd, shell=True, check=True)
-
-
-def _subparse_jupyterlab(subparsers):
-    desc = "Launch the JupyterLab server."
-    subparser_jlab = subparsers.add_parser(
-        "jupyterlab",
-        aliases=["jupyter", "jlab"],
-        help=desc,
-        description=desc,
-    )
-    subparser_jlab.set_defaults(func=launch_jupyterlab)
-
-
-def exec_notebook(bloger, args):
+def exec_notebook(_, args):
     if args.indexes:
         args.notebooks = blogger.path(args.indexes)
     if args.notebooks:
@@ -336,10 +320,10 @@ def exec_notebook(bloger, args):
         sp.run(cmd, check=True)
 
 
-def format_notebook(bloger, args):
+def format_notebook_(_, args):
     _resolve_files(args)
     if args.files:
-        aiutil.jupyter.format_notebook(args.files, style_file=args.yapf_config)
+        format_notebook(args.files, yapf_config=args.yapf_config)
 
 
 def _subparse_format_notebook(subparsers):
@@ -359,12 +343,12 @@ def _subparse_format_notebook(subparsers):
         default="",
         help="The configuration file to use for yapf."
     )
-    subparser_format_notebook.set_defaults(func=format_notebook)
+    subparser_format_notebook.set_defaults(func=format_notebook_)
 
 
 def _subparse_trust_notebooks(subparsers):
     desc = "Trust notebooks."
-    subparser_trust_notebooks = subparsers.add_parser(
+    subparsers.add_parser(
         "trust_notebooks",
         aliases=["trust"],
         help=desc,
@@ -448,7 +432,6 @@ def _subparse_cats(subparsers):
         description=desc,
     )
     option_where(subparser_cats)
-    option_dir(subparser_cats)
     subparser_cats.set_defaults(func=categories)
 
 
@@ -702,7 +685,6 @@ def _subparse_edit(subparsers):
     subparser_edit.set_defaults(func=edit)
 
 
-
 def _subparse_move(subparsers):
     desc = "Move a post."
     subparser_move = subparsers.add_parser(
@@ -891,11 +873,11 @@ def _subparse_git_diff(subparsers):
     subparser_git.set_defaults(func=_git_diff)
 
 
-def _git_status(blogger, args):
+def _git_status(_, __):
     sp.run("git status", shell=True, check=True)
 
 
-def _git_diff(blogger, args):
+def _git_diff(_, args):
     sp.run(f"git diff {' '.join(args.file)}", shell=True, check=True)
 
 
@@ -967,7 +949,6 @@ def parse_args(args=None, namespace=None) -> Namespace:
     """
     parser = ArgumentParser(description="Write blog in command line.")
     subparsers = parser.add_subparsers(dest="sub_cmd", help="Sub commands.")
-    _subparse_jupyterlab(subparsers)
     _subparse_utag(subparsers)
     _subparse_ucat(subparsers)
     _subparse_tags(subparsers)

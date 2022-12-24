@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 # encoding: utf-8
+"""Main logic of the blogging system.
+"""
 from __future__ import annotations
 from typing import Union, Sequence
 from collections import namedtuple
@@ -10,9 +12,9 @@ import sqlite3
 import datetime
 import shutil
 from pathlib import Path
+import subprocess as sp
 import json
 import yaml
-import subprocess as sp
 from loguru import logger
 from tqdm import tqdm
 from utils import BASE_DIR, qmarks
@@ -32,7 +34,7 @@ IPYNB = ".ipynb"
 NOW_DASH = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 TODAY_DASH = NOW_DASH[:10]
 YYYYMM_slash = TODAY_DASH[:7].replace("-", "/")
-with open("words.yaml") as _:
+with Path("words.yaml").open(encoding="utf-8") as _:
     WORDS = yaml.load(_, Loader=yaml.FullLoader)
 POSTS_COLS = [
     "path", "dir", "status", "date", "modified", "author", "slug", "title", "category",
@@ -111,30 +113,36 @@ class Post:
                     }
                 )
             self._write_notebook(notebook)
-        elif notebook["cells"][1]["source"][0] in (DISCLAIMER_MISC, DISCLAIMER_OUTDATED):
+        elif notebook["cells"][1]["source"][0] in (
+            DISCLAIMER_MISC, DISCLAIMER_OUTDATED
+        ):
             notebook["cells"].pop(1)
         self._write_notebook(notebook)
 
     def _write_notebook(self, notebook: dict):
-        self.path.write_text(json.dumps(notebook, indent=1))
+        self.path.write_text(json.dumps(notebook, indent=1), encoding="utf-8")
 
     def _update_after_move_markdown(self) -> None:
         blog_dir = self.blog_dir()
         if blog_dir in (MISC, OUTDATED):
             DISCLAIMER = DISCLAIMER_MISC if blog_dir == MISC else DISCLAIMER_OUTDATED
-            with self.path.open() as fin:
+            with self.path.open(encoding="utf-8") as fin:
                 lines = fin.readlines()
             index = [line.strip() for line in lines].index("")
-            with self.path.open("w") as fout:
+            with self.path.open("w", encoding="utf-8") as fout:
                 fout.writelines(lines[:index])
                 fout.writelines("\n" + DISCLAIMER + "\n")
                 index_5 = index + 5
-                fout.writelines(line for line in lines[index:index_5] if not line.strip() in (DISCLAIMER_MISC, DISCLAIMER_OUTDATED
-                                                                                  ))
+                fout.writelines(
+                    line for line in lines[index:index_5]
+                    if not line.strip() in (DISCLAIMER_MISC, DISCLAIMER_OUTDATED)
+                )
                 fout.writelines(lines[index_5:])
             return
-        text = self.path.read_text().replace(DISCLAIMER_MISC, "").replace(DISCLAIMER_OUTDATED, "")
-        self.path.write_text(text)
+        text = self.path.read_text(encoding="utf-8"
+                                  ).replace(DISCLAIMER_MISC,
+                                            "").replace(DISCLAIMER_OUTDATED, "")
+        self.path.write_text(text, encoding="utf-8")
 
     @staticmethod
     def format_title(title):
@@ -152,14 +160,14 @@ class Post:
         return title
 
     def _read_notebook(self) -> dict:
-        notebook = json.loads(self.path.read_text())
+        notebook = json.loads(self.path.read_text(encoding="utf-8"))
         if notebook["cells"][0]["cell_type"] != "markdown":
             raise SyntaxError(
                 f"The first cell of the notebook {self.path} is not a markdown cell!"
             )
         return notebook
 
-    def update_tags(self, from_tag: str, to_tag: str) -> List[str]:
+    def update_tags(self, from_tag: str, to_tag: str) -> list[str]:
         """Update the tag from_tag of the post to the tag to_tag.
         :param from_tag: The tag to be changed.
         :param to_tag: The tag to change to.
@@ -167,7 +175,7 @@ class Post:
         """
         # TODO: need to be updated: 1. support both markdown and notebook;
         # 2. leverage update_meta_field? Is it possible?
-        with self.path.open() as fin:
+        with self.path.open(encoding="utf-8") as fin:
             lines = fin.readlines()
         for idx, line in enumerate(lines):
             if line.startswith("Tags: "):
@@ -177,7 +185,7 @@ class Post:
                 break
         else:
             tags = []
-        with self.path.open("w") as fout:
+        with self.path.open("w", encoding="utf-8") as fout:
             fout.writelines(lines)
         return tags
 
@@ -195,7 +203,7 @@ class Post:
         """
         meta = []
         content = []
-        with self.path.open() as fin:
+        with self.path.open(encoding="utf-8") as fin:
             for line in fin:
                 if re.match("[A-Za-z]+: ", line):
                     meta.append(line)
@@ -246,7 +254,7 @@ class Post:
         )
 
     def _parse_notebook(self) -> Record:
-        content = self.path.read_text()
+        content = self.path.read_text(encoding="utf-8")
         cells = json.loads(content)["cells"]
         empty = 1 if len(cells) <= 1 else 0
         if cells[0]["cell_type"] != "markdown":
@@ -303,7 +311,7 @@ class Post:
     def stem_name(self) -> str:
         return self.path.stem[11:]
 
-    def _is_ess_empty(self, lines: List[str]) -> int:
+    def _is_ess_empty(self, lines: list[str]) -> int:
         """Check whether the lines are essentially empty.
         :param lines: A list of lines.
         """
@@ -315,7 +323,7 @@ class Post:
         if self.is_markdown():
             meta, content = self._read_lines_markdown()
             self._update_meta_field_lines(meta, mapping)
-            with self.path.open("w") as fout:
+            with self.path.open("w", encoding="utf-8") as fout:
                 fout.writelines(meta)
                 fout.writelines(content)
             return
@@ -326,7 +334,7 @@ class Post:
         self._write_notebook(notebook)
 
     @staticmethod
-    def _update_meta_field_lines(lines: List[str], mapping: dict[str, str]) -> None:
+    def _update_meta_field_lines(lines: list[str], mapping: dict[str, str]) -> None:
         nrow = len(lines)
         for field, value in mapping.items():
             for idx in range(nrow):
@@ -334,7 +342,7 @@ class Post:
                 if line.startswith(f"{field}:"):
                     lines[idx] = f"{field}: {value}\n"
                     break
-                elif line.startswith(f"- {field}:"):
+                if line.startswith(f"- {field}:"):
                     lines[idx] = f"- {field}: {value}\n"
                     break
             else:
@@ -371,9 +379,8 @@ class Post:
         return self._title_notebook()
 
     def _title_notebook(self):
-        # TODO: dedup the code
-        content = self.path.read_text()
-        cell = json.loads(content)["cells"][0]
+        with self.path.open(encoding="utf-8") as fin:
+            cell = json.load(fin)["cells"][0]
         if cell["cell_type"] != "markdown":
             raise SyntaxError(
                 f"The first cell of the notebook {self.path} is not a markdown cell!"
@@ -389,7 +396,7 @@ class Post:
         raise SyntaxError(f"No title in the post {self.path}!")
 
     def _title_markdown(self) -> str:
-        with self.path.open() as fin:
+        with self.path.open(encoding="utf-8") as fin:
             for line in fin:
                 if line.startswith("Title: "):
                     return line[7:].strip()
@@ -416,11 +423,11 @@ class Post:
             text = text.replace("${DISCLAIMER}", DISCLAIMER_MISC)
         else:
             text = text.replace("${DISCLAIMER}", "")
-        with self.path.open("w") as fout:
+        with self.path.open("w", encoding="utf-8") as fout:
             fout.write(text)
 
     def _create_markdown(self, title: str):
-        with self.path.open("w") as fout:
+        with self.path.open("w", encoding="utf-8") as fout:
             fout.writelines("Status: published\n")
             fout.writelines(f"Date: {NOW_DASH}\n")
             fout.writelines(f"Modified: {NOW_DASH}\n")
@@ -467,7 +474,7 @@ class Post:
         notebook = json.loads(text)
         notebook["cells"][1]["source"] = re.split(r"(?<=\n)", record.content)
         path = self.path.with_suffix(IPYNB)
-        with path.open("w") as fout:
+        with path.open("w", encoding="utf-8") as fout:
             json.dump(notebook, fout, indent=1)
         dir_ = BASE_DIR / "trash" / self.path.parent.name
         dir_.mkdir(parents=True, exist_ok=True)
@@ -541,10 +548,10 @@ class Blogger:
         )
         logger.info("Reloading posts into SQLite3 ...")
         for path in tqdm(paths):
-            self._load_post(Post(path))
+            self.load_post(Post(path))
         self.commit()
 
-    def _load_post(self, post: Post):
+    def load_post(self, post: Post):
         sql = f"""
             INSERT INTO posts (
                 {", ".join(POSTS_COLS)}
@@ -554,7 +561,7 @@ class Blogger:
             """
         self.execute(sql, post.record())
 
-    def trash(self, paths: Union[str, List[str]]):
+    def trash(self, paths: Union[str, list[str]]):
         """Move the specified posts to the trash directory.
 
         :param paths: Paths of posts to be removed.
@@ -568,7 +575,7 @@ class Blogger:
             shutil.move(path, dir_)
         self.delete_by_path(paths)
 
-    def delete_by_path(self, paths: Union[str, List[str]]):
+    def delete_by_path(self, paths: Union[str, list[str]]):
         if isinstance(paths, str):
             paths = [paths]
         sql = f"""
@@ -621,7 +628,7 @@ class Blogger:
         parameters = [self._reg_param(param) for param in parameters]
         return self._conn.execute(operation, parameters)
 
-    def edit(self, paths: Union[str, List[str]], editor: str) -> None:
+    def edit(self, paths: Union[str, list[str]], editor: str) -> None:
         """Edit the specified posts using the specified editor.
         """
         if not isinstance(paths, list):
@@ -631,7 +638,7 @@ class Blogger:
         os.system(f"{editor} {paths}")
 
     def update_records(
-        self, paths: Union[List[str], List[Path]], mapping: dict
+        self, paths: Union[list[str], list[Path]], mapping: dict
     ) -> None:
         """Update records corresponding to the specified paths.
         :param mapping: A dictionary of the form dict[field, value].
@@ -661,7 +668,7 @@ class Blogger:
         for path in paths:
             post = Post(path)
             post.update_meta_field({"Modified": NOW_DASH})
-            self._load_post(post)
+            self.load_post(post)
 
     def add_post(self, title: str, dir_: str, notebook: bool = True) -> Path:
         """Add a new post with the given title.
@@ -675,7 +682,7 @@ class Blogger:
             path = dir_ / (stem + suffix)
             post = Post(path)
             post.create(title)
-            self._load_post(post)
+            self.load_post(post)
         print(f"\nThe following post is added.\n{path}\n")
         return path
 
@@ -774,7 +781,7 @@ class Blogger:
         self.execute(sql)
         self.commit()
 
-    def path(self, idx: Union[int, List[int]]) -> List[str]:
+    def path(self, idx: Union[int, list[int]]) -> list[str]:
         if isinstance(idx, int):
             idx = [idx]
         sql = f"SELECT path FROM srps WHERE rowid in ({qmarks(idx)})"
@@ -783,18 +790,14 @@ class Blogger:
     def query(self, sql: str, params: Sequence = ()):
         return self.execute(sql, params).fetchall()
 
-    def tags(self, dir_: str = "", where=""):
+    def tags(self, where=""):
         """Get all tags and their frequencies in all posts.
 
-        :param dir_:
         :param where:
         """
-        sql = "SELECT tags FROM posts {where}"
         if where:
-            sql = sql.format(where=where)
-        else:
-            # todo you can support quicker specific filtering in future
-            sql = sql.format(where=where)
+            where = "WHERE " + where
+        sql = f"SELECT tags FROM posts {where}"
         cursor = self.execute(sql)
         tags = {}
         row = cursor.fetchone()
@@ -810,22 +813,19 @@ class Blogger:
             row = cursor.fetchone()
         return sorted(tags.items(), key=lambda pair: pair[1], reverse=True)
 
-    def categories(self, dir_: str = "", where=""):
+    def categories(self, where=""):
         """Get all categories and their frequencies in posts.
-        :param dir_: 
+
         :param where: 
         """
-        sql = """
+        if where:
+            where = "WHERE " + where
+        sql = f"""
             SELECT category, count(*) as n
             FROM posts
             {where}
             GROUP BY category
             ORDER BY n desc
             """
-        if where:
-            sql = sql.format(where=where)
-        else:
-            # todo you can support quicker specific filtering in future
-            sql = sql.format(where=where)
         cats = (row for row in self.execute(sql).fetchall())
         return cats

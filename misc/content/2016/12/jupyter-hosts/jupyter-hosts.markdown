@@ -35,6 +35,13 @@ to make sure that your workspace won't timeout and get killed.
 I typically use JupyterLab launched from GitPod for ad hoc short-time tasks,
 e.g., writing a notebook-based article for my blog.
 
+## [Noteable](https://app.noteable.io)
+### Pros
+1. support filesystem navigation
+2. support different kernels in different cells in the same notebook
+### Cons
+1. no terminal support
+
 ## [Google Colaboratory](https://colab.research.google.com/)
 
 1. No terminal unless you 

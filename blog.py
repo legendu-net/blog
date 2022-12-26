@@ -120,6 +120,11 @@ def match_post(blogger, args):
                 blogger.match_post_title(args.files[index])
 
 
+def vim(blogger, args):
+    args.editor = "vim"
+    edit(blogger, args)
+
+
 def edit(blogger, args):
     if args.indexes:
         args.files += blogger.path(args.indexes)
@@ -662,6 +667,28 @@ def _subparse_add(subparsers):
     subparser_add.set_defaults(func=add)
 
 
+def _subparse_vim(subparsers):
+    desc = "Edit a post using Vim."
+    subparser_vim = subparsers.add_parser(
+        "vim",
+        aliases=["v"],
+        help=desc,
+        description=desc,
+    )
+    subparser_vim.add_argument(
+        "indexes", nargs="*", type=int, help="Row IDs in the search results."
+    )
+    subparser_vim.add_argument(
+        "-f",
+        "--files",
+        nargs="+",
+        default=[],
+        dest="files",
+        help="Path of the post to be edited."
+    )
+    subparser_vim.set_defaults(func=vim)
+
+
 def _subparse_edit(subparsers):
     desc = "Edit a post."
     subparser_edit = subparsers.add_parser(
@@ -960,6 +987,7 @@ def parse_args(args=None, namespace=None) -> Namespace:
     _subparse_search(subparsers)
     _subparse_add(subparsers)
     _subparse_edit(subparsers)
+    _subparse_vim(subparsers)
     _subparse_move(subparsers)
     _subparse_publish(subparsers)
     _subparse_query(subparsers)

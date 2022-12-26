@@ -135,6 +135,7 @@
 - ["Github", "GitHub"]
 - ["Lapack", "LAPACK"]
 - ["Mkdocs", "mkdocs"]
+- ["Mdbook", "mdBook"]
 - ["Neovim", "NeoVim"]
 - ["Nodejs", "NodeJS"]
 - ["Opencv", "OpenCV"]

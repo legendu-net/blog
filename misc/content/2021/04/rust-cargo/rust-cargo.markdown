@@ -5,7 +5,7 @@ Slug: tips-on-cargo
 Title: Tips on Cargo
 Category: Computer Science
 Tags: Computer Science, programming, Rust, cargo, format, fmt, rustfmt
-Modified: 2022-06-05 22:05:42
+Modified: 2022-12-26 11:48:04
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -17,6 +17,7 @@ Please read with your own judgement!
 
     cargo init
     cargo new project_name
+    cargo new --lib project_name
 
 ## Install a Rust Crate (Package) 
 

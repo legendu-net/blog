@@ -5,7 +5,7 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2022-12-23 20:47:48
+Modified: 2022-12-28 13:39:28
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
@@ -22,6 +22,14 @@ when writing to a buffered stream.
 implements a template rendering engine based on Jinja. 
 It generates Rust code from your templates at compile time 
 based on a user-defined struct to hold the template's context.
+
+## Design Patterns
+
+### [derive_builder](https://crates.io/crates/derive_builder)
+[derive_builder](https://crates.io/crates/derive_builder)
+provides Rust macro to automatically implement the builder pattern for arbitrary structs. 
+A simple `#[derive(Builder)]` will generate a FooBuilder for your struct Foo 
+with all setter-methods and a build method.
 
 ## Databases
 

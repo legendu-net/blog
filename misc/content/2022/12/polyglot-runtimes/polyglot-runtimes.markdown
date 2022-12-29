@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-28 10:28:32
-Modified: 2022-12-28 18:22:58
+Modified: 2022-12-28 21:25:35
 Author: Benjamin Du
 Slug: polyglot-runtimes
 Title: Polyglot Runtimes
@@ -11,6 +11,6 @@ Tags: Computer Science, programming, WebAssembly, MetaCall, FaaS, OpenFaaS
 
 ## [WebAssembly](https://www.legendu.net/misc/blog/tips-on-wasm)
 
-## [Metacall](https://www.legendu.net/misc/blog/tips-on-metacall)
+## [MetaCall](https://www.legendu.net/misc/blog/tips-on-metacall)
 
 ## OpenFaaS

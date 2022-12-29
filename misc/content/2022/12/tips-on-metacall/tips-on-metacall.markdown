@@ -1,11 +1,11 @@
 Status: published
 Date: 2022-12-28 10:35:26
-Modified: 2022-12-28 10:35:26
+Modified: 2022-12-28 21:25:35
 Author: Benjamin Du
 Slug: tips-on-metacall
-Title: Tips on Metacall
+Title: Tips on MetaCall
 Category: Computer Science
-Tags: Computer Science, programming
+Tags: Computer Science, programming, MetaCall, RPC, FaaS, polyglot, runtime
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 

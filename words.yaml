@@ -108,6 +108,7 @@
 - ["Uuid", "UUID"]
 - ["Wget", "wget"]
 - ["Wasi", "WASI"]
+- ["Wasm", "WASM"]
 - ["Yapf", "yapf"]
 - ["Yaml", "YAML"]
 # 5 symbols
@@ -181,6 +182,7 @@
 - ["Kdevelop", "KDevelop"]
 - ["Lightgbm", "LightGBM"]
 - ["Macports", "MacPorts"]
+- ["Metacall", "MetaCall"]
 - ["Noscript", "NoScript"]
 - ["Onedrive", "OneDrive"]
 - ["Openfaas", "OpenFaaS"]

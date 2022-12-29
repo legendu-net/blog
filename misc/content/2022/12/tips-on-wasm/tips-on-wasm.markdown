@@ -1,9 +1,9 @@
 Status: published
 Date: 2022-12-28 10:29:41
-Modified: 2022-12-28 10:29:41
+Modified: 2022-12-28 21:24:05
 Author: Benjamin Du
 Slug: tips-on-wasm
-Title: Tips on Wasm
+Title: Tips on WASM
 Category: Computer Science
 Tags: Computer Science, programming, WASM, WebAssembly
 

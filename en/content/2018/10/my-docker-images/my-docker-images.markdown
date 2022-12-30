@@ -5,90 +5,184 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2022-12-20 12:23:58
+Modified: 2022-12-29 17:50:27
 
 ## Tips
 
-1. Most of my Docker images has 3 main tags `latest`, `next` and `debian`. 
-    The `latest` tag corresponds to the most recent stable version of the Docker image
-    while the `next` tag corresponds to the most recent testing version of the Docker images.
-    Docker images with the `latest` or `next` tag are based on Ubuntu LTS (or newer if necessary)
-    while Docker images with the `debian` tag are based on on Debian testing.
-    The `debian` tag is for some rare situations where a new version of some software is required
-    while it is hard to get it work in Ubuntu LTS or even newer release. 
-    Generally speaking,
-    the `latest` (the default when you do not specify a tag) is recommended for most users. 
-
-2. Most of my Docker images have historical versions
-    which correspond to tags of the pattern 
-    `mmddHH` (historical version of the latest tag),
-    `next_mmddHH` (historical version of the next tag),
-    and `debian_mmddHH` (historical version of the debian tag),
-    where `mm`, `dd` and `HH` stand for the month, day and hour (24-hour format) 
-    when the Docker image was built. 
-    Those historical versions of Docker images might be helpful in some rare situations.
-    Generally speaking,
-    the historical tags shouldn't be used 
-    and instead the `latest` tag (the default when you do not specify a tag) is recommended for most users. 
-
-3. The Docker image 
-    [dclong/jupyterhub-ds](https://github.com/dclong/docker-jupyterhub-ds)
-    is recommended for most data science related work.
-    The Docker image
-    [dclong/jupyterhub-pytorch](https://github.com/dclong/docker-jupyterhub-pytorch)
-    is recommended for deep leaning related work.
-
-4. There is an issue with the `dclong/xubuntu*` Docker images due to Xfce on Ubuntu 18.04.
+1. Most of my Docker images have different variants 
+    (corresponding to tags latest, next, alpine, etc) 
+    for different use cases.
+    And each tag might have histocial versions 
+    with the pattern `mmddhh` 
+    (`mm`, `dd` and `hh` stand for the month, day and hour) 
+    for fallback if a tag is broken.
+    For details,
+    please refer to the section
+    [Recommended Docker Images and Tags](http://www.legendu.net/en/blog/my-docker-images/#recommended-docker-images)
+    .
+    
+2. There is an issue with the `dclong/xubuntu*` Docker images due to Xfce on Ubuntu 18.04.
     It is suggested that you use the corresponding `dclong/lubuntu*` Docker images instead (which are based on LXQt)
     if a desktop environment is needed.
 
-## Recommended Docker Images
+<h2 id="recommended-docker-images">Recommended Docker Images and Tags</h2>
 
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-0pky">Area</th>
-    <th class="tg-0lax">Docker Image</th>
+    <th class="tg-0pky"> Tag </th>
+    <th class="tg-0pky"> Base Image OS </th>
+    <th class="tg-0lax"> Comment </th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0lax">Cloud IDE <a href="https://github.com/coder/code-server" target="_blank" rel="noopener noreferrer">code-server</a> (based on VSCode)</td>
+    <td class="tg-0lax"> latest </td>
+    <td class="tg-0lax"> 
+        Ubuntu LTS (or newer if necessary and well tested) 
+    </td>
+    <td class="tg-0lax"> 
+        The most recent stable version of the Docker image. 
+        <span style="color:green">
+            The latest tag is what most users should use.
+        </span>
+        <br>
+        It cares more about user friendliness than Docker image size, load speed and even security.
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"> next </td>
+    <td class="tg-0lax"> 
+        Ubuntu LTS (or newer if necessary and well tested) 
+    </td>
+    <td class="tg-0lax">
+        The most recent testing version of the Docker image.
+        <br>
+        New features/tools will be added into the next tag 
+        before entering other tags.
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"> 22.10 </td>
+    <td class="tg-0lax"> 
+        Ubuntu 22.10
+    </td>
+    <td class="tg-0lax">
+        For any of the following situations: <br>
+        1. a specific Ubuntu/kernel version is required <br>
+        2. trying out newer Ubuntu versions than LTS
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"> debian </td>
+    <td class="tg-0lax"> 
+        Debian testing.
+    </td>
+    <td class="tg-0lax">
+        For some rare situations where a required tool works in Debian but not in Ubuntu.
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"> alpine </td>
+    <td class="tg-0lax"> 
+        Alpine stable.
+    </td>
+    <td class="tg-0lax">
+        For production deployment where Docker image size, load speed and security are of concerns.
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"> mmddhh </td>
+    <td class="tg-0lax"> 
+        Histoical versions corresponding to the latest tag.
+    </td>
+    <td class="tg-0lax"> 
+        Fallback tags (for latest) if the latest tag is broken.
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"> next_mmddhh </td>
+    <td class="tg-0lax"> 
+        Histoical versions corresponding to the next tag.
+    </td>
+    <td class="tg-0lax"> 
+        Fallback tags (for next) if the next tag is broken.
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"> debian_mmddhh </td>
+    <td class="tg-0lax"> 
+        Histoical versions corresponding to the debian tag.
+    </td>
+    <td class="tg-0lax"> 
+        Fallback tags (for debian) if the debian tag is broken.
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"> alpine_mmddhh </td>
+    <td class="tg-0lax"> 
+        Histoical versions corresponding to the alpine tag.
+    </td>
+    <td class="tg-0lax"> 
+        Fallback tags (for alpine) if the alpine tag is broken.
+    </td>
+  </tr>
+</tbody>
+</table>
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax"> Docker Image </th>
+    <th class="tg-0pky"> Comment </th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
     <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-vscode-server" target="_blank" rel="noopener noreferrer">dclong/vscode-server</a></td>
+    <td class="tg-0lax">Cloud IDE <a href="https://github.com/coder/code-server" target="_blank" rel="noopener noreferrer">code-server</a> (based on VSCode)</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Traditional ML</td>
     <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-jupyterhub-ds" target="_blank" rel="noopener noreferrer">dclong/jupyterhub-ds</a></td>
+    <td class="tg-0lax">Traditional ML</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Deep Learning</td>
     <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-jupyterhub-pytorch" target="_blank" rel="noopener noreferrer">dclong/jupyterhub-pytorch</a></td>
+    <td class="tg-0lax">Deep Learning</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Build portable Python using <a href="https://github.com/indygreg/python-build-standalone" target="_blank" rel="noopener noreferrer">python-build-standalone</a></td>
     <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-python-portable" target="_blank" rel="noopener noreferrer">dclong/python-portable</a></td>
+    <td class="tg-0lax">Build portable Python using <a href="https://github.com/indygreg/python-build-standalone" target="_blank" rel="noopener noreferrer">python-build-standalone</a></td>
   </tr>
   <tr>
-    <td class="tg-0lax">Build portable Anaconda Python environment</td>
     <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-conda-build" target="_blank" rel="noopener noreferrer">dclong/conda-build</a></td>
+    <td class="tg-0lax">Build portable Anaconda Python environment</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Math / Calculus</td>
     <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-jupyterhub-sagemath" target="_blank" rel="noopener noreferrer">dclong/jupyterhub-sagemath</a></td>
+    <td class="tg-0lax">Math / Calculus</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Editing <a href="https://github.com/legendu-net/blog" target="_blank" rel="noopener noreferrer">legendu.net/blog</a> using GitPod</td>
     <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-gitpod/tree/blog" target="_blank" rel="noopener noreferrer">dclong/gitpod:blog</a></td>
+    <td class="tg-0lax">Editing <a href="https://github.com/legendu-net/blog" target="_blank" rel="noopener noreferrer">legendu.net/blog</a> using GitPod</td>
   </tr>
   <tr>
-    <td class="tg-0lax">Editing other GitHub repos using GitPod</td>
     <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-gitpod" target="_blank" rel="noopener noreferrer">dclong/gitpod</a></td>
+    <td class="tg-0lax">Editing other GitHub repos using GitPod</td>
   </tr>
   <tr>
-    <td class="tg-0lax">JVM languages</td>
     <td class="tg-0lax">
         <a href="https://github.com/legendu-net/docker-jupyterhub-kotlin" target="_blank" rel="noopener noreferrer">dclong/jupyterhub-kotlin</a> <br>
         <a href="https://github.com/legendu-net/docker-jupyterhub-ganymede" target="_blank" rel="noopener noreferrer">dclong/jupyterhub-ganymede</a>
+    </td>
+    <td class="tg-0lax">JVM languages</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">
+        <a href="https://github.com/legendu-net/docker-rustpython" target="_blank" rel="noopener noreferrer">dclong/rustpython</a>
+    </td>
+    <td class="tg-0lax">
+        RustPython
     </td>
   </tr>
 </tbody>

@@ -5,27 +5,19 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2022-12-29 17:50:27
+Modified: 2022-12-29 18:16:35
 
-## Tips
-
-1. Most of my Docker images have different variants 
-    (corresponding to tags latest, next, alpine, etc) 
-    for different use cases.
-    And each tag might have histocial versions 
-    with the pattern `mmddhh` 
-    (`mm`, `dd` and `hh` stand for the month, day and hour) 
-    for fallback if a tag is broken.
-    For details,
-    please refer to the section
-    [Recommended Docker Images and Tags](http://www.legendu.net/en/blog/my-docker-images/#recommended-docker-images)
-    .
-    
-2. There is an issue with the `dclong/xubuntu*` Docker images due to Xfce on Ubuntu 18.04.
-    It is suggested that you use the corresponding `dclong/lubuntu*` Docker images instead (which are based on LXQt)
-    if a desktop environment is needed.
 
 <h2 id="recommended-docker-images">Recommended Docker Images and Tags</h2>
+
+Most of my Docker images have different variants 
+(corresponding to tags latest, next, alpine, etc) 
+for different use cases.
+And each tag might have histocial versions 
+with the pattern `mmddhh` 
+(`mm`, `dd` and `hh` stand for the month, day and hour) 
+for fallback if a tag is broken.
+Please refer to the following tag table for more details.
 
 <table class="tg">
 <thead>
@@ -643,4 +635,8 @@ in the GitHub repository
     even if you pass the option `--platform linux/amd64` to `docker run`.
     Fortunately, 
     this is not a big issue.
+
+3. There is an issue with the `dclong/xubuntu*` Docker images due to Xfce on Ubuntu 18.04.
+    It is suggested that you use the corresponding `dclong/lubuntu*` Docker images instead (which are based on LXQt)
+    if a desktop environment is needed.
 

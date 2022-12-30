@@ -5,12 +5,19 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2022-12-28 13:39:28
+Modified: 2022-12-29 23:27:11
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
 
+## Dev Tools
+
+### [cargo-semver-checks](https://crates.io/crates/cargo-semver-checks)
+[cargo-semver-checks](https://crates.io/crates/cargo-semver-checks)
+scans your Rust crate for semver violations.
+
 ## String Manipulation 
+
 ### [lazy_format](https://crates.io/crates/lazy_format)
 [lazy_format](https://crates.io/crates/lazy_format)
 is a [no_std] library for lazily formatting things,
@@ -22,6 +29,18 @@ when writing to a buffered stream.
 implements a template rendering engine based on Jinja. 
 It generates Rust code from your templates at compile time 
 based on a user-defined struct to hold the template's context.
+
+### [human_bytes](https://crates.io/crates/human_bytes)
+[human_bytes](https://crates.io/crates/human_bytes)
+converts bytes into human-readable values.
+
+### [scraper](https://crates.io/crates/scraper)
+[scraper](https://crates.io/crates/scraper)
+provides HTML parsing and querying with CSS selectors.
+
+### [semver](https://crates.io/crates/semver)
+[semver](https://crates.io/crates/semver)
+provides parser and evaluator for Cargo's flavor of Semantic Versioning.
 
 ## Design Patterns
 

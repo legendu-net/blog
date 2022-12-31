@@ -5,7 +5,7 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2022-12-29 23:27:11
+Modified: 2022-12-30 18:50:29
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
@@ -15,6 +15,20 @@ https://crates.io/crates?sort=downloads
 ### [cargo-semver-checks](https://crates.io/crates/cargo-semver-checks)
 [cargo-semver-checks](https://crates.io/crates/cargo-semver-checks)
 scans your Rust crate for semver violations.
+
+### [cargo-udeps](https://github.com/est31/cargo-udeps)
+[cargo-udeps](https://github.com/est31/cargo-udeps)
+finds unused dependencies in Cargo.toml.
+
+## Profiling Tools
+
+### std::mem::size_of
+
+Size of type (on the stack).
+
+### [memuse](https://crates.io/crates/memuse)
+[memuse](https://crates.io/crates/memuse)
+contains traits for measuring the dynamic memory usage of Rust types.
 
 ## String Manipulation 
 

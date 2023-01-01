@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-28 18:23:37
-Modified: 2022-12-29 16:54:48
+Modified: 2023-01-01 14:20:24
 Author: Benjamin Du
 Slug: tips-on-rust-clippy
 Title: Tips on Rust Clippy
@@ -18,7 +18,8 @@ Tags: Computer Science, programming, Rust, Clippy, lint, check, cargo
     you can use the following command 
     to fix only `clippy::collapsible_else_if` lints.
 
-        cargo clippy --fix -- -A clippy::all -W clippy::collapsible_else_if
+        cargo clippy --fix -- \
+	    -A clippy::all -W clippy::collapsible_else_if
 
     If there are other non-Clippy lint warnings, 
     you can filter out them manually.
@@ -26,7 +27,9 @@ Tags: Computer Science, programming, Rust, Clippy, lint, check, cargo
     if you code still have unfixed `unused_variables` and `dead_code` lints,
     you can filter them out by adding more `-A` options.
 
-        cargo clippy --fix -- -A unused_variables -A dead_code -A clippy::all -W clippy::collapsible_else_if
+        cargo clippy --fix -- \
+	    -A unused_variables -A dead_code \
+	    -A clippy::all -W clippy::collapsible_else_if
 
     [Lint Levels](https://doc.rust-lang.org/rustc/lints/levels.html)
     and

@@ -670,7 +670,7 @@ class Blogger:
             post.update_meta_field({"Modified": NOW_DASH})
             self.load_post(post)
 
-    def add_post(self, title: str, dir_: str, notebook: bool = True) -> Path:
+    def add_post(self, title: str, dir_: str, notebook: bool = True, load_to_db: bool = False) -> Path:
         """Add a new post with the given title.
         """
         path = self._find_post(title)
@@ -682,7 +682,8 @@ class Blogger:
             path = dir_ / (stem + suffix)
             post = Post(path)
             post.create(title)
-            self.load_post(post)
+            if load_to_db:
+                self.load_post(post)
         print(f"\nThe following post is added.\n{path}\n")
         return path
 

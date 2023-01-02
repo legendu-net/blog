@@ -14,5 +14,5 @@ if [ $(hostname) != "jupyterhub-pelican" ]; then
 fi
 
 # git submodules
-git submodule init && git submodule update --recursive --remote
+#git submodule init && git submodule update --recursive --remote
 

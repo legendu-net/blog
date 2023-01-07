@@ -154,8 +154,8 @@ def search(blogger, args):
         args.neg_sub_dir = ", ".join(f"'{cat}'" for cat in args.neg_catgories)
         filter_.append(f"category NOT IN ({args.neg_categories})")
     if args.tags:
-        args.tags = "".join(f"% {tag},%" for tag in args.tags).replace("%%", "%")
-        filter_.append(f"tags LIKE '{args.tags}'")
+        args.tags = " ".join(args.tags)
+        filter_.append(f"tags MATCH '{args.tags}'")
     if args.neg_tags:
         args.neg_tags = "".join(f"% {tag},%"
                                 for tag in args.neg_tags).replace("%%", "%")
@@ -174,7 +174,7 @@ def search(blogger, args):
         filter_.append(f"author != '{args.neg_author}'")
     args.title = " ".join(args.title)
     if args.title:
-        filter_.append(f"title LIKE '%{args.title}%'")
+        filter_.append(f"title MATCH '{args.title}'")
     args.neg_title = " ".join(args.neg_title)
     if args.neg_title:
         filter_.append(f"title NOT LIKE '%{args.neg_title}%'")

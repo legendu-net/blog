@@ -1,17 +1,17 @@
 Status: published
 Date: 2022-05-22 08:44:04
-Modified: 2022-05-29 09:43:41
+Modified: 2023-01-07 12:45:14
 Author: Benjamin Du
 Slug: read-and-write-parquet-files-in-rust
 Title: Read and Write Parquet Files in Rust
 Category: Computer Science
-Tags: Computer Science, programming, Rust, Parquet, IO, crate, polars, Arrow, Apache Arrow
+Tags: Computer Science, programming, Rust, Parquet, IO, crate, Polars, Arrow, Apache Arrow
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 There are a few crates in Rust which can help read and write Parquet files,
 among which
-[polars](https://crates.io/crates/polars)
+[Polars](https://crates.io/crates/polars)
 is the best one. 
 As a matter of fact,
 polars is a DataFrame implementation in Rust
@@ -22,7 +22,7 @@ crate might still be useful if you want to scan Parquet files row by row.
 Other Parquet related crates are low-level ones
 and are not average user oriented.
 
-## [polars](https://crates.io/crates/polars)
+## [Polars](https://crates.io/crates/polars)
 The 
 [polars](https://crates.io/crates/polars)
 crate is a blazingly fast DataFrames library implemented in Rust 

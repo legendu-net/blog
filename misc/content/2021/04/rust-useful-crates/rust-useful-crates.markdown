@@ -5,7 +5,7 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2022-12-30 18:50:29
+Modified: 2023-01-07 11:52:17
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
@@ -55,6 +55,12 @@ provides HTML parsing and querying with CSS selectors.
 ### [semver](https://crates.io/crates/semver)
 [semver](https://crates.io/crates/semver)
 provides parser and evaluator for Cargo's flavor of Semantic Versioning.
+
+## File System
+
+### [glob](https://crates.io/crates/glob)
+[glob](https://crates.io/crates/glob)
+supports matching file paths against Unix shell style patterns.
 
 ## Design Patterns
 

@@ -5,11 +5,11 @@ Slug: data-frame-implementations-in-rust
 Title: Data Frame Implementations in Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, DataFrame, data frame
-Modified: 2021-07-18 11:59:58
+Modified: 2023-01-07 12:45:14
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## [polars](https://github.com/pola-rs/polars)
-[polars](https://github.com/pola-rs/polars)
+## [Polars](https://github.com/pola-rs/polars)
+[Polars](https://github.com/pola-rs/polars)
 is a fast multi-threaded DataFrame library in Rust and Python.
 
 ## [datafusion](https://github.com/apache/arrow-datafusion)

@@ -1,6 +1,6 @@
 Status: published
 Date: 2020-06-13 22:57:16
-Modified: 2021-10-14 21:10:54
+Modified: 2023-01-07 12:45:14
 Author: Benjamin Du
 Slug: rust-for-big-data
 Title: Rust for Big Data
@@ -24,7 +24,7 @@ Please read with your own judgement!
 
 ## [ballista](https://github.com/ballista-compute/ballista)
 
-## [polars](http://www.legendu.net/misc/blog/tips-on-polars)   
+## [Polars](http://www.legendu.net/misc/blog/tips-on-polars)   
 
 ## References
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2022-10-31 00:05:34
+Modified: 2023-01-08 18:26:28
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -67,9 +67,15 @@ is preferred for several reasons.
 
 ## Memory Profiling
 
+### [DHAT](https://valgrind.org/docs/manual/dh-manual.html)
+[DHAT](https://valgrind.org/docs/manual/dh-manual.html)
+is a dynamic heap analysis tool that comes with Valgrind.
+
+### [bytehound](https://github.com/koute/bytehound)
 [bytehound](https://github.com/koute/bytehound)
 is a memory profiler for Linux.
 
+### [heaptrack](https://github.com/KDE/heaptrack)
 [heaptrack](https://github.com/KDE/heaptrack)
 is a heap memory profiler for Linux
 

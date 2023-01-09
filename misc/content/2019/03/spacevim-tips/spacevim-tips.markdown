@@ -5,7 +5,7 @@ Slug: spacevim-tips
 Title: SpaceVim - A Modern Vim Distribution
 Category: Software
 Tags: software, SpaceVim, Vim, tips
-Modified: 2022-06-12 01:50:31
+Modified: 2023-01-08 18:29:59
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -31,6 +31,15 @@ https://github.com/SpaceVim/SpaceVim/issues/84
 https://github.com/SpaceVim/SpaceVim/issues/78
 
 ## Tricks & Traps
+
+1. SpaceVim might be too slow when editing a large (>50M) text file.
+    One trick helps is to disable plugins when editing large files.
+    For example,
+    if you are using NeoVim,
+    you can use the following command to edit a large file without loading plugins.
+
+        :::bash
+        nvim --noplugin /path/to/large/text/file
 
 1. By default SpaceVim enables GUI colors.
     This makes SpaceVim extremely slow in terminals that does not support 24 bits true colors.

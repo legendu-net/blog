@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-01-13 01:02:06
-Modified: 2022-08-08 10:30:27
+Modified: 2023-01-08 19:07:45
 Author: Benjamin Du
 Slug: profile-rust-applications-using-valgrind
 Title: Profile Rust Applications Using Valgrind
@@ -36,6 +36,8 @@ Tags: Computer Science, programming, Rust, profile, profiler, Valgrind, KCacheGr
     that you want to profile as `pub` in your Rust code.
 
 ## References 
+
+- [Tips on Valgrind](https://www.legendu.net/misc/blog/tips-on-valgrind)
 
 - [Profile Rust Applications](http://www.legendu.net/misc/blog/profile-rust-applications/)
 

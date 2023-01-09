@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-16 19:54:05
-Modified: 2022-10-16 19:54:05
+Modified: 2023-01-08 18:40:13
 Author: Benjamin Du
 Slug: tips-on-neovim
 Title: Tips on NeoVim
@@ -16,3 +16,15 @@ You can install the latest stable version of neovim using the command below.
     sudo add-apt-repository ppa:neovim-ppa/stable
     wajig update
     wajig install neovim
+
+## Tips and Traps
+
+1. NeoVim with a complicated configuration (e.g., SpaceVim) 
+    might be too slow when editing a large (>50M) text file.
+    One trick helps is to disable plugins when editing large files.
+    For example,
+    you can use the following command to edit a large file without loading plugins.
+
+        :::bash
+        nvim --noplugin /path/to/large/text/file
+

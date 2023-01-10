@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2022-12-21 10:14:53
+Modified: 2023-01-09 19:37:54
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -27,7 +27,16 @@ recursively searches directories for a regex pattern while respecting your gitig
 [broot](https://github.com/Canop/broot)
 provides a new better way to see and navigate directory trees.
 
-bottom 
+## [git-leave](https://crates.io/crates/git-leave)
+[git-leave](https://crates.io/crates/git-leave)
+checks for unsaved or uncommitted changes on your machine.
+
+
+## [bottom](https://crates.io/crates/bottom)
+[bottom](https://crates.io/crates/bottom)
+is a customizable cross-platform graphical process/system monitor 
+for the terminal. 
+It supports Linux, macOS, and Windows.
 
 tealdeer
 
@@ -35,7 +44,9 @@ bandwhich
 
 grex
 
-zoxide
+## [zoxide](https://crates.io/crates/zoxide)
+[zoxide](https://crates.io/crates/zoxide)
+is a smarter cd command for your terminal.
 
 delta
 

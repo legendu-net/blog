@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2023-01-08 19:25:53
+Modified: 2023-01-09 17:47:23
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -66,6 +66,9 @@ is preferred for several reasons.
     and can be used for profiling other porgramming languages too.
 
 ## Memory Profiling
+
+[bytehound](https://github.com/koute/bytehound)
+is the best available memory profiling tool for Rust currently.
 
 ### [bytehound](https://github.com/koute/bytehound)
 [bytehound](https://github.com/koute/bytehound)

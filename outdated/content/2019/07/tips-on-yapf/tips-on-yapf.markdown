@@ -5,13 +5,11 @@ Slug: tips-on-yapf
 Title: Tips on yapf
 Category: Computer Science
 Tags: programming, Python, yapf, code formatting
-Modified: 2020-09-08 19:37:50
+Modified: 2023-01-09 16:46:08
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
+Black is preferred to yapf!
 
 [yapf Online Demo](https://yapf.now.sh/)
 

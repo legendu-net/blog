@@ -1,13 +1,14 @@
 Status: published
 Date: 2022-01-13 01:02:06
-Modified: 2023-01-08 19:07:45
+Modified: 2023-01-09 16:59:40
 Author: Benjamin Du
-Slug: profile-rust-applications-using-valgrind
-Title: Profile Rust Applications Using Valgrind
+Slug: cpu-profiling-rust-valgrind
+Title: CPU Profiling of Rust Applications Using Valgrind
 Category: Computer Science
-Tags: Computer Science, programming, Rust, profile, profiler, Valgrind, KCacheGrind
+Tags: Computer Science, programming, Rust, profile, profiler, Valgrind, KCacheGrind, CPU, profiling
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 
 ## Installation on Ubuntu
 

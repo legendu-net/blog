@@ -5,8 +5,8 @@ Date: 2012-05-01 23:20:51
 Slug: work-remotely-linux
 Author: Ben Chuanlong Du
 Category: OS
-Tags: software, remote, Linux
-Modified: 2023-01-10 18:45:43
+Tags: software, remote, Linux, desktop, NoMachine, rustdesk
+Modified: 2023-01-10 21:09:32
 
 ## From Linux to Linux:
 
@@ -24,27 +24,25 @@ Modified: 2023-01-10 18:45:43
 
 - Remote Desktop
 
-    + NX (NoMachine)
+    - NoMachine
 
-    + VNC (e.g., vino or tight vnc, remmina)
+    - [rustdesk](https://github.com/rustdesk/rustdesk)
+    
+    - VNC (e.g., vino or tight vnc, remmina)
 
-    + Teamviewer
+    - Teamviewer
 
 ## From Linux to Windows:
 
 - Remote Desktop:
 
-    + rustdesk https://github.com/rustdesk/rustdesk
-    
-    - NoMachine
-    
     - Remmina
 
-    + rdesktop
+    - rdesktop
 
-    + NoMachine
+    - NoMachine
 
-    + Teamviewer
+    - Teamviewer
 
 - Remote File System: `smb`
 

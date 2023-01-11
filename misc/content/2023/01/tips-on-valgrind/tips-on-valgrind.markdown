@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-08 18:58:25
-Modified: 2023-01-09 17:01:28
+Modified: 2023-01-10 21:12:32
 Author: Benjamin Du
 Slug: tips-on-valgrind
 Title: Tips on Valgrind
@@ -28,7 +28,7 @@ Tags: Computer Science, programming, Valgrind, profiling, memory, cpu, memcheck,
 <tbody>
   <tr>
     <td class="tg-0pky"> callgrind </td>
-    <td class="tg-0lax">CPU profiling.</td>
+    <td class="tg-0pky"> CPU profiling. </td>
   </tr>
   <tr>
     <td class="tg-0pky">dhat</td>

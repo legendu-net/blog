@@ -5,7 +5,7 @@ Slug: proxy-vpn-dns-reverse-proxy
 Title: Proxy, Reverse Proxy, Load Balancer, VPN and DNS
 Category: Computer Science
 Tags: Computer Science, proxy, reverse proxy, DNS, VPN, network, internet, web, load balancing
-Modified: 2021-09-26 13:52:38
+Modified: 2023-01-10 11:39:07
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -16,8 +16,9 @@ Please read with your own judgement!
 
 3. sshuttle is a poor man's VPN.
 
-4. [TunnelTo](https://tunnelto.dev/) (written in Rust leveraging tokio)
-    allows you to expose your local web server to the internet with a public URL.
+[  Expose Local Service to Public  ](https://www.legendu.net/misc/blog/expose-local-service-to-public)
+
+[  Good Choices of Reverse Proxies  ](https://www.legendu.net/misc/blog/good-choices-of-reverse-proxies)
 
 ## Proxy vs VPN
 

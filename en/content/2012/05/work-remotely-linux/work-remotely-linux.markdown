@@ -6,7 +6,7 @@ Slug: work-remotely-linux
 Author: Ben Chuanlong Du
 Category: OS
 Tags: software, remote, Linux
-Modified: 2017-03-01 23:20:51
+Modified: 2023-01-10 18:45:43
 
 ## From Linux to Linux:
 
@@ -34,7 +34,11 @@ Modified: 2017-03-01 23:20:51
 
 - Remote Desktop:
 
-    + Remmina
+    + rustdesk https://github.com/rustdesk/rustdesk
+    
+    - NoMachine
+    
+    - Remmina
 
     + rdesktop
 

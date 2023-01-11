@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2023-01-09 19:37:54
+Modified: 2023-01-11 01:20:21
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -22,6 +22,11 @@ dust
 ## [ripgrep](https://www.legendu.net/misc/blog/ripgrep-is-a-better-alternative-to-find)
 [ripgrep](https://www.legendu.net/misc/blog/ripgrep-is-a-better-alternative-to-find)
 recursively searches directories for a regex pattern while respecting your gitignore.
+
+## [igrep](https://github.com/konradsz/igrep)
+[igrep](https://github.com/konradsz/igrep)
+runs grep (ripgrep's library) in the background, 
+allows interactively pick its results and open selected match in text editor of choice (vim by default).
 
 ## [broot](https://github.com/Canop/broot)
 [broot](https://github.com/Canop/broot)

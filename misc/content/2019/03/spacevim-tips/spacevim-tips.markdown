@@ -2,10 +2,10 @@ Status: published
 Date: 2019-03-03 20:02:57
 Author: Benjamin Du
 Slug: spacevim-tips
-Title: SpaceVim - A Modern Vim Distribution
+Title: SpaceVim - A Modern Vim/NeoVim Configuration
 Category: Software
-Tags: software, SpaceVim, Vim, tips
-Modified: 2023-01-08 18:29:59
+Tags: software, SpaceVim, Vim, NeoVim, configuration, tips
+Modified: 2023-01-11 01:18:13
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.

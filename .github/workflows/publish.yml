@@ -12,10 +12,6 @@ jobs:
       run: |
         ./init.sh
     - name: Build and Publish to GitHub Pages
-      with:
-        token: ${{ secrets.GITHUBACTIONS }} 
-        branch: dev
-        assignees: dclong
       run: |
         git config --global --add safe.directory '*'
         git config --global user.email "longendu@yahoo.com"

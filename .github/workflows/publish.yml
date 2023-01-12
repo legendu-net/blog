@@ -13,6 +13,7 @@ jobs:
         ./init.sh
     - name: Build and Publish to GitHub Pages
       run: |
+        git config --global --add safe.directory '*'
         git config --global user.email "longendu@yahoo.com"
         git config --global user.name "Ben Du"
         ./blog.py p -ecmoF

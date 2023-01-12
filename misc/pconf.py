@@ -25,15 +25,12 @@ ARTICLE_URL = "blog/{slug}/"
 ARTICLE_SAVE_AS = "blog/{slug}/index.html"
 
 MARKDOWN = {
-    "extension_configs":
-        {
-            "markdown.extensions.codehilite": {
-                "css_class": "highlight"
-            },
-            "markdown.extensions.extra": {},
-            "markdown.extensions.meta": {},
-            "markdown.extensions.toc": {},
-        },
+    "extension_configs": {
+        "markdown.extensions.codehilite": {"css_class": "highlight"},
+        "markdown.extensions.extra": {},
+        "markdown.extensions.meta": {},
+        "markdown.extensions.toc": {},
+    },
     "output_format": "html5",
 }
 
@@ -61,15 +58,18 @@ GITHUB_SHOW_USER_LINK = True
 SOCIAL = (
     ("LinkedIn", "https://www.linkedin.com/in/ben-chuanlong-du-1239b221/"),
     ("Docker Hub", "https://hub.docker.com/u/dclong"),
-    ("Stack Overflow", "https://stackoverflow.com/users/7808204/benjamin-du?tab=profile"),
+    (
+        "Stack Overflow",
+        "https://stackoverflow.com/users/7808204/benjamin-du?tab=profile",
+    ),
     ("Twitter", "https://twitter.com/longendu"),
 )
 
 DEFAULT_PAGINATION = 6
 
 # STATIC_OUT_DIR requires https://github.com/jakevdp/pelican/tree/specify-static
-#STATIC_OUT_DIR = ''
-#FILES_TO_COPY = [('favicon.png', 'favicon.png')]
+# STATIC_OUT_DIR = ''
+# FILES_TO_COPY = [('favicon.png', 'favicon.png')]
 
 # This requires Pelican 3.3+
 STATIC_PATHS = [
@@ -100,7 +100,7 @@ IGNORE_FILES = [".ipynb_checkpoints"]
 MATH_JAX = {
     "auto_insert": True,
     "process_summary": False,
-    "tex_extensions": ["color.js", "mhchem.js"]
+    "tex_extensions": ["color.js", "mhchem.js"],
 }
 
 # disqus comment

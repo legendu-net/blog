@@ -22,15 +22,12 @@ ARTICLE_URL = "blog/{slug}/"
 ARTICLE_SAVE_AS = "blog/{slug}/index.html"
 
 MARKDOWN = {
-    "extension_configs":
-        {
-            "markdown.extensions.codehilite": {
-                "css_class": "highlight"
-            },
-            "markdown.extensions.extra": {},
-            "markdown.extensions.meta": {},
-            "markdown.extensions.toc": {},
-        },
+    "extension_configs": {
+        "markdown.extensions.codehilite": {"css_class": "highlight"},
+        "markdown.extensions.extra": {},
+        "markdown.extensions.meta": {},
+        "markdown.extensions.toc": {},
+    },
     "output_format": "html5",
 }
 
@@ -60,7 +57,10 @@ GITHUB_SHOW_USER_LINK = True
 SOCIAL = (
     ("LinkedIn", "https://www.linkedin.com/in/ben-chuanlong-du-1239b221/"),
     ("Docker Hub", "https://hub.docker.com/u/dclong"),
-    ("Stack Overflow", "https://stackoverflow.com/users/7808204/benjamin-du?tab=profile"),
+    (
+        "Stack Overflow",
+        "https://stackoverflow.com/users/7808204/benjamin-du?tab=profile",
+    ),
     ("Twitter", "https://twitter.com/longendu"),
 )
 

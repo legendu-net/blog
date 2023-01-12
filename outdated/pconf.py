@@ -25,15 +25,12 @@ ARTICLE_URL = "blog/{slug}/"
 ARTICLE_SAVE_AS = "blog/{slug}/index.html"
 
 MARKDOWN = {
-    "extension_configs":
-        {
-            "markdown.extensions.codehilite": {
-                "css_class": "highlight"
-            },
-            "markdown.extensions.extra": {},
-            "markdown.extensions.meta": {},
-            "markdown.extensions.toc": {},
-        },
+    "extension_configs": {
+        "markdown.extensions.codehilite": {"css_class": "highlight"},
+        "markdown.extensions.extra": {},
+        "markdown.extensions.meta": {},
+        "markdown.extensions.toc": {},
+    },
     "output_format": "html5",
 }
 
@@ -61,7 +58,10 @@ GITHUB_SHOW_USER_LINK = True
 SOCIAL = (
     ("LinkedIn", "https://www.linkedin.com/in/ben-chuanlong-du-1239b221/"),
     ("Docker Hub", "https://hub.docker.com/u/dclong"),
-    ("Stack Overflow", "https://stackoverflow.com/users/7808204/benjamin-du?tab=profile"),
+    (
+        "Stack Overflow",
+        "https://stackoverflow.com/users/7808204/benjamin-du?tab=profile",
+    ),
     ("Twitter", "https://twitter.com/longendu"),
 )
 
@@ -81,11 +81,11 @@ NOTEBOOK_DIR = "downloads/notebooks"
 
 # theme and plugins
 BLOG_DIR = Path(__file__).resolve().parent.parent
-#CSS_FILE = "main_2.css"
+# CSS_FILE = "main_2.css"
 THEME = BLOG_DIR / "themes/Flex"
 
 # plugins
-#PLUGIN_PATHS = ["plugins"]
+# PLUGIN_PATHS = ["plugins"]
 PLUGINS = ["render_math"]
 ## jupyter
 MARKUP = ("md", "ipynb")
@@ -115,7 +115,7 @@ FEED_DOMAIN = SITEURL
 FEED_ATOM = "atom.xml"
 
 DIRECT_TEMPLATE = ["search"]
-#SEARCH_URL = "search"
+# SEARCH_URL = "search"
 
 # google analytics
 MODERN_GOOGLE_ANALYTICS = "G-3STS9BVPF6"

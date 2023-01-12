@@ -38,8 +38,20 @@ YYYYMM_slash = TODAY_DASH[:7].replace("-", "/")
 with Path("words.yaml").open(encoding="utf-8") as _:
     WORDS = yaml.load(_, Loader=yaml.FullLoader)
 POSTS_COLS = [
-    "path", "dir", "status", "date", "modified", "author", "slug", "title", "category",
-    "tags", "content", "empty", "updated", "name_title_mismatch"
+    "path",
+    "dir",
+    "status",
+    "date",
+    "modified",
+    "author",
+    "slug",
+    "title",
+    "category",
+    "tags",
+    "content",
+    "empty",
+    "updated",
+    "name_title_mismatch",
 ]
 SRPS_COLS = ["path", "title", "dir", "slug"]
 
@@ -53,8 +65,7 @@ def is_post(path: Path | str) -> bool:
 
 
 class Post:
-    """A class abstracting a post.
-    """
+    """A class abstracting a post."""
 
     def __init__(self, path: AnyPath):
         if isinstance(path, str):
@@ -80,12 +91,11 @@ class Post:
         return self.record().content != content
 
     def blog_dir(self):
-        """Get the corresponding blog directory (home, en, cn or misc) of a post.
-        """
+        """Get the corresponding blog directory (home, en, cn or misc) of a post."""
         return self.path.parent.parent.parent.parent.parent.stem
 
     def update_after_move(self) -> None:
-        """ Update the post after move.
+        """Update the post after move.
         There are 3 possible change.
         1. The disclaimer might be added/removed
             depending on whether the post is moved to the misc sub blog directory.
@@ -103,20 +113,19 @@ class Post:
         blog_dir = self.blog_dir()
         if blog_dir in (MISC, OUTDATED):
             DISCLAIMER = DISCLAIMER_MISC if blog_dir == MISC else DISCLAIMER_OUTDATED
-            DISCLAIMER_OTHER = DISCLAIMER_OUTDATED if blog_dir == MISC else DISCLAIMER_MISC
+            DISCLAIMER_OTHER = (
+                DISCLAIMER_OUTDATED if blog_dir == MISC else DISCLAIMER_MISC
+            )
             if notebook["cells"][1]["source"][0] == DISCLAIMER_OTHER:
                 notebook["cells"][1]["source"][0] = DISCLAIMER
             if notebook["cells"][1]["source"][0] != DISCLAIMER:
                 notebook["cells"].insert(
-                    1, {
-                        "source": [DISCLAIMER],
-                        "cell_type": 'markdown',
-                        "metadata": {}
-                    }
+                    1, {"source": [DISCLAIMER], "cell_type": "markdown", "metadata": {}}
                 )
             self._write_notebook(notebook)
         elif notebook["cells"][1]["source"][0] in (
-            DISCLAIMER_MISC, DISCLAIMER_OUTDATED
+            DISCLAIMER_MISC,
+            DISCLAIMER_OUTDATED,
         ):
             notebook["cells"].pop(1)
         self._write_notebook(notebook)
@@ -136,14 +145,17 @@ class Post:
                 fout.writelines("\n" + DISCLAIMER + "\n")
                 index_5 = index + 5
                 fout.writelines(
-                    line for line in lines[index:index_5]
+                    line
+                    for line in lines[index:index_5]
                     if not line.strip() in (DISCLAIMER_MISC, DISCLAIMER_OUTDATED)
                 )
                 fout.writelines(lines[index_5:])
             return
-        text = self.path.read_text(encoding="utf-8"
-                                  ).replace(DISCLAIMER_MISC,
-                                            "").replace(DISCLAIMER_OUTDATED, "")
+        text = (
+            self.path.read_text(encoding="utf-8")
+            .replace(DISCLAIMER_MISC, "")
+            .replace(DISCLAIMER_OUTDATED, "")
+        )
         self.path.write_text(text, encoding="utf-8")
 
     @staticmethod
@@ -198,10 +210,10 @@ class Post:
 
     def _read_lines_markdown(self) -> tuple[list[str], list[str]]:
         """Read lines of a markdown post.
-        
+
         return: A tuple of the format (meta, content),
             where meta is a list containing lines of meta fields
-            and content is a list containing lines of content. 
+            and content is a list containing lines of content.
         """
         meta = []
         content = []
@@ -251,8 +263,20 @@ class Post:
         content = title + "\n" + category + "\n" + tags + "\n" + "".join(content)
         name_title_mismatch = self.is_name_title_mismatch(title)
         return Record(
-            self.path.relative_to(BASE_DIR), self.blog_dir(), status, date, modified,
-            author, slug, title, category, tags, content, empty, 0, name_title_mismatch
+            self.path.relative_to(BASE_DIR),
+            self.blog_dir(),
+            status,
+            date,
+            modified,
+            author,
+            slug,
+            title,
+            category,
+            tags,
+            content,
+            empty,
+            0,
+            name_title_mismatch,
         )
 
     def _parse_notebook(self) -> Record:
@@ -295,8 +319,20 @@ class Post:
                 tags = line[7:].strip()
         name_title_mismatch = self.is_name_title_mismatch(title)
         return Record(
-            self.path.relative_to(BASE_DIR), self.blog_dir(), status, date, modified,
-            author, slug, title, category, tags, content, empty, 0, name_title_mismatch
+            self.path.relative_to(BASE_DIR),
+            self.blog_dir(),
+            status,
+            date,
+            modified,
+            author,
+            slug,
+            title,
+            category,
+            tags,
+            content,
+            empty,
+            0,
+            name_title_mismatch,
         )
 
     def is_name_title_mismatch(self, title: str) -> int:
@@ -353,14 +389,15 @@ class Post:
     def match_name(self):
         title = Post.format_title(self.stem_name().replace("-", " "))
         slug = title.lower().replace(" ", "-")
-        self.update_meta_field({
-            "Title": title,
-            "Slug": slug,
-        })
+        self.update_meta_field(
+            {
+                "Title": title,
+                "Slug": slug,
+            }
+        )
 
     def match_title(self) -> None:
-        """Make the post's slug and path name match its title.
-        """
+        """Make the post's slug and path name match its title."""
         # file name
         stem_name = self.stem_name()
         title = self.title()
@@ -446,17 +483,18 @@ class Post:
     @staticmethod
     def _replace_meta(title, slug, category, tags) -> str:
         text = (BASE_DIR / "themes/template.ipynb").read_text()
-        return text.replace("${AUTHOR}", AUTHOR) \
-            .replace("${DATE}", NOW_DASH) \
-            .replace("${MODIFIED}", NOW_DASH) \
-            .replace("${TITLE}", Post.format_title(title)) \
-            .replace("${SLUG}", slug) \
-            .replace("${CATEGORY}", category) \
+        return (
+            text.replace("${AUTHOR}", AUTHOR)
+            .replace("${DATE}", NOW_DASH)
+            .replace("${MODIFIED}", NOW_DASH)
+            .replace("${TITLE}", Post.format_title(title))
+            .replace("${SLUG}", slug)
+            .replace("${CATEGORY}", category)
             .replace("${TAGS}", tags)
+        )
 
     def convert(self):
-        """Convert a markdown post to a notebook blog, vice versa.
-        """
+        """Convert a markdown post to a notebook blog, vice versa."""
         if self.is_markdown():
             self._md_to_nb()
         else:
@@ -471,7 +509,7 @@ class Post:
             title=record.title,
             slug=record.slug,
             category=record.category,
-            tags=record.tags
+            tags=record.tags,
         )
         notebook = json.loads(text)
         notebook["cells"][1]["source"] = re.split(r"(?<=\n)", record.content)
@@ -485,8 +523,8 @@ class Post:
 
 
 class Blogger:
-    """A class for managing blog.
-    """
+    """A class for managing blog."""
+
     def __init__(self, db: str = ""):
         """Create an instance of Blogger.
 
@@ -496,7 +534,7 @@ class Blogger:
         self._db = db if db else str(BASE_DIR / ".blogger.sqlite3")
         self._conn = sqlite3.connect(self._db)
         options = self._conn.execute("pragma compile_options").fetchall()
-        self._fts = "fts5" if ("ENABLE_FTS5", ) in options else "fts4"
+        self._fts = "fts5" if ("ENABLE_FTS5",) in options else "fts4"
         self._create_vtable_posts()
 
     def _create_vtable_posts(self):
@@ -513,13 +551,11 @@ class Blogger:
         self.execute(sql)
 
     def clear(self):
-        """Remove the SQLite3 database.
-        """
+        """Remove the SQLite3 database."""
         os.remove(self._db)
 
     def commit(self):
-        """Commit changes made to the SQLite3 database.
-        """
+        """Commit changes made to the SQLite3 database."""
         self._conn.commit()
 
     def update_category(self, post: Post | AnyPath, category: str):
@@ -529,8 +565,7 @@ class Blogger:
         self.update_records(paths=[post.path], mapping={"category": category})
 
     def update_tags(self, post: Post, from_tag: str, to_tag: str):
-        """Update the tag from_tag of the post to the tag to_tag.
-        """
+        """Update the tag from_tag of the post to the tag to_tag."""
         tags = post.update_tags(from_tag, to_tag)
         self.update_records(paths=[post.path], mapping={"tags": ", ".join(tags) + ","})
 
@@ -540,12 +575,12 @@ class Blogger:
             sp.run(cmd, shell=True, check=True)
 
     def reload_posts(self):
-        """Reload posts into the SQLite3 database.
-        """
+        """Reload posts into the SQLite3 database."""
         self._create_vtable_posts()
         self.execute("DELETE FROM posts")
         paths = list(
-            path for path in BASE_DIR.glob("*/content/**/*")
+            path
+            for path in BASE_DIR.glob("*/content/**/*")
             if is_post(path) and not path.parent.name.startswith(".")
         )
         logger.info("Reloading posts into SQLite3 ...")
@@ -586,12 +621,10 @@ class Blogger:
             """
         self.execute(sql, paths)
 
-    def move(
-        self, src: AnyPath | Sequence[AnyPath], dst: str
-    ) -> None:
+    def move(self, src: AnyPath | Sequence[AnyPath], dst: str) -> None:
         """Move specified posts into a destination directory.
 
-        :param src: A (sequence of) path(s). 
+        :param src: A (sequence of) path(s).
             A path can be of either the str or the Path type.
         :param dst: The destination path or directory to move posts to.
         """
@@ -604,8 +637,7 @@ class Blogger:
             self._move_1(file, dst)
 
     def _move_1(self, src: AnyPath, dst: AnyPath) -> None:
-        """Move a post to the specified location.
-        """
+        """Move a post to the specified location."""
         if isinstance(src, str):
             src = Path(src)
         if dst in (EN, CN, MISC, OUTDATED):
@@ -631,17 +663,14 @@ class Blogger:
         return self._conn.execute(operation, parameters)
 
     def edit(self, paths: str | list[str], editor: str) -> None:
-        """Edit the specified posts using the specified editor.
-        """
+        """Edit the specified posts using the specified editor."""
         if not isinstance(paths, list):
             paths = [paths]
         self.update_records(paths=paths, mapping={"updated": 1})
         paths = " ".join(f"'{path}'" for path in paths)
         os.system(f"{editor} {paths}")
 
-    def update_records(
-        self, paths: list[str] | list[Path], mapping: dict
-    ) -> None:
+    def update_records(self, paths: list[str] | list[Path], mapping: dict) -> None:
         """Update records corresponding to the specified paths.
         :param mapping: A dictionary of the form dict[field, value].
         :param paths: Paths of records to be updated.
@@ -655,7 +684,7 @@ class Blogger:
 
     def update(self, reset: bool):
         """Update information of the changed posts.
-        
+
         :param reset: If true, reset updated = 0 for updated = 1 but not changed posts.
         """
         sql = "SELECT path, content FROM posts WHERE updated = 1"
@@ -672,9 +701,10 @@ class Blogger:
             post.update_meta_field({"Modified": NOW_DASH})
             self.load_post(post)
 
-    def add_post(self, title: str, dir_: str, notebook: bool = True, load_to_db: bool = False) -> Path:
-        """Add a new post with the given title.
-        """
+    def add_post(
+        self, title: str, dir_: str, notebook: bool = True, load_to_db: bool = False
+    ) -> Path:
+        """Add a new post with the given title."""
         path = self._find_post(title)
         if not path:
             stem = Post.slug(title)
@@ -703,8 +733,7 @@ class Blogger:
         return None
 
     def empty_posts(self, dry_run=False) -> None:
-        """Load all empty posts into the table srps.
-        """
+        """Load all empty posts into the table srps."""
         self.reload_posts()
         self.clear_srps()
         sql = f"""
@@ -764,8 +793,7 @@ class Blogger:
         self.commit()
 
     def clear_srps(self):
-        """Clean contents of the table srps.
-        """
+        """Clean contents of the table srps."""
         self._create_table_srps()
         self.execute("DELETE FROM srps")
 
@@ -819,7 +847,7 @@ class Blogger:
     def categories(self, where=""):
         """Get all categories and their frequencies in posts.
 
-        :param where: 
+        :param where:
         """
         if where:
             where = "WHERE " + where

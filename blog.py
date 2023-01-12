@@ -7,9 +7,20 @@ import subprocess as sp
 import getpass
 from loguru import logger
 from utils import (
-    BASE_DIR, push_github, pelican_generate, option_files, option_indexes, option_where,
-    option_dir, option_num, option_from, option_to, option_editor, option_all,
-    option_dry_run, option_full_path
+    BASE_DIR,
+    push_github,
+    pelican_generate,
+    option_files,
+    option_indexes,
+    option_where,
+    option_dir,
+    option_num,
+    option_from,
+    option_to,
+    option_editor,
+    option_all,
+    option_dry_run,
+    option_full_path,
 )
 from blogger import Post, Blogger, HOME, EN, CN, MISC, OUTDATED
 
@@ -156,8 +167,9 @@ def search(blogger, args):
         args.tags = " ".join(args.tags)
         filter_.append(f"tags MATCH '{args.tags}'")
     if args.neg_tags:
-        args.neg_tags = "".join(f"% {tag},%"
-                                for tag in args.neg_tags).replace("%%", "%")
+        args.neg_tags = "".join(f"% {tag},%" for tag in args.neg_tags).replace(
+            "%%", "%"
+        )
         filter_.append(f"tags NOT LIKE '{args.neg_tags}'")
     if args.status:
         args.status = ", ".join(f"'{stat}'" for stat in args.status)
@@ -268,8 +280,7 @@ def update(blogger, _):
 
 
 def publish(blogger, args):
-    """Publish the blog to GitHub pages.
-    """
+    """Publish the blog to GitHub pages."""
     auto_git_push(blogger, args)
     print(DASHES)
     for dir_ in args.sub_dirs:
@@ -280,8 +291,7 @@ def publish(blogger, args):
 
 
 def auto_git_push(blogger, args):
-    """Push commits of this repository to dclong/blog on GitHub.
-    """
+    """Push commits of this repository to dclong/blog on GitHub."""
     update(blogger, args)
     cmd = f"""git -C {BASE_DIR} add . \
             && git -C {BASE_DIR} commit -m ..."""
@@ -319,13 +329,18 @@ def exec_notebook(_, args):
         args.notebooks = blogger.path(args.indexes)
     if args.notebooks:
         cmd = [
-            "jupyter", "nbconvert", "--to", "notebook", "--inplace", "--execute"
+            "jupyter",
+            "nbconvert",
+            "--to",
+            "notebook",
+            "--inplace",
+            "--execute",
         ] + args.notebooks
         sp.run(cmd, check=True)
 
 
 def format_notebook(_, args):
-    #_resolve_files(args)
+    # _resolve_files(args)
     cmd = f"black {BASE_DIR}"
     sp.run(cmd, shell=True, check=True)
 
@@ -504,7 +519,7 @@ def _subparse_search(subparsers):
         help="The phrase to match in posts. "
         "The phrase is optional. "
         "For example if you want to filter by category only without constraints on full-text search, "
-        "you can use ./blog.py s the -c some_category."
+        "you can use ./blog.py s the -c some_category.",
     )
     subparser_search.add_argument(
         "-i",
@@ -512,7 +527,7 @@ def _subparse_search(subparsers):
         nargs="+",
         dest="title",
         default=(),
-        help="Search for posts with the sepcified title."
+        help="Search for posts with the sepcified title.",
     )
     subparser_search.add_argument(
         "-I",
@@ -520,7 +535,7 @@ def _subparse_search(subparsers):
         nargs="+",
         dest="neg_title",
         default=(),
-        help="Search for posts without the sepcified title."
+        help="Search for posts without the sepcified title.",
     )
     subparser_search.add_argument(
         "-a",
@@ -528,7 +543,7 @@ def _subparse_search(subparsers):
         nargs="+",
         dest="author",
         default=(),
-        help="Search for posts with the sepcified author."
+        help="Search for posts with the sepcified author.",
     )
     subparser_search.add_argument(
         "-A",
@@ -536,7 +551,7 @@ def _subparse_search(subparsers):
         nargs="+",
         dest="neg_author",
         default=(),
-        help="Search for posts without the sepcified author."
+        help="Search for posts without the sepcified author.",
     )
     subparser_search.add_argument(
         "-s",
@@ -544,7 +559,7 @@ def _subparse_search(subparsers):
         nargs="+",
         dest="status",
         default=(),
-        help="Search for posts with the sepcified status."
+        help="Search for posts with the sepcified status.",
     )
     subparser_search.add_argument(
         "-S",
@@ -552,7 +567,7 @@ def _subparse_search(subparsers):
         nargs="+",
         dest="neg_status",
         default=(),
-        help="Search for posts without the sepcified status."
+        help="Search for posts without the sepcified status.",
     )
     subparser_search.add_argument(
         "-t",
@@ -560,7 +575,7 @@ def _subparse_search(subparsers):
         nargs="+",
         dest="tags",
         default=(),
-        help="Search for posts with the sepcified tags."
+        help="Search for posts with the sepcified tags.",
     )
     subparser_search.add_argument(
         "-T",
@@ -568,7 +583,7 @@ def _subparse_search(subparsers):
         nargs="+",
         dest="neg_tags",
         default=(),
-        help="Search for posts without the sepcified tags."
+        help="Search for posts without the sepcified tags.",
     )
     subparser_search.add_argument(
         "-c",
@@ -576,7 +591,7 @@ def _subparse_search(subparsers):
         nargs="+",
         dest="categories",
         default=(),
-        help="Search for posts with the sepcified categories."
+        help="Search for posts with the sepcified categories.",
     )
     subparser_search.add_argument(
         "-C",
@@ -584,7 +599,7 @@ def _subparse_search(subparsers):
         nargs="+",
         dest="neg_categories",
         default=(),
-        help="Search for posts without the sepcified categories."
+        help="Search for posts without the sepcified categories.",
     )
     subparser_search.add_argument(
         "-d",
@@ -592,7 +607,7 @@ def _subparse_search(subparsers):
         dest="sub_dir",
         nargs="+",
         default=(),
-        help="Search for posts in the specified sub blog directory."
+        help="Search for posts in the specified sub blog directory.",
     )
     subparser_search.add_argument(
         "-D",
@@ -600,7 +615,7 @@ def _subparse_search(subparsers):
         dest="neg_sub_dir",
         nargs="+",
         default=(),
-        help="Search for posts not in the specified sub blog directory."
+        help="Search for posts not in the specified sub blog directory.",
     )
     subparser_search.add_argument(
         "-f",
@@ -608,7 +623,7 @@ def _subparse_search(subparsers):
         dest="filter",
         nargs="+",
         default=(),
-        help="Futher filtering conditions in addition to the full-text match."
+        help="Futher filtering conditions in addition to the full-text match.",
     )
     option_num(subparser_search)
     option_full_path(subparser_search)
@@ -628,7 +643,7 @@ def _subparse_add(subparsers):
         action="store_const",
         const=EN,
         default=MISC,
-        help="Create a post in the en sub blog directory."
+        help="Create a post in the en sub blog directory.",
     )
     subparser_add.add_argument(
         "-c",
@@ -636,7 +651,7 @@ def _subparse_add(subparsers):
         dest="sub_dir",
         action="store_const",
         const=CN,
-        help="Create a post in the cn sub blog directory."
+        help="Create a post in the cn sub blog directory.",
     )
     group = subparser_add.add_mutually_exclusive_group(required=True)
     group.add_argument(
@@ -644,7 +659,7 @@ def _subparse_add(subparsers):
         "--markdown",
         dest="notebook",
         action="store_false",
-        help="Create a MarkDown (default Notebook) post."
+        help="Create a MarkDown (default Notebook) post.",
     )
     group.add_argument(
         "-n",
@@ -652,7 +667,7 @@ def _subparse_add(subparsers):
         "--ipynb",
         dest="notebook",
         action="store_true",
-        help="Create a MarkDown (default Notebook) post."
+        help="Create a MarkDown (default Notebook) post.",
     )
     subparser_add.add_argument(
         "title", nargs="+", help="Title of the post to be created."
@@ -677,7 +692,7 @@ def _subparse_vim(subparsers):
         nargs="+",
         default=[],
         dest="files",
-        help="Path of the post to be edited."
+        help="Path of the post to be edited.",
     )
     subparser_vim.set_defaults(func=vim)
 
@@ -700,7 +715,7 @@ def _subparse_edit(subparsers):
         nargs="+",
         default=[],
         dest="files",
-        help="Path of the post to be edited."
+        help="Path of the post to be edited.",
     )
     subparser_edit.set_defaults(func=edit)
 
@@ -728,7 +743,7 @@ def _subparse_move(subparsers):
         dest="target",
         action="store_const",
         const=CN,
-        help="Move to the cn sub blog directory."
+        help="Move to the cn sub blog directory.",
     )
     subparser_move.add_argument(
         "-e",
@@ -736,7 +751,7 @@ def _subparse_move(subparsers):
         dest="target",
         action="store_const",
         const=EN,
-        help="Move to the en sub blog directory."
+        help="Move to the en sub blog directory.",
     )
     subparser_move.add_argument(
         "-m",
@@ -744,7 +759,7 @@ def _subparse_move(subparsers):
         dest="target",
         action="store_const",
         const=MISC,
-        help="Move to the misc sub blog directory."
+        help="Move to the misc sub blog directory.",
     )
     subparser_move.add_argument(
         "-o",
@@ -753,7 +768,7 @@ def _subparse_move(subparsers):
         dest="target",
         action="store_const",
         const=OUTDATED,
-        help="Move to the outdated sub blog directory."
+        help="Move to the outdated sub blog directory.",
     )
     subparser_move.set_defaults(func=move)
 
@@ -773,7 +788,7 @@ def _subparse_publish(subparsers):
         action="append_const",
         const=CN,
         default=[HOME],
-        help="Add the cn sub blog directory into the publish list."
+        help="Add the cn sub blog directory into the publish list.",
     )
     subparser_publish.add_argument(
         "-e",
@@ -781,7 +796,7 @@ def _subparse_publish(subparsers):
         dest="sub_dirs",
         action="append_const",
         const=EN,
-        help="Add the en sub blog directory into the publish list."
+        help="Add the en sub blog directory into the publish list.",
     )
     subparser_publish.add_argument(
         "-m",
@@ -789,7 +804,7 @@ def _subparse_publish(subparsers):
         dest="sub_dirs",
         action="append_const",
         const=MISC,
-        help="Add the misc sub blog directory into the publish list."
+        help="Add the misc sub blog directory into the publish list.",
     )
     subparser_publish.add_argument(
         "-o",
@@ -798,26 +813,26 @@ def _subparse_publish(subparsers):
         dest="sub_dirs",
         action="append_const",
         const=OUTDATED,
-        help="Add the outdated sub blog directory into the publish list."
+        help="Add the outdated sub blog directory into the publish list.",
     )
     subparser_publish.add_argument(
         "--https",
         dest="https",
         action="store_true",
         default=(USER == "gitpod"),
-        help="Use the HTTPS protocol for Git."
+        help="Use the HTTPS protocol for Git.",
     )
     subparser_publish.add_argument(
         "--no-push-github",
         dest="no_push_github",
         action="store_true",
-        help="Do not push the generated (sub) blog/site to GitHub."
+        help="Do not push the generated (sub) blog/site to GitHub.",
     )
     subparser_publish.add_argument(
         "--fatal",
         dest="fatal",
         default="errors",
-        help="Pass values (errors, by default) to the --fatal option of pelican."
+        help="Pass values (errors, by default) to the --fatal option of pelican.",
     )
     subparser_publish.add_argument(
         "-F",
@@ -825,7 +840,7 @@ def _subparse_publish(subparsers):
         dest="fatal",
         action="store_const",
         const="",
-        help="Disable the --fatal argument for pelican."
+        help="Disable the --fatal argument for pelican.",
     )
     subparser_publish.set_defaults(func=publish)
 
@@ -845,14 +860,14 @@ def _subparse_match_post(subparsers):
         "--name",
         dest="name",
         action="store_true",
-        help="Match the post title with its name."
+        help="Match the post title with its name.",
     )
     subparser_match_post.add_argument(
         "-t",
         "--title",
         dest="title",
         action="store_true",
-        help="Match the post name with its title."
+        help="Match the post name with its title.",
     )
     subparser_match_post.set_defaults(func=match_post)
 
@@ -961,8 +976,8 @@ def _subparse_convert(subparsers):
 
 def parse_args(args=None, namespace=None) -> Namespace:
     """Parse command-line arguments.
-    
-    :param args: The arguments to parse. 
+
+    :param args: The arguments to parse.
         If None, the arguments from command-line are parsed.
     :param namespace: An inital Namespace object.
     :return: A namespace object containing parsed options.

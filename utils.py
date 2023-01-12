@@ -14,7 +14,7 @@ VIM = "nvim" if shutil.which("nvim") else "vim"
 
 def get_editor() -> str:
     """Get the path of a valid editor.
-        Vim is used as the default (fallback) editor.
+    Vim is used as the default (fallback) editor.
     """
     editors = {
         "code-server": "code-server",
@@ -43,8 +43,7 @@ def install_if_not_exist(pkgs: str | List[str], pip: str = "python3 -m pip"):
 
 
 def qmarks(n: int | Sequence) -> str:
-    """Generate n question marks delimited by comma.
-    """
+    """Generate n question marks delimited by comma."""
     if isinstance(n, (list, tuple)):
         n = len(n)
     return ", ".join(["?"] * n)
@@ -92,9 +91,9 @@ def pelican_generate(dir_: str, fatal: str):
     """
     blog_dir = BASE_DIR / dir_
     os.chdir(blog_dir)
-    #config = blog_dir / "pconf.py"
-    #settings = pelican.settings.read_settings(path=str(config))
-    #pelican.Pelican(settings).run()
+    # config = blog_dir / "pconf.py"
+    # settings = pelican.settings.read_settings(path=str(config))
+    # pelican.Pelican(settings).run()
     args = ["-s", str(blog_dir / "pconf.py")]
     if fatal:
         args.extend(["--fatal", fatal])
@@ -111,7 +110,7 @@ def option_indexes(subparser):
         nargs="*",
         type=int,
         default=(),
-        help="Row IDs in the search results."
+        help="Row IDs in the search results.",
     )
 
 
@@ -135,7 +134,7 @@ def option_where(subparser):
         "--where",
         dest="where",
         default="",
-        help="A user-specified filtering condition."
+        help="A user-specified filtering condition.",
     )
 
 
@@ -149,7 +148,7 @@ def option_dir(subparser):
         "--sub-dir",
         dest="sub_dir",
         default="",
-        help="The sub blog directory to list categories; by default list all categories."
+        help="The sub blog directory to list categories; by default list all categories.",
     )
 
 
@@ -193,7 +192,7 @@ def option_full_path(subparser):
         "--full-path",
         dest="full_path",
         action="store_true",
-        help="whether to show full (instead of short/relative) path."
+        help="whether to show full (instead of short/relative) path.",
     )
 
 
@@ -206,7 +205,7 @@ def option_dry_run(subparser):
         "--dry-run",
         dest="dry_run",
         action="store_true",
-        help="Print out the SQL query without running it."
+        help="Print out the SQL query without running it.",
     )
 
 
@@ -222,7 +221,7 @@ def option_editor(subparser):
         action="store_const",
         const=VIM,
         default=get_editor(),
-        help="Edit the post using Vim."
+        help="Edit the post using Vim.",
     )
     subparser.add_argument(
         "--code",
@@ -230,7 +229,7 @@ def option_editor(subparser):
         dest="editor",
         action="store_const",
         const="code",
-        help="Edit the post using VSCode."
+        help="Edit the post using VSCode.",
     )
     subparser.add_argument(
         "-g",
@@ -238,7 +237,7 @@ def option_editor(subparser):
         dest="editor",
         action="store_const",
         const="gp open",
-        help="Edit the post using the GitPod editor."
+        help="Edit the post using the GitPod editor.",
     )
 
 
@@ -252,5 +251,5 @@ def option_all(subparser):
         "--all",
         dest="all",
         action="store_true",
-        help="Select all files in the search results."
+        help="Select all files in the search results.",
     )

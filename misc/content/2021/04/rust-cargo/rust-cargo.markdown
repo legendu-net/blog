@@ -5,7 +5,7 @@ Slug: tips-on-cargo
 Title: Tips on Cargo
 Category: Computer Science
 Tags: Computer Science, programming, Rust, cargo, format, fmt, rustfmt
-Modified: 2022-12-26 11:48:04
+Modified: 2023-01-11 12:16:36
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -166,6 +166,19 @@ and using a standard library with debug assertions.
 ### [cargo-pgo](https://github.com/Kobzol/cargo-pgo)
 
 Cargo subcommand for optimizing binaries with PGO and BOLT.
+
+### [cargo-hack](https://github.com/taiki-e/cargo-hack)
+Cargo subcommand to provide various options useful for testing and continuous integration.
+
+### [cargo-watch](https://github.com/watchexec/cargo-watch)
+Cargo Watch watches over your project's source for changes, 
+and runs Cargo commands when they occur.
+
+### [dylint](https://github.com/trailofbits/dylint)
+Dylint is a Rust linting tool, similar to Clippy. 
+But whereas Clippy runs a predetermined, static set of lints, 
+Dylint runs lints from user-specified, dynamic libraries. 
+Thus, Dylint allows developers to maintain their own personal lint collections.
 
 ## References 
 

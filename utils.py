@@ -1,6 +1,6 @@
 """Utils for the blog module.
 """
-from typing import Union, List, Sequence
+from typing import List, Sequence
 import os
 from pathlib import Path
 import shutil
@@ -27,7 +27,7 @@ def get_editor() -> str:
     return VIM
 
 
-def install_if_not_exist(pkgs: Union[str, List[str]], pip: str = "python3 -m pip"):
+def install_if_not_exist(pkgs: str | List[str], pip: str = "python3 -m pip"):
     """Install specified Python packages if they are not installed.
 
     :param pkgs: A (list of) Python package(s) to install.
@@ -42,7 +42,7 @@ def install_if_not_exist(pkgs: Union[str, List[str]], pip: str = "python3 -m pip
             sp.run(f"{pip} install --user {pkg}", shell=True, check=True)
 
 
-def qmarks(n: Union[int, Sequence]) -> str:
+def qmarks(n: int | Sequence) -> str:
     """Generate n question marks delimited by comma.
     """
     if isinstance(n, (list, tuple)):

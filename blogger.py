@@ -3,7 +3,7 @@
 """Main logic of the blogging system.
 """
 from __future__ import annotations
-from typing import Union, Sequence
+from typing import TypeAlias, Sequence
 from collections import namedtuple
 import os
 import re
@@ -19,6 +19,7 @@ from loguru import logger
 from tqdm import tqdm
 from utils import BASE_DIR, qmarks
 
+AnyPath: TypeAlias = str | Path
 AUTHOR = "Benjamin Du"
 EN = "en"
 CN = "cn"
@@ -45,7 +46,7 @@ SRPS_COLS = ["path", "title", "dir", "slug"]
 Record = namedtuple("Record", POSTS_COLS)
 
 
-def is_post(path: Union[Path, str]) -> bool:
+def is_post(path: Path | str) -> bool:
     if isinstance(path, str):
         path = Path(path)
     return path.suffix in (MARKDOWN, IPYNB)
@@ -54,7 +55,8 @@ def is_post(path: Union[Path, str]) -> bool:
 class Post:
     """A class abstracting a post.
     """
-    def __init__(self, path: Union[str, Path]):
+
+    def __init__(self, path: AnyPath):
         if isinstance(path, str):
             path = Path(path)
         path = path.resolve()
@@ -520,7 +522,7 @@ class Blogger:
         """
         self._conn.commit()
 
-    def update_category(self, post: Union[Post, str, Path], category: str):
+    def update_category(self, post: Post | AnyPath, category: str):
         if isinstance(post, (str, Path)):
             post = Post(post)
         post.update_meta_field("Category", category)
@@ -561,7 +563,7 @@ class Blogger:
             """
         self.execute(sql, post.record())
 
-    def trash(self, paths: Union[str, list[str]]):
+    def trash(self, paths: str | list[str]):
         """Move the specified posts to the trash directory.
 
         :param paths: Paths of posts to be removed.
@@ -575,7 +577,7 @@ class Blogger:
             shutil.move(path, dir_)
         self.delete_by_path(paths)
 
-    def delete_by_path(self, paths: Union[str, list[str]]):
+    def delete_by_path(self, paths: str | list[str]):
         if isinstance(paths, str):
             paths = [paths]
         sql = f"""
@@ -585,7 +587,7 @@ class Blogger:
         self.execute(sql, paths)
 
     def move(
-        self, src: Union[str, Path, Sequence[Union[str, Path]]], dst: Union[str]
+        self, src: AnyPath | Sequence[AnyPath], dst: str
     ) -> None:
         """Move specified posts into a destination directory.
 
@@ -601,7 +603,7 @@ class Blogger:
         for file in src:
             self._move_1(file, dst)
 
-    def _move_1(self, src: Union[str, Path], dst: Union[str, Path]) -> None:
+    def _move_1(self, src: AnyPath, dst: AnyPath) -> None:
         """Move a post to the specified location.
         """
         if isinstance(src, str):
@@ -628,7 +630,7 @@ class Blogger:
         parameters = [self._reg_param(param) for param in parameters]
         return self._conn.execute(operation, parameters)
 
-    def edit(self, paths: Union[str, list[str]], editor: str) -> None:
+    def edit(self, paths: str | list[str], editor: str) -> None:
         """Edit the specified posts using the specified editor.
         """
         if not isinstance(paths, list):
@@ -638,7 +640,7 @@ class Blogger:
         os.system(f"{editor} {paths}")
 
     def update_records(
-        self, paths: Union[list[str], list[Path]], mapping: dict
+        self, paths: list[str] | list[Path], mapping: dict
     ) -> None:
         """Update records corresponding to the specified paths.
         :param mapping: A dictionary of the form dict[field, value].
@@ -685,9 +687,9 @@ class Blogger:
             if load_to_db:
                 self.load_post(post)
         print(f"\nThe following post is added.\n{path}\n")
-        return path
+        return path.resolve()
 
-    def _find_post(self, title: str) -> Union[Path, None]:
+    def _find_post(self, title: str) -> Path | None:
         """Find existing post matching the given title.
 
         :return: Return the path of the existing post if any,
@@ -782,7 +784,7 @@ class Blogger:
         self.execute(sql)
         self.commit()
 
-    def path(self, idx: Union[int, list[int]]) -> list[str]:
+    def path(self, idx: int | list[int]) -> list[str]:
         if isinstance(idx, int):
             idx = [idx]
         sql = f"SELECT path FROM srps WHERE rowid in ({qmarks(idx)})"

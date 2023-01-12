@@ -5,7 +5,7 @@ Slug: tips-on-frontend-development
 Title: Tips on Frontend Development
 Category: Computer Science
 Tags: Computer Science, web, programming, frontend, development, dev, RESTful, RESTful API, API
-Modified: 2022-12-20 11:38:26
+Modified: 2023-01-11 11:54:25
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -20,6 +20,14 @@ has a good discussion about the state and trend of frontend technologies as of 2
 1. [Rome](https://github.com/rome/tools)
     provides unified developer tools for JavaScript, TypeScript, and the web.
     It is designed to replace Babel, ESLint, webpack, Pretier, Jest and others.
+2. [turbo](https://github.com/vercel/turbo)
+    is an incremental bundler and build system 
+    optimized for JavaScript and TypeScript, 
+    written in Rust – including Turbopack and Turborepo.
+3. [swc](https://github.com/swc-project/swc)
+    (stands for Speedy Web Compiler) is a super-fast TypeScript / JavaScript compiler written in Rust. 
+    It's a library for Rust and JavaScript at the same time. 
+
 2. Eslint
 3. Prettier
 4. Webpack

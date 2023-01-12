@@ -5,13 +5,18 @@ Slug: text-based-flowchart-tools
 Title: Text-based Flowchart and UML Tools
 Category: Software
 Tags: software, text, UML, PlantUML, flowchart, diagram
-Modified: 2022-05-08 11:31:51
+Modified: 2023-01-11 14:30:41
 
 **
 Things on this page are
 fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
+
+## [DOT](https://graphviz.org/doc/info/lang.html)
+[DOT](https://graphviz.org/doc/info/lang.html)
+is an abstract grammar 
+for defining Graphviz nodes, edges, graphs, subgraphs, and clusters.
 
 ## [diagrams](https://github.com/mingrammer/diagrams)
 

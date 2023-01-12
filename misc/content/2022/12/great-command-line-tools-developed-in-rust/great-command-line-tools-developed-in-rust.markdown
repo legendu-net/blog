@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2023-01-11 01:20:21
+Modified: 2023-01-11 18:13:26
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -57,6 +57,7 @@ delta
 
 ## [gping](https://github.com/orf/gping)
 [gping](https://github.com/orf/gping)
+is ping with a graph.
 
 ## [ruff](https://github.com/charliermarsh/ruff)
 [ruff](https://github.com/charliermarsh/ruff)

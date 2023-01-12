@@ -5,7 +5,7 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2023-01-07 11:52:17
+Modified: 2023-01-11 14:25:45
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
@@ -128,6 +128,16 @@ provides numeric traits for generic mathematics in Rust.
 is a macro to generate `num::FromPrimitive` instances for enum that works in Rust 1.0+.
 
 ## Bits Operations 
+
+### [bytemuck](https://crates.io/crates/bytemuck)
+[ByteMuck](https://crates.io/crates/bytemuck)
+is a crate for mucking around with piles of bytes.
+It lets you safely perform "bit cast" operations between data types. 
+That's where you take a value and just reinterpret the bits 
+as being some other type of value, 
+without changing the bits.
+It is like `f32::to_bits`, 
+just generalized to let you convert between all sorts of data types.
 
 ### [bitflags](https://crates.io/crates/bitflags)
 [bitflags](https://crates.io/crates/bitflags)

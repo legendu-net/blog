@@ -6,7 +6,6 @@ from argparse import ArgumentParser, Namespace
 import subprocess as sp
 import getpass
 from loguru import logger
-from aiutil.notebook.util import format_notebook
 from utils import (
     BASE_DIR, push_github, pelican_generate, option_files, option_indexes, option_where,
     option_dir, option_num, option_from, option_to, option_editor, option_all,
@@ -325,10 +324,10 @@ def exec_notebook(_, args):
         sp.run(cmd, check=True)
 
 
-def format_notebook_(_, args):
-    _resolve_files(args)
-    if args.files:
-        format_notebook(args.files, yapf_config=args.yapf_config)
+def format_notebook(_, args):
+    #_resolve_files(args)
+    cmd = f"black {BASE_DIR}"
+    sp.run(cmd, shell=True, check=True)
 
 
 def _subparse_format_notebook(subparsers):
@@ -342,13 +341,7 @@ def _subparse_format_notebook(subparsers):
     option_indexes(subparser_format_notebook)
     option_files(subparser_format_notebook)
     option_all(subparser_format_notebook)
-    subparser_format_notebook.add_argument(
-        "--yapf-config",
-        dest="yapf_config",
-        default="",
-        help="The configuration file to use for yapf."
-    )
-    subparser_format_notebook.set_defaults(func=format_notebook_)
+    subparser_format_notebook.set_defaults(func=format_notebook)
 
 
 def _subparse_trust_notebooks(subparsers):

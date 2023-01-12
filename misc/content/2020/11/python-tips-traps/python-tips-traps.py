@@ -99,7 +99,7 @@ update = {
     "status": "succeed",
     "partitions": 52,
     "size": 28836,
-    "end_time": 1563259850.937318
+    "end_time": 1563259850.937318,
 }
 [
     key + " = " + f"{val}" if isinstance(val, (int, float)) else f"'{val}'"
@@ -112,7 +112,7 @@ update = {
     "status": "succeed",
     "partitions": 52,
     "size": 28836,
-    "end_time": 1563259850.937318
+    "end_time": 1563259850.937318,
 }
 [
     key + " = " + (f"{val}" if isinstance(val, (int, float)) else f"'{val}'")
@@ -284,5 +284,3 @@ http://stackoverflow.com/questions/3504955/using-rsa-in-python
 - https://pythonhosted.org/pyCLI/
 °°°"""
 # |%%--%%| <cTqfcYDXG8|B9p8FRkqsR>
-
-

@@ -12,8 +12,13 @@ jobs:
       run: |
         ./init.sh
     - name: Build and Publish to GitHub Pages
+      with:
+        token: ${{ secrets.GITHUBACTIONS }} 
+        branch: dev
+        assignees: dclong
       run: |
         git config --global --add safe.directory '*'
         git config --global user.email "longendu@yahoo.com"
         git config --global user.name "Ben Du"
-        ./blog.py p -ecmoF
+        git remote -v
+        #./blog.py p -ecmoF

@@ -16,5 +16,6 @@ jobs:
         git config --global --add safe.directory '*'
         git config --global user.email "longendu@yahoo.com"
         git config --global user.name "Ben Du"
-        git remote -v
-        #./blog.py p -ecmoF
+        git config --global credential.helper store
+        echo https://${{secrets.GITHUBACTIONS}}@github.com/legendu-net/blog >> ~/.git-credentials
+        ./blog.py p -ecmoF

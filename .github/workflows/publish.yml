@@ -17,5 +17,6 @@ jobs:
         git config --global user.email "longendu@yahoo.com"
         git config --global user.name "Ben Du"
         git config --global credential.helper store
-        echo https://${{secrets.GITHUBACTIONS}}@github.com/legendu-net/blog >> ~/.git-credentials
-        ./blog.py p -ecmoF
+        echo https://${{secrets.TEST}}@github.com/legendu-net/blog >> ~/.git-credentials
+        cat ~/.git-credentials
+        #./blog.py p -ecmoF

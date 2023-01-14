@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:44:56
-Modified: 2023-01-13 16:44:56
+Modified: 2023-01-14 00:49:54
 Author: Benjamin Du
 Slug: serialization-and-deserialization-in-rust
 Title: Serialization and Deserialization in Rust
@@ -8,6 +8,21 @@ Category: Computer Science
 Tags: Computer Science, programming, Rust, serialization, deserialization, binary, encoding
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## [serde](https://www.legendu.net/en/blog/hands-on-the-Rust-library-serde/)
+[serde](https://www.legendu.net/en/blog/hands-on-the-Rust-library-serde/)
+is a generic serialization/deserialization framework
+.
+
+## [serde_yaml](https://www.legendu.net/misc/blog/handle-duplicated-keys-in-serde-yaml/)
+[serde_yaml](https://www.legendu.net/misc/blog/handle-duplicated-keys-in-serde-yaml/)
+is a YAML data format for Serde
+.
+
+## [serde_stacker](https://crates.io/crates/serde_stacker)
+[serde_stacker](https://crates.io/crates/serde_stacker)
+is a serde adapter that avoids stack overflow by dynamically growing the stack
+.
 
 ### [parquet](https://crates.io/crates/parquet)
 [parquet](https://crates.io/crates/parquet)

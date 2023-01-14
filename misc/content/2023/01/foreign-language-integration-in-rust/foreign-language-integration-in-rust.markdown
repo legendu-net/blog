@@ -1,11 +1,11 @@
 Status: published
 Date: 2023-01-13 16:20:03
-Modified: 2023-01-13 16:20:03
+Modified: 2023-01-14 00:51:04
 Author: Benjamin Du
 Slug: foreign-language-integration-in-rust
 Title: Foreign Language Integration in Rust
 Category: Computer Science
-Tags: Computer Science, programming, Rust, foreign, language, integration, ffi, cc, gcc, make, cmake
+Tags: Computer Science, programming, Rust, foreign, language, integration, ffi, cc, gcc, make, cmake, ABI
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -55,6 +55,11 @@ is a build tool & macro which enables you to write C++ code inline in your rust 
 inlines Python code directly in your Rust code.
 
 ### [rust-cpython](https://github.com/dgrunwald/rust-cpython)
+
+### [libloading](https://crates.io/crates/libloading)
+[libloading](https://crates.io/crates/libloading)
+provides bindings around the platform's dynamic library 
+loading primitives with greatly improved memory safety.
 
 ## References 
 

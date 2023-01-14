@@ -5,7 +5,7 @@ Slug: jupyterlab-extensions-for-spreadsheet
 Title: JupyterLab Extensions for Spreadsheet
 Category: Computer Science
 Tags: Computer Science, Jupyter, JupyterLab, spreadsheet, extension, plugin, grid, spreadsheet, data table, datatable
-Modified: 2022-11-27 00:08:26
+Modified: 2023-01-13 20:19:34
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -37,7 +37,7 @@ Basically,
 you can create rich-format Excel files using the Python library XlsxWriter
 and view it using jupyterlab-spreadsheet. 
 
-### [itable](https://github.com/mwouts/itables)
+### [itables](https://github.com/mwouts/itables)
 
 ### [ipysheet](https://github.com/QuantStack/ipysheet/)
 

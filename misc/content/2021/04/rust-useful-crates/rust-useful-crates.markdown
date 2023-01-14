@@ -5,7 +5,7 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2023-01-14 00:32:34
+Modified: 2023-01-14 00:43:26
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
@@ -53,6 +53,18 @@ https://crates.io/crates?sort=downloads
 ## [Foreign Language Integration in Rust](https://www.legendu.net/misc/blog/foreign-language-integration-in-rust)
 
 ## [Rust for IoT](https://www.legendu.net/misc/blog/rust-for-iot)
+
+## Memory Management
+
+[stacker](https://crates.io/crates/stacker)
+A stack growth library useful 
+when implementing deeply recursive algorithms 
+that may accidentally blow the stack.
+
+[serde_stacker](https://crates.io/crates/serde_stacker)
+Serde adapter that avoids stack overflow by dynamically growing the stack
+
+
 
 ## References
 

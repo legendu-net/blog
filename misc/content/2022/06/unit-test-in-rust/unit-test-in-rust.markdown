@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-06-16 15:34:08
-Modified: 2022-11-05 10:04:22
+Modified: 2023-01-13 16:09:59
 Author: Benjamin Du
 Slug: unit-test-in-rust
 Title: Unit Test in Rust
@@ -118,3 +118,12 @@ There are a few approaches to pass arguments to unit test functions.
     - Integrate tests as a command into your main project.
         This is not recommended 
         as you might introduce test-only dependencies into your main project.
+
+## References
+
+- [Useful Rust Crates for Testing](https://www.legendu.net/misc/blog/useful-rust-crates-for-testing)
+
+- [How to run setup code before any tests run in Rust?](https://stackoverflow.com/questions/58006033/how-to-run-setup-code-before-any-tests-run-in-rust)
+
+- [Test setup and teardown in Rust without a framework.](https://medium.com/@ericdreichert/test-setup-and-teardown-in-rust-without-a-framework-ba32d97aa5ab)
+

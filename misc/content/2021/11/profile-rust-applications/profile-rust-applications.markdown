@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2023-01-09 17:47:23
+Modified: 2023-01-13 16:28:36
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -8,6 +8,15 @@ Category: Computer Science
 Tags: Computer Science, programming, Rust, profile, profiling, speed, memory, CPU, FlameGraph, ByteHound, HeapTrack
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+
+### std::mem::size_of
+
+Size of type (on the stack).
+
+### [memuse](https://crates.io/crates/memuse)
+[memuse](https://crates.io/crates/memuse)
+contains traits for measuring the dynamic memory usage of Rust types.
 
 
 ## Tips for Rust Optimization and Profiling
@@ -91,6 +100,10 @@ is a heap memory profiler for Linux
 
 
 ## References
+
+- [CPU Profiling of Rust Applications Using Valgrind](https://www.legendu.net/misc/blog/cpu-profiling-rust-valgrind)  |  misc/content/2022/01/cpu-profiling-rust-valgrind/cpu-profiling-rust-valgrind.markdown
+
+- [Profile Rust Applications Using Flamegraph](https://www.legendu.net/misc/blog/profile-rust-applications-using-flamegraph)  |  misc/content/2021/11/profile-rust-applications-using-flamegraph/profile-rust-applications-using-flamegraph.markdown
 
 - [Tips on Valgrind](https://www.legendu.net/misc/blog/tips-on-valgrind)
 

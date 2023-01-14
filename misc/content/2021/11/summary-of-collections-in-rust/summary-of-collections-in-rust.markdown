@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-20 22:36:35
-Modified: 2022-08-26 10:46:42
+Modified: 2023-01-13 16:52:10
 Author: Benjamin Du
 Slug: summary-of-collections-in-rust
 Title: Summary of Collections in Rust
@@ -23,26 +23,16 @@ and when to use them.
 
 ## Third-party Collections and Related Tools
 
+### [itertools](https://crates.io/crates/itertools)
+[itertools](https://crates.io/crates/itertools)
+provides extra iterator adaptors, iterator methods, free functions, and macros.
+
+### Heapless / Stack / Array
+
 heapless / [arrayvec](https://crates.io/crates/arrayvec): stores on the stack only. Limited capacity, capacity set at creation.
-
-smallvec: stores some elements on the stack, falls back to the heap if the stack capacity is exceeded.
-
-tinyvec: provides both, implemented in 100% safe code. For example, smallvec had 5 memory safety bugs to date; they are guaranteed to never happen with tinyvec. The drawback is that the stack storage is zero-initialized on creation, which incurs some cost; for small capacities it's usually negligible, but adds up if you want to store thousands of elements.
-
-Contiguous Data in Rust
-https://github.com/paulkernfeld/contiguous-data-in-rust
-
-ndarray
-https://crates.io/crates/ndarray
-
-An n-dimensional array for general elements and for numerics. Lightweight array views and slicing; views support chunking and splitting.
-
 
 - [heapless](https://crates.io/crates/heapless)
     provides `static` friendly data structures that don't require dynamic memory allocation.
-
-- [dashmap](https://crates.io/crates/dashmap)
-    is a blazing fast concurrent HashMap for Rust.
 
 - [arrayvec](https://crates.io/crates/arrayvec)
     [arrayvec](https://crates.io/crates/arrayvec)
@@ -56,12 +46,24 @@ An n-dimensional array for general elements and for numerics. Lightweight array 
     [How do I collect into an array?](https://stackoverflow.com/questions/26757355/how-do-i-collect-into-an-array)
     .
 
-- [Crate - indexmap](https://crates.io/crates/indexmap)
-    A pure-Rust hash table which preserves (in a limited sense) insertion order.
+smallvec
+https://crates.io/crates/smallvec
 
-- [TinySet](https://crates.io/crates/tinyset)
-    provides a few collections that are optimized to scale in size well for small numbers of elements, 
-    while still scaling well in time (and size) for numbers of elements.
+: stores some elements on the stack, falls back to the heap if the stack capacity is exceeded.
+
+tinyvec: provides both, implemented in 100% safe code. For example, smallvec had 5 memory safety bugs to date; they are guaranteed to never happen with tinyvec. The drawback is that the stack storage is zero-initialized on creation, which incurs some cost; for small capacities it's usually negligible, but adds up if you want to store thousands of elements.
+
+ndarray
+https://crates.io/crates/ndarray
+
+An n-dimensional array for general elements and for numerics. Lightweight array views and slicing; views support chunking and splitting.
+
+[Array in Rust](https://www.legendu.net/misc/blog/rust-collection-array/)
+has discussions on ways to make it easy to construct arrays.
+
+## Hash / Set / Map
+
+## Hash code and Hash Maps
 
 - [fnv](https://crates.io/crates/fnv)
     is an implementation of the Fowler–Noll–Vo hash function.
@@ -69,12 +71,34 @@ An n-dimensional array for general elements and for numerics. Lightweight array 
 - [hashbrown](https://crates.io/crates/hashbrown)
     is a Rust port of Google's high-performance SwissTable hash map, 
     adapted to make it a drop-in replacement for Rust's standard HashMap and HashSet types.
+    
+- [phf](https://crates.io/crates/phf)
+    provides runtime support for perfect hash function data structures
+    
+- [indexmap](https://crates.io/crates/indexmap)
+    A hash table with consistent order and fast iteration. 
+    The indexmap is a hash table 
+    where the iteration order of the key-value pairs is independent of the hash values of the keys. 
+    It has the usual hash table functionality, 
+    it preserves insertion order except after removals, 
+    and it allows lookup of its elements by either hash table key or numerical index.
 
-### Make It Easy to Construct Arrays
+- [dashmap](https://crates.io/crates/dashmap)
+    is a blazing fast concurrent HashMap for Rust.
 
-Please refer to 
-[Array in Rust](https://www.legendu.net/misc/blog/rust-collection-array/)
-for detailed discussions.
+- [TinySet](https://crates.io/crates/tinyset)
+    provides a few collections that are optimized to scale in size well for small numbers of elements, 
+    while still scaling well in time (and size) for numbers of elements.
+
+- [schnellru](https://crates.io/crates/schnellru)
+    is a fast and flexible LRU map.
+
+## Graph
+
+- [petgraph](https://github.com/petgraph/petgraph)
+    is a graph data structure library for Rust.
+
+- [petgraph](https://crates.io/crates/petgraph)
 
 ## References 
 
@@ -95,3 +119,6 @@ for detailed discussions.
 - [Set in Rust](http://www.legendu.net/misc/blog/set-in-rust/)
 
 - [Data Frame Implementations in Rust](http://www.legendu.net/misc/blog/data-frame-implementations-in-rust/)
+
+Contiguous Data in Rust
+https://github.com/paulkernfeld/contiguous-data-in-rust

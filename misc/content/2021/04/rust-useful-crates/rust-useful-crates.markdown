@@ -5,252 +5,60 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2023-01-11 14:25:45
+Modified: 2023-01-14 00:32:34
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
 
-## Dev Tools
+## [Summary of Collections in Rust](https://www.legendu.net/misc/blog/summary-of-collections-in-rust) 
 
-### [cargo-semver-checks](https://crates.io/crates/cargo-semver-checks)
-[cargo-semver-checks](https://crates.io/crates/cargo-semver-checks)
-scans your Rust crate for semver violations.
+## [Dev Tools for Rust](https://www.legendu.net/misc/blog/dev-tools-for-rust)
 
-### [cargo-udeps](https://github.com/est31/cargo-udeps)
-[cargo-udeps](https://github.com/est31/cargo-udeps)
-finds unused dependencies in Cargo.toml.
+## [Error Handling in Rust](https://www.legendu.net/misc/blog/error-handling-in-rust)
 
-## Profiling Tools
+## [Useful Rust Crates for Testing](https://www.legendu.net/misc/blog/useful-rust-crates-for-testing)
 
-### std::mem::size_of
+## [Profile Rust Applications](https://www.legendu.net/misc/blog/profile-rust-applications)
 
-Size of type (on the stack).
+## [Implement a Singleton in Rust](https://www.legendu.net/misc/blog/implement-a-singleton-in-rust) 
 
-### [memuse](https://crates.io/crates/memuse)
-[memuse](https://crates.io/crates/memuse)
-contains traits for measuring the dynamic memory usage of Rust types.
+## [Generating Random Numbers in Rust](https://www.legendu.net/misc/blog/rust-rng) 
 
-## String Manipulation 
+## [Useful Rust Crates for Bit Manipulations](https://www.legendu.net/misc/blog/useful-rust-crates-for-bit-manipulations) 
 
-### [lazy_format](https://crates.io/crates/lazy_format)
-[lazy_format](https://crates.io/crates/lazy_format)
-is a [no_std] library for lazily formatting things,
-which avoids allocating temporary strings 
-when writing to a buffered stream. 
+## [Serialization and Deserialization in Rust](https://www.legendu.net/misc/blog/serialization-and-deserialization-in-rust)
 
-### [Askama](https://github.com/djc/askama)
-[Askama](https://github.com/djc/askama)
-implements a template rendering engine based on Jinja. 
-It generates Rust code from your templates at compile time 
-based on a user-defined struct to hold the template's context.
+## [Design Pattern and Productivity for Rust](https://www.legendu.net/misc/blog/design-pattern-and-productivity-for-rust)
 
-### [human_bytes](https://crates.io/crates/human_bytes)
-[human_bytes](https://crates.io/crates/human_bytes)
-converts bytes into human-readable values.
+## [Useful Algorithms Implemented in Rust](https://www.legendu.net/misc/blog/useful-algorithms-implemented-in-rust) 
 
-### [scraper](https://crates.io/crates/scraper)
-[scraper](https://crates.io/crates/scraper)
-provides HTML parsing and querying with CSS selectors.
+## [Progress Bar in Rust](https://www.legendu.net/misc/blog/progress-bar-in-rust)
 
-### [semver](https://crates.io/crates/semver)
-[semver](https://crates.io/crates/semver)
-provides parser and evaluator for Cargo's flavor of Semantic Versioning.
+## [Rust for Backend Development](https://www.legendu.net/misc/blog/rust-for-backend-development) 
 
-## File System
+## [Rust for Frontend Development](https://www.legendu.net/misc/blog/rust-for-frontend-development) 
 
-### [glob](https://crates.io/crates/glob)
-[glob](https://crates.io/crates/glob)
-supports matching file paths against Unix shell style patterns.
+## [Great Command Line Tools Developed in Rust](https://www.legendu.net/misc/blog/great-command-line-tools-developed-in-rust)
 
-## Design Patterns
+## [Rust Crates for RPC](https://www.legendu.net/misc/blog/rust-crates-for-rpc) 
 
-### [derive_builder](https://crates.io/crates/derive_builder)
-[derive_builder](https://crates.io/crates/derive_builder)
-provides Rust macro to automatically implement the builder pattern for arbitrary structs. 
-A simple `#[derive(Builder)]` will generate a FooBuilder for your struct Foo 
-with all setter-methods and a build method.
+## [Rust for Distributed Applications](https://www.legendu.net/misc/blog/rust-for-distributed-applications)
 
-## Databases
+## [Useful Rust Crates for Filesystem](https://www.legendu.net/misc/blog/useful-rust-crates-for-filesystem) 
 
-### [serde](https://crates.io/crates/serde)
-[serde](https://crates.io/crates/serde)
-is a framework for serializing and deserializing Rust data structures efficiently and generically.
+## [Compress and Decompress Files in Rust](https://www.legendu.net/misc/blog/compress-and-decompress-files-in-rust)
 
-### [sled](https://github.com/spacejam/sled)
-[sled](https://github.com/spacejam/sled)
-is an embedded key-value pair databases written in Rust.
+## [Rust for Game Development](https://www.legendu.net/misc/blog/rust-for-game-development)
 
-### [indradb](https://github.com/indradb/indradb)
-[indradb](https://github.com/indradb/indradb)
-is a graph database written in rust.
+## [Foreign Language Integration in Rust](https://www.legendu.net/misc/blog/foreign-language-integration-in-rust)
 
-### [oxigraph/](https://github.com/oxigraph/oxigraph/)
-[oxigraph/](https://github.com/oxigraph/oxigraph/)
-Oxigraph is a graph database implementing the SPARQL standard.
-Its goal is to provide a compliant, safe, 
-and fast graph database based on the RocksDB and Sled key-value stores. 
-It is written in Rust. 
-It also provides a set of utility functions for reading, writing, and processing RDF files.
-Oxigraph is in heavy development and SPARQL query evaluation has not been optimized yet.
-
-### [skytable](https://github.com/skytable/skytable)
-[Skytable](https://github.com/skytable/skytable)
-is a free and open-source NoSQL database 
-that aims to provide flexible data modeling at scale. 
-Simplicity, performance and flexibility are the guiding design principles.
-
-### [bolt-rs](https://github.com/lucis-fluxum/bolt-rs)
-[bolt-rs](https://github.com/lucis-fluxum/bolt-rs)
-aims to provide a comprehensive set of libraries 
-that allow for interaction with graph database servers 
-that support the Bolt protocol, namely, Neo4j. 
-This set of libraries allows interacting with servers 
-supporting versions 1 through 4.1 of the protocol, 
-which includes Neo4j 3.1 through 4.2.
-
-### [neo4rs](https://github.com/yehohanan7/neo4rs)
-[Neo4rs](https://github.com/yehohanan7/neo4rs)
-is a Neo4j rust driver implemented using bolt specification.
-This driver is compatible with neo4j 4.x versions
-
-## Numeric Computation
-
-### [num-derive](https://crates.io/crates/num-derive)
-[num-derive](https://crates.io/crates/num-derive)
-providess procedural macros to derive numeric traits in Rust.
-
-### [num-traits](https://crates.io/crates/num-traits)
-[num-traits](https://crates.io/crates/num-traits)
-provides numeric traits for generic mathematics in Rust.
-
-### [enum_primitive](https://crates.io/crates/enum_primitive)
-[enum_primitive](https://crates.io/crates/enum_primitive)
-is a macro to generate `num::FromPrimitive` instances for enum that works in Rust 1.0+.
-
-## Bits Operations 
-
-### [bytemuck](https://crates.io/crates/bytemuck)
-[ByteMuck](https://crates.io/crates/bytemuck)
-is a crate for mucking around with piles of bytes.
-It lets you safely perform "bit cast" operations between data types. 
-That's where you take a value and just reinterpret the bits 
-as being some other type of value, 
-without changing the bits.
-It is like `f32::to_bits`, 
-just generalized to let you convert between all sorts of data types.
-
-### [bitflags](https://crates.io/crates/bitflags)
-[bitflags](https://crates.io/crates/bitflags)
-is a Rust macro to generate structures which behave like a set of bitflags.
-
-https://crates.io/crates/bitvec
-Addresses memory by bits, for packed collections and bitfields
-
-https://crates.io/crates/byteorder
-Library for reading/writing numbers in big-endian and little-endian.
-
-https://crates.io/crates/bytes
-A utility library for working with bytes.
-
-## Hash code and Hash Maps
-
-https://crates.io/crates/hashbrown
-A Rust port of Google's SwissTable hash map
-
-https://crates.io/crates/indexmap
-
-A hash table with consistent order and fast iteration. The indexmap is a hash table where the iteration order of the key-value pairs is independent of the hash values of the keys. It has the usual hash table functionality, it preserves insertion order except after removals, and it allows lookup of its elements by either hash table key or numerical index.
-
-
-
-## Binary Encoding
-
-### [atoi-rs](https://github.com/pacman82/atoi-rs)
-
-[atoi-rs](https://github.com/pacman82/atoi-rs)
-parses integers directly from [u8] slices in safe code
-.
-
-### [parquet](https://crates.io/crates/parquet)
-[parquet](https://crates.io/crates/parquet)
-is an Apache Parquet implementation in Rust.
-
-### [bincode](https://github.com/bincode-org/bincode)
-[bincode](https://github.com/bincode-org/bincode)
-is a binary encoder / decoder implementation in Rust.
-
-## Graph Data Structure
-
-https://github.com/petgraph/petgraph
-Graph data structure library for Rust.
-
-https://crates.io/crates/petgraph
-
-## Parallell, Concurrency and Async
-### [futures](https://crates.io/crates/futures)
-[futures](https://crates.io/crates/futures)
-is an implementation of futures and streams featuring zero allocations, 
-composability, and iterator-like interfaces.
-It is a library providing the foundations for asynchronous programming in Rust. 
-It includes key trait definitions like Stream, 
-as well as utilities like `join!`, `select!`, 
-and various futures combinator methods which enable expressive asynchronous control flow.
-
-### [tokio](https://crates.io/crates/tokio)
-[tokio](https://crates.io/crates/tokio)
-is an event-driven, non-blocking I/O platform for writing asynchronous I/O backed applications.
-
-### [rayon](https://crates.io/crates/rayon)
-[rayon](https://crates.io/crates/rayon)
-is a data-parallelism library for Rust. 
-It is extremely lightweight and makes it easy to convert a sequential computation into a parallel one. 
-It also guarantees data-race freedom. 
-
-## Command-line Parsing
-
-### [structopt](https://crates.io/crates/structopt)
-Parse command line argument by defining a struct.
-
-### [clap](https://crates.io/crates/clap)
-[clap](https://crates.io/crates/clap)
-is a simple to use, efficient, and full-featured Command Line Argument Parser.
-
-## Command-line Tools
-
-Please refer to
-[Great Command Line Tools Developed in Rust](https://www.legendu.net/misc/blog/great-command-line-tools-developed-in-rust)
-for detailed discussions.
-
-## Other
-
-### [itertools](https://crates.io/crates/itertools)
-[itertools](https://crates.io/crates/itertools)
-provides extra iterator adaptors, iterator methods, free functions, and macros.
-
-### [lazy_static](https://crates.io/crates/lazy_static)
-[lazy_static](https://crates.io/crates/lazy_static)
-is a macro for declaring lazily evaluated statics in Rust.
-Using this macro, 
-it is possible to have statics that require code to be executed at runtime in order to be initialized. 
-This includes anything requiring heap allocations, 
-like vectors or hash maps, 
-as well as anything that requires non-const function calls to be computed.
-
-### [derive_builder](https://crates.io/crates/derive_builder)
-[derive_builder](https://crates.io/crates/derive_builder)
-provides a Rust procedural macro to automatically implement the builder pattern for arbitrary structs.
-
-## Protobuf and RPc
-
-### [prost](https://github.com/tokio-rs/prost)
-[prost](https://github.com/tokio-rs/prost)
-is a Protocol Buffers implementation for the Rust Language. 
-It helps generate simple, idiomatic Rust code from proto2 and proto3 files.
+## [Rust for IoT](https://www.legendu.net/misc/blog/rust-for-iot)
 
 ## References
 
-https://crates.io/
+- [Rust Crates](https://crates.io/)
 
-[12 Killer Rust Libraries You Should Know](https://jondot.medium.com/12-killer-rust-libraries-you-should-know-c60bab07624f)
+- [12 Killer Rust Libraries You Should Know](https://jondot.medium.com/12-killer-rust-libraries-you-should-know-c60bab07624f)
 
-[Awesome Rust](https://github.com/rust-unofficial/awesome-rust)
+- [Awesome Rust](https://github.com/rust-unofficial/awesome-rust)
+

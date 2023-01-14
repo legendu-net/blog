@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-12-04 17:41:10
-Modified: 2022-06-05 01:22:52
+Modified: 2023-01-13 17:30:22
 Author: Benjamin Du
 Slug: speed-up-rust-build-with-cache
 Title: Speed Up Rust Build With Cache
@@ -48,3 +48,8 @@ has a good summary on ways to speed up compilation of Rust projects.
 - [cargo-cache](https://crates.io/crates/cargo-cache)
 
 - [actions/rust-cache @ GitHub](https://github.com/marketplace/actions/rust-cache)
+
+- [Is coding in Rust as bad as in C++?](https://quick-lint-js.com/blog/cpp-vs-rust-build-times/)
+
+- [Optimizing the Rust build](https://quick-lint-js.com/blog/cpp-vs-rust-build-times/#optimizing-rust-build)
+

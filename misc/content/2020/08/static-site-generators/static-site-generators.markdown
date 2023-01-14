@@ -5,12 +5,16 @@ Slug: static-site-generators
 Title: Static Site Generators
 Category: Computer Science
 Tags: Computer Science, static site genertor, blog, blogging, gatsby, docusaurus, Pelican, ABlog, docusaurus, docsify, Sphinx, mkdocs, pandoc
-Modified: 2022-12-23 20:47:48
+Modified: 2023-01-13 13:57:02
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
+
+## [zola](https://github.com/getzola/zola)
+[Zola](https://github.com/getzola/zola)
+is a fast static site generator in a single binary with everything built-in.
 
 ## [mdbook](https://www.legendu.net/misc/blog/tips-on-mdbook)
 

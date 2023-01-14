@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2023-01-11 18:13:26
+Modified: 2023-01-13 15:33:20
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -8,6 +8,14 @@ Category: Computer Science
 Tags: Computer Science, programming, Rust, alternative, command-line, rewrite
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+
+## [Atuin](https://github.com/ellie/atuin)
+[Atuin](https://github.com/ellie/atuin)
+replaces your existing shell history with a SQLite database, 
+and records additional context for your commands. 
+Additionally, 
+it provides optional and fully encrypted synchronisation of your history between machines, via an Atuin server.
 
 bat
 
@@ -17,7 +25,12 @@ procs
 
 sd
 
-dust
+## [dust](https://github.com/bootandy/dust)
+[Dust](https://github.com/bootandy/dust)
+is a more intuitive version of du in rust.
+
+## [dua-cli](https://crates.io/crates/dua-cli)
+[dua-cli](https://crates.io/crates/dua-cli)
 
 ## [ripgrep](https://www.legendu.net/misc/blog/ripgrep-is-a-better-alternative-to-find)
 [ripgrep](https://www.legendu.net/misc/blog/ripgrep-is-a-better-alternative-to-find)
@@ -32,10 +45,38 @@ allows interactively pick its results and open selected match in text editor of 
 [broot](https://github.com/Canop/broot)
 provides a new better way to see and navigate directory trees.
 
+## [gitoxide](https://github.com/Byron/gitoxide)
+[gitoxide](https://github.com/Byron/gitoxide)
+is an implementation of git written in Rust 
+for developing future-proof applications which strive 
+for correctness and performance 
+while providing a pleasant and unsurprising developer experience.
+
 ## [git-leave](https://crates.io/crates/git-leave)
 [git-leave](https://crates.io/crates/git-leave)
 checks for unsaved or uncommitted changes on your machine.
 
+## [Stacked Git](https://github.com/stacked-git/stgit)
+[Stacked Git](https://github.com/stacked-git/stgit)
+,
+StGit for short, 
+is an application for managing Git commits as a stack of patches.
+
+## [onefetch](https://crates.io/crates/onefetch)
+[Onefetch](https://crates.io/crates/onefetch)
+is a command-line Git information tool 
+written in Rust that displays project information and code statistics 
+for a local Git repository directly to your terminal. 
+The tool is completely offline - no network access is required.
+
+## [git-grab](https://github.com/wezm/git-grab)
+[git-grab](https://github.com/wezm/git-grab)
+is a small tool to clone git repositories to a standard location, 
+organised by domain name and path. It runs on BSD, Linux, macOS, Windows, and more.
+
+## [Nosey Parker](https://github.com/praetorian-inc/noseyparker)
+[Nosey Parker](https://github.com/praetorian-inc/noseyparker)
+is a command-line program that finds secrets and sensitive information in textual data and Git history.
 
 ## [bottom](https://crates.io/crates/bottom)
 [bottom](https://crates.io/crates/bottom)

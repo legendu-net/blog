@@ -5,7 +5,7 @@ Slug: tips-on-cargo
 Title: Tips on Cargo
 Category: Computer Science
 Tags: Computer Science, programming, Rust, cargo, format, fmt, rustfmt
-Modified: 2023-01-11 12:16:36
+Modified: 2023-01-16 18:50:10
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -30,6 +30,12 @@ Specify the option `--version` to install a specific version of a package.
 
     :::bash
     cargo install --version 0.8.1 evcxr_jupyter
+
+## Update Dependencies
+
+Please refer to
+[cargo-update](https://doc.rust-lang.org/cargo/commands/cargo-update.html)
+for the official tutorial. 
 
 ## Build a Project 
 

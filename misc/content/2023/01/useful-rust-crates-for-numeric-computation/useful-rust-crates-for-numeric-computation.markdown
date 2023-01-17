@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:35:52
-Modified: 2023-01-13 16:35:52
+Modified: 2023-01-16 12:24:42
 Author: Benjamin Du
 Slug: useful-rust-crates-for-numeric-computation
 Title: Useful Rust Crates for Numeric Computation
@@ -21,4 +21,9 @@ provides numeric traits for generic mathematics in Rust.
 ## [enum_primitive](https://crates.io/crates/enum_primitive)
 [enum_primitive](https://crates.io/crates/enum_primitive)
 is a macro to generate `num::FromPrimitive` instances for enum that works in Rust 1.0+.
+
+## https://crates.io/crates/rust_decimal
+A Decimal number implementation written in pure Rust suitable 
+for financial calculations that require significant integral and fractional digits with no round-off errors.
+
 

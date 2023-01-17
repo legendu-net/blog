@@ -5,7 +5,7 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2023-01-14 00:43:26
+Modified: 2023-01-16 18:51:46
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
@@ -64,7 +64,12 @@ that may accidentally blow the stack.
 [serde_stacker](https://crates.io/crates/serde_stacker)
 Serde adapter that avoids stack overflow by dynamically growing the stack
 
+## Macros
 
+### [proc-macro2](https://crates.io/crates/proc-macro2)
+[proc-macro2](https://crates.io/crates/proc-macro2)
+is a substitute implementation of the compiler's `proc_macro` API 
+to decouple token-based libraries from the procedural macro use case.
 
 ## References
 

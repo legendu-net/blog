@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-17 10:53:03
-Modified: 2023-01-17 10:53:03
+Modified: 2023-01-18 22:02:05
 Author: Benjamin Du
 Slug: rust-for-financial-investment
 Title: Rust for Financial Investment
@@ -9,59 +9,70 @@ Tags: Computer Science, programming, Rust, finance, financial, investment, tradi
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-https://crates.io/crates/investments
-Helps you with managing your investments
+## [investments](https://crates.io/crates/investments)
+[investments](https://crates.io/crates/investments)
+helps you with managing your investments
 
-https://github.com/nautechsystems/nautilus_trader
-NautilusTrader is an open-source, high-performance, production-grade algorithmic trading platform, 
+## [nautilus_trader](https://github.com/nautechsystems/nautilus_trader)
+[nautilus_trader](https://github.com/nautechsystems/nautilus_trader)
+is an open-source, high-performance, production-grade algorithmic trading platform, 
 providing quantitative traders 
 with the ability to backtest portfolios of automated trading strategies 
 on historical data with an event-driven engine, 
 and also deploy those same strategies live, with no code changes.
 
+## [finql](https://crates.io/crates/finql)
+[finql](https://crates.io/crates/finql)
+is a quantitative finance toolbox.
+
+## [barter](https://crates.io/crates/barter)
+[barter](https://crates.io/crates/barter)
+is a framework 
+for building event-driven live-trading & backtesting engines
+.
+
+## [ferrumfix](https://github.com/ferrumfix/ferrumfix)
+[ferrumfix](https://github.com/ferrumfix/ferrumfix)
+is a financial Information eXchange protocol implemented in Rust
 
 
+## Other Useful Crates for Developing Financial Systems
 
-https://crates.io/crates/finql
-A quantitative finance toolbox
+### [ZMQ](https://crates.io/crates/zmq)
+[ZMQ](https://crates.io/crates/zmq)
 
-https://crates.io/crates/barter
-Framework for building event-driven live-trading & backtesting engines
+### [Websocket](https://crates.io/crates/websocket)
+[Websocket](https://crates.io/crates/websocket)
 
-ZMQ https://crates.io/crates/zmq
+### [InfluxDBClient](https://crates.io/crates/influx_db_client)
+[InfluxDBClient](https://crates.io/crates/influx_db_client)
 
-Websocket https://crates.io/crates/websocket
+### [MongoDB](https://crates.io/crates/mongodb)
+[MongoDB](https://crates.io/crates/mongodb)
 
-InfluxDBClient https://crates.io/crates/influx_db_client
+### [Reqwest](https://crates.io/crates/reqwest)
+[Reqwest](https://crates.io/crates/reqwest)
 
-MongoDB https://crates.io/crates/mongodb
+### [NAlgebra](https://crates.io/crates/nalgebra)
+[NAlgebra](https://crates.io/crates/nalgebra)
 
-Reqwest https://crates.io/crates/reqwest
+### [Splines](https://crates.io/crates/splines)
+[Splines](https://crates.io/crates/splines)
 
-NAlgebra https://crates.io/crates/nalgebra
+### [Statrs](https://crates.io/crates/statrs)
+[Statrs](https://crates.io/crates/statrs)
 
-Quadrature https://crates.io/crates/quadrature
+### [TCH](https://crates.io/crates/tch)
+[TCH](https://crates.io/crates/tch)
 
-Splines https://crates.io/crates/splines
-
-Statrs https://crates.io/crates/statrs
-
-TCH https://crates.io/crates/tch
-
-Crossbeam https://crates.io/crates/crossbeam
-
-
-https://github.com/ferrumfix/ferrumfix
-Financial Information eXchange protocol implemented in Rust
-
+### [Crossbeam](https://crates.io/crates/crossbeam)
+[Crossbeam](https://crates.io/crates/crossbeam)
 
 ## References
 
-Build a Scalable Trading Bot With Rust Over the Weekend
-https://medium.com/swlh/build-a-scalable-trading-bot-with-rust-over-the-weekend-9fd781940360
+- [Build a Scalable Trading Bot With Rust Over the Weekend](https://medium.com/swlh/build-a-scalable-trading-bot-with-rust-over-the-weekend-9fd781940360)
 
-Building an Algorithmic Trading Platform in Rust
-https://cprimozic.net/blog/building-an-algorithmic-trading-platform-in-rust/
+- [Building an Algorithmic Trading Platform in Rust](https://cprimozic.net/blog/building-an-algorithmic-trading-platform-in-rust/)
 
-https://crates.io/keywords/finance
+- [Rust Crates - finance related](https://crates.io/keywords/finance)
 

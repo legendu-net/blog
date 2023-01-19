@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2023-01-13 16:28:36
+Modified: 2023-01-18 22:10:26
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -9,24 +9,20 @@ Tags: Computer Science, programming, Rust, profile, profiling, speed, memory, CP
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
-### std::mem::size_of
-
-Size of type (on the stack).
-
-### [memuse](https://crates.io/crates/memuse)
-[memuse](https://crates.io/crates/memuse)
-contains traits for measuring the dynamic memory usage of Rust types.
-
-
 ## Tips for Rust Optimization and Profiling
 
-1. [The Rust Performance Book](https://nnethercote.github.io/perf-book/title-page.html)
+1. [std::mem::size_of](https://doc.rust-lang.org/std/mem/fn.size_of.html)
+    returns the stack size of a type.
+
+2. [memuse](https://crates.io/crates/memuse)
+    contains traits for measuring the dynamic memory usage of Rust types.
+
+3. [The Rust Performance Book](https://nnethercote.github.io/perf-book/title-page.html)
     has a comprehensive guide on optimizing Rust code.
     [Rust Performance Pitfalls](https://llogiq.github.io/2017/06/01/perf-pitfalls.html)
     discusses about some performance pitfalls that you want to avoid.
 
-2. [rustfilt](https://crates.io/crates/rustfilt)
+4. [rustfilt](https://crates.io/crates/rustfilt)
     demangles Rust symbol names using 
     [rustc-demangle](https://github.com/rust-lang/rustc-demangle)
     . 

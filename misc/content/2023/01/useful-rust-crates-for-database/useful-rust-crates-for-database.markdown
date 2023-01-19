@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 15:46:22
-Modified: 2023-01-13 15:46:22
+Modified: 2023-01-18 22:14:21
 Author: Benjamin Du
 Slug: useful-rust-crates-for-database
 Title: Useful Rust Crates for Database
@@ -9,24 +9,23 @@ Tags: Computer Science, programming, Rust, database, crate, SQL
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-https://crates.io/crates/rusqlite
-Ergonomic wrapper for SQLite.
+## [rusqlite](https://crates.io/crates/rusqlite)
+[rusqlite](https://crates.io/crates/rusqlite)
+is an ergonomic wrapper for SQLite.
 
-## Databases
-
-### [serde](https://crates.io/crates/serde)
+## [serde](https://crates.io/crates/serde)
 [serde](https://crates.io/crates/serde)
 is a framework for serializing and deserializing Rust data structures efficiently and generically.
 
-### [sled](https://github.com/spacejam/sled)
+## [sled](https://github.com/spacejam/sled)
 [sled](https://github.com/spacejam/sled)
 is an embedded key-value pair databases written in Rust.
 
-### [indradb](https://github.com/indradb/indradb)
+## [indradb](https://github.com/indradb/indradb)
 [indradb](https://github.com/indradb/indradb)
 is a graph database written in rust.
 
-### [oxigraph/](https://github.com/oxigraph/oxigraph/)
+## [oxigraph/](https://github.com/oxigraph/oxigraph/)
 [oxigraph/](https://github.com/oxigraph/oxigraph/)
 Oxigraph is a graph database implementing the SPARQL standard.
 Its goal is to provide a compliant, safe, 

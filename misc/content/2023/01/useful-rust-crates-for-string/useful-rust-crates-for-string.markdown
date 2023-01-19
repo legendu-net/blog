@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 15:42:22
-Modified: 2023-01-13 16:44:27
+Modified: 2023-01-18 22:07:55
 Author: Benjamin Du
 Slug: useful-rust-crates-for-string
 Title: Useful Rust Crates for String
@@ -9,11 +9,14 @@ Tags: Computer Science, programming, Rust, string, str, manipulation
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-https://crates.io/crates/bstr
+## [bstr](https://crates.io/crates/bstr)
+[bstr](https://crates.io/crates/bstr)
 A string type that is not required to be valid UTF-8.
 
-https://crates.io/crates/arcstr
-A better reference-counted string type, with zero-cost (allocation-free) support for string literals, and reference counted substrings.
+## [arcstr](https://crates.io/crates/arcstr)
+[arcstr](https://crates.io/crates/arcstr)
+is a better reference-counted string type, 
+with zero-cost (allocation-free) support for string literals, and reference counted substrings.
 
 
 ## [atoi-rs](https://github.com/pacman82/atoi-rs)

@@ -5,7 +5,7 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2023-01-16 18:51:46
+Modified: 2023-01-17 15:45:16
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
@@ -63,6 +63,18 @@ that may accidentally blow the stack.
 
 [serde_stacker](https://crates.io/crates/serde_stacker)
 Serde adapter that avoids stack overflow by dynamically growing the stack
+
+### [shared_memory](https://github.com/elast0ny/shared_memory)
+[shared_memory](https://github.com/elast0ny/shared_memory)
+A crate that allows you to share memory between processes.
+This crate provides lightweight wrappers around shared memory APIs in an OS agnostic way. 
+It is intended to be used with it's sister crate raw_sync 
+which provide simple primitves to synchronize access to the shared memory (Mutex, RwLock, Events, etc).
+
+### [rust-scudo](https://github.com/google/rust-scudo)
+[rust-scudo](https://github.com/google/rust-scudo)
+contains the Rust bindings for the Scudo hardened allocator.
+
 
 ## Macros
 

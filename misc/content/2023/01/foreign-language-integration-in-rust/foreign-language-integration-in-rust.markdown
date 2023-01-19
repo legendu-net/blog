@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:20:03
-Modified: 2023-01-14 00:51:04
+Modified: 2023-01-18 11:16:06
 Author: Benjamin Du
 Slug: foreign-language-integration-in-rust
 Title: Foreign Language Integration in Rust
@@ -49,6 +49,14 @@ that provides convenient (but still unsafe) access to this API.
 ### [rust-cpp](https://github.com/mystor/rust-cpp)
 [rust-cpp](https://github.com/mystor/rust-cpp)
 is a build tool & macro which enables you to write C++ code inline in your rust code.
+
+### [crubit](https://github.com/google/crubit)
+[crubit](https://github.com/google/crubit)
+is a C++/Rust bidirectional interop tool.
+
+### [autocxx](https://github.com/google/autocxx)
+[autocxx](https://github.com/google/autocxx)
+is a tool for calling C++ from Rust in a heavily automated, but safe, fashion.
 
 ### [inline-python](https://github.com/fusion-engineering/inline-python)
 [inline-python](https://github.com/fusion-engineering/inline-python)

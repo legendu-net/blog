@@ -1,11 +1,11 @@
 Status: published
 Date: 2023-01-13 10:42:03
-Modified: 2023-01-13 11:39:44
+Modified: 2023-01-17 10:52:52
 Author: Benjamin Du
 Slug: rust-for-iot
 Title: Rust for IoT
 Category: Computer Science
-Tags: Computer Science, programming, Rust, IoT, RTOS, OS, embeded
+Tags: Computer Science, programming, Rust, IoT, RTOS, OS, embeded, embed, hardware
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -56,3 +56,11 @@ On supported CPUs,
 Rust can be used to develop RIOT applications. 
 Support is indicated in the has_rust_target feature, 
 and tested for in applications using the Makefile line FEATURES_REQUIRED += rust_target.
+
+## References
+
+- [6 Things I Wish I Knew Starting with Embedded Rust](https://apollolabsblog.hashnode.dev/6-things-i-wish-i-knew-starting-with-embedded-rust)
+
+- [Embedded Rust & Embassy: UART Serial Communication](https://apollolabsblog.hashnode.dev/embedded-rust-embassy-uart-serial-communication)
+
+- [Rust for Robots](https://www.legendu.net/misc/blog/rust-for-robots)

@@ -5,7 +5,7 @@ Author: Benjamin Du
 Slug: rust-crates-for-parallel-concurrency-and-async
 Title: Rust Crates for Parallel Concurrency and Async
 Category: Computer Science
-Tags: Computer Science, programming, Rust, crate, parallel, concurrency, async
+Tags: Computer Science, programming, Rust, crate, parallel, concurrency, async, distributed
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -28,3 +28,18 @@ is an event-driven, non-blocking I/O platform for writing asynchronous I/O backe
 is a data-parallelism library for Rust. 
 It is extremely lightweight and makes it easy to convert a sequential computation into a parallel one. 
 It also guarantees data-race freedom.
+
+https://crates.io/crates/bus
+A lock-free, bounded, single-producer, multi-consumer, broadcast channel.
+
+
+## Distributed
+
+https://crates.io/crates/zmq
+High-level bindings to the zeromq library
+
+
+[ockam](https://github.com/ockam-network/ockam)
+
+https://crates.io/crates/riker
+Easily build fast, highly concurrent and resilient applications. An Actor Framework for Rust.

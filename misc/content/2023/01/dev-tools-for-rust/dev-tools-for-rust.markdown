@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:02:14
-Modified: 2023-01-13 16:02:14
+Modified: 2023-01-19 20:21:24
 Author: Benjamin Du
 Slug: dev-tools-for-rust
 Title: Dev Tools for Rust
@@ -110,4 +110,10 @@ Dylint is a Rust linting tool, similar to Clippy.
 But whereas Clippy runs a predetermined, static set of lints, 
 Dylint runs lints from user-specified, dynamic libraries. 
 Thus, Dylint allows developers to maintain their own personal lint collections.
+
+### [app-template](https://github.com/knurling-rs/app-template)
+[app-template](https://github.com/knurling-rs/app-template)
+quickly sets up a `probe-run` + `defmt` + `flip-link` embedded project
+.
+
 

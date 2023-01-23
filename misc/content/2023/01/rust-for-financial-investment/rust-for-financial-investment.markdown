@@ -9,6 +9,13 @@ Tags: Computer Science, programming, Rust, finance, financial, investment, tradi
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+## [hyperswitch](https://github.com/juspay/hyperswitch)
+[hyperswitch](https://github.com/juspay/hyperswitch)
+is a Payment Switch 
+that lets you connect with multiple payment processors 
+with a single API integration. 
+Once integrated, you can add new payment processors and route traffic effortlessly. 
+
 ## [investments](https://crates.io/crates/investments)
 [investments](https://crates.io/crates/investments)
 helps you with managing your investments

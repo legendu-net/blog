@@ -8,13 +8,3 @@ Category: Computer Science
 Tags: Computer Science, programming, Python, dev, development, stub, pandas
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-
-- [pandas-stubs](https://pypi.org/project/pandas-stubs/)
-
-- [yapf](https://github.com/google/yapf)
-
-- [pylint](https://github.com/PyCQA/pylint)
-
-- [pytype](https://github.com/google/pytype)
-
-- [pytest](https://github.com/pytest-dev/pytest)

@@ -5,7 +5,7 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2023-01-17 15:45:16
+Modified: 2023-01-19 12:00:45
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
@@ -82,6 +82,13 @@ contains the Rust bindings for the Scudo hardened allocator.
 [proc-macro2](https://crates.io/crates/proc-macro2)
 is a substitute implementation of the compiler's `proc_macro` API 
 to decouple token-based libraries from the procedural macro use case.
+
+## Plug-in System
+
+### [extism](https://github.com/extism/extism)
+[extism](https://github.com/extism/extism)
+is an universal plug-in System
+which allows you to extend anything with WebAssembly.
 
 ## References
 

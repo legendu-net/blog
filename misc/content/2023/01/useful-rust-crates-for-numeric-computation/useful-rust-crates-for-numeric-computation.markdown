@@ -23,6 +23,10 @@ providess procedural macros to derive numeric traits in Rust.
 [num-traits](https://crates.io/crates/num-traits)
 provides numeric traits for generic mathematics in Rust.
 
+## [ux](https://crates.io/crates/ux)
+[ux](https://crates.io/crates/ux)
+implements non standard integers.
+
 ## [enum_primitive](https://crates.io/crates/enum_primitive)
 [enum_primitive](https://crates.io/crates/enum_primitive)
 is a macro to generate `num::FromPrimitive` instances for enum that works in Rust 1.0+.

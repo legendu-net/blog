@@ -4,24 +4,44 @@ Author: Ben Chuanlong Du
 Slug: useful-tools-for-python-developing
 Title: Useful Tools for Python Developing
 Category: Computer Science
-Tags: programming, Python development, command-line, pylint, yapf, pdb, linter, formatting, debugging
-Modified: 2020-08-08 10:46:18
+Tags: programming, Python, development, command-line, pylint, yapf, pdb, linter, formatting, debugging, dev, lint, format, dead code, type, annotation
+Modified: 2023-01-19 12:30:08
 
+
+[vulture](https://github.com/jendrikseipp/vulture)
+finds unused code in Python programs. 
+It is useful for cleaning up and finding errors in large code bases. 
+
+- [pandas-stubs](https://pypi.org/project/pandas-stubs/)
+
+- [pytype](https://github.com/google/pytype)
+
+- [pytest](https://github.com/pytest-dev/pytest)
 
 ## Lint Python Scripts
 
-- [isort](http://www.legendu.net/misc/blog/sort-python-imports-using-isort/)
+### [ruff](https://github.com/charliermarsh/ruff/)
+[ruff](https://github.com/charliermarsh/ruff/)
+is an extremely fast Python linter, written in Rust.
 
-- [pylint](http://www.legendu.net/misc/blog/pylint-tips/)
 
-- [darglint](https://github.com/terrencepreilly/darglint) checks that the docstring description matches the definition.
+### [pylint](http://www.legendu.net/misc/blog/pylint-tips/)
+[pylint](http://www.legendu.net/misc/blog/pylint-tips/)
 
-- [coala](https://github.com/coala/coala/) provides a unified command-line interface 
-    for linting and fixing all your code, regardless of the programming languages you use.
+### [flake8](http://www.legendu.net/misc/blog/use-flake8-to-lint-python-scripts/)
+[flake8](http://www.legendu.net/misc/blog/use-flake8-to-lint-python-scripts/)
 
-- [Type Annotation](http://www.legendu.net/misc/blog/type-annotation-in-python/)
+1. `Flake8` focus on logical errors rather than stylistic errors.
+    It strives to reduce false positives.
+
+2. `pylint` performs deeper analysis and thus is slower.
+
 
 ## Formatting
+
+The Python package 
+[black](https://github.com/ambv/black)
+is the best formatting tool for Python currently.
 
 1. [yapf](https://github.com/google/yapf)
 
@@ -36,7 +56,21 @@ for detailed comparison between yapf and black.
 
 ## [Debugging, Unit Testing and CICD](http://www.legendu.net/misc/blog/unit-testing-debugging-python/)
 
-## References
+
+## Reference
+
+- [Type Annotation in Python](http://www.legendu.net/misc/blog/type-annotation-in-python/)
+
+- [isort](http://www.legendu.net/misc/blog/sort-python-imports-using-isort/)
+
+- [pylint](http://www.legendu.net/misc/blog/pylint-tips/)
+
+- [darglint](https://github.com/terrencepreilly/darglint) checks that the docstring description matches the definition.
+
+- [coala](https://github.com/coala/coala/) provides a unified command-line interface 
+    for linting and fixing all your code, regardless of the programming languages you use.
+
+- [Type Annotation](http://www.legendu.net/misc/blog/type-annotation-in-python/)
 
 
 https://cjolowicz.github.io/posts/hypermodern-python-01-setup/
@@ -47,4 +81,3 @@ https://cjolowicz.github.io/posts/hypermodern-python-03-linting/#managing-depend
 
 https://cjolowicz.github.io/posts/hypermodern-python-02-testing/#code-coverage-with-coveragepy
 
-https://github.com/life4/awesome-python-code-formatters

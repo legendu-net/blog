@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:02:14
-Modified: 2023-01-19 20:21:24
+Modified: 2023-01-24 02:08:22
 Author: Benjamin Du
 Slug: dev-tools-for-rust
 Title: Dev Tools for Rust
@@ -9,8 +9,18 @@ Tags: Computer Science, programming, Rust, dev, development, develop, tool, carg
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-https://crates.io/crates/cargo-careful
-Execute Rust code carefully, with extra checking along the way
+## Online Tools
+
+- [Rust Playground](https://play.rust-lang.org/)
+
+- [GodBolt - Compiler Explorer](https://godbolt.org/)
+
+## Rust Dev Tools
+
+### [cargo-careful](https://crates.io/crates/cargo-careful)
+[cargo-careful](https://crates.io/crates/cargo-careful)
+execute Rust code carefully, 
+with extra checking along the way.
 
 ### [cargo-semver-checks](https://crates.io/crates/cargo-semver-checks)
 [cargo-semver-checks](https://crates.io/crates/cargo-semver-checks)
@@ -111,9 +121,19 @@ But whereas Clippy runs a predetermined, static set of lints,
 Dylint runs lints from user-specified, dynamic libraries. 
 Thus, Dylint allows developers to maintain their own personal lint collections.
 
+### [cargo-generate](https://github.com/cargo-generate/cargo-generate)
+[cargo-generate](https://github.com/cargo-generate/cargo-generate)
+is a developer tool to help you get up and running quickly 
+with a new Rust project by leveraging a pre-existing git repository as a template.
+
 ### [app-template](https://github.com/knurling-rs/app-template)
 [app-template](https://github.com/knurling-rs/app-template)
 quickly sets up a `probe-run` + `defmt` + `flip-link` embedded project
 .
+
+### [cargo-deb](https://crates.io/crates/cargo-deb)
+[cargo-deb](https://crates.io/crates/cargo-deb)
+is a Cargo helper command 
+which automatically creates binary Debian packages (.deb) from Cargo projects.
 
 

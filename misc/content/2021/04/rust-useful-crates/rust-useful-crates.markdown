@@ -78,10 +78,8 @@ contains the Rust bindings for the Scudo hardened allocator.
 
 ## Macros
 
-### [proc-macro2](https://crates.io/crates/proc-macro2)
-[proc-macro2](https://crates.io/crates/proc-macro2)
-is a substitute implementation of the compiler's `proc_macro` API 
-to decouple token-based libraries from the procedural macro use case.
+[Develop Macros in Rust](https://www.legendu.net/misc/blog/develop-macros-in-rust)
+
 
 ## References
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:35:52
-Modified: 2023-01-17 11:13:11
+Modified: 2023-01-20 16:34:04
 Author: Benjamin Du
 Slug: useful-rust-crates-for-numeric-computation
 Title: Useful Rust Crates for Numeric Computation
@@ -43,7 +43,19 @@ and statically-sized or dynamically-sized matrices.
 is an n-dimensional array for general elements and for numerics. 
 Lightweight array views and slicing; views support chunking and splitting.
 
-https://crates.io/crates/arrayfire
-ArrayFire is a high performance software library for parallel computing with an easy-to-use API. Its array based function set makes parallel programming simple. ArrayFire's multiple backends (CUDA, OpenCL and native CPU) make it platform independent and highly portable. A few lines of code in ArrayFire can replace dozens of lines of parallel computing code, saving you valuable time and lowering development costs. This crate provides Rust bindings for ArrayFire library.
+## [arrayfire](https://crates.io/crates/arrayfire)
+[ArrayFire](https://crates.io/crates/arrayfire)
+is a high performance software library 
+for parallel computing with an easy-to-use API. 
+Its array based function set makes parallel programming simple. 
+ArrayFire's multiple backends (CUDA, OpenCL and native CPU) 
+make it platform independent and highly portable. 
+A few lines of code in ArrayFire can replace dozens of lines of parallel computing code, 
+saving you valuable time and lowering development costs. 
+This crate provides Rust bindings for ArrayFire library.
 
+## [sphrs](https://crates.io/crates/sphrs)
+[sphrs](https://crates.io/crates/sphrs)
+provides spherical harmonics and solid harmonics
+.
 

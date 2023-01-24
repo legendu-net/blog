@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:02:14
-Modified: 2023-01-19 20:21:24
+Modified: 2023-01-24 02:08:22
 Author: Benjamin Du
 Slug: dev-tools-for-rust
 Title: Dev Tools for Rust
@@ -130,4 +130,10 @@ with a new Rust project by leveraging a pre-existing git repository as a templat
 [app-template](https://github.com/knurling-rs/app-template)
 quickly sets up a `probe-run` + `defmt` + `flip-link` embedded project
 .
+
+### [cargo-deb](https://crates.io/crates/cargo-deb)
+[cargo-deb](https://crates.io/crates/cargo-deb)
+is a Cargo helper command 
+which automatically creates binary Debian packages (.deb) from Cargo projects.
+
 

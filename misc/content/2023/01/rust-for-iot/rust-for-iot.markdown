@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 10:42:03
-Modified: 2023-01-17 10:52:52
+Modified: 2023-01-23 12:49:02
 Author: Benjamin Du
 Slug: rust-for-iot
 Title: Rust for IoT
@@ -56,6 +56,21 @@ On supported CPUs,
 Rust can be used to develop RIOT applications. 
 Support is indicated in the has_rust_target feature, 
 and tested for in applications using the Makefile line FEATURES_REQUIRED += rust_target.
+
+## Embedded
+
+[PlatformIO](https://platformio.org/)
+is a professional collaborative platform for embedded development
+.
+
+
+[Learning Rust For Embedded Systems](https://www.embeddedrelated.com/showarticle/1432.php)
+
+https://pfesenmeier.github.io/wsl2-and-embedded-development/
+
+https://mabez.dev/blog/posts/esp-rust-18-10-2021/
+
+[Safe & Portable Data Structure Design](https://www.youtube.com/watch?v=1UtklNrB8XA&t=1619s)
 
 ## References
 

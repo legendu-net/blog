@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-08 21:33:57
-Modified: 2023-01-08 23:12:24
+Modified: 2023-01-24 19:49:09
 Author: Benjamin Du
 Slug: tips-on-bytehound
 Title: Tips on Bytehound
@@ -9,6 +9,9 @@ Tags: Computer Science, programming, Rust, Bytehound, memory, profiling
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+Bytehound works with Rust stable 
+(Rust nightly is not required)
+.
 
 ## Installation
 
@@ -16,6 +19,12 @@ Tags: Computer Science, programming, Rust, Bytehound, memory, profiling
     npm install -g yarn
     cargo build --release -p bytehound-preload
     cargo build --release -p bytehound-cli
+
+Or if you use 
+[icon](https://github.com/legendu-net/icon),
+
+    :::bash
+    icon bytehound -ic
 
 ## Usage
 

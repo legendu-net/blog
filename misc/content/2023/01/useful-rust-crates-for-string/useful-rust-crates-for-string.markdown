@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 15:42:22
-Modified: 2023-01-18 22:07:55
+Modified: 2023-01-24 20:15:58
 Author: Benjamin Du
 Slug: useful-rust-crates-for-string
 Title: Useful Rust Crates for String
@@ -52,4 +52,10 @@ provides parser and evaluator for Cargo's flavor of Semantic Versioning.
 [jetscii](https://github.com/shepmaster/jetscii)
 A tiny library to efficiently search strings for sets of ASCII characters 
 and byte slices for sets of bytes.
+
+## [fluent-rs](https://github.com/projectfluent/fluent-rs)
+[fluent-rs](https://github.com/projectfluent/fluent-rs)
+Rust implementation of Fluent 
+which is a localization system
+for natural-sounding translations.
 

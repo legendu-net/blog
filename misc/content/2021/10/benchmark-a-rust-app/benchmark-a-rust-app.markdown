@@ -39,6 +39,14 @@ Tags: Computer Science, programming, Rust, bench, benchmark, cargo, cargo-bench,
     - cargo-criterion
     - [criterion-perf-events](https://crates.io/crates/criterion-perf-events)
         This is a measurement plugin for Criterion.rs to measure events of the Linux perf interface.
+    - [criterion-cycles-per-byte](https://crates.io/crates/criterion-cycles-per-byte)
+        measures (proportional) clock cycles using the x86 or x86_64 `rdtsc` instruction.
+        Notice that RDTSC 
+        (and thus [criterion-cycles-per-byte](https://crates.io/crates/criterion-cycles-per-byte))
+        does not measure accurate CPU cycles.
+        Please refer to
+        [RDTSC does not measure cycles](https://github.com/wainwrightmark/criterion-cycles-per-byte/issues/1)
+        for detailed discussions.
     - [criterion-linux-perf](https://crates.io/crates/criterion-linux-perf)
         A measurement plugin for Criterion.rs that provides measurements using Linux's perf interface
 

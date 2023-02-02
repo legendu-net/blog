@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-12-24 09:50:50
-Modified: 2022-07-18 16:53:54
+Modified: 2023-01-31 09:49:31
 Author: Benjamin Du
 Slug: rust-async-multithreading-parallel
 Title: Async, Multithreading and Parallel Computing in Rust
@@ -30,4 +30,12 @@ provides a thread pool for running a number of jobs on a fixed set of worker thr
 ## [scheduled-thread-pool](https://crates.io/crates/scheduled-thread-pool)
 [scheduled-thread-pool](https://crates.io/crates/scheduled-thread-pool)
 provides a thread pool which can schedule execution at a specific delay and repeat it periodically.
+
+## [deadpool](https://crates.io/crates/deadpool)
+[Deadpool](https://crates.io/crates/deadpool)
+is a dead simple async pool for connections and objects of any type.
+
+## [mobc](https://crates.io/crates/mobc)
+[mobc](https://crates.io/crates/mobc)
+is a generic connection pool with async/await support.
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:35:52
-Modified: 2023-01-20 16:34:04
+Modified: 2023-01-31 09:58:26
 Author: Benjamin Du
 Slug: useful-rust-crates-for-numeric-computation
 Title: Useful Rust Crates for Numeric Computation
@@ -62,4 +62,9 @@ This crate provides Rust bindings for ArrayFire library.
 [sphrs](https://crates.io/crates/sphrs)
 provides spherical harmonics and solid harmonics
 .
+
+## [argmin](https://crates.io/crates/argmin)
+[argmin](https://crates.io/crates/argmin)
+is a numerical optimization library written entirely in Rust.
+
 

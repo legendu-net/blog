@@ -38,6 +38,10 @@ https://crates.io/crates?sort=downloads
 
 ## [Rust for Frontend Development](https://www.legendu.net/misc/blog/rust-for-frontend-development) 
 
+## [Parsing Command-line Arguments in Rust](https://www.legendu.net/misc/blog/parsing-command-line-arguments-in-rust) 
+
+## [Useful Rust Crates for Developing Command Line Apps](https://www.legendu.net/misc/blog/useful-rust-crates-for-developing-command-line-apps) 
+
 ## [Great Command Line Tools Developed in Rust](https://www.legendu.net/misc/blog/great-command-line-tools-developed-in-rust)
 
 ## [Rust Crates for RPC](https://www.legendu.net/misc/blog/rust-crates-for-rpc) 

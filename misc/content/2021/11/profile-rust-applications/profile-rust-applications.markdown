@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2023-01-18 22:10:26
+Modified: 2023-01-31 10:15:31
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -69,6 +69,11 @@ is preferred for several reasons.
 
 3. Valgrind is more powerful and flexible 
     and can be used for profiling other porgramming languages too.
+
+### [puffin](https://github.com/EmbarkStudios/puffin)
+[puffin](https://github.com/EmbarkStudios/puffin)
+is a friendly little instrumentation profiler for Rust.
+
 
 ## Memory Profiling
 

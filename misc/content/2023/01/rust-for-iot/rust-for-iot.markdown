@@ -59,6 +59,8 @@ and tested for in applications using the Makefile line FEATURES_REQUIRED += rust
 
 ## Embedded
 
+[Rust Embedded Org @ GitHub](https://github.com/orgs/rust-embedded/repositories)
+
 [PlatformIO](https://platformio.org/)
 is a professional collaborative platform for embedded development
 .
@@ -71,6 +73,12 @@ https://pfesenmeier.github.io/wsl2-and-embedded-development/
 https://mabez.dev/blog/posts/esp-rust-18-10-2021/
 
 [Safe & Portable Data Structure Design](https://www.youtube.com/watch?v=1UtklNrB8XA&t=1619s)
+
+[not-yet-awesome-embedded-rust](https://github.com/rust-embedded/not-yet-awesome-embedded-rust)
+is a collection of items that are not yet awesome in Embedded Rust
+.
+
+
 
 ## References
 

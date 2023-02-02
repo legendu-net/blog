@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:14:03
-Modified: 2023-01-18 22:11:17
+Modified: 2023-01-31 09:56:50
 Author: Benjamin Du
 Slug: useful-rust-crates-for-developing-command-line-apps
 Title: Useful Rust Crates for Developing Command Line Apps
@@ -23,4 +23,12 @@ is a simple to use, efficient, and full-featured Command Line Argument Parser.
 ## [prodash](https://crates.io/crates/prodash)
 [prodash](https://crates.io/crates/prodash)
 is a dashboard for visualizing progress of asynchronous and possibly blocking tasks.
+
+## [crossterm](https://crates.io/crates/crossterm)
+[Crossterm](https://crates.io/crates/crossterm)
+is a pure-rust, terminal manipulation library 
+that makes it possible to write cross-platform text-based interfaces. 
+It supports all UNIX and Windows terminals down to Windows 7 
+.
+
 

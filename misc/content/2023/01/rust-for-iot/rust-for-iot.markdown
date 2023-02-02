@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 10:42:03
-Modified: 2023-01-23 12:49:02
+Modified: 2023-01-24 20:14:28
 Author: Benjamin Du
 Slug: rust-for-iot
 Title: Rust for IoT
@@ -64,6 +64,19 @@ and tested for in applications using the Makefile line FEATURES_REQUIRED += rust
 [PlatformIO](https://platformio.org/)
 is a professional collaborative platform for embedded development
 .
+
+### [probe-rs](https://github.com/probe-rs/probe-rs)
+[probe-rs](https://github.com/probe-rs/probe-rs)
+is a debugging toolset and library 
+for debugging embedded ARM and RISC-V targets on a separate host
+.
+
+### [probe-run](https://github.com/knurling-rs/probe-run)
+[probe-run](https://github.com/knurling-rs/probe-run)
+is a custom Cargo runner 
+that transparently runs Rust firmware on an embedded device.
+probe-run is powered by probe-rs 
+and thus supports all the devices and probes supported by probe-rs.
 
 
 [Learning Rust For Embedded Systems](https://www.embeddedrelated.com/showarticle/1432.php)

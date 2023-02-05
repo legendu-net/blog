@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2023-02-02 22:01:20
+Modified: 2023-02-05 09:15:50
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -24,6 +24,12 @@ exa
 procs
 
 sd
+
+## [tokei](https://github.com/XAMPPRocky/tokei)
+[Tokei](https://github.com/XAMPPRocky/tokei)
+is a program that displays statistics about your code. 
+Tokei will show the number of files, 
+total lines within those files and code, comments, and blanks grouped by language.
 
 ## [dust](https://github.com/bootandy/dust)
 [Dust](https://github.com/bootandy/dust)

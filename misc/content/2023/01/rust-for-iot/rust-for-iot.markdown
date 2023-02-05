@@ -78,6 +78,9 @@ that transparently runs Rust firmware on an embedded device.
 probe-run is powered by probe-rs 
 and thus supports all the devices and probes supported by probe-rs.
 
+### [discovery](https://github.com/rust-embedded/discovery)
+[Discovery](https://github.com/rust-embedded/discovery)
+is a book introducing microcontrollers and how to use Rust with them.
 
 [Learning Rust For Embedded Systems](https://www.embeddedrelated.com/showarticle/1432.php)
 

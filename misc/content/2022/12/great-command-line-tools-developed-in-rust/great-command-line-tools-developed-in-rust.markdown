@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2023-01-13 15:33:20
+Modified: 2023-02-02 22:01:20
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -94,7 +94,13 @@ grex
 [zoxide](https://crates.io/crates/zoxide)
 is a smarter cd command for your terminal.
 
-delta
+## [delta](https://github.com/dandavison/delta)
+[delta](https://github.com/dandavison/delta)
+is a syntax-highlighting pager for git, diff, and grep output.
+
+## [difftastic](https://github.com/Wilfred/difftastic)
+[Difftastic](https://github.com/Wilfred/difftastic)
+is a structural diff tool that compares files based on their syntax.
 
 ## [gping](https://github.com/orf/gping)
 [gping](https://github.com/orf/gping)
@@ -107,6 +113,10 @@ is an extremely fast Python linter, written in Rust.
 ## [Rome](https://github.com/rome/tools)
 [Rome](https://github.com/rome/tools)
 provides unified developer tools for JavaScript, TypeScript, and the web.
+
+## [carbonyl](https://github.com/fathyb/carbonyl)
+[Carbonyl](https://github.com/fathyb/carbonyl)
+is a Chromium based browser built to run in a terminal.
 
 ## Good Ones but Which I Won't Use
 

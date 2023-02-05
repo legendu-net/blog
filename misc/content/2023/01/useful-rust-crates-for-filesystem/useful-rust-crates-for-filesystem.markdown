@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 15:40:23
-Modified: 2023-01-18 22:16:26
+Modified: 2023-02-02 21:58:15
 Author: Benjamin Du
 Slug: useful-rust-crates-for-filesystem
 Title: Useful Rust Crates for Filesystem
@@ -29,6 +29,12 @@ opens a path or URL using the program configured on the system.
 [notify](https://crates.io/crates/notify)
 is a cross-platform filesystem notification library
 .
+
+## [walkdir](https://crates.io/crates/walkdir)
+[walkdir](https://crates.io/crates/walkdir)
+is a cross platform Rust library for efficiently walking a directory recursively. 
+Comes with support for following symbolic links, 
+controlling the number of open file descriptors and efficient mechanisms for pruning the entries in the directory tree.
 
 ## References
 

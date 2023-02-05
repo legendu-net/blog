@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:02:14
-Modified: 2023-01-24 02:08:22
+Modified: 2023-02-05 10:00:02
 Author: Benjamin Du
 Slug: dev-tools-for-rust
 Title: Dev Tools for Rust
@@ -10,6 +10,8 @@ Tags: Computer Science, programming, Rust, dev, development, develop, tool, carg
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Online Tools
+
+- [Rust Explorer](https://www.rustexplorer.com/b)
 
 - [Rust Playground](https://play.rust-lang.org/)
 
@@ -135,5 +137,10 @@ quickly sets up a `probe-run` + `defmt` + `flip-link` embedded project
 [cargo-deb](https://crates.io/crates/cargo-deb)
 is a Cargo helper command 
 which automatically creates binary Debian packages (.deb) from Cargo projects.
+
+### [cross](https://crates.io/crates/cross)
+[cross](https://crates.io/crates/cross)
+provides "Zero setup" cross compilation and "cross testing" of Rust crates
+.
 
 

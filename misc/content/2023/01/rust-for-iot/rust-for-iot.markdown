@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 10:42:03
-Modified: 2023-01-24 20:14:28
+Modified: 2023-02-05 10:02:36
 Author: Benjamin Du
 Slug: rust-for-iot
 Title: Rust for IoT
@@ -63,6 +63,11 @@ and tested for in applications using the Makefile line FEATURES_REQUIRED += rust
 
 [PlatformIO](https://platformio.org/)
 is a professional collaborative platform for embedded development
+.
+
+### [cross](https://crates.io/crates/cross)
+[cross](https://crates.io/crates/cross)
+provides "Zero setup" cross compilation and "cross testing" of Rust crates
 .
 
 ### [probe-rs](https://github.com/probe-rs/probe-rs)

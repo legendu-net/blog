@@ -5,7 +5,7 @@ Slug: android-emulators
 Title: Android Emulators
 Category: Software
 Tags: software, Android, emulation, emulator, AnBox, VirtualBox, xDroid
-Modified: 2022-10-20 23:03:44
+Modified: 2023-02-05 10:15:15
 
 
 <table style="width:100%">
@@ -52,14 +52,36 @@ Modified: 2022-10-20 23:03:44
   </tr>
   <tr>
     <td> 
-    <a href="https://www.anbox.io"> AnBox </a>
-    <a href="#footnote4">[4]</a>
+    <a href="https://www.linzhuotech.com/index.php/home/index/xdroid.html"> xDroid </a>
+    <a href="#footnote1">[9]</a>
+    </td>
+    <td> Partially </td>
+    <td> Linux </td>
+    <td> NA </td>
+    <td> Limited </td>
+    <td> Active </td>
+  </tr>
+  <tr>
+    <td> 
+    <a href="https://waydro.id/"> Waydroid </a>
+    <a href="#footnote1">[11]</a>
     </td>
     <td> Yes </td>
     <td> Linux </td>
     <td> NA </td>
-    <td> Limited </td>
-    <td> Inactive </td>
+    <td> Yes </td>
+    <td> Active </td>
+  </tr>
+  <tr>
+    <td> 
+    <a href="https://anbox-cloud.io/"> AnBox Cloud </a>
+    <a href="#footnote4">[4]</a>
+    </td>
+    <td> No </td>
+    <td> Windows, macOS, Linux </td>
+    <td> NA </td>
+    <td> ? </td>
+    <td> Active </td>
   </tr>
   <tr>
     <td> 
@@ -102,28 +124,6 @@ Modified: 2022-10-20 23:03:44
     <td> Yes </td>
     <td> Windows, macOS, Linux </td>
     <td> ? </td>
-    <td> Yes </td>
-    <td> Active </td>
-  </tr>
-  <tr>
-    <td> 
-    <a href="https://www.linzhuotech.com/index.php/home/index/xdroid.html"> xDroid </a>
-    <a href="#footnote1">[9]</a>
-    </td>
-    <td> Partially </td>
-    <td> Linux </td>
-    <td> NA </td>
-    <td> Limited </td>
-    <td> Active </td>
-  </tr>
-  <tr>
-    <td> 
-    <a href="https://waydro.id/"> Waydroid </a>
-    <a href="#footnote1">[9]</a>
-    </td>
-    <td> Yes </td>
-    <td> Linux </td>
-    <td> NA </td>
     <td> Yes </td>
     <td> Active </td>
   </tr>
@@ -191,6 +191,9 @@ The x86_64 version is free for personal use.
 [10] Docker-Android is a docker image 
 built to be used for everything 
 related to mobile website testing and Android project.
+
+[11] Waydroid is a container-based approach to boot a full Android system on a regular GNU/Linux system like Ubuntu.
+It is a successor of AnBox.
 
 ## References 
 

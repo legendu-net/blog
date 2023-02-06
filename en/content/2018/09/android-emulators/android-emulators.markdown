@@ -5,7 +5,7 @@ Slug: android-emulators
 Title: Android Emulators
 Category: Software
 Tags: software, Android, emulation, emulator, AnBox, VirtualBox, xDroid
-Modified: 2023-02-05 10:15:15
+Modified: 2023-02-05 18:30:10
 
 
 <table style="width:100%">
@@ -55,7 +55,7 @@ Modified: 2023-02-05 10:15:15
     <a href="https://www.linzhuotech.com/index.php/home/index/xdroid.html"> xDroid </a>
     <a href="#footnote1">[9]</a>
     </td>
-    <td> Partially </td>
+    <td> Partial </td>
     <td> Linux </td>
     <td> NA </td>
     <td> Limited </td>

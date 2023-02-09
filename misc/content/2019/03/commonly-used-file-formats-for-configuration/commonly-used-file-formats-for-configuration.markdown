@@ -5,7 +5,7 @@ Slug: commonly-used-file-formats-for-configuration
 Title: Commonly Used File Formats for Configuration
 Category: Computer Science
 Tags: programming, configuration, JSON, YAML, TOML, XML, file format
-Modified: 2021-09-26 16:11:03
+Modified: 2023-02-08 13:31:20
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -48,6 +48,11 @@ https://stackoverflow.com/questions/648246/at-what-point-does-a-config-file-beco
 ### [jsonnet](https://github.com/google/jsonnet)
 [jsonnet](https://github.com/google/jsonnet)
 is the data templating language.
+
+### [KCLVM](https://github.com/KusionStack/KCLVM)
+[KCLVM](https://github.com/KusionStack/KCLVM)
+is a constraint-based record & functional language 
+mainly used in configuration and policy scenarios.
 
 ### [Dhall](https://github.com/dhall-lang/dhall-lang)
 

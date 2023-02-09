@@ -5,7 +5,7 @@ Slug: python-modules-for-visualization
 Title: Python Modules for Visualization
 Category: Computer Science
 Tags: programming, visualization, Python, HoloViews, bokeh, plotly, matplotlib, pandas, library
-Modified: 2021-05-08 10:20:38
+Modified: 2023-02-08 11:57:17
 
 **
 Things on this page are
@@ -22,6 +22,10 @@ It aims to showcase the awesome dataviz possibilities of python and to help you 
 ### [hvplot](https://github.com/pyviz/hvplot)
 
 A high-level plotting API for pandas, dask, xarray, and networkx built on HoloViews 
+
+### [visdom](https://github.com/fossasia/visdom)
+[Visdom](https://github.com/fossasia/visdom)
+is a flexible tool for creating, organizing, and sharing visualizations of live, rich data. 
 
 ### [Cufflink](https://github.com/santosjorge/cufflinks)
 

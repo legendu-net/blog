@@ -1,9 +1,9 @@
 Status: published
 Date: 2023-02-02 17:21:12
-Modified: 2023-02-02 17:25:42
+Modified: 2023-02-08 11:38:56
 Author: Benjamin Du
 Slug: cell-and-refcell-in-rust
-Title: Cell and Refcell in Rust
+Title: Cell and RefCell in Rust
 Category: Computer Science
 Tags: Computer Science, programming, Cell, RefCell, borrow checker, interior mutability
 

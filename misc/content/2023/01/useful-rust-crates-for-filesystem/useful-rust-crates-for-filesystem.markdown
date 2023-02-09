@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 15:40:23
-Modified: 2023-02-02 21:58:15
+Modified: 2023-02-08 11:40:58
 Author: Benjamin Du
 Slug: useful-rust-crates-for-filesystem
 Title: Useful Rust Crates for Filesystem
@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful, filesystem, fs
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## [std::fs](https://doc.rust-lang.org/std/fs/)
 
 ## [glob](https://crates.io/crates/glob)
 [glob](https://crates.io/crates/glob)

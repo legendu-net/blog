@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-06-16 22:44:54
-Modified: 2021-12-04 19:25:54
+Modified: 2023-02-12 00:46:53
 Author: Benjamin Du
 Slug: debug-a-rust-app
 Title: Debug a Rust Application
@@ -13,6 +13,8 @@ Tags: Computer Science, programming, debug, CodeLLDB, Rust, VSCode, Visual Studi
 1. Install the extension 
     [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
     .
+
+2. Uncheck "Pause on panic" (checked by default).
 
 ## Debug Rust Using rust-gdb
 

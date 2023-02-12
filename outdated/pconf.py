@@ -85,8 +85,7 @@ BLOG_DIR = Path(__file__).resolve().parent.parent
 THEME = BLOG_DIR / "themes/Flex"
 
 # plugins
-# PLUGIN_PATHS = ["plugins"]
-PLUGINS = ["render_math"]
+#PLUGINS = ["render_math"]
 ## jupyter
 MARKUP = ("md", "ipynb")
 IPYNB_MARKUP_USE_FIRST_CELL = True

@@ -5,9 +5,43 @@ Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
 Category: Software
 Tags: Data Science, JuptyerLab, Jupyter, notebook, deepnote
-Modified: 2022-12-26 11:35:09
+Modified: 2023-02-15 00:30:56
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## [Google Cloud Shell](https://cloud.google.com/shell/docs)
+Technically speaking,
+[Google Cloud Shell](https://cloud.google.com/shell/docs)
+is Jupyter/JupyterLab service.
+It is a always free small VM with 5GB persistent storage
+that Google Cloud Platform offers to its customers 
+to experiment with Google Cloud and manage projects and resources from web browsers. 
+However,
+the Google Cloud Shell can be used to run Jupyter/JupyterLab notebooks in 2 ways.
+
+1. Google Cloud Shell comes with Cloud Shell Editor
+    which is a cloud IDE based on Theia 
+    (which a cloud & desktop IDE framework implemented in TypeScript and is partly VSCode compatible)
+    .
+    With Cloud Shell Editor,
+    Jupyter/JupyterLab notebooks can be run 
+    (if the required notebook kernel is installed).
+
+2. You can manually install JupyterLab and launch a service. 
+
+A Cloud Shell VM is ephemeral and no system-wide change will persist beyond session end.
+There are 3 ways to circumvent this problem.
+
+1. Use a custom Docker image (recommended).
+    Please refer to
+    [container image customization](https://cloud.google.com/shell/docs/configuring-cloud-shell#container_image_customization)
+    for detailed instructions.
+
+2. Use a 
+    [environment customization script](https://cloud.google.com/shell/docs/configuring-cloud-shell#environment_customization_script)
+    .
+
+3. Install tools to your local directories which are persistent (not recommended).
 
 ## [GitPod](https://www.gitpod.io/)
 

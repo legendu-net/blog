@@ -5,7 +5,7 @@ Slug: tips-on-github-actions
 Title: Tips on GitHub Actions
 Category: Computer Science
 Tags: Computer Science, GitHub Actions, CICD
-Modified: 2022-07-25 00:27:46
+Modified: 2023-02-13 18:23:53
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -27,6 +27,26 @@ Please read with your own judgement!
     A simple solution to this problem is to manually create a repository secret (e.g., `GITHUBACTIONS`)
     and use it to autenticate the GitHub Action 
     [create-pull-request](https://github.com/peter-evans/create-pull-request) with `GITHUB_TOKEN` 
+    .
+
+3. Rust cannot be installed into a global location 
+    following instructions at 
+    [Install Rust Globally in Linux](https://www.legendu.net/en/blog/install-rust-globally/)
+    .
+    This might because GitHub Actions VMs have restrictions on environemnt variables.
+    You can still install Rust using root (via sudo)
+    but this doesn't give you much priviledge
+    as the root account in a GitHub Actions VM is restricted too.
+
+4. The `runner` account (even with `sudo`) in GitHub Actions VMs 
+    have restricted priviledges.
+    For example, 
+    the Linux perf (and equivalent) tools cannot be run in GitHub Actions VMs
+    even if `sudo` is used.
+    Docker containers running in GitHub Actions VMs are restricted too.
+    For more details,
+    please refer to
+    [Supported Linux capabilities](https://docs.github.com/en/actions/creating-actions/dockerfile-support-for-github-actions#supported-linux-capabilities)
     .
 
 3. OS: ubuntu-latest, windows-latest, macOS-latest

@@ -142,8 +142,12 @@ Tags: programming, IPython, shell, bash, xonsh, plumbum, Python, shell alternati
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
   <tr>
-    <td rowspan="5"> mv file1 file2 </td>
+    <td rowspan="6"> mv file1 file2 </td>
     <td bgcolor="#348017"> Path("file1").rename("file2") </td>
+    <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.rename"> pathlib </a> </td>
+  </tr>
+  <tr>
+    <td> Path("file1").replace("file2") </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.rename"> pathlib </a> </td>
   </tr>
   <tr>

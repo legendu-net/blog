@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-20 22:36:35
-Modified: 2023-01-13 16:52:10
+Modified: 2023-02-18 11:48:13
 Author: Benjamin Du
 Slug: summary-of-collections-in-rust
 Title: Summary of Collections in Rust
@@ -22,6 +22,10 @@ and when to use them.
 ![rust-collection-summary](https://user-images.githubusercontent.com/824507/151688238-88410b52-723d-4d31-bcb1-0a6c8580fb95.png)
 
 ## Third-party Collections and Related Tools
+
+### [elsa](https://github.com/Manishearth/elsa)
+[Elsa](https://github.com/Manishearth/elsa)
+provides append-only collections for Rust where borrows to entries can outlive insertions
 
 ### [itertools](https://crates.io/crates/itertools)
 [itertools](https://crates.io/crates/itertools)

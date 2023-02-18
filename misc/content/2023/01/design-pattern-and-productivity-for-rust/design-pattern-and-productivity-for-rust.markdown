@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:29:29
-Modified: 2023-02-12 00:41:47
+Modified: 2023-02-18 11:32:25
 Author: Benjamin Du
 Slug: design-pattern-and-productivity-for-rust
 Title: Design Pattern and Productivity for Rust

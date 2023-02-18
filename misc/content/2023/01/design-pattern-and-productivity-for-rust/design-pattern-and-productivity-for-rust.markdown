@@ -9,6 +9,9 @@ Tags: Computer Science, programming, Rust, design, pattern, productivity
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+## [derive_more](https://crates.io/crates/derive_more)
+[derive_more](https://crates.io/crates/derive_more)
+adds ``#[derive(x)]` macros for more traits.
 
 ## [derive_builder](https://crates.io/crates/derive_builder)
 [derive_builder](https://crates.io/crates/derive_builder)

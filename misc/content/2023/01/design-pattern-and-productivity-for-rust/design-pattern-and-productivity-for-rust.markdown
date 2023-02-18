@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:29:29
-Modified: 2023-02-12 00:41:47
+Modified: 2023-02-18 11:32:25
 Author: Benjamin Du
 Slug: design-pattern-and-productivity-for-rust
 Title: Design Pattern and Productivity for Rust
@@ -9,6 +9,9 @@ Tags: Computer Science, programming, Rust, design, pattern, productivity
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+## [derive_more](https://crates.io/crates/derive_more)
+[derive_more](https://crates.io/crates/derive_more)
+adds ``#[derive(x)]` macros for more traits.
 
 ## [derive_builder](https://crates.io/crates/derive_builder)
 [derive_builder](https://crates.io/crates/derive_builder)

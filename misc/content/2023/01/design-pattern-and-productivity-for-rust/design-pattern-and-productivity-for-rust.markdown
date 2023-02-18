@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:29:29
-Modified: 2023-01-13 16:39:37
+Modified: 2023-02-12 00:41:47
 Author: Benjamin Du
 Slug: design-pattern-and-productivity-for-rust
 Title: Design Pattern and Productivity for Rust
@@ -18,6 +18,13 @@ adds ``#[derive(x)]` macros for more traits.
 provides Rust macro to automatically implement the builder pattern for arbitrary structs. 
 A simple `#[derive(Builder)]` will generate a FooBuilder for your struct Foo 
 with all setter-methods and a build method.
+
+## [derive-adhoc](https://crates.io/crates/derive-adhoc)
+[derive-adhoc](https://crates.io/crates/derive-adhoc)
+allows you to write macros 
+which are driven by Rust data structures, 
+just like proc macro derive macros, 
+but without having to wrestle with the proc macro system.
 
 ## [validator](https://github.com/Keats/validator)
 [Validator](https://github.com/Keats/validator)

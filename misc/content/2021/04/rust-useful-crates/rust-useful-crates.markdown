@@ -5,7 +5,7 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2023-01-19 12:00:45
+Modified: 2023-02-11 23:24:55
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://crates.io/crates?sort=downloads
@@ -57,6 +57,16 @@ https://crates.io/crates?sort=downloads
 ## [Foreign Language Integration in Rust](https://www.legendu.net/misc/blog/foreign-language-integration-in-rust)
 
 ## [Rust for IoT](https://www.legendu.net/misc/blog/rust-for-iot)
+
+## Search Engines
+
+### [tantivy](https://crates.io/crates/tantivy)
+[tantivy](https://crates.io/crates/tantivy)
+is a full-text search engine library written in Rust.
+
+[Building a distributed search engine with tantivy](https://fosdem.org/2023/schedule/event/rust_building_a_distributed_search_engine_with_tantivy/)
+
+
 
 ## Memory Management
 

@@ -5,7 +5,7 @@ Slug: software-version-management-tools
 Title: Software Version Management Tools
 Category: Computer Science
 Tags: programming, software, version management, Git, pyenv, sdkman, rvm
-Modified: 2019-11-03 12:43:57
+Modified: 2023-02-21 11:06:09
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -24,6 +24,14 @@ Please read with your own judgement!
   <tr>
     <td> Python </td>
     <td> <a href="https://github.com/pyenv/pyenv"> pyenv </a> </td>
+  </tr>
+  <tr>
+    <td> NodeJS </td>
+    <td> <a href="https://github.com/tj/n"> n </a> </td>
+  </tr>
+  <tr>
+    <td> Rust </td>
+    <td> <a href="https://rustup.rs/"> Rustup </a> </td>
   </tr>
   <tr>
     <td> JVM Languages/Tools </td>

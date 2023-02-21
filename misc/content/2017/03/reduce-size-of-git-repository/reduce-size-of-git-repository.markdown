@@ -5,7 +5,7 @@ Slug: reduce-size-of-git-repository
 Title: Reduce Size of Git Repository
 Category: Software
 Tags: software, Git, repository, size
-Modified: 2019-05-23 07:43:12
+Modified: 2023-02-21 11:01:45
 
 **
 Things on this page are
@@ -18,12 +18,15 @@ Please read with your own judgement!
 Git Large File Storage (Git-LFS) is the recommended way to work with large files.
 Please read the following if have already committed large files into your repository.
 
-## Run `git gc --aggressive` Manually 
+## `git gc` + `git repack`
     
     :::bash
-    git gc --aggressive
+    git gc --prune=now --aggressive
+    git repack
 
-https://stackoverflow.com/questions/3313908/git-is-really-slow-for-100-000-objects-any-fixes
+[Git is really slow for 100,000 objects. Any fixes?](https://stackoverflow.com/questions/3313908/git-is-really-slow-for-100-000-objects-any-fixes)
+
+[Why is my git repository so big?](https://stackoverflow.com/questions/1029969/why-is-my-git-repository-so-big)
 
 ## [BFG Repo Cleaner](https://rtyley.github.io/bfg-repo-cleaner/)
 

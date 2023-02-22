@@ -5,7 +5,7 @@ Slug: reduce-size-of-git-repository
 Title: Reduce Size of Git Repository
 Category: Software
 Tags: software, Git, repository, size
-Modified: 2023-02-21 11:01:45
+Modified: 2023-02-21 22:10:53
 
 **
 Things on this page are
@@ -17,6 +17,12 @@ Please read with your own judgement!
 
 Git Large File Storage (Git-LFS) is the recommended way to work with large files.
 Please read the following if have already committed large files into your repository.
+
+## [git-filter-repo](https://github.com/newren/git-filter-repo)
+[git-filter-repo](https://github.com/newren/git-filter-repo)
+is currently the best and the recommended tool by the Git project 
+for rewriting history of Git repositories.
+.
 
 ## `git gc` + `git repack`
     

@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:02:14
-Modified: 2023-02-18 11:45:30
+Modified: 2023-02-22 23:18:06
 Author: Benjamin Du
 Slug: dev-tools-for-rust
 Title: Dev Tools for Rust
@@ -11,13 +11,13 @@ Tags: Computer Science, programming, Rust, dev, development, develop, tool, carg
 
 ## Online Tools
 
+- [GodBolt - Compiler Explorer](https://godbolt.org/)
+
 - [Rust Explorer](https://www.rustexplorer.com/b)
 
 - [Rust Aquascope Playground](https://cognitive-engineering-lab.github.io/aquascope/)
 
 - [Rust Playground](https://play.rust-lang.org/)
-
-- [GodBolt - Compiler Explorer](https://godbolt.org/)
 
 ## Rust Dev Tools
 

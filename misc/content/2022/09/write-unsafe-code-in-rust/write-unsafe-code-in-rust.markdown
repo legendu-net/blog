@@ -9,4 +9,12 @@ Tags: Computer Science, programming, Rust, unsafe, pointer, memory model
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+[The Unsafe Keyword](https://doc.rust-lang.org/reference/unsafe-keyword.html#the-unsafe-keyword)
+
+[Unsafe Rust](https://doc.rust-lang.org/book/ch19-01-unsafe-rust.html)
+
+[Unsafe Rust: How and when (not) to use it](https://blog.logrocket.com/unsafe-rust-how-and-when-not-to-use-it/)
+
 [Unsafe Rust is not C](https://www.youtube.com/watch?v=DG-VLezRkYQ)
+
+[Rust's Unsafe Code Guidelines Reference](https://rust-lang.github.io/unsafe-code-guidelines/introduction.html)

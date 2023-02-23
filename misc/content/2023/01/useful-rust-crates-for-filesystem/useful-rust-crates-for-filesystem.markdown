@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 15:40:23
-Modified: 2023-02-08 11:40:58
+Modified: 2023-02-22 10:03:53
 Author: Benjamin Du
 Slug: useful-rust-crates-for-filesystem
 Title: Useful Rust Crates for Filesystem
@@ -10,6 +10,10 @@ Tags: Computer Science, programming, Rust, crate, useful, filesystem, fs
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [std::fs](https://doc.rust-lang.org/std/fs/)
+
+## [camino](https://crates.io/crates/camino)
+[Camino](https://crates.io/crates/camino)
+is an extension of the std::path module that adds new Utf8PathBuf and Utf8Path types.
 
 ## [glob](https://crates.io/crates/glob)
 [glob](https://crates.io/crates/glob)

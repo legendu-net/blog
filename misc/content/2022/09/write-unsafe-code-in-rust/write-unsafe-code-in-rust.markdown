@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-09-04 21:38:08
-Modified: 2022-09-04 21:38:08
+Modified: 2023-02-22 23:24:26
 Author: Benjamin Du
 Slug: write-unsafe-code-in-rust
 Title: Write Unsafe Code in Rust
@@ -18,3 +18,7 @@ Tags: Computer Science, programming, Rust, unsafe, pointer, memory model
 [Unsafe Rust is not C](https://www.youtube.com/watch?v=DG-VLezRkYQ)
 
 [Rust's Unsafe Code Guidelines Reference](https://rust-lang.github.io/unsafe-code-guidelines/introduction.html)
+
+## References
+
+- [How to avoid bounds checks in Rust (without unsafe!)](https://shnatsel.medium.com/how-to-avoid-bounds-checks-in-rust-without-unsafe-f65e618b4c1e)

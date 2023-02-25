@@ -55,6 +55,21 @@ Tags: programming, IPython, shell, bash, xonsh, plumbum, Python, shell alternati
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
   <tr>
+    <td rowspan="1"> cp -ir dir1/* dir2 </td>
+    <td> shutil.copytree("dir1", "dir2") </td>
+    <td> <a href="https://docs.python.org/3/library/shutil.html#shutil.copytree"> shutil </a> </td>
+  </tr>
+  <tr>
+    <td rowspan="1"> cp -r dir1/* dir2 </td>
+    <td> shutil.copytree("dir1", "dir2", dirs_exist_ok=True) </td>
+    <td> <a href="https://docs.python.org/3/library/shutil.html#shutil.copytree"> shutil </a> </td>
+  </tr>
+  <tr>
+    <td rowspan="1"> cp -ir /path/to/dir1/ dir2/ </td>
+    <td> shutil.copytree("/path/to/dir1/", "dir2/dir1") </td>
+    <td> <a href="https://docs.python.org/3/library/shutil.html#shutil.copytree"> shutil </a> </td>
+  </tr>
+  <tr>
     <td rowspan="4"> ln -s file1 file2 </td>
     <td bgcolor="#348017"> Path("file1").symlink_to("file2", target_is_directory=True) </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.symlink_to"> pathlib </a> </td>
@@ -142,8 +157,12 @@ Tags: programming, IPython, shell, bash, xonsh, plumbum, Python, shell alternati
     <td> <a href="https://xon.sh/"> xonsh </a> </td>
   </tr>
   <tr>
-    <td rowspan="5"> mv file1 file2 </td>
+    <td rowspan="6"> mv file1 file2 </td>
     <td bgcolor="#348017"> Path("file1").rename("file2") </td>
+    <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.rename"> pathlib </a> </td>
+  </tr>
+  <tr>
+    <td> Path("file1").replace("file2") </td>
     <td> <a href="https://docs.python.org/3/library/pathlib.html#pathlib.Path.rename"> pathlib </a> </td>
   </tr>
   <tr>

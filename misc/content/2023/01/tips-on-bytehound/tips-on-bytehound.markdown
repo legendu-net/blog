@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-08 21:33:57
-Modified: 2023-01-24 19:49:09
+Modified: 2023-02-21 19:52:54
 Author: Benjamin Du
 Slug: tips-on-bytehound
 Title: Tips on Bytehound
@@ -29,6 +29,8 @@ Or if you use
 ## Usage
 
     ./bytehound server --port 9090 -i 0.0.0.0 memory-profiling_*.dat 
+    export MEMORY_PROFILER_LOG=warn
+    LD_PRELOAD=./libbytehound.so ./your_application
 
 ## References
 

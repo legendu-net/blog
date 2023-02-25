@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:02:14
-Modified: 2023-02-05 10:00:02
+Modified: 2023-02-19 19:36:40
 Author: Benjamin Du
 Slug: dev-tools-for-rust
 Title: Dev Tools for Rust
@@ -18,6 +18,14 @@ Tags: Computer Science, programming, Rust, dev, development, develop, tool, carg
 - [GodBolt - Compiler Explorer](https://godbolt.org/)
 
 ## Rust Dev Tools
+
+### [cargo-binstall](https://crates.io/crates/cargo-binstall)
+[cargo-binstall](https://crates.io/crates/cargo-binstall)
+provides a low-complexity mechanism 
+for installing rust binaries as an alternative 
+to building from source (via cargo install) or manually downloading packages. 
+This is intended to work with existing CI artifacts and infrastructure, 
+and with minimal overhead for package maintainers.
 
 ### [cargo-careful](https://crates.io/crates/cargo-careful)
 [cargo-careful](https://crates.io/crates/cargo-careful)

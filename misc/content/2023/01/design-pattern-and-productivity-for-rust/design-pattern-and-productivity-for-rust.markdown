@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:29:29
-Modified: 2023-02-18 11:32:25
+Modified: 2023-02-19 18:49:23
 Author: Benjamin Du
 Slug: design-pattern-and-productivity-for-rust
 Title: Design Pattern and Productivity for Rust
@@ -8,6 +8,13 @@ Category: Computer Science
 Tags: Computer Science, programming, Rust, design, pattern, productivity
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## [nutype](https://github.com/greyblake/nutype)
+[Nutype](https://github.com/greyblake/nutype)
+embraces the simple idea: the type system can be leveraged 
+to track the fact that something was done, so there is no need to do it again.
+If a piece of data was once sanitized and validated 
+we can rely on the types instead of sanitizing and validating again and again when we're in doubt.
 
 ## [derive_more](https://crates.io/crates/derive_more)
 [derive_more](https://crates.io/crates/derive_more)

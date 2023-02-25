@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2023-01-31 10:15:31
+Modified: 2023-02-24 18:32:55
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -28,6 +28,10 @@ Tags: Computer Science, programming, Rust, profile, profiling, speed, memory, CP
     . 
 
 ## CPU Profiling
+
+### [not-perf](https://github.com/koute/not-perf)
+[not-perf](https://github.com/koute/not-perf)
+is a sampling CPU profiler for Linux.
 
 ### [pprof](https://crates.io/crates/pprof)
 [Pprof](https://crates.io/crates/pprof)

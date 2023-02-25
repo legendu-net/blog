@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 10:42:03
-Modified: 2023-02-05 10:02:36
+Modified: 2023-02-19 18:47:42
 Author: Benjamin Du
 Slug: rust-for-iot
 Title: Rust for IoT
@@ -58,6 +58,8 @@ Support is indicated in the has_rust_target feature,
 and tested for in applications using the Makefile line FEATURES_REQUIRED += rust_target.
 
 ## Embedded
+
+[ApolloLabs.bin Tech Blog](https://apollolabsblog.hashnode.dev/)
 
 [Rust Embedded Org @ GitHub](https://github.com/orgs/rust-embedded/repositories)
 

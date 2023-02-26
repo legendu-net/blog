@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2023-02-05 09:15:50
+Modified: 2023-02-24 18:35:17
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -25,11 +25,19 @@ procs
 
 sd
 
-## [tokei](https://github.com/XAMPPRocky/tokei)
+## Summarize a Project
+### [tokei](https://github.com/XAMPPRocky/tokei)
 [Tokei](https://github.com/XAMPPRocky/tokei)
 is a program that displays statistics about your code. 
 Tokei will show the number of files, 
 total lines within those files and code, comments, and blanks grouped by language.
+
+### [onefetch](https://github.com/o2sh/onefetch)
+[OneFetch](https://github.com/o2sh/onefetch)
+is a command-line Git information tool written in Rust 
+that displays project information and code statistics 
+for a local Git repository directly to your terminal. 
+The tool is completely offline - no network access is required.
 
 ## [dust](https://github.com/bootandy/dust)
 [Dust](https://github.com/bootandy/dust)
@@ -67,13 +75,6 @@ checks for unsaved or uncommitted changes on your machine.
 ,
 StGit for short, 
 is an application for managing Git commits as a stack of patches.
-
-## [onefetch](https://crates.io/crates/onefetch)
-[Onefetch](https://crates.io/crates/onefetch)
-is a command-line Git information tool 
-written in Rust that displays project information and code statistics 
-for a local Git repository directly to your terminal. 
-The tool is completely offline - no network access is required.
 
 ## [git-grab](https://github.com/wezm/git-grab)
 [git-grab](https://github.com/wezm/git-grab)

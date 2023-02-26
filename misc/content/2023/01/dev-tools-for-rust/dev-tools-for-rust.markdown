@@ -21,6 +21,14 @@ Tags: Computer Science, programming, Rust, dev, development, develop, tool, carg
 
 ## Rust Dev Tools
 
+### [cargo-binstall](https://crates.io/crates/cargo-binstall)
+[cargo-binstall](https://crates.io/crates/cargo-binstall)
+provides a low-complexity mechanism 
+for installing rust binaries as an alternative 
+to building from source (via cargo install) or manually downloading packages. 
+This is intended to work with existing CI artifacts and infrastructure, 
+and with minimal overhead for package maintainers.
+
 ### [cargo-careful](https://crates.io/crates/cargo-careful)
 [cargo-careful](https://crates.io/crates/cargo-careful)
 execute Rust code carefully, 

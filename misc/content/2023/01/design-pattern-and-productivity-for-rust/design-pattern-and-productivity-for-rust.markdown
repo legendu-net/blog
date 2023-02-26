@@ -30,6 +30,10 @@ but without having to wrestle with the proc macro system.
 [Validator](https://github.com/Keats/validator)
 provides custom derive to simplify struct validation inspired by marshmallow and Django validators.
 
+## Design Patterns
+
+[Improve your Rust APIs with the type state pattern](https://www.youtube.com/watch?v=_ccDqRTx-JU)
+
 ## References
 
 - [Pointer, Reference and Ownership in Rust](https://www.legendu.net/misc/blog/pointer-reference-and-ownership-in-rust)

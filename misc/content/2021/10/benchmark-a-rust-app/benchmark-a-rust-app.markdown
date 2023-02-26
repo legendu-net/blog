@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-10-26 22:38:20
-Modified: 2022-08-14 13:37:21
+Modified: 2023-02-23 16:18:39
 Author: Benjamin Du
 Slug: benchmark-a-rust-app
 Title: Benchmark a Rust App
@@ -62,7 +62,39 @@ Tags: Computer Science, programming, Rust, bench, benchmark, cargo, cargo-bench,
     [Use Callgrind instead of Cachegrind #26](https://github.com/bheisler/iai/pull/26)
     might fix this issue later.
 
+## Benchmark Numbers for Rust
+
+[Infographics: Operation Costs in CPU Clock Cycles](http://ithare.com/infographics-operation-costs-in-cpu-clock-cycles/)
+
+[Introduction to C and Computer Organization](https://sites.google.com/site/arch1utep/home/course_outline/msp430-instruction-timing)
+
+random access of an element of array,
+
+my impression is that it's about 6-7 CPU cycles (including bound check).
+get_unchecked (without bound check) takes about 4 CPU cycles (verify this)
+
+[How much does an array access cost?](https://pqnelson.github.io/2021/08/23/array-access-cost.html)
+
+multiplication of an non-const integer with a const integer: 4.5 cpu cycles 
+
+multiplication of 2 non-const usize: 6 cpu cycles
+
+usize::count_trailing_zeros: 9.5 CPU cycles
+usize::count_ones: 21
+
+f64::max: about 12?
+f64::max is not fast due to the fact that it needs to handle NaNs.
+A simple implementation of max using `>`
+is much faster if your data won't have NaNs.
+
+
+Vec::clear / ArrayVec::clear: 2
+
+
+
 ## References
+
+- [Why my Rust benchmarks were wrong, or how to correctly use std::hint::black_box?](https://gendignoux.com/blog/2022/01/31/rust-benchmarks.html)
 
 - [criterion](https://crates.io/crates/criterion)
 

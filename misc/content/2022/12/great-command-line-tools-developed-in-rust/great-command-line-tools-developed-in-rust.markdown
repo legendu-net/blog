@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2023-02-24 18:35:17
+Modified: 2023-02-27 09:33:09
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -124,6 +124,10 @@ provides unified developer tools for JavaScript, TypeScript, and the web.
 ## [carbonyl](https://github.com/fathyb/carbonyl)
 [Carbonyl](https://github.com/fathyb/carbonyl)
 is a Chromium based browser built to run in a terminal.
+
+## [rtx](https://github.com/jdxcode/rtx)
+[rtx](https://github.com/jdxcode/rtx)
+is a version manager for multiple programming languages.
 
 ## Good Ones but Which I Won't Use
 

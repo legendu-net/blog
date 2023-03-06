@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-02-02 13:58:33
-Modified: 2023-02-02 17:17:54
+Modified: 2023-03-05 22:18:43
 Author: Benjamin Du
 Slug: tips-on-tar
 Title: Tips on the tar Command in Linux
@@ -14,4 +14,4 @@ Tags: Computer Science, programming, tar, compress, decompress
 
 --exclude
 
-
+tar --strip-components=1 -C /usr/local/bin/ -zxvf sccache-v0.4.0-pre.8-x86_64-unknown-linux-musl.tar.gz */sccache

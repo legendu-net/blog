@@ -59,6 +59,7 @@
 - ["Npm", "npm"]
 - ["Nfs", "NFS"]
 - ["Kde", "KDE"]
+- ["Oom", "OOM"]
 - ["Pdf", "PDF"]
 - ["Pex", "pex"]
 - ["Ppt", "PPT"]
@@ -254,6 +255,7 @@
 - ["Crashloopbackoff", "CrashLoopBackOff"]
 - ["Outofmemoryerror", "OutOfMemoryError"]
 - ["Runtimeexception", "RuntimeException"]
+- ["Visualize-Sqlite", "visualize-sqlite"]
 # 17 symbols
 - ["Analysisexception", "AnalysisException"]
 - ["Broadcasthashjoin", "BroadcastHashJoin"]

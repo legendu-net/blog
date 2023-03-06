@@ -1,9 +1,9 @@
 Status: published
 Date: 2023-03-05 13:39:51
-Modified: 2023-03-05 13:39:51
+Modified: 2023-03-05 23:11:35
 Author: Benjamin Du
 Slug: OOM-in-Rust
-Title: Oom in Rust
+Title: OOM in Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, OOM, out of memory, SIGKILL
 

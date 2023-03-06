@@ -1,9 +1,9 @@
 Status: published
 Date: 2023-03-05 21:24:58
-Modified: 2023-03-05 21:24:58
+Modified: 2023-03-05 23:11:15
 Author: Benjamin Du
 Slug: tips-on-visualize-sqlite
-Title: Tips on Visualize-Sqlite
+Title: Tips on visualize-sqlite
 Category: Computer Science
 Tags: Computer Science, programming, Rust, visualize, SQLite3, DOT, GraphViz
 

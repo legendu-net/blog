@@ -5,12 +5,15 @@ Slug: software-version-management-tools
 Title: Software Version Management Tools
 Category: Computer Science
 Tags: programming, software, version management, Git, pyenv, sdkman, rvm
-Modified: 2023-02-21 11:06:09
+Modified: 2023-02-27 18:58:25
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 **
+
+[rtx](https://github.com/jdxcode/rtx)
+is a version management tool for multiple programming languages.
 
 <table style="width:100%">
   <tr>

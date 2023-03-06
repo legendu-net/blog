@@ -132,6 +132,10 @@ is a Chromium based browser built to run in a terminal.
 is a command-line program that finds secrets and sensitive information 
 in textual data and Git history.
 
+## [rtx](https://github.com/jdxcode/rtx)
+[rtx](https://github.com/jdxcode/rtx)
+is a version manager for multiple programming languages.
+
 ## Good Ones but Which I Won't Use
 
 

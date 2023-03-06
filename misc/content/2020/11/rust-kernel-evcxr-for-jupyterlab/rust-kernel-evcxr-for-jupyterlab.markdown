@@ -30,6 +30,11 @@ The Docker image
 [dclong/jupyterhub-ds:latest](https://github.com/dclong/docker-jupyterhub-ds)
 contains a valid Rust kernel for Jupyter/Lab notebooks.
 
+## Configurations
+
+    :timing
+    :sccache 1
+
 ## Dependency 
 
 [Use Custom Source as Dependency](https://github.com/google/evcxr/issues/135)

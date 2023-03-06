@@ -5,7 +5,7 @@ Slug: tips-on-github-actions
 Title: Tips on GitHub Actions
 Category: Computer Science
 Tags: Computer Science, GitHub Actions, CICD
-Modified: 2023-02-13 18:23:53
+Modified: 2023-02-27 09:31:11
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -139,6 +139,17 @@ https://github.com/peter-evans/create-pull-request
 [GitHub Automatic Releases](https://github.com/marketplace/actions/automatic-releases)
 
 [Introducing GitHub Package Registry](https://www.youtube.com/watch?v=N_-Cu9_2YAA)
+
+## Self-hosted Runners
+
+1. straight forward to set up self-hosted runners following instructions
+
+2. No need for the machine to be publicly accessible
+
+3. Currently, 
+    a runner can be configured to accept only 1 repo in a personal account 
+    (which is inconveneint)
+    or multiple repositories in a GitHub organization.
 
 ## References
 

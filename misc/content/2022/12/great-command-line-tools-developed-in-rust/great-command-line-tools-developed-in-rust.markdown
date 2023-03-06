@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2023-02-24 18:35:17
+Modified: 2023-03-03 17:20:57
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -125,7 +125,16 @@ provides unified developer tools for JavaScript, TypeScript, and the web.
 [Carbonyl](https://github.com/fathyb/carbonyl)
 is a Chromium based browser built to run in a terminal.
 
+## Security
+
+### [noseyparker](https://github.com/praetorian-inc/noseyparker)
+[NoseyParker](https://github.com/praetorian-inc/noseyparker)
+is a command-line program that finds secrets and sensitive information 
+in textual data and Git history.
+
 ## Good Ones but Which I Won't Use
+
+
 
 nushell
 

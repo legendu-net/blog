@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-06 22:01:30
-Modified: 2023-01-13 16:16:46
+Modified: 2023-03-03 17:52:54
 Author: Benjamin Du
 Slug: progress-bar-in-rust
 Title: Progress Bar in Rust
@@ -29,6 +29,12 @@ It intends to make producing and consuming progress reports simple and ergonomic
 Importantly, 
 it separates the progress producers from the consumer, 
 allowing progress reports to be generated from disparate sections in a system.
+
+## [prodash](https://github.com/Byron/prodash)
+[prodash](https://github.com/Byron/prodash)
+reports progress of concurrent applications 
+and display it in various ways
+.
 
 ## References
 

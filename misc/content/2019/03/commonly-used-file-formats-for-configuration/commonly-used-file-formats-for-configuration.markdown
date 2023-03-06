@@ -26,6 +26,14 @@ Please read with your own judgement!
 
 ## [TOML](https://github.com/toml-lang/toml)
 
+## [ron](https://github.com/ron-rs/ron)
+[RON](https://github.com/ron-rs/ron)
+is a simple readable data serialization format 
+that looks similar to Rust syntax. 
+It's designed to support all of Serde's data model, 
+so structs, enums, tuples, arrays, generic maps, and primitive values.
+
+
 ## XML
 
 ## [translate/translate](https://github.com/translate/translate)

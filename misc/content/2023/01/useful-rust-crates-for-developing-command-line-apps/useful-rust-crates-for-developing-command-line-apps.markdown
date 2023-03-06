@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:14:03
-Modified: 2023-01-31 09:56:50
+Modified: 2023-03-03 17:17:34
 Author: Benjamin Du
 Slug: useful-rust-crates-for-developing-command-line-apps
 Title: Useful Rust Crates for Developing Command Line Apps
@@ -31,4 +31,8 @@ that makes it possible to write cross-platform text-based interfaces.
 It supports all UNIX and Windows terminals down to Windows 7 
 .
 
+## [inquire](https://github.com/mikaelmello/inquire)
+[inquire](https://github.com/mikaelmello/inquire)
+is a Rust library for building interactive prompts
+.
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:20:03
-Modified: 2023-01-18 21:54:38
+Modified: 2023-03-03 17:09:53
 Author: Benjamin Du
 Slug: foreign-language-integration-in-rust
 Title: Foreign Language Integration in Rust
@@ -30,6 +30,11 @@ provides all of the definitions necessary
 to easily interoperate with C code (or "C-like" code) 
 on each of the platforms that Rust supports. 
 This includes type definitions (e.g. c_int), constants (e.g. EINVAL) as well as function headers (e.g. malloc).
+
+## [typeshare](https://github.com/1Password/typeshare)
+[Typeshare](https://github.com/1Password/typeshare)
+is the ultimate tool for synchronizing your type definitions 
+between Rust and other languages for seamless FFI.
 
 ## [rust-bindgen](https://github.com/rust-lang/rust-bindgen)
 [rust-bindgen](https://github.com/rust-lang/rust-bindgen)

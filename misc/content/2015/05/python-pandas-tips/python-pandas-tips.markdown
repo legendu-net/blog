@@ -5,7 +5,7 @@ Slug: python-pandas-tips
 Title: Python pandas Tips
 Category: Computer Science
 Tags: programming, Python, pandas, DataFrame, data frame, tips
-Modified: 2022-10-12 10:56:35
+Modified: 2023-03-10 22:27:23
 
 **
 Things on this page are
@@ -36,7 +36,7 @@ pd.set_option("display.max_colwidth", 100)
     [Here’s the most efficient way to iterate through your Pandas Dataframe](https://towardsdatascience.com/heres-the-most-efficient-way-to-iterate-through-your-pandas-dataframe-4dad88ac92ee)
     .
     According to the benchmark in the article,
-    `DataFrame.to_dict` is the most efficient way
+    `DataFrame.to_dict("records")` is the most efficient way
     and is thus preferred.
 
 2. Avoid using column/element names that conflict with pandas internal member names,

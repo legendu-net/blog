@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2023-03-03 17:20:57
+Modified: 2023-03-06 10:38:39
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -124,6 +124,20 @@ provides unified developer tools for JavaScript, TypeScript, and the web.
 ## [carbonyl](https://github.com/fathyb/carbonyl)
 [Carbonyl](https://github.com/fathyb/carbonyl)
 is a Chromium based browser built to run in a terminal.
+
+## [speedtest-rs](https://github.com/nelsonjchen/speedtest-rs)
+[speedtest-rs](https://github.com/nelsonjchen/speedtest-rs)
+a tool like speedtest-cli, but in Rust
+.
+
+## [gitui](https://github.com/extrawurst/gitui)
+[GitUI](https://github.com/extrawurst/gitui)
+provides you with the comfort of a git GUI but right in your terminal
+.
+
+## [mprocs](https://github.com/pvolok/mprocs)
+[mprocs](https://github.com/pvolok/mprocs)
+runs multiple commands in parallel and shows output of each command separately.
 
 ## Security
 

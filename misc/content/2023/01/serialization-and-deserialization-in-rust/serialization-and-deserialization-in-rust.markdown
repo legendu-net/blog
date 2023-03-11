@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:44:56
-Modified: 2023-01-18 22:05:38
+Modified: 2023-03-06 10:04:40
 Author: Benjamin Du
 Slug: serialization-and-deserialization-in-rust
 Title: Serialization and Deserialization in Rust
@@ -34,6 +34,10 @@ Big array helper for serde. The purpose of this crate is to make (de-)serializin
 [serde_stacker](https://crates.io/crates/serde_stacker)
 is a serde adapter that avoids stack overflow by dynamically growing the stack
 .
+
+## [basic-toml](https://github.com/dtolnay/basic-toml)
+[basic-toml](https://github.com/dtolnay/basic-toml)
+is a library for parsing and producing data in TOML format using Serde.
 
 ## [ciborium](https://crates.io/crates/ciborium)
 [Ciborium](https://crates.io/crates/ciborium)

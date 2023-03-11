@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 15:46:22
-Modified: 2023-01-18 22:14:21
+Modified: 2023-03-06 10:42:48
 Author: Benjamin Du
 Slug: useful-rust-crates-for-database
 Title: Useful Rust Crates for Database
@@ -8,6 +8,18 @@ Category: Computer Science
 Tags: Computer Science, programming, Rust, database, crate, SQL
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## [surrealdb](https://github.com/surrealdb/surrealdb)
+[SurrealDB](https://github.com/surrealdb/surrealdb)
+is an end-to-end cloud native database for web, mobile, serverless, Jamstack, backend, and traditional applications. 
+SurrealDB reduces the development time of modern applications by simplifying your database and API stack, 
+removing the need for most server-side components, 
+and allowing you to build secure, performant apps quicker and cheaper. 
+SurrealDB acts as both a database and a modern, real-time, collaborative API backend layer. 
+SurrealDB can run as a single server or in a highly-available, 
+highly-scalable distributed mode, 
+with support for SQL querying from client devices, GraphQL, ACID transactions, WebSocket connections, structured 
+and unstructured data, graph querying, full-text indexing, geospatial querying, and row-by-row permissions-based access.
 
 ## [rusqlite](https://crates.io/crates/rusqlite)
 [rusqlite](https://crates.io/crates/rusqlite)
@@ -53,6 +65,16 @@ which includes Neo4j 3.1 through 4.2.
 [Neo4rs](https://github.com/yehohanan7/neo4rs)
 is a Neo4j rust driver implemented using bolt specification.
 This driver is compatible with neo4j 4.x versions
+
+## [qdrant](https://github.com/qdrant/qdrant)
+[Qdrant](https://github.com/qdrant/qdrant)
+is a vector similarity search engine and vector database. 
+It provides a production-ready service with a convenient API 
+to store, search, and manage points - vectors with an additional payload. 
+Qdrant is tailored to extended filtering support. 
+It makes it useful for all sorts of neural-network or semantic-based matching, faceted search, and other applications.
+
+
 
 
 

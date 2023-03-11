@@ -5,7 +5,7 @@ Slug: software-version-management-tools
 Title: Software Version Management Tools
 Category: Computer Science
 Tags: programming, software, version management, Git, pyenv, sdkman, rvm
-Modified: 2023-02-27 18:58:25
+Modified: 2023-03-06 10:34:02
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -43,5 +43,9 @@ is a version management tool for multiple programming languages.
   <tr>
     <td> Ruby </td>
     <td> <a href="https://rvm.io/"> rvm </a> </td>
+  </tr>
+  <tr>
+    <td> NeoVim </td>
+    <td> <a href="https://github.com/MordechaiHadad/bob"> bob </a> </td>
   </tr>
 </table>

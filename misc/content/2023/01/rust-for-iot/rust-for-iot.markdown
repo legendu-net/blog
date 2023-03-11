@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 10:42:03
-Modified: 2023-02-19 18:47:42
+Modified: 2023-03-06 10:40:50
 Author: Benjamin Du
 Slug: rust-for-iot
 Title: Rust for IoT
@@ -66,6 +66,9 @@ and tested for in applications using the Makefile line FEATURES_REQUIRED += rust
 [PlatformIO](https://platformio.org/)
 is a professional collaborative platform for embedded development
 .
+
+[espressif-trainings](https://github.com/esp-rs/espressif-trainings)
+contains Training Material for learning to use Embedded Rust with the Espressif ESP32-C3.
 
 ### [cross](https://crates.io/crates/cross)
 [cross](https://crates.io/crates/cross)

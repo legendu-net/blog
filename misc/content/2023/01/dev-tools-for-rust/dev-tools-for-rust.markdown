@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:02:14
-Modified: 2023-02-22 23:18:06
+Modified: 2023-03-06 10:27:42
 Author: Benjamin Du
 Slug: dev-tools-for-rust
 Title: Dev Tools for Rust
@@ -28,6 +28,10 @@ for installing rust binaries as an alternative
 to building from source (via cargo install) or manually downloading packages. 
 This is intended to work with existing CI artifacts and infrastructure, 
 and with minimal overhead for package maintainers.
+
+### [cargo-info](https://crates.io/crates/cargo-info)
+[cargo-info](https://crates.io/crates/cargo-info)
+extends cargo to query crates.io registry for crates details.
 
 ### [cargo-careful](https://crates.io/crates/cargo-careful)
 [cargo-careful](https://crates.io/crates/cargo-careful)

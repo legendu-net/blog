@@ -5,7 +5,7 @@ Author: Benjamin Du
 Slug: useful-rust-crates-for-database
 Title: Useful Rust Crates for Database
 Category: Computer Science
-Tags: Computer Science, programming, Rust, database, crate, SQL
+Tags: Computer Science, programming, Rust, database, crate, SQL, big data, streaming
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -24,10 +24,6 @@ and unstructured data, graph querying, full-text indexing, geospatial querying, 
 ## [rusqlite](https://crates.io/crates/rusqlite)
 [rusqlite](https://crates.io/crates/rusqlite)
 is an ergonomic wrapper for SQLite.
-
-## [serde](https://crates.io/crates/serde)
-[serde](https://crates.io/crates/serde)
-is a framework for serializing and deserializing Rust data structures efficiently and generically.
 
 ## [sled](https://github.com/spacejam/sled)
 [sled](https://github.com/spacejam/sled)
@@ -74,7 +70,92 @@ to store, search, and manage points - vectors with an additional payload.
 Qdrant is tailored to extended filtering support. 
 It makes it useful for all sorts of neural-network or semantic-based matching, faceted search, and other applications.
 
+## [seafowl](https://github.com/splitgraph/seafowl)
+[Seafowl](https://github.com/splitgraph/seafowl)
+is an analytical database for modern data-driven Web applications.
+
+Its CDN and HTTP cache-friendly query execution API lets you deliver data to your visualizations, dashboards and notebooks by running SQL straight from the user's browser.
+
+## Time Series Databases 
+
+### [ceresdb](https://github.com/CeresDB/ceresdb)
+[CeresDB](https://github.com/CeresDB/ceresdb)
+is a high-performance, distributed, cloud native time-series database.
+
+### [cnosdb](https://github.com/cnosdb/cnosdb)
+[CnosDB](https://github.com/cnosdb/cnosdb)
+An Open Source Distributed Time Series Database with high performance, high compression ratio and high usability.
+
+### [influxdb_iox](https://github.com/influxdata/influxdb_iox)
+[Influxdb IOX](https://github.com/influxdata/influxdb_iox)
+(short for Iron Oxide, pronounced InfluxDB "eye-ox") 
+is the future core of InfluxDB, an open source time series database. 
+The name is in homage to Rust, 
+the language this project is written in. 
+It is built using Apache Arrow and DataFusion among other things. 
+
+## Log Storage
+
+### [parseable](https://github.com/parseablehq/parseable)
+[Parseable](https://github.com/parseablehq/parseable)
+is a lightweight, cloud native log observability engine. 
+It can use either a local drive or S3 (and compatible stores) for backend data storage.
+Parseable is written in Rust and uses Apache Arrow and Parquet as underlying data structures. 
+Additionally, it uses a simple, index-free mechanism to organize and query data allowing low latency, 
+and high throughput ingestion and query.
+
+### [zincobserve](https://github.com/zinclabs/zincobserve)
+[ZincObserve](https://github.com/zinclabs/zincobserve)
+is a cloud native observability platform built specifically 
+for logs, metrics, traces and analytics designed to work at petabyte scale.
+It is very simple and easy to operate as opposed to Elasticsearch 
+which requires a couple dozen knobs to understand and tune 
+which you can get up and running in under 2 minutes.
+It is a drop-in replacement for Elasticsearch 
+if you are just ingesting data using APIs 
+and searching using kibana (Kibana is not supported nor required with ZincObserve. 
+ZincObserve provides its own UI which does not require separate installation unlike kibana).
+
+## [minio-rs](https://github.com/minio/minio-rs)
+[MinIO Rust SDK](https://github.com/minio/minio-rs)
+is Simple Storage Service (aka S3) client 
+to perform bucket and object operations to any Amazon S3 compatible object storage service.
+
+## Data Layer
+
+### [cube.js](https://github.com/cube-js/cube.js)
+[cube.js](https://github.com/cube-js/cube.js)
+is the semantic layer for building data applications. 
+It helps data engineers and application developers access data from modern data stores, 
+organize it into consistent definitions, and deliver it to every application.
+
+## Command-line Tools
+https://github.com/timvw/qv
+A simply CLI to quickly view your data. Powered by DataFusion.
 
 
+## [datafuse](https://github.com/datafuselabs/datafuse)
 
+## [fluvio](https://github.com/infinyon/fluvio)
 
+## [DataBend](https://github.com/datafuselabs/databend)
+
+## [kamu-cli](https://github.com/kamu-data/kamu-cli)
+
+## [datafusion](http://www.legendu.net/misc/blog/tips-on-datafusion)
+
+## [ballista](https://github.com/apache/arrow-ballista)
+
+## [Polars](http://www.legendu.net/misc/blog/tips-on-polars)   
+
+## References
+
+- [Difference between Apache parquet and arrow](https://stackoverflow.com/questions/56472727/difference-between-apache-parquet-and-arrow)
+
+- https://arrow.apache.org/
+
+- [Database-like ops benchmark](https://h2oai.github.io/db-benchmark/)
+
+- [Rust For Big Data!](https://blog.devgenius.io/rust-for-big-data-40fc48df9703)
+
+- [Cube: Creating a Semantic Data Layer!](https://jlgjosue.medium.com/cube-creating-a-semantic-data-layer-a947fd0b6a5c)

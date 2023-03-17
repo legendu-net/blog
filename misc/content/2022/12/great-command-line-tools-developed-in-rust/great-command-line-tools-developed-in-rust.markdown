@@ -10,6 +10,13 @@ Tags: Computer Science, programming, Rust, alternative, command-line, rewrite
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
+## [halp](https://github.com/orhun/halp)
+[halp](https://github.com/orhun/halp)
+aims to help find the correct arguments for command-line tools 
+by checking the predefined list of commonly used options/flags. 
+Additionally, 
+it provides a prompt for quick access to the manual page or cheat sheet of the given command.
+
 ## [Atuin](https://github.com/ellie/atuin)
 [Atuin](https://github.com/ellie/atuin)
 replaces your existing shell history with a SQLite database, 

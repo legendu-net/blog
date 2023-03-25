@@ -5,7 +5,7 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2023-02-08 11:45:45
+Modified: 2023-03-25 13:31:09
 
 
 <h2 id="recommended-docker-images">Recommended Docker Images and Tags</h2>
@@ -55,23 +55,14 @@ Please refer to the following tag table for more details.
     </td>
   </tr>
   <tr>
-    <td class="tg-0lax"> 22.10 </td>
+    <td class="tg-0lax"> 23.04 </td>
     <td class="tg-0lax"> 
-        Ubuntu 22.10
+        Ubuntu 23.04
     </td>
     <td class="tg-0lax">
         For any of the following situations: <br>
         1. a specific Ubuntu/kernel version is required <br>
         2. trying out newer Ubuntu versions than LTS
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"> debian </td>
-    <td class="tg-0lax"> 
-        Debian testing.
-    </td>
-    <td class="tg-0lax">
-        For some rare situations where a required tool works in Debian but not in Ubuntu.
     </td>
   </tr>
   <tr>
@@ -90,15 +81,6 @@ Please refer to the following tag table for more details.
     </td>
     <td class="tg-0lax"> 
         Fallback tags (for next) if the next tag is broken.
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"> debian_mmddhh </td>
-    <td class="tg-0lax"> 
-        Histoical versions corresponding to the debian tag.
-    </td>
-    <td class="tg-0lax"> 
-        Fallback tags (for debian) if the debian tag is broken.
     </td>
   </tr>
 </tbody>

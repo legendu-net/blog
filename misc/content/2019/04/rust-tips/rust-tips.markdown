@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-04-10 12:17:46
-Modified: 2022-12-04 10:37:47
+Modified: 2023-03-19 19:59:26
 Author: Benjamin Du
 Slug: rust-tips
 Title: Tips on Rust
@@ -18,7 +18,7 @@ Please refer to
 [Tips on rustup](http://www.legendu.net/misc/blog/tips-on-rustup)
 for installing Rust using rustup (the recommended way for most users),
 and
-[Install a Standalone Version of Rust in Linux](https://www.legendu.net/misc/blog/install-a-standalone-version-of-rust)
+[Install a Standalone Version of Rust in Linux](https://www.legendu.net/en/blog/install-a-standalone-version-of-rust)
 for installing a global standalone version of Rust.
 
 ### Install a Newer Version of Rust via PPA on Ubuntu

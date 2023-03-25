@@ -11,7 +11,7 @@ Modified: 2023-02-08 11:45:45
 <h2 id="recommended-docker-images">Recommended Docker Images and Tags</h2>
 
 Most of my Docker images have different variants 
-(corresponding to tags latest, next, alpine, etc) 
+(corresponding to tags `latest`, `next`, etc) 
 for different use cases.
 And each tag might have histocial versions 
 with the pattern `mmddhh` 
@@ -75,15 +75,6 @@ Please refer to the following tag table for more details.
     </td>
   </tr>
   <tr>
-    <td class="tg-0lax"> alpine </td>
-    <td class="tg-0lax"> 
-        Alpine stable.
-    </td>
-    <td class="tg-0lax">
-        For production deployment where Docker image size, load speed and security are of concerns.
-    </td>
-  </tr>
-  <tr>
     <td class="tg-0lax"> mmddhh </td>
     <td class="tg-0lax"> 
         Histoical versions corresponding to the latest tag.
@@ -108,15 +99,6 @@ Please refer to the following tag table for more details.
     </td>
     <td class="tg-0lax"> 
         Fallback tags (for debian) if the debian tag is broken.
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"> alpine_mmddhh </td>
-    <td class="tg-0lax"> 
-        Histoical versions corresponding to the alpine tag.
-    </td>
-    <td class="tg-0lax"> 
-        Fallback tags (for alpine) if the alpine tag is broken.
     </td>
   </tr>
 </tbody>

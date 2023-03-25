@@ -1,9 +1,9 @@
 Status: published
 Date: 2021-09-17 16:06:16
-Modified: 2021-10-14 21:10:43
+Modified: 2023-03-22 13:47:11
 Author: Benjamin Du
 Slug: querying-a-sql-database-in-rust
-Title: Querying a SQL Database in Rust
+Title: Database Clients for Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, SQL, database
 

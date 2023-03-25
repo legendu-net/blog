@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 15:46:22
-Modified: 2023-03-06 10:42:48
+Modified: 2023-03-22 14:53:53
 Author: Benjamin Du
 Slug: useful-rust-crates-for-database
 Title: Useful Rust Crates for Database
@@ -70,11 +70,14 @@ to store, search, and manage points - vectors with an additional payload.
 Qdrant is tailored to extended filtering support. 
 It makes it useful for all sorts of neural-network or semantic-based matching, faceted search, and other applications.
 
-## [seafowl](https://github.com/splitgraph/seafowl)
+## OLAP Specific Databases
+
+### [seafowl](https://github.com/splitgraph/seafowl)
 [Seafowl](https://github.com/splitgraph/seafowl)
 is an analytical database for modern data-driven Web applications.
-
-Its CDN and HTTP cache-friendly query execution API lets you deliver data to your visualizations, dashboards and notebooks by running SQL straight from the user's browser.
+Its CDN and HTTP cache-friendly query execution API 
+lets you deliver data to your visualizations, 
+dashboards and notebooks by running SQL straight from the user's browser.
 
 ## Time Series Databases 
 
@@ -123,11 +126,31 @@ to perform bucket and object operations to any Amazon S3 compatible object stora
 
 ## Data Layer
 
+### [Dozer](https://github.com/getdozer/dozer)
+[Dozer](https://github.com/getdozer/dozer)
+makes it easy to build low-latency data APIs (gRPC and REST) from any data source. 
+Data is transformed on the fly 
+using Dozer's reactive SQL engine and stored in a high-performance cache 
+to offer the best possible experience. 
+Dozer is useful for quickly building data products.
+
+
+### [OpenDal](https://github.com/apache/incubator-opendal)
+[Apache OpenDal](https://github.com/apache/incubator-opendal)
+makes data accessing freely, painlessly, and efficiently.
+
 ### [cube.js](https://github.com/cube-js/cube.js)
 [cube.js](https://github.com/cube-js/cube.js)
 is the semantic layer for building data applications. 
 It helps data engineers and application developers access data from modern data stores, 
 organize it into consistent definitions, and deliver it to every application.
+
+## Database Clients for Rust 
+
+Please refer to 
+[Database Clients for Rust](https://www.legendu.net/misc/blog/querying-a-sql-database-in-rust)
+for details
+.
 
 ## Command-line Tools
 https://github.com/timvw/qv

@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2023-02-24 18:32:55
+Modified: 2023-03-28 00:03:52
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -32,6 +32,14 @@ Tags: Computer Science, programming, Rust, profile, profiling, speed, memory, CP
 ### [not-perf](https://github.com/koute/not-perf)
 [not-perf](https://github.com/koute/not-perf)
 is a sampling CPU profiler for Linux.
+It is currently the best CPU profiling tools 
+for Rust applications for several reasons.
+It is easy to install and use.
+There's no special configuration required.
+Flamegraph (relying on Linux perf) is the hardest one to install, configure and use.
+Valgrind is also easy to install, configure and use.
+However, 
+it is way too slower compared to not-perf.
 
 ### [pprof](https://crates.io/crates/pprof)
 [Pprof](https://crates.io/crates/pprof)
@@ -52,7 +60,7 @@ you can run the following command.
 
 ### [Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
 [Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
-is a great profiler for Rust applications.
+is a another CPU profiling tool for Rust applications.
 The crate
 [cargo-valgrind](https://crates.io/crates/cargo-valgrind)
 provides integration of valgrind and cargo.
@@ -60,19 +68,8 @@ provides integration of valgrind and cargo.
 ### [FlameGraph](http://www.legendu.net/misc/blog/profile-rust-applications-using-flamegraph)
 
 [FlameGraph](http://www.legendu.net/misc/blog/profile-rust-applications-using-flamegraph)
-is another good profiler for Rust applications 
-which is has integration support for cargo.
-
-[Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
-is preferred for several reasons.
-
-1. Valgrind is easier to install, configure and use.
-    Flamegraph relies on `perf` which is not user-friendly.
-
-2. The Flamegraph project is no longer in active development.
-
-3. Valgrind is more powerful and flexible 
-    and can be used for profiling other porgramming languages too.
+is another a CPU profiling tool based on Linux perf.
+It has integration support for cargo.
 
 ### [puffin](https://github.com/EmbarkStudios/puffin)
 [puffin](https://github.com/EmbarkStudios/puffin)

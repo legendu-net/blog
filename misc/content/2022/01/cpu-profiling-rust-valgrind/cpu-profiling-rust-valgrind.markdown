@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-01-13 01:02:06
-Modified: 2023-01-09 16:59:40
+Modified: 2023-03-28 00:03:52
 Author: Benjamin Du
 Slug: cpu-profiling-rust-valgrind
 Title: CPU Profiling of Rust Applications Using Valgrind
@@ -29,6 +29,7 @@ Tags: Computer Science, programming, Rust, profile, profiler, Valgrind, KCacheGr
 
 1. Profiling an application using valgrind is about 50-200 times slower
     than running the application.
+    It is suggested that you use not-perf for profiling long-running Rust applicaitons.
 
 2. Valgrind seems to have some issues with Rust applications.
     Only performance data of public methods are dumped.

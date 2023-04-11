@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-01-13 01:02:06
-Modified: 2023-03-28 00:03:52
+Modified: 2023-04-10 21:09:54
 Author: Benjamin Du
 Slug: cpu-profiling-rust-valgrind
 Title: CPU Profiling of Rust Applications Using Valgrind
@@ -9,6 +9,11 @@ Tags: Computer Science, programming, Rust, profile, profiler, Valgrind, KCacheGr
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+It is suggested that you profile Rust application using not-perf.
+For more discussions,
+please refer to
+[Profile Rust Applications](http://www.legendu.net/misc/blog/profile-rust-applications/)
+.
 
 ## Installation on Ubuntu
 

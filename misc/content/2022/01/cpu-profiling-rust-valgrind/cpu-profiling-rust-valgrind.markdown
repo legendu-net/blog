@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-01-13 01:02:06
-Modified: 2023-04-10 21:09:54
+Modified: 2023-04-10 22:55:46
 Author: Benjamin Du
 Slug: cpu-profiling-rust-valgrind
 Title: CPU Profiling of Rust Applications Using Valgrind
@@ -25,6 +25,16 @@ please refer to
     :::bash
     valgrind --tool=callgrind --dump-instr=yes --simulate-cache=yes --collect-jumps=yes \
         your-program [program options]
+
+Below is an example.
+    
+    :::bash
+    cargo build --profile release-debug
+    valgrind --tool=callgrind --dump-instr=yes --simulate-cache=yes --collect-jumps=yes \
+        ../ofcp_utils/target/release-debug/ofcp_utils score_r4_it_sim_prof \
+            --file ../ofcp_utils/data/plays_r4_21.csv \
+            --method sim \
+            --runs 1000
 
 ## Visualization
 

@@ -157,4 +157,7 @@ which automatically creates binary Debian packages (.deb) from Cargo projects.
 provides "Zero setup" cross compilation and "cross testing" of Rust crates
 .
 
+### [cargo-llvm-cov](https://github.com/taiki-e/cargo-llvm-cov)
+[cargo-llvm-cov](https://github.com/taiki-e/cargo-llvm-cov)
+offers a cargo subcommand to easily use LLVM source-based code coverage.
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-04-14 12:23:22
-Modified: 2023-04-14 12:23:22
+Modified: 2023-04-19 10:38:06
 Author: Benjamin Du
 Slug: tips-on-distributed-development
 Title: Tips on Distributed Development
@@ -11,10 +11,18 @@ Tags: Computer Science, programming, distributed, development
 
 ## Distributed Log Tracing
 
-https://github.com/jaegertracing/jaeger
+[jaeger](https://github.com/jaegertracing/jaeger)
 
-https://github.com/quickwit-oss/quickwit
+[quickwit](https://github.com/quickwit-oss/quickwit)
+
+## Cloud Tools
+
+### [pulumi](https://github.com/pulumi/pulumi)
+[Pulumi](https://github.com/pulumi/pulumi)'s 
+Infrastructure as Code SDK 
+is the easiest way to create and deploy cloud software that uses containers, 
+serverless functions, hosted services, and infrastructure, on any cloud.
 
 ## References
 
-https://quickwit.io/blog/quickwit-0.5
+- https://quickwit.io/blog/quickwit-0.5

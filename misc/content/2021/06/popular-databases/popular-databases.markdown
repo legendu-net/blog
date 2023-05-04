@@ -170,6 +170,13 @@ that allows generating analytical data reports in real time.
 ## [yugabyte-db](https://github.com/YugaByte/yugabyte-db)
 [yugabyte-db](https://github.com/YugaByte/yugabyte-db)
 
+## [scylladb](https://github.com/scylladb/scylladb)
+[Scylla](https://github.com/scylladb/scylladb)
+is the real-time big data database 
+that is API-compatible with Apache Cassandra and Amazon DynamoDB. 
+Scylla embraces a shared-nothing approach that increases throughput and storage capacity 
+to realize order-of-magnitude performance improvements and reduce hardware costs.
+
 ## MongoDB
 MongoDB is a document-oriented, disk-based database optimized 
 for operational simplicity, schema-free design and very large data volumes. 
@@ -188,6 +195,8 @@ is Twitter's unified cache backend
 which is implemented in C and Rust.
 
 ## References
+
+- [How Discord Stores Trillions of Messages | Deep Dive](https://www.youtube.com/watch?v=xynXjChKkJc)
 
 - [Relational vs. Non-Relational Databases](https://www.youtube.com/watch?v=E9AgJnsEvG4)
 

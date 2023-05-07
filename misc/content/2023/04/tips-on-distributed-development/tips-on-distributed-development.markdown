@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-04-14 12:23:22
-Modified: 2023-04-19 10:38:06
+Modified: 2023-05-07 12:20:25
 Author: Benjamin Du
 Slug: tips-on-distributed-development
 Title: Tips on Distributed Development
@@ -16,6 +16,12 @@ Tags: Computer Science, programming, distributed, development
 [quickwit](https://github.com/quickwit-oss/quickwit)
 
 ## Cloud Tools
+
+### [terraform](https://github.com/hashicorp/terraform)
+[Terraform](https://github.com/hashicorp/terraform)
+Tenables you to safely and predictably create, change, and improve infrastructure. 
+It is an open source tool that codifies APIs into declarative configuration files 
+that can be shared amongst team members, treated as code, edited, reviewed, and versioned.
 
 ### [pulumi](https://github.com/pulumi/pulumi)
 [Pulumi](https://github.com/pulumi/pulumi)'s 

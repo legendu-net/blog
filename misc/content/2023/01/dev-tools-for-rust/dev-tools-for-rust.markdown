@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:02:14
-Modified: 2023-03-06 10:27:42
+Modified: 2023-05-07 12:38:03
 Author: Benjamin Du
 Slug: dev-tools-for-rust
 Title: Dev Tools for Rust
@@ -20,6 +20,10 @@ Tags: Computer Science, programming, Rust, dev, development, develop, tool, carg
 - [Rust Playground](https://play.rust-lang.org/)
 
 ## Rust Dev Tools
+
+### [cargo-px](https://github.com/LukeMathWalker/cargo-px)
+[cargo-px](https://github.com/LukeMathWalker/cargo-px)
+is a cargo subcommand that extends cargo's capabilities when it comes to code generation.
 
 ### [cargo-binstall](https://crates.io/crates/cargo-binstall)
 [cargo-binstall](https://crates.io/crates/cargo-binstall)

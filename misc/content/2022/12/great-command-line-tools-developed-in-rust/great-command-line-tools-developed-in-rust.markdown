@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2023-03-06 10:38:39
+Modified: 2023-05-07 12:26:23
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -33,6 +33,13 @@ procs
 sd
 
 ## Summarize a Project
+
+### [git-cliff](https://github.com/orhun/git-cliff)
+[git-cliff](https://github.com/orhun/git-cliff)
+can generate changelog files from the Git history 
+by utilizing conventional commits as well as regex-powered custom parsers. 
+The changelog template can be customized with a configuration file to match the desired format.
+
 ### [tokei](https://github.com/XAMPPRocky/tokei)
 [Tokei](https://github.com/XAMPPRocky/tokei)
 is a program that displays statistics about your code. 

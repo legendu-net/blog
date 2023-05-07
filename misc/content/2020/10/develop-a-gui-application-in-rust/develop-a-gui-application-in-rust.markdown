@@ -5,7 +5,7 @@ Slug: develop-a-gui-application-in-rust
 Title: Develop a GUI Application in Rust
 Category: Computer Science
 Tags: Computer Science, Rust, GUI, desktop, application, Tauri, Iced, Slint
-Modified: 2022-10-13 12:04:23
+Modified: 2023-05-07 12:24:22
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -81,6 +81,8 @@ is an easy-to-use, 2D GUI library written entirely in Rust.
 is a Rust bindings for Dear ImGui. 
 
 ## References
+
+- [50 Shades of Rust - Or emerging Rust GUIs in a WASM world](https://monadical.com/posts/shades-of-rust-gui-library-list.html)
 
 - [Rust: state of GUI, December 2022](https://kas-gui.github.io/blog/state-of-GUI-2022.html)
 

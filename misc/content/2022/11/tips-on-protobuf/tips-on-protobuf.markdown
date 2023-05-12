@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-11-12 14:31:12
-Modified: 2022-11-12 14:31:12
+Modified: 2023-05-10 17:01:16
 Author: Benjamin Du
 Slug: tips-on-protobuf
 Title: Tips on Protobuf
@@ -29,12 +29,16 @@ Prefer to have oneof with a string field describing the specific type of oneof.
 
 ## References
 
-[AIP 126](https://google.aip.dev/126)
+- [Protocol Buffers Crash Course](https://www.youtube.com/watch?v=46O73On0gyI&t=6s)
 
-[AIP 143](https://google.aip.dev/143)
+- [Protobuf all the way down · Ainsley Escorce-Jones](https://www.youtube.com/watch?v=4784u5PRc5o&list=PLXY4_qxp8fUfML_FrAJN-OPfvg2DiqtIk&index=7)
 
-[Protobuf Overview](https://developers.google.com/protocol-buffers/docs/overview)
+- [AIP 126](https://google.aip.dev/126)
 
-[Protobuf @ GitHub](https://github.com/protocolbuffers/protobuf) 
+- [AIP 143](https://google.aip.dev/143)
 
-[Protocol Buffers](https://developers.google.com/protocol-buffers/)
+- [Protobuf Overview](https://developers.google.com/protocol-buffers/docs/overview)
+
+- [Protobuf @ GitHub](https://github.com/protocolbuffers/protobuf) 
+
+- [Protocol Buffers](https://developers.google.com/protocol-buffers/)

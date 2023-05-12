@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-04-14 12:23:22
-Modified: 2023-05-07 12:20:25
+Modified: 2023-05-10 13:47:42
 Author: Benjamin Du
 Slug: tips-on-distributed-development
 Title: Tips on Distributed Development
@@ -28,6 +28,14 @@ that can be shared amongst team members, treated as code, edited, reviewed, and 
 Infrastructure as Code SDK 
 is the easiest way to create and deploy cloud software that uses containers, 
 serverless functions, hosted services, and infrastructure, on any cloud.
+
+## Misc
+
+### [zenoh](https://github.com/eclipse-zenoh/zenoh)
+Zenoh /zeno/ is a pub/sub/query protocol unifying data in motion, 
+data at rest and computations. 
+It elegantly blends traditional pub/sub with geo distributed storage, queries and computations, 
+while retaining a level of time and space efficiency that is well beyond any of the mainstream stacks.
 
 ## References
 

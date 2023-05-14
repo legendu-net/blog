@@ -5,7 +5,7 @@ Slug: reduce-size-of-git-repository
 Title: Reduce Size of Git Repository
 Category: Software
 Tags: software, Git, repository, size
-Modified: 2023-02-21 22:10:53
+Modified: 2023-05-13 17:32:32
 
 **
 Things on this page are
@@ -18,8 +18,8 @@ Please read with your own judgement!
 Git Large File Storage (Git-LFS) is the recommended way to work with large files.
 Please read the following if have already committed large files into your repository.
 
-## [git-filter-repo](https://github.com/newren/git-filter-repo)
-[git-filter-repo](https://github.com/newren/git-filter-repo)
+## [git-filter-repo](https://www.legendu.net/misc/blog/tips-on-git-filter-repo)
+[git-filter-repo](https://www.legendu.net/misc/blog/tips-on-git-filter-repo)
 is currently the best and the recommended tool by the Git project 
 for rewriting history of Git repositories.
 .
@@ -33,12 +33,6 @@ for rewriting history of Git repositories.
 [Git is really slow for 100,000 objects. Any fixes?](https://stackoverflow.com/questions/3313908/git-is-really-slow-for-100-000-objects-any-fixes)
 
 [Why is my git repository so big?](https://stackoverflow.com/questions/1029969/why-is-my-git-repository-so-big)
-
-## [BFG Repo Cleaner](https://rtyley.github.io/bfg-repo-cleaner/)
-
-```
-java -jar bfg.jar --strip-blobs-bigger-than 100M some-big-repo.git
-```
 
 ## Other Ways
 

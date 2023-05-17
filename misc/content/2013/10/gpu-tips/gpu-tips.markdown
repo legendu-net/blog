@@ -5,7 +5,7 @@ Title: Tips on GPU Computing
 Slug: gpu-tips
 Category: Computer Science
 Tags: tips, GPU, programming, Nvidia
-Modified: 2021-12-25 13:16:19
+Modified: 2023-05-15 22:38:52
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
@@ -72,8 +72,11 @@ is a very lightweight wrapper around Vulkan.
     [rust-gpu](https://github.com/EmbarkStudios/rust-gpu)
     aims at making Rust a first-class language and ecosystem for GPU shaders.
 
-- [wgpu-rs](https://github.com/gfx-rs/wgpu-rs)
-[wgpu-rs](https://github.com/gfx-rs/wgpu-rs)
+- [wgpu](https://github.com/gfx-rs/wgpu)
+[wgpu](https://github.com/gfx-rs/wgpu)
+is a cross-platform, safe, pure-rust graphics api. 
+It runs natively on Vulkan, Metal, D3D12, D3D11, and OpenGLES; 
+and on top of WebGPU on wasm.
 
 - [vulkano](https://github.com/vulkano-rs/vulkano)
 [Vulkano](https://github.com/vulkano-rs/vulkano)

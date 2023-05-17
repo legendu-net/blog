@@ -5,7 +5,7 @@ Slug: tips-on-network-protocols
 Title: Tips on Network Protocols
 Category: Computer Science
 Tags: Computer Science, network, internet, web, protocol, transfer, HTTP, FTP, TCP, IP, UDP, SMTP
-Modified: 2022-11-25 13:19:18
+Modified: 2023-05-15 20:54:27
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -20,6 +20,8 @@ HTTP, FTP, SMTP, WebSocket are high-level data transfer protocols.
 
 WebSocket persists a connection and use it for bidirectional data transfering.
 It is good for real-time applications, e.g., chat and game applications.
+
+WebTransport is a better alternative to WebSocket.
 
 
 - [The QUIC Protocol, HTTP3, and How HTTP Has Evolved](https://www.youtube.com/watch?v=VONSx_ftkz8)

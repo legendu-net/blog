@@ -70,6 +70,8 @@ Subwords are randomly picked in both language data. Both language subword can be
 
 ### Out-of-Vocabulary (OOV)
 
+### [Double Dipping in Machine Learning]( https://www.legendu.net/misc/blog/double-dipping-in-machine-learning )
+
 ### Byte Pair Encoding (BPE) Subword Algorithm
 
 ## Take Away

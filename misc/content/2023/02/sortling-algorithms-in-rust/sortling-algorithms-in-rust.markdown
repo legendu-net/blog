@@ -1,9 +1,9 @@
 Status: published
 Date: 2023-02-23 11:45:10
-Modified: 2023-02-23 11:45:10
+Modified: 2023-05-20 12:46:46
 Author: Benjamin Du
-Slug: sortling-algorithms-in-rust
-Title: Sortling Algorithms in Rust
+Slug: sorting-algorithms-in-rust
+Title: Sorting Algorithms in Rust
 Category: Computer Science
 Tags: Computer Science, programming, algorithm, algo, sort, Rust, GlideSort
 

@@ -5,7 +5,7 @@ Slug: hardware-for-ai
 Title: Hardware for AI
 Category: AI
 Tags: AI, deep learning, machine learning, data science, hardware, GPU, TPU, Jetson Nano, Google Coral
-Modified: 2021-09-16 10:20:46
+Modified: 2023-05-20 11:56:58
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -66,3 +66,8 @@ https://www.digitalstorm.com/configurator.asp?id=3137888
 Need UPS in case of power interruption 
 
 https://list.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E6%9C%BA%E6%96%AD%E7%94%B5%E4%BF%9D%E6%8A%A4%E7%94%B5%E6%BA%90&enc=utf-8&spm=2.1.11
+
+## References
+
+- [Google Just Turned the Raspberry Pi into a Supercomputer](https://www.youtube.com/watch?v=mOY_Dbyq6OY)
+

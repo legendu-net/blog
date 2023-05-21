@@ -4,7 +4,7 @@ Author: Benjamin Du
 Slug: computer-science-algorithms
 Title: Computer Science Algorithms
 Category: Computer Science
-Tags: programming, , computer science algorithms, leetcode
+Tags: programming, computer science, leetcode, algo, algorithm, data structure
 Modified: 2023-05-20 17:28:54
 
 **
@@ -26,6 +26,8 @@ https://leetcode.com/
 https://github.com/TheAlgorithms/Python
 
 ## Visualization
+
+- [VisualAlgo](https://visualgo.net/en)
 
 - [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 

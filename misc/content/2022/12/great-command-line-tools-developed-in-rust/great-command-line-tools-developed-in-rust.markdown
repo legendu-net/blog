@@ -127,6 +127,11 @@ is a structural diff tool that compares files based on their syntax.
 [gping](https://github.com/orf/gping)
 is ping with a graph.
 
+## [trippy](https://github.com/fujiapple852/trippy)
+[Trippy](https://github.com/fujiapple852/trippy)
+combines the functionality of traceroute and ping 
+and is designed to assist with the analysis of networking issues.
+
 ## [ruff](https://github.com/charliermarsh/ruff)
 [ruff](https://github.com/charliermarsh/ruff)
 is an extremely fast Python linter, written in Rust.

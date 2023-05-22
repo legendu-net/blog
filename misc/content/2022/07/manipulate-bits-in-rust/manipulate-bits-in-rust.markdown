@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-07-18 16:54:20
-Modified: 2023-01-28 17:31:11
+Modified: 2023-05-19 11:41:38
 Author: Benjamin Du
 Slug: manipulate-bits-in-rust
 Title: Manipulate Bits in Rust
@@ -31,4 +31,9 @@ Simple bit field trait providing get_bit, get_bits, set_bit, and set_bits method
 ## [bitfield](https://crates.io/crates/bitfield)
 [bitfield](https://crates.io/crates/bitfield)
 provides macros to generate bitfield-like struct.
+
+## [bilge](https://crates.io/crates/bilge)
+[Bilge](https://crates.io/crates/bilge)
+allows you to use bitsized types as if they were a feature of rust.
+
 

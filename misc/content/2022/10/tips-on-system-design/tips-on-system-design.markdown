@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-08 16:41:38
-Modified: 2022-11-27 13:36:59
+Modified: 2023-05-21 21:16:06
 Author: Benjamin Du
 Slug: tips-on-system-design
 Title: Tips on System Design
@@ -17,3 +17,7 @@ Tags: Computer Science, programming
 [Popular Databases](https://www.legendu.net/misc/blog/popular-databases)
 
 [Messsage Queue Implementations](https://www.legendu.net/misc/blog/messsage-queue-implementations/)
+
+## Authentication System
+- [Design a Simple Authentication System | System Design Interview Prep](https://www.youtube.com/watch?v=uj_4vxm9u90)
+

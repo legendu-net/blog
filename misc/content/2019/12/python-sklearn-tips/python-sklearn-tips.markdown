@@ -27,3 +27,5 @@ Please read with your own judgement!
 ## References
 
 https://scikit-learn.org/stable/modules/compose.html#transforming-target-in-regression
+
+[Split a Dataset into Train and Test Datasets in Python]( https://www.legendu.net/misc/blog/python-ai-split-dataset ) 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-06-16 15:34:08
-Modified: 2023-01-13 16:09:59
+Modified: 2023-05-26 12:25:29
 Author: Benjamin Du
 Slug: unit-test-in-rust
 Title: Unit Test in Rust
@@ -118,6 +118,14 @@ There are a few approaches to pass arguments to unit test functions.
     - Integrate tests as a command into your main project.
         This is not recommended 
         as you might introduce test-only dependencies into your main project.
+
+## Mocking
+
+[Mocking in Rust: Mockall and alternatives](https://blog.logrocket.com/mocking-rust-mockall-alternatives)
+
+- [mockall](https://crates.io/crates/mockall)
+
+- [mockers](https://crates.io/crates/mockers)
 
 ## References
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:35:52
-Modified: 2023-01-31 09:58:26
+Modified: 2023-05-26 11:00:13
 Author: Benjamin Du
 Slug: useful-rust-crates-for-numeric-computation
 Title: Useful Rust Crates for Numeric Computation
@@ -26,6 +26,15 @@ provides numeric traits for generic mathematics in Rust.
 ## [ux](https://crates.io/crates/ux)
 [ux](https://crates.io/crates/ux)
 implements non standard integers.
+
+## [num_rational](https://crates.io/crates/num_rational)
+[num_rational](https://crates.io/crates/num_rational)
+is a rational numbers implementation for Rust
+.
+
+## [bigdecimal](https://crates.io/crates/bigdecimal)
+[bigdecimal](https://crates.io/crates/bigdecimal)
+provides arbitary-precision decimal numbers implemented in pure Rust.
 
 ## [enum_primitive](https://crates.io/crates/enum_primitive)
 [enum_primitive](https://crates.io/crates/enum_primitive)

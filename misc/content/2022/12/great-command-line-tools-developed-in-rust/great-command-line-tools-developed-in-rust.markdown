@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2023-05-07 12:26:23
+Modified: 2023-05-26 11:11:41
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -9,6 +9,11 @@ Tags: Computer Science, programming, Rust, alternative, command-line, rewrite
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+
+## [tealdeer](https://crates.io/crates/tealdeer)
+[tealdeer](https://crates.io/crates/tealdeer)
+is a very fast implementation of tldr in Rust: 
+Simplified, example based and community-driven man pages.
 
 ## [halp](https://github.com/orhun/halp)
 [halp](https://github.com/orhun/halp)
@@ -53,61 +58,84 @@ that displays project information and code statistics
 for a local Git repository directly to your terminal. 
 The tool is completely offline - no network access is required.
 
-## [dust](https://github.com/bootandy/dust)
+## System Monitoring
+
+### [bottom](https://crates.io/crates/bottom)
+[bottom](https://crates.io/crates/bottom)
+is a customizable cross-platform graphical process/system monitor 
+for the terminal. 
+It supports Linux, macOS, and Windows.
+
+### [sniffnet](https://crates.io/crates/sniffnet)
+[sniffnet](https://crates.io/crates/sniffnet)
+is an application to comfortably monitor your network traffic.
+
+### [trippy](https://github.com/fujiapple852/trippy)
+[Trippy](https://github.com/fujiapple852/trippy)
+combines the functionality of traceroute and ping 
+and is designed to assist with the analysis of networking issues.
+
+### [gping](https://github.com/orf/gping)
+[gping](https://github.com/orf/gping)
+is ping with a graph.
+
+### [bandwhich](https://crates.io/crates/bandwhich)
+[bandwhich](https://crates.io/crates/bandwhich)
+is a CLI utility for displaying current network utilization by process, 
+connection and remote IP/hostname.
+
+## Disk Usage
+### [dust](https://github.com/bootandy/dust)
 [Dust](https://github.com/bootandy/dust)
 is a more intuitive version of du in rust.
 
-## [dua-cli](https://crates.io/crates/dua-cli)
+### [dua-cli](https://crates.io/crates/dua-cli)
 [dua-cli](https://crates.io/crates/dua-cli)
 
-## [ripgrep](https://www.legendu.net/misc/blog/ripgrep-is-a-better-alternative-to-find)
+## Navigation and Searching
+### [ripgrep](https://www.legendu.net/misc/blog/ripgrep-is-a-better-alternative-to-find)
 [ripgrep](https://www.legendu.net/misc/blog/ripgrep-is-a-better-alternative-to-find)
 recursively searches directories for a regex pattern while respecting your gitignore.
 
-## [igrep](https://github.com/konradsz/igrep)
+### [igrep](https://github.com/konradsz/igrep)
 [igrep](https://github.com/konradsz/igrep)
 runs grep (ripgrep's library) in the background, 
 allows interactively pick its results and open selected match in text editor of choice (vim by default).
 
-## [broot](https://github.com/Canop/broot)
+### [broot](https://github.com/Canop/broot)
 [broot](https://github.com/Canop/broot)
 provides a new better way to see and navigate directory trees.
 
-## [gitoxide](https://github.com/Byron/gitoxide)
+## Git Tools
+
+### [gitui](https://github.com/extrawurst/gitui)
+[GitUI](https://github.com/extrawurst/gitui)
+provides you with the comfort of a git GUI but right in your terminal
+.
+
+### [gitoxide](https://github.com/Byron/gitoxide)
 [gitoxide](https://github.com/Byron/gitoxide)
 is an implementation of git written in Rust 
 for developing future-proof applications which strive 
 for correctness and performance 
 while providing a pleasant and unsurprising developer experience.
 
-## [git-leave](https://crates.io/crates/git-leave)
+### [git-leave](https://crates.io/crates/git-leave)
 [git-leave](https://crates.io/crates/git-leave)
 checks for unsaved or uncommitted changes on your machine.
 
-## [Stacked Git](https://github.com/stacked-git/stgit)
+### [Stacked Git](https://github.com/stacked-git/stgit)
 [Stacked Git](https://github.com/stacked-git/stgit)
 ,
 StGit for short, 
 is an application for managing Git commits as a stack of patches.
 
-## [git-grab](https://github.com/wezm/git-grab)
+### [git-grab](https://github.com/wezm/git-grab)
 [git-grab](https://github.com/wezm/git-grab)
 is a small tool to clone git repositories to a standard location, 
 organised by domain name and path. It runs on BSD, Linux, macOS, Windows, and more.
 
-## [Nosey Parker](https://github.com/praetorian-inc/noseyparker)
-[Nosey Parker](https://github.com/praetorian-inc/noseyparker)
-is a command-line program that finds secrets and sensitive information in textual data and Git history.
 
-## [bottom](https://crates.io/crates/bottom)
-[bottom](https://crates.io/crates/bottom)
-is a customizable cross-platform graphical process/system monitor 
-for the terminal. 
-It supports Linux, macOS, and Windows.
-
-tealdeer
-
-bandwhich
 
 grex
 
@@ -122,15 +150,6 @@ is a syntax-highlighting pager for git, diff, and grep output.
 ## [difftastic](https://github.com/Wilfred/difftastic)
 [Difftastic](https://github.com/Wilfred/difftastic)
 is a structural diff tool that compares files based on their syntax.
-
-## [gping](https://github.com/orf/gping)
-[gping](https://github.com/orf/gping)
-is ping with a graph.
-
-## [trippy](https://github.com/fujiapple852/trippy)
-[Trippy](https://github.com/fujiapple852/trippy)
-combines the functionality of traceroute and ping 
-and is designed to assist with the analysis of networking issues.
 
 ## [ruff](https://github.com/charliermarsh/ruff)
 [ruff](https://github.com/charliermarsh/ruff)
@@ -149,10 +168,6 @@ is a Chromium based browser built to run in a terminal.
 a tool like speedtest-cli, but in Rust
 .
 
-## [gitui](https://github.com/extrawurst/gitui)
-[GitUI](https://github.com/extrawurst/gitui)
-provides you with the comfort of a git GUI but right in your terminal
-.
 
 ## [mprocs](https://github.com/pvolok/mprocs)
 [mprocs](https://github.com/pvolok/mprocs)
@@ -160,10 +175,10 @@ runs multiple commands in parallel and shows output of each command separately.
 
 ## Security
 
-### [noseyparker](https://github.com/praetorian-inc/noseyparker)
-[NoseyParker](https://github.com/praetorian-inc/noseyparker)
-is a command-line program that finds secrets and sensitive information 
-in textual data and Git history.
+## [Nosey Parker](https://github.com/praetorian-inc/noseyparker)
+[Nosey Parker](https://github.com/praetorian-inc/noseyparker)
+is a command-line program that finds secrets and sensitive information in textual data and Git history.
+
 
 ## [rtx](https://github.com/jdxcode/rtx)
 [rtx](https://github.com/jdxcode/rtx)

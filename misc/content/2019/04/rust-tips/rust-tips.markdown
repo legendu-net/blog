@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-04-10 12:17:46
-Modified: 2023-03-19 19:59:26
+Modified: 2023-05-26 11:18:38
 Author: Benjamin Du
 Slug: rust-tips
 Title: Tips on Rust
@@ -143,6 +143,10 @@ https://github.com/valeriansaliou/sonic
 - [Baby Steps](http://smallcultfollowing.com/babysteps/)
 
 - [EventHelix - Rust](https://www.eventhelix.com/rust/)
+
+## Good Forums
+
+[Rust Magazine](https://rustmagazine.org/)
 
 ## Tutorials
 

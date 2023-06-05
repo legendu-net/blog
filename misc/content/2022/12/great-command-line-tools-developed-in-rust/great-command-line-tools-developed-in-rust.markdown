@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2023-06-04 21:02:27
+Modified: 2023-06-04 21:15:28
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -29,13 +29,21 @@ and records additional context for your commands.
 Additionally, 
 it provides optional and fully encrypted synchronisation of your history between machines, via an Atuin server.
 
-[ Bat ]( https://www.legendu.net/misc/blog/bat-is-a-better-alternative-to-cat )
+## [bat]( https://www.legendu.net/misc/blog/bat-is-a-better-alternative-to-cat )
+[bat]( https://www.legendu.net/misc/blog/bat-is-a-better-alternative-to-cat )
+is a cat clone with syntax highlighting and Git integration.
 
-exa
+## [exa](https://github.com/ogham/exa)
+[exa](https://github.com/ogham/exa)
+is a modern replacement for ls.
 
-procs
+## [procs](https://github.com/dalance/procs)
+[procs](https://github.com/dalance/procs)
+is a modern replacement for ps written in Rust.
 
-sd
+## [sd](https://github.com/chmln/sd)
+[sd](https://github.com/chmln/sd)
+is an intuitive find & replace CLI (sed alternative).
 
 ## Summarize a Project
 

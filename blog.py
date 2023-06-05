@@ -203,7 +203,7 @@ def show(blogger, args) -> None:
         """
     ):
         url = f"{SITE}/{dir_}/blog/{slug}"
-        print(f"\n{rowid}: [  {title}  ]( {url} )  |  {path}")
+        print(f"\n{rowid}: [{title}]( {url} )  |  {path}")
     print("")
 
 

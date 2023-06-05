@@ -1,16 +1,13 @@
 Status: published
 Date: 2019-04-10 12:17:46
-Modified: 2023-05-26 11:18:38
+Modified: 2023-06-04 21:17:25
 Author: Benjamin Du
 Slug: rust-tips
 Title: Tips on Rust
 Category: Computer Science
 Tags: programming, Rust, tips, Cargo, rustup
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Installation 
 
@@ -47,8 +44,7 @@ please refer to
 
 ## Conditional Compilation in Rust 
 
-https://users.rust-lang.org/t/conditional-compilation-for-debug-release/1098
-Conditional compilation for debug/release
+[Conditional compilation for debug/release](https://users.rust-lang.org/t/conditional-compilation-for-debug-release/1098)
 
     :::bash
     #[cfg(debug_assertions)]
@@ -76,10 +72,7 @@ Conditional compilation for debug/release
     [Why does iteration over an inclusive range generate longer assembly in Rust?](https://stackoverflow.com/questions/70672533/why-does-iteration-over-an-inclusive-range-generate-longer-assembly-in-rust)
     .
 
-## Pattern Matching
-Pattern matching 
-
-https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html#matching-named-variables
+## [Pattern Matching in Rust]( https://www.legendu.net/misc/blog/pattern-matching-in-rust )
 
 ## Popular Rust Libraries
 

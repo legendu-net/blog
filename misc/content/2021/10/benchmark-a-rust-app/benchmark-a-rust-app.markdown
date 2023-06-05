@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-10-26 22:38:20
-Modified: 2023-02-23 16:18:39
+Modified: 2023-06-04 19:07:00
 Author: Benjamin Du
 Slug: benchmark-a-rust-app
 Title: Benchmark a Rust App
@@ -93,6 +93,8 @@ Vec::clear / ArrayVec::clear: 2
 
 
 ## References
+
+- [How to benchmark a private function on all versions of the compiler](https://users.rust-lang.org/t/how-to-benchmark-a-private-function-on-all-versions-of-the-compiler/11210)
 
 - [Why my Rust benchmarks were wrong, or how to correctly use std::hint::black_box?](https://gendignoux.com/blog/2022/01/31/rust-benchmarks.html)
 

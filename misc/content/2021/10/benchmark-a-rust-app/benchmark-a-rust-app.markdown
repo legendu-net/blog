@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-10-26 22:38:20
-Modified: 2023-06-04 19:07:00
+Modified: 2023-06-04 23:52:18
 Author: Benjamin Du
 Slug: benchmark-a-rust-app
 Title: Benchmark a Rust App
@@ -93,6 +93,8 @@ Vec::clear / ArrayVec::clear: 2
 
 
 ## References
+
+- [Conditional compilation for benchmarks](https://users.rust-lang.org/t/conditional-compilation-for-benchmarks/47227)
 
 - [How to benchmark a private function on all versions of the compiler](https://users.rust-lang.org/t/how-to-benchmark-a-private-function-on-all-versions-of-the-compiler/11210)
 

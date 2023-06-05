@@ -241,6 +241,7 @@
 - ["Featuretools", "FeatureTools"]
 - ["Projectlibre", "ProjectLibre"]
 - ["Runtimeerror", "RuntimeError"]
+- ["Scikit-Learn", "scikit-learn"]
 # 13 symbols
 - ["Getquotausage", "GetQuotaUsage"]
 - ["Youcompleteme", "YouCompleteMe"]

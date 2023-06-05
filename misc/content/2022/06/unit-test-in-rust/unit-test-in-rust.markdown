@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-06-16 15:34:08
-Modified: 2023-05-26 12:25:29
+Modified: 2023-06-04 21:00:45
 Author: Benjamin Du
 Slug: unit-test-in-rust
 Title: Unit Test in Rust
@@ -9,17 +9,24 @@ Tags: Computer Science, programming, Rust, test, unit, testing, cargo
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-[debug_assert!](https://doc.rust-lang.org/std/macro.debug_assert.html)
+## Tips and Traps
 
-[std::assert!](https://doc.rust-lang.org/std/macro.assert.html)
+1. [std::assert!](https://doc.rust-lang.org/std/macro.assert.html)
+    and
+    [std::assert_eq!](https://doc.rust-lang.org/std/macro.assert_eq.html)
+    can be used to assert whether certain conditions are met.
+    They are typically used for testing
+    but they can also be used in regular code
+    to assert certain conditions are met at runtime.
 
-[assert_eq!](https://doc.rust-lang.org/std/macro.assert_eq.html)
+2. [debug_assert!](https://doc.rust-lang.org/std/macro.debug_assert.html)
+    is similar to 
+    [std::assert!](https://doc.rust-lang.org/std/macro.assert.html)
+    but it only takes effect in the debugging version of the compiled binary.
 
-Both
-[std::assert!](https://doc.rust-lang.org/std/macro.assert.html)
-and
-[assert_eq!](https://doc.rust-lang.org/std/macro.assert_eq.html)
-support an option error message on failure.
+3. All assert macros support an optional error message on failure.
+
+## Examples
 
 [matches!](https://doc.rust-lang.org/core/macro.matches.html)
 
@@ -121,7 +128,7 @@ There are a few approaches to pass arguments to unit test functions.
 
 ## Mocking
 
-[Mocking in Rust: Mockall and alternatives](https://blog.logrocket.com/mocking-rust-mockall-alternatives)
+- [Mocking in Rust: Mockall and alternatives](https://blog.logrocket.com/mocking-rust-mockall-alternatives)
 
 - [mockall](https://crates.io/crates/mockall)
 

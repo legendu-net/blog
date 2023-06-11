@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 00:34:09
-Modified: 2022-10-09 17:21:44
+Modified: 2023-06-09 23:40:58
 Author: Benjamin Du
 Slug: gRPC-GraphQL-and-RESTful-APIs
 Title: gRPC GraphQL and RESTful APIs
@@ -25,4 +25,6 @@ even thought it is doable.
 
 ## References
 
-[gRPC vs GraphQL vs REST? What's the best API Technology for Golang?](https://www.youtube.com/watch?v=opVobybT_1w)
+- [Top 6 Most Popular API Architecture Styles](https://www.youtube.com/watch?v=4vLxWqE94l4)
+
+- [gRPC vs GraphQL vs REST? What's the best API Technology for Golang?](https://www.youtube.com/watch?v=opVobybT_1w)

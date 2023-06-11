@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-04-10 12:17:46
-Modified: 2023-06-04 21:17:25
+Modified: 2023-06-09 20:52:37
 Author: Benjamin Du
 Slug: rust-tips
 Title: Tips on Rust
@@ -8,6 +8,10 @@ Category: Computer Science
 Tags: programming, Rust, tips, Cargo, rustup
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+https://lib.rs/
+
+https://blessed.rs/crates
 
 ## Installation 
 

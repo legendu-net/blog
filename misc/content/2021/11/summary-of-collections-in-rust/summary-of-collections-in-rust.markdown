@@ -65,37 +65,11 @@ An n-dimensional array for general elements and for numerics. Lightweight array 
 [Array in Rust](https://www.legendu.net/misc/blog/rust-collection-array/)
 has discussions on ways to make it easy to construct arrays.
 
-## Hash / Set / Map
+## Maps in Rust
 
-## Hash code and Hash Maps
-
-- [fnv](https://crates.io/crates/fnv)
-    is an implementation of the Fowler–Noll–Vo hash function.
-
-- [hashbrown](https://crates.io/crates/hashbrown)
-    is a Rust port of Google's high-performance SwissTable hash map, 
-    adapted to make it a drop-in replacement for Rust's standard HashMap and HashSet types.
-    
-- [phf](https://crates.io/crates/phf)
-    provides runtime support for perfect hash function data structures
-    
-- [indexmap](https://crates.io/crates/indexmap)
-    A hash table with consistent order and fast iteration. 
-    The indexmap is a hash table 
-    where the iteration order of the key-value pairs is independent of the hash values of the keys. 
-    It has the usual hash table functionality, 
-    it preserves insertion order except after removals, 
-    and it allows lookup of its elements by either hash table key or numerical index.
-
-- [dashmap](https://crates.io/crates/dashmap)
-    is a blazing fast concurrent HashMap for Rust.
-
-- [TinySet](https://crates.io/crates/tinyset)
-    provides a few collections that are optimized to scale in size well for small numbers of elements, 
-    while still scaling well in time (and size) for numbers of elements.
-
-- [schnellru](https://crates.io/crates/schnellru)
-    is a fast and flexible LRU map.
+Please refer to
+[Map in Rust]( https://www.legendu.net/misc/blog/rust-map )
+for detailed discussions.
 
 ## Graph
 

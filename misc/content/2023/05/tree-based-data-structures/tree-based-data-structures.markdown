@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-05-20 11:57:13
-Modified: 2023-05-20 12:46:10
+Modified: 2023-06-10 18:03:30
 Author: Benjamin Du
 Slug: tree-based-data-structures
 Title: Tree-Based Data Structures
@@ -18,13 +18,44 @@ Tags: Computer Science, programming
     A red-black tree is faster for insertion/deletion compared to an AVL tree
     as it requires less operations for rotation to keep the tree (sort of) balanced.
     However, it is slightly slower for lookup compared to an AVL tree.
-    Re-black trees are more generally useful instead of for binary search only.
+    Red-black trees are more generally useful instead of for binary search only.
 
 ## Binary Tree vs B-Tree
 
 1. B-Trees are self-balancing.
-2. B-Trees are for storing data on disk while binary tree are for storing data in memory.
-3. B-Trees are typically used for database indexing.
+2. B-trees are designed to handle large amounts of data efficiently, 
+    particularly in scenarios 
+    where the data is stored on disk or in other secondary storage devices.
+    For example, 
+    B-Trees are typically used for database indexing.
+
+## B-Tree vs Red-black Tree
+
+B-trees and red-black trees are both self-balancing binary search trees that provide efficient operations for insertion, deletion, and search. However, they have different characteristics and are suited for different use cases.
+
+
+### B-trees:
+
+B-trees are designed to handle large amounts of data efficiently, particularly in scenarios where the data is stored on disk or in other secondary storage devices.
+They have a variable number of keys per node, typically denoted by the parameter "b," which determines the maximum number of children a node can have.
+B-trees are optimized for minimizing disk I/O operations by maintaining a balanced tree structure, which allows for efficient sequential access.
+They are commonly used in file systems and databases to efficiently store and retrieve data from disk.
+B-trees provide logarithmic time complexity for search, insert, and delete operations, typically O(log n), where n is the number of elements in the tree.
+B-trees have a higher branching factor compared to red-black trees, resulting in shallower trees and fewer levels.
+
+### Red-black trees:
+
+Red-black trees are balanced binary search trees that guarantee relatively uniform height, which ensures efficient operations even for in-memory data structures.
+They maintain a set of additional properties that ensure the tree remains balanced, such as the coloring of nodes (either red or black) and rotation operations.
+Red-black trees are commonly used in programming language libraries and other in-memory data structures where the data size is not extremely large.
+They provide efficient worst-case time complexity for search, insert, and delete operations, all with a time complexity of O(log n), where n is the number of elements in the tree.
+Red-black trees have a higher overhead in terms of memory usage compared to B-trees due to the additional properties and color information stored in each node.
+
+In summary, 
+B-trees are optimized for disk-based storage systems, 
+while red-black trees are primarily used for in-memory data structures. 
+B-trees excel in scenarios where the data size is significant and efficient disk I/O is crucial. 
+Red-black trees are suitable for applications where the data size is manageable and balanced operations are required.
 
 ## Heap
 

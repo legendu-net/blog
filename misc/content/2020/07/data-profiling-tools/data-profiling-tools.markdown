@@ -5,7 +5,7 @@ Slug: data-profiling-tools
 Title: Data Profiling Tools
 Category: Computer Science
 Tags: Computer Science, data profiling, Optimus, deepu, pandas-profiling
-Modified: 2020-08-10 15:59:42
+Modified: 2023-06-11 16:06:34
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -13,9 +13,9 @@ Please read with your own judgement!
 **
 
 
-1. [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling)
+1. [ydata-profiling](https://github.com/ydataai/ydata-profiling)
 
-    pandas-profiling is tool for profiling pandas DataFrames.
+    ydata-profiling (successor to pandas-profiling) is tool for profiling pandas and Spark DataFrames.
     One possible way to work with large data is to do simple profiling on the large DataFrame 
     and then sample a relative small data and use pandas-profiling to profile it.
 

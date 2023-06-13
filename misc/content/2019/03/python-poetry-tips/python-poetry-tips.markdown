@@ -5,7 +5,7 @@ Slug: python-poetry-tips
 Title: Manage Your Python Project Using Poetry
 Category: Computer Science
 Tags: programming, Python, poetry, build tool, dependency management
-Modified: 2021-09-01 09:41:01
+Modified: 2023-06-11 14:05:48
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -46,6 +46,15 @@ Please read with your own judgement!
 
 4. Poetry has lots of issues in Windows currently.
     It is suggested that you avoid using poetry in Windows.
+
+5. If you encounter the following error message
+    when running `poetry install`,
+
+    > [Errno 2] No such file or directory: '/path/to/readme.md'
+
+    it means that you have specified `tool.poetry.readme` 
+    to be `readme.md` in `pyproject.toml`
+    but `readme.md` does not exists under root directory of the project.
 
 ## Install Python Poetry
 

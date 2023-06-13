@@ -15,12 +15,9 @@ Please read with your own judgement!
 
 ## `pandas` Settings
 
-```Python
-import pandas as pd
-pd.set_option("display.max_rows", 1000)
-pd.set_option("display.max_columns", 1000)
-pd.set_option("display.max_colwidth", 100)
-```
+Please refer to
+[Options for the pandas Package in Python](http://www.legendu.net/misc/blog/options-pandas-python/)
+for discussions.
 
 ## Tips and Traps
 

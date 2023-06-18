@@ -88,6 +88,7 @@
 - ["Blas", "BLAS"]
 - ["Curl", "cURL"]
 - ["Grub", "GRUB"]
+- ["Gbdt", "GBDT"]
 - ["Grpc", "gRPC"]
 - ["Heic", "HEIC"]
 - ["Html", "HTML"]

@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-08 21:33:57
-Modified: 2023-02-21 19:52:54
+Modified: 2023-06-19 18:56:48
 Author: Benjamin Du
 Slug: tips-on-bytehound
 Title: Tips on Bytehound
@@ -15,6 +15,7 @@ Bytehound works with Rust stable
 
 ## Installation
 
+    :::bash
     apt-get install gcc nodejs npm
     npm install -g yarn
     cargo build --release -p bytehound-preload
@@ -28,9 +29,29 @@ Or if you use
 
 ## Usage
 
-    ./bytehound server --port 9090 -i 0.0.0.0 memory-profiling_*.dat 
+Run your application with bytehound to collect memory usage data.
+
+    :::bash
     export MEMORY_PROFILER_LOG=warn
     LD_PRELOAD=./libbytehound.so ./your_application
+
+Below is an example script, 
+which build the "release-debug" version of the Rust project and run it.
+
+    :::bash
+    cargo build --profile release-debug
+    export MEMORY_PROFILER_LOG=warn
+    LD_PRELOAD=~/.local/lib/libbytehound.so ../../target/release-debug/ofcp_test play_r1 \
+        --five-cards "7c Js Qs 3d 2s" \
+        --num-sim1 10 \
+        --num-sim2 10 \
+        --num-sim3 10 \
+        --num-sim4 10
+
+Start a web server to visualize the memory profiling data.
+
+    :::bash
+    ./bytehound server --port 9090 -i 0.0.0.0 memory-profiling_*.dat 
 
 ## References
 

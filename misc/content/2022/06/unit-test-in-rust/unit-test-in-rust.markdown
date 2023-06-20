@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-06-16 15:34:08
-Modified: 2023-06-04 21:00:45
+Modified: 2023-06-20 00:05:23
 Author: Benjamin Du
 Slug: unit-test-in-rust
 Title: Unit Test in Rust
@@ -24,7 +24,9 @@ Tags: Computer Science, programming, Rust, test, unit, testing, cargo
     [std::assert!](https://doc.rust-lang.org/std/macro.assert.html)
     but it only takes effect in the debugging version of the compiled binary.
 
-3. All assert macros support an optional error message on failure.
+3. [static_assertions](https://crates.io/crates/static_assertions)
+
+4. All assert macros support an optional error message on failure.
 
 ## Examples
 

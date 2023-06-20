@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2023-03-28 00:03:52
+Modified: 2023-06-19 18:49:55
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -78,11 +78,11 @@ is a friendly little instrumentation profiler for Rust.
 
 ## Memory Profiling
 
-[bytehound](https://github.com/koute/bytehound)
+[bytehound]( https://www.legendu.net/misc/blog/tips-on-bytehound )
 is the best available memory profiling tool for Rust currently.
 
-### [bytehound](https://github.com/koute/bytehound)
-[bytehound](https://github.com/koute/bytehound)
+### [bytehound]( https://www.legendu.net/misc/blog/tips-on-bytehound )
+[bytehound]( https://www.legendu.net/misc/blog/tips-on-bytehound )
 is a memory profiler for Linux.
 
 ### [dhat-rs](https://crates.io/crates/dhat)

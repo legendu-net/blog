@@ -136,6 +136,13 @@ There are a few approaches to pass arguments to unit test functions.
 
 - [mockers](https://crates.io/crates/mockers)
 
+- [turmoil](https://crates.io/crates/turmoil)
+[Turmoil](https://crates.io/crates/turmoil)
+is a framework for testing distributed systems. 
+It provides deterministic execution by running multiple concurrent hosts within a single thread. 
+It introduces "hardship" into the system via changes in the simulated network. 
+The network can be controlled manually or with a seeded rng.
+
 ## References
 
 - [Useful Rust Crates for Testing](https://www.legendu.net/misc/blog/useful-rust-crates-for-testing)

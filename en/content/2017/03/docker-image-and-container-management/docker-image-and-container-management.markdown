@@ -5,7 +5,7 @@ Slug: docker-image-and-container-management
 Title: Manage Docker Images and Containers 
 Category: Software
 Tags: software, Docker, Docker image, container, management, remove
-Modified: 2021-09-13 10:52:44
+Modified: 2023-06-22 10:58:01
 
 1. It is suggested that you use [osquery](https://osquery.io/)
     or [dsutil.docker](https://github.com/dclong/dsutil/blob/dev/dsutil/docker)
@@ -191,7 +191,7 @@ Copying file between a docker container and the host.
 ## Run Docker Containers in a Docker Container
 
 Please refer to
-[Run Docker Containers Inside a Docker Container](http://www.legendu.net/misc/blog/run-docker-containers-inside-a-docker-container)
+[Run Docker Containers Inside a Docker Container](http://www.legendu.net/en/blog/run-docker-containers-inside-a-docker-container)
 for more detailed discussions.
 
 ## Misc

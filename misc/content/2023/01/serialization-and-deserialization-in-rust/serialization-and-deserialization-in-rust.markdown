@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:44:56
-Modified: 2023-03-06 10:04:40
+Modified: 2023-06-23 16:39:50
 Author: Benjamin Du
 Slug: serialization-and-deserialization-in-rust
 Title: Serialization and Deserialization in Rust
@@ -8,6 +8,11 @@ Category: Computer Science
 Tags: Computer Science, programming, Rust, serialization, deserialization, binary, encoding
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+
+https://crates.io/crates/msgpacker
+
+https://github.com/3Hren/msgpack-rust
 
 ## [serde Based Serialization and Deserialization](https://www.legendu.net/en/blog/hands-on-the-Rust-library-serde/)
 

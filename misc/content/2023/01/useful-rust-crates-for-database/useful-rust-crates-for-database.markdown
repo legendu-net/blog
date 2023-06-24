@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 15:46:22
-Modified: 2023-03-22 14:53:53
+Modified: 2023-06-23 16:42:08
 Author: Benjamin Du
 Slug: useful-rust-crates-for-database
 Title: Useful Rust Crates for Database
@@ -8,6 +8,10 @@ Category: Computer Science
 Tags: Computer Science, programming, Rust, database, crate, SQL, big data, streaming
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+
+https://github.com/gluesql/gluesql
+
 
 ## [surrealdb](https://github.com/surrealdb/surrealdb)
 [SurrealDB](https://github.com/surrealdb/surrealdb)
@@ -20,6 +24,12 @@ SurrealDB can run as a single server or in a highly-available,
 highly-scalable distributed mode, 
 with support for SQL querying from client devices, GraphQL, ACID transactions, WebSocket connections, structured 
 and unstructured data, graph querying, full-text indexing, geospatial querying, and row-by-row permissions-based access.
+
+https://github.com/quickwit-oss/quickwit
+
+https://github.com/cberner/redb
+
+https://github.com/quickwit-oss/tantivy
 
 ## [rusqlite](https://crates.io/crates/rusqlite)
 [rusqlite](https://crates.io/crates/rusqlite)
@@ -125,6 +135,8 @@ is Simple Storage Service (aka S3) client
 to perform bucket and object operations to any Amazon S3 compatible object storage service.
 
 ## Data Layer
+
+https://github.com/grafbase/grafbase
 
 ### [Dozer](https://github.com/getdozer/dozer)
 [Dozer](https://github.com/getdozer/dozer)

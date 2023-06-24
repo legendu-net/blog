@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-04 10:38:16
-Modified: 2023-06-19 16:35:09
+Modified: 2023-06-23 17:45:07
 Author: Benjamin Du
 Slug: async-in-rust
 Title: Async in Rust
@@ -12,6 +12,9 @@ Tags: Computer Science, programming, Rust, async
 - [Improving async Rust codegen](https://swatinem.de/blog/improving-async-codegen/)
 
 - [Implementation Details of async Rust](https://swatinem.de/blog/async-codegen/)
+
+how I finally understood async/await in Rust (part 1)
+https://hegdenu.net/posts/understanding-async-await-1/
 
 ## Tutorials
 

@@ -5,7 +5,7 @@ Slug: tips-on-network-protocols
 Title: Tips on Network Protocols
 Category: Computer Science
 Tags: Computer Science, network, internet, web, protocol, transfer, HTTP, FTP, TCP, IP, UDP, SMTP
-Modified: 2023-05-15 20:54:27
+Modified: 2023-06-23 16:40:57
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -23,6 +23,7 @@ It is good for real-time applications, e.g., chat and game applications.
 
 WebTransport is a better alternative to WebSocket.
 
+MQTT is a standards-based messaging protocol used for machine-to-machine communication. Smart sensors, wearables, and other Internet of Things (IoT) devices typically have to transmit and receive data over a resource-constrained network with limited bandwidth.
 
 - [The QUIC Protocol, HTTP3, and How HTTP Has Evolved](https://www.youtube.com/watch?v=VONSx_ftkz8)
 

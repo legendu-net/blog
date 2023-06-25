@@ -20,6 +20,7 @@ It is good for real-time applications, e.g., chat and game applications.
 
 WebTransport is a better alternative to WebSocket.
 
+MQTT is a standards-based messaging protocol used for machine-to-machine communication. Smart sensors, wearables, and other Internet of Things (IoT) devices typically have to transmit and receive data over a resource-constrained network with limited bandwidth.
 
 - [The QUIC Protocol, HTTP3, and How HTTP Has Evolved](https://www.youtube.com/watch?v=VONSx_ftkz8)
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-08 21:33:57
-Modified: 2023-06-19 18:56:48
+Modified: 2023-06-24 16:47:16
 Author: Benjamin Du
 Slug: tips-on-bytehound
 Title: Tips on Bytehound
@@ -51,7 +51,7 @@ which build the "release-debug" version of the Rust project and run it.
 Start a web server to visualize the memory profiling data.
 
     :::bash
-    ./bytehound server --port 9090 -i 0.0.0.0 memory-profiling_*.dat 
+    bytehound server --port 9090 -i 0.0.0.0 memory-profiling_*.dat 
 
 ## References
 

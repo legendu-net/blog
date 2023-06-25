@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:14:03
-Modified: 2023-03-03 17:17:34
+Modified: 2023-06-23 17:13:54
 Author: Benjamin Du
 Slug: useful-rust-crates-for-developing-command-line-apps
 Title: Useful Rust Crates for Developing Command Line Apps
@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: Computer Science, programming, Rust, command, line, app, application
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+https://github.com/tui-rs-revival/ratatui
 
 ## [tui](https://crates.io/crates/tui)
 [tui](https://crates.io/crates/tui)

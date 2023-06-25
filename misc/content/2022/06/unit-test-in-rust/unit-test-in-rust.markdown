@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-06-16 15:34:08
-Modified: 2023-06-20 00:05:23
+Modified: 2023-06-23 16:22:23
 Author: Benjamin Du
 Slug: unit-test-in-rust
 Title: Unit Test in Rust
@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: Computer Science, programming, Rust, test, unit, testing, cargo
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+https://crates.io/crates/test-with
 
 ## Tips and Traps
 
@@ -129,6 +131,8 @@ There are a few approaches to pass arguments to unit test functions.
         as you might introduce test-only dependencies into your main project.
 
 ## Mocking
+
+https://crates.io/crates/mailtutan
 
 - [Mocking in Rust: Mockall and alternatives](https://blog.logrocket.com/mocking-rust-mockall-alternatives)
 

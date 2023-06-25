@@ -5,12 +5,9 @@ Slug: tips-on-network-protocols
 Title: Tips on Network Protocols
 Category: Computer Science
 Tags: Computer Science, network, internet, web, protocol, transfer, HTTP, FTP, TCP, IP, UDP, SMTP
-Modified: 2023-05-15 20:54:27
+Modified: 2023-06-24 17:48:44
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 TCP/IP and UDP/IP are low-level data transfer protocols. 

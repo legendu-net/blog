@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-06-16 15:34:08
-Modified: 2023-06-23 16:22:23
+Modified: 2023-06-25 11:26:02
 Author: Benjamin Du
 Slug: unit-test-in-rust
 Title: Unit Test in Rust
@@ -132,20 +132,9 @@ There are a few approaches to pass arguments to unit test functions.
 
 ## Mocking
 
-https://crates.io/crates/mailtutan
-
-- [Mocking in Rust: Mockall and alternatives](https://blog.logrocket.com/mocking-rust-mockall-alternatives)
-
-- [mockall](https://crates.io/crates/mockall)
-
-- [mockers](https://crates.io/crates/mockers)
-
-- [turmoil](https://crates.io/crates/turmoil)
-[Turmoil](https://crates.io/crates/turmoil)
-is a framework for testing distributed systems. 
-It provides deterministic execution by running multiple concurrent hosts within a single thread. 
-It introduces "hardship" into the system via changes in the simulated network. 
-The network can be controlled manually or with a seeded rng.
+Please refer to
+[Use of Mock Values in Rust](https://www.legendu.net/misc/blog/use-of-mock-values-in-rust/)
+for more details.
 
 ## References
 

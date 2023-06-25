@@ -5,7 +5,7 @@ Slug: tips-on-rustc
 Title: Tips on rustc
 Category: Computer Science
 Tags: Computer Science, programming, Rust, rustc, optimization, cargo
-Modified: 2022-10-15 21:03:23
+Modified: 2023-06-24 23:09:55
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -40,6 +40,10 @@ Cargo subcommand that makes it easier to use PGO and BOLT to optimize Rust binar
 
 3. `rustc -O` is equivalent to `rustc -C opt-level=2`
     and `cargo build --release` uses the release profile which defaults to `-C opt-level=3`.
+
+4. pass a 24-byte object by value vs by reference.
+    not big differeence, but generally prefer passing by reference 
+    as it gives the compiler more flexibility for optimizations.
 
 ## References
 

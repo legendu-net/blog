@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:02:14
-Modified: 2023-05-26 11:24:26
+Modified: 2023-06-25 10:09:59
 Author: Benjamin Du
 Slug: dev-tools-for-rust
 Title: Dev Tools for Rust
@@ -46,8 +46,8 @@ with extra checking along the way.
 [cargo-semver-checks](https://crates.io/crates/cargo-semver-checks)
 scans your Rust crate for semver violations.
 
-### [cargo-udeps](https://github.com/est31/cargo-udeps)
-[cargo-udeps](https://github.com/est31/cargo-udeps)
+### [cargo-udeps]( https://www.legendu.net/misc/blog/find-unused-rust-deps-using-cargo-udeps )
+[cargo-udeps]( https://www.legendu.net/misc/blog/find-unused-rust-deps-using-cargo-udeps )
 finds unused dependencies in Cargo.toml.
 
 ### [marker](https://github.com/rust-marker/marker)

@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 15:40:23
-Modified: 2023-02-22 10:03:53
+Modified: 2023-06-25 12:40:34
 Author: Benjamin Du
 Slug: useful-rust-crates-for-filesystem
 Title: Useful Rust Crates for Filesystem
@@ -15,8 +15,8 @@ Tags: Computer Science, programming, Rust, crate, useful, filesystem, fs
 [Camino](https://crates.io/crates/camino)
 is an extension of the std::path module that adds new Utf8PathBuf and Utf8Path types.
 
-## [glob](https://crates.io/crates/glob)
-[glob](https://crates.io/crates/glob)
+## [glob]( https://www.legendu.net/misc/blog/hands-on-the-glob-crate-in-rust ) 
+[glob]( https://www.legendu.net/misc/blog/hands-on-the-glob-crate-in-rust ) 
 supports matching file paths against Unix shell style patterns.
 
 ## [jwalk](https://crates.io/crates/jwalk)

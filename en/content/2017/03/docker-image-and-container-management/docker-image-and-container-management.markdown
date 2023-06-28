@@ -5,7 +5,7 @@ Slug: docker-image-and-container-management
 Title: Manage Docker Images and Containers 
 Category: Software
 Tags: software, Docker, Docker image, container, management, remove
-Modified: 2023-06-22 10:58:01
+Modified: 2023-06-27 23:47:30
 
 1. It is suggested that you use [osquery](https://osquery.io/)
     or [dsutil.docker](https://github.com/dclong/dsutil/blob/dev/dsutil/docker)
@@ -223,7 +223,7 @@ then restart the Docker daemon using the command below will resolve the issue.
     :::bash
     service docker restart
 
-## Issue/Error 2
+### Issue/Error 2
 
 > Jupyter notebook connection failed
 
@@ -231,7 +231,7 @@ Due to proxy!!! Connect without proxy works!!!
 
 https://stackoverflow.com/questions/31280465/ipython-notebook-connection-failed-issue
 
-## Issue/Error 3
+### Issue/Error 3
 
 > Docker Error: Returned a Non-zero Code: 137
 
@@ -240,3 +240,16 @@ To fix it,
 you can either add more RAM or add more swap memory.
 
 https://samwize.com/2016/05/19/docker-error-returned-a-non-zero-code-137/
+
+### Issue/Error 4
+
+> Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock ... dial unix:///var/run/docker.sock: connect: permission denied 
+
+Please refer to
+[How to Fix Docker Permission Denied?](https://phoenixnap.com/kb/docker-permission-denied)
+for possible solutions.
+
+## References
+
+- [How to Fix Docker Permission Denied?](https://phoenixnap.com/kb/docker-permission-denied)
+

@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-06-19 23:45:11
-Modified: 2023-06-19 23:45:11
+Modified: 2023-06-27 23:12:35
 Author: Benjamin Du
 Slug: const-generic-in-rust
 Title: Const Generic in Rust
@@ -9,47 +9,51 @@ Tags: Computer Science, programming, Rust, const, generic, parameter
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-1. Starting from Rust 1.51, constant generics support integers, booleans, and enums, but not floating-point numbers.
+1. Starting from Rust 1.51,
+    [constant generics](https://blog.rust-lang.org/2021/03/25/Rust-1.51.0.html#const-generics-mvp)
+    is supported for integral types.
 
 2. The crate 
     [static_assertions](https://crates.io/crates/static_assertions)
     can be used to assert that a const generic parameter satisfy certain conditions at compile time.
     This is an alternative to const bounds using `where`
-    before the `feature(generic-const-exprs)` is stablized.
+    before `feature(generic-const-exprs)` is stablized.
+    
+## Disable Users From Constructing Instances of a Public Struct
 
-If you want to define a generic type parameter that represents a usize value greater than 2, 
-you can use a combination of trait bounds and associated types. 
-Below is such an example.
-You can achieve the same using a const Enum as the generic parameter.
-```
-trait GreaterThanTwo {
-    const VALUE: usize;
-}
+1. Make sure the struct has at least one private field
+    so that users cannot construct instances directly.
+    If all fields of a struct are public,
+    just add a dumpy private filed into the struct.
+2. Do not privede construction methods or make construction methods as private.
 
-struct MyStruct<T: GreaterThanTwo> {
-    // Your struct fields here
-}
+## Sealed Trait
 
-impl<T: GreaterThanTwo> MyStruct<T> {
-    fn new() -> Self {
-        // Create and return an instance of MyStruct
-        Self {
-            // Initialize your struct fields here
-        }
-    }
-}
+[A definitive guide to sealed traits in Rust](https://predr.ag/blog/definitive-guide-to-sealed-traits-in-rust/)
 
-impl GreaterThanTwo for const { 3 } {
-    const VALUE: usize = 3;
-}
+To disable a trait to be implemented by downstream users,
+simply use a marker trait which is not visible to downstream users.
 
-fn main() {
-    let my_struct: MyStruct = MyStruct::new();
-    // Use my_struct and perform other operations
-}
-```
+https://rust-lang.github.io/api-guidelines/future-proofing.html#sealed-traits-protect-against-downstream-implementations-c-sealed
+
+## Ways to Make Sure that a Type in Rust Satisfy Certain Conditions
+
+1. disable users from constructing instances of a struct 
+    and provide initialized instances (with conditions satisfied) for users to use 
+
+2. use `assert` to make sure that parameters passed to construction methods satisfy required conditions
+
+3. make construction methods return instances satisfying required conditions
+
+4. Define a sealed trait which representing the required conditions 
+    and define types implementing the sealed trait.
+    Make the struct take a generic parameter implementing the sealed trait.
 
 ## References
+
+- [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/about.html)
+
+- [Const generics MVP hits beta!](https://blog.rust-lang.org/2021/02/26/const-generics-mvp-beta.html)
 
 - [Splitting the const generics features](https://blog.rust-lang.org/inside-rust/2021/09/06/Splitting-const-generics.html)
 

@@ -40,6 +40,7 @@
 - ["Csv", "CSV"]
 - ["Dns", "DNS"]
 - ["Dsl", "DSL"]
+- ["Ec2", "EC2"]
 - ["Ftp", "FTP"]
 - ["Gcp", "GCP"]
 - ["Gdb", "GDB"]

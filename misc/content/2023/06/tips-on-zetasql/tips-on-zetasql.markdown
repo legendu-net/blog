@@ -1,9 +1,9 @@
 Status: published
 Date: 2023-06-27 23:48:22
-Modified: 2023-06-27 23:48:22
+Modified: 2023-07-01 18:06:49
 Author: Benjamin Du
 Slug: tips-on-zetasql
-Title: Tips on Zetasql
+Title: Tips on ZetaSQL
 Category: Computer Science
 Tags: Computer Science, programming, SQL, ZetaSQL, Google
 

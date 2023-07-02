@@ -177,6 +177,7 @@
 - ["Sqlite3", "SQLite3"]
 - ["Stringi", "stringi"]
 - ["Xfinity", "XFinity"]
+- ["Zetasql", "ZetaSQL"]
 # 8 symbols
 - ["Ai-Based", "AI-based"]
 - ["Buildkit", "BuildKit"]

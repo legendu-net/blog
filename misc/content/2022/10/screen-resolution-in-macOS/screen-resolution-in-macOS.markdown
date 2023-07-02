@@ -10,5 +10,5 @@ Tags: Computer Science, laptop, computer, hardware, display, resolution, accessi
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 The recommendation way is to use the scaled resolution for big screens!
-![](https://user-images.githubusercontent.com/824507/200039901-811127d5-5368-4004-bdd4-791c7eed4c73.png)
+![macos-display](https://user-images.githubusercontent.com/824507/200039901-811127d5-5368-4004-bdd4-791c7eed4c73.png)
 

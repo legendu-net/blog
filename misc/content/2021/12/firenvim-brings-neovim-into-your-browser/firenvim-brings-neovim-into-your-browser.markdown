@@ -34,7 +34,7 @@ Tags: Computer Science, Vim, NeoVim, FireNVim, browser
 4. If you are using Linux, 
     configure your brower to trigger FireNVim on the shortcut `ctrl + e`.
     - For chrome, you can configure this via chrome://extensions/shortcuts.
-    ![](https://user-images.githubusercontent.com/824507/196080758-ce9a706e-c746-4642-92ca-0e5eebe8e9b3.png)
+    ![firenvim-chrome-shortcuts](https://user-images.githubusercontent.com/824507/196080758-ce9a706e-c746-4642-92ca-0e5eebe8e9b3.png)
 
 The above installation configures FireNVim to never automatially prompt up.
 You have to manually bring it up 

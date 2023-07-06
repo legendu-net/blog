@@ -6,7 +6,7 @@ Slug: thread-safe-random-number-generator
 Author: Ben Chuanlong Du
 Category: Computer Science
 Tags: C++, RNG, programming, thread, distribution, HPC, fun problems, MT, Concurrency
-Modified: 2012-07-08 00:00:00
+Modified: 2023-07-05 10:09:29
 
 [SFMT]: http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/SFMT/#dSFMT
 [Thread Safe Random Number Generator]: http://www.legendu.net/media/rng/smt.h
@@ -95,3 +95,7 @@ in a acceptable short time.
 For example, 
 the Mersenne Twister can jump forward in milliseconds. 
 For more information, please see [SFMT][].
+
+## References
+
+- [Summary on Random Number Generators]( https://www.legendu.net/en/blog/summary-random-number-generators )

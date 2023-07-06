@@ -8,6 +8,8 @@ Slug: rng-in-r
 Author: Ben Chuanlong Du
 Modified: 2013-12-05 00:21:35
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 1. Functions for sampling random numbers from distributions 
     share a same "basic" random number generator (RNG). 
     If one set a seed for the "basic" RNG in use, 

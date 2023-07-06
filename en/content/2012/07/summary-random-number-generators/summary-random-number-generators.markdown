@@ -5,7 +5,7 @@ Slug: summary-random-number-generators
 Author: Ben Chuanlong Du
 Category: AI
 Tags: WELL, RNG, statistics, SFMT, dimension, MT, PCG, Java, Python
-Modified: 2021-10-13 20:39:04
+Modified: 2023-07-05 10:09:29
 
 <img src="http://www.legendu.net/media/rng/random-number-generator.png" height="200" width="240" align="right"/>
 
@@ -106,3 +106,7 @@ which means that you can implement a fast and **correct** parallel PRNG based on
 
 [rand_xoshiro](https://crates.io/crates/rand_xoshiro)
 
+
+## References
+
+- [Thread Safe Random Number Generator]( https://www.legendu.net/en/blog/thread-safe-random-number-generator )

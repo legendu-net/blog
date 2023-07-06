@@ -1,0 +1,18 @@
+five_cards,other_known_cards,bust_factor,num_sim1,num_sim2,num_sim3,num_sim4
+5s 5h 5c 5d As,,2.0,20,20,20,20
+Qs Qh Qc Qd 3d,,2.0,20,20,20,20
+Ks Kh Kc Kd 4h,,2.0,20,20,20,20
+As Ah Ac Ad 6c,,2.0,20,20,20,20
+Ts Th Tc 7d 7s,,2.0,20,20,20,20
+3s Th 3c Td Ts,,2.0,20,20,20,20
+Qs 9s 8s 4s 3s,,2.0,20,20,20,20
+As 9s 8s 4s 3s,,2.0,20,20,20,20
+4s 5h 6c 7d 8s,,2.0,20,20,20,20
+As 2c 3d 4s 5h,,2.0,20,20,20,20
+As Kc Qd Js Th,,2.0,20,20,20,20
+Ts Th Tc Ad 3s,,2.0,20,20,20,20
+Ts Th Tc Ad 3d,,2.0,20,20,20,20
+Ts Th Tc 4d 3s,,2.0,20,20,20,20
+As Ah 8c 8d 9s,,2.0,20,20,20,20
+Qs Qh 8c 8d 9s,,2.0,20,20,20,20
+Ts Th 8c 8d 9s,,2.0,20,20,20,20

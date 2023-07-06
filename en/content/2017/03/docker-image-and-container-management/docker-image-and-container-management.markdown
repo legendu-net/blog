@@ -8,7 +8,7 @@ Tags: software, Docker, Docker image, container, management, remove
 Modified: 2023-06-22 10:58:01
 
 1. It is suggested that you use [osquery](https://osquery.io/)
-    or [dsutil.docker](https://github.com/dclong/dsutil/blob/dev/dsutil/docker)
+    or [dockeree](https://github.com/legendu-net/dockeree)
     to query Docker images, containers, etc.
 
 ## Remove Containers

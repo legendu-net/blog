@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-06-12 17:23:48
-Modified: 2022-12-20 11:54:30
+Modified: 2023-06-27 14:49:54
 Author: Benjamin Du
 Slug: embeddable-scriting-language
 Title: Embeddable Scriting Language
@@ -22,13 +22,13 @@ please refer to
 [Engine and Runtime for JavaScript](https://www.legendu.net/misc/blog/engine-and-runtime-for-javascript)
 .
 
-## [rhai](https://github.com/rhaiscript/rhai)
-[Rhai](https://github.com/rhaiscript/rhai)
+## [Rhai](https://crates.io/crates/rhai)
+[Rhai](https://crates.io/crates/rhai)
 is an embedded scripting language and evaluation engine for Rust 
 that gives a safe and easy way to add scripting to any application.
 
-## [rune](https://github.com/rune-rs/rune)
-[Rune](https://github.com/rune-rs/rune)
+## [Rune](https://crates.io/crates/rune)
+[Rune](https://crates.io/crates/rune)
 is An embeddable dynamic programming language for Rust.
 
 ## [AssemblyScript](https://github.com/AssemblyScript/assemblyscript)

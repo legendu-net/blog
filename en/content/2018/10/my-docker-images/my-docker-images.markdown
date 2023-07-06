@@ -5,7 +5,7 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2023-03-25 13:31:09
+Modified: 2023-06-30 11:35:45
 
 
 <h2 id="recommended-docker-images">Recommended Docker Images and Tags</h2>
@@ -170,7 +170,14 @@ then just use the command below.
     :::bash
     docker pull registry.docker-cn.com/dclong/jupyterhub-ds
 
-### Start a Container
+### Start a Container using `ldc`
+
+The recommended way to start containers for Docker images `dclong/*`
+is to use the `ldc` command which comes with 
+[icon](https://github.com/legendu-net/icon)
+.
+
+### Start a Container Manually
 
 Below are explanation of some environment variable passed by the option `-e` to the Docker command.
 Keep the default if you don't know what are the best to use.
@@ -262,6 +269,38 @@ except that it limits the use of CPU and memory.
         -v `dirname $HOME`:/home_host \
         dclong/jupyterhub-ds /scripts/sys/init.sh
 
+## Add a New User Inside a Docker Container
+
+You can of course use the well know commands `useradd`, `adduser`, etc. to achive it.
+To make things easier for you,
+there are some shell scripts in the directory `/scripts/sys/` to create usres for you.
+
+- `/scripts/sys/create_user.sh`: Create a new user. It's the base script for creating users.
+- `/scripts/sys/create_user_group.sh`: Create a new user with the given (existing) group.
+- `/scripts/sys/create_user_nogroup.sh`: Create a new user with group name `nogroup`.
+- `/scripts/sys/create_user_docker.sh`: Create a new user with group name `docker`.
+
+You can use the option `-h` to print help doc for these commands.
+
+    :::bash
+    /scripts/sys/create_user_nogroup.sh -h
+    Create a new user with the group name "nogroup".
+    Syntax: create_user_nogroup user user_id [password]
+    Arguments:
+    user: user name
+    user_id: user id
+    password: Optional password of the user. If not provided, then the user name is used as the password.
+
+Now suppose you want to create a new user `dclong` with user ID `2000` and group name `nogroup`,
+you can use the following command.
+
+    :::bash
+    sudo /scripts/sys/create_user_nogroup.sh dclong 2000
+
+Since we didn't specify a password for the user,
+the default password (same as the user name) is used.
+
+
 ## Use the JupyterHub Server
 
 1. Open your browser and and visit `your_host_ip:8000`
@@ -321,40 +360,15 @@ Please refer to the section
 [Debug Docker Containers](http://www.legendu.net/en/blog/my-docker-images/#debug-docker-containers)
 for more information.
 
-## Add a New User to the JupyterHub Server
+## Add a New User for JupyterHub
 
 By default,
-any user in the Docker container can visit the JupyterHub server.
+any user in a Docker container of `dclong/jupyterhub-*` can visit the JupyterHub server.
 So if you want to grant access to a new user,
 just create an account for him in the Docker container.
-You can of course use the well know commands `useradd`, `adduser`, etc. to achive it.
-To make things easier for you,
-there are some shell scripts in the directory `/scripts/sys/` to create usres for you.
-
-- `/scripts/sys/create_user.sh`: Create a new user. It's the base script for creating users.
-- `/scripts/sys/create_user_group.sh`: Create a new user with the given (existing) group.
-- `/scripts/sys/create_user_nogroup.sh`: Create a new user with group name `nogroup`.
-- `/scripts/sys/create_user_docker.sh`: Create a new user with group name `docker`.
-
-You can use the option `-h` to print help doc for these commands.
-
-    :::bash
-    /scripts/sys/create_user_nogroup.sh -h
-    Create a new user with the group name "nogroup".
-    Syntax: create_user_nogroup user user_id [password]
-    Arguments:
-    user: user name
-    user_id: user id
-    password: Optional password of the user. If not provided, then the user name is used as the password.
-
-Now suppose you want to create a new user `dclong` with user ID `2000` and group name `nogroup`,
-you can use the following command.
-
-    :::bash
-    sudo /scripts/sys/create_user_nogroup.sh dclong 2000
-
-Since we didn't specify a password for the user,
-the default password (same as the user name) is used.
+Please refer to 
+[Add a New User Inside a Docker Container](https://www.legendu.net/en/blog/my-docker-images/#add-a-new-user-inside-a-docker-container)
+on how to create a new user inside a Docker container.
 
 ## Easy Install of Other Kernels
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-02-02 17:21:12
-Modified: 2023-02-08 11:38:56
+Modified: 2023-07-05 10:29:05
 Author: Benjamin Du
 Slug: cell-and-refcell-in-rust
 Title: Cell and RefCell in Rust
@@ -21,3 +21,11 @@ Rc + RefCell is another alternative to circumvent Rust's borrow checker at compi
 Checks at runtime and might might panic if there are borrowing issues in your code.
 
 comes at a performance penalty as it is slower to track borrowing at runtime.
+
+1. Avoid use Cell and RefCell 
+    unless you have to rely on them to circumvent Rust's borrow checker at compile time.
+
+## References
+
+- [Cell and RefCell](https://subscription.packtpub.com/book/programming/9781789616705/6/ch06lvl1sec44/cell-and-refcell)
+

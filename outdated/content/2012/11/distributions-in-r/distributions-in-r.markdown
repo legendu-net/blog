@@ -8,6 +8,8 @@ Slug: distributions-in-r
 Author: Ben Chuanlong Du
 Modified: 2013-12-05 00:22:23
 
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 4. The definition of geometric distribution in R is not the same as the common definition. 
 A random variable of geometric distribution in R starts from zero, 

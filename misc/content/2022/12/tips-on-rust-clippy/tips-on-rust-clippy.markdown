@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-28 18:23:37
-Modified: 2023-01-01 14:20:24
+Modified: 2023-07-05 18:00:16
 Author: Benjamin Du
 Slug: tips-on-rust-clippy
 Title: Tips on Rust Clippy
@@ -8,6 +8,10 @@ Category: Computer Science
 Tags: Computer Science, programming, Rust, Clippy, lint, check, cargo
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+unused_variables
+unused_imports
+dead_code
 
 ## General Tips
 
@@ -18,6 +22,7 @@ Tags: Computer Science, programming, Rust, Clippy, lint, check, cargo
     you can use the following command 
     to fix only `clippy::collapsible_else_if` lints.
 
+	:::bash
         cargo clippy --fix -- \
 	    -A clippy::all -W clippy::collapsible_else_if
 
@@ -27,6 +32,7 @@ Tags: Computer Science, programming, Rust, Clippy, lint, check, cargo
     if you code still have unfixed `unused_variables` and `dead_code` lints,
     you can filter them out by adding more `-A` options.
 
+	:::bash
         cargo clippy --fix -- \
 	    -A unused_variables -A dead_code \
 	    -A clippy::all -W clippy::collapsible_else_if
@@ -47,6 +53,18 @@ Tags: Computer Science, programming, Rust, Clippy, lint, check, cargo
 ## Configuration
 
 [Adding configuration to a lint](https://doc.rust-lang.org/clippy/development/adding_lints.html#adding-configuration-to-a-lint)
+
+```
+#[allow(clippy::wrong_self_convention)]
+```
+```
+#[allow(clippy::all)]
+```
+Place the following at the beginning of a Rust source file,
+if you want to disable all Clippy lints in the file.
+```
+#![allow(clippy::all)]
+```
 
 ## References
 

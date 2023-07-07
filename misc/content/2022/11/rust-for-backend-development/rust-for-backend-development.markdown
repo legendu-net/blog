@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-11-27 00:20:12
-Modified: 2023-06-11 10:06:14
+Modified: 2023-07-06 18:22:39
 Author: Benjamin Du
 Slug: rust-for-backend-development
 Title: Rust for Backend Development
@@ -18,4 +18,10 @@ for detailed discussions.
 
 Please refer to 
 [Rust Backend Frameworks for gRPC APIs]( https://www.legendu.net/misc/blog/rust-backend-frameworks-for-grpc-apis )
+for detailed discussions.
+
+## Backend Frames for GraphQL APIs
+
+Please refer to 
+[Rust Backend Frameworks for GraphQL APIs]( https://www.legendu.net/misc/blog/rust-backend-frameworks-for-graphql-apis )
 for detailed discussions.

@@ -1,9 +1,9 @@
 Status: published
 Date: 2023-07-05 08:42:27
-Modified: 2023-07-05 09:15:57
+Modified: 2023-07-06 22:32:57
 Author: Benjamin Du
-Slug: parallel-RNG-with-rayon-in-rust
-Title: Parallel Rng With Rayon in Rust
+Slug: parallel-RNGs-with-rayon-in-rust
+Title: Parallel RNGs With Rayon in Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, parallel, concurrency, thread, multi-thread, RNG, PRNG, random number generator
 

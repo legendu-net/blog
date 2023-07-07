@@ -5,15 +5,37 @@ Slug: summary-random-number-generators
 Author: Ben Chuanlong Du
 Category: AI
 Tags: WELL, RNG, statistics, SFMT, dimension, MT, PCG, Java, Python
-Modified: 2023-07-05 10:09:29
+Modified: 2023-07-06 22:44:09
 
 <img src="http://www.legendu.net/media/rng/random-number-generator.png" height="200" width="240" align="right"/>
 
+## [Xoshiro](https://prng.di.unimi.it/)
+
+Xoshiro is a family of fast, space-efficient and high quality PRNGs.
+It is considered the state-of-the-art (SOTA) family of non-cryptographic pseudo random number generators (PRNGs).
+The Rust crate
+[rand_xoshiro](https://crates.io/crates/rand_xoshiro)
+(which is part of the popular Rust crate [rand](https://crates.io/crates/rand))
+has implementations of 
+[Xoshiro256Plus](https://docs.rs/rand_xoshiro/0.6.0/rand_xoshiro/struct.Xoshiro256Plus.html)
+and
+[Xoshiro256PlusPlus](https://docs.rs/rand_xoshiro/0.6.0/rand_xoshiro/struct.Xoshiro256PlusPlus.html)
+.
+[Xoshiro256PlusPlus](https://docs.rs/rand_xoshiro/0.6.0/rand_xoshiro/struct.Xoshiro256PlusPlus.html)
+is a very good PRNG for statistical simulation purpose. 
+Specially,
+it supports jumping ahead
+which means that you can implement a fast and **correct** parallel PRNG based on it.
+
+
 ## Mersenne Twister
 
-The most popular pseudo random number generator (PRNG) currently is Mersenne Twister. 
-It is implemented in many programming languages 
-and is the default in many software and programming languages.
+Mersenne Twister was the state-of-the-art (SOTA) non-cryptographic pseudo random number generator (PRNG) 
+before the 
+[Xoshiro faimily of PRNGs](https://prng.di.unimi.it/)
+.
+It was implemented in many programming languages 
+and was the default in many software and programming languages.
 Mersenne Twister has many different versions, 
 among which the MT19937 is the most widely used one. 
 The period of MT19937 is extreemly long ($2^{19937}-1$)
@@ -69,23 +91,6 @@ and
 .
 I don't see a popular Java implementation for PCG at this time.
 
-## [Xoroshiro](https://en.wikipedia.org/wiki/Xoroshiro128%2B)
-
-Xoroshiro is a family of fast, space-efficient and high quality PRNGs.
-The Rust crate
-[rand_xoshiro](https://crates.io/crates/rand_xoshiro)
-(which is part of the popular Rust crate [rand](https://crates.io/crates/rand))
-has implementations of 
-[Xoshiro256Plus](https://docs.rs/rand_xoshiro/0.6.0/rand_xoshiro/struct.Xoshiro256Plus.html)
-and
-[Xoshiro256PlusPlus](https://docs.rs/rand_xoshiro/0.6.0/rand_xoshiro/struct.Xoshiro256PlusPlus.html)
-.
-[Xoshiro256PlusPlus](https://docs.rs/rand_xoshiro/0.6.0/rand_xoshiro/struct.Xoshiro256PlusPlus.html)
-is a very good PRNG for statistical simulation purpose. 
-Specially,
-it supports jumping ahead
-which means that you can implement a fast and **correct** parallel PRNG based on it.
-
 ## Libraries for Random Number Generators
 
 ### Java 
@@ -109,4 +114,5 @@ which means that you can implement a fast and **correct** parallel PRNG based on
 
 ## References
 
+- [Xoshiro / Xoroshiro Generators and the PRNG Shootout](https://prng.di.unimi.it/)
 - [Thread Safe Random Number Generator]( https://www.legendu.net/en/blog/thread-safe-random-number-generator )

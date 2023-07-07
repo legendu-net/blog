@@ -1,4 +1,3 @@
-UUID: 21443057-903b-44ae-b806-756ae32eeafc
 Status: published
 Title: Thread Safe Random Number Generator
 Date: 2012-07-08 00:00:00
@@ -6,10 +5,26 @@ Slug: thread-safe-random-number-generator
 Author: Ben Chuanlong Du
 Category: Computer Science
 Tags: C++, RNG, programming, thread, distribution, HPC, fun problems, MT, Concurrency
-Modified: 2023-07-05 10:09:29
+Modified: 2023-07-06 22:30:42
 
 [SFMT]: http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/SFMT/#dSFMT
 [Thread Safe Random Number Generator]: http://www.legendu.net/media/rng/smt.h
+
+In pratice,
+the approach of separate RNGs with different seeds for threads/processes
+is widely used 
+(even though theoretically those RNGs might have overlaping sequences, 
+which is undesirable).
+For more discussions on this approach,
+please refer to
+[The Rust Rand Book - Parallel RNGs](https://rust-random.github.io/book/guide-parallel.html)
+.
+The following of this article discusses about thread-safe RNGs based on Mersenne Twister.
+Note that Mersenne Twister is no longer considered the state-of-the-art non-cryptographic PRNG. 
+For more discussions on this,
+please refer to
+[Summary on Random Number Generators](https://www.legendu.net/en/blog/summary-random-number-generators/)
+.
 
 <img src="http://www.legendu.net/media/rng/random-number-generator.png" height="200" width="240" align="right"/>
 
@@ -99,3 +114,4 @@ For more information, please see [SFMT][].
 ## References
 
 - [Summary on Random Number Generators]( https://www.legendu.net/en/blog/summary-random-number-generators )
+- [The Rust Rand Book - Parallel RNGs](https://rust-random.github.io/book/guide-parallel.html)

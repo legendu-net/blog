@@ -1,9 +1,9 @@
 Status: published
 Date: 2023-07-05 22:39:36
-Modified: 2023-07-05 22:39:36
+Modified: 2023-07-06 22:33:26
 Author: Benjamin Du
 Slug: seed-many-rngs-in-rust
-Title: Seed Many Rngs in Rust
+Title: Seed Many RNGs in Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, RNG, random number generator, seed
 

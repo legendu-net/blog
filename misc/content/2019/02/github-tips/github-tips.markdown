@@ -5,12 +5,9 @@ Slug: github-tips
 Title: Tips on GitHub
 Category: Computer Science
 Tags: programming, GitHub, tips, GitHub Actions, CICD, CI, CD
-Modified: 2023-07-06 22:12:16
+Modified: 2023-07-07 20:23:50
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [GitHub Subscriptions](https://github.com/notifications/subscriptions)
 

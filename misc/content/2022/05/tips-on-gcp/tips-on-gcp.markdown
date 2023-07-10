@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-05-09 23:39:30
-Modified: 2023-07-10 03:10:14
+Modified: 2023-07-10 03:11:42
 Author: Benjamin Du
 Slug: tips-on-gcp
 Title: Tips on GCP
@@ -24,3 +24,9 @@ https://cloud.google.com/compute/docs/general-purpose-machines#c3-highcpu
 https://cloud.google.com/compute/docs/general-purpose-machines#c3-highmem
 
 https://cloud.google.com/compute/docs/compute-optimized-machines#c2_machine_types
+
+https://cloud.google.com/compute/docs/compute-optimized-machines#c2d-standard
+
+https://cloud.google.com/compute/docs/compute-optimized-machines#c2d-high-cpu
+
+https://cloud.google.com/compute/docs/compute-optimized-machines#c2d-high-mem

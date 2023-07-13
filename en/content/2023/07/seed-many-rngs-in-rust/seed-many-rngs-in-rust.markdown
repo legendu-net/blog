@@ -7,7 +7,7 @@ Title: Seed Many RNGs in Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, RNG, random number generator, seed
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 
 There are different ways to seed many RNGs (for parallel RNGs).
 Below summarizes 3 popular ways.

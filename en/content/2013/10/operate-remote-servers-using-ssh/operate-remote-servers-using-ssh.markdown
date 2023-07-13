@@ -5,7 +5,7 @@ Date: 2013-10-22 11:03:15
 Slug: ssh-tips
 Category: Software
 Tags: tips, SSH, software, remote, Linux, ControlMaster, ControlPersist, ProxyCommand, ControlPath
-Modified: 2020-10-22 11:03:15
+Modified: 2023-07-13 00:51:20
 
 
 ## General Tips and Traps
@@ -59,7 +59,7 @@ Modified: 2020-10-22 11:03:15
     make sure to add your user account into the `fuse` group.
 
         :::bash
-        gpasswd -a dclong fuse
+        gpasswd -a `id -un` fuse
         newgrp fuse
 
 4. It is suggested that you do not set any password for your SSH keys. 

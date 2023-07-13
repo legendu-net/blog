@@ -5,7 +5,7 @@ Slug: tips-on-lxd
 Title: Tips on LXD
 Category: Computer Science
 Tags: Computer Science, Docker, container, LXD, LXC
-Modified: 2022-07-31 17:53:33
+Modified: 2023-07-13 00:51:20
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author.
@@ -24,7 +24,7 @@ Please read with your own judgement!
 ## [Installation](https://ubuntu.com/tutorials/tutorial-setting-up-lxd-1604#2-install-lxd)
 
     sudo snap install lxd
-    gpasswd -a $(id -un) lxd
+    gpasswd -a `id -un` lxd
     newgrp lxd
 
 ## [Setup LXD](https://ubuntu.com/tutorials/tutorial-setting-up-lxd-1604#3-setup-lxd)

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Docker, container, LXD, LXC
 Modified: 2023-07-13 00:51:20
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. LXD only works in Linux.
     It is not supported on macOS or Windows.

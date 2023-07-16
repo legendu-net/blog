@@ -8,10 +8,7 @@ Tags: tips, Linux, software, Vim, surround, repeat
 Modified: 2020-03-25 18:28:38
 
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 ## Vim Distributions
 

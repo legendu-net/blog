@@ -8,10 +8,7 @@ Slug: variables-in-java
 Author: Ben Chuanlong Du
 Modified: 2016-07-13 22:04:15
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
  
 
 1. There are 3 different types of variables in Java: instance variables, local variables and argument variables. 

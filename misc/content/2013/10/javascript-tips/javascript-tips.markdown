@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: tips, programming, JavaScript, JS, web, frontend
 Modified: 2022-12-20 12:17:46
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 [The State of Frontend in 2022](https://newsletter.pragmaticengineer.com/p/state-of-frontend-2022)
 has a good discussion about the state and trend of frontend technologies as of 2022.

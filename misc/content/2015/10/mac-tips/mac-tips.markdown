@@ -7,11 +7,7 @@ Category: OS
 Tags: macOS, tips, Apple
 Modified: 2021-09-14 16:48:23
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 1. Print Mac OS X operating system version information.
 

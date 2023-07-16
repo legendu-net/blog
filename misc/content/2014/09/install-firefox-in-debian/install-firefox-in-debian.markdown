@@ -7,11 +7,7 @@ Category: OS
 Tags: Linux, Firefox, Debian, web browser
 Modified: 2021-07-26 17:59:58
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 you have to update your script based on the DE being used.
 but first check whether a desktop file created in GNOME can be used in Xfce or not.

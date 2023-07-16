@@ -7,11 +7,7 @@ Category: Software
 Tags: software, tips, Sikuli, automation, web
 Modified: 2021-02-16 15:00:28
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 1. SikuliX is implemented in Java but binings for other programming languages are available. 
     For example,

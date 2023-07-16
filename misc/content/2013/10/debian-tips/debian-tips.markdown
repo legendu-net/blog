@@ -7,8 +7,7 @@ Category: OS
 Tags: OS, Linux, Debian
 Modified: 2022-05-04 11:46:15
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 Debian is much harder to use than Ubuntu and Ubuntu-based Linux distributions.
 It is suggested that you use Ubuntu or an Ubuntu-based Linux distribution

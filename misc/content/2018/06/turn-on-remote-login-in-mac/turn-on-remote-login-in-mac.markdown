@@ -8,11 +8,7 @@ Category: OS
 Tags: OS, Mac OS X, Apple
 Modified: 2018-06-24 21:39:37
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 You cannot SSH into a Mac (even if openssh is install on it) 
 unless Remote Login is turned on.

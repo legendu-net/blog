@@ -7,11 +7,7 @@ Category: Life
 Tags: life, Chicago, tips
 Modified: 2022-05-08 21:00:28
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 
 - [Northwestern University CSSA BBS](http://bbs.nwucssa.org/)

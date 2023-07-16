@@ -7,10 +7,7 @@ Category: Software
 Tags: tips, algorithm, error tolerance, numerical issue, overflow
 Modified: 2020-05-22 13:37:34
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
  
 1. comparing lots of values that are very close is not a good idea. p-values, permutation test statistics.
     a better way is to work on integers instead, for example, permutation indexes ...

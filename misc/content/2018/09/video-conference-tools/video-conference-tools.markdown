@@ -7,11 +7,7 @@ Category: Software
 Tags: software, video conference, Slack, meeting, Skype, Zoom
 Modified: 2022-07-11 16:56:40
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 1. Zoom
 

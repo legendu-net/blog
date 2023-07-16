@@ -7,11 +7,7 @@ Category: Software
 Tags: JupyterLab, notebook, nbconvert, tips, zmq.error.ZMQError
 Modified: 2021-09-26 12:01:56
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 
 ## [jupyter-book](http://www.legendu.net/misc/blog/tips-on-jupyter-book/)

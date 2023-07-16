@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, loss function, statistics, machine learning, cross entry, log likelihood
 Modified: 2022-05-08 16:26:29
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
  
 ## Tips and Traps
 

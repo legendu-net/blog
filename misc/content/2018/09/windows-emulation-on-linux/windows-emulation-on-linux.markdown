@@ -7,11 +7,7 @@ Category: Software
 Tags: software, VirtualBox, Wine, CrossOver, Windows Emulation
 Modified: 2021-09-25 13:42:57
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 Virtual machine is the recommend way to emulate Windows working environment on Linux.
 

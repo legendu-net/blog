@@ -7,11 +7,7 @@ Category: Software
 Tags: software, teamdrive, tips, synchronization, cloud, backup
 Modified: 2020-05-18 08:12:57
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 0. fix a startup issue
 

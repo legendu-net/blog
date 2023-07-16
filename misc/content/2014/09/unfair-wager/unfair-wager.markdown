@@ -7,11 +7,7 @@ Category: Fun Problems
 Tags: fun problems, uniform distribution, probability, statistics, puzzle, todo
 Modified: 2020-05-22 14:37:10
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 
 https://projecteuler.net/problem=436

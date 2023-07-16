@@ -7,11 +7,7 @@ Category: Computer Science
 Tags: programming, Git, .gitignore, ignore, directory, root
 Modified: 2021-03-11 11:35:36
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 ## Tips and Traps 
 

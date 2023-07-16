@@ -7,11 +7,7 @@ Category: Software
 Tags: software, docker, shell form, exec form, environment variable
 Modified: 2020-03-07 21:47:47
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 ## Environment Variables 
 

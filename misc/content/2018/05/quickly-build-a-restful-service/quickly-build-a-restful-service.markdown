@@ -8,11 +8,7 @@ Category: Computer Science
 Tags: programming, web, RESTful API, network, Flask, json-server, OpenFasS
 Modified: 2018-05-27 15:25:58
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 ## [OpenFaaS](https://github.com/openfaas/faas)
 

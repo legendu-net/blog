@@ -7,11 +7,7 @@ Category: Software
 Tags: Software, Project Management, ProjectLibre
 Modified: 2021-09-26 09:53:07
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 ProjectLibre sounds better than the one that I used before ...
 

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Oracle SQL, tips
 Modified: 2020-05-22 14:58:36
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
  
 
 0. Unlike Teradata SQL, 

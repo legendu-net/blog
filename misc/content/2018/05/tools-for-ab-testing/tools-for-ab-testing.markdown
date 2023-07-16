@@ -8,11 +8,7 @@ Category: AI
 Tags: statistics, A/B testing, AB testing
 Modified: 2018-05-27 16:39:55
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 [Evan’s Awesome A/B Tools](http://www.evanmiller.org/ab-testing/)
 

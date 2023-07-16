@@ -7,11 +7,7 @@ Category: Career
 Tags: career, project, tips, acronym, project management, name, abbr, abbreviation
 Modified: 2022-06-25 16:12:01
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 
 ## Project Management

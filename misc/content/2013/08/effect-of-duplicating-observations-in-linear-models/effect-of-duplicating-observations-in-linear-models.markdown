@@ -7,10 +7,7 @@ Category: AI
 Tags: duplicate, statistics, modeling, linear model, observation
 Modified: 2021-09-25 13:21:30
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
  
 coefficients don't change but variance become smaller.
 use formula to show it ...

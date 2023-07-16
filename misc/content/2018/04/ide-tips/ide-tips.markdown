@@ -7,11 +7,7 @@ Category: Software
 Tags: Software, IDE, Cloud IDE, Java, C++, Python, Latex
 Modified: 2019-02-18 19:35:55
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 ## [Cloud IDEs](http://www.legendu.net/misc/blog/cloud-ide/)
 

@@ -7,11 +7,7 @@ Category: Computer Science
 Tags: programming, Python, ODBC, JDBC, database, SQL, TurbODBC, pyarrow, pyarrow.jvm, Java, Arrow Flight, API, protocol
 Modified: 2022-10-16 15:55:29
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 1. [Apache Arrow Flight](https://www.legendu.net/misc/blog/tips-on-apache-arrow-flight-sql)
     is the future protocol for querying Databases!

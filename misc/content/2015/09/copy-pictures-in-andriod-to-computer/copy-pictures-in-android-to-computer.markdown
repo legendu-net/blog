@@ -7,11 +7,7 @@ Category: OS
 Tags: Linux, scp, rsync, pictures, image, photo, media, Android
 Modified: 2021-08-01 11:20:45
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 You have to have a SSH server installed on the Android phone.
 ```bash

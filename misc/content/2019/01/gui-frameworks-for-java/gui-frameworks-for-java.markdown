@@ -8,11 +8,7 @@ Category: Computer Science
 Tags: programming, Java, GUI, Swing, SwingX, JavaFX
 Modified: 2019-01-22 22:54:03
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 
 

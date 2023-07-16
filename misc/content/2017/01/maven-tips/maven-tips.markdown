@@ -7,11 +7,7 @@ Category: Computer Science
 Tags: programming, Maven, tips, Java, Scala
 Modified: 2020-05-22 15:06:34
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 [The Central Repository](http://search.maven.org/#search)
 

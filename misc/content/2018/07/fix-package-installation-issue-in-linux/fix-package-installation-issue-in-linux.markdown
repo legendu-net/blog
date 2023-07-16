@@ -8,11 +8,7 @@ Category: OS
 Tags: Linux, package management, issue, apt, dpkg
 Modified: 2018-07-21 12:31:03
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 Error message: The package hl1440lpr needs to be reinstalled, but I can't find an archive for it.
 

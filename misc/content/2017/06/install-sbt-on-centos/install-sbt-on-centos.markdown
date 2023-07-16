@@ -8,11 +8,7 @@ Category: OS
 Tags: Linux, CentOS, RedHat, sbt, install
 Modified: 2017-06-25 10:37:51
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 ```sh
 wget http://dl.bintray.com/sbt/rpm/sbt-0.13.5.rpm

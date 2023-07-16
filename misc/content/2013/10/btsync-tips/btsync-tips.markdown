@@ -8,10 +8,7 @@ Category: Software
 Tags: tips, BitTorrent Sync, BTSync, cloud, synchronization, Resilio Sync
 Modified: 2020-05-06 14:20:40
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
  
 1. BitTorrent Sync does not synchronize files that you do not have the right permissions.
 

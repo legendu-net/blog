@@ -7,11 +7,7 @@ Category: OS
 Tags: Linux, apt, source list, proxy
 Modified: 2019-03-07 23:42:48
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 Add the following lines into the file `/etc/apt/apt.conf`,
 where `proxy_server` is the address/ip of the server

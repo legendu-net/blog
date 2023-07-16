@@ -7,10 +7,7 @@ Category: Software
 Tags: software, tips, Firefox, web browser
 Modified: 2021-09-26 21:54:44
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
  
 1. In Debian, Iceweasel sometimes fail to wrap Chienes page well.
     To solve the problem, you can just remove the .mozilla directory under you home directory. 

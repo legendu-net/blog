@@ -7,11 +7,7 @@ Category: Software
 Tags: software, tips, transmission, BitTorrent, downloading, download
 Modified: 2021-01-10 10:24:23
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 Transmission is the best cross-platform BitTorrent Client. 
 It is simple, clean 

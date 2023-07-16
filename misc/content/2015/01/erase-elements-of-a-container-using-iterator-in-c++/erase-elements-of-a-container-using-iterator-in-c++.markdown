@@ -8,11 +8,7 @@ Category: Computer Science
 Tags: programming, C++, iterator, erase, container
 Modified: 2015-03-29 23:08:20
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 @TODO: make a general discuss about removing elements form containers ...
 

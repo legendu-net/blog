@@ -7,10 +7,7 @@ Category: Life
 Tags: life, housing, tips, rent, apartment, shopping
 Modified: 2022-09-18 16:47:07
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
  
 ## Rent an Apartment
 

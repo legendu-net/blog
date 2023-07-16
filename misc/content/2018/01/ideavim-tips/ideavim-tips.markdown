@@ -7,11 +7,7 @@ Category: Computer Science
 Tags: Computer Science, IntelliJ IDEA, IdeaVim, Vim
 Modified: 2021-09-26 09:46:07
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 1. Put the line `set surround` into your `~/.ideavimrc`
     to make IdeaVim support surround.

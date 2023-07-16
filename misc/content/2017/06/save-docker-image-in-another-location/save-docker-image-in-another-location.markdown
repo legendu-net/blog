@@ -7,11 +7,7 @@ Category: Software
 Tags: software, Docker, location
 Modified: 2020-01-28 19:41:40
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 Docker images are saved in `/var/lib/docker`. 
 You can link the directory to another place to save images elsewhere.

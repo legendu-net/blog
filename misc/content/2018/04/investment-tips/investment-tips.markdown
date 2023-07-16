@@ -7,11 +7,7 @@ Category: Finance
 Tags: finance, investment, WeChat official account, money, tips, economics, stock
 Modified: 2022-05-09 12:24:45
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 ## General Tips 
 

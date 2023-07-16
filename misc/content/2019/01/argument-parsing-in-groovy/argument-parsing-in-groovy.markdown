@@ -8,11 +8,7 @@ Category: Computer Science
 Tags: programming, Groovy, JVM, argument parsing
 Modified: 2019-01-21 12:58:19
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 
 https://github.com/remkop/picocli/wiki/Groovy-2.5-CliBuilder-Renewal

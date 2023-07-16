@@ -7,11 +7,7 @@ Category: Software
 Tags: software, file converting, pandoc, markdown, HTML, PDF, ImageMagic, convert
 Modified: 2021-09-26 10:21:05
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 ## ImageMagick 
 ImageMagic provides a command convert which helps convert between different types of images.

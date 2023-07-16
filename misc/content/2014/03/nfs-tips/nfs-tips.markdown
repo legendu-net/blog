@@ -7,10 +7,7 @@ Category: Internet
 Tags: Linux, internet, web, NFS, file system, tips
 Modified: 2021-01-10 16:03:04
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
  
 
 1. Make sure nfs service is not blocked. 

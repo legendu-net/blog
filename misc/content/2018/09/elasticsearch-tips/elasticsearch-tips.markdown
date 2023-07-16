@@ -7,11 +7,7 @@ Category: Software
 Tags: software, Elasticsearch, tips, search engine, database
 Modified: 2020-05-06 22:08:19
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 https://www.elastic.co/guide/en/elasticsearch/reference/2.1/setup-service.html
 

@@ -8,11 +8,7 @@ Category: Software
 Tags: software, Zeppelin, visualization
 Modified: 2018-04-30 16:24:19
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 
 http://stackoverflow.com/questions/37219069/how-to-use-plotly-with-zeppelin

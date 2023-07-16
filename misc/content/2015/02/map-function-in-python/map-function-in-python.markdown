@@ -7,11 +7,7 @@ Category: Computer Science
 Tags: programming, Python, map, functional programming, reduce, apply
 Modified: 2015-02-05 22:58:56
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 
 1. The built-in function `map` applies a function to each element of an iterable.

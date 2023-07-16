@@ -7,11 +7,7 @@ Category: Software
 Tags: software, zeppelin, notebook
 Modified: 2020-05-22 16:07:50
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 1. Zepplin notebook directory,
     if you want to move notebooks to another machine,

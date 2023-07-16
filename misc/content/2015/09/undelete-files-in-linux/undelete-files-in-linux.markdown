@@ -7,11 +7,7 @@ Category: OS
 Tags: Linux, undelete, recover, files, filesystem, restore, trash
 Modified: 2022-12-20 12:05:13
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 The best way to "recover deleted files"
 is really to avoid permanently delete files.

@@ -8,11 +8,7 @@ Category: Computer Science
 Tags: programming, random number generating, Java
 Modified: 2014-10-19 19:40:40
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 1. The java.util.Random class provides a low-quallity generator 
 suitable for "informal" uses of random numbers.

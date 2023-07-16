@@ -7,11 +7,7 @@ Category: Software
 Tags: software, Docker, docker image, OS, Ubuntu, CentOS, phusion
 Modified: 2019-02-27 08:29:44
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 ## [ubuntu](https://hub.docker.com/_/ubuntu/)
 

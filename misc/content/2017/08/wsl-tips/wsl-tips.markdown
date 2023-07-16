@@ -7,11 +7,7 @@ Category: OS
 Tags: Linux, WSL, WSL 2, Windows, BashOnWindows, Bash on Windows, tips
 Modified: 2021-09-09 12:45:13
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 ## Installation & Update 
 

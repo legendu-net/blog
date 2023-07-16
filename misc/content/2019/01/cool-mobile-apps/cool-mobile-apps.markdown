@@ -8,11 +8,7 @@ Category: Software
 Tags: software, mobile, apps
 Modified: 2019-01-21 21:54:58
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 https://techwiser.com/5-apps-to-remote-control-android-phone-from-pc-usb-and-wifi/
 

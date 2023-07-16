@@ -7,11 +7,7 @@ Category: Software
 Tags: software, Tridactyl, add-on, plugin, Firefox, tips
 Modified: 2021-07-26 18:11:31
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 `:mode ignore`: temporarily disables Tridactyl on a page.
 `ctrl + alt + esc`: toggle ignore on/off on Mac

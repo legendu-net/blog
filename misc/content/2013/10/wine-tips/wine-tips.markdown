@@ -7,10 +7,7 @@ Category: Software
 Tags: WINE, tips, Linux
 Modified: 2021-09-26 10:20:16
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 
 1. 对于使用中文软件的Linux用户来说WINE基本没什么用, 中文显示目前来说就是一大难题.

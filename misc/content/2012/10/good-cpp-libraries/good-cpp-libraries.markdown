@@ -7,11 +7,7 @@ Slug: good-cpp-libraries
 Author: Ben Chuanlong Du
 Modified: 2015-10-18 11:46:12
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 
 ## Good C++ Libraries

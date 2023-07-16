@@ -7,11 +7,7 @@ Category: Computer Science
 Tags: programming, tips, semantic versioning
 Modified: 2021-11-22 12:13:42
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 
 1. Do NOT chase the latest versions of libraries/software/tools. 

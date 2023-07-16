@@ -7,11 +7,7 @@ Category: Computer Science
 Tags: programming, Java, Ubuntu, PPA
 Modified: 2020-05-22 15:00:33
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 ```bash
 sudo add-apt-repository ppa:webupd8team/java

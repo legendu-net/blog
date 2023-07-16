@@ -8,11 +8,7 @@ Category: OS
 Tags: Mac, Mac OSX, MacPorts
 Modified: 2017-10-22 12:32:25
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 ## Configuration
 Run the following command after installation.

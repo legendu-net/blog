@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, SQL, questions
 Modified: 2021-07-29 19:59:32
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
  
 1. 比如在 LEFT JOIN 中过滤条件写在 ON 和 WHERE 的区别。
 

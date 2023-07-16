@@ -7,11 +7,7 @@ Category: Software
 Tags: software, cloud IDE, Eclipse Che, tips
 Modified: 2020-03-21 10:54:21
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 You can launch an Eclipse Che server using the command below.
 ```

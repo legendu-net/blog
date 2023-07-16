@@ -8,11 +8,7 @@ Category: Fun Problems
 Tags: fun problems, family, boy, girl, ratio, todo
 Modified: 2014-10-23 17:09:37
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 In a country, all families prefer to have boys. 
 They will keep having baby until they have a boy. 

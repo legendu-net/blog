@@ -8,11 +8,7 @@ Category: Computer Science
 Tags: programming
 Modified: 2018-04-30 16:20:46
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 http://zeppelin.apache.org/docs/0.8.0-SNAPSHOT/index.html
 

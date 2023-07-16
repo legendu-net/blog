@@ -7,11 +7,7 @@ Category: Software
 Tags: software, IntelliJ IDEA, shortcuts, IDE
 Modified: 2019-12-28 18:17:40
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 
 You can use the shortcut `ctrl + shift + p` to show inferred type of a variable

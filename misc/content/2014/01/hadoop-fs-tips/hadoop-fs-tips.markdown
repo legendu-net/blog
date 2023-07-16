@@ -7,10 +7,7 @@ Category: Software
 Tags: big data, Hadoop, filesystem, file system, tips
 Modified: 2022-01-18 16:14:51
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 ## Tips and Traps 
 

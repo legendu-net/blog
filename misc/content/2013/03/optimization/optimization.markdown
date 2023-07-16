@@ -7,8 +7,7 @@ Slug: science-optimization
 Author: Ben Chuanlong Du
 Modified: 2019-12-30 12:17:07
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
  
 If the objective function has derivative, 
 then an optimization problem is equivalent to finding the root of the derivative of the object function. 

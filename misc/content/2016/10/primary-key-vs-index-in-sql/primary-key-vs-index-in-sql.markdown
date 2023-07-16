@@ -8,11 +8,7 @@ Category: Computer Science
 Tags: programming, SQL, index, primary key
 Modified: 2016-10-23 12:46:53
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 1. index is for distribution data
 index does not have to be unique

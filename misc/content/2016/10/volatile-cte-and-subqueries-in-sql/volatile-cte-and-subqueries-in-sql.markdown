@@ -7,11 +7,7 @@ Category: Computer Science
 Tags: programming, CTE, SQL, volatile, with, subquery, sub query
 Modified: 2020-10-25 18:45:40
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 1. A volatile table persistents in the duration of the connection that creates it
     while a CTE is only accessible by the query following it.

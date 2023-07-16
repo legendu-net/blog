@@ -7,11 +7,7 @@ Category: Computer Science
 Tags: programming, visualization, Python, HoloViews, bokeh, plotly, matplotlib, pandas, library
 Modified: 2023-02-08 11:57:17
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 The website [The Python Graph Gallery](https://python-graph-gallery.com/)
 displays hundreds of charts, always providing the reproducible python code! 

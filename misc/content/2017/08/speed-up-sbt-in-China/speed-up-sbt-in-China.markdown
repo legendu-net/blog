@@ -8,11 +8,7 @@ Category: Computer Science
 Tags: programming, sbt, Scala, proxy, HTTP, socks, repository, proxy repository, China
 Modified: 2017-10-22 12:39:58
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 Currently `sbt` uses https by default. 
 However, the Great Firewall of China makes https visits to websites out of China slow. 

@@ -8,10 +8,7 @@ Category: AI
 Tags: statistics, genetics, biostatistics, variance, dispersion, estimate, estimation
 Modified: 2015-02-24 14:05:04
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author. 
-Please read with your own judgement!
-**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
  
 The basic idea is to borrow information across genes. 
 Some assume a distribution for the variances/dispersions while others not.

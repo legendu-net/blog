@@ -40,6 +40,8 @@ https://proxycrawl.com
 
 [Book-Crossing Dataset](http://www2.informatik.uni-freiburg.de/~cziegler/BX/)
 
+https://divvy-tripdata.s3.amazonaws.com/index.html
+
 ## Data Sources
 
 ### The US National Center 

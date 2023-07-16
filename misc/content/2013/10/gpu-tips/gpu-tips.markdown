@@ -5,7 +5,7 @@ Title: Tips on GPU Computing
 Slug: gpu-tips
 Category: Computer Science
 Tags: tips, GPU, programming, Nvidia
-Modified: 2023-05-15 22:38:52
+Modified: 2023-07-13 19:11:47
 
 **
 Things on this page are fragmentary and immature notes/thoughts of the author. 
@@ -58,11 +58,11 @@ You can list GPU devices using the following command on linux.
 
 ### Rust
 
-- [ArrayFire-rust](https://github.com/arrayfire/arrayfire-rust)
-
-- [RustaCUDA](https://github.com/bheisler/RustaCUDA)
-
-    Rusty wrapper for the CUDA Driver API.
+- [wgpu](https://github.com/gfx-rs/wgpu)
+[wgpu](https://github.com/gfx-rs/wgpu)
+is a cross-platform, safe, pure-rust graphics api. 
+It runs natively on Vulkan, Metal, D3D12, D3D11, and OpenGLES; 
+and on top of WebGPU on wasm.
 
 - [ash](https://github.com/MaikKlein/ash/)
 [ash](https://github.com/MaikKlein/ash/)
@@ -71,12 +71,6 @@ is a very lightweight wrapper around Vulkan.
 - [rust-gpu](https://github.com/EmbarkStudios/rust-gpu)
     [rust-gpu](https://github.com/EmbarkStudios/rust-gpu)
     aims at making Rust a first-class language and ecosystem for GPU shaders.
-
-- [wgpu](https://github.com/gfx-rs/wgpu)
-[wgpu](https://github.com/gfx-rs/wgpu)
-is a cross-platform, safe, pure-rust graphics api. 
-It runs natively on Vulkan, Metal, D3D12, D3D11, and OpenGLES; 
-and on top of WebGPU on wasm.
 
 - [vulkano](https://github.com/vulkano-rs/vulkano)
 [Vulkano](https://github.com/vulkano-rs/vulkano)
@@ -89,24 +83,13 @@ is not as mature as
 [ash](https://github.com/MaikKlein/ash/)
 .
 
-- [accel](https://github.com/rust-accel/accel)
-
-- [emu](https://github.com/calebwin/emu)
-
-    Emu is a framework for developing safe, robust GPU-accelerated applications in Rust. 
-
 https://github.com/zakarumych/gpu-alloc
 
 https://github.com/zakarumych/gpu-descriptor
 Backend agnostic descriptor allocator for Vulkan-like APIs
 
-- [gfx-rs](https://github.com/gfx-rs/gfx)
-[gfx-rs](https://github.com/gfx-rs/gfx)
-is a low-level, cross-platform graphics and compute abstraction library in Rust. 
-[gfx-rs](https://github.com/gfx-rs/gfx)
-is hard to use. 
-It's recommended for performance-sensitive libraries and engines. 
-wgpu-rs is a safe and simple alternative.
+- [ArrayFire-rust](https://github.com/arrayfire/arrayfire-rust)
+
 
 ## [pathfinder](https://github.com/servo/pathfinder)
 [pathfinder](https://github.com/servo/pathfinder)

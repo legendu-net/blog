@@ -5,13 +5,9 @@ Slug: high-performance-computing-in-python
 Title: High Performance Computing in Python
 Category: Computer Science
 Tags: programming, Python, HPC, high performance computing, pybind11, numba, Cython, mars, Apache Ray
-Modified: 2021-05-12 09:26:31
+Modified: 2023-07-13 18:44:29
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Computing Frames
 

@@ -1,11 +1,11 @@
 Status: published
 Date: 2023-01-17 10:46:23
-Modified: 2023-01-18 22:21:47
+Modified: 2023-07-16 18:54:35
 Author: Benjamin Du
 Slug: rust-for-robots
 Title: Rust for Robots
 Category: Computer Science
-Tags: Computer Science, programming, Rust, robot, bot, hardware, embed, IoT
+Tags: Computer Science, programming, Rust, robot, bot, hardware, embedded, IoT
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -44,6 +44,8 @@ is an open-source autonomy software in Rust
 using gRPC for the Roomba series robot vacuum cleaners.
 
 ## References
+
+- [Simulate IoT Projects in Your Browser](https://wokwi.com/)
 
 - [Rust is for Robotics](https://robotics.rs/)
 

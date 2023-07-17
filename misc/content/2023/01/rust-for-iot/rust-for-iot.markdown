@@ -1,11 +1,11 @@
 Status: published
 Date: 2023-01-13 10:42:03
-Modified: 2023-03-06 10:40:50
+Modified: 2023-07-16 18:54:35
 Author: Benjamin Du
 Slug: rust-for-iot
 Title: Rust for IoT
 Category: Computer Science
-Tags: Computer Science, programming, Rust, IoT, RTOS, OS, embeded, embed, hardware
+Tags: Computer Science, programming, Rust, IoT, RTOS, OS, embeded, hardware
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -107,6 +107,8 @@ is a collection of items that are not yet awesome in Embedded Rust
 
 
 ## References
+
+- [Simulate IoT Projects in Your Browser](https://wokwi.com/)
 
 - [6 Things I Wish I Knew Starting with Embedded Rust](https://apollolabsblog.hashnode.dev/6-things-i-wish-i-knew-starting-with-embedded-rust)
 

@@ -5,13 +5,7 @@ Slug: proxychains-tips
 Title: Make Traffic Follow Through Proxies Using ProxyChains
 Category: Software
 Tags: Software, ProxyChains, network, web, proxy
-Modified: 2021-12-04 18:49:11
-
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+Modified: 2023-07-18 00:57:19
 
 ## Installation
 

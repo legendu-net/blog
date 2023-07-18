@@ -5,9 +5,9 @@ Title: Tips on GPU Computing
 Slug: gpu-tips
 Category: Computer Science
 Tags: tips, GPU, programming, Nvidia
-Modified: 2023-07-13 19:11:47
+Modified: 2023-07-18 00:56:57
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
  
 ## List GPU Devices on Linux
 

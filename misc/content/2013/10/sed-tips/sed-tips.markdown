@@ -7,7 +7,7 @@ Category: Software
 Tags: tips, software, text manipulation, shell, Linux, sed
 Modified: 2022-05-06 13:45:47
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 It is suggested that you use Python script as an alternative to `sed` 
 for manipulating text files 

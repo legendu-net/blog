@@ -7,7 +7,7 @@ Category: Computer Science
 Tags: encryption, tips, AES, RSA
 Modified: 2020-05-22 13:02:05
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 1. RSA is most widely used algorithm but is computationally expensive.

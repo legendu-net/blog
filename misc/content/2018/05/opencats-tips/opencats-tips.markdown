@@ -7,7 +7,7 @@ Category: Software
 Tags: software, OpenCats, tips, applicant tracking system
 Modified: 2020-05-22 15:16:47
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 OpenCats looks like a great applicant tracking system!

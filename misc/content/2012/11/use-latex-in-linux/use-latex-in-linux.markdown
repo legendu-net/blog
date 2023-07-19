@@ -8,7 +8,7 @@ Slug: use-latex-in-linux
 Author: Ben Chuanlong Du
 Modified: 2017-02-10 07:49:45
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
  
 1. `Texlive` is the most popular package for LaTeX in Linux.
 

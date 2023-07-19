@@ -7,7 +7,7 @@ Category: Software
 Tags: software, JupyterLab, extension, plugin, JupyterHub, nbdime
 Modified: 2023-07-16 16:17:54
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Install/Uninstall Jupyter/Lab Extensions
 

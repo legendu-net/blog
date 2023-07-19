@@ -8,7 +8,7 @@ Category: Software
 Tags: software, Vim, editor, Outlook, gvim
 Modified: 2016-03-05 21:06:14
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 - [ViEmu] (http://www.viemu.com/)
 Unfortunately does not support 64 bit MS Word/Outlook currently. 

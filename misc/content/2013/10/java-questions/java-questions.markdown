@@ -8,7 +8,7 @@ Category: Computer Science
 Tags: questions, Java, programming
 Modified: 2021-04-12 23:44:08
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
  
 
 1. is possible to define abstract static method? i.e., 

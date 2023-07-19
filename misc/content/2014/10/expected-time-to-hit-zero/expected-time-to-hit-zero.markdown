@@ -7,7 +7,7 @@ Category: Fun Problems
 Tags: fun problems, expected time, hitting time, discrete uniform distribution
 Modified: 2023-02-15 00:55:51
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Let $DU(0, n)$ be the discrete uniform distribution on $0$, $1$, ..., $n-1$.
 Define random variables as below.

@@ -7,7 +7,7 @@ Title: Dataframe in JavaScript
 Category: Computer Science
 Tags: programming, JavaScript, DataFrame, apache arrow
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://github.com/data-forge/data-forge-ts
 

@@ -8,7 +8,7 @@ Category: Computer Science
 Tags: programming, Jupyter Notebook, JavaScript, JS, TypeScript, IJavascript, ITypeScript
 Modified: 2017-10-22 12:33:12
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://github.com/nearbydelta/itypescript
 

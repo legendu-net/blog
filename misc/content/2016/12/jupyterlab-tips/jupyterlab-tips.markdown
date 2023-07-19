@@ -7,7 +7,7 @@ Category: Software
 Tags: software, JupyterLab, Jupyter, tips
 Modified: 2022-06-16 00:29:36
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## General Tips

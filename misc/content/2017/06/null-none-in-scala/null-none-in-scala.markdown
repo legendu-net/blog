@@ -8,7 +8,7 @@ Category: Computer Science
 Tags: programming, null, none, Scala
 Modified: 2017-10-22 13:37:40
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 `Nil` represents an emptry List of anything of zero length. 
 It is not that it refers to nothing but it refers to List which has no contents.

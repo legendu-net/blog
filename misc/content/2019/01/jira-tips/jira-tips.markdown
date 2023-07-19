@@ -7,7 +7,7 @@ Category: Career
 Tags: Work, JIRA, spider plot
 Modified: 2021-01-08 17:36:28
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. Spider plot is great for showing progresses of the team.
 

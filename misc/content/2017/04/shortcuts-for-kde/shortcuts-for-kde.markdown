@@ -7,7 +7,7 @@ Category: OS
 Tags: Linux, KDE, desktop environment, shortcuts
 Modified: 2019-03-04 08:53:41
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. KDE supports the Win/Super key to bring up the application launcher now.
     If you are on an older KDE distributions which does not have it by default,

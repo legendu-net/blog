@@ -7,7 +7,7 @@ Category: OS
 Tags: Linux, Chinese, Locale, locale-gen, locales, Ubuntu, Debian
 Modified: 2021-02-15 12:06:13
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 First you have to make sure `locales` is installed.
 If not,

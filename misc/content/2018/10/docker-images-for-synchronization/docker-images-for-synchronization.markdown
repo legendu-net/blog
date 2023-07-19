@@ -8,7 +8,7 @@ Category: Software
 Tags: software, Docker, Docker image, synchronization, Dropbox, nextCloud
 Modified: 2018-10-18 23:34:58
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [nextCloud](https://hub.docker.com/_/nextcloud/)
 

@@ -7,7 +7,7 @@ Category: Software
 Tags: software, AutoIt, AutoHotkey, AutoKey
 Modified: 2020-02-14 14:14:35
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## AutoIt
 

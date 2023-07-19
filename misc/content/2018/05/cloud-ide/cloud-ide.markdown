@@ -7,7 +7,7 @@ Category: Software
 Tags: software, cloud IDE, Cloud9, Codenvy, Eclipse Che, Koding, Codeanywhere
 Modified: 2020-05-20 09:49:30
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [Code Server](https://github.com/cdr/code-server)
 

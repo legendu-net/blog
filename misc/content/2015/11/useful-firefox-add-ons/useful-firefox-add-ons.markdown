@@ -7,7 +7,7 @@ Category: Software
 Tags: software, Firefox, add-ons, plugins, extensions, Mozilla
 Modified: 2022-05-21 21:32:37
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## Navigation & Shortcut

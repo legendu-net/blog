@@ -8,7 +8,7 @@ Category: Software
 Tags: software, docker, notebook, Jupyter Notebook, Zeppelin
 Modified: 2017-07-27 12:21:05
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 1. [jupyter/all-spark-notebook](https://github.com/jupyter/docker-stacks/tree/master/all-spark-notebook)

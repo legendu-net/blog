@@ -8,7 +8,7 @@ Category: Internet
 Tags: network, WebRTC
 Modified: 2017-04-03 18:45:15
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Appear.in seems to be a good one and easy to use.
 

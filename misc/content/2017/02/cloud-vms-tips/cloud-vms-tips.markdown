@@ -7,7 +7,7 @@ Category: Cloud
 Tags: cloud, VMs, ports, AWS EC2
 Modified: 2017-02-19 10:23:04
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. VPN/proxy
 

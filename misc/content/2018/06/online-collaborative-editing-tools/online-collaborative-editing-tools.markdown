@@ -7,7 +7,7 @@ Category: Software
 Tags: software, online collaborative editing
 Modified: 2020-02-17 11:52:24
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 http://collabedit.com
 

@@ -7,7 +7,7 @@ Category: Computer Science
 Tags: programming, Java, JVM, unit testing, JUnit
 Modified: 2019-11-04 18:34:19
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 import static org.junit.Assert.*;

@@ -7,7 +7,7 @@ Category: Computer Science
 Tags: programming, Python, virtual environment, venv
 Modified: 2019-12-14 11:04:58
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. [venv](https://docs.python.org/3/library/venv.html#module-venv)
     is a standard Python library

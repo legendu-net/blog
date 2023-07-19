@@ -8,7 +8,7 @@ Category: OS
 Tags: Linux, package management, wajig, apt-get, dpkg
 Modified: 2020-09-11 10:11:29
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 There are many different ways to install packages in Linux.
 

@@ -8,7 +8,7 @@ Category: Computer Science
 Tags: programming, Scala, Java, date, time, java.time, Joda time
 Modified: 2021-03-24 10:37:07
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Use Joda time if you are using JDK <= 7
 and java.time if you are using JDK8 and above.

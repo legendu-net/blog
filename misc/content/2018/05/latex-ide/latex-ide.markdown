@@ -7,7 +7,7 @@ Category: Software
 Tags: software, Tex, LaTex, IDE, OverLeaf, TexStudio
 Modified: 2021-04-11 11:32:28
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [OverLeaf](https://www.overleaf.com/)
 

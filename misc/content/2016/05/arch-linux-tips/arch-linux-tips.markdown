@@ -7,7 +7,7 @@ Category: OS
 Tags: Linux, tips, Arch Linux, pacman
 Modified: 2020-02-29 17:09:02
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. Manjaro is a good Arch Linux based distribution.
 

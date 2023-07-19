@@ -7,7 +7,7 @@ Category: Software
 Tags: software, Git, repository, size
 Modified: 2023-05-13 17:32:32
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Use Git Large File Storage to Manage Large Files
 

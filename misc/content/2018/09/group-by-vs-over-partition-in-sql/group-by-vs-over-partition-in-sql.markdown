@@ -7,7 +7,7 @@ Category: Computer Science
 Tags: programming, SQL, group by, over partition
 Modified: 2019-09-12 18:40:34
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [SQL Server: Difference between PARTITION BY and GROUP BY](http://stackoverflow.com/questions/2404565/sql-server-difference-between-partition-by-and-group-by)
 

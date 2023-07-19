@@ -7,7 +7,7 @@ Category: AI
 Tags: machine learning, text mining, data mining, data science, NLP, deep learning
 Modified: 2020-05-22 13:08:04
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Word Stemming
 

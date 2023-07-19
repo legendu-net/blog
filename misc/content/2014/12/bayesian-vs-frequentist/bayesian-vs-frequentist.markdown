@@ -8,7 +8,7 @@ Category: AI
 Tags: statistics, Bayesian, frequentist, large sample-based, likelihood, asymptotic, simulation
 Modified: 2016-07-13 22:22:54
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. 很多frequentist的inference是基于大样本（近似）理论的，这种情况下样本小的时候Bayesian结论可能会更好。
 

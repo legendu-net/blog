@@ -7,7 +7,7 @@ Category: Computer Science
 Tags: Computer Science, mind map, GUI, XMind, flowchart
 Modified: 2020-05-03 08:18:27
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Built-in Flowchart in Office Tools
 

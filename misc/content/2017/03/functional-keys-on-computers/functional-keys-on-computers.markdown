@@ -8,7 +8,7 @@ Category: Hardware
 Tags: hardware, computer, laptop, Lenovo
 Modified: 2017-03-04 12:45:01
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Lenovo
 

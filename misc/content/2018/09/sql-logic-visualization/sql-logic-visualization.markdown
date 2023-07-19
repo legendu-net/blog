@@ -8,7 +8,7 @@ Category: Computer Science
 Tags: programming, SQL, SQL Logic Visualization, sqldep, queryScope, queryViz, eralchemy
 Modified: 2019-06-27 18:31:29
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. [rm-hull/sql_graphviz](https://github.com/rm-hull/sql_graphviz)
     is a small Pyton script that generates a Graphviz visualization of a SQL schema dump.

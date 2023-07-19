@@ -8,7 +8,7 @@ Category: Computer Science
 Tags: programming, sbt, plugin, Scala
 Modified: 2017-12-23 09:30:38
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. sbt Assembly is recommended, generally speaking. 
 

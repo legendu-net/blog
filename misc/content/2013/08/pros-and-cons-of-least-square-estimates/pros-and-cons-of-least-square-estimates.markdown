@@ -8,7 +8,7 @@ Category: AI
 Tags: linear regression, least square, modeling, statisitcs
 Modified: 2015-02-24 13:58:18
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
  
 
 ## Ordinary Least Square

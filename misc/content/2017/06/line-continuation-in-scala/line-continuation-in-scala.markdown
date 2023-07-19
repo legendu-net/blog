@@ -8,7 +8,7 @@ Category: Computer Science
 Tags: programming, Scala, line continuation
 Modified: 2017-10-22 13:35:34
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Scala does not have a line continuation character.
 It infers a semicolon always when:

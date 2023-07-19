@@ -7,7 +7,7 @@ Category: OS
 Tags: Linux, SAMBA, remote file system, file sharing
 Modified: 2020-02-29 17:14:25
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 SAMBA File System is a great way to share files among computers in local network (e.g., office or home).
 You do NOT need a synchronization software.

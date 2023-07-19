@@ -7,7 +7,7 @@ Category: OS
 Tags: shell, remote, PDF, software, tools, terminal, application, Linux
 Modified: 2021-12-24 11:08:51
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 <img src="http://dclong.github.io/media/linux/linux.png" height="200" width="240" align="right"/>
 

@@ -7,7 +7,7 @@ Category: OS
 Tags: linux, cp, command-line, rsync, scp
 Modified: 2020-05-02 14:57:03
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. Generally speaking, 
     you do not want to follow symbolic links when copying files 

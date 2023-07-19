@@ -7,7 +7,7 @@ Category: Software
 Tags: tips, virtualbox, virtualization
 Modified: 2022-05-04 10:18:09
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ```
 sudo mount -t vboxsf -o uid=$(whoami),gid=$(whoami),fmask=177,dmask=077

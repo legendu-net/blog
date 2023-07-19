@@ -7,7 +7,7 @@ Category: OS
 Tags: Java, macOS, Homebrew, JDK, mac
 Modified: 2019-02-18 17:37:15
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 OpenJDK 8 can be installed on Mac using the following commands.
 

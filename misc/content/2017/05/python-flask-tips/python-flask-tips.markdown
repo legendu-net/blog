@@ -7,7 +7,7 @@ Category: Computer Science
 Tags: programming, Python, Flask
 Modified: 2020-05-22 15:01:09
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 app.run(host= '0.0.0.0')
 

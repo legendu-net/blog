@@ -8,7 +8,7 @@ Slug: debian-vs-ubuntu
 Author: Ben Chuanlong Du
 Modified: 2014-09-18 19:08:42
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
  
 
 The Debian series Linux 

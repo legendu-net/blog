@@ -8,6 +8,6 @@ Category: Life
 Tags: life, fast deliver, post office, Shunfeng, 顺风
 Modified: 2016-05-11 23:41:31
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 顺风快递： 1： 下单 2： 查询 3： 业务咨询 4： 投诉

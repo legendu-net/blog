@@ -7,7 +7,7 @@ Category: Life
 Tags: commute, 中国, 交通, 公共, 生活, transportation, China, public, life 
 Modified: 2020-03-05 17:00:42
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. 能乘坐火车就尽量乘坐火车, 公路客运相比缺点实在是太多了.
 

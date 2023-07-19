@@ -7,7 +7,7 @@ Category: Computer Science
 Tags: programming, Computer Science, plugins, Pelican, Static Site Generator, Python, markdown
 Modified: 2020-11-22 12:31:45
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://github.com/getpelican/pelican-plugins/issues/866
 

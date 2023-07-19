@@ -7,7 +7,7 @@ Category: Software
 Tags: software, Teradata SQL Assistant, IDE, SQL, dbeaver, Teradata Studio
 Modified: 2021-02-15 12:10:03
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## [dbeaver](http://www.legendu.net/misc/blog/tips-for-dbeaver)

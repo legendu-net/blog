@@ -8,7 +8,7 @@ Category: Software
 Tags: software, bash autocomplete, Homebrew, bash-completion 
 Modified: 2019-01-08 06:15:48
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ```bash
 brew install bash-completion

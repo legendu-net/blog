@@ -7,7 +7,7 @@ Category: Computer Science
 Tags: programming, SQL, tips, MS SQL Server
 Modified: 2020-05-22 14:05:53
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. convert: 106 - dd mon yyyy, 101 - mm/dd/yyyy
 

@@ -5,9 +5,9 @@ Slug: python-pandas-tips
 Title: Python pandas Tips
 Category: Computer Science
 Tags: programming, Python, pandas, DataFrame, data frame, tips
-Modified: 2023-03-10 22:27:23
+Modified: 2023-07-18 17:55:52
 
-**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## `pandas` Settings
 

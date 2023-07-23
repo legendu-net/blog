@@ -7,7 +7,7 @@ Title: Useful Rust Crates for Developing Command Line Apps
 Category: Computer Science
 Tags: Computer Science, programming, Rust, command, line, app, application
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 
 ## [ratatui](https://crates.io/crates/ratatui)
 [RataTUI](https://crates.io/crates/ratatui)

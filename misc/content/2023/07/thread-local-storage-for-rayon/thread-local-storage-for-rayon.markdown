@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-07-05 09:24:27
-Modified: 2023-07-05 17:34:30
+Modified: 2023-07-22 22:29:15
 Author: Benjamin Du
 Slug: thread-local-storage-for-rayon
 Title: Thread-Local Storage for Rayon
@@ -8,6 +8,17 @@ Category: Computer Science
 Tags: Computer Science, programming, Rust, thread, thread-local, TLS, storage, multi-thread, concurrency
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+There might be issue if the code relies on Drop of the struct.
+For example,
+if you create a BufWriter in thread-local storage,
+last buffered output might not flush.
+You have to 
+1. (not recommended) manually flush 
+2. (recommended) swap out the `BufWrite` from RefCell to allow it to be dropped.
+
+Have to manually call bw.replace(None) so own the struct so that it can be dropped.
+This is good practice anyway as you want to lease handle to files so soon as they are no longer used.
 
 ## rayon
 1. Can  

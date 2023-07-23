@@ -7,7 +7,7 @@ Title: Tips on Bytehound
 Category: Computer Science
 Tags: Computer Science, programming, Rust, Bytehound, memory, profiling
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 
 Bytehound works with Rust stable 
 (Rust nightly is not required)

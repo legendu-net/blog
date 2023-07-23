@@ -5,7 +5,7 @@ Slug: thread-safe-random-number-generator
 Author: Ben Chuanlong Du
 Category: Computer Science
 Tags: C++, RNG, programming, thread, distribution, HPC, fun problems, MT, Concurrency
-Modified: 2023-07-06 22:30:42
+Modified: 2023-07-22 22:16:05
 
 [SFMT]: http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/SFMT/#dSFMT
 [Thread Safe Random Number Generator]: http://www.legendu.net/media/rng/smt.h
@@ -18,6 +18,8 @@ which is undesirable).
 For more discussions on this approach,
 please refer to
 [The Rust Rand Book - Parallel RNGs](https://rust-random.github.io/book/guide-parallel.html)
+and
+[Seed Many RNGs in Rust](https://www.legendu.net/en/blog/seed-many-rngs-in-rust/)
 .
 The following of this article discusses about thread-safe RNGs based on Mersenne Twister.
 Note that Mersenne Twister is no longer considered the state-of-the-art non-cryptographic PRNG. 

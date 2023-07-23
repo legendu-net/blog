@@ -5,7 +5,7 @@ Slug: summary-random-number-generators
 Author: Ben Chuanlong Du
 Category: AI
 Tags: WELL, RNG, statistics, SFMT, dimension, MT, PCG, Java, Python
-Modified: 2023-07-06 22:44:09
+Modified: 2023-07-22 22:16:05
 
 <img src="http://www.legendu.net/media/rng/random-number-generator.png" height="200" width="240" align="right"/>
 
@@ -17,11 +17,11 @@ The Rust crate
 [rand_xoshiro](https://crates.io/crates/rand_xoshiro)
 (which is part of the popular Rust crate [rand](https://crates.io/crates/rand))
 has implementations of 
-[Xoshiro256Plus](https://docs.rs/rand_xoshiro/0.6.0/rand_xoshiro/struct.Xoshiro256Plus.html)
+[Xoshiro256Plus](https://docs.rs/rand_xoshiro/latest/rand_xoshiro/struct.Xoshiro256Plus.html)
 and
-[Xoshiro256PlusPlus](https://docs.rs/rand_xoshiro/0.6.0/rand_xoshiro/struct.Xoshiro256PlusPlus.html)
+[Xoshiro256PlusPlus](https://docs.rs/rand_xoshiro/latest/rand_xoshiro/struct.Xoshiro256PlusPlus.html)
 .
-[Xoshiro256PlusPlus](https://docs.rs/rand_xoshiro/0.6.0/rand_xoshiro/struct.Xoshiro256PlusPlus.html)
+[Xoshiro256PlusPlus](https://docs.rs/rand_xoshiro/latest/rand_xoshiro/struct.Xoshiro256PlusPlus.html)
 is a very good PRNG for statistical simulation purpose. 
 Specially,
 it supports jumping ahead

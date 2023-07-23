@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-07-22 11:27:41
-Modified: 2023-07-22 11:27:41
+Modified: 2023-07-22 22:43:20
 Author: Benjamin Du
 Slug: the-deref-trait-in-rust
 Title: The Deref Trait in Rust
@@ -30,12 +30,14 @@ Tags: Computer Science, programming, Rust, Trait, Deref, smart pointer
     This means that you always have to qualify them, 
     like `Box::leak(my_box)`.
 
-2. If you do implement Deref<Target = U> on a type T, 
-    and it proved necessary to implement a generic trait Trait<S> on T. 
-    Then one should ensure that the implementations of Trait<S> for different parameters S are not scattered across T and U.
+2. If you do implement `Deref<Target = U>` on a type `T`, 
+    and it proved necessary to implement a generic trait `Trait<S>` on `T`. 
+    Then one should ensure that the implementations of `Trait<S>` 
+    for different parameters `S` are not scattered across `T` and `U`.
     Put simply, 
-    either T or U should host all existing Trait<S> implementations. 
-    Note that the preceding "or" is inclusive, meaning that both T and U can host some Trait<S> implementations, 
+    either `T` or `U` should host all existing `Trait<S>` implementations. 
+    Note that the preceding "or" is inclusive, 
+    meaning that both `T` and `U` can host some `Trait<S>` implementations, 
     as long as they both host all of them.
 
 ## References

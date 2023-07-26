@@ -1,13 +1,13 @@
 Status: published
 Date: 2023-07-05 08:42:27
-Modified: 2023-07-22 22:16:05
+Modified: 2023-07-24 15:45:49
 Author: Benjamin Du
 Slug: parallel-RNGs-with-rayon-in-rust
 Title: Parallel RNGs With Rayon in Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, parallel, concurrency, thread, multi-thread, RNG, PRNG, random number generator
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 
 [The Rust Rand Book - Parallel RNGs](https://rust-random.github.io/book/guide-parallel.html)
 has a very good summary about parallel RNGs.
@@ -41,7 +41,7 @@ a few things to notice.
     (currently, ChaCha block cipher with 12 rounds)
     which might be too slow for statistical simulations.
     If that's the case,
-    you can use a faster RNG (e.g., StdRng) with thread-local storage as parallel RNGs.
+    you can use a faster RNG (e.g., SmallRng) with thread-local storage as parallel RNGs.
     Please refer to 
     [Customized RNGs with Thread-local Storage](https://www.legendu.net/misc/blog/parallel-RNGs-with-rayon-in-rust/#customized-rngs-with-thread-local-storage)
     for details.

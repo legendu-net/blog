@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2023-06-04 21:15:28
+Modified: 2023-07-30 21:10:26
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -138,14 +138,11 @@ checks for unsaved or uncommitted changes on your machine.
 StGit for short, 
 is an application for managing Git commits as a stack of patches.
 
-### [git-grab](https://github.com/wezm/git-grab)
-[git-grab](https://github.com/wezm/git-grab)
-is a small tool to clone git repositories to a standard location, 
-organised by domain name and path. It runs on BSD, Linux, macOS, Windows, and more.
-
-
-
-grex
+## [grex](https://github.com/pemistahl/grex)
+[grex](https://github.com/pemistahl/grex)
+is a command-line tool and Rust library 
+for generating regular expressions from user-provided test cases
+.
 
 ## [zoxide](https://crates.io/crates/zoxide)
 [zoxide](https://crates.io/crates/zoxide)

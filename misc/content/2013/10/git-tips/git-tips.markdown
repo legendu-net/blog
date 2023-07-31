@@ -5,9 +5,11 @@ Title: Tips on Git
 Slug: git-tips
 Category: Software
 Tags: tips, Git, software, version control, distributed, access, token, GitHub, GitLab
-Modified: 2023-07-22 23:18:55
+Modified: 2023-07-30 21:07:28
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+[Git Tools](https://www.legendu.net/misc/blog/great-command-line-tools-developed-in-rust/#git-tools)
 
 ## Access Token for Git
 

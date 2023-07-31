@@ -5,12 +5,9 @@ Slug: data-profiling-tools
 Title: Data Profiling Tools
 Category: Computer Science
 Tags: Computer Science, data profiling, Optimus, deepu, pandas-profiling
-Modified: 2023-06-11 16:06:34
+Modified: 2023-07-30 22:24:04
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 1. [ydata-profiling](https://github.com/ydataai/ydata-profiling)

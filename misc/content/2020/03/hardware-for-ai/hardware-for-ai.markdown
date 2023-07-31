@@ -5,12 +5,9 @@ Slug: hardware-for-ai
 Title: Hardware for AI
 Category: AI
 Tags: AI, deep learning, machine learning, data science, hardware, GPU, TPU, Jetson Nano, Google Coral
-Modified: 2023-05-20 11:56:58
+Modified: 2023-07-30 22:22:48
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [TVM](https://github.com/apache/incubator-tvm)
 for deep learning is kind of like LLVM for programming languages.

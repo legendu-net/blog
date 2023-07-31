@@ -5,7 +5,7 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2023-07-30 22:17:25
+Modified: 2023-07-30 22:28:12
 
 
 <h2 id="recommended-docker-images">Recommended Docker Images and Tags</h2>
@@ -120,11 +120,17 @@ Please refer to the following tag table for more details.
   </tr>
   <tr>
     <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-gitpod/tree/blog" target="_blank" rel="noopener noreferrer">dclong/gitpod:blog</a></td>
-    <td class="tg-0lax">Editing <a href="https://github.com/legendu-net/blog" target="_blank" rel="noopener noreferrer">legendu.net/blog</a> using GitPod</td>
+    <td class="tg-0lax">For editing and publishing <a href="https://github.com/legendu-net/blog" target="_blank" rel="noopener noreferrer">legendu.net/blog</a> using GitPod</td>
   </tr>
   <tr>
-    <td class="tg-0lax"><a href="https://hub.docker.com/layers/dclong/jupyterhub-ds/blog_070203/images/sha256-f6f9f15d18a856786c37a370157e81c9e0acbc80050656858be9330c6213b5fe?context=repo" target="_blank" rel="noopener noreferrer">dclong/jupyterhub-ds:blog_070203</a></td>
-    <td class="tg-0lax">Editing <a href="https://github.com/legendu-net/blog" target="_blank" rel="noopener noreferrer">legendu.net/blog</a> using GitPod</td>
+    <td class="tg-0lax">
+        <a href="https://hub.docker.com/layers/dclong/jupyterhub-ds/blog_070203/images/sha256-f6f9f15d18a856786c37a370157e81c9e0acbc80050656858be9330c6213b5fe?context=repo" target="_blank" rel="noopener noreferrer">
+            dclong/jupyterhub-ds:blog_070203
+        </a>
+    </td>
+    <td class="tg-0lax">
+        For editing and publishing <a href="https://github.com/legendu-net/blog" target="_blank" rel="noopener noreferrer">legendu.net/blog</a>. 
+    </td>
   </tr>
   <tr>
     <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-gitpod" target="_blank" rel="noopener noreferrer">dclong/gitpod</a></td>

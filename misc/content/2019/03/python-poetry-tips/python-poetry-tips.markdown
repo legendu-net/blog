@@ -5,12 +5,9 @@ Slug: python-poetry-tips
 Title: Manage Your Python Project Using Poetry
 Category: Computer Science
 Tags: programming, Python, poetry, build tool, dependency management
-Modified: 2023-06-11 14:05:48
+Modified: 2023-07-30 22:23:39
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## Tips and Traps 

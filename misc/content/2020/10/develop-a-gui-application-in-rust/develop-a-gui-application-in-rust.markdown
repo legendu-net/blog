@@ -5,12 +5,9 @@ Slug: develop-a-gui-application-in-rust
 Title: Develop a GUI Application in Rust
 Category: Computer Science
 Tags: Computer Science, Rust, GUI, desktop, application, Tauri, Iced, Slint
-Modified: 2023-05-07 12:24:22
+Modified: 2023-07-30 22:22:20
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## [tauri](http://www.legendu.net/misc/blog/use-tauri-to-build-a-desktop-application)

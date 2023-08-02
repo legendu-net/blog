@@ -5,7 +5,7 @@ Slug: working-with-spreadsheet-with-python
 Title: Working with Spreadsheet in Python
 Category: Computer Science
 Tags: programming, Python, Spreadsheet, Excel, pandas, xlsxwriter
-Modified: 2022-11-27 09:45:57
+Modified: 2023-08-01 09:11:55
 
 It is suggested that you avoid using Excel files (or other spreadsheet tools) for storing data.
 Parquet file is currently the best format for storing table-like data.
@@ -58,10 +58,11 @@ Note that macOS currently does not support UDFs.
 
 ## References 
 
-https://xlsxwriter.readthedocs.io/
+- [xlwings @ GitHub](https://github.com/xlwings/xlwings)
 
-https://xlsxwriter.readthedocs.io/faq.html
+- [Creating Excel files with Python and XlsxWriter](https://xlsxwriter.readthedocs.io/)
 
-https://xlsxwriter.readthedocs.io/examples.html
+- [XlsxWriter - Frequently Asked Questions](https://xlsxwriter.readthedocs.io/faq.html)
 
-https://github.com/xlwings/xlwings
+- [XlsxWriter - Examples](https://xlsxwriter.readthedocs.io/examples.html)
+

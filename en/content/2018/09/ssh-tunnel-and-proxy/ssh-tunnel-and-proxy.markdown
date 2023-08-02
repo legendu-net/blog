@@ -5,7 +5,7 @@ Slug: ssh-tunnel
 Title: SSH Tunnel
 Category: Software
 Tags: software, SSH tunnel, socks proxy, reverse, SSH
-Modified: 2022-12-15 15:09:53
+Modified: 2023-08-01 09:13:09
 
 
 1. The StackOverflow discussion 
@@ -144,4 +144,5 @@ You can follow the steps below to access the public network from machine B.
 
 - [Setting up a Jupyter Lab remote server](https://agent-jay.github.io/2018/03/jupyterserver/)
 
-- https://superuser.com/questions/303251/how-to-check-if-a-socks5-proxy-works
+- [How to check if a Socks5 proxy works](https://superuser.com/questions/303251/how-to-check-if-a-socks5-proxy-works)
+

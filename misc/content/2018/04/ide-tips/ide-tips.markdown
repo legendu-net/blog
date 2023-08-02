@@ -5,7 +5,7 @@ Slug: ide-tips
 Title: Tips on IDE
 Category: Software
 Tags: Software, IDE, Cloud IDE, Java, C++, Python, Latex
-Modified: 2019-02-18 19:35:55
+Modified: 2023-08-01 14:39:15
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -14,6 +14,9 @@ Modified: 2019-02-18 19:35:55
 ## General Purpose IDEs
 
 1. Visual Studio Code
+
+Lapce
+https://github.com/lapce/lapce
 
 2. Eclipse (with all kinds of plugins)
 

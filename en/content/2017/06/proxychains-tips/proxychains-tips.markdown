@@ -5,7 +5,7 @@ Slug: proxychains-tips
 Title: Make Traffic Follow Through Proxies Using ProxyChains
 Category: Software
 Tags: Software, ProxyChains, network, web, proxy
-Modified: 2023-07-18 00:57:19
+Modified: 2023-08-01 09:14:37
 
 ## Installation
 
@@ -167,6 +167,7 @@ and you can run tinyproxy on localhost and put its address into your proxychains
 
 ## References
 
-https://linuxhint.com/proxychains-tutorial/
+- [ProxyChains Tutorial](https://linuxhint.com/proxychains-tutorial/)
 
-https://www.milesweb.com/blog/technology-hub/concatenate-multiple-proxies-proxychains/
+- [Concatenate Multiple Proxies Using ProxyChains](https://www.milesweb.com/blog/technology-hub/concatenate-multiple-proxies-proxychains/)
+

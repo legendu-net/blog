@@ -11,6 +11,9 @@ Modified: 2020-05-20 09:49:30
 
 ## [Code Server](https://github.com/cdr/code-server)
 
+Makepad
+https://github.com/makepad/makepad
+
 ## [GitPod](https://gitpod.io/)
 
 GitPod (based on [theia](http://www.theia-ide.org/))

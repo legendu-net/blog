@@ -1,6 +1,6 @@
 Status: published
 Date: 2020-11-09 11:10:06
-Modified: 2022-09-26 10:49:41
+Modified: 2023-08-01 09:08:34
 Author: Benjamin Du
 Slug: the-right-way-to-export-PATH-in-shell
 Title: The Right Way to Export PATH in Shell
@@ -39,3 +39,8 @@ and keep your `.bash_profile` as simple as the following.
     if [[ -f ~/.bashrc ]]; then
         . ~/.bashrc
     fi
+
+## References
+
+- [path.sh](https://github.com/legendu-net/docker-base/blob/dev/scripts/path.sh)
+

@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:44:56
-Modified: 2023-06-23 16:39:50
+Modified: 2023-08-02 01:08:40
 Author: Benjamin Du
 Slug: serialization-and-deserialization-in-rust
 Title: Serialization and Deserialization in Rust
@@ -59,6 +59,21 @@ is a compact encoder / decoder pair that uses a binary zero-fluff encoding schem
 The size of the encoded object will be the same or smaller 
 than the size that the object takes up in memory in a running Rust program.
 
+https://github.com/dtolnay/serde-repr
+
+https://github.com/not-fl3/nanoserde
+
+https://github.com/m4b/goblin
+
+https://github.com/koute/speedy
+
+https://github.com/near/borsh-rs
+
+rust-ini
+https://github.com/zonyitoo/rust-ini
+
+xml-rs
+https://github.com/netvl/xml-rs
 
 ## Other Crates
 Strictly speaking,

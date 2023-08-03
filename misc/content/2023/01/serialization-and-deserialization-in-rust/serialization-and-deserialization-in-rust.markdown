@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:44:56
-Modified: 2023-08-02 01:08:40
+Modified: 2023-08-02 17:49:27
 Author: Benjamin Du
 Slug: serialization-and-deserialization-in-rust
 Title: Serialization and Deserialization in Rust
@@ -10,9 +10,9 @@ Tags: Computer Science, programming, Rust, serialization, deserialization, binar
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
-https://crates.io/crates/msgpacker
+[msgpacker](https://crates.io/crates/msgpacker)
 
-https://github.com/3Hren/msgpack-rust
+[msgpack-rust](https://github.com/3Hren/msgpack-rust)
 
 ## [serde Based Serialization and Deserialization](https://www.legendu.net/en/blog/hands-on-the-Rust-library-serde/)
 
@@ -59,21 +59,19 @@ is a compact encoder / decoder pair that uses a binary zero-fluff encoding schem
 The size of the encoded object will be the same or smaller 
 than the size that the object takes up in memory in a running Rust program.
 
-https://github.com/dtolnay/serde-repr
+## [serde-repr](https://github.com/dtolnay/serde-repr)
 
-https://github.com/not-fl3/nanoserde
+## [nanoserde](https://github.com/not-fl3/nanoserde)
 
-https://github.com/m4b/goblin
+## [goblin](https://github.com/m4b/goblin)
 
-https://github.com/koute/speedy
+## [speedy](https://github.com/koute/speedy)
 
-https://github.com/near/borsh-rs
+## [borsh-rs](https://github.com/near/borsh-rs)
 
-rust-ini
-https://github.com/zonyitoo/rust-ini
+## [rust-ini](https://github.com/zonyitoo/rust-ini)
 
-xml-rs
-https://github.com/netvl/xml-rs
+## [xml-rs](https://github.com/netvl/xml-rs)
 
 ## Other Crates
 Strictly speaking,

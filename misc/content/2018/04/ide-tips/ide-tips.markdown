@@ -5,7 +5,7 @@ Slug: ide-tips
 Title: Tips on IDE
 Category: Software
 Tags: Software, IDE, Cloud IDE, Java, C++, Python, Latex
-Modified: 2023-08-01 14:39:15
+Modified: 2023-08-02 15:36:49
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -15,8 +15,7 @@ Modified: 2023-08-01 14:39:15
 
 1. Visual Studio Code
 
-Lapce
-https://github.com/lapce/lapce
+2. [Lapce](https://github.com/lapce/lapce)
 
 2. Eclipse (with all kinds of plugins)
 

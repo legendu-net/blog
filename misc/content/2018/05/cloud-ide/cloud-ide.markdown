@@ -5,14 +5,13 @@ Slug: cloud-ide
 Title: Cloud IDE
 Category: Software
 Tags: software, cloud IDE, Cloud9, Codenvy, Eclipse Che, Koding, Codeanywhere
-Modified: 2020-05-20 09:49:30
+Modified: 2023-08-02 15:36:49
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [Code Server](https://github.com/cdr/code-server)
 
-Makepad
-https://github.com/makepad/makepad
+## [Makepad](https://github.com/makepad/makepad)
 
 ## [GitPod](https://gitpod.io/)
 

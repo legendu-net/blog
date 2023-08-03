@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-08 10:19:34
-Modified: 2023-06-19 18:49:55
+Modified: 2023-08-02 17:52:50
 Author: Benjamin Du
 Slug: profile-rust-applications
 Title: Profile Rust Applications
@@ -40,6 +40,11 @@ Flamegraph (relying on Linux perf) is the hardest one to install, configure and 
 Valgrind is also easy to install, configure and use.
 However, 
 it is way too slower compared to not-perf.
+
+### [samply](https://github.com/mstange/samply)
+[samply](https://github.com/mstange/samply)
+is a command line CPU profiler 
+which uses the Firefox profiler as its UI.
 
 ### [pprof](https://crates.io/crates/pprof)
 [Pprof](https://crates.io/crates/pprof)

@@ -3,7 +3,7 @@ Date: 2023-01-13 16:51:04
 Modified: 2023-01-13 16:51:04
 Author: Benjamin Du
 Slug: rust-crates-for-parallel-concurrency-and-async
-Title: Rust Crates for Parallel Concurrency and Async
+Title: Rust Crates for Parallel, Concurrency, Async and Distributed Applications
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, parallel, concurrency, async, distributed
 

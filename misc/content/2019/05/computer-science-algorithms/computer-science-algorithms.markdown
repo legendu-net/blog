@@ -15,6 +15,8 @@ Modified: 2023-07-30 22:23:15
 
 [Double-ended Queue](https://en.wikipedia.org/wiki/Double-ended_queue)
 
+https://github.com/TheAlgorithms/Python
+All algorithms implemented in Python - for education
 
 ## Learn and Practice Algorithms
 

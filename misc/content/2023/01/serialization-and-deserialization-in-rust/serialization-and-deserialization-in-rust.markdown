@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:44:56
-Modified: 2023-08-02 17:49:27
+Modified: 2023-08-03 15:43:30
 Author: Benjamin Du
 Slug: serialization-and-deserialization-in-rust
 Title: Serialization and Deserialization in Rust
@@ -91,8 +91,8 @@ parses integers directly from [u8] slices in safe code
 
 ## References
 
-- [Hands on the Rust Library Serde](https://www.legendu.net/en/blog/hands-on-the-Rust-library-serde)  |  en/content/2021/04/hands-on-the-Rust-library-serde/hands-on-the-Rust-library-serde.ipynb
+- [Hands on the Rust Library Serde](https://www.legendu.net/en/blog/hands-on-the-Rust-library-serde)
 
-- [Parse TOML Files in Rust](https://www.legendu.net/misc/blog/parse-toml-files-in-rust)  |  misc/content/2022/05/parse-toml-files-in-rust/parse-toml-files-in-rust.ipynb
+- [Parse TOML Files in Rust](https://www.legendu.net/misc/blog/parse-toml-files-in-rust)
 
-- [Data Frame Implementations in Rust](https://www.legendu.net/misc/blog/data-frame-implementations-in-rust)  |  misc/content/2021/06/dataframe-implementations-in-rust/dataframe-implementations-in-rust.markdown
+- [Data Frame Implementations in Rust](https://www.legendu.net/misc/blog/data-frame-implementations-in-rust)

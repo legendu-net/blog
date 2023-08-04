@@ -19,6 +19,10 @@ Tags: Computer Science, programming, Rust, unsafe, pointer, memory model
 
 [Rust's Unsafe Code Guidelines Reference](https://rust-lang.github.io/unsafe-code-guidelines/introduction.html)
 
+Unsafe Code Guidelines
+https://github.com/rust-lang/unsafe-code-guidelines
+The goal of the UCG WG is to produce the Unsafe Code Guidelines Reference: a "guide" for writing unsafe code that "recommends" what kinds of things unsafe code can and cannot do, and that documents which guarantees unsafe code may rely on. It is largely a work-in-progress right now.
+
 ## References
 
 - [How to avoid bounds checks in Rust (without unsafe!)](https://shnatsel.medium.com/how-to-avoid-bounds-checks-in-rust-without-unsafe-f65e618b4c1e)

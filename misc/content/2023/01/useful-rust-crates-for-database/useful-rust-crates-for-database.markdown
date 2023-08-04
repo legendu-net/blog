@@ -10,6 +10,11 @@ Tags: Computer Science, programming, Rust, database, crate, SQL, big data, strea
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
+https://github.com/neondatabase/neon
+Neon is a serverless open-source alternative to AWS Aurora Postgres. It separates storage and compute and substitutes the PostgreSQL storage layer by redistributing data across a cluster of nodes.
+
+
+
 ## [sqlx](https://github.com/launchbadge/sqlx)
 [SQLx](HTTPS://GITHUB.COM/LAUNCHBADGE/SQLX)
 is an async, pure Rust† SQL crate featuring compile-time checked queries without a DSL.
@@ -117,6 +122,14 @@ It is built using Apache Arrow and DataFusion among other things.
 
 ## Log Storage
 
+openobserve
+https://github.com/openobserve/openobserve
+OpenObserve is a cloud native observability platform built specifically for logs, metrics, traces and analytics designed to work at petabyte scale.
+🚀 10x easier, 🚀 140x lower storage cost, 🚀 high performance, 🚀 petabyte scale - Elasticsearch/Splunk/Datadog alternative for 🚀 (logs, metrics, traces).
+
+
+
+
 ### [parseable](https://github.com/parseablehq/parseable)
 [Parseable](https://github.com/parseablehq/parseable)
 is a lightweight, cloud native log observability engine. 
@@ -142,7 +155,19 @@ ZincObserve provides its own UI which does not require separate installation unl
 is Simple Storage Service (aka S3) client 
 to perform bucket and object operations to any Amazon S3 compatible object storage service.
 
-## Data Layer
+## Cache
+https://github.com/06chaynes/http-cache
+A caching middleware that follows HTTP caching rules
+A caching middleware that follows HTTP caching rules, thanks to http-cache-semantics. By default, it uses cacache as the backend cache manager.
+
+
+
+## Data Layer 
+
+https://github.com/vectordotdev/vector
+Vector is a high-performance, end-to-end (agent & aggregator) observability data pipeline that puts you in control of your observability data. Collect, transform, and route all your logs, metrics, and traces to any vendors you want today and any other vendors you may want tomorrow. Vector enables dramatic cost reduction, novel data enrichment, and data security where you need it, not where it is most convenient for your vendors. Additionally, it is open source and up to 10x faster than every alternative in the space.
+
+
 
 https://github.com/grafbase/grafbase
 
@@ -171,6 +196,13 @@ Please refer to
 [Database Clients for Rust](https://www.legendu.net/misc/blog/querying-a-sql-database-in-rust)
 for details
 .
+
+## Metrics and Monitoring
+
+https://github.com/frolicorg/frolic
+Frolic is an open source project (written in Rust) to build customer facing dashboards 10x faster. You can directly connect your database to the project and use ready made APIs to query data and create customer facing dashboards. You can also use frolic-react for your UI along with frolic to create full stack dashboards much faster.
+
+
 
 ## Command-line Tools
 https://github.com/timvw/qv

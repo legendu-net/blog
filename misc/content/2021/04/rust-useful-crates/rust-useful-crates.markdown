@@ -5,7 +5,7 @@ Slug: useful-rust-crates
 Title: Useful Rust Crates
 Category: Computer Science
 Tags: Computer Science, programming, Rust, crate, useful
-Modified: 2023-06-23 22:50:24
+Modified: 2023-08-03 15:50:09
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://lib.rs/
@@ -51,8 +51,6 @@ https://crates.io/crates?sort=downloads
 ## [Great Command Line Tools Developed in Rust](https://www.legendu.net/misc/blog/great-command-line-tools-developed-in-rust)
 
 ## [Rust Crates for RPC](https://www.legendu.net/misc/blog/rust-crates-for-rpc) 
-
-## [Rust for Distributed Applications](https://www.legendu.net/misc/blog/rust-for-distributed-applications)
 
 ## [Useful Rust Crates for Filesystem](https://www.legendu.net/misc/blog/useful-rust-crates-for-filesystem) 
 

@@ -1,8 +1,8 @@
 Status: published
 Date: 2019-05-14 01:44:38
 Author: Benjamin Du
-Slug: clean-temporary-files-on-linux
-Title: Clean Temporary Files on Linux
+Slug: clean-temporary-files-linux
+Title: Clean Temporary Files in Linux
 Category: Computer Science
 Tags: OS, Linux, cache, temp, temporary, file, clean, purge
 Modified: 2023-08-05 15:09:20

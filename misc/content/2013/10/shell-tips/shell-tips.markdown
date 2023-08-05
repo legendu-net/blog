@@ -7,10 +7,7 @@ Slug: shell-tips
 Category: OS
 Tags: tips, Linux, shell, terminal
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [explainshell.com](http://www.explainshell.com/)
 

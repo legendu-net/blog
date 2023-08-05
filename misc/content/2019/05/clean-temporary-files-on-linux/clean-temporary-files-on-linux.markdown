@@ -5,12 +5,9 @@ Slug: clean-temporary-files-on-linux
 Title: Clean Temporary Files on Linux
 Category: Computer Science
 Tags: OS, Linux, cache, temp, temporary, file, clean, purge
-Modified: 2021-09-26 17:00:52
+Modified: 2023-08-05 15:09:20
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 The script
 [purge_cache.sh](https://github.com/dclong/docker-ubuntu_b/blob/dev/scripts/sys/purge_cache.sh)

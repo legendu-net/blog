@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, jedi, ipython, autocomplete
 Modified: 2019-10-19 21:06:24
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 In the meantime, looks like there is a way one can disable jedi in ipython with Completer.use_jedi: https://ipython.readthedocs.io/en/stable/config/options/terminal.html

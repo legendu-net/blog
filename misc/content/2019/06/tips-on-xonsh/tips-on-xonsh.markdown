@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, shell, xonsh, Python evaluation
 Modified: 2019-10-15 20:52:22
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://github.com/xonsh/xonsh/wiki/Cheatsheet
 

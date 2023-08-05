@@ -7,10 +7,7 @@ Category: Internet
 Tags: software, httpd, HTTP, tips, web, internet
 Modified: 2020-07-27 01:25:32
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. A directory must be executable by others in order to show up.
     Even if a directory show up,

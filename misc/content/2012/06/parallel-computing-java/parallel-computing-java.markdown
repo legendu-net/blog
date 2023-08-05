@@ -7,10 +7,7 @@ Slug: parallel-computing-java
 Author: Ben Chuanlong Du
 Modified: 2020-03-25 18:35:06
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 <img src="http://dclong.github.io/media/java/multithreading.png" height="200" width="240" align="right"/>

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Python, distributed, programming, rq, redis, queue
 Modified: 2020-11-08 19:10:43
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://github.com/rq/rq
 

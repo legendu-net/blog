@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, machine learning, data science, deep learning, deep neural network, DNN
 Modified: 2021-10-08 12:57:31
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Rules of Thumb for Training
 

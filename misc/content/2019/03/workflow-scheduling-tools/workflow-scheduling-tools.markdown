@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, workflow manager, scheduling, scheduler, Apache Airflow, mara, Azkaban, StackStorm
 Modified: 2021-06-10 09:32:40
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ![Star History of Workflow Management Tools](https://miro.medium.com/max/1750/0*HEZDauOfLr0Def8D.png)
 

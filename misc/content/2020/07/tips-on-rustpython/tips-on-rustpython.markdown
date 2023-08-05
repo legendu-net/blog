@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, RustPython, Python, Rust
 Modified: 2020-10-27 22:40:54
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://github.com/RustPython/RustPython
 

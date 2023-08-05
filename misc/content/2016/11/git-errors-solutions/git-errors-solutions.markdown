@@ -7,10 +7,7 @@ Category: Software
 Tags: programming, Git, version control, error, solutions, issues
 Modified: 2020-07-14 14:02:46
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## `git clone` throws the error message "fatal: unable to fork"
 

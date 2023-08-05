@@ -7,9 +7,6 @@ Category: AI
 Tags: AI, data science, machine learning, torchvision, pytorch
 Modified: 2021-09-02 12:29:21
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://pytorch.org/docs/stable/torchvision/index.html

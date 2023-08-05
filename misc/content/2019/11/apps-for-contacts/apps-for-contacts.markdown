@@ -7,10 +7,7 @@ Category: Software
 Tags: software, contact, app
 Modified: 2021-06-23 00:09:10
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [flokk](https://github.com/gskinnerTeam/flokk)
 seems to be the one that you are looking for!

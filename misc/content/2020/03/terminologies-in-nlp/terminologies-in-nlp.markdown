@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, deep learning, NLP
 Modified: 2020-03-06 11:29:11
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Word Embedding
 Character Embedding

@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, CNN, convolutional neural network
 Modified: 2020-02-24 22:24:05
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/convolutional-networks/)
 is a great introduction of CNN.

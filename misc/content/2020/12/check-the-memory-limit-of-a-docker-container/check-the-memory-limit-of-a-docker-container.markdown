@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Docker, container, memroy limit, cgroup, cgget
 Modified: 2020-12-19 11:39:17
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Docker 1.13+ 
 

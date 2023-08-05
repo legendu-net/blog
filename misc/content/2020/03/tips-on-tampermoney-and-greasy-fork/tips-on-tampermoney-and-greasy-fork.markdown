@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Web, Tampermonkey, greasy fork
 Modified: 2020-03-29 12:44:38
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 

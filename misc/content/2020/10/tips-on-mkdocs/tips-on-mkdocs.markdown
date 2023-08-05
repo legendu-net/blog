@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, mkdocs, Python, static site generator, documentation, static, generator
 Modified: 2020-10-24 13:08:22
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 https://github.com/mkdocs/mkdocs

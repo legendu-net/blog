@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Apache Ray, distributed computing, deploy, deployment, setup, configure, Kubernetes, k8s, Spark, cluster
 Modified: 2021-06-10 09:39:25
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## [Manual Cluster Setup](https://ray.readthedocs.io/en/latest/using-ray-on-a-cluster.html)

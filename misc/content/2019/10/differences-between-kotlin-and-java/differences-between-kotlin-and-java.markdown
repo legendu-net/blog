@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Kotlin, Java, JVM, difference, comparison
 Modified: 2019-10-28 22:20:51
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Comparison of Kotlin to Java Programming Language](https://kotlinlang.org/docs/reference/comparison-to-java.html)
 

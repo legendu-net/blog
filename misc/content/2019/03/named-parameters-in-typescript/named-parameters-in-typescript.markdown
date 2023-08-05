@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, TypeScript, named parameters
 Modified: 2021-09-26 16:28:43
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 https://github.com/Microsoft/TypeScript/issues/467

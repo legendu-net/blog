@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming, coding, compiler, compile, build, tool
 Modified: 2023-03-06 10:02:31
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Compilers
 

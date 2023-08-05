@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, sys.stdout, standard output, return, return and new line
 Modified: 2019-10-10 21:00:55
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 The trick is to use `\r` (return) instead `\n` (return and new line).
 I will use Python to illustrate. 

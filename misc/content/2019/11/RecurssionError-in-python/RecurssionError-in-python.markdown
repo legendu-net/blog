@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, tail recursion elemination, RecursionError
 Modified: 2019-11-01 19:28:38
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. Python does not support tail recursion elemination. 
 	Large recursion should be implemented as loop instead to avoid RecursionError.

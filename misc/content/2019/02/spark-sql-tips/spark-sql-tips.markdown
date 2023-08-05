@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, big data, Spark, Spark SQL, Hive
 Modified: 2022-01-01 14:35:30
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Spark SQL Guide](https://docs.databricks.com/spark/latest/spark-sql/index.html)
 

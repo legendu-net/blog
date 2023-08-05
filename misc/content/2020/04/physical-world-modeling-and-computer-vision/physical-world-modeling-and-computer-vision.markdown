@@ -7,9 +7,6 @@ Category: Computer Science
 Tags: Computer Science, computer vision, CV, physics, modeling
 Modified: 2020-04-29 23:11:37
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [16-823: Physics based Methods in Vision, Spring 2019](http://www.cs.cmu.edu/~motoole2/16823-s19/)

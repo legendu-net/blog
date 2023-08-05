@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, machine learning, data science, NLP, nature language processing
 Modified: 2020-11-28 10:59:14
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://blog.floydhub.com/
 is a great place for deep learning blogging.

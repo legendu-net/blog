@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Rust, kernel, Jupyter, JupyterLab, evcxr, dep, dependency
 Modified: 2022-05-25 00:20:20
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Evcxr common usage information](https://github.com/google/evcxr/blob/main/COMMON.md)
 

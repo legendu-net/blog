@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Java, JDK, JAVA_HOME
 Modified: 2020-01-28 11:41:11
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 Point to the JDK directory if you can.

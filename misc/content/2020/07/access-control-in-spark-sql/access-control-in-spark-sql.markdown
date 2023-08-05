@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Spark SQL, SQL, big data, Spark, access control, permission, user
 Modified: 2020-12-22 10:11:21
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Grant Permission to Users
 

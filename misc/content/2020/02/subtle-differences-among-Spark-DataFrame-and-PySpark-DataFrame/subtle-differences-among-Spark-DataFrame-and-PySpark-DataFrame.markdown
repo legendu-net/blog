@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, big data, Spark, PySpark, DataFrame, difference
 Modified: 2020-02-19 16:44:50
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. Besides using the `col` function to reference a column,
     Spark/Scala DataFrame supports using `$"col_name"` 

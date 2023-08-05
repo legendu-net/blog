@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, online image storage
 Modified: 2019-06-30 14:06:42
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 GitHub itself is a good place to store images. Copy paste works

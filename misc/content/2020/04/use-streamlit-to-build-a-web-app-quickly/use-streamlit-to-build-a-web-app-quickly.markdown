@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Python, Streamlit, web, app, application
 Modified: 2021-04-07 09:32:07
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 https://docs.streamlit.io/

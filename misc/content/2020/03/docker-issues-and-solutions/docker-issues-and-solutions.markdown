@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, Docker, issue, solution
 Modified: 2022-06-02 16:53:37
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [Multiprocessing Issues in Docker](http://www.legendu.net/misc/blog/multiprocessing-issues-in-docker/)
 

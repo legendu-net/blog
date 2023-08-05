@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Kotlin, Gradle
 Modified: 2019-11-21 18:43:25
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://kotlinlang.org/docs/reference/using-gradle.html
 

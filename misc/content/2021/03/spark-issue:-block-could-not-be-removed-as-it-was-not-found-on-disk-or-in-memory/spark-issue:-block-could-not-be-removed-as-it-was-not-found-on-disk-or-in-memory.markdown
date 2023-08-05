@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming, Spark, issue, Spark issue, block, remove, not found, disk, memory, big data
 Modified: 2022-01-24 22:02:52
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Symptom
 

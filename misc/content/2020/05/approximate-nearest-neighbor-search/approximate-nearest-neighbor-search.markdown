@@ -7,9 +7,6 @@ Category: Computer Science
 Tags: Computer Science, approximate, nearest neighbor, search, ANN
 Modified: 2020-05-02 11:44:15
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Ann Benchmark](https://github.com/erikbern/ann-benchmarks)

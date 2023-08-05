@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, deep learning, NLP, subword algorithm, BPE, WordPiece, Unigram Language Model
 Modified: 2020-03-06 11:54:18
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Classic word representation cannot handle unseen word or rare word well. 
 Character embeddings is one of the solution to overcome out-of-vocabulary (OOV). 

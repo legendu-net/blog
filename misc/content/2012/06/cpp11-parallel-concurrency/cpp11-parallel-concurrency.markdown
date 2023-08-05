@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, C/C++, cpp, HPC, async, mutex, future, concurrency, promise, parallel, multithreading
 Modified: 2020-03-25 17:51:37
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 [GNU/GCC]: http://dclong.github.io/en/2012/06/tips-gcc-compiler/

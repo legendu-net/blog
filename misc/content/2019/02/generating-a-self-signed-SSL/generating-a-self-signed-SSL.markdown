@@ -7,10 +7,7 @@ Category: Software
 Tags: software, SSL
 Modified: 2019-10-27 22:20:14
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 https://stackoverflow.com/questions/10175812/how-to-create-a-self-signed-certificate-with-openssl

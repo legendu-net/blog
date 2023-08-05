@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Python, programming, Tkinter, GUI, Entry
 Modified: 2021-08-08 16:25:26
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 1. `ttk.Entry` is preferred over `tk.Entry`.

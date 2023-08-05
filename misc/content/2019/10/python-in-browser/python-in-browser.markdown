@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, anvil.works, Python, JavaScript, web, web client, BRython
 Modified: 2020-10-26 08:58:08
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Life After JavaScript: A Tour of the Options](https://anvil.works/blog/python-in-the-browser-talk)
 

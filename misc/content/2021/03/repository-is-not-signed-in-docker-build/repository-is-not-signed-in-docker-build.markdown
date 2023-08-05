@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, software, container, Docker, repository, not siged, Ubuntu, apt, apt-get, build, Docker issue, issue
 Modified: 2021-03-26 14:44:52
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Docker has a limit on maximum apt cache size on the host system.
 The issue can be fixed by running the following command.

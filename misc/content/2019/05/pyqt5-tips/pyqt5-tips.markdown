@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, PyQt5, GUI, Python, Qt5
 Modified: 2020-03-21 10:51:36
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://www.youtube.com/watch?v=0wAU5usATX8
 

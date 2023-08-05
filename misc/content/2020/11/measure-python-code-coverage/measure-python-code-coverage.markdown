@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming, Python, code coverage, coverage
 Modified: 2020-11-07 22:07:11
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## Measure Python Code Coverage using `coverage.py`

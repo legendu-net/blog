@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Python, nox, test, CICD, unit testing, unit test
 Modified: 2020-09-13 17:41:24
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 It is suggested that you leverage profession CICD tools 
 instead of nox for testing.

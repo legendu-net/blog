@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, game, poker
 Modified: 2021-04-09 09:33:16
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [kingsfield/Poker](https://github.com/kingsfield/Poker)
 

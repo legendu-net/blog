@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, JupyterLab, notebook, diff, merge, version control, nbdime, Git
 Modified: 2021-04-26 23:50:45
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 `nbdime` is a tool for diffing and merging of Jupyter notebooks.
 Notice that nbdime integrates with git well.

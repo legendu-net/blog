@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming
 Modified: 2021-04-12 09:10:14
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 - SSH key pairs – encrypt and authenticate remote connections

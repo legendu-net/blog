@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, symbolic computation, symbolic, Mathematica, Python, SymPy, SageMath
 Modified: 2022-04-27 10:35:07
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## Mathematica 

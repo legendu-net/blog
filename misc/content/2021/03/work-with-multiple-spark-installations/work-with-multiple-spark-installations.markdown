@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming, Spark, big data, multiple, installation
 Modified: 2021-03-30 16:28:59
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## spark-submit and spark-shell

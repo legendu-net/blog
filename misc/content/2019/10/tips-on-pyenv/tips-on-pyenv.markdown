@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, pyenv, versions
 Modified: 2020-08-18 18:27:32
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 `pyenv` lets you easily switch between multiple versions of Python. 
 It's simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well.

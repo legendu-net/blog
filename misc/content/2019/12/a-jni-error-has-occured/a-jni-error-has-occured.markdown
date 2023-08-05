@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Java, JNI error, dependency management
 Modified: 2019-12-03 10:14:14
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Error Messages
 

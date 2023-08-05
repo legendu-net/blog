@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, macOS, uninstall, remove, application
 Modified: 2020-03-24 18:27:49
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 The macOS has some system applications (e.g., Numbers, Keynotes, etc.) come installed by default.

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, python, notifiers, notification, email, web, internet
 Modified: 2020-11-03 15:46:20
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Email
 

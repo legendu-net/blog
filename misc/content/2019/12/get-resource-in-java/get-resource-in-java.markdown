@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Java, getResource, resources, getClass, getClassLoader, getResourceAsStream
 Modified: 2019-12-03 10:56:56
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. `getResource` and `getResourceAsStream` tries to find files in the `resources` directory 
     under `src/main/resources` or `src/test/resources` 

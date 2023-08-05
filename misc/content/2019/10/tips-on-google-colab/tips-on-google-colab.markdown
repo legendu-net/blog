@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, Google Colab, Jupyter, JupyterLab, GPU, TPU
 Modified: 2020-01-30 01:27:49
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 1. The default user is the root user, 

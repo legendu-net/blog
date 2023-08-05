@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, TypeScript, compiler, ES6, JavaScript
 Modified: 2021-09-26 16:47:54
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Compiler Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
 

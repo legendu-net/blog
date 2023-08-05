@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, PySpark, Python, dependency, packaging, pex
 Modified: 2021-07-18 22:12:43
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [python-build-standalone](https://github.com/indygreg/python-build-standalone)
 is a better alternative to conda-pack on managing Python dependencies for PySpark.

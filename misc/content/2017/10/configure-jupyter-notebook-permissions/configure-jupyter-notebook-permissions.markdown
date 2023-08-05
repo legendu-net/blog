@@ -7,10 +7,7 @@ Category: Software
 Tags: software, Jupyter Notebook, JupyterLab, permission, umask
 Modified: 2017-11-12 15:07:59
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. umask in /etc/profile or /etc/bashrc doesn't work in docker,
     which is strange.

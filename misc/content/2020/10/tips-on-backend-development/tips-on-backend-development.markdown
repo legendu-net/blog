@@ -7,10 +7,7 @@ Title: Tips on Backend Development
 Category: Computer Science
 Tags: Computer Science, programming web, development, backend, framework, Python, django, flask, tornado, Java, NodeJS, web
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## API
 

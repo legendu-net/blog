@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, ipython, environment variables, %env, %set_env
 Modified: 2022-12-04 21:40:47
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## Referneces

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, security, NVD, vulnerability, data breach, Shodan
 Modified: 2022-07-14 22:40:20
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## General Tips
 

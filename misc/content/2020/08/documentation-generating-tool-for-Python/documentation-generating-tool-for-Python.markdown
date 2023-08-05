@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Python, documentation, generator, sphinx, mkdocs, doc
 Modified: 2021-04-29 09:37:32
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [MkDocs](https://www.mkdocs.org/)
 

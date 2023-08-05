@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, compiler, JIT, domain specific, AI, data science, machine learning, deep learning
 Modified: 2022-11-27 12:56:31
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [numba](https://github.com/numba/numba)
 

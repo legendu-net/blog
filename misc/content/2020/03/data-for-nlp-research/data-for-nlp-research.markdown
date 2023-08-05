@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, deep learning, machine learning, NLP, data
 Modified: 2021-05-06 12:46:35
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [The Multi-Genre NLI Corpus (MultiNLI)](https://www.nyu.edu/projects/bowman/multinli/)
 

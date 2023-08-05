@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, feature, normalize, scale
 Modified: 2020-01-13 14:12:39
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://en.wikipedia.org/wiki/Feature_scaling
 

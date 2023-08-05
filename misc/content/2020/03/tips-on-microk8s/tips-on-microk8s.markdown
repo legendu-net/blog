@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, Kubernetes, k8s, Microk8s, container
 Modified: 2021-06-10 09:39:25
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 1. Microk8s works on Linux only.
 
 ## References

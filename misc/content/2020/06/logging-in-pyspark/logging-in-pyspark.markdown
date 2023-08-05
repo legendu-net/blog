@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, big data, PySpark, Spark, loguru, logging
 Modified: 2020-06-15 11:38:22
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. Excessive logging is better than no logging!
     This is generally true in distributed big data applications.

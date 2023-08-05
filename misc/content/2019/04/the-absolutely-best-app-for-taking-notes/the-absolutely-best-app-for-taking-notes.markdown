@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, application, notes taking
 Modified: 2021-09-25 13:36:29
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 I have tried lots of notes taking applications in the past. 
 The best turns out to be GitHub!

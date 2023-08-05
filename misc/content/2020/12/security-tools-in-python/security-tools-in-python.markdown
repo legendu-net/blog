@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, security, Python, PyArmor, bandit
 Modified: 2022-05-21 21:56:55
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [bandit](https://github.com/PyCQA/bandit)
 [bandit](https://github.com/PyCQA/bandit)

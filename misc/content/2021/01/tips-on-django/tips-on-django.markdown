@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Django, web, backend, Python, RESTful
 Modified: 2021-01-10 17:18:04
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 

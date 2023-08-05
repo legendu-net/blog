@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Docker, shell, container, bash, RUN, ENV, environment variable
 Modified: 2020-06-21 10:46:43
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Configure the Shell for the `RUN` Command
 

@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, ProxyChains, ProxyChains-ng, issue, macOS, SIP, System Integration Protection
 Modified: 2020-11-21 22:30:14
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ProxyChains-ng does not work on macOS 
 due to System Integration Protection (SIP).

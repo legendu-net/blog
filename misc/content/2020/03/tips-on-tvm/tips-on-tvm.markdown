@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, deep learning, TVM, tips
 Modified: 2020-03-02 18:30:38
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 TVM is an open deep learning compiler stack for CPUs, GPUs, and specialized accelerators. 
 It aims to close the gap between the productivity-focused deep learning frameworks, 
 and the performance- or efficiency-oriented hardware backends. TVM provides the following main features:

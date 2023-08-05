@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, TPU
 Modified: 2020-01-01 11:01:05
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## References
 

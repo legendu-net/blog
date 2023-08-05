@@ -7,10 +7,7 @@ Category: Software
 Tags: software, getpocket, pocket, tips
 Modified: 2020-05-22 15:25:07
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 https://help.getpocket.com/article/883-using-the-save-to-pocket-extension-for-google-chrome

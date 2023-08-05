@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, pylint, tips
 Modified: 2021-03-09 12:02:28
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Tips and Traps 
 

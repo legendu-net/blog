@@ -7,10 +7,7 @@ Category: Software
 Tags: software, JupyterHub, tips
 Modified: 2020-05-04 23:14:16
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## References
 

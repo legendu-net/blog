@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming
 Modified: 2021-04-13 23:22:21
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [webview](https://github.com/webview/webview)
 A tiny cross-platform webview library for C/C++/Golang to build modern cross-platform GUIs. 

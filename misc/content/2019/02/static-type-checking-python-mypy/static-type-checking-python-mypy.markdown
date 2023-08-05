@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, mypy, tips
 Modified: 2020-08-18 09:05:13
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 --check-untyped-defs

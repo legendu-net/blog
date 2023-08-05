@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, machine learning, data science, computing frameworks, programming languages, GPU, Python, Rust
 Modified: 2021-06-10 09:32:40
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 

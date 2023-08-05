@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming, IDE, software, Visual Studio Code, VSCode, reload, refresh, file
 Modified: 2021-03-26 10:20:50
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 [Where VS Code stores the list of open files?](https://stackoverflow.com/questions/48014141/where-vs-code-stores-the-list-of-open-files)

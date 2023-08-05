@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, activation function, ReLU, GELU, Switch, Sigmoid
 Modified: 2020-01-17 14:20:03
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## GELU
 

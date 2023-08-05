@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science
 Modified: 2020-03-17 21:22:04
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## [python-pdfkit](https://github.com/JazzCore/python-pdfkit)

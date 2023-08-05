@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Python, class, instantiation, __new__, ABC, abstract base class
 Modified: 2021-02-20 08:43:33
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## Inherit the class `abc.ABC`

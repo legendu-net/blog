@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming, Tauri, Rust, JavaScript, JS, GUI, desktop, webview, web
 Modified: 2022-10-15 18:27:54
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Tauri is a framework for building tiny, blazing fast binaries for all major desktop platforms. 
 Developers can integrate any front-end framework 

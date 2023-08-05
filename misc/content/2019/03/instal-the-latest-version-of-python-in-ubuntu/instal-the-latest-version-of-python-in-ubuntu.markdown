@@ -7,10 +7,7 @@ Category: OS
 Tags: OS, Linux, Ubuntu, Python 3, installation, PPA
 Modified: 2021-09-29 23:31:38
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 There are a few ways to install a newer version of Python on Ubuntu. 
 If you want to completely overwrite the system version of Python,

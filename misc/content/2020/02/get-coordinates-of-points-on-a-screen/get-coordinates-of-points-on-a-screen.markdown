@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, coordinate, point, macOS, GIMP, image, screen
 Modified: 2020-03-09 12:03:40
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Get the Coordinate of a Pixle/Point on an Image
 

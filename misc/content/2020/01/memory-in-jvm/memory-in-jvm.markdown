@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, JVM, memory, stack, heap, off-heap
 Modified: 2021-12-05 14:29:15
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Stack, heap and off-heap are all memory that stored in a computer's RAM.
 

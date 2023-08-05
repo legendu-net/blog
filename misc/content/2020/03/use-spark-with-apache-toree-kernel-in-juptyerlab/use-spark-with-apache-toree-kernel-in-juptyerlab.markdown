@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Spark, Scala, Apache Toree, JupyterLab
 Modified: 2020-03-23 17:47:21
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 The Docker image 

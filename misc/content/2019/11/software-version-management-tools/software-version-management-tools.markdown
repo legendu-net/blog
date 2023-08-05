@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, software, version management, Git, pyenv, sdkman, rvm
 Modified: 2023-03-06 10:34:02
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [rtx](https://github.com/jdxcode/rtx)
 is a version management tool for multiple programming languages.

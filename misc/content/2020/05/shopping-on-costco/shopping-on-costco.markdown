@@ -7,10 +7,7 @@ Category: Life
 Tags: Life, shopping, Costco
 Modified: 2020-05-30 13:20:46
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 https://sameday.costco.com/store/costco/storefront

@@ -7,10 +7,7 @@ Category: OS
 Tags: Linux, modified timestamp, touch
 Modified: 2019-05-02 02:40:46
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. Change the modifiled timestamp of a file to the specified timestamp.
 

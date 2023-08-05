@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, GPT-2, NLP, transformer
 Modified: 2020-02-06 09:57:38
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 [Code for the paper "Language Models are Unsupervised Multitask Learners"](https://github.com/openai/gpt-2)

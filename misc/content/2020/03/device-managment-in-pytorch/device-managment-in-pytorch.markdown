@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, AI, machine learning, data science, deep learning, PyTorch, device, CUDA, CPU
 Modified: 2020-06-11 18:17:52
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 0. Modules can hold parameters of different types on different devices, 
     so it's not always possible to unambiguously determine the device.

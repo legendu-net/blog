@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Google, Ads, AdWords
 Modified: 2022-04-30 15:27:55
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Google Keywords API](https://keywordtool.io/api)
 

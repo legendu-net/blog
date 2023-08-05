@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Spark, Hadoop, FileSystem, file system
 Modified: 2019-05-09 22:30:29
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 

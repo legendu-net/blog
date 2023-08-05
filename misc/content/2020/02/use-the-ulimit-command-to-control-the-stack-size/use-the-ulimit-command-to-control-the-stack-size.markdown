@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, ulimit, stack, size, unlimited
 Modified: 2020-02-28 10:27:20
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 http://en.tldp.org/LDP/solrhe/Securing-Optimizing-Linux-RH-Edition-v1.3/x4733.html
 

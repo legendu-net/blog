@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, Rust, PyO3, maturin
 Modified: 2022-06-24 15:39:56
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Tools
 

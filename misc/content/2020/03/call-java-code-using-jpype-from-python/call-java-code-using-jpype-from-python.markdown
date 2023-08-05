@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, JPype1, JPype, Java, JVM, Python
 Modified: 2020-10-31 12:16:58
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 

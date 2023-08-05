@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, macOS, right-click menu, new document, OpenInTerminal
 Modified: 2020-03-11 16:04:18
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 [Right Click to Create New File on macOS](https://filipmolcik.com/new-file-mac-os/)

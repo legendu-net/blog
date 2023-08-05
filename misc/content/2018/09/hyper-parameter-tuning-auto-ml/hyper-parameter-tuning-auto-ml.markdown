@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, machine learning, framework, AutoML, mlflow, Lugwid, Optuna, turicreate, PyCaret
 Modified: 2020-12-04 12:29:38
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Methodology
 

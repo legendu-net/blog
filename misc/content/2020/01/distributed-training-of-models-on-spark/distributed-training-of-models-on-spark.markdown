@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, Spark, distributed computing
 Modified: 2020-01-05 10:26:27
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## XGBoost
 

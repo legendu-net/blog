@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Spark, issue, serialiation, error, big data, Spark issue
 Modified: 2021-03-22 10:11:48
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Please refer to
 [Spark Issue: _Pickle.Picklingerror: Args[0] from __Newobj__ Args Has the Wrong Class](http://www.legendu.net/misc/blog/spark-issue:-_pickle.PicklingError:-args[0]-from-__newobj__-args-has-the-wrong-class)

@@ -7,10 +7,7 @@ Category: Software
 Tags: software, Docker, exit code, 137, OOM, out-of-memory
 Modified: 2021-10-08 11:35:32
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 According to
 [Container exits with non-zero exit code 137](https://success.docker.com/article/what-causes-a-container-to-exit-with-code-137),

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Pillow, image, mask
 Modified: 2021-08-21 23:02:29
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## PIL.Image.Image.crop
 

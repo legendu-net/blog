@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Docker, container, Podman, buildah, rootless, daemonless, alternative
 Modified: 2021-01-11 00:06:35
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Podman The Docker Alternative](https://dev.to/dev0x0/podman-the-docker-alternative-377f#:~:text=Podman%20also%20uses%20a%20traditional,Podman%20as%20a%20safer%20tool.)
 

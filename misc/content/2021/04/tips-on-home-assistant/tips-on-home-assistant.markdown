@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming, Python, home assistant, Python, smart home
 Modified: 2021-04-09 09:47:32
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 https://www.home-assistant.io/

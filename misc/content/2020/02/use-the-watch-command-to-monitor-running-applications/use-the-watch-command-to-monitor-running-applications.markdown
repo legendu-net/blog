@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Shell, Linux, watch, monitor
 Modified: 2020-02-17 13:13:30
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Report the number of PNG images in the directory `000` every 2 seconds.
 

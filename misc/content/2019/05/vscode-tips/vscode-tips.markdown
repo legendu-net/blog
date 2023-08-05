@@ -7,10 +7,7 @@ Category: Software
 Tags: software, vscode, Visual Studio Code, tips, IDE
 Modified: 2021-04-24 11:28:44
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 A MS brading/telementry/licensing free edition named 
 [vscodium](https://github.com/VSCodium/vscodium)

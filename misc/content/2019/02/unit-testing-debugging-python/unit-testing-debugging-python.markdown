@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, unit testing, debugging, command-line tools, development, dev
 Modified: 2020-10-07 22:02:18
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Debugging
 

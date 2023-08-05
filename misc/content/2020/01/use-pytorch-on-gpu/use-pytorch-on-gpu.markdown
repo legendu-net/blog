@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, deep learning, PyTorch, GPU
 Modified: 2021-09-16 09:54:29
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## PyTorch on GPU

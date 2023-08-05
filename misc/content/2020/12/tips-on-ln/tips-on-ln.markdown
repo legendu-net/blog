@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, ln, symbolic, link, rsync
 Modified: 2020-12-20 20:32:29
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 It is suggest that you avoid using the trailing slash 
 when you use `ln` to create symbolic link for a directory. 

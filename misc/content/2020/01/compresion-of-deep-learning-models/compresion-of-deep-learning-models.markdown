@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, deep compression, compression
 Modified: 2020-01-08 11:26:35
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding
 

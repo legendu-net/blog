@@ -7,10 +7,7 @@ Category: Internet
 Tags: network, internet, great firewall of China, proxy, VPN
 Modified: 2019-05-17 03:29:44
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Proxy
 - [国外SSH账号+MyEnTunnel+Firefox翻墙](http://www.qttc.net/201211247.html)

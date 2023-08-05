@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Kotlin, scripting language, JVM
 Modified: 2019-11-03 13:10:42
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Run `kotlinc` to enter REPL of kotlin.
 

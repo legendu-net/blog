@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, proxy, reverse proxy, DNS, VPN, network, internet, web, load balancing
 Modified: 2023-01-10 11:39:07
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. socks proxy 
 

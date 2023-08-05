@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, Docker, Kata Container, snap apps
 Modified: 2019-11-17 12:24:36
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Snap app is not 
 (and [will probably never be](https://bugs.launchpad.net/snappy/+bug/1841327)) 

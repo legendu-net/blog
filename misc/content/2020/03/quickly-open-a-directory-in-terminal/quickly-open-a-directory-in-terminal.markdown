@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, macOS, OpenInTerminal, terminal, Hyper, iTerm
 Modified: 2020-03-11 16:25:01
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 [OpenInTerminal](https://github.com/Ji4n1ng/OpenInTerminal)

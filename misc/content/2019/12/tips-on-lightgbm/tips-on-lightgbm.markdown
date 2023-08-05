@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, LightGBM
 Modified: 2022-03-26 22:21:23
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. It is strongly suggested that you load data into a pandas DataFrame
     and handle categorical variables

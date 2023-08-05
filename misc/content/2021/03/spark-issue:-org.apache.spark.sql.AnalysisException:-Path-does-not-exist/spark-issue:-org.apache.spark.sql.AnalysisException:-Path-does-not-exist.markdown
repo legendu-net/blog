@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming, big data, Spark, issue, Spark issue, AnalysisException, path does not exist
 Modified: 2021-03-24 15:02:09
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Symptom
 

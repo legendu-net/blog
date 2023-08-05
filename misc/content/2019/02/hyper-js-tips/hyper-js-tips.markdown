@@ -7,10 +7,7 @@ Category: Software
 Tags: software, Hyper, terminal
 Modified: 2022-08-02 00:32:20
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Awesome Hyper](https://github.com/bnb/awesome-hyper)
 

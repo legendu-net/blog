@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Java, JVM, debug, debugging
 Modified: 2020-12-20 11:43:43
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [arthas](https://github.com/alibaba/arthas)
 [arthas](https://github.com/alibaba/arthas)

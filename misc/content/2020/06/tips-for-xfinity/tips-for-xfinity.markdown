@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, network, internet, XFinity, WiFi
 Modified: 2022-04-30 14:52:27
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Separate 2G and 5G WiFi Networks
 

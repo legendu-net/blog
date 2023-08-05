@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, deep learning, PyTorch, issue, device
 Modified: 2021-09-16 20:58:50
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [GPU Related Issues and Solutions](http://www.legendu.net/misc/blog/GPU-related-issues-and-solutions)
 

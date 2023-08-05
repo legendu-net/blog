@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Python, executable, PEX, conda-pack, PyInstaller, XAR, python-build-standalone, Nuitka, briefcase, standalone
 Modified: 2021-06-23 09:04:05
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## With a Python Interpreter

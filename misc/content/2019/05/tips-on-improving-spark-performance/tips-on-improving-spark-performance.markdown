@@ -8,10 +8,7 @@ Tags: programming, Computer Science, Spark, tuning, Spark SQL, SQL, performance,
 Modified: 2022-04-25 22:13:53
 
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Plan Your Work
 

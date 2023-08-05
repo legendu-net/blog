@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, debug, notebook, Jupyter, JupyterLab, debugger, debugging, %debug, ipdb, pdb
 Modified: 2020-01-03 17:21:11
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## Use the %debug Magic

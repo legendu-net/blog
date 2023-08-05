@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming, SQL, translation, translate, JOOQ, SQLAlchemy
 Modified: 2020-12-13 13:10:21
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## The ORM library SQLAlchemy 
 

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Gradle, Kotlin DSL, shadowJar
 Modified: 2019-12-19 00:00:59
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 AVOID using the Kotlin DSL for Gradle!
 The Kotlin DSL for Gradle is not mature and lack of documentation at this time.

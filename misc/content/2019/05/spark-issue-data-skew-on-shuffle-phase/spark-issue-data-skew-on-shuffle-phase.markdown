@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Spark, issue, data skew, shuffle, error, data skew, shuffle, Spark issue
 Modified: 2021-03-22 10:03:37
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Symptom
 

@@ -7,10 +7,7 @@ Category: Life
 Tags: Life, tax, US, credit card, loan, gift
 Modified: 2020-11-08 20:12:13
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 [Is Paying Someone Else's Credit Card a Gift?](https://finance.zacks.com/paying-someone-elses-credit-card-gift-9237.html)

@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, Kubernetes, k8s, minikube, kubectl, Microk8s
 Modified: 2021-09-15 16:51:13
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Tutorials
 

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, VirtualBox, API, mouse
 Modified: 2021-07-26 18:18:28
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 https://www.virtualbox.org/sdkref/interface_i_mouse.html

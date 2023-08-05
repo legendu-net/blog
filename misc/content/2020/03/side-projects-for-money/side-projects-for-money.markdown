@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, side project, money, bounty, opensource
 Modified: 2020-03-11 12:45:10
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 [Gitcoin](https://gitcoin.co/)

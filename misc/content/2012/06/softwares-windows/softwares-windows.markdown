@@ -7,10 +7,7 @@ Category: Software
 Tags: anti-virus, Windows, software, archive, Linux, virtualization
 Modified: 2021-09-25 12:05:03
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 <img src="http://dclong.github.io/media/windows/windows.png" height="200" width="240" align="right"/>

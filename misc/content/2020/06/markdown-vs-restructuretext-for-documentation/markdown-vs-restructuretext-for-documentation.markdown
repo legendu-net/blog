@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Markdown, RestructureText, documentation, markup, rst, MyST
 Modified: 2020-06-14 18:56:54
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Comparison
 

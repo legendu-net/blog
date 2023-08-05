@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, computer vision, CV, OpenCV, Pillow, tesseract DarkNet, YOLO
 Modified: 2020-03-29 21:09:18
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [OpenCV](https://github.com/opencv/opencv)  | [OpenCV for Python](https://github.com/skvark/opencv-python)
 

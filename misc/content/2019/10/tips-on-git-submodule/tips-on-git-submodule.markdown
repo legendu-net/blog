@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, Git, submodule
 Modified: 2021-09-06 22:12:41
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 

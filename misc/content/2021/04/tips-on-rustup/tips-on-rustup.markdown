@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming, Rust, rustup, rustfmt, toochain, stable, beta, nightly
 Modified: 2022-06-02 16:30:04
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## Install rustup

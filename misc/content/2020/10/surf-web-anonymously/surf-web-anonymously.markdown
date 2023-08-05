@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, web, internet, network, surf, anonymous, privacy, software, download, PrivateInternetAccess, security
 Modified: 2021-12-04 18:49:11
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Proxychains, Anonsurf, and MacChanger: Enhance Your Anonymity](https://dzone.com/articles/proxychains-anonsurf-and-macchanger-enhance-your-a)
 

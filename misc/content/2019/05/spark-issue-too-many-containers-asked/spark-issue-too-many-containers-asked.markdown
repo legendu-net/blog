@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Spark, issue, big data, dynamic allocation, error, container, resource, Spark issue
 Modified: 2021-03-21 12:14:37
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Error Message
 

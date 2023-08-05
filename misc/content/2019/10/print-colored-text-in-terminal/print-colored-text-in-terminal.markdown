@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, terminal, color
 Modified: 2019-10-19 11:37:54
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 https://stackoverflow.com/questions/287871/how-to-print-colored-text-in-terminal-in-python

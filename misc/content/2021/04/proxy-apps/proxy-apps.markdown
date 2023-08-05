@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, proxy, TranSocks, smart phone, VPN, KanCN, service
 Modified: 2021-09-26 13:52:38
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## TranSocks (穿梭)
 

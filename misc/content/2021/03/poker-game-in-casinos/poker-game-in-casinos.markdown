@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming, poker, casino, game, gambling, gamble, Washington
 Modified: 2021-03-15 10:06:34
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Vegas
 

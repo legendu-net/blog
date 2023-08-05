@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, machine learning, data science, BERT, Transformer
 Modified: 2020-02-05 16:28:22
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Implementations
 

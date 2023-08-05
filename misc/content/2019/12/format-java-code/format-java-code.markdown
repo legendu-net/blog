@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Java, formatting, code style, EditorConfig, IntelliJ IDEA
 Modified: 2019-12-28 18:29:29
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Google Java Format](https://github.com/google/google-java-format)
 is a good formatter for Java code.

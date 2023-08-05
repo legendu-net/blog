@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, SQL, Spark, Spark SQL, PostgreSQL, TableSample
 Modified: 2022-10-13 12:00:09
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 The limit clause (or the method `DataFrame.limit` if you are using Spark)
 is a better alternative if randomness is not critical.

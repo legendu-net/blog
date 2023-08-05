@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, machine learning, data science, resources
 Modified: 2020-11-15 12:02:54
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Platforms
 

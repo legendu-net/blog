@@ -7,10 +7,7 @@ Category: Software
 Tags: tips, cURL, downloading, web, wget
 Modified: 2022-07-15 22:37:28
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## cURL vs Wget
 

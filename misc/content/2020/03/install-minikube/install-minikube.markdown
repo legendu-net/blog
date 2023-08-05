@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, Minikube, k8s, Kubernetes
 Modified: 2021-09-15 16:39:23
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Microk8s is a more lightweight solution than Minikube 
 (even thought Microk8s is only for Linux.)

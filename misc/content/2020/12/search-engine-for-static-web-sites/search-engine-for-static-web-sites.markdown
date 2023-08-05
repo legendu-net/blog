@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, search engine, search, static, web, client, frontend
 Modified: 2022-06-09 09:01:58
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Below is a list of search engines which run on the client side. 
 

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming, hardware, camera, FliCamera, IOT, drone, autonomous, driving
 Modified: 2023-01-18 22:17:12
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## [FliCamera](https://github.com/sdss/flicamera)

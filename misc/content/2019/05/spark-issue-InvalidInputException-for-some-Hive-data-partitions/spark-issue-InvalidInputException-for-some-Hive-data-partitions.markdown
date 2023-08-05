@@ -7,16 +7,10 @@ Category: Computer Science
 Tags: programming, Spark, issue, big data, error, InvalidInputException, Hive, Spark issue, partition
 Modified: 2021-03-22 09:55:40
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Symptom
 

@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, machine learning, data science, feature engineering, feature hashing
 Modified: 2020-12-30 12:43:37
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://towardsdatascience.com/automatic-feature-engineering-using-deep-learning-and-bayesian-inference-application-to-computer-7b2bb8dc7351
 

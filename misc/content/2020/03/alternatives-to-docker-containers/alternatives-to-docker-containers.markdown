@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Docker, container, alternative, LXD, LXC
 Modified: 2021-01-10 11:45:40
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 1. LXD and Multipass are alternatives to Docker container.

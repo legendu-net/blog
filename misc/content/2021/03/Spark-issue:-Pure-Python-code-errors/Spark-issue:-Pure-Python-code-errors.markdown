@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming, Spark, issue, big data, Spark issue, Python, error, exception
 Modified: 2022-01-06 22:33:12
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 This post collects some typical pure Python errors in PySpark applications.
 

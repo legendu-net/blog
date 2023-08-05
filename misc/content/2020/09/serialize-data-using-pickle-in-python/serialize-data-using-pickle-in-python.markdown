@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, pickle, serialization, deserialization, JSON, cloudpickle, dill
 Modified: 2022-05-13 11:25:22
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. [JSON](https://www.json.org/json-en.html)
     (JavaScript Object Notation) is a lightweight data-interchange format.

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Spark, issue, big data, error, Spark issue
 Modified: 2021-12-05 14:28:31
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## List of Common Issues 
 

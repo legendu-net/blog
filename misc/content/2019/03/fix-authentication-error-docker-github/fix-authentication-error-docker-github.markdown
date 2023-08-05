@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Programming, GitHub, Docker, authentication, deployment keys
 Modified: 2021-09-10 15:15:14
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Solution
 

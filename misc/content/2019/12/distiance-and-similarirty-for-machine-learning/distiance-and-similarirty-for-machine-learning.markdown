@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, similarity, distance
 Modified: 2020-03-17 11:46:20
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## Cosine Similarity

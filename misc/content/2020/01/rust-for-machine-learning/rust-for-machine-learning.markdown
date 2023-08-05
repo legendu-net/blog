@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, Rust, AI, deep learning
 Modified: 2022-11-05 18:45:24
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [tensorflow/rust](https://github.com/tensorflow/rust)
 [tensorflow/rust](https://github.com/tensorflow/rust)

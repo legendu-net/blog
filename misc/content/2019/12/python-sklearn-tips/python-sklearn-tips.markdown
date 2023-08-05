@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, Scikit-learn, sklearn, pipeline
 Modified: 2021-09-16 21:12:30
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. Cross validation in scikit-learn supports pipeline in addition to vanilla models.
     Please refer to 

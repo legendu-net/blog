@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, Hadoop, HDFS
 Modified: 2019-05-09 23:40:06
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## [mtth/hdfs](https://github.com/mtth/hdfs/)

@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, Docker container, network, DNS, proxy
 Modified: 2020-10-20 23:52:35
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. DNS is a common issue in Docker containers, 
   especially behind a corporate firewall.

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, video, create, build
 Modified: 2020-08-09 12:37:17
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 https://www.doodly.com/

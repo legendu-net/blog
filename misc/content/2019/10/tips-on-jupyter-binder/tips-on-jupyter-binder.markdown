@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, binder, Jupyter, JupyterLab
 Modified: 2019-10-21 10:06:37
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 1. By default a Jupyter notebook server is shown. 

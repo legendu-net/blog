@@ -7,10 +7,7 @@ Category: Software
 Tags: software, macOS, remote desktop, windows
 Modified: 2019-02-09 11:55:55
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 The best free one is Microsoft Remote Desktop. 

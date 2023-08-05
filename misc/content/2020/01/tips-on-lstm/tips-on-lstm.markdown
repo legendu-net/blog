@@ -7,9 +7,6 @@ Category: AI
 Tags: AI, data science, machine learning, LSTM, RNN
 Modified: 2020-02-11 15:58:32
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 http://colah.github.io/posts/2015-08-Understanding-LSTMs/

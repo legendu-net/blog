@@ -7,10 +7,7 @@ Category: Software
 Tags: software, PyCharm, Python virtual environment, fail to install package
 Modified: 2019-03-05 02:13:27
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## Error Message

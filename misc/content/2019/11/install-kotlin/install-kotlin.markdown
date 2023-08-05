@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Kotlin, install, installation
 Modified: 2019-12-23 09:57:56
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 ## Ubuntu
 
 Unfortunately,

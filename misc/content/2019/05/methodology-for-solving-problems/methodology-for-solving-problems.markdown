@@ -7,10 +7,7 @@ Category: Philosophy
 Tags: philosophy, thoughts, methodology
 Modified: 2019-05-14 01:49:29
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Divide and Conquer
 

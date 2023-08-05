@@ -7,10 +7,7 @@ Category: Software
 Tags: software, osquery, tips
 Modified: 2021-09-05 12:41:55
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. List all tables.
 

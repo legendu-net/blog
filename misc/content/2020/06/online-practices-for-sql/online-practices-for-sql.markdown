@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, SQL, practice, online, LeetCode, W3School, SQLBolt
 Modified: 2020-06-06 20:32:23
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 [LeetCode - Database](https://leetcode.com/problemset/database/)

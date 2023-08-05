@@ -7,10 +7,7 @@ Category: OS
 Tags: OS, Linux, sudoer, sudo, access, user, group, login, control
 Modified: 2020-02-29 17:47:12
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Login Access Control
 

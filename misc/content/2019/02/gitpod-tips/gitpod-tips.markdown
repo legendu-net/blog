@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, programming, GitPod, GitHub, Theia IDE
 Modified: 2022-06-15 08:25:37
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. GitPod is a great web IDE for GitHub repositories.
     It supports both IDE and terminal environment via Docker,

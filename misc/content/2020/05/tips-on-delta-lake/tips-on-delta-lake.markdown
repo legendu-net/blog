@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, big data, Spark, delta lake, Databricks
 Modified: 2021-09-20 11:12:54
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ![Delta Lake](https://miro.medium.com/max/1400/1*EQsNOZqNPsx5eelVJRh9jQ.png)
 

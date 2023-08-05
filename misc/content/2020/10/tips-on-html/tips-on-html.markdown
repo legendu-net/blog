@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, HTML, web, HTML5
 Modified: 2020-10-27 10:09:15
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Useful Tools
 

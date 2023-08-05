@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, configuration, JSON, YAML, TOML, XML, file format
 Modified: 2023-02-08 13:31:20
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. JSON is more commonly used for application data and configurations  
     which are not intended to be read by human directly.

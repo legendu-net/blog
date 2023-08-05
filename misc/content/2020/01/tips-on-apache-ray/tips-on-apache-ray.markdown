@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Apache Ray, distributed computing
 Modified: 2021-04-09 11:14:19
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Deploy Apache Ray
 

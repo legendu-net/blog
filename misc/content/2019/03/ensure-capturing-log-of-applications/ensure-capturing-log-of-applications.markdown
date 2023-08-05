@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, logging, log, redirect, redirection, exception
 Modified: 2020-08-11 08:26:52
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Logging is critical for debugging applications.
 For production applications,

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, web, programming, frontend, development, dev, RESTful, RESTful API, API
 Modified: 2023-01-11 11:54:25
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [The State of Frontend in 2022](https://newsletter.pragmaticengineer.com/p/state-of-frontend-2022)
 has a good discussion about the state and trend of frontend technologies as of 2022.

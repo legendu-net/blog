@@ -7,10 +7,7 @@ Category: Finance
 Tags: finance, money, eTrade, stock
 Modified: 2021-06-18 11:17:08
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Add External Funding Account](https://us.etrade.com/etx/mm/movemoney/link-account)
 

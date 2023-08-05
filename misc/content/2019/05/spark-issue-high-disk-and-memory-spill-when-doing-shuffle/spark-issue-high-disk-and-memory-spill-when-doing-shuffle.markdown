@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Spark, issue, big data, error, memory, disk, spill, Spark issue
 Modified: 2021-03-24 15:08:21
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Symtom
 

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, JavaScript, JS, TypeScript, TS, deno
 Modified: 2020-05-09 17:27:49
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 [VS Code Plugin for Deno](https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-deno)

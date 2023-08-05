@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, FastApi, programming, Python, web, framework, backend
 Modified: 2021-09-29 10:33:02
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 [用它5分钟以后，我放弃用了四年的 Flask](https://segmentfault.com/a/1190000023576195)

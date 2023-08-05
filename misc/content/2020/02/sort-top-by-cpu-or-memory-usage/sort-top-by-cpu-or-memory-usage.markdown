@@ -7,10 +7,7 @@ Category: OS
 Tags: OS, Linux, top, macOS, top, CPU, memory
 Modified: 2020-02-18 11:56:57
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 By default the result of the `top` command is sorted by CPU usage on Linux.
 The table below list options to sort the result of the `top` command 

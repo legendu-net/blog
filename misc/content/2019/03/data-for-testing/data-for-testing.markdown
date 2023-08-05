@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, data, testing, unit testing, data generator
 Modified: 2020-11-19 09:04:20
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [DataTable Generator](https://editor.datatables.net/generator/)
 

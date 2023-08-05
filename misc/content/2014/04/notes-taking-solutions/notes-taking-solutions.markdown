@@ -8,10 +8,7 @@ Category: Software
 Tags: software, notes taking, tips, Evernote, Zim, taking notes
 Modified: 2017-11-15 23:23:18
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## EverNote

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming
 Modified: 2019-03-30 17:20:50
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 [How to Make Business cards for Free](https://www.youtube.com/watch?v=DxzVnK4NuJ0)

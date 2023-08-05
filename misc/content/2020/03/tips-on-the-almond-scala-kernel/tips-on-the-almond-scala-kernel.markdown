@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Scala, Almond, JupyterLab
 Modified: 2020-03-24 18:33:39
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 

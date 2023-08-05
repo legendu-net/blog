@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, XGBoost, Spark
 Modified: 2020-03-17 11:37:33
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 The split-by-leaf mode (`grow_policy="lossguide"`) is not supported in distributed training,
 which makes XGBoost4J on Spark much slower than LightGBM on Spark.

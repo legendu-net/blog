@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, data science, AI, machine learning, deep learning, data labeling, crowdsourcing
 Modified: 2022-07-23 21:35:29
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## General Tips

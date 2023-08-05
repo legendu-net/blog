@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: AI, data science, machine learning, Spark, big data, LightGBM, Java, Scala
 Modified: 2020-03-05 15:26:31
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 https://github.com/Azure/mmlspark/blob/master/docs/lightgbm.md

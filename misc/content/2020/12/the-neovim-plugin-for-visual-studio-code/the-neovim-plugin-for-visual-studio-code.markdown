@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Software, NeoVim, IDE, Visual Studio Code, VSCode, plugin, extension
 Modified: 2022-09-26 10:52:47
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://github.com/asvetliakov/vscode-neovim
 

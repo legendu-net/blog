@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, deep learning, Computer Vision, CV, data
 Modified: 2021-10-08 12:50:34
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## [MNIST](http://yann.lecun.com/exdb/mnist/)

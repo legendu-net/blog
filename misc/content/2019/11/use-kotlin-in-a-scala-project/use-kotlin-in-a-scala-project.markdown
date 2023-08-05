@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, JVM, Kotlin, Scala
 Modified: 2019-11-27 09:25:16
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. Methods of a Kotlin object can be called in a Scala project by `KotlinObject.INSTANCE.methodToCall()`
 

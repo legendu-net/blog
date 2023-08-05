@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, machine learning, data science, recommendation system, collaborative filtering, NMF, non-negative matrix factorization
 Modified: 2020-01-27 12:00:51
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 User-based Filtering (Memory-based Filtering)
 

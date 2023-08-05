@@ -7,10 +7,7 @@ Category: OS
 Tags: macOS, file system, filesystem, shell, terminal, command line, diskutil
 Modified: 2021-08-02 09:19:43
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 **Note**: When work both in Linux and macOS,
 a painful burden to use command-line is to remember subtle differences between Linux commands and macOS commands.

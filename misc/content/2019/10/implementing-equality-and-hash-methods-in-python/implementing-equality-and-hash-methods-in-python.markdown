@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, class, hash, equality
 Modified: 2019-10-31 23:51:05
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Python Hashes and Equality](https://hynek.me/articles/hashes-and-equality/)
 

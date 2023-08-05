@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, GPU, machine learning, data science, programming, cloud, host
 Modified: 2020-03-02 18:01:37
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 https://lambdalabs.com/

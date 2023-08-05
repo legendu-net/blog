@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Shell, command, exist, Python
 Modified: 2021-09-26 12:02:32
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Python
 

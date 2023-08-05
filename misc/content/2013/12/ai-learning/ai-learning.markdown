@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, machine learning, statistics, data science
 Modified: 2021-01-08 23:07:57
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ![Machine Learning Algorithms](https://jixta.files.wordpress.com/2015/11/machinelearningalgorithms.png)
 The picture comes from [Machine Learning Algorithms Mindmap](https://jixta.wordpress.com/2015/07/17/machine-learning-algorithms-mindmap/).

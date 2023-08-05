@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science
 Modified: 2020-03-20 17:56:05
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 https://www.youtube.com/watch?v=uWbSc84he2Q

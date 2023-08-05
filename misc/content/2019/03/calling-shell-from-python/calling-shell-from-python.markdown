@@ -7,10 +7,7 @@ Title: Calling Shell from Python
 Category: Computer Science
 Tags: programming, Python, shell, os.system, subprocess
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. `subprocess.run` is preferred to the function `os.system`
     for invoking shell commands. 

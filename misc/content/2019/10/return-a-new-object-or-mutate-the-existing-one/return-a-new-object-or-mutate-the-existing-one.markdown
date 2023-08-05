@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, design pattern, copy, mutate
 Modified: 2019-10-31 17:09:56
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Generally speaking,
 prefer to return a new object rather than mutating the existing object.

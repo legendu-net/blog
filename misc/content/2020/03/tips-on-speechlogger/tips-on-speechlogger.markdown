@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, SpeechLogger, voice, recognition, speech, text
 Modified: 2020-03-29 17:49:42
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 1. You can configure the source of voice of SpeechLogger.

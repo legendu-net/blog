@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machcine learning, deep learning, PyTorch, reproducible, random, see, RNG
 Modified: 2020-04-16 14:34:57
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 The PyTorch doc 
 [Reproducibility](https://pytorch.org/docs/stable/notes/randomness.html)

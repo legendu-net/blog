@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, FB, Facebook, ads, Advertisement, Advertising, social network
 Modified: 2020-09-23 14:51:58
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Facebook Audience Network Newsletter
 

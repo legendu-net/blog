@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Python, unittest, unit test
 Modified: 2020-05-03 21:47:11
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 python -m unittest test_module1 test_module2

@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine lerning, POS tagging, NLP
 Modified: 2020-02-11 15:58:10
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://nlpoverview.com/#a-pos-tagging
 

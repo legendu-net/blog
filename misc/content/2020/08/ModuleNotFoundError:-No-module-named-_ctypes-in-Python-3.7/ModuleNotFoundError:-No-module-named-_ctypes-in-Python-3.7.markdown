@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Python, 3.7, ctypes, _ctypes, ModuleNotFoundError, error, exception
 Modified: 2021-07-22 11:00:07
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Issue
 

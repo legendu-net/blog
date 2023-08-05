@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, deep learning, PyTorch, forward, __call__
 Modified: 2020-03-05 16:05:30
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. The `Module.__call__` method register all hooks and call the method `Module.forward`. 
     In short, 

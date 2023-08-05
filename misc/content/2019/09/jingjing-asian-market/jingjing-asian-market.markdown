@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming
 Modified: 2019-09-17 09:11:39
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## [Jingjing Asian Market](https://jingjingmarket.com/)

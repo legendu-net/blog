@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, feature, FeatureTools, nlp_primitive
 Modified: 2022-08-08 11:09:04
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Tool Review: Lessons learned from using FeatureTools to simplify the process of Feature Engineering](https://medium.com/dataexplorations/tool-review-can-featuretools-simplify-the-process-of-feature-engineering-5d165100b0c3)
 

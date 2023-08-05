@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, machine learning, data science, optimization algorithms, ADAM, SGD, momentum
 Modified: 2019-12-30 12:17:07
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 L-BFGS converges faster and with better solutions on small datasets. 
 However, ADAM is very robust for relatively large datasets.

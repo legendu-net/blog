@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Git hooks, pre-commit, CICD, GitHub Actions
 Modified: 2021-03-09 12:03:21
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 It is suggested that you leverage CICD tools (e.g., GitHub Actions)

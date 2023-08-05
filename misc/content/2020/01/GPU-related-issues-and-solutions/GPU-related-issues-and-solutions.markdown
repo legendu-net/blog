@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, GPU, issues, solutions
 Modified: 2021-09-17 16:05:46
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## Tips

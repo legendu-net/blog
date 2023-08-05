@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, machine learning, data science, regularization
 Modified: 2019-12-30 12:21:11
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Regularization add a penalty term to the loss function in machine learning models.
 The type of regularizatin depends on the type of penalty used 

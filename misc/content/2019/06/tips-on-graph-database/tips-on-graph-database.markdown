@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, database, graph database, nebula
 Modified: 2019-06-27 18:25:17
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [vesoft-inc/nebula](https://github.com/vesoft-inc/nebula)
 A high performance distributed Graph Database

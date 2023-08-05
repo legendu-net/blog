@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, DeepPavlov, dialog system, chatbot, deep learning, machine learning, library, data science
 Modified: 2020-08-04 10:38:59
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## References 

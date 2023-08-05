@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, TypeScript, tips
 Modified: 2022-05-09 10:31:30
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## References

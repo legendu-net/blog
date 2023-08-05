@@ -7,10 +7,7 @@ Category: Software
 Tags: software, Multipass, Ubuntu, virtual machine, Docker, virtualization, LXD
 Modified: 2022-07-31 17:54:16
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Multipass vs LXD
 

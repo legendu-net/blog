@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, PyTorch, torch.nn.Module, torch.nn.functional
 Modified: 2020-01-07 11:26:38
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 Modules in `torch.nn` are internal implemented based on `torch.nn.functional`.

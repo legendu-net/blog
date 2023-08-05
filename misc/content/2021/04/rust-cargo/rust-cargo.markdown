@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming, Rust, cargo, format, fmt, rustfmt
 Modified: 2023-01-16 18:50:10
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## Create a Project

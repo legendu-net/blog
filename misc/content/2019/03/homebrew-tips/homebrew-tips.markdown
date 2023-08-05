@@ -7,10 +7,7 @@ Category: Software
 Tags: software, Homebrew, macOS, Linuxbrew
 Modified: 2022-06-06 13:33:09
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [Installation](https://github.com/Homebrew/install)
 

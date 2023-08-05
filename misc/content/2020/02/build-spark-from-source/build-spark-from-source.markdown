@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Spark, big data, build, source
 Modified: 2020-02-20 16:25:13
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 You can download prebuilt binary Spark at 
 https://spark.apache.org/downloads.html.

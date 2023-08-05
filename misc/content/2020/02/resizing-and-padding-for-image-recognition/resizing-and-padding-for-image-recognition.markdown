@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, machine learning, data science, deep learning
 Modified: 2020-02-25 14:11:09
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. The best way to deal with different sized images 
     is to downscale them to match dimensions from the smallest image available.

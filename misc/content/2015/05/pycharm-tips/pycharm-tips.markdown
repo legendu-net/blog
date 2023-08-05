@@ -7,10 +7,7 @@ Category: Software
 Tags: software, PyCharm, Python, IDE
 Modified: 2020-05-22 15:30:47
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Change Scheme
 

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, jupyter-book, Markdown, notebook, Jupyter, JupyterLab
 Modified: 2022-12-20 17:51:52
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 xinstall jb -ic
 

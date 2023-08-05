@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, XGBoost
 Modified: 2019-12-28 23:22:29
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. It is suggested that you use the sklearn wrapper classes `XGBClassifier` and `XGBRegressor`
     so that you can fully leverage other tools of the sklearn package.

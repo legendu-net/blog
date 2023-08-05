@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Python, flake8, linter
 Modified: 2021-02-25 14:52:31
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 

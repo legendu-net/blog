@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, PyTorch, GPU, tips
 Modified: 2021-10-08 11:19:48
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Docker Images for PyTorch
 

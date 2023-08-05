@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python distribution
 Modified: 2020-06-22 09:36:27
 nohtyP 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. When people talks about Python,
   it usually means the CPython implementation

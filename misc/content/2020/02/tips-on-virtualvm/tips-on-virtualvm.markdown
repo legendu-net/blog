@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, VirtualVM, Java, performace, profiling
 Modified: 2020-02-10 09:59:52
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [VisualVM](https://visualvm.github.io/) is a great tool for performance profiling of JVM applications.
 

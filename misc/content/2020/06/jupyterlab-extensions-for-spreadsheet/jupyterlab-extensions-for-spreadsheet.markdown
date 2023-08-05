@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Jupyter, JupyterLab, spreadsheet, extension, plugin, grid, spreadsheet, data table, datatable
 Modified: 2023-01-13 20:19:34
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Tools and JupyterLab Extensions for SpreadSheet
 

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, regex, regular expression, online
 Modified: 2022-06-25 15:54:09
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 [x86 Virtualization in Browser](https://copy.sh/v86/)

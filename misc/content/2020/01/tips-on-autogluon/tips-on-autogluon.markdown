@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, AutoGluon, AutoML, deep learning, ENAS, ProxylessNAS, gluon, MXNet
 Modified: 2020-02-27 15:28:00
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://github.com/awslabs/autogluon
 

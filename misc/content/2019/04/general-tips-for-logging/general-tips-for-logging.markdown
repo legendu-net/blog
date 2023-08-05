@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, logging, log
 Modified: 2020-08-11 08:26:52
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. Many logging libraries support sending logs as emails or as attachments of emails. 
     As a poor man's way of subscribing to errors and warnings 

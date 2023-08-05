@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, sshuttle, VPN, SSH, internet, web, network, SSH tunnel
 Modified: 2021-01-04 09:59:49
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. `sudo` permission is required to run sshuttle. 
 

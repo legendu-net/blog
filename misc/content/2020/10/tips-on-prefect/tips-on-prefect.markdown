@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, workflow, Airflow, Prefect
 Modified: 2020-10-06 23:23:56
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Prefect — A modern, python-native data workflow engine](https://makeitnew.io/prefect-a-modern-python-native-data-workflow-engine-7ece02ceb396)
 

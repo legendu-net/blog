@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, monkey patching
 Modified: 2019-08-13 21:29:47
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 A MonkeyPatch is a piece of Python code which extends or modifies other code at runtime (typically at startup).
 

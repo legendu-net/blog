@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, programming, Java, JVM, async, asynchronous, event, RxJava, reactive
 Modified: 2021-04-08 09:40:36
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## [RxJava](https://github.com/ReactiveX/RxJava)

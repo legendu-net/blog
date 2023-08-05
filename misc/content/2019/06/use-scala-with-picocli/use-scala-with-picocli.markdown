@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Scala, JVM, picocli, command-line interface, command-line parser
 Modified: 2019-06-22 03:41:22
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 It is easy to make mistakes due to type of parameters when use picocli in Scala.
 It is suggested that you

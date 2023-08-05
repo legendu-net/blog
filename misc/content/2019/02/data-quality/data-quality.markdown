@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: database, big data, data quality, data check, data profiling, data validation, validation
 Modified: 2021-11-22 12:13:22
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 - Upper and lower bounds tests and Inter Quartile Range Checks(IQR) and standard deviations
 

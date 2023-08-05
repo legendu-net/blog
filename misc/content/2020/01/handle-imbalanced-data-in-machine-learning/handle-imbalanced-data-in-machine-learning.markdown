@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, imbalanced data
 Modified: 2020-02-18 10:40:49
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [scikit-learn-contrib/imbalanced-learn](https://github.com/scikit-learn-contrib/imbalanced-learn)
 is a Python Package to Tackle the Curse of Imbalanced Datasets in Machine Learning.

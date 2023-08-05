@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, Visual Studio Code, server, VS Code, IDE, web, vscode
 Modified: 2022-03-12 17:54:05
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 

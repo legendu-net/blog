@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, Docker, user, container
 Modified: 2019-11-20 21:21:08
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## User switching in Docker

@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, email, web, knockknock, yagmail, notifiers
 Modified: 2020-08-29 22:18:53
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Use Standard Libraries smtplib and email
 

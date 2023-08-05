@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, learning to rank, machine learned ranking, MLR
 Modified: 2021-10-08 12:13:57
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://www.kaggle.com/c/home-credit-default-risk/discussion/61613
 

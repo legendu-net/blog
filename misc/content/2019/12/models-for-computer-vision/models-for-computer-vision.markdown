@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, computer vision, neural network, image classification, image processing
 Modified: 2020-01-07 09:50:39
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [torchvision](https://github.com/pytorch/vision)
 has implementation of popular deep learning models for computer vision.

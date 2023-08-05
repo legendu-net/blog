@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, metaclass, class, OOP, object
 Modified: 2020-04-12 10:22:51
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 @abstractmethod, 
 @staticmethod, 

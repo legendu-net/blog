@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, PyTest, fixtures, plugins
 Modified: 2021-03-05 19:29:39
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Run `pytest` in the root directory of your project to run all test suites. 
 You can run test cases in a specific test file (e.g., `test_file.py`) 

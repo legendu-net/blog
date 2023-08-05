@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, data, finance, financial, IMF, Federal Reserve, FRB
 Modified: 2022-05-08 17:15:45
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 [Board of Governors of the Federal Reserve System](https://www.federalreserve.gov/)

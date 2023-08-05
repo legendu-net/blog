@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, reflection, method, class
 Modified: 2019-03-10 02:23:34
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://www.ianlewis.org/en/dynamically-adding-method-classes-or-class-instanc
 

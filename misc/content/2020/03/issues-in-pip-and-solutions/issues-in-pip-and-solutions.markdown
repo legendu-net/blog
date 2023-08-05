@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Python, pip, issue, solution
 Modified: 2020-03-09 16:37:34
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Abort trap: 6 when using `pip3 search`
 

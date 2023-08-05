@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, data science, machine learning, serialization, model representation
 Modified: 2020-03-05 15:32:24
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [Open Neural Network Exchange (ONNX)](https://onnx.ai/)
 

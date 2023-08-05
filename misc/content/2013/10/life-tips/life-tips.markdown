@@ -7,10 +7,7 @@ Category: Life
 Tags: tips, life, printing, insurance, internet
 Modified: 2021-09-25 13:43:55
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [Insurance](http://www.legendu.net/misc/blog/insurance-tips)
 

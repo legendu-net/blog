@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming
 Modified: 2020-03-04 16:12:45
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
     :::python
     optimizer.zero_grad()        

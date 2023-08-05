@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, machine learning, data science, continuous delivery, data science version control
 Modified: 2020-10-07 08:52:52
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Data Version Control 
 

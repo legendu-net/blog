@@ -7,10 +7,7 @@ Category: Tools
 Tags: tools, GitHub pages, web site, Pelican
 Modified: 2019-10-17 21:59:48
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 I encountered the issue that some pages pushed to my GitHub repository 
 [dclong/en](https://github.com/dclong/en)

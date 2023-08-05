@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, AI, concept, visualization, data science, machine learning, shap, visual, design, neural network, deep learning
 Modified: 2021-09-24 23:11:26
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Tools for (approximately) visualizing the architures of existing neural networks
 or for visualizing the traing process (training/validation loss/accuracy, activation, etc.)

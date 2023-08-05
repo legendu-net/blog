@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Python, copy object
 Modified: 2019-10-31 17:22:26
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 You can use the copy module to copy objects in Python. 
 Customized coping behavior can be achived by overriding the methods `__copy__` (for shallow copy)

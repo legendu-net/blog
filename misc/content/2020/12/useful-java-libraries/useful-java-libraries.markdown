@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, Java, JVM, library, package, Guava, Apache Commons
 Modified: 2022-10-17 12:08:18
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## General Purpose Java Libraries
 

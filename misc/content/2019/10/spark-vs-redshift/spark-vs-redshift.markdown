@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, big data, Spark, Snowflake, redshift, cloud database, SQL
 Modified: 2019-10-29 04:14:54
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://www.quora.com/Spark-vs-Redshift-Should-I-be-using-both-for-big-data-Which-is-better
 

@@ -7,10 +7,7 @@ Category: AI
 Tags: AI, machine learning, data science, categorical variables, encoding, One-hot
 Modified: 2022-03-26 22:21:23
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Categorical variables are very common in a machine learning project.
 On a high level,

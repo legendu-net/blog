@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, web, internet, network, WebSockets
 Modified: 2020-10-16 23:04:12
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 [What are WebSockets | How is it different from HTTP?](https://www.youtube.com/watch?v=i5OVcTdt_OU)

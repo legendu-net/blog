@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: Computer Science, image processing, computer vision, CV, machine learning, data science
 Modified: 2022-05-03 23:13:11
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 If you face a relative simple image recognition problem 

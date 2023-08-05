@@ -7,10 +7,7 @@ Category: Computer Science
 Tags: programming, Shell, Python, SSH, remote, Fabric, Ansible, ClusterSSH, parallel-ssh
 Modified: 2020-12-06 23:21:30
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## On a Sinsgle Machine
 

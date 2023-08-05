@@ -7,10 +7,7 @@ Category: Software
 Tags: Software, macOS, preview, image, photo
 Modified: 2022-06-25 15:45:20
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 https://discussions.apple.com/thread/2031602

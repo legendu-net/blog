@@ -7,10 +7,7 @@ Title: Manage systemd Services and Units
 Category: OS
 Tags: OS, Linux, systemd, service, systemctl, enable, disable, start, stop, restart
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 1. List all services names.

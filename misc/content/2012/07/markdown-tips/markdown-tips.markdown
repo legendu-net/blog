@@ -5,12 +5,9 @@ Title: Writing Docs Using Markdown
 Slug: markdown-tips
 Category: Computer Science
 Tags: Markdown, Jekyll, programming
-Modified: 2020-06-22 09:25:23
+Modified: 2023-08-05 10:50:59
 
-**
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 <img src="http://dclong.github.io/media/markdown/markdown.gif" height="200" width="240" align="right"/>
@@ -153,4 +150,9 @@ knitr (R package)
 
 ## Mind Map
 
+- [RMarkdown Equivalent in Python]( https://www.legendu.net/misc/blog/rmarkdown-equivalent-in-python )
+
+- [Use JupyterLab Notebooks in Pelican]( https://www.legendu.net/misc/blog/use-jupyterlab-notebooks-in-pelican )
+
 - [MemoFon](http://www.memofon.com/)
+

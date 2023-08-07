@@ -53,13 +53,9 @@ Tags: programming, Python, module, tips, module access
     You can easily run into this issue when you run ad hoc Python scripts 
     (unlikely to encounter this issue when you develop a Python package).
     A possible way to avoid this issue is to always prefix your ad hoc Python script with a leading underscore (`_`).
-    Another solution is to remove the emtpry string 
-    (represent the current working directory from `sys.path`)
-    if your Python script does not import other modules in the current directory.
-
-        :::python
-        import sys
-        sys.path.remove("")
+    Since Python 3.11, 
+    the [-P](https://docs.python.org/3/using/cmdline.html#cmdoption-P) option 
+    can be used to avoid prepending the current working directory into `sys.path`.
 
 1. Python searches for modules at paths in `sys.path`.
     To add a path into the module search path,

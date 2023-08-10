@@ -5,7 +5,7 @@ Slug: rust-for-machine-learning
 Title: Rust for Machine Learning
 Category: AI
 Tags: AI, data science, machine learning, Rust, AI, deep learning
-Modified: 2022-11-05 18:45:24
+Modified: 2023-08-10 01:13:02
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -16,6 +16,9 @@ is a Rust language binding for TensorFlow.
 ## [tch-rs](https://github.com/LaurentMazare/tch-rs)
 [tch-rs](https://github.com/LaurentMazare/tch-rs)
 is a Rust bindings for the C++ API of PyTorch.
+
+https://github.com/huggingface/candle
+Candle is a minimalist ML framework for Rust with a focus on easiness of use and on performance (including GPU support).
 
 ## [linfa](https://github.com/rust-ml/linfa)
 

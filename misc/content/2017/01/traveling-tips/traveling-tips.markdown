@@ -5,7 +5,7 @@ Slug: traveling-tips
 Title: Traveling Without Hassle
 Category: Life
 Tags: life, traveling, tips, luggage, trip
-Modified: 2022-11-05 18:21:07
+Modified: 2023-08-26 10:36:41
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -22,7 +22,7 @@ Modified: 2022-11-05 18:21:07
 
 - laptop with charger
 - secure token
-- phone with charger
+- phone, phone charger (x2 cables)
 - toothbrush with charger
 
 ### Office
@@ -58,9 +58,11 @@ Modified: 2022-11-05 18:21:07
 
 ## Places To Rest in Cities
 
-1. go to library for a rest
+1. gas stations & parks
 
-2. starbucks
+2. go to library for a rest
+
+3. starbucks
 
 ## Airlines
 

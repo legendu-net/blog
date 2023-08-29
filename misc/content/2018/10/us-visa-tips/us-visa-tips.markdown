@@ -4,11 +4,13 @@ Author: Ben Chuanlong Du
 Slug: us-visa-tips
 Title: Tips on US Visa
 Category: Life
-Tags: life, US, DS-160, visa, interview
-Modified: 2020-05-22 15:42:45
+Tags: life, US, DS-160, visa, interview, B1, B2, travel
+Modified: 2023-08-28 11:21:28
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+
+[B1/B2旅游签证通过率计算器](https://rapidvisa.com/zh-hans/b1-b2-visitortourist-visa-odds-approval/)
 
 [Online DS-160 Form](https://ceac.state.gov/GenNIV/common/Recovery.aspx)
 

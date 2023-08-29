@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-08-08 11:56:50
-Modified: 2022-10-08 11:46:47
+Modified: 2023-08-28 18:02:41
 Author: Benjamin Du
 Slug: tools-with-dark-power
 Title: Tools With Dark Power
@@ -27,6 +27,13 @@ is a fast, simple, recursive content discovery tool
 
 ## wireshark
 
+## [RustScan](https://github.com/RustScan/RustScan)
+[RustScan](https://github.com/RustScan/RustScan)
+is a modern port scanner 
+which finds ports quickly (3 seconds at its fastest). 
+
 ## [Bypass Paywalls and Limits on Information](https://www.legendu.net/misc/blog/bypass-paywalls-and-limits-on-information/)
     
 ## [Collect a Dossier on a Person from Social Media](https://www.legendu.net/misc/blog/collect-a-dossier-on-a-person-from-social-media)
+
+

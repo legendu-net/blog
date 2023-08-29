@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 15:46:22
-Modified: 2023-06-24 17:54:04
+Modified: 2023-08-29 11:18:01
 Author: Benjamin Du
 Slug: useful-rust-crates-for-database
 Title: Useful Rust Crates for Database
@@ -209,19 +209,23 @@ https://github.com/timvw/qv
 A simply CLI to quickly view your data. Powered by DataFusion.
 
 
-## [datafuse](https://github.com/datafuselabs/datafuse)
+## Big Data
 
-## [fluvio](https://github.com/infinyon/fluvio)
+[Rust for Big Data and Parallel Processing Applications](https://www.xenonstack.com/blog/rust-big-data-applications)
 
-## [DataBend](https://github.com/datafuselabs/databend)
+### [datafuse](https://github.com/datafuselabs/datafuse)
 
-## [kamu-cli](https://github.com/kamu-data/kamu-cli)
+### [fluvio](https://github.com/infinyon/fluvio)
 
-## [datafusion](http://www.legendu.net/misc/blog/tips-on-datafusion)
+### [DataBend](https://github.com/datafuselabs/databend)
 
-## [ballista](https://github.com/apache/arrow-ballista)
+### [kamu-cli](https://github.com/kamu-data/kamu-cli)
 
-## [Polars](http://www.legendu.net/misc/blog/tips-on-polars)   
+### [datafusion](http://www.legendu.net/misc/blog/tips-on-datafusion)
+
+### [ballista](https://github.com/apache/arrow-ballista)
+
+### [Polars](http://www.legendu.net/misc/blog/tips-on-polars)   
 
 ## References
 

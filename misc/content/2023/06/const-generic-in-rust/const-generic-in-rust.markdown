@@ -38,16 +38,9 @@ https://rust-lang.github.io/api-guidelines/future-proofing.html#sealed-traits-pr
 
 ## Ways to Make Sure that a Type in Rust Satisfy Certain Conditions
 
-1. disable users from constructing instances of a struct 
-    and provide initialized instances (with conditions satisfied) for users to use 
-
-2. use `assert` to make sure that parameters passed to construction methods satisfy required conditions
-
-3. make construction methods return instances satisfying required conditions
-
-4. Define a sealed trait which representing the required conditions 
-    and define types implementing the sealed trait.
-    Make the struct take a generic parameter implementing the sealed trait.
+Please refer to
+[Constraints on Types in Rust]( https://www.legendu.net/misc/blog/type-constraints-in-rust )
+for detailed discussions.
 
 ## References
 

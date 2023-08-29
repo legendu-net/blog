@@ -9,13 +9,6 @@ Tags: Computer Science, programming, Rust, design, pattern, productivity
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## [nutype](https://github.com/greyblake/nutype)
-[Nutype](https://github.com/greyblake/nutype)
-embraces the simple idea: the type system can be leveraged 
-to track the fact that something was done, so there is no need to do it again.
-If a piece of data was once sanitized and validated 
-we can rely on the types instead of sanitizing and validating again and again when we're in doubt.
-
 ## [derive_more](https://crates.io/crates/derive_more)
 [derive_more](https://crates.io/crates/derive_more)
 adds ``#[derive(x)]` macros for more traits.
@@ -33,13 +26,15 @@ which are driven by Rust data structures,
 just like proc macro derive macros, 
 but without having to wrestle with the proc macro system.
 
-## [validator](https://github.com/Keats/validator)
-[Validator](https://github.com/Keats/validator)
-provides custom derive to simplify struct validation inspired by marshmallow and Django validators.
-
 ## Design Patterns
 
 [Improve your Rust APIs with the type state pattern](https://www.youtube.com/watch?v=_ccDqRTx-JU)
+
+## Constraints on Types
+
+Please refer to
+[Constraints on Types in Rust]( https://www.legendu.net/misc/blog/type-constraints-in-rust )
+for detailed discussions.
 
 ## References
 

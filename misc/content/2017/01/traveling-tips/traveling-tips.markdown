@@ -5,7 +5,7 @@ Slug: traveling-tips
 Title: Traveling Without Hassle
 Category: Life
 Tags: life, traveling, tips, luggage, trip
-Modified: 2023-08-26 10:36:41
+Modified: 2023-08-29 14:58:00
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -86,3 +86,7 @@ Modified: 2023-08-26 10:36:41
 汉庭 
 
 速8
+
+## References
+
+- [Tips on Car Rental]( https://www.legendu.net/misc/blog/tips-on-car-rental )

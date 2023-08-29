@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-07-11 16:57:55
-Modified: 2022-07-11 16:57:55
+Modified: 2023-08-29 14:22:08
 Author: Benjamin Du
 Slug: garbage-collection-memory-management-for-rust
 Title: Garbage Collection for Rust
@@ -31,6 +31,11 @@ Slabs provide pre-allocated storage for many instances of a single data type. Wh
 [slab](https://crates.io/crates/slab)
 provides pre-allocated storage for a uniform data type.
 
+## [rust-gc](https://github.com/Manishearth/rust-gc)
+[rust-gc](https://github.com/Manishearth/rust-gc)
+is a simple tracing (mark and sweep) garbage collector for Rust
+.
+
 
 ## References 
 
@@ -46,5 +51,6 @@ provides pre-allocated storage for a uniform data type.
 
 - [ECE 459 Lecture 16: Rayon](https://www.youtube.com/watch?v=L0dEE2IqbD8)
 
+- [I built a garbage collector for a language that doesn't need one](https://claytonwramsey.github.io/2023/08/14/dumpster.html)
 
 

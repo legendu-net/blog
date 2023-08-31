@@ -5,7 +5,7 @@ Slug: workflow-managing-tools
 Title: Workflow Managing Tools
 Category: Computer Science
 Tags: programming, workflow manager, scheduling, scheduler, Apache Airflow, mara, Azkaban, StackStorm
-Modified: 2021-06-10 09:32:40
+Modified: 2023-08-31 10:59:19
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -21,6 +21,10 @@ Modified: 2021-06-10 09:32:40
 ## [prefect](https://github.com/PrefectHQ/prefect)
 
 ## [apache/airflow](https://github.com/apache/airflow)
+
+## [peace](https://github.com/azriel91/peace)
+[peace](https://github.com/azriel91/peace)
+is a framework to build empathetic and forgiving software automation.
 
 ## Luigi
 

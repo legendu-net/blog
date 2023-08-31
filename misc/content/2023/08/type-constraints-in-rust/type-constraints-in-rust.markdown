@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-08-29 14:56:50
-Modified: 2023-08-29 14:56:50
+Modified: 2023-08-30 10:50:55
 Author: Benjamin Du
 Slug: type-constraints-in-rust
 Title: Constraints on Types in Rust
@@ -36,3 +36,8 @@ we can rely on the types instead of sanitizing and validating again and again wh
 ### [validator](https://github.com/Keats/validator)
 [Validator](https://github.com/Keats/validator)
 provides custom derive to simplify struct validation inspired by marshmallow and Django validators.
+
+## References
+
+- [Trait Bound in Rust]( https://www.legendu.net/misc/blog/trait-bound-in-rust )
+

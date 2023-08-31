@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:02:14
-Modified: 2023-06-25 10:09:59
+Modified: 2023-08-31 11:14:59
 Author: Benjamin Du
 Slug: dev-tools-for-rust
 Title: Dev Tools for Rust
@@ -117,6 +117,9 @@ It strives to be lightweight and easy to integrate.
 is a developer tool to help you get up and running quickly with a new Rust project 
 by leveraging a pre-existing git repository as a template.
 
+### [cargo-dist](https://github.com/axodotdev/cargo-dist)
+[cargo-dist](https://github.com/axodotdev/cargo-dist)
+is cargo build but For Building Final Distributable Artifacts and uploading them to an archive.
 
 ### [cargo-shuttle](https://github.com/shuttle-hq/shuttle)
 [Shuttle] (https://www.shuttle.rs/)

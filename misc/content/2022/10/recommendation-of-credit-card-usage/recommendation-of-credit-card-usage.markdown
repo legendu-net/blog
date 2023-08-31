@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 16:34:06
-Modified: 2022-11-05 18:17:29
+Modified: 2023-08-31 09:52:35
 Author: Benjamin Du
 Slug: recommendation-of-credit-card-usage
 Title: Recommendation of Credit Card Usage
@@ -34,9 +34,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td>
-      <span style="color:green">BOA-M</span> <br>
       <span style="color:red">BOA-V</span> <br>
-      <span style="color:red">Paypal+Dis</span> <br>
     </td>
     <td></td>
     <td></td>
@@ -45,7 +43,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:red">Chase-U</span>
     </td>
     <td>
       <span style="color:green">BOA-M</span>
@@ -65,7 +62,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:red">Chase-U</span><br>
       <span style="color:green">AMEX-M</span><br>
     </td>
     <td>
@@ -83,14 +79,12 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     </td>
     <td>
       <span style="color:green">AMEX-M</span><br>
-      <span style="color:red">Chase-R</span><br>
       <span style="color:green">Citi-C</span><br>
     </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:red">Chase-U</span>
     </td>
     <td>
       <span style="color:green">BOA-M</span>
@@ -103,19 +97,20 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td>
-      <span style="color:red">BOA-V</span>
+      <span style="color:green">BOA-M</span>
     </td>
     <td></td>
     <td>
       <span style="color:green">BOA-V</span>
+      <span style="color:red">BOA-U</span>
     </td>
     <td>
       <span style="color:green">Citi-C</span><br>
-      <span style="color:red">Chase-U</span><br>
       <span style="color:green">AMEX-M</span><br>
     </td>
     <td>
       <span style="color:green">BOA-M</span>
+      <span style="color:red">BOA-V</span>
     </td>
   </tr>
   <tr>
@@ -132,7 +127,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:red">Chase-U</span><br>
       <span style="color:green">AMEX-M</span><br>
     </td>
     <td>
@@ -153,7 +147,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:red">Chase-U</span><br>
     </td>
     <td>
       <span style="color:green">BOA-M</span>
@@ -175,7 +168,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:red">Chase-U</span>
     </td>
     <td>
       <span style="color:green">BOA-M</span>
@@ -198,7 +190,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:red">Chase-U</span>
     </td>
     <td>
       <span style="color:green">BOA-M</span>
@@ -223,7 +214,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:red">Chase-U</span>
     </td>
     <td>
       <span style="color:green">BOA-M</span>
@@ -235,7 +225,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td>
-      <span style="color:red">Chase-R</span><br>
     </td>
     <td>
       <span style="color:green">BOA-V</span>
@@ -245,7 +234,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     </td>
     <td></td>
     <td>
-      <span style="color:red">Chase-U</span>
     </td>
     <td>
       <span style="color:green">BOA-M</span>
@@ -257,15 +245,15 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td>
-      <span style="color:red">Chase-R</span><br>
     </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
-    <td></td>
+    <td>
+      <span style="color:green">Citi-C</span>*<br>
+    </td>
     <td></td>
     <td>
-      <span style="color:red">Chase-U</span>
     </td>
     <td>
       <span style="color:green">BOA-M</span>
@@ -285,7 +273,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:red">Chase-U</span>
     </td>
     <td>
       <span style="color:green">BOA-M</span>
@@ -297,13 +284,11 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       Rental
     </td>
     <td>
-      <span style="color:red">Chase-R</span><br>
       AMEX?
     </td>
     <td></td>
     <td></td>
     <td>
-      <span style="color:red">Chase-R</span><br>
     </td>
     <td></td>
     <td></td>
@@ -311,10 +296,31 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:red">Chase-U</span>
     </td>
     <td>
       <span style="color:green">BOA-M</span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Drug <br>
+      Store
+    </td>
+    <td>
+    </td>
+    <td></td>
+    <td>
+      <span style="color:green">BOA-M</span> <br>
+    </td>
+    <td>
+    </td>
+    <td></td>
+    <td></td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
     </td>
   </tr>
   <tr>
@@ -329,7 +335,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:red">Chase-U</span><br>
       <span style="color:green">AMEX-M</span><br>
     </td>
     <td>

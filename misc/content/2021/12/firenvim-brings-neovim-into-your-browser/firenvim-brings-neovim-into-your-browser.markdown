@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-12-04 20:03:49
-Modified: 2022-10-20 22:59:59
+Modified: 2023-08-31 21:05:18
 Author: Benjamin Du
 Slug: firenvim-brings-neovim-into-your-browser
 Title: FireNVim Brings NeoVim into Your Browser
@@ -33,7 +33,9 @@ Tags: Computer Science, Vim, NeoVim, FireNVim, browser
     
 4. If you are using Linux, 
     configure your brower to trigger FireNVim on the shortcut `ctrl + e`.
-    - For chrome, you can configure this via chrome://extensions/shortcuts.
+    - For chrome, you can configure this via 
+    [chrome://extensions/shortcuts](chrome://extensions/shortcuts)
+    .
     ![firenvim-chrome-shortcuts](https://user-images.githubusercontent.com/824507/196080758-ce9a706e-c746-4642-92ca-0e5eebe8e9b3.png)
 
 The above installation configures FireNVim to never automatially prompt up.

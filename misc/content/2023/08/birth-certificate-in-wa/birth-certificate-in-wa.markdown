@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-08-30 10:51:14
-Modified: 2023-09-01 11:07:30
+Modified: 2023-09-01 15:49:09
 Author: Benjamin Du
 Slug: birth-certificate-in-wa
 Title: Birth Certificate in WA
@@ -9,7 +9,7 @@ Tags: Life, WA, birth, certificate, health, statistics, vital
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-    
+
 ## Order a Birth Certificate
 
 1. It is suggested that you order by mail if it is not urgent.

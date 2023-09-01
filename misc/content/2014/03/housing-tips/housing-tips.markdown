@@ -5,7 +5,7 @@ Title: Tips on Housing
 Slug: housing-tips
 Category: Life
 Tags: life, housing, tips, rent, apartment, shopping
-Modified: 2022-09-18 16:47:07
+Modified: 2023-09-01 09:08:19
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
  
@@ -155,6 +155,10 @@ use the toilet to flush it.
     - https://www.aliexpress.com/item/3256802372457960.html?ug_edm_item_id=3256802372457960&pdp_npi=2%40dis%21USD%21US%20%241.98%21US%20%241.54%21%21%21%21%21%40214120dd16536319322175611d6e12%21%21edm&edm_click_module=alg_products&tracelog=rowan&rowan_id1=aeug_edm_24677_1_en_US_2022-05-26&rowan_msg_id=6846biz_pay_after_purchase:0:0_571776534$fca08cf84c854af68a5e761db1358a29&ck=in_edm_other  
 
 - [管道疏通器](https://www.taobao.com/list/item/45128283973.htm?spm=a21wu.10013406.taglist-content.25)
+
+### Grill
+
+- [Grease Drip Tray](https://www.walmart.com/ip/Replacement-Grease-Tray-Set-for-Bbq-Grill-Models-from-Nexgrill-Dyna-Glo-and-Others-Length-24-5-to-27-Width-15-5/951531452?athbdg=L1600)
 
 ### Misc
 

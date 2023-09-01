@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:02:14
-Modified: 2023-08-31 11:14:59
+Modified: 2023-09-01 14:30:49
 Author: Benjamin Du
 Slug: dev-tools-for-rust
 Title: Dev Tools for Rust
@@ -106,6 +106,10 @@ which audits Cargo.lock files for crates with security vulnerabilities.
 It also supports CICD tools such as GitHub Actions 
 (via [audit-check](https://github.com/actions-rs/audit-check))
 and Travis CI.
+
+### [rust-crate-audits](https://github.com/google/rust-crate-audits)
+Google uses cargo-vet to ensure third-party Rust dependencies have been audited by Googlers or other trusted entities.
+This repository automatically aggregates Google's audits from various repositories to make them easily reusable by others.
 
 ### [cargo-vet](https://github.com/mozilla/cargo-vet)
 [cargo-vet](https://github.com/mozilla/cargo-vet)

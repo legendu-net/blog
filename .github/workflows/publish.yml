@@ -8,7 +8,7 @@ jobs:
     container:
       image: dclong/jupyterhub-ds:blog_071520
       volumes:
-        - ~/.ssh:~/.ssh
+        - /home/dclong/.ssh:/root/.ssh
     steps:
       #- uses: actions/checkout@v3
       #  with:

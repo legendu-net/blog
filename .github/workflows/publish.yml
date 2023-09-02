@@ -20,16 +20,20 @@ jobs:
           chmod 600 /root/.ssh/*
       - name: Clone Repo
         run: |
+          pwd
           rm -rf blog/
           git clone git@github.com:legendu-net/blog.git
           cd blog
+          pwd
           ls -lh
           git remote -v
       - name: Install dependencies
         run: |
+          pwd
           ./init.sh
       - name: Build and Publish to GitHub Pages
         run: |
+          pwd
           git config --global --add safe.directory '*'
           git config --global user.email "longendu@yahoo.com"
           git config --global user.name "Ben Du"

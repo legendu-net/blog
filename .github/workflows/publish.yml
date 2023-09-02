@@ -23,6 +23,8 @@ jobs:
           rm -rf blog/
           git clone git@github.com:legendu-net/blog.git
           cd blog
+          ls -lh
+          git remote -v
       - name: Install dependencies
         run: |
           ./init.sh

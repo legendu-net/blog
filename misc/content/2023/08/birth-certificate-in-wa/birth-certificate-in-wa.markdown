@@ -28,7 +28,7 @@ Tags: Life, WA, birth, certificate, health, statistics, vital
     If the mistake is due to the hospital birth registration team,
     they will file an amendment request to the Depart of Health of WA.
 
-1. expedite service: "Attention: Amendment Supervisor"
+1. Expedite service: "Attention: Amendment Supervisor"
     "Attention: Certificate Exchange Department"
 
 2. Send the original copy together with the "Affidavit for Correction" form 

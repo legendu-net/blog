@@ -5,7 +5,7 @@ Slug: tips-on-github-actions
 Title: Tips on GitHub Actions
 Category: Computer Science
 Tags: Computer Science, GitHub Actions, CICD
-Modified: 2023-09-01 21:26:30
+Modified: 2023-09-02 08:50:36
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -159,6 +159,16 @@ https://github.com/peter-evans/create-pull-request
     a runner can be configured to accept only 1 repo in a personal account 
     (which is inconveneint)
     or multiple repositories in a GitHub organization.
+
+4. A self-hosted runner is able to use SSH keys on the host.
+    However, 
+    if a Docker container is used with a self-hosted runner,
+    you have to properly expose SSH keys on the host to the Docker container.
+    A feasible way is to 
+
+        1. Configure the GitHub Action workflow to mount `$HOME/.ssh` to `/ssh`.
+        2. Copy `/ssh` to `/root/.ssh` in the Docker container. 
+        3. Run `chmod 600 /root/.ssh/*` to ensure right permissions of SSH keys and configuration files.
 
 ## References
 

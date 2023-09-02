@@ -8,11 +8,16 @@ jobs:
     container:
       image: dclong/jupyterhub-ds:blog_071520
       volumes:
-        - /home/dclong/.ssh:/root/.ssh
+        - /home/dclong/.ssh:/ssh
     steps:
       #- uses: actions/checkout@v3
       #  with:
       #    token: ${{secrets.GITHUBACTIONS}}
+      - name: Config SSH
+        run: |
+          mkdir -p /root/.ssh
+          cp /ssh/* /root/.ssh/
+          chmod 600 /root/.ssh/*
       - name: Clone Repo
         run: |
           rm -rf blog/

@@ -21,8 +21,10 @@ jobs:
       - name: Clone Repo
         run: |
           pwd
-          rm -rf ./* ./.*
-          git clone git@github.com:legendu-net/blog.git ./
+          cd ..
+          rm -rf blog/
+          git clone git@github.com:legendu-net/blog.git
+          cd blog
           pwd
           ls -lh
           git remote -v

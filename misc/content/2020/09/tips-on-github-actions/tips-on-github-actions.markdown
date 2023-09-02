@@ -5,7 +5,7 @@ Slug: tips-on-github-actions
 Title: Tips on GitHub Actions
 Category: Computer Science
 Tags: Computer Science, GitHub Actions, CICD
-Modified: 2023-02-27 09:31:11
+Modified: 2023-09-01 17:47:30
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -111,19 +111,25 @@ https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-comma
 Prepends a directory to the system PATH variable for all subsequent actions in the current job. The currently running action cannot access the new path variable.
 
 
-## GitHub Actions for Python
+## Good Github Actions
+
+### [ssh-agent](https://github.com/webfactory/ssh-agent)
+[ssh-agent](https://github.com/webfactory/ssh-agent)
+is a GitHub Action to setup `ssh-agent` with a private key.
+
+### GitHub Actions for Python
 
 https://hynek.me/articles/python-github-actions/
 
 https://github.com/actions/setup-python
 
-## Pull Request 
+### Pull Request 
 
 https://github.com/peter-evans/create-pull-request
 
 [Create PR from push on a given branch](https://github.com/peter-evans/create-pull-request/issues/544)
 
-## Examples
+### Examples
 
 [Using semantic-release with GitHub Actions](https://www.youtube.com/watch?v=rCXq86FOlzQ)
 

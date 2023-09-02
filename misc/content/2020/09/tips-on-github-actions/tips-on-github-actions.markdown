@@ -5,7 +5,7 @@ Slug: tips-on-github-actions
 Title: Tips on GitHub Actions
 Category: Computer Science
 Tags: Computer Science, GitHub Actions, CICD
-Modified: 2023-09-01 17:47:30
+Modified: 2023-09-01 21:21:41
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -116,6 +116,10 @@ Prepends a directory to the system PATH variable for all subsequent actions in t
 ### [ssh-agent](https://github.com/webfactory/ssh-agent)
 [ssh-agent](https://github.com/webfactory/ssh-agent)
 is a GitHub Action to setup `ssh-agent` with a private key.
+
+### [bencher](https://github.com/bencherdev/bencher)
+[Bencher](https://github.com/bencherdev/bencher)
+is a suite of continuous benchmarking tools.
 
 ### GitHub Actions for Python
 

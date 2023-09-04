@@ -5,8 +5,8 @@ Slug: tips-on-github-actions
 Title: Tips on GitHub Actions
 Category: Computer Science
 Tags: Computer Science, GitHub Actions, CICD
-Modified: 2023-09-02 08:50:36
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+Modified: 2023-09-04 15:48:06
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Tips and Traps

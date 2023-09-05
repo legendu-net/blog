@@ -7,16 +7,39 @@ jobs:
     runs-on: self-hosted
     container:
       image: dclong/jupyterhub-ds:blog_071520
+      volumes:
+        - /home/dclong/.ssh:/ssh
     steps:
-      - uses: actions/checkout@v3
-        with:
-          token: ${{secrets.GITHUBACTIONS}}
+      #- uses: actions/checkout@v3
+      #  with:
+      #    token: ${{secrets.GITHUBACTIONS}}
+      - name: Config SSH
+        run: |
+          mkdir -p /root/.ssh
+          cp -r /ssh/* /root/.ssh/
+          chmod 600 /root/.ssh/*
+      - name: Clone Repo
+        run: |
+          pwd
+          cd ..
+          rm -rf blog/
+          git clone git@github.com:legendu-net/blog.git
+          cd blog
+          pwd
+          ls -lh
+          git remote -v
       - name: Install dependencies
         run: |
+          pwd
           ./init.sh
+          wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb -O /tmp/libssl.deb
+          dpkg -i /tmp/libssl.deb
       - name: Build and Publish to GitHub Pages
         run: |
+          pwd
           git config --global --add safe.directory '*'
           git config --global user.email "longendu@yahoo.com"
           git config --global user.name "Ben Du"
+          git config --global url."git@github.com:".insteadOf "https://github.com/"
           ./blog.py p -ecmo
+

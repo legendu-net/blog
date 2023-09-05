@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-06-11 10:03:30
-Modified: 2023-06-11 10:03:30
+Modified: 2023-09-01 08:30:11
 Author: Benjamin Du
 Slug: rust-backend-frameworks-for-rest-apis
 Title: Rust Backend Frameworks for Rest APIs
@@ -31,6 +31,8 @@ axum is a web application framework that focuses on ergonomics and modularity.
 
 
 ## References
+
+- [Best Rust Web Frameworks to Use in 2023](https://www.shuttle.rs/blog/2023/08/23/rust-web-framework-comparison)
 
 - [Which Rust web framework to choose in 2022 (with code examples)](https://kerkour.com/rust-web-framework-2022)
 

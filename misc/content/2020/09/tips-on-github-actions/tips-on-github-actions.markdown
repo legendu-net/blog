@@ -5,8 +5,8 @@ Slug: tips-on-github-actions
 Title: Tips on GitHub Actions
 Category: Computer Science
 Tags: Computer Science, GitHub Actions, CICD
-Modified: 2023-02-27 09:31:11
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+Modified: 2023-09-04 15:48:06
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Tips and Traps
@@ -111,19 +111,31 @@ https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-comma
 Prepends a directory to the system PATH variable for all subsequent actions in the current job. The currently running action cannot access the new path variable.
 
 
-## GitHub Actions for Python
+## Good Github Actions
+
+### checkout
+
+### [ssh-agent](https://github.com/webfactory/ssh-agent)
+[ssh-agent](https://github.com/webfactory/ssh-agent)
+is a GitHub Action to setup `ssh-agent` with a private key.
+
+### [bencher](https://github.com/bencherdev/bencher)
+[Bencher](https://github.com/bencherdev/bencher)
+is a suite of continuous benchmarking tools.
+
+### GitHub Actions for Python
 
 https://hynek.me/articles/python-github-actions/
 
 https://github.com/actions/setup-python
 
-## Pull Request 
+### Pull Request 
 
 https://github.com/peter-evans/create-pull-request
 
 [Create PR from push on a given branch](https://github.com/peter-evans/create-pull-request/issues/544)
 
-## Examples
+### Examples
 
 [Using semantic-release with GitHub Actions](https://www.youtube.com/watch?v=rCXq86FOlzQ)
 
@@ -147,6 +159,16 @@ https://github.com/peter-evans/create-pull-request
     a runner can be configured to accept only 1 repo in a personal account 
     (which is inconveneint)
     or multiple repositories in a GitHub organization.
+
+4. A self-hosted runner is able to use SSH keys on the host.
+    However, 
+    if a Docker container is used with a self-hosted runner,
+    you have to properly expose SSH keys on the host to the Docker container.
+    A feasible way is to 
+
+        1. Configure the GitHub Action workflow to mount `$HOME/.ssh` to `/ssh`.
+        2. Copy `/ssh` to `/root/.ssh` in the Docker container. 
+        3. Run `chmod 600 /root/.ssh/*` to ensure right permissions of SSH keys and configuration files.
 
 ## References
 

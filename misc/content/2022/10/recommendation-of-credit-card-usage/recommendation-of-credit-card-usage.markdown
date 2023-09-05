@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 16:34:06
-Modified: 2023-08-31 20:50:11
+Modified: 2023-08-31 09:52:35
 Author: Benjamin Du
 Slug: recommendation-of-credit-card-usage
 Title: Recommendation of Credit Card Usage
@@ -9,9 +9,11 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## Note
+## Tips and Traps
 
 1. Costco is a wholesale. It is not considered as a grocery or supermarket for cashback bonus purposes.
+
+2. Overall, AMEX is great for traveling purchases and restaurants spending.
 
 <table>
 <thead>
@@ -362,6 +364,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 
 - [Amex Auto Purchasing Program](https://global.americanexpress.com/card-benefits/detail/auto-purchase-program/gold?account_key=F9F70B1ECFC6CC21CC84700CE77CAD92)
 
-## Credit Cards Without Foreign Transaction Fee 
+## Credit Cards Without Foreign Transaction Fees
 
 - AMEX

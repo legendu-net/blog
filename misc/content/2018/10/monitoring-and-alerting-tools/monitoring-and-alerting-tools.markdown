@@ -4,7 +4,7 @@ Author: Ben Chuanlong Du
 Slug: monitoring-and-alerting-tools
 Title: Monitoring and Alerting Tools
 Category: Software
-Tags: software, machine learning, anomaly detection, data science, AI, monitor, alerting
+Tags: software, machine learning, anomaly detection, data science, AI, monitor, alerting, observability
 Modified: 2020-07-04 11:10:00
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
@@ -27,6 +27,15 @@ another one but doesn't seem as popular as prometheus
 ### [pyod](https://github.com/yzhao062/pyod)
 
 A Python Toolbox for Scalable Outlier Detection (Anomaly Detection)
+
+
+https://www.datadoghq.com/
+
+https://www.dynatrace.com/
+
+https://dylibso.com/
+
+https://github.com/DataDog/dd-trace-py
 
 
 ## References

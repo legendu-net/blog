@@ -107,6 +107,7 @@
 - ["Myst", "MyST"]
 - ["Nltk", "NLTK"]
 - ["Odbc", "ODBC"]
+- ["Onnx", "ONNX"]
 - ["Pypy", "PyPy"]
 - ["Pcie", "PCIe"]
 - ["Rdds", "RDDs"]

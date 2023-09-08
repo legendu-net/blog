@@ -1,9 +1,9 @@
 Status: published
 Date: 2023-09-07 15:11:23
-Modified: 2023-09-07 15:11:23
+Modified: 2023-09-08 12:26:26
 Author: Benjamin Du
 Slug: tips-on-onnx
-Title: Tips on Onnx
+Title: Tips on ONNX
 Category: Computer Science
 Tags: Computer Science, programming
 

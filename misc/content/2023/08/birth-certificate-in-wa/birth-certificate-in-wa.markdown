@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-08-30 10:51:14
-Modified: 2023-09-01 15:49:09
+Modified: 2023-09-08 15:18:18
 Author: Benjamin Du
 Slug: birth-certificate-in-wa
 Title: Birth Certificate in WA
@@ -48,6 +48,33 @@ Tags: Life, WA, birth, certificate, health, statistics, vital
     Mother's Place of Birth: new_place
 
 6. no processing fee within 1 year of ordering birth certificate
+
+## Exchange Birth Certificate
+
+1. If incorrect information is due the hospital registration team's mistake,
+    the hospital will submit the correction on your behalf if you contact the hospital registration team.
+    If the hospital submits the correction, 
+    the turnaround time is 7-10 business days. 
+    You can contact the Department of Health to confirm whether the correction is done 
+    before sending your original birth certificate back for exhange.
+
+2. Write "EXCHANGE" and your current address on the front of the original copy of birth certificate. 
+    If you have multiple incorrect copies, include all of those in the same envelope and they can all be exchanged. 
+    Address your envelope as follows. 
+
+    Center for Health Statistics
+    ATTN: Certificate Exchange
+    PO BOX 47814
+    Olympia, WA 98504
+
+3. A photo copy of your non-real photo id/drivers license will suffice for identification. 
+ 
+4. Exchanging birth certificate typically takes 2 to 3 weeks. 
+    There's no way to expedite the process.
+    If you are under a time limit, 
+    you can order an additional copy and pay for expedited shipping at 
+    [www.vitalchek.com](www.vitalchek.com)
+    .
 
 ## References
 

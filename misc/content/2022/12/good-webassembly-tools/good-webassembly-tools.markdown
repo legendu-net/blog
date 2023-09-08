@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-04 10:15:25
-Modified: 2023-09-07 15:03:07
+Modified: 2023-09-07 15:11:07
 Author: Benjamin Du
 Slug: good-webassembly-tools
 Title: Good Webassembly Tools
@@ -31,3 +31,14 @@ provides observability SDKs for WebAssembly, enabling continuous monitoring of W
 [chainsocket](https://github.com/dylibso/chainsocket)
 Proof of concept for a generative AI application framework powered by WebAssembly and Extism
 
+## [wasi-nn](https://github.com/WebAssembly/wasi-nn)
+[wasi-nn](https://github.com/WebAssembly/wasi-nn)
+A proposed WebAssembly System Interface API for machine learning (ML).
+
+https://github.com/second-state/WasmEdge-WASINN-examples
+
+## References
+
+https://cosmonic.com/
+
+https://www.secondstate.io/

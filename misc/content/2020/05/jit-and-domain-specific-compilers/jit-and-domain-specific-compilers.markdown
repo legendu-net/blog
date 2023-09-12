@@ -5,7 +5,7 @@ Slug: jit-and-domain-specific-compilers
 Title: JIT and Domain Specific Compilers
 Category: Computer Science
 Tags: Computer Science, compiler, JIT, domain specific, AI, data science, machine learning, deep learning
-Modified: 2022-11-27 12:56:31
+Modified: 2023-09-10 11:51:33
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -33,6 +33,9 @@ deep learning
 is an open-source tool designed to speed up AI inference in just a few lines of code. 
 nebullvm boosts your model to achieve the maximum acceleration 
 that is physically possible on your hardware.
+
+### [MLIR introduction](https://www.youtube.com/watch?v=hOEia680ENE)
+[MLIR introduction](https://www.youtube.com/watch?v=hOEia680ENE)
 
 ## [LLVM](https://github.com/llvm/llvm-project)
 

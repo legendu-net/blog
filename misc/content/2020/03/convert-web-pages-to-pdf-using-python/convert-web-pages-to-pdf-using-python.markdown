@@ -5,24 +5,30 @@ Slug: convert-web-pages-to-pdf-using-python
 Title: Convert Web Pages to PDF Using Python
 Category: Computer Science
 Tags: Computer Science
-Modified: 2020-03-17 21:22:04
+Modified: 2023-09-12 01:18:55
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
 ## [python-pdfkit](https://github.com/JazzCore/python-pdfkit)
+
 Python wrapper for wkhtmltopdf utility to convert HTML to PDF using Webkit.
 
+:::bash
 pip install pdfkit
 sudo apt-get install wkhtmltopdf
+
+:::python
 import pdfkit 
 pdfkit.from_url('https://www.google.co.in/', 'shaurya.pdf') 
 
 
 ## [WeasyPrint](https://weasyprint.org/)
 
+:::bash
 pip3 install weasyprint
 
+:::python
 pdf = weasyprint.HTML('http://www.google.com').write_pdf()
 file('google.pdf', 'wb').write(pdf)
 
@@ -31,6 +37,7 @@ file('google.pdf', 'wb').write(pdf)
 
 https://stackoverflow.com/questions/31136581/automate-print-save-web-page-as-pdf-in-chrome-python-2-7
 
+:::python
 DesiredCapabilities cap = DesiredCapabilities.chrome();
 cap.setCapability("download.default_directory","C:");
 cap.setCapability("download.prompt_for_download","false");
@@ -38,7 +45,7 @@ cap.setCapability("directory_upgrade","true");
 cap.setCapability("plugins.plugins_disabled","Chrome PDF Viewer");
 
 WebDriver driver = new ChromeDriver(cap);
-Or you can add the options.AddArgument("---printing"); to automatically click the print button.
+Or you can add `options.AddArgument("---printing")` to automatically click the print button.
 
 https://stackoverflow.com/questions/30452395/selenium-pdf-automatic-download-not-working
 

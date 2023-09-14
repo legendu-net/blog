@@ -5,7 +5,7 @@ Slug: editing-PDF-files
 Title: Editing PDF Files
 Category: Software
 Tags: software, PDF, tools, edit, convert, PDFfiller
-Modified: 2023-09-12 01:19:20
+Modified: 2023-09-13 23:20:18
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -22,7 +22,7 @@ Modified: 2023-09-12 01:19:20
 
   <tr>
     <td rowspan="4"> Web Tools </td>
-    <td> <a href="https://www.docusign.com/"> DocuSign </a>  </td>
+    <td> <a href="https://www.docusign.com/">DocuSign</a>  </td>
     <td>  
       <ul>
         <li> Free for occassional use </li>
@@ -32,7 +32,7 @@ Modified: 2023-09-12 01:19:20
     </td>
   </tr>
   <tr>
-    <td> <a href="https://www.freepdfconvert.com/"> Free PDF Convert </a> </td>
+    <td> <a href="https://www.freepdfconvert.com/">Free PDF Convert</a> </td>
     <td> 
       <ul>
         <li> Great for convert PDF files to MS Office files, etc. </li>
@@ -41,7 +41,7 @@ Modified: 2023-09-12 01:19:20
     </td>
   </tr>
   <tr>
-    <td> <a href="https://www.adobe.com/acrobat/online/rearrange-pdf.html"> Adobe Rearrage PDF </a> </td>
+    <td> <a href="https://www.adobe.com/acrobat/online/rearrange-pdf.html">Adobe Rearrage PDF</a> </td>
     <td>  
       <ul>
         <li>
@@ -54,7 +54,7 @@ Modified: 2023-09-12 01:19:20
     </td>
   </tr>
   <tr>
-    <td> <a href="https://www.ilovepdf.com/"> I Love PDF </a> </td>
+    <td> <a href="https://www.ilovepdf.com/">I Love PDF</a> </td>
     <td>  
       <ul>
         <li>
@@ -69,7 +69,8 @@ Modified: 2023-09-12 01:19:20
 
   <tr>
     <td rowspan="3"> Linux Desktop </td>
-    <td> <a href="https://github.com/pdfarranger/pdfarranger"> PDFArranger </a> </td>
+    <td> 
+      <a href="https://github.com/pdfarranger/pdfarranger">PDFArranger</a> </td>
     <td>  
       <ul>
         <li>
@@ -97,7 +98,8 @@ Modified: 2023-09-12 01:19:20
     </td>
   </tr>
   <tr>
-    <td> <a href="https://help.gnome.org/users/evince/stable/"> Evince </a> </td>
+    <td> 
+      <a href="https://help.gnome.org/users/evince/stable/">Evince</a> </td>
     <td>  
       <ul>
         <li>
@@ -112,7 +114,7 @@ Modified: 2023-09-12 01:19:20
 
   <tr>
     <td> macOS Desktop </td>
-    <td> Preview </td>
+    <td>Preview</td>
     <td>  
       <ul>
         <li>
@@ -127,7 +129,7 @@ Modified: 2023-09-12 01:19:20
 
   <tr>
     <td rowspan="4"> Windows Desktop </td>
-    <td> Master PDF Editor </td>
+    <td>Master PDF Editor</td>
     <td>  
     Free for non-commerical use. 
     </td>

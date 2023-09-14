@@ -5,15 +5,24 @@ Author: Benjamin Du
 Slug: good-choices-of-reverse-proxies
 Title: Good Choices of Reverse Proxies
 Category: Computer Science
-Tags: Computer Science, programming
+Tags: Computer Science, programming, proxy, reverse, nginx, caddy, Sozu, TinyProxy, frp
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
-- [nginx](https://github.com/nginx/nginx)
+## [nginx](https://github.com/nginx/nginx)
+[nginx](https://github.com/nginx/nginx)
 
-- [caddy](https://github.com/caddyserver/caddy)
+## [caddy](https://github.com/caddyserver/caddy)
+[caddy](https://github.com/caddyserver/caddy)
 
-- [TinyProxy](http://www.legendu.net/misc/blog/tips-on-tinyproxy)
+## [Sozu](https://github.com/sozu-proxy/sozu)
+[Sozu](https://github.com/sozu-proxy/sozu)
+is a lightweight, fast, always-up reverse proxy server.
+It is configurable at runtime, fast and safe.
 
-- [frp](https://github.com/fatedier/frp)
+## [TinyProxy](http://www.legendu.net/misc/blog/tips-on-tinyproxy)
+[TinyProxy](http://www.legendu.net/misc/blog/tips-on-tinyproxy)
+
+## [frp](https://github.com/fatedier/frp)
+[frp](https://github.com/fatedier/frp)

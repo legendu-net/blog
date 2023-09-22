@@ -5,7 +5,7 @@ Slug: editing-PDF-files
 Title: Editing PDF Files
 Category: Software
 Tags: software, PDF, tools, edit, convert, PDFfiller
-Modified: 2023-09-13 23:20:18
+Modified: 2023-09-22 12:42:37
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -68,9 +68,10 @@ Modified: 2023-09-13 23:20:18
   </tr>
 
   <tr>
-    <td rowspan="3"> Linux Desktop </td>
+    <td rowspan="4"> Linux Desktop </td>
     <td> 
-      <a href="https://github.com/pdfarranger/pdfarranger">PDFArranger</a> </td>
+      <a href="https://github.com/pdfarranger/pdfarranger">PDFArranger</a> 
+    </td>
     <td>  
       <ul>
         <li>
@@ -111,6 +112,20 @@ Modified: 2023-09-13 23:20:18
       </ul>
     </td>
   </tr>
+  <tr>
+    <td> 
+      <a href="https://code-industry.net/masterpdfeditor/">Master PDF Editor</a> </td>
+    <td>  
+      <ul>
+        <li>
+        Free version available but with very limited features.
+        </li>
+        <li>
+        Not recommended. 
+        </li>
+      </ul>
+    </td>
+  </tr>
 
   <tr>
     <td> macOS Desktop </td>
@@ -129,9 +144,18 @@ Modified: 2023-09-13 23:20:18
 
   <tr>
     <td rowspan="4"> Windows Desktop </td>
-    <td>Master PDF Editor</td>
+    <td> 
+      <a href="https://code-industry.net/masterpdfeditor/">Master PDF Editor</a> </td>
     <td>  
-    Free for non-commerical use. 
+    <td>  
+      <ul>
+        <li>
+        Free version available but with very limited features.
+        </li>
+        <li>
+        Not recommended. 
+        </li>
+      </ul>
     </td>
   </tr>
   <tr>

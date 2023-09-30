@@ -4,11 +4,27 @@ Date: 2014-01-22 13:43:34
 Title: Tips on Car and Driving
 Slug: car-tips
 Category: Life
-Tags: car, life, driving, safety, tips, drive
+Tags: car, life, driving, safety, tips, drive, Nissan, Leaf
 Modified: 2020-05-22 13:43:34
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
  
+
+## Nissan Leaf
+
+1. As many other vehicles, Nissan Leaf has Hill Start Assistant.
+    While Hill Start Assistant is helpful,
+    it auto applies break only for 2 seconds after you release the break and before you apply the acceleration pedal.
+    This can be dangerous if you release the break early on a hill.
+    For safety,
+    it is recommended that you
+    - Do not release the break unless the traffic in front of you moves forward.
+    - Always apply the parking brake whenever the vehicle fully stops. 
+        This adds extra safety in addition to the Hill Start Assistant.
+
+2. Turn on climate control in the morning to warm the car.
+
+https://www.youtube.com/watch?v=GNsvdPl8A88
 
 ## Driving
 
@@ -141,20 +157,3 @@ that they do not offer at all in the LS and LT Models.
 
 http://www.ezvincheck.com/
 
-## Good Car Shops in Ankeny
-
-1. Woody's
-
-    217 East 1st Street, Ankeny, IA 50021
-    (515) 964-7925
-
-    woodysautorepairservice.com/
-
-    nice and honest, never cheat its customers
-
-2. Karl Chevrolet
-
-    1101 SE Oralabor Rd, Ankeny, IA 50021
-    (515) 299-4300
-
-    http://www.karlchevrolet.com/

@@ -5,7 +5,7 @@ Slug: editing-PDF-files
 Title: Editing PDF Files
 Category: Software
 Tags: software, PDF, tools, edit, convert, PDFfiller
-Modified: 2023-09-22 12:42:37
+Modified: 2023-10-06 16:00:46
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -202,7 +202,7 @@ Modified: 2023-09-22 12:42:37
   <tr>
     <td rowspan="7"> Python Libraries </td>
     <td> 
-    <a href="https://github.com/mstamy2/PyPDF2"> PyPDF2 </a>
+    <a href="https://github.com/py-pdf/pypdf"> PyPDF </a>
     </td>
     <td>  
       A utility to read and write PDFs with Python.

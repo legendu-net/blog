@@ -5,7 +5,7 @@ Title: Tips on Car and Driving
 Slug: car-tips
 Category: Life
 Tags: car, life, driving, safety, tips, drive, Nissan, Leaf
-Modified: 2023-09-30 16:46:27
+Modified: 2023-10-02 23:14:23
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
  
@@ -24,7 +24,9 @@ Modified: 2023-09-30 16:46:27
 
 2. Turn on climate control in the morning to warm the car.
 
-https://www.youtube.com/watch?v=GNsvdPl8A88
+[2023 Nissan Leaf- CarTech How To](https://www.youtube.com/watch?v=GNsvdPl8A88)
+
+[2023 Nissan LEAF - Climate Control Timer](https://www.youtube.com/watch?v=Ju30VkAG3oo)
 
 ## Driving
 

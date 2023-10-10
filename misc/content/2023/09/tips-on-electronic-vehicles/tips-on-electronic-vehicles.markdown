@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-09-13 17:49:03
-Modified: 2023-10-10 00:05:57
+Modified: 2023-10-10 10:31:12
 Author: Benjamin Du
 Slug: tips-on-electronic-vehicles
 Title: Tips on Electronic Vehicles
@@ -36,6 +36,10 @@ avoid charing in an open charging station hen it rains really heavily.
 - Is level I charing supported?
 
 ## References
+
+- https://www.plugshare.com/
+
+- https://abetterrouteplanner.com/
 
 - [The Most Affordable Electric Cars for 2023](https://www.cnet.com/roadshow/news/the-most-affordable-electric-cars-for-2023/)
 

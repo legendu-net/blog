@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-05-21 21:35:27
-Modified: 2022-07-23 19:27:24
+Modified: 2023-10-11 10:06:22
 Author: Benjamin Du
 Slug: shopping-smartly
 Title: Shopping Smartly
@@ -17,7 +17,7 @@ Tags: Life, shop, shopping, smart, smartly, CamelCamelCamel, DealMoon, Homedepot
 
 ## Deals
 
-- [DealMoon - Housing & Living](https://www.dealmoon.com/guide/cate/11)
+- [北美省钱快报 | DealMoon - Housing & Living](https://www.dealmoon.com/guide/cate/11)
 - [Deal Alerts @ SlickDeals](https://slickdeals.net/deal-alerts/)
 - [Dealigg](http://www.dealigg.com/)
 - [DealSea](http://dealsea.com/)
@@ -25,12 +25,11 @@ Tags: Life, shop, shopping, smart, smartly, CamelCamelCamel, DealMoon, Homedepot
 
 ## Popular E-commerce Websites
 
-- [Amazon](www.amazon.com/)
-- [AliExpress](AliExpress.com)
-    No international transaction fees using Master credit cards.
-
-- [Ebay](http://www.ebay.com/)
-    [eBay Refurbished](https://www.ebay.com/b/Certified-Refurbished/bn_7040708936?_trkparms=%26clkid%3D2259258771560524076)
+### [Temu](Temu.com)
+### [Amazon](www.amazon.com/)
+### [Wayfair](https://www.wayfair.com/)
+### [eBay](http://www.ebay.com/)
+[eBay Refurbished](https://www.ebay.com/b/Certified-Refurbished/bn_7040708936?_trkparms=%26clkid%3D2259258771560524076)
 
 ## References
 

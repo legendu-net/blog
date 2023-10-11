@@ -5,7 +5,7 @@ Slug: web-automation
 Title: Web Automation
 Category: Computer Science
 Tags: programming, web, automation, Selenium, playwright, Puppeteer
-Modified: 2021-04-07 09:02:30
+Modified: 2023-10-11 13:24:08
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -22,6 +22,8 @@ are official Docker images for selenium.
 Node.js library to automate Chromium, Firefox and WebKit with a single API https://playwright.dev
 
 ## [Puppeteer](https://github.com/GoogleChrome/puppeteer)
+
+## UI Vision
 
 ## iMacros
 

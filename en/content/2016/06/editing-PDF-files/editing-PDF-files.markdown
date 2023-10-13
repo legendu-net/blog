@@ -5,7 +5,7 @@ Slug: editing-PDF-files
 Title: Editing PDF Files
 Category: Software
 Tags: software, PDF, tools, edit, convert, PDFfiller
-Modified: 2023-10-06 16:00:46
+Modified: 2023-10-13 10:22:14
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -24,11 +24,9 @@ Modified: 2023-10-06 16:00:46
     <td rowspan="4"> Web Tools </td>
     <td> <a href="https://www.docusign.com/">DocuSign</a>  </td>
     <td>  
-      <ul>
-        <li> Free for occassional use </li>
-        <li> No credit card required </li>
-        <li> Support checkmarks and signatures </li>
-      </ul>
+      - Free for occassional use <br>
+      - No credit card required <br>
+      - Support checkmarks and signatures <br>
     </td>
   </tr>
   <tr>
@@ -210,7 +208,7 @@ Modified: 2023-10-06 16:00:46
   </tr>
   <tr>
     <td> 
-      <a href="https://github.com/jsvine/pdfplumber"> pdfplumber </a>
+      <a href="https://github.com/jsvine/pdfplumber">pdfplumber</a>
     </td>
     <td>  
     Plumbs a PDF for detailed information about each char, rectangle, line, et cetera,
@@ -218,13 +216,13 @@ Modified: 2023-10-06 16:00:46
     </td>
   </tr>
   <tr>
-    <td> <a href="https://github.com/jalan/pdftotext"> pdftotext </a> </td>
+    <td> <a href="https://github.com/jalan/pdftotext">pdftotext</a> </td>
     <td>  
     Great at parsing text from PDFs which also keeps the original layout as much as possible.
     </td>
   </tr>
   <tr>
-    <td> <a href="https://github.com/pdfminer/pdfminer.six"> pdfminer.six </a> </td>
+    <td> <a href="https://github.com/pdfminer/pdfminer.six">pdfminer.six</a> </td>
     <td>  
     A Python library for parsing PDF.
     It is good for manipulating PDF files 
@@ -232,19 +230,19 @@ Modified: 2023-10-06 16:00:46
     </td>
   </tr>
   <tr>
-    <td> <a href="https://github.com/socialcopsdev/camelot/"> camelot </a> </td>
+    <td> <a href="https://github.com/socialcopsdev/camelot/">camelot</a> </td>
     <td>  
     A Python library for extracting data tables in PDF files.
     </td>
   </tr>
   <tr>
-    <td> <a href="https://github.com/chezou/tabula-py"> tabula-py </a> </td>
+    <td> <a href="https://github.com/chezou/tabula-py">tabula-py</a> </td>
     <td>  
     A Python binding for [tabulapdf/tabula](https://github.com/tabulapdf/tabula).
     </td>
   </tr>
   <tr>
-    <td> <a href="https://github.com/chrismattmann/tika-python"> tika-python </a> </td>
+    <td> <a href="https://github.com/chrismattmann/tika-python">tika-python</a> </td>
     <td>  
     </td>
   </tr>

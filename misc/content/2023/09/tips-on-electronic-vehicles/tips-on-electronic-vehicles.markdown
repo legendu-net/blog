@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-09-13 17:49:03
-Modified: 2023-10-10 10:31:12
+Modified: 2023-10-13 10:18:45
 Author: Benjamin Du
 Slug: tips-on-electronic-vehicles
 Title: Tips on Electronic Vehicles
@@ -27,6 +27,10 @@ The battery of an EV typically lasts for 8 years.
 It is safe to charge in an open charging station when it is raining. 
 However, 
 avoid charing in an open charging station hen it rains really heavily. 
+
+- [ChargePoint](https://www.chargepoint.com/)
+
+- [EVgo](https://account.evgo.com/findCharger)
 
 ## Must-have Featuers
 

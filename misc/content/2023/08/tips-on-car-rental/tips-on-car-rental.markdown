@@ -35,7 +35,10 @@ Tags: Life, travel, car, rental, sharing, leasing
 
 ## Car Leasing
 
-1. Car leasing is good for long-term car rental, e.g., 2-4 years.
+Car leasing is good for long-term car rental, e.g., 2-4 years.
+Please refer to
+[Tips on Purchasing or Leasing a Car]( https://www.legendu.net/misc/blog/tips-on-purchasing-a-car )
+for more discussions.
 
 ## References
 

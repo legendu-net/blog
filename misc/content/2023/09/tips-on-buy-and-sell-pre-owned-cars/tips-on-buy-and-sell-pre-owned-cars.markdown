@@ -11,7 +11,7 @@ Tags: Life, car, buy, purchase, sell, vehicle
 
 ## Sell Pre-owned Cars
 
-1. CarMax is great choice.
+1. CarMax is a great choice.
 2. Car Dealers 
 3. The trade-in price estimated by Kelly Blue Book is way too low!
 

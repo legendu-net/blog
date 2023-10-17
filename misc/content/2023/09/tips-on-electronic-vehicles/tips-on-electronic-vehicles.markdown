@@ -32,12 +32,6 @@ avoid charing in an open charging station hen it rains really heavily.
 
 - [EVgo](https://account.evgo.com/findCharger)
 
-## Must-have Featuers
-
-- front/back camera
-- Lane keep warning
-- mirror blind spot 
-- Is level I charing supported?
 
 ## References
 

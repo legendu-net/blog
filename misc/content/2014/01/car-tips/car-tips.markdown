@@ -5,7 +5,7 @@ Title: Tips on Car and Driving
 Slug: car-tips
 Category: Life
 Tags: car, life, driving, safety, tips, drive, Nissan, Leaf
-Modified: 2023-10-02 23:14:23
+Modified: 2023-10-17 14:34:14
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
  
@@ -27,6 +27,20 @@ Modified: 2023-10-02 23:14:23
 [2023 Nissan Leaf- CarTech How To](https://www.youtube.com/watch?v=GNsvdPl8A88)
 
 [2023 Nissan LEAF - Climate Control Timer](https://www.youtube.com/watch?v=Ju30VkAG3oo)
+
+[Nissan Leaf In-Depth Controls and Infotainment Guide](https://www.youtube.com/watch?v=EIbImfnc5vg)
+
+## Mercedes-Benz
+
+[How to set your Cruise Control in a Mercedes-Benz](https://www.youtube.com/watch?v=uVMcWEMqfeg)
+
+[Top 10 Useful Mercedes-Benz GLE Hidden Features](https://www.youtube.com/watch?v=0wl3QIGNLHA)
+
+[TOP 10 Mercedes DON'Ts 🛑 Tips & Tricks!](https://www.youtube.com/watch?v=xr-pvouO6ms)
+
+## Roof Window
+
+- [汽车天窗的4大作用？很多老司机开到报废都不知道，太浪费了！【车二哥说车】](https://www.youtube.com/watch?v=wqx8zyoIQj4)
 
 ## Driving
 

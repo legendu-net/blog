@@ -5,7 +5,7 @@ Slug: editing-PDF-files
 Title: Editing PDF Files
 Category: Software
 Tags: software, PDF, tools, edit, convert, PDFfiller
-Modified: 2023-10-13 10:22:14
+Modified: 2023-10-19 23:12:18
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -32,36 +32,22 @@ Modified: 2023-10-13 10:22:14
   <tr>
     <td> <a href="https://www.freepdfconvert.com/">Free PDF Convert</a> </td>
     <td> 
-      <ul>
-        <li> Great for convert PDF files to MS Office files, etc. </li>
-        <li> non-free: 1 file per 30 minutes </li>
-      </ul>
+        - Great for convert PDF files to MS Office files, etc. <br>
+        - non-free: 1 file per 30 minutes <br>
     </td>
   </tr>
   <tr>
     <td> <a href="https://www.adobe.com/acrobat/online/rearrange-pdf.html">Adobe Rearrage PDF</a> </td>
     <td>  
-      <ul>
-        <li>
-          Sign in needed
-        </li>
-        <li>
-          Paid service but free trial available
-        </li>
-      </ul>
+      - Sign in needed <br>
+      - Paid service but free trial available <br>
     </td>
   </tr>
   <tr>
     <td> <a href="https://www.ilovepdf.com/">I Love PDF</a> </td>
     <td>  
-      <ul>
-        <li>
-          No need to sign in 
-        </li>
-        <li>
-          Paid service but free trial available
-        </li>
-      </ul>
+      - No need to sign in <br>
+      - Paid service but free trial available <br>
     </td>
   </tr>
 
@@ -71,14 +57,8 @@ Modified: 2023-10-13 10:22:14
       <a href="https://github.com/pdfarranger/pdfarranger">PDFArranger</a> 
     </td>
     <td>  
-      <ul>
-        <li>
-        Opensource and free
-        </li>
-        <li>
-        Easy to use
-        </li>
-      </ul>
+        - Opensource and free <br>
+        - Easy to use <br>
     </td>
   </tr>
   <tr>
@@ -86,42 +66,24 @@ Modified: 2023-10-13 10:22:14
     Okular
     </td>
     <td>  
-      <ul>
-        <li>
-        support annotating PDFs
-        </li>
-        <li>
-        does NOT support removing/adding PDF pages
-        </li>
-      </ul>
+        - support annotating PDFs <br>
+        - does NOT support removing/adding PDF pages <br>
     </td>
   </tr>
   <tr>
     <td> 
       <a href="https://help.gnome.org/users/evince/stable/">Evince</a> </td>
     <td>  
-      <ul>
-        <li>
-        most popular PDF viewer in Linux
-        </li>
-        <li>
-        does NOT support editing PDF files in any way
-        </li>
-      </ul>
+        - most popular PDF viewer in Linux <br>
+        - does NOT support editing PDF files in any way <br>
     </td>
   </tr>
   <tr>
     <td> 
       <a href="https://code-industry.net/masterpdfeditor/">Master PDF Editor</a> </td>
     <td>  
-      <ul>
-        <li>
-        Free version available but with very limited features.
-        </li>
-        <li>
-        Not recommended. 
-        </li>
-      </ul>
+        - Free version available but with very limited features. <br>
+        - Not recommended.  <br>
     </td>
   </tr>
 
@@ -129,14 +91,8 @@ Modified: 2023-10-13 10:22:14
     <td> macOS Desktop </td>
     <td>Preview</td>
     <td>  
-      <ul>
-        <li>
-        Default PDF viewer on macOS
-        </li>
-        <li>
-        Support rotating, adding and removing pages
-        </li>
-      </ul>
+        - Default PDF viewer on macOS <br>
+        - Support rotating, adding and removing pages <br>
     </td>
   </tr>
 
@@ -146,54 +102,32 @@ Modified: 2023-10-13 10:22:14
       <a href="https://code-industry.net/masterpdfeditor/">Master PDF Editor</a> </td>
     <td>  
     <td>  
-      <ul>
-        <li>
-        Free version available but with very limited features.
-        </li>
-        <li>
-        Not recommended. 
-        </li>
-      </ul>
+        - Free version available but with very limited features. <br>
+        - Not recommended. <br>
     </td>
   </tr>
   <tr>
     <td> Wondershare PDFelement </td>
     <td>  
-    Great one
-    <ul>
-      <li>
-      support Chinese font when filling forms
-      </li>
-      <li>
-      need to purchase a licence
-      </li>
-    </ul>
+      - Great one <br>
+      - support Chinese font when filling forms <br>
+      - need to purchase a licence <br>
     </td>
   </tr>
   <tr>
     <td> <a href="https://www.pdffiller.com/"> PDFfiller </a> </td>
     <td>  
-    good one 
-    <ul>
-      <li>
-      does NOT support Chinese font when filling forms
-      </li>
-    </ul>
+        - good one <br>
+        - does NOT support Chinese font when filling forms <br>
     </td>
   </tr>
   <tr>
     <td> <a href="https://www.pdffiller.com/"> Bluebeam Revue eXtreme 
     </a> </td>
     <td>  
-    Great one
-    <ul>
-      <li>
-      support Chinese fonts when filling forms
-      </li>
-      <li>
-      need to purchase a license but 30 days free trial available
-      </li>
-    </ul>
+      - Great one <br>
+      - support Chinese fonts when filling forms <br>
+      - need to purchase a license but 30 days free trial available <br>
     </td>
   </tr>
     

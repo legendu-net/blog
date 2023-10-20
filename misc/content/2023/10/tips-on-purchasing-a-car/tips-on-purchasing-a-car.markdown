@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-10-17 11:55:34
-Modified: 2023-10-17 18:51:32
+Modified: 2023-10-19 09:47:19
 Author: Benjamin Du
 Slug: tips-on-purchasing-a-car
 Title: Tips on Purchasing or Leasing a Car
@@ -15,10 +15,10 @@ Tags: Life, vehicle, car, SUV, EV, feature, camera
 - front/back camera
 - Lane keep warning
 - mirror blind spot
-- Is level I charing supported?
 
 ## For EVs
 - E-pedal or not?
+- Is level I charing supported?
 
 ## SUV
 - side steps

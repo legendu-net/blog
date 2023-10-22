@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-09-22 23:31:22
-Modified: 2023-10-16 23:02:37
+Modified: 2023-10-22 14:50:33
 Author: Benjamin Du
 Slug: tips-on-diy
 Title: Tips on DIY
@@ -17,3 +17,8 @@ Tags: life, DIY, home, Home Depot, workshop
 
 - [3 Mistakes I Made Installing a NEMA 14-50 Outlet](https://www.youtube.com/watch?v=CTT0mkVq-8s)
 
+## Electronic
+
+- [EverydayHomeRepairs](https://www.youtube.com/@EverydayHomeRepairs)
+
+- [Circuit Breaker and Electrical Panel Basics](https://www.youtube.com/watch?v=bGZVILwbyLo)

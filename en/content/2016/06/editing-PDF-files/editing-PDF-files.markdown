@@ -5,7 +5,7 @@ Slug: editing-PDF-files
 Title: Editing PDF Files
 Category: Software
 Tags: software, PDF, tools, edit, convert, PDFfiller
-Modified: 2023-10-19 23:12:18
+Modified: 2023-10-22 14:45:42
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -213,4 +213,3 @@ A command-line tool for filling fileds in PDF docs.
 
 - [Hands on the Python Library Pdfplumber](http://www.legendu.net/misc/blog/hands-on-the-python-library-pdfplumber)
 
-- http://stanford.edu/~mgorkove/cgi-bin/rpython_tutorials/Using_Python_to_Extract_Tables_From_PDFs.php

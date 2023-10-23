@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-10-19 11:31:45
-Modified: 2023-10-22 14:51:54
+Modified: 2023-10-22 22:25:35
 Author: Benjamin Du
 Slug: tips-on-RV
 Title: Tips on RV
@@ -46,6 +46,8 @@ https://www.thormotorcoach.com/blog/class-b-vs.-class-c-rvs
 https://www.youtube.com/watch?v=MazFWoBOXoY
 
 https://www.youtube.com/watch?v=CYs0lUsSczo
+
+[The Smallest Class C RV | Tour of the Gulf Stream BT Cruiser 5210 Motorhome](https://www.youtube.com/watch?v=Sa6s57364to)
 
 ## Tips on RV Traveling
 

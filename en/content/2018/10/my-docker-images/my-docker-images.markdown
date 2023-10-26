@@ -5,7 +5,7 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2023-08-01 14:30:30
+Modified: 2023-10-26 07:04:28
 
 
 <h2 id="recommended-docker-images">Recommended Docker Images and Tags</h2>
@@ -600,6 +600,15 @@ in the GitHub repository
     and mount it into the container to test whether it work.
     If the updated Bash script work as you expected,
     then go ahead to update it in the GitHub repository.
+
+## On Failure of GitHub Actions Workflow for Building Docker Images
+
+1. If the Docker image buidling workflow fails due to network issues,
+    it might not work to rerun failed pipelines in GitHub Actions
+    (as the network issue is like due to probalematic network nodes
+    and retrying failed pipelines sending jobs to the same nodes).
+    In such situtions,
+    it is better to trigger a new run of the workflow.
 
 ## Known Issues 
 

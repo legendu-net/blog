@@ -4,8 +4,8 @@ Author: Ben Chuanlong Du
 Slug: investment-tips
 Title: Investment
 Category: Finance
-Tags: finance, investment, WeChat official account, money, tips, economics, stock
-Modified: 2022-05-09 12:24:45
+Tags: finance, investment, WeChat official account, money, tips, economics, stock, bond, CD, savings, structure notes
+Modified: 2023-10-29 15:23:52
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -13,23 +13,18 @@ Modified: 2022-05-09 12:24:45
 
 1. Spend less money than you can make.
 
+2. Some conservative (no risk or very little risk) ways of investment. 
+    - US Treasury Bonds
+    - US Treasury Inflation-linked Bonds (I Bonds)
+    - CDs
+    - High-yield Savings Accounts
+    - Structure Notes
+
 ### Strategy for Bear Market
 
-[渡過10個熊市的美國投資冠軍 這次熊市下的建議｜瓦特股市 Marching Park STOCK【股市知識】](https://www.youtube.com/watch?v=krMO0e9WhnI)
+- [什么是熊市思维？熊市中，如果打开方式错了，做什么都不对！](https://www.youtube.com/watch?v=ja1509UzY2o)
 
-## Resources
-
-[Big Figures to Follow in Investment](https://www.legendu.net/misc/blog/big-figures-to-follow-in-investment)
-
-[Good Tutorials for Investment](https://www.legendu.net/misc/blog/good-tutorials-for-investment)
-
-## A 股
-
-哪些股票值得持有 10 年？
-
-更多详情: https://www.zhihu.com/question/28508092/answer/248795958
-
-https://jingyan.baidu.com/article/49711c61858939fa441b7cd9.html
+- [渡過10個熊市的美國投資冠軍 這次熊市下的建議｜瓦特股市 Marching Park STOCK【股市知識】](https://www.youtube.com/watch?v=krMO0e9WhnI)
 
 ## Tools 
 
@@ -47,9 +42,6 @@ https://www.sec.gov/edgar/searchedgar/companysearch.html
 
 [Yahoo Finance Screener](https://finance.yahoo.com/screener)
 
-## US Stocks
-
-[美投讲美股](https://www.youtube.com/channel/UCBUH38E0ngqvmTqdchWunwQ)
 
 ## Good Forums for Investment
 
@@ -106,13 +98,26 @@ https://www.sec.gov/edgar/searchedgar/companysearch.html
 
 [Data Wrangling for Fundamental Stock Analysis](https://alpha2phi.medium.com/data-wrangling-for-fundamental-stock-analysis-d9f5a3d36056)
 
+## Good Talks / Tutorials
+
+- [美投讲美股](https://www.youtube.com/channel/UCBUH38E0ngqvmTqdchWunwQ)
+- [渡過10個熊市的美國投資冠軍 這次熊市下的建議｜瓦特股市 Marching Park STOCK【股市知識】](https://www.youtube.com/watch?v=krMO0e9WhnI)
+
 ## References
+
+- [Big Figures to Follow in Investment](https://www.legendu.net/misc/blog/big-figures-to-follow-in-investment)
+
+- [Good Tutorials for Investment](https://www.legendu.net/misc/blog/good-tutorials-for-investment)
+
+- [Ways to Invest in Real Estate]( https://www.legendu.net/misc/blog/ways-to-invest-in-real-estate )
+
+- [渡過10個熊市的美國投資冠軍 這次熊市下的建議｜瓦特股市 Marching Park STOCK【股市知識】](https://www.youtube.com/watch?v=krMO0e9WhnI)
+
+- [How The Economic Machine Works by Ray Dalio](https://www.youtube.com/watch?v=PHe0bXAIuk0)
 
 - [7 Reddit-Esque Stock Message Boards](https://money.usnews.com/investing/stock-market-news/slideshows/reddit-esque-stock-market-forums)
 
 - [美投讲美股](https://www.youtube.com/channel/UCBUH38E0ngqvmTqdchWunwQ)
-
-- [How The Economic Machine Works by Ray Dalio](https://www.youtube.com/watch?v=PHe0bXAIuk0)
 
 - [Yahoo Finance](https://finance.yahoo.com/news/)
 

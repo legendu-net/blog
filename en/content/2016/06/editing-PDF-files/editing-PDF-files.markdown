@@ -5,7 +5,7 @@ Slug: editing-PDF-files
 Title: Editing PDF Files
 Category: Software
 Tags: software, PDF, tools, edit, convert, PDFfiller
-Modified: 2023-10-22 14:45:42
+Modified: 2023-10-27 21:49:53
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -115,15 +115,16 @@ Modified: 2023-10-22 14:45:42
     </td>
   </tr>
   <tr>
-    <td> <a href="https://www.pdffiller.com/"> PDFfiller </a> </td>
+    <td> <a href="https://www.pdffiller.com/">PDFfiller</a> </td>
     <td>  
         - good one <br>
         - does NOT support Chinese font when filling forms <br>
     </td>
   </tr>
   <tr>
-    <td> <a href="https://www.pdffiller.com/"> Bluebeam Revue eXtreme 
-    </a> </td>
+    <td> 
+    <a href="https://www.pdffiller.com/">Bluebeam Revue eXtreme</a> 
+    </td>
     <td>  
       - Great one <br>
       - support Chinese fonts when filling forms <br>
@@ -134,7 +135,7 @@ Modified: 2023-10-22 14:45:42
   <tr>
     <td rowspan="7"> Python Libraries </td>
     <td> 
-    <a href="https://github.com/py-pdf/pypdf"> PyPDF </a>
+    <a href="https://github.com/py-pdf/pypdf">PyPDF</a>
     </td>
     <td>  
       A utility to read and write PDFs with Python.

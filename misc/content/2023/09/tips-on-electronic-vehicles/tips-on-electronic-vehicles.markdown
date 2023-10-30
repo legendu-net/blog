@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-09-13 17:49:03
-Modified: 2023-10-13 10:18:45
+Modified: 2023-10-30 12:24:26
 Author: Benjamin Du
 Slug: tips-on-electronic-vehicles
 Title: Tips on Electronic Vehicles
@@ -31,6 +31,16 @@ avoid charing in an open charging station hen it rains really heavily.
 - [ChargePoint](https://www.chargepoint.com/)
 
 - [EVgo](https://account.evgo.com/findCharger)
+
+## Bi-directional Charger
+
+The idea is pretty cool. 
+But how do you easily use it? 
+
+- have go invest a lot to purchase a bidirectional charger and install it
+- do I have to constantly switch the main broker on and off? If not then convenient, otherwise, a pain in the ass
+- convenient if there's a power outage 
+https://fermataenergy.com/
 
 
 ## References

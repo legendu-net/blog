@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-07-23 21:15:27
-Modified: 2023-11-04 21:42:22
+Modified: 2023-11-05 11:28:56
 Author: Benjamin Du
 Slug: tips-on-mercedes-benz
 Title: Tips on Mercedes-Benz
@@ -18,11 +18,13 @@ Tags: Life, Car, Mercedes-Benz, recall, vehicle, coolant, cruise control
 
 ## References
 
-[Mercedes-Benz Recall Information](https://www.mbusa.com/en/recall)
+- [Mercedes-Benz GLE - How To Open Hood](https://www.youtube.com/watch?v=5HI3aCtfUXQ)
 
-[How to set your Cruise Control in a Mercedes-Benz](https://www.youtube.com/watch?v=uVMcWEMqfeg)
+- [Mercedes-Benz Recall Information](https://www.mbusa.com/en/recall)
 
-[Top 10 Useful Mercedes-Benz GLE Hidden Features](https://www.youtube.com/watch?v=0wl3QIGNLHA)
+- [How to set your Cruise Control in a Mercedes-Benz](https://www.youtube.com/watch?v=uVMcWEMqfeg)
 
-[TOP 10 Mercedes DON'Ts 🛑 Tips & Tricks!](https://www.youtube.com/watch?v=xr-pvouO6ms)
+- [Top 10 Useful Mercedes-Benz GLE Hidden Features](https://www.youtube.com/watch?v=0wl3QIGNLHA)
+
+- [TOP 10 Mercedes DON'Ts 🛑 Tips & Tricks!](https://www.youtube.com/watch?v=xr-pvouO6ms)
 

@@ -5,7 +5,7 @@ Slug: editing-PDF-files
 Title: Editing PDF Files
 Category: Software
 Tags: software, PDF, tools, edit, convert, PDFfiller
-Modified: 2023-10-27 21:49:53
+Modified: 2023-11-06 00:50:37
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -80,7 +80,8 @@ Modified: 2023-10-27 21:49:53
   </tr>
   <tr>
     <td> 
-      <a href="https://code-industry.net/masterpdfeditor/">Master PDF Editor</a> </td>
+      <a href="https://code-industry.net/masterpdfeditor/">Master PDF Editor</a> 
+    </td>
     <td>  
         - Free version available but with very limited features. <br>
         - Not recommended.  <br>
@@ -99,8 +100,8 @@ Modified: 2023-10-27 21:49:53
   <tr>
     <td rowspan="4"> Windows Desktop </td>
     <td> 
-      <a href="https://code-industry.net/masterpdfeditor/">Master PDF Editor</a> </td>
-    <td>  
+      <a href="https://code-industry.net/masterpdfeditor/">Master PDF Editor</a> 
+    </td>  
     <td>  
         - Free version available but with very limited features. <br>
         - Not recommended. <br>

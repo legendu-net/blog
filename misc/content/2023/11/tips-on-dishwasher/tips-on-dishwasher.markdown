@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-11-05 11:29:01
-Modified: 2023-11-05 11:29:01
+Modified: 2023-11-06 00:45:23
 Author: Benjamin Du
 Slug: tips-on-dishwasher
 Title: Tips on Dishwasher
@@ -19,13 +19,13 @@ Tags: Life, dishwasher, kitchen, house, start
 
 [Miele dishwasher: How to turn ON/OFF energy "saving mode" / Optimized Standby mode](https://www.youtube.com/watch?v=QL5qVtbKZYI)
 
-[✨ MIELE DISHWASHER - EASY CONTROLLER REPLACEMENT ✨] (https://www.youtube.com/watch?v=E3Ai6V5LKn4)
+[✨ MIELE DISHWASHER - EASY CONTROLLER REPLACEMENT ✨](https://www.youtube.com/watch?v=E3Ai6V5LKn4)
 
 [How to fix dishwasher for $20 (replacing control board)](https://www.youtube.com/watch?v=VXP4OZ_3YI0)
 
 [Replacing the Electronic Control Board on a Dishwasher](https://www.youtube.com/watch?v=Oe5v-IA5Cyo)
 
-[✨ Miele Dishwasher - Quick & Easy RESET ✨] (https://www.youtube.com/watch?v=S7iVIBp-zn0)
+[✨ Miele Dishwasher - Quick & Easy RESET ✨](https://www.youtube.com/watch?v=S7iVIBp-zn0)
 
 [How to start using your Miele dishwasher](https://www.youtube.com/watch?v=Tg62zuScRDU)
 

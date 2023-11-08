@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-11-10 20:31:49
-Modified: 2022-11-10 20:31:49
+Modified: 2023-11-08 01:43:32
 Author: Benjamin Du
 Slug: mercurial-for-git-users
 Title: Mercurial for Git Users
@@ -29,8 +29,17 @@ Remove a missing file from tracking.
     :::bash
     hg remove -A
 
+## Some Useful Command
 
+List changed files with their status.
+    
+    :::bash
+    hg pstatus
 
+List changed files without status.
+
+    :::bash
+    hg pstatus --no-status
 
 ## References
 

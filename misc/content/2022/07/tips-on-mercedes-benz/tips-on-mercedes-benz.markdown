@@ -10,12 +10,6 @@ Tags: Life, Car, Mercedes-Benz, recall, vehicle, coolant, cruise control
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
-## Coolant
-
-[Mercedes Check Coolant Level Warning – Checking and Adding Antifreeze Coolant 2015 Mercedes C300](https://www.youtube.com/watch?v=Xn7REstyOUw)
-
-[Mercedes-Benz Coolant Antifreeze Information](https://www.blauparts.com/blog/mercedes-benz-coolant-antifreeze.html#:~:text=A%20blue%20or%20pink%2Dviolet,325.5%20MB%20325.6%20coolant%20specification.)
-
 ## References
 
 - [Mercedes-Benz GLE - How To Open Hood](https://www.youtube.com/watch?v=5HI3aCtfUXQ)

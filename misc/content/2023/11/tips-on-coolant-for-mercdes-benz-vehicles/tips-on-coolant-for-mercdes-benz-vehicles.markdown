@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-11-11 15:24:50
-Modified: 2023-11-11 15:42:24
+Modified: 2023-11-11 15:44:23
 Author: Benjamin Du
 Slug: tips-on-coolant-for-mercdes-benz-vehicles
 Title: Tips on Coolant for Mercdes-Benz Vehicles
@@ -19,7 +19,11 @@ before you purchase coolant and top off it by yourself.
     Mercedes-Benz started using the pink-violet MB 325.5 or MB 325.6 coolant specification. 
     If in doubt,
     call the parts department of your Mercedes-Benz dealshiper for help.
-    MB 325.5 or MB 325.6 coolant can be purchased from a local Mercedes-Benz dealership or online.
+    MB 325.5 or MB 325.6 coolant can be purchased 
+    from a local Mercedes-Benz dealership 
+    or 
+    [online](https://www.mbpartscenter.com/oem-parts/mercedes-benz-mb-325-6-g40-anti-freeze-1-gallon-1-gal-9896807090109)
+    .
 
 2. MB 325.5 and MB 325.6 coolant typically last for 15 years or 150,000 miles
     before a flush is needed.

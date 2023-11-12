@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-10-26 22:38:20
-Modified: 2023-06-04 23:52:18
+Modified: 2023-11-12 10:03:04
 Author: Benjamin Du
 Slug: benchmark-a-rust-app
 Title: Benchmark a Rust App
@@ -49,6 +49,10 @@ Tags: Computer Science, programming, Rust, bench, benchmark, cargo, cargo-bench,
         for detailed discussions.
     - [criterion-linux-perf](https://crates.io/crates/criterion-linux-perf)
         A measurement plugin for Criterion.rs that provides measurements using Linux's perf interface
+
+## [divan](https://github.com/nvzqz/divan)
+[divan](https://github.com/nvzqz/divan)
+is a fast and simple benchmarking for Rust projects.
 
 ## [Iai](https://crates.io/crates/iai)
 1. [Iai](https://crates.io/crates/iai)

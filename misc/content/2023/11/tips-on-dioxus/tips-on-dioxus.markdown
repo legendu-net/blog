@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-11-21 16:42:14
-Modified: 2023-11-21 23:21:33
+Modified: 2023-11-23 16:55:50
 Author: Benjamin Du
 Slug: tips-on-dioxus
 Title: Tips on Dioxus
@@ -11,3 +11,4 @@ Tags: Computer Science, programming, Dioxus, GUI, Rust, HTML, CSS
 
 
 [Write once, run everywhere: building apps with Dioxus - Jonathan Kelley - RustNL 2023](https://www.youtube.com/watch?v=aSxdmXjZutI)
+

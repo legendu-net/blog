@@ -32,16 +32,38 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 </thead>
 <tbody>
   <tr>
+    <td>Costco</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td>
-      Online <br>
-      Shopping
+      <span style="color:green">BOA-M</span>
+    </td>
+    <td></td>
+    <td>
+      <span style="color:green">BOA-V</span>
+      <span style="color:red">BOA-U</span>
+    </td>
+    <td>
+      <span style="color:green">Citi-C</span><br>
+      <span style="color:green">AMEX-M</span><br>
+    </td>
+    <td>
+      <span style="color:green">BOA-M</span>
+      <span style="color:red">BOA-V</span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Amazon
     </td>
     <td></td>
     <td></td>
+    <td>Amazon Store Card</td>
     <td>
       <span style="color:red">BOA-V</span> <br>
     </td>
-    <td></td>
     <td></td>
     <td></td>
     <td>
@@ -54,12 +76,16 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     </td>
   </tr>
   <tr>
-    <td>Gas</td>
+    <td>
+      Other <br>
+      Online <br>
+      Shopping
+    </td>
     <td></td>
     <td></td>
     <td></td>
     <td>
-      <span style="color:green">Citi-C</span>
+      <span style="color:red">BOA-V</span> <br>
     </td>
     <td></td>
     <td></td>
@@ -67,7 +93,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:green">AMEX-M</span><br>
     </td>
     <td>
       <span style="color:green">BOA-M</span>
@@ -93,29 +118,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     </td>
     <td>
       <span style="color:green">BOA-M</span>
-    </td>
-  </tr>
-  <tr>
-    <td>Costco</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>
-      <span style="color:green">BOA-M</span>
-    </td>
-    <td></td>
-    <td>
-      <span style="color:green">BOA-V</span>
-      <span style="color:red">BOA-U</span>
-    </td>
-    <td>
-      <span style="color:green">Citi-C</span><br>
-      <span style="color:green">AMEX-M</span><br>
-    </td>
-    <td>
-      <span style="color:green">BOA-M</span>
-      <span style="color:red">BOA-V</span>
     </td>
   </tr>
   <tr>
@@ -331,6 +333,26 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>
     </td>
     <td>
+    </td>
+  </tr>
+  <tr>
+    <td>Gas</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <span style="color:green">Citi-C</span>
+    </td>
+    <td></td>
+    <td></td>
+    <td>
+      <span style="color:green">BOA-V</span>
+    </td>
+    <td>
+      <span style="color:green">AMEX-M</span><br>
+    </td>
+    <td>
+      <span style="color:green">BOA-M</span>
     </td>
   </tr>
   <tr>

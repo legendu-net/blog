@@ -18,6 +18,7 @@ has a good summary
 
 In terms of cost to get started,
 [Alpaca](https://alpaca.markets/) < [QuantConnect](https://www.quantconnect.com/pricing) < [QuantRocket](https://www.quantrocket.com/pricing/)
+< [IteractiveBrokers](https://www.interactivebrokers.com/en/home.php)
 .
 
 ## Open Source Trading Platforms/Projects

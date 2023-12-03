@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-06-11 10:03:30
-Modified: 2023-09-01 08:30:11
+Modified: 2023-12-02 23:43:30
 Author: Benjamin Du
 Slug: rust-backend-frameworks-for-rest-apis
 Title: Rust Backend Frameworks for Rest APIs
@@ -10,20 +10,21 @@ Tags: Computer Science, programming, Rust, web, backend, REST, API
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
+## [axum](https://github.com/tokio-rs/axum)
+[axum](https://github.com/tokio-rs/axum)
+Ergonomic and modular web framework built with Tokio, Tower, and Hyper
+axum is a web application framework that focuses on ergonomics and modularity.
+
+## [Actix](https://actix.rs/)
+[Actix](https://actix.rs/)
+Web is a powerful, pragmatic, and extremely fast web framework for Rust.
+
 ## [Rocket](https://rocket.rs/)
 [Rocket](https://rocket.rs/)
 is a web framework for Rust 
 that makes it simple to write fast, secure web applications 
 without sacrificing flexibility, usability, or type safety.
 
-## [Actix](https://actix.rs/)
-[Actix](https://actix.rs/)
-Web is a powerful, pragmatic, and extremely fast web framework for Rust.
-
-## [axum](https://github.com/tokio-rs/axum)
-[axum](https://github.com/tokio-rs/axum)
-Ergonomic and modular web framework built with Tokio, Tower, and Hyper
-axum is a web application framework that focuses on ergonomics and modularity.
 
 ## [spin](https://github.com/fermyon/spin)
 

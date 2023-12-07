@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2023-07-30 21:10:26
+Modified: 2023-12-06 22:47:48
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -9,6 +9,12 @@ Tags: Computer Science, programming, Rust, alternative, command-line, rewrite
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+
+## [GQL](https://github.com/AmrDeveloper/GQL)
+[GQL](https://github.com/AmrDeveloper/GQL)
+is a query language with a syntax very similar to SQL with a tiny engine to perform queries on .git files instance of database files, 
+the engine executes the query on the fly without the need to create database files or convert .git files into any other format, 
+note that all Keywords in GQL are case-insensitive similar to SQL.
 
 ## [tealdeer](https://crates.io/crates/tealdeer)
 [tealdeer](https://crates.io/crates/tealdeer)

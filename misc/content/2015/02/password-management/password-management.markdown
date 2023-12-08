@@ -5,9 +5,20 @@ Slug: password-management
 Title: Password Management
 Category: Software
 Tags: software, password management, KeePassXC, MiniKeePass, KeePassDroid
-Modified: 2023-12-02 22:56:39
+Modified: 2023-12-08 10:32:23
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+
+## Command-line Password Manager
+
+1. kpcli (command line version of KeePassXC)
+
+2. [royalguard](https://github.com/zahash/royalguard/)
+
+3. pwman3
+
+4. pass
 
 
 ## GUI Password Manager
@@ -17,13 +28,13 @@ Modified: 2023-12-02 22:56:39
 KeePassXC is a successor of KeePassX.
 It is cross-platform.
 
+### StrongBox
+
 ### LastPass
 
 LassPass saves password online,
 which is a security concern.
 I suggest you NOT to use LastPass.
-
-### StrongBox
 
 ### KeePassDroid
 
@@ -32,17 +43,6 @@ teamdrive: slide left a little bit, middle button -> open in minikeepass
 ### MiniKeePass
 
 it seems that multi-screen makes keepassx auto enter not work well
-
-
-## Command-line Password Manager
-
-1. kpcli (command line version of KeePassXC)
-
-2. [royalguard](https://github.com/zahash/royalguard/)
-
-2. pwman3
-
-3. pass
 
 
 ## Feature Requests

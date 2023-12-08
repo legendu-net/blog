@@ -10,13 +10,9 @@ Tags: Computer Science, programming, Rust, shuttle, deploy, infrastructure, back
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 
-[Shuttle] (https://www.shuttle.rs/)
-is a Rust-native cloud development platform that lets you deploy your Rust apps for free.
-
 [Shuttle](https://www.shuttle.rs/)
-Stateful Serverless for Rust
-Shuttle is a web application platform that uses traits and annotations to configure your backend deployment - including databases.
-
+is a Rust-native cloud development platform that lets you deploy your Rust apps for free.
+Shuttle uses traits and annotations to configure your backend deployment - including databases.
 
 ## References
 

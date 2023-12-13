@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:02:14
-Modified: 2023-12-02 22:57:49
+Modified: 2023-12-12 17:02:27
 Author: Benjamin Du
 Slug: dev-tools-for-rust
 Title: Dev Tools for Rust
@@ -20,6 +20,10 @@ Tags: Computer Science, programming, Rust, dev, development, develop, tool, carg
 - [Rust Playground](https://play.rust-lang.org/)
 
 ## Rust Dev Tools
+
+https://github.com/pacak/cargo-show-asm
+cargo subcommand showing the assembly, LLVM-IR and MIR generated for Rust code
+
 
 ### [cargo-px](https://github.com/LukeMathWalker/cargo-px)
 [cargo-px](https://github.com/LukeMathWalker/cargo-px)

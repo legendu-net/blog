@@ -5,7 +5,7 @@ Slug: investment-tips
 Title: Investment
 Category: Finance
 Tags: finance, investment, WeChat official account, money, tips, economics, stock, bond, CD, savings, structure notes
-Modified: 2023-12-13 20:52:07
+Modified: 2023-12-13 20:53:01
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 

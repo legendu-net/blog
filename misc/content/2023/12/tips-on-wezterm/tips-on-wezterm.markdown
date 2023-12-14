@@ -13,3 +13,8 @@ Tags: Computer Science, programming, terminal, app, application
 
     :::bash
     wezterm imgcat /path/to/image
+
+
+## References
+
+- [wezterm imgcat](https://wezfurlong.org/wezterm/cli/imgcat.html)

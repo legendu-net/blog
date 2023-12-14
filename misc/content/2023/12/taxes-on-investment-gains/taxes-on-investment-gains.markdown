@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-12-14 09:48:44
-Modified: 2023-12-14 09:48:44
+Modified: 2023-12-14 10:58:54
 Author: Benjamin Du
 Slug: taxes-on-investment-gains
 Title: Taxes on Investment Gains
@@ -34,10 +34,24 @@ you want to have qualifying dispositions which requires:
 
 ### Tax on RSU
 
-Restricted Stock Units (RSUs) Comprehensive Guide
-https://tanphan.com/blog/restricted-stock-units-rsu-comprehensive-guide
+[Restricted Stock Units (RSUs) Comprehensive Guide](https://tanphan.com/blog/restricted-stock-units-rsu-comprehensive-guide)
 
-1. The way to cover tax for RSU can be updated at https://us.etrade.com/etx/sp/stockplan/#/myAccount/planElections/stockElections.
+1. Do NOT transfer RSUs from a stock plan account to another account
+    no matter the other account is within the same brokerage or not!
+    The reason is that vested RSUs might show a zero cost in non-stock plan account,
+    which means that you gain is substantially over counted 
+    and thus you will be over taxed when you sell those RSUs from a non-stock plan account! 
+    Of course, 
+    you can submit an adjusted cost basis for those RSUs 
+    but it is a nightmare to go through as tax is already complicate enough.  
+    ESPP might show the right cost in non-stock plan account,
+    however,
+    it is suggested that you keep ESPP in your stock account as well.
+    If you do want to transfer RSUs or ESPP to a non-stock plan account,
+    it is suggested that you sell them from you stock plan account and transfer the money out.
+    You can alwasy purchase stocks back if you do want to hold stocks instead of cash in the other non-stock plan account.
+
+2. The way to cover tax for RSU can be updated at https://us.etrade.com/etx/sp/stockplan/#/myAccount/planElections/stockElections.
     You might not be able to update it for 2 reasons.
     First, 
     some company use the default way (sell to cover) and does not allow employees to change it.

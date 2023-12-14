@@ -1,17 +1,17 @@
 Status: published
 Date: 2023-12-12 23:36:11
-Modified: 2023-12-13 21:19:57
+Modified: 2023-12-14 11:46:25
 Author: Benjamin Du
 Slug: tips-on-investing-in-bonds
 Title: Tips on Investing in Bonds
-Category: Computer Science
-Tags: Computer Science, programming
+Category: Investment
+Tags: Investment, treasury, bill, note, bond, TIPS, money, savings
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 - US Treasury Bonds (long-term)
 - Treasury Notes (middle-term)
-- Treasury T-Bills (short-term)
+- Treasury Bills (T-Bills) (short-term)
 - Treasury TIPS
 - US Treasury Savings Bonds 
     - EE Bonds

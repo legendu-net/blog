@@ -5,7 +5,7 @@ Slug: tips-on-nbconvert
 Title: Tips on nbconvert
 Category: Computer Science
 Tags: Computer Science, Jupyter, JupyterLab, notebook, nbconvert, template
-Modified: 2023-12-12 17:00:24
+Modified: 2023-12-12 23:15:38
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -47,15 +47,18 @@ Modified: 2023-12-12 17:00:24
 
 ## Template 
 
-jupyter nbconvert --template=nbextensions mynotebook.ipynb
+    :::bash
+    jupyter nbconvert --template=nbextensions mynotebook.ipynb
 
 http://nbconvert.readthedocs.io/en/latest/customizing.html#Custom-Templates
 
-jupyter nbconvert --to python 'example.ipynb' --stdout --template=simplepython.tpl
+    :::bash
+    jupyter nbconvert --to python 'example.ipynb' --stdout --template=simplepython.tpl
 
 ## Line Number in Code Blocks
 
-jupyter nbconvert a.ipynb --to html --Highlight2HTML.extra_formatter_options linenos=table
+    :::bash
+    jupyter nbconvert a.ipynb --to html --Highlight2HTML.extra_formatter_options linenos=table
 
 ## References
 

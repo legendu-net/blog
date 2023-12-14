@@ -5,7 +5,7 @@ Slug: develop-a-gui-application-in-rust
 Title: Develop a GUI Application in Rust
 Category: Computer Science
 Tags: Computer Science, Rust, GUI, desktop, application, Tauri, Iced, Slint
-Modified: 2023-07-30 22:22:20
+Modified: 2023-12-13 08:48:03
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -19,6 +19,19 @@ for more discussions.
 [Dioxus](https://github.com/dioxuslabs/dioxus)
 is a portable, performant, 
 and ergonomic framework for building cross-platform user interfaces in Rust.
+
+## [rinf](https://github.com/cunarist/rinf)
+[Rinf](https://github.com/cunarist/rinf)
+is a production-ready framework for creating beautiful and performant cross-platform apps 
+using Flutter and Rust with batteries fully included. 
+
+https://github.com/fzyzcjy/flutter_rust_bridge
+https://github.com/fzyzcjy/flutter_rust_bridge
+High-level memory-safe binding generator for Flutter/Dart <-> Rust
+Want to combine the best between Flutter, a cross-platform hot-reload rapid-development UI toolkit, and Rust, a language empowering everyone to build reliable and efficient software? Here it comes!
+
+
+
 
 ## [slint](https://github.com/slint-ui/slint)
 [slint](https://github.com/slint-ui/slint)

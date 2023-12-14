@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-04-10 12:17:46
-Modified: 2023-10-11 09:39:09
+Modified: 2023-12-14 10:00:42
 Author: Benjamin Du
 Slug: rust-tips
 Title: Tips on Rust
@@ -11,7 +11,8 @@ Tags: programming, Rust, tips, Cargo, rustup
 
 https://lib.rs/
 
-https://blessed.rs/crates
+[Rust Blessed](https://blessed.rs/crates)
+is an unofficial guide to the Rust ecosystem.
 
 ## Installation 
 

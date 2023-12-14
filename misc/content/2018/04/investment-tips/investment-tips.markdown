@@ -5,7 +5,7 @@ Slug: investment-tips
 Title: Investment
 Category: Finance
 Tags: finance, investment, WeChat official account, money, tips, economics, stock, bond, CD, savings, structure notes
-Modified: 2023-12-13 20:53:01
+Modified: 2023-12-14 09:49:59
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -14,7 +14,7 @@ Modified: 2023-12-13 20:53:01
 1. Spend less money than you can make.
 
 2. Some conservative (no risk or very little risk) ways of investment. 
-    - [Treasury Bills, TIPS, Notes, Bonds, Savings Bonds]( https://www.legendu.net/misc/blog/tips-on-investing-in-bonds )  
+    - [Treasury T-Bills, TIPS, Notes, Bonds, Savings Bonds]( https://www.legendu.net/misc/blog/tips-on-investing-in-bonds )  
     - [CDs]( https://www.legendu.net/misc/blog/tips-on-certified-deposit )
     - High-yield Savings Accounts
     - Structure Notes
@@ -107,6 +107,8 @@ https://www.sec.gov/edgar/searchedgar/companysearch.html
 - [渡過10個熊市的美國投資冠軍 這次熊市下的建議｜瓦特股市 Marching Park STOCK【股市知識】](https://www.youtube.com/watch?v=krMO0e9WhnI)
 
 ## References
+
+- [Taxes on Investment Gains]( https://www.legendu.net/misc/blog/taxes-on-investment-gains )
 
 - [Big Figures to Follow in Investment](https://www.legendu.net/misc/blog/big-figures-to-follow-in-investment)
 

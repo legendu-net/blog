@@ -14,22 +14,14 @@ Modified: 2023-12-13 20:53:01
 1. Spend less money than you can make.
 
 2. Some conservative (no risk or very little risk) ways of investment. 
-)
-    - CDs
+    - [Treasury Bills, TIPS, Notes, Bonds, Savings Bonds]( https://www.legendu.net/misc/blog/tips-on-investing-in-bonds )  
+    - [CDs]( https://www.legendu.net/misc/blog/tips-on-certified-deposit )
     - High-yield Savings Accounts
     - Structure Notes
 
-## Important Data Sources
+## Important Resources
 
-https://www.youtube.com/watch?v=qw-vhZWAB20
-The Best Short Term Investments - Where To Hold Cash 2023
-
-Everything You Need To Know About T-Bills - Treasury Bills Explained
-https://www.youtube.com/watch?v=ZMX2hp_nXiM
-
-Fed Reserve Policy Meetings
-Meeting calendars, statements, and minutes
-https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+[Fed Reserve Policy Meeting Calendars, Statements and Minutes](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm)
 
 ### Strategy for Bear Market
 

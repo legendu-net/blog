@@ -5,7 +5,7 @@ Slug: investment-tips
 Title: Investment
 Category: Finance
 Tags: finance, investment, WeChat official account, money, tips, economics, stock, bond, CD, savings, structure notes
-Modified: 2023-12-10 22:27:57
+Modified: 2023-12-13 20:52:07
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -18,6 +18,18 @@ Modified: 2023-12-10 22:27:57
     - CDs
     - High-yield Savings Accounts
     - Structure Notes
+
+## Important Data Sources
+
+https://www.youtube.com/watch?v=qw-vhZWAB20
+The Best Short Term Investments - Where To Hold Cash 2023
+
+Everything You Need To Know About T-Bills - Treasury Bills Explained
+https://www.youtube.com/watch?v=ZMX2hp_nXiM
+
+Fed Reserve Policy Meetings
+Meeting calendars, statements, and minutes
+https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
 
 ### Strategy for Bear Market
 

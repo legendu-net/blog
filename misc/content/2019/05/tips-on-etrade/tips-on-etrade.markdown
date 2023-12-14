@@ -5,7 +5,7 @@ Slug: tips-on-etrade
 Title: Tips on eTrade
 Category: Finance
 Tags: finance, money, eTrade, stock
-Modified: 2021-06-18 11:17:08
+Modified: 2023-12-13 15:09:10
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -40,6 +40,9 @@ you want to have qualifying dispositions which requires:
 - The disposition occurs more than one year after the purchase date
 
 ### RSU
+
+Restricted Stock Units (RSUs) Comprehensive Guide
+https://tanphan.com/blog/restricted-stock-units-rsu-comprehensive-guide
 
 1. The way to cover tax for RSU can be updated at https://us.etrade.com/etx/sp/stockplan/#/myAccount/planElections/stockElections.
     You might not be able to update it for 2 reasons.

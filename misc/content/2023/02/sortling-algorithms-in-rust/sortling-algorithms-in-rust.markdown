@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-02-23 11:45:10
-Modified: 2023-05-20 12:46:46
+Modified: 2023-12-13 14:16:35
 Author: Benjamin Du
 Slug: sorting-algorithms-in-rust
 Title: Sorting Algorithms in Rust
@@ -25,4 +25,7 @@ for data with many duplicates.
 It is a comparison-based sort supporting arbitrary comparison operators, 
 and while exceptional on data with patterns it is also very fast for random data.
 
+## References
 
+sort-research-rs
+https://github.com/Voultapher/sort-research-rs/blob/main/writeup/sort_safety/text.md

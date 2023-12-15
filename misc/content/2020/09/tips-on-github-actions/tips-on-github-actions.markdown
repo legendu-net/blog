@@ -5,13 +5,16 @@ Slug: tips-on-github-actions
 Title: Tips on GitHub Actions
 Category: Computer Science
 Tags: Computer Science, GitHub Actions, CICD
-Modified: 2023-09-04 15:48:06
+Modified: 2023-12-14 16:25:19
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Tips and Traps
 
 1. You can use `sudo` without password in Linux and macOS when running GitHub Actions.
+
+2. GitHub Actions supports [manual triggers with workflow_dispatch](https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/).
+    Workflow parameters are supported in manually triggers.
 
 2. `GITHUB_TOKEN` is an automatically generated secret 
     that lets you make authenticated calls to the GitHub API in your workflow runs. 

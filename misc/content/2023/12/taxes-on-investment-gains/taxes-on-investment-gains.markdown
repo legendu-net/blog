@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-12-14 09:48:44
-Modified: 2023-12-14 10:58:54
+Modified: 2023-12-25 16:53:29
 Author: Benjamin Du
 Slug: taxes-on-investment-gains
 Title: Taxes on Investment Gains
@@ -8,7 +8,6 @@ Category: Investment
 Tags: Investment, money, capital, gain, tax, IRS, ESPP, RSU 
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-
 
 1. Treasury bonds and securities are exempted from state & local income taxes.
 
@@ -21,7 +20,20 @@ Tags: Investment, money, capital, gain, tax, IRS, ESPP, RSU
     [How to Cut Your Tax Bill with Tax-Loss Harvesting](https://www.schwab.com/learn/story/how-to-cut-your-tax-bill-with-tax-loss-harvesting)
     for more details and tips.
 
-### Tax on ESPP
+## Long-term vs Short-term Capital Gains
+
+Generally, 
+if you hold the asset for more than one year before you dispose of it, 
+your capital gain or loss is long-term. 
+If you hold it one year or less, 
+your capital gain or loss is short-term.
+
+To limit capital gains taxes, you can 
+- invest for the long-term
+- use tax-advantaged retirement accounts 
+- offset capital gains with capital losses
+
+## Tax on ESPP
 
 Please refer to the section "US tax considerations" on the page 
 [Understanding employee stock purchase plans](https://us.etrade.com/knowledge/library/stock-plans/employee-stock-purchase-plan)
@@ -32,7 +44,7 @@ you want to have qualifying dispositions which requires:
 - The disposition occurs more than two years after the grant date, and
 - The disposition occurs more than one year after the purchase date
 
-### Tax on RSU
+## Tax on RSU
 
 [Restricted Stock Units (RSUs) Comprehensive Guide](https://tanphan.com/blog/restricted-stock-units-rsu-comprehensive-guide)
 
@@ -70,16 +82,20 @@ Generally when you sell ESPP no tax is paid upon selling them.
 However, 
 coming tax season we will provide you a tax form. Where you can then work with an accountant or tax advisor on how to report that.
 
-https://us.etrade.com/app/taxcenter#/taxdoc?ploc=c-newnav-acct-tax
+## References
 
-https://us.etrade.com/etx/sp/stockplan/#/myAccount/gainsLosses
+- [Topic No. 409, Capital Gains and Losses](https://www.irs.gov/taxtopics/tc409#:~:text=To%20correctly%20arrive%20at%20your,or%20loss%20is%20short%2Dterm.)
 
-https://content.etrade.com/etrade/optionslink/espptax.pdf
+- https://us.etrade.com/app/taxcenter#/taxdoc?ploc=c-newnav-acct-tax
 
-https://content.etrade.com/etrade/optionslink/oltaxexercise.pdf
+- https://us.etrade.com/etx/sp/stockplan/#/myAccount/gainsLosses
 
-https://content.etrade.com/etrade/optionslink/isotax.pdf
+- https://content.etrade.com/etrade/optionslink/espptax.pdf
 
-https://content.etrade.com/etrade/customer/invest/finalrestrictedstockfaqs.pdf
+- https://content.etrade.com/etrade/optionslink/oltaxexercise.pdf
 
-https://content.etrade.com/etrade/optionslink/sartax.pdf
+- https://content.etrade.com/etrade/optionslink/isotax.pdf
+
+- https://content.etrade.com/etrade/customer/invest/finalrestrictedstockfaqs.pdf
+
+- https://content.etrade.com/etrade/optionslink/sartax.pdf

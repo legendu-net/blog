@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 16:34:06
-Modified: 2023-08-31 09:52:35
+Modified: 2023-12-31 23:27:44
 Author: Benjamin Du
 Slug: recommendation-of-credit-card-usage
 Title: Recommendation of Credit Card Usage
@@ -315,8 +315,9 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
   </tr>
   <tr>
     <td>
-      Drug <br>
-      Store
+      Home <br>
+      Improvement <br>
+      &amp; Furnishings
     </td>
     <td>
     </td>

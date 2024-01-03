@@ -234,6 +234,7 @@
 - ["Javascript", "JavaScript"]
 - ["Jupyterlab", "JupyterLab"]
 - ["Jupyterhub", "JupyterHub"]
+- ["Jupyter-Ai", "jupyter-ai"]
 - ["namedtuple", "namedtuple"]
 - ["Pdfplumber", "pdfplumber"]
 - ["Pandas_Udf", "pandas_udf"]
@@ -264,6 +265,7 @@
 # 14 symbols
 - ["Arrowtypeerror", "ArrowTypeError"]
 # 15 symbols
+- ["Jupyterlab-Myst", "jupyterlab-myst"]
 - ["Torch.Nn.Module", "torch.nn.Module"]
 - ["Restructuretext", "RestructureText"]
 - ["Withreplacement", "WithReplacement"]

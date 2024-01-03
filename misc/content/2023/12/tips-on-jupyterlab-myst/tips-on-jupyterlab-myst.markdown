@@ -1,9 +1,9 @@
 Status: published
 Date: 2023-12-31 21:24:50
-Modified: 2023-12-31 21:24:50
+Modified: 2024-01-03 08:04:14
 Author: Benjamin Du
 Slug: tips-on-jupyterlab-myst
-Title: Tips on Jupyterlab-Myst
+Title: Tips on the jupyterlab-myst Extension
 Category: Computer Science
 Tags: Computer Science, programming, JupyterLab, notebook, MyST, markdown
 

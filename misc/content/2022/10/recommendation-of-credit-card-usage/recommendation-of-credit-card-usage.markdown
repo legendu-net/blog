@@ -60,7 +60,11 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     </td>
     <td></td>
     <td></td>
-    <td>Amazon Store Card</td>
+    <td>
+        Amazon <br> 
+        Store <br> 
+        Card <sup>[3]</sup>
+    </td>
     <td>
       <span style="color:red">BOA-V</span> <br>
     </td>
@@ -378,8 +382,8 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 </table>
 
 - [1]: For flights booked directly with airlines or on amextravel.com.
-
 - [2]: On eligible travel purchases only
+- [3]: Amazon Prime membership is required to enjoy the discount.
 
 ## Offers
 

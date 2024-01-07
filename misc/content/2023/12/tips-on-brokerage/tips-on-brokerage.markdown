@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-12-25 16:53:44
-Modified: 2024-01-06 20:17:44
+Modified: 2024-01-07 09:53:23
 Author: Benjamin Du
 Slug: tips-on-brokerage
 Title: Tips on Brokerage
@@ -141,11 +141,16 @@ Tags: investment, money, finance, brokerage
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Yes</td>
-    <td class="tg-0pky">Low</td>
+    <td class="tg-0pky">
+        Low
+        <sup>[1]</sup>
+    </td>
   </tr>
 </tbody>
 </table>
 
+[1]: Alpaca allows connecting to other paid high quality data sources, 
+e.g., <polygon.io>.
 
 ## References
 

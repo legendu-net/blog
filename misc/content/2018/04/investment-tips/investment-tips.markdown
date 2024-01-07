@@ -5,7 +5,7 @@ Slug: investment-tips
 Title: Investment
 Category: Finance
 Tags: finance, investment, WeChat official account, money, tips, economics, stock, bond, CD, savings, structure notes
-Modified: 2024-01-06 21:48:49
+Modified: 2024-01-06 22:26:34
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -22,6 +22,8 @@ Modified: 2024-01-06 21:48:49
 ## Important Resources
 
 - [Stock Price Calculator](https://valueinvesting.io/)
+
+- [6 Best Investing Websites](https://www.columbia.edu/~tmd2142/6-best-investing-websites.html#:~:text=1.,ValueInvesting.io&text=You%20can%20also%20find%20other,you%20follow%20this%20investing%20philosophy.)
 
 - [Fed Reserve Policy Meeting Calendars, Statements and Minutes](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm)
 

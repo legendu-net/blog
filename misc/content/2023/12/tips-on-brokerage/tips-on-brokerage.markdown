@@ -31,15 +31,35 @@ Tags: investment, money, finance, brokerage
   <tr>
     <th class="tg-0pky" rowspan="2">Brokerage</th>
     <th class="tg-0pky" rowspan="2">Fees</th>
-    <th class="tg-0pky" rowspan="2">Live Online Chat</th>
-    <th class="tg-0pky" rowspan="2">Cash Sweep Program</th>
-    <th class="tg-0pky" rowspan="2">Retirement Accounts</th>
-    <th class="tg-0pky" rowspan="2">Market Analysis &amp; Research Report</th>
-    <th class="tg-0pky" colspan="2">Algorithmic Trading</th>
+    <th class="tg-0pky" rowspan="2">
+        Live <br> 
+        Online <br> 
+        Chat
+    </th>
+    <th class="tg-0pky" rowspan="2">
+        Cash <br> 
+        Sweep <br> 
+        Program
+    </th>
+    <th class="tg-0pky" rowspan="2">
+        Retirement <br> 
+        Accounts
+    </th>
+    <th class="tg-0pky" rowspan="2">
+        Market Analysis <br>
+        &amp; Research Report
+    </th>
+    <th class="tg-0pky" colspan="2">
+        Algorithmic <br>
+        Trading
+    </th>
   </tr>
   <tr>
     <th class="tg-0pky">API</th>
-    <th class="tg-0pky">Data Quality</th>
+    <th class="tg-0pky">
+        Data <br> 
+        Quality
+    </th>
   </tr>
 </thead>
 <tbody>

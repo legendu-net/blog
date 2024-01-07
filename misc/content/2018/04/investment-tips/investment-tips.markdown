@@ -5,7 +5,7 @@ Slug: investment-tips
 Title: Investment
 Category: Finance
 Tags: finance, investment, WeChat official account, money, tips, economics, stock, bond, CD, savings, structure notes
-Modified: 2023-12-14 09:49:59
+Modified: 2024-01-06 21:48:49
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -21,7 +21,9 @@ Modified: 2023-12-14 09:49:59
 
 ## Important Resources
 
-[Fed Reserve Policy Meeting Calendars, Statements and Minutes](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm)
+- [Stock Price Calculator](https://valueinvesting.io/)
+
+- [Fed Reserve Policy Meeting Calendars, Statements and Minutes](https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm)
 
 ### Strategy for Bear Market
 

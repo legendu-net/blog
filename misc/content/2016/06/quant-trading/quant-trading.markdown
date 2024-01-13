@@ -5,7 +5,7 @@ Slug: quant-trading
 Title: Quant Trading
 Category: Finance
 Tags: quant, quantitative, trading, investment, money, stock, ETF, Alpaca, QuantConnect, QuantRocket
-Modified: 2023-12-25 23:57:14
+Modified: 2024-01-13 11:43:45
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -44,6 +44,16 @@ https://zhuanlan.zhihu.com/p/34822731
 ### [polygon.io](https://polygon.io/pricing)
 [polygon.io](https://polygon.io/pricing)
 is great data source with free plans available.
+
+## Taxes
+
+### Short-term taxes
+
+### Wash Sale
+
+[Selling specific lots of shares](https://forum.alpaca.markets/t/selling-specific-lots-of-shares/956)
+
+[Wash Sale: Definition, How It Works, and Purpose](https://www.investopedia.com/terms/w/washsale.asp#:~:text=A%20wash%20sale%20is%20a,their%20advantage%20at%20tax%20time.)
 
 ## Misc
 

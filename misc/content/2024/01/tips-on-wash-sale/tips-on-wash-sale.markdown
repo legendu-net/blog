@@ -1,15 +1,15 @@
 Status: published
 Date: 2024-01-15 01:11:58
-Modified: 2024-01-15 01:21:33
+Modified: 2024-01-15 01:26:16
 Author: Benjamin Du
 Slug: tips-on-wash-sale
 Title: Tips on Wash Sale
 Category: Investment
-Tags: Investment, wash sale, IRS, tax
+Tags: Investment, wash sale, IRS, tax, quant, trading
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## Some Ways to Avoid Wash Sales
+## Some Tips on Tax Consequences of Wash Sales
 
 1. Avoid buying the same stock / security in Dec and Jan (next year).
 
@@ -18,6 +18,9 @@ Tags: Investment, wash sale, IRS, tax
     but is not universally implemented
     (e.g., Alpaca API does not support it yet)
     .
+
+3. To make tax calculations easier (in quant trading),
+    try to buy and sell the same quantity of the same symbol.
 
 ## References
 

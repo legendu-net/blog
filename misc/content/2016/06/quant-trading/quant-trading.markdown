@@ -5,11 +5,15 @@ Slug: quant-trading
 Title: Quant Trading
 Category: Finance
 Tags: quant, quantitative, trading, investment, money, stock, ETF, Alpaca, QuantConnect, QuantRocket
-Modified: 2024-01-15 01:22:37
+Modified: 2024-01-15 10:51:26
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+
 ## Good Platfroms
+
+[API Algo Trading Landscape](https://alpaca.markets/learn/algo-trading-landscape/)
+has a good summary.
 
 Charles Schwab supports algo trading via the thinkorswim® platform (thinkScript).
 For more details,

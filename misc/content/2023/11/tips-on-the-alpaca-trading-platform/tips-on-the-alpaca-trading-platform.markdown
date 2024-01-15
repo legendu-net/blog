@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-11-26 21:58:44
-Modified: 2024-01-12 22:30:25
+Modified: 2024-01-15 01:23:17
 Author: Benjamin Du
 Slug: tips-on-the-alpaca-trading-platform
 Title: Tips on the Alpaca Trading Platform
@@ -23,3 +23,4 @@ Tags: Investment, trading, Alpaca, quant, quantative, money
 
 - [API Algo Trading Landscape](https://alpaca.markets/learn/algo-trading-landscape/)
 
+- [Selling specific lots of shares](https://forum.alpaca.markets/t/selling-specific-lots-of-shares/956)

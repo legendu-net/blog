@@ -5,7 +5,7 @@ Slug: quant-trading
 Title: Quant Trading
 Category: Finance
 Tags: quant, quantitative, trading, investment, money, stock, ETF, Alpaca, QuantConnect, QuantRocket
-Modified: 2024-01-13 11:43:45
+Modified: 2024-01-15 01:22:37
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -51,9 +51,9 @@ is great data source with free plans available.
 
 ### Wash Sale
 
-[Selling specific lots of shares](https://forum.alpaca.markets/t/selling-specific-lots-of-shares/956)
-
-[Wash Sale: Definition, How It Works, and Purpose](https://www.investopedia.com/terms/w/washsale.asp#:~:text=A%20wash%20sale%20is%20a,their%20advantage%20at%20tax%20time.)
+Please refer to 
+[Tips on Wash Sale]( https://www.legendu.net/misc/blog/tips-on-wash-sale )  
+for detailed discussions.
 
 ## Misc
 

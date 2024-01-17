@@ -20,6 +20,7 @@ a few things to notice.
     is often used in code examples of parallel RNGs
     as it uses thread-local storage and is seeded automatically (lazily and uniquely) on each thread. 
 
+        :::Rust
         use rand::Rng;
         use rayon::prelude::*;
 

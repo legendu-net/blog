@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-12-14 16:25:39
-Modified: 2024-01-07 10:15:38
+Modified: 2024-01-20 09:55:52
 Author: Benjamin Du
 Slug: tips-on-401k
 Title: Tips on 401K
@@ -34,5 +34,9 @@ roth 401k is more lidiquity!!!
 
 
 ## References
+
+- [Roth IRA Contributions: 4 Things You Need to Know](https://www.schwab.com/learn/story/roth-ira-contributions-4-things-you-need-to-know?cmp=em-XCS)
+
+- [IRA Taxes: Rules to Know and Understand](https://www.schwab.com/learn/story/ira-taxes-rules-to-know-understand?cmp=em-XCS)
 
 - [5 Huge Retirement Account Changes Coming in 2024](https://www.fool.com/retirement/2023/11/16/5-huge-retirement-account-changes-coming-in-2024/)

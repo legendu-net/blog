@@ -1,17 +1,17 @@
 Status: published
 Date: 2024-01-20 15:57:28
-Modified: 2024-01-20 17:39:38
+Modified: 2024-01-20 21:14:52
 Author: Benjamin Du
-Slug: tips-on-charles-shwab
-Title: Tips on Charles Shwab
+Slug: tips-on-charles-schwab
+Title: Tips on Charles Schwab
 Category: Investment
-Tags: Investment, money, trading, brokerage, Charles Shwab
+Tags: Investment, money, trading, brokerage, Charles Schwab
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Trading APIs
 
-[Charles Shwab Developer Portal](https://developer.schwab.com/)
+[Charles Schwab Developer Portal](https://developer.schwab.com/)
 
 ### Trader Services Team
 877-870-7271
@@ -20,7 +20,7 @@ Friday: 8:00 am - 6:00 pm EST
 
 ## Cash Sweep Program
 
-Charles Shwab has a bank sweep feature and this is automatically set up on your account, and allows your account to earn interest on any cash balance.
+Charles Schwab has a bank sweep feature and this is automatically set up on your account, and allows your account to earn interest on any cash balance.
 Yes, you can view that online by clicking on Accounts at the top of the website and then Balances in the drop down.
   
 Once on that page, under Balance Details there will be a link for Rates next to Cash Balance.

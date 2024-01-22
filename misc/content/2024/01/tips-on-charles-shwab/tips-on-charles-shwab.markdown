@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-20 15:57:28
-Modified: 2024-01-20 21:14:52
+Modified: 2024-01-21 20:51:25
 Author: Benjamin Du
 Slug: tips-on-charles-schwab
 Title: Tips on Charles Schwab
@@ -26,10 +26,19 @@ Yes, you can view that online by clicking on Accounts at the top of the website 
 Once on that page, under Balance Details there will be a link for Rates next to Cash Balance.
 
 
-## Money Market Funds
+## [Money Market Funds](https://client.schwab.com/secured/money-market-funds)
 
-We do offer purchased money market funds. 
+We do offer purchased 
+[money market funds](https://client.schwab.com/secured/money-market-funds)
+.
 We do not offer sweep money market funds, 
 so you would have to trade into and out of them.
 You can view available funds by clicking on Products at the top of the website and then Money Market Funds in the drop down.
 
+## Fractional Shares
+
+https://client.schwab.com/secured/fractional-shares-stock-slices
+
+## References
+
+- [Charles Schwab - Cash Investments](https://client.schwab.com/secured/cash-investments)

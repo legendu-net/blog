@@ -5,7 +5,7 @@ Slug: investment-tips
 Title: Investment
 Category: Finance
 Tags: finance, investment, WeChat official account, money, tips, economics, stock, bond, CD, savings, structure notes
-Modified: 2024-01-22 10:25:59
+Modified: 2024-01-23 01:30:45
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -13,12 +13,18 @@ Modified: 2024-01-22 10:25:59
 
 1. Spend less money than you can make.
 
-2. Some conservative (no risk or very little risk) ways of investment. 
-    - [Money Market Fund](https://www.schwab.com/money-market-funds?src=SEM&ef_id=Cj0KCQiAwbitBhDIARIsABfFYILwVu4pPovepPVqjwCEg7tUA32F17rpgpKeRGNO3GVxhwCEWMJG9gcaAjnZEALw_wcB:G:s&s_kwcid=AL!5158!3!634515819995!e!!g!!schwab%20money%20market%20funds!18891875442!140715723262&keywordid=aud-1886179544763:kwd-297526799279&gad_source=1&gclid=Cj0KCQiAwbitBhDIARIsABfFYILwVu4pPovepPVqjwCEg7tUA32F17rpgpKeRGNO3GVxhwCEWMJG9gcaAjnZEALw_wcB)
-    - [Treasury T-Bills, TIPS, Notes, Bonds, Savings Bonds]( https://www.legendu.net/misc/blog/tips-on-investing-in-bonds )  
-    - [CDs]( https://www.legendu.net/misc/blog/tips-on-certified-deposit )
-    - High-yield Savings Accounts
-    - Structure Notes
+
+## Low Risk Investment
+
+Please refer to
+[Low Risk Investments]( https://www.legendu.net/misc/blog/low-risk-investments ) 
+for detailed discussions.
+
+## Diversified Investment
+
+Please refer to 
+[Diversified Investment]( https://www.legendu.net/misc/blog/diversified-investment )
+for detailed discussions.
 
 ## Important Resources
 

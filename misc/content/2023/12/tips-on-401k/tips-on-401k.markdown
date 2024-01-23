@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-12-14 16:25:39
-Modified: 2024-01-20 09:55:52
+Modified: 2024-01-22 23:20:04
 Author: Benjamin Du
 Slug: tips-on-401k
 Title: Tips on 401K
@@ -11,10 +11,11 @@ Tags: Investment, 401k, retirement
 
 ## Roth 401K vs Pre-tax 401K
 
-BEST time to contribute to a roth 401k is when you are helping pay for a child's college, and you are getting tax credits.  This generally results in an extremely low effective tax rate.
+BEST time to contribute to a roth 401k is 
+when you are helping pay for a child's college, and you are getting tax credits.  
+This generally results in an extremely low effective tax rate.
 
-Pretax 401k vs. Roth 401k | Which is Right for You?
-https://www.youtube.com/watch?v=itmpDejX8Hw
+[Pretax 401k vs. Roth 401k | Which is Right for You?](https://www.youtube.com/watch?v=itmpDejX8Hw)
 
 roth 401k is more lidiquity!!!
 

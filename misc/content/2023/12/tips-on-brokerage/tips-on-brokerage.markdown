@@ -67,10 +67,14 @@ Tags: investment, money, finance, brokerage
     <td class="tg-0pky">Charles Schwab</td>
     <td class="tg-0pky">Low</td>
     <td class="tg-0pky">24/7</td>
-    <td class="tg-0pky">Yes</td>
+    <td class="tg-0pky">
+      <a href="https://www.legendu.net/misc/blog/tips-on-charles-schwab/#cash-sweep-program"> Yes </a>
+    </td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Great</td>
-    <td class="tg-0pky">No</td>
+    <td class="tg-0pky">
+      <a href="https://www.legendu.net/misc/blog/tips-on-charles-schwab/#trader-apis"> Yes </a>
+    </td>
     <td class="tg-0pky"></td>
   </tr>
   <tr>

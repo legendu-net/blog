@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-20 15:57:28
-Modified: 2024-01-21 20:51:25
+Modified: 2024-01-22 12:17:21
 Author: Benjamin Du
 Slug: tips-on-charles-schwab
 Title: Tips on Charles Schwab
@@ -9,16 +9,28 @@ Tags: Investment, money, trading, brokerage, Charles Schwab
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## Trading APIs
+## Trader APIs
 
 [Charles Schwab Developer Portal](https://developer.schwab.com/)
 
-### Trader Services Team
-877-870-7271
-Monday - Thursday: 8:00 am - 7:00 pm 
-Friday: 8:00 am - 6:00 pm EST
+Charles Schwab is developing Trader APIs 
+(for both commercial and individual).
+The scheduled release date is 
+For more questions, 
+you can contact the Trader Services team
+at 877-870-7271 
+(Monday - Thursday: 8:00 am - 7:00 pm;
+Friday: 8:00 am - 6:00 pm EST)
+or at traderapi@schwab.com
+.
 
 ## Cash Sweep Program
+
+The interest rate of the Cash Sweep program of Charles Schwab is not appealing,
+and sweep money market funds are not offer currently.
+However,
+you can manually trade money market funds in a Charles Schwab account.
+
 
 Charles Schwab has a bank sweep feature and this is automatically set up on your account, and allows your account to earn interest on any cash balance.
 Yes, you can view that online by clicking on Accounts at the top of the website and then Balances in the drop down.

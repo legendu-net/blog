@@ -45,7 +45,10 @@ there are ETF alternatives (possibly with higher risk) to money market funds.
 
 ## Some Popular ETFs
 
-QQQ
+- QQQ
+- VB
+- TLTW
+- CIBR
 
 ## References
 
@@ -58,3 +61,5 @@ QQQ
 - [Ultra Short-Term ETF List](https://etfdb.com/etfs/bond-duration/ultra-short-term/)
 
 - [Top Money Market ETFs for Q1 2024](https://www.investopedia.com/top-money-market-etfs-for-q1-2024-8417180)
+
+- [If You Invest in ONE Index Fund for 2024, Make it This One](https://www.youtube.com/watch?v=zJXUZPrsm5I)

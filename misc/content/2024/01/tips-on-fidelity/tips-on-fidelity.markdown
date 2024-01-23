@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-16 07:37:45
-Modified: 2024-01-22 23:24:17
+Modified: 2024-01-22 23:28:37
 Author: Benjamin Du
 Slug: tips-on-fidelity
 Title: Tips on Fidelity
@@ -28,3 +28,8 @@ Tags: investment, Fidelity, brokerage, cash sweep
 ## References
 
 - [Trading FAQs: About Your Account](https://www.fidelity.com/trading/faqs-about-account?ccsource=VA#3)
+
+- [What is a core position?](https://www.fidelity.com/bin-public/060_www_fidelity_com/documents/mutual-funds/what-is-a-core-position.pdf)
+
+- [SPAXX vs. FZFXX, FDIC, FCASH, FDRXX – Fidelity Core Position](https://www.optimizedportfolio.com/fidelity-core-position/)
+

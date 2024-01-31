@@ -13,6 +13,10 @@ Tags: Investment, money, real estate, house, REIT, Syndication
 
 ## Syndication
 
+## US Housing Investing Theme on Charles Schwab
+
+https://www.legendu.net/misc/blog/tips-on-charles-schwab#schwab-investing-themes
+
 ## References
 
 - [Cash Flow of Housing Investment](https://docs.google.com/spreadsheets/d/1-a_SULpKw8P7oMtKN5i2HVL74Wx7d_egjrWRfG0URLo/edit#gid=907152015)

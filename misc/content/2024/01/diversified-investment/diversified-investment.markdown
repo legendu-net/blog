@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-23 01:02:26
-Modified: 2024-01-23 01:02:26
+Modified: 2024-01-30 10:18:17
 Author: Benjamin Du
 Slug: diversified-investment
 Title: Diversified Investment
@@ -39,7 +39,8 @@ there are ETF alternatives (possibly with higher risk) to money market funds.
 - JPMorgan Ultra-Short Income ETF (JPST)	0.18%	
 - Vanguard Ultra-Short Bond ETF (VUSB)	0.1%	
 - Global X 1-3 Month T-Bill ETF (CLIP)	0.07%	
-- SGOV
+- [iShares 0-3 Month Treasury Bond ETF (SGOV)](https://www.ishares.com/us/products/314116/ishares-0-3-month-treasury-bond-etf?cid=ppc:ish_us:ish_us_nb_fixed_income_product_phrase:google:nonbrand_prod:ei&gad_source=1&gclid=Cj0KCQiA2eKtBhDcARIsAEGTG421i89nkhUtWtHRE_sXOH8jCdDk_DV6DhRiBvvypVLp5M1fpviEgAIaAqw9EALw_wcB&gclsrc=aw.ds)
+    (a good ETF alternative to money market funds)
 - PGIM Ultra Short Bond ETF (PULS)
 
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-20 15:57:28
-Modified: 2024-01-22 12:17:21
+Modified: 2024-01-30 10:19:55
 Author: Benjamin Du
 Slug: tips-on-charles-schwab
 Title: Tips on Charles Schwab
@@ -37,6 +37,12 @@ Yes, you can view that online by clicking on Accounts at the top of the website 
   
 Once on that page, under Balance Details there will be a link for Rates next to Cash Balance.
 
+
+## Schwab Investing Themes
+
+https://client.schwab.com/app/trade/thematic/#/themes
+
+interesting
 
 ## [Money Market Funds](https://client.schwab.com/secured/money-market-funds)
 

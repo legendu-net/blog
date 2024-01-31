@@ -17,6 +17,10 @@ Tags: Investment, treasury, bill, note, bond, TIPS, money, savings
     - EE Bonds
     - I Bonds (Inflation-linked Bonds)
 
+It is suggested that you invest in ETF or Money Market Fund alternatives 
+instead of treasury securities directly
+as ETF and Money Market Fund provides better liquidity.
+
 ## References
 
 - [A Guide to Navigating the Bond Market](https://www.schwab.com/learn/story/guide-to-navigating-bond-market?cmp=em-XCS)

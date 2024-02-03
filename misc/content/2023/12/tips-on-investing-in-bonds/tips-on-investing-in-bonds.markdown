@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-12-12 23:36:11
-Modified: 2024-01-20 09:26:06
+Modified: 2024-02-03 15:21:43
 Author: Benjamin Du
 Slug: tips-on-investing-in-bonds
 Title: Tips on Investing in Bonds
@@ -20,6 +20,10 @@ Tags: Investment, treasury, bill, note, bond, TIPS, money, savings
 It is suggested that you invest in ETF or Money Market Fund alternatives 
 instead of treasury securities directly
 as ETF and Money Market Fund provides better liquidity.
+For more discussion,
+please refer to
+[Diversified Investment](https://www.legendu.net/misc/blog/diversified-investment/#money-market-fund)
+.
 
 ## References
 

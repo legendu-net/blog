@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-20 15:57:28
-Modified: 2024-01-30 10:19:55
+Modified: 2024-02-03 13:56:47
 Author: Benjamin Du
 Slug: tips-on-charles-schwab
 Title: Tips on Charles Schwab
@@ -56,6 +56,10 @@ You can view available funds by clicking on Products at the top of the website a
 ## Fractional Shares
 
 https://client.schwab.com/secured/fractional-shares-stock-slices
+
+## Tax
+
+- [How to access cost basis and realized gain/loss information.](https://welcome.schwab.com/trading/cost-basis-rgl)
 
 ## References
 

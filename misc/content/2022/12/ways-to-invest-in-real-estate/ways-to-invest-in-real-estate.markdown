@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-09 12:40:20
-Modified: 2024-01-22 23:34:21
+Modified: 2024-02-03 15:14:46
 Author: Benjamin Du
 Slug: ways-to-invest-in-real-estate
 Title: Ways to Invest in Real Estate
@@ -15,7 +15,9 @@ Tags: Investment, money, real estate, house, REIT, Syndication
 
 ## US Housing Investing Theme on Charles Schwab
 
-https://www.legendu.net/misc/blog/tips-on-charles-schwab#schwab-investing-themes
+See
+[Schwab Investing Themes](https://www.legendu.net/misc/blog/tips-on-charles-schwab#schwab-investing-themes)
+for details.
 
 ## References
 

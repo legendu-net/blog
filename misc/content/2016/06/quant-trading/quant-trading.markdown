@@ -5,9 +5,13 @@ Slug: quant-trading
 Title: Quant Trading
 Category: Finance
 Tags: quant, quantitative, trading, investment, money, stock, ETF, Alpaca, QuantConnect, QuantRocket
-Modified: 2024-02-03 14:01:38
+Modified: 2024-02-03 19:37:03
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+https://github.com/edtechre/pybroker
+
+https://github.com/whittlem/pycryptobot
 
 
 ## Good Platfroms

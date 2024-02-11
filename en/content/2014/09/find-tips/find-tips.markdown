@@ -5,13 +5,9 @@ Slug: find-tips
 Title: Tips on the find command in Linux
 Category: OS
 Tags: Linux, find, tips, search, locate
-Modified: 2021-04-06 09:43:30
+Modified: 2024-02-11 14:03:54
 
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-**
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 It is suggested that you 
 use

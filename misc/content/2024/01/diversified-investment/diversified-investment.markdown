@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-23 01:02:26
-Modified: 2024-02-05 01:22:56
+Modified: 2024-02-11 10:32:23
 Author: Benjamin Du
 Slug: diversified-investment
 Title: Diversified Investment
@@ -21,16 +21,30 @@ Tags: Computer Science, programming
 3. ETFs can be traded any time during open market hours 
     while index funds and mutual funds are traded only once per day,
     which means that ETFs have higher lidiquity and thus is preferred.
+    However,
+    it's a different story for dividends focused ETFs.
+    You have to be cautious about ex-dates of ETFs
+    and hold ETFs for required time to be considered as "qualified dividends"
+    (instead of "ordinary dividends").
 
 4. Index funds are popular for retirement accounts.
 
-## Money Market Funds
+5. Dividends of MMFs are taxed as income.
+    ETFs' dividends can be "ordinary dividends" or "qualified dividends"
+    depending on the how long that you hold it.
+    Ordinary dividends are taxed as income
+    while qualified dividends are taxed as (short-term or long-term) capital gains.
+
+## Money Market Funds (MMFs)
 
 A money market fund is a special class of mutual funds 
 which is designed to offer stability of capital, liquidity, and income.
 Money market funds usually have relatively low expense ratio compared to other types of mutual funds.
-However,
-there are ETF alternatives (possibly with higher risk) to money market funds.
+There are ETF alternatives to money market funds.
+However, 
+you have to cautious about the ex-dates of ETFs focusing on dividends.
+Taking those into consideration,
+ETFs focusing on dividens are not necessarily more liquidity than MMFs.
 
 - Vanguard Federal Money Market Fund (ticker: VMFXX)	0.11%	
 - Fidelity Money Market Fund (SPRXX)	0.42%	
@@ -47,7 +61,9 @@ there are ETF alternatives (possibly with higher risk) to money market funds.
 [Charles Schwab - Money Fund Yields](https://www.schwabassetmanagement.com/products/money-fund-yields)
 
 
-## Some Popular ETFs
+## ETFs 
+
+Below are some popular ETFs.
 
 - QQQ
 - VB

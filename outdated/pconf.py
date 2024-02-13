@@ -82,7 +82,7 @@ NOTEBOOK_DIR = "downloads/notebooks"
 # theme and plugins
 BLOG_DIR = Path(__file__).resolve().parent.parent
 # CSS_FILE = "main_2.css"
-THEME = BLOG_DIR / "themes/haerwu"
+THEME = BLOG_DIR / "themes/Flex"
 
 # plugins
 #PLUGINS = ["render_math"]

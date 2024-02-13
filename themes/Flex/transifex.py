@@ -17,10 +17,7 @@ RESOURCE_SLUG = "messagespot"
 
 def get_languages():
     url = "{api_url}/project/{project_slug}/languages/".format(
-        **{
-            "api_url": API_URL,
-            "project_slug": PROJECT_SLUG,
-        }
+        **{"api_url": API_URL, "project_slug": PROJECT_SLUG,}
     )
 
     req = requests.get(url, auth=("api", API_KEY))

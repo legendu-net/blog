@@ -1,7 +1,5 @@
 {% if MAIN_MENU %}
 <nav>
-  <a href="{{ SITEURL }}/">{{ _('Home') }}</a>
-
   {% for title, link in MENUITEMS %}
   <a href="{{ link }}">{{ _(title) }}</a>
   {% endfor %}

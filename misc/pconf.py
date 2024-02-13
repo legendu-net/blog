@@ -39,7 +39,7 @@ MENUITEMS = [
     ("Home", HOME_URL),
     ("Blog", SITEURL),
     ("Archives", f"{SITEURL}/archives.html"),
-    ("About", f"{SITEURL}/pages/about"),
+    ("About", f"{HOME_URL}/pages/about"),
 ]
 NEWEST_FIRST_ARCHIVES = True
 ARTICLE_ORDER_BY = "reversed-modified"

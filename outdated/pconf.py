@@ -12,7 +12,7 @@ SITENAME = "Ben Chuanlong Du's Blog"
 DEFAULT_DATE_FORMAT = "%b %d, %Y"
 TIMEZONE = "US/Pacific"
 DEFAULT_LANG = "en"
-BROWSER_COLOR = "#333333"
+#BROWSER_COLOR = "#333333"
 USE_FOLDER_AS_CATEGORY = False
 DELETE_OUTPUT_DIRECTORY = True
 logger.debug("Site URL: {}", SITEURL)
@@ -57,13 +57,13 @@ GITHUB_SHOW_USER_LINK = True
 
 # social widget
 SOCIAL = (
-    ("LinkedIn", "https://www.linkedin.com/in/ben-chuanlong-du-1239b221/"),
-    ("Docker Hub", "https://hub.docker.com/u/dclong"),
+    ("linkedin", "https://www.linkedin.com/in/ben-chuanlong-du-1239b221/"),
+    ("docker", "https://hub.docker.com/u/dclong"),
     (
-        "Stack Overflow",
+        "stack-overflow",
         "https://stackoverflow.com/users/7808204/benjamin-du?tab=profile",
     ),
-    ("Twitter", "https://twitter.com/longendu"),
+    ("twitter", "https://twitter.com/longendu"),
 )
 
 DEFAULT_PAGINATION = 6

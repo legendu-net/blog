@@ -15,6 +15,9 @@ DEFAULT_LANG = "en"
 #BROWSER_COLOR = "#333333"
 USE_FOLDER_AS_CATEGORY = False
 DELETE_OUTPUT_DIRECTORY = True
+MAIN_MENU = True
+GITHUB_CORNER_URL = "https://github.com/dclong/outdated"
+
 logger.debug("Site URL: {}", SITEURL)
 
 # pages
@@ -36,12 +39,12 @@ MARKDOWN = {
 }
 
 # title menu options
-MENUITEMS = [
+MENUITEMS = (
     ("Home", HOME_URL),
     ("Blog", SITEURL),
     ("Archives", f"{SITEURL}/archives.html"),
     ("Links", f"{SITEURL}/pages/links.html"),
-]
+)
 NEWEST_FIRST_ARCHIVES = True
 ARTICLE_ORDER_BY = "reversed-modified"
 

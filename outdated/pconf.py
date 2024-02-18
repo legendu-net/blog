@@ -5,7 +5,7 @@ from pelican_jupyter import markup as nb_markup
 from loguru import logger
 
 HOME_URL = "https://www.legendu.net"
-SITEURL = f"{HOME_URL}/outdated"
+SITEURL = "https://outdated.legendu.net"
 SITESUBTITLE = "Change is eternal."
 AUTHOR = "Ben Chuanlong Du"
 SITENAME = "Ben Chuanlong Du's Blog"

@@ -5,7 +5,7 @@ Slug: quant-trading
 Title: Quant Trading
 Category: Finance
 Tags: quant, quantitative, trading, investment, money, stock, ETF, Alpaca, QuantConnect, QuantRocket
-Modified: 2024-02-04 10:40:30
+Modified: 2024-02-17 21:56:58
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -69,6 +69,10 @@ is great data source with free plans available.
 Please refer to 
 [Tips on Wash Sale]( https://www.legendu.net/misc/blog/tips-on-wash-sale )  
 for detailed discussions.
+
+## Order Types
+
+- [Trailing Stop Orders](https://www.schwab.com/learn/story/trailing-stop-orders-mastering-order-types)
 
 ## Misc
 

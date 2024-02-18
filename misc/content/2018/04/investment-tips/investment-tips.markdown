@@ -5,7 +5,7 @@ Slug: investment-tips
 Title: Investment
 Category: Finance
 Tags: finance, investment, WeChat official account, money, tips, economics, stock, bond, CD, savings, structure notes
-Modified: 2024-01-23 01:30:45
+Modified: 2024-02-17 10:32:38
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -60,6 +60,8 @@ https://www.sec.gov/edgar/searchedgar/companysearch.html
 
 
 ## Good Forums for Investment
+
+- [Barrons](https://www.barrons.com/?mod=BOL_LOGO)
 
 - [USNews - Money](https://money.usnews.com/investing?int=top_nav_Investing)
 

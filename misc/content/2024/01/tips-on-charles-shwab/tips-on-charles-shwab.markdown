@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-20 15:57:28
-Modified: 2024-02-18 22:53:56
+Modified: 2024-02-19 10:32:35
 Author: Benjamin Du
 Slug: tips-on-charles-schwab
 Title: Tips on Charles Schwab
@@ -52,6 +52,17 @@ We do offer purchased
 We do not offer sweep money market funds, 
 so you would have to trade into and out of them.
 You can view available funds by clicking on Products at the top of the website and then Money Market Funds in the drop down.
+
+## Transfer Stocks from Another Brokerage
+
+There is no Schwab fee to transfer an account into Schwab. 
+The sending firm may charge a fee but Schwab will reimburse the fee
+(if you contact the customer service after the transfer is compelte)
+.
+   
+You can request a transfer by
+"Move Money" > "Transfer Account".
+You will need the account number and holding firm. 
 
 ## Fractional Shares
 

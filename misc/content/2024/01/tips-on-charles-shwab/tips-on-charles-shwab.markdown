@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-20 15:57:28
-Modified: 2024-02-03 13:56:47
+Modified: 2024-02-18 22:53:56
 Author: Benjamin Du
 Slug: tips-on-charles-schwab
 Title: Tips on Charles Schwab
@@ -64,3 +64,5 @@ https://client.schwab.com/secured/fractional-shares-stock-slices
 ## References
 
 - [Charles Schwab - Cash Investments](https://client.schwab.com/secured/cash-investments)
+
+- [FDIC Insurance](https://www.schwab.com/legal/fdic-insurance)

@@ -114,8 +114,8 @@ TWITTER_SHOW_REPLIES = "false"
 TWITTER_SHOW_FOLLOWER_COUNT = "true"
 
 # rss/atom feeds
-FEED_DOMAIN = SITEURL
-FEED_ATOM = "atom.xml"
+# FEED_DOMAIN = SITEURL
+# FEED_ATOM = "atom.xml"
 
 DIRECT_TEMPLATE = ["search"]
 # SEARCH_URL = "search"

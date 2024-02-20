@@ -42,6 +42,8 @@ MENUITEMS = (
     ("Home", HOME_URL),
     ("Blog", SITEURL),
     ("Archives", f"{SITEURL}/archives.html"),
+    ("Categories", f"{SITEURL}/categories.html"),
+    ("Tags", f"{SITEURL}/tags.html"),
     ("About", f"{HOME_URL}/pages/about"),
 )
 NEWEST_FIRST_ARCHIVES = True
@@ -78,6 +80,7 @@ STATIC_PATHS = [
     "favicon.png",
     "media",
     "CNAME",
+    "ads.txt",
     "readme.md",
 ]
 CODE_DIR = "downloads/code"

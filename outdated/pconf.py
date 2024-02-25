@@ -92,12 +92,12 @@ BLOG_DIR = Path(__file__).resolve().parent.parent
 THEME = BLOG_DIR / "themes/Flex"
 
 # plugins
-#PLUGINS = ["render_math"]
-## jupyter
+# PLUGINS = ["render_math"]
+# jupyter
 MARKUP = ("md", "ipynb")
 IPYNB_MARKUP_USE_FIRST_CELL = True
 IGNORE_FILES = [".ipynb_checkpoints"]
-## mathjax
+# mathjax
 MATH_JAX = {"auto_insert": True, "tex_extensions": ["color.js", "mhchem.js"]}
 
 # disqus comment

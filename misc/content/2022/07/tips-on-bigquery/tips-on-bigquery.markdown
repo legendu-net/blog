@@ -1,9 +1,9 @@
 Status: published
 Date: 2022-07-28 15:04:26
-Modified: 2024-02-19 23:11:31
+Modified: 2024-02-25 19:42:05
 Author: Benjamin Du
 Slug: tips-on-bigquery
-Title: Tips on Bigquery
+Title: Tips on BigQuery
 Category: Computer Science
 Tags: Computer Science, programming, BigQuery, SQL, query, database, cloud, Google
 

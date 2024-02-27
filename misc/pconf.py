@@ -126,7 +126,7 @@ FEED_ALL_ATOM = None
 # FEED_DOMAIN = SITEURL
 # FEED_ATOM = "atom.xml"
 
-DIRECT_TEMPLATE = ["search"]
+# DIRECT_TEMPLATE = ["search"]
 # SITESEARCH = "https://www.bing.com/search"
 
 # google analytics

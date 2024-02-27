@@ -5,7 +5,7 @@ from pelican_jupyter import markup as nb_markup
 from loguru import logger
 
 HOME_URL = "https://www.legendu.net"
-SITEURL = f"{HOME_URL}/misc"
+SITEURL = "https://misc.legendu.net"
 SITESUBTITLE = "It is never too late to learn."
 AUTHOR = "Ben Chuanlong Du"
 SITENAME = "Ben Chuanlong Du's Blog"
@@ -14,6 +14,9 @@ TIMEZONE = "US/Pacific"
 DEFAULT_LANG = "en"
 USE_FOLDER_AS_CATEGORY = False
 DELETE_OUTPUT_DIRECTORY = True
+MAIN_MENU = True
+GITHUB_CORNER_URL = "https://github.com/dclong/misc"
+# BROWSER_COLOR = "#333333"
 logger.debug("Site URL: {}", SITEURL)
 
 # pages
@@ -35,12 +38,14 @@ MARKDOWN = {
 }
 
 # Title menu options
-MENUITEMS = [
+MENUITEMS = (
     ("Home", HOME_URL),
     ("Blog", SITEURL),
     ("Archives", f"{SITEURL}/archives.html"),
+    ("Categories", f"{SITEURL}/categories.html"),
+    ("Tags", f"{SITEURL}/tags.html"),
     ("About", f"{HOME_URL}/pages/about"),
-]
+)
 NEWEST_FIRST_ARCHIVES = True
 ARTICLE_ORDER_BY = "reversed-modified"
 
@@ -56,22 +61,18 @@ GITHUB_SHOW_USER_LINK = True
 
 # social widget
 SOCIAL = (
-    ("LinkedIn", "https://www.linkedin.com/in/ben-chuanlong-du-1239b221/"),
-    ("Docker Hub", "https://hub.docker.com/u/dclong"),
+    ("linkedin", "https://www.linkedin.com/in/ben-chuanlong-du-1239b221/"),
+    ("github", "https://github.com/legendu-net/"),
     (
-        "Stack Overflow",
+        "stack-overflow",
         "https://stackoverflow.com/users/7808204/benjamin-du?tab=profile",
     ),
-    ("Twitter", "https://twitter.com/longendu"),
+    ("docker", "https://hub.docker.com/u/dclong"),
+    ("twitter", "https://twitter.com/longendu"),
 )
 
 DEFAULT_PAGINATION = 6
 
-# STATIC_OUT_DIR requires https://github.com/jakevdp/pelican/tree/specify-static
-# STATIC_OUT_DIR = ''
-# FILES_TO_COPY = [('favicon.png', 'favicon.png')]
-
-# This requires Pelican 3.3+
 STATIC_PATHS = [
     "images",
     "figures",
@@ -79,6 +80,7 @@ STATIC_PATHS = [
     "favicon.png",
     "media",
     "CNAME",
+    "ads.txt",
     "readme.md",
 ]
 
@@ -87,11 +89,11 @@ NOTEBOOK_DIR = "downloads/notebooks"
 
 # theme
 BLOG_DIR = Path(__file__).resolve().parent.parent
-CSS_FILE = "main_2.css"
-THEME = BLOG_DIR / "themes/octopress_2"
+# CSS_FILE = "main_2.css"
+THEME = BLOG_DIR / "themes/Flex"
 
 # plugins
-PLUGINS = ["render_math"]
+# PLUGINS = ["render_math"]
 ## jupyter
 MARKUP = ("md", "ipynb")
 IPYNB_MARKUP_USE_FIRST_CELL = True
@@ -119,11 +121,16 @@ TWITTER_TWEET_COUNT = 3
 TWITTER_SHOW_REPLIES = "false"
 TWITTER_SHOW_FOLLOWER_COUNT = "true"
 
+FEED_ALL_ATOM = None
 # rss/atom feeds
-FEED_DOMAIN = SITEURL
-FEED_ATOM = "atom.xml"
+# FEED_DOMAIN = SITEURL
+# FEED_ATOM = "atom.xml"
 
-SITESEARCH = "https://www.bing.com/search"
+DIRECT_TEMPLATE = ["search"]
+# SITESEARCH = "https://www.bing.com/search"
 
 # google analytics
 MODERN_GOOGLE_ANALYTICS = "G-3STS9BVPF6"
+
+THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = False
+THEME_COLOR_ENABLE_USER_OVERRIDE = True

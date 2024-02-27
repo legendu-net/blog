@@ -17,7 +17,6 @@ DELETE_OUTPUT_DIRECTORY = True
 MAIN_MENU = True
 GITHUB_CORNER_URL = "https://github.com/dclong/outdated"
 # BROWSER_COLOR = "#333333"
-
 logger.debug("Site URL: {}", SITEURL)
 
 # pages
@@ -99,7 +98,10 @@ MARKUP = ("md", "ipynb")
 IPYNB_MARKUP_USE_FIRST_CELL = True
 IGNORE_FILES = [".ipynb_checkpoints"]
 # mathjax
-MATH_JAX = {"auto_insert": True, "tex_extensions": ["color.js", "mhchem.js"]}
+MATH_JAX = {
+    "auto_insert": True, 
+    "tex_extensions": ["color.js", "mhchem.js"],
+}
 
 # disqus comment
 DISQUS_SITENAME = "dclong"

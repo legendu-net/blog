@@ -14,9 +14,6 @@ TIMEZONE = "US/Pacific"
 DEFAULT_LANG = "en"
 USE_FOLDER_AS_CATEGORY = False
 DELETE_OUTPUT_DIRECTORY = True
-MAIN_MENU = True
-GITHUB_CORNER_URL = "https://github.com/dclong/misc"
-# BROWSER_COLOR = "#333333"
 logger.debug("Site URL: {}", SITEURL)
 
 # pages
@@ -61,17 +58,20 @@ GITHUB_SHOW_USER_LINK = True
 
 # social widget
 SOCIAL = (
-    ("linkedin", "https://www.linkedin.com/in/ben-chuanlong-du-1239b221/"),
-    ("github", "https://github.com/legendu-net/"),
+    ("LinkedIn", "https://www.linkedin.com/in/ben-chuanlong-du-1239b221/"),
+    ("Docker Hub", "https://hub.docker.com/u/dclong"),
     (
-        "stack-overflow",
+        "Stack Overflow",
         "https://stackoverflow.com/users/7808204/benjamin-du?tab=profile",
     ),
-    ("docker", "https://hub.docker.com/u/dclong"),
-    ("twitter", "https://twitter.com/longendu"),
+    ("Twitter", "https://twitter.com/longendu"),
 )
 
 DEFAULT_PAGINATION = 6
+
+# STATIC_OUT_DIR requires https://github.com/jakevdp/pelican/tree/specify-static
+# STATIC_OUT_DIR = ''
+# FILES_TO_COPY = [('favicon.png', 'favicon.png')]
 
 STATIC_PATHS = [
     "images",
@@ -89,11 +89,11 @@ NOTEBOOK_DIR = "downloads/notebooks"
 
 # theme
 BLOG_DIR = Path(__file__).resolve().parent.parent
-# CSS_FILE = "main_2.css"
-THEME = BLOG_DIR / "themes/Flex"
+CSS_FILE = "main_2.css"
+THEME = BLOG_DIR / "themes/octopress_2"
 
 # plugins
-# PLUGINS = ["render_math"]
+PLUGINS = ["render_math"]
 ## jupyter
 MARKUP = ("md", "ipynb")
 IPYNB_MARKUP_USE_FIRST_CELL = True
@@ -121,16 +121,11 @@ TWITTER_TWEET_COUNT = 3
 TWITTER_SHOW_REPLIES = "false"
 TWITTER_SHOW_FOLLOWER_COUNT = "true"
 
-FEED_ALL_ATOM = None
 # rss/atom feeds
-# FEED_DOMAIN = SITEURL
-# FEED_ATOM = "atom.xml"
+FEED_DOMAIN = SITEURL
+FEED_ATOM = "atom.xml"
 
-DIRECT_TEMPLATE = ["search"]
-# SITESEARCH = "https://www.bing.com/search"
+SITESEARCH = "https://www.bing.com/search"
 
 # google analytics
 MODERN_GOOGLE_ANALYTICS = "G-3STS9BVPF6"
-
-THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = False
-THEME_COLOR_ENABLE_USER_OVERRIDE = True

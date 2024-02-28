@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-05-09 23:39:30
-Modified: 2023-07-10 03:11:42
+Modified: 2024-02-27 22:38:17
 Author: Benjamin Du
 Slug: tips-on-gcp
 Title: Tips on GCP
@@ -30,3 +30,16 @@ https://cloud.google.com/compute/docs/compute-optimized-machines#c2d-standard
 https://cloud.google.com/compute/docs/compute-optimized-machines#c2d-high-cpu
 
 https://cloud.google.com/compute/docs/compute-optimized-machines#c2d-high-mem
+
+## Install Google Cloud CLI 
+
+Please refer to
+[Install the Google Cloud CLI](https://cloud.google.com/sdk/docs/install-sdk#deb)
+for instructions.
+
+gcloud init
+gcloud auth application-default login
+
+## References
+
+- [Set up Application Default Credentials](https://cloud.google.com/docs/authentication/provide-credentials-adc)

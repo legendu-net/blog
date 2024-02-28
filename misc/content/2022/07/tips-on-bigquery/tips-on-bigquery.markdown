@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-07-28 15:04:26
-Modified: 2024-02-25 19:42:05
+Modified: 2024-02-27 22:16:54
 Author: Benjamin Du
 Slug: tips-on-bigquery
 Title: Tips on BigQuery
@@ -26,4 +26,8 @@ Tags: Computer Science, programming, BigQuery, SQL, query, database, cloud, Goog
 
 2. how to connect to a BigQuery database?
 
+
+## References
+
+- [google-cloud-python @ GitHub](https://github.com/googleapis/google-cloud-python)
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-20 15:57:28
-Modified: 2024-02-19 10:32:35
+Modified: 2024-03-01 12:55:30
 Author: Benjamin Du
 Slug: tips-on-charles-schwab
 Title: Tips on Charles Schwab
@@ -8,6 +8,15 @@ Category: Investment
 Tags: Investment, money, trading, brokerage, Charles Schwab
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## Trading Fees
+
+According to
+[Commission-free trading online. Same award-winning experience](https://www.schwab.com/pricing#bcn-table--table-content-74536)
+,
+Charles Schwab does NOT charge commision fees for trading listed stocks and ETFs.  
+However,
+Charles Schwab does charge some fees ...
 
 ## Trader APIs
 

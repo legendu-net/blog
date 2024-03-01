@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-12-14 09:48:44
-Modified: 2023-12-25 16:53:29
+Modified: 2024-03-01 12:59:45
 Author: Benjamin Du
 Slug: taxes-on-investment-gains
 Title: Taxes on Investment Gains
@@ -32,6 +32,28 @@ To limit capital gains taxes, you can
 - invest for the long-term
 - use tax-advantaged retirement accounts 
 - offset capital gains with capital losses
+
+https://smartasset.com/taxes/state-capital-gains-tax
+
+1. federal tax on capital gains
+    - short-term: income tax (depending on your income range)
+    - long-term: also depending on income range
+3. WA state tax on capital gains
+    - short-term: no
+    - long-term: 7% on capital gains over $250,000
+
+
+[What is the long-term capital gains tax?](https://www.bankrate.com/investing/long-term-capital-gains-tax)
+
+[What is the long-term capital gains tax?](https://www.bankrate.com/investing/long-term-capital-gains-tax/)
+
+https://turbotax.intuit.com/tax-tips/investments-and-taxes/guide-to-short-term-vs-long-term-capital-gains-taxes-brokerage-accounts-etc/L7KCu9etn
+
+https://smartasset.com/taxes/state-capital-gains-tax
+
+https://dor.wa.gov/taxes-rates/other-taxes/capital-gains-tax/frequently-asked-questions-about-washingtons-capital-gains-tax#:~:text=Is%20day%2Dtrading%20subject%20to,held%20for%20a%20shorter%20period.
+
+https://dor.wa.gov/taxes-rates/other-taxes/capital-gains-tax
 
 ## Tax on ESPP
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-12-14 09:48:44
-Modified: 2024-03-01 12:59:45
+Modified: 2024-03-01 18:45:04
 Author: Benjamin Du
 Slug: taxes-on-investment-gains
 Title: Taxes on Investment Gains
@@ -19,6 +19,16 @@ Tags: Investment, money, capital, gain, tax, IRS, ESPP, RSU
     and
     [How to Cut Your Tax Bill with Tax-Loss Harvesting](https://www.schwab.com/learn/story/how-to-cut-your-tax-bill-with-tax-loss-harvesting)
     for more details and tips.
+
+
+## Taxes on Different Investments Gains
+
+1. RSU: 2 taxes, first: income tax; 2nd: capital gain taxes
+2. interest rate: income tax
+3. MMFs dividend: monthly, taxes as income tax
+4. dividend
+    - ordinary dividend: income tax
+    - qualified dividend: capital gain taxes: how about short-term vs long-term?
 
 ## Long-term vs Short-term Capital Gains
 

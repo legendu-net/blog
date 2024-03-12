@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-22 17:18:34
-Modified: 2024-02-03 15:10:25
+Modified: 2024-03-11 21:46:54
 Author: Benjamin Du
 Slug: shopping-on-amazon
 Title: Shopping on Amazon
@@ -20,3 +20,7 @@ Tags: shopping, Amazon, e-Commerce
     .
 2. Scroll down to the bottom and locate "Start a Chat Now".
 3. Click on the link "Contact Us".
+
+## Amazon Subscriptions
+
+https://www.amazon.com/auto-deliveries?ref_=pe_29444320_544268820__em_sc_vs

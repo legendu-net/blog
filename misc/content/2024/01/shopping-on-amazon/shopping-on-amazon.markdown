@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-22 17:18:34
-Modified: 2024-03-11 21:55:52
+Modified: 2024-03-13 01:21:08
 Author: Benjamin Du
 Slug: shopping-on-amazon
 Title: Shopping on Amazon
@@ -23,8 +23,8 @@ Tags: shopping, Amazon, e-Commerce
 
 ## Amazon Subscriptions
 
-https://www.amazon.com/auto-deliveries?ref_=pe_29444320_544268820__em_sc_vs
+- [Amazon Subscriptions](https://www.amazon.com/auto-deliveries?ref_=pe_29444320_544268820__em_sc_vs)
 
 ## Amazon In-store Promotion Wallet
 
-https://www.amazon.com/promotions/brands/fresh
+- [In-store Promotion Wallet](https://www.amazon.com/promotions/brands/fresh)

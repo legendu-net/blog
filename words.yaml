@@ -241,6 +241,7 @@
 - ["Rule-Based", "Rule-based"]
 - ["Rustpython", "RustPython"]
 - ["Serde-Yaml", "serde-yaml"]
+- ["Ssh-Keygen", "ssh-keygen"]
 - ["Teamviewer", "TeamViewer"]
 - ["Tensorflow", "TensorFlow"]
 - ["Typescript", "TypeScript"]

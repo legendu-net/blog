@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-11-26 21:58:44
-Modified: 2024-03-16 14:08:49
+Modified: 2024-03-22 23:35:18
 Author: Benjamin Du
 Slug: tips-on-the-alpaca-trading-platform
 Title: Tips on the Alpaca Trading Platform
@@ -22,6 +22,14 @@ charge SEC, ORF, TAF and IOF fees too.
 ## Community
 
 [Alpaca - Slack](https://app.slack.com/client/TD8AD6C1J/CEL9HCSN4)
+
+## PDT & Marginal Accounts
+
+[Can I turn off Margin?](https://alpaca.markets/support/turn-off-margin)
+
+[What is pattern day trading protection? Why is it denying my trades?](https://alpaca.markets/support/pattern-day-trading-protection)
+
+[What determines the margin for my account?](https://alpaca.markets/support/determine-margin-account)
 
 ## References
 

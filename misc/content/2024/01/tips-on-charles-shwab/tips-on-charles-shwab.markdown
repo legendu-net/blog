@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-20 15:57:28
-Modified: 2024-03-04 22:42:20
+Modified: 2024-03-16 14:06:49
 Author: Benjamin Du
 Slug: tips-on-charles-schwab
 Title: Tips on Charles Schwab
@@ -16,7 +16,11 @@ According to
 ,
 Charles Schwab does NOT charge commision fees for trading listed stocks and ETFs.  
 However,
-Charles Schwab does charge SEC process fee, option regulatory fee, trading activity fee and index option fee. 
+Charles Schwab does charge SEC process fee (SEC), 
+option regulatory fee (ORF), 
+trading activity fee (TAF) and index option fee (IOF).
+Note that other commision-fee-free brokerages (such as Alpaca)
+charge SEC, ORF, TAF and IOF fees too.
 
 The exchange process fee is a fee Schwab Charges to offset fees imposed on us directly or indirectly by national securities exchanges, 
 self-regulatory organizations, or U.S. option exchanges. 

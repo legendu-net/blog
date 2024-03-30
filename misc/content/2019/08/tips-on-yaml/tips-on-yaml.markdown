@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-08-27 21:35:35
-Modified: 2022-05-30 19:16:24
+Modified: 2024-03-13 23:38:03
 Author: Benjamin Du
 Slug: tips-on-yaml
 Title: Tips on YAML
@@ -24,10 +24,10 @@ Please refer to
 [Parse YAML in Rust](https://www.legendu.net/misc/blog/parse-yaml-in-rust)
 for discussions.
 
-## [YAML for Python](http://www.legendu.net/misc/blog/tips-on-pyyaml)
+## [YAML for Python](https://misc.legendu.net/blog/python-parse-yaml/)
 
 Please refer to 
-[Parsing YAML in Python](http://www.legendu.net/misc/blog/tips-on-pyyaml)
+[Parsing YAML in Python](https://misc.legendu.net/blog/python-parse-yaml/)
 for discussions.
 
 ## YAML for JVM-based Languages

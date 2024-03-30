@@ -205,6 +205,7 @@
 - ["Spacevim", "SpaceVim"]
 - ["Sshuttle", "sshuttle"]
 - ["Unittest", "unittest"]
+- ["Zoneinfo", "ZoneInfo"]
 # 9 symbols
 - ["Autogluon", "AutoGluon"]
 - ["Dataframe", "DataFrame"]
@@ -285,5 +286,6 @@
 - ["Modulenotfounderror", "ModuleNotFoundRrror"]
 # 23 symbols
 - ["Python-Build-Standalone", "python-build-standalone"]
+- ["Pandas_Market_Calendars", "pandas_market_calendars"]
 # 24 symbols
 - ["Illegalargumentexception", "IllegalArgumentException"]

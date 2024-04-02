@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-12-14 09:48:44
-Modified: 2024-03-01 18:45:04
+Modified: 2024-04-02 01:54:25
 Author: Benjamin Du
 Slug: taxes-on-investment-gains
 Title: Taxes on Investment Gains
@@ -115,6 +115,8 @@ However,
 coming tax season we will provide you a tax form. Where you can then work with an accountant or tax advisor on how to report that.
 
 ## References
+
+- [Federal income tax rates and brackets](https://www.irs.gov/filing/federal-income-tax-rates-and-brackets)
 
 - [Topic No. 409, Capital Gains and Losses](https://www.irs.gov/taxtopics/tc409#:~:text=To%20correctly%20arrive%20at%20your,or%20loss%20is%20short%2Dterm.)
 

@@ -35,6 +35,8 @@ Tags: Computer Science, programming
     Ordinary dividends are taxed as income
     while qualified dividends are taxed as (short-term or long-term) capital gains.
 
+6. It seems that a MMF can only be purchased via the brokerage who owns it.
+
 ## Money Market Funds (MMFs)
 
 A money market fund is a special class of mutual funds 

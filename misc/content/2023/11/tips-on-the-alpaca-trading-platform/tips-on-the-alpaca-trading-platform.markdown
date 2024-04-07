@@ -19,6 +19,12 @@ Alpaca does charge SEC process fee (SEC), option regulatory fee (ORF), trading a
 Other commision-fee-free brokerages (such as Charles Schwab)
 charge SEC, ORF, TAF and IOF fees too.
 
+## ACH Transactions
+
+1. There can be at most 1 ACH transaction per day.
+
+2. An ACH transaction less or equal to $1000 is instant.
+
 ## Community
 
 [Alpaca - Slack](https://app.slack.com/client/TD8AD6C1J/CEL9HCSN4)

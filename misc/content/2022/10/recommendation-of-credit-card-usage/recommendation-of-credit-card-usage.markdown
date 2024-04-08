@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 16:34:06
-Modified: 2023-12-31 23:27:44
+Modified: 2024-04-07 23:29:02
 Author: Benjamin Du
 Slug: recommendation-of-credit-card-usage
 Title: Recommendation of Credit Card Usage
@@ -40,7 +40,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>
       <span style="color:green">BOA-M</span>
     </td>
-    <td></td>
+    <td> Robinhood Gold Card </td>
     <td>
       <span style="color:green">BOA-V</span>
       <span style="color:red">BOA-U</span>
@@ -69,7 +69,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:red">BOA-V</span> <br>
     </td>
     <td></td>
-    <td></td>
+    <td> Robinhood Gold Card </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -92,7 +92,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:red">BOA-V</span> <br>
     </td>
     <td></td>
-    <td></td>
+    <td> Robinhood Gold Card </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -112,6 +112,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
+      <span style="color:green">Robinhood Gold Card</span><br>
       <span style="color:green">AMEX-M</span><br>
       <span style="color:green">Citi-C</span><br>
     </td>
@@ -133,7 +134,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>
       <span style="color:green">BOA-M</span>
     </td>
-    <td></td>
+    <td> Robinhood Gold Card </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -153,7 +154,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>
       <span style="color:green">BOA-M</span>
     </td>
-    <td></td>
+    <td> Robinhood Gold Card </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -174,7 +175,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     </td>
     <td></td>
     <td></td>
-    <td></td>
+    <td> Robinhood Gold Card </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -195,6 +196,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>AMEX-G</td>
     <td></td>
     <td>
+      <span style="color:green">Robinhood Gold Card</span><br>
       <span style="color:green">AMEX-M</span><br>
     </td>
     <td>
@@ -220,7 +222,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td> Robinhood Gold Card </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -235,12 +237,12 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td></td>
-    <td>
-    </td>
+    <td> </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
     <td>
+      <span style="color:green">Robinhood Gold Card</span>:&nbsp$100/yr
       AMEX-G
       <sup>
       [1]
@@ -258,13 +260,13 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td></td>
-    <td>
-    </td>
+    <td> </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
     <td>
       <span style="color:green">Citi-C</span>
+      <span style="color:green">Robinhood Gold Card</span>
       <sup>[2]</sup>
       <br>
     </td>
@@ -284,7 +286,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td> Robinhood Gold Card </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -304,10 +306,9 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     </td>
     <td></td>
     <td></td>
-    <td>
-    </td>
+    <td> </td>
     <td></td>
-    <td></td>
+    <td> Robinhood Gold Card </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -323,22 +324,17 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       Improvement <br>
       &amp; Furnishings
     </td>
-    <td>
-    </td>
+    <td> </td>
     <td></td>
     <td>
       <span style="color:green">BOA-M</span> <br>
     </td>
-    <td>
-    </td>
+    <td> </td>
     <td></td>
-    <td></td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
+    <td> Robinhood Gold Card </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
   </tr>
   <tr>
     <td>Gas</td>
@@ -349,7 +345,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">Citi-C</span>
     </td>
     <td></td>
-    <td></td>
+    <td> Robinhood Gold Card </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -367,7 +363,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td> Robinhood Gold Card </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -393,4 +389,5 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 
 ## Credit Cards Without Foreign Transaction Fees
 
+- Robinhood Gold Card
 - AMEX

@@ -1,13 +1,27 @@
 Status: published
 Date: 2023-12-14 16:25:39
-Modified: 2024-01-22 23:20:04
+Modified: 2024-04-10 01:21:55
 Author: Benjamin Du
 Slug: tips-on-401k
-Title: Tips on 401K
+Title: Tips on Retirement Accounts
 Category: Investment
-Tags: Investment, 401k, retirement
+Tags: Investment, 401k, retirement, IRA
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## General Tips
+
+1. You can contribute to your own IRA accounts 
+    even if you have maxed out your 401K contributions.
+    For people without coverage of work 401K plans and low income,
+    those contributions are tax deductable.
+    For people with coverage of work 401K plans or relative high income,
+    those contributions are not tax deductable.
+    Please refer to [Retirement topics - IRA contribution limits](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits)
+    for detailed information on IRA contribution limits and tax deductable qualifications.
+    Even you are not qualified for tax deduction on IRA contributions,
+    it can still be beneficial to contribute 
+    as some brokerages (e.g., Robinhood and Webull) do matches on IRA contributions.
 
 ## Roth 401K vs Pre-tax 401K
 
@@ -35,6 +49,8 @@ roth 401k is more lidiquity!!!
 
 
 ## References
+
+- [Retirement topics - IRA contribution limits](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits)
 
 - [Roth IRA Contributions: 4 Things You Need to Know](https://www.schwab.com/learn/story/roth-ira-contributions-4-things-you-need-to-know?cmp=em-XCS)
 

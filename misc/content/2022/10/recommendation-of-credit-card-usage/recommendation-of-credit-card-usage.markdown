@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 16:34:06
-Modified: 2024-04-07 23:29:02
+Modified: 2024-04-10 01:27:21
 Author: Benjamin Du
 Slug: recommendation-of-credit-card-usage
 Title: Recommendation of Credit Card Usage
@@ -14,6 +14,16 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 1. Costco is a wholesale. It is not considered as a grocery or supermarket for cashback bonus purposes.
 
 2. Overall, AMEX is great for traveling purchases and restaurants spending.
+
+## Glossory
+
+- ASC: Amazon Store Card
+- RGC: Robinhood Gold Card
+- BOA-V: BOA Visa Card
+- BOA-M: BOA Master Card
+- BOA-U: BOA Card Unlimited
+- AMEX-G: AMEX Golden Card
+- AMEX-M: AMEX Macy Card
 
 <table>
 <thead>
@@ -40,7 +50,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>
       <span style="color:green">BOA-M</span>
     </td>
-    <td> Robinhood Gold Card </td>
+    <td> RGC </td>
     <td>
       <span style="color:green">BOA-V</span>
       <span style="color:red">BOA-U</span>
@@ -61,15 +71,13 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td>
-        Amazon <br> 
-        Store <br> 
-        Card <sup>[3]</sup>
+        ASC <sup>[3]</sup>
     </td>
     <td>
       <span style="color:red">BOA-V</span> <br>
     </td>
     <td></td>
-    <td> Robinhood Gold Card </td>
+    <td> RGC </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -92,7 +100,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:red">BOA-V</span> <br>
     </td>
     <td></td>
-    <td> Robinhood Gold Card </td>
+    <td> RGC </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -112,7 +120,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:green">Robinhood Gold Card</span><br>
+      <span style="color:green">RGC</span><br>
       <span style="color:green">AMEX-M</span><br>
       <span style="color:green">Citi-C</span><br>
     </td>
@@ -134,7 +142,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>
       <span style="color:green">BOA-M</span>
     </td>
-    <td> Robinhood Gold Card </td>
+    <td> RGC </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -154,7 +162,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>
       <span style="color:green">BOA-M</span>
     </td>
-    <td> Robinhood Gold Card </td>
+    <td> RGC </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -175,7 +183,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     </td>
     <td></td>
     <td></td>
-    <td> Robinhood Gold Card </td>
+    <td> RGC </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -196,7 +204,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>AMEX-G</td>
     <td></td>
     <td>
-      <span style="color:green">Robinhood Gold Card</span><br>
+      <span style="color:green">RGC</span><br>
       <span style="color:green">AMEX-M</span><br>
     </td>
     <td>
@@ -222,7 +230,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td></td>
-    <td> Robinhood Gold Card </td>
+    <td> RGC </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -242,7 +250,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:green">Robinhood Gold Card</span>:&nbsp$100/yr
+      <span style="color:green">RGC</span>
       AMEX-G
       <sup>
       [1]
@@ -265,8 +273,8 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
+      <span style="color:green">RGC</span>
       <span style="color:green">Citi-C</span>
-      <span style="color:green">Robinhood Gold Card</span>
       <sup>[2]</sup>
       <br>
     </td>
@@ -286,7 +294,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td></td>
-    <td> Robinhood Gold Card </td>
+    <td> RGC </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -308,7 +316,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td> </td>
     <td></td>
-    <td> Robinhood Gold Card </td>
+    <td> RGC </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -331,7 +339,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     </td>
     <td> </td>
     <td></td>
-    <td> Robinhood Gold Card </td>
+    <td> RGC </td>
     <td> </td>
     <td> </td>
     <td> </td>
@@ -345,7 +353,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">Citi-C</span>
     </td>
     <td></td>
-    <td> Robinhood Gold Card </td>
+    <td> RGC </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -363,7 +371,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td></td>
-    <td> Robinhood Gold Card </td>
+    <td> RGC </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>

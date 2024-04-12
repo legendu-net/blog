@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 16:34:06
-Modified: 2024-04-10 01:27:21
+Modified: 2024-04-10 09:04:35
 Author: Benjamin Du
 Slug: recommendation-of-credit-card-usage
 Title: Recommendation of Credit Card Usage
@@ -50,7 +50,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>
       <span style="color:green">BOA-M</span>
     </td>
-    <td> RGC </td>
+    <td> <span style="color:green">RGC</span> </td>
     <td>
       <span style="color:green">BOA-V</span>
       <span style="color:red">BOA-U</span>
@@ -77,7 +77,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:red">BOA-V</span> <br>
     </td>
     <td></td>
-    <td> RGC </td>
+    <td> <span style="color:green">RGC</span> </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -100,7 +100,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:red">BOA-V</span> <br>
     </td>
     <td></td>
-    <td> RGC </td>
+    <td> <span style="color:green">RGC</span> </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -142,7 +142,9 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>
       <span style="color:green">BOA-M</span>
     </td>
-    <td> RGC </td>
+    <td> 
+      <span style="color:green">RGC</span>
+    </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -162,7 +164,9 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>
       <span style="color:green">BOA-M</span>
     </td>
-    <td> RGC </td>
+    <td> 
+      <span style="color:green">RGC</span>
+    </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -183,7 +187,9 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     </td>
     <td></td>
     <td></td>
-    <td> RGC </td>
+    <td> 
+      <span style="color:green">RGC</span>
+    </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -230,7 +236,9 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td></td>
-    <td> RGC </td>
+    <td> 
+      <span style="color:green">RGC</span>
+    </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -250,11 +258,8 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:green">RGC</span>
-      AMEX-G
-      <sup>
-      [1]
-      </sup>
+      <span style="color:green">RGC</span> <br>
+      AMEX-G <sup> [1] </sup>
     </td>
     <td></td>
     <td>
@@ -267,16 +272,17 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>Travel</td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>
+      <span style="color:green">RGC</span> <sup>[4]</sup>
+    </td>
+
     <td> </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
     <td>
-      <span style="color:green">RGC</span>
-      <span style="color:green">Citi-C</span>
-      <sup>[2]</sup>
-      <br>
+      <span style="color:green">RGC</span> <br>
+      <span style="color:green">Citi-C</span> <sup>[2]</sup> <br>
     </td>
     <td></td>
     <td>
@@ -294,7 +300,9 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td></td>
-    <td> RGC </td>
+    <td> 
+      <span style="color:green">RGC</span>
+    </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -316,7 +324,9 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td> </td>
     <td></td>
-    <td> RGC </td>
+    <td> 
+      <span style="color:green">RGC</span>
+    </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -339,7 +349,9 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     </td>
     <td> </td>
     <td></td>
-    <td> RGC </td>
+    <td> 
+      <span style="color:green">RGC</span>
+    </td>
     <td> </td>
     <td> </td>
     <td> </td>
@@ -353,7 +365,9 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">Citi-C</span>
     </td>
     <td></td>
-    <td> RGC </td>
+    <td> 
+      <span style="color:green">RGC</span>
+    </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -371,7 +385,9 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td></td>
-    <td> RGC </td>
+    <td> 
+      <span style="color:green">RGC</span>
+    </td>
     <td>
       <span style="color:green">BOA-V</span>
     </td>
@@ -388,6 +404,12 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 - [1]: For flights booked directly with airlines or on amextravel.com.
 - [2]: On eligible travel purchases only
 - [3]: Amazon Prime membership is required to enjoy the discount.
+- [4]: Robinhood Gold Card gives you 5% cash back 
+    when you book travel through the all-new Robinhood travel portal.
+    For more details,
+    please refer to
+    [Robinhood Gold Card waitlist](https://robinhood.com/us/en/support/articles/robinhood-gold-card-waitlist/)
+    .
 
 ## Offers
 

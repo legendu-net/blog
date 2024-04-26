@@ -4,8 +4,8 @@ Modified: 2024-02-11 10:32:23
 Author: Benjamin Du
 Slug: diversified-investment
 Title: Diversified Investment
-Category: Computer Science
-Tags: Computer Science, programming
+Category: Investment
+Tags: investment, MMF, money market fund, index fund, ETF, diversified investment
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -39,29 +39,7 @@ Tags: Computer Science, programming
 
 ## Money Market Funds (MMFs)
 
-A money market fund is a special class of mutual funds 
-which is designed to offer stability of capital, liquidity, and income.
-Money market funds usually have relatively low expense ratio compared to other types of mutual funds.
-There are ETF alternatives to money market funds.
-However, 
-you have to cautious about the ex-dates of ETFs focusing on dividends.
-Taking those into consideration,
-ETFs focusing on dividens are not necessarily more liquidity than MMFs.
-
-- Vanguard Federal Money Market Fund (ticker: VMFXX)	0.11%	
-- Fidelity Money Market Fund (SPRXX)	0.42%	
-- [Schwab Value Advantage Money Fund® - Investor Shares](https://www.schwabassetmanagement.com/products/swvxx)
-- Schwab Municipal Money Fund - Investor Shares (SWTXX)	0.34%	
-- North Capital Treasury Money Market Fund (NCGXX)	0%	
-- [JPMorgan Ultra-Short Income ETF (JPST)](https://am.jpmorgan.com/us/en/asset-management/adv/products/jpmorgan-ultra-short-income-etf-etf-shares-46641q837?gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZ6W_ylQeiKI2f50bPkVghvWIa-X9tCNzKnXVRhn-exwlvOpUn-5esBoCiz4QAvD_BwE&gclsrc=aw.ds) 0.18%	
-- [Vanguard Ultra-Short Bond ETF (VUSB)](https://investor.vanguard.com/investment-products/etfs/profile/vusb) 0.1%	
-- [Global X 1-3 Month T-Bill ETF (CLIP)](https://www.globalxetfs.com/funds/clip/) 0.07%	
-- [iShares 0-3 Month Treasury Bond ETF (SGOV)](https://www.ishares.com/us/products/314116/ishares-0-3-month-treasury-bond-etf?cid=ppc:ish_us:ish_us_nb_fixed_income_product_phrase:google:nonbrand_prod:ei&gad_source=1&gclid=Cj0KCQiA2eKtBhDcARIsAEGTG421i89nkhUtWtHRE_sXOH8jCdDk_DV6DhRiBvvypVLp5M1fpviEgAIaAqw9EALw_wcB&gclsrc=aw.ds)
-    (a good ETF alternative to money market funds)
-- PGIM Ultra Short Bond ETF (PULS)
-
-[Charles Schwab - Money Fund Yields](https://www.schwabassetmanagement.com/products/money-fund-yields)
-
+[Tips on Money Market Fund]( https://www.legendu.net/misc/blog/tips-on-money-market-fund ) 
 
 ## ETFs 
 

@@ -95,26 +95,7 @@ Multiply the number of index option contracts traded by the applicable index opt
 
 ## Trader APIs
 
-[Charles Schwab Developer Portal](https://developer.schwab.com/)
-
-Charles Schwab is developing Trader APIs 
-(for both commercial and individual).
-The scheduled release date is 
-For more questions, 
-you can contact the Trader Services team
-at 877-870-7271 
-(Monday - Thursday: 8:00 am - 7:00 pm;
-Friday: 8:00 am - 6:00 pm EST)
-or at traderapi@schwab.com
-.
-
-[Charles Schwab (Trader) API & R - Getting Started](https://www.youtube.com/watch?v=AOiFYj5iM5U)
-
-[Charles Schwab (Trader) API & R - Authentication](https://www.youtube.com/watch?v=P2aYY9CiRLM)
-
-[Schwab API Python Tutorial (Authentication and Requests)](https://www.youtube.com/watch?v=kHbom0KIJwc)
-
-[Schwab-API-Python](https://github.com/tylerebowers/Schwab-API-Python)
+[Tips on Charles Schwab Trader API]( https://www.legendu.net/misc/blog/tips-on-charles-schwab-trader-api )
 
 ## Cash Sweep Program
 

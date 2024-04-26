@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-20 15:57:28
-Modified: 2024-03-16 14:06:49
+Modified: 2024-04-26 01:39:27
 Author: Benjamin Du
 Slug: tips-on-charles-schwab
 Title: Tips on Charles Schwab
@@ -107,6 +107,14 @@ at 877-870-7271
 Friday: 8:00 am - 6:00 pm EST)
 or at traderapi@schwab.com
 .
+
+[Charles Schwab (Trader) API & R - Getting Started](https://www.youtube.com/watch?v=AOiFYj5iM5U)
+
+[Charles Schwab (Trader) API & R - Authentication](https://www.youtube.com/watch?v=P2aYY9CiRLM)
+
+[Schwab API Python Tutorial (Authentication and Requests)](https://www.youtube.com/watch?v=kHbom0KIJwc)
+
+[Schwab-API-Python](https://github.com/tylerebowers/Schwab-API-Python)
 
 ## Cash Sweep Program
 

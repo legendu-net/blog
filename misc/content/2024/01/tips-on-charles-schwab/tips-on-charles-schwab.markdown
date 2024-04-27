@@ -113,18 +113,21 @@ Once on that page, under Balance Details there will be a link for Rates next to 
 
 ## Schwab Investing Themes
 
+Even though Charles Schwab advocate for investing themes,
+I prefer ETFs as ETFs are much easier to manager compared to investing themes.
+
 https://client.schwab.com/app/trade/thematic/#/themes
 
 interesting
 
 ## [Money Market Funds](https://client.schwab.com/secured/money-market-funds)
 
-We do offer purchased 
+Charles Schwab do offer purchased 
 [money market funds](https://client.schwab.com/secured/money-market-funds)
-.
-We do not offer sweep money market funds, 
-so you would have to trade into and out of them.
-You can view available funds by clicking on Products at the top of the website and then Money Market Funds in the drop down.
+but not sweep money market funds.
+You have to trade MMFs by yourself.
+Available MMFs can be viewed 
+by clicking on Products at the top of the website and then Money Market Funds in the drop down.
 
 ## Transfer Stocks from Another Brokerage
 

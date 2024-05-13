@@ -3,7 +3,7 @@ Date: 2024-05-06 10:36:44
 Modified: 2024-05-06 10:36:44
 Author: Benjamin Du
 Slug: tips-on-the-wealthfront-brokerage
-Title: Tips on the Wealthfront Brokerage
+Title: Tips on the WealthFront Brokerage
 Category: Investment
 Tags: investment, money, WealthFront, brokerage, order, trade
 

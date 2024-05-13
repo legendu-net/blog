@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-08-21 20:50:50
-Modified: 2023-09-06 20:28:13
+Modified: 2024-05-12 17:02:27
 Author: Benjamin Du
 Slug: tips-on-airport
 Title: Tips on the Seattle-Tacoma International Airport
@@ -21,6 +21,17 @@ https://www.clearme.com/reserve
 - [SEA Spot Saver](https://www.portseattle.org/SEAspotsaver)
 
 - [The Secret Way to Skip Lines at Sea-Tac Airport](https://www.seattlemet.com/travel-and-outdoors/2023/08/spot-saver-secret-skip-line-security-sea-tac-airport)
+
+## EV Charging
+
+Free EV charging is available at floor 7 (general parking) and floor 4 (reserved parking),
+however, 
+parking fee applies.
+
+For more inforamtion,
+plese refer to
+[SEA Parking Information and Rates](https://www.portseattle.org/sea-tac/parking/parking-information)
+.
 
 ## References
 

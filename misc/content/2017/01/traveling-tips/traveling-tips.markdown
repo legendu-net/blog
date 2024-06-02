@@ -4,8 +4,8 @@ Author: Ben Chuanlong Du
 Slug: traveling-tips
 Title: Traveling Without Hassle
 Category: Life
-Tags: life, traveling, tips, luggage, trip
-Modified: 2023-08-29 14:58:00
+Tags: life, traveling, tips, luggage, trip, travel
+Modified: 2024-06-01 20:20:54
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -14,7 +14,7 @@ Modified: 2023-08-29 14:58:00
 ## Luggage
 
 ### IDs
-
+- quick pass if applicable (e.g., [SEA SPOT Saver](https://misc.legendu.net/blog/tips-on-airport/#sea-spot-saver))
 - ID, passport
 - boading passing
 

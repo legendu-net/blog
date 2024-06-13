@@ -5,20 +5,25 @@ Slug: find-tips
 Title: Tips on the find command in Linux
 Category: OS
 Tags: Linux, find, tips, search, locate
-Modified: 2024-02-12 21:38:41
+Modified: 2024-06-12 19:14:15
 
 
 It is suggested that you 
 use
 Python (the `pathlib` module),
+[ripgrep](https://github.com/BurntSushi/ripgrep),
 [fselect](https://github.com/jhspetersson/fselect)
 or
 [osquery](http://www.legendu.net/misc/blog/osquery-tips) 
 (currently have some bugs)
+instead of `find`
 to locate files.
-The Python module `pathlib` is the most suitable one for relatively complex jobs.
-Both fselect and osquery support SQL-like syntax 
-and are more intuitive than the `find` command.
+
+- The Python module `pathlib` is the most suitable one for relatively complex jobs.
+- `ripgrep` is a more user-friendly alternative to find.
+- Both fselect and osquery support SQL-like syntax and are more intuitive than the `find` command.
+
+## Search Files By Name
 
 1. Find all files with the extension ".out" in the current directory and its subdirectory, 
     and then make them executable.
@@ -34,7 +39,13 @@ and are more intuitive than the `find` command.
         :::bash
         find . -iname '*conflicted*' -print0 | xargs -0 rm
 
-## Size Related Finding
+3. Find Python scripts in the current directory recursively
+    but ignore those under directories with the name `.ipynb_checkpoints`.
+
+    :::bash
+    find . -type f -iname '*.py' -not -path '*/.ipynb_checkpoints/*'
+
+## Search Files by Size
 
 1. Find files with 0 size and delete them.
 
@@ -63,8 +74,7 @@ and are more intuitive than the `find` command.
         :::bash
         find . -type f -iname '*.r' | grep --color=auto paste
 
-
-## Time Related Finding
+## Search Files by Time
 
 1. Find files created with in 60 minutes.
 
@@ -102,7 +112,7 @@ and are more intuitive than the `find` command.
         :::bash
         find . -type f -newerct 2008-09-29 ! -newerct 2008-09-30
 
-## File Type Related Finding
+## Search Files by Type
 
 1. Find broken symbolic links.
 
@@ -111,50 +121,43 @@ and are more intuitive than the `find` command.
         # or
         find -L . -type l
 
-3. Find executable files in current directory 
+2. Find executable files in current directory 
         
         :::bash
         find .  -maxdepth 1 -type f -executable
 
-## User Related Finding
-
-10. Find files that belong to a user but writable by its group or other people.
-
-        :::bash
-        find /path/to/file -user user1 -perm /022
-
-11. Check file type of all files under the current directory.
+3. Check file type of all files under the current directory.
 
         :::bash
         find . -type f | xargs file
 
--perm mode: File's permission bits are exactly mode (octal or symbolic).
--perm -mode: All  of  the  permission bits mode are set for the file. 
--perm /mode: Any of the permission bits mode are set for the file. 
-a little bit trick about how to understand the last 2 permission criterias.
-as suggested, think in terms of permission BITs (0/1)
+## Search Files by User Permission
 
-The following command finds all files that readable or writable by the group or (readable or writable) by others.
+1. Find files that belong to a user but writable by its group or other people.
+
+        :::bash
+        find /path/to/file -user user1 -perm /022
+
+    -perm mode: File's permission bits are exactly mode (octal or symbolic).
+    -perm -mode: All  of  the  permission bits mode are set for the file. 
+    -perm /mode: Any of the permission bits mode are set for the file. 
+    a little bit trick about how to understand the last 2 permission criterias.
+    as suggested, think in terms of permission BITs (0/1)
+
+2. The following command finds all files that readable or writable by the group or (readable or writable) by others.
 
     :::bash
     find /path/to/file -user user1 -perm /066
 
-The following command find all files that readable and writable by the group and (readable and writable) by others.
+3. The following command find all files that readable and writable by the group and (readable and writable) by others.
 
     :::bash
     find /path/to/file -user user1 -perm -066
 
-The following command find all files that readable or writable by the group and (readable or writable) by others.
+4. The following command find all files that readable or writable by the group and (readable or writable) by others.
 
     :::bash
     find /path/to/file -user user1 -perm /060 -perm /006
-
-
-Find Python scripts in the current directory recursively
-but ignore those under directories with the name `.ipynb_checkpoints`.
-
-    :::bash
-    find . -type f -iname '*.py' -not -path '*/.ipynb_checkpoints/*'
 
 ## References
 

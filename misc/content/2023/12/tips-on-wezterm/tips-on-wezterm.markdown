@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-12-13 20:53:16
-Modified: 2023-12-14 09:40:10
+Modified: 2024-06-18 00:04:38
 Author: Benjamin Du
 Slug: tips-on-wezterm
 Title: Tips on Wezterm
@@ -13,6 +13,16 @@ Tags: Computer Science, programming, terminal, wezterm, app, application
 
     :::bash
     wezterm imgcat /path/to/image
+
+## Shortcuts
+
+
+fn + F: full screen
+
+shift + ctrl + c : copy
+shift + ctrl + v : paste
+
+
 
 
 ## References

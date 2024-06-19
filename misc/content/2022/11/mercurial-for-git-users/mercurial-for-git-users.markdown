@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-11-10 20:31:49
-Modified: 2023-11-08 01:43:32
+Modified: 2024-06-17 11:28:39
 Author: Benjamin Du
 Slug: mercurial-for-git-users
 Title: Mercurial for Git Users
@@ -40,9 +40,14 @@ List changed files without status.
 
     :::bash
     hg pstatus --no-status
+    
+## .hgignore
+
+https://wiki.mercurial-scm.org/.hgignore
 
 ## References
 
 - [Mercurial for Git Users (and vice versa)](https://www.rath.org/mercurial-for-git-users-and-vice-versa.html)
+
 
 - [Mercurial source code management system](https://www.mercurial-scm.org/doc/hg.1.html)

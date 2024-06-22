@@ -5,15 +5,13 @@ Slug: tips-on-html
 Title: Tips on HTML
 Category: Computer Science
 Tags: Computer Science, HTML, web, HTML5
-Modified: 2020-10-27 10:09:15
+Modified: 2024-06-21 17:57:35
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Useful Tools
 
 ### HTML Table Generator
-
-- [TableConvert Online](https://tableconvert.com/)
 
 - [Tables Generator](https://www.tablesgenerator.com/html_tables)
 

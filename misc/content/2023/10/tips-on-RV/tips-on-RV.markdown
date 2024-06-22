@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-10-19 11:31:45
-Modified: 2023-11-24 22:27:53
+Modified: 2024-06-21 11:15:04
 Author: Benjamin Du
 Slug: tips-on-RV
 Title: Tips on RV
@@ -62,6 +62,10 @@ https://www.youtube.com/watch?v=CYs0lUsSczo
 3. How to dump toilet waste?
 
 ## References
+
+- [Washington State Evergreen Fall RV Show](https://www.evergreenfallrvshow.com/)
+
+- [Tacoma Fall RV Show](https://www.tacomafallrvshow.com/show-information/)
 
 https://campaddict.com/motorhome-classes/
 

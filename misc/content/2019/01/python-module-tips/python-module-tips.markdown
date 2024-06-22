@@ -1,6 +1,6 @@
 Status: published
 Date: 2019-01-13 09:48:04
-Modified: 2022-12-22 16:21:57
+Modified: 2024-06-21 18:19:41
 Author: Ben Chuanlong Du
 Slug: python-module-tips
 Title: Tips on Python Module 
@@ -93,6 +93,14 @@ Tags: programming, Python, module, tips, module access
 
         :::python
         from a.b import C, D
+
+## Auto Import Submodules
+
+By default, 
+submodules of a (parent) module do not automatically import 
+so that they won't show up if you call `dir` on the (parent) module.
+You can make submodules auto import by 
+importing them in `__init__`.
 
 ## Issues and Solutions
 

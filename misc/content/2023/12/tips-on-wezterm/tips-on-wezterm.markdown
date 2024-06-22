@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-12-13 20:53:16
-Modified: 2024-06-18 00:04:38
+Modified: 2024-06-21 11:20:27
 Author: Benjamin Du
 Slug: tips-on-wezterm
 Title: Tips on Wezterm
@@ -16,14 +16,24 @@ Tags: Computer Science, programming, terminal, wezterm, app, application
 
 ## Shortcuts
 
-
-fn + F: full screen
-
-shift + ctrl + c : copy
-shift + ctrl + v : paste
-
-
-
+<table>
+    <tr>
+        <th>Shortcut</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Fn + F</td>
+        <td>Enter/exit full screen</td>
+    </tr>
+    <tr>
+        <td>Shift + Ctrl + C</td>
+        <td>Copy</td>
+    </tr>
+    <tr>
+        <td>Shift + Ctrl + V</td>
+        <td>Paste</td>
+    </tr>
+</table>
 
 ## References
 

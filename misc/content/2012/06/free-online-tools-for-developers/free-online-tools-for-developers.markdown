@@ -5,7 +5,7 @@ Slug: Free Online Tools for Developers
 Author: Ben Chuanlong Du
 Category: Computer Science
 Tags: programming, regex, regular expression, online
-Modified: 2022-06-25 15:54:09
+Modified: 2024-06-21 17:57:35
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -18,7 +18,7 @@ Modified: 2022-06-25 15:54:09
 
 [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev)
 
-[TableConvert Online](https://tableconvert.com/) 
+[Tables Generator](https://www.tablesgenerator.com/html_tables)
 for easily generating tables in different programming languges (HTML, Markdown, SQL, etc.).
 
 [UnDraw](https://undraw.co/) offers free to use pictures for web desgin, etc.

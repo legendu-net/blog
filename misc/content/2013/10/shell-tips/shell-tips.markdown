@@ -2,7 +2,7 @@ Status: published
 Author: Ben Chuanlong Du
 Title: Tips on Shell Commands
 Date: 2013-10-23 12:19:10
-Modified: 2022-06-26 10:49:27
+Modified: 2024-07-28 23:09:04
 Slug: shell-tips
 Category: OS
 Tags: tips, Linux, shell, terminal
@@ -29,10 +29,6 @@ https://github.com/thoughtbot/til/blob/master/bash/bash_profile_vs_bashrc.md#:~:
 2. You'd better use robust configuration files.
     If an error is encountered in the `.xsessionrc` file,
     the desktop environment might fail to start.
-
-3. Bash supports both Vi mode and Emacs mode.
-    The default is Emacs mode.
-    You can turn on the Vim mode by `set -o vi` in `.bashrc`.
 
 
 ### Media

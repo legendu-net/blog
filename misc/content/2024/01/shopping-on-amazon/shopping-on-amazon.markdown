@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-22 17:18:34
-Modified: 2024-03-13 01:21:08
+Modified: 2024-08-04 12:31:29
 Author: Benjamin Du
 Slug: shopping-on-amazon
 Title: Shopping on Amazon
@@ -28,3 +28,17 @@ Tags: shopping, Amazon, e-Commerce
 ## Amazon In-store Promotion Wallet
 
 - [In-store Promotion Wallet](https://www.amazon.com/promotions/brands/fresh)
+
+## Amazon Promotion Credit
+How to view Promotional Credit balance?
+https://www.reddit.com/r/amazonprime/comments/18p76pa/how_to_view_promotional_credit_balance/
+
+Amazon promotion credit is not shown directly.
+You have to add an item sold by Amazon, 
+proceed to checkout (but do not place the order)
+and look for "P&G Promo Credit" in order summary.
+If "Total before tax" is $0.00, 
+it means that there might be more promotion credit left. 
+You can increase the quantity of the item until "Total before tax" is positive,
+then "P&G Promo Credit" in order summary shows the total promotion credit you have.
+

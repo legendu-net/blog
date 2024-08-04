@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-22 17:18:34
-Modified: 2024-08-04 12:31:29
+Modified: 2024-08-04 12:33:37
 Author: Benjamin Du
 Slug: shopping-on-amazon
 Title: Shopping on Amazon
@@ -30,11 +30,12 @@ Tags: shopping, Amazon, e-Commerce
 - [In-store Promotion Wallet](https://www.amazon.com/promotions/brands/fresh)
 
 ## Amazon Promotion Credit
-How to view Promotional Credit balance?
-https://www.reddit.com/r/amazonprime/comments/18p76pa/how_to_view_promotional_credit_balance/
 
 Amazon promotion credit is not shown directly.
-You have to add an item sold by Amazon, 
+You have to add an item sold by Amazon,
+e.g.,
+[Amazon Basics 4 Gallon Trash Bags, Flap Ties, Fresh Scent, 80 Count, Pack of 1](https://www.amazon.com/dp/B09NQGR39K?psc=1&ref=ppx_yo2ov_dt_b_product_details)
+, 
 proceed to checkout (but do not place the order)
 and look for "P&G Promo Credit" in order summary.
 If "Total before tax" is $0.00, 
@@ -42,3 +43,5 @@ it means that there might be more promotion credit left.
 You can increase the quantity of the item until "Total before tax" is positive,
 then "P&G Promo Credit" in order summary shows the total promotion credit you have.
 
+## References
+- [How to view Promotional Credit balance?](https://www.reddit.com/r/amazonprime/comments/18p76pa/how_to_view_promotional_credit_balance/)

@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-04-26 01:41:03
-Modified: 2024-08-09 23:18:36
+Modified: 2024-08-09 23:55:57
 Author: Benjamin Du
 Slug: tips-on-charles-schwab-trader-api
 Title: Tips on Charles Schwab Trader API
@@ -50,10 +50,6 @@ Cryptos are not supported at this time.
 - [Charles Schwab Developer Club @ Discord](https://discord.com/invite/9D4Bnm4B74)
 
 - [The (Unofficial) Guide to Charles Schwab’s Trader APIs](https://www.reddit.com/r/Schwab/comments/1c2ioe1/the_unofficial_guide_to_charles_schwabs_trader/)
-
-- [Charles Schwab (Trader) API & R - Getting Started](https://www.youtube.com/watch?v=AOiFYj5iM5U)
-
-- [Charles Schwab (Trader) API & R - Authentication](https://www.youtube.com/watch?v=P2aYY9CiRLM)
 
 - [Schwab API Python Tutorial (Authentication and Requests)](https://www.youtube.com/watch?v=kHbom0KIJwc)
 

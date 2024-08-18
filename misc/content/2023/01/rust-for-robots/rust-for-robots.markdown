@@ -11,6 +11,10 @@ Tags: Computer Science, programming, Rust, robot, bot, hardware, embedded, IoT
 
 [Rust is for Robotics](https://robotics.rs/)
 
+## [copper-rs](https://github.com/copper-project/copper-rs)
+[copper-rs](https://github.com/copper-project/copper-rs)
+is a Rust first robotics engine.
+
 ## [ros2_rust](https://github.com/ros2-rust/ros2_rust)
 [ros2_rust](https://github.com/ros2-rust/ros2_rust)
 is a set of projects (the rclrs client library, code generator, examples and more) 

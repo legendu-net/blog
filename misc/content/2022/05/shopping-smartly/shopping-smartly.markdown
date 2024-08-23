@@ -9,6 +9,12 @@ Tags: Life, shop, shopping, smart, smartly, CamelCamelCamel, DealMoon, Homedepot
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+## Health Devices/Services Which Are not Covered By Insurance
+
+If you want to purchase some health devices/services
+and they are not covered by insurances or you do not have insurances,
+ASK WHETHER THEY PROVIDE ANY DISCOUNT!!!
+
 ## Price Check / Match
 [CamelCamelCamel - Amazon Price Tracker](https://camelcamelcamel.com/)
 

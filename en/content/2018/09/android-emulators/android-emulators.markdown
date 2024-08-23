@@ -5,7 +5,7 @@ Slug: android-emulators
 Title: Android Emulators
 Category: Software
 Tags: software, Android, emulation, emulator, AnBox, VirtualBox, xDroid
-Modified: 2023-02-05 18:30:10
+Modified: 2024-08-23 00:15:14
 
 
 <table style="width:100%">
@@ -22,7 +22,7 @@ Modified: 2023-02-05 18:30:10
     <a href="https://www.genymotion.com"> GenyMotion </a>
     <a href="#footnote1">[1]</a>
     </td>
-    <td> No </td>
+    <td> Limited </td>
     <td> Windows, macOS, Linux </td>
     <td> Partial </td>
     <td> Limited </td>
@@ -55,10 +55,32 @@ Modified: 2023-02-05 18:30:10
     <a href="https://www.linzhuotech.com/index.php/home/index/xdroid.html"> xDroid </a>
     <a href="#footnote1">[9]</a>
     </td>
-    <td> Partial </td>
+    <td> Limited </td>
     <td> Linux </td>
     <td> NA </td>
     <td> Limited </td>
+    <td> Active </td>
+  </tr>
+  <tr>
+    <td> 
+    <a href="https://mumu.163.com"> MuMu App Player </a>
+    <a href="#footnote5">[5]</a>
+    </td>
+    <td> Yes </td>
+    <td> macOS (M chip) </td>
+    <td> No </td>
+    <td> Yes </td>
+    <td> Active </td>
+  </tr>
+  <tr>
+    <td> 
+    <a href="https://syzs.qq.com/"> 腾讯手游助手 </a>
+    <a href="#footnote5">[6]</a>
+    </td>
+    <td> Yes </td>
+    <td> Windows </td>
+    <td> No </td>
+    <td> Yes </td>
     <td> Active </td>
   </tr>
   <tr>
@@ -81,28 +103,6 @@ Modified: 2023-02-05 18:30:10
     <td> Windows, macOS, Linux </td>
     <td> NA </td>
     <td> ? </td>
-    <td> Active </td>
-  </tr>
-  <tr>
-    <td> 
-    <a href="https://mumu.163.com"> MuMu App Player </a>
-    <a href="#footnote5">[5]</a>
-    </td>
-    <td> Yes </td>
-    <td> Windows, macOS </td>
-    <td> No </td>
-    <td> Yes </td>
-    <td> Active </td>
-  </tr>
-  <tr>
-    <td> 
-    <a href="https://syzs.qq.com/"> 腾讯手游助手 </a>
-    <a href="#footnote5">[6]</a>
-    </td>
-    <td> Yes </td>
-    <td> Windows, macOS </td>
-    <td> No </td>
-    <td> Yes </td>
     <td> Active </td>
   </tr>
   <tr>

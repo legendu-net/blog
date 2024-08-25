@@ -1,9 +1,9 @@
 Status: published
 Date: 2024-08-22 23:57:30
-Modified: 2024-08-22 23:57:30
+Modified: 2024-08-25 12:04:46
 Author: Benjamin Du
 Slug: AI-first-programming-languages
-Title: Ai-First Programming Languages
+Title: AI-first Programming Languages
 Category: Computer Science
 Tags: Computer Science, programming, AI, programming language, Bend, Mojo, GPU
 

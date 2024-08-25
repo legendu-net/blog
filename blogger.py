@@ -550,7 +550,7 @@ class Blogger:
         sql = f"CREATE TABLE IF NOT EXISTS srps ({', '.join(SRPS_COLS)})"
         self.execute(sql)
 
-    def clear(self):
+    def clean_db(self):
         """Remove the SQLite3 database."""
         os.remove(self._db)
 

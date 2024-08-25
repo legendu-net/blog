@@ -80,7 +80,7 @@ def trash(blogger, args):
 def _subparse_trash(subparsers):
     desc = "Move posts to the trash directory."
     subparser_trash = subparsers.add_parser(
-        "trash", aliases=["t"], help=desc, description=desc
+        "trash", aliases=["rm"], help=desc, description=desc
     )
     option_indexes(subparser_trash)
     option_all(subparser_trash)
@@ -320,8 +320,8 @@ def _subparse_link(subparsers):
     subparser_link.set_defaults(func=lambda blogger, args: symlink())
 
 
-def clear(blogger, _):
-    blogger.clear()
+def clean_db(blogger, _):
+    blogger.clean_db()
 
 
 def exec_notebook(_, args):
@@ -382,15 +382,14 @@ def _subparse_exec_notebook(subparsers):
     subparser_exec_notebook.set_defaults(func=exec_notebook)
 
 
-def _subparse_clear(subparsers):
+def _subparse_clean_db(subparsers):
     desc = "Remove the underlying SQLite3 database."
-    subparser_clear = subparsers.add_parser(
-        "clear",
-        aliases=["c"],
+    subparser_clean_db = subparsers.add_parser(
+        "clean_db",
         help=desc,
         description=desc,
     )
-    subparser_clear.set_defaults(func=clear)
+    subparser_clean_db.set_defaults(func=clean_db)
 
 
 def _subparse_utag(subparsers):
@@ -1000,7 +999,7 @@ def parse_args(args=None, namespace=None) -> Namespace:
     _subparse_publish(subparsers)
     _subparse_query(subparsers)
     _subparse_auto(subparsers)
-    _subparse_clear(subparsers)
+    _subparse_clean_db(subparsers)
     _subparse_git_status(subparsers)
     _subparse_git_diff(subparsers)
     _subparse_git_pull(subparsers)

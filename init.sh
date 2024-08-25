@@ -5,7 +5,7 @@ ln -svfT "$(pwd)/blog.py" $HOME/.local/bin/blog
 
 # deps
 if [ $(hostname) != "jupyterhub-pelican" ]; then
-    python3 -m pip install --user \
+    python3 -m pip install --user --break-system-packages \
         loguru \
         pyyaml \
         beautifulsoup4 typogrify \

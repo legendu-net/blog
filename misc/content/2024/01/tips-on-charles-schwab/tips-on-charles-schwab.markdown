@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-20 15:57:28
-Modified: 2024-04-26 01:39:27
+Modified: 2024-08-25 13:26:42
 Author: Benjamin Du
 Slug: tips-on-charles-schwab
 Title: Tips on Charles Schwab
@@ -94,13 +94,26 @@ Multiply the number of index option contracts traded by the applicable index opt
 
 ## Marginal Accounts
 
-A cash (non-margin) brokerage account requires reservation of cash to cover open orders 
-as if they are filled.
-However,
-a marginal brokerage account does not require reservation of cash (if you have enough margin)
-to cover open orders.
-And you are not considered borrowing money from Schwab 
-unless your orders fill.
+1. A cash (non-margin) brokerage account requires reservation of cash to cover open orders 
+    as if they are filled.
+    However,
+    a marginal brokerage account does not require reservation of cash (if you have enough margin)
+    to cover open orders.
+    And you are not considered borrowing money from Schwab 
+    unless your orders fill.
+
+2. You can find the maximum amount of money that you can borrow by navigating to Accounts > Balances. 
+    It will show you there how much you can maximize for trading or how much you can maximize for a cash withdrawal.
+
+3. You won't be able to adjust the amount of marign that you can use within your account.
+    It's automatically determined on the positions within your Schwab account.
+    The more marginable positions that you have in your account,
+    the more you are able to leverage or borrow.
+4. If you borrow funds and pay back the loan on the same day,
+    you won't be charged interest.
+    Interest is charged if you hold the margin balance overnight.
+    Notice that when you initiate a transfer from your bank to your Schwab account,
+    the funs would be credited immediately.
 
 - [Schwab margin rates and requirements](https://www.schwab.com/margin/margin-rates-and-requirements)
 

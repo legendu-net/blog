@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:29:29
-Modified: 2023-02-19 18:49:23
+Modified: 2024-08-23 11:51:08
 Author: Benjamin Du
 Slug: design-pattern-and-productivity-for-rust
 Title: Design Pattern and Productivity for Rust
@@ -25,6 +25,10 @@ allows you to write macros
 which are driven by Rust data structures, 
 just like proc macro derive macros, 
 but without having to wrestle with the proc macro system.
+
+## [bon](https://github.com/elastio/bon)
+[bon](https://github.com/elastio/bon)
+is a Rust crate for generating compile-time-checked builders for functions and structs.
 
 ## Design Patterns
 

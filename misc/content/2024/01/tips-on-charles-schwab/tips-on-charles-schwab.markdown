@@ -92,6 +92,17 @@ Sell of 20 option contracts = \$0.06 (20 x .00279 = .0558; rounded up)
 Index Option Fee (buys and sells):
 Multiply the number of index option contracts traded by the applicable index option fee rate according to the table on schwab.com/pricing in the footnotes and disclosures.
 
+## Marginal Accounts
+
+A cash (non-margin) brokerage account requires reservation of cash to cover open orders 
+as if they are filled.
+However,
+a marginal brokerage account does not require reservation of cash (if you have enough margin)
+to cover open orders.
+And you are not considered borrowing money from Schwab 
+unless your orders fill.
+
+- [Schwab margin rates and requirements](https://www.schwab.com/margin/margin-rates-and-requirements)
 
 ## Trader APIs
 

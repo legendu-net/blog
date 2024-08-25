@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:02:14
-Modified: 2023-12-12 23:35:41
+Modified: 2024-08-23 11:49:20
 Author: Benjamin Du
 Slug: dev-tools-for-rust
 Title: Dev Tools for Rust
@@ -29,6 +29,10 @@ is a cargo subcommand showing the assembly, LLVM-IR and MIR generated for Rust c
 ### [cargo-px](https://github.com/LukeMathWalker/cargo-px)
 [cargo-px](https://github.com/LukeMathWalker/cargo-px)
 is a cargo subcommand that extends cargo's capabilities when it comes to code generation.
+
+### [cargo-wizard](https://github.com/Kobzol/cargo-wizard)
+[cargo-wizard](https://github.com/Kobzol/cargo-wizard)
+is a Cargo subcommand for configuring Cargo projects for best performance.
 
 ### [cargo-binstall](https://crates.io/crates/cargo-binstall)
 [cargo-binstall](https://crates.io/crates/cargo-binstall)

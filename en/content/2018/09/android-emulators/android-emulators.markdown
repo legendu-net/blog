@@ -5,7 +5,7 @@ Slug: android-emulators
 Title: Android Emulators
 Category: Software
 Tags: software, Android, emulation, emulator, AnBox, VirtualBox, xDroid
-Modified: 2024-08-23 00:15:14
+Modified: 2024-08-25 13:00:48
 
 
 <table style="width:100%">
@@ -142,8 +142,7 @@ Modified: 2024-08-23 00:15:14
 
 [1] [GenyMotion](https://www.genymotion.com/)
 is a great cross-platform choice.
-However, 
-a licence must be purchased to use GenyMotion.
+A free version with limited features is available.
 The desktop version of GenyMotion 
 can be downloaded at
 <https://www.genymotion.com/fun-zone/>

@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-10-19 11:31:45
-Modified: 2024-06-21 11:15:04
+Modified: 2024-08-26 11:42:21
 Author: Benjamin Du
 Slug: tips-on-RV
 Title: Tips on RV
@@ -73,4 +73,8 @@ https://www.thewaywardhome.com/class-b-vs-class-c-rvs/
 
 
 https://blog.campersinn.com/blog/which-type-of-motorhome-is-right-for-you-class-a-c-or-b
+
+
+https://www.youtube.com/watch?v=DzgWXJptuOg
+
 

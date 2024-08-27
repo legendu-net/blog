@@ -8,5 +8,3 @@ Category: Finance
 Tags: Finance, investment, money, banking, Citi
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-
-- [Citi Checking Accounts](https://www.citi.com/banking/checking-account)

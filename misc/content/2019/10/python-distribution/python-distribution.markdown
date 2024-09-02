@@ -1,12 +1,11 @@
 Status: published
 Date: 2019-10-22 09:36:27
+Modified: 2024-08-28 13:27:33
 Author: Benjamin Du
 Slug: python-distribution
 Title: Python Distribution
 Category: Computer Science
 Tags: programming, Python distribution
-Modified: 2020-06-22 09:36:27
-nohtyP 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. When people talks about Python,
@@ -37,3 +36,16 @@ nohtyP
   `conda` is a general purpose package management tool instead of for Python only.
   It eases the pain of figuring out the right dependencies of Python packages
   but it is a little bit bloated (with larger installation sizes) compared to `pip`.
+
+## CPython
+
+## PyPy
+
+## RustPython
+
+## Python Compilers
+
+### [codon](https://github.com/exaloop/codon)
+[codon](https://github.com/exaloop/codon)
+is a high-performance, zero-overhead, extensible Python compiler using LLVM.
+

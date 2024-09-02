@@ -12,9 +12,9 @@ Modified: 2024-08-26 17:56:55
 ## BOA
 
 To be exempt from monthly managing fees,
-Checking account > $10,000
-Money Market savings account >$5,000
-Regular savings account > $300
+Checking account > \$10,000
+Money Market savings account > \$5,000
+Regular savings account > \$300
 
 ## Citi
 
@@ -22,8 +22,8 @@ Regular savings account > $300
 
 ## Chase
 
-$1500 minimum daily balance for Chase Total Checking
-$300 minimum for Chase savings
+\$1,500 minimum daily balance for Chase Total Checking
+\$300 minimum for Chase savings
 
 [Understanding checking and savings account fees](https://www.chase.com/personal/fees/total-checking?jp_cmp=rb/107869/ema/LC-COREFEE23/Body_Textlink_2)
 

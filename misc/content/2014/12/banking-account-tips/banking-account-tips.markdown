@@ -12,8 +12,11 @@ Modified: 2024-09-02 00:42:10
 ## BOA
 
 To be exempt from monthly managing fees,
+
 - Checking account > \$10,000
+
 - Money Market savings account > \$5,000
+
 - Regular savings account > \$300
 
 ## Citi
@@ -22,8 +25,9 @@ To be exempt from monthly managing fees,
 
 ## Chase
 
-\$1,500 minimum daily balance for Chase Total Checking
-\$300 minimum for Chase savings
+- \$1,500 minimum daily balance for Chase Total Checking
+
+- \$300 minimum for Chase savings
 
 [Understanding checking and savings account fees](https://www.chase.com/personal/fees/total-checking?jp_cmp=rb/107869/ema/LC-COREFEE23/Body_Textlink_2)
 
@@ -40,7 +44,6 @@ Discover can be used as China Bank Union without foreign transaction fees
 ## HSBC 
 
 No international transaction fee if you transfer money to another (international) HSBC bank account.
-
 
 ## China Merchant Bank
 

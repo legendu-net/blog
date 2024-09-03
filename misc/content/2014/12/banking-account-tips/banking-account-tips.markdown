@@ -5,7 +5,7 @@ Title: Banking Account
 Slug: banking-account-tips
 Category: Life
 Tags: life, business, banking account, checking account, money market account, savings account, BOA
-Modified: 2024-09-02 00:42:10
+Modified: 2024-09-02 20:16:51
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -13,11 +13,11 @@ Modified: 2024-09-02 00:42:10
 
 To be exempt from monthly managing fees,
 
-- Checking account > \$10,000
+- Checking account > $10,000
 
-- Money Market savings account > \$5,000
+- Money Market savings account > $5,000
 
-- Regular savings account > \$300
+- Regular savings account > $300
 
 ## Citi
 
@@ -25,9 +25,9 @@ To be exempt from monthly managing fees,
 
 ## Chase
 
-- \$1,500 minimum daily balance for Chase Total Checking
+- $1,500 minimum daily balance for Chase Total Checking
 
-- \$300 minimum for Chase savings
+- $300 minimum for Chase savings
 
 [Understanding checking and savings account fees](https://www.chase.com/personal/fees/total-checking?jp_cmp=rb/107869/ema/LC-COREFEE23/Body_Textlink_2)
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-09-23 00:58:13
-Modified: 2023-09-23 00:58:13
+Modified: 2024-09-02 23:40:37
 Author: Benjamin Du
 Slug: tips-on-health
 Title: Tips on Health
@@ -10,9 +10,8 @@ Tags: life, immunization, vaccine, record, IIS, health, flu
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Immunization Records
-Immunization Inforamtion System
 
-https://app.myirmobile.com/auth/sign-in?state=WA
+[Immunization Inforamtion System](https://app.myirmobile.com/auth/sign-in?state=WA)
 
 ## Get Vaccine Shot
 

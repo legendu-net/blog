@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-22 17:18:34
-Modified: 2024-08-05 19:56:53
+Modified: 2024-09-08 09:37:59
 Author: Benjamin Du
 Slug: shopping-on-amazon
 Title: Shopping on Amazon
@@ -42,6 +42,20 @@ If "Total before tax" is $0.00,
 it means that there might be more promotion credit left. 
 You can increase the quantity of the item until "Total before tax" is positive,
 then "P&G Promo Credit" in order summary shows the total promotion credit you have.
+
+## Products Which are Sold and Shipped by Amazon
+
+- [Amazon Basics](https://www.amazon.com/stores/AmazonBasics/page/947C6949-CF8E-4BD3-914A-B411DD3E4433?ref_=ast_bln)
+
+- [Amazon Basics 4 Gallon Trash Bags, Flap Ties, Fresh Scent, 80 Count, Pack of 1](https://www.amazon.com/dp/B09NQGR39K?ref=ppx_yo2ov_dt_b_fed_asin_title)
+
+- [Clorox Disinfecting Wipes Value Pack, Household Essentials, 75 Count, Pack of 3 (Package May Vary)](https://www.amazon.com/gp/product/B00HSC9F2C/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&th=1)
+
+- [Pampers Sensitive Baby Wipes, Water Based, Hypoallergenic and Unscented, 8 Flip-Top Packs, 4 Refill Packs (1008 Wipes Total)](https://www.amazon.com/dp/B0BJ13K7FR?ref=ppx_yo2ov_dt_b_fed_asin_title)
+
+- [Aveeno Therapeutic Shave Gel with Oat and Vitamin E to Help Prevent Razor Bumps, Soothes Dry Skin and Provides a Close, Smooth Shave with Less Irritation, Fragrance-Free, 7 oz](https://www.amazon.com/dp/B0000536EY?ref=ppx_yo2ov_dt_b_fed_asin_title)
+
+- [Amazon Smart Air Quality Monitor – Know your air, Works with Alexa](https://www.amazon.com/dp/B08W8KS8D3?psc=1&ref=ppx_yo2ov_dt_b_product_details)
 
 ## References
 - [How to view Promotional Credit balance?](https://www.reddit.com/r/amazonprime/comments/18p76pa/how_to_view_promotional_credit_balance/)

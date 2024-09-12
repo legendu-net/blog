@@ -5,7 +5,7 @@ Slug: quant-trading
 Title: Quant Trading
 Category: Finance
 Tags: quant, quantitative, trading, investment, money, stock, ETF, Alpaca, QuantConnect, QuantRocket
-Modified: 2024-02-17 21:56:58
+Modified: 2024-09-11 17:20:47
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -17,6 +17,56 @@ https://github.com/whittlem/pycryptobot
 
 https://github.com/asavinov/intelligent-trading-bot
 
+## Quant Trading Libraries
+
+### Technical Analysis
+
+1. [TA-Lib](https://github.com/TA-Lib/ta-lib)
+    is an open-source technical analysis library for financial applications. 
+    It provides a wide range of technical indicators and functions for analyzing financial market data.
+
+2. [QuantLib](https://github.com/lballabio/quantlib)
+    is aimed at providing a comprehensive software framework for quantitative finance. 
+    QuantLib is a free/open-source library for modeling, trading, and risk management in real-life.
+
+3. [ffn](https://github.com/pmorissette/ffn)
+    is a library that contains many useful functions 
+    for those who work in quantitative finance. 
+    It stands on the shoulders of giants (Pandas, Numpy, Scipy, etc.) 
+    and provides a vast array of utilities, 
+    from performance measurement and evaluation to graphing and common data transformations.
+
+### Indicators
+
+1. [TA-Lib](https://github.com/TA-Lib/ta-lib)
+    is an open-source technical analysis library for financial applications. 
+    It provides a wide range of technical indicators and functions for analyzing financial market data.
+
+2. [indicator](https://github.com/cinar/indicator)
+    is a Golang module providing various stock technical analysis indicators for trading.
+
+### Backtesting 
+
+1. [bt](https://github.com/pmorissette/bt)
+    is a flexible backtesting framework 
+    for Python used to test quantitative trading strategies. 
+    Backtesting is the process of testing a strategy over a given data set. 
+    This framework allows you to easily create strategies that mix and match different Algos. 
+    It aims to foster the creation of easily testable, 
+    re-usable and flexible blocks of strategy logic 
+    to facilitate the rapid development of complex trading strategies.
+
+2. [vectorbt](https://github.com/polakowo/vectorbt)
+    is a powerful Python library that enables easy backtesting 
+    of trading strategies, financial data analysis, and visualization. 
+    It provides a fast and efficient engine for quantitative finance research and algorithmic trading.
+
+### Deep Learning
+
+1. [FinRL](https://github.com/AI4Finance-Foundation/FinRL)
+    is an open-source framework for financial reinforcement learning. 
+    It aims to revolutionize FinTech by providing a comprehensive ecosystem 
+    for developing and deploying reinforcement learning-based trading strategies.
 
 ## Good Platfroms
 

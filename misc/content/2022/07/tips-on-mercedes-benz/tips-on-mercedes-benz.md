@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-07-23 21:15:27
-Modified: 2023-11-05 11:28:56
+Modified: 2024-09-11 23:06:41
 Author: Benjamin Du
 Slug: tips-on-mercedes-benz
 Title: Tips on Mercedes-Benz
@@ -11,6 +11,8 @@ Tags: Life, Car, Mercedes-Benz, recall, vehicle, coolant, cruise control
 
 
 ## References
+
+- [Mercedes Benz Key Fob Battery Replacement CR2025 GLA](https://www.youtube.com/watch?v=ulnj2XfuacA)
 
 - [Mercedes-Benz GLE - How To Open Hood](https://www.youtube.com/watch?v=5HI3aCtfUXQ)
 

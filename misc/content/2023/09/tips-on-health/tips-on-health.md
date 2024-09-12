@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-09-23 00:58:13
-Modified: 2024-09-02 23:40:37
+Modified: 2024-09-09 14:31:59
 Author: Benjamin Du
 Slug: tips-on-health
 Title: Tips on Health
@@ -15,4 +15,11 @@ Tags: life, immunization, vaccine, record, IIS, health, flu
 
 ## Get Vaccine Shot
 
-https://www.vaccines.gov/
+1. You can find pharmacies for vaccine shot near you at
+    https://www.vaccines.gov/
+    .
+    
+2. For people without medical insurance,
+    Costco offers the cheapest vaccine shots.
+
+

@@ -5,7 +5,7 @@ Slug: us-visa-tips
 Title: Tips on US Visa
 Category: Life
 Tags: life, US, DS-160, visa, interview, B1, B2, travel
-Modified: 2024-06-02 09:50:40
+Modified: 2024-09-09 22:50:04
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -14,6 +14,7 @@ Modified: 2024-06-02 09:50:40
 
 [Online DS-160 Form](https://ceac.state.gov/GenNIV/common/Recovery.aspx)
 
+[US Travel Docs Portal - Schedule Visa Interviews](https://portal.ustraveldocs.com/)
 
 [Schedule Interviews](https://cgifederal.secure.force.com/)
 

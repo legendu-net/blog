@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-10-19 11:31:45
-Modified: 2024-08-26 11:42:21
+Modified: 2024-09-09 14:27:46
 Author: Benjamin Du
 Slug: tips-on-RV
 Title: Tips on RV
@@ -54,6 +54,29 @@ https://www.youtube.com/watch?v=CYs0lUsSczo
 ## Tips on RV Traveling
 
 1. RV Life Pro is a great app to have.
+
+### RV Over Night Parking
+
+https://roadtrippers.com/magazine/find-safe-rv-parking-over-night/
+
+https://www.reddit.com/r/RVLiving/comments/14vhn3t/where_yall_parking/ 
+
+https://www.quora.com/What-is-the-safest-place-to-park-an-RV-overnight-while-traveling-full-time
+
+
+### Camping Host
+
+https://rvlifestyle.com/what-do-camp-hosts-do/
+
+## Camping in WA
+
+https://washington.goingtocamp.com/
+
+https://parks.wa.gov/passes-permits/reservations
+
+https://www.seattlemet.com/travel-and-outdoors/washington-campground-reservation-permit-state-park
+
+https://www.reddit.com/r/Washington/comments/11bqmvl/difficulty_of_reserving_a_campsite/
 
 ## To Learn
 

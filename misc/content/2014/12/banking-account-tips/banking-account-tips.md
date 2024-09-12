@@ -40,6 +40,12 @@ Discover can be used as China Bank Union without foreign transaction fees
 1. Deposit checks as soon as possible. 
     Never sit checks in yoru pocket 
     as they are not yours until you deposit them into your bank account.
+    
+## BMO
+
+https://www.bmo.com/en-us/main/personal/checking-accounts/comparison/
+
+1. BMO Smart Advantage Checking does not charge any monthly maintenance fees.
 
 ## HSBC 
 

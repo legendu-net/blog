@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2023-12-06 22:47:48
+Modified: 2024-09-13 10:48:01
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -34,6 +34,14 @@ replaces your existing shell history with a SQLite database,
 and records additional context for your commands. 
 Additionally, 
 it provides optional and fully encrypted synchronisation of your history between machines, via an Atuin server.
+
+## [see](https://github.com/guilhermeprokisch/see)
+
+[see](https://github.com/guilhermeprokisch/see)
+is a powerful file visualization tool for the terminal, 
+offering advanced code viewing capabilities, Markdown rendering, and more. 
+It provides syntax highlighting, emoji support, and image rendering capabilities, 
+offering a visually appealing way to view various file types directly in your console.
 
 ## [bat]( https://www.legendu.net/misc/blog/bat-is-a-better-alternative-to-cat )
 [bat]( https://www.legendu.net/misc/blog/bat-is-a-better-alternative-to-cat )
@@ -97,6 +105,10 @@ is ping with a graph.
 [bandwhich](https://crates.io/crates/bandwhich)
 is a CLI utility for displaying current network utilization by process, 
 connection and remote IP/hostname.
+
+### [below](https://github.com/facebookincubator/below)
+[below](https://github.com/facebookincubator/below)
+is an interactive tool to view and record historical system data.
 
 ## Disk Usage
 ### [dust](https://github.com/bootandy/dust)

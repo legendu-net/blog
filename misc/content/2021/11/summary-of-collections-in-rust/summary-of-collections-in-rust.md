@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-11-20 22:36:35
-Modified: 2023-02-18 11:48:13
+Modified: 2024-09-13 10:45:01
 Author: Benjamin Du
 Slug: summary-of-collections-in-rust
 Title: Summary of Collections in Rust
@@ -21,6 +21,21 @@ and when to use them.
 
 ![rust-collection-summary](https://user-images.githubusercontent.com/824507/151688238-88410b52-723d-4d31-bcb1-0a6c8580fb95.png)
 
+## [Array in Rust](https://www.legendu.net/misc/blog/rust-collection-array/)
+
+## Graph
+
+- [petgraph](https://github.com/petgraph/petgraph)
+    is a graph data structure library for Rust.
+
+- [petgraph](https://crates.io/crates/petgraph)
+
+## Maps in Rust
+
+Please refer to
+[Map in Rust]( https://www.legendu.net/misc/blog/rust-map )
+for detailed discussions.
+
 ## Third-party Collections and Related Tools
 
 ### [elsa](https://github.com/Manishearth/elsa)
@@ -39,7 +54,6 @@ heapless / [arrayvec](https://crates.io/crates/arrayvec): stores on the stack on
     provides `static` friendly data structures that don't require dynamic memory allocation.
 
 - [arrayvec](https://crates.io/crates/arrayvec)
-    [arrayvec](https://crates.io/crates/arrayvec)
     provides a vector with fixed capacity, 
     backed by an array (which is stored on the stack).
     Notice that you cannot collect an iterator into an Array.
@@ -50,33 +64,29 @@ heapless / [arrayvec](https://crates.io/crates/arrayvec): stores on the stack on
     [How do I collect into an array?](https://stackoverflow.com/questions/26757355/how-do-i-collect-into-an-array)
     .
 
-smallvec
-https://crates.io/crates/smallvec
+- [smallvec](https://crates.io/crates/smallvec)
+    stores some elements on the stack, 
+    falls back to the heap if the stack capacity is exceeded.
 
-: stores some elements on the stack, falls back to the heap if the stack capacity is exceeded.
+- [tinyvec](https://github.com/Lokathor/tinyvec)
+    provides both, implemented in 100% safe code. 
+    For example, 
+    smallvec had 5 memory safety bugs to date; they are guaranteed to never happen with tinyvec. 
+    The drawback is that the stack storage is zero-initialized on creation, 
+    which incurs some cost; for small capacities it's usually negligible, 
+    but adds up if you want to store thousands of elements.
 
-tinyvec: provides both, implemented in 100% safe code. For example, smallvec had 5 memory safety bugs to date; they are guaranteed to never happen with tinyvec. The drawback is that the stack storage is zero-initialized on creation, which incurs some cost; for small capacities it's usually negligible, but adds up if you want to store thousands of elements.
+- [ndarray](https://crates.io/crates/ndarray)
+    is an n-dimensional array for general elements and for numerics. 
+    Lightweight array views and slicing; 
+    views support chunking and splitting.
+    [Array in Rust](https://www.legendu.net/misc/blog/rust-collection-array/)
+    has discussions on ways to make it easy to construct arrays.
 
-ndarray
-https://crates.io/crates/ndarray
+### trie
 
-An n-dimensional array for general elements and for numerics. Lightweight array views and slicing; views support chunking and splitting.
-
-[Array in Rust](https://www.legendu.net/misc/blog/rust-collection-array/)
-has discussions on ways to make it easy to construct arrays.
-
-## Maps in Rust
-
-Please refer to
-[Map in Rust]( https://www.legendu.net/misc/blog/rust-map )
-for detailed discussions.
-
-## Graph
-
-- [petgraph](https://github.com/petgraph/petgraph)
-    is a graph data structure library for Rust.
-
-- [petgraph](https://crates.io/crates/petgraph)
+- [trie-hard](https://github.com/cloudflare/trie-hard)
+    is a novel implementation of a Trie data structure optimized for small, sparse maps.
 
 ## References 
 

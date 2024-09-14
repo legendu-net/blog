@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-10-19 11:31:45
-Modified: 2024-09-09 14:27:46
+Modified: 2024-09-13 22:17:01
 Author: Benjamin Du
 Slug: tips-on-RV
 Title: Tips on RV
@@ -8,6 +8,10 @@ Category: Life
 Tags: Life, travel, RV, auto, mobile, home, car, vehilce
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+https://www.youtube.com/watch?v=8O-IODLU5pc
+
+https://weretherussos.com/class-b-rv-manufacturers-list-camper-vans/
 
 ## Tips and Traps
 

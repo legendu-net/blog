@@ -5,9 +5,13 @@ Title: Tips on Housing
 Slug: housing-tips
 Category: Life
 Tags: life, housing, tips, rent, apartment, shopping
-Modified: 2023-09-01 09:08:19
+Modified: 2024-09-11 00:16:44
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## Good Sources of Learning
+
+https://www.youtube.com/@richard0501
  
 ## Rent an Apartment
 

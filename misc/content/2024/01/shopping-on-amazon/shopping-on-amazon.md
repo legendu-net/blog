@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-22 17:18:34
-Modified: 2024-09-14 10:43:12
+Modified: 2024-09-14 13:10:32
 Author: Benjamin Du
 Slug: shopping-on-amazon
 Title: Shopping on Amazon
@@ -8,6 +8,10 @@ Category: Shopping
 Tags: shopping, Amazon, e-Commerce
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## Amazon Price Tracking & Alert
+
+- [CamelCamelCamel](https://camelcamelcamel.com/)
 
 ## Customer Service Online Chat 
 

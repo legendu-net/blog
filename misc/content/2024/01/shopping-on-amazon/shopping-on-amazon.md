@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-01-22 17:18:34
-Modified: 2024-09-08 09:37:59
+Modified: 2024-09-14 10:43:12
 Author: Benjamin Du
 Slug: shopping-on-amazon
 Title: Shopping on Amazon
@@ -8,10 +8,6 @@ Category: Shopping
 Tags: shopping, Amazon, e-Commerce
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-
-## Tips and Traps
-
-1. Subscription order won't be charged for shipping fees.
 
 ## Customer Service Online Chat 
 
@@ -23,7 +19,11 @@ Tags: shopping, Amazon, e-Commerce
 
 ## Amazon Subscriptions
 
-- [Amazon Subscriptions](https://www.amazon.com/auto-deliveries?ref_=pe_29444320_544268820__em_sc_vs)
+1. Subscription order won't be charged for shipping fees.
+
+2. Check your subscriptions at 
+    [Amazon Subscriptions](https://www.amazon.com/auto-deliveries?ref_=pe_29444320_544268820__em_sc_vs)
+    .
 
 ## Amazon In-store Promotion Wallet
 
@@ -42,6 +42,11 @@ If "Total before tax" is $0.00,
 it means that there might be more promotion credit left. 
 You can increase the quantity of the item until "Total before tax" is positive,
 then "P&G Promo Credit" in order summary shows the total promotion credit you have.
+
+## Amazon Prime Membership
+
+1. You can occasionally pause your Amazon Prime subscription,
+    and Amazon will likely offer you cheaper trials.
 
 ## Products Which are Sold and Shipped by Amazon
 

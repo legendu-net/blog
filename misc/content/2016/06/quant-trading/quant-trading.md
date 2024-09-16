@@ -17,7 +17,19 @@ https://github.com/whittlem/pycryptobot
 
 https://github.com/asavinov/intelligent-trading-bot
 
+## Forums & Discussions
+
+- [ML-Quant](https://www.ml-quant.com/public)
+
 ## Quant Trading Libraries
+
+## General 
+
+1. [RustQuant](https://github.com/avhz/RustQuant)
+    is a Rust library for quantitative finance.
+
+2. [zvt](https://github.com/zvtvz/zvt)
+    is a modular quant framework.
 
 ### Technical Analysis
 
@@ -36,6 +48,12 @@ https://github.com/asavinov/intelligent-trading-bot
     and provides a vast array of utilities, 
     from performance measurement and evaluation to graphing and common data transformations.
 
+4. [riskparity.py](https://github.com/convexfi/riskparity.py)
+    riskparityportfolio provides solvers to design risk parity portfolios. 
+    In its simplest form, we consider the convex formulation with a unique solution proposed by Spinu (2013) and use cyclical methods inspired by Griveau-Billion et al. (2013) and Choi & Chen (2022). 
+    For more general formulations, which are usually nonconvex, 
+    we implement the successive convex approximation method proposed by Feng & Palomar (2015).
+
 ### Indicators
 
 1. [TA-Lib](https://github.com/TA-Lib/ta-lib)
@@ -44,6 +62,36 @@ https://github.com/asavinov/intelligent-trading-bot
 
 2. [indicator](https://github.com/cinar/indicator)
     is a Golang module providing various stock technical analysis indicators for trading.
+
+3. [stock-indicators-python](https://github.com/facioquo/stock-indicators-python)
+    is a PyPI library package that produces financial market technical indicators. 
+    Send in historical price quotes and get back desired indicators 
+    such as moving averages, Relative Strength Index, Stochastic Oscillator, Parabolic SAR, etc. Nothing more.
+    [stock-indicators-python](https://github.com/facioquo/stock-indicators-python)
+    is based on
+    [Stock.Indicators](https://github.com/DaveSkender/Stock.Indicators)
+    which is implemented in C#.
+
+4. [Tulip Indicators](https://tulipindicators.org/)
+    is a library of functions for technical analysis of financial time series data. 
+    It is written in ANSI C for speed and portability. 
+    Bindings are available for many other programming languages too.
+
+5. [trade_aggregation-rs](https://github.com/MathisWellmann/trade_aggregation-rs)
+    is a high performance, modular and flexible trade aggregation crate, producing Candle data, 
+    suitable for low-latency applications and incremental updates. 
+    It allows the user to choose the rule dictating how a new candle is created through the AggregationRule trait, e.g: Time, Volume based or some other information driven rule. 
+    It also allows the user to choose which type of candle will be created from the aggregation process through the ModularCandle trait. 
+    Combined with the Candle macro, it enables the user to flexibly create any type of Candle as long as each component implements the CandleComponent trait. 
+    The aggregation process is also generic over the type of input trade data as long as it implements the TakerTrade trait, allowing for greater flexibility for downstream projects.
+
+6. [sliding_features-rs](https://github.com/MathisWellmann/sliding_features-rs)
+    provides modular, chainable sliding windows with various signal processing functions and technical indicators.
+
+### Calendar
+
+1. [python-bizdays] (https://github.com/wilsonfreitas/python-bizdays)
+    offers business days calculations and utilities.
 
 ### Backtesting 
 
@@ -60,6 +108,10 @@ https://github.com/asavinov/intelligent-trading-bot
     is a powerful Python library that enables easy backtesting 
     of trading strategies, financial data analysis, and visualization. 
     It provides a fast and efficient engine for quantitative finance research and algorithmic trading.
+
+3. [qstrader](https://github.com/mhallsmoore/qstrader)
+    is a free Python-based open-source modular schedule-driven backtesting framework 
+    for long-short equities and ETF based systematic trading strategies.
 
 ### Deep Learning
 
@@ -159,5 +211,9 @@ Prediction of Hidden Liquidity in the Limit Order Book of GLOBEX Futures
 Mclean, R. David and Jeffrey Pontiff, 2016, Does Academic Research Destroy Stock Return Predictability, The Journal of Finance 71(1), 5-32.
 
 ## References
+
+- [Investment](https://misc.legendu.net/blog/investment-tips/)
+
+- [awesome-quant](https://github.com/wilsonfreitas/awesome-quant)
 
 - [The first-timer’s guide to buying stocks](https://www.nerdwallet.com/m/investing/how-to-buy-stocks-cs?bucket_id=Without+Chase&gad_source=1&gclid=CjwKCAiAgeeqBhBAEiwAoDDhn-ZlWJMKfNxBXeHm5f7iTKol0KmclBRNnVBNIbOUYG_KFIesxDvyVhoCNegQAvD_BwE&gclsrc=aw.ds&mktg_body=2989&mktg_hline=19335&mktg_place=aud-2205081372215%3Akwd-21866581&model_execution_id=D27E7BC4-58F9-46C0-B087-21293245805C&nw_campaign_id=154950223590786600&utm_campaign=in_mktg_paid_072023_stocks_upper-funnel_broad_desktop&utm_content=ta&utm_medium=cpc&utm_source=goog&utm_term=learn+about+stocks)

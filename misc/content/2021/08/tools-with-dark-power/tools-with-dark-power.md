@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-08-08 11:56:50
-Modified: 2023-08-28 18:02:41
+Modified: 2024-09-14 15:43:35
 Author: Benjamin Du
 Slug: tools-with-dark-power
 Title: Tools With Dark Power
@@ -8,6 +8,10 @@ Category: Computer Science
 Tags: Computer Science, software, tools, dark, power, hack, hacker, hacking, forced browsing
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## [SingleFile](https://github.com/gildas-lormeau/SingleFile)
+[SingleFile](https://github.com/gildas-lormeau/SingleFile)
+is a web extension for saving a faithful copy of a complete web page in a single HTML file.
 
 ## [feroxbuster](https://github.com/epi052/feroxbuster)
 [feroxbuster](https://github.com/epi052/feroxbuster)

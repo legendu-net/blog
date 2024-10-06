@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-12-25 16:53:44
-Modified: 2024-10-05 23:06:17
+Modified: 2024-10-05 23:07:52
 Author: Benjamin Du
 Slug: tips-on-brokerage
 Title: Tips on Brokerage
@@ -64,6 +64,18 @@ Tags: investment, money, finance, brokerage
 </thead>
 <tbody>
   <tr>
+    <td class="tg-0pky">Iteractive Brokerage</td>
+    <td class="tg-0pky">
+        Low-High <sup>[1]</sup>
+    </td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Yes</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">Yes</td>
+    <td class="tg-0pky">High</td>
+  </tr>
+  <tr>
     <td class="tg-0pky">Charles Schwab</td>
     <td class="tg-0pky">Low</td>
     <td class="tg-0pky">24/7</td>
@@ -106,18 +118,6 @@ Tags: investment, money, finance, brokerage
     <td class="tg-0pky"></td>
     <td class="tg-0pky">No</td>
     <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Iteractive Brokerage</td>
-    <td class="tg-0pky">
-        Low-High <sup>[1]</sup>
-    </td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">Yes</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">Yes</td>
-    <td class="tg-0pky">High</td>
   </tr>
   <tr>
     <td class="tg-0pky">QuantRocket</td>

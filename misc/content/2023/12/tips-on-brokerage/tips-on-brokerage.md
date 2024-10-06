@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-12-25 16:53:44
-Modified: 2024-01-07 09:53:23
+Modified: 2024-10-05 23:06:17
 Author: Benjamin Du
 Slug: tips-on-brokerage
 Title: Tips on Brokerage
@@ -109,7 +109,9 @@ Tags: investment, money, finance, brokerage
   </tr>
   <tr>
     <td class="tg-0pky">Iteractive Brokerage</td>
-    <td class="tg-0pky">High</td>
+    <td class="tg-0pky">
+        Low-High <sup>[1]</sup>
+    </td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">Yes</td>
     <td class="tg-0pky"></td>
@@ -147,13 +149,14 @@ Tags: investment, money, finance, brokerage
     <td class="tg-0pky">Yes</td>
     <td class="tg-0pky">
         Low
-        <sup>[1]</sup>
+        <sup>[2]</sup>
     </td>
   </tr>
 </tbody>
 </table>
 
-[1]: Alpaca allows connecting to other paid high quality data sources, 
+[1]: Depends on which version of API you use.
+[2]: Alpaca allows connecting to other paid high quality data sources, 
 e.g., <polygon.io>.
 
 ## References

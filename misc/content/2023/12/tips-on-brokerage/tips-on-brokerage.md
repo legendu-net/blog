@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-12-25 16:53:44
-Modified: 2024-10-05 23:24:06
+Modified: 2024-10-05 23:43:14
 Author: Benjamin Du
 Slug: tips-on-brokerage
 Title: Tips on Brokerage
@@ -155,7 +155,7 @@ Tags: investment, money, finance, brokerage
 </tbody>
 </table>
 
-[1]: Depends on which version of API you use.
+[1]: Depends on which version of API you use.  
 [2]: Alpaca allows connecting to other paid high quality data sources, 
 e.g., <polygon.io>.
 

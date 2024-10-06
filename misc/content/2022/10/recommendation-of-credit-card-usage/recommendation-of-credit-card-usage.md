@@ -379,6 +379,28 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     </td>
   </tr>
   <tr>
+    <td>EV Charging</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <span style="color:green">Citi-C</span>
+    </td>
+    <td></td>
+    <td> 
+      <span style="color:green">RGC</span>
+    </td>
+    <td>
+      <span style="color:green"></span>
+    </td>
+    <td>
+      <span style="color:green"></span><br>
+    </td>
+    <td>
+      <span style="color:green"></span>
+    </td>
+  </tr>
+  <tr>
     <td>Other</td>
     <td></td>
     <td></td>

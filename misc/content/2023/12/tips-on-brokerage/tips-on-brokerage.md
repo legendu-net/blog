@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-12-25 16:53:44
-Modified: 2024-10-05 23:07:52
+Modified: 2024-10-05 23:24:06
 Author: Benjamin Du
 Slug: tips-on-brokerage
 Title: Tips on Brokerage
@@ -90,16 +90,6 @@ Tags: investment, money, finance, brokerage
     <td class="tg-0pky"></td>
   </tr>
   <tr>
-    <td class="tg-0pky">eTrade</td>
-    <td class="tg-0pky">Low</td>
-    <td class="tg-0pky">Yes</td>
-    <td class="tg-0pky">No</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">No</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
     <td class="tg-0pky">Fidelity</td>
     <td class="tg-0pky">Low</td>
     <td class="tg-0pky">Yes</td>
@@ -151,6 +141,16 @@ Tags: investment, money, finance, brokerage
         Low
         <sup>[2]</sup>
     </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">eTrade</td>
+    <td class="tg-0pky">Low</td>
+    <td class="tg-0pky">Yes</td>
+    <td class="tg-0pky">No</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">No</td>
+    <td class="tg-0pky"></td>
   </tr>
 </tbody>
 </table>

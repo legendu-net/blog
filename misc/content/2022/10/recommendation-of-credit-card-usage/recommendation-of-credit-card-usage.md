@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 16:34:06
-Modified: 2024-04-14 16:19:11
+Modified: 2024-10-11 13:10:26
 Author: Benjamin Du
 Slug: recommendation-of-credit-card-usage
 Title: Recommendation of Credit Card Usage
@@ -48,20 +48,18 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td>
-      <span style="color:green">BOA-M</span>
+      <span style="color:green"></span>
     </td>
     <td> <span style="color:green">RGC</span> </td>
     <td>
-      <span style="color:green">BOA-V</span> <br>
-      <span style="color:red">BOA-U</span>
+      <span style="color:green">BOA-M</span> <br>
+      <span style="color:red"></span>
     </td>
     <td>
       <span style="color:green">Citi-C</span><br>
       <span style="color:green">AMEX-M</span><br>
     </td>
     <td>
-      <span style="color:green">BOA-M</span> <br>
-      <span style="color:red">BOA-V</span>
     </td>
   </tr>
   <tr>
@@ -74,17 +72,20 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
         ASC <sup>[3]</sup>
     </td>
     <td>
-      <span style="color:red">BOA-V</span> <br>
+      <span style="color:red"></span> <br>
     </td>
     <td></td>
-    <td> <span style="color:green">RGC</span> </td>
+    <td> 
+      <span style="color:red">BOA-V</span> <br>
+      <span style="color:green">RGC</span> 
+    </td>
+    <td>
+      <span style="color:green"></span>
+    </td>
+    <td>
+    </td>
     <td>
       <span style="color:green">BOA-V</span>
-    </td>
-    <td>
-    </td>
-    <td>
-      <span style="color:green">BOA-M</span>
     </td>
   </tr>
   <tr>
@@ -97,17 +98,18 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td>
-      <span style="color:red">BOA-V</span> <br>
     </td>
     <td></td>
-    <td> <span style="color:green">RGC</span> </td>
+    <td> 
+      <span style="color:red">BOA-V</span> <br>
+      <span style="color:green">RGC</span> 
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
     <td>
       <span style="color:green">BOA-V</span>
-    </td>
-    <td>
-    </td>
-    <td>
-      <span style="color:green">BOA-M</span>
     </td>
   </tr>
   <tr>
@@ -117,7 +119,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td>AMEX-G</td>
     <td>
-      <span style="color:green">BOA-V</span>
     </td>
     <td>
       <span style="color:green">RGC</span><br>
@@ -125,12 +126,10 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">Citi-C</span><br>
     </td>
     <td>
-      <span style="color:green">BOA-V</span>
     </td>
     <td>
     </td>
     <td>
-      <span style="color:green">BOA-M</span>
     </td>
   </tr>
   <tr>
@@ -140,19 +139,16 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td>AMEX-G</td>
     <td>
-      <span style="color:green">BOA-M</span>
     </td>
     <td> 
       <span style="color:green">RGC</span>
     </td>
     <td>
-      <span style="color:green">BOA-V</span>
     </td>
     <td>
       <span style="color:green">AMEX-M</span><br>
     </td>
     <td>
-      <span style="color:green">BOA-M</span>
     </td>
   </tr>
   <tr>
@@ -162,18 +158,16 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td>
-      <span style="color:green">BOA-M</span>
     </td>
     <td> 
       <span style="color:green">RGC</span>
     </td>
     <td>
-      <span style="color:green">BOA-V</span>
-    </td>
-    <td>
-    </td>
-    <td>
       <span style="color:green">BOA-M</span>
+    </td>
+    <td>
+    </td>
+    <td>
     </td>
   </tr>
   <tr>
@@ -191,12 +185,10 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">RGC</span>
     </td>
     <td>
-      <span style="color:green">BOA-V</span>
     </td>
     <td>
     </td>
     <td>
-      <span style="color:green">BOA-M</span>
     </td>
   </tr>
   <tr>
@@ -214,12 +206,10 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">AMEX-M</span><br>
     </td>
     <td>
-      <span style="color:green">BOA-V</span>
     </td>
     <td>
     </td>
     <td>
-      <span style="color:green">BOA-M</span>
     </td>
   </tr>
   <tr>
@@ -240,12 +230,10 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">RGC</span>
     </td>
     <td>
-      <span style="color:green">BOA-V</span>
     </td>
     <td>
     </td>
     <td>
-      <span style="color:green">BOA-M</span>
     </td>
   </tr>
   <tr>
@@ -255,17 +243,17 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td> </td>
     <td>
-      <span style="color:green">BOA-V</span>
     </td>
     <td>
       <span style="color:green">RGC</span> <br>
       AMEX-G <sup> [1] </sup>
     </td>
-    <td></td>
+    <td>
+      <span style="color:green">BOA-V</span>
+    </td>
     <td>
     </td>
     <td>
-      <span style="color:green">BOA-M</span>
     </td>
   </tr>
   <tr>
@@ -278,17 +266,17 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 
     <td> </td>
     <td>
-      <span style="color:green">BOA-V</span>
     </td>
     <td>
       <span style="color:green">RGC</span> <br>
       <span style="color:green">Citi-C</span> <sup>[2]</sup> <br>
     </td>
-    <td></td>
+    <td>
+      <span style="color:green">BOA-V</span>
+    </td>
     <td>
     </td>
     <td>
-      <span style="color:green">BOA-M</span>
     </td>
   </tr>
   <tr>
@@ -304,12 +292,10 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">RGC</span>
     </td>
     <td>
-      <span style="color:green">BOA-V</span>
     </td>
     <td>
     </td>
     <td>
-      <span style="color:green">BOA-M</span>
     </td>
   </tr>
   <tr>
@@ -328,12 +314,10 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">RGC</span>
     </td>
     <td>
-      <span style="color:green">BOA-V</span>
     </td>
     <td>
     </td>
     <td>
-      <span style="color:green">BOA-M</span>
     </td>
   </tr>
   <tr>
@@ -345,10 +329,11 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td> </td>
     <td></td>
     <td>
-      <span style="color:green">BOA-M</span> <br>
     </td>
     <td> </td>
-    <td></td>
+    <td>
+      <span style="color:green">BOA-M</span> <br>
+    </td>
     <td> 
       <span style="color:green">RGC</span>
     </td>
@@ -369,13 +354,11 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">RGC</span>
     </td>
     <td>
-      <span style="color:green">BOA-V</span>
     </td>
     <td>
       <span style="color:green">AMEX-M</span><br>
     </td>
     <td>
-      <span style="color:green">BOA-M</span>
     </td>
   </tr>
   <tr>
@@ -411,13 +394,11 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       <span style="color:green">RGC</span>
     </td>
     <td>
-      <span style="color:green">BOA-V</span>
     </td>
     <td>
       <span style="color:green">AMEX-M</span><br>
     </td>
     <td>
-      <span style="color:green">BOA-M</span>
     </td>
   </tr>
 </tbody>

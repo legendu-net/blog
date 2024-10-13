@@ -1,9 +1,9 @@
 Status: published
 Date: 2023-12-14 16:25:39
-Modified: 2024-04-10 01:21:55
+Modified: 2024-10-13 14:33:06
 Author: Benjamin Du
 Slug: tips-on-401k
-Title: Tips on Retirement Accounts
+Title: Tips on Retirement
 Category: Investment
 Tags: Investment, 401k, retirement, IRA
 
@@ -11,7 +11,9 @@ Tags: Investment, 401k, retirement, IRA
 
 ## General Tips
 
-1. You can contribute to your own IRA accounts 
+1. [在美国退休前必做这5件事，90%的人不知道这些窍门](https://www.youtube.com/watch?v=sUbMAU47St8)
+
+2. You can contribute to your own IRA accounts 
     even if you have maxed out your 401K contributions.
     For people without coverage of work 401K plans and low income,
     those contributions are tax deductable.

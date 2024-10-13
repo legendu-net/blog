@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 16:34:06
-Modified: 2024-10-11 13:10:26
+Modified: 2024-10-13 10:05:51
 Author: Benjamin Du
 Slug: recommendation-of-credit-card-usage
 Title: Recommendation of Credit Card Usage
@@ -21,7 +21,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 - RGC: Robinhood Gold Card
 - BOA-V: BOA Visa Card
 - BOA-M: BOA Master Card
-- BOA-U: BOA Card Unlimited
 - AMEX-G: AMEX Golden Card
 - AMEX-M: AMEX Macy Card
 

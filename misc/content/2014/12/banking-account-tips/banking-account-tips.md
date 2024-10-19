@@ -5,23 +5,26 @@ Title: Banking Account
 Slug: banking-account-tips
 Category: Life
 Tags: life, business, banking account, checking account, money market account, savings account, BOA
-Modified: 2024-09-02 20:16:51
+Modified: 2024-10-19 00:03:39
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+## General Tips
+
+1. Deposit checks as soon as possible. 
+    Never sit checks in your pocket 
+    as they are not yours until you deposit them into your bank account.
+
+2. Due to Fed regulations,
+    a savings account can have at most 6 transfers out during each statement period.
+
 ## BOA
 
-To be exempt from monthly managing fees,
-
-- Checking account > $10,000
-
-- Money Market savings account > $5,000
-
-- Regular savings account > $300
+- [Account Fees](https://www.bankofamerica.com/deposits/account-fees/)
 
 ## Citi
 
-[Citi Checking Accounts](https://www.citi.com/banking/checking-account)
+- [Citi Checking Accounts](https://www.citi.com/banking/checking-account)
 
 ## Chase
 
@@ -31,16 +34,6 @@ To be exempt from monthly managing fees,
 
 [Understanding checking and savings account fees](https://www.chase.com/personal/fees/total-checking?jp_cmp=rb/107869/ema/LC-COREFEE23/Body_Textlink_2)
 
-## Discover
-
-Discover can be used as China Bank Union without foreign transaction fees
-
-
-
-1. Deposit checks as soon as possible. 
-    Never sit checks in yoru pocket 
-    as they are not yours until you deposit them into your bank account.
-    
 ## BMO
 
 https://www.bmo.com/en-us/main/personal/checking-accounts/comparison/
@@ -49,8 +42,8 @@ https://www.bmo.com/en-us/main/personal/checking-accounts/comparison/
 
 ## HSBC 
 
-No international transaction fee if you transfer money to another (international) HSBC bank account.
+1. No international transaction fee if you transfer money to another (international) HSBC bank account.
 
 ## China Merchant Bank
 
-SWIFT code for banks in China main land: CMBCCNBS
+1. SWIFT code for banks in China main land: CMBCCNBS.

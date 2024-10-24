@@ -13,6 +13,11 @@ Tags: shopping, Amazon, e-Commerce
 
 - [CamelCamelCamel](https://camelcamelcamel.com/)
 
+## Return Items
+
+1. It seems to me that processing of returned and received item is much much faster
+    if you choose to to return as Amazon credit.
+    
 ## Customer Service Online Chat 
 
 1. Goto

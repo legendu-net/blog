@@ -5,7 +5,7 @@ Slug: editing-PDF-files
 Title: Editing PDF Files
 Category: Software
 Tags: software, PDF, tools, edit, convert, PDFfiller
-Modified: 2023-11-06 00:50:37
+Modified: 2024-11-12 19:50:50
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -21,12 +21,17 @@ Modified: 2023-11-06 00:50:37
   </tr>
 
   <tr>
-    <td rowspan="4"> Web Tools </td>
-    <td> <a href="https://www.docusign.com/">DocuSign</a>  </td>
+    <td rowspan="5"> Web Tools </td>
+    <td> <a href="https://app.parseur.com/">Parseur</a> </td>
     <td>  
-      - Free for occassional use <br>
-      - No credit card required <br>
-      - Support checkmarks and signatures <br>
+      - AI-based PDF parser
+    </td>
+  </tr>
+  <tr>
+    <td> <a href="https://www.docusign.com/">DocuSign</a>  </td>
+    <td> 
+        - Great for convert PDF files to MS Office files, etc. <br>
+        - non-free: 1 file per 30 minutes <br>
     </td>
   </tr>
   <tr>

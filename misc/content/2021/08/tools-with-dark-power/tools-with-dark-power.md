@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-08-08 11:56:50
-Modified: 2024-09-14 15:43:35
+Modified: 2024-11-11 10:26:08
 Author: Benjamin Du
 Slug: tools-with-dark-power
 Title: Tools With Dark Power
@@ -39,5 +39,7 @@ which finds ports quickly (3 seconds at its fastest).
 ## [Bypass Paywalls and Limits on Information](https://www.legendu.net/misc/blog/bypass-paywalls-and-limits-on-information/)
     
 ## [Collect a Dossier on a Person from Social Media](https://www.legendu.net/misc/blog/collect-a-dossier-on-a-person-from-social-media)
+
+## Crack Password
 
 

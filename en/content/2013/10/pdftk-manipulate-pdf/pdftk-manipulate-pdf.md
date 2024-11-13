@@ -5,7 +5,7 @@ Date: 2013-10-06 11:44:58
 Slug: pdftk-examples
 Category: Software
 Tags: pdftk, software, examples, PDF
-Modified: 2021-08-09 22:00:51
+Modified: 2024-11-13 10:19:11
 
 
 It is suggested that you **use Python modules instead of `pdftk`** to manipulating PDFs for several reasons.
@@ -25,6 +25,12 @@ please refer to
 for possible tools.
 If you do have to stick with `pdftk`,
 below are concrete examples on how to use it.
+
+## Install pdftk on Ubuntu / Debian
+
+    wajig install pdftk-java
+
+## Examples of Using pdftk
 
 1. Fill in forms in an I-9 doc. 
 

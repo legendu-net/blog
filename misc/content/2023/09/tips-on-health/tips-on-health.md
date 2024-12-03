@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-09-23 00:58:13
-Modified: 2024-12-03 15:05:04
+Modified: 2024-12-03 15:36:46
 Author: Benjamin Du
 Slug: tips-on-health
 Title: Tips on Health
@@ -19,9 +19,12 @@ Tags: life, immunization, vaccine, record, IIS, health, flu
     https://www.vaccines.gov/
     .
     
-2. For people without medical insurance,
-    Costco offers the cheapest vaccine shots.
+2. [Care-a-Van Mobile Health Services](https://doh.wa.gov/you-and-your-family/care-van-mobile-health-services)
+    provides free vaccines to people without medical insurances.
 
+3. For people without medical insurance,
+    Costco offers the cheapest vaccine shots
+    if Care-a-Van Mobile Health Services are not available.
 
 ## References
 

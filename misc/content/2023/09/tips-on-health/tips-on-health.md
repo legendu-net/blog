@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-09-23 00:58:13
-Modified: 2024-09-09 14:31:59
+Modified: 2024-12-03 15:05:04
 Author: Benjamin Du
 Slug: tips-on-health
 Title: Tips on Health
@@ -23,3 +23,6 @@ Tags: life, immunization, vaccine, record, IIS, health, flu
     Costco offers the cheapest vaccine shots.
 
 
+## References
+
+- [[福利]在美国无保险,免费打疫苗](https://www.xiaohongshu.com/explore/672671f2000000001b0107eb?app_platform=ios&app_version=8.63&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBR6El8x2gTGDKc-_g7cAcUuekC2yEJpJpllsMkY0fWCs=&author_share=1&xhsshare=WeixinSession&shareRedId=ODk5N0ZJST42NzUyOTgwNjdJOThJN0k_&apptime=1733254653&share_id=1a6b4dd781c14319b3c6f60e52f87312)

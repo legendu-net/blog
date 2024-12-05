@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-11-15 12:41:51
-Modified: 2024-11-15 12:41:51
+Modified: 2024-12-04 19:20:39
 Author: Benjamin Du
 Slug: extracting-data-from-pdf-files
 Title: Extracting Data from PDF Files
@@ -28,3 +28,8 @@ to extract data from it.
 - pdf2text
 
 - pdfplumber
+
+## References
+
+- [Editing PDF Files](https://www.legendu.net/en/blog/editing-PDF-files/)
+

@@ -5,7 +5,7 @@ Slug: editing-PDF-files
 Title: Editing PDF Files
 Category: Software
 Tags: software, PDF, tools, edit, convert, PDFfiller
-Modified: 2024-11-12 19:50:50
+Modified: 2024-12-04 19:19:24
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -207,6 +207,8 @@ All of these file types can be parsed through a single interface, making Tika us
 A command-line tool for filling fileds in PDF docs.
 
 ## References
+
+- [Extracting Data from PDF Files](https://misc.legendu.net/blog/extracting-data-from-pdf-files/)
 
 - [Python for PDF](https://towardsdatascience.com/python-for-pdf-ef0fac2808b0)
 

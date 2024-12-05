@@ -5,7 +5,7 @@ Slug: mac-tips
 Title: Tips on macOS
 Category: OS
 Tags: macOS, tips, Apple
-Modified: 2021-09-14 16:48:23
+Modified: 2024-12-04 23:55:42
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -14,13 +14,16 @@ Modified: 2021-09-14 16:48:23
         :::bash
         sw_vers -productName
 
-2. `iTerm2` is the best termimal application in Mac. 
-
-3. You can use Homebrew to install applications in Mac
+2. You can use Homebrew to install applications in Mac
     similar to the command `apt-get` or wajig in Debian series of Linux distributions.
     However, you do not have to run the command brew with sudo.
     As a matter of fact, 
     you should never do this. 
+
+3. You can configure macOS to hibernate on lid close
+    following instructions in
+    [How to configure a MacBook to hibernate when the lid is closed?](https://discussions.apple.com/thread/255421002?sortBy=rank)
+    .
 
 ## Key Repeating 
 
@@ -102,6 +105,7 @@ https://support.apple.com/en-us/HT202351
 
 ## References
 
+- [How to configure a MacBook to hibernate when the lid is closed?](https://discussions.apple.com/thread/255421002?sortBy=rank)
 - [Map Keys in macOS](https://www.legendu.net/en/blog/map-keys-in-macos)
 - [Install Python in macOS](https://www.legendu.net/en/blog/install-python-in-mac)
 - [Remove System Applications in macOS](misc/content/2020/03/remove-system-applications-in-mac/remove-system-applications-in-mac.markdown)

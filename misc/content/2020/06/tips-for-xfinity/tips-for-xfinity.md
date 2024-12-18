@@ -1,13 +1,17 @@
 Status: published
 Date: 2020-06-14 22:45:40
 Author: Benjamin Du
-Slug: tips-for-xfinity
-Title: Tips for XFinity
+Slug: tips-on-xfinity
+Title: Tips on XFinity
 Category: Computer Science
 Tags: Computer Science, network, internet, XFinity, WiFi
-Modified: 2022-04-30 14:52:27
+Modified: 2024-12-12 12:47:23
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## User Manageemnt
+
+[Manage user roles and permissions on Xfinity accounts](https://www.xfinity.com/support/articles/primary-and-secondary-accounts)
 
 ## Separate 2G and 5G WiFi Networks
 

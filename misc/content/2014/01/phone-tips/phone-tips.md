@@ -9,13 +9,6 @@ Modified: 2021-07-24 11:12:42
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## Carrier Service in China
-
-1. 中国联通用户可以拨打10010转人工服务要求开通账单寄送服务. 
-    需要服务密码
-    联通设置新服务密码:
-    MMCZ#新密码
- 
 ## Carrier Service in US
 
 1. Ting (based on Sprint network) seems to be a very cheap carrier.
@@ -23,6 +16,8 @@ Modified: 2021-07-24 11:12:42
 2. T-mobile is also a cheap one.
 
 3. Verizon is way too expensive!
+
+4. Dial `*#06#` to get device info (EID, IMEI, IMEI2 and MEID).
 
 ## Android
 
@@ -33,8 +28,15 @@ Modified: 2021-07-24 11:12:42
 
 2. [Termux](https://termux.com/) seems to be a great terminal emulator for Android.
 
-## Smart Phone Tips
 
-### 红米
+## Carrier Service in China
+
+1. 中国联通用户可以拨打10010转人工服务要求开通账单寄送服务. 
+    需要服务密码
+    联通设置新服务密码:
+    MMCZ#新密码
+
+## 红米
 
 1. 音量减小键 + 菜单: 截屏
+ 

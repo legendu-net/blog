@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-05-08 20:56:48
-Modified: 2024-03-13 01:20:22
+Modified: 2024-12-19 16:02:59
 Author: Benjamin Du
 Slug: maintain-garage-doors
 Title: Maintain Garage Doors
@@ -26,3 +26,8 @@ Garage Door Lubricant
 https://kaisergarage.com/garage-door-parts/
 
 https://www.garagedoorguys.biz/garage-door-parts
+
+## Reduce Dampness in Garage 
+
+- [How to Reduce Condensation In Your Garage](https://www.garageliving.com/blog/how-to-reduce-condensation-in-your-garage)
+

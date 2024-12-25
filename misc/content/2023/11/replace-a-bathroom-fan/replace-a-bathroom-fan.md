@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-11-26 09:23:39
-Modified: 2024-12-21 18:12:21
+Modified: 2024-12-25 10:36:19
 Author: Benjamin Du
 Slug: replace-a-bathroom-fan
 Title: Replace a Bathroom Fan
@@ -15,3 +15,8 @@ Tags: Life, bathroom, house, fan, DIY
 
 - [Replace Your Bathroom Fan in 5 Minutes FLAT! NO Attic Access!](https://www.youtube.com/watch?v=1siTldg2Xns&t=151s)
 
+## References
+
+- [How to Find A Circuit Breaker (EASY)](https://www.youtube.com/watch?v=mapSZoLPW1g)
+
+- [How to Trace a Light Circuit to the Breaker Easily!](https://www.youtube.com/watch?v=iJ0ZAfM8ru8)

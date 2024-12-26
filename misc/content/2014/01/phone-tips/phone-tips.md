@@ -5,7 +5,7 @@ Slug: smart-phone-tips
 Title: Tips on Smart Phone
 Category: Life
 Tags: life, smart phone, tips, Android, iOS, SmartPhone
-Modified: 2024-12-25 19:41:12
+Modified: 2024-12-25 22:27:27
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -47,3 +47,9 @@ Modified: 2024-12-25 19:41:12
 
 1. 音量减小键 + 菜单: 截屏
  
+## References
+
+- [Can Wireless Charging Work with a Case?](https://www.anker.com/blogs/chargers/can-wireless-charging-work-with-case)
+
+- [Does Wireless Charging Work with Case | MOFT](https://www.moft.us/blogs/news/does-wireless-charging-work-with-case?srsltid=AfmBOoqndTu3Yn66T7CySTd03bISBHXVWGAIWBvafa7q2QgB_Ps8L9VF)
+

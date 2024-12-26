@@ -5,7 +5,7 @@ Slug: smart-phone-tips
 Title: Tips on Smart Phone
 Category: Life
 Tags: life, smart phone, tips, Android, iOS, SmartPhone
-Modified: 2021-07-24 11:12:42
+Modified: 2024-12-25 19:41:12
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -18,6 +18,13 @@ Modified: 2021-07-24 11:12:42
 3. Verizon is way too expensive!
 
 4. Dial `*#06#` to get device info (EID, IMEI, IMEI2 and MEID).
+
+## Wireless Charging
+
+1. **Be careful when using wireless charging**!
+    Some phone cases have metal rings which might heat up when placed on a wiress charger.
+    You'd better make sure that a phone case is compatible with wireless charging
+    or take off the phone cases before charging your phone wirelessly. 
 
 ## Android
 

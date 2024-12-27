@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 16:34:06
-Modified: 2024-12-18 10:13:42
+Modified: 2024-12-27 13:56:01
 Author: Benjamin Du
 Slug: recommendation-of-credit-card-usage
 Title: Recommendation of Credit Card Usage
@@ -23,6 +23,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 - BOA-M: BOA Master Card
 - AMEX-G: AMEX Golden Card
 - AMEX-M: AMEX Macy Card
+- VVC: Verizon Visa Card
 
 <table>
 <thead>
@@ -115,7 +116,10 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td></td>
-    <td>AMEX-G</td>
+    <td>
+        AMEX-G <br>
+        VVC
+    </td>
     <td>
     </td>
     <td>
@@ -152,9 +156,10 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
     <td>
+      VVC
     </td>
+    <td></td>
     <td> 
       <span style="color:green">RGC</span>
     </td>
@@ -342,7 +347,8 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td>
-      <span style="color:green">Citi-C</span>
+      <span style="color:green">Citi-C</span><br>
+      VVC
     </td>
     <td></td>
     <td> 
@@ -362,6 +368,28 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td>
       <span style="color:green">Citi-C</span>
+    </td>
+    <td></td>
+    <td> 
+      <span style="color:green">RGC</span>
+    </td>
+    <td>
+      <span style="color:green"></span>
+    </td>
+    <td>
+      <span style="color:green"></span><br>
+    </td>
+    <td>
+      <span style="color:green"></span>
+    </td>
+  </tr>
+  <tr>
+    <td>Verizon Purchases</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <span style="color:green">VVC</span>
     </td>
     <td></td>
     <td> 

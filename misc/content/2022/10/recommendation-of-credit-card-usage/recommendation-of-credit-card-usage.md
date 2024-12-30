@@ -24,6 +24,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 - AMEX-G: AMEX Golden Card
 - AMEX-M: AMEX Macy Card
 - VVC: Verizon Visa Card
+- HDCC: Home Depot Credit Card
 
 <table>
 <thead>
@@ -310,6 +311,30 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td> </td>
     <td></td>
+    <td> 
+      <span style="color:green">RGC</span>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Home <br>
+      Depot
+    </td>
+    <td>
+    HDCC
+    </td>
+    <td></td>
+    <td></td>
+    <td> </td>
+    <td>
+      <span style="color:green">BOA-M</span> <br>
+    </td>
     <td> 
       <span style="color:green">RGC</span>
     </td>

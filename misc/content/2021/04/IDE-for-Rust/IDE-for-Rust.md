@@ -5,7 +5,7 @@ Slug: IDE-for-Rust
 Title: IDE for Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, IDE
-Modified: 2021-04-20 08:43:39
+Modified: 2024-12-31 14:07:18
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -22,7 +22,11 @@ Modified: 2021-04-20 08:43:39
     [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer)
     .
 
-## IntelliJ 
+## [RustRover: Rust IDE by JetBrains](https://www.jetbrains.com/rust/)
+
+## Zed
+
+## Lapce
 
 
 ## References

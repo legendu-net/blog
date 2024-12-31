@@ -5,7 +5,7 @@ Slug: ide-tips
 Title: Tips on IDE
 Category: Software
 Tags: Software, IDE, Cloud IDE, Java, C++, Python, Latex
-Modified: 2023-08-02 15:36:49
+Modified: 2024-12-31 14:08:53
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -15,17 +15,20 @@ Modified: 2023-08-02 15:36:49
 
 1. Visual Studio Code
 
-2. [Lapce](https://github.com/lapce/lapce)
+2. SpaceVim
 
-2. Eclipse (with all kinds of plugins)
+3. [Lapce](https://github.com/lapce/lapce)
 
-3. SpaceVim
+4. Zed
 
 ## JVM Languages
 
 1. IntelliJ IDEA (community edition available)
 
-2. Eclipse
+## [IDEs for Rust]( https://www.legendu.net/misc/blog/IDE-for-Rust ) 
+
+See [IDE for Rust]( https://www.legendu.net/misc/blog/IDE-for-Rust ) 
+.
 
 ## Python
 

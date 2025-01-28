@@ -1,6 +1,6 @@
 Status: published
 Date: 2024-09-20 13:45:59
-Modified: 2024-09-27 23:51:54
+Modified: 2025-01-27 16:30:09
 Author: Benjamin Du
 Slug: tips-on-fishing-in-the-washington-state
 Title: Tips on Fishing in the Washington State
@@ -12,6 +12,12 @@ Tags: life, fishing, entertainment, crab, Washington
 - [Washington Department of Fish & Wildlife (WDFW)](https://fishhunt.dfw.wa.gov/customer/home/)
 
 - [Fishing regulations](https://wdfw.wa.gov/fishing/regulations)
+
+## Licenses to Purchase
+
+Please refer to
+[fishing_license_wa](https://docs.google.com/spreadsheets/d/1CFnDBWAt2yP1fUpg9bxGTmXZTgbWj5NLlDGaPWLPNS4/edit?gid=0#gid=0)
+.
 
 ## Report Puget Sound Dungeness Catches
 

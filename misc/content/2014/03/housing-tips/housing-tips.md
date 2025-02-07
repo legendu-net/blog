@@ -5,13 +5,18 @@ Title: Tips on Housing
 Slug: housing-tips
 Category: Life
 Tags: life, housing, tips, rent, apartment, shopping
-Modified: 2024-09-11 00:16:44
+Modified: 2025-02-06 20:15:55
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Good Sources of Learning
 
 https://www.youtube.com/@richard0501
+
+## Hire a Contractor or Handyman 
+
+1. Use [Washington State Department of Labor & Industries](https://lni.wa.gov/)
+    to verify a contractor, tradesperson or business.
  
 ## Things to Consider When Purchasing a House
 

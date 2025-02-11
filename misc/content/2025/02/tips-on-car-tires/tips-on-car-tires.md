@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-02-08 13:28:34
-Modified: 2025-02-11 11:03:52
+Modified: 2025-02-11 11:28:14
 Author: Benjamin Du
 Slug: tips-on-car-tires
 Title: Tips on Car Tires
@@ -18,7 +18,9 @@ Tags: life, car, vehicle, tire, run-flat, snow
 
 2. Run-flat tires does not performance as well 
     compared to standard (non-run-flat) tires on snow and ice.
-
+    However,
+    there are run-flat tires which are rated 3PMS (Three-peak Mountain Snow)
+    which have good performance on medium snow.
 
 ## Snow Tires 
 

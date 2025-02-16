@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-18 20:47:16
-Modified: 2023-06-25 11:20:21
+Modified: 2025-02-15 18:04:47
 Author: Benjamin Du
 Slug: find-unused-rust-deps-using-cargo-udeps
 Title: Find Unused Rust Dependencies Using cargo-udeps
@@ -26,4 +26,7 @@ helps find unused dependencies in Cargo.toml.
 ## References
 
 - [cargo-udeps @ GitHub](https://github.com/est31/cargo-udeps)
+
+- [Deps.rs - Keep your dependencies up-to-date](https://deps.rs/)
+
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-01-13 16:02:14
-Modified: 2024-08-23 11:49:20
+Modified: 2025-02-15 18:10:57
 Author: Benjamin Du
 Slug: dev-tools-for-rust
 Title: Dev Tools for Rust
@@ -58,6 +58,10 @@ scans your Rust crate for semver violations.
 ### [cargo-udeps]( https://www.legendu.net/misc/blog/find-unused-rust-deps-using-cargo-udeps )
 [cargo-udeps]( https://www.legendu.net/misc/blog/find-unused-rust-deps-using-cargo-udeps )
 finds unused dependencies in Cargo.toml.
+
+### [Deps.rs](https://deps.rs/)
+[Deps.rs](https://deps.rs/)
+keeps your dependencies up-to-date.
 
 ### [cargo-sweep](https://github.com/holmgr/cargo-sweep)
 [cargo-sweep](https://github.com/holmgr/cargo-sweep)

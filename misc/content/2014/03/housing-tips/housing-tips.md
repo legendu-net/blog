@@ -5,13 +5,39 @@ Title: Tips on Housing
 Slug: housing-tips
 Category: Life
 Tags: life, housing, tips, rent, apartment, shopping
-Modified: 2025-02-06 20:15:55
+Modified: 2025-02-15 18:02:10
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Good Sources of Learning
 
 https://www.youtube.com/@richard0501
+
+## Buying a House
+
+- [美国房屋装修质量怎么看？良心装修vs坑爹装修！](https://www.youtube.com/watch?v=tqtCoflI5bo)
+
+## Deck
+
+- [简单DIY塑木平台施工教程！自己动手轻松升级改造后院！搭建框架+安装地板+常见疑问解答。露台建造全面知识。[澳洲Kendi] DIY Decking tutorial](https://www.youtube.com/watch?v=6HzpcFq88fg)
+
+## Renovoation
+
+- [美国装修：90%的新手血泪，为你省下一万美元！5大建材渠道亲测 | 装修教学 | 装修教程 | 装修房子过程 | 装修设计 | 装修风格 | 美国房产 | 美国房价 | 李文勍Richard](https://www.youtube.com/watch?v=OfiUFHY50GA)
+
+- [在美国，全新装修一套房要花多少钱？](https://www.youtube.com/watch?v=-5oH3LUSJIM)
+
+- [我在美国装修房子的失误 #美国旧房翻新 #美国房地产投资 #美国装修房子](https://www.youtube.com/watch?v=85VqOb35iJk)
+
+## Water Damage
+
+- [西雅圖家裡淹水的天價維修帳單](https://www.youtube.com/watch?v=ygL6OOOdwqM)
+
+## Rebuild
+
+- [美国房价暴涨，建商都赚麻了？！](https://www.youtube.com/watch?v=hUWmg0dxbOg)
+
+- [不要自己建房的10个理由, 揭秘建筑行业鲜为人知的秘密](https://www.youtube.com/watch?v=qKiHFJUpalI)
 
 ## Hire a Contractor or Handyman 
 

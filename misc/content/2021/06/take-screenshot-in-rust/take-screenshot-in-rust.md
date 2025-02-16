@@ -1,6 +1,6 @@
 Status: published
 Date: 2021-06-17 22:50:10
-Modified: 2021-09-29 00:17:57
+Modified: 2025-02-15 20:59:21
 Author: Benjamin Du
 Slug: take-screenshot-in-rust
 Title: Take Screenshot in Rust
@@ -40,3 +40,6 @@ captures screen content with xlib in Rust.
 [screen_capture_lite](https://github.com/smasherprog/screen_capture_lite)
 is a cross-platform screen and window capturing library.
 
+## References
+
+- [Using Rust, Chrome and NixOS to Take Headless Screenshots for Social Sharing](https://lgug2z.com/articles/using-rust-chrome-and-nixos-to-take-headless-screenshots-for-social-sharing/)

@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-09-04 21:38:08
-Modified: 2025-02-15 21:00:21
+Modified: 2025-02-15 23:15:10
 Author: Benjamin Du
 Slug: write-unsafe-code-in-rust
 Title: Write Unsafe Code in Rust
@@ -30,3 +30,4 @@ The goal of the UCG WG is to produce the Unsafe Code Guidelines Reference: a "gu
 - [Comprehensive Understanding of Unsafe Rust](https://rustmagazine.org/issue-3/understand-unsafe-rust/)
 
 - [Comprehensive Understanding of Unsafe Rust](https://rustmagazine.org/issue-3/understand-unsafe-rust/)
+

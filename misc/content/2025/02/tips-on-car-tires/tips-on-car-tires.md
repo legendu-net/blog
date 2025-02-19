@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-02-08 13:28:34
-Modified: 2025-02-11 11:28:14
+Modified: 2025-02-19 10:28:48
 Author: Benjamin Du
 Slug: tips-on-car-tires
 Title: Tips on Car Tires
@@ -48,6 +48,16 @@ Tags: life, car, vehicle, tire, run-flat, snow
         BFGoodrich Advantage Control is such an example 
         (which is also relatively cheap compared to other famous brand tires)
         .
+        
+## Install Tires at Costco
+
+1. It's relative cheap to install new tires at Costco Tires & Auto.
+    - Order tires at https://tires.costco.com/
+    - Schedule an appointment. 
+        Notice that you do NOT have to wait until your tires are delivered 
+        before scheduling an appointment.
+        The estimated delivery date is pretty accurate.
+        Just schedule an appointment after the estimated delivery date.
 
 ## References
 

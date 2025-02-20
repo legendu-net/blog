@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-10-17 11:55:34
-Modified: 2025-02-01 08:33:16
+Modified: 2025-02-20 11:32:57
 Author: Benjamin Du
 Slug: tips-on-purchasing-a-car
 Title: Tips on Purchasing or Leasing a Car
@@ -12,6 +12,7 @@ Tags: Life, vehicle, car, SUV, EV, feature, camera
 
 ## Must-have Featuers
 
+- TPMS (tire pressure monitoring system)
 - surround camera
 - Lane keep warning
 - mirror blind spot

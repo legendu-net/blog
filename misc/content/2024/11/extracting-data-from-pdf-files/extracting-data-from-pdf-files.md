@@ -23,6 +23,11 @@ to extract data from it.
 
 - [Table Image to CSV Converter](https://chatgpt.com/g/g-AiT7svnDN-table-image-to-csv-converter)
 
+## Web-based Tools
+
+[Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) 
+is is a robust, locally hosted web-based PDF manipulation tool using Docker.
+
 ## Python Libraries
 
 - pdf2text

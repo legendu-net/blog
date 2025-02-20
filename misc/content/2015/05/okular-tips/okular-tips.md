@@ -9,6 +9,10 @@ Modified: 2023-09-22 12:35:08
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+[Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) 
+is is a robust, locally hosted web-based PDF manipulation tool using Docker.
+
+
 1. Okular supporting annotating PDF pages
     but does not supporting adding/removing PDF pages.
 

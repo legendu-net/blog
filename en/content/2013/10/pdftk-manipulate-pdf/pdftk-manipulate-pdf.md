@@ -8,23 +8,27 @@ Tags: pdftk, software, examples, PDF
 Modified: 2024-11-13 10:19:11
 
 
-It is suggested that you **use Python modules instead of `pdftk`** to manipulating PDFs for several reasons.
-First, 
-even though `pdftk` is a great command-line tool,
-it is hard to remember its syntax.
-On the contratry, 
-Python code is easy to read and understand (even though it is more verbose).
-Second,
-it is not easy to have `pdftk` installed and configured on macOS.
-Please refer to 
-[PyPDF2 Examples](http://www.legendu.net/misc/blog/pypdf2-examples/)
-for a simple example of extracting PDF pages using the Python package `PyPDF2`. 
-If you need to edit PDF pages,
-please refer to
-[Editing PDF Files](http://www.legendu.net/misc/blog/editing-PDF-files/)
-for possible tools.
-If you do have to stick with `pdftk`,
-below are concrete examples on how to use it.
+1. It is suggested that you **use Python modules instead of `pdftk`** to manipulating PDFs for several reasons.
+    First, 
+    even though `pdftk` is a great command-line tool,
+    it is hard to remember its syntax.
+    On the contratry, 
+    Python code is easy to read and understand (even though it is more verbose).
+    Second,
+    it is not easy to have `pdftk` installed and configured on macOS.
+    If you prefer a GUI-based application for manipulating PDF files,
+    [Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) 
+    is is a robust, locally hosted web-based PDF manipulation tool using Docker.
+
+2. Please refer to 
+    [PyPDF2 Examples](http://www.legendu.net/misc/blog/pypdf2-examples/)
+    for a simple example of extracting PDF pages using the Python package `PyPDF2`. 
+    If you need to edit PDF pages,
+    please refer to
+    [Editing PDF Files](http://www.legendu.net/misc/blog/editing-PDF-files/)
+    for possible tools.
+    If you do have to stick with `pdftk`,
+    below are concrete examples on how to use it.
 
 ## Install pdftk on Ubuntu / Debian
 

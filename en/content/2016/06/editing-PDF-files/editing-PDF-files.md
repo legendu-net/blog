@@ -21,7 +21,15 @@ Modified: 2024-12-04 19:19:24
   </tr>
 
   <tr>
-    <td rowspan="5"> Web Tools </td>
+    <td rowspan="6"> Web Tools </td>
+    <td> <a href="https://github.com/Stirling-Tools/Stirling-PDF">Stirling-PDF</a> </td>
+    <td>  
+      - robust <br>
+      - local hosted <br>
+      - Docker container based <br>
+    </td>
+  </tr>
+  <tr>
     <td> <a href="https://app.parseur.com/">Parseur</a> </td>
     <td>  
       - AI-based PDF parser

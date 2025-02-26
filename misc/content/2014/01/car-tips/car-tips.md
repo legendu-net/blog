@@ -5,7 +5,7 @@ Title: Tips on Car and Driving
 Slug: car-tips
 Category: Life
 Tags: car, life, driving, safety, tips, drive, Nissan, Leaf
-Modified: 2023-11-04 21:39:28
+Modified: 2025-02-26 15:23:23
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
  
@@ -95,53 +95,6 @@ for details.
     don't follow a big truck.
     If you have no choice, keep distance from it before you merge onto highway.
 
-## Car Wash
-
-1. You can save $1 by fueling your car and washing it together. 
-    You will get a car wash code on the receipt if you fueling your car first, 
-    which you can use to wash your car.
-    So be sure to get a receipt. 
-    If you want to wash your car without fueling your car,
-    you can also pay inside the washing factory using credit card.
-
-## Car Shop Blacklist
-
-1. A&D  Automotive
-    address:11 Washington Road
-    Princeton Junction,NJ 08550
-
-2. Firestone
-
-## Car Mainteinace 
-
-### Coolant
-
-1. Do not mix different coolant together.
-
-### Wheel Alignment
-
-drift to the left/right 
-
-Wheel balancing is different from wheel alignment
-
-wheel balancing is to balance the weight distribution among the wheels
-while
-wheel align is to adjust angles of wheels so that the vehicle does not drift to the right/left in a short distance on a flat ground.
-
-## Chevy
-
-1. In your drivers info center, 
-    pull up % oil life and then press and hold the arrow button which will reset it to 100% 
-
-### Package Options
-
-LS is usually the lowest level of the Chevy Cars. 
-
-LT is Usually the Middle and has a few more standard options than the LS.
-
-LTZ usually starts out with the most standard options 
-and usually has a few other things 
-that they do not offer at all in the LS and LT Models.
 
 ### Auto Parts Shops
 
@@ -151,7 +104,9 @@ that they do not offer at all in the LS and LT Models.
 
 ## Maintenance
 
-1. It seems that people don't recommend to do transmission flush.
+See 
+[Tips on Car Maintenance]( https://www.legendu.net/misc/blog/tips-on-car-maintenance )
+for discussions.
 
 ### Car Report
 

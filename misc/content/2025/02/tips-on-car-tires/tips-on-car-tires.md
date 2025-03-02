@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-02-08 13:28:34
-Modified: 2025-02-19 10:28:48
+Modified: 2025-03-02 14:14:37
 Author: Benjamin Du
 Slug: tips-on-car-tires
 Title: Tips on Car Tires
@@ -62,4 +62,3 @@ Tags: life, car, vehicle, tire, run-flat, snow
 ## References
 
 - [What Is the 3PMSF Symbol And What Does It Mean?](https://www.lesschwab.com/article/tires/what-is-a-3-peak-mt-snowflake-designation.html)
-

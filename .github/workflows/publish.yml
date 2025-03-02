@@ -18,6 +18,7 @@ jobs:
           mkdir -p /root/.ssh
           cp -r /ssh/* /root/.ssh/
           chmod 600 /root/.ssh/*
+          sed -i 's_^Host \*$_Host *\n    StrictHostKeyChecking accept-new_' /root/.ssh/config
       - name: Clone Repo
         run: |
           pwd

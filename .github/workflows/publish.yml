@@ -24,7 +24,7 @@ jobs:
           pwd
           cd ..
           rm -rf blog/
-          git clone git@github.com:legendu-net/blog.git
+          git clone --depth 1 git@github.com:legendu-net/blog.git
           cd blog
           pwd
           ls -lh

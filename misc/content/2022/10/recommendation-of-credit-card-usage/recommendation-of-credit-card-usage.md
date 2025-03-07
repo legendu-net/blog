@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 16:34:06
-Modified: 2024-12-27 13:56:01
+Modified: 2025-03-06 23:50:44
 Author: Benjamin Du
 Slug: recommendation-of-credit-card-usage
 Title: Recommendation of Credit Card Usage
@@ -25,6 +25,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 - AMEX-M: AMEX Macy Card
 - VVC: Verizon Visa Card
 - HDCC: Home Depot Credit Card
+- Sapphire: Chase Sapphire Credit Card
 
 <table>
 <thead>
@@ -163,6 +164,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td> 
       <span style="color:green">RGC</span>
+      <span style="color:green">Sapphire<sup>[6]</sup></span>
     </td>
     <td>
       <span style="color:green">BOA-M</span>
@@ -241,10 +243,9 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>Flight</td>
     <td></td>
     <td></td>
-    <td></td>
+    <td>Sapphire<sup>[5]</sup></td>
     <td> </td>
-    <td>
-    </td>
+    <td> </td>
     <td>
       <span style="color:green">RGC</span> <br>
       AMEX-G <sup> [1] </sup>
@@ -252,10 +253,8 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>
       <span style="color:green">BOA-V</span>
     </td>
-    <td>
-    </td>
-    <td>
-    </td>
+    <td> </td>
+    <td> </td>
   </tr>
   <tr>
     <td>Travel</td>
@@ -263,6 +262,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td>
       <span style="color:green">RGC</span> <sup>[4]</sup>
+      <span style="color:green">Sapphire</span> <sup>[5]</sup>
     </td>
 
     <td> </td>
@@ -284,9 +284,12 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td>Hotel</td>
     <td>
       <span style="color:red">IHG</span>
+      <span style="color:green">Sapphire[7]</span>
     </td>
     <td></td>
-    <td></td>
+    <td>
+        Sapphire<sup>[5]</sup>
+    </td>
     <td></td>
     <td></td>
     <td> 
@@ -305,7 +308,8 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       Rental
     </td>
     <td>
-      AMEX?
+      AMEX <br>
+      Sapphire <sup>[8]</sup>
     </td>
     <td></td>
     <td></td>
@@ -461,6 +465,11 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     please refer to
     [Robinhood Gold Card waitlist](https://robinhood.com/us/en/support/articles/robinhood-gold-card-waitlist/)
     .
+- [5]: For purchases through Chase Travel.
+    And points are worth 25% more when redeemed for travel through Chase Travel.
+- [6]: For online grocery purchases excluding Walmart, Target and wholesale clubs.
+- [7]: Earn up to $50 in statement credits each account anniversary year for hotel stays purchased through Chase Travel.
+- [7]: The card comes with trip cancellation and interruption insurance, lost luggage reimbursement, auto rental coverage, etc.
 
 ## Offers
 

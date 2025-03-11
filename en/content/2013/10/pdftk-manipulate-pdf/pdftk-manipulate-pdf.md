@@ -5,10 +5,12 @@ Date: 2013-10-06 11:44:58
 Slug: pdftk-examples
 Category: Software
 Tags: pdftk, software, examples, PDF
-Modified: 2024-11-13 10:19:11
+Modified: 2025-03-10 11:48:31
 
 
-1. It is suggested that you **use Python modules instead of `pdftk`** to manipulating PDFs for several reasons.
+1. It is suggested that 
+    you use Python modules or [Stirling-PDF](https://misc.legendu.net/blog/editing-pdf-files-using-stirling-pdf/) 
+    instead of `pdftk` to manipulating PDFs for several reasons.
     First, 
     even though `pdftk` is a great command-line tool,
     it is hard to remember its syntax.

@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 16:34:06
-Modified: 2025-03-06 23:50:44
+Modified: 2025-03-15 17:16:04
 Author: Benjamin Du
 Slug: recommendation-of-credit-card-usage
 Title: Recommendation of Credit Card Usage
@@ -481,3 +481,5 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 
 - Robinhood Gold Card
 - AMEX
+- Sapphire
+

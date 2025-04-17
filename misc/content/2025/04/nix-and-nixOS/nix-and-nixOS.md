@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-04-16 06:54:32
-Modified: 2025-04-16 22:42:55
+Modified: 2025-04-17 00:28:30
 Author: Benjamin Du
 Slug: nix-and-nixOS
 Title: Nix and NixOs
@@ -19,3 +19,4 @@ https://search.nixos.org/packages
 - [Ultimate NixOS Guide | Flakes | Home-manager](https://www.youtube.com/watch?v=a67Sv4Mbxmc)
 - [6 Popular NixOS Beginner Mistakes To Avoid](https://www.youtube.com/watch?v=jQzPRYgJw04)
 - [The Best Way To Use Python On NixOS](https://www.youtube.com/watch?v=6fftiTJ2vuQ)
+- [the-nix-way / dev-templates](https://github.com/the-nix-way/dev-templates)

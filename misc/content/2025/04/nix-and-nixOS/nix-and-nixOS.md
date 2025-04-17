@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-04-16 06:54:32
-Modified: 2025-04-16 08:36:15
+Modified: 2025-04-16 22:42:55
 Author: Benjamin Du
 Slug: nix-and-nixOS
 Title: Nix and NixOs
@@ -8,6 +8,8 @@ Category: Computer Science
 Tags: Computer Science, OS, Nix, NixOS
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+https://search.nixos.org/packages
 
 ## References
 

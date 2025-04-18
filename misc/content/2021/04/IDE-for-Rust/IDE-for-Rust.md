@@ -5,7 +5,7 @@ Slug: IDE-for-Rust
 Title: IDE for Rust
 Category: Computer Science
 Tags: Computer Science, programming, Rust, IDE
-Modified: 2024-12-31 14:07:18
+Modified: 2025-04-17 17:05:45
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -25,6 +25,10 @@ Modified: 2024-12-31 14:07:18
 ## [RustRover: Rust IDE by JetBrains](https://www.jetbrains.com/rust/)
 
 ## Zed
+
+See 
+[Tips on the Zed IDE]( https://www.legendu.net/misc/blog/tips-on-the-zed-ide )
+.
 
 ## Lapce
 

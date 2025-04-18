@@ -5,7 +5,7 @@ Slug: develop-a-gui-application-in-rust
 Title: Develop a GUI Application in Rust
 Category: Computer Science
 Tags: Computer Science, Rust, GUI, desktop, application, Tauri, Iced, Slint
-Modified: 2023-12-13 08:48:03
+Modified: 2025-04-17 08:49:22
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -30,14 +30,16 @@ https://github.com/fzyzcjy/flutter_rust_bridge
 High-level memory-safe binding generator for Flutter/Dart <-> Rust
 Want to combine the best between Flutter, a cross-platform hot-reload rapid-development UI toolkit, and Rust, a language empowering everyone to build reliable and efficient software? Here it comes!
 
-
-
-
 ## [slint](https://github.com/slint-ui/slint)
 [slint](https://github.com/slint-ui/slint)
 is a toolkit to efficiently develop fluid graphical user interfaces for any display: 
 embedded devices and desktop applications. 
 It supports multiple programming languages, such as Rust, C++ or JavaScript.
+
+## [GPUI](https://www.gpui.rs/)
+
+[GPUI](https://www.gpui.rs/)
+is a fast, productive UI framework for Rust from the creators of Zed.
 
 ## [iced](https://github.com/hecrj/iced)
 A cross-platform GUI library for Rust focused on simplicity and type-safety. Inspired by Elm.

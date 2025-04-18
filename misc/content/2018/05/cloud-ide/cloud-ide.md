@@ -5,9 +5,17 @@ Slug: cloud-ide
 Title: Cloud IDE
 Category: Software
 Tags: software, cloud IDE, Cloud9, Codenvy, Eclipse Che, Koding, Codeanywhere
-Modified: 2023-08-02 15:36:49
+Modified: 2025-04-17 19:05:37
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## Google Firebase Studio (Formally Known as Project IDX)
+
+See
+[Tips on Google Firebase Studio]( https://www.legendu.net/misc/blog/tips-on-project-idx )
+.
+
+## [GitHub Copilot](https://github.com/features/copilot)
 
 ## [Code Server](https://github.com/cdr/code-server)
 
@@ -27,8 +35,6 @@ CodeSandbox is a web IDE specifically for web application development.
 StackBlitz provides web IDE for web application development.
 It is more than a cloud IDE
 but allows users to deploy web apps as well.
-
-## [Visual Studio Code](https://code.visualstudio.com/) with the Plugin [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
 ## [theia](http://www.theia-ide.org/)
 

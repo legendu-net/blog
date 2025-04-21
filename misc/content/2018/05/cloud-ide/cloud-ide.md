@@ -5,7 +5,7 @@ Slug: cloud-ide
 Title: Cloud IDE
 Category: Software
 Tags: software, cloud IDE, Cloud9, Codenvy, Eclipse Che, Koding, Codeanywhere
-Modified: 2025-04-17 19:05:37
+Modified: 2025-04-18 07:15:38
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -14,8 +14,6 @@ Modified: 2025-04-17 19:05:37
 See
 [Tips on Google Firebase Studio]( https://www.legendu.net/misc/blog/tips-on-project-idx )
 .
-
-## [GitHub Copilot](https://github.com/features/copilot)
 
 ## [Code Server](https://github.com/cdr/code-server)
 

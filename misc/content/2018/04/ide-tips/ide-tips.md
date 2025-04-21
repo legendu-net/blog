@@ -5,21 +5,27 @@ Slug: ide-tips
 Title: Tips on IDE
 Category: Software
 Tags: Software, IDE, Cloud IDE, Java, C++, Python, Latex
-Modified: 2024-12-31 14:08:53
+Modified: 2025-04-18 07:17:01
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [Cloud IDEs](http://www.legendu.net/misc/blog/cloud-ide/)
 
+## IDEs with AI Coding Assists
+
+See
+[Ides With AI Coding Assists]( https://www.legendu.net/misc/blog/IDEs-with-AI-coding-Assists ) 
+.
+
 ## General Purpose IDEs
 
-1. Visual Studio Code
+1. [Visual Studio Code]( https://www.legendu.net/misc/blog/vscode-tips ) 
 
-2. SpaceVim
+2. [SpaceVim]( https://www.legendu.net/misc/blog/spacevim-tips ) 
 
 3. [Lapce](https://github.com/lapce/lapce)
 
-4. Zed
+4. [Zed]( https://www.legendu.net/misc/blog/tips-on-the-zed-ide ) 
 
 ## JVM Languages
 

@@ -1,9 +1,9 @@
 Status: published
 Date: 2025-04-16 06:54:32
-Modified: 2025-04-17 00:28:30
+Modified: 2025-04-18 06:48:25
 Author: Benjamin Du
 Slug: nix-and-nixOS
-Title: Nix and NixOs
+Title: Nix and NixOS
 Category: Computer Science
 Tags: Computer Science, OS, Nix, NixOS
 

@@ -5,10 +5,16 @@ Slug: ide-for-sql
 Title: IDE for SQL
 Category: Software
 Tags: software, Teradata SQL Assistant, IDE, SQL, dbeaver, Teradata Studio
-Modified: 2021-02-15 12:10:03
+Modified: 2025-04-18 06:41:37
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+
+## Jupyter / JupyterLab
+
+I personally prefer to query databases using a Jupyter/lab notebook.
+The reason is that results of queries are persisted in the notebook 
+for future reference and sharing.
 
 ## [dbeaver](http://www.legendu.net/misc/blog/tips-for-dbeaver)
 

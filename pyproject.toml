@@ -9,9 +9,9 @@ python = ">=3.10,<3.13"
 beautifulsoup4 = ">=4.9.3"
 typogrify = ">=2.0.7"
 pelican = ">=4.5.4"
-pelican-jupyter = ">=0.10.0"
-pelican-render-math = ">=1.0.3"
-jupyter = ">=1.0.0"
+#pelican-jupyter = ">=0.10.0"
+#pelican-render-math = ">=1.0.3"
+#jupyter = ">=1.0.0"
 loguru = ">=0.7.3"
 aiutil = {extras = ["jupyter"], version = ">=0.83.0"}
 

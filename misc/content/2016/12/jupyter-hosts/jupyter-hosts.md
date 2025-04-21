@@ -5,14 +5,19 @@ Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
 Category: Software
 Tags: Data Science, JuptyerLab, Jupyter, notebook, deepnote
-Modified: 2023-02-15 00:30:56
+Modified: 2025-04-18 07:15:38
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## Google Firebase Studio
+
+You can use notebooks after installing the jupyter extension
+and the programming lanuage that you want to use in Jupyter notebook.
 
 ## [Google Cloud Shell](https://cloud.google.com/shell/docs)
 Technically speaking,
 [Google Cloud Shell](https://cloud.google.com/shell/docs)
-is Jupyter/JupyterLab service.
+isn't Jupyter/JupyterLab service.
 It is a always free small VM with 5GB persistent storage
 that Google Cloud Platform offers to its customers 
 to experiment with Google Cloud and manage projects and resources from web browsers. 

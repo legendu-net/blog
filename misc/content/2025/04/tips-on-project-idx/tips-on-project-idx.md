@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-04-16 17:08:20
-Modified: 2025-04-17 19:05:37
+Modified: 2025-04-21 13:56:12
 Author: Benjamin Du
 Slug: tips-on-project-idx
 Title: Tips on Google Firebase Studio
@@ -11,13 +11,23 @@ Tags: Computer Science, programming, development, IDX, coding, IDE, Firebase, St
 
 ## Tips and Traps
 
-1. Search for dev.nix on GitHub to see others' configurations for Firebase Studio.
+1. You can ask for help on Firebase Studio 
+    in the 
+    [community].(https://community.firebasestudio.dev/)
+    .
+
+2. Search for dev.nix on GitHub to see others' configurations for Firebase Studio.
+
+## Python
+
+[How to install python in project idx](https://community.firebasestudio.dev/t/how-to-install-python-in-project-idx/54)
+
+1. You have to create a new virtual environment and reinstall packages 
+    every time you rebuild the IDX workspace.
 
 ## References
 
 - [How to install python in project idx](https://community.firebasestudio.dev/t/how-to-install-python-in-project-idx/54)
-
-## References
 
 - [Google Firebase Studio](https://firebase.studio/)
 

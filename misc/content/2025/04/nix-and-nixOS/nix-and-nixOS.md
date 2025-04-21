@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-04-16 06:54:32
-Modified: 2025-04-18 06:48:25
+Modified: 2025-04-21 13:33:01
 Author: Benjamin Du
 Slug: nix-and-nixOS
 Title: Nix and NixOS
@@ -10,6 +10,18 @@ Tags: Computer Science, OS, Nix, NixOS
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://search.nixos.org/packages
+
+## mkShell vs buildFHSUserEnv 
+
+See discussions in
+[mkShell vs buildFHSUserEnv in Nix]( https://www.legendu.net/misc/blog/mkshell-vs-buildFHSUserEnv-in-nix )
+.
+
+## Python
+
+See discussions in 
+[Set Up Nix for Python Development]( https://www.legendu.net/misc/blog/set-up-nix-for-python-development ) 
+.
 
 ## References
 

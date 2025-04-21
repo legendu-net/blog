@@ -5,12 +5,14 @@
   
   
   # Use https://search.nixos.org/packages to find packages
-  packages = [
-    pkgs.neovim
-    pkgs.ripgrep
-    pkgs.python311
-    pkgs.python311Packages.pip
-    pkgs.poetry
+  packages = with pkgs; [
+    neovim
+    ripgrep
+    rm-improved
+    bat
+    python311
+    python311Packages.pip
+    poetry
   ];
 
   # Sets environment variables in the workspace
@@ -18,7 +20,6 @@
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
-      #"vscodevim.vim"
       "asvetliakov.vscode-neovim"
       "ms-python.python"
       "ms-python.debugpy"

@@ -178,6 +178,7 @@
 - ["Fselect", "fselect"]
 - ["Graphql", "GraphQL"]
 - ["Ipython", "IPython"]
+- ["Mkshell", "mkShell"]
 - ["Println", "println"]
 - ["Pycharm", "PyCharm"]
 - ["Scalajs", "ScalaJS"]
@@ -272,6 +273,7 @@
 # 14 symbols
 - ["Arrowtypeerror", "ArrowTypeError"]
 # 15 symbols
+- ["Buildfhsuserenv", "buildFHSUserEnv"]
 - ["Jupyterlab-Myst", "jupyterlab-myst"]
 - ["Torch.Nn.Module", "torch.nn.Module"]
 - ["Restructuretext", "RestructureText"]

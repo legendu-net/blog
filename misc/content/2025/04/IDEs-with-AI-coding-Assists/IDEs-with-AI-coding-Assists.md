@@ -9,40 +9,58 @@ Tags: Computer Science, programming, IDE, AI, coding, completion
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## Visual Studio Code
 
-There are many extensions for VSCode offering AI coding assists.
-Below are some prominent ones.
+## AI Code Assistant for IDEs
 
-1. [GitHub Copilot](https://github.com/features/copilot)
+1. Google Gemini
+    - Built-in for Firebase Studio
 
-2. [tabby](https://github.com/TabbyML/tabby)
+2. [GitHub Copilot](https://github.com/features/copilot)
+    - Visual Studio Code
+    - Visual Studio 
+    - command-line
 
-## Zed
+3. [Amazon Q Developer](https://aws.amazon.com/q/developer/?refid=d30bd40f-088b-4813-9e3a-aca2cbbbd077)
+    - Visual Studio Code
+    - Visual Studio 
+    - Jet Brains
+    - command-line
 
-## Google Firebase Studio (Formally Known as IDX)
+## IDEs Supporint AI Code Assistants
 
-Google Firebase Studio has Gemini integrated seemlessly.
+1. Visual Studio Code
+    - [GitHub Copilot](https://github.com/features/copilot)
+    - Amazon Q Developer
+    - [tabby](https://github.com/TabbyML/tabby)
 
-## [WinsSurf](https://windsurf.com/editor)
+2. Zed
+    - all popular LLMs are aupported
+        - Amazon Bedrock
+        - Anthropic
+        - GitHub Copilot
+        - DeepSeek
+        - Google AI Studio
+        - Local LLMs
+        - Mistral
+        - Ollama
+        - OpenAI
 
-## [Cursor](https://www.cursor.com/)
+3. Google Firebase Studio (Formally Known as IDX)
+    - Gemini built-in
 
-## [trae](trae.ai)
+4. [WinsSurf](https://windsurf.com/editor)
 
-## Vim / NeoVim
+5. [Cursor](https://www.cursor.com/)
 
-https://github.com/github/copilot.vim
+6. [trae](trae.ai)
 
-https://github.com/yetone/avante.nvim
-
-https://github.com/monkoose/neocodeium
-
-https://github.com/Exafunction/windsurf.vim (formally known as codeium.vim)
-
-https://github.com/jackMort/ChatGPT.nvim
-
-https://github.com/huggingface/llm.nvim
+7. Vim / NeoVim
+    - [copilot.vim](https://github.com/github/copilot.vim)
+    - [avante.nvim](https://github.com/yetone/avante.nvim)
+    - [neocodeium](https://github.com/monkoose/neocodeium)
+    - [windsurf.vim (formally known as codeium.vim)](https://github.com/Exafunction/windsurf.vim) 
+    - [ChatGPT.nvim](https://github.com/jackMort/ChatGPT.nvim)
+    - [llm.nvim](https://github.com/huggingface/llm.nvim)
 
 ## References
 

@@ -1,9 +1,9 @@
 Status: published
 Date: 2025-04-18 07:12:55
-Modified: 2025-04-18 07:12:55
+Modified: 2025-04-23 18:39:07
 Author: Benjamin Du
 Slug: IDEs-with-AI-coding-Assists
-Title: Ides With AI Coding Assists
+Title: IDEs With AI Coding Assists
 Category: Computer Science
 Tags: Computer Science, programming, IDE, AI, coding, completion
 

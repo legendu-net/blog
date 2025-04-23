@@ -5,7 +5,7 @@ Slug: ide-tips
 Title: Tips on IDE
 Category: Software
 Tags: Software, IDE, Cloud IDE, Java, C++, Python, Latex
-Modified: 2025-04-18 07:17:01
+Modified: 2025-04-23 18:41:30
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -23,9 +23,9 @@ See
 
 2. [SpaceVim]( https://www.legendu.net/misc/blog/spacevim-tips ) 
 
-3. [Lapce](https://github.com/lapce/lapce)
-
 4. [Zed]( https://www.legendu.net/misc/blog/tips-on-the-zed-ide ) 
+
+3. [Lapce](https://github.com/lapce/lapce)
 
 ## JVM Languages
 

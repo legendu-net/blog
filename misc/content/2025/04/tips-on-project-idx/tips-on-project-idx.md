@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-04-16 17:08:20
-Modified: 2025-04-21 13:56:12
+Modified: 2025-04-25 03:40:16
 Author: Benjamin Du
 Slug: tips-on-project-idx
 Title: Tips on Google Firebase Studio
@@ -17,6 +17,14 @@ Tags: Computer Science, programming, development, IDX, coding, IDE, Firebase, St
     .
 
 2. Search for dev.nix on GitHub to see others' configurations for Firebase Studio.
+
+## Trouble Shooting
+
+- [Firebase Status Dashboard](https://status.firebase.google.com/)
+
+This page provides status information on the services that are part of Firebase. Check back here to view the current status of the services listed below. If you are experiencing an issue not listed here, please contact Support. Learn more about what's posted on the dashboard in this FAQ. For additional information on these services, please visit https://firebase.google.com/.
+
+https://status.open-vsx.org/
 
 ## Python
 

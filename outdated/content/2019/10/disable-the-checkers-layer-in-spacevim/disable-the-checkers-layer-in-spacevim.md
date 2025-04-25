@@ -5,7 +5,12 @@ Slug: disable-the-checkers-layer-in-spacevim
 Title: Disable the Checkers Layer in SpaceVim
 Category: Software
 Tags: Software, SpaceVim, Vim, checkers, layer, LSP, language server protocol
-Modified: 2021-09-24 12:12:39
+Modified: 2025-04-25 03:42:52
+
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
+The SpaceVim project has been abandoned.
+Check AstroVim instead.
 
 You can use the following command in SpaceVim to disable the `checkers` layer temporarily.
 

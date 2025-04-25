@@ -5,10 +5,13 @@ Slug: spacevim-tips
 Title: SpaceVim - A Modern Vim/NeoVim Configuration
 Category: Software
 Tags: software, SpaceVim, Vim, NeoVim, configuration, tips
-Modified: 2023-01-11 01:18:13
+Modified: 2025-04-25 03:42:52
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
+
+The SpaceVim project has been abandoned.
+Check AstroVim instead.
 
 ## Installation
 ```

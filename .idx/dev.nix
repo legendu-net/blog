@@ -14,7 +14,11 @@
   ];
 
   # Sets environment variables in the workspace
-  env = {};
+  env = {
+    PATH = [
+      "$HOME/.local/bin"
+    ];
+  };
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
@@ -41,6 +45,10 @@
         poetry-project = ''
         poetry config --local virtualenvs.in-project true
         poetry install
+        '';
+        icon = ''
+        curl -sSL https://raw.githubusercontent.com/legendu-net/icon/main/install_icon.sh | bash -s -- \
+            -d ~/.local/bin
         '';
       };
     };

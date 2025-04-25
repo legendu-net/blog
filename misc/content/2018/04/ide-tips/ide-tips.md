@@ -5,7 +5,7 @@ Slug: ide-tips
 Title: Tips on IDE
 Category: Software
 Tags: Software, IDE, Cloud IDE, Java, C++, Python, Latex
-Modified: 2025-04-23 18:41:30
+Modified: 2025-04-25 03:42:52
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -44,7 +44,7 @@ See [IDE for Rust]( https://www.legendu.net/misc/blog/IDE-for-Rust )
 
 2. JupyterLab
 
-3. SpaceVim
+3. [NeoVim](https://www.legendu.net/misc/blog/tips-on-neovim) (with AstroNvim)
 
 2. PyCharm
 

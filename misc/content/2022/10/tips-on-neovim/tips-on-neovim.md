@@ -19,7 +19,9 @@ You can install the latest stable version of neovim using the command below.
 
 ## Tips and Traps
 
-1. NeoVim with a complicated configuration (e.g., SpaceVim) 
+1. [AstroNvim](https://github.com/AstroNvim/AstroNvim) is a great configuration for NeoVim.
+
+1. NeoVim with a complicated configuration (e.g., AstroNvim, SpaceVim, etc) 
     might be too slow when editing a large (>50M) text file.
     One trick helps is to disable plugins when editing large files.
     For example,

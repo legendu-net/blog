@@ -32,8 +32,6 @@ jobs:
       - name: Install dependencies
         run: |
           pwd
-          icon pt -ic
-          ~/.local/bin/poetry install
           #wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb -O /tmp/libssl.deb
           #wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.20_amd64.deb -O /tmp/libssl.deb
           wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb -O /tmp/libssl.deb
@@ -45,5 +43,5 @@ jobs:
           git config --global user.email "longendu@yahoo.com"
           git config --global user.name "Ben Du"
           git config --global url."git@github.com:".insteadOf "https://github.com/"
-          ./blog.py p -ecmo
+          python3 ./blog.py p -ecmo
 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-04-17 16:58:12
-Modified: 2025-04-17 16:58:12
+Modified: 2025-04-28 13:47:53
 Author: Benjamin Du
 Slug: tips-on-the-zed-ide
 Title: Tips on the Zed IDE
@@ -21,9 +21,10 @@ Tags: Computer Science, programming, IDE, Zed
 
 https://flathub.org/apps/dev.zed.Zed
 
+```
 flatpak install flathub dev.zed.Zed
-
 flatpak run dev.zed.Zed
+```
 
 ## References
 

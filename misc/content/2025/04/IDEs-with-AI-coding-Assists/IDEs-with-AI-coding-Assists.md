@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-04-18 07:12:55
-Modified: 2025-04-23 18:39:07
+Modified: 2025-04-28 13:55:42
 Author: Benjamin Du
 Slug: IDEs-with-AI-coding-Assists
 Title: IDEs With AI Coding Assists
@@ -64,18 +64,12 @@ Tags: Computer Science, programming, IDE, AI, coding, completion
 
 ## References
 
-https://www.builder.io/blog/windsurf-vs-cursor
-Windsurf vs Cursor: which is the better AI code editor?
+- [Windsurf vs Cursor: which is the better AI code editor?](https://www.builder.io/blog/windsurf-vs-cursor)
 
-https://www.joshmedeski.com/posts/ai-in-neovim-neovimconf-2024/
-AI in Neovim (NeovimConf 2024)
+- [AI in Neovim (NeovimConf 2024)](https://www.joshmedeski.com/posts/ai-in-neovim-neovimconf-2024/)
 
-https://terminalprogrammer.com/the-best-ai-plugin-for-neovim
-The Best AI Plugin for Neovim
-Why Codeium is the Clear Winner
+- [The Best AI Plugin for Neovim - Why Codeium is the Clear Winner](https://terminalprogrammer.com/the-best-ai-plugin-for-neovim)
 
-https://www.youtube.com/watch?v=jy5gfjmXQG4
-YouTube - Neovim auto completion with Local LLM
+- [YouTube - Neovim auto completion with Local LLM](https://www.youtube.com/watch?v=jy5gfjmXQG4)
 
-https://www.youtube.com/watch?v=MzFr7iXsESs
-I Tried Every AI Coding Assistant for Neovim
+- [I Tried Every AI Coding Assistant for Neovim](https://www.youtube.com/watch?v=MzFr7iXsESs)

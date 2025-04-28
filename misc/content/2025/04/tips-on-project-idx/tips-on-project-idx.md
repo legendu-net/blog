@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-04-16 17:08:20
-Modified: 2025-04-25 03:40:16
+Modified: 2025-04-28 13:57:30
 Author: Benjamin Du
 Slug: tips-on-project-idx
 Title: Tips on Google Firebase Studio
@@ -13,10 +13,10 @@ Tags: Computer Science, programming, development, IDX, coding, IDE, Firebase, St
 
 1. You can ask for help on Firebase Studio 
     in the 
-    [community].(https://community.firebasestudio.dev/)
+    [community](https://community.firebasestudio.dev/)
     .
 
-2. Search for dev.nix on GitHub to see others' configurations for Firebase Studio.
+2. Search for `dev.nix` on GitHub to see others' configurations for Firebase Studio.
 
 ## Trouble Shooting
 

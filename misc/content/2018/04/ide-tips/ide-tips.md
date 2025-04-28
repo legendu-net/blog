@@ -5,7 +5,7 @@ Slug: ide-tips
 Title: Tips on IDE
 Category: Software
 Tags: Software, IDE, Cloud IDE, Java, C++, Python, Latex
-Modified: 2025-04-25 03:42:52
+Modified: 2025-04-28 13:58:32
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -14,7 +14,7 @@ Modified: 2025-04-25 03:42:52
 ## IDEs with AI Coding Assists
 
 See
-[Ides With AI Coding Assists]( https://www.legendu.net/misc/blog/IDEs-with-AI-coding-Assists ) 
+[IDEs With AI Coding Assists]( https://www.legendu.net/misc/blog/IDEs-with-AI-coding-Assists ) 
 .
 
 ## General Purpose IDEs

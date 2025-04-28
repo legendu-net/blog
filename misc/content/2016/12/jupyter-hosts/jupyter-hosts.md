@@ -5,11 +5,11 @@ Slug: jupyter-hosts
 Title: Public Jupyter/JupyterLab Hosts
 Category: Software
 Tags: Data Science, JuptyerLab, Jupyter, notebook, deepnote
-Modified: 2025-04-18 07:15:38
+Modified: 2025-04-28 13:55:42
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## Google Firebase Studio
+## [Google Firebase Studio]( https://www.legendu.net/misc/blog/tips-on-project-idx )
 
 You can use notebooks after installing the jupyter extension
 and the programming lanuage that you want to use in Jupyter notebook.

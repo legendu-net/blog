@@ -12,7 +12,7 @@ typogrify = ">=2.0.7"
 loguru = ">=0.7.3"
 aiutil = {extras = ["jupyter"], version = ">=0.83.0"}
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 pylint = ">=2.7.2"
 pytest = ">=6.2.0"
 pytype = { version = ">=2020.08.10", python = "<3.9" }

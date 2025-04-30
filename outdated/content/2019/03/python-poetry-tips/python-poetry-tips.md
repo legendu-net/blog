@@ -5,10 +5,15 @@ Slug: python-poetry-tips
 Title: Manage Your Python Project Using Poetry
 Category: Computer Science
 Tags: programming, Python, poetry, build tool, dependency management
-Modified: 2023-07-30 22:23:39
+Modified: 2025-04-30 14:48:52
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
+
+[uv]( https://www.legendu.net/misc/blog/manage-python-projects-using-uv )
+(implemented in Rust)
+is the new cool kid now
+and is prefer to poetry.
 
 ## Tips and Traps 
 
@@ -113,7 +118,7 @@ If you want to install prerelease versions, you can use the --preview option.
 
 ### Run Commands in the Virtual Environment 
 
-`peotry run cmd` is a quick to run `cmd` using the virtual environment managed by `poetry.
+`poetry run cmd` is a quick to run `cmd` using the virtual environment managed by `poetry.
 Another way is to manually set `PATH` before you invoke `cmd`. 
 For example,
 

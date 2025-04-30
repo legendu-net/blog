@@ -5,7 +5,14 @@ Slug: managing-virtual-environments-in-poetry
 Title: Managing Virtual Environments in Poetry
 Category: Computer Science
 Tags: programming, Python, Poetry, virtual environment, shell
-Modified: 2021-02-25 23:14:43
+Modified: 2025-04-30 14:47:45
+
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
+[uv]( https://www.legendu.net/misc/blog/manage-python-projects-using-uv )
+(implemented in Rust)
+is the new cool kid now
+and is prefer to poetry.
 
 ## Where to Create Virtual Environments
 

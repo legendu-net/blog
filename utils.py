@@ -221,7 +221,7 @@ def option_editor(subparser):
         action="store_const",
         const=VIM,
         default=get_editor(),
-        help="Edit the post using Vim.",
+        help="Edit the post using NeoVim/Vim.",
     )
     subparser.add_argument(
         "--code",

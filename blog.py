@@ -131,7 +131,7 @@ def match_post(blogger, args):
 
 
 def vim(blogger, args):
-    args.editor = "vim"
+    args.editor = VIM
     edit(blogger, args)
 
 

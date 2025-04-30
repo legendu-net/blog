@@ -5,13 +5,28 @@ Title: Tips on "sed"
 Slug: sed-tips
 Category: Software
 Tags: tips, software, text manipulation, shell, Linux, sed
-Modified: 2022-05-06 13:45:47
+Modified: 2025-04-30 06:15:08
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-It is suggested that you use Python script as an alternative to `sed` 
-for manipulating text files 
-unless you have to stick to shell script.
+## Alternatives
+
+1. [sad](https://github.com/ms-jpq/sad)
+    is a simpler alternative to sed.
+    sad is implemented in Rust 
+    and has built-in integration of 
+    [fzf]( https://www.legendu.net/misc/blog/the-fzf-command-is-a-great-alternative-to-find ),
+    which makes it easy to visually inspect changes.
+
+2. For complicated text substitutions,
+    it is suggested that you use Python script as an alternative to `sed`.
+    It's best to do this in a Jupyter/Lab notebook.
+    If you do prefer a pure Python script,
+    it is suggested that you use 
+    [uv]( https://www.legendu.net/misc/blog/manage-python-projects-using-uv )
+    to run the Python script.
+
+## Example Usages
  
 1. Add `#!/bin/bash` to the first line of all `.txt` files.  
 

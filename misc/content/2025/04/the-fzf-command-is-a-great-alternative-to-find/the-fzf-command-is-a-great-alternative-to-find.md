@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-04-29 23:37:05
-Modified: 2025-04-29 23:37:05
+Modified: 2025-04-30 05:49:02
 Author: Benjamin Du
 Slug: the-fzf-command-is-a-great-alternative-to-find
 Title: The fzf Command Is a Great Alternative to find

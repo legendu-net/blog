@@ -6,7 +6,9 @@
   
   # Use https://search.nixos.org/packages to find packages
   packages = with pkgs; [
+    bash-completion
     neovim
+    gitui
     ripgrep
     rm-improved
     bat

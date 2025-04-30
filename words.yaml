@@ -47,6 +47,7 @@
 - ["Dsl", "DSL"]
 - ["Ec2", "EC2"]
 - ["Ftp", "FTP"]
+- ["Fzf", "fzf"]
 - ["Gat", "GAT"]
 - ["Gcp", "GCP"]
 - ["Gdb", "GDB"]

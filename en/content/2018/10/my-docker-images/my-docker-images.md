@@ -5,7 +5,7 @@ Slug: my-docker-images
 Title: My Docker Images
 Category: Software
 Tags: software, Docker, Docker image, Ubuntu, JupyterLab, Lubuntu, dclong
-Modified: 2023-10-26 07:04:28
+Modified: 2025-04-30 06:40:59
 
 
 <h2 id="recommended-docker-images">Recommended Docker Images and Tags</h2>
@@ -109,10 +109,6 @@ Please refer to the following tag table for more details.
   <tr>
     <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-python-portable" target="_blank" rel="noopener noreferrer">dclong/python-portable</a></td>
     <td class="tg-0lax">Build portable Python using <a href="https://github.com/indygreg/python-build-standalone" target="_blank" rel="noopener noreferrer">python-build-standalone</a></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-conda-build" target="_blank" rel="noopener noreferrer">dclong/conda-build</a></td>
-    <td class="tg-0lax">Build portable Anaconda Python environment</td>
   </tr>
   <tr>
     <td class="tg-0lax"><a href="https://github.com/legendu-net/docker-jupyterhub-sagemath" target="_blank" rel="noopener noreferrer">dclong/jupyterhub-sagemath</a></td>
@@ -488,17 +484,11 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
     - [dclong/jdk](https://hub.docker.com/r/dclong/jdk/)  
 
-    - [dclong/conda](https://hub.docker.com/r/dclong/conda/)  
-
-        - [dclong/conda-build](https://hub.docker.com/r/dclong/conda-build/)  
-
-        - [dclong/conda-yarn](https://hub.docker.com/r/dclong/conda-yarn/)  
-
     - [dclong/python-portable](https://hub.docker.com/r/dclong/python-portable/)  
 
     - [dclong/python](https://hub.docker.com/r/dclong/python/)  
 
-        > Python 3.10.x  
+        > Python 3.12.x  
 
         - [dclong/python-jdk](https://hub.docker.com/r/dclong/python-jdk/)  
 
@@ -510,11 +500,11 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
             - [dclong/jupyterlab](https://hub.docker.com/r/dclong/jupyterlab)  
 
-                > JupyterLab: 3.5.x
+                > JupyterLab: latest stable version
 
                 - [dclong/jupyterhub](https://hub.docker.com/r/dclong/jupyterhub/)  
 
-                    > JupyterHub: latest stable version.
+                    > JupyterHub: latest stable version
 
                     - [dclong/jupyterhub-ts](https://hub.docker.com/r/dclong/jupyterhub-ts/)  
 
@@ -539,7 +529,7 @@ you can connect to the desktop environment in the Docker container using NoMachi
 
                             - [dclong/vscode-server](https://hub.docker.com/r/dclong/vscode-server/)  
 
-                                > [code-server](https://github.com/cdr/code-server): 4.9.x  
+                                > [code-server](https://github.com/cdr/code-server): latest stable version
 
                             - [dclong/jupyterhub-ds](https://hub.docker.com/r/dclong/jupyterhub-ds/)  
 
@@ -566,13 +556,6 @@ you can connect to the desktop environment in the Docker container using NoMachi
             - [dclong/lubuntu-pyside2](https://hub.docker.com/r/dclong/lubuntu-pyside2/)  
 
             - [dclong/lubuntu-jdk](https://hub.docker.com/r/dclong/lubuntu-jdk/)  
-
-- [dclong/deepin_b](https://hub.docker.com/r/dclong/deepin_b/)  
-
-    - [dclong/deepin_cn](https://hub.docker.com/r/dclong/deepin_cn/)  
-
-        - [dclong/deepin](https://hub.docker.com/r/dclong/deepin/)  
-
 
 ## Build my Docker Images
 

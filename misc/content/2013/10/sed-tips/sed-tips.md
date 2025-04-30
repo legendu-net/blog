@@ -5,7 +5,7 @@ Title: Tips on "sed"
 Slug: sed-tips
 Category: Software
 Tags: tips, software, text manipulation, shell, Linux, sed
-Modified: 2025-04-30 06:15:08
+Modified: 2025-04-30 06:31:10
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -25,6 +25,10 @@ Modified: 2025-04-30 06:15:08
     it is suggested that you use 
     [uv]( https://www.legendu.net/misc/blog/manage-python-projects-using-uv )
     to run the Python script.
+
+3. If you do prefer using sed,
+    you can ask AI tools (ChatGPT, Gemini, DeepSeek, etc) 
+    to generate sed comamnds for you.
 
 ## Example Usages
  

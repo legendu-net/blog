@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-04-29 23:37:05
-Modified: 2025-04-30 14:58:55
+Modified: 2025-05-02 15:02:10
 Author: Benjamin Du
 Slug: the-fzf-command-is-a-great-alternative-to-find
 Title: The fzf Command Is a Great Alternative to find
@@ -9,10 +9,19 @@ Tags: Computer Science, programming, fzf, find, fuzzy, bat, preview
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+## Example Usages
+
+1. Quickly cd into a directory.
+
+        cd $(find . \( -type d ! -readable -prune \) -o -type d -print0 | fzf --read0)
+
+2. Search files using fzf and preview them using `bat`.
 
 ```
 fzf --preview 'bat --color=always {}'
 ```
+
+3. Search files using ripgrep, use fzf as the UI and open selected files in vim.
 
 ```
 # ripgrep->fzf->vim [QUERY]

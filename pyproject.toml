@@ -1,43 +1,21 @@
-[tool.poetry]
+[project]
 name = "blog"
 version = "0.1.0"
-description = ""
-authors = ["Benjamin Du"]
-
-[tool.poetry.dependencies]
-python = ">=3.10,<3.13"
-loguru = ">=0.7.3"
-pelican = ">=4.11.0"
-tqdm = ">=4.67.1"
-pyyaml = ">=6.0.2"
-aiutil = {extras = ["jupyter"], version = ">=0.83.0"}
-
-[tool.poetry.group.dev.dependencies]
-ruff = ">=0.11.7"
-pytest = ">=6.2.0"
-pytype = { version = ">=2020.08.10", python = "<3.13" }
-
-[tool.pylint.master]
-ignore = ".venv,.ipynb_checkpoints"
-unsafe-load-any-extension = "no"
-load-plugins = "pylint.extensions.docparams"
-extension-pkg-whitelist = "numpy,cv2,pyspark"
-generated-members = "sqlite3.*,cv2.*,pyspark.*"
-ignored-modules = "pyspark.sql.functions"
-
-[tool.pylint.messages_control]
-disable = "C0103,C0200,C0301,C0302,C0303,R0902,R0903,R0904,R0911,R0912,R0913,R0914,W0621,W0622,W0702,W0703,W1116,W9012,W9016"
-
-[tool.pylint.typecheck]
-ignored-classes = "Namespace"
-
-[tool.pytype]
-exclude = [
-    ".venv/",
-    "dist/",
-    "*/.ipynb_checkpoints/",
+description = "Ben Du's personal blog."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiutil>=0.83.0",
+    "loguru>=0.7.3",
+    "pelican>=4.11.0",
+    "pyyaml>=6.0.2",
+    "tqdm>=4.67.1",
 ]
 
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+    "pytype>=2024.10.11",
+    "ruff>=0.11.8",
+]
+

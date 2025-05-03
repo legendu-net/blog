@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-04-30 06:16:38
-Modified: 2025-05-03 01:38:51
+Modified: 2025-05-03 10:31:42
 Author: Benjamin Du
 Slug: manage-python-projects-using-uv
 Title: Manage Python Projects Using uv
@@ -14,6 +14,17 @@ Tags: Computer Science, programming, Python, uv, project, management, virtualenv
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 curl -LsSf https://astral.sh/uv/install.sh | env UV_INSTALL_DIR="/usr/local/bin" sh
+
+## Usage
+
+```
+uv init new_project_name
+uv init 
+uv lock
+uv lock --upgrade
+uv sync
+uv run python ...
+```
 
 ## References
 

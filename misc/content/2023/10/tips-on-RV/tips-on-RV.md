@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-10-19 11:31:45
-Modified: 2024-09-13 22:17:01
+Modified: 2025-05-03 00:44:19
 Author: Benjamin Du
 Slug: tips-on-RV
 Title: Tips on RV
@@ -17,6 +17,13 @@ https://weretherussos.com/class-b-rv-manufacturers-list-camper-vans/
 
 1. Class B/B+ (best with top popups) or small class C RVs are good choices.
     Class A RVs are too challenge to drive.
+
+2. Truck campers or small fifth wheels are also choices.
+
+## Good Features to Have
+
+1. diesel heater
+2. AC
 
 ## RV Rental
 
@@ -89,6 +96,12 @@ https://www.reddit.com/r/Washington/comments/11bqmvl/difficulty_of_reserving_a_c
 3. How to dump toilet waste?
 
 ## References
+
+- [We didn't expect THIS! Payload Problem Ford F350 and 5th Wheel RV (and how to avoid it)](https://www.youtube.com/watch?v=H3s5Ztj6PTA)
+
+- [Why Choose a Truck Camper?! The Pros and Cons.](https://www.youtube.com/watch?v=XJReBa-trQY)
+
+- [2025 Outpost 6.5 - Full Camper Tour](https://www.youtube.com/watch?v=uNTebGb5fR8)
 
 - [Washington State Evergreen Fall RV Show](https://www.evergreenfallrvshow.com/)
 

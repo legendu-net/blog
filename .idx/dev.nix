@@ -12,7 +12,8 @@
     ripgrep
     rm-improved
     bat
-    poetry
+    fzf
+    uv
   ];
 
   # Sets environment variables in the workspace
@@ -44,10 +45,6 @@
       };
       # Runs when the workspace is (re)started
       onStart = {
-        poetry-project = ''
-        poetry config --local virtualenvs.in-project true
-        poetry install
-        '';
         icon = ''
         curl -sSL https://raw.githubusercontent.com/legendu-net/icon/main/install_icon.sh | bash -s -- \
             -d ~/.local/bin

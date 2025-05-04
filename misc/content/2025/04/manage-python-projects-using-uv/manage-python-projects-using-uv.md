@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-04-30 06:16:38
-Modified: 2025-05-03 10:36:34
+Modified: 2025-05-04 06:06:48
 Author: Benjamin Du
 Slug: manage-python-projects-using-uv
 Title: Manage Python Projects Using uv
@@ -16,6 +16,11 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 curl -LsSf https://astral.sh/uv/install.sh | env UV_INSTALL_DIR="/usr/local/bin" sh
 
 ## Usage
+
+1. Migrate from other Python projects to uv.
+
+        uvx migrate-to-uv
+
 
 ```
 uv init new_project_name

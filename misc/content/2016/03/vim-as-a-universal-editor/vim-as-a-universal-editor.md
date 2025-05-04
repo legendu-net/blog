@@ -5,12 +5,16 @@ Author: Ben Chuanlong Du
 Slug: vim-as-a-universal-editor
 Title: Vim as a Universal Editor
 Category: Software
-Tags: software, Vim, editor, FireNVim
-Modified: 2025-05-03 01:15:51
+Tags: software, Vim, editor, FireNVim, NeoVim, VSCode, Visual Studio Code
+Modified: 2025-05-03 20:18:03
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 - [FireNVim]( https://www.legendu.net/misc/blog/firenvim-brings-neovim-into-your-browser )
+  - Use NeoVim to edit in any textbox in browsers.
+
+- [vscode-neovim](https://github.com/vscode-neovim/vscode-neovim)
+  - Use NeoVim as the editor in Visual Studio Code.
 
 - [ViEmu] (http://www.viemu.com/)
   Unfortunately does not support 64 bit MS Word/Outlook currently. 

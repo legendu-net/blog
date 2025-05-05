@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-04-29 23:37:05
-Modified: 2025-05-02 15:02:10
+Modified: 2025-05-05 07:24:48
 Author: Benjamin Du
 Slug: the-fzf-command-is-a-great-alternative-to-find
 Title: The fzf Command Is a Great Alternative to find
@@ -11,38 +11,10 @@ Tags: Computer Science, programming, fzf, find, fuzzy, bat, preview
 
 ## Example Usages
 
-1. Quickly cd into a directory.
+- [Some Useful Shell Functions - fzf]
+(https://github.com/legendu-net/icon/blob/dev/utils/data/bash-it/custom.plugins.bash)
 
-        cd $(find . \( -type d ! -readable -prune \) -o -type d -print0 | fzf --read0)
-
-2. Search files using fzf and preview them using `bat`.
-
-```
-fzf --preview 'bat --color=always {}'
-```
-
-3. Search files using ripgrep, use fzf as the UI and open selected files in vim.
-
-```
-# ripgrep->fzf->vim [QUERY]
-rfv() (
-  RELOAD='reload:rg --column --color=always --smart-case {q} || :'
-  OPENER='if [[ $FZF_SELECT_COUNT -eq 0 ]]; then
-            vim {1} +{2}     # No selection. Open the current line in Vim.
-          else
-            vim +cw -q {+f}  # Build quickfix list for the selected items.
-          fi'
-  fzf --disabled --ansi --multi \
-      --bind "start:$RELOAD" --bind "change:$RELOAD" \
-      --bind "enter:become:$OPENER" \
-      --bind "ctrl-o:execute:$OPENER" \
-      --bind 'alt-a:select-all,alt-d:deselect-all,ctrl-/:toggle-preview' \
-      --delimiter : \
-      --preview 'bat --style=full --color=always --highlight-line {2} {1}' \
-      --preview-window '~4,+{2}+4/3,<80(up)' \
-      --query "$*"
-)
-```
+- [Advanced fzf examples](https://sourcegraph.com/github.com/junegunn/fzf/-/blob/ADVANCED.md)
 
 ## References
 

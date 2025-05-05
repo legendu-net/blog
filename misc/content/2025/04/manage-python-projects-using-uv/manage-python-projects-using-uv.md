@@ -30,6 +30,8 @@ uv lock
 uv lock --upgrade
 uv sync
 uv run python ...
+uv build
+uv publish
 ```
 
 ## References
@@ -37,3 +39,6 @@ uv run python ...
 - [uv Docs](https://docs.astral.sh/uv/)
 
 - [uv @ GitHub](https://github.com/astral-sh/uv)
+
+- [Adding a Trusted Publisher to an existing PyPI project](https://docs.pypi.org/trusted-publishers/adding-a-publisher/)
+

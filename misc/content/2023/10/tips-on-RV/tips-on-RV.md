@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-10-19 11:31:45
-Modified: 2025-05-03 00:44:19
+Modified: 2025-05-05 07:22:21
 Author: Benjamin Du
 Slug: tips-on-RV
 Title: Tips on RV
@@ -15,10 +15,11 @@ https://weretherussos.com/class-b-rv-manufacturers-list-camper-vans/
 
 ## Tips and Traps
 
-1. Class B/B+ (best with top popups) or small class C RVs are good choices.
+1. For rentals,
+    Class B/B+ (best with top popups) or small class C RVs are good choices.
     Class A RVs are too challenge to drive.
-
-2. Truck campers or small fifth wheels are also choices.
+    For owning an RV,
+    pickup + truck camper / fifth wheel / trailer are good options.
 
 ## Good Features to Have
 

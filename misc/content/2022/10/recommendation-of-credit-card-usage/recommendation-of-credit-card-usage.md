@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 16:34:06
-Modified: 2025-03-15 17:16:04
+Modified: 2025-05-05 07:54:21
 Author: Benjamin Du
 Slug: recommendation-of-credit-card-usage
 Title: Recommendation of Credit Card Usage
@@ -11,9 +11,9 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 
 ## Tips and Traps
 
-1. Costco is a wholesale. It is not considered as a grocery or supermarket for cashback bonus purposes.
+1. Avoid AMEX as it is nutorious for closing many customers' credit cards without valid reasons.
 
-2. Overall, AMEX is great for traveling purchases and restaurants spending.
+2. Costco is a wholesale. It is not considered as a grocery or supermarket for cashback bonus purposes.
 
 ## Glossory
 
@@ -21,8 +21,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 - RGC: Robinhood Gold Card
 - BOA-V: BOA Visa Card
 - BOA-M: BOA Master Card
-- AMEX-G: AMEX Golden Card
-- AMEX-M: AMEX Macy Card
 - VVC: Verizon Visa Card
 - HDCC: Home Depot Credit Card
 - Sapphire: Chase Sapphire Credit Card
@@ -119,7 +117,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td>
-        AMEX-G <br>
         VVC
     </td>
     <td>
@@ -140,7 +137,7 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td></td>
     <td></td>
     <td></td>
-    <td>AMEX-G</td>
+    <td></td>
     <td>
     </td>
     <td> 
@@ -177,7 +174,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
   <tr>
     <td>Macys</td>
     <td>
-      <span style="color:green">AMEX-M</span><br>
     </td>
     <td></td>
     <td>
@@ -200,10 +196,10 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       Uber <br>
       Eats
     </td>
-    <td>AMEX-G: 10$/mo</td>
     <td></td>
     <td></td>
-    <td>AMEX-G</td>
+    <td></td>
+    <td></td>
     <td></td>
     <td>
       <span style="color:green">RGC</span><br>
@@ -222,7 +218,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       bag
     </td>
     <td>
-      AMEX-G: $100/yr<br>
       <span style="color:green">BOA-V</span>:&nbsp$100/yr
     </td>
     <td></td>
@@ -248,7 +243,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
     <td> </td>
     <td>
       <span style="color:green">RGC</span> <br>
-      AMEX-G <sup> [1] </sup>
     </td>
     <td>
       <span style="color:green">BOA-V</span>
@@ -308,7 +302,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
       Rental
     </td>
     <td>
-      AMEX <br>
       Sapphire <sup>[8]</sup>
     </td>
     <td></td>
@@ -480,6 +473,5 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 ## Credit Cards Without Foreign Transaction Fees
 
 - Robinhood Gold Card
-- AMEX
 - Sapphire
 

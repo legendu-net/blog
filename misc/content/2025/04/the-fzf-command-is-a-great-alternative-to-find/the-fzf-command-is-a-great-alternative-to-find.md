@@ -11,8 +11,7 @@ Tags: Computer Science, programming, fzf, find, fuzzy, bat, preview
 
 ## Example Usages
 
-- [Some Useful Shell Functions - fzf]
-(https://github.com/legendu-net/icon/blob/dev/utils/data/bash-it/custom.plugins.bash)
+- [Some Useful Shell Functions - fzf](https://github.com/legendu-net/icon/blob/dev/utils/data/bash-it/custom.plugins.bash)
 
 - [Advanced fzf examples](https://sourcegraph.com/github.com/junegunn/fzf/-/blob/ADVANCED.md)
 

@@ -5,16 +5,29 @@ Date: 2013-10-26 12:48:21
 Slug: javascript-tips
 Category: Computer Science
 Tags: tips, programming, JavaScript, JS, web, frontend
-Modified: 2022-12-20 12:17:46
+Modified: 2025-05-05 19:09:25
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [The State of Frontend in 2022](https://newsletter.pragmaticengineer.com/p/state-of-frontend-2022)
 has a good discussion about the state and trend of frontend technologies as of 2022.
 
+## JavaScript Runtimes
+
+1. [Node.js](https:/nodejs.org/en/) is a JavaScript runtime environment outside browsers.
+2. deno
+3. bun
+
+
+## Tools
+
+### Vite
+
 ### [babel](https://github.com/babel/babel)
 [babel](https://github.com/babel/babel)
 is a compiler for writing next generation JavaScript.
+It allows you to write code using the latest ES features 
+and transpile it down to older versions (like ES5) for broader compatibility. 
 
 ### [webpack](https://webpack.js.org/)
 [webpack](https://github.com/webpack/webpack)
@@ -28,10 +41,6 @@ is a JavaScript Task Runner.
 
 [Select the Plates](https://flukeout.github.io/)
 
-
-## Node.js
-
-[Node.js](https:/nodejs.org/en/) is a JavaScript runtime environment outside browsers.
 
 https://github.com/sindresorhus/awesome-nodejs
 

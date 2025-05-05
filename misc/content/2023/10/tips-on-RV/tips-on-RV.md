@@ -23,6 +23,7 @@ https://weretherussos.com/class-b-rv-manufacturers-list-camper-vans/
 
 ## Good Features to Have
 
+1. auto jacks & auto leveling
 1. diesel heater
 2. AC
 

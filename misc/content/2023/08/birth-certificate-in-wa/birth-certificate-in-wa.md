@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-08-30 10:51:14
-Modified: 2023-09-08 15:18:18
+Modified: 2025-05-06 21:28:26
 Author: Benjamin Du
 Slug: birth-certificate-in-wa
 Title: Birth Certificate in WA
@@ -19,7 +19,7 @@ Tags: Life, WA, birth, certificate, health, statistics, vital
 2. Order as soon as possible as some info on the birth certificate might be incorrect
     and it takes time to change info on the birth certificate.
 
-## Chaning Birth Certificate
+## Changing Birth Certificate
 
 1. include a copy of DL with the original copy of birth certificate
 
@@ -73,7 +73,7 @@ Tags: Life, WA, birth, certificate, health, statistics, vital
     There's no way to expedite the process.
     If you are under a time limit, 
     you can order an additional copy and pay for expedited shipping at 
-    [www.vitalchek.com](www.vitalchek.com)
+    [www.vitalchek.com](https://www.vitalchek.com)
     .
 
 ## References

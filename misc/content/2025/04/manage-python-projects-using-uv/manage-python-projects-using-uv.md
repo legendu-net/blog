@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-04-30 06:16:38
-Modified: 2025-05-04 06:06:48
+Modified: 2025-05-07 15:37:12
 Author: Benjamin Du
 Slug: manage-python-projects-using-uv
 Title: Manage Python Projects Using uv
@@ -23,8 +23,8 @@ curl -LsSf https://astral.sh/uv/install.sh | env UV_INSTALL_DIR="/usr/local/bin"
 
 
 ```
-uv init new_project_name
-uv init 
+uv init --package new_project_name
+uv init --package
 uv init --script example.py --python 3.12
 uv lock
 uv lock --upgrade

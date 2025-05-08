@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-09 16:34:06
-Modified: 2025-05-05 07:54:21
+Modified: 2025-05-08 14:36:38
 Author: Benjamin Du
 Slug: recommendation-of-credit-card-usage
 Title: Recommendation of Credit Card Usage
@@ -449,7 +449,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 </tbody>
 </table>
 
-- [1]: For flights booked directly with airlines or on amextravel.com.
 - [2]: On eligible travel purchases only
 - [3]: Amazon Prime membership is required to enjoy the discount.
 - [4]: Robinhood Gold Card gives you 5% cash back 
@@ -467,8 +466,6 @@ Tags: Life, shopping, discount, credit card, coupon, money, finance
 ## Offers
 
 - [Citi-Costco Credit Card Offers](https://online.citi.com/US/ag/citioffersforyou)
-
-- [Amex Auto Purchasing Program](https://global.americanexpress.com/card-benefits/detail/auto-purchase-program/gold?account_key=F9F70B1ECFC6CC21CC84700CE77CAD92)
 
 ## Credit Cards Without Foreign Transaction Fees
 

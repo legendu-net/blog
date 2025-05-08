@@ -4,7 +4,6 @@ ports:
   - port: 8888
 tasks:
   - command: . /scripts/gitpod.sh
-  - command: ./init.sh
 vscode:
   extensions:
     - asvetliakov.vscode-neovim

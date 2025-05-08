@@ -5,7 +5,7 @@ Slug: tips-on-nbconvert
 Title: Tips on nbconvert
 Category: Computer Science
 Tags: Computer Science, Jupyter, JupyterLab, notebook, nbconvert, template
-Modified: 2023-12-12 23:15:38
+Modified: 2025-05-08 15:58:11
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
@@ -13,6 +13,11 @@ Modified: 2023-12-12 23:15:38
 1. Converting too many notebooks at the same (multiprocessing) causes `zmq.error.ZMQError: Address already in use`.
     The simple way to fix this issue is to limit the number of processes converting notebooks.
     It is suggested that you keep in within 3.
+    
+2. Convert a Jupyter notebook to markdown format.
+
+        :::bash
+        jupyter nbconvert --to markdown notebook.ipynb
 
 2. It is recommended that you use the template 
     provided by the Python library 

@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-05-09 23:39:30
-Modified: 2025-05-08 15:54:55
+Modified: 2025-05-08 20:44:45
 Author: Benjamin Du
 Slug: tips-on-gcp
 Title: Tips on GCP
@@ -16,20 +16,6 @@ For more details,
 please refer to
 [GCP Free Tier Usage Limits](https://cloud.google.com/free/docs/gcp-free-tier#free-tier-usage-limits)
 .
-
-https://cloud.google.com/compute/docs/general-purpose-machines#c3-standard
-
-https://cloud.google.com/compute/docs/general-purpose-machines#c3-highcpu
-
-https://cloud.google.com/compute/docs/general-purpose-machines#c3-highmem
-
-https://cloud.google.com/compute/docs/compute-optimized-machines#c2_machine_types
-
-https://cloud.google.com/compute/docs/compute-optimized-machines#c2d-standard
-
-https://cloud.google.com/compute/docs/compute-optimized-machines#c2d-high-cpu
-
-https://cloud.google.com/compute/docs/compute-optimized-machines#c2d-high-mem
 
 ## Google Cloud Shell
 

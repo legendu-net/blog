@@ -1,11 +1,11 @@
-- Status: published
-- Title: Best Way of Using HoloViews
-- Slug: python-holoviews-best
-- Date: 2019-12-26
-- Category: Computer Science
-- Tags: programming, Python, visualization, HoloViews, interactive tools
-- Author: Ben Du
-- Modified: 2023-12-30 23:23:34
+Status: published
+Title: Best Way of Using HoloViews
+Slug: python-holoviews-best
+Date: 2019-12-26
+Category: Computer Science
+Tags: programming, Python, visualization, HoloViews, interactive tools, test
+Author: Ben Du
+Modified: 2023-12-30 23:23:34
 
 
 ## Comments

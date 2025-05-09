@@ -36,6 +36,7 @@ jobs:
           #wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.20_amd64.deb -O /tmp/libssl.deb
           wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb -O /tmp/libssl.deb
           dpkg -i /tmp/libssl.deb
+          python3 -m pip install --user "pelican-jupyter==0.10.0"
       - name: Build and Publish to GitHub Pages
         run: |
           pwd
@@ -43,6 +44,5 @@ jobs:
           git config --global user.email "longendu@yahoo.com"
           git config --global user.name "Ben Du"
           git config --global url."git@github.com:".insteadOf "https://github.com/"
-          python3 -m pip install --user "pelican-jupyter==0.10.0"
           python3 ./blog.py p -ecmo
 

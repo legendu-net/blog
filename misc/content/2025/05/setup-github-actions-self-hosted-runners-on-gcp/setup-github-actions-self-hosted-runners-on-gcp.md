@@ -1,9 +1,9 @@
 Status: published
 Date: 2025-05-08 15:51:58
-Modified: 2025-05-08 15:51:58
+Modified: 2025-05-08 23:46:01
 Author: Benjamin Du
 Slug: setup-github-actions-self-hosted-runners-on-gcp
-Title: Setup GitHub Actions Self-Hosted Runners on GCP
+Title: Setup GitHub Actions Self-hosted Runners on GCP
 Category: Computer Science
 Tags: Computer Science, programming, GitHub, actions, runner, self-hosted, GCP, cloud, 
 

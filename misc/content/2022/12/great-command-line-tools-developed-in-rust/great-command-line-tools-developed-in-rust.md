@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-12-21 10:14:53
-Modified: 2024-09-13 10:48:01
+Modified: 2025-05-08 23:50:39
 Author: Benjamin Du
 Slug: great-command-line-tools-developed-in-rust
 Title: Great Command Line Tools Developed in Rust
@@ -161,10 +161,6 @@ is an application for managing Git commits as a stack of patches.
 is a command-line tool and Rust library 
 for generating regular expressions from user-provided test cases
 .
-
-## [zoxide](https://crates.io/crates/zoxide)
-[zoxide](https://crates.io/crates/zoxide)
-is a smarter cd command for your terminal.
 
 ## [delta](https://github.com/dandavison/delta)
 [delta](https://github.com/dandavison/delta)

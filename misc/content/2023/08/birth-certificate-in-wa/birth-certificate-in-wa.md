@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-08-30 10:51:14
-Modified: 2025-05-06 21:28:26
+Modified: 2025-05-10 12:45:12
 Author: Benjamin Du
 Slug: birth-certificate-in-wa
 Title: Birth Certificate in WA
@@ -77,6 +77,8 @@ Tags: Life, WA, birth, certificate, health, statistics, vital
     .
 
 ## References
+
+- [Ordering a Birth Record](https://doh.wa.gov/licenses-permits-and-certificates/vital-records/ordering-vital-record/birth-record)
 
 - [Changing Birth Certificates](https://doh.wa.gov/licenses-permits-and-certificates/vital-records/how-correct-record/changing-birth-certificates#:~:text=Contact%20the%20birth%20hospital%20or%20certified%20midwife.,-What%20I%20want&text=or%20facility%20name-,Requirements%20to%20make%20the%20change%20%E2%80%A2%20At%20least%20one%20parent,the%20Affidavit%20for%20Correction%20form.&text=Requestor%20must%20submit%20an%20affidavit,from%20the%20time%20of%20birth.)
 

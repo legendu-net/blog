@@ -5,9 +5,18 @@ Slug: tips-on-npm
 Title: Tips on npm
 Category: Computer Science
 Tags: programming, tips, npm, JavaScript, TypeScript
-Modified: 2021-05-03 21:44:47
+Modified: 2025-05-11 02:23:29
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+
+## Project Management Using npm
+
+1. Initiate a project.
+
+        npm init
+
+
 
 
 yarn global add @vue/cli @vue/cli-service-global

@@ -7,7 +7,8 @@ Title: Birth Certificate in WA
 Category: Life
 Tags: Life, WA, birth, certificate, health, statistics, vital
 
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+**Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
+
 
 
 ## Order a Birth Certificate

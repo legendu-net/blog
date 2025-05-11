@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-05-06 14:27:02
-Modified: 2025-05-06 15:04:24
+Modified: 2025-05-11 16:48:14
 Author: Benjamin Du
 Slug: tips-on-bash-completion
 Title: Tips on Bash Completion
@@ -13,11 +13,14 @@ Tags: Computer Science, programming, shell, bash, completion, complete
 
 ### Ubuntu / Debian
 
-wajig install bash-completion
+    wajig install bash-completion
 
 ### macOS
 
-brew install bash-completion
+    brew install bash-completion
+
+If you don't like or cannot install bash-completion,
+bash-it provies completion scripts for many popular tools.
 
 ## Develop Bash Completion
 
@@ -33,8 +36,8 @@ brew install bash-completion
   [argcomplete](https://github.com/kislyuk/argcomplete)
   provides easy, extensible command line tab completion of arguments for your Python application.
   It makes two assumptions:
-  - You're using bash or zsh as your shell.
-  - You're using argparse to manage your command line arguments/options.
+    - You're using bash or zsh as your shell.
+    - You're using argparse to manage your command line arguments/options.
 
 3. The Ruby library (and also command-line tool)
   [completely](https://github.com/DannyBen/completely)

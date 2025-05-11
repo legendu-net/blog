@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-03-06 08:18:50
-Modified: 2025-05-10 23:54:54
+Modified: 2025-05-11 16:45:21
 Author: Benjamin Du
 Slug: editing-pdf-files-using-stirling-pdf
 Title: Editing PDF Files Using Stirling-PDF
@@ -9,7 +9,8 @@ Tags: Computer Science, PDF, editing, Stirling-PDF
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-You can try Stirling-PDF at https://stirlingpdf.io/
+You can try Stirling-PDF at 
+<https://stirlingpdf.io/>
 .
 
 ## Start a Stirling-PDF Service Using Docker

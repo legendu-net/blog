@@ -1,6 +1,6 @@
 Status: published
 Date: 2023-09-13 17:49:03
-Modified: 2025-01-21 10:30:34
+Modified: 2025-05-10 23:56:51
 Author: Benjamin Du
 Slug: tips-on-electronic-vehicles
 Title: Tips on Electronic Vehicles
@@ -50,6 +50,8 @@ https://fermataenergy.com/
 
 
 ## References
+
+- [r/KiaEV9 @ Reddit](https://www.reddit.com/r/KiaEV9/)
 
 - https://www.plugshare.com/
 

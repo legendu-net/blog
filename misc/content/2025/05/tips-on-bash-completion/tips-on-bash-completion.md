@@ -20,7 +20,8 @@ Tags: Computer Science, programming, shell, bash, completion, complete
     brew install bash-completion
 
 If you don't like or cannot install bash-completion,
-bash-it provies completion scripts for many popular tools.
+[bash-it](https://github.com/Bash-it/bash-it)
+provies completion scripts for many popular tools.
 
 ## Develop Bash Completion
 

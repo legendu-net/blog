@@ -34,13 +34,11 @@ There are many different ways to install packages in Linux.
 
 5. Use cross‐platform and dependency‐free app formats,
     e.g.,
-    [snap](https://snapcraft.io/), 
     [FlatPak](https://flatpak.org/)
     and 
     [AppImage](https://appimage.org/)
     .
-    snap is more popular than flatpak and AppImage.
-    For details of comparisons,
+    For the difference between FlatPak and AppImage,
     please refer to
     [What are the differences between snaps, appimage, flatpak and others?](https://askubuntu.com/questions/866511/what-are-the-differences-between-snaps-appimage-flatpak-and-others)
     .

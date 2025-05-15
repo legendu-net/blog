@@ -1,6 +1,6 @@
 Status: published
 Date: 2022-10-16 19:54:05
-Modified: 2023-01-08 18:40:13
+Modified: 2025-05-15 00:26:51
 Author: Benjamin Du
 Slug: tips-on-neovim
 Title: Tips on NeoVim
@@ -19,9 +19,11 @@ You can install the latest stable version of neovim using the command below.
 
 ## Tips and Traps
 
-1. [AstroNvim](https://github.com/AstroNvim/AstroNvim) is a great configuration for NeoVim.
+1. AppImage is a good way to install the latest version of NeoVim.
 
-1. NeoVim with a complicated configuration (e.g., AstroNvim, SpaceVim, etc) 
+2. [AstroNvim](https://github.com/AstroNvim/AstroNvim) is a great configuration for NeoVim.
+
+3. NeoVim with a complicated configuration (e.g., AstroNvim, SpaceVim, etc) 
     might be too slow when editing a large (>50M) text file.
     One trick helps is to disable plugins when editing large files.
     For example,

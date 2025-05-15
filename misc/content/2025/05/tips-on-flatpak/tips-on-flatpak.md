@@ -1,6 +1,6 @@
 Status: published
 Date: 2025-05-14 16:58:04
-Modified: 2025-05-14 16:58:04
+Modified: 2025-05-15 00:10:23
 Author: Benjamin Du
 Slug: tips-on-flatpak
 Title: Tips on Flatpak
@@ -17,5 +17,6 @@ restart
 
 ## References
 
-Debian Quick Setup
-https://flatpak.org/setup/Debian
+- [Debian Quick Setup](https://flatpak.org/setup/Debian)
+
+- [In an SSH session, flatpak install asked me fourteen times for authentication #3001](https://github.com/flatpak/flatpak/issues/3001)

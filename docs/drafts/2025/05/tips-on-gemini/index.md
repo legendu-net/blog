@@ -1,7 +1,7 @@
 ---
 title: Tips on Gemini
-created: 2025-05-06 15:04:36
-date: 2026-05-01 00:34:08.228072
+created: '2025-05-06T15:04:36-07:00'
+date: '2026-06-02T00:03:29-07:00'
 authors:
   - bendu
 label: tips-on-gemini
@@ -41,14 +41,6 @@ for discussions on Gemini CLI.
 
 1. integration with NotebookLM
 
-## Update on All Things of Gemini
-
-- [Gemini App](https://blog.google/innovation-and-ai/products/gemini-app/)
-
-- [Gemini Drops](https://gemini.google/gemini-drops/)
-
-- [Try notebooks in Gemini to easily keep track of projects](https://blog.google/innovation-and-ai/products/gemini-app/notebooks-gemini-notebooklm/)
-
 ## Google Gemini vs Google AI Studio
 
 Google AI Studio is based Gemini
@@ -57,9 +49,17 @@ While Gemini is consumer oriented and Gemini Gems created by users are mostly fo
 In short,
 most people (unless you are an app developer) should use Gemini and Gems (instead of AI Studio and Apps).
 
+## Update on All Things of Gemini
+
+- [Gemini App](https://blog.google/innovation-and-ai/products/gemini-app/)
+
+- [Gemini Drops](https://gemini.google/gemini-drops/)
+
+- [Try notebooks in Gemini to easily keep track of projects](https://blog.google/innovation-and-ai/products/gemini-app/notebooks-gemini-notebooklm/)
+
 ## References
 
-- [Tips on Google Gemini CLI](tips-on-google-gemini-cli)
+- [Review GitHub Code Using Gemini Code Assist](review-github-code-using-gemini-code-assist)
 
 - [Automated Browsing Tasks Using Gemini in Chrome](automated-browsing-tasks-using-gemini-in-chrome)
 
@@ -67,4 +67,4 @@ most people (unless you are an app developer) should use Gemini and Gems (instea
 
 - [Google AI Studio](https://aistudio.google.com/prompts/new_chat)
 
-- [Tips on Google Gemini Cli](https://www.legendu.net/misc/blog/tips-on-google-gemini-cli)
+- [Tips on Google Gemini CLI](tips-on-google-gemini-cli)

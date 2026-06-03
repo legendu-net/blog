@@ -1,7 +1,7 @@
 ---
 title: Tips on gh
-created: 2022-05-02 00:03:11
-date: 2026-05-01 17:49:27.892428
+created: '2022-05-02T00:03:11-07:00'
+date: '2026-06-02T23:50:57-07:00'
 authors:
   - bendu
 label: tips-on-gh
@@ -18,10 +18,17 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## Installation (Linux / macOS)
+## Installation via Homebrew (Linux / macOS)
 
 ```
 brew install gh
+```
+
+## Installation on Fedora
+
+```sh
+sudo dnf config-manager addrepo --from-repofile=https://cli.github.com/packages/rpm/gh-cli.repo
+sudo dnf install -y gh
 ```
 
 ## Create a Release

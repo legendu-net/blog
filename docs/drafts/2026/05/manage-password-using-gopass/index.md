@@ -1,7 +1,7 @@
 ---
 title: Manage Password Using gopass
 created: '2026-05-25T19:31:05.793047-07:00'
-date: '2026-06-06T20:17:47-07:00'
+date: '2026-06-07T16:42:55-07:00'
 authors:
   - bendu
 label: manage-password-using-gopass
@@ -17,6 +17,14 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+## Tips and Traps
+
+```{note}
+It's strongly suggested that you backup your GPG/age keys for your gopass stores,
+otherwise,
+you might lose access to it if your keys got lost.
+```
+
 ## Installation on Fedora
 
 ```sh
@@ -29,17 +37,21 @@ It is strongly recommended that you use the `gitfs` storage.
 
 ```sh
 gopass setup --crypto age --storage gitfs \
-    --remote gitUrl \
-    --name userName \
-    --email userEmail
+    --remote "gitUrl" \
+    --name "userName" \
+    --email "userEmail"
 ```
 
-which create an age identities file at\
+which create an age identities file at
 `~/.config/gopass/age/identities`
 .
 The configuration file of gopass is at
 `~/.config/gopass/config`
 .
+
+```{note}
+`gopass` tracks the `master` branch of the Git repository.
+```
 
 ## Manual Configuration for Git Sync
 
@@ -56,10 +68,6 @@ gopass config user.name "Your Name"
 gopass config user.email "you@example.com"
 gopass git init
 gopass git remote add origin git@github.com:username/my-secrets-repo.git
-```
-
-```{note}
-`gopass` tracks the `master` branch of the Git repository.
 ```
 
 ## Configuration for Timeout

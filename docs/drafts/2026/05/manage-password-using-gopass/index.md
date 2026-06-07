@@ -1,7 +1,7 @@
 ---
-title: Manage Password Using Gopass
+title: Manage Password Using gopass
 created: '2026-05-25T19:31:05.793047-07:00'
-date: '2026-05-30T20:53:13-07:00'
+date: '2026-06-06T20:17:47-07:00'
 authors:
   - bendu
 label: manage-password-using-gopass
@@ -25,8 +25,13 @@ sudo dnf install gopass age
 
 ## Initialization
 
+It is strongly recommended that you use the `gitfs` storage.
+
 ```sh
-gopass setup --crypto age --storage fs
+gopass setup --crypto age --storage gitfs \
+    --remote gitUrl \
+    --name userName \
+    --email userEmail
 ```
 
 which create an age identities file at\
@@ -36,7 +41,15 @@ The configuration file of gopass is at
 `~/.config/gopass/config`
 .
 
-## Configuration for Git Sync
+## Manual Configuration for Git Sync
+
+If you have used `fs` (not recommended) instead of `gitfs` (strongly recommended)
+(`gopass setup --crypto age --storage fs`)
+,
+you can still manually enable Git Sync using the following configuration.
+However,
+files added before enabling Git Sync (e.g., `.age-recipients`) are not automatically tracked,
+so you have to manually track and commit them.
 
 ```sh
 gopass config user.name "Your Name"
@@ -45,7 +58,9 @@ gopass git init
 gopass git remote add origin git@github.com:username/my-secrets-repo.git
 ```
 
+```{note}
 `gopass` tracks the `master` branch of the Git repository.
+```
 
 ## Configuration for Timeout
 

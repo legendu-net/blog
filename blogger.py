@@ -27,8 +27,8 @@ import yaml
 AnyPath: TypeAlias = str | Path
 Number: TypeAlias = int | float
 BASE_DIR = Path(__file__).resolve().parent
-SPELLS_TITLE = BASE_DIR / "spells/spells_title.yml"
-SPELLS_TAG = BASE_DIR / "spells/spells_tag.yml"
+SPELLS_TITLE = BASE_DIR / "spells/spells_title.yaml"
+SPELLS_TAG = BASE_DIR / "spells/spells_tag.yaml"
 ARTICLES = "articles"
 DRAFTS = "drafts"
 OUTDATED = "outdated"

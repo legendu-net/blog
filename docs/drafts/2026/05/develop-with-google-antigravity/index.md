@@ -1,7 +1,7 @@
 ---
 title: Develop With Google Antigravity
 created: '2026-05-24T23:28:22.137138-07:00'
-date: '2026-05-28T17:11:21+00:00'
+date: '2026-06-08T23:00:09-07:00'
 authors:
   - bendu
 label: develop-with-google-antigravity
@@ -21,13 +21,18 @@ tags:
 
 1. Antigravity CLI intends to replace Gemini CLI.
 
+1. Antigravity CLI doesn't support the `/init` command.
+   It manages context automatically.
+
 ## Antigravity CLI
 
 curl -fsSL https://antigravity.google/cli/install.sh | bash
 
 ## References
 
-https://antigravity.google/
+- [Antigravity Documentation](https://antigravity.google/docs/home)
+
+- [Migrating from Gemini CLI](https://antigravity.google/docs/gcli-migration)
 
 - [Tips on Google Gemini CLI](tips-on-google-gemini-cli)
 

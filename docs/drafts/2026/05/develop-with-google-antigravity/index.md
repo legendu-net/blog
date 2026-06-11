@@ -1,7 +1,7 @@
 ---
 title: Develop With Google Antigravity
 created: '2026-05-24T23:28:22.137138-07:00'
-date: '2026-06-08T23:00:09-07:00'
+date: '2026-06-10T10:27:33-07:00'
 authors:
   - bendu
 label: develop-with-google-antigravity
@@ -26,7 +26,9 @@ tags:
 
 ## Antigravity CLI
 
+```sh
 curl -fsSL https://antigravity.google/cli/install.sh | bash
+```
 
 ## References
 

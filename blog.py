@@ -26,6 +26,38 @@ USER = getpass.getuser()
 DASHES = "\n" + "-" * 100 + "\n"
 
 
+INDEXES_HELP = (
+    "Positve row IDs in the search results. "
+    "Each value is a single ID (e.g. 3) or an inclusive range (e.g. 3-7)."
+)
+
+
+def _expand_indexes(values) -> list[int]:
+    """Expand index/range strings into a deduplicated list of row IDs.
+
+    Each value is either a single non-negative integer (e.g. ``"3"``) or an
+    inclusive range ``"start-end"`` (e.g. ``"3-7"``). Reversed ranges such as
+    ``"7-3"`` are normalized. The result preserves first-seen order with
+    duplicates removed.
+
+    :param values: An iterable of index/range strings.
+    :return: A list of deduplicated row IDs.
+    :raises ValueError: If a value is not a valid index or range.
+    """
+    indexes: list[int] = []
+    for idx in values:
+        try:
+            if "-" in idx:
+                start, end = idx.split("-")
+                low, high = sorted((int(start), int(end)))
+                indexes.extend(range(low, high + 1))
+            else:
+                indexes.append(int(idx))
+        except ValueError as exc:
+            raise ValueError(f"invalid index or range: '{idx}'") from exc
+    return list(dict.fromkeys(indexes))
+
+
 def option_indexes(subparser):
     """Add the positional option "indexes".
 
@@ -34,9 +66,9 @@ def option_indexes(subparser):
     subparser.add_argument(
         "indexes",
         nargs="*",
-        type=int,
+        type=str,
         default=(),
-        help="Row IDs in the search results.",
+        help=INDEXES_HELP,
     )
 
 
@@ -416,12 +448,8 @@ def clean_db(blogger, _):
 
 
 def exec_notebook(blogger, args):
-    # TODO:
     _resolve_files(args)
-    # TODO: rename to files?
-    if args.indexes:
-        args.notebooks = blogger.path(args.indexes)
-    if args.notebooks:
+    if args.files:
         cmd = [
             "jupyter",
             "nbconvert",
@@ -429,7 +457,7 @@ def exec_notebook(blogger, args):
             "notebook",
             "--inplace",
             "--execute",
-        ] + args.notebooks
+        ] + args.files
         sp.run(cmd, check=True)
 
 
@@ -685,9 +713,7 @@ def _subparse_vim(subparsers):
         help=desc,
         description=desc,
     )
-    subparser_vim.add_argument(
-        "indexes", nargs="*", type=int, help="Row IDs in the search results."
-    )
+    subparser_vim.add_argument("indexes", nargs="*", type=str, help=INDEXES_HELP)
     subparser_vim.add_argument(
         "-f",
         "--files",
@@ -707,9 +733,7 @@ def _subparse_edit(subparsers):
         help=desc,
         description=desc,
     )
-    subparser_edit.add_argument(
-        "indexes", nargs="*", type=int, help="Row IDs in the search results."
-    )
+    subparser_edit.add_argument("indexes", nargs="*", type=str, help=INDEXES_HELP)
     option_editor(subparser_edit)
     subparser_edit.add_argument(
         "-f",
@@ -758,9 +782,7 @@ def _subparse_add_refs(subparsers):
         help=desc,
         description=desc,
     )
-    subparser_add_refs.add_argument(
-        "indexes", nargs="*", type=int, help="Row IDs in the search results."
-    )
+    subparser_add_refs.add_argument("indexes", nargs="*", type=str, help=INDEXES_HELP)
     subparser_add_refs.add_argument(
         "-f",
         "--files",
@@ -788,9 +810,7 @@ def _subparse_move(subparsers):
         help=desc,
         description=desc,
     )
-    subparser_move.add_argument(
-        "indexes", type=int, nargs="*", help="Rowid in the search results."
-    )
+    subparser_move.add_argument("indexes", type=str, nargs="*", help=INDEXES_HELP)
     subparser_move.add_argument(
         "-f", "--files", nargs="*", dest="files", help="Path of the post to be moved."
     )
@@ -998,7 +1018,13 @@ def parse_args(args=None, namespace=None) -> Namespace:
     _subparse_format_notebook(subparsers)
     _subparse_trust_notebooks(subparsers)
     _subparse_convert(subparsers)
-    return parser.parse_args(args=args, namespace=namespace)
+    parsed_args = parser.parse_args(args=args, namespace=namespace)
+    if hasattr(parsed_args, "indexes") and parsed_args.indexes:
+        try:
+            parsed_args.indexes = _expand_indexes(parsed_args.indexes)
+        except ValueError as exc:
+            parser.error(f"argument indexes: {exc}")
+    return parsed_args
 
 
 if __name__ == "__main__":

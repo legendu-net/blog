@@ -1,7 +1,7 @@
 ---
 title: Shell Equivalent in Different Operating Systems
-created: 2020-09-02 09:22:34
-date: 2026-04-14 19:32:06.271814
+created: '2020-09-02T09:22:34-07:00'
+date: '2026-06-13T10:27:40-07:00'
 authors:
   - bendu
 label: shell-equivalent-in-different-operating-systems
@@ -18,13 +18,13 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-[Fish Shell](https://www.legendu.net/misc/blog/tips-on-the-fish-shell)
+[Fish Shell](https://www.legendu.net/drafts/2025/11/tips-on-the-fish-shell)
 is preferred to Bash/Zsh.
 The following content is for Bash/Zsh only.
 
 It suggested that you use IPython shell instead of Bash/Zsh shells.
 Please refer to
-[IPython Is the Best Shell](http://www.legendu.net/en/blog/ipython-is-the-best-shell/)
+[IPython Is the Best Shell](https://www.legendu.net/articles/2015/05/ipython-is-the-best-shell)
 for detailed discussions.
 If you have to use shell commands,
 it is suggested that you use Linux commands when possible
@@ -101,7 +101,7 @@ and by using Docker or virtual machine on macOS.
     <td rowspan="2"> Compress/Decompress Archives </td>
     <td> Linux/Unix </td>
     <td> <code> 
-    <a href="http://www.legendu.net/en/blog/compress-and-decompress-in-linux/">
+    <a href="https://www.legendu.net/articles/2012/05/compress-and-decompressing-archives-in-linux">
     Compress and Decompressing Archives in Linux
     </a>
     </code> </td>

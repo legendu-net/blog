@@ -1,24 +1,26 @@
 ---
 title: Text-based Flowchart and UML Tools
-created: 2015-11-08 18:24:38
-date: 2026-04-05 19:42:38.154142
+created: '2015-11-08T18:24:38-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
-- bendu
+  - bendu
 label: text-based-flowchart-and-uml-tools
 license: CC-BY-4.0
 tags:
-- software
-- text
-- UML
-- PlantUML
-- flowchart
-- diagram
+  - software
+  - text
+  - UML
+  - PlantUML
+  - flowchart
+  - diagram
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [DOT](https://graphviz.org/doc/info/lang.html)
+
 [DOT](https://graphviz.org/doc/info/lang.html)
-is an abstract grammar 
+is an abstract grammar
 for defining Graphviz nodes, edges, graphs, subgraphs, and clusters.
 
 ## [diagrams](https://github.com/mingrammer/diagrams)
@@ -29,27 +31,27 @@ It is the best text/code-based diagram/workflow tool.
 ## [PlantUML](http://plantuml.com/)
 
 Please refer to
-[Tips on PlantUML](http://www.legendu.net/misc/blog/tips-on-plantuml/)
+[Tips on PlantUML](tips-on-plantuml)
 for more details.
 
 ## [mermaid](https://github.com/mermaid-js/mermaid)
 
 [mermaid](https://github.com/mermaid-js/mermaid)
-is a Javascript based diagramming and charting tool 
-that uses Markdown-inspired text definitions and a renderer 
-to create and modify complex diagrams. 
+is a Javascript based diagramming and charting tool
+that uses Markdown-inspired text definitions and a renderer
+to create and modify complex diagrams.
 
 ## [Code2Flow](https://code2flow.com/)
 
-Code2Flow is a pseudo-programming language like 
-(and thus familiar and friendly to programmers) 
+Code2Flow is a pseudo-programming language like
+(and thus familiar and friendly to programmers)
 text to flowchart tool.
-It is a commercial service but free plan is available. 
+It is a commercial service but free plan is available.
 
 ## [flowchart.js](https://github.com/adrai/flowchart.js/)
 
 [flowchart.js](https://github.com/adrai/flowchart.js/)
-draws simple SVG flow chart diagrams 
+draws simple SVG flow chart diagrams
 from textual representation of the diagram
 .
 
@@ -62,8 +64,8 @@ It is better than Text2MindMap
 
 ## [Chart Mage](http://chartmage.com/intro.html)
 
-Chart Mage is similar to PlantUML. 
-It is text-to-UML tool but also supports flowchart. 
+Chart Mage is similar to PlantUML.
+It is text-to-UML tool but also supports flowchart.
 Chart Mage is less popular compared to PlantUML.
 
 ## [Gaphor](https://github.com/gaphor/gaphor)
@@ -77,4 +79,3 @@ is the simple UML tool.
 - [Converting Markdown to a mind map](http://brettterpstra.com/2013/08/18/markdown-to-mind-map/)
 - [Quick, text-based flowcharts for developers](https://hackernoon.com/quick-text-based-flowcharts-for-developers-3c68c4728134)
 - [CREATE GRAPHVIZ IMAGE FROM TEXTFILE](http://blog.ynema.com/?p=192)
-

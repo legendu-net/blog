@@ -1,7 +1,7 @@
 ---
 title: Dev Tools for Rust
-created: 2023-01-13 16:02:14
-date: 2026-04-15 19:27:00.688047
+created: '2023-01-13T16:02:14-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: dev-tools-for-rust
@@ -71,9 +71,9 @@ with extra checking along the way.
 [cargo-semver-checks](https://crates.io/crates/cargo-semver-checks)
 scans your Rust crate for semver violations.
 
-### [cargo-udeps](https://www.legendu.net/misc/blog/find-unused-rust-deps-using-cargo-udeps)
+### [cargo-udeps](find-unused-rust-dependencies-using-cargo-udeps)
 
-[cargo-udeps](https://www.legendu.net/misc/blog/find-unused-rust-deps-using-cargo-udeps)
+[cargo-udeps](find-unused-rust-dependencies-using-cargo-udeps)
 finds unused dependencies in Cargo.toml.
 
 ### [Deps.rs](https://deps.rs/)
@@ -175,7 +175,7 @@ is cargo build but for building final distributable artifacts and uploading them
 
 ### [cargo-shuttle](https://github.com/shuttle-hq/shuttle)
 
-[Shuttle](https://www.legendu.net/misc/blog/tips-on-shuttle-for-deploying-rust-apps)
+[Shuttle](tips-on-shuttle-for-deploying-rust-apps)
 is a Rust-native cloud development platform that lets you deploy your Rust apps for free.
 
 ### [cargo-careful](https://github.com/RalfJung/cargo-careful)

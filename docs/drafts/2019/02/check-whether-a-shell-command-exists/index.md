@@ -1,7 +1,7 @@
 ---
 title: Check Whether a Shell Command Exists
-created: 2019-02-10 12:26:09
-date: 2026-04-15 19:27:01.223534
+created: '2019-02-10T12:26:09-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: check-whether-a-shell-command-exists
@@ -24,7 +24,7 @@ tags:
 
 ## Fish
 
-[Check for Existence of Commands in the Fish Shell](https://www.legendu.net/misc/blog/check-for-existence-of-commands-in-the-fish-shell)
+[Check for Existence of Commands in the Fish Shell](check-for-existence-of-commands-in-the-fish-shell)
 
 ## Bash
 

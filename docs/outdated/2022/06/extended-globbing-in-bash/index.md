@@ -1,7 +1,7 @@
 ---
 title: Extended Globbing in Bash
-created: 2022-06-04 12:09:03
-date: 2026-04-15 19:27:01.984548
+created: '2022-06-04T12:09:03-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: extended-globbing-in-bash
@@ -18,7 +18,7 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-[Fish Shell](https://www.legendu.net/misc/blog/tips-on-the-fish-shell)
+[Fish Shell](tips-on-the-fish-shell)
 is preferred to Bash/Zsh.
 The following content is for Bash/Zsh only.
 

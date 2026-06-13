@@ -1,7 +1,7 @@
 ---
 title: The Escape Key in Vim
-created: 2014-03-20 18:59:03
-date: 2026-04-15 19:27:01.441853
+created: '2014-03-20T18:59:03-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: the-escape-key-in-vim
@@ -32,8 +32,8 @@ u/U ect
 
 Please refer the posts below on how to map keys in Windows, Mac and Linux.
 
-[Map Keys in Windows](http://www.legendu.net/misc/blog/map-keys-in-windows/)
+[Map Keys in Windows](map-keys-in-windows)
 
-[Map Keys in Mac](http://www.legendu.net/en/blog/map-keys-in-mac/)
+[Map Keys in Mac](map-keys-in-macos)
 
-[Map Keys in Linux](http://www.legendu.net/en/blog/map-keys-in-linux/)
+[Map Keys in Linux](map-keys-in-linux)

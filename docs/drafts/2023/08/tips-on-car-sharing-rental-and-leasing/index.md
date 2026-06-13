@@ -1,7 +1,7 @@
 ---
 title: Tips on Car Sharing, Rental and Leasing
 created: '2023-08-29T14:22:20+00:00'
-date: '2026-05-09T02:01:06+00:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-car-sharing-rental-and-leasing
@@ -60,7 +60,7 @@ tags:
 
 Car leasing is good for long-term car rental, e.g., 2-4 years.
 Please refer to
-[Tips on Purchasing or Leasing a Car](https://www.legendu.net/misc/blog/tips-on-purchasing-a-car)
+[Tips on Purchasing or Leasing a Car](tips-on-purchasing-or-leasing-a-car)
 for more discussions.
 
 ## References

@@ -1,7 +1,7 @@
 ---
 title: IDEs for LaTeX
-created: 2018-05-11 11:32:28
-date: 2026-04-15 19:27:01.288695
+created: '2018-05-11T11:32:28-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: ides-for-latex
@@ -22,6 +22,6 @@ tags:
 [OverLeaf](https://www.overleaf.com/)
 is an online LaTex editing and publishing.
 
-## [TexStudio](http://www.legendu.net/en/blog/texstudio-bravo)
+## [TexStudio](texstudio-bravo)
 
 ## TexMacs (WYSIWYG, convert to Tex available)

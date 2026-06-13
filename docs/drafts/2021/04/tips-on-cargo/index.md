@@ -1,7 +1,7 @@
 ---
 title: Tips on Cargo
-created: 2021-04-28 16:21:14
-date: 2026-04-15 19:27:00.909014
+created: '2021-04-28T16:21:14-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-cargo
@@ -51,7 +51,7 @@ for the official tutorial.
 Build the debug version of the project.
 
 ```bash
-cargo build 
+cargo build
 ```
 
 Build the release version of the project.
@@ -77,7 +77,7 @@ please refer to
 ## Run Unit Tests
 
 Please refer to
-[Unit Test in Rust](https://www.legendu.net/misc/blog/unit-test-in-rust)
+[Unit Test in Rust](unit-test-in-rust)
 for more discussions.
 
 ## Running Test
@@ -119,7 +119,7 @@ cargo rustc --lib -- -Awarnings
 ## Cargo Extensions / Addons
 
 Please refer to
-[Dev Tools for Rust](https://www.legendu.net/misc/blog/dev-tools-for-rust)
+[Dev Tools for Rust](dev-tools-for-rust)
 for detailed discussions.
 
 ## References

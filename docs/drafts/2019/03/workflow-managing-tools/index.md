@@ -1,7 +1,7 @@
 ---
 title: Workflow Managing Tools
-created: 2019-03-10 09:32:40
-date: 2026-04-15 19:27:01.218351
+created: '2019-03-10T09:32:40-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: workflow-managing-tools
@@ -82,7 +82,7 @@ below are some possible solutions.
 
 1. at
 1. watch
-1. [crontab](http://www.legendu.net/en/blog/schedule-task-using-crontab-in-linux)
+1. [crontab](schedule-task-using-cron-in-linux)
 1. [schedule](https://github.com/dbader/schedule)
 1. inotify (monitoring file system changes and trigger events)
 1. parallel

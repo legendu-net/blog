@@ -1,7 +1,7 @@
 ---
 title: IPython Is the Best Shell
-created: 2015-05-24 13:00:31
-date: 2026-04-14 19:32:03.347744
+created: '2015-05-24T13:00:31-07:00'
+date: '2026-06-12T22:31:50-07:00'
 authors:
   - bendu
 label: ipython-is-the-best-shell
@@ -62,10 +62,10 @@ tags:
 1. You can the below command to generate (default) IPython configuration files.
 
    ```bash
-    # generate an IPython configuration dir
-    ipython profile create [profilename]
-    # generate an IPython configuration dir in the specified location
-    ipython profile create [profilename] --profile-dir ~/.ipython
+   # generate an IPython configuration dir
+   ipython profile create [profilename]
+   # generate an IPython configuration dir in the specified location
+   ipython profile create [profilename] --profile-dir ~/.ipython
    ```
 
 ## Start IPython
@@ -86,7 +86,7 @@ tags:
    - Use the directory specified by the option `--ipython-dir` if any.
 
      ```bash
-       ipython --ipython-dir /path/to/ipython/profile/directory
+     ipython --ipython-dir /path/to/ipython/profile/directory
      ```
 
    - Use the directory return by `IPython.paths.get_ipython_dir()`,
@@ -144,7 +144,7 @@ tags:
    You can copy it to the home directory using the following command.
 
    ```bash
-    !cp {Path("tmp") / pkg} ~
+   !cp {Path("tmp") / pkg} ~
    ```
 
    And also,
@@ -154,8 +154,8 @@ tags:
    For example, with bash you can do this:
 
    ```bash
-    %%bash -s "$myPythonVar" "$myOtherVar"
-    echo "This bash script knows about $1 and $2"
+   %%bash -s "$myPythonVar" "$myOtherVar"
+   echo "This bash script knows about $1 and $2"
    ```
 
    Shell environment variables can also be used in a shell command in IPython.
@@ -203,7 +203,7 @@ tags:
 1. Make sure to use `\` instead of `/` for paths when you work in Windows.
    For more discussions,
    please refer to
-   ["." Is Not Recognized as An Internal or External Command](http://www.legendu.net/misc/blog/.-is-not-recognized-as-an-internal-or-external-command)
+   ["." Is Not Recognized as An Internal or External Command](dot-is-not-recognized-as-an-internal-or-external-command)
    .
 
 ## Magics
@@ -246,7 +246,7 @@ tags:
 
 1. Magics for profiling code in IPython and Jupyter/Lab notebooks are also available.
    Please refer to
-   [Python Profiler for JupyterLab Notebooks](http://www.legendu.net/misc/blog/python-profile-notebook/)
+   [Python Profiler for JupyterLab Notebooks](python-profiler-for-jupyterlab-notebooks)
    for more discussions.
 
 1. `%autoreload` always reload modules before running a function.
@@ -273,11 +273,11 @@ tags:
 
 ## References
 
-- http://www.legendu.net/misc/blog/set-environment-varibles-in-ipython/
+- [Set Environment Varibles in IPython](set-environment-varibles-in-ipython)
 
-- http://www.legendu.net/misc/blog/disable-jedi-in-ipython/
+- [Disable Jedi in IPython](disable-jedi-in-ipython)
 
-- http://www.legendu.net/en/blog/shell-alternatives/
+- [Python Alternatives to Shell](python-alternatives-to-shell)
 
 - [Wait, IPython Can Do That?!](https://ep2019.europython.eu/media/conference/slides/cBeHNyZ-wait-ipython-can-do-that.pdf)
 
@@ -303,4 +303,4 @@ tags:
 
 - [system commands: python variables don't get evaluated when environment variables are also used](https://github.com/ipython/ipython/issues/6527)
 
-- ["." Is Not Recognized as An Internal or External Command](http://www.legendu.net/misc/blog/.-is-not-recognized-as-an-internal-or-external-command)
+- ["." Is Not Recognized as An Internal or External Command](dot-is-not-recognized-as-an-internal-or-external-command)

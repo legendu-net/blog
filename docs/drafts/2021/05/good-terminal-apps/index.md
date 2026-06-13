@@ -1,7 +1,7 @@
 ---
 title: Good Terminal Apps
-created: 2021-05-11 08:45:30
-date: 2026-04-13 23:15:02.244956
+created: '2021-05-11T08:45:30-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: good-terminal-apps
@@ -57,4 +57,4 @@ Cross-platform, fast, feature-rich, GPU based terminal.
 
 ## References
 
-- [Terminal Multiplexer](http://www.legendu.net/en/blog/terminal-multiplexers)
+- [Terminal Multiplexer](terminal-multiplexers)

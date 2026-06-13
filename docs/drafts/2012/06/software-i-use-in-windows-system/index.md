@@ -1,46 +1,46 @@
 ---
 title: Software I Use in Windows System
-created: 2012-06-17 11:28:45
-date: 2026-04-05 19:42:38.436514
+created: '2012-06-17T11:28:45-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
-- bendu
+  - bendu
 label: software-i-use-in-windows-system
 license: CC-BY-4.0
 tags:
-- anti-virus
-- Windows
-- software
-- archive
-- Linux
-- virtualization
+  - anti-virus
+  - Windows
+  - software
+  - archive
+  - Linux
+  - virtualization
 ---
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 <img src="/media/windows/windows.png" height="200" width="240" align="right"/>
 
 Below is a list of software that I use on Windows.
-Please refer to 
-[Make Your Life Easier with Portable Applications](http://www.legendu.net/en/blog/portable-apps/)
+Please refer to
+[Make Your Life Easier with Portable Applications](make-your-life-easier-with-portable-applications)
 and
-[Tips on PortableApps](http://www.legendu.net/misc/blog/PortableApps-tips/)
+[Tips on PortableApps](make-your-life-easier-with-portable-applications)
 for tips on how to use portable apps.
 
 ## Linux Tools
 
 1. WSL
 
-2. Docker in WSL
+1. Docker in WSL
 
-3. VirtualBox
+1. VirtualBox
 
 ## Communication
 
 1. QQ
 
-2. WeChat
+1. WeChat
 
-## Network 
+## Network
 
 1. Chrome and Firefox
 

@@ -1,7 +1,7 @@
 ---
 title: SpaceVim - A Modern Vim/NeoVim Configuration
-created: 2019-03-03 20:02:57
-date: 2026-04-15 19:27:02.001157
+created: '2019-03-03T20:02:57-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: spacevim-a-modern-vim-neovim-configuration
@@ -48,7 +48,7 @@ https://github.com/SpaceVim/SpaceVim/issues/78
    you can use the following command to edit a large file without loading plugins.
 
    ```bash
-    nvim --noplugin /path/to/large/text/file
+   nvim --noplugin /path/to/large/text/file
    ```
 
 1. By default SpaceVim enables GUI colors.
@@ -187,4 +187,4 @@ merged = false
 
 - [SpaceVim Documentation](https://spacevim.org/documentation/)
 
-- [Disable the Checkers Layer in SpaceVim](http://www.legendu.net/misc/blog/disable-the-checkers-layer-in-spacevi)
+- [Disable the Checkers Layer in SpaceVim](disable-the-checkers-layer-in-spacevim)

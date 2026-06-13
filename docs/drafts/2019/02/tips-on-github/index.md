@@ -1,7 +1,7 @@
 ---
 title: Tips on GitHub
 created: '2019-02-08T13:41:56+00:00'
-date: '2026-05-14T18:53:59+00:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-github
@@ -90,6 +90,6 @@ https://github.blog/2019-06-06-generate-new-repositories-with-repository-templat
 
 https://mp.weixin.qq.com/s/r9dNXpoH8F5CMoHdyv6BFQ
 
-[Comparison of GitHub Tokens and Keys](http://www.legendu.net/misc/blog/comparison-of-github-tokens-and-keys)
+[Comparison of GitHub Tokens and Keys](comparison-of-github-tokens-and-keys)
 
-[Tips on GitHub Actions](http://www.legendu.net/misc/blog/tips-on-github-actions)
+[Tips on GitHub Actions](tips-on-github-actions)

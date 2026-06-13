@@ -1,7 +1,7 @@
 ---
 title: Tips on the Almond Scala Kernel
-created: 2020-03-24 18:33:39
-date: 2026-04-13 23:15:26.189735
+created: '2020-03-24T18:33:39-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-the-almond-scala-kernel
@@ -37,6 +37,6 @@ tags:
 
 ## References
 
-[Use Spark with the Almond Scala Kernel in JupyterLab](http://www.legendu.net/misc/blog/spark-almond-jupyterlab/)
+[Use Spark with the Almond Scala Kernel in JupyterLab](use-spark-with-the-almond-scala-kernel-in-jupyterlab)
 
-[Specify Dependencies in the Almond Scala Kernel in JupyterLab](http://www.legendu.net/misc/blog/scala-almond-dependencies/)
+[Specify Dependencies in the Almond Scala Kernel in JupyterLab](specify-dependencies-in-the-almond-scala-kernel-in-jupyterlab)

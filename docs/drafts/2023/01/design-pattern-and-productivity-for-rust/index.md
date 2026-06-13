@@ -1,7 +1,7 @@
 ---
 title: Design Pattern and Productivity for Rust
-created: 2023-01-13 16:29:29
-date: 2026-04-13 23:14:33.727670
+created: '2023-01-13T16:29:29-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: design-pattern-and-productivity-for-rust
@@ -49,15 +49,15 @@ is a Rust crate for generating compile-time-checked builders for functions and s
 ## Constraints on Types
 
 Please refer to
-[Constraints on Types in Rust](https://www.legendu.net/misc/blog/type-constraints-in-rust)
+[Constraints on Types in Rust](constraints-on-types-in-rust)
 for detailed discussions.
 
 ## References
 
-- [Pointer, Reference and Ownership in Rust](https://www.legendu.net/misc/blog/pointer-reference-and-ownership-in-rust)
+- [Pointer, Reference and Ownership in Rust](pointer-reference-and-ownership-in-rust)
 
 - [After NLL: Interprocedural conflicts](http://smallcultfollowing.com/babysteps/blog/2018/11/01/after-nll-interprocedural-conflicts/)
 
 - [Shared Mutability in Rust](https://medium.com/swlh/shared-mutability-in-rust-part-1-of-3-21dc9803c623)
 
-- [Tips on Code Design](https://www.legendu.net/misc/blog/tips-on-code-design)
+- [Tips on Code Design](tips-on-code-design)

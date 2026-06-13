@@ -1,7 +1,7 @@
 ---
 title: Ways to Invest in Real Estate
-created: 2022-12-09 12:40:20
-date: 2026-04-14 19:34:16.517238
+created: '2022-12-09T12:40:20-08:00'
+date: '2026-06-12T21:38:36-07:00'
 authors:
   - bendu
 label: ways-to-invest-in-real-estate
@@ -24,7 +24,7 @@ tags:
 ## US Housing Investing Theme on Charles Schwab
 
 See
-[Schwab Investing Themes](https://www.legendu.net/misc/blog/tips-on-charles-schwab#schwab-investing-themes)
+[Schwab Investing Themes](tips-on-charles-schwab-schwab-investing-themes)
 for details.
 
 ## References

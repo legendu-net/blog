@@ -1,7 +1,7 @@
 ---
 title: Tips on KeepassXC
-created: 2021-09-27 10:45:11
-date: 2026-04-13 23:27:58.368354
+created: '2021-09-27T10:45:11-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-keepassxc
@@ -22,4 +22,4 @@ tags:
 
 ## References
 
-[Password Management](http://www.legendu.net/misc/blog/password-management)
+[Password Management](password-management)

@@ -1,7 +1,7 @@
 ---
-title: "Service Your Rivian Car"
-created: 2025-08-10 09:29:44
-date: 2025-08-10 09:29:44
+title: Service Your Rivian Car
+created: '2025-08-10T09:29:44-07:00'
+date: '2026-06-12T22:31:33-07:00'
 authors:
   - bendu
 label: service-your-rivian-car
@@ -30,25 +30,25 @@ If a service (e.g., tire repair/replace, etc) is simple and can be done at a Riv
 it is suggested that you go for it for a few reasons.
 
 - Rivian Service Centers and Rivian Mobile Services are usually very busy,
-    and you can often get your Rivian vehicle serviced at a Rivian-certified car shop much quicker.
+  and you can often get your Rivian vehicle serviced at a Rivian-certified car shop much quicker.
 
 - Service at a Rivian-certified car shop is often cheaper.
 
 You can report vehicle issues and request a service appointment in one of the following ways.
 
-- in the Rivian app 
+- in the Rivian app
 
 - by calling the Rivian Service Support Team at (855) RIVIAN5
 
-- by calling the phone number of a local Rivian service center 
+- by calling the phone number of a local Rivian service center
 
 If your tire has to be replaced,
-it is suggested that you purchase one from 
+it is suggested that you purchase one from
 [TireRack](https://www.TireRack.com)
-and replace it at 
+and replace it at
 [DicountTire](https://www.discounttire.com/)
 .
 See
-[Tips on Car Tires]( https://www.legendu.net/misc/blog/tips-on-car-tires )
+[Tips on Car Tires](tips-on-car-tires)
 for more discussions on this
 .

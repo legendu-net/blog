@@ -1,7 +1,7 @@
 ---
 title: Great Command Line Tools Developed in Rust
-created: 2022-12-21 10:14:53
-date: 2026-04-14 19:40:23.972163
+created: '2022-12-21T10:14:53-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: great-command-line-tools-developed-in-rust
@@ -54,9 +54,9 @@ offering advanced code viewing capabilities, Markdown rendering, and more.
 It provides syntax highlighting, emoji support, and image rendering capabilities,
 offering a visually appealing way to view various file types directly in your console.
 
-## [bat](https://www.legendu.net/misc/blog/bat-is-a-better-alternative-to-cat)
+## [bat](bat-is-a-better-alternative-to-cat)
 
-[bat](https://www.legendu.net/misc/blog/bat-is-a-better-alternative-to-cat)
+[bat](bat-is-a-better-alternative-to-cat)
 is a cat clone with syntax highlighting and Git integration.
 
 ## [exa](https://github.com/ogham/exa)
@@ -152,9 +152,9 @@ is a more intuitive version of du in rust.
 
 ## Navigation and Searching
 
-### [ripgrep](https://www.legendu.net/misc/blog/ripgrep-is-a-better-alternative-to-find)
+### [ripgrep](the-ripgrep-command-is-a-better-alternative-to-the-find-command)
 
-[ripgrep](https://www.legendu.net/misc/blog/ripgrep-is-a-better-alternative-to-find)
+[ripgrep](the-ripgrep-command-is-a-better-alternative-to-the-find-command)
 recursively searches directories for a regex pattern while respecting your gitignore.
 
 ### [igrep](https://github.com/konradsz/igrep)
@@ -167,6 +167,8 @@ allows interactively pick its results and open selected match in text editor of 
 
 [broot](https://github.com/Canop/broot)
 provides a new better way to see and navigate directory trees.
+
+(great-command-line-tools-developed-in-rust-git-tools)=
 
 ## Git Tools
 

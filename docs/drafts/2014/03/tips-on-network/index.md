@@ -1,19 +1,19 @@
 ---
 title: Tips on Network
-created: 2014-03-03 11:41:59
-date: 2026-04-05 19:42:38.272772
+created: '2014-03-03T11:41:59-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-network
 license: CC-BY-4.0
 tags:
-- internet
-- web
-- network
-- tips
+  - internet
+  - web
+  - network
+  - tips
 ---
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Improve Network Speed
 
@@ -34,7 +34,7 @@ print a QR code for connecting to your WiFi (wificard.io)
 
 https://www.youtube.com/watch?v=F6yh4b7ML5g
 
-## Reverse Proxy 
+## Reverse Proxy
 
 [nginx](https://github.com/nginx/nginx)
 
@@ -45,41 +45,41 @@ https://engineering.hashnode.com/after-4-years-with-nginx-we-switched-to-caddy-h
 ## Expose Local Web Services to Public
 
 Please refer to
-[Expose Local Service to Public](https://www.legendu.net/misc/blog/expose-local-service-to-public)
+[Expose Local Service to Public](expose-local-service-to-public)
 or detailed discussions.
 
 ## General Tips
 
-1. Use the same wireless network name and password 
-    so that your laptop and phone recognize it automatically.
-    This makes things much more convenient.
+1. Use the same wireless network name and password
+   so that your laptop and phone recognize it automatically.
+   This makes things much more convenient.
 
 ## Debugging Network Issues
 
 1. Check whether you have block some services in /etc/hosts.allow or iptables, etc.
 
-2. http://192.168.0.1/ is the router address
+1. http://192.168.0.1/ is the router address
 
-3. Turn off wireless router and moderm. 
-    Start wireless router and wait for 30 seconds,
-    and then start the moderm.
+1. Turn off wireless router and moderm.
+   Start wireless router and wait for 30 seconds,
+   and then start the moderm.
 
 ## Permanent Change to the File /etc/resolv.conf
 
-Notice that the content of `/etc/resolv.conf` is dynamically managed. 
-Content of the file might change after the host machine is rebooted. 
+Notice that the content of `/etc/resolv.conf` is dynamically managed.
+Content of the file might change after the host machine is rebooted.
 Below are some ways to make changes to the file `/etc/resolv.conf` permanent.
 (Notice that below are solutions for Linux machines only.
 Do NOT use any of the solutions below when you are building a Docker image
 as Docker has its own way of handling DNS.)
 
-1. Make `/etc/resolv.conf` immutable. 
+1. Make `/etc/resolv.conf` immutable.
 
-2. Update the file `/etc/dhcp/dhclient.conf`
+1. Update the file `/etc/dhcp/dhclient.conf`
 
-3. use `resolvconf`
+1. use `resolvconf`
 
-4. more ...
+1. more ...
 
 https://kb.isc.org/docs/isc-dhcp-44-manual-pages-dhclientconf
 
@@ -103,52 +103,63 @@ https://stackoverflow.com/questions/48578108/what-the-differences-between-chattr
 
 https://askubuntu.com/questions/1006741/what-is-the-difference-between-chmod-and-chattr
 
+## List Network Cards
 
-## List Network Cards 
+```
+lspci | egrep -i --color 'network|ethernet'
+```
 
-    lspci | egrep -i --color 'network|ethernet'
+Or you can use
 
-Or you can use 
-
-    lshw -class network
+```
+lshw -class network
+```
 
 ## IP Address
 
 1. To get the your public ip address, use the following simple command.
 
-        :::bash
-        curl ifconfig.me
+   ```
+    :::bash
+    curl ifconfig.me
+   ```
 
-    Or you can use https://www.ipify.org/ 
-    which provides A Simple Public IP Address API.
+   Or you can use https://www.ipify.org/
+   which provides A Simple Public IP Address API.
 
-        :::bash
-        curl https://api.ipify.org?format=json
+   ```
+    :::bash
+    curl https://api.ipify.org?format=json
+   ```
 
-2. To scan for all ips in a local network, you can use the following command.
+1. To scan for all ips in a local network, you can use the following command.
 
-        arp-scan -l
+   ```
+    arp-scan -l
+   ```
 
-    You can specify an device to scan by the option `-I`.
+   You can specify an device to scan by the option `-I`.
 
-        arp-scan -l -I dev
+   ```
+    arp-scan -l -I dev
+   ```
 
-    where "dev" is the device name of your net card. 
-    For example, 
-    if you use wireless network, "dev" is probably "wlan0".
+   where "dev" is the device name of your net card.
+   For example,
+   if you use wireless network, "dev" is probably "wlan0".
 
 ## Network Monitoring
 
-1. `vnStat` is a console-based tool for monitoring network traffic bandwidth usage. 
-    It uses the network interface statistics provided by the kernel as information source. 
-    This means that vnStat won't actually be sniffing any traffic 
-    and also ensures light use of system resources. 
+1. `vnStat` is a console-based tool for monitoring network traffic bandwidth usage.
+   It uses the network interface statistics provided by the kernel as information source.
+   This means that vnStat won't actually be sniffing any traffic
+   and also ensures light use of system resources.
 
-2. Tcpdump is a network sniffer tool.
+1. Tcpdump is a network sniffer tool.
 
 ## References
 
-- [Linux Network Tips](http://www.legendu.net/misc/blog/linux-network-tools)
+- [Linux Network Tips](linux-network-tools)
 - [Arch Linux Doc - NetworkManager](https://wiki.archlinux.org/index.php/NetworkManager)
 - [List Network Cards on Linux](https://www.cyberciti.biz/faq/linux-list-network-cards-command/)
 

@@ -1,7 +1,7 @@
 ---
-title: "Learning to Rank"
-created: 2019-12-10 14:27:43
-date: 2021-10-08 12:13:57
+title: Learning to Rank
+created: '2019-12-10T14:27:43-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: learning-to-rank
@@ -60,7 +60,7 @@ http://proceedings.mlr.press/v14/gulin11a/gulin11a.pdf
 
 [A quick guide to Learning to Rank models](https://practicaldatascience.co.uk/machine-learning/a-quick-guide-to-learning-to-rank-models)
 
-## Tutorials 
+## Tutorials
 
 https://github.com/sophwats/learning-to-rank
 
@@ -88,7 +88,6 @@ https://github.com/sophwats/learning-to-rank
 
 https://arxiv.org/pdf/1702.06106.pdf#:~:text=For%20learning%20to%20rank%2C%20neural,search%20results%20as%20the%20input.
 
-
 ## Learning to Rank in LightGBM
 
 https://mlexplained.com/2019/05/27/learning-to-rank-explained-with-code/
@@ -105,18 +104,18 @@ https://www.jianshu.com/p/9caef967ec0a
 
 https://tech.olx.com/ranking-ads-with-machine-learning-ee03d7734bf4
 
-## Benchmark 
+## Benchmark
 
 [Domain: Learning to Rank](http://www.bigdatalab.ac.cn/benchmark/bm/Domain?domain=Learning%20to%20Rank)
 
 ## References
 
- - [Data for Learning to Rank](http://www.legendu.net/misc/blog/data-for-learning-to-rank)
+- [Data for Learning to Rank](data-for-learning-to-rank)
 
 - [From RankNet to LambdaRank to LambdaMART: An Overview](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/MSR-TR-2010-82.pdf)
 
 - [What is the intuitive explanation of Learning to Rank and algorithms like RankNet, LambdaRank and LambdaMART? In what types of data/variables can these techniques be used? What are their strengths and limitations?
-](https://www.quora.com/What-is-the-intuitive-explanation-of-Learning-to-Rank-and-algorithms-like-RankNet-LambdaRank-and-LambdaMART-In-what-types-of-data-variables-can-these-techniques-be-used-What-are-their-strengths-and-limitations)
+  ](https://www.quora.com/What-is-the-intuitive-explanation-of-Learning-to-Rank-and-algorithms-like-RankNet-LambdaRank-and-LambdaMART-In-what-types-of-data-variables-can-these-techniques-be-used-What-are-their-strengths-and-limitations)
 
 - https://mlexplained.com/2019/05/27/learning-to-rank-explained-with-code/
 

@@ -1,7 +1,7 @@
 ---
 title: 'Spark Issue: Task Not Serializable'
-created: 2019-05-22 10:11:48
-date: 2026-04-15 19:27:01.185981
+created: '2019-05-22T10:11:48-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: spark-issue-task-not-serializable
@@ -18,7 +18,7 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Please refer to
-[Spark Issue: \_Pickle.Picklingerror: Args[0] from __Newobj__ Args Has the Wrong Class](http://www.legendu.net/misc/blog/spark-issue:-_pickle.PicklingError:-args%5B0%5D-from-__newobj__-args-has-the-wrong-class)
+[Spark Issue: \_Pickle.Picklingerror: Args[0] from __Newobj__ Args Has the Wrong Class](spark-issue-_pickle.picklingerror-args-0-from-__newobj__-args-has-the-wrong-class)
 for a similar serialization issue in PySpark.
 
 ## Error Message

@@ -1,26 +1,26 @@
 ---
 title: Converting JupyterLab Notebooks
-created: 2019-01-01 19:24:15
-date: 2026-04-05 19:42:37.955596
+created: '2019-01-01T19:24:15-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
-- bendu
+  - bendu
 label: converting-jupyterlab-notebooks
 license: CC-BY-4.0
 tags:
-- JupyterLab
-- notebook
-- nbconvert
-- tips
-- zmq.error.ZMQError
+  - JupyterLab
+  - notebook
+  - nbconvert
+  - tips
+  - zmq.error.ZMQError
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
-## [jupyter-book](http://www.legendu.net/misc/blog/tips-on-jupyter-book/)
+## [jupyter-book](tips-on-jupyter-book)
 
 ## [fastpages](https://github.com/fastai/fastpages)
 
-## [nbconvert](http://www.legendu.net/misc/blog/tips-on-nbconvert)
+## [nbconvert](tips-on-nbconvert)
 
 ## [jupyter/nbclient](https://github.com/jupyter/nbclient)
 

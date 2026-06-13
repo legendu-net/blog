@@ -1,7 +1,7 @@
 ---
 title: Call Java Using PyJNIus from Python
-created: 2020-03-25 20:15:13
-date: 2026-04-13 23:14:14.887599
+created: '2020-03-25T20:15:13-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: call-java-using-pyjnius-from-python
@@ -47,6 +47,6 @@ as it might confuse other programming languages (e.g., Kotlin) and frameworks to
 
 ## References
 
-- [Java Interfaces for Python](http://www.legendu.net/misc/blog/java-interfaces-for-python)
+- [Java Interfaces for Python](java-interfaces-for-python)
 
 - [PyJNIus](https://github.com/kivy/pyjnius)

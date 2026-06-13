@@ -1,7 +1,7 @@
 ---
 title: Tips on Investing in Bonds
-created: 2023-12-12 23:36:11
-date: 2026-04-14 19:34:15.800389
+created: '2023-12-12T23:36:11-08:00'
+date: '2026-06-12T21:38:36-07:00'
 authors:
   - bendu
 label: tips-on-investing-in-bonds
@@ -32,7 +32,7 @@ instead of treasury securities directly
 as ETF and Money Market Fund provides better liquidity.
 For more discussion,
 please refer to
-[Diversified Investment](https://www.legendu.net/misc/blog/diversified-investment/#money-market-fund)
+[Diversified Investment](diversified-investment-money-market-funds)
 .
 
 ## References

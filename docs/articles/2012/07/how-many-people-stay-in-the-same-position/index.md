@@ -1,7 +1,7 @@
 ---
 title: How Many People Stay in the Same Position?
-created: 2012-07-17 15:16:03
-date: 2026-04-13 23:33:07.319580
+created: '2012-07-17T15:16:03-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: how-many-people-stay-in-the-same-position
@@ -25,7 +25,7 @@ how many people will have his/her own seat on average?
 There is a classic way to solve this problem,
 which is to decompose a (complicated) random variable into a sum of simple random variables.
 This is an important trick.
-See [this post](http://www.legendu.net/en/blog/calculate-covariance-between-multinomial-categories-by-hand/)
+See [this post](calculate-covariance-between-multinomial-categories-by-hand)
 for the use of this trick to calculate the covariance
 of observastions in two categories in a multinomial distribution.
 

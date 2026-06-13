@@ -1,7 +1,7 @@
 ---
 title: Visualization for AI Concepts
-created: 2020-08-24 12:29:58
-date: 2026-04-13 23:15:17.209232
+created: '2020-08-24T12:29:58-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: visualization-for-ai-concepts
@@ -62,7 +62,7 @@ Pass the innter wrapped model to `SummaryWriter.add_graph` solved the problem.
 
 ### Customize TensorBoard
 
-The article [Read TensorBoard Logs](http://www.legendu.net/misc/blog/read-tensorboard-logs)
+The article [Read TensorBoard Logs](read-tensorboard-logs)
 demonstrate a few ways to read TensorBoard logs
 (for generating customized visualization).
 The issue

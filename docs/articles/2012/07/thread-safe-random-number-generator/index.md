@@ -1,7 +1,7 @@
 ---
 title: Thread Safe Random Number Generator
-created: 2012-07-08 00:00:00
-date: 2026-04-15 19:27:00.354467
+created: '2012-07-08T00:00:00-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: thread-safe-random-number-generator
@@ -27,13 +27,13 @@ For more discussions on this approach,
 please refer to
 [The Rust Rand Book - Parallel RNGs](https://rust-random.github.io/book/guide-parallel.html)
 and
-[Seed Many RNGs in Rust](https://www.legendu.net/en/blog/seed-many-rngs-in-rust/)
+[Seed Many RNGs in Rust](seed-many-rngs-in-rust)
 .
 The following of this article discusses about thread-safe RNGs based on Mersenne Twister.
 Note that Mersenne Twister is no longer considered the state-of-the-art non-cryptographic PRNG.
 For more discussions on this,
 please refer to
-[Summary on Random Number Generators](https://www.legendu.net/en/blog/summary-random-number-generators/)
+[Summary on Random Number Generators](summary-on-random-number-generators)
 .
 
 <img src="/media/rng/random-number-generator.png" height="200" width="240" align="right"/>
@@ -125,7 +125,7 @@ For more information, please see [SFMT].
 
 ## References
 
-- [Summary on Random Number Generators](https://www.legendu.net/en/blog/summary-random-number-generators)
+- [Summary on Random Number Generators](summary-on-random-number-generators)
 - [The Rust Rand Book - Parallel RNGs](https://rust-random.github.io/book/guide-parallel.html)
 
 [sfmt]: http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/SFMT/#dSFMT

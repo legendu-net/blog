@@ -1,7 +1,7 @@
 ---
 title: Tips on Charles Schwab
-created: 2024-01-20 15:57:28
-date: 2026-04-14 19:34:15.475082
+created: '2024-01-20T15:57:28-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-charles-schwab
@@ -125,9 +125,13 @@ Multiply the number of index option contracts traded by the applicable index opt
 
 - [Schwab margin rates and requirements](https://www.schwab.com/margin/margin-rates-and-requirements)
 
+(tips-on-charles-schwab-trader-apis)=
+
 ## Trader APIs
 
-[Tips on Charles Schwab Trader API](https://www.legendu.net/misc/blog/tips-on-charles-schwab-trader-api)
+[Tips on Charles Schwab Trader API](tips-on-charles-schwab-trader-api)
+
+(tips-on-charles-schwab-cash-sweep-program)=
 
 ## Cash Sweep Program
 
@@ -140,6 +144,8 @@ Charles Schwab has a bank sweep feature and this is automatically set up on your
 Yes, you can view that online by clicking on Accounts at the top of the website and then Balances in the drop down.
 
 Once on that page, under Balance Details there will be a link for Rates next to Cash Balance.
+
+(tips-on-charles-schwab-schwab-investing-themes)=
 
 ## Schwab Investing Themes
 

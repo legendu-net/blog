@@ -1,7 +1,7 @@
 ---
 title: Build Docker Images on Kubernetes
-created: 2021-09-14 18:12:30
-date: 2026-04-13 23:27:56.719572
+created: '2021-09-14T18:12:30-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: build-docker-images-on-kubernetes
@@ -18,11 +18,11 @@ tags:
   - build
 ---
 
-1. [BuildKit](http://www.legendu.net/misc/blog/build-docker-images-using-buildkit-on-kubernetes)
+1. [BuildKit](build-docker-images-using-buildkit-on-kubernetes)
    is a good tool for building Docker images on a Kubernetes cluster
    where you have root access.
 
-1. [Kaniko](http://www.legendu.net/misc/blog/build-docker-images-using-kaniko)
+1. [Kaniko](build-docker-images-using-kaniko)
    is another usable tool
    but it is not as intuitive as
    [buildkit-cli-for-kubectl](https://github.com/vmware-tanzu/buildkit-cli-for-kubectl)
@@ -34,11 +34,11 @@ tags:
    is a tool that facilitates building OCI images.
    It can be use on Kubernetes too but is quite complicated to configure
    and is not as popular as
-   [Kaniko](http://www.legendu.net/misc/blog/build-docker-images-using-kaniko)
+   [Kaniko](build-docker-images-using-kaniko)
    currently.
 
 ## References
 
-- [Build Docker Images Using Kaniko](http://www.legendu.net/misc/blog/build-docker-images-using-kaniko)
+- [Build Docker Images Using Kaniko](build-docker-images-using-kaniko)
 
-- [Build Docker Images Using Buildkit on Kubernetes](http://www.legendu.net/misc/blog/build-docker-images-using-buildkit-on-kubernetes)
+- [Build Docker Images Using Buildkit on Kubernetes](build-docker-images-using-buildkit-on-kubernetes)

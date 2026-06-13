@@ -1,7 +1,7 @@
 ---
 title: Docker Images for Remote Desktop
-created: 2017-07-27 12:16:56
-date: 2026-04-13 23:33:10.005116
+created: '2017-07-27T12:16:56-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: docker-images-for-remote-desktop
@@ -24,7 +24,7 @@ tags:
 1. [x11docker](https://github.com/mviereck/x11docker)
    runs GUI applications and desktops in docker and podman containers.
 
-1. [NoMachine](http://www.legendu.net/misc/blog/remote-desktop-using-nomachine-on-linux)
+1. [NoMachine](remote-desktop-using-nomachine-on-linux)
    is recommended for remote Desktop.
 
 1. If VNC is used for accessing remote desktop environment in a Docker container,

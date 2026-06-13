@@ -1,7 +1,7 @@
 ---
 title: Summary of Collections in Rust
-created: 2021-11-20 22:36:35
-date: 2026-04-13 23:14:53.941563
+created: '2021-11-20T22:36:35-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: summary-of-collections-in-rust
@@ -25,7 +25,7 @@ and when to use them.
 
 ![rust-collection-summary](https://user-images.githubusercontent.com/824507/151688238-88410b52-723d-4d31-bcb1-0a6c8580fb95.png)
 
-## [Array in Rust](https://www.legendu.net/misc/blog/rust-collection-array/)
+## [Array in Rust](array-in-rust)
 
 ## Graph
 
@@ -37,7 +37,7 @@ and when to use them.
 ## Maps in Rust
 
 Please refer to
-[Map in Rust](https://www.legendu.net/misc/blog/rust-map)
+[Map in Rust](map-in-rust)
 for detailed discussions.
 
 ## Third-party Collections and Related Tools
@@ -86,7 +86,7 @@ heapless / [arrayvec](https://crates.io/crates/arrayvec): stores on the stack on
   is an n-dimensional array for general elements and for numerics.
   Lightweight array views and slicing;
   views support chunking and splitting.
-  [Array in Rust](https://www.legendu.net/misc/blog/rust-collection-array/)
+  [Array in Rust](array-in-rust)
   has discussions on ways to make it easy to construct arrays.
 
 ### trie
@@ -96,23 +96,23 @@ heapless / [arrayvec](https://crates.io/crates/arrayvec): stores on the stack on
 
 ## References
 
-- [Iterator in Rust](http://www.legendu.net/misc/blog/rust-collection-iterator/)
+- [Iterator in Rust](iterator-in-rust)
 
-- [String in Rust](http://www.legendu.net/misc/blog/rust-str/)
+- [String in Rust](string-in-rust)
 
-- [Array in Rust](http://www.legendu.net/misc/blog/rust-collection-array/)
+- [Array in Rust](array-in-rust)
 
-- [Range in Rust](http://www.legendu.net/misc/blog/rust-collection-range/)
+- [Range in Rust](range-in-rust)
 
-- [Tuple in Rust](http://www.legendu.net/misc/blog/rust-collection-tuple/)
+- [Tuple in Rust](tuple-in-rust)
 
-- [HashMap in Rust](http://www.legendu.net/misc/blog/rust-hashmap/)
+- [HashMap in Rust](map-in-rust)
 
-- [Vector in Rust](http://www.legendu.net/misc/blog/rust-vector/)
+- [Vector in Rust](vector-in-rust)
 
-- [Set in Rust](http://www.legendu.net/misc/blog/set-in-rust/)
+- [Set in Rust](set-in-rust)
 
-- [Data Frame Implementations in Rust](http://www.legendu.net/misc/blog/data-frame-implementations-in-rust/)
+- [Data Frame Implementations in Rust](data-frame-implementations-in-rust)
 
 Contiguous Data in Rust
 https://github.com/paulkernfeld/contiguous-data-in-rust

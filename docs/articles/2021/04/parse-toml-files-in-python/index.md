@@ -1,7 +1,7 @@
 ---
 title: Parse TOML Files in Python
-created: 2021-04-26 09:37:58
-date: 2026-04-13 23:14:12.136352
+created: '2021-04-26T09:37:58-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: parse-toml-files-in-python
@@ -34,8 +34,8 @@ tags:
 
 ## References
 
-- [Hands on the Python Library tomlkit](http://www.legendu.net/misc/blog/hands-on-python-library-tomlkit)
+- [Hands on the Python Library tomlkit](hands-on-the-python-library-tomlkit)
 
-- [Hands on the Python Library toml](http://www.legendu.net/misc/blog/hands-on-python-library-toml)
+- [Hands on the Python Library toml](hands-on-the-python-library-toml)
 
 - [Adopting/recommending a toml parser?](https://discuss.python.org/t/adopting-recommending-a-toml-parser/4068)

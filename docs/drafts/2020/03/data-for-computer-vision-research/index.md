@@ -1,7 +1,7 @@
 ---
 title: Data for Computer Vision Research
-created: 2020-03-06 12:45:31
-date: 2026-04-14 19:34:16.860624
+created: '2020-03-06T12:45:31-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: data-for-computer-vision-research
@@ -42,6 +42,6 @@ VOC-2012
 
 ## References
 
-- [Data Sources](http://www.legendu.net/misc/blog/data-sources/)
+- [Data Sources](data-sources)
 
 - [Imagenet classes](https://discuss.pytorch.org/t/imagenet-classes/4923)

@@ -1,7 +1,7 @@
 ---
 title: JupyterLab Extensions for Spreadsheet
-created: 2020-06-30 10:05:25
-date: 2026-04-15 19:27:01.011394
+created: '2020-06-30T10:05:25-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: jupyterlab-extensions-for-spreadsheet
@@ -26,7 +26,7 @@ tags:
 
 One (potentially good) way is to manipulate Google Spreadsheet using Python.
 Please refer to
-[Use Python With Google Spreadsheet](http://www.legendu.net/misc/blog/use-python-with-google-spreadsheet/)
+[Use Python With Google Spreadsheet](use-python-with-google-spreadsheet)
 for more details.
 
 ### [jupyterlab-tabular-data-editor](https://github.com/jupytercalpoly/jupyterlab-tabular-data-editor)

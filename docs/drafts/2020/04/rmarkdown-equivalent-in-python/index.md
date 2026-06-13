@@ -1,7 +1,7 @@
 ---
 title: RMarkdown Equivalent in Python
-created: 2020-04-14 10:10:39
-date: 2026-04-13 23:15:22.993453
+created: '2020-04-14T10:10:39-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: rmarkdown-equivalent-in-python
@@ -27,7 +27,7 @@ are good alternatives to RMarkdown.
 
 ### [CodeBraid](https://github.com/gpoore/codebraid)
 
-### [jupyter-book](http://www.legendu.net/misc/blog/tips-on-jupyter-book/)
+### [jupyter-book](tips-on-jupyter-book)
 
 ### [Pweave](https://github.com/mpastell/Pweave)
 

@@ -1,7 +1,7 @@
 ---
 title: Linux Network Tools
-created: 2018-01-10 10:24:23
-date: 2026-04-13 23:28:02.690384
+created: '2018-01-10T10:24:23-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: linux-network-tools
@@ -29,7 +29,7 @@ tcpdump
 
 ## Network Admin
 
-1. [arp-scan](http://www.legendu.net/misc/blog/tips-on-arp-scan)
+1. [arp-scan](tips-on-arp-scan)
 
 1. [RustNet](https://github.com/domcyrus/rustnet)
 
@@ -92,4 +92,4 @@ tcpdump
 1. Tor
 1. proxychains
 
-## [Downloading Tools](http://www.legendu.net/misc/blog/downloading-tools/)
+## [Downloading Tools](downloading-tools)

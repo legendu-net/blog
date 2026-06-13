@@ -1,7 +1,7 @@
 ---
 title: Chinese Input Methods
-created: 2017-10-22 15:07:56
-date: 2026-04-10 10:57:20.187807
+created: '2017-10-22T15:07:56-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: chinese-input-methods
@@ -14,6 +14,7 @@ tags:
   - sogou
   - Google Input Tools
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Software
@@ -23,8 +24,8 @@ and `ibus-sunpinyin` is another good alternative.
 
 ## Browser Extensions
 
-1. [Google Input Tools](https://www.google.com/inputtools/chrome/) 
-    allows users to use input tools (including Chinese) in any web pages in Chrome.
+1. [Google Input Tools](https://www.google.com/inputtools/chrome/)
+   allows users to use input tools (including Chinese) in any web pages in Chrome.
 
 ## Online Chinese Input
 
@@ -38,6 +39,6 @@ and `ibus-sunpinyin` is another good alternative.
 
 - http://www.pinyinput.com/?lang=en
 
-- [Tips on Fcitx](http://www.legendu.net/misc/blog/fcitx-tips/)
+- [Tips on Fcitx](fcitx-tips)
 
-- [Use Sogou Pinyin to Type Chinese](http://www.legendu.net/misc/blog/sogou-pinyin-tips/)
+- [Use Sogou Pinyin to Type Chinese](use-sogou-pinyin-to-type-chinese)

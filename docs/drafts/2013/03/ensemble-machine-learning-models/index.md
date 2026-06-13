@@ -1,7 +1,7 @@
 ---
 title: Ensemble Machine Learning Models
-created: 2013-03-24 13:51:12
-date: 2026-04-13 23:33:13.132901
+created: '2013-03-24T13:51:12-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: ensemble-machine-learning-models
@@ -28,7 +28,7 @@ we often want to decrease their variance at the cost of increase bias.
 This is called decreasing the complexity of the predictors/models.
 This can be done by variable/feature selection.
 This is discussed in
-[Regularization in Machine Learning Models](http://www.legendu.net/misc/blog/regularization-in-machine-learning-models/)
+[Regularization in Machine Learning Models](regularization-in-machine-learning-models)
 .
 Here we talk about some ensamble technics to decrease the complexity of predictors/models.
 The is inspired by the simple fact that the variance of the mean of `n` i.i.d random variables (with finite variance)

@@ -1,7 +1,7 @@
 ---
 title: General Tips on Debugging
-created: 2021-10-25 16:22:05
-date: 2026-04-13 23:14:55.303076
+created: '2021-10-25T16:22:05-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: general-tips-on-debugging
@@ -19,4 +19,4 @@ tags:
 
 ## References
 
-[General Tips on Programming](http://www.legendu.net/misc/blog/general-programming-tips/)
+[General Tips on Programming](general-tips-on-programming)

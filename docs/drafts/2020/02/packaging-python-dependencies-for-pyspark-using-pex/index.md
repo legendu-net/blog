@@ -1,7 +1,7 @@
 ---
 title: Packaging Python Dependencies for PySpark Using Pex
-created: 2020-02-07 14:44:03
-date: 2026-04-15 19:27:01.069024
+created: '2020-02-07T14:44:03-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: packaging-python-dependencies-for-pyspark-using-pex
@@ -20,14 +20,14 @@ tags:
 [python-build-standalone](https://github.com/indygreg/python-build-standalone)
 is a better alternative to conda-pack on managing Python dependencies for PySpark.
 Please refer to
-[Packaging Python Dependencies for PySpark Using python-build-standalone](http://www.legendu.net/en/blog/packaging-Python-Dependencies-for-PySpark-Using-python-build-standalone)
+[Packaging Python Dependencies for PySpark Using python-build-standalone](packaging-python-dependencies-for-pyspark-using-python-build-standalone)
 for tutorials on how to use
 [python-build-standalone](https://github.com/indygreg/python-build-standalone)
 to manage Python dependencies for PySpark.
 
 ## General Tips on Using pex with PySpark
 
-1. Please refer to [Tips on pex](http://www.legendu.net/misc/blog/tips-on-pex/)
+1. Please refer to [Tips on pex](tips-on-pex)
    on tips about pex.
 
 1. If the pex environment file inherits the contents of `sys.path`,
@@ -120,30 +120,30 @@ There are a few ways to fix this issue.
 1. Export the environment variable `PEX_INHERIT_PATH` to be `prefer` at run time.
 
    ```bash
-    #!/bin/bash
+   #!/bin/bash
 
-    /apache/spark2.3/bin/spark-submit \
-        --files "file:///apache/hive/conf/hive-site.xml,file:///apache/hadoop/etc/hadoop/ssl-client.xml,file:///apache/hadoop/etc/hadoop/hdfs-site.xml,file:///apache/hadoop/etc/hadoop/core-site.xml,file:///apache/hadoop/etc/hadoop/federation-mapping.xml" \
-        --master yarn \
-        --deploy-mode cluster \
-        --queue YOUR_QUEUE \
-        --num-executors 200 \
-        --executor-memory 10G \
-        --driver-memory 15G \
-        --executor-cores 4 \
-        --conf spark.yarn.maxAppAttempts=2 \
-        --conf spark.dynamicAllocation.enabled=true \
-        --conf spark.dynamicAllocation.maxExecutors=1000 \
-        --conf spark.network.timeout=300s \
-        --conf spark.executor.memoryOverhead=2G \
-        --conf spark.pyspark.driver.python=./env.pex \
-        --conf spark.pyspark.python=./env.pex \
-        --conf spark.executorEnv.PEX_ROOT=./tmp \
-        --conf spark.yarn.appMasterEnv.PEX_ROOT=./tmp \
-        --conf spark.executorEnv.PEX_INHERIT_PATH=prefer \
-        --conf spark.yarn.appMasterEnv.PEX_INHERIT_PATH=prefer \
-        --files env.pex \
-        $1
+   /apache/spark2.3/bin/spark-submit \
+       --files "file:///apache/hive/conf/hive-site.xml,file:///apache/hadoop/etc/hadoop/ssl-client.xml,file:///apache/hadoop/etc/hadoop/hdfs-site.xml,file:///apache/hadoop/etc/hadoop/core-site.xml,file:///apache/hadoop/etc/hadoop/federation-mapping.xml" \
+       --master yarn \
+       --deploy-mode cluster \
+       --queue YOUR_QUEUE \
+       --num-executors 200 \
+       --executor-memory 10G \
+       --driver-memory 15G \
+       --executor-cores 4 \
+       --conf spark.yarn.maxAppAttempts=2 \
+       --conf spark.dynamicAllocation.enabled=true \
+       --conf spark.dynamicAllocation.maxExecutors=1000 \
+       --conf spark.network.timeout=300s \
+       --conf spark.executor.memoryOverhead=2G \
+       --conf spark.pyspark.driver.python=./env.pex \
+       --conf spark.pyspark.python=./env.pex \
+       --conf spark.executorEnv.PEX_ROOT=./tmp \
+       --conf spark.yarn.appMasterEnv.PEX_ROOT=./tmp \
+       --conf spark.executorEnv.PEX_INHERIT_PATH=prefer \
+       --conf spark.yarn.appMasterEnv.PEX_INHERIT_PATH=prefer \
+       --files env.pex \
+       $1
    ```
 
 ## Issues
@@ -156,9 +156,9 @@ please refer to
 
 ## References
 
-- [Packaging Python Dependencies for PySpark Using Python-Build-Standalone](http://www.legendu.net/en/blog/packaging-Python-Dependencies-for-PySpark-Using-python-build-standalone)
+- [Packaging Python Dependencies for PySpark Using Python-Build-Standalone](packaging-python-dependencies-for-pyspark-using-python-build-standalone)
 
-- [Packaging Python Dependencies for PySpark Using Conda-Pack](http://www.legendu.net/en/blog/packaging-python-dependencies-for-pyspark-using-conda-pack)
+- [Packaging Python Dependencies for PySpark Using Conda-Pack](packaging-python-dependencies-for-pyspark-using-conda-pack)
 
 - https://github.com/jcrist/skein/
 

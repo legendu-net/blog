@@ -1,7 +1,7 @@
 ---
 title: Map Keys in macOS
-created: 2016-06-26 07:30:03
-date: 2026-04-15 19:27:00.433732
+created: '2016-06-26T07:30:03-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: map-keys-in-macos
@@ -52,6 +52,6 @@ I find it is necessary to swap the `Caps Lock` key with the `Escape` key.
 
 ## References
 
-- [Map Keys in Linux](http://www.legendu.net/en/blog/map-keys-in-linux/)
+- [Map Keys in Linux](map-keys-in-linux)
 
-- [Map Keys in Windows](http://www.legendu.net/misc/blog/map-keys-in-windows)
+- [Map Keys in Windows](map-keys-in-windows)

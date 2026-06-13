@@ -1,7 +1,7 @@
 ---
 title: Loss Functions for Machine Learning Models
-created: 2013-03-07 11:12:36
-date: 2026-04-13 23:33:13.292180
+created: '2013-03-07T11:12:36-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: loss-functions-for-machine-learning-models
@@ -42,7 +42,7 @@ Or sometimes called binary loss function.
 ### Cross Entropy vs Negative Log Likelihood
 
 Please refer to
-[Entropy](https://www.legendu.net/misc/blog/entropy)
+[Entropy](entropy)
 for detailed discussions.
 
 ### MSE (L2 Loss) vs L1 Loss

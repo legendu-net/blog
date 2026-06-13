@@ -1,7 +1,7 @@
 ---
 title: Tips on Purchasing or Leasing a Car
-created: 2023-10-17 11:55:34
-date: 2026-04-13 23:30:32.972022
+created: '2023-10-17T11:55:34-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-purchasing-or-leasing-a-car
@@ -62,7 +62,7 @@ tags:
 ### Rivian Specific
 
 Please refer to
-[Tips on Rivian Electronic Vehicles](https://www.legendu.net/misc/blog/tips-on-rivian-electronic-vehicles)
+[Tips on Rivian Electronic Vehicles](tips-on-rivian-electronic-vehicles)
 for discussions.
 
 ### Return a Leased Car

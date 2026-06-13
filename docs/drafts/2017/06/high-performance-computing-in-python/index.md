@@ -1,7 +1,7 @@
 ---
-title: "High Performance Computing in Python"
-created: 2017-06-12 09:26:31
-date: 2023-07-13 18:44:29
+title: High Performance Computing in Python
+created: '2017-06-12T09:26:31-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: high-performance-computing-in-python
@@ -27,7 +27,7 @@ tags:
 A fast and simple framework for building and running distributed applications.
 
 Ray does not handle large data well (as of 2018/05/28).
-Please refer to 
+Please refer to
 [the discussion](https://groups.google.com/forum/#!topic/ray-dev/8E03APnG_zg)
 for details.
 
@@ -40,16 +40,17 @@ https://arrow.apache.org/blog/2017/08/08/plasma-in-memory-object-store/
 [Comparison of Ray to Dask](https://github.com/ray-project/ray/issues/642)
 
 ## [pai](https://github.com/microsoft/pai)
+
 Resource scheduling and cluster management for AI.
 
 ## [Horovod](https://github.com/horovod/horovod)
 
-A framework for distributed training (on GPU) 
+A framework for distributed training (on GPU)
 for TensorFlow, Keras, PyTorch, and Apache MXNet. https://eng.uber.com/horovod/
 
 ## [PetaStorm](https://github.com/uber/petastorm)
 
-Petastorm is a parquet access library 
+Petastorm is a parquet access library
 that may be used from TF, PyTorch or pure Python
 to load data from parquet stores directly into ML framework.
 
@@ -60,7 +61,7 @@ Automated interactive infrastructure and database for computational science.
 ## [mars](https://github.com/mars-project/mars)
 
 It sems to me that mars focus on tensor computation.
-Mars is a tensor-based unified framework for large-scale data computation which scales Numpy, Pandas and Scikit-learn. 
+Mars is a tensor-based unified framework for large-scale data computation which scales Numpy, Pandas and Scikit-learn.
 
 ## [modin-project/modin](https://github.com/modin-project/modin)
 
@@ -79,20 +80,20 @@ https://github.com/celery/celery
 
 ## [RQ](http://python-rq.org/)
 
-RQ (Redis Queue) is a simple Python library for queueing jobs 
-and processing them in the background with workers. 
-It is backed by Redis and it is designed to have a low barrier to entry. 
+RQ (Redis Queue) is a simple Python library for queueing jobs
+and processing them in the background with workers.
+It is backed by Redis and it is designed to have a low barrier to entry.
 It can be integrated in your web stack easily.
 
 ## Dask
 
 ## GPU Computing
 
-Please refer to 
-[GPU Computing in Python](http://www.legendu.net/misc/gpu-computing-in-python)
+Please refer to
+[GPU Computing in Python](gpu-computing-in-python)
 for more details.
 
-## Array Specific 
+## Array Specific
 
 numpy
 
@@ -100,7 +101,7 @@ numpy
 
 ## DataFrame Specific
 
-cudf, dask, 
+cudf, dask,
 [modin](https://github.com/modin-project/modin), numba, PySpark DataFrame
 
 ## References

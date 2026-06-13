@@ -1,7 +1,7 @@
 ---
 title: Popular Configurations for NeoVim
-created: 2025-04-18 06:28:10
-date: 2026-04-14 19:49:13.298453
+created: '2025-04-18T06:28:10-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: popular-configurations-for-neovim
@@ -18,7 +18,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-1. [AstroNvim](https://www.legendu.net/misc/blog/tips-on-astronvim)
+1. [AstroNvim](tips-on-astronvim)
    which is based on
    [lazy.nvim](https://github.com/folke/lazy.nvim)
    .

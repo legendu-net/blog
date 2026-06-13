@@ -1,7 +1,7 @@
 ---
 title: Rust for Backend Development
-created: 2022-11-27 00:20:12
-date: 2026-04-13 23:14:40.514800
+created: '2022-11-27T00:20:12-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: rust-for-backend-development
@@ -24,19 +24,19 @@ tags:
 ## Backend Frameworks for REST APIs
 
 Please refer to
-[Rust Backend Frameworks for Rest APIs](https://www.legendu.net/misc/blog/rust-backend-frameworks-for-rest-apis)
+[Rust Backend Frameworks for Rest APIs](rust-backend-frameworks-for-rest-apis)
 for detailed discussions.
 
 ## Backend Frameworks for gRPC APIs
 
 Please refer to
-[Rust Backend Frameworks for gRPC APIs](https://www.legendu.net/misc/blog/rust-backend-frameworks-for-grpc-apis)
+[Rust Backend Frameworks for gRPC APIs](rust-backend-frameworks-for-grpc-apis)
 for detailed discussions.
 
 ## Backend Frames for GraphQL APIs
 
 Please refer to
-[Rust Backend Frameworks for GraphQL APIs](https://www.legendu.net/misc/blog/rust-backend-frameworks-for-graphql-apis)
+[Rust Backend Frameworks for GraphQL APIs](rust-backend-frameworks-for-graphql-apis)
 for detailed discussions.
 
 ## References

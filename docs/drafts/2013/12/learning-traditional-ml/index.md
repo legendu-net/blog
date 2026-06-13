@@ -1,7 +1,7 @@
 ---
 title: Learning Traditional ML
-created: 2013-12-08 23:07:57
-date: 2026-04-17 11:36:59.191145
+created: '2013-12-08T23:07:57-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: learning-traditional-ml
@@ -20,21 +20,21 @@ The picture comes from [Machine Learning Algorithms Mindmap](https://jixta.wordp
 
 ## Feature Engineering
 
-[Handling Categorical Variables in Machine Learning](http://www.legendu.net/misc/blog/handling-categorical-variables-in-machine-learning/)
+[Handling Categorical Variables in Machine Learning](handling-categorical-variables-in-machine-learning)
 
-## [Regularization in Machine Learning Models](http://www.legendu.net/misc/blog/regularization-in-machine-learning-models/)
+## [Regularization in Machine Learning Models](regularization-in-machine-learning-models)
 
-## [Ensemble](http://www.legendu.net/misc/blog/ai-ensemble/)
+## [Ensemble](ensemble-machine-learning-models)
 
 ## Frameworks
 
-[Libraries for Gradient Boosting](http://www.legendu.net/misc/blog/libraries-for-gradient-boosting/)
+[Libraries for Gradient Boosting](libraries-for-gradient-boosting)
 
 ### Big-data (Spark) Friendly Frameworks
 
 https://mmlspark.blob.core.windows.net/website/index.html
 
-## [AutoML](http://www.legendu.net/misc/blog/automl-tips/)
+## [AutoML](automl-on-tabular-data-using-autogluon)
 
 ## Questions
 
@@ -55,9 +55,9 @@ https://mmlspark.blob.core.windows.net/website/index.html
 
 1. SVD imputation using low dimension to approximate high dimension data
 
-## [Tips on Kaggle](http://www.legendu.net/misc/blog/tips-on-kaggle/)
+## [Tips on Kaggle](tips-on-kaggle)
 
-## [Machine Learning Resources](http://www.legendu.net/misc/blog/machine-learning-resources/)
+## [Machine Learning Resources](machine-learning-resources)
 
 ## AI Tools
 

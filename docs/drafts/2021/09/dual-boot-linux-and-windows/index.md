@@ -1,7 +1,7 @@
 ---
 title: Dual Boot Linux and Windows
-created: 2021-09-16 09:22:59
-date: 2026-04-15 19:27:00.866734
+created: '2021-09-16T09:22:59-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: dual-boot-linux-and-windows
@@ -20,7 +20,7 @@ tags:
 
 I personally don't see much value in dual booting Linux and Windows.
 Please refer to
-[Windows Emulation on Linux](https://misc.legendu.net/blog/windows-emulation-on-linux/)
+[Windows Emulation on Linux](windows-emulation-on-linux)
 if you need to run Windows apps on Linux.
 
 ## Mount the Windows File System
@@ -49,4 +49,4 @@ which list all disks plugged into the machine.
 
 ## References
 
-[Missing Grub Menu of Windows Operating System](http://www.legendu.net/en/blog/missing-grub-windows)
+[Missing Grub Menu of Windows Operating System](missing-grub-menu-of-windows-operating-system)

@@ -1,7 +1,7 @@
 ---
 title: Serialization and Deserialization in Rust
-created: 2023-01-13 16:44:56
-date: 2026-04-13 23:14:35.456484
+created: '2023-01-13T16:44:56-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: serialization-and-deserialization-in-rust
@@ -28,11 +28,11 @@ https://crates.io/crates/protobuf
 
 https://crates.io/crates/prost
 
-## [serde Based Serialization and Deserialization](https://www.legendu.net/en/blog/hands-on-the-Rust-library-serde/)
+## [serde Based Serialization and Deserialization](hands-on-the-rust-library-serde)
 
-### [serde](https://www.legendu.net/en/blog/hands-on-the-Rust-library-serde/)
+### [serde](hands-on-the-rust-library-serde)
 
-[serde](https://www.legendu.net/en/blog/hands-on-the-Rust-library-serde/)
+[serde](hands-on-the-rust-library-serde)
 is a generic serialization/deserialization framework
 .
 
@@ -42,9 +42,9 @@ is a generic serialization/deserialization framework
 provides custom de/serialization helpers
 to use in combination with serde's with-annotation and with the improved serde_as-annotation.
 
-### [serde_yaml](https://www.legendu.net/misc/blog/handle-duplicated-keys-in-serde-yaml/)
+### [serde_yaml](handle-duplicated-keys-in-serde_yaml-in-rust)
 
-[serde_yaml](https://www.legendu.net/misc/blog/handle-duplicated-keys-in-serde-yaml/)
+[serde_yaml](handle-duplicated-keys-in-serde_yaml-in-rust)
 is a YAML data format for Serde
 .
 
@@ -116,8 +116,8 @@ parses integers directly from [u8] slices in safe code
 
 ## References
 
-- [Hands on the Rust Library Serde](https://www.legendu.net/en/blog/hands-on-the-Rust-library-serde)
+- [Hands on the Rust Library Serde](hands-on-the-rust-library-serde)
 
-- [Parse TOML Files in Rust](https://www.legendu.net/misc/blog/parse-toml-files-in-rust)
+- [Parse TOML Files in Rust](parse-toml-files-in-rust)
 
-- [Data Frame Implementations in Rust](https://www.legendu.net/misc/blog/data-frame-implementations-in-rust)
+- [Data Frame Implementations in Rust](data-frame-implementations-in-rust)

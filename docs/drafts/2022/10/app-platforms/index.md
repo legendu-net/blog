@@ -1,7 +1,7 @@
 ---
 title: App Platforms
-created: 2022-10-08 14:30:32
-date: 2026-04-13 23:14:41.398110
+created: '2022-10-08T14:30:32-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: app-platforms
@@ -47,7 +47,7 @@ Build full-stack web and mobile apps in hours. Easy to start, easy to scale.
 - MariaDB
 - no GraphQL
 
-## [Shuttle](https://www.legendu.net/misc/blog/tips-on-shuttle-for-deploying-rust-apps)
+## [Shuttle](tips-on-shuttle-for-deploying-rust-apps)
 
 ## References
 

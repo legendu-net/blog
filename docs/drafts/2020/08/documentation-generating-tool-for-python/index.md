@@ -1,7 +1,7 @@
 ---
 title: Documentation Generating Tool for Python
-created: 2020-08-29 09:37:32
-date: 2026-04-15 19:27:01.003228
+created: '2020-08-29T09:37:32-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: documentation-generating-tool-for-python
@@ -20,4 +20,4 @@ tags:
 
 [MkDocs](https://www.mkdocs.org/)
 
-[sphinx](http://www.legendu.net/misc/blog/write-documentation-for-python-packages-using-sphinx/)
+[sphinx](write-documentation-for-python-packages-using-sphinx)

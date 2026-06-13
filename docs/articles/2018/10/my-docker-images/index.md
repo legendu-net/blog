@@ -1,7 +1,7 @@
 ---
 title: My Docker Images
 created: '2018-10-18T09:10:17-07:00'
-date: '2026-05-18T17:21:16+00:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: my-docker-images
@@ -88,7 +88,7 @@ header-rows: 1
 ### Install Docker
 
 Please refer to
-[Install Docker](http://www.legendu.net/en/blog/docker-installation/)
+[Install Docker](install-docker)
 for instructions on how to install and configure Docker.
 
 ### Pull the Docker Image
@@ -102,7 +102,7 @@ docker pull dclong/jupyterhub-ds
 
 For people in mainland of China,
 please refer to the post
-[Speedup Docker Pulling and Pushing](http://www.legendu.net/en/blog/speedup-docker-pulling-and-pushing/)
+[Speedup Docker Pulling and Pushing](speedup-docker-pulling-and-pushing)
 on ways to speed up pushing/pulling of Docker images.
 If you don't bother,
 then just use the command below.
@@ -214,6 +214,8 @@ docker run -d --init \
     dclong/jupyterhub-ds /scripts/sys/init.sh
 ```
 
+(my-docker-images-add-a-new-user-inside-a-docker-container)=
+
 ## Add a New User Inside a Docker Container
 
 You can of course use the well know commands `useradd`, `adduser`, etc. to achive it.
@@ -261,6 +263,8 @@ the default password (same as the user name) is used.
 
 1. Enjoy JupyterLab notebook!
 
+(my-docker-images-get-information-of-running-jupyter-lab-servers)=
+
 ## Get Information of Running Jupyter/Lab Servers
 
 If you are using the Jupyter/Lab server instead of JupyterHub,
@@ -307,7 +311,7 @@ and no matter you are inside the Docker container or not.
 Yet another way to get information of the running JupyterLab server
 is to check the log.
 Please refer to the section
-[Debug Docker Containers](http://www.legendu.net/en/blog/my-docker-images/#debug-docker-containers)
+[Debug Docker Containers](my-docker-images-debug-docker-containers)
 for more information.
 
 ## Add a New User for JupyterHub
@@ -317,7 +321,7 @@ any user in a Docker container of `dclong/jupyterhub-*` can visit the JupyterHub
 So if you want to grant access to a new user,
 just create an account for him in the Docker container.
 Please refer to
-[Add a New User Inside a Docker Container](https://www.legendu.net/en/blog/my-docker-images/#add-a-new-user-inside-a-docker-container)
+[Add a New User Inside a Docker Container](my-docker-images-add-a-new-user-inside-a-docker-container)
 on how to create a new user inside a Docker container.
 
 ## Easy Install of Other Kernels
@@ -350,6 +354,8 @@ Many other software/tools can be easily install by
 [icon](https://github.com/legendu-net/icon)
 .
 
+(my-docker-images-debug-docker-containers)=
+
 ## Debug Docker Containers
 
 You can change the option `docker run -d ...` to `docker run -it ...`
@@ -362,9 +368,9 @@ to get the log of the container
 
 ## Use Spark in JupyterLab Notebooks
 
-- [Use Spark with the Almond Scala Kernel in JupyterLab](http://www.legendu.net/misc/blog/spark-almond-jupyterlab/)
+- [Use Spark with the Almond Scala Kernel in JupyterLab](use-spark-with-the-almond-scala-kernel-in-jupyterlab)
 
-- [Use Spark With the BeakerX Scala Kernel](http://www.legendu.net/misc/blog/use-spark-with-the-beakerx-scala-kernel/)
+- [Use Spark With the BeakerX Scala Kernel](use-spark-with-the-beakerx-scala-kernel)
 
 It is suggested that you use the Almond Scala kernel.
 I will gradually drop support of the BeakerX Scala kernel in my Docker images.

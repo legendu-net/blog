@@ -1,20 +1,21 @@
 ---
 title: Install Python Packages Using pip
-created: 2017-06-05 08:26:34
-date: 2026-04-05 19:42:37.414114
+created: '2017-06-05T08:26:34-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
-- bendu
+  - bendu
 label: install-python-packages-using-pip
 license: CC-BY-4.0
 tags:
-- programming
-- Python
-- package
-- module
-- install
-- pip
-- conda
+  - programming
+  - Python
+  - package
+  - module
+  - install
+  - pip
+  - conda
 ---
+
 ## PyPi Statistics
 
 You can check download statistics of Python Packages on PYPI at https://pypistats.org/.
@@ -40,74 +41,92 @@ sudo python3 -m ensurepip
 
 ## Install a Specific Version of a Python Package
 
-1. List all available versions of a Python package. 
+1. List all available versions of a Python package.
 
-        :::bash
-        pip3 install pylibmc==
+   ```
+    :::bash
+    pip3 install pylibmc==
+   ```
 
-2. Install a specific version of a Python package.
+1. Install a specific version of a Python package.
 
-        :::bash
-        pip3 install MySQL_python==1.2.2
+   ```
+    :::bash
+    pip3 install MySQL_python==1.2.2
+   ```
 
-3. Install pyarrow with a verison of at least 0.14.0.
-    Notice that you must quote `pyarrow>=0.14.0` using single/double quotes.
+1. Install pyarrow with a verison of at least 0.14.0.
+   Notice that you must quote `pyarrow>=0.14.0` using single/double quotes.
 
-        :::bash
-        pip3 install 'pyarrow>=0.14.0'
+   ```
+    :::bash
+    pip3 install 'pyarrow>=0.14.0'
+   ```
 
-4. Install a Python package with a version in a range.
+1. Install a Python package with a version in a range.
 
-        :::bash
-        pip3 install "jupyterlab>=1.2.7,<2.0.0"
+   ```
+    :::bash
+    pip3 install "jupyterlab>=1.2.7,<2.0.0"
+   ```
 
-4. You can install the pre-release version of a package using the `--pre` option.
-    For example, 
-    the current version of pybuilder (0.11.7) is not compatible with Python 3.7.
-    If you are using Python 3.7 and still want to use the pybuilder package, 
-    you can install the pre-release version (0.12) which is compatible with Python 3.7.
+1. You can install the pre-release version of a package using the `--pre` option.
+   For example,
+   the current version of pybuilder (0.11.7) is not compatible with Python 3.7.
+   If you are using Python 3.7 and still want to use the pybuilder package,
+   you can install the pre-release version (0.12) which is compatible with Python 3.7.
 
-        :::bash
-        pip3 install --pre pybuilder
+   ```
+    :::bash
+    pip3 install --pre pybuilder
+   ```
 
 ## Install Python Packages from Source
 
 1. Install Python package from a `tar.gz` file which contains the source code.
 
-        :::bash
-        pip3 install xinstall-0.23.0.tar.gz
+   ```
+    :::bash
+    pip3 install xinstall-0.23.0.tar.gz
+   ```
 
-2. Install from the current directory
+1. Install from the current directory
 
-        :::bash
-        pip3 install .
+   ```
+    :::bash
+    pip3 install .
+   ```
 
-3. `pip` 20.0+ supports instaling a peotry managed Python project from GitHub directly.
-    For example,
-    the comamnd below installs the Python package dsutil from the GitHub repository dclong/dsutil directly.
+1. `pip` 20.0+ supports instaling a peotry managed Python project from GitHub directly.
+   For example,
+   the comamnd below installs the Python package dsutil from the GitHub repository dclong/dsutil directly.
 
-        :::bash
-        pip3 install git+ssh://git@github.com/dclong/dsutil 
-        # or
-        pip3 install git+https://github.com/dclong/xinstall
-        # or install with optional components
-        pip3 install --user -U "dsutil[all] @ git+https://github.com/dclong/dsutil@main"
-        pip3 install "dsutil[cv] @ file:///home/dclong/dsutil-0.54.1-py3-none-any.whl"
-        pip3 install "dsutil[cv] @ https://github.com/dclong/dsutil/releases/download/v0.54.1/dsutil-0.54.1-py3-none-any.whl"
+   ```
+    :::bash
+    pip3 install git+ssh://git@github.com/dclong/dsutil 
+    # or
+    pip3 install git+https://github.com/dclong/xinstall
+    # or install with optional components
+    pip3 install --user -U "dsutil[all] @ git+https://github.com/dclong/dsutil@main"
+    pip3 install "dsutil[cv] @ file:///home/dclong/dsutil-0.54.1-py3-none-any.whl"
+    pip3 install "dsutil[cv] @ https://github.com/dclong/dsutil/releases/download/v0.54.1/dsutil-0.54.1-py3-none-any.whl"
+   ```
 
-    If you are behind a corporate proxy,
-    you might need 2FA to visit the enterprise GitHub of your company.
-    However, 
-    2FA is usually not required for Git comamnd line (since it would too much hassle).
-    The above way to install Python packages from GitHub repositories directly
-    can be a good way to avoid 2FA authentication if you are behind a corporate proxy.
+   If you are behind a corporate proxy,
+   you might need 2FA to visit the enterprise GitHub of your company.
+   However,
+   2FA is usually not required for Git comamnd line (since it would too much hassle).
+   The above way to install Python packages from GitHub repositories directly
+   can be a good way to avoid 2FA authentication if you are behind a corporate proxy.
 
 ## Install Python Packages from Requirements.txt
 
 You can install Python packages from a `requirements.txt` file.
 
-    :::bash
-    pip3 install -r requirements.txt
+```
+:::bash
+pip3 install -r requirements.txt
+```
 
 Notice that all formats accepted by `pip3 install` is valid in `requirements.txt`.
 For example,
@@ -116,9 +135,9 @@ For example,
 ## Difference between --ignore-installed and --force-reinstall
 
 Sometimes a package is installed by distutils
-which cannot be reinstalled using `pip`, 
+which cannot be reinstalled using `pip`,
 not even with the `--force-reinstall` option.
-In that case, 
+In that case,
 you have to use the `--ignore-installed` option.
 For more discussions,
 please refer to
@@ -132,69 +151,80 @@ and
 You can install a Python package without installing its dependencies
 using the command below.
 
-    :::bash
-    pip3 install --no-deps some_package
+```
+:::bash
+pip3 install --no-deps some_package
+```
 
 ## Upgrade Python Packages
 
 You can upgrade an already installed Python package to the latest version
 using the command below.
 
-    :::bash
-    pip3 install --upgrade wheel
+```
+:::bash
+pip3 install --upgrade wheel
+```
 
 ## List All Installed Python Packages
 
 1. List all installed modules.
 
-        :::bash
-        pip3 list
+   ```
+    :::bash
+    pip3 list
+   ```
 
-2. List outdated modules only.
+1. List outdated modules only.
 
-        :::bash
-        pip3 list --outdated
+   ```
+    :::bash
+    pip3 list --outdated
+   ```
 
-3. You can also use `help('modules')` to show all installed modules in Python.
+1. You can also use `help('modules')` to show all installed modules in Python.
 
 ## Use pip with Proxy
 
 You can export environment variables `http_proxy` and `https_proxy`
 or you can use `pip` with the `--proxy` option directly.
+
 ```Bash
 pip3 --proxy http://proxy__server_ip:port install some_pkg
 ```
-When using the `--proxy` with `pip`/`pip3`, 
+
+When using the `--proxy` with `pip`/`pip3`,
 you can omit `http://` and the port if the port is 80.
+
 ```Bash
 pip3 --proxy 10.135.227.47 search notifiers
 ```
 
 Notice that sometimes `pip` does not respect the environment variables.
-In that case, 
+In that case,
 you have to use the option `--proxy` to pass proxy to `pip`.
 And even with the option `--proxy`,
-pip might not work well if you install from a version control system. 
+pip might not work well if you install from a version control system.
 Just be ware of that.
-[ProxyChains](http://www.legendu.net/misc/blog/proxychains-tips/)
+[ProxyChains](make-traffic-follow-through-proxies-using-proxychains)
 is likely a solution when that issue happens.
 
 ## Misc
 
 1. `pip` supports downloading Python packages without installing them.
-    At the same time,
-    you can disable `pip` caching using the option `--no-cache-dir`.
-    For more discussions,
-    please refer to
-    [Caching](https://pip.pypa.io/en/latest/reference/pip_install/#caching)
-    .
+   At the same time,
+   you can disable `pip` caching using the option `--no-cache-dir`.
+   For more discussions,
+   please refer to
+   [Caching](https://pip.pypa.io/en/latest/reference/pip_install/#caching)
+   .
 
-2. `export LC_ALL=C` resolves an issues (cannot remember which issue exactly) of pip3.
+1. `export LC_ALL=C` resolves an issues (cannot remember which issue exactly) of pip3.
 
 ## Installation Location
 
-Please refer to 
-[The Installation Location of Python Packages Using Pip](http://www.legendu.net/misc/blog/the-installation-location-of-python-packages-using-pip/)
+Please refer to
+[The Installation Location of Python Packages Using Pip](the-installation-location-of-python-packages-using-pip)
 for more discussions.
 
 ## Check for Existence of a Python Package
@@ -207,8 +237,10 @@ which are not exposed (visible to importlib) by default.
 However,
 all installed packages (via pip) are visible to pip.
 
-    :::bash
-    pip3 list | grep -i pelican-render-math
+```
+:::bash
+pip3 list | grep -i pelican-render-math
+```
 
 ## References
 

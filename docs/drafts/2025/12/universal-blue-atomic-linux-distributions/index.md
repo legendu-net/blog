@@ -1,7 +1,7 @@
 ---
 title: Universal Blue Atomic Linux Distributions
-created: 2025-12-07 17:20:04
-date: 2026-04-15 19:27:00.537074
+created: '2025-12-07T17:20:04-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: universal-blue-atomic-linux-distributions
@@ -57,7 +57,7 @@ please refer to
 ## Switch to the Fish Shell
 
 Please see discussion in
-[Change the Default Shell in Linux](https://misc.legendu.net/blog/change-the-default-shell-in-linux/)
+[Change the Default Shell in Linux](change-the-default-shell-in-linux)
 .
 
 ## Install Docker
@@ -183,7 +183,7 @@ rpm-ostree deploy <digest_id>
 
 - [Gemini App - Aurora Linux Assistant](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221X_u1z8lHjUZ3YytBLP4zwmVlmUoH_o9i%22%5D,%22action%22:%22open%22,%22userId%22:%22100282891140280543929%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing)
 
-- [Install Dropbox Using Flatpak](https://www.legendu.net/misc/blog/install-dropbox-using-flatpak)
+- [Install Dropbox Using Flatpak](install-dropbox-using-flatpak)
 
 - [Universal Blue - Forum](https://universal-blue.discourse.group/)
 

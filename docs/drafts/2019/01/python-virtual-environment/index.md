@@ -1,7 +1,7 @@
 ---
-title: "Python Virtual Environment"
-created: 2019-01-14 11:04:58
-date: 2019-12-14 11:04:58
+title: Python Virtual Environment
+created: '2019-01-14T11:04:58-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: python-virtual-environment
@@ -16,15 +16,15 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. [venv](https://docs.python.org/3/library/venv.html#module-venv)
-    is a standard Python library
-    and is the recommended way for managing virtual environments in Python3. 
+   is a standard Python library
+   and is the recommended way for managing virtual environments in Python3.
 
-2. When developing a Python project,
-    it is recommended that you use 
-    [Poetry](http://www.legendu.net/misc/blog/python-poetry-tips)
-    to manage the project
-    which helps managing virtual environments too,
-    so that you don't have to managing virtual environments by yourself.
+1. When developing a Python project,
+   it is recommended that you use
+   [Poetry](manage-your-python-project-using-poetry)
+   to manage the project
+   which helps managing virtual environments too,
+   so that you don't have to managing virtual environments by yourself.
 
 The discussion below is specifically for
 [venv](https://docs.python.org/3/library/venv.html#module-venv)
@@ -35,7 +35,9 @@ The discussion below is specifically for
 ```bash
 python3 -m venv /path/to/your/environment
 ```
+
 The `venv` module provides several parameters to control the behavior of the virtual environment to be created.
+
 ```
 $ python3 -m venv -h
 usage: venv [-h] [--system-site-packages] [--symlinks | --copies] [--clear]
@@ -65,11 +67,13 @@ optional arguments:
   --prompt PROMPT       Provides an alternative prompt prefix for this
                         environment.
 ```
-The virtual environment can be updated by running the module command again 
+
+The virtual environment can be updated by running the module command again
 with the desired combination of parameters.
-For example, 
+For example,
 suppose a virtual environment is created using the command `python3 -m venv /path/to/your/environment`,
 you can make it inherit system site-packages by running the following command.
+
 ```bash
 python3 -m venv --system-site-packages venv
 ```
@@ -78,7 +82,7 @@ python3 -m venv --system-site-packages venv
 
 ```bash
 source <DIR>/bin/activate
-# or 
+# or
 . <DIR>/bin/activate
 ```
 
@@ -86,13 +90,13 @@ source <DIR>/bin/activate
 
 1. Click on the `PyCharm` menu.
 
-2. Click on `Preferences...`.
+1. Click on `Preferences...`.
 
-3. Select `Project Interpreter` in the left panel under `Project`.
+1. Select `Project Interpreter` in the left panel under `Project`.
 
-4. If no virtual environment is configured for PyCharm, 
-    you can select `Using Existing Virtual Environment` 
-    and then choose the Python executable in the virtual environment directory (e.g., `venv/bin/python`).
+1. If no virtual environment is configured for PyCharm,
+   you can select `Using Existing Virtual Environment`
+   and then choose the Python executable in the virtual environment directory (e.g., `venv/bin/python`).
 
 ## References
 

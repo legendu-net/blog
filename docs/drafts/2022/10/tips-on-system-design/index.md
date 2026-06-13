@@ -1,7 +1,7 @@
 ---
 title: Tips on System Design
-created: 2022-10-08 16:41:38
-date: 2026-04-13 23:14:42.732306
+created: '2022-10-08T16:41:38-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-system-design
@@ -15,11 +15,11 @@ tags:
 
 [ByteByteGo Newsletter](https://blog.bytebytego.com/)
 
-[Latency Numbers Programmers Should Know](https://www.legendu.net/misc/blog/latency-numbers-programmers-should-know)
+[Latency Numbers Programmers Should Know](latency-numbers-programmers-should-know)
 
-[Popular Databases](https://www.legendu.net/misc/blog/popular-databases)
+[Popular Databases](popular-databases)
 
-[Messsage Queue Implementations](https://www.legendu.net/misc/blog/messsage-queue-implementations/)
+[Messsage Queue Implementations](messsage-queue-implementations)
 
 [Top 7 Most-Used Distributed System Patterns](https://www.youtube.com/watch?v=nH4qjmP2KEE)
 

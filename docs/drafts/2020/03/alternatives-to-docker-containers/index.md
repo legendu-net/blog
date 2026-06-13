@@ -1,7 +1,7 @@
 ---
 title: Alternatives to Docker Containers
-created: 2020-03-10 11:45:40
-date: 2026-04-13 23:15:24.508749
+created: '2020-03-10T11:45:40-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: alternatives-to-docker-containers
@@ -29,7 +29,7 @@ To sum up all that we know, both LXD and Docker are containerization technologie
 
 LXD on the other hand, is much better equipped and is much closer to a complete operating system environment with networking and storage interfaces. You can run multiple Docker containers nested inside LXD, if you want.
 
-## [podman](http://www.legendu.net/misc/blog/tips-on-podman)
+## [podman](tips-on-podman)
 
 Podman is a good container alternative to Docker.
 

@@ -1,7 +1,7 @@
 ---
 title: Nix and NixOS
-created: 2025-04-16 06:54:32
-date: 2026-04-13 23:14:22.829119
+created: '2025-04-16T06:54:32-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: nix-and-nixos
@@ -20,13 +20,13 @@ https://search.nixos.org/packages
 ## mkShell vs buildFHSUserEnv
 
 See discussions in
-[mkShell vs buildFHSUserEnv in Nix](https://www.legendu.net/misc/blog/mkshell-vs-buildFHSUserEnv-in-nix)
+[mkShell vs buildFHSUserEnv in Nix](mkshell-vs-buildfhsuserenv-in-nix)
 .
 
 ## Python
 
 See discussions in
-[Set Up Nix for Python Development](https://www.legendu.net/misc/blog/set-up-nix-for-python-development)
+[Set Up Nix for Python Development](set-up-nix-for-python-development)
 .
 
 ## References

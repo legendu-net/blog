@@ -1,7 +1,7 @@
 ---
 title: Editing Shell Commands Using Vim
-created: 2024-07-22 13:39:40
-date: 2026-04-13 23:15:30.037724
+created: '2024-07-22T13:39:40-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: editing-shell-commands-using-vim
@@ -13,7 +13,7 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-[Fish Shell](https://www.legendu.net/misc/blog/tips-on-the-fish-shell)
+[Fish Shell](tips-on-the-fish-shell)
 is preferred to Bash/Zsh.
 The following content is for Bash/Zsh only.
 
@@ -57,7 +57,7 @@ The following content is for Bash/Zsh only.
    doesn't work out-of-the-box in the terminal in Visual Studio Code.
    For more discussions,
    please refer to
-   [Configuraing Terminal in Visual Studio Code](https://www.legendu.net/misc/blog/configuraing-terminal-in-visual-studio-code)\
+   [Configuraing Terminal in Visual Studio Code](configuring-terminal-in-visual-studio-code)\
    .
 
 1. [fzf.history](https://github.com/legendu-net/icon/blob/dev/utils/data/bash-it/plugins/custom.plugins.bash#L124)

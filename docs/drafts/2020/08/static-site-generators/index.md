@@ -1,7 +1,7 @@
 ---
 title: Static Site Generators
-created: 2020-08-01 12:19:14
-date: 2026-04-15 19:27:00.995852
+created: '2020-08-01T12:19:14-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: static-site-generators
@@ -183,7 +183,7 @@ https://jamstack.org/generators/
 [Zola](https://github.com/getzola/zola)
 is a fast static site generator in a single binary with everything built-in.
 
-## [mdbook](https://www.legendu.net/misc/blog/tips-on-mdbook)
+## [mdbook](tips-on-mdbook)
 
 ## [next.js](https://nextjs.org/docs/advanced-features/static-html-export)
 
@@ -192,9 +192,9 @@ which can be run standalone without the need of a Node.js server.
 It is recommended to only use next export
 if you don't need any of the unsupported features requiring a server.
 
-## [Pelican](http://www.legendu.net/misc/blog/pelican-tips/)
+## [Pelican](generate-static-site-using-pelican)
 
-[Pelican](http://www.legendu.net/misc/blog/pelican-tips/)
+[Pelican](generate-static-site-using-pelican)
 
 ## [jupyter-book](https://github.com/executablebooks/jupyter-book)
 

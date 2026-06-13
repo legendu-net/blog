@@ -1,7 +1,7 @@
 ---
 title: Extracting Data from PDF Files
-created: 2024-11-15 12:41:51
-date: 2026-04-13 23:14:23.133063
+created: '2024-11-15T12:41:51-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: extracting-data-from-pdf-files
@@ -47,4 +47,4 @@ is is a robust, locally hosted web-based PDF manipulation tool using Docker.
 
 ## References
 
-- [Editing PDF Files](https://www.legendu.net/en/blog/editing-PDF-files/)
+- [Editing PDF Files](editing-pdf-files)

@@ -1,7 +1,7 @@
 ---
 title: Fix Shell Commands Using fc
-created: 2025-07-06 11:08:48
-date: 2026-04-15 19:27:01.975441
+created: '2025-07-06T11:08:48-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: fix-shell-commands-using-fc
@@ -18,7 +18,7 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-[Fish Shell](https://www.legendu.net/misc/blog/tips-on-the-fish-shell)
+[Fish Shell](tips-on-the-fish-shell)
 is preferred to Bash/Zsh.
 The following content is for Bash/Zsh only.
 
@@ -38,8 +38,9 @@ is a better alternative to `fc`'s core functionality (edit and re-execute comman
    `HISTTIMEFORMAT="" history | sed -E 's/^[ ]*[0-9]+[ ]*//'` is a more robust command for the same purpose.
 
 ```{list-table}
-:header-rows: 1
-
+---
+header-rows: 1
+---
 - - Command
   - Action
 - - `fc`

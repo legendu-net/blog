@@ -1,7 +1,7 @@
 ---
 title: Tips on Housing
-created: 2014-03-22 14:23:43
-date: 2026-04-21 16:16:40.023562
+created: '2014-03-22T14:23:43-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-housing
@@ -21,7 +21,7 @@ tags:
 
 [YouTube - 李文勍Richard](https://www.youtube.com/@richard0501)
 
-## [Buying a House](https://www.legendu.net/misc/blog/tips-on-buying-a-house)
+## [Buying a House](tips-on-buying-a-house)
 
 ## Deck
 
@@ -41,9 +41,9 @@ tags:
 
 - [西雅圖家裡淹水的天價維修帳單](https://www.youtube.com/watch?v=ygL6OOOdwqM)
 
-- [Tips on Plumbing](https://www.legendu.net/misc/blog/tips-on-plumbing)
+- [Tips on Plumbing](tips-on-plumbing)
 
-- [Adjust Water Pressure in the House](https://www.legendu.net/misc/blog/adjust-water-pressure-in-the-house)
+- [Adjust Water Pressure in the House](adjust-water-pressure-in-the-house)
 
 ## Rebuild
 
@@ -59,7 +59,7 @@ tags:
 ## Purchasing a House
 
 See
-[Tips on Buying a House](https://www.legendu.net/misc/blog/tips-on-buying-a-house)
+[Tips on Buying a House](tips-on-buying-a-house)
 for discussion.
 
 ## Misc
@@ -74,7 +74,7 @@ for discussion.
 
 - [DealMoon - Housing & Living](https://www.dealmoon.com/guide/cate/11)
 
-- [Shopping At Homedepot](https://www.legendu.net/misc/blog/shop-at-homedepot/)
+- [Shopping At Homedepot](shopping-at-homedepot)
 
 ### Human Ergonomics
 
@@ -96,7 +96,7 @@ for discussion.
 
 - [暗盒修复器](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220528221640&SearchText=%E6%9A%97%E7%9B%92%E4%BF%AE%E5%A4%8D%E5%99%A8&spm=a2g0o.productlist.1000002.0)
 
-### [Pest and Rodent Control](https://www.legendu.net/misc/blog/tips-on-pest-and-rodent-control)
+### [Pest and Rodent Control](tips-on-pest-and-rodent-control)
 
 ### Kitchen & Bathroom
 
@@ -134,6 +134,6 @@ for discussion.
 
 ## References
 
-- [Tips on Renting a House or Apartment](https://www.legendu.net/misc/blog/tips-on-renting-a-house-or-apartment)
+- [Tips on Renting a House or Apartment](tips-on-renting-a-house-or-apartment)
 
 - [老房维修全是坑💥乱修血亏10万刀？5句口诀：少花好几万！](https://www.youtube.com/watch?v=_nLPjf7XU0I)

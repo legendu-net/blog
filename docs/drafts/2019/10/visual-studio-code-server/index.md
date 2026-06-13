@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Code Server
 created: '2019-10-24T11:28:44-07:00'
-date: '2026-05-27T00:52:14-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: visual-studio-code-server
@@ -56,12 +56,12 @@ https://github.com/cdr/code-server/issues/148
 ## Extensions
 
 Please refer to
-[Useful Visual Studio Code Extensions](http://www.legendu.net/en/blog/useful-visual-studio-code-extensions)
+[Useful Visual Studio Code Extensions](useful-visual-studio-code-extensions)
 .
 
 [How `--user-data-dir` and `--extensions-dir` Work Together in code-server](https://instagit.com/coder/code-server/whats-the-relationship-between-user-data-dir-and-extensions-dir-configuration/?utm_source=chatgpt.com)
 
-## [Debug Python Project](http://www.legendu.net/misc/blog/debug-python-project-in-visual-studio-code)
+## [Debug Python Project](debug-python-project-in-visual-studio-code)
 
 ## Shortcuts
 
@@ -85,7 +85,7 @@ https://github.com/cdr/sshcode
 
 - [Snippets in Visual Studio Code](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 
-- [VSCode Shortcuts](http://www.legendu.net/misc/blog/vscode-tips/#shortcuts)
+- [VSCode Shortcuts](tips-on-visual-studio-code-shortcuts)
 
 - [VSCode Server Guidance](https://github.com/cdr/code-server/blob/master/doc/guide.md)
 

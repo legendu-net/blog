@@ -1,7 +1,7 @@
 ---
 title: Computer Science Algorithms
-created: 2019-05-26 10:56:44
-date: 2026-04-15 19:27:01.175706
+created: '2019-05-26T10:56:44-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: computer-science-algorithms
@@ -17,7 +17,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-[Tree-Based Data Structures](https://www.legendu.net/misc/blog/tree-based-data-structures)
+[Tree-Based Data Structures](tree-based-data-structures)
 
 [Double-ended Queue](https://en.wikipedia.org/wiki/Double-ended_queue)
 

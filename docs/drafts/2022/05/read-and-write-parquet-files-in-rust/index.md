@@ -1,7 +1,7 @@
 ---
 title: Read and Write Parquet Files in Rust
-created: 2022-05-22 08:44:04
-date: 2026-04-13 23:14:47.992023
+created: '2022-05-22T08:44:04-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: read-and-write-parquet-files-in-rust
@@ -80,8 +80,8 @@ after the C++ implementation.
 
 ## References
 
-- [Hands on the Rust Crate Parquet](http://www.legendu.net/misc/blog/hands-on-the-rust-crate-parquet/)
+- [Hands on the Rust Crate Parquet](hands-on-the-rust-crate-parquet)
 
-- [Hands on Polars in Rust](https://www.legendu.net/misc/blog/hands-on-polars-in-rust/)
+- [Hands on Polars in Rust](hands-on-the-polars-crate-in-rust)
 
-- [Data Frame Implementations in Rust](https://www.legendu.net/misc/blog/data-frame-implementations-in-rust/)
+- [Data Frame Implementations in Rust](data-frame-implementations-in-rust)

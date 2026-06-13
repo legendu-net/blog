@@ -1,7 +1,7 @@
 ---
 title: A Comprehensive List of Common Issues in Spark Applications
-created: 2020-08-22 08:53:56
-date: 2026-04-15 19:27:01.000457
+created: '2020-08-22T08:53:56-07:00'
+date: '2026-06-12T21:38:36-07:00'
 authors:
   - bendu
 label: a-comprehensive-list-of-common-issues-in-spark-applications
@@ -19,7 +19,7 @@ tags:
 ## List of Common Issues
 
 Please refer to
-<http://www.legendu.net/misc/tag/spark-issue.html>
+<https://www.legendu.net/tags/#spark>
 for a comprehensive list of Spark Issues and (possible) causes and solutions.
 
 ## Debugging Tips
@@ -54,6 +54,8 @@ Below a few things to check while you debug your Spark applications.
    For example,
    you might expect Spark to use BroadcastHashJoin but it actually used SortMergeJoin.
 
+(a-comprehensive-list-of-common-issues-in-spark-applications-tips-on-spark-configuration-to-avoid-issues)=
+
 ## Tips on Spark Configuration to Avoid Issues
 
 1. It is suggested that you keep `--driver-memory` to be at least `2G`.
@@ -66,5 +68,5 @@ Below a few things to check while you debug your Spark applications.
 1. Set a large value for `MaxDirectoMemorySize` for JVM.
 
    ```bash
-    --conf spark.executor.extraJavaOptions=-XX:MaxDirectMemorySize=8G \
+   --conf spark.executor.extraJavaOptions=-XX:MaxDirectMemorySize=8G \
    ```

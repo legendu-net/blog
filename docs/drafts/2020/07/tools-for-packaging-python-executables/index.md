@@ -1,7 +1,7 @@
 ---
 title: Tools for Packaging Python Executables
-created: 2020-07-26 09:45:02
-date: 2026-04-13 23:15:18.841434
+created: '2020-07-26T09:45:02-07:00'
+date: '2026-06-12T22:31:50-07:00'
 authors:
   - bendu
 label: tools-for-packaging-python-executables
@@ -50,6 +50,6 @@ tags:
 
 https://gregoryszorc.com/blog/2018/12/18/distributing-standalone-python-applications/
 
-http://www.legendu.net/misc/blog/packaging-python-dependencies-for-pyspark-using-conda-pack/
+[Packaging Python Dependencies for PySpark Using conda-pack](packaging-python-dependencies-for-pyspark-using-conda-pack)
 
-http://www.legendu.net/misc/blog/packaging-python-dependencies-for-pyspark-using-pex/
+[Packaging Python Dependencies for PySpark Using Pex](packaging-python-dependencies-for-pyspark-using-pex)

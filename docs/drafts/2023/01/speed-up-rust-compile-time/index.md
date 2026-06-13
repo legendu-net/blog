@@ -1,7 +1,7 @@
 ---
 title: Speed Up Rust Compile Time
-created: 2023-01-16 18:53:05
-date: 2026-04-15 19:27:00.699606
+created: '2023-01-16T18:53:05-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: speed-up-rust-compile-time
@@ -23,4 +23,4 @@ tags:
 
 ## References
 
-- [Speed Up Rust Build With Cache](https://www.legendu.net/misc/blog/speed-up-rust-build-with-cache)
+- [Speed Up Rust Build With Cache](speed-up-rust-build-with-cache)

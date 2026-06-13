@@ -1,7 +1,7 @@
 ---
-title: "Tips on Brokerage"
-created: 2023-12-25 16:53:44
-date: 2024-10-05 23:43:14
+title: Tips on Brokerage
+created: '2023-12-25T16:53:44-08:00'
+date: '2026-06-12T21:45:13-07:00'
 authors:
   - bendu
 label: tips-on-brokerage
@@ -18,152 +18,93 @@ tags:
 ## Brief Summary of Brokerages
 
 1. Charles Schwab is a great choice for individual brokerage account
-    without the need of algorithmic trading.
+   without the need of algorithmic trading.
 
-2. Fedelity is a good brokerage for retirement (401K, IRA, etc) accounts.
+1. Fedelity is a good brokerage for retirement (401K, IRA, etc) accounts.
 
-3. QuantConnect is a good choice for algorithmic trading.
+1. QuantConnect is a good choice for algorithmic trading.
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0pky" rowspan="2">Brokerage</th>
-    <th class="tg-0pky" rowspan="2">Fees</th>
-    <th class="tg-0pky" rowspan="2">
-        Live <br> 
-        Online <br> 
-        Chat
-    </th>
-    <th class="tg-0pky" rowspan="2">
-        Cash <br> 
-        Sweep <br> 
-        Program
-    </th>
-    <th class="tg-0pky" rowspan="2">
-        Retirement <br> 
-        Accounts
-    </th>
-    <th class="tg-0pky" rowspan="2">
-        Market Analysis <br>
-        &amp; Research Report
-    </th>
-    <th class="tg-0pky" colspan="2">
-        Algorithmic <br>
-        Trading
-    </th>
-  </tr>
-  <tr>
-    <th class="tg-0pky">API</th>
-    <th class="tg-0pky">
-        Data <br> 
-        Quality
-    </th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky">Iteractive Brokerage</td>
-    <td class="tg-0pky">
-        Low-High <sup>[1]</sup>
-    </td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">Yes</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">Yes</td>
-    <td class="tg-0pky">High</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Charles Schwab</td>
-    <td class="tg-0pky">Low</td>
-    <td class="tg-0pky">24/7</td>
-    <td class="tg-0pky">
-      <a href="https://www.legendu.net/misc/blog/tips-on-charles-schwab/#cash-sweep-program"> Yes </a>
-    </td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">Great</td>
-    <td class="tg-0pky">
-      <a href="https://www.legendu.net/misc/blog/tips-on-charles-schwab/#trader-apis"> Yes </a>
-    </td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Fidelity</td>
-    <td class="tg-0pky">Low</td>
-    <td class="tg-0pky">Yes</td>
-    <td class="tg-0pky">Yes</td>
-    <td class="tg-0pky">Yes</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">No</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Vanguard</td>
-    <td class="tg-0pky">Low</td>
-    <td class="tg-0pky">No</td>
-    <td class="tg-0pky">Yes</td>
-    <td class="tg-0pky">Yes</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">No</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">QuantRocket</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">Yes</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">QuantConnect</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">Yes</td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Alpaca</td>
-    <td class="tg-0pky">Low</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">No</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">Yes</td>
-    <td class="tg-0pky">
-        Low
-        <sup>[2]</sup>
-    </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">eTrade</td>
-    <td class="tg-0pky">Low</td>
-    <td class="tg-0pky">Yes</td>
-    <td class="tg-0pky">No</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">No</td>
-    <td class="tg-0pky"></td>
-  </tr>
-</tbody>
-</table>
+```{list-table}
+---
+header-rows: 1
+---
+* - Brokerage
+  - Fees
+  - Live Online Chat
+  - Cash Sweep Program
+  - Retirement Accounts
+  - Market Analysis & Research Report
+  - Algorithmic Trading (API)
+  - Algorithmic Trading (Data Quality)
+* - Iteractive Brokerage
+  - Low-High <sup>[1]</sup>
+  - 
+  - Yes
+  - 
+  - 
+  - Yes
+  - High
+* - Charles Schwab
+  - Low
+  - 24/7
+  - [Yes](tips-on-charles-schwab-cash-sweep-program)
+  - 
+  - Great
+  - [Yes](tips-on-charles-schwab-trader-apis)
+  - 
+* - Fidelity
+  - Low
+  - Yes
+  - Yes
+  - Yes
+  - 
+  - No
+  - 
+* - Vanguard
+  - Low
+  - No
+  - Yes
+  - Yes
+  - 
+  - No
+  - 
+* - QuantRocket
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Yes
+  - 
+* - QuantConnect
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Yes
+  - 
+* - Alpaca
+  - Low
+  - 
+  - No
+  - 
+  - 
+  - Yes
+  - Low <sup>[2]</sup>
+* - eTrade
+  - Low
+  - Yes
+  - No
+  - 
+  - 
+  - No
+  - 
+```
 
-[1]: Depends on which version of API you use.  
-[2]: Alpaca allows connecting to other paid high quality data sources, 
-e.g., <polygon.io>.
+\[1\]: Depends on which version of API you use.\
+\[2\]: Alpaca allows connecting to other paid high quality data sources,
+e.g., \<polygon.io>.
 
 ## References
 

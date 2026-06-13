@@ -1,7 +1,7 @@
 ---
 title: Unit Test in Rust
-created: 2022-06-16 15:34:08
-date: 2026-04-15 19:27:00.783139
+created: '2022-06-16T15:34:08-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: unit-test-in-rust
@@ -160,12 +160,12 @@ There are a few approaches to pass arguments to unit test functions.
 ## Mocking
 
 Please refer to
-[Use of Mock Values in Rust](https://www.legendu.net/misc/blog/use-of-mock-values-in-rust/)
+[Use of Mock Values in Rust](use-of-mock-values-in-rust)
 for more details.
 
 ## References
 
-- [Useful Rust Crates for Testing](https://www.legendu.net/misc/blog/useful-rust-crates-for-testing)
+- [Useful Rust Crates for Testing](useful-rust-crates-for-testing)
 
 - [How to run setup code before any tests run in Rust?](https://stackoverflow.com/questions/58006033/how-to-run-setup-code-before-any-tests-run-in-rust)
 

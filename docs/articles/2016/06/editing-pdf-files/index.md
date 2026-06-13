@@ -1,19 +1,20 @@
 ---
 title: Editing PDF Files
-created: 2016-06-30 10:21:47
-date: 2026-04-06 21:21:20.445441
+created: '2016-06-30T10:21:47-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
-- bendu
+  - bendu
 label: editing-pdf-files
 license: CC-BY-4.0
 tags:
-- software
-- PDF
-- tools
-- edit
-- convert
-- PDFfiller
+  - software
+  - PDF
+  - tools
+  - edit
+  - convert
+  - PDFfiller
 ---
+
 <div style="overflow-x:auto;">
 <style>
     tr:nth-child(even) {background-color: #f2f2f2}
@@ -25,7 +26,7 @@ tags:
     <th> Comments </th>
   </tr>
 
-  <tr>
+<tr>
     <td rowspan="6"> Web Tools </td>
     <td> <a href="https://github.com/Stirling-Tools/Stirling-PDF">Stirling-PDF</a> </td>
     <td>  
@@ -69,7 +70,7 @@ tags:
     </td>
   </tr>
 
-  <tr>
+<tr>
     <td rowspan="4"> Linux Desktop </td>
     <td> 
       <a href="https://github.com/pdfarranger/pdfarranger">PDFArranger</a> 
@@ -106,7 +107,7 @@ tags:
     </td>
   </tr>
 
-  <tr>
+<tr>
     <td> macOS Desktop </td>
     <td>Preview</td>
     <td>  
@@ -115,7 +116,7 @@ tags:
     </td>
   </tr>
 
-  <tr>
+<tr>
     <td rowspan="4"> Windows Desktop </td>
     <td> 
       <a href="https://code-industry.net/masterpdfeditor/">Master PDF Editor</a> 
@@ -150,8 +151,8 @@ tags:
       - need to purchase a license but 30 days free trial available <br>
     </td>
   </tr>
-    
-  <tr>
+
+<tr>
     <td rowspan="7"> Python Libraries </td>
     <td> 
     <a href="https://github.com/py-pdf/pypdf">PyPDF</a>
@@ -210,8 +211,9 @@ tags:
 A Java library for liberating data tables trapped inside PDF files.
 
 ### [apache/tika](https://github.com/apache/tika)
-The Apache Tika™ toolkit detects and extracts metadata and text from over a thousand different file types (such as PPT, XLS, and PDF). 
-All of these file types can be parsed through a single interface, making Tika useful for search engine indexing, content analysis, translation, and much more. 
+
+The Apache Tika™ toolkit detects and extracts metadata and text from over a thousand different file types (such as PPT, XLS, and PDF).
+All of these file types can be parsed through a single interface, making Tika useful for search engine indexing, content analysis, translation, and much more.
 
 ## Command-line Tools
 
@@ -221,17 +223,16 @@ A command-line tool for filling fileds in PDF docs.
 
 ## References
 
-- [Extracting Data from PDF Files](https://misc.legendu.net/blog/extracting-data-from-pdf-files/)
+- [Extracting Data from PDF Files](extracting-data-from-pdf-files)
 
 - [Python for PDF](https://towardsdatascience.com/python-for-pdf-ef0fac2808b0)
 
-- [Hands on the Python Library pdfplumber](http://www.legendu.net/misc/blog/hands-on-the-python-library-pdfplumber)
+- [Hands on the Python Library pdfplumber](hands-on-the-python-library-pdfplumber)
 
-- [Extracting PDF pages using the Python Package PyPDF2](http://www.legendu.net/en/blog/python-pdf-pypdf2)
+- [Extracting PDF pages using the Python Package PyPDF2](extracting-pdf-pages-using-the-python-package-pypdf)
 
-- [Use pdftk to Manipulating PDF Files](http://www.legendu.net/en/blog/pdftk-examples)
+- [Use pdftk to Manipulating PDF Files](use-pdftk-to-manipulating-pdf-files)
 
 - [View and Edit PDF Documents Using Okular](view-and-edit-pdf-documents-using-okular)
 
-- [Hands on the Python Library Pdfplumber](http://www.legendu.net/misc/blog/hands-on-the-python-library-pdfplumber)
-
+- [Hands on the Python Library Pdfplumber](hands-on-the-python-library-pdfplumber)

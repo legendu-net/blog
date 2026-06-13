@@ -1,7 +1,7 @@
 ---
 title: Randomly Select an Integer?!
-created: 2012-08-29 17:23:24
-date: 2026-04-13 23:33:05.886492
+created: '2012-08-29T17:23:24-07:00'
+date: '2026-06-12T20:46:55-07:00'
 authors:
   - bendu
 label: randomly-select-an-integer
@@ -60,4 +60,4 @@ PS: Ask the question that randomly pick an number from all integers, what is the
 that the number is even.
 I bet most people will answer 0.5.
 
-[cos]: http://www.legendu.net/en/tag/fun-problems.html
+[cos]: https://www.legendu.net/tags/#fun-problems

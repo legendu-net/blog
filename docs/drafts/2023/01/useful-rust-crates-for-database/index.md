@@ -1,7 +1,7 @@
 ---
 title: Useful Rust Crates for Database
-created: 2023-01-13 15:46:22
-date: 2026-04-13 23:14:36.372172
+created: '2023-01-13T15:46:22-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: useful-rust-crates-for-database
@@ -246,7 +246,7 @@ organize it into consistent definitions, and deliver it to every application.
 ## Database Clients for Rust
 
 Please refer to
-[Database Clients for Rust](https://www.legendu.net/misc/blog/querying-a-sql-database-in-rust)
+[Database Clients for Rust](database-clients-for-rust)
 for details
 .
 
@@ -276,11 +276,11 @@ A simply CLI to quickly view your data. Powered by DataFusion.
 
 ### [kamu-cli](https://github.com/kamu-data/kamu-cli)
 
-### [datafusion](http://www.legendu.net/misc/blog/tips-on-datafusion)
+### [datafusion](tips-on-datafusion)
 
 ### [ballista](https://github.com/apache/arrow-ballista)
 
-### [Polars](http://www.legendu.net/misc/blog/tips-on-polars)
+### [Polars](hands-on-the-polars-library-in-python)
 
 ## References
 

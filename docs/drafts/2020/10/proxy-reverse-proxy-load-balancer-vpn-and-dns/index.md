@@ -1,7 +1,7 @@
 ---
 title: Proxy, Reverse Proxy, Load Balancer, VPN and DNS
-created: 2020-10-03 10:47:34
-date: 2026-04-13 23:15:14.938470
+created: '2020-10-03T10:47:34-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: proxy-reverse-proxy-load-balancer-vpn-and-dns
@@ -24,9 +24,9 @@ tags:
 
 1. sshuttle is a poor man's VPN.
 
-[ Expose Local Service to Public ](https://www.legendu.net/misc/blog/expose-local-service-to-public)
+[ Expose Local Service to Public ](expose-local-service-to-public)
 
-[ Good Choices of Reverse Proxies ](https://www.legendu.net/misc/blog/good-choices-of-reverse-proxies)
+[ Good Choices of Reverse Proxies ](good-choices-of-reverse-proxies)
 
 ## Proxy vs VPN
 
@@ -77,6 +77,6 @@ please refer to
 
 ## References
 
-- [Good Choices of Reverse Proxies](https://www.legendu.net/misc/blog/good-choices-of-reverse-proxies)
+- [Good Choices of Reverse Proxies](good-choices-of-reverse-proxies)
 
 - [Proxy vs Reverse Proxy Server Explained](https://www.youtube.com/watch?v=SqqrOspasag)

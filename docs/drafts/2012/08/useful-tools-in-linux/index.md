@@ -1,21 +1,22 @@
 ---
 title: Useful Tools in Linux
-created: 2012-08-17 11:42:15
-date: 2026-04-05 19:42:38.421050
+created: '2012-08-17T11:42:15-07:00'
+date: '2026-06-12T22:31:50-07:00'
 authors:
-- bendu
+  - bendu
 label: useful-tools-in-linux
 license: CC-BY-4.0
 tags:
-- shell
-- remote
-- PDF
-- software
-- tools
-- terminal
-- application
-- Linux
+  - shell
+  - remote
+  - PDF
+  - software
+  - tools
+  - terminal
+  - application
+  - Linux
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 <img src="/media/linux/linux.png" height="200" width="240" align="right"/>
@@ -23,23 +24,24 @@ tags:
 [IceWalkers](http://www.icewalkers.com/) is a great place
 to find software/tools for all kinds of purposes.
 
-## [Project](http://www.legendu.net/misc/blog/project-tips/)
+## [Project](tips-on-project-management)
 
 ## Server/Desktop Management
 
-### [Linux Desktop Environment](http://www.legendu.net/misc/blog/desktop-environments-for-linux/)
+### [Linux Desktop Environment](desktop-environments-for-linux)
 
-### [Linux Package Management](http://www.legendu.net/misc/blog/package-management-in-linux/)
+### [Linux Package Management](package-management-in-linux)
 
-### [Administer](http://www.legendu.net/misc/blog/linux-administrator-tools/)
+### [Administer](linux-administrator-tools)
 
-### [Disk Maintenance](http://www.legendu.net/misc/blog/command-line-tools-for-linux-file-system/)
+### [Disk Maintenance](command-line-tools-for-linux-file-system)
 
-### [Admin Tools](http://www.legendu.net/misc/blog/linux-administrator-tools/)
+### [Admin Tools](linux-administrator-tools)
 
 ### Security
+
 1. fail2ban
-2. Tor (on-line anonymity)
+1. Tor (on-line anonymity)
 
 ### Encryption
 
@@ -49,7 +51,7 @@ to find software/tools for all kinds of purposes.
 
 1. ntp (sync-debian)
 
-### [Task Scheduling](http://www.legendu.net/misc/blog/workflow-managing-tools)
+### [Task Scheduling](workflow-managing-tools)
 
 ## Backup
 
@@ -57,21 +59,22 @@ to find software/tools for all kinds of purposes.
 
 1. Network Attach Storage (NAS)
 
-2. Storage Made Simple (SME)
+1. Storage Made Simple (SME)
 
 #### Centralized
 
 0. Amazon S3
-    - AeroFS can backup to Amazon S3
-    - s3cmd is a command line client for Linux
+
+   - AeroFS can backup to Amazon S3
+   - s3cmd is a command line client for Linux
 
 1. Dropbox
 
-2. TeamDrive (secure, fast)
+1. TeamDrive (secure, fast)
 
-3. Bitcasa (security, infinite storage)
+1. Bitcasa (security, infinite storage)
 
-2. Google Drive
+1. Google Drive
 
 #### Decentralized (private, security)
 
@@ -81,42 +84,41 @@ to find software/tools for all kinds of purposes.
 
 1. secure
 
-2. free
+1. free
 
-3. no limit on files except the limit of your own disk
+1. no limit on files except the limit of your own disk
 
 ##### Cons
 
 1. beta version, not stable enough
 
-2. versioning is a little bit tricky
+1. versioning is a little bit tricky
 
-3. no GUI version for Linux
+1. no GUI version for Linux
 
-5. AeroFS (can use Amazon S3 as the central repository)
+1. AeroFS (can use Amazon S3 as the central repository)
 
-3. Syncthing
+1. Syncthing
 
 ### Non-cloud Backup Tools
 
 1. rsync (1-way synchronization)
 
-3. rsnapshot (incremental backup)
+1. rsnapshot (incremental backup)
 
-4. duplicity (incremental backup with encryption and compression)
+1. duplicity (incremental backup with encryption and compression)
 
-5. borg
+1. borg
 
-6. Back In Time
+1. Back In Time
 
-5. unison (2-way synchronization, not a good solution compared to cloud backup tools)
+1. unison (2-way synchronization, not a good solution compared to cloud backup tools)
 
-7. Bacula (comprehensive backup tool)
+1. Bacula (comprehensive backup tool)
 
-8. BackupPC
+1. BackupPC
 
 1. FreeFileSync (a very good synchronization software written in C++, but bundled with malware now)
-
 
 ### File Transfer
 
@@ -124,7 +126,7 @@ to find software/tools for all kinds of purposes.
 
 1. BitTorrent
 
-2. BiTorrent Sync
+1. BiTorrent Sync
 
 ### File Cleaning
 
@@ -138,20 +140,23 @@ to find software/tools for all kinds of purposes.
 
 1. 50 GB free
 
-2. secure (encrypted before upload)
+1. secure (encrypted before upload)
 
-3. 10 GB every 30 minutes free (essentially free consider currently network speed)
+1. 10 GB every 30 minutes free (essentially free consider currently network speed)
 
-4. maximum file size is only restricted by browser memory capability
+1. maximum file size is only restricted by browser memory capability
 
-5. never expire
+1. never expire
 
-6. cross-platform and command line tools available for Linux
+1. cross-platform and command line tools available for Linux
 
-7. able to follow symbolic link
+1. able to follow symbolic link
 
 #### Cons
-    1. one file at a time for free account
+
+```
+1. one file at a time for free account
+```
 
 1. File Dropper
 
@@ -159,37 +164,38 @@ to find software/tools for all kinds of purposes.
 
 1. unlimited space
 
-2. no bandwith limit
+1. no bandwith limit
 
 #### Cons
 
 1. uploaded files will be removed if they are not downloaded even once
-    within 30 days consecutively (files belong to premium account are never removed)
+   within 30 days consecutively (files belong to premium account are never removed)
 
-2. upload file can be at most 5 GB
+1. upload file can be at most 5 GB
 
-3. the cheapest plan is $1/month.
-    really no free account, but rather just upload and keep link
-    so not convenient for people without an premium account
+1. the cheapest plan is \$1/month.
+   really no free account, but rather just upload and keep link
+   so not convenient for people without an premium account
 
-    Good for people who would like to share large files and do not need uploaded files to be persistent.
-    Or for backing up frequently changed files so that before an uploaded file is removed,
-    another updated version is uploaded.
+   Good for people who would like to share large files and do not need uploaded files to be persistent.
+   Or for backing up frequently changed files so that before an uploaded file is removed,
+   another updated version is uploaded.
 
-2. Baidu Yun
+1. Baidu Yun
 
-3. Tencent Weiyun
+1. Tencent Weiyun
 
-## [Network](http://www.legendu.net/misc/blog/linux-network-tools/)
+## [Network](linux-network-tools)
 
-## [Compress and Uncompress](http://www.legendu.net/en/blog/compress-and-decompress-in-linux/)
+## [Compress and Uncompress](compress-and-decompressing-archives-in-linux)
 
 ## Virtual Machine
+
 1. VirtualBox
-2. VMWare
-3. Xen
-4. KVM (requires hardware support, e.g., Intel VT-x or AMD-V)
-5. QEMU-KVM (requires hardware support, e.g., Intel VT-x or AMD-V)
+1. VMWare
+1. Xen
+1. KVM (requires hardware support, e.g., Intel VT-x or AMD-V)
+1. QEMU-KVM (requires hardware support, e.g., Intel VT-x or AMD-V)
 
 ## Database Management System (DBMS)
 
@@ -197,45 +203,49 @@ to find software/tools for all kinds of purposes.
 
 1. MySQL
 
-2. SQLite (embedded database)
+1. SQLite (embedded database)
 
 ### Object/Document-oriented DBMS
 
 1. MongoDB
-4. CouchDB
-3. OrientDB (written in Java)
-2. UnQLite (embedded database, sounds like a good replace for SQLite)
-3. MooDB (embedded database)
-4. Kyoto Cabinet (embedded, for simple key-value data)
-5. LevelDB (embedded, for simple key-value data)
+1. CouchDB
+1. OrientDB (written in Java)
+1. UnQLite (embedded database, sounds like a good replace for SQLite)
+1. MooDB (embedded database)
+1. Kyoto Cabinet (embedded, for simple key-value data)
+1. LevelDB (embedded, for simple key-value data)
 
 ## Daily Work Tools (Office Tools, etc.)
 
 ### Pinyin Input Method
+
 1. Sogou Pinyin
-2. Google Pinyin
-3. Sun Pinyin
+1. Google Pinyin
+1. Sun Pinyin
 
 ### Web Browser
+
 0. Tor (on-line anonymity)
 1. Google Chrome
-2. Firefox/Iceweasel
-3. w3m (a powerful text-based web browser)
-4. lynx (another text-based web browser)
+1. Firefox/Iceweasel
+1. w3m (a powerful text-based web browser)
+1. lynx (another text-based web browser)
 
 ### On-line Tools
 
 1. Doodle
-2. Survata (for custom surveys)
-3. Google Docs (Google Form can a simple solution to custom surveys)
+1. Survata (for custom surveys)
+1. Google Docs (Google Form can a simple solution to custom surveys)
 
 ### Finance
-1. gnucash
-2. DocumentBurst
 
-### [Password Management](http://www.legendu.net/misc/blog/password-management/)
+1. gnucash
+1. DocumentBurst
+
+### [Password Management](password-management)
 
 ### Data Manipulation
+
 0. grep/sed/awk/cut/sort/uniq/comm
 1. pdfgrep
 
@@ -244,11 +254,11 @@ It only works on PDF files but even not text files.
 
 2. taggrepper - search and match tags of audio files against regular expressions
 
-3. crgrep - common resource grep
+1. crgrep - common resource grep
 
-4. sgrep - tool to search a file for structured pattern
+1. sgrep - tool to search a file for structured pattern
 
-2. recoll
+1. recoll
 
 Personal full text search package with a Qt GUI
 
@@ -257,21 +267,21 @@ Personal full text search package with a Qt GUI
 ### Text Editor
 
 1. Vim (general purpose text editor)
-2. Visual Studio Code
+1. Visual Studio Code
 
 ## MS Office Alternative
 
 2. LibreOffice
 
-3. [OnlyOffice](http://www.onlyoffice.com/)
+1. [OnlyOffice](http://www.onlyoffice.com/)
 
-3. Calligra Suite (KDE dependent)
+1. Calligra Suite (KDE dependent)
 
-2. AbiWord (Word)
+1. AbiWord (Word)
 
 1. gnumeric (Excel)
 
-3. WPS Office
+1. WPS Office
 
 ### Publishing Tools
 
@@ -280,8 +290,6 @@ Personal full text search package with a Qt GUI
 #### [Scribus](https://www.scribus.net/magazine-production/)
 
 Opensource Desktop Publishing
-
-
 
 ### Dictionary
 
@@ -293,11 +301,11 @@ Opensource Desktop Publishing
 
 1. Thunderbird (called IceDove in Debian)
 
-2. Evolution
+1. Evolution
 
-3. Claws Mail
+1. Claws Mail
 
-4. Sieve (mail filtering language)
+1. Sieve (mail filtering language)
 
 ### PDF Tools
 
@@ -305,9 +313,9 @@ Opensource Desktop Publishing
 
 1. evince
 
-2. xpdf
+1. xpdf
 
-2. okular
+1. okular
 
 #### Manipulation
 
@@ -319,9 +327,9 @@ Opensource Desktop Publishing
 
 1. Mendeley (2G free, social network based, good for small usage, better to use together with Zotero)
 
-2. ReadCube
+1. ReadCube
 
-2. JabRef (OK but not good)
+1. JabRef (OK but not good)
 
 ### E-book library management
 
@@ -329,22 +337,21 @@ Opensource Desktop Publishing
 
 ### Notes Taking
 
-<http://www.legendu.net/misc/blog/software-for-taking-notes/>
-
+[Notes Taking Solutions](notes-taking-solutions)
 
 ### Task Management
 
 0. XMind
 
-0. WorkFlowy
+1. WorkFlowy
 
 1. Todoist
 
-2. Wunderlist
+1. Wunderlist
 
-3. Taskwarrior
+1. Taskwarrior
 
-### [Auto Typing Tools](http://www.legendu.net/misc/blog/auto-typing-tools/)
+### [Auto Typing Tools](auto-typing-tools)
 
 ## Programming Tools
 
@@ -352,7 +359,7 @@ Opensource Desktop Publishing
 
 1. GCC
 
-2. Clang
+1. Clang
 
 ### Debugging Tools
 
@@ -360,7 +367,7 @@ Opensource Desktop Publishing
 
 1. Valgrind
 
-2. CUDA-Memcheck
+1. CUDA-Memcheck
 
 ### Version Control
 
@@ -369,6 +376,7 @@ Opensource Desktop Publishing
 ## Multimedia Tools
 
 ### [OBS Studio](https://github.com/obsproject/obs-studio)
+
 [OBS Studio](https://github.com/obsproject/obs-studio)
 Free and open source software for live streaming and screen recording
 
@@ -378,17 +386,17 @@ Free and open source software for live streaming and screen recording
 
 ### Screenshot
 
-[Take Screenshot Using Shutter on Linux](http://www.legendu.net/misc/blog/take-screenshot-using-shutter-on-linux)
+[Take Screenshot Using Shutter on Linux](take-screenshot-on-linux)
 
 ### CD/DVD burning
 
-#### GUI Tools  
+#### GUI Tools
 
-1. k3b  
+1. k3b
 
-2. gnome baker
+1. gnome baker
 
-3. brasero
+1. brasero
 
 #### Command line Tools
 
@@ -396,28 +404,28 @@ Free and open source software for live streaming and screen recording
 
 1. isoinfo
 
-2. genisoimage (Debian) or mkisofs (other Linux)
+1. genisoimage (Debian) or mkisofs (other Linux)
 
-3. dd or cat
+1. dd or cat
 
 ### Video/Audio Player
 
 1. vlc
 
-2. [IINA](https://github.com/iina/iina)
+1. [IINA](https://github.com/iina/iina)
 
-4. HandBrake
+1. HandBrake
 
-5. exiftool (command line multimedia meta data editor)
+1. exiftool (command line multimedia meta data editor)
 
-6. Exiv2 (image meta data library and tools written in C++)
+1. Exiv2 (image meta data library and tools written in C++)
 
-### [Software for Editing Videos](http://www.legendu.net/misc/blog/software-for-editing-videos/)
+### [Software for Editing Videos](software-for-editing-videos)
 
-### [Audio Tools](http://www.legendu.net/misc/blog/Audio-Tools/)
+### [Audio Tools](audio-tools)
 
 Please refer to
-[Audio Tools](http://www.legendu.net/misc/blog/Audio-Tools/)
+[Audio Tools](audio-tools)
 for more details.
 
 ### Screencast
@@ -428,23 +436,21 @@ for more details.
 
 1. Blather
 
-2. Voxforge
+1. Voxforge
 
-3. Simon
-
-
+1. Simon
 
 ### Image
 
 1. ImageMagic
 
-2. GwenView (KDE)
+1. GwenView (KDE)
 
-3. digiKam (KDE)
+1. digiKam (KDE)
 
 1. PIL (python image library)
 
-4. exiftool
+1. exiftool
 
 ### Scan/OCR
 
@@ -452,9 +458,9 @@ for more details.
 
 1. tesseract
 
-2. gocr
+1. gocr
 
-### [Charts](http://www.legendu.net/misc/blog/software-for-charts/)
+### [Charts](software-for-charts)
 
 ### 3-D Modelling
 
@@ -462,11 +468,11 @@ for more details.
 
 1. freeCAD
 
-2. OpenSCAD
+1. OpenSCAD
 
 1. Google Sketchup
 
-2. EQUINOX-3D
+1. EQUINOX-3D
 
 ## Social Tools
 
@@ -476,13 +482,13 @@ for more details.
 
 1. Skype
 
-2. Wire
+1. Wire
 
-2. Jitsi
+1. Jitsi
 
-3. ekiga
+1. ekiga
 
-4. QQ (webqq, wineqq)
+1. QQ (webqq, wineqq)
 
 ## Web Hosting
 
@@ -490,7 +496,7 @@ for more details.
 
 1. PHP
 
-2. JSP
+1. JSP
 
 ### Client Side Scripting Language
 
@@ -510,55 +516,57 @@ for more details.
 
 1. bootchart
 
-2. readahead-fedora
+1. readahead-fedora
 
 ## Runtime Performance
 
 1. preload
 
-2. localepurge
+1. localepurge
 
 ## Other Suggestions
 
 1. remove old kernels
 
-2. package clean-up
+1. package clean-up
 
 ## Web Tools
 
 1. 1. JustInMind Prototyper
 
-4. Django
+1. Django
 
-3. Node.JS
+1. Node.JS
 
-4. ActiveJDBC
+1. ActiveJDBC
 
-5. web2py
+1. web2py
 
 ## Software Host
 
 1. GitHub
-    - no private repository for free account
 
-2. Bitbucket
-    - unlimited private repositories for free account
+   - no private repository for free account
 
-3. SourceForge
+1. Bitbucket
+
+   - unlimited private repositories for free account
+
+1. SourceForge
 
 ## Repository Hosting Tools
 
 1. gitolite
 
-2. gitlab
+1. gitlab
 
 ## Websites
 
 1. MileWise
 
-2. BTGuard
+1. BTGuard
 
-3. http://dedalvs.tumblr.com/post/48998678919/99-life-hacks-to-make-your-life-easier
+1. http://dedalvs.tumblr.com/post/48998678919/99-life-hacks-to-make-your-life-easier
 
 ## Translation
 
@@ -567,4 +575,4 @@ https://www.apertium.org/index.eng.html?dir=eng-cat#translation
 ## Misc
 
 1. KeyMon: displays the mouse button or key being clicked/pressed,
-    useful when you video tape your screen
+   useful when you video tape your screen

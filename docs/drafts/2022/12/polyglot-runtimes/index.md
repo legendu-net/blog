@@ -1,7 +1,7 @@
 ---
 title: Polyglot Runtimes
-created: 2022-12-28 10:28:32
-date: 2026-04-13 23:14:38.863279
+created: '2022-12-28T10:28:32-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: polyglot-runtimes
@@ -17,8 +17,8 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## [WebAssembly](https://www.legendu.net/misc/blog/tips-on-wasm)
+## [WebAssembly](tips-on-wasm)
 
-## [MetaCall](https://www.legendu.net/misc/blog/tips-on-metacall)
+## [MetaCall](tips-on-metacall)
 
 ## OpenFaaS

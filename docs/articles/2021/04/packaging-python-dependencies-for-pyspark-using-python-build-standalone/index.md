@@ -1,7 +1,7 @@
 ---
 title: Packaging Python Dependencies for PySpark Using python-build-standalone
-created: 2021-04-26 09:48:16
-date: 2026-04-13 23:14:12.285555
+created: '2021-04-26T09:48:16-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: packaging-python-dependencies-for-pyspark-using-python-build-standalone
@@ -76,6 +76,6 @@ spark.sql(sql).write.mode("overwrite").parquet("output")
 
 ## References
 
-- [Packaging Python Dependencies for PySpark Using Conda-Pack](http://www.legendu.net/en/blog/packaging-python-dependencies-for-pyspark-using-conda-pack)
+- [Packaging Python Dependencies for PySpark Using Conda-Pack](packaging-python-dependencies-for-pyspark-using-conda-pack)
 
-- [Packaging Python Dependencies for PySpark Using Pex](http://www.legendu.net/misc/blog/packaging-python-dependencies-for-pyspark-using-pex)
+- [Packaging Python Dependencies for PySpark Using Pex](packaging-python-dependencies-for-pyspark-using-pex)

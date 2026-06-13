@@ -1,7 +1,7 @@
 ---
 title: Set Up Nix for Python Development
-created: 2025-04-21 12:13:58
-date: 2026-04-13 23:14:21.914210
+created: '2025-04-21T12:13:58-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: set-up-nix-for-python-development
@@ -20,7 +20,7 @@ tags:
 
 - https://nixos.wiki/wiki/Python
 
-- [mkShell vs buildFHSUserEnv in Nix](https://www.legendu.net/misc/blog/mkshell-vs-buildFHSUserEnv-in-nix)
+- [mkShell vs buildFHSUserEnv in Nix](mkshell-vs-buildfhsuserenv-in-nix)
 
 - [python buildFHSUserEnv](https://www.reddit.com/r/NixOS/comments/sbi7iz/python_buildfhsuserenv/)
 

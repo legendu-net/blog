@@ -1,7 +1,7 @@
 ---
 title: The Right Way to Export PATH in Shell
-created: 2020-11-09 11:10:06
-date: 2026-04-15 19:27:01.990862
+created: '2020-11-09T11:10:06-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: the-right-way-to-export-path-in-shell
@@ -17,7 +17,7 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-[Fish Shell](https://www.legendu.net/misc/blog/tips-on-the-fish-shell)
+[Fish Shell](tips-on-the-fish-shell)
 is preferred to Bash/Zsh.
 The following content is for Bash/Zsh only.
 

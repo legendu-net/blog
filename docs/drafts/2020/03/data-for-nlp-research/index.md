@@ -1,7 +1,7 @@
 ---
-title: "Data for NLP Research"
-created: 2020-03-06 12:46:35
-date: 2021-05-06 12:46:35
+title: Data for NLP Research
+created: '2020-03-06T12:46:35-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: data-for-nlp-research
@@ -39,9 +39,8 @@ tags:
 
 ## References
 
-[Data Sources](http://www.legendu.net/misc/blog/data-sources/)
+[Data Sources](data-sources)
 
 [SQuAD: 100,000+ Questions for Machine Comprehension of Text](https://arxiv.org/pdf/1606.05250.pdf)
 
 [Swag: A Large-Scale Adversarial Dataset for Grounded Commonsense Inference](https://www.groundai.com/project/swag-a-large-scale-adversarial-dataset-for-grounded-commonsense-inference/1)
-

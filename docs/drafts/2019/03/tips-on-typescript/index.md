@@ -1,22 +1,22 @@
 ---
 title: Tips on TypeScript
-created: 2019-03-26 11:47:33
-date: 2026-04-05 19:42:37.906373
+created: '2019-03-26T11:47:33-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-typescript
 license: CC-BY-4.0
 tags:
-- programming
-- TypeScript
-- tips
+  - programming
+  - TypeScript
+  - tips
 ---
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## References
 
-[Tips on JavaScript - Ben Du](http://www.legendu.net/misc/blog/javascript-tips)
+[Tips on JavaScript - Ben Du](tips-on-javascript)
 
 https://code.visualstudio.com/docs/languages/typescript
 

@@ -1,7 +1,7 @@
 ---
 title: CPU Profiling of Rust Applications Using Valgrind
-created: 2022-01-13 01:02:06
-date: 2026-04-13 23:14:51.077249
+created: '2022-01-13T01:02:06-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: cpu-profiling-of-rust-applications-using-valgrind
@@ -25,7 +25,7 @@ It is suggested that you profile Rust application using
 .
 For more discussions,
 please refer to
-[Profile Rust Applications](http://www.legendu.net/misc/blog/profile-rust-applications/)
+[Profile Rust Applications](profile-rust-applications)
 .
 
 ## Installation on Ubuntu
@@ -47,9 +47,9 @@ Below is an example.
 cargo build --profile release-debug
 valgrind --tool=callgrind --dump-instr=yes --simulate-cache=yes --collect-jumps=yes \
     ../ofcp_utils/target/release-debug/ofcp_utils score_r4_it_sim_prof \
-        --file ../ofcp_utils/data/plays_r4_21.csv \
-        --method sim \
-        --runs 1000
+    --file ../ofcp_utils/data/plays_r4_21.csv \
+    --method sim \
+    --runs 1000
 ```
 
 ## Visualization
@@ -70,11 +70,11 @@ valgrind --tool=callgrind --dump-instr=yes --simulate-cache=yes --collect-jumps=
 
 ## References
 
-- [Tips on Valgrind](https://www.legendu.net/misc/blog/tips-on-valgrind)
+- [Tips on Valgrind](tips-on-valgrind)
 
-- [Profile Rust Applications](http://www.legendu.net/misc/blog/profile-rust-applications/)
+- [Profile Rust Applications](profile-rust-applications)
 
-- [Profile Rust Applications Using Flamegraph](http://www.legendu.net/misc/blog/profile-rust-applications-using-flamegraph/)
+- [Profile Rust Applications Using Flamegraph](profile-rust-applications-using-flamegraph)
 
 - [Profiling with Valgrind](https://developer.mantidproject.org/ProfilingWithValgrind.html)
 

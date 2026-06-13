@@ -1,7 +1,7 @@
 ---
 title: GCP Compute Engine VM Instances
-created: 2023-07-01 17:57:54
-date: 2026-04-13 23:14:27.901016
+created: '2023-07-01T17:57:54-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: gcp-compute-engine-vm-instances
@@ -64,7 +64,7 @@ https://console.cloud.google.com/logging
 
 ## References
 
-- [Comparison of Popular Cloud Platforms](https://www.legendu.net/misc/blog/comparison-of-popular-cloud-platforms)
+- [Comparison of Popular Cloud Platforms](comparison-of-popular-cloud-platforms)
 
 - [GCP - Create a VM with a custom machine type](https://cloud.google.com/compute/docs/instances/creating-instance-with-custom-machine-type)
 

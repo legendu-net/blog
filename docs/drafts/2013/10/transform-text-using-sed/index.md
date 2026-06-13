@@ -1,177 +1,216 @@
 ---
 title: Transform Text Using sed
-created: 2013-10-22 15:47:51
-date: 2026-04-05 19:42:38.370048
+created: '2013-10-22T15:47:51-07:00'
+date: '2026-06-12T22:31:33-07:00'
 authors:
-- bendu
+  - bendu
 label: transform-text-using-sed
 license: CC-BY-4.0
 tags:
-- tips
-- software
-- text manipulation
-- shell
-- Linux
-- sed
-- sd
-- sad
+  - tips
+  - software
+  - text manipulation
+  - shell
+  - Linux
+  - sed
+  - sd
+  - sad
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Alternatives
 
-1. There are simpler alternatives such as 
-    [sd](https://github.com/chmln/sd) and [sad](https://github.com/ms-jpq/sad)
-    (which are both implemented in Rust).
-    However,
-    neither of them is as powerful as sed. 
-    And with the help AI tools (Gemini, ChatGPT, etc),
-    (complicated) syntax is no longer an issue any more.
+1. There are simpler alternatives such as
+   [sd](https://github.com/chmln/sd) and [sad](https://github.com/ms-jpq/sad)
+   (which are both implemented in Rust).
+   However,
+   neither of them is as powerful as sed.
+   And with the help AI tools (Gemini, ChatGPT, etc),
+   (complicated) syntax is no longer an issue any more.
 
-2. For complicated text substitutions,
-    it is suggested that you use Python script as an alternative to `sed`.
-    It's best to do this in a Jupyter/Lab notebook.
-    If you do prefer a pure Python script,
-    it is suggested that you use 
-    [uv]( https://www.legendu.net/misc/blog/manage-python-projects-using-uv )
-    to run the Python script.
+1. For complicated text substitutions,
+   it is suggested that you use Python script as an alternative to `sed`.
+   It's best to do this in a Jupyter/Lab notebook.
+   If you do prefer a pure Python script,
+   it is suggested that you use
+   [uv](manage-python-projects-using-uv)
+   to run the Python script.
 
 ## Tips & Traps
 
 1. `sed` supports multiple actions at the same time.
-    For example,
-    you can use `sed 's/^[[:space:]]*//;s/[[:space:]]*$//'` to get rid of leading and trailing spaces at the same time.
+   For example,
+   you can use `sed 's/^[[:space:]]*//;s/[[:space:]]*$//'` to get rid of leading and trailing spaces at the same time.
 
 ## Example Usages
- 
+
 1. Append `/home/linuxbrew/.linuxbrew/bin` into the secure path for sudoers.
 
-        :::bash
-        sed '/^Defaults\s\+secure_path\s*=/s/$/:\/home\/linuxbrew\/.linuxbrew\/bin/g' /etc/sudoers
+   ```
+    :::bash
+    sed '/^Defaults\s\+secure_path\s*=/s/$/:\/home\/linuxbrew\/.linuxbrew\/bin/g' /etc/sudoers
+   ```
 
-1. Add `#!/bin/bash` to the first line of all `.txt` files.  
+1. Add `#!/bin/bash` to the first line of all `.txt` files.
 
-        :::bash
-        sed -i '1 s_^_#!/bin/bash\n_' *.txt
+   ```
+    :::bash
+    sed -i '1 s_^_#!/bin/bash\n_' *.txt
+   ```
 
-2. Add `#!/bin/bash` to the last line of all `.txt` files.  
+1. Add `#!/bin/bash` to the last line of all `.txt` files.
 
-        :::bash
-        sed -i '$ s_$_\n#!/bin/bash_' *.txt
+   ```
+    :::bash
+    sed -i '$ s_$_\n#!/bin/bash_' *.txt
+   ```
 
-3. Add `https://www.quandl.com/api/v1/datasets/CME/` to the beginning of each line in a file.
+1. Add `https://www.quandl.com/api/v1/datasets/CME/` to the beginning of each line in a file.
 
-        :::bash
-        sed -i 's_^_https://www.quandl.com/api/v1/datasets/CME/_g' done.txt 
+   ```
+    :::bash
+    sed -i 's_^_https://www.quandl.com/api/v1/datasets/CME/_g' done.txt 
+   ```
 
-4. Get rid of all spaces (helpful for comparing not well formatted code)
-对于格式问题 可以直接先删除空格等 然后再比较文件！！！very briliant idea!!! 
+1. Get rid of all spaces (helpful for comparing not well formatted code)
+   对于格式问题 可以直接先删除空格等 然后再比较文件！！！very briliant idea!!!
 
-        :::bash
-        sed -i 's/ //g' *.r
+   ```
+    :::bash
+    sed -i 's/ //g' *.r
+   ```
 
 ## Examples of Cleaning CSV Data
 
-1. Replace all ` + ` with `_` in the first (header) line.
+1. Replace all `+` with `_` in the first (header) line.
 
-        :::bash
-        sed -i '1 s/ + /_/g' *.csv
+   ```
+    :::bash
+    sed -i '1 s/ + /_/g' *.csv
+   ```
 
-2. Replace all ` ` with `_` in the first (header) line.
+1. Replace all ` ` with `_` in the first (header) line.
 
-        :::bash
-        sed -i '1 s/ /_/g' *.csv
+   ```
+    :::bash
+    sed -i '1 s/ /_/g' *.csv
+   ```
 
-3. Replace all `-` with `_` in the first (header) line.
+1. Replace all `-` with `_` in the first (header) line.
 
-        :::bash
-        sed -i '1 s/-/_/g' *.csv
+   ```
+    :::bash
+    sed -i '1 s/-/_/g' *.csv
+   ```
 
-4. Replace all `.` with `_` in the first (header) line.
+1. Replace all `.` with `_` in the first (header) line.
 
-        :::bash
-        sed -i '1 s/\./_/g' *.csv
+   ```
+    :::bash
+    sed -i '1 s/\./_/g' *.csv
+   ```
 
-5. Print the first (header) line of all CSV documents seprated by dash lines.
+1. Print the first (header) line of all CSV documents seprated by dash lines.
 
-        :::bash
+   ```
+    :::bash
+    echo "--------------------------------------------------";
+    for f in *.csv; do
+        head $f -n 1;
         echo "--------------------------------------------------";
-        for f in *.csv; do
-            head $f -n 1;
-            echo "--------------------------------------------------";
-        done
+    done
+   ```
 
-6. More examples.
+1. More examples.
 
-        :::bash
-        sed -i 'd/^layout: page/' *.md
-        sed -i '/^layout: page/d' *.md
-        sed -i '/^comments: yes/d' *.md
-        sed -i '/^---$/d' *.md
-        sed -i '/^title: /Title: /s' *.md
-        sed -i 's/^title: /Title: /' *.md
-        sed -i "2 s/^/Date: 2013-10-20 00:00:00\n/" *.md
-        sed -i 's/\([0-9]\+\)\.  /\1\. /g' *
+   ```
+    :::bash
+    sed -i 'd/^layout: page/' *.md
+    sed -i '/^layout: page/d' *.md
+    sed -i '/^comments: yes/d' *.md
+    sed -i '/^---$/d' *.md
+    sed -i '/^title: /Title: /s' *.md
+    sed -i 's/^title: /Title: /' *.md
+    sed -i "2 s/^/Date: 2013-10-20 00:00:00\n/" *.md
+    sed -i 's/\([0-9]\+\)\.  /\1\. /g' *
+   ```
 
-1. insert "Author: Ben Chuanlong Du" as the 2 line into a text file. 
-Notice the `\` delimiter. You cannot use `/`.
+1. insert "Author: Ben Chuanlong Du" as the 2 line into a text file.
+   Notice the `\` delimiter. You cannot use `/`.
 
-        :::bash
-        sed -i '2 i\Author: Ben Chuanlong Du' path_to_file
+   ```
+    :::bash
+    sed -i '2 i\Author: Ben Chuanlong Du' path_to_file
+   ```
 
-However, 
-if text file contains only 1 line, 
+However,
+if text file contains only 1 line,
 the above command does not do anything!
 
 2. Add a blank line at the beginning of file.
 
-        :::bash
-        sed '1 i\\' file.txt
+   ```
+    :::bash
+    sed '1 i\\' file.txt
+   ```
 
 ### sed
 
 4. Code for rick's problem (splitting a column into 2)
 
-        :::bash
-        sed 's/\(s[0-9]\{1,2\}\)" "\(t[0-9]\{1,2\}\)/\1-\2/g' testing.txt
+   ```
+    :::bash
+    sed 's/\(s[0-9]\{1,2\}\)" "\(t[0-9]\{1,2\}\)/\1-\2/g' testing.txt
+   ```
 
-16. Insert `#!/bin/bash` as the first line into file with the extension `.txt`. 
+1. Insert `#!/bin/bash` as the first line into file with the extension `.txt`.
 
-        :::bash
-        sed -i '1 s_^_#!/bin/bash\n_' *.txt
-
+   ```
+   :::bash
+   sed -i '1 s_^_#!/bin/bash\n_' *.txt
+   ```
 
 1. Get rid of lines matching `^user_id,.*` with the 1st line skipped.
-    This is helpful when you merge multiple text files with headers 
-    (e.g., output of Spark with headers).
-    This commands help you get rid of duplicated header lines. 
-    Of course, 
-    you have replace the regular expression `^user_id,.*` with an appropriate one.
+   This is helpful when you merge multiple text files with headers
+   (e.g., output of Spark with headers).
+   This commands help you get rid of duplicated header lines.
+   Of course,
+   you have replace the regular expression `^user_id,.*` with an appropriate one.
 
-        :::bash
-        sed -i '2,$ s/^user_id,.*$//g' data.csv 
+   ```
+    :::bash
+    sed -i '2,$ s/^user_id,.*$//g' data.csv 
+   ```
 
-2. Get rid of escaped double quotes (`\"`).
+1. Get rid of escaped double quotes (`\"`).
 
-        :::bash
-        sed -i 's/\\"//g' data.csv
+   ```
+    :::bash
+    sed -i 's/\\"//g' data.csv
+   ```
 
-3. Replace `## Usage` with `## Usage in Linux/Unix`
+1. Replace `## Usage` with `## Usage in Linux/Unix`
 
-        :::bash
-        sed -i 's_^## Usage.*$_## Usage in Linux/Unix_' *.ipynb
+   ```
+    :::bash
+    sed -i 's_^## Usage.*$_## Usage in Linux/Unix_' *.ipynb
+   ```
 
-4. Replace `valid users = ${DOCKER_USER}` with `valid users = dclong`.
+1. Replace `valid users = ${DOCKER_USER}` with `valid users = dclong`.
 
-        :::bash
-        sed "s/^valid users\s*=\s*\${DOCKER_USER}/valid users = dclong/g" smb.conf 
+   ```
+    :::bash
+    sed "s/^valid users\s*=\s*\${DOCKER_USER}/valid users = dclong/g" smb.conf 
+   ```
 
-5. Remove the lines containing Python 2.7 versions (e.g., `2.7.16`).
+1. Remove the lines containing Python 2.7 versions (e.g., `2.7.16`).
 
-        :::bash
-        sed -z 's/2\.7\.[[:digit:]]*\n//' .pyenv/version
+   ```
+    :::bash
+    sed -z 's/2\.7\.[[:digit:]]*\n//' .pyenv/version
+   ```
 
 ## Questions
 
 1. sed recursively ... aaaa aa -> a?
-

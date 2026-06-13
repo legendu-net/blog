@@ -1,7 +1,7 @@
 ---
-title: "Distributed Training of Models on Spark"
-created: 2020-01-05 10:26:27
-date: 2020-01-05 10:26:27
+title: Distributed Training of Models on Spark
+created: '2020-01-05T10:26:27-08:00'
+date: '2026-06-12T22:31:50-07:00'
 authors:
   - bendu
 label: distributed-training-of-models-on-spark
@@ -18,11 +18,11 @@ tags:
 
 ## XGBoost
 
-http://www.legendu.net/misc/blog/use-xgboost-with-spark/
+[Use XGBoost With Spark](use-xgboost-with-spark)
 
 ## LightGBM
 
-http://www.legendu.net/misc/blog/use-lightgbm-with-spark/
+[Use LightGBM With Spark](use-lightgbm-with-spark)
 
 ## [BigDL](https://github.com/intel-analytics/BigDL)
 
@@ -30,7 +30,7 @@ http://www.legendu.net/misc/blog/use-lightgbm-with-spark/
 
 ## Apache Ray
 
-You can run Apache Ray on top of Spark via 
+You can run Apache Ray on top of Spark via
 [analytics-zoo](https://github.com/intel-analytics/analytics-zoo),
 which enables you to run any Python machine lerning library in distributed fashion.
 But I'm not sure whether this is a good idea.

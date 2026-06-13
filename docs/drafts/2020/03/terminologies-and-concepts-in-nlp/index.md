@@ -1,18 +1,19 @@
 ---
 title: Terminologies and Concepts in NLP
-created: 2020-03-06 11:29:11
-date: 2026-04-05 19:42:37.822427
+created: '2020-03-06T11:29:11-08:00'
+date: '2026-06-12T22:31:33-07:00'
 authors:
-- bendu
+  - bendu
 label: terminologies-and-concepts-in-nlp
 license: CC-BY-4.0
 tags:
-- AI
-- data science
-- machine learning
-- deep learning
-- NLP
+  - AI
+  - data science
+  - machine learning
+  - deep learning
+  - NLP
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Word Embedding
@@ -27,8 +28,7 @@ Natural Language Generation, as defined by Artificial Intelligence: Natural Lang
 
 Multi-Genre Natural Language Inference (MultiNLI)
 
-Named Entity Recognition (NER) 
-
+Named Entity Recognition (NER)
 
 Heuristic Analysis for NLI Systems (HANS)
 
@@ -38,7 +38,7 @@ The Stanford Question Answering Dataset (SQuAD)
 
 Situations With Adversarial Generations (SWAG)
 
-Reading Comprehension Dataset (RACE) 
+Reading Comprehension Dataset (RACE)
 
 The Cross-Lingual NLI Corpus (XNLI)
 
@@ -52,14 +52,14 @@ Cross-lingual Natural Language Inference (XNLI)
 
 ### Causal Language Modeling (CLM)
 
-CLM consists of a Transformer to learn text representation by providing a set of previous features. 
+CLM consists of a Transformer to learn text representation by providing a set of previous features.
 Given the previous hidden state to the current batch, the model predicts the next word.
 
 ### Masked Language Modeling (MLM)
 
-Lample and Connea follow Devlin et al. (2018) approach to pick 15% of subword randomly 
-and replacing it by reserved word ([MASK]) 80% of the time, 
-by a random word 10% of the time 
+Lample and Connea follow Devlin et al. (2018) approach to pick 15% of subword randomly
+and replacing it by reserved word ([MASK]) 80% of the time,
+by a random word 10% of the time
 and remaining unchanged 10% of the time.
 The differences between Devlin et al. (2018) are:
 
@@ -73,16 +73,17 @@ Subwords are randomly picked in both language data. Both language subword can be
 
 ### Out-of-Vocabulary (OOV)
 
-### [Double Dipping in Machine Learning]( https://www.legendu.net/misc/blog/double-dipping-in-machine-learning )
+### [Double Dipping in Machine Learning](double-dipping-in-machine-learning)
 
 ### Byte Pair Encoding (BPE) Subword Algorithm
 
 ## Take Away
+
 - BERT use segment embeddings (represent different sentence) while XLM use language embeddings (represent different language).
 - CLM does not scale to a cross-lingual scenario.
 - XLM may not fit for low resource language as if required parallel data (TML) to boost up the performance. Meanwhile, Multilingual Neural Language Models are designed to overcome this limitation.
 
-## References 
+## References
 
 [Cross-lingual Language Model](https://medium.com/towards-artificial-intelligence/cross-lingual-language-model-56a65dba9358)
 

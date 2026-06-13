@@ -1,7 +1,7 @@
 ---
 title: Use Tkinter to Build GUI Applications in Python
-created: 2020-03-09 09:41:03
-date: 2026-04-13 23:15:26.485467
+created: '2020-03-09T09:41:03-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: use-tkinter-to-build-gui-applications-in-python
@@ -28,7 +28,7 @@ please continue read if you encounter the following error.
    installing python-tk might fix the issue.
 
    ```bash
-    brew install python-tk
+   brew install python-tk
    ```
 
 ## General Tips
@@ -36,7 +36,7 @@ please continue read if you encounter the following error.
 1. You need to use multithreading to make GUI application more responsive
    if any event triggers a long-run task.
    Please refer to
-   [Concurrency and Parallel Computing in Python](http://www.legendu.net/misc/blog/python-concurrency-parallel-computing/)
+   [Concurrency and Parallel Computing in Python](concurrency-and-parallel-computing-in-python)
    for more discussions.
 
 1. When you develop a GUI application using Tkinter in Python,
@@ -164,11 +164,11 @@ https://www.youtube.com/playlist?list=PL6gx4Cwl9DGBwibXFtPtflztSNPGuIB_d
 
 ## References
 
-- [The Checkbutton Widget in Tkinter](http://www.legendu.net/misc/blog/the-checkbutton-widget-in-tkinter/)
+- [The Checkbutton Widget in Tkinter](the-checkbutton-widget-in-tkinter)
 
-- [The Entry Widget in Tkinter](http://www.legendu.net/misc/blog/the-entry-widget-in-tkinter/)
+- [The Entry Widget in Tkinter](the-entry-widget-in-tkinter)
 
-- [The Label Widget in Tkinter](http://www.legendu.net/misc/blog/tkinter-label-tips/)
+- [The Label Widget in Tkinter](the-label-widget-in-tkinter)
 
 - [Tkinter: “Python may not be configured for Tk”](https://stackoverflow.com/questions/5459444/tkinter-python-may-not-be-configured-for-tk)
 

@@ -1,7 +1,7 @@
 ---
-title: "Command Line Tools for Mac File System"
-created: 2019-03-10 08:56:36
-date: 2021-08-02 09:19:43
+title: Command Line Tools for Mac File System
+created: '2019-03-10T08:56:36-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: command-line-tools-for-mac-file-system
@@ -20,74 +20,86 @@ tags:
 
 **Note**: When work both in Linux and macOS,
 a painful burden to use command-line is to remember subtle differences between Linux commands and macOS commands.
-A a matter of fact, 
+A a matter of fact,
 GNU tools can be used in macOS
 and it is suggested that you use GNU tools (instead of the macOS version of tools)
 so that you can have unified command-line experience across operations systems.
-Please refer to 
-[Install GNU Utils Using Homebrew](http://www.legendu.net/en/blog/install-gnu-utils-using-homebrew)
+Please refer to
+[Install GNU Utils Using Homebrew](install-gnu-utils-using-homebrew)
 on how to install GNU tools on macOS
 and
-[Command Line Tools for Linux File System](http://www.legendu.net/misc/blog/command-line-tools-for-linux-file-system/)
+[Command Line Tools for Linux File System](command-line-tools-for-linux-file-system)
 on Linux commands.
 
-
-If you insist on using the macOS version of tools, 
-continue to read the content below. 
+If you insist on using the macOS version of tools,
+continue to read the content below.
 
 1. Notice that disks in macOS are often named as `/dev/diskXsY`
-    where `X` and `Y` are numbers.
+   where `X` and `Y` are numbers.
 
-2. It is suggested that you use the unified command `diskutil` 
-    (instead of scattered commands such as `df`, `newfs_*`, etc.)
-    to manage (list, format, partition, etc.) disks in macOS.
+1. It is suggested that you use the unified command `diskutil`
+   (instead of scattered commands such as `df`, `newfs_*`, etc.)
+   to manage (list, format, partition, etc.) disks in macOS.
 
-        :::bash
-        diskutil partitionDisk /dev/diskX 2 MBR \
-            ExFAT NewVolumeA 100M \
-            ExFAT NewVolumeB R
-        diskutil eraseVolume ExFat NewVolume /dev/diskXsY
+   ```
+    :::bash
+    diskutil partitionDisk /dev/diskX 2 MBR \
+        ExFAT NewVolumeA 100M \
+        ExFAT NewVolumeB R
+    diskutil eraseVolume ExFat NewVolume /dev/diskXsY
+   ```
 
+1. List disk information.
 
-3. List disk information.
+   ```
+    :::bash
+    diskutil list
+   ```
 
-        :::bash
-        diskutil list
+1. Unmount a volume.
 
-4. Unmount a volume.
+   ```
+    :::bash
+    diskutil unmount /path/to/mounted/volume
+   ```
 
-        :::bash
-        diskutil unmount /path/to/mounted/volume
+1. Management disk partition tables.
 
-2. Management disk partition tables.
+   ```
+    :::bash
+    fdisk
+   ```
 
-        :::bash
-        fdisk
+1. Format disk partitions.
 
-3. Format disk partitions.
+   ```
+    :::bash
+    newfs_ext4 /dev/sd3 /path_to_mount_in
+    newfs_ntfs /dev/sd3 /path_to_mount_in
+    newfs_exfat /dev/sd3 /path_to_mount_in
+   ```
 
-        :::bash
-        newfs_ext4 /dev/sd3 /path_to_mount_in
-        newfs_ntfs /dev/sd3 /path_to_mount_in
-        newfs_exfat /dev/sd3 /path_to_mount_in
+1. Report disk usage.
 
-4. Report disk usage.
+   ```
+    :::bash
+    du -lhd 1 .
+   ```
 
-        :::bash
-        du -lhd 1 .
+1. dd
 
-5. dd
+   ```
+    :::bash
+    dd
+   ```
 
-        :::bash
-        dd
-
-6. badblocks
+1. badblocks
 
 ## References
 
-- [Install GNU Utils Using Homebrew](http://www.legendu.net/en/blog/install-gnu-utils-using-homebrew)
+- [Install GNU Utils Using Homebrew](install-gnu-utils-using-homebrew)
 
-- [Command Line Tools for Linux File System](http://www.legendu.net/misc/blog/command-line-tools-for-linux-file-system/)
+- [Command Line Tools for Linux File System](command-line-tools-for-linux-file-system)
 
 - [How to format multiple exFAT partitions on USB drive?](https://apple.stackexchange.com/questions/218818/how-to-format-multiple-exfat-partitions-on-usb-drive)
 

@@ -1,31 +1,33 @@
 ---
 title: Downloading Tools
-created: 2018-04-10 10:24:23
-date: 2026-04-07 00:51:58.245472
+created: '2018-04-10T10:24:23-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
-- bendu
+  - bendu
 label: downloading-tools
 license: CC-BY-4.0
 tags:
-- software
-- download
-- tools
-- Motrix
-- aria2
-- ScriptCat
+  - software
+  - download
+  - tools
+  - Motrix
+  - aria2
+  - ScriptCat
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## GUI Tools
 
-### [transmission](http://www.legendu.net/misc/blog/transmssion-tips)
+### [transmission](download-files-using-transmission)
 
 Transmission is the BEST cross-platform BitTorrent client.
-It is simple, clean 
+It is simple, clean
 and allows setting the uploading speed to zero (i.e., disable upload),
-which almost all other BitTorrent clients do not support. 
+which almost all other BitTorrent clients do not support.
 
 ### [Motrix](https://github.com/agalwood/Motrix)
+
 Motrix is a good cross-platform general purpose downloading tool.
 However,
 it does NOT allow setting the uploading speed zero
@@ -37,10 +39,11 @@ It is suggested that you use transmission to download BitTorrent files.
 ## Command-line Tools
 
 ### [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+
 [yt-dlp](https://github.com/yt-dlp/yt-dlp)
-is a feature-rich command-line audio/video downloader 
+is a feature-rich command-line audio/video downloader
 with support for [thousands of sites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)
-(including YouTube). 
+(including YouTube).
 
 ### aria2
 
@@ -54,4 +57,4 @@ Notice that `aria2` supports BitTorrent as well.
 ## Misc
 
 3. mechanize, Selenium, iMacros (auto download solutions)
-6. SubDownloader (download/upload subtitles of movies)
+1. SubDownloader (download/upload subtitles of movies)

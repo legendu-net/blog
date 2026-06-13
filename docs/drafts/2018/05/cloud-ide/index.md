@@ -1,7 +1,7 @@
 ---
 title: Cloud IDE
-created: 2018-05-20 09:49:30
-date: 2026-04-17 11:27:06.340320
+created: '2018-05-20T09:49:30-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: cloud-ide
@@ -24,7 +24,7 @@ tags:
 ## Google Firebase Studio (Will Sunset in 2027)
 
 See
-[Tips on Google Firebase Studio](https://www.legendu.net/misc/blog/tips-on-project-idx)
+[Tips on Google Firebase Studio](tips-on-google-firebase-studio)
 .
 
 ## [Code Server](https://github.com/cdr/code-server)
@@ -83,7 +83,7 @@ docker run -d -p 3000:3000 -v /workdir:/home/project:cached theiaide/theia-full
 
 Conclusion: basically unusable, not recommended
 
-## [Cloud9](http://www.legendu.net/misc/blog/cloud9-tips/)
+## [Cloud9](tips-on-cloud9)
 
 1. Looks much better Codenvy/Eclipse Che.
 

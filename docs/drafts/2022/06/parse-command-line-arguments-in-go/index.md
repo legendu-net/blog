@@ -1,7 +1,7 @@
 ---
 title: Parse Command Line Arguments in Go
-created: 2022-06-10 20:18:20
-date: 2026-04-15 19:27:00.780341
+created: '2022-06-10T20:18:20-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: parse-command-line-arguments-in-go
@@ -25,7 +25,7 @@ tags:
    It is simple but limited.
    For more discussions,
    please refer to
-   [Parse Command Line Arguments Using Flag in Go](https://www.legendu.net/misc/blog/parse-command-line-arguments-using-flag-in-go/)
+   [Parse Command Line Arguments Using Flag in Go](parse-command-line-arguments-using-flag-in-go)
    .
 
 1. [spf13/cobra](https://github.com/spf13/cobra),
@@ -49,6 +49,6 @@ for application configuration.
 
 ## References
 
-- [Parse Command Line Arguments Using Flag in Go](https://www.legendu.net/misc/blog/parse-command-line-arguments-using-flag-in-go/)
+- [Parse Command Line Arguments Using Flag in Go](parse-command-line-arguments-using-flag-in-go)
 
 - [Sting of the Viper: Getting Cobra and Viper to work together](https://carolynvanslyck.com/blog/2020/08/sting-of-the-viper/)

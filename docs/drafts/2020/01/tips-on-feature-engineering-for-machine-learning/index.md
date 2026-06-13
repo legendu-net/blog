@@ -1,7 +1,7 @@
 ---
-title: "Tips on Feature Engineering for Machine Learning"
-created: 2020-01-30 12:43:37
-date: 2020-12-30 12:43:37
+title: Tips on Feature Engineering for Machine Learning
+created: '2020-01-30T12:43:37-08:00'
+date: '2026-06-12T22:31:50-07:00'
 authors:
   - bendu
 label: tips-on-feature-engineering-for-machine-learning
@@ -33,10 +33,9 @@ One exception I can think of is a scenario when your training dataset is not suf
 
 Other than such exceptional scenarios, we can expect deep learning to work better than and to replace feature engineering.
 
-
 ## Categorical Variables
 
-http://www.legendu.net/misc/blog/handling-categorical-variables-in-machine-learning/
+[Handling Categorical Variables in Machine Learning](handling-categorical-variables-in-machine-learning)
 
 ## Feature Hashing
 
@@ -49,15 +48,18 @@ https://booking.ai/dont-be-tricked-by-the-hashing-trick-192a6aae3087
 ## Useful Libraries
 
 ### [FeatureTools](https://github.com/alteryx/featuretools)
+
 [FeatureTools](https://github.com/alteryx/featuretools)
 is an open source Python library for automated feature engineering.
 
 ### [compose](https://github.com/alteryx/compose)
+
 [compose](https://github.com/alteryx/compose)
-is a machine learning tool for automated prediction engineering. 
+is a machine learning tool for automated prediction engineering.
 It allows you to easily structure prediction problems and generate labels for supervised learning.
 
 ### [tsfresh](https://github.com/blue-yonder/tsfresh)
+
 [tsfresh](https://github.com/blue-yonder/tsfresh)
 is a tool for automatic extraction of relevant features from time series.
 

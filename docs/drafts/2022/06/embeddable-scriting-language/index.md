@@ -1,7 +1,7 @@
 ---
 title: Embeddable Scriting Language
-created: 2022-06-12 17:23:48
-date: 2026-04-13 23:14:45.873400
+created: '2022-06-12T17:23:48-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: embeddable-scriting-language
@@ -21,7 +21,7 @@ tags:
 
 ## Lua
 
-1. [Lua Bindings for Rust](https://www.legendu.net/misc/blog/lua-bindings-for-rust)
+1. [Lua Bindings for Rust](lua-bindings-for-rust)
    discusses Lua bindings for Rust.
 
 ## JavaScript
@@ -29,7 +29,7 @@ tags:
 It is possible to use JavaScript as an embedded scripting language.
 For more discussions,
 please refer to
-[Engine and Runtime for JavaScript](https://www.legendu.net/misc/blog/engine-and-runtime-for-javascript)
+[Engine and Runtime for JavaScript](engine-and-runtime-for-javascript)
 .
 
 ## [Rhai](https://crates.io/crates/rhai)

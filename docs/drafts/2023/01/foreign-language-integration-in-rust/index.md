@@ -1,7 +1,7 @@
 ---
 title: Foreign Language Integration in Rust
-created: 2023-01-13 16:20:03
-date: 2026-04-15 19:27:00.690620
+created: '2023-01-13T16:20:03-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: foreign-language-integration-in-rust
@@ -106,8 +106,8 @@ loading primitives with greatly improved memory safety.
 
 - [How to call a C++ dynamic library from Rust?](https://stackoverflow.com/questions/52923460/how-to-call-a-c-dynamic-library-from-rust)
 
-- [Calling Rust from Python](https://www.legendu.net/misc/blog/calling-rust-from-python)
+- [Calling Rust from Python](calling-rust-from-python)
 
-- [Calling Rust from Java](https://www.legendu.net/misc/blog/calling-rust-from-java)
+- [Calling Rust from Java](calling-rust-from-java)
 
-- [Rustdef Makes It Dead Simple to Call Rust in Python Notebook](https://www.legendu.net/misc/blog/rustdef-makes-it-dead-simple-to-call-rust-in-python-notebook)
+- [Rustdef Makes It Dead Simple to Call Rust in Python Notebook](rustdef-makes-it-dead-simple-to-call-rust-in-python-notebook)

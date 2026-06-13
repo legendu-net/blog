@@ -1,7 +1,7 @@
 ---
 title: Python for IOT
-created: 2021-04-09 09:49:34
-date: 2026-04-15 19:27:00.906908
+created: '2021-04-09T09:49:34-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: python-for-iot
@@ -17,4 +17,4 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-[Tips on Home Assistant](http://www.legendu.net/misc/blog/tips-on-home-assistant)
+[Tips on Home Assistant](tips-on-home-assistant)

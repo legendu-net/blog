@@ -1,20 +1,21 @@
 ---
 title: Serialization and Caching in Python
-created: 2018-09-06 00:59:06
-date: 2026-04-05 19:42:37.992897
+created: '2018-09-06T00:59:06-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
-- bendu
+  - bendu
 label: serialization-and-caching-in-python
 license: CC-BY-4.0
 tags:
-- programming
-- Python
-- packages
-- caching
-- lru_cache
-- diskcache
-- memcached
+  - programming
+  - Python
+  - packages
+  - caching
+  - lru_cache
+  - diskcache
+  - memcached
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## functools.lru_cache
@@ -37,11 +38,11 @@ https://pypi.org/project/pymemcache/
 
 http://memcached.org/
 
-Free & open source, high-performance, distributed memory object caching system, generic in nature, 
+Free & open source, high-performance, distributed memory object caching system, generic in nature,
 but intended for use in speeding up dynamic web applications by alleviating database load.
 
-## References 
+## References
 
-- [Serialization and deserialization in Python](http://www.legendu.net/misc/blog/serialization-and-deserialization-in-python)
+- [Serialization and deserialization in Python](serialization-and-deserialization-in-python)
 
 - https://docs.python-guide.org/scenarios/serialization/

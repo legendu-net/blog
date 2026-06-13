@@ -1,7 +1,7 @@
 ---
 title: Const Generic in Rust
-created: 2023-06-19 23:45:11
-date: 2026-04-13 23:14:28.817685
+created: '2023-06-19T23:45:11-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: const-generic-in-rust
@@ -47,7 +47,7 @@ https://rust-lang.github.io/api-guidelines/future-proofing.html#sealed-traits-pr
 ## Ways to Make Sure that a Type in Rust Satisfy Certain Conditions
 
 Please refer to
-[Constraints on Types in Rust](https://www.legendu.net/misc/blog/type-constraints-in-rust)
+[Constraints on Types in Rust](constraints-on-types-in-rust)
 for detailed discussions.
 
 ## References

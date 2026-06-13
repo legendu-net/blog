@@ -1,7 +1,7 @@
 ---
 title: Tips on Security
-created: 2020-10-15 18:30:00
-date: 2026-04-13 23:15:14.336542
+created: '2020-10-15T18:30:00-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-security
@@ -23,7 +23,7 @@ tags:
 
 ## Websites for Checking Vulnerabilities and Data Breaches
 
-[Shodan - Search Engine for the Internet of Everything](https://www.legendu.net/misc/blog/shodan-search-engine-for-iot)
+[Shodan - Search Engine for the Internet of Everything](shodan-search-engine-for-iot)
 
 [NATIONAL VULNERABILITY DATABASE](https://nvd.nist.gov/)
 

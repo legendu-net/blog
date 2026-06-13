@@ -1,7 +1,7 @@
 ---
-title: "Reduce Size of Git Repository"
-created: 2017-03-23 07:43:12
-date: 2023-05-13 17:32:32
+title: Reduce Size of Git Repository
+created: '2017-03-23T07:43:12-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: reduce-size-of-git-repository
@@ -20,17 +20,20 @@ tags:
 Git Large File Storage (Git-LFS) is the recommended way to work with large files.
 Please read the following if have already committed large files into your repository.
 
-## [git-filter-repo](https://www.legendu.net/misc/blog/tips-on-git-filter-repo)
-[git-filter-repo](https://www.legendu.net/misc/blog/tips-on-git-filter-repo)
-is currently the best and the recommended tool by the Git project 
+## [git-filter-repo](tips-on-git-filter-repo)
+
+[git-filter-repo](tips-on-git-filter-repo)
+is currently the best and the recommended tool by the Git project
 for rewriting history of Git repositories.
 .
 
 ## `git gc` + `git repack`
-    
-    :::bash
-    git gc --prune=now --aggressive
-    git repack
+
+```
+:::bash
+git gc --prune=now --aggressive
+git repack
+```
 
 [Git is really slow for 100,000 objects. Any fixes?](https://stackoverflow.com/questions/3313908/git-is-really-slow-for-100-000-objects-any-fixes)
 
@@ -45,8 +48,8 @@ git push --force
 $ git gc --prune=now --aggressive
 
 git filter-branch --prune-empty -d /dev/shm/scratch \
-  --index-filter "git rm --cached -f --ignore-unmatch oops.iso" \
-  --tag-name-filter cat -- --all
+    --index-filter "git rm --cached -f --ignore-unmatch oops.iso" \
+    --tag-name-filter cat -- --all
 $ git reflog expire --expire=now --all
 git filter-branch --tree-filter 'rm -f DVD-rip' HEAD
 
@@ -71,7 +74,7 @@ git prune --progress # delete all the objects w/o references
 git gc --aggressive # aggressively collect garbage; may take a lot of time on large repos
 ```
 
-Or another way is just to remove the .git directory, 
+Or another way is just to remove the .git directory,
 reinitial a git repository and push to remote with the `--force` option.
 
 http://stackoverflow.com/questions/2100907/how-to-remove-delete-a-large-file-from-commit-history-in-git-repository
@@ -81,6 +84,7 @@ http://blog.gbacon.com/2009/08/git-shrinking-subversion-import.html
 http://stackoverflow.com/questions/2116778/reduce-git-repository-size
 
 shallow clone using the depth option
+
 ```bash
 git clone git://source.winehq.org/git/wine.git ~/wine-git --depth 1
 ```

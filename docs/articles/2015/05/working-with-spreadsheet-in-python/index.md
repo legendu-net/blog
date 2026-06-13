@@ -1,7 +1,7 @@
 ---
 title: Working with Spreadsheet in Python
-created: 2015-05-09 08:43:45
-date: 2026-04-15 19:27:00.443332
+created: '2015-05-09T08:43:45-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: working-with-spreadsheet-in-python
@@ -33,7 +33,7 @@ which has Python (JavaScript and SQL) built-in.
 ## [Google Spreadsheet](https://www.google.com/sheets/about/)
 
 Please refer to
-[Use Python with Google Spreadsheet](https://www.legendu.net/misc/blog/use-python-with-google-spreadsheet/)
+[Use Python with Google Spreadsheet](use-python-with-google-spreadsheet)
 for detailed discussions.
 
 ## [pandas](https://github.com/pandas-dev/pandas)

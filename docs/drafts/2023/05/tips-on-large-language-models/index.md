@@ -1,7 +1,7 @@
 ---
 title: Tips on Large Language Models
-created: 2023-05-06 13:28:33
-date: 2026-04-13 23:14:31.301515
+created: '2023-05-06T13:28:33-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-large-language-models
@@ -23,8 +23,9 @@ See also [AI Tools from China](ai-tools-from-china)
 .
 
 ```{list-table}
-:header-rows: 1
-
+---
+header-rows: 1
+---
 - - Name
   - Category
   - API
@@ -73,7 +74,7 @@ See also [AI Tools from China](ai-tools-from-china)
   - General
   - Available
   - 
-- - [Google Gemini CLI](https://www.legendu.net/misc/blog/tips-on-google-gemini-cli)
+- - [Google Gemini CLI](tips-on-google-gemini-cli)
   - General
   - Available
   - A command-line interface for Google Gemini.
@@ -122,4 +123,4 @@ See also [AI Tools from China](ai-tools-from-china)
 
 - [Prompt Engineering for LLM Tools](prompt-engineering-for-llm-tools)
 
-- [LLM in Rust](https://www.legendu.net/misc/blog/llm-in-rust)
+- [LLM in Rust](llm-in-rust)

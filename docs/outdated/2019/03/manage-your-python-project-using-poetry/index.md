@@ -1,92 +1,102 @@
 ---
 title: Manage Your Python Project Using Poetry
-created: 2019-03-02 11:17:44
-date: 2026-04-05 19:42:39.148540
+created: '2019-03-02T11:17:44-08:00'
+date: '2026-06-12T22:31:33-07:00'
 authors:
-- bendu
+  - bendu
 label: manage-your-python-project-using-poetry
 license: CC-BY-4.0
 tags:
-- programming
-- Python
-- poetry
-- build tool
-- dependency management
+  - programming
+  - Python
+  - poetry
+  - build tool
+  - dependency management
 ---
+
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-
-[uv]( https://www.legendu.net/misc/blog/manage-python-projects-using-uv )
+[uv](manage-python-projects-using-uv)
 (implemented in Rust)
 is the new cool kid now
 and is prefer to poetry.
 
-## Tips and Traps 
+## Tips and Traps
 
 1. Python Poetry is current the best project management tool for Python!
 
-2. Python Poetry supports Python package dependencies on GitHub.
-    For example,
-    if a Python package depends on https://github.com/dclong/dsutil,
-    then you can add it using the following.
+1. Python Poetry supports Python package dependencies on GitHub.
+   For example,
+   if a Python package depends on https://github.com/dclong/dsutil,
+   then you can add it using the following.
 
-        :::bash
-        poetry add git+https://github.com/dclong/dsutil.git
+   ```
+    :::bash
+    poetry add git+https://github.com/dclong/dsutil.git
+   ```
 
-    Or
+   Or
 
-        :::bash
-        poetry add git+ssh://git@github.com/dclong/dsutil.git
+   ```
+    :::bash
+    poetry add git+ssh://git@github.com/dclong/dsutil.git
+   ```
 
-    For more details,
-    please refer to
-    [poetry add](https://python-poetry.org/docs/cli/#add.)
-    and
-    [git dependencies](https://python-poetry.org/docs/dependency-specification/#git-dependencies)
-    .
+   For more details,
+   please refer to
+   [poetry add](https://python-poetry.org/docs/cli/#add.)
+   and
+   [git dependencies](https://python-poetry.org/docs/dependency-specification/#git-dependencies)
+   .
 
-3. `poetry install` removes non needed libraries. 
-    A tricky situation is that if you have dependency A 
-    which depends on dependency B,
-    and you have specified both A and B in `pyproject.toml`.
-    Removing dependency B from `pyrpoject.toml` and then running `poetry install` 
-    won't remove the library B from the virtual environment as B is still needed by A.
+1. `poetry install` removes non needed libraries.
+   A tricky situation is that if you have dependency A
+   which depends on dependency B,
+   and you have specified both A and B in `pyproject.toml`.
+   Removing dependency B from `pyrpoject.toml` and then running `poetry install`
+   won't remove the library B from the virtual environment as B is still needed by A.
 
-4. Poetry has lots of issues in Windows currently.
-    It is suggested that you avoid using poetry in Windows.
+1. Poetry has lots of issues in Windows currently.
+   It is suggested that you avoid using poetry in Windows.
 
-5. If you encounter the following error message
-    when running `poetry install`,
+1. If you encounter the following error message
+   when running `poetry install`,
 
-    > [Errno 2] No such file or directory: '/path/to/readme.md'
+   > [Errno 2] No such file or directory: '/path/to/readme.md'
 
-    it means that you have specified `tool.poetry.readme` 
-    to be `readme.md` in `pyproject.toml`
-    but `readme.md` does not exists under root directory of the project.
+   it means that you have specified `tool.poetry.readme`
+   to be `readme.md` in `pyproject.toml`
+   but `readme.md` does not exists under root directory of the project.
 
 ## Install Python Poetry
 
 1. Follow the [official tutorial](https://python-poetry.org/docs/#installation).
 
-2. Using xinstall.
+1. Using xinstall.
 
-        :::bash
-        # install xinstall if it hasn't been installed
-        sudo pip3 install -U git+https://github.com/dclong/xinstall@master
-        # install poetry using xinstall
-        xinstall pt -ic
+   ```
+    :::bash
+    # install xinstall if it hasn't been installed
+    sudo pip3 install -U git+https://github.com/dclong/xinstall@master
+    # install poetry using xinstall
+    xinstall pt -ic
+   ```
 
 ## Updating Python Poetry
 
 Updating poetry to the latest stable version is as simple as calling the self:update command.
 
-    :::bash
-    poetry self:update
+```
+:::bash
+poetry self:update
+```
 
 If you want to install prerelease versions, you can use the --preview option.
 
-    :::bash
-    poetry self:update --preview
+```
+:::bash
+poetry self:update --preview
+```
 
 ## Usage
 
@@ -94,58 +104,75 @@ If you want to install prerelease versions, you can use the --preview option.
 
 1. Create a new Python project using poetry.
 
-        :::bash
-        poetry new proj
+   ```
+    :::bash
+    poetry new proj
+   ```
 
-2. Initialize an existing Python project using poetry.
+1. Initialize an existing Python project using poetry.
 
-        :::bash
-        poetry init
+   ```
+    :::bash
+    poetry init
+   ```
 
 ### Install Dependencies
 
 1. Installl all dependencies.
 
-        :::bash
-        poetry install 
+   ```
+    :::bash
+    poetry install 
+   ```
 
-2. Installl all but dev dependencies.
+1. Installl all but dev dependencies.
 
-        :::bash
-        poetry install  --no-dev
+   ```
+    :::bash
+    poetry install  --no-dev
+   ```
 
 ### Export Dependencies
 
-1. Export the lock file to `requirements.txt` 
-    so that the dependency can be installed using `pip`.
+1. Export the lock file to `requirements.txt`
+   so that the dependency can be installed using `pip`.
 
-        :::bash
-        poetry export -f requirements.txt > requirements.txt
+   ```
+    :::bash
+    poetry export -f requirements.txt > requirements.txt
+   ```
 
-### Run Commands in the Virtual Environment 
+### Run Commands in the Virtual Environment
 
-`poetry run cmd` is a quick to run `cmd` using the virtual environment managed by `poetry.
-Another way is to manually set `PATH` before you invoke `cmd`. 
+`poetry run cmd` is a quick to run `cmd` using the virtual environment managed by `poetry. Another way is to manually set `PATH`before you invoke`cmd\`.
 For example,
 
-    :::bash
-    PATH=.venv/bin:$PATH cmd
+```
+:::bash
+PATH=.venv/bin:$PATH cmd
+```
 
 1. Run test suits using pytest.
 
-        :::bash
-        poetry run pytest
+   ```
+    :::bash
+    poetry run pytest
+   ```
 
-    Or if you want to make it specific to collect test suits from the `test` directory 
-    under the root directory of the project.
+   Or if you want to make it specific to collect test suits from the `test` directory
+   under the root directory of the project.
 
-        :::bash
-        poetry run pytest test
+   ```
+    :::bash
+    poetry run pytest test
+   ```
 
-2. Run pytype.
+1. Run pytype.
 
-        :::bash
-        poetry run pytype .
+   ```
+    :::bash
+    poetry run pytype .
+   ```
 
 ## User Tasks
 
@@ -182,7 +209,6 @@ https://pypi.org/classifiers/
 https://github.com/python-poetry/poetry/issues/738
 
 https://github.com/python-poetry/poetry/issues/3356
-
 
 ## References
 

@@ -1,7 +1,7 @@
 ---
 title: Tips on Search Engines
-created: 2021-05-03 10:23:35
-date: 2026-04-13 23:15:02.851288
+created: '2021-05-03T10:23:35-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-search-engines
@@ -49,4 +49,4 @@ is a full text search engine **library** written in Rust.
 
 ## References
 
-- [Search Engine for Static Web Sites](http://www.legendu.net/misc/blog/search-engine-for-static-web-sites)
+- [Search Engine for Static Web Sites](search-engine-for-static-web-sites)

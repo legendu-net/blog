@@ -1,7 +1,7 @@
 ---
 title: Binary Serialization Format
-created: 2022-10-16 16:12:18
-date: 2026-04-13 23:14:41.698225
+created: '2022-10-16T16:12:18-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: binary-serialization-format
@@ -31,7 +31,7 @@ tags:
 
 1. For text serialization format,
    please refer to
-   [Serialization and deserialization in Python](https://www.legendu.net/misc/blog/serialization-and-deserialization-in-python/)
+   [Serialization and deserialization in Python](serialization-and-deserialization-in-python)
    .
 
 ## Protobuf vs FlatBuffers

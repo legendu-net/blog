@@ -1,7 +1,7 @@
 ---
 title: Tips on IDE
-created: 2018-04-18 19:35:55
-date: 2026-04-15 19:27:01.299328
+created: '2018-04-18T19:35:55-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-ide
@@ -18,21 +18,21 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## [Cloud IDEs](http://www.legendu.net/misc/blog/cloud-ide/)
+## [Cloud IDEs](cloud-ide)
 
 ## IDEs with AI Coding Assists
 
 See
-[IDEs With AI Coding Assists](https://www.legendu.net/misc/blog/IDEs-with-AI-coding-Assists)
+[IDEs With AI Coding Assists](ides-with-ai-coding-assists)
 .
 
 ## General Purpose IDEs
 
-1. [Visual Studio Code](https://www.legendu.net/misc/blog/vscode-tips)
+1. [Visual Studio Code](tips-on-visual-studio-code)
 
-1. [SpaceVim](https://www.legendu.net/misc/blog/spacevim-tips)
+1. [SpaceVim](spacevim-a-modern-vim-neovim-configuration)
 
-1. [Zed](https://www.legendu.net/misc/blog/tips-on-the-zed-ide)
+1. [Zed](tips-on-the-zed-ide)
 
 1. [Lapce](https://github.com/lapce/lapce)
 
@@ -40,9 +40,9 @@ See
 
 1. IntelliJ IDEA (community edition available)
 
-## [IDEs for Rust](https://www.legendu.net/misc/blog/IDE-for-Rust)
+## [IDEs for Rust](ide-for-rust)
 
-See [IDE for Rust](https://www.legendu.net/misc/blog/IDE-for-Rust)
+See [IDE for Rust](ide-for-rust)
 .
 
 ## Python
@@ -53,7 +53,7 @@ See [IDE for Rust](https://www.legendu.net/misc/blog/IDE-for-Rust)
 
 1. JupyterLab
 
-1. [NeoVim](https://www.legendu.net/misc/blog/tips-on-neovim) (with AstroNvim)
+1. [NeoVim](tips-on-neovim) (with AstroNvim)
 
 1. PyCharm
 
@@ -83,6 +83,6 @@ See [IDE for Rust](https://www.legendu.net/misc/blog/IDE-for-Rust)
 
 4. JuliaStudio (for Julia)
 
-## [LaTex](http://www.legendu.net/misc/blog/latex-ide)
+## [LaTex](ides-for-latex)
 
-## [SQL](http://www.legendu.net/misc/blog/ide-for-sql/)
+## [SQL](ide-for-sql)

@@ -1,7 +1,7 @@
 ---
 title: Useful Rust Crates
-created: 2021-04-09 23:34:03
-date: 2026-04-13 23:15:04.387881
+created: '2021-04-09T23:34:03-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: useful-rust-crates
@@ -24,51 +24,51 @@ https://crates.io/crates?sort=downloads
 
 [Rust日常开发三方库精选](https://course.rs/practice/third-party-libs.html)
 
-## [Summary of Collections in Rust](https://www.legendu.net/misc/blog/summary-of-collections-in-rust)
+## [Summary of Collections in Rust](summary-of-collections-in-rust)
 
-## [Dev Tools for Rust](https://www.legendu.net/misc/blog/dev-tools-for-rust)
+## [Dev Tools for Rust](dev-tools-for-rust)
 
-## [Error Handling in Rust](https://www.legendu.net/misc/blog/error-handling-in-rust)
+## [Error Handling in Rust](error-handling-in-rust)
 
-## [Useful Rust Crates for Testing](https://www.legendu.net/misc/blog/useful-rust-crates-for-testing)
+## [Useful Rust Crates for Testing](useful-rust-crates-for-testing)
 
-## [Profile Rust Applications](https://www.legendu.net/misc/blog/profile-rust-applications)
+## [Profile Rust Applications](profile-rust-applications)
 
-## [Implement a Singleton in Rust](https://www.legendu.net/misc/blog/implement-a-singleton-in-rust)
+## [Implement a Singleton in Rust](implement-a-singleton-in-rust)
 
-## [Generating Random Numbers in Rust](https://www.legendu.net/misc/blog/rust-rng)
+## [Generating Random Numbers in Rust](generating-random-numbers-in-rust)
 
-## [Useful Rust Crates for Bit Manipulations](https://www.legendu.net/misc/blog/useful-rust-crates-for-bit-manipulations)
+## [Useful Rust Crates for Bit Manipulations](useful-rust-crates-for-bit-manipulations)
 
-## [Serialization and Deserialization in Rust](https://www.legendu.net/misc/blog/serialization-and-deserialization-in-rust)
+## [Serialization and Deserialization in Rust](serialization-and-deserialization-in-rust)
 
-## [Design Pattern and Productivity for Rust](https://www.legendu.net/misc/blog/design-pattern-and-productivity-for-rust)
+## [Design Pattern and Productivity for Rust](design-pattern-and-productivity-for-rust)
 
-## [Useful Algorithms Implemented in Rust](https://www.legendu.net/misc/blog/useful-algorithms-implemented-in-rust)
+## [Useful Algorithms Implemented in Rust](useful-algorithms-implemented-in-rust)
 
-## [Progress Bar in Rust](https://www.legendu.net/misc/blog/progress-bar-in-rust)
+## [Progress Bar in Rust](progress-bar-in-rust)
 
-## [Rust for Backend Development](https://www.legendu.net/misc/blog/rust-for-backend-development)
+## [Rust for Backend Development](rust-for-backend-development)
 
-## [Rust for Frontend Development](https://www.legendu.net/misc/blog/rust-for-frontend-development)
+## [Rust for Frontend Development](rust-for-frontend-development)
 
-## [Parsing Command-line Arguments in Rust](https://www.legendu.net/misc/blog/parsing-command-line-arguments-in-rust)
+## [Parsing Command-line Arguments in Rust](parsing-command-line-arguments-in-rust)
 
-## [Useful Rust Crates for Developing Command Line Apps](https://www.legendu.net/misc/blog/useful-rust-crates-for-developing-command-line-apps)
+## [Useful Rust Crates for Developing Command Line Apps](useful-rust-crates-for-developing-command-line-apps)
 
-## [Great Command Line Tools Developed in Rust](https://www.legendu.net/misc/blog/great-command-line-tools-developed-in-rust)
+## [Great Command Line Tools Developed in Rust](great-command-line-tools-developed-in-rust)
 
-## [Rust Crates for RPC](https://www.legendu.net/misc/blog/rust-crates-for-rpc)
+## [Rust Crates for RPC](rust-crates-for-rpc)
 
-## [Useful Rust Crates for Filesystem](https://www.legendu.net/misc/blog/useful-rust-crates-for-filesystem)
+## [Useful Rust Crates for Filesystem](useful-rust-crates-for-filesystem)
 
-## [Compress and Decompress Files in Rust](https://www.legendu.net/misc/blog/compress-and-decompress-files-in-rust)
+## [Compress and Decompress Files in Rust](compress-and-decompress-files-in-rust)
 
-## [Rust for Game Development](https://www.legendu.net/misc/blog/rust-for-game-development)
+## [Rust for Game Development](rust-for-game-development)
 
-## [Foreign Language Integration in Rust](https://www.legendu.net/misc/blog/foreign-language-integration-in-rust)
+## [Foreign Language Integration in Rust](foreign-language-integration-in-rust)
 
-## [Rust for IoT](https://www.legendu.net/misc/blog/rust-for-iot)
+## [Rust for IoT](rust-for-iot)
 
 ## Search Engines
 
@@ -104,7 +104,7 @@ contains the Rust bindings for the Scudo hardened allocator.
 
 ## Macros
 
-[Develop Macros in Rust](https://www.legendu.net/misc/blog/develop-macros-in-rust)
+[Develop Macros in Rust](develop-macros-in-rust)
 
 ## Plug-in System
 

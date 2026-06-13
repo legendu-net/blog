@@ -1,7 +1,7 @@
 ---
-title: "Useful Firefox Add-ons"
-created: 2015-11-27 12:25:55
-date: 2025-05-30 08:21:53
+title: Useful Firefox Add-ons
+created: '2015-11-27T12:25:55-08:00'
+date: '2026-06-12T22:31:33-07:00'
 authors:
   - bendu
 label: useful-firefox-add-ons
@@ -17,55 +17,54 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
 ## Navigation & Shortcut
 
-1. [Tridactyl]( https://www.legendu.net/misc/blog/tridactyl-tips )
+1. [Tridactyl](vim-keybindings-in-firefox-using-tridactyl)
 
-2. [Vimium]( https://www.legendu.net/misc/blog/vimium-tips ) 
+1. [Vimium](navigate-chrome-browser-like-a-pro-using-vimium)
 
-2. Pentadactyl
+1. Pentadactyl
 
 A more powerful but complex alternative to Vimperator.
-The main focus of Vimperator is on usability, simplicity, stability and design 
+The main focus of Vimperator is on usability, simplicity, stability and design
 while still preserving a powerful, modal browsing experience influenced by Vim.
-The aim of Pentadactyl is to create a complex beast, 
-where hackers with too much free time can do any (un-)imaginable thing. 
+The aim of Pentadactyl is to create a complex beast,
+where hackers with too much free time can do any (un-)imaginable thing.
 Also Pentadactyl focuses more on 1:1 Vim compatibility.
 
 ## [FireNVim](https://addons.mozilla.org/en-US/firefox/addon/firenvim/)
 
 [FireNVim](https://addons.mozilla.org/en-US/firefox/addon/firenvim/)
-lets you use NeoVim directly from your browser. 
-Contrary to other extensions, 
+lets you use NeoVim directly from your browser.
+Contrary to other extensions,
 it does not open a new OS window.
 For detailed discussions,
 please refer to
-[Firenvim Brings NeoVim into Your Browser](https://www.legendu.net/misc/blog/firenvim-brings-neovim-into-your-browser/)
+[Firenvim Brings NeoVim into Your Browser](firenvim-brings-neovim-into-your-browser)
 .
 
 ## Notes, Task, etc.
 
-1. Add to Wunderlist 
+1. Add to Wunderlist
 
-1. Todoist 
+1. Todoist
 
-    task reminder
+   task reminder
 
-2. ReminderFox 
+1. ReminderFox
 
-    task reminder
+   task reminder
 
 ## Search Engine
 
-3. Add to Search Bar 
+3. Add to Search Bar
 
-    Add any search on any page to the Search Bar. 
-    Just make a right click (Ctrl+click on a Mac) with the mouse pointer 
-    on top of *the page's* search box and choose "Add to Search Bar..."
+   Add any search on any page to the Search Bar.
+   Just make a right click (Ctrl+click on a Mac) with the mouse pointer
+   on top of *the page's* search box and choose "Add to Search Bar..."
 
-    If you don't know how to use the extension, 
-    have a look at the second image - it's a screencast showing it in action.
+   If you don't know how to use the extension,
+   have a look at the second image - it's a screencast showing it in action.
 
 ## Security
 
@@ -89,7 +88,6 @@ Due to technical reasons, PAC configuration based proxy cannot be set up on Fire
 
   The best Proxy Switching plugin (for both Firefox and Chrome)
 
-
 ## Feeds
 
 - Pocket (save pages to read later)
@@ -104,32 +102,31 @@ Due to technical reasons, PAC configuration based proxy cannot be set up on Fire
 
 - Greasemonkey/scriptish
 
-- cliget  
+- cliget
 
 - Multi Links
-Generates curl/wget commands that emulate the request 
-as though it's coming from your browser 
-allowing you to download protected files directly to a separate machine.
+  Generates curl/wget commands that emulate the request
+  as though it's coming from your browser
+  allowing you to download protected files directly to a separate machine.
 
-- lget  
-Allows you to initiate a direct download of a file given a url.
+- lget\
+  Allows you to initiate a direct download of a file given a url.
 
 - PrintFriendly
-    Make any web page Print Friendly & PDF
+  Make any web page Print Friendly & PDF
 
 - Open in Chrome
 
 - IETab
 
-- Live HTTP Headers  
-    View HTTP headers of a page and while browsing.
+- Live HTTP Headers\
+  View HTTP headers of a page and while browsing.
 
 ## Downloading Tools
 
 - Video DownloadHelper
 
-- DownThemAll  
-The first and only download manager/accelerator built inside Firefox!
+- DownThemAll\
+  The first and only download manager/accelerator built inside Firefox!
 
-- FlashGot Mass Downloader 
-
+- FlashGot Mass Downloader

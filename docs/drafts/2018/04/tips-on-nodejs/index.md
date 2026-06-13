@@ -1,7 +1,7 @@
 ---
 title: Tips on NodeJS
-created: 2018-04-26 13:10:46
-date: 2026-04-15 19:27:01.302735
+created: '2018-04-26T13:10:46-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-nodejs
@@ -21,7 +21,7 @@ tags:
 
 ## Install NodeJS
 
-[Install NodeJS on Ubuntu](http://www.legendu.net/misc/blog/install-nodejs-on-ubuntu/)
+[Install NodeJS on Ubuntu](install-nodejs-on-ubuntu)
 
 ## Upgrade NodeJS
 
@@ -29,8 +29,8 @@ tags:
    to manage different versions of NodeJS.
 
    ```bash
-    n lts
-    n latest
+   n lts
+   n latest
    ```
 
 ## References

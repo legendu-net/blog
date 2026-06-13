@@ -1,7 +1,7 @@
 ---
 title: Tools With Dark Power
-created: 2021-08-08 11:56:50
-date: 2026-04-13 23:14:59.810658
+created: '2021-08-08T11:56:50-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tools-with-dark-power
@@ -52,8 +52,8 @@ alias wget.no.check='wget --no-check-certificate'
 is a modern port scanner
 which finds ports quickly (3 seconds at its fastest).
 
-## [Bypass Paywalls and Limits on Information](https://www.legendu.net/misc/blog/bypass-paywalls-and-limits-on-information/)
+## [Bypass Paywalls and Limits on Information](bypass-paywalls-and-limits-on-information)
 
-## [Collect a Dossier on a Person from Social Media](https://www.legendu.net/misc/blog/collect-a-dossier-on-a-person-from-social-media)
+## [Collect a Dossier on a Person from Social Media](collect-a-dossier-on-a-person-from-social-media)
 
 ## Crack Password

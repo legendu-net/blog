@@ -1,7 +1,7 @@
 ---
 title: Cluster Management Made Easy with Ansible
-created: 2017-07-29 22:26:41
-date: 2026-04-13 23:28:03.006974
+created: '2017-07-29T22:26:41-07:00'
+date: '2026-06-12T22:31:50-07:00'
 authors:
   - bendu
 label: cluster-management-made-easy-with-ansible
@@ -83,7 +83,7 @@ when you have host key checking enabled in Ansible.
 
 ## References
 
-http://www.legendu.net/misc/blog/run-commands-on-remote-machines/
+[Run Commands on Remote Machines](run-commands-on-remote-machines)
 
 https://github.com/ansible/ansible
 

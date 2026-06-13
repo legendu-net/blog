@@ -1,7 +1,7 @@
 ---
 title: Rust for IoT
-created: 2023-01-13 10:42:03
-date: 2026-04-13 23:14:35.127762
+created: '2023-01-13T10:42:03-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: rust-for-iot
@@ -134,4 +134,4 @@ is a collection of items that are not yet awesome in Embedded Rust
 
 - [Embedded Rust & Embassy: UART Serial Communication](https://apollolabsblog.hashnode.dev/embedded-rust-embassy-uart-serial-communication)
 
-- [Rust for Robots](https://www.legendu.net/misc/blog/rust-for-robots)
+- [Rust for Robots](rust-for-robots)

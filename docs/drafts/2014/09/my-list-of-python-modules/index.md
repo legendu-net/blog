@@ -1,7 +1,7 @@
 ---
-title: "My List of Python Modules"
-created: 2014-09-13 09:48:04
-date: 2021-10-07 16:50:08
+title: My List of Python Modules
+created: '2014-09-13T09:48:04-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: my-list-of-python-modules
@@ -23,75 +23,75 @@ tags:
 
 1. pandas: data frame.
 
-2. scipy: scientific computing.
+1. scipy: scientific computing.
 
-3. numpy: multi-dimensional arrays, fundation of pandas and deep learning packages.
+1. numpy: multi-dimensional arrays, fundation of pandas and deep learning packages.
 
-4. re: regular expression
+1. re: regular expression
 
 ## File System
 
 1. shutil: copy, move and remove files.
 
-2. tempfile: create temporary files and directories.
+1. tempfile: create temporary files and directories.
 
-3. pathlib
+1. pathlib
 
-5. loguru: logging made (stupidly) easy for Python. It is a much better alternative than the built-in logging module.
+1. loguru: logging made (stupidly) easy for Python. It is a much better alternative than the built-in logging module.
 
-## [Python Developing Tools](http://www.legendu.net/misc/blog/useful-tools-for-python-developing/)
+## [Python Developing Tools](useful-tools-for-python-developing)
 
-## [Visualization](http://www.legendu.net/misc/blog/python-modules-for-visualization/)
+## [Visualization](python-modules-for-visualization)
 
 ## Documentation & Reporting
 
 1. sphinx
 
-2. [Pweave](https://github.com/mpastell/Pweave): R knitr equivalence in Python.
+1. [Pweave](https://github.com/mpastell/Pweave): R knitr equivalence in Python.
 
-## [Database](http://www.legendu.net/misc/blog/odbc-vs-jdbc-in-python/)
+## [Database](sql-database-client-server-protocols)
 
 ## Date/Time
 
-[Python Modules for Date and Time](http://www.legendu.net/misc/blog/python-modules-for-date-and-time)
+[Python Modules for Date and Time](python-modules-for-date-and-time)
 
-## [High Performance Computing](http://www.legendu.net/misc/blog/high-performance-computing-in-python/)
+## [High Performance Computing](high-performance-computing-in-python)
 
 ## Command-line Arguments Parsing
 
 1. argparse: Parser for command-line options, arguments and sub-commands.
 
-2. curses
+1. curses
 
 ## Machine Learning
 
 Please refer to
-[Machine Learning Frameworks](http://www.legendu.net/misc/blog/machine-learning-libraries-computing-frames-programming-languages/#machine-learning-frames)
+[Machine Learning Frameworks](machine-learning-libraries-computing-frames-and-programming-languages-machine-learning-frameworks)
 for more details.
 
 ## GUI application
 
 1. PyQt
 
-2. PySide
+1. PySide
 
 ## Calling Shell
 
 1. os.system
 
-2. subprocess: subprocess management.
+1. subprocess: subprocess management.
 
 ## Encryption
 
 1. gnupg
 
-2. pycrypto
+1. pycrypto
 
 ## Unit Testing
 
 1. [pytest](https://github.com/pytest-dev/pytest): the best unit testing framework for Python.
 
-2. unittest: built-in unit testing framework.
+1. unittest: built-in unit testing framework.
 
 ## Data Structure
 
@@ -101,25 +101,24 @@ for more details.
 
 1. [networkx/networkx](https://github.com/networkx/networkx)
 
-2. [pydot/pydot](https://github.com/pydot/pydot)
+1. [pydot/pydot](https://github.com/pydot/pydot)
 
-3. [opusonesolutions/asciigraf](https://github.com/opusonesolutions/asciigraf)
+1. [opusonesolutions/asciigraf](https://github.com/opusonesolutions/asciigraf)
 
-4. [count0/graph-tool](https://git.skewed.de/count0/graph-tool)
+1. [count0/graph-tool](https://git.skewed.de/count0/graph-tool)
 
-5. [pydot/pydot](https://github.com/pydot/pydot)
+1. [pydot/pydot](https://github.com/pydot/pydot)
 
 ## Misc
 
 1. inspect: check class, function definition and so on.
 
-2. [tqdm](http://www.legendu.net/misc/blog/python-tqdm/) A Fast, Extensible Progress Bar for Python and CLI
+1. [tqdm](hands-on-the-tqdm-module-in-python) A Fast, Extensible Progress Bar for Python and CLI
 
-3. [osquery-python](https://github.com/osquery/osquery-python)
+1. [osquery-python](https://github.com/osquery/osquery-python)
 
 ## References
 
 - [https://wiki.python.org/moin/UsefulModules](https://wiki.python.org/moin/UsefulModules)
 
 - [20 Python libraries you can’t live without](https://freepythontips.wordpress.com/2013/07/30/20-python-libraries-you-cant-live-without/)
-

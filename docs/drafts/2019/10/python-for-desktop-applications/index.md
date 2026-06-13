@@ -1,7 +1,7 @@
 ---
-title: "Python for Desktop Applications"
-created: 2019-10-13 23:40:08
-date: 2021-04-13 23:40:08
+title: Python for Desktop Applications
+created: '2019-10-13T23:40:08-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: python-for-desktop-applications
@@ -22,22 +22,25 @@ tags:
 
 ## Simple Python Packages for GUI Applications
 
-### [Tkinter](http://www.legendu.net/misc/blog/use-tkinter-to-build-gui-applications-in-python/)
+### [Tkinter](use-tkinter-to-build-gui-applications-in-python)
 
 ### [DearPyGui](https://github.com/hoffstadt/DearPyGui)
+
 [DearPyGui](https://github.com/hoffstadt/DearPyGui)
-Dear PyGui is a simple to use (but powerful) Python GUI framework. 
-Dear PyGui provides a wrapping of [Dear ImGui](https://github.com/ocornut/imgui) 
+Dear PyGui is a simple to use (but powerful) Python GUI framework.
+Dear PyGui provides a wrapping of [Dear ImGui](https://github.com/ocornut/imgui)
 which simulates a traditional retained mode GUI (as opposed to Dear ImGui's immediate mode paradigm).
-Dear PyGui is fundamentally different than other Python GUI frameworks. 
-Under the hood, Dear PyGui uses the immediate mode paradigm and your computer's GPU 
-to facilitate extremely dynamic interfaces. 
+Dear PyGui is fundamentally different than other Python GUI frameworks.
+Under the hood, Dear PyGui uses the immediate mode paradigm and your computer's GPU
+to facilitate extremely dynamic interfaces.
 
 ### [Gooey](https://github.com/chriskiehl/Gooey)
-turns (almost) any Python command line program 
+
+turns (almost) any Python command line program
 into a full GUI application with one line.
 
 ### [PySimpleGUI](https://github.com/PySimpleGUI/PySimpleGUI)
+
 creates custom layout GUI's simply.
 
 ## Solutions based on Qt
@@ -55,9 +58,8 @@ creates custom layout GUI's simply.
 ## GUI Automation
 
 [PyAutoGUI](https://github.com/asweigart/pyautogui)
-is a cross-platform GUI automation Python module for human beings. 
+is a cross-platform GUI automation Python module for human beings.
 Used to programmatically control the mouse & keyboard.
-
 
 [Kivy](https://github.com/kivy/kivy)
 

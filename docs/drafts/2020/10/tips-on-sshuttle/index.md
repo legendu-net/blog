@@ -1,7 +1,7 @@
 ---
 title: Tips on sshuttle
-created: 2020-10-04 09:59:49
-date: 2026-04-13 23:15:14.484704
+created: '2020-10-04T09:59:49-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-sshuttle
@@ -32,13 +32,13 @@ tags:
    please refer to
    [\[Question\]: SSH proxy](https://github.com/sshuttle/sshuttle/issues/540)
    and
-   [Configure SSH to Use a Proxy Server](http://www.legendu.net/en/blog/configure-ssh-to-use-a-proxy-server/)
+   [Configure SSH to Use a Proxy Server](configure-ssh-to-use-a-proxy-server)
    .
 
 ## Installation
 
 ```bash
-sudo apt install iptables 
+sudo apt install iptables
 pip3 install sshuttle
 ```
 

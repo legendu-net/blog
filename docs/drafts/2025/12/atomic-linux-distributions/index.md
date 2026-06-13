@@ -1,7 +1,7 @@
 ---
 title: Atomic Linux Distributions
-created: 2025-12-07 13:27:17
-date: 2026-04-13 23:14:15.550093
+created: '2025-12-07T13:27:17-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: atomic-linux-distributions
@@ -27,7 +27,7 @@ See
 
 ## Some Good Atomic Linux Distributions
 
-- [Universal Blue](https://www.legendu.net/misc/blog/universal-blue-images-for-atomic-linux-distributions)
+- [Universal Blue](universal-blue-atomic-linux-distributions)
   - recommended
   - based on Fedora Atomic distributions
 - [Fedora Atomic](https://www.fedoraproject.org/atomic-desktops/)

@@ -1,7 +1,7 @@
 ---
 title: Tips on WASM
-created: 2022-12-28 10:29:41
-date: 2026-04-13 23:14:39.779359
+created: '2022-12-28T10:29:41-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-wasm
@@ -17,11 +17,11 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-[WebAssembly Runtimes](https://www.legendu.net/misc/blog/wasi-runtimes)
+[WebAssembly Runtimes](webassembly-runtimes)
 
-[Webassembly as An Alternative to Containers](https://www.legendu.net/misc/blog/webassembly-as-an-alternative-to-containers)
+[Webassembly as An Alternative to Containers](webassembly-as-an-alternative-to-containers)
 
-[Good Webassembly Tools](https://www.legendu.net/misc/blog/good-webassembly-tools)
+[Good Webassembly Tools](good-webassembly-tools)
 
 ## [The WebAssembly System Interface (WASI)](https://github.com/WebAssembly/WASI)
 

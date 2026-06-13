@@ -1,7 +1,7 @@
 ---
 title: Useful Chrome Extensions
 created: '2016-05-30T20:26:25-07:00'
-date: '2026-05-18T21:06:35-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: useful-chrome-extensions
@@ -63,7 +63,7 @@ Contrary to other extensions,
 it does not open a new OS window.
 For detailed discussions,
 please refer to
-[Firenvim Brings NeoVim into Your Browser](https://www.legendu.net/misc/blog/firenvim-brings-neovim-into-your-browser/)
+[Firenvim Brings NeoVim into Your Browser](firenvim-brings-neovim-into-your-browser)
 .
 
 ## [Bookmarks Clean Up](https://chrome.google.com/webstore/detail/bookmarks-clean-up/oncbjlgldmiagjophlhobkogeladjijl?hl=en)

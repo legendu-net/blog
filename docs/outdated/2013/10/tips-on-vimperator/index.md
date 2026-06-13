@@ -1,7 +1,7 @@
 ---
 title: Tips on Vimperator
-created: 2013-10-22 14:55:48
-date: 2026-04-20 08:53:09.260631
+created: '2013-10-22T14:55:48-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-vimperator
@@ -24,7 +24,7 @@ Some web applications (e.g., Google apps, MS Apps, RStudio, etc.) have their own
 and they do not cowork with Vimperator.
 Having Vimperator enabled on these web apps/pages make both fail to work.
 Please refer to
-[Selectively Disable Vimperator on Webpages](http://www.legendu.net/en/blog/selectively-disable-vimperator/)
+[Selectively Disable Vimperator on Webpages](selectively-disable-vimperator-on-webpages)
 on how to selectively disable Vimperator on some web apps/pages.
 
 ## Enable/Disable Vimperator

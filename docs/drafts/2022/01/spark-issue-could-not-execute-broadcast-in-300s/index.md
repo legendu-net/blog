@@ -1,7 +1,7 @@
 ---
 title: 'Spark Issue: Could Not Execute Broadcast in 300S'
-created: 2022-01-22 11:11:13
-date: 2026-04-15 19:27:00.827239
+created: '2022-01-22T11:11:13-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: spark-issue-could-not-execute-broadcast-in-300s
@@ -30,7 +30,7 @@ tags:
 1. DataFrame caching failed due to failure of Spark nodes.
    If so,
    you will see other error message such as
-   [block rdd_123_456 could not be removed as it was not found on disk or in memory](http://www.legendu.net/misc/blog/spark-issue:-block-could-not-be-removed-as-it-was-not-found-on-disk-or-in-memory/)
+   [block rdd_123_456 could not be removed as it was not found on disk or in memory](spark-issue-block-could-not-be-removed-as-it-was-not-found-on-disk-or-in-memory)
    .
 
 ## Possible Solutions
@@ -46,5 +46,5 @@ tags:
    it helps to eliminate one possible cause at least.
 
 1. Refer to
-   [block rdd_123_456 could not be removed as it was not found on disk or in memory](http://www.legendu.net/misc/blog/spark-issue:-block-could-not-be-removed-as-it-was-not-found-on-disk-or-in-memory/)
+   [block rdd_123_456 could not be removed as it was not found on disk or in memory](spark-issue-block-could-not-be-removed-as-it-was-not-found-on-disk-or-in-memory)
    for possible solutions.

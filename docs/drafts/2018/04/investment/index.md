@@ -1,41 +1,41 @@
 ---
 title: Investment
-created: 2018-04-17 12:24:21
-date: 2026-04-05 19:42:38.019332
+created: '2018-04-17T12:24:21-07:00'
+date: '2026-06-12T22:31:33-07:00'
 authors:
-- bendu
+  - bendu
 label: investment
 license: CC-BY-4.0
 tags:
-- finance
-- investment
-- WeChat official account
-- money
-- tips
-- economics
-- stock
-- bond
-- CD
-- savings
-- structure notes
+  - finance
+  - investment
+  - WeChat official account
+  - money
+  - tips
+  - economics
+  - stock
+  - bond
+  - CD
+  - savings
+  - structure notes
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## General Tips 
+## General Tips
 
 1. Spend less money than you can make.
-
 
 ## Low Risk Investment
 
 Please refer to
-[Low Risk Investments]( https://www.legendu.net/misc/blog/low-risk-investments ) 
+[Low Risk Investments](low-risk-investments)
 for detailed discussions.
 
 ## Diversified Investment
 
-Please refer to 
-[Diversified Investment]( https://www.legendu.net/misc/blog/diversified-investment )
+Please refer to
+[Diversified Investment](diversified-investment)
 for detailed discussions.
 
 ## Important Resources
@@ -54,7 +54,7 @@ for detailed discussions.
 
 - [渡過10個熊市的美國投資冠軍 這次熊市下的建議｜瓦特股市 Marching Park STOCK【股市知識】](https://www.youtube.com/watch?v=krMO0e9WhnI)
 
-## Tools 
+## Tools
 
 https://www.sec.gov
 
@@ -69,7 +69,6 @@ https://www.sec.gov/edgar/searchedgar/companysearch.html
 [FinViz Screener](https://finviz.com/screener.ashx)
 
 [Yahoo Finance Screener](https://finance.yahoo.com/screener)
-
 
 ## Good Forums for Investment
 
@@ -117,7 +116,6 @@ https://www.sec.gov/edgar/searchedgar/companysearch.html
 
 [美国投资界常逛的网站或论坛有哪些（比如某些优质的博客）？](https://www.zhihu.com/question/62023711)
 
-
 [雪球](https://xueqiu.com/)
 
 投研帮
@@ -135,13 +133,13 @@ https://www.sec.gov/edgar/searchedgar/companysearch.html
 
 ## References
 
-- [Taxes on Investment Gains](taxes-on-investment-gains) 
+- [Taxes on Investment Gains](taxes-on-investment-gains)
 
-- [Big Figures to Follow in Investment](https://www.legendu.net/misc/blog/big-figures-to-follow-in-investment)
+- [Big Figures to Follow in Investment](big-figures-to-follow-in-investment)
 
-- [Good Tutorials for Investment](https://www.legendu.net/misc/blog/good-tutorials-for-investment)
+- [Good Tutorials for Investment](investment)
 
-- [Ways to Invest in Real Estate]( https://www.legendu.net/misc/blog/ways-to-invest-in-real-estate )
+- [Ways to Invest in Real Estate](ways-to-invest-in-real-estate)
 
 - [渡過10個熊市的美國投資冠軍 這次熊市下的建議｜瓦特股市 Marching Park STOCK【股市知識】](https://www.youtube.com/watch?v=krMO0e9WhnI)
 
@@ -152,4 +150,3 @@ https://www.sec.gov/edgar/searchedgar/companysearch.html
 - [美投讲美股](https://www.youtube.com/channel/UCBUH38E0ngqvmTqdchWunwQ)
 
 - [Yahoo Finance](https://finance.yahoo.com/news/)
-

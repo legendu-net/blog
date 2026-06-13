@@ -1,20 +1,21 @@
 ---
 title: Debugging, Unit Testing and CICD in Python
-created: 2019-02-07 22:02:18
-date: 2026-04-05 19:42:37.946152
+created: '2019-02-07T22:02:18-08:00'
+date: '2026-06-12T22:31:50-07:00'
 authors:
-- bendu
+  - bendu
 label: debugging-unit-testing-and-cicd-in-python
 license: CC-BY-4.0
 tags:
-- programming
-- Python
-- unit testing
-- debugging
-- command-line tools
-- development
-- dev
+  - programming
+  - Python
+  - unit testing
+  - debugging
+  - command-line tools
+  - development
+  - dev
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Debugging
@@ -23,55 +24,53 @@ tags:
 
 [Goodbye Print, Hello Debugger! - Nina Zakharenko - Talk](https://www.youtube.com/watch?v=5AYIe-3cD-s)
 
-
 ## Unit Testing
 
-1. When separate teams/people are developing different components in a big project 
-    and unit testing has to be written before other dependent components are ready,
-    make sure that unit tests cover agreed interfaces.
+1. When separate teams/people are developing different components in a big project
+   and unit testing has to be written before other dependent components are ready,
+   make sure that unit tests cover agreed interfaces.
 
-2. Printing intermediate variables is the universal way (even inefficienty many times) for debugging.
-    [PySnooper](https://github.com/cool-RR/PySnooper) is debugging tool 
-    based on the idea of printing intermediate varibles 
-    but is great improved over the plain `print` function 
-    and is both easy and fun to use.
+1. Printing intermediate variables is the universal way (even inefficienty many times) for debugging.
+   [PySnooper](https://github.com/cool-RR/PySnooper) is debugging tool
+   based on the idea of printing intermediate varibles
+   but is great improved over the plain `print` function
+   and is both easy and fun to use.
 
-3. `unitest` is the official unit testing tool in Python
-    and thus has better support and integration with other tools generally speaking. 
-    However, 
-    `pytest` is more concise than `unittest` and makes unit testing more efficiency.
-    `pytest` is also widely adopted.
-    Please refer to
-    [Write Unit Tests Using unittest in Python](http://www.legendu.net/misc/blog/write-unit-tests-using-unittest-in-Python/)
-    and
-    [Write Unit Tests Using PyTest in Python](http://www.legendu.net/misc/blog/pytest-tips/)
-    for more details on how to use unittest and pytest.
+1. `unitest` is the official unit testing tool in Python
+   and thus has better support and integration with other tools generally speaking.
+   However,
+   `pytest` is more concise than `unittest` and makes unit testing more efficiency.
+   `pytest` is also widely adopted.
+   Please refer to
+   [Write Unit Tests Using unittest in Python](write-unit-tests-using-unittest-in-python)
+   and
+   [Write Unit Tests Using PyTest in Python](write-unit-tests-using-pytest-in-python)
+   for more details on how to use unittest and pytest.
 
-## Doctest 
+## Doctest
 
 ## hypothesis
 
-## [coverage](http://www.legendu.net/misc/blog/measure-python-code-coverage)
+## [coverage](measure-python-code-coverage)
 
-Please refer to 
-[coverage](http://www.legendu.net/misc/blog/measure-python-code-coverage)
+Please refer to
+[coverage](measure-python-code-coverage)
 for details.
 
 ## Mock and pytest Fixtures
 
-
 ## CICD
 
-1. It is suggested that you leverage professional CICD tools such as GitHub Actions 
-    instead of 
-    [nox](http://www.legendu.net/misc/blog/tips-on-nox/)
-    or
-    [pre-commit](https://github.com/pre-commit/pre-commit] (Git hooks)
-    for CICD. 
-    However, 
-    Git hooks can be useful for simple and fast local code formatting.
+1. It is suggested that you leverage professional CICD tools such as GitHub Actions
+   instead of
+   [nox](tips-on-nox)
+   or
+   \[pre-commit\](https://github.com/pre-commit/pre-commit] (Git hooks)
+   for CICD.
+   However,
+   Git hooks can be useful for simple and fast local code formatting.
 
-2. GitHub Actions seems to the best CICD (and more) tool for projects on GitHub.
+1. GitHub Actions seems to the best CICD (and more) tool for projects on GitHub.
 
 ## Travis CI
 
@@ -84,8 +83,8 @@ The features you get are:
 Travis will run your tests for every push made on your repo
 Travis will run your tests on every pull request contributors will make
 
+## Jenkins
 
-## Jenkins 
 Jenkins is another popular one.
 https://stackoverflow.com/questions/32422264/jenkins-vs-travis-ci-which-one-would-you-use-for-a-open-source-project
 
@@ -93,6 +92,6 @@ https://stackoverflow.com/questions/32422264/jenkins-vs-travis-ci-which-one-woul
 
 ## Reference
 
-http://www.legendu.net/misc/blog/summary-of-python-linting-tools/
+[Useful Tools for Python Developing](useful-tools-for-python-developing)
 
-http://www.legendu.net/misc/blog/type-annotation-in-python/
+[Type Annotation in Python](type-annotation-in-python)

@@ -1,7 +1,7 @@
 ---
 title: Logging in PySpark
-created: 2020-06-15 11:38:22
-date: 2026-04-13 23:15:19.441562
+created: '2020-06-15T11:38:22-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: logging-in-pyspark
@@ -24,4 +24,4 @@ tags:
    If you have to use the `logging` module,
    be aware of traps in using it.
    For more details,
-   please refer to [Hands on the logging Module in Python](http://www.legendu.net/misc/blog/python-logging-module/).
+   please refer to [Hands on the logging Module in Python](python-logging).

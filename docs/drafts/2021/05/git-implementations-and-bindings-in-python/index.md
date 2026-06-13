@@ -1,7 +1,7 @@
 ---
 title: Git Implementations and Bindings in Python
-created: 2021-05-02 12:31:26
-date: 2026-04-13 23:15:02.097761
+created: '2021-05-02T12:31:26-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: git-implementations-and-bindings-in-python
@@ -39,4 +39,4 @@ dulwich is recommended.
 
 ## References
 
-- [Hands on Dulwich](http://www.legendu.net/misc/blog/hands-on-Dulwich)
+- [Hands on Dulwich](hands-on-dulwich)

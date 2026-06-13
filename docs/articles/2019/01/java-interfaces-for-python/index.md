@@ -1,7 +1,7 @@
 ---
 title: Java Interfaces for Python
-created: 2019-01-25 20:15:13
-date: 2026-04-15 19:27:00.399839
+created: '2019-01-25T20:15:13-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: java-interfaces-for-python
@@ -26,13 +26,13 @@ it has a better performance, generally speaking.
 ## JPype
 
 Please refer to
-[Call Java Code Using Jpype from Python](http://www.legendu.net/misc/blog/call-java-code-using-jpype-from-python/)
+[Call Java Code Using Jpype from Python](call-java-code-using-jpype-from-python)
 for details.
 
 ## PyJNIus
 
 Please refer to
-[Call Java Using PyJNIus from Python](http://www.legendu.net/misc/blog/call-java-using-pyjnius-from-python/)
+[Call Java Using PyJNIus from Python](call-java-using-pyjnius-from-python)
 for details.
 
 ## py4j
@@ -41,6 +41,6 @@ for details.
 
 - https://web.archive.org/web/20170729052824/http://baojie.org/blog/2014/06/16/call-java-from-python/
 
-- [Call Java Code Using Jpype from Python](http://www.legendu.net/misc/blog/call-java-code-using-jpype-from-python/)
+- [Call Java Code Using Jpype from Python](call-java-code-using-jpype-from-python)
 
-- [Call Java Using PyJNIus from Python](http://www.legendu.net/misc/blog/call-java-using-pyjnius-from-python/)
+- [Call Java Using PyJNIus from Python](call-java-using-pyjnius-from-python)

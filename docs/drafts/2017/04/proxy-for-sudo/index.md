@@ -1,7 +1,7 @@
 ---
 title: Proxy for sudo
-created: 2017-04-07 23:42:48
-date: 2026-04-14 19:34:17.378372
+created: '2017-04-07T23:42:48-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: proxy-for-sudo
@@ -32,5 +32,5 @@ sudo -E command_to_run
 
 For more discussions,
 please refer to
-[Environment Variables and Secure Path for sudo](https://www.legendu.net/misc/blog/environment-variables-and-secure-path-for-sudo)
+[Environment Variables and Secure Path for sudo](environment-variables-and-secure-path-for-sudo)
 .

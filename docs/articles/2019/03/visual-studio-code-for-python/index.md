@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Code for Python
-created: 2019-03-30 12:20:46
-date: 2026-04-15 19:27:00.396926
+created: '2019-03-30T12:20:46-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: visual-studio-code-for-python
@@ -19,7 +19,7 @@ tags:
 ## Extensions
 
 Please refer to
-[Useful Visual Studio Code Extensions](http://www.legendu.net/misc/blog/useful-visual-studio-code-extensions)
+[Useful Visual Studio Code Extensions](useful-visual-studio-code-extensions)
 .
 
 ## Set Python Environment for Visual Studio Code Server
@@ -34,7 +34,7 @@ Please refer to
 
 ![Set Python Path](https://user-images.githubusercontent.com/824507/69910283-b7b41300-13bd-11ea-83f0-5f959c68532f.png)
 
-## [Debug a Python Project](http://www.legendu.net/misc/blog/debug-python-project-in-visual-studio-code)
+## [Debug a Python Project](debug-python-project-in-visual-studio-code)
 
 ## Visual Studio Live Share
 
@@ -48,7 +48,7 @@ https://code.visualstudio.com/docs/python/jupyter-support
 
 ## References
 
-- [VSCode Shortcuts](http://www.legendu.net/misc/blog/vscode-tips/#shortcuts)
+- [VSCode Shortcuts](tips-on-visual-studio-code-shortcuts)
 
 - [Getting Started with Python in VS Code](https://code.visualstudio.com/docs/python/python-tutorial)
 

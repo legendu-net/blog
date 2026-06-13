@@ -1,7 +1,7 @@
 ---
 title: Tips on GCP
-created: 2022-05-09 23:39:30
-date: 2026-04-13 23:14:48.294010
+created: '2022-05-09T23:39:30-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-gcp
@@ -39,8 +39,8 @@ gcloud auth application-default login
 
 ## References
 
-- [Tips on GCP Compute Engine](https://www.legendu.net/misc/blog/tips-on-gcp-compute-engine)
+- [Tips on GCP Compute Engine](tips-on-gcp-compute-engine)
 
-- [Tips on BigQuery](https://www.legendu.net/misc/blog/tips-on-bigquery)
+- [Tips on BigQuery](tips-on-bigquery)
 
 - [Set up Application Default Credentials](https://cloud.google.com/docs/authentication/provide-credentials-adc)

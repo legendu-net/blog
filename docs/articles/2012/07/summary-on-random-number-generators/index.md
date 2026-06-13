@@ -1,7 +1,7 @@
 ---
 title: Summary on Random Number Generators
-created: 2012-07-27 21:14:07
-date: 2026-04-13 23:33:06.518009
+created: '2012-07-27T21:14:07-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: summary-on-random-number-generators
@@ -124,4 +124,4 @@ I don't see a popular Java implementation for PCG at this time.
 ## References
 
 - [Xoshiro / Xoroshiro Generators and the PRNG Shootout](https://prng.di.unimi.it/)
-- [Thread Safe Random Number Generator](https://www.legendu.net/en/blog/thread-safe-random-number-generator)
+- [Thread Safe Random Number Generator](thread-safe-random-number-generator)

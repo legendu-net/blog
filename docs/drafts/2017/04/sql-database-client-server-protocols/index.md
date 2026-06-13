@@ -1,7 +1,7 @@
 ---
 title: SQL Database Client-server Protocols
-created: 2017-04-30 12:06:09
-date: 2026-04-15 19:27:01.357629
+created: '2017-04-30T12:06:09-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: sql-database-client-server-protocols
@@ -24,7 +24,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-1. [Apache Arrow Flight](https://www.legendu.net/misc/blog/tips-on-apache-arrow-flight-sql)
+1. [Apache Arrow Flight](tips-on-apache-arrow-flight-sql)
    is the future protocol for querying Databases!
    It use columnar data and leverages Apache Arrow to avoid unnecessary copy of data,
    which makes it able to query large data much (about 100x) faster than ODBC and JDBC.

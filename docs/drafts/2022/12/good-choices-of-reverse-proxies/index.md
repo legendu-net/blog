@@ -1,7 +1,7 @@
 ---
 title: Good Choices of Reverse Proxies
-created: 2022-12-09 10:57:00
-date: 2026-04-15 19:27:00.731457
+created: '2022-12-09T10:57:00-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: good-choices-of-reverse-proxies
@@ -34,9 +34,9 @@ tags:
 is a lightweight, fast, always-up reverse proxy server.
 It is configurable at runtime, fast and safe.
 
-## [TinyProxy](http://www.legendu.net/misc/blog/tips-on-tinyproxy)
+## [TinyProxy](tips-on-tinyproxy)
 
-[TinyProxy](http://www.legendu.net/misc/blog/tips-on-tinyproxy)
+[TinyProxy](tips-on-tinyproxy)
 
 ## [frp](https://github.com/fatedier/frp)
 

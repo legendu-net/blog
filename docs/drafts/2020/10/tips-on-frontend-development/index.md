@@ -1,7 +1,7 @@
 ---
 title: Tips on Frontend Development
-created: 2020-10-26 13:10:46
-date: 2026-04-13 23:15:13.298283
+created: '2020-10-26T13:10:46-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-frontend-development
@@ -63,10 +63,10 @@ https://swagger.io/tools/swagger-editor/
 
 [Python Requests](http://docs.python-requests.org/en/master/#)
 
-## [HTML5](http://www.legendu.net/misc/blog/tips-on-html)
+## [HTML5](tips-on-html)
 
 Please refer to
-[Tips on HTML](http://www.legendu.net/misc/blog/tips-on-html)
+[Tips on HTML](tips-on-html)
 for more details.
 
 ## JavaScript/TypeScript Frameworks for Web UI

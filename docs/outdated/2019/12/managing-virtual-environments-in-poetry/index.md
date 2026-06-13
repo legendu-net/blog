@@ -1,7 +1,7 @@
 ---
-title: "Managing Virtual Environments in Poetry"
-created: 2019-12-25 23:14:43
-date: 2025-04-30 14:47:45
+title: Managing Virtual Environments in Poetry
+created: '2019-12-25T23:14:43-08:00'
+date: '2026-06-12T22:31:33-07:00'
 authors:
   - bendu
 label: managing-virtual-environments-in-poetry
@@ -16,7 +16,7 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-[uv]( https://www.legendu.net/misc/blog/manage-python-projects-using-uv )
+[uv](manage-python-projects-using-uv)
 (implemented in Rust)
 is the new cool kid now
 and is prefer to poetry.
@@ -26,56 +26,67 @@ and is prefer to poetry.
 By default,
 Poetry create virtual environment in `$HOME/.poetry` for cahcing/sharing purpose.
 However,
-it is inconvenient if you use Docker-based web IDE for a Python project 
+it is inconvenient if you use Docker-based web IDE for a Python project
 as you will lose the created virtual environment once the Docker container is restarted.
-In that situation, 
-you have to create a new virtual environment, 
+In that situation,
+you have to create a new virtual environment,
 set up the Python interpreter again,
 which is tedious.
-Fortunately, 
+Fortunately,
 Poetry allows to create virtual environment in th root directory of a Python project,
 and it is recommended to do so for the situation described above.
 Run the following command to configure Poetry to create virtual environment in the root directory of the current project.
 
-    :::bash
-    poetry config --local virtualenvs.in-project true
+```
+:::bash
+poetry config --local virtualenvs.in-project true
+```
 
 Notice that the above configure works for the current project only.
 Use the following command
 if you want to make Poetry always create virtual environment in the root directory of a project.
 
-    :::bash
-    poetry config virtualenvs.in-project true
-
+```
+:::bash
+poetry config virtualenvs.in-project true
+```
 
 ## Create a Virtual Environment
 
 Poetry supports the `env` subcomamnd starting from version 1.0.0.
 You can use `poetry env use python_version` to specify the Python version to use for the project.
 
-    :::bash
-    poetry env use python3
+```
+:::bash
+poetry env use python3
+```
 
 ## Activate Vitual Environment
 
 The virtual environment shell can be activated using the following command.
 
-    :::bash
-    poetry shell
+```
+:::bash
+poetry shell
+```
 
-If you have the virtual environment created in the directory `.venv` 
+If you have the virtual environment created in the directory `.venv`
 under the root directory of the project,
 you can also use the following command to activate the virtual environment.
 
-    :::bash
-    . .venv/bin/activate
+```
+:::bash
+. .venv/bin/activate
+```
 
 ## Show Information of the Vitual Environment
 
 You can list information of virtual environments using the following command.
 
-    :::bash
-    poetry env info
+```
+:::bash
+poetry env info
+```
 
 ## References
 

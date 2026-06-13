@@ -1,7 +1,7 @@
 ---
 title: Expose Local Service to Public
-created: 2022-06-22 08:51:38
-date: 2026-04-13 23:14:46.175030
+created: '2022-06-22T08:51:38-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: expose-local-service-to-public
@@ -21,7 +21,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## [ngrok](https://www.legendu.net/en/blog/expose-local-services-to-public-using-ngrok/)
+## [ngrok](expose-local-services-to-public-using-ngrok)
 
 ## [TunnelTo](https://tunnelto.dev/)
 

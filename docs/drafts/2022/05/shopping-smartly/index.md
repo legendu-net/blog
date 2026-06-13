@@ -1,7 +1,7 @@
 ---
 title: Shopping Smartly
 created: '2022-05-21T21:35:27-07:00'
-date: '2026-05-11T23:51:18-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: shopping-smartly
@@ -87,8 +87,8 @@ ASK WHETHER THEY PROVIDE ANY DISCOUNT!!!
 
 ## References
 
-- [Shop At Homedepot](https://www.legendu.net/misc/blog/shop-at-homedepot/)
-- [Shopping on Costco](https://www.legendu.net/misc/blog/shopping-on-costco/)
+- [Shop At Homedepot](shopping-at-homedepot)
+- [Shopping on Costco](shopping-on-costco)
 - [Mutex](mutex.me)
 - [BestBuy](www.bestbuy.com/)
 - [Sears](www.sears.com/)

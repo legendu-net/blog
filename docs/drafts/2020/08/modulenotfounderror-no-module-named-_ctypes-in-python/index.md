@@ -1,7 +1,7 @@
 ---
 title: 'ModuleNotFoundError: No Module Named _Ctypes in Python'
-created: 2020-08-14 10:47:00
-date: 2026-04-13 23:15:17.511909
+created: '2020-08-14T10:47:00-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: modulenotfounderror-no-module-named-_ctypes-in-python
@@ -40,14 +40,14 @@ please refer to
 1. Install `libffi-dev`
 
    ```bash
-    sudo apt-get update
-    sudo apt-get install libffi-dev
+   sudo apt-get update
+   sudo apt-get install libffi-dev
    ```
 
 1. Reinstall Python.
 
 ## References
 
-- [Exception and Error Handling in Python](https://misc.legendu.net/blog/exception-and-error-handling-in-python/)
+- [Exception and Error Handling in Python](exception-and-error-handling-in-python)
 
 - [Python3: ImportError: No module named '\_ctypes' when using Value from module multiprocessing](https://stackoverflow.com/questions/27022373/python3-importerror-no-module-named-ctypes-when-using-value-from-module-mul)

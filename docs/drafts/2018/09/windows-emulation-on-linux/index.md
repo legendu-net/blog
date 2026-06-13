@@ -1,7 +1,7 @@
 ---
 title: Windows Emulation on Linux
-created: 2018-09-15 15:07:31
-date: 2026-04-15 19:27:01.277184
+created: '2018-09-15T15:07:31-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: windows-emulation-on-linux
@@ -56,7 +56,7 @@ WinApps is similar to WinBoat but not as user-friendly as WinBoat.
    it might be buggy.
    For more discussions on WINE and CrossOver,
    please refer to
-   [Windows Emulation Using WINE](http://www.legendu.net/misc/blog/wine-tips)
+   [Windows Emulation Using WINE](windows-emulation-using-wine)
    .
 
 1. [Bottles](https://usebottles.com/)
@@ -77,4 +77,4 @@ It's not recommended.
 
 - [x86 Virtualization in Browser](https://copy.sh/v86/)
 
-- [Windows Emulation Using WINE](http://www.legendu.net/misc/blog/wine-tips)
+- [Windows Emulation Using WINE](windows-emulation-using-wine)

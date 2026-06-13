@@ -1,7 +1,7 @@
 ---
 title: Tips on Backend Development
-created: 2020-10-26 12:49:19
-date: 2026-04-15 19:27:00.966769
+created: '2020-10-26T12:49:19-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-backend-development
@@ -25,7 +25,7 @@ tags:
 
 ## API
 
-[gRPC GraphQL and RESTful APIs](https://www.legendu.net/misc/blog/gRPC-GraphQL-and-RESTful-APIs)
+[gRPC GraphQL and RESTful APIs](grpc-graphql-and-restful-apis)
 
 ## Java Backend Frameworks
 
@@ -116,5 +116,5 @@ A fast Python http server inspired by japronto written in rust.
 ## Rust
 
 Please refer to
-[Rust for Backend Development](https://www.legendu.net/misc/blog/rust-for-backend-development)
+[Rust for Backend Development](rust-for-backend-development)
 for detailed discussions.

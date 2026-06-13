@@ -1,7 +1,7 @@
 ---
 title: RPC Implementation in Rust
-created: 2021-06-20 12:01:24
-date: 2026-04-13 23:15:01.047640
+created: '2021-06-20T12:01:24-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: rpc-implementation-in-rust
@@ -49,4 +49,4 @@ provides a Plug and Play Data Cache that instantly gives you Blazing Fast gRPC a
 
 ## References
 
-- [Protobuf Implementations in Rust](https://www.legendu.net/misc/blog/protobuf-implementations-in-rust)
+- [Protobuf Implementations in Rust](protobuf-implementations-in-rust)

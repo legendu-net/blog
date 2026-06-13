@@ -1,7 +1,7 @@
 ---
 title: Parallel RNGs With Rayon in Rust
-created: 2023-07-05 08:42:27
-date: 2026-04-13 23:14:12.645938
+created: '2023-07-05T08:42:27-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: parallel-rngs-with-rayon-in-rust
@@ -56,7 +56,7 @@ a few things to notice.
    If that's the case,
    you can use a faster RNG (e.g., SmallRng) with thread-local storage as parallel RNGs.
    Please refer to
-   [Customized RNGs with Thread-local Storage](https://www.legendu.net/misc/blog/parallel-RNGs-with-rayon-in-rust/#customized-rngs-with-thread-local-storage)
+   [Customized RNGs with Thread-local Storage](parallel-rngs-with-rayon-in-rust-customized-rngs-with-thread-local-storage)
    for details.
 
 1. [rayon::iter::ParallelIterator::map_init](https://docs.rs/rayon/latest/rayon/iter/trait.ParallelIterator.html#method.map_init)
@@ -69,7 +69,7 @@ a few things to notice.
    you have to leverage thread-local storage in the `init` closure.
    For more discussions,
    please refer to
-   [Thread-Local Storage for Rayon](https://www.legendu.net/misc/blog/thread-local-storage-for-rayon)
+   [Thread-Local Storage for Rayon](thread-local-storage-for-rayon)
    .
 
 1. [rayon::iter::ParallelIterator::with_min_len](https://docs.rs/rayon/latest/rayon/iter/trait.IndexedParallelIterator.html#method.with_min_len)
@@ -77,10 +77,12 @@ a few things to notice.
    When necessary,
    its parameter can be tuned to improve performance.
 
+(parallel-rngs-with-rayon-in-rust-customized-rngs-with-thread-local-storage)=
+
 ## Customized RNGs with Thread-local Storage
 
 Please refer to
-[Thread-Local Storage for Rayon](https://www.legendu.net/misc/blog/thread-local-storage-for-rayon)
+[Thread-Local Storage for Rayon](thread-local-storage-for-rayon)
 for detailed discussions.
 
 ## References

@@ -1,7 +1,7 @@
 ---
-title: "Quant Trading"
-created: 2016-06-09 19:32:27
-date: 2024-09-11 17:20:47
+title: Quant Trading
+created: '2016-06-09T19:32:27-07:00'
+date: '2026-06-12T22:31:33-07:00'
 authors:
   - bendu
 label: quant-trading
@@ -35,102 +35,102 @@ https://github.com/asavinov/intelligent-trading-bot
 
 ## Quant Trading Libraries
 
-## General 
+## General
 
 1. [RustQuant](https://github.com/avhz/RustQuant)
-    is a Rust library for quantitative finance.
+   is a Rust library for quantitative finance.
 
-2. [zvt](https://github.com/zvtvz/zvt)
-    is a modular quant framework.
+1. [zvt](https://github.com/zvtvz/zvt)
+   is a modular quant framework.
 
 ### Technical Analysis
 
 1. [TA-Lib](https://github.com/TA-Lib/ta-lib)
-    is an open-source technical analysis library for financial applications. 
-    It provides a wide range of technical indicators and functions for analyzing financial market data.
+   is an open-source technical analysis library for financial applications.
+   It provides a wide range of technical indicators and functions for analyzing financial market data.
 
-2. [QuantLib](https://github.com/lballabio/quantlib)
-    is aimed at providing a comprehensive software framework for quantitative finance. 
-    QuantLib is a free/open-source library for modeling, trading, and risk management in real-life.
+1. [QuantLib](https://github.com/lballabio/quantlib)
+   is aimed at providing a comprehensive software framework for quantitative finance.
+   QuantLib is a free/open-source library for modeling, trading, and risk management in real-life.
 
-3. [ffn](https://github.com/pmorissette/ffn)
-    is a library that contains many useful functions 
-    for those who work in quantitative finance. 
-    It stands on the shoulders of giants (Pandas, Numpy, Scipy, etc.) 
-    and provides a vast array of utilities, 
-    from performance measurement and evaluation to graphing and common data transformations.
+1. [ffn](https://github.com/pmorissette/ffn)
+   is a library that contains many useful functions
+   for those who work in quantitative finance.
+   It stands on the shoulders of giants (Pandas, Numpy, Scipy, etc.)
+   and provides a vast array of utilities,
+   from performance measurement and evaluation to graphing and common data transformations.
 
-4. [riskparity.py](https://github.com/convexfi/riskparity.py)
-    riskparityportfolio provides solvers to design risk parity portfolios. 
-    In its simplest form, we consider the convex formulation with a unique solution proposed by Spinu (2013) and use cyclical methods inspired by Griveau-Billion et al. (2013) and Choi & Chen (2022). 
-    For more general formulations, which are usually nonconvex, 
-    we implement the successive convex approximation method proposed by Feng & Palomar (2015).
+1. [riskparity.py](https://github.com/convexfi/riskparity.py)
+   riskparityportfolio provides solvers to design risk parity portfolios.
+   In its simplest form, we consider the convex formulation with a unique solution proposed by Spinu (2013) and use cyclical methods inspired by Griveau-Billion et al. (2013) and Choi & Chen (2022).
+   For more general formulations, which are usually nonconvex,
+   we implement the successive convex approximation method proposed by Feng & Palomar (2015).
 
 ### Indicators
 
 1. [TA-Lib](https://github.com/TA-Lib/ta-lib)
-    is an open-source technical analysis library for financial applications. 
-    It provides a wide range of technical indicators and functions for analyzing financial market data.
+   is an open-source technical analysis library for financial applications.
+   It provides a wide range of technical indicators and functions for analyzing financial market data.
 
-2. [indicator](https://github.com/cinar/indicator)
-    is a Golang module providing various stock technical analysis indicators for trading.
+1. [indicator](https://github.com/cinar/indicator)
+   is a Golang module providing various stock technical analysis indicators for trading.
 
-3. [stock-indicators-python](https://github.com/facioquo/stock-indicators-python)
-    is a PyPI library package that produces financial market technical indicators. 
-    Send in historical price quotes and get back desired indicators 
-    such as moving averages, Relative Strength Index, Stochastic Oscillator, Parabolic SAR, etc. Nothing more.
-    [stock-indicators-python](https://github.com/facioquo/stock-indicators-python)
-    is based on
-    [Stock.Indicators](https://github.com/DaveSkender/Stock.Indicators)
-    which is implemented in C#.
+1. [stock-indicators-python](https://github.com/facioquo/stock-indicators-python)
+   is a PyPI library package that produces financial market technical indicators.
+   Send in historical price quotes and get back desired indicators
+   such as moving averages, Relative Strength Index, Stochastic Oscillator, Parabolic SAR, etc. Nothing more.
+   [stock-indicators-python](https://github.com/facioquo/stock-indicators-python)
+   is based on
+   [Stock.Indicators](https://github.com/DaveSkender/Stock.Indicators)
+   which is implemented in C#.
 
-4. [Tulip Indicators](https://tulipindicators.org/)
-    is a library of functions for technical analysis of financial time series data. 
-    It is written in ANSI C for speed and portability. 
-    Bindings are available for many other programming languages too.
+1. [Tulip Indicators](https://tulipindicators.org/)
+   is a library of functions for technical analysis of financial time series data.
+   It is written in ANSI C for speed and portability.
+   Bindings are available for many other programming languages too.
 
-5. [trade_aggregation-rs](https://github.com/MathisWellmann/trade_aggregation-rs)
-    is a high performance, modular and flexible trade aggregation crate, producing Candle data, 
-    suitable for low-latency applications and incremental updates. 
-    It allows the user to choose the rule dictating how a new candle is created through the AggregationRule trait, e.g: Time, Volume based or some other information driven rule. 
-    It also allows the user to choose which type of candle will be created from the aggregation process through the ModularCandle trait. 
-    Combined with the Candle macro, it enables the user to flexibly create any type of Candle as long as each component implements the CandleComponent trait. 
-    The aggregation process is also generic over the type of input trade data as long as it implements the TakerTrade trait, allowing for greater flexibility for downstream projects.
+1. [trade_aggregation-rs](https://github.com/MathisWellmann/trade_aggregation-rs)
+   is a high performance, modular and flexible trade aggregation crate, producing Candle data,
+   suitable for low-latency applications and incremental updates.
+   It allows the user to choose the rule dictating how a new candle is created through the AggregationRule trait, e.g: Time, Volume based or some other information driven rule.
+   It also allows the user to choose which type of candle will be created from the aggregation process through the ModularCandle trait.
+   Combined with the Candle macro, it enables the user to flexibly create any type of Candle as long as each component implements the CandleComponent trait.
+   The aggregation process is also generic over the type of input trade data as long as it implements the TakerTrade trait, allowing for greater flexibility for downstream projects.
 
-6. [sliding_features-rs](https://github.com/MathisWellmann/sliding_features-rs)
-    provides modular, chainable sliding windows with various signal processing functions and technical indicators.
+1. [sliding_features-rs](https://github.com/MathisWellmann/sliding_features-rs)
+   provides modular, chainable sliding windows with various signal processing functions and technical indicators.
 
 ### Calendar
 
 1. [python-bizdays] (https://github.com/wilsonfreitas/python-bizdays)
-    offers business days calculations and utilities.
+   offers business days calculations and utilities.
 
-### Backtesting 
+### Backtesting
 
 1. [bt](https://github.com/pmorissette/bt)
-    is a flexible backtesting framework 
-    for Python used to test quantitative trading strategies. 
-    Backtesting is the process of testing a strategy over a given data set. 
-    This framework allows you to easily create strategies that mix and match different Algos. 
-    It aims to foster the creation of easily testable, 
-    re-usable and flexible blocks of strategy logic 
-    to facilitate the rapid development of complex trading strategies.
+   is a flexible backtesting framework
+   for Python used to test quantitative trading strategies.
+   Backtesting is the process of testing a strategy over a given data set.
+   This framework allows you to easily create strategies that mix and match different Algos.
+   It aims to foster the creation of easily testable,
+   re-usable and flexible blocks of strategy logic
+   to facilitate the rapid development of complex trading strategies.
 
-2. [vectorbt](https://github.com/polakowo/vectorbt)
-    is a powerful Python library that enables easy backtesting 
-    of trading strategies, financial data analysis, and visualization. 
-    It provides a fast and efficient engine for quantitative finance research and algorithmic trading.
+1. [vectorbt](https://github.com/polakowo/vectorbt)
+   is a powerful Python library that enables easy backtesting
+   of trading strategies, financial data analysis, and visualization.
+   It provides a fast and efficient engine for quantitative finance research and algorithmic trading.
 
-3. [qstrader](https://github.com/mhallsmoore/qstrader)
-    is a free Python-based open-source modular schedule-driven backtesting framework 
-    for long-short equities and ETF based systematic trading strategies.
+1. [qstrader](https://github.com/mhallsmoore/qstrader)
+   is a free Python-based open-source modular schedule-driven backtesting framework
+   for long-short equities and ETF based systematic trading strategies.
 
 ### Deep Learning
 
 1. [FinRL](https://github.com/AI4Finance-Foundation/FinRL)
-    is an open-source framework for financial reinforcement learning. 
-    It aims to revolutionize FinTech by providing a comprehensive ecosystem 
-    for developing and deploying reinforcement learning-based trading strategies.
+   is an open-source framework for financial reinforcement learning.
+   It aims to revolutionize FinTech by providing a comprehensive ecosystem
+   for developing and deploying reinforcement learning-based trading strategies.
 
 ## Good Platfroms
 
@@ -142,14 +142,14 @@ For more details,
 please refer to
 [Coding for Traders: Building Your Own Indicator](https://www.schwab.com/learn/story/coding-traders-building-your-own-indicator)
 .
-Charles Schwab is currently developing Trade APIs 
+Charles Schwab is currently developing Trade APIs
 (both for commercial and individual)
 .
 
 [Alpaca](https://alpaca.markets/)
 
 [9 Great Tools for Algo Trading](https://medium.com/hackernoon/9-great-tools-for-algo-trading-e0938a6856cd)
-has a good summary 
+has a good summary
 
 In terms of cost to get started,
 [Alpaca](https://alpaca.markets/) < [QuantConnect](https://www.quantconnect.com/pricing) < [QuantRocket](https://www.quantrocket.com/pricing/)
@@ -171,6 +171,7 @@ https://zhuanlan.zhihu.com/p/34822731
 ## Data Source
 
 ### [polygon.io](https://polygon.io/pricing)
+
 [polygon.io](https://polygon.io/pricing)
 is great data source with free plans available.
 
@@ -180,8 +181,8 @@ is great data source with free plans available.
 
 ### Wash Sale
 
-Please refer to 
-[Tips on Wash Sale]( https://www.legendu.net/misc/blog/tips-on-wash-sale )  
+Please refer to
+[Tips on Wash Sale](tips-on-wash-sale)\
 for detailed discussions.
 
 ## Order Types
@@ -224,7 +225,7 @@ Mclean, R. David and Jeffrey Pontiff, 2016, Does Academic Research Destroy Stock
 
 ## References
 
-- [Investment](https://misc.legendu.net/blog/investment-tips/)
+- [Investment](investment)
 
 - [awesome-quant](https://github.com/wilsonfreitas/awesome-quant)
 

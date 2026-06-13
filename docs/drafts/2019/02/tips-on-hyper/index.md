@@ -1,7 +1,7 @@
 ---
 title: Tips on Hyper
-created: 2019-02-02 12:20:43
-date: 2026-04-15 19:27:01.234862
+created: '2019-02-02T12:20:43-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-hyper
@@ -27,7 +27,7 @@ verminal is good one
    You have to set the default shell for Hyper in its configuration file directly.
    For more details,
    please refer to
-   [Change Shell in Mac](http://www.legendu.net/en/blog/change-shell-in-mac/)
+   [Change Shell in Mac](change-shell-in-mac)
    .
 
 1. If you install Hyper on Linux

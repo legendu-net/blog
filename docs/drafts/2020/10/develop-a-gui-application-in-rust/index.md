@@ -1,7 +1,7 @@
 ---
 title: Develop a GUI Application in Rust
-created: 2020-10-03 21:36:53
-date: 2026-04-13 23:15:11.949037
+created: '2020-10-03T21:36:53-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: develop-a-gui-application-in-rust
@@ -19,10 +19,10 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## [tauri](http://www.legendu.net/misc/blog/use-tauri-to-build-a-desktop-application)
+## [tauri](use-tauri-to-build-a-desktop-application)
 
 Please refer to
-[tauri](http://www.legendu.net/misc/blog/use-tauri-to-build-a-desktop-application)
+[tauri](use-tauri-to-build-a-desktop-application)
 for more discussions.
 
 ## [dioxus](https://github.com/dioxuslabs/dioxus)

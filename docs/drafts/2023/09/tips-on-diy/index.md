@@ -1,7 +1,7 @@
 ---
-title: "Tips on DIY"
-created: 2023-09-22 23:31:22
-date: 2025-10-15 20:19:37
+title: Tips on DIY
+created: '2023-09-22T23:31:22-07:00'
+date: '2026-06-12T22:31:33-07:00'
 authors:
   - bendu
 label: tips-on-diy
@@ -20,14 +20,13 @@ tags:
 
 - [Home Depot Workshops](https://www.homedepot.com/workshops/#change_store)
 
-
 ## Plumbing
 
 - [REPLACING YOUR OUTDOOR FAUCET JUST GOT EASY / Leak & Frost Free AQUOR IDEAL for Retrofits](https://www.youtube.com/watch?v=4e3Na6nMZRc)
 
 ## Electronic
 
-- [Install a Nema 14-50 Outlet]( https://www.legendu.net/misc/blog/install-a-NEMA-14-50-outlet )
+- [Install a Nema 14-50 Outlet](install-a-nema-14-50-outlet)
 
 - [Watch THIS before Selecting your EV Charger Circuit Breaker Size DIY](https://www.youtube.com/watch?v=xClNElvvrGo)
 

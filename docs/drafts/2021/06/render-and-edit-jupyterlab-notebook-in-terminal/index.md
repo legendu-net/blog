@@ -1,7 +1,7 @@
 ---
 title: Render and Edit JupyterLab Notebook in Terminal
 created: '2021-06-16T23:26:39-07:00'
-date: '2026-05-24T12:17:04-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: render-and-edit-jupyterlab-notebook-in-terminal
@@ -43,4 +43,4 @@ is a REPL plugin and Jupyter-Notebook alternative for Vim and Neovim
 
 ## References
 
-- [Editing JupyterLab Notebooks Using Vim](https://www.legendu.net/misc/blog/vim-keybinds-for-cells-in-jupyterlab-notebooks/)
+- [Editing JupyterLab Notebooks Using Vim](editing-jupyterlab-notebooks-using-vim)

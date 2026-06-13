@@ -1,7 +1,7 @@
 ---
 title: Profile Rust Applications
-created: 2021-11-08 10:19:34
-date: 2026-04-15 19:27:00.845416
+created: '2021-11-08T10:19:34-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: profile-rust-applications
@@ -82,17 +82,17 @@ you can run the following command.
 cargo bench --bench bench_main name_of_benchmark -- --profile-time
 ```
 
-### [Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
+### [Valgrind](cpu-profiling-of-rust-applications-using-valgrind)
 
-[Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
+[Valgrind](cpu-profiling-of-rust-applications-using-valgrind)
 is a another CPU profiling tool for Rust applications.
 The crate
 [cargo-valgrind](https://crates.io/crates/cargo-valgrind)
 provides integration of valgrind and cargo.
 
-### [FlameGraph](http://www.legendu.net/misc/blog/profile-rust-applications-using-flamegraph)
+### [FlameGraph](profile-rust-applications-using-flamegraph)
 
-[FlameGraph](http://www.legendu.net/misc/blog/profile-rust-applications-using-flamegraph)
+[FlameGraph](profile-rust-applications-using-flamegraph)
 is another a CPU profiling tool based on Linux perf.
 It has integration support for cargo.
 
@@ -103,12 +103,12 @@ is a friendly little instrumentation profiler for Rust.
 
 ## Memory Profiling
 
-[bytehound](https://www.legendu.net/misc/blog/tips-on-bytehound)
+[bytehound](tips-on-bytehound)
 is the best available memory profiling tool for Rust currently.
 
-### [bytehound](https://www.legendu.net/misc/blog/tips-on-bytehound)
+### [bytehound](tips-on-bytehound)
 
-[bytehound](https://www.legendu.net/misc/blog/tips-on-bytehound)
+[bytehound](tips-on-bytehound)
 is a memory profiler for Linux.
 
 ### [dhat-rs](https://crates.io/crates/dhat)
@@ -135,7 +135,7 @@ is a heap memory profiler for Linux
 
 - [Profile Rust Applications Using Flamegraph](profile-rust-applications-using-flamegraph)
 
-- [Tips on Valgrind](https://www.legendu.net/misc/blog/tips-on-valgrind)
+- [Tips on Valgrind](tips-on-valgrind)
 
 - [The Rust Performance Book - Profiling](https://nnethercote.github.io/perf-book/profiling.html)
 
@@ -145,9 +145,9 @@ is a heap memory profiler for Linux
 
 - [Top-Down performance analysis methodology](https://easyperf.net/blog/2019/02/09/Top-Down-performance-analysis-methodology)
 
-- [Profile Rust Applications Using Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
+- [Profile Rust Applications Using Valgrind](cpu-profiling-of-rust-applications-using-valgrind)
 
-- [Profile Rust Applications Using Flamegraph](http://www.legendu.net/misc/blog/profile-rust-applications-using-flamegraph/)
+- [Profile Rust Applications Using Flamegraph](profile-rust-applications-using-flamegraph)
 
 - [Rust Crate - profiling](https://crates.io/crates/profiling)
 

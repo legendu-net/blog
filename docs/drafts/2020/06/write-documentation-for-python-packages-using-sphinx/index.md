@@ -1,7 +1,7 @@
 ---
 title: Write Documentation for Python Packages Using Sphinx
-created: 2020-06-01 21:51:41
-date: 2026-04-13 23:15:20.183007
+created: '2020-06-01T21:51:41-07:00'
+date: '2026-06-12T22:31:50-07:00'
 authors:
   - bendu
 label: write-documentation-for-python-packages-using-sphinx
@@ -113,10 +113,10 @@ so that you can use Sphinx commands directly.
    So you only have to run the command `aphinx-apidoc` once.
 
    ```bash
-    # if build and source are NOT separated
-    sphinx-apidoc -f -o ./ ../proj_name
-    # if build and source are separated
-    sphinx-apidoc -f -o source/ ../proj_name
+   # if build and source are NOT separated
+   sphinx-apidoc -f -o ./ ../proj_name
+   # if build and source are separated
+   sphinx-apidoc -f -o source/ ../proj_name
    ```
 
    A file named `modules.rst` (together with some other RST files) will be generated.
@@ -155,7 +155,7 @@ sphinx.ext.autodoc
 
 https://github.com/agronholm/sphinx-autodoc-typehints
 
-http://www.legendu.net/misc/blog/write-documentation-for-python-packages-using-sphinx/
+[Write Documentation for Python Packages Using Sphinx](write-documentation-for-python-packages-using-sphinx)
 
 https://stackoverflow.com/questions/2471804/using-sphinx-with-markdown-instead-of-rst
 

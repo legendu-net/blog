@@ -1,7 +1,7 @@
 ---
 title: 'Spark Issue: Block Could Not Be Removed as It Was Not Found on Disk or in Memory'
-created: 2021-03-24 09:23:07
-date: 2026-04-15 19:27:00.929799
+created: '2021-03-24T09:23:07-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: spark-issue-block-could-not-be-removed-as-it-was-not-found-on-disk-or-in-memory
@@ -42,7 +42,7 @@ Block rdd_123_456 could not be removed as it was not found on disk or in memory.
    instead of `DataFrame.persist`.
    For more discussions on DataFrame persist vs checkpoint,
    please refer to
-   [Persist and Checkpoint DataFrames in Spark](http://www.legendu.net/en/blog/spark-persist-checkpoint-dataframe/)
+   [Persist and Checkpoint DataFrames in Spark](persist-and-checkpoint-dataframes-in-spark)
    .
 
 1. Increase executor memory (`--executor-memory`).

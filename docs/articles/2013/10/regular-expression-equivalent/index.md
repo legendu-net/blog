@@ -1,81 +1,81 @@
 ---
 title: Regular Expression Equivalent
-created: 2013-10-30 12:29:42
-date: 2026-04-05 19:42:37.201050
+created: '2013-10-30T12:29:42-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
-- bendu
+  - bendu
 label: regular-expression-equivalent
 license: CC-BY-4.0
 tags:
-- tips
-- regex
-- equivalent
-- regular expression
-- regexp
-- Python
-- R
-- CRAN
-- Perl
-- SAS
-- grep
-- egrep
+  - tips
+  - regex
+  - equivalent
+  - regular expression
+  - regexp
+  - Python
+  - R
+  - CRAN
+  - Perl
+  - SAS
+  - grep
+  - egrep
 ---
+
 1. The order of precedence of operators in POSIX extended regular expression is as follows.
 
-    1. Collation-related bracket symbols `[==]`, `[::]`, `[..]`
-    2. Escaped characters `\`
-    3. Character set (bracket expression) `[]`
-    4. Grouping `()`
-    5. Single-character-ERE duplication `*`, `+`, `?`, `{m,n}`
-    6. Concatenation
-    7. Anchoring `^`, `$`
-    8. Alternation `|`
+   1. Collation-related bracket symbols `[==]`, `[::]`, `[..]`
+   1. Escaped characters `\`
+   1. Character set (bracket expression) `[]`
+   1. Grouping `()`
+   1. Single-character-ERE duplication `*`, `+`, `?`, `{m,n}`
+   1. Concatenation
+   1. Anchoring `^`, `$`
+   1. Alternation `|`
 
-2. Some regular expression patterns are defined using a single leading backslash, 
-    e.g., `\s`, `\b`, etc.
-    However, 
-    since special characters (e.g., `\`) need to be escaped in strings in most programming languages,
-    you will need the string `"\\s"` to represent the regular expression pattern `\s`,
-    and similar for other regular expression patterns with a leading backslash. 
-    Python is specialy as it provides raw strings (without escaping) to make it easier to write regular expression patterns. 
-    It even goes one step further to auto correct non-properly escape strings. 
-    For more discussions on Python regular expressions, 
-    pleaser fer to
-    [Regular Expression in Python](http://www.legendu.net/en/blog/regular-expression-python)
-    .
-    
-3. It becomes tricky if you use a programming language to call another programming language to 
-    perform regular expression operations.
-    Taking `\s` for example,
-    since `\` needs to be escaped in both programming languages, 
-    you will end up using `\\\\s` to represent `\s`. 
-    If you use Python to call other languages to perform regular expression patterns, 
-    things can be simplifed by using raw strings in Python.
-    For example, 
-    instead of `"\\\\s"`,
-    you can use `r"\\s"` in Python.
+1. Some regular expression patterns are defined using a single leading backslash,
+   e.g., `\s`, `\b`, etc.
+   However,
+   since special characters (e.g., `\`) need to be escaped in strings in most programming languages,
+   you will need the string `"\\s"` to represent the regular expression pattern `\s`,
+   and similar for other regular expression patterns with a leading backslash.
+   Python is specialy as it provides raw strings (without escaping) to make it easier to write regular expression patterns.
+   It even goes one step further to auto correct non-properly escape strings.
+   For more discussions on Python regular expressions,
+   pleaser fer to
+   [Regular Expression in Python](regular-expression-in-python)
+   .
+
+1. It becomes tricky if you use a programming language to call another programming language to
+   perform regular expression operations.
+   Taking `\s` for example,
+   since `\` needs to be escaped in both programming languages,
+   you will end up using `\\\\s` to represent `\s`.
+   If you use Python to call other languages to perform regular expression patterns,
+   things can be simplifed by using raw strings in Python.
+   For example,
+   instead of `"\\\\s"`,
+   you can use `r"\\s"` in Python.
 
 1. In some programming languages,
-    you have to compile a plain/text pattern into a regular expression pattern object
-    before using it.
-    The Python module `re` automatically compiles a plain/text pattern 
-    (using `re.compile`)
-    and caches it,
-    so there is not much benefit to compile regular expressions by yourself in Python.
+   you have to compile a plain/text pattern into a regular expression pattern object
+   before using it.
+   The Python module `re` automatically compiles a plain/text pattern
+   (using `re.compile`)
+   and caches it,
+   so there is not much benefit to compile regular expressions by yourself in Python.
 
-2. `\W` does not include `^` and `$`.
+1. `\W` does not include `^` and `$`.
 
-3. Regular expression modifiers makes regular expression more flexible and powerful. 
-    It is also a more universal way 
-    than remembering different options in different programming languages or tools. 
-    It is suggested that you use regular expression modifiers when possible.
+1. Regular expression modifiers makes regular expression more flexible and powerful.
+   It is also a more universal way
+   than remembering different options in different programming languages or tools.
+   It is suggested that you use regular expression modifiers when possible.
 
-4. Word boundry (`\b`) is a super set of white spaces (`\s`).
+1. Word boundry (`\b`) is a super set of white spaces (`\s`).
 
-5. `[[:alnum:]]` contains all letters and numbers 
-    while `\w` contains not only letters and numbers but also some special character such as `_`. 
-    So in short `\w` is a super set of `[[:alnum:]]`.
-
+1. `[[:alnum:]]` contains all letters and numbers
+   while `\w` contains not only letters and numbers but also some special character such as `_`.
+   So in short `\w` is a super set of `[[:alnum:]]`.
 
 <div style="overflow-x:auto;">
 <table style="width:100%">
@@ -1041,47 +1041,47 @@ tags:
 </table>
 </div>
 
-[1]: Python/JavaScript partially supports regular expression modifiers.
-    To be more specifically,
-    turning modifiers on is supported
-    but turning modifiers off is not supported.
-    Modifiers (once turned on) are applied to the entire regular expression
-    and cannot be turned off.
+\[1\]: Python/JavaScript partially supports regular expression modifiers.
+To be more specifically,
+turning modifiers on is supported
+but turning modifiers off is not supported.
+Modifiers (once turned on) are applied to the entire regular expression
+and cannot be turned off.
 
-[2]: Behavior of regular expressions in Oracle SQL 
-    is control via parameters of regular expression  functions 
-    instead of via regular expression modifiers.
+\[2\]: Behavior of regular expressions in Oracle SQL
+is control via parameters of regular expression functions
+instead of via regular expression modifiers.
 
-[3]: `grep` fully supports regular expression modifiers 
-    via Perl style regular (the `-P` option) expressions.
+\[3\]: `grep` fully supports regular expression modifiers
+via Perl style regular (the `-P` option) expressions.
 
-[4]: `grep` matches pattern greedly by default.
-    However, 
-    in Perl style syntax you can use the modifer `?` after a quantifier to perform a non-greedy match.
-    For example, 
-    instead of `.*` you can use `.*?` to do a non-greedy match.
+\[4\]: `grep` matches pattern greedly by default.
+However,
+in Perl style syntax you can use the modifer `?` after a quantifier to perform a non-greedy match.
+For example,
+instead of `.*` you can use `.*?` to do a non-greedy match.
 
-[5]: As a matter of fact,
-    `"\s"` also works in Python and it is equivalent to `"\\s"` and `r"\s"`.
-    However,
-    it is suggested that you avoid using `"\s"` as causes confusions
-    especially when you call other programming languges (e.g., Spark SQL) 
-    to run regular expression operations from Python.
-    The raw string pattern `r"\s"` is preferred for its unambiguity and simplicity. 
-    For more discussions on Python regular expressions,
-    please refer to
-    [Regular Expression in Python](http://www.legendu.net/en/blog/regular-expression-python)
-    .
+\[5\]: As a matter of fact,
+`"\s"` also works in Python and it is equivalent to `"\\s"` and `r"\s"`.
+However,
+it is suggested that you avoid using `"\s"` as causes confusions
+especially when you call other programming languges (e.g., Spark SQL)
+to run regular expression operations from Python.
+The raw string pattern `r"\s"` is preferred for its unambiguity and simplicity.
+For more discussions on Python regular expressions,
+please refer to
+[Regular Expression in Python](regular-expression-in-python)
+.
 
 ## References
 
 - [Regular Expression Tester](https://regex101.com/)
 
-- [Regular Expression in Python](http://www.legendu.net/en/blog/regular-expression-python)
+- [Regular Expression in Python](regular-expression-in-python)
 
 - [Official Python Docs on Regular Expression](https://docs.python.org/3/library/re.html)
 
-- [Regular Expression in Bash](http://www.legendu.net/misc/blog/regular-expression-in-bash/)
+- [Regular Expression in Bash](regular-expression-in-bash)
 
 - [POSIX Extended Regular Expression Syntax](https://www.boost.org/doc/libs/1_56_0/libs/regex/doc/html/boost_regex/syntax/basic_extended.html#boost_regex.syntax.basic_extended.operator_precedence)
 

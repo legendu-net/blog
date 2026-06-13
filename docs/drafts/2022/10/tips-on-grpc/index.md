@@ -1,7 +1,7 @@
 ---
 title: Tips on gRPC
-created: 2022-10-08 12:12:31
-date: 2026-04-15 19:27:00.757271
+created: '2022-10-08T12:12:31-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-grpc
@@ -18,7 +18,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-[RPC Implementation in Rust](https://www.legendu.net/misc/blog/rpc-implementation-in-rust)
+[RPC Implementation in Rust](rpc-implementation-in-rust)
 
 ## References
 

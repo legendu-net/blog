@@ -1,7 +1,7 @@
 ---
-title: "Python Tools for Linux Admins"
-created: 2020-01-03 09:20:44
-date: 2021-09-06 16:28:52
+title: Python Tools for Linux Admins
+created: '2020-01-03T09:20:44-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: python-tools-for-linux-admins
@@ -20,9 +20,8 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+[Run Commands on Remote Machines](run-commands-on-remote-machines)
 
-[Run Commands on Remote Machines](http://www.legendu.net/misc/blog/run-commands-on-remote-machines)
-
-## [pathlib](http://www.legendu.net/misc/blog/hands-on-pathlib.path/)
+## [pathlib](hands-on-pathlib.path)
 
 ## [psutil](https://github.com/giampaolo/psutil)

@@ -1,7 +1,7 @@
 ---
 title: Financial Data
-created: 2020-10-06 12:47:30
-date: 2026-04-13 23:15:12.104501
+created: '2020-10-06T12:47:30-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: financial-data
@@ -34,4 +34,4 @@ on international finances, debt rates, foreign exchange reserves, commodity pric
 
 ## References
 
-[Data Sources](http://www.legendu.net/misc/blog/data-sources/)
+[Data Sources](data-sources)

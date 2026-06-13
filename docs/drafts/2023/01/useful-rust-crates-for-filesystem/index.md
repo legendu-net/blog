@@ -1,7 +1,7 @@
 ---
 title: Useful Rust Crates for Filesystem
-created: 2023-01-13 15:40:23
-date: 2026-04-15 19:27:00.722181
+created: '2023-01-13T15:40:23-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: useful-rust-crates-for-filesystem
@@ -24,9 +24,9 @@ tags:
 [Camino](https://crates.io/crates/camino)
 is an extension of the std::path module that adds new Utf8PathBuf and Utf8Path types.
 
-## [glob](https://www.legendu.net/misc/blog/hands-on-the-glob-crate-in-rust)
+## [glob](hands-on-the-glob-crate-in-rust)
 
-[glob](https://www.legendu.net/misc/blog/hands-on-the-glob-crate-in-rust)
+[glob](hands-on-the-glob-crate-in-rust)
 supports matching file paths against Unix shell style patterns.
 
 ## [jwalk](https://crates.io/crates/jwalk)
@@ -59,6 +59,6 @@ controlling the number of open file descriptors and efficient mechanisms for pru
 
 ## References
 
-- [Compress and Decompress Files in Rust](https://www.legendu.net/misc/blog/compress-and-decompress-files-in-rust)
+- [Compress and Decompress Files in Rust](compress-and-decompress-files-in-rust)
 
-- [Hands on the Glob Crate in Rust](https://www.legendu.net/misc/blog/hands-on-the-glob-crate-in-rust)
+- [Hands on the Glob Crate in Rust](hands-on-the-glob-crate-in-rust)

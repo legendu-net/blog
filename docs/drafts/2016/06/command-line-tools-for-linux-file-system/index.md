@@ -1,7 +1,7 @@
 ---
-title: "Command Line Tools for Linux File System"
-created: 2016-06-24 18:50:50
-date: 2021-09-20 17:08:25
+title: Command Line Tools for Linux File System
+created: '2016-06-24T18:50:50-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: command-line-tools-for-linux-file-system
@@ -17,42 +17,50 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
 Please refer to
-[Command Line Tools for Mac File System](http://www.legendu.net/misc/blog/command-line-tools-for-mac-file-system/)
+[Command Line Tools for Mac File System](command-line-tools-for-mac-file-system)
 for the macOS version.
-
 
 1. List disk information.
 
-        df
-        df /HOME
+   ```
+    df
+    df /HOME
+   ```
 
-3. Format disk partitions.
+1. Format disk partitions.
 
-        mkfs.ext4 /dev/sdb3
+   ```
+    mkfs.ext4 /dev/sdb3
 
-        mkfs.ntfs /dev/sdb3
+    mkfs.ntfs /dev/sdb3
 
-        mkfs.exfat /dev/sdb3
+    mkfs.exfat /dev/sdb3
+   ```
 
-2. Management disk partition tables.
+1. Management disk partition tables.
 
-        fdisk /dev/sdb
+   ```
+    fdisk /dev/sdb
+   ```
 
-4. Report disk usage.
+1. Report disk usage.
 
-        du -lhd 1 .
+   ```
+    du -lhd 1 .
+   ```
 
-5. dd
+1. dd
 
-        dd if=... of=... bs=1M; sync
+   ```
+    dd if=... of=... bs=1M; sync
+   ```
 
-6. badblocks
+1. badblocks
 
-7. lsblk
+1. lsblk
 
-## References 
+## References
 
 [How To – Linux List Disk Partitions Command](https://www.cyberciti.biz/faq/linux-list-disk-partitions-command/)
 

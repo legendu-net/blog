@@ -1,7 +1,7 @@
 ---
 title: Tips on Visual Studio Code
-created: 2019-05-24 11:28:44
-date: 2026-04-14 19:49:15.079681
+created: '2019-05-24T11:28:44-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-visual-studio-code
@@ -44,7 +44,7 @@ A simple fix is to add the following configuration into the user's setting.json 
 ## Extensions
 
 Please refer to
-[Useful Visual Studio Code Extensions](http://www.legendu.net/en/blog/useful-visual-studio-code-extensions)
+[Useful Visual Studio Code Extensions](useful-visual-studio-code-extensions)
 .
 
 ## Change Indention/Shift Width
@@ -54,6 +54,8 @@ https://stackoverflow.com/questions/34174207/how-to-change-indentation-in-visual
 ## Launching VS Code from Command Line on Mac
 
 https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line
+
+(tips-on-visual-studio-code-shortcuts)=
 
 ## Shortcuts
 
@@ -96,7 +98,7 @@ https://stackoverflow.com/questions/36333117/refresh-visual-studio-code-list-of-
 
 ## References
 
-- [Configuraing Terminal in Visual Studio Code](https://www.legendu.net/misc/blog/configuraing-terminal-in-visual-studio-code)
+- [Configuraing Terminal in Visual Studio Code](configuring-terminal-in-visual-studio-code)
 
 - [Visual Studio Code Blog](https://code.visualstudio.com/blogs/2019/05/02/remote-development)
 

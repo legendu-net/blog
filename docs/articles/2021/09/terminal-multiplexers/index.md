@@ -1,7 +1,7 @@
 ---
 title: Terminal Multiplexers
-created: 2021-09-04 09:56:21
-date: 2026-04-13 23:14:11.379580
+created: '2021-09-04T09:56:21-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: terminal-multiplexers
@@ -50,4 +50,4 @@ tags:
 
 ## References
 
-- [Good Terminal Apps](http://www.legendu.net/misc/blog/good-terminal-apps/)
+- [Good Terminal Apps](good-terminal-apps)

@@ -1,7 +1,7 @@
 ---
 title: IDE for Rust
-created: 2021-04-20 08:43:39
-date: 2026-04-13 23:15:05.738914
+created: '2021-04-20T08:43:39-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: ide-for-rust
@@ -32,7 +32,7 @@ tags:
 ## Zed
 
 See
-[Tips on the Zed IDE](https://www.legendu.net/misc/blog/tips-on-the-zed-ide)
+[Tips on the Zed IDE](tips-on-the-zed-ide)
 .
 
 ## Lapce

@@ -1,7 +1,7 @@
 ---
 title: Tips on Rust
 created: '2019-04-10T12:17:46+00:00'
-date: '2026-05-14T18:57:27+00:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-rust
@@ -24,10 +24,10 @@ is an unofficial guide to the Rust ecosystem.
 ## Installation
 
 Please refer to
-[Tips on rustup](http://www.legendu.net/misc/blog/tips-on-rustup)
+[Tips on rustup](tips-on-rustup)
 for installing Rust using rustup (the recommended way for most users),
 and
-[Install a Standalone Version of Rust in Linux](https://www.legendu.net/en/blog/install-a-standalone-version-of-rust)
+[Install a Standalone Version of Rust in Linux](install-rust-globally-in-linux)
 for installing a global standalone version of Rust.
 
 ### Install a Newer Version of Rust via PPA on Ubuntu
@@ -46,11 +46,11 @@ please refer to
 
 ## Rust Toolchains
 
-- [cargo](http://www.legendu.net/misc/blog/tips-on-cargo): package manager for Rust
+- [cargo](tips-on-cargo): package manager for Rust
 
 - rustup: version manager for Rust
 
-- [rustc](http://www.legendu.net/misc/blog/tips-on-rustc): compiler for Rust
+- [rustc](tips-on-rustc): compiler for Rust
 
 - clippy
 
@@ -88,18 +88,18 @@ please refer to
    [Why does iteration over an inclusive range generate longer assembly in Rust?](https://stackoverflow.com/questions/70672533/why-does-iteration-over-an-inclusive-range-generate-longer-assembly-in-rust)
    .
 
-## [Pattern Matching in Rust](https://www.legendu.net/misc/blog/pattern-matching-in-rust)
+## [Pattern Matching in Rust](pattern-matching-in-rust)
 
 ## Popular Rust Libraries
 
 Please refer to
-[Useful Rust Crates](http://www.legendu.net/misc/blog/useful-rust-crates)
+[Useful Rust Crates](useful-rust-crates)
 for detailed discussions.
 
 ## Machine Learning
 
 Please refer to
-[Rust for Machine Learning](http://www.legendu.net/misc/blog/rust-for-machine-learning)
+[Rust for Machine Learning](rust-for-machine-learning)
 for detailed discussions.
 
 ## Parallel, Multithreading and Concurrency in Rust
@@ -122,7 +122,7 @@ https://skipworth.io/posts/rust-wc-threads/
 
 https://crates.io/crates/scoped-threadpool
 
-## [Rust GUI](http://www.legendu.net/misc/blog/develop-a-gui-application-in-rust)
+## [Rust GUI](develop-a-gui-application-in-rust)
 
 ## Optimize Compiling of Rust Projects
 

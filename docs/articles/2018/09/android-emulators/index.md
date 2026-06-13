@@ -1,7 +1,7 @@
 ---
 title: Android Emulators
-created: 2018-09-12 23:41:58
-date: 2026-05-02 10:13:21.268041
+created: '2018-09-12T23:41:58-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: android-emulators
@@ -113,7 +113,7 @@ header-rows: 1
 
 - [Android Emulators @ GameTechWiki](https://emulation.gametechwiki.com/index.php/Android_emulators)
 
-- [Tips on Virtualbox](http://www.legendu.net/misc/blog/virtualbox-tip)
+- [Tips on Virtualbox](tips-on-virtualbox)
 
 - [x86 Virtualization in Browser](https://copy.sh/v86/)
 

@@ -1,7 +1,7 @@
 ---
 title: Profile Rust Applications Using Flamegraph
-created: 2021-11-09 10:28:40
-date: 2026-04-26 09:37:35.257699
+created: '2021-11-09T10:28:40-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: profile-rust-applications-using-flamegraph
@@ -23,7 +23,7 @@ tags:
 1. [not-perf](https://github.com/koute/not-perf)
    is the best CPU profiling tool for Rust application.
 
-1. [Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
+1. [Valgrind](cpu-profiling-of-rust-applications-using-valgrind)
    is another good alternative to flamegraph
    if performance is not a big issue.
    However,
@@ -163,9 +163,9 @@ echo 0 |sudo tee /proc/sys/kernel/kptr_restrict
 
 ## References
 
-- [Profile Rust Applications](http://www.legendu.net/misc/blog/profile-rust-applications/)
+- [Profile Rust Applications](profile-rust-applications)
 
-- [Profile Rust Applications Using Valgrind](http://www.legendu.net/misc/blog/profile-rust-applications-using-valgrind/)
+- [Profile Rust Applications Using Valgrind](cpu-profiling-of-rust-applications-using-valgrind)
 
 - [flamegraph](https://github.com/flamegraph-rs/flamegraph)
 

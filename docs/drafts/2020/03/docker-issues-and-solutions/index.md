@@ -1,7 +1,7 @@
 ---
 title: Docker Issues and Solutions
-created: 2020-03-14 09:56:34
-date: 2026-04-13 23:27:59.277345
+created: '2020-03-14T09:56:34-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: docker-issues-and-solutions
@@ -15,7 +15,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## [Multiprocessing Issues in Docker](http://www.legendu.net/misc/blog/multiprocessing-issues-in-docker/)
+## [Multiprocessing Issues in Docker](multiprocessing-issues-in-docker)
 
 ## Docker Out of Disk Space
 
@@ -26,7 +26,7 @@ tags:
 1. Remove `/var/lib/docker/*`.
 
    ```bash
-    sudo rm -rf /var/lib/docker/*
+   sudo rm -rf /var/lib/docker/*
    ```
 
    If you have a non-standard Docker location configured,
@@ -35,7 +35,7 @@ tags:
 1. Restart Docker.
 
    ```bash
-    sudo service docker restart
+   sudo service docker restart
    ```
 
 ## Error response from daemon: failed to start shim: exec: "docker-containerd-shim": executable file not found in \$PATH: unknown.
@@ -57,7 +57,7 @@ sudo apt install gnupg2 pass
 ## Container exits with non-zero exit code 137
 
 Please refer to
-[The Non-Zero Exit Code 137 While Building a Docker Image](http://www.legendu.net/misc/blog/the-non-zero-exit-code-137-while-building-a-docker-image/)
+[The Non-Zero Exit Code 137 While Building a Docker Image](the-non-zero-exit-code-137-while-building-a-docker-image)
 for more details.
 
 ## Debuging Docker Container Exit
@@ -65,19 +65,19 @@ for more details.
 1. List Docker container IDs.
 
    ```bash
-    docker ps -a
+   docker ps -a
    ```
 
 1. Check logs of a Docker container.
 
    ```bash
-    docker logs container_id
+   docker logs container_id
    ```
 
 1. Inspect a Docker container.
 
    ```bash
-    docker inspect container_id
+   docker inspect container_id
    ```
 
 If the above does not help you identify the cause of Docker container exit,
@@ -87,7 +87,7 @@ The StackOverflow question
 has a good discussion on where/how to find Docker daemon logs.
 In case you need to figure out which init system your Linux OS is using,
 please refer to the post
-[Check Whether a Linux Is Using Upstart Systemd or SysV](http://www.legendu.net/misc/blog/check-whether-a-linux-is-using-upstart-systemd-or-sysv)\
+[Check Whether a Linux Is Using Upstart Systemd or SysV](check-whether-a-linux-is-using-upstart-systemd-or-sysv)\
 .
 
 [Why Does My Docker Container Stop?](https://www.tutorialworks.com/why-containers-stop/)
@@ -96,6 +96,6 @@ please refer to the post
 
 - https://github.com/docker/cli/issues/1136
 
-- [The Non-Zero Exit Code 137 While Building a Docker Image](http://www.legendu.net/misc/blog/the-non-zero-exit-code-137-while-building-a-docker-image/)
+- [The Non-Zero Exit Code 137 While Building a Docker Image](the-non-zero-exit-code-137-while-building-a-docker-image)
 
 - [Why Does My Docker Container Stop?](https://www.tutorialworks.com/why-containers-stop/)

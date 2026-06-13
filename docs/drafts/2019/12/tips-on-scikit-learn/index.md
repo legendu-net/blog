@@ -1,7 +1,7 @@
 ---
 title: Tips on Scikit-Learn
-created: 2019-12-01 10:06:27
-date: 2026-04-15 19:27:01.130390
+created: '2019-12-01T10:06:27-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-scikit-learn
@@ -41,4 +41,4 @@ tags:
 
 https://scikit-learn.org/stable/modules/compose.html#transforming-target-in-regression
 
-[Split a Dataset into Train and Test Datasets in Python](https://www.legendu.net/misc/blog/python-ai-split-dataset)
+[Split a Dataset into Train and Test Datasets in Python](split-a-dataset-into-train-and-test-datasets-in-python)

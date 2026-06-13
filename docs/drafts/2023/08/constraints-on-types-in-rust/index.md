@@ -1,7 +1,7 @@
 ---
 title: Constraints on Types in Rust
-created: 2023-08-29 14:56:50
-date: 2026-04-13 23:14:27.459258
+created: '2023-08-29T14:56:50-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: constraints-on-types-in-rust
@@ -50,4 +50,4 @@ provides custom derive to simplify struct validation inspired by marshmallow and
 
 ## References
 
-- [Trait Bound in Rust](https://www.legendu.net/misc/blog/trait-bound-in-rust)
+- [Trait Bound in Rust](trait-bound-in-rust)

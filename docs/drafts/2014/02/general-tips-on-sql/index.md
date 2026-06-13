@@ -1,7 +1,7 @@
 ---
 title: General Tips on SQL
-created: 2014-02-15 12:10:03
-date: 2026-04-15 19:27:01.449646
+created: '2014-02-15T12:10:03-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: general-tips-on-sql
@@ -19,6 +19,8 @@ tags:
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+(general-tips-on-sql-performance)=
 
 ## Performance
 
@@ -189,17 +191,17 @@ tags:
 
 ## References
 
-- [Understand Execuation of SQL Statements](http://www.legendu.net/en/blog/understand-execuation-of-sql-statements)
+- [Understand Execuation of SQL Statements](understand-execuation-of-sql-statements)
 
-- [Spark SQL](http://www.legendu.net/misc/blog/spark-sql-tips/)
+- [Spark SQL](spark-sql)
 
-- [Hive SQL](http://www.legendu.net/misc/blog/hive-tips/)
+- [Hive SQL](hive-sql)
 
-- [SQL Style And Formatter](http://www.legendu.net/misc/blog/sql-style-and-formatter/)
+- [SQL Style And Formatter](sql-style-and-formatter)
 
-- [Tips on Sqlfluff](http://www.legendu.net/misc/blog/tips-on-sqlfluff/)
+- [Tips on Sqlfluff](tips-on-sqlfluff)
 
-- [Questions on SQL](http://www.legendu.net/misc/blog/sql-questions/)
+- [Questions on SQL](questions-on-sql)
 
 - [Chapter 4. Query Performance Optimization](https://www.oreilly.com/library/view/high-performance-mysql/9780596101718/ch04.html)
 

@@ -1,7 +1,7 @@
 ---
 title: Environment Variables and Secure Path for sudo
-created: 2025-12-22 15:29:11
-date: 2026-04-15 19:27:00.546261
+created: '2025-12-22T15:29:11-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: environment-variables-and-secure-path-for-sudo
@@ -36,4 +36,4 @@ please refer to
 
 ## References
 
-- [Proxy for sudo](https://www.legendu.net/en/blog/proxy-for-sudo)
+- [Proxy for sudo](proxy-for-sudo)

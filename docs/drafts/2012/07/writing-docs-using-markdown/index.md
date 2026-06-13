@@ -1,7 +1,7 @@
 ---
 title: Writing Docs Using Markdown
-created: 2012-07-22 09:25:23
-date: 2026-04-14 19:49:15.453510
+created: '2012-07-22T09:25:23-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: writing-docs-using-markdown
@@ -148,8 +148,8 @@ knitr (R package)
 
 ## Mind Map
 
-- [RMarkdown Equivalent in Python](https://www.legendu.net/misc/blog/rmarkdown-equivalent-in-python)
+- [RMarkdown Equivalent in Python](rmarkdown-equivalent-in-python)
 
-- [Use JupyterLab Notebooks in Pelican](https://www.legendu.net/misc/blog/use-jupyterlab-notebooks-in-pelican)
+- [Use JupyterLab Notebooks in Pelican](use-jupyterlab-notebooks-in-pelican)
 
 - [MemoFon](http://www.memofon.com/)

@@ -1,7 +1,7 @@
 ---
-title: "Password Management"
-created: 2015-02-28 14:57:59
-date: 2023-12-08 10:32:23
+title: Password Management
+created: '2015-02-28T14:57:59-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: password-management
@@ -16,17 +16,15 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
 ## Command-line Password Manager
 
 1. kpcli (command line version of KeePassXC)
 
-2. [royalguard](https://github.com/zahash/royalguard/)
+1. [royalguard](https://github.com/zahash/royalguard/)
 
-3. pwman3
+1. pwman3
 
-4. pass
-
+1. pass
 
 ## GUI Password Manager
 
@@ -51,15 +49,14 @@ teamdrive: slide left a little bit, middle button -> open in minikeepass
 
 it seems that multi-screen makes keepassx auto enter not work well
 
-
 ## Feature Requests
 
 1. keepassX, favorate items, tags, etc
-	a. user-defined white spaces is handy
+   a. user-defined white spaces is handy
 
-2. keepassx favorate, most frequently used? or others that support this feature?
-	you either have to do this by yourself or ask people to add this feature
+1. keepassx favorate, most frequently used? or others that support this feature?
+   you either have to do this by yourself or ask people to add this feature
 
-## References 
+## References
 
-- [Tips on KeePassXC](http://www.legendu.net/misc/blog/tips-on-keepassxc)
+- [Tips on KeePassXC](tips-on-keepassxc)

@@ -1,7 +1,7 @@
 ---
 title: Tips on GCP Compute Engine
-created: 2025-05-08 15:54:11
-date: 2026-04-13 23:14:20.829739
+created: '2025-05-08T15:54:11-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-gcp-compute-engine
@@ -16,5 +16,5 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-- [GCP Compute Engine VM Instances](https://www.legendu.net/misc/blog/gcp-compute-engine-vm-instances)
-- [Setup GitHub Actions Self-Hosted Runners on GCP](https://www.legendu.net/misc/blog/setup-github-actions-self-hosted-runners-on-gcp)
+- [GCP Compute Engine VM Instances](gcp-compute-engine-vm-instances)
+- [Setup GitHub Actions Self-Hosted Runners on GCP](setup-github-actions-self-hosted-runners-on-gcp)

@@ -1,50 +1,59 @@
 ---
 title: Useful Tools and Extensions for JupyterLab
-created: 2017-11-24 10:55:57
-date: 2026-04-05 19:42:38.033286
+created: '2017-11-24T10:55:57-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
-- bendu
+  - bendu
 label: useful-tools-and-extensions-for-jupyterlab
 license: CC-BY-4.0
 tags:
-- software
-- JupyterLab
-- extension
-- plugin
-- JupyterHub
-- nbdime
+  - software
+  - JupyterLab
+  - extension
+  - plugin
+  - JupyterHub
+  - nbdime
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Install/Uninstall Jupyter/Lab Extensions
 
 Install a Jupyter/Lab extension.
 
-    :::bash
-    pip3 install extension_name
+```
+:::bash
+pip3 install extension_name
+```
 
 Unnstall a Jupyter/Lab extension.
 
-    :::bash
-    pip3 uninstall extension_name
+```
+:::bash
+pip3 uninstall extension_name
+```
 
 Enable an installed Jupyter/Lab extension.
 Note: An extension is enabled by default once installed.
 
-    :::bash
-    jupyter serverextension enable --py jupyterlab_code_formatter
+```
+:::bash
+jupyter serverextension enable --py jupyterlab_code_formatter
+```
 
 Disable an installed Jupyter/Lab extension.
 
-    :::bash
-    jupyter serverextension disable --py jupyterlab_code_formatter
+```
+:::bash
+jupyter serverextension disable --py jupyterlab_code_formatter
+```
 
-## Extensions/Tools to Avoid 
+## Extensions/Tools to Avoid
 
-### Variable Inspaction in Notebook 
+### Variable Inspaction in Notebook
 
 1. makes notebook run slow
-2. why do you want such a tool if you can check any vairable in notebook already?
+1. why do you want such a tool if you can check any vairable in notebook already?
 
 ### [jupyterLab/debugger](https://github.com/jupyterlab/debugger)
 
@@ -52,26 +61,28 @@ Need the [xeus-python](https://github.com/jupyter-xeus/xeus-python) kernel to wo
 
 ## Useful Tools
 
-### jupyterlab-lsp 
+### jupyterlab-lsp
 
-### [nbdime](http://www.legendu.net/misc/blog/use-nbdime-to-diff-and-merge-jupyterlab-notebooks/)
+### [nbdime](use-nbdime-to-diff-and-merge-jupyterlab-notebooks)
 
-[nbdime](http://www.legendu.net/misc/blog/use-nbdime-to-diff-and-merge-jupyterlab-notebooks/)
+[nbdime](use-nbdime-to-diff-and-merge-jupyterlab-notebooks)
 is a tool for diffing and merging Jupyter/Lab notebooks.
 It works well with Git.
 
-### [JupyterHub](http://www.legendu.net/misc/blog/jupyterhub-tips/)
+### [JupyterHub](tips-on-jupyterhub)
 
-[JupyterHub](http://www.legendu.net/misc/blog/jupyterhub-tips/)
+[JupyterHub](tips-on-jupyterhub)
 is a multi-user server for Jupyter notebooks.
 
 ### [euporie](https://github.com/joouha/euporie)
+
 [euporie](https://github.com/joouha/euporie)
 is a text-based user interface for running and editing Jupyter notebooks.
 
 ## Useful Extensions for JupyterLab
 
 ### [magma-nvim](https://github.com/dccsillag/magma-nvim)
+
 [magma-nvim](https://github.com/dccsillag/magma-nvim)
 is a NeoVim plugin for running code interactively with Jupyter.
 
@@ -82,7 +93,7 @@ provides Vim keybindings for notebook cells in JupyterLab.
 
 ### [jupyter-resource-usage](https://github.com/jupyter-server/jupyter-resource-usage)
 
-It seems that people suggest using 
+It seems that people suggest using
 [jupyter-resource-usage](https://github.com/jupyter-server/jupyter-resource-usage)
 instead of
 [jupyterlab-system-monitor](https://github.com/jtpio/jupyterlab-system-monitor)
@@ -90,7 +101,7 @@ instead of
 
 ### [jupyterlab-system-monitor](https://github.com/jtpio/jupyterlab-system-monitor)
 
-### [Jupyter/Lab Extensions for Spreadsheet](http://www.legendu.net/misc/blog/jupyterlab-extensions-for-spreadsheet/)
+### [Jupyter/Lab Extensions for Spreadsheet](jupyterlab-extensions-for-spreadsheet)
 
 ### [wallneradam/jupyterlab-output-auto-scroll](https://github.com/wallneradam/jupyterlab-output-auto-scroll)
 
@@ -104,10 +115,12 @@ Automatically scrolls scrollable output cells to bottom when content has changed
 
 Interactive HTML widgets (slider, button, textbox, etc.) for Python Notebook.
 
-    :::bash
-    pip install jupyterlab_widgets
-    jupyter labextension install --sys-prefix --py jupyterlab_widgets
-    jupyter labextension enable --sys-prefix --py jupyterlab_widgets
+```
+:::bash
+pip install jupyterlab_widgets
+jupyter labextension install --sys-prefix --py jupyterlab_widgets
+jupyter labextension enable --sys-prefix --py jupyterlab_widgets
+```
 
 Examples of custom widget libraries built upon ipywidgets are
 
@@ -123,10 +136,12 @@ Examples of custom widget libraries built upon ipywidgets are
 
 ### [jupyterlab_geojson](https://github.com/jupyterlab/jupyterlab_geojson)
 
-    :::bash
-    pip3 install jupyterlab_geojson
-    jupyter labextension install --py --sys-prefix jupyterlab_geojson
-    jupyter labextension enable --py --sys-prefix jupyterlab_geojson
+```
+:::bash
+pip3 install jupyterlab_geojson
+jupyter labextension install --py --sys-prefix jupyterlab_geojson
+jupyter labextension enable --py --sys-prefix jupyterlab_geojson
+```
 
 ### [jupyterlab-drawio](https://github.com/QuantStack/jupyterlab-drawio)
 
@@ -135,9 +150,9 @@ is a standalone embedding of the FOSS drawio/mxgraph package into JupyterLab.
 If you using a office tool (MS/Google PPT/Slides/Doc),
 it is suggested that you use the built-in flowchart support instead.
 Please refer to
-[Text-based Diagram Tools](http://www.legendu.net/misc/blog/text-based-flowchart-tools/)
+[Text-based Diagram Tools](text-based-flowchart-and-uml-tools)
 and
-[GUI Mind Mapping Tools](http://www.legendu.net/misc/blog/gui-mind-mapping-tools/)
+[GUI Mind Mapping Tools](gui-based-mind-mapping-tools)
 for more discussions on flowchart and UML tools.
 
 ### [jupyterlab-quickopen](https://github.com/parente/jupyterlab-quickopen)
@@ -148,18 +163,17 @@ However,
 it does not work well if the working directory of Jupyter/Lab contains a large number of files.
 [jupyterlab-quickopen](https://github.com/parente/jupyterlab-quickopen)
 eithers hangs or crashes when building indexes for a large number of files.
-Unfortunately, 
+Unfortunately,
 users use [jupyterlab-quickopen](https://github.com/parente/jupyterlab-quickopen)
-mostly when the working directory of Jupyter/Lab get complicated 
+mostly when the working directory of Jupyter/Lab get complicated
 and contains lots of files.
-So, 
-overall I think [jupyterlab-quickopen](https://github.com/parente/jupyterlab-quickopen) 
+So,
+overall I think [jupyterlab-quickopen](https://github.com/parente/jupyterlab-quickopen)
 failed its mission.
-
 
 As an alternative,
 it is must faster and more reliable to use the `find` command to help locate files in a terminal.
-You can also use the `Open Path` command to help you open a file 
+You can also use the `Open Path` command to help you open a file
 without changing directory in the navigation panel in JupyterLab.
 
 ### [jupyterlab-email](https://github.com/timkpaine/jupyterlab_email)
@@ -175,12 +189,15 @@ A non polished product. Too much messages.
 ### [jupyterlab_code_formatter](https://github.com/ryantam626/jupyterlab_code_formatter)
 
 ### [jupyterlab-google-drive](https://github.com/jupyterlab/jupyterlab-google-drive)
+
 Not sure whether this is useful.
 
 ### [widget-cookiecutter](https://github.com/jupyter/widget-cookiecutter)
 
-    :::bash
-    pip3 install cookiecutter
+```
+:::bash
+pip3 install cookiecutter
+```
 
 ### jupyter_declarativewidgets
 

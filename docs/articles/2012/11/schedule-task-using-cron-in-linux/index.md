@@ -1,7 +1,7 @@
 ---
 title: Schedule Task Using Cron in Linux
-created: 2012-11-27 11:28:08
-date: 2026-04-15 19:27:00.313094
+created: '2012-11-27T11:28:08-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: schedule-task-using-cron-in-linux
@@ -18,7 +18,7 @@ tags:
 Note: Cron is great for simple scheduling requests.
 For complicated scheduling with many dependencies
 you probably want to go with
-[AirFlow](http://www.legendu.net/misc/blog/apache-airflow-tips)
+[AirFlow](job-scheduling-and-management-using-apache-airflow)
 .
 
 ## Installation

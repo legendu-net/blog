@@ -1,7 +1,7 @@
 ---
 title: Improve the Performance of Spark
-created: 2019-05-05 09:10:38
-date: 2026-04-13 23:15:27.390361
+created: '2019-05-05T09:10:38-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: improve-the-performance-of-spark
@@ -58,7 +58,7 @@ tags:
 1. Use partition or bucket columns on large tables.
    For more details discussions,
    please refer to
-   [Partition and Bucketing in Spark](http://www.legendu.net/misc/blog/partition-bucketing-in-spark)
+   [Partition and Bucketing in Spark](partition-and-bucketing-in-spark)
    .
 
 ## SQL Query / DataFrame API
@@ -219,10 +219,10 @@ you might want to consider using the Kryo serializer.
 1. Enable dynamic allocation but with a limit on the max number of executors.
 
    ```bash
-    ...
-    --conf spark.dynamicAllocation.enabled=true \
-    --conf spark.dynamicAllocation.maxExecutors=1000 \
-    ...
+   ...
+   --conf spark.dynamicAllocation.enabled=true \
+       --conf spark.dynamicAllocation.maxExecutors=1000 \
+       ...
    ```
 
 ### AQE in Spark 3+
@@ -230,9 +230,9 @@ you might want to consider using the Kryo serializer.
 1. Enable adaptive query execution in Spark 3.0+.
 
    ```bash
-    ...
-    --conf spark.adaptive.query.execution=true \
-    ...
+   ...
+   --conf spark.adaptive.query.execution=true \
+       ...
    ```
 
 ### Speculation

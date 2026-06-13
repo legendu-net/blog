@@ -1,7 +1,7 @@
 ---
 title: Remote Development in Visual Studio Code
-created: 2019-10-10 13:07:08
-date: 2026-04-14 19:49:12.841784
+created: '2019-10-10T13:07:08-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: remote-development-in-visual-studio-code
@@ -29,7 +29,7 @@ The second (prefered) approach is to leverage
 [cdr/code-server](https://github.com/cdr/code-server).
 For more details,
 please refer to
-[Visual Studio Code Server](http://www.legendu.net/misc/blog/visual-studio-code-server/).
+[Visual Studio Code Server](visual-studio-code-server).
 Visual Studio Code Server is prefer to the Remote Development extension pack
 as Visual Studio Code Server requires no installation or configuration on the client machine.
 A browser is all your need to use Visual Studio Code Server once it is setup.

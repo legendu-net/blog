@@ -1,7 +1,7 @@
 ---
 title: Preparing Data for AI
-created: 2020-03-17 11:27:12
-date: 2026-04-13 23:15:25.131468
+created: '2020-03-17T11:27:12-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: preparing-data-for-ai
@@ -29,7 +29,7 @@ tags:
 1. If you have no labeled data to start at all,
    do NOT hurry to jumping into labeling yet.
    Check the article
-   [Label Image Data Quickly Without Crowdsourcing](http://www.legendu.net/misc/blog/label-image-data-quickly-without-crowdsourcing/)
+   [Label Image Data Quickly Without Crowdsourcing](label-image-data-quickly-without-crowdsourcing)
    to see whether you can use any of the tips to ease the work of human labeling.
 
 ## Free Labeling Tools
@@ -63,4 +63,4 @@ https://www.alegion.com/
 
 ## References
 
-[Labeling Data for AI](http://www.legendu.net/misc/blog/labeling-data-for-ai/)
+[Labeling Data for AI](preparing-data-for-ai)

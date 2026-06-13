@@ -1,7 +1,7 @@
 ---
 title: Call Java Code Using JPype from Python
-created: 2020-03-31 12:16:58
-date: 2026-04-13 23:15:24.662680
+created: '2020-03-31T12:16:58-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: call-java-code-using-jpype-from-python
@@ -70,7 +70,7 @@ https://jpype.readthedocs.io/en/latest/quickguide.html#primitives
 
 ## References
 
-- [Java Interfaces for Python](http://www.legendu.net/misc/blog/java-interfaces-for-python)
+- [Java Interfaces for Python](java-interfaces-for-python)
 
 - [jpype-project/jpype](https://github.com/jpype-project/jpype)
 

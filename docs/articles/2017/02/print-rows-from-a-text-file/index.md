@@ -1,7 +1,7 @@
 ---
-title: "Print Rows from a Text File"
-created: 2017-02-06 14:36:40
-date: 2020-04-06 14:36:40
+title: Print Rows from a Text File
+created: '2017-02-06T14:36:40-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: print-rows-from-a-text-file
@@ -21,23 +21,27 @@ tags:
 
 It is suggested that you **use Python instead of Shell** to manipulate text files!
 
-Please refer to 
-[Advanced Use of "head" and "tail"](http://www.legendu.net/en/blog/advanced-use-head-tail/)
+Please refer to
+[Advanced Use of "head" and "tail"](advanced-use-of-head-and-tail)
 on how to use `head` and `tail` for printing rows from a text file.
-These 2 commands are convenient when you want to take head/tail rows. 
+These 2 commands are convenient when you want to take head/tail rows.
 If you want to take middle rows of a file,
-better ways exists using `sed` and `awk`. 
+better ways exists using `sed` and `awk`.
+
 ```bash
 # print lines 10 to 20 using sed
 sed -n '10,20p' filename
 # print lines 10 to 20 using awk
 awk 'NR >= 10 && NR <= 20' file_name
 ```
-If you work with a very large file, 
-you make the `sed` command a little bit more efficient by quitting ealier. 
-For example, 
+
+If you work with a very large file,
+you make the `sed` command a little bit more efficient by quitting ealier.
+For example,
 the following command efficiently prints lines 10000000 to 10000020 of the file.
+
 ```bash
-sed -n '10000000,10000020p; 10000021q' file_name 
+sed -n '10000000,10000020p; 10000021q' file_name
 ```
+
 Thi way is faster than `awk` (but slower without the quitting early trick) on large files.

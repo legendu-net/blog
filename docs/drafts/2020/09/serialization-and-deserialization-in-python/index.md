@@ -1,7 +1,7 @@
 ---
 title: Serialization and deserialization in Python
-created: 2020-09-03 09:42:01
-date: 2026-04-15 19:27:00.979994
+created: '2020-09-03T09:42:01-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: serialization-and-deserialization-in-python
@@ -22,15 +22,15 @@ tags:
    (JavaScript Object Notation) is a lightweight data-interchange format.
    It is suggested that you <span style="color:red"> avoid using it </span>.
    Please refer to
-   [Shotcomes of JSON](https://www.legendu.net/misc/blog/json-tips/#shortcomes-of-json)
+   [Shotcomes of JSON](tips-on-json-shortcomes-of-json)
    for detailed discussions on this.
    TOML and YAML are better text-based alternatives to JSON.
    If serialization and deserialization is done in Python only,
-   [pickle](http://www.legendu.net/misc/blog/serialize-and-deserialize-object-using-pickle-in-python)
+   [pickle](serialize-and-deserialize-object-using-pickle-in-python)
    is preferred.
    If you do want to use JSON in Python,
    please refer to
-   [JSON Parsing Libraries in Python](https://www.legendu.net/misc/blog/json-tips/#json-parsing-libraries-in-python)
+   [JSON Parsing Libraries in Python](tips-on-json-json-parsing-libraries-in-python)
    for more discussions.
 
 1. TOML
@@ -41,13 +41,13 @@ tags:
    - YAML support serialization and deserialization of set while json does not.
    - YAML is more readable.
 
-1. [Pickle](http://www.legendu.net/misc/blog/serialize-and-deserialize-object-using-pickle-in-python)
+1. [Pickle](serialize-and-deserialize-object-using-pickle-in-python)
    is the most popular serialization and deserialization tool in Python.
    It supports serializing/deserializing most (even not all) Python classes.
 
 1. [Dill](https://github.com/uqfoundation/dill)
    extends Python's
-   [Pickle](http://www.legendu.net/misc/blog/serialize-and-deserialize-object-using-pickle-in-python)
+   [Pickle](serialize-and-deserialize-object-using-pickle-in-python)
    module for serializing and de-serializing Python objects to the majority of the built-in python types.
    It also provides some good diagnostic tools for pickling,
    the best of which is the pickle trace.

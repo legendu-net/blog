@@ -1,7 +1,7 @@
 ---
 title: Rust for Robots
-created: 2023-01-17 10:46:23
-date: 2026-04-13 23:14:35.298238
+created: '2023-01-17T10:46:23-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: rust-for-robots
@@ -70,4 +70,4 @@ using gRPC for the Roomba series robot vacuum cleaners.
 
 - [Rust is for Robotics](https://robotics.rs/)
 
-- [Rust for IoT](https://www.legendu.net/misc/blog/rust-for-iot)
+- [Rust for IoT](rust-for-iot)

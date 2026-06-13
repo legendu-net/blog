@@ -1,7 +1,7 @@
 ---
 title: Big Figures to Follow in Investment
-created: 2022-10-08 12:32:04
-date: 2026-04-13 23:14:41.547236
+created: '2022-10-08T12:32:04-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: big-figures-to-follow-in-investment
@@ -19,4 +19,4 @@ tags:
 
 ## References
 
-- [Investment](https://www.legendu.net/misc/blog/investment-tips)
+- [Investment](investment)

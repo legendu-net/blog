@@ -1,7 +1,7 @@
 ---
 title: Use TableSample in SQL
-created: 2020-02-28 09:27:28
-date: 2026-04-15 19:27:01.083760
+created: '2020-02-28T09:27:28-08:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: use-tablesample-in-sql
@@ -60,8 +60,8 @@ select * from table_name TABLESAMPLE (1 PCT)
 
 ## References
 
-- [Sample Rows from a Spark DataFrame](http://www.legendu.net/en/blog/spark-dataframe-sample)
+- [Sample Rows from a Spark DataFrame](sample-rows-from-a-spark-dataframe)
 
-- [SQL Equivalent](http://www.legendu.net/misc/blog/sql-equivalent)
+- [SQL Equivalent](sql-equivalent)
 
 - https://stackoverflow.com/questions/51502443/is-sample-n-really-a-random-sample-when-used-with-sparklyr

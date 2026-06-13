@@ -1,7 +1,7 @@
 ---
 title: Unit Testing and Formal Verification in Rust
-created: 2021-05-13 09:33:19
-date: 2026-04-13 23:15:03.152513
+created: '2021-05-13T09:33:19-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: unit-testing-and-formal-verification-in-rust
@@ -31,9 +31,9 @@ tags:
 
 ## References
 
-- [Verify Rust Code](https://www.legendu.net/misc/blog/verify-rust-code)
+- [Verify Rust Code](verify-rust-code)
 
-- [Unit Test in Rust](https://www.legendu.net/misc/blog/unit-test-in-rust)
+- [Unit Test in Rust](unit-test-in-rust)
 
 - [Issues in asserting Result](https://users.rust-lang.org/t/issues-in-asserting-result/61198/6)
 

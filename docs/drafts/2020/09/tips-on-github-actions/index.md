@@ -1,7 +1,7 @@
 ---
 title: Tips on GitHub Actions
-created: 2020-09-01 12:42:15
-date: 2026-04-13 23:15:15.246735
+created: '2020-09-01T12:42:15-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: tips-on-github-actions
@@ -36,7 +36,7 @@ tags:
 
 1. Rust cannot be installed into a global location
    following instructions at
-   [Install Rust Globally in Linux](https://www.legendu.net/en/blog/install-rust-globally/)
+   [Install Rust Globally in Linux](install-rust-globally-in-linux)
    .
    This might because GitHub Actions VMs have restrictions on environemnt variables.
    You can still install Rust using root (via sudo)
@@ -129,11 +129,11 @@ https://github.com/peter-evans/create-pull-request
 
 ## References
 
-- [Common Issues and Solutions for GitHub Actions](https://www.legendu.net/misc/blog/common-issues-and-solutions-for-github-actions)
+- [Common Issues and Solutions for GitHub Actions](common-issues-and-solutions-for-github-actions)
 
-- [Self-hosted Runners for GitHub Actions](https://www.legendu.net/misc/blog/self-hosted-runners-for-github-actions)
+- [Self-hosted Runners for GitHub Actions](self-hosted-runners-for-github-actions)
 
-- [Use Docker Containers for GitHub Actions](https://www.legendu.net/misc/blog/use-docker-containers-for-github-actions)
+- [Use Docker Containers for GitHub Actions](use-docker-containers-for-github-actions)
 
 - [Machine learning operations with GitHub Actions and Kubernetes - GitHub Universe 2019](https://www.youtube.com/watch?v=Ll50l3fsoYs&feature=emb_logo)
 
@@ -147,4 +147,4 @@ https://github.com/peter-evans/create-pull-request
 
 - [Questions about PR workflows and actions/checkout@v2](https://github.community/t/questions-about-pr-workflows-and-actions-checkout-v2/122347)
 
-- [Powershell on Windows for GitHub Actions](https://www.legendu.net/misc/blog/powershell-on-windows-for-github-actions)
+- [Powershell on Windows for GitHub Actions](powershell-on-windows-for-github-actions)

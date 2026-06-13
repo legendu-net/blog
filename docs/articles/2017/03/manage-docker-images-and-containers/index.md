@@ -1,7 +1,7 @@
 ---
 title: Manage Docker Images and Containers
-created: 2017-03-15 10:29:33
-date: 2026-04-15 19:27:00.425647
+created: '2017-03-15T10:29:33-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: manage-docker-images-and-containers
@@ -29,19 +29,19 @@ but use it with caution and at your own risk.
 1. Remove all existing containers (not images).
 
    ```bash
-    docker rm $(docker ps -aq)
-    # or you can use pipe
-    docker ps -aq | xargs docker rm
-    # or you can osquery
-    osqueryi "select id from docker_containers" --list --header=false | xargs docker rm
+   docker rm $(docker ps -aq)
+   # or you can use pipe
+   docker ps -aq | xargs docker rm
+   # or you can osquery
+   osqueryi "select id from docker_containers" --list --header=false | xargs docker rm
    ```
 
 1. Remove exited containers.
 
    ```bash
-    docker ps -aqf status=exited | xargs docker rm
-    osqueryi "select id from docker_containers where state=exited" \
-      --list --header=false | xargs docker rm
+   docker ps -aqf status=exited | xargs docker rm
+   osqueryi "select id from docker_containers where state=exited" \
+       --list --header=false | xargs docker rm
    ```
 
 ## Remove Images
@@ -54,47 +54,47 @@ but use it with caution and at your own risk.
 1. Remove images without names (with the help of `awk`).
 
    ```bash
-    docker images | awk '{ if ($1 == "<none>") print $3 }' | xargs docker rmi
+   docker images | awk '{ if ($1 == "<none>") print $3 }' | xargs docker rmi
    ```
 
 1. Remove images without versions (with the help of `awk`).
 
    ```bash
-    docker images | awk '{ if ($2 == "<none>") print $3 }' | xargs docker rmi
+   docker images | awk '{ if ($2 == "<none>") print $3 }' | xargs docker rmi
    ```
 
 1. Remove images without names or versions (with the help of `awk`).
 
    ```bash
-    docker images | awk '{ if ($1 == "<none>" || $2 == "<none>") print $3 }' | xargs docker rmi
+   docker images | awk '{ if ($1 == "<none>" || $2 == "<none>") print $3 }' | xargs docker rmi
    ```
 
 1. Remove images without names or versions (with the help of `osquery`).
 
    ```bash
-    osqueryi "select id from docker_images where tags = ''" \
-      --list --header=false | xargs docker rmi
+   osqueryi "select id from docker_images where tags = ''" \
+       --list --header=false | xargs docker rmi
    ```
 
 1. Remove all images belong to the eclipse organization with the help of `sed` and `q`.
 
    ```bash
-    docker images sed 's/ \+/\t/g' | \
-      q -tH "select [image id] from - where repository like 'eclipse/%'" | \
-      xargs docker rmi 
+   docker images sed 's/ \+/\t/g' | \
+       q -tH "select [image id] from - where repository like 'eclipse/%'" | \
+       xargs docker rmi
    ```
 
 1. Remove all images belong to the eclipse organization with the help of `osquery`.
 
    ```bash
-    osqueryi "select id from docker_images where tags like 'eclipse/%'" \
-      --list --header=false | xargs docker rmi
+   osqueryi "select id from docker_images where tags like 'eclipse/%'" \
+       --list --header=false | xargs docker rmi
    ```
 
 1. You can force removing an image with the `--force` option.
 
    ```bash
-    docker rmi ubuntu --force
+   docker rmi ubuntu --force
    ```
 
 1. If you have multiple tags on the same docker image,
@@ -108,7 +108,7 @@ by running the following command.
 
 ```bash
 cat /proc/self/cgroup | grep -o  -e "docker-.*.scope" | \
-  head -n 1 | sed "s/docker-\(.*\).scope/\\1/"
+    head -n 1 | sed "s/docker-\(.*\).scope/\\1/"
 ```
 
 Or another simpler way is to run
@@ -130,13 +130,13 @@ But it will not work in the following two cases.
 1. Save a docker image to a tar.gz file.
 
    ```bash
-    docker save image | gzip > image.tar.gz
+   docker save image | gzip > image.tar.gz
    ```
 
 1. Load a docker image from tar file.
 
    ```bash
-    docker load < image.tar
+   docker load < image.tar
    ```
 
 ## Kill a Process in a Container
@@ -180,7 +180,7 @@ docker exec container_name kill process_name
 ## Overwrite Entrypoint
 
 Please refer to
-[Overwrite Entrypoint in Docker](http://www.legendu.net/misc/blog/overwrite-entrypoint-in-docker)
+[Overwrite Entrypoint in Docker](overwrite-entrypoint-in-docker)
 for detailed discussions.
 
 ## Permission
@@ -215,7 +215,7 @@ docker cp mycontainer:/foo.txt foo.txt
 ## Run Docker Containers in a Docker Container
 
 Please refer to
-[Run Docker Containers Inside a Docker Container](http://www.legendu.net/en/blog/run-docker-containers-inside-a-docker-container)
+[Run Docker Containers Inside a Docker Container](run-docker-containers-inside-a-docker-container)
 for more detailed discussions.
 
 ## Misc

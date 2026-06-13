@@ -1,7 +1,7 @@
 ---
 title: Compress and Decompress Files in Rust
-created: 2022-07-16 18:37:46
-date: 2026-04-13 23:14:43.748337
+created: '2022-07-16T18:37:46-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: compress-and-decompress-files-in-rust
@@ -30,7 +30,7 @@ as
 is the best compression/decompression algorithm currently.
 For more discussions on this,
 please refer to
-[Compress and Decompressing Archives in Linux](http://www.legendu.net/en/blog/compress-and-decompress-in-linux/)
+[Compress and Decompressing Archives in Linux](compress-and-decompressing-archives-in-linux)
 .
 
 1. [zstd](https://crates.io/crates/zstd)

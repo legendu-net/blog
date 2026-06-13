@@ -1,17 +1,18 @@
 ---
 title: Install Packages Using Homebrew on macOS and Linux
-created: 2019-03-27 22:55:07
-date: 2026-04-05 19:42:37.901538
+created: '2019-03-27T22:55:07-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
-- bendu
+  - bendu
 label: install-packages-using-homebrew-on-macos-and-linux
 license: CC-BY-4.0
 tags:
-- software
-- Homebrew
-- macOS
-- Linuxbrew
+  - software
+  - Homebrew
+  - macOS
+  - Linuxbrew
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [Installation](https://github.com/Homebrew/install)
@@ -19,7 +20,9 @@ tags:
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+
 or
+
 ```sh
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
@@ -28,39 +31,43 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 
 By default,
 Homebrew is installed to the location `/opt/homebrew`.
-You can add the command `brew` into $PATH
-by adding the following configuration into your shell configuration 
+You can add the command `brew` into \$PATH
+by adding the following configuration into your shell configuration
 (e.g., `.bashrc` for bash)
 .
 
-    :::bash
-    eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+:::bash
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
 
 ### Linux
 
-The installation script installs Homebrew to `/home/linuxbrew/.linuxbrew` using sudo if possible 
-and in your home directory at ~/.linuxbrew otherwise. 
-Homebrew does not use sudo after installation. 
-Using /home/linuxbrew/.linuxbrew allows the use of more binary packages (bottles) 
+The installation script installs Homebrew to `/home/linuxbrew/.linuxbrew` using sudo if possible
+and in your home directory at ~/.linuxbrew otherwise.
+Homebrew does not use sudo after installation.
+Using /home/linuxbrew/.linuxbrew allows the use of more binary packages (bottles)
 than installing in your personal home directory.
 
 Follow the instructions below if you have to install Linuxbrew using a proxy.
 
 1. Configure the environment variables `http_proxy` and `https_proxy`.
-    ```Bash
-    export http_proxy=http://your.proxy.server:port
-    export https_proxy=http://your.proxy.server:port
-    ```
-2. Configure proxy for Git (as Linuxbrew rely on Git to work) following instructions in
-    [Use Git Behind a Proxy](http://www.legendu.net/en/blog/use-git-behind-a-proxy/).
-
+   ```Bash
+   export http_proxy=http://your.proxy.server:port
+   export https_proxy=http://your.proxy.server:port
+   ```
+1. Configure proxy for Git (as Linuxbrew rely on Git to work) following instructions in
+   [Use Git Behind a Proxy](use-git-behind-a-proxy).
 
 You can export environment variables for Linuxbrew using the following command
 assuming Linuxbrew is installed to `/home/linuxbrew/.linuxbrew`.
+
 ```Bash
 /home/linuxbrew/.linuxbrew/bin/brew shellenv >> .bash_profile
 ```
+
 Or use the following command if Linuxbrew is installed to `~/.linuxbrew`.
+
 ```Bash
 ~/.linuxbrew/bin/brew shellenv >> .bash_profile
 ```
@@ -68,52 +75,64 @@ Or use the following command if Linuxbrew is installed to `~/.linuxbrew`.
 ## Tips and Traps
 
 1. All Homebrew formulas are listed at https://formulae.brew.sh/formula/.
-    You can search on the site for available formulas.
+   You can search on the site for available formulas.
 
 1. Linuxbrew/brew has been merged into Homebrew/brew.
-    For more please refer to [this issue](https://github.com/Linuxbrew/brew/issues/1).
-    **Linuxbrew is a good tool to install Linux packages 
-    in environments which you do not have sudo permission**.
+   For more please refer to [this issue](https://github.com/Linuxbrew/brew/issues/1).
+   **Linuxbrew is a good tool to install Linux packages
+   in environments which you do not have sudo permission**.
 
 1. You might encounter link problems when you use the `brew` command to install packages on Mac.
-    A possible way to fix the issue is to manually configure the `PATH` environemnt variable.
-    Or a quick and dirty way to resolve the problem is to link the executable file into `$HOME/bin`.
+   A possible way to fix the issue is to manually configure the `PATH` environemnt variable.
+   Or a quick and dirty way to resolve the problem is to link the executable file into `$HOME/bin`.
 
-2. You can install a specific version of a package using the `@` symbol.
-    For example,
-    the command below installs node 8.
+1. You can install a specific version of a package using the `@` symbol.
+   For example,
+   the command below installs node 8.
 
-        brew install node@8
+   ```
+    brew install node@8
+   ```
 
-    All available versions of a package (say, node) can be listed using the following command.
+   All available versions of a package (say, node) can be listed using the following command.
 
-        brew search node@
+   ```
+    brew search node@
+   ```
 
-    If there are multiple version of a package (say, node) installed, 
-    you can set the default version of the package to use using the command below.
+   If there are multiple version of a package (say, node) installed,
+   you can set the default version of the package to use using the command below.
 
-        brew switch node 10.15.0
+   ```
+    brew switch node 10.15.0
+   ```
 
-2. Uninstall a package, say, `telnet`.
+1. Uninstall a package, say, `telnet`.
 
-        brew uninstall telnet
-        # or
-        brew remove telnet
+   ```
+    brew uninstall telnet
+    # or
+    brew remove telnet
+   ```
 
-2. Do not install python using brew as you will end up with 2 copies of python
+1. Do not install python using brew as you will end up with 2 copies of python
 
-3. better to use MacVim instead of Vim. 
+1. better to use MacVim instead of Vim.
 
-        brew install macvim
+   ```
+    brew install macvim
+   ```
 
-    The command for MacVim is `mvim`. 
-    For convenience, 
-    you can link it to `$HOME/bin/vim`.
+   The command for MacVim is `mvim`.
+   For convenience,
+   you can link it to `$HOME/bin/vim`.
 
-4. No readlink on Mac.  Use `greadlink` instead.
-    You have install the package `coreutils` in order to use `greadlink`.
+1. No readlink on Mac. Use `greadlink` instead.
+   You have install the package `coreutils` in order to use `greadlink`.
 
-        brew install coreutils
+   ```
+    brew install coreutils
+   ```
 
 ## Example Commands
 
@@ -131,13 +150,17 @@ brew ls --versions node
 
 1. Install gcc/g++.
 
-        :::bash
-        brew install gcc
+   ```
+    :::bash
+    brew install gcc
+   ```
 
-2. Install LLVM and clang.
+1. Install LLVM and clang.
 
-        :::bash
-        brew install llvm
+   ```
+    :::bash
+    brew install llvm
+   ```
 
 ## References
 
@@ -156,4 +179,3 @@ https://apple.stackexchange.com/questions/329187/homebrew-rollback-from-python-3
 https://stackoverflow.com/questions/3987683/homebrew-install-specific-version-of-formula
 
 http://osxdaily.com/2018/06/13/how-install-update-python-3x-mac/
-

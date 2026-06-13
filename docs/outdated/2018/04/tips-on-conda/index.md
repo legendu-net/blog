@@ -1,31 +1,32 @@
 ---
 title: Tips on Conda
-created: 2018-04-22 09:36:27
-date: 2026-04-05 19:42:39.164165
+created: '2018-04-22T09:36:27-07:00'
+date: '2026-06-12T21:38:36-07:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-conda
 license: CC-BY-4.0
 tags:
-- programming
-- Python
-- conda
-- tips
-- Anaconda Python
+  - programming
+  - Python
+  - conda
+  - tips
+  - Anaconda Python
 ---
+
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
+1. conda and executables installed by conda might not be able to run by sudo directly.
+   If this happends,
+   use the full path of the executable
+   or add the option `-E "PATH=$PATH"` to sudo.
 
+   ```
+    :::bash
+    sudo -E env "PATH=$PATH" <command> [arguments]
+   ```
 
-1. conda and executables installed by conda might not be able to run by sudo directly. 
-    If this happends, 
-    use the full path of the executable
-    or add the option `-E "PATH=$PATH"` to sudo.
-    
-        :::bash
-        sudo -E env "PATH=$PATH" <command> [arguments]
-
-2. By defaut, conda installs things into /opt/conda.
+1. By defaut, conda installs things into /opt/conda.
 
 ## Download Archives
 
@@ -41,70 +42,86 @@ https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environme
 
 Create a conda virtual environment with Python 3.7, numpy, pandas and scikit-learn installed.
 
-    :::bash
-    conda create -n myenv python=3.7 numpy pandas scikit-learn
-    
+```
+:::bash
+conda create -n myenv python=3.7 numpy pandas scikit-learn
+```
+
 Create a conda virtual environment from a YAML configuration file.
 
-    :::bash
-    conda env create -n myenv --file myenv.yml
+```
+:::bash
+conda env create -n myenv --file myenv.yml
+```
 
-If you have issues creating a conda virtual environment 
+If you have issues creating a conda virtual environment
 (e.g., due to package not found in the current conda channel),
 you can create a bare conda virtual environment,
-install `pip` into the environment 
+install `pip` into the environment
 and then use `pip` to install the needed packages.
 For example,
-the below code creates a conda virtual environment 
+the below code creates a conda virtual environment
 with the Python package `optimuspyspark` installed.
 
-    :::bash
-    conda create -n optimus
-    conda activate optimus
-    conda install pip
-    pip install optimuspyspark
+```
+:::bash
+conda create -n optimus
+conda activate optimus
+conda install pip
+pip install optimuspyspark
+```
 
-Be careful though, 
-as pip in a virtual environment sometimes installs packages into global location rather than your virtual environment. 
-This won't affect usage of your virtual environment locally, 
+Be careful though,
+as pip in a virtual environment sometimes installs packages into global location rather than your virtual environment.
+This won't affect usage of your virtual environment locally,
 generally speaking.
 However,
-if you want to package your virtual environemnt using conda-pack 
+if you want to package your virtual environemnt using conda-pack
 and use it somewhere else,
 the Python packages installed outside the virtual environemnt won't be packed.
-Make sure to use `conda list -n env_name` 
-to check that the Python packages are installed into the virtual environment 
+Make sure to use `conda list -n env_name`
+to check that the Python packages are installed into the virtual environment
 before you pack it using `conda-pack`.
-If the issue appears, 
+If the issue appears,
 you can always manually specify the installation location for `pip`.
 
 ### Activate a Conda Virtual Environment
 
-    :::bash
-    conda activate myenv
+```
+:::bash
+conda activate myenv
+```
+
+(tips-on-conda-pack-a-conda-virtual-environment)=
 
 ### Pack a Conda Virtual Environment
 
-A conda virtual environment can be packed 
-([conda-pack](https://conda.github.io/conda-pack/index.html) required) 
-into a `tar.gz` file 
+A conda virtual environment can be packed
+([conda-pack](https://conda.github.io/conda-pack/index.html) required)
+into a `tar.gz` file
 and be used on other machines with the same type of OS.
-Notice that all packages in a conda virtual environment 
+Notice that all packages in a conda virtual environment
 must be managed by conda (rather than pip)
 so that it can be packed by conda-pack.
 
-    :::bash
-    conda pack -n myenv -o myenv.tar.gz
+```
+:::bash
+conda pack -n myenv -o myenv.tar.gz
+```
 
 ### Deactivate a Conda Environment
 
-    :::bash
-    conda deactivate myenv
+```
+:::bash
+conda deactivate myenv
+```
 
 ### Remove a Conda Environment
 
-    :::bash
-    conda env remove -n myenv
+```
+:::bash
+conda env remove -n myenv
+```
 
 ## Administering a multi-user conda installation
 

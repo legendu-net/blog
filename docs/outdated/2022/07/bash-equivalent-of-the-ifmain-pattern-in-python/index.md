@@ -1,7 +1,7 @@
 ---
 title: Bash Equivalent of the ifmain Pattern in Python
-created: 2022-07-28 14:39:20
-date: 2026-04-14 19:32:05.965966
+created: '2022-07-28T14:39:20-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: bash-equivalent-of-the-ifmain-pattern-in-python
@@ -22,7 +22,7 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-[Fish Shell](https://www.legendu.net/misc/blog/tips-on-the-fish-shell)
+[Fish Shell](tips-on-the-fish-shell)
 is preferred to Bash/Zsh.
 The following content is for Bash/Zsh only.
 
@@ -33,7 +33,7 @@ function install_icon.usage() {
     cat << EOF
 NAME
     /scripts/sys/install_icon.sh - Download and install icon to /usr/local/bin/.
-SYNTAX 
+SYNTAX
     /scripts/sys/install_icon.sh [-h]
 EOF
 }

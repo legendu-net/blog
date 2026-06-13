@@ -1,7 +1,7 @@
 ---
 title: TeXstudio, Bravo!
-created: 2012-06-06 14:47:52
-date: 2026-04-11 22:10:03.116337
+created: '2012-06-06T14:47:52-07:00'
+date: '2026-06-12T22:15:55-07:00'
 authors:
   - bendu
 label: texstudio-bravo
@@ -40,4 +40,4 @@ the terminator of debate on LaTeX IDEs.
 
 - https://www.texstudio.org/
 
-- [IDEs for LaTeX](http://www.legendu.net/misc/blog/latex-ide)
+- [IDEs for LaTeX](ides-for-latex)

@@ -1,7 +1,7 @@
 ---
 title: Tips on JSON
-created: 2016-11-09 09:49:14
-date: 2026-04-15 19:27:01.383895
+created: '2016-11-09T09:49:14-08:00'
+date: '2026-06-12T21:38:36-07:00'
 authors:
   - bendu
 label: tips-on-json
@@ -21,6 +21,8 @@ tags:
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+(tips-on-json-shortcomes-of-json)=
 
 ## Shortcomes of JSON
 
@@ -42,6 +44,8 @@ a binary serialization format is preferred.
    which is error-prone.
 
 1. The JSON format is limited expressing complicated objects.
+
+(tips-on-json-json-parsing-libraries-in-python)=
 
 ## JSON Parsing Libraries in Python
 

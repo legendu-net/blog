@@ -1,7 +1,7 @@
 ---
 title: Tips on Claude
 created: '2026-04-18T18:53:35.655987-07:00'
-date: '2026-06-14T17:31:06-07:00'
+date: '2026-06-14T19:08:07-07:00'
 authors:
   - bendu
 label: tips-on-claude
@@ -33,6 +33,10 @@ Works simiarly to [Gemini CLI](tips-on-google-gemini-cli).
 
 1. [Claude Plugins](https://claude.com/plugins) (similar concept to Gemini extensions)
    .
+
+## General Tips
+
+1. Use `/review` and `/ultra-review` to review code changes.
 
 ## Permissions
 

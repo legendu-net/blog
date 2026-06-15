@@ -48,8 +48,9 @@ POSTS_COLS = [
     "content",
     "empty",
     "match",
+    "refs",
 ]
-TAG_SEPARATOR = "|"
+SEPARATOR = "|"
 # SITE = "https://legendu-net.github.io/blog"
 SITE = "https://www.legendu.net"
 Record = namedtuple("Record", POSTS_COLS)
@@ -237,6 +238,17 @@ def _label(title: str) -> str:
     return title.strip(hyphen)
 
 
+def _concat(items: list[str], sep: str) -> str:
+    """Concatenate items into a ``sep``-delimited string wrapped with ``sep``.
+
+    The leading/trailing ``sep`` lets membership be tested with
+    ``LIKE '%<sep><item><sep>%'``. An empty list yields an empty string.
+    """
+    if not items:
+        return ""
+    return sep + sep.join(items) + sep
+
+
 def _parse_metadata(yaml_str: str) -> dict[str, Any]:
     metadata = yaml.load(yaml_str, Loader=yaml.FullLoader)
     if metadata is None:
@@ -419,7 +431,28 @@ class Post:
         return all(line.strip() == "" for line in self.lines)
 
     def concat_tags(self) -> str:
-        return TAG_SEPARATOR + TAG_SEPARATOR.join(self.metadata["tags"]) + TAG_SEPARATOR
+        return _concat(self.metadata["tags"], SEPARATOR)
+
+    def _extract_xrefs(self) -> list[str]:
+        """Extract outbound cross-references from this post's body.
+
+        Returns the de-duplicated referenced post labels (relative slug links
+        and reference definitions) and absolute ``SITE`` URLs. Section anchors
+        are dropped; URLs are kept whole.
+
+        :return: A list of unique referenced labels and URLs.
+        """
+        text = "".join(self.lines)
+        rel_ref = r"\]\(([a-z0-9][a-z0-9-]*)(?:#[\w-]+)?\)"
+        ref_def = r"(?m)^\s*\[[^\]]+\]:\s*([a-z0-9][a-z0-9-]*)(?:#[\w-]+)?\s*$"
+        # Canonical post URLs only: SITE/{doc_dir}/{YYYY}/{MM}/{label}. This
+        # excludes non-post links (tags, media, ...) and stops at the label for
+        # deeper paths.
+        abs_ref = re.escape(SITE) + r"/[a-z]+/\d{4}/\d{2}/[A-Za-z0-9_-]+"
+        refs = re.findall(rel_ref, text)
+        refs.extend(re.findall(ref_def, text))
+        refs.extend(re.findall(abs_ref, text))
+        return list(dict.fromkeys(refs))
 
     def record(self) -> Record:
         tags = self.concat_tags()
@@ -435,7 +468,53 @@ class Post:
             content,
             int(self._is_post_empty()),
             int(self.is_match()),
+            _concat(self._extract_xrefs(), SEPARATOR),
         )
+
+    def update_xref(
+        self, old_label: str, new_label: str, old_url: str, new_url: str
+    ) -> int:
+        """Update cross-references to a renamed/moved post in this post's file.
+
+        The raw file is read and written directly (so both Markdown and
+        notebook files are handled without reformatting), and it is only
+        written back when something actually changed.
+
+        :param old_label: The previous label (relative-reference slug).
+        :param new_label: The new label.
+        :param old_url: The previous absolute ``SITE`` URL.
+        :param new_url: The new absolute ``SITE`` URL.
+        :return: The number of references rewritten.
+        """
+        text = self.path.read_text(encoding="utf-8")
+        # Absolute URL references. The negative lookahead avoids matching a URL
+        # whose label is a prefix of a longer one (e.g. ".../spark-sql-tips").
+        url_pat = re.compile(re.escape(old_url) + r"(?![A-Za-z0-9-])")
+        text, num = url_pat.subn(new_url, text)
+        if old_label != new_label:
+            # Relative slug references, only in genuine link-target positions;
+            # any section anchor is preserved. The reference-definition pattern
+            # is not anchored to the physical line start so it also matches
+            # inside notebook JSON (where the line is wrapped in quotes), and
+            # the trailing lookahead guards against a label that is a prefix of
+            # a longer one.
+            ol = re.escape(old_label)
+            inline = re.compile(r"\]\(" + ol + r"(?P<a>#[A-Za-z0-9_-]+)?\)")
+            refdef = re.compile(
+                r"(?P<pre>\[[^\]\n]*\]:[ \t]*)"
+                + ol
+                + r"(?P<a>#[A-Za-z0-9_-]+)?(?![A-Za-z0-9/_-])"
+            )
+            text, n1 = inline.subn(
+                lambda m: f"]({new_label}{m.group('a') or ''})", text
+            )
+            text, n2 = refdef.subn(
+                lambda m: f"{m['pre']}{new_label}{m.group('a') or ''}", text
+            )
+            num += n1 + n2
+        if num:
+            self.path.write_text(text, encoding="utf-8")
+        return num
 
     def update_meta_field(self, metadata: dict[str, Any]) -> None:
         """Update metadata."""
@@ -660,12 +739,20 @@ class Blogger:
             paths = [paths]
         for path in paths:
             post = Post(path)
+            po = Path(path).parts
+            old_doc_dir, yyyy, mm, label = po[1], po[2], po[3], po[4]
             post.change_doc_dir(doc_dir)
             self.update_records(
                 table=self.POSTS,
                 paths=path,
                 kvs={"path": str(post.path), "doc_dir": doc_dir},
             )
+            # A move changes only the doc_dir, so the label (and thus relative
+            # references) is unchanged; only absolute URLs need rewriting.
+            old_url = f"{SITE}/{old_doc_dir}/{yyyy}/{mm}/{label}"
+            new_url = f"{SITE}/{doc_dir}/{yyyy}/{mm}/{label}"
+            if old_url != new_url:
+                self.update_xref(label, label, old_url, new_url)
 
     def match_title(self, post: str | Post) -> None:
         if isinstance(post, str):
@@ -687,6 +774,60 @@ class Blogger:
         kvs["date"] = post.metadata["date"]
         kvs["match"] = 1
         self.update_records(table=self.POSTS, paths=path_old, kvs=kvs)
+        # The label changed, breaking both relative slug references and the
+        # last segment of absolute URLs in other posts; update them.
+        po = Path(path_old).parts
+        doc_dir, yyyy, mm, old_label = po[1], po[2], po[3], po[4]
+        new_label = post.path.parts[4]
+        base = f"{SITE}/{doc_dir}/{yyyy}/{mm}"
+        self.update_xref(
+            old_label,
+            new_label,
+            f"{base}/{old_label}",
+            f"{base}/{new_label}",
+        )
+
+    def update_xref(
+        self,
+        old_label: str,
+        new_label: str,
+        old_url: str,
+        new_url: str,
+    ) -> list[str]:
+        """Rewrite cross-references to a renamed/moved post in all other posts.
+
+        Posts referencing the changed label/URL are found via the ``refs``
+        column rather than by scanning every file on disk. Only the matching
+        files are rewritten, and their database records are refreshed.
+
+        :param old_label: The previous label (relative-reference slug).
+        :param new_label: The new label.
+        :param old_url: The previous absolute ``SITE`` URL.
+        :param new_url: The new absolute ``SITE`` URL.
+        :return: The list of changed post paths.
+        """
+        search = []
+        if old_label != new_label:
+            search.append(old_label)
+        if old_url != new_url:
+            search.append(old_url)
+        if not search:
+            return []
+        where = " OR ".join("refs LIKE ?" for _ in search)
+        params = [f"%{SEPARATOR}{ref}{SEPARATOR}%" for ref in search]
+        changed = []
+        for rel_path in self.path(self.POSTS, where=where, params=params):
+            post = Post(rel_path)
+            if not post.update_xref(old_label, new_label, old_url, new_url):
+                continue
+            rec = post.parse().record()
+            self.update_records(
+                table=self.POSTS,
+                paths=rel_path,
+                kvs={"content": rec.content, "refs": rec.refs},
+            )
+            changed.append(rel_path)
+        return changed
 
     def update_tags(
         self, post: str | Post, kvs: dict[str, str] | dict[str, str | list[str]]
@@ -913,7 +1054,7 @@ class Blogger:
             """
         for title, label, tags in self._conn.execute(sql):
             link = f"[{title}]({label})"
-            for tag in tags.strip(TAG_SEPARATOR).split(TAG_SEPARATOR):
+            for tag in tags.strip(SEPARATOR).split(SEPARATOR):
                 kvs.setdefault(tag, [])
                 kvs[tag].append(link)
         return kvs

@@ -1,4 +1,4 @@
-from blogger import qmarks
+from blogger import _concat, qmarks
 
 
 def test_qmarks_int():
@@ -19,3 +19,9 @@ def test_qmarks_str():
 
 def test_qmarks_single_field_str():
     assert qmarks("path") == "?"
+
+
+def test_concat():
+    assert _concat([], "|") == ""
+    assert _concat(["a"], "|") == "|a|"
+    assert _concat(["a", "b"], "|") == "|a|b|"

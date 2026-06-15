@@ -1,7 +1,7 @@
 ---
 title: Develop With Google Antigravity
 created: '2026-05-24T23:28:22.137138-07:00'
-date: '2026-06-10T10:27:33-07:00'
+date: '2026-06-14T12:25:10-07:00'
 authors:
   - bendu
 label: develop-with-google-antigravity
@@ -24,10 +24,18 @@ tags:
 1. Antigravity CLI doesn't support the `/init` command.
    It manages context automatically.
 
-## Antigravity CLI
+## Install Antigravity CLI
 
 ```sh
 curl -fsSL https://antigravity.google/cli/install.sh | bash
+```
+
+## Permissions
+
+ctrl + k to approve
+
+```sh
+agy --dangerously-skip-permissions
 ```
 
 ## References

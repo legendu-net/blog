@@ -1,7 +1,7 @@
 ---
 title: Manage Your Code Repositories Using Jujutsu
 created: '2026-04-30T19:49:30.593438-07:00'
-date: '2026-05-18T17:19:46+00:00'
+date: '2026-06-15T20:02:10-07:00'
 authors:
   - bendu
 label: manage-your-code-repositories-using-jujutsu
@@ -104,6 +104,12 @@ jj git init --colocate
 ```
 
 ## Some Useful jj Commands
+
+1. Update the author on a commit.
+
+```sh
+jj metaedit -r @ --update-author
+```
 
 1. Moves the working copy back to the parent commit.
 

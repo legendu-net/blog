@@ -1,7 +1,7 @@
 ---
 title: Profile Rust Applications
 created: '2021-11-08T10:19:34-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-06-19T10:11:38-07:00'
 authors:
   - bendu
 label: profile-rust-applications
@@ -44,62 +44,56 @@ tags:
 
 ## CPU Profiling
 
-### [not-perf](https://github.com/koute/not-perf)
+The table below summarizes the CPU profiling tools discussed here.
 
-[not-perf](https://github.com/koute/not-perf)
-is a sampling CPU profiler for Linux.
-It is currently the best CPU profiling tools
-for Rust applications for several reasons.
-It is easy to install and use.
-There's no special configuration required.
-Flamegraph (relying on Linux perf) is the hardest one to install, configure and use.
-Valgrind is also easy to install, configure and use.
-However,
-it is way too slower compared to not-perf.
-
-### [samply](https://github.com/mstange/samply)
-
-[samply](https://github.com/mstange/samply)
-is a command line CPU profiler
-which uses the Firefox profiler as its UI.
-
-### [pprof](https://crates.io/crates/pprof)
-
-[Pprof](https://crates.io/crates/pprof)
-is an internal perf tools for rust programs.
-It provides integration with
-[Criterion](https://crates.io/crates/criterion)
-which is the most popular benchmark tool in Rust.
-Please refer to
-[pprof-rs/examples/criterion.rs](https://github.com/tikv/pprof-rs/blob/master/examples/criterion.rs)
-for such an example.
-However,
-Criterion performs measuring/benchmarking instead of profiling by default.
-To generate profiling report/visualization,
-you can run the following command.
-
-```bash
-cargo bench --bench bench_main name_of_benchmark -- --profile-time
+```{list-table} CPU profiling tools for Rust applications
+---
+header-rows: 1
+widths: 12 14 22 16 8 28
+---
+* - Tool
+  - Rust-internal
+  - Cargo / benchmark integration
+  - Install & use
+  - Speed
+  - Comments
+* - [not-perf](https://github.com/koute/not-perf)
+  - No (standalone sampling profiler for Linux)
+  - None
+  - Very easy; no special configuration required
+  - Fast
+  - Currently the best CPU profiling tool for Rust applications
+* - [samply](https://github.com/mstange/samply)
+  - No (standalone command-line profiler)
+  - None
+  - Easy
+  - —
+  - Uses the Firefox profiler as its UI
+* - [pprof](https://crates.io/crates/pprof)
+  - Yes (Rust crate)
+  - Yes — integrates with [Criterion](https://crates.io/crates/criterion); profile via `cargo bench --bench bench_main <name> -- --profile-time` (see [criterion.rs example](https://github.com/tikv/pprof-rs/blob/master/examples/criterion.rs))
+  - Easy (added as a crate dependency)
+  - —
+  - Internal perf tool; Criterion benchmarks by default, so `--profile-time` is needed to emit a profiling report
+* - [Valgrind](cpu-profiling-of-rust-applications-using-valgrind)
+  - No
+  - Yes — via [cargo-valgrind](https://crates.io/crates/cargo-valgrind)
+  - Easy to install, configure and use
+  - Slow
+  - Much slower than not-perf
+* - [FlameGraph](profile-rust-applications-using-flamegraph)
+  - No (based on Linux perf)
+  - Yes — has cargo support
+  - Hardest to install, configure and use
+  - —
+  - Relies on Linux perf
+* - [puffin](https://github.com/EmbarkStudios/puffin)
+  - Yes (Rust crate)
+  - —
+  - —
+  - —
+  - Friendly little instrumentation profiler for Rust
 ```
-
-### [Valgrind](cpu-profiling-of-rust-applications-using-valgrind)
-
-[Valgrind](cpu-profiling-of-rust-applications-using-valgrind)
-is a another CPU profiling tool for Rust applications.
-The crate
-[cargo-valgrind](https://crates.io/crates/cargo-valgrind)
-provides integration of valgrind and cargo.
-
-### [FlameGraph](profile-rust-applications-using-flamegraph)
-
-[FlameGraph](profile-rust-applications-using-flamegraph)
-is another a CPU profiling tool based on Linux perf.
-It has integration support for cargo.
-
-### [puffin](https://github.com/EmbarkStudios/puffin)
-
-[puffin](https://github.com/EmbarkStudios/puffin)
-is a friendly little instrumentation profiler for Rust.
 
 ## Memory Profiling
 

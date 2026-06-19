@@ -973,30 +973,40 @@ class Blogger:
     def find_mismatch(self):
         self._srps(where="match = 0")
 
-    def _srps(self, where: str, order_by: str = "", limit: int = 0) -> None:
-        self.delete_records(self.SRPS, "")
+    def _srps(
+        self, where: str, order_by: str = "", limit: int = 0, append: bool = False
+    ) -> None:
+        if not append:
+            self.delete_records(self.SRPS, "")
+        conditions = []
+        if where:
+            conditions.append(where)
+        if append:
+            conditions.append(f"path NOT IN (SELECT path FROM {self.SRPS})")
+        where_clause = "WHERE " + " AND ".join(conditions) if conditions else ""
         sql = f"""
             INSERT INTO {self.SRPS}
             SELECT {self.SRPS_COLS}
             FROM {self.POSTS}
-            {"WHERE " + where if where else ""}
+            {where_clause}
             {"ORDER BY " + order_by if order_by else ""}
             {f"LIMIT {limit}" if limit else ""}
             """
         self._conn.execute(sql)
 
-    def search(self, phrase: str, filter_: str = ""):
+    def search(self, phrase: str, filter_: str = "", append: bool = False):
         """Search for posts containing the phrase.
 
         :param phrase: The phrase to search for in posts.
         :param filter_: Extra filtering conditions.
+        :param append: If True, append results to existing srps instead of replacing them.
         """
         conditions = []
         if phrase:
             conditions.append(f"posts MATCH '{phrase}'")
         if filter_:
             conditions.append(filter_)
-        self._srps(where=" AND ".join(conditions), order_by="rank")
+        self._srps(where=" AND ".join(conditions), order_by="rank", append=append)
 
     def last(self, n: int):
         """Get last (according to modification time) n posts.

@@ -966,6 +966,45 @@ def _subparse_convert(subparsers):
     subparser_convert.set_defaults(func=convert)
 
 
+def srp(blogger, args):
+    if args.keep is not None:
+        blogger.keep_srps(_expand_indexes(args.keep))
+    elif args.remove is not None:
+        blogger.remove_srps(_expand_indexes(args.remove))
+    blogger.show(args.n)
+    blogger.commit()
+
+
+def _subparse_srp(subparsers):
+    desc = "Keep or remove posts from the search results (srps table)."
+    subparser_srp = subparsers.add_parser(
+        "srp",
+        help=desc,
+        description=desc,
+    )
+    group = subparser_srp.add_mutually_exclusive_group(required=True)
+    group.add_argument(
+        "-k",
+        "--keep",
+        dest="keep",
+        nargs="+",
+        default=None,
+        metavar="INDEX",
+        help=INDEXES_HELP,
+    )
+    group.add_argument(
+        "-r",
+        "--remove",
+        dest="remove",
+        nargs="+",
+        default=None,
+        metavar="INDEX",
+        help=INDEXES_HELP,
+    )
+    option_num(subparser_srp)
+    subparser_srp.set_defaults(func=srp)
+
+
 def build(blogger, _):
     """Build the blog."""
     blogger.reload_posts()
@@ -1006,6 +1045,7 @@ def parse_args(args=None, namespace=None) -> Namespace:
     _subparse_list(subparsers)
     _subparse_last(subparsers)
     _subparse_search(subparsers)
+    _subparse_srp(subparsers)
     _subparse_add(subparsers)
     _subparse_edit(subparsers)
     _subparse_add_refs(subparsers)

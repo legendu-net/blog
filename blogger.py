@@ -729,6 +729,16 @@ class Blogger:
         sql += f"WHERE path IN ({qmarks(paths)})"
         self._conn.execute(sql, paths)
 
+    def keep_srps(self, indexes: list[int]) -> None:
+        """Keep only the srps rows with the given rowids, removing all others."""
+        sql = f"DELETE FROM {self.SRPS} WHERE rowid NOT IN ({qmarks(indexes)})"
+        self._conn.execute(sql, indexes)
+
+    def remove_srps(self, indexes: list[int]) -> None:
+        """Remove srps rows with the given rowids."""
+        sql = f"DELETE FROM {self.SRPS} WHERE rowid IN ({qmarks(indexes)})"
+        self._conn.execute(sql, indexes)
+
     def move(self, paths: str | Sequence[str], doc_dir: str) -> None:
         """Move specified posts into a destination directory.
 

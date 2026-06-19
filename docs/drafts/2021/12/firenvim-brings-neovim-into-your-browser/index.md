@@ -1,7 +1,7 @@
 ---
 title: FireNVim Brings NeoVim into Your Browser
-created: 2021-12-04 20:03:49
-date: 2026-04-15 19:27:00.832791
+created: '2021-12-04T20:03:49-08:00'
+date: '2026-06-18T22:51:25-07:00'
 authors:
   - bendu
 label: firenvim-brings-neovim-into-your-browser
@@ -21,7 +21,7 @@ tags:
 1. Install [icon](https://github.com/legendu-net/icon).
 
    ```bash
-    curl -sSL https://raw.githubusercontent.com/legendu-net/icon/main/install_icon.sh | sudo bash -
+   curl -sSL https://raw.githubusercontent.com/legendu-net/icon/main/install_icon.sh | sudo bash -
    ```
 
 1. Install and configure
@@ -29,7 +29,7 @@ tags:
    using icon.
 
    ```bash
-    icon nvim -ic
+   icon nvim -ic
    ```
 
 1. Install the FireNVim plugin for your browser.
@@ -46,6 +46,7 @@ tags:
    - For chrome, you can configure this via
      [chrome://extensions/shortcuts](chrome://extensions/shortcuts)
      .
+
      ![firenvim-chrome-shortcuts](https://user-images.githubusercontent.com/824507/196080758-ce9a706e-c746-4642-92ca-0e5eebe8e9b3.png)
 
 The above installation configures FireNVim to never automatially prompt up.

@@ -1,7 +1,7 @@
 ---
 title: Tips on Valgrind
-created: 2023-01-08 18:58:25
-date: 2026-04-14 19:49:13.682339
+created: '2023-01-08T18:58:25-08:00'
+date: '2026-06-18T20:09:23-07:00'
 authors:
   - bendu
 label: tips-on-valgrind
@@ -19,6 +19,18 @@ tags:
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## Installation on Ubuntu
+
+```sh
+sudo apt install valgrind
+```
+
+## Installation on Fedora
+
+```sh
+sudo dnf install valgrind
+```
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}

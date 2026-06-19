@@ -1,7 +1,7 @@
 ---
 title: CPU Profiling of Rust Applications Using Valgrind
 created: '2022-01-13T01:02:06-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-06-18T20:09:57-07:00'
 authors:
   - bendu
 label: cpu-profiling-of-rust-applications-using-valgrind
@@ -20,19 +20,10 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-It is suggested that you profile Rust application using
-[not-perf](https://github.com/koute/not-perf)
-.
-For more discussions,
-please refer to
-[Profile Rust Applications](profile-rust-applications)
-.
+## Installation
 
-## Installation on Ubuntu
-
-```bash
-sudo apt install valgrind
-```
+Please refer to [Tips on Valgrind](tips-on-valgrind)
+.
 
 ## Profile Your Application Using CallGrind
 

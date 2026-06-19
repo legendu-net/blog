@@ -16,6 +16,12 @@ wheels/
 # Jupyter-Book
 _build/
 
+# JupyterHub runtime files
+jupyterhub-proxy.pid
+jupyterhub.sqlite
+jupyterhub_cookie_secret
+
+# IDE & VCS
 .vscode/
 .jj
 

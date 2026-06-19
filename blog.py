@@ -368,7 +368,7 @@ def search(blogger, args):
     if args.title:
         args.title = " ".join(args.title)
         filter_.append(f"title MATCH '{args.title}'")
-    blogger.search(" ".join(args.phrase), " AND ".join(filter_))
+    blogger.search(" ".join(args.phrase), " AND ".join(filter_), append=args.append)
     blogger.show(args.n)
     blogger.commit()
 
@@ -662,6 +662,14 @@ def _subparse_search(subparsers):
         nargs="+",
         default=(),
         help="Futher filtering conditions in addition to the full-text match.",
+    )
+    subparser_search.add_argument(
+        "-a",
+        "--append",
+        dest="append",
+        action="store_true",
+        default=False,
+        help="Append new search results to existing srps results instead of replacing them.",
     )
     option_num(subparser_search)
     option_full_path(subparser_search)

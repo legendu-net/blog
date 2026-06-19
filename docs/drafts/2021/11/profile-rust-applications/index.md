@@ -1,7 +1,7 @@
 ---
 title: Profile Rust Applications
 created: '2021-11-08T10:19:34-08:00'
-date: '2026-06-19T13:07:29-07:00'
+date: '2026-06-19T13:45:01-07:00'
 authors:
   - bendu
 label: profile-rust-applications
@@ -102,9 +102,6 @@ widths: 11 12 13 20 15 7 22
 
 ## Memory Profiling
 
-[bytehound](tips-on-bytehound)
-is the best available memory profiling tool for Rust currently.
-
 ```{list-table} Memory profiling tools for Rust applications
 ---
 header-rows: 1
@@ -117,20 +114,6 @@ widths: 11 12 13 20 15 7 22
   - Install & use
   - Speed
   - Comments
-* - [bytehound](tips-on-bytehound)
-  - Inactive (last commit 2023)
-  - No (standalone memory profiler for Linux)
-  - None
-  - —
-  - —
-  - The best available memory profiling tool for Rust currently
-* - [dhat-rs](https://crates.io/crates/dhat)
-  - Low activity (last commit 2025)
-  - Yes (Rust crate)
-  - Yes — used as a crate dependency
-  - Easy (added as a crate dependency)
-  - —
-  - Heap and ad hoc profiling, similar to Valgrind's [DHAT](https://valgrind.org/docs/manual/dh-manual.html)
 * - [DHAT](https://valgrind.org/docs/manual/dh-manual.html)
   - Active
   - No (ships with Valgrind)
@@ -145,6 +128,20 @@ widths: 11 12 13 20 15 7 22
   - —
   - —
   - Heap memory profiler for Linux
+* - [dhat-rs](https://crates.io/crates/dhat)
+  - Low activity (last commit 2025)
+  - Yes (Rust crate)
+  - Yes — used as a crate dependency
+  - Easy (added as a crate dependency)
+  - —
+  - Heap and ad hoc profiling, similar to Valgrind's [DHAT](https://valgrind.org/docs/manual/dh-manual.html)
+* - [bytehound](tips-on-bytehound)
+  - Inactive (last commit 2023)
+  - No (standalone memory profiler for Linux)
+  - None
+  - —
+  - —
+  - 
 ```
 
 ## References

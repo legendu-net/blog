@@ -1,7 +1,7 @@
 ---
 title: Comparison of GitHub Tokens and Keys
 created: '2021-09-09T15:21:21-07:00'
-date: '2026-06-20T19:44:32-07:00'
+date: '2026-06-20T20:06:44-07:00'
 authors:
   - bendu
 label: comparison-of-github-tokens-and-keys
@@ -21,58 +21,52 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-<table style="width:100%">
-  <tr>
-    <th> Name </th>
-    <th> Short Description </th>
-    <th> Scope </th>
-    <th> Permission </th>
-    <th> Protocol </th>
-  </tr>
+## Comparison of GitHub Tokens and Keys
 
-<tr>
-    <td> GitHub <br> SSH Key </td>
-    <td> A SSH public key </td>
-    <td> All repos </td>
-    <td> Read and Write </td>
-    <th> SSH </th>
-  </tr>
+```{list-table} Authentication Comparison
+---
+header-rows: 1
+widths: 15 10 15 20 40
+---
+* - Credential Type
+  - Protocol
+  - Auth Boundary
+  - Repository Granularity
+  - Best For...
+* - **GitHub SSH Key**
+  - SSH
+  - Bound to your **User Account**
+  - All repositories you have access to
+  - Day-to-day local development.
+* - **Deploy Key**
+  - SSH
+  - Bound to a **Single Repository**
+  - Exactly one repository
+  - CI/CD pipelines, staging/production servers pulling a specific codebase.
+* - **PAT (Classic)**
+  - HTTPS
+  - Bound to your **User Account**
+  - Broad scopes (e.g., all private repos)
+  - Legacy tools or quick API scripts that require broad account-level access.
+* - **Fine-Grained PAT**
+  - HTTPS
+  - Bound to **Specific Owners/Repos**
+  - Target single or selected repositories
+  - Modern API access, secure automation, and third-party tools needing limited access.
 
-<tr>
-    <td> GitHub <br> Deploy Key </td>
-    <td> A SSH public key </td>
-    <td> Any repo <br> configures <br> the key </td>
-    <td> Read (optionally write) </td>
-    <th> SSH </th>
-  </tr>
+```
 
-<tr>
-    <td> GitHub PAT </td>
-    <td> Personal access token </td>
-    <td> Any repo <br> configures <br> the PAT </td>
-    <td> Read and Write </td>
-    <th> HTTPS </th>
-  </tr>
+## Repository and Organization-level Secrets
 
-<tr>
-    <td> Repository Secret </td>
-    <td> Repo secret (SSH keys, PATs or anything) for <br> authenticating GitHub APIs </td>
-    <td> Single repo </td>
-    <td> Depends </td>
-    <th> Depends </th>
-  </tr>
+Any value,
+e.g., keys/tokens (from GitHub and other services),
+user/bot names, URLs, etc,
+can be configured as secrets at repository or organization level
+so that they can be used in workflows.
+A repository-level secret is visible to the repository itself
+while an organization-level secret is visible to all eligible repositories in the organization.
 
-<tr>
-    <td> Organization Secret </td>
-    <td> Org secret (SSH keys, PATs, or anything) for authenticating GitHub APIs </td>
-    <td> All repos <br> in the org </td>
-    <td> Depends </td>
-    <th> Depends </th>
-  </tr>
-
-</table>
-
-## Organization-level Secrets
+### Organization-level Secrets
 
 GitHub Free organizations cannot share organization-level secrets with private repositories.
 On the GitHub Free tier, organization-wide secrets are strictly restricted to public repositories.
@@ -80,7 +74,7 @@ If your workflows running inside private repositories attempt to call these orga
 they will return empty values and fail.
 To resolve this limitation, choose one of the options below.
 
-### Option 1: Replicate Secrets at the Repository Level (Free)
+#### Option 1: Replicate Secrets at the Repository Level (Free)
 
 The most common workaround on the free tier is to manually add the secret directly into the private repository's settings.
 
@@ -88,7 +82,7 @@ The most common workaround on the free tier is to manually add the secret direct
 1. Click New repository secret.
 1. Define the secret name and value, then click Add secret.
 
-### Option 2: Use Environment-Level Secrets (Free)
+#### Option 2: Use Environment-Level Secrets (Free)
 
 If you want to scope secrets specifically to deployment stages (like production or staging) without paying for an upgrade, use Environment secrets.
 
@@ -97,7 +91,7 @@ If you want to scope secrets specifically to deployment stages (like production 
 1. Scroll to Environment secrets and add your variables.
 1. Reference the environment in your workflow YAML file using the environment: key.
 
-### Option 3: Upgrade to GitHub Team or Enterprise (Paid)
+#### Option 3: Upgrade to GitHub Team or Enterprise (Paid)
 
 If managing duplicate repository secrets becomes a security risk or operational hassle, upgrading your organization account resolves this restriction globally.
 Both the GitHub Team and GitHub Enterprise paid tiers unlock the ability to share organization-level secrets with private and internal repositories seamlessly.
@@ -108,7 +102,7 @@ Check out
 .
 ```
 
-## Secrets vs. Environment Secrets
+### Secrets vs. Environment Secrets
 
 ```{list-table} GitHub Secrets vs. Environment Secrets
 ---
@@ -168,10 +162,6 @@ Many organizations use GitHub secrets solely to store a single OIDC trust token.
 The workflow then authenticates against a central manager like HashiCorp Vault
 or AWS Secrets Manager to pull the required stage keys dynamically during the run based on the repository name.
 
-## Personal Access Tokens
-
-[How to create a Github read-only API token](https://pmihaylov.com/github-readonly-api-token/)
-
 ## Deploy Keys
 
 Deploy Keys are SSH keys which access restricted to a specific repository only.
@@ -183,3 +173,5 @@ https://docs.github.com/en/developers/overview/managing-deploy-keys#deploy-keys
 ## References
 
 - [Creating a personal access token for the command line](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
+
+- [How to create a Github read-only API token](https://pmihaylov.com/github-readonly-api-token/)

@@ -1,7 +1,7 @@
 ---
 title: Comparison of GitHub Tokens and Keys
 created: '2021-09-09T15:21:21-07:00'
-date: '2026-06-20T10:21:53-07:00'
+date: '2026-06-20T19:44:32-07:00'
 authors:
   - bendu
 label: comparison-of-github-tokens-and-keys
@@ -20,80 +20,6 @@ tags:
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-
-## Organization-level Secrets
-
-GitHub Free organizations cannot share organization-level secrets with private repositories.
-On the GitHub Free tier, organization-wide secrets are strictly restricted to public repositories.
-If your workflows running inside private repositories attempt to call these organizational secrets,
-they will return empty values and fail.
-To resolve this limitation, choose one of the options below.
-
-### Option 1: Replicate Secrets at the Repository Level (Free)
-
-The most common workaround on the free tier is to manually add the secret directly into the private repository's settings.
-
-1. Navigate to your specific private repository on GitHub.Click Settings -> Secrets and variables -> Actions.
-1. Click New repository secret.
-1. Define the secret name and value, then click Add secret.
-
-### Option 2: Use Environment-Level Secrets (Free)
-
-If you want to scope secrets specifically to deployment stages (like production or staging) without paying for an upgrade, use Environment secrets.
-
-1. Inside your private repository, go to Settings -> Environments.
-1. Create or select an environment.
-1. Scroll to Environment secrets and add your variables.
-1. Reference the environment in your workflow YAML file using the environment: key.
-
-### Option 3: Upgrade to GitHub Team or Enterprise (Paid)
-
-If managing duplicate repository secrets becomes a security risk or operational hassle, upgrading your organization account resolves this restriction globally.
-Both the GitHub Team and GitHub Enterprise paid tiers unlock the ability to share organization-level secrets with private and internal repositories seamlessly.
-
-```{tip}
-Check out
-{ref}`reduce-operational-burdens-managing-secrets-without-a-paid-github-plan`
-.
-```
-
-## GitHub Secrets vs. Environment Secrets
-
-```{list-table} GitHub Secrets vs. Environment Secrets
----
-widths: 20 40 40
-header-rows: 1
----
-* - Feature
-  - Repository/Org Secrets
-  - Environment Secrets
-* - **Scope**
-  - Global across the entire repo or organization.
-  - Tied strictly to a specific deployment stage.
-* - **Organization Level**
-  - Fully supported (can share across multiple repos).
-  - Not supported (must be defined per repo).
-* - **Plaintext Support**
-  - No (only supports encrypted values).
-  - Yes (via accompanying Environment Variables).
-* - **Approval Gates**
-  - No (runs automatically on trigger).
-  - Yes (can require manual approval to unlock).
-* - **Branch Restrictions**
-  - No (any branch with action access can read).
-  - Yes (can limit access to specific branches).
-```
-
-Environment secrets offer much better security boundaries (like branch protection and manual approvals),
-but they trade away central management.
-Because you have to configure them inside every single repository,
-they create a noticeable operational bottleneck as your engineering team scales up.
-
-```{tip}
-Check out
-{ref}`reduce-operational-burdens-managing-secrets-without-a-paid-github-plan`
-.
-```
 
 <table style="width:100%">
   <tr>
@@ -145,6 +71,80 @@ Check out
   </tr>
 
 </table>
+
+## Organization-level Secrets
+
+GitHub Free organizations cannot share organization-level secrets with private repositories.
+On the GitHub Free tier, organization-wide secrets are strictly restricted to public repositories.
+If your workflows running inside private repositories attempt to call these organizational secrets,
+they will return empty values and fail.
+To resolve this limitation, choose one of the options below.
+
+### Option 1: Replicate Secrets at the Repository Level (Free)
+
+The most common workaround on the free tier is to manually add the secret directly into the private repository's settings.
+
+1. Navigate to your specific private repository on GitHub.Click Settings -> Secrets and variables -> Actions.
+1. Click New repository secret.
+1. Define the secret name and value, then click Add secret.
+
+### Option 2: Use Environment-Level Secrets (Free)
+
+If you want to scope secrets specifically to deployment stages (like production or staging) without paying for an upgrade, use Environment secrets.
+
+1. Inside your private repository, go to Settings -> Environments.
+1. Create or select an environment.
+1. Scroll to Environment secrets and add your variables.
+1. Reference the environment in your workflow YAML file using the environment: key.
+
+### Option 3: Upgrade to GitHub Team or Enterprise (Paid)
+
+If managing duplicate repository secrets becomes a security risk or operational hassle, upgrading your organization account resolves this restriction globally.
+Both the GitHub Team and GitHub Enterprise paid tiers unlock the ability to share organization-level secrets with private and internal repositories seamlessly.
+
+```{tip}
+Check out
+{ref}`reduce-operational-burdens-managing-secrets-without-a-paid-github-plan`
+.
+```
+
+## Secrets vs. Environment Secrets
+
+```{list-table} GitHub Secrets vs. Environment Secrets
+---
+widths: 20 40 40
+header-rows: 1
+---
+* - Feature
+  - Repository/Org Secrets
+  - Environment Secrets
+* - **Scope**
+  - Global across the entire repo or organization.
+  - Tied strictly to a specific deployment stage.
+* - **Organization Level**
+  - Fully supported (can share across multiple repos).
+  - Not supported (must be defined per repo).
+* - **Plaintext Support**
+  - No (only supports encrypted values).
+  - Yes (via accompanying Environment Variables).
+* - **Approval Gates**
+  - No (runs automatically on trigger).
+  - Yes (can require manual approval to unlock).
+* - **Branch Restrictions**
+  - No (any branch with action access can read).
+  - Yes (can limit access to specific branches).
+```
+
+Environment secrets offer much better security boundaries (like branch protection and manual approvals),
+but they trade away central management.
+Because you have to configure them inside every single repository,
+they create a noticeable operational bottleneck as your engineering team scales up.
+
+```{tip}
+Check out
+{ref}`reduce-operational-burdens-managing-secrets-without-a-paid-github-plan`
+.
+```
 
 (reduce-operational-burdens-managing-secrets-without-a-paid-github-plan)=
 

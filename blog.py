@@ -1011,6 +1011,7 @@ def build(blogger, _):
     blogger.commit()
     gen_toc()
     blogger.gen_tags_md()
+    blogger.gen_recent_posts()
     cmd = f"""cd {BASE_DIR}/docs && \
         NODE_OPTIONS=--max-old-space-size=8192 uv run jupyter-book build --html"""
     sp.run(cmd, shell=True, check=True)

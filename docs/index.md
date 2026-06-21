@@ -17,11 +17,7 @@ site:
 
 ## Recent blog posts
 
-:::{blog-posts}
-:kind: table
-:sort: date-desc
-:path: {articles,drafts}/**/*.{md,ipynb}
-:limit: 20
+:::{include} ./recent_posts.md
 :::
 
 ## About the Author

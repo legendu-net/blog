@@ -1061,6 +1061,27 @@ class Blogger:
                         fout.write(f"- {link}\n")
                 fout.write("```\n\n")
 
+    def gen_recent_posts(self, n: int = 20) -> None:
+        sql = f"""
+            SELECT title, label, date FROM {self.POSTS}
+            WHERE doc_dir IN (?, ?)
+            ORDER BY date DESC
+            LIMIT ?
+        """
+        rows = self._conn.execute(sql, (ARTICLES, DRAFTS, n)).fetchall()
+        path = BASE_DIR / "docs/recent_posts.md"
+        with path.open("w", encoding="utf-8") as fout:
+            fout.write(":::{list-table}\n")
+            fout.write(":header-rows: 1\n")
+            fout.write(":widths: 70 30\n\n")
+            fout.write("* - Title\n")
+            fout.write("  - Date\n")
+            for title, label, date in rows:
+                date_str = str(date)[:10]
+                fout.write(f"* - [{title}]({label})\n")
+                fout.write(f"  - {date_str}\n")
+            fout.write(":::\n")
+
     def tags(self, where: str = "", order_by: str = "") -> dict[str, list[str]]:
         """Get all tags and their frequencies in all posts.
 

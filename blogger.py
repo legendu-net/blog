@@ -1039,26 +1039,44 @@ class Blogger:
         def _num_links(k: str) -> int:
             return sum(len(tags[t]) for t in ids[k])
 
-        tags = self.tags(
-            where="doc_dir != 'outdated'",
-            order_by="date DESC",
-        )
-        ids = {}
+        sql = f"""
+            SELECT title, label, date, tags FROM {self.POSTS}
+            WHERE doc_dir != 'outdated'
+            ORDER BY date DESC
+        """
+        tags: dict[str, list[tuple[str, str]]] = {}
+        for title, label, date, tag_str in self._conn.execute(sql):
+            link = f"[{title}]({label})"
+            date_str = str(date)[:10]
+            for tag in tag_str.strip(SEPARATOR).split(SEPARATOR):
+                tags.setdefault(tag, [])
+                tags[tag].append((link, date_str))
+
+        ids: dict[str, list[str]] = {}
         for tag in tags:
             k = "tag-" + _label(tag)
             ids.setdefault(k, [])
             ids[k].append(tag)
         keys = [(k, n) for k in ids if (n := _num_links(k)) > 1]
         keys.sort(key=lambda pair: pair[1], reverse=True)
-        # write into tags.md
         with Path(BASE_DIR / "docs/tags.md").open("w", encoding="utf-8") as fout:
             fout.write("---\ntitle: Tags\nsite:\n  hide_outline: true\n---\n\n")
             for k, n in keys:
+                entries: list[tuple[str, str]] = []
+                for t in ids[k]:
+                    entries.extend(tags[t])
+                entries.sort(key=lambda x: x[1], reverse=True)
                 fout.write(f"## {' | '.join(ids[k])}\n")
                 fout.write("```{dropdown} " + f"Click to expand/collapse {n} links\n")
-                for t in ids[k]:
-                    for link in tags[t]:
-                        fout.write(f"- {link}\n")
+                fout.write(":::{list-table}\n")
+                fout.write(":header-rows: 1\n")
+                fout.write(":widths: 70 30\n\n")
+                fout.write("* - Title\n")
+                fout.write("  - Date\n")
+                for link, date_str in entries:
+                    fout.write(f"* - {link}\n")
+                    fout.write(f"  - {date_str}\n")
+                fout.write(":::\n")
                 fout.write("```\n\n")
 
     def gen_recent_posts(self, n: int = 20) -> None:

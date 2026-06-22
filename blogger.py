@@ -1067,6 +1067,7 @@ class Blogger:
                 entries: list[tuple[str, str]] = []
                 for t in ids[k]:
                     entries.extend(tags[t])
+                entries = list(dict.fromkeys(entries))
                 entries.sort(key=lambda x: x[1], reverse=True)
                 fout.write(f"## {' | '.join(ids[k])}\n")
                 fout.write("```{dropdown} " + f"Click to expand/collapse {n} links\n")

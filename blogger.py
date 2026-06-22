@@ -1049,6 +1049,8 @@ class Blogger:
             link = f"[{title}]({label})"
             date_str = str(date)[:10]
             for tag in tag_str.strip(SEPARATOR).split(SEPARATOR):
+                if not tag:
+                    continue
                 tags.setdefault(tag, [])
                 tags[tag].append((link, date_str))
 

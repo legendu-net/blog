@@ -1,7 +1,7 @@
 ---
 title: LLM APIs
-created: 2026-04-16 20:55:36.570950
-date: 2026-04-16 21:00:14.437351
+created: '2026-04-16T20:55:36.570950-07:00'
+date: '2026-06-22T00:08:10-07:00'
 authors:
   - bendu
 label: llm-apis
@@ -9,6 +9,7 @@ license: CC-BY-4.0
 tags:
   - programming
   - code
+  - AI
   - LLM
   - tool
   - API

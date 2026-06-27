@@ -4,6 +4,7 @@ import getpass
 import itertools as it
 import os
 from pathlib import Path
+import re
 import subprocess as sp
 from dulwich import porcelain
 from dulwich.repo import Repo
@@ -14,6 +15,7 @@ from blogger import (
     DRAFTS,
     OUTDATED,
     Blogger,
+    Post,
     add_spells_title as _add_spells_title,
     add_spells_tag as _add_spells_tag,
     get_vim,
@@ -433,13 +435,57 @@ def _auth_kwargs(repo: Repo) -> dict:
     return push_kwargs
 
 
+_POST_INDEX = re.compile(
+    r"docs/(?:articles|drafts|outdated)/\d{4}/\d{2}/[^/]+/index\.(?:md|ipynb)$"
+)
+
+
+def _changed_post_titles(repo: Repo) -> list[str]:
+    """Titles of changed posts (added/modified/deleted), in path order."""
+    # ``untracked_files="all"`` lists files inside brand-new post directories
+    # rather than just the directory, so newly added posts are included.
+    status = porcelain.status(repo, untracked_files="all")
+    paths: set[str] = set()
+    for staged_paths in status.staged.values():
+        paths.update(staged_paths)
+    paths.update(status.unstaged)
+    paths.update(status.untracked)
+    titles: list[str] = []
+    for entry in sorted(paths):
+        path_str = entry.decode("utf-8") if isinstance(entry, bytes) else entry
+        if not _POST_INDEX.match(path_str):
+            continue
+        path = BASE_DIR / path_str
+        title = ""
+        if path.exists():
+            try:
+                title = Post(path).parse().metadata.get("title", "")
+            except Exception:
+                title = ""
+        # Fall back to the post's slug directory for deleted/unparsable posts.
+        titles.append(title or Path(path_str).parent.name)
+    return titles
+
+
+def _commit_message(repo: Repo) -> bytes:
+    """Build a commit message summarizing the changed posts."""
+    titles = _changed_post_titles(repo)
+    if not titles:
+        return b"add/update posts"
+    if len(titles) == 1:
+        return f"add/update post: {titles[0]}".encode("utf-8")
+    body = "\n".join(f"- {title}" for title in titles)
+    return f"add/update {len(titles)} posts\n\n{body}".encode("utf-8")
+
+
 def auto_git_push(blogger, args):
     """Push changes in this repository."""
     blogger.sync_dates()
     blogger.commit()
     repo = Repo(str(BASE_DIR))
+    message = _commit_message(repo)
     porcelain.add(repo)
-    porcelain.commit(repo, message=b"add/update posts")
+    porcelain.commit(repo, message=message)
     porcelain.push(repo, "origin", "main", **_auth_kwargs(repo))
 
 

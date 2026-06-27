@@ -440,8 +440,8 @@ _POST_INDEX = re.compile(
 )
 
 
-def _changed_post_titles(repo: Repo) -> list[str]:
-    """Titles of changed posts (added/modified/deleted), in path order."""
+def _changed_paths(repo: Repo) -> list[str]:
+    """Repo-relative paths of all changed files (added/modified/deleted)."""
     # ``untracked_files="all"`` lists files inside brand-new post directories
     # rather than just the directory, so newly added posts are included.
     status = porcelain.status(repo, untracked_files="all")
@@ -450,32 +450,78 @@ def _changed_post_titles(repo: Repo) -> list[str]:
         paths.update(staged_paths)
     paths.update(status.unstaged)
     paths.update(status.untracked)
-    titles: list[str] = []
-    for entry in sorted(paths):
-        path_str = entry.decode("utf-8") if isinstance(entry, bytes) else entry
-        if not _POST_INDEX.match(path_str):
-            continue
-        path = BASE_DIR / path_str
-        title = ""
-        if path.exists():
-            try:
-                title = Post(path).parse().metadata.get("title", "")
-            except Exception:
-                title = ""
-        # Fall back to the post's slug directory for deleted/unparsable posts.
-        titles.append(title or Path(path_str).parent.name)
-    return titles
+    return sorted(
+        entry.decode("utf-8") if isinstance(entry, bytes) else entry for entry in paths
+    )
+
+
+def _post_title(path_str: str) -> str:
+    """Title of a changed post, falling back to its slug directory."""
+    path = BASE_DIR / path_str
+    if path.exists():
+        try:
+            title = Post(path).parse().metadata.get("title", "")
+            if title:
+                return title
+        except Exception:
+            pass
+    # Deleted or unparsable post: use the post's slug directory.
+    return Path(path_str).parent.name
+
+
+def _non_post_label(path_str: str) -> str:
+    """Human-readable category for a changed file that is not a post."""
+    if path_str.endswith(".py"):
+        return "Python scripts"
+    if path_str.startswith(".github/workflows/"):
+        return "GitHub Actions workflows"
+    if path_str.startswith(".github/"):
+        return "GitHub config"
+    if path_str in ("pyproject.toml", "uv.lock"):
+        return "uv config"
+    return "other files"
+
+
+def _join(items: list[str]) -> str:
+    """Join phrases into a natural-language list (``a``, ``a and b``, ...)."""
+    if len(items) == 1:
+        return items[0]
+    if len(items) == 2:
+        return f"{items[0]} and {items[1]}"
+    return ", ".join(items[:-1]) + f", and {items[-1]}"
 
 
 def _commit_message(repo: Repo) -> bytes:
-    """Build a commit message summarizing the changed posts."""
-    titles = _changed_post_titles(repo)
-    if not titles:
-        return b"add/update posts"
+    """Build a commit message summarizing the changed files.
+
+    Changed posts are described by their titles; when no post changed, the
+    message instead names the categories of the other changed files (Python
+    scripts, GitHub Actions workflows, uv config, ...).
+    """
+    titles: list[str] = []
+    labels: list[str] = []
+    seen_posts: set[str] = set()
+    for path_str in _changed_paths(repo):
+        if _POST_INDEX.match(path_str):
+            # A convert/move stages both index.md and index.ipynb for one post;
+            # count each post (its slug directory) only once.
+            post_dir = path_str.rsplit("/", 1)[0]
+            if post_dir in seen_posts:
+                continue
+            seen_posts.add(post_dir)
+            titles.append(_post_title(path_str))
+        else:
+            label = _non_post_label(path_str)
+            if label not in labels:
+                labels.append(label)
     if len(titles) == 1:
         return f"add/update post: {titles[0]}".encode("utf-8")
-    body = "\n".join(f"- {title}" for title in titles)
-    return f"add/update {len(titles)} posts\n\n{body}".encode("utf-8")
+    if titles:
+        body = "\n".join(f"- {title}" for title in titles)
+        return f"add/update {len(titles)} posts\n\n{body}".encode("utf-8")
+    if labels:
+        return f"update {_join(labels)}".encode("utf-8")
+    return b"update repository"
 
 
 def auto_git_push(blogger, args):

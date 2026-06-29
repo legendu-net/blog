@@ -1,7 +1,7 @@
 ---
 title: Tips on the Fish Shell
-created: 2025-11-11 18:13:06
-date: 2026-04-13 23:14:19.146713
+created: '2025-11-11T18:13:06-08:00'
+date: '2026-06-29T00:18:34-07:00'
 authors:
   - bendu
 label: tips-on-the-fish-shell
@@ -32,22 +32,16 @@ icon fish -ic
 
 Use the built-in function `fish_key_reader` to tell you how to bind shortcuts.
 
-<table class="tg"><thead>
-  <tr>
-    <th class="tg-0pky">Shortcuts</th>
-    <th class="tg-0pky">Description</th>
-  </tr></thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky">Alt-.</td>
-    <td class="tg-0pky">Get parameter of previous commands.</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Alt-e or Alt-v</td>
-    <td class="tg-0pky">Edit the current command line in an external editor.</td>
-  </tr>
-</tbody>
-</table>
+:::\{list-table}
+:header-rows: 1
+
+- - Shortcuts
+  - Description
+- - Alt+.
+  - Get parameter of previous commands.
+- - Alt+e or Alt+v
+  - Edit the current command line in an external editor.
+    :::
 
 Please refer to
 [Interactive use](https://fishshell.com/docs/current/interactive.html)

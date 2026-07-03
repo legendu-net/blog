@@ -15,6 +15,7 @@ wheels/
 
 # Jupyter-Book
 _build/
+logs/
 
 # JupyterHub runtime files
 jupyterhub-proxy.pid

@@ -42,7 +42,7 @@ site:
   template: book-theme
   #template: https://github.com/QuantEcon/quantecon-theme/archive/refs/heads/main.zip
   options:
-  #   favicon: favicon.ico
+    favicon: favicon.ico
   #   logo: site_logo.png
     folders: true
     filenames: true

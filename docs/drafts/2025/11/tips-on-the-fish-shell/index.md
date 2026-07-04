@@ -1,7 +1,7 @@
 ---
 title: Tips on the Fish Shell
 created: '2025-11-11T18:13:06-08:00'
-date: '2026-06-29T00:21:17-07:00'
+date: '2026-07-03T17:11:55-07:00'
 authors:
   - bendu
 label: tips-on-the-fish-shell
@@ -36,16 +36,17 @@ icon fish -ic
    `Alt`+`e` does edit the current command line in an external editor on macOS,
    `Alt`+`v` is the way to go (if you don't bother or don't have time to dig into configurations).
 
-:::\{list-table}
-:header-rows: 1
-
+```{list-table}
+---
+header-rows: 1
+---
 - - Shortcuts
   - Description
 - - Alt+.
   - Get parameter of previous commands.
 - - Alt+e or Alt+v
   - Edit the current command line in an external editor.
-    :::
+```
 
 Please refer to
 [Interactive use](https://fishshell.com/docs/current/interactive.html)

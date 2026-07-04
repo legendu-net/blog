@@ -1040,13 +1040,13 @@ class Blogger:
             return sum(len(tags[t]) for t in ids[k])
 
         sql = f"""
-            SELECT title, label, date, tags FROM {self.POSTS}
+            SELECT label, date, tags FROM {self.POSTS}
             WHERE doc_dir != 'outdated'
             ORDER BY date DESC
         """
         tags: dict[str, list[tuple[str, str]]] = {}
-        for title, label, date, tag_str in self._conn.execute(sql):
-            link = f"[{title}]({label})"
+        for label, date, tag_str in self._conn.execute(sql):
+            link = f"[](#{label})"
             date_str = str(date)[:10]
             for tag in tag_str.strip(SEPARATOR).split(SEPARATOR):
                 if not tag:
@@ -1084,7 +1084,7 @@ class Blogger:
 
     def gen_recent_posts(self, n: int = 20) -> None:
         sql = f"""
-            SELECT title, label, date FROM {self.POSTS}
+            SELECT label, date FROM {self.POSTS}
             WHERE doc_dir IN (?, ?)
             ORDER BY date DESC
             LIMIT ?
@@ -1097,9 +1097,9 @@ class Blogger:
             fout.write(":widths: 70 30\n\n")
             fout.write("* - Title\n")
             fout.write("  - Date\n")
-            for title, label, date in rows:
+            for label, date in rows:
                 date_str = str(date)[:10]
-                fout.write(f"* - [{title}]({label})\n")
+                fout.write(f"* - [](#{label})\n")
                 fout.write(f"  - {date_str}\n")
             fout.write(":::\n")
 

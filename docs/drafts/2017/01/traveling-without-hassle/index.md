@@ -1,7 +1,7 @@
 ---
 title: Traveling Without Hassle
 created: '2017-01-22T13:31:43-08:00'
-date: '2026-05-11T21:06:14-07:00'
+date: '2026-07-05T20:35:31-07:00'
 authors:
   - bendu
 label: traveling-without-hassle
@@ -143,6 +143,16 @@ Check weather including the starting city and destination cities.
 - company badge
 - company credit card
 - pen, notes
+
+## House Related
+
+Make sure your house is well taken care of if no one stays.
+
+1. Replace batteries of security cameras and door bells if necessary.
+
+1. Make sure garden hoses are turned off.
+
+1. Set thermostat to "Away".
 
 ## Places To Rest in Cities
 

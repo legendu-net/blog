@@ -1,7 +1,7 @@
 ---
 title: Tips on Toolbx
 created: '2025-12-14T16:59:01+00:00'
-date: '2026-05-18T17:57:32+00:00'
+date: '2026-07-12T11:52:36-07:00'
 authors:
   - bendu
 label: tips-on-toolbx
@@ -49,6 +49,8 @@ See more discussions in
    if you have Claude CLI installed on the host machine (under ~/.local/bin),
    you will be able to use it inside the container as well
    without installing it again inside the container.
+
+1. Information of the running container is stored in `/run/.containerenv` inside the container.
 
 ## Different Ways of Running Commands Insdie the Container
 

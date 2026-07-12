@@ -1,7 +1,7 @@
 ---
 title: WaveTerm Is the Best Terminal App
 created: '2026-04-03T16:00:11.220201-07:00'
-date: '2026-06-26T23:30:48-07:00'
+date: '2026-07-12T11:57:06-07:00'
 authors:
   - bendu
 label: waveterm-is-the-best-terminal-app
@@ -16,8 +16,6 @@ tags:
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-
-https://github.com/wavetermdev/waveterm
 
 ## Configure the Default Shell to Use
 
@@ -38,3 +36,5 @@ wsh web open "wave terminal documentation"
 ## References
 
 - [Chat with Gemini - Useful wsh Command](https://share.gemini.google/N6I8dgjQ1saK)
+
+- [Wave Terminal @ GitHub](https://github.com/wavetermdev/waveterm)

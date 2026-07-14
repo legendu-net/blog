@@ -1,10 +1,10 @@
 ---
 title: Tips on Coolant for Mercedes-Benz Vehicles
 created: '2023-11-11T15:24:50-08:00'
-date: '2026-07-13T20:16:04-07:00'
+date: '2026-07-13T20:53:58-07:00'
 authors:
   - bendu
-label: tips-on-coolant-for-mercdes-benz-vehicles
+label: tips-on-coolant-for-mercedes-benz-vehicles
 license: CC-BY-4.0
 tags:
   - life

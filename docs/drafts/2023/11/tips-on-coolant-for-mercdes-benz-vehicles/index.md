@@ -1,7 +1,7 @@
 ---
-title: Tips on Coolant for Mercdes-Benz Vehicles
-created: 2023-11-11 15:24:50
-date: 2026-04-13 23:30:32.351134
+title: Tips on Coolant for Mercedes-Benz Vehicles
+created: '2023-11-11T15:24:50-08:00'
+date: '2026-07-13T20:16:04-07:00'
 authors:
   - bendu
 label: tips-on-coolant-for-mercdes-benz-vehicles
@@ -10,7 +10,7 @@ tags:
   - life
   - car
   - vehicle
-  - Mercdes
+  - Mercedes
   - Benz
   - coolant
   - dealership
@@ -43,7 +43,7 @@ before you purchase coolant and top off it by yourself.
    without dilution.
    If in emergency,
    you can also top off tap water into the coolant tank
-   and drive to a Mercdes-Benz dealership for help.
+   and drive to a Mercedes-Benz dealership for help.
 
 ## References
 

@@ -1,7 +1,7 @@
 ---
 title: Tips on Mercedes-Benz
-created: 2022-07-23 21:15:27
-date: 2026-04-14 19:45:18.422055
+created: '2022-07-23T21:15:27-07:00'
+date: '2026-07-13T21:03:12-07:00'
 authors:
   - bendu
 label: tips-on-mercedes-benz
@@ -17,6 +17,18 @@ tags:
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## Tire Pressure
+
+People say that the tire pressure on the B-pillar is for maximum load at maximum speed.
+So,
+it's better to use recommended tire pressures on the fuel filler flap.
+I took average of the recommended pressures for normal and maximum load for front and back tires respectively,
+which give me 36 for front tires and 39 for back tires.
+
+<img width="4080" height="3072" alt="Image" src="https://github.com/user-attachments/assets/4eacd476-ea22-4e2f-98e4-23a76003458c" />
+
+<img width="4080" height="3072" alt="Image" src="https://github.com/user-attachments/assets/deee2303-c33b-4980-a71f-4f084ed84b9b" />
 
 ## References
 

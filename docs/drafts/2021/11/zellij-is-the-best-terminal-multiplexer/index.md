@@ -1,7 +1,7 @@
 ---
 title: Zellij Is the Best Terminal Multiplexer
 created: '2021-11-09T10:19:10-08:00'
-date: '2026-06-26T23:49:52-07:00'
+date: '2026-07-14T21:10:54-07:00'
 authors:
   - bendu
 label: zellij-is-the-best-terminal-multiplexer
@@ -45,6 +45,27 @@ mouse_mode false
 ```
 zellij -l welcome
 ```
+
+## Resize Panes
+
+```{list-table}
+---
+header-rows: 1
+---
+* - Shortcut
+  - Description
+* - `Alt` + `+`
+  - Increase the size of the focused pane.
+* - `Alt` + `-`
+  - Decrease the size of the focused pane.
+* - `Alt` + `f`
+  - Toggle floating panes on and off.
+```
+
+For more discussions,
+please refer to
+[Stacked Resize and Pinned Floating Panes](https://zellij.dev/tutorials/stacked-resize/)
+.
 
 ## Filepicker
 

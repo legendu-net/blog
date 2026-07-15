@@ -1,7 +1,7 @@
 ---
 title: Web Automation
-created: 2019-09-07 09:02:30
-date: 2026-04-15 19:27:01.158178
+created: '2019-09-07T09:02:30-07:00'
+date: '2026-07-15T01:22:20-07:00'
 authors:
   - bendu
 label: web-automation
@@ -17,21 +17,29 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## Gemini in Chrome
+## AI-based Tools
+
+### Stagehand
+
+[Stagehand](https://github.com/browserbase/stagehand-python)
+is a browser automation framework used to control web browsers with natural language and code.
+By combining the power of AI with the precision of code, Stagehand makes web automation flexible, maintainable, and actually reliable.
+
+### Gemini in Chrome
 
 See discussions in
 [Automated Web Browsing Tasks Using Gemini in Chrome](automated-web-browsing-tasks-using-gemini-in-chrome)
 .
 
-## Claude Computer Use
+### Claude Computer Use
 
-automate anything (not just web) with Claude 
+automate anything (not just web) with Claude
 
 - [I Let Claude Use My Computer for 2 Days. Here's What It Can Actually Do.](https://aiblewmymind.substack.com/p/claude-computer-use-guide-6-workflows-tested)
 
 - [Computer use tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool)
 
-## [UI Vision](https://ui.vision/)
+### [UI Vision](https://ui.vision/)
 
 [UI Vision](https://ui.vision/)
 

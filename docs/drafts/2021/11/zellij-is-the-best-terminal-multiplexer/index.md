@@ -1,7 +1,7 @@
 ---
 title: Zellij Is the Best Terminal Multiplexer
 created: '2021-11-09T10:19:10-08:00'
-date: '2026-07-14T21:10:54-07:00'
+date: '2026-07-14T21:54:06-07:00'
 authors:
   - bendu
 label: zellij-is-the-best-terminal-multiplexer
@@ -45,6 +45,20 @@ mouse_mode false
 ```
 zellij -l welcome
 ```
+
+## Zellij Web
+
+1. You can create a token using `zellij web --create-token`
+   and then start a web server for zellij using `zellij web`
+   .
+
+1. Use `mkcert` to create certificate for hosting HTTPS
+   if you need to share sessions beyong the local network.
+
+For more discussions,
+please refer to
+[The Zellij Web Client - Share Sessions in the Browser](https://zellij.dev/tutorials/web-client/)
+.
 
 ## Resize Panes
 

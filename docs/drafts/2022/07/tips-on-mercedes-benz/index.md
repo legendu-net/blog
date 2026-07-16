@@ -1,7 +1,7 @@
 ---
 title: Tips on Mercedes-Benz
 created: '2022-07-23T21:15:27-07:00'
-date: '2026-07-14T00:19:55-07:00'
+date: '2026-07-15T20:06:54-07:00'
 authors:
   - bendu
 label: tips-on-mercedes-benz
@@ -26,9 +26,9 @@ it's better to use recommended tire pressures on the fuel filler flap.
 I took average of the recommended pressures for normal and maximum load for front and back tires respectively,
 which give me 36 for front tires and 39 for back tires.
 
-<img width="2040" height="1536" alt="Image" src="https://github.com/user-attachments/assets/4eacd476-ea22-4e2f-98e4-23a76003458c" />
+<img width="100%" alt="Image" src="https://github.com/user-attachments/assets/4eacd476-ea22-4e2f-98e4-23a76003458c" />
 
-<img width="2040" height="1536" alt="Image" src="https://github.com/user-attachments/assets/deee2303-c33b-4980-a71f-4f084ed84b9b" />
+<img width="100%" alt="Image" src="https://github.com/user-attachments/assets/deee2303-c33b-4980-a71f-4f084ed84b9b" />
 
 ## References
 

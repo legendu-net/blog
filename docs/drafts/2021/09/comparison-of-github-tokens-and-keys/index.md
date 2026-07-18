@@ -1,7 +1,7 @@
 ---
 title: Comparison of GitHub Tokens and Keys
 created: '2021-09-09T15:21:21-07:00'
-date: '2026-06-20T20:06:44-07:00'
+date: '2026-07-18T01:31:04-07:00'
 authors:
   - bendu
 label: comparison-of-github-tokens-and-keys
@@ -169,6 +169,10 @@ Deploy Keys are SSH keys which access restricted to a specific repository only.
 https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys
 
 https://docs.github.com/en/developers/overview/managing-deploy-keys#deploy-keys
+
+## GITHUB_TOKEN
+
+- [Limitation of GITHUB_TOKEN](https://share.gemini.google/QW2ytbpZESgN)
 
 ## References
 

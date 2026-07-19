@@ -16,6 +16,7 @@ from blogger import (
     OUTDATED,
     Blogger,
     Post,
+    SITE,
     add_spells_title as _add_spells_title,
     add_spells_tag as _add_spells_tag,
     get_vim,
@@ -699,6 +700,60 @@ def _subparse_list(subparsers):
     subparser_list.set_defaults(func=lambda blogger, args: blogger.show(args.n))
 
 
+def info(blogger, args):
+    _resolve_files(args)
+    if not args.files:
+        print("No post is specified for info!\n")
+        return
+    for file in args.files:
+        post = Post(BASE_DIR / file).parse()
+        rec = post.record()
+
+        if args.url:
+            parts = list(Path(file).parts[0:5])
+            parts[0] = SITE
+            parts[-1] = parts[-1][:50]
+            url = "/".join(parts)
+            print(url)
+        elif args.content:
+            print("".join(post.lines), end="")
+        elif args.title:
+            print(rec.title)
+        elif args.label:
+            print(rec.label)
+        elif args.tags:
+            print(rec.tags.strip("|"))
+        else:
+            print(file)
+
+
+def _subparse_info(subparsers):
+    desc = "Display information about a post. By default, prints the absolute path."
+    subparser_info = subparsers.add_parser(
+        "info", aliases=["i"], help=desc, description=desc
+    )
+    option_indexes(subparser_info)
+    option_all(subparser_info)
+
+    group = subparser_info.add_mutually_exclusive_group()
+    group.add_argument(
+        "-u", "--url", action="store_true", help="Print the URL of the post."
+    )
+    group.add_argument(
+        "-c", "--content", action="store_true", help="Print the content of the post."
+    )
+    group.add_argument(
+        "-t", "--title", action="store_true", help="Print the title of the post."
+    )
+    group.add_argument(
+        "-l", "--label", action="store_true", help="Print the label/slug of the post."
+    )
+    group.add_argument(
+        "--tags", action="store_true", help="Print the tags of the post."
+    )
+    subparser_info.set_defaults(func=info)
+
+
 def _subparse_search(subparsers):
     desc = (
         "Search for posts. "
@@ -1136,6 +1191,7 @@ def parse_args(args=None, namespace=None) -> Namespace:
     _subparse_tags(subparsers)
     _subparse_reload_posts(subparsers)
     _subparse_list(subparsers)
+    _subparse_info(subparsers)
     _subparse_last(subparsers)
     _subparse_search(subparsers)
     _subparse_srp(subparsers)

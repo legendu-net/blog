@@ -1,7 +1,7 @@
 ---
 title: Skills for AI Agents
 created: '2026-04-28T22:28:33.673249-07:00'
-date: '2026-07-18T23:31:34-07:00'
+date: '2026-07-19T09:17:41-07:00'
 authors:
   - bendu
 label: skills-for-ai-agents
@@ -67,9 +67,15 @@ please refer to
 
 ## Some Useful Skills
 
+### General
+
 - [vercel-labs/skills/find-skills](https://www.skills.sh/vercel-labs/skills/find-skills)
 
 - [useful-ai-prompts/semantic-versioning](https://www.skills.sh/aj-geddes/useful-ai-prompts/semantic-versioning)
+
+### Rust
+
+- [rust-skills](https://github.com/actionbook/rust-skills)
 
 ### Investment
 

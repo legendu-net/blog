@@ -1,7 +1,7 @@
 ---
 title: Security Concerns for AI Agents
-created: 2026-04-28 22:36:04.593440
-date: 2026-05-02 10:16:55.613496
+created: '2026-04-28T22:36:04.593440-07:00'
+date: '2026-07-18T23:11:40-07:00'
 authors:
   - bendu
 label: security-concerns-for-ai-agents
@@ -23,6 +23,11 @@ tags:
    due to prompt injection attack.
    A safer alternative is to store your LLM API keys in a command line password manager.
 
+## Good Sources of Skills
+
+- [skills.sh](https://www.skills.sh)
+  - skills listed on skills.sh are audited for security issues
+
 ## [code-on-incus (COI)](https://github.com/mensfeld/code-on-incus)
 
 [code-on-incus (COI)](https://github.com/mensfeld/code-on-incus)
@@ -39,5 +44,11 @@ AI Agent Skill Scanners: Every Tool Compared (2026)
 Cisco skill-scanner
 
 SkillCheck (Repello)
+
+## Free Tools / Services
+
+- SkillCheck (Repello)
+
+## Paid Services
 
 https://skillforge-tawny.vercel.app/scanner

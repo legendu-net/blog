@@ -1,7 +1,7 @@
 ---
 title: Skills for AI Agents
-created: 2026-04-28 22:28:33.673249
-date: 2026-05-01 00:41:37.486063
+created: '2026-04-28T22:28:33.673249-07:00'
+date: '2026-07-18T23:31:34-07:00'
 authors:
   - bendu
 label: skills-for-ai-agents
@@ -16,11 +16,21 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-https://github.com/anthropics/skills
+## Soruces of Skills
 
-https://github.com/google/skills
+### Official
 
-https://skills.sh/
+- [Claude Plugins](https://claude.com/plugins)
+
+https://github.com/anthropics/claude-plugins-official
+
+### Third-part MCP / Skill Platforms
+
+- [skills.sh](https://skills.sh/)
+
+- [Claude Marketplaces](https://claudemarketplaces.com/)
+
+- [MCP Market - Find the best MCP Servers, Agents and Skills](https://mcpmarket.com/)
 
 https://agentskills.io/home
 
@@ -30,7 +40,13 @@ https://www.skillsdirectory.com/
 
 https://clawhub.ai/
 
-- [MCP Market - Find the best MCP Servers, Agents and Skills](https://mcpmarket.com/)
+### Misc
+
+https://github.com/anthropics/skills
+
+https://github.com/google/skills
+
+https://github.com/addyosmani/agent-skills
 
 https://github.com/softaworks/agent-toolkit
 
@@ -40,10 +56,6 @@ Agent skill that generates hardened .devcontainer/ setups for Claude Code autono
 https://github.com/masoncl/review-prompts
 AI-assisted code review prompts for Linux kernel, systemd, and iproute development. Works with Claude Code and other AI tools.
 
-## Extremely Useful Ones
-
-- [find-skills](https://skills.sh/vercel-labs/skills/find-skills)
-
 ## Create Skills
 
 Gemini CLI has a built-in meta skill named `skill-creator`
@@ -52,6 +64,16 @@ For more details,
 please refer to
 [Gemini CLI Docs - Creating Agent Skills](https://geminicli.com/docs/cli/creating-skills/)
 .
+
+## Some Useful Skills
+
+- [vercel-labs/skills/find-skills](https://www.skills.sh/vercel-labs/skills/find-skills)
+
+- [useful-ai-prompts/semantic-versioning](https://www.skills.sh/aj-geddes/useful-ai-prompts/semantic-versioning)
+
+### Investment
+
+https://claude.com/plugins/equity-research
 
 ## References
 

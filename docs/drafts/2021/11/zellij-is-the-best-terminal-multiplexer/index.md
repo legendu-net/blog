@@ -1,7 +1,7 @@
 ---
 title: Zellij Is the Best Terminal Multiplexer
 created: '2021-11-09T10:19:10-08:00'
-date: '2026-07-14T21:54:06-07:00'
+date: '2026-07-19T19:12:40-07:00'
 authors:
   - bendu
 label: zellij-is-the-best-terminal-multiplexer
@@ -51,6 +51,15 @@ zellij -l welcome
 1. You can create a token using `zellij web --create-token`
    and then start a web server for zellij using `zellij web`
    .
+
+1. By default,
+   `zellij web` uses the IPv4 address `127.0.0.1`.
+   Modern browsers (Chrome, Edge, ect) might resolves `localhost` as the IPv6 address `::1`.
+   If that's the case,
+   visiting `localhost:8082` will results in the error code `ERR_EMPTY_RESPONSE`
+   .
+   It is suggested that you use `127.0.0.1` instead of `localhost`
+   when visiting the web page or doing local port fowarding via SSH tunneling.
 
 1. Use `mkcert` to create certificate for hosting HTTPS
    if you need to share sessions beyong the local network.

@@ -1,7 +1,7 @@
 ---
 title: SSH Tunnel
 created: '2018-09-07T21:32:57-07:00'
-date: '2026-06-12T21:38:36-07:00'
+date: '2026-07-19T19:15:27-07:00'
 authors:
   - bendu
 label: ssh-tunnel
@@ -24,9 +24,9 @@ tags:
    (based on [paramiko](https://github.com/paramiko/paramiko))
    .
 
-## SSH Tunnel
+## Dynamic Port Forwarding (SOCKS Proxy, -D)
 
-You can create a SSH tunnel from your local machine to a server using the command below.
+You can create dynamic port forwarding (which acts as a SOCKS proxy) from your local machine to a server using the command below.
 
 ```
 :::bash
@@ -36,7 +36,7 @@ ssh -i /path_to_key -fND 1080 user@server_ip
 The created SSH tunnel is essentially a socks5 proxy
 and can be accessed as `localhost:1080`.
 If you want the tunnel (socks5 proxy) to be accessible by other machines as well
-rathe than the localhost only,
+rather than the localhost only,
 you can bind it to all IPs.
 
 ```
@@ -58,11 +58,21 @@ Or you can try to visit a website using curl through the socks5 proxy.
 curl --socks5 localhost:1080 www.google.com
 ```
 
-## Reverse SSH Tunnel
+## Local Port Forwarding (-L)
+
+Local port forwarding allows you to forward a port on your local machine to a port on a remote server.
 
 ```
 :::bash
 ssh -fN -L 8888:localhost:8888 user@domain.com
+```
+
+## Remote Port Forwarding (Reverse SSH Tunnel, -R)
+
+Remote port forwarding (often called a reverse SSH tunnel) allows you to forward a port on a remote server back to a port on your local machine.
+
+```
+:::bash
 ssh -o ProxyCommand='ssh <bastion_server> -W %h:%p' -R 20000:localhost:22 <target_server>
 ```
 
@@ -85,25 +95,25 @@ ssh -o ProxyCommand='ssh bastion_server -W %h:%p' target_server
 ## Advanced Usage 2: SSH Tunnel to Avoid 2FA
 
 Suppose you have 2 machines A and B.
-Machine B is only accssible from machine A using SSH through 2FA.
+Machine B is only accessible from machine A using SSH through 2FA.
 You can create and persist a SSH tunnel from machine A to machine B
 (2FA is still required when creating the SSH tunnel).
 Then you can avoid 2FA when connecting from machine A to machine B
 by using the created SSH tunnel as socks5 proxy through tools such as ProxyChains.
 
-If you do not want to rely another another tools (such as ProxyChains),
+If you do not want to rely on other tools (such as ProxyChains),
 you can configure SSH to persist and reuse connections.
 For more discussions on this,
 please refer to the
 [SSH Tunnel - Multiplexing / ControlMaster](tips-on-ssh)
 .
 
-## Advanced Usage 3: Access Service in an Indirectly Accessible Remote Server
+## Advanced Usage 3: Access Service in an Indirectly Accessible Remote Server (Local Port Forwarding)
 
 Suppose you have 2 machines A and B.
 Machine B cannot visit the public network or machine A.
 However,
-machine B is accssible (directly or via a bastion server)
+machine B is accessible (directly or via a bastion server)
 from machine A using SSH and machine A can visit the public network.
 You can follow the steps below to access service running on machine B.
 
@@ -121,34 +131,29 @@ You can follow the steps below to access service running on machine B.
 
 1. You can then visit `ip_of_machine_a:3333` to access the JupyterLab service running on machine B.
 
-## Advanced Usage 4: SSH Reverse Tunnel + SSH Tunnel
-
-```
-:::bash
-ssh -o ProxyCommand='ssh bastion_server -W %h:%p' -R 20000:localhost:22 target_server
-```
-
-## Advanced Usage 5: SSH Reverse Tunnel + SSH Tunnel
+## Advanced Usage 4: Remote Port Forwarding + Dynamic Port Forwarding
 
 Suppose you have 2 machines A and B.
 Machine B cannot visit the public network nor machine A.
 However,
-machine B is accssible (directly or via a bastion server) from machine A
+machine B is accessible (directly or via a bastion server) from machine A
 using SSH and machine A can visit the public network.
 You can follow the steps below to access the public network from machine B.
 
-1. Create a Reversed SSH tunnel from machine A to machine B.
+1. Create remote port forwarding (a reverse SSH tunnel) from machine A to machine B.
+   This forwards port 20000 on machine B to port 22 on machine A.
 
    ```
     :::bash
-    ssh -i /path_to_key -o ProxyCommand='ssh bastion_server -W %h:%p' -R 20000:localhost:22 ip_of_machine_b
+    ssh -i /path_to_key_for_b -o ProxyCommand='ssh bastion_server -W %h:%p' -R 20000:localhost:22 ip_of_machine_b
    ```
 
-1. Create a SSH Tunnel on machine B.
+1. Create dynamic port forwarding on machine B.
+   By connecting to the forwarded port 20000 locally on machine B, you are SSHing back into machine A.
 
    ```
     :::bash
-    ssh -i /path_to_key -fND 1080 localhost
+    ssh -i /path_to_key_for_a -p 20000 -fND 1080 user_a@localhost
    ```
 
 1. Use the created SSH Tunnel as a socks5 proxy to visit the public network via proxychains.

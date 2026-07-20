@@ -1,7 +1,7 @@
 ---
 title: Skills for AI Agents
 created: '2026-04-28T22:28:33.673249-07:00'
-date: '2026-07-19T09:17:41-07:00'
+date: '2026-07-19T16:17:32-07:00'
 authors:
   - bendu
 label: skills-for-ai-agents
@@ -17,6 +17,8 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Soruces of Skills
+
+1. Use `/plugins` to manage marketplaces/plugins/skills for Claude CLI.
 
 ### Official
 

@@ -172,6 +172,7 @@ jupyter: Jupyter
 kcachegrind: KCachegrind
 leetcode: LeetCode
 linux: Linux
+llm: LLM
 mac: macOS
 mojo: Mojo
 myst: MyST

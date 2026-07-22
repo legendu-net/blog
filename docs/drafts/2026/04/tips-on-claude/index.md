@@ -1,7 +1,7 @@
 ---
 title: Tips on Claude
 created: '2026-04-18T18:53:35.655987-07:00'
-date: '2026-06-14T19:08:07-07:00'
+date: '2026-07-21T22:55:57-07:00'
 authors:
   - bendu
 label: tips-on-claude
@@ -136,6 +136,11 @@ The simplest way to setup GitHub integration is to run the following command.
 ```sh
 claude /install-github-app
 ```
+
+Notice that there are issues in the generated workflow `claude-code-review.yml`.
+Please see discussions in
+[Claude doesn't generate any output from PR review](https://github.com/anthropics/claude-code-action/issues/944)
+for root causes and solutions.
 
 - [claude-code-action/examples](https://github.com/anthropics/claude-code-action/tree/main/examples)
 

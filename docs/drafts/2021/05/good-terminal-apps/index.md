@@ -1,7 +1,7 @@
 ---
 title: Good Terminal Apps
 created: '2021-05-11T08:45:30-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-07-23T08:56:31-07:00'
 authors:
   - bendu
 label: good-terminal-apps
@@ -25,6 +25,11 @@ tags:
 [Wave](https://www.waveterm.dev/)
 is an open-source terminal with superpowers,
 integrating file previews, file editing, AI, web browsing, and workspace organization.
+
+## [cmux](https://github.com/manaflow-ai/cmux)
+
+[cmux](https://github.com/manaflow-ai/cmux)
+is a Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents.
 
 ## [Ghostty](https://github.com/ghostty-org/ghostty)
 

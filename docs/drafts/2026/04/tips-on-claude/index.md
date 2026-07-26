@@ -1,7 +1,7 @@
 ---
 title: Tips on Claude
 created: '2026-04-18T18:53:35.655987-07:00'
-date: '2026-07-21T22:55:57-07:00'
+date: '2026-07-26T09:05:03-07:00'
 authors:
   - bendu
 label: tips-on-claude
@@ -37,6 +37,11 @@ Works simiarly to [Gemini CLI](tips-on-google-gemini-cli).
 ## General Tips
 
 1. Use `/review` and `/ultra-review` to review code changes.
+
+1. Enable voice mode using the command `/voice`.
+   See discussions in
+   [claude cli voice input](https://share.gemini.google/j9U9cXKTfWRn)
+   .
 
 ## Permissions
 

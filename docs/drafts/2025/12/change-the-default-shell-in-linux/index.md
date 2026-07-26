@@ -1,7 +1,7 @@
 ---
 title: Change the Default Shell in Linux
 created: '2025-12-07T17:48:30-08:00'
-date: '2026-07-25T22:47:16-07:00'
+date: '2026-07-26T08:56:28-07:00'
 authors:
   - bendu
 label: change-the-default-shell-in-linux
@@ -39,11 +39,13 @@ The above command updates the configuration file `/etc/passwd`.
 sudo chsh -s $(which fish) $(id -un)
 ```
 
-You have to add the path of `fish` into `/etc/shells`,
-if you get the error message
-"chsh: /usr/bin/fish is an invalid shell".
+```{note}
+1. You have to add the path of `fish` into `/etc/shells`,
+  if you get the error message
+  "chsh: /usr/bin/fish is an invalid shell".
 
-Log out and then log in (or simplify reboot) for the change to take effect.
+2. Log out and then log in (or simplify reboot) for the change to take effect.
+```
 
 ## References
 

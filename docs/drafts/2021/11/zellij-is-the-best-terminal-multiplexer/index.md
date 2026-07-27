@@ -1,7 +1,7 @@
 ---
 title: Zellij Is the Best Terminal Multiplexer
 created: '2021-11-09T10:19:10-08:00'
-date: '2026-07-19T19:12:40-07:00'
+date: '2026-07-26T22:41:47-07:00'
 authors:
   - bendu
 label: zellij-is-the-best-terminal-multiplexer
@@ -164,7 +164,10 @@ keybinds {
 
 ### 4. Overriding the Default Filepicker
 
-Because `filepicker` is an **alias** in Zellij, you aren't locked into using Strider. If you prefer a full-featured terminal file manager like `yazi` or `ranger`, you can redefine the alias in your `config.kdl`:
+Because `filepicker` is an **alias** in Zellij,
+you aren't locked into using Strider.
+If you prefer a full-featured terminal file manager like `yazi` or `ranger`,
+you can redefine the alias in your `config.kdl`:
 
 ```kdl
 plugins {

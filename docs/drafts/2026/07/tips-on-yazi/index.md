@@ -1,7 +1,7 @@
 ---
 title: Tips on Yazi
 created: '2026-07-26T23:03:52.607491-07:00'
-date: '2026-07-28T20:20:00-07:00'
+date: '2026-07-29T16:36:00-07:00'
 authors:
   - bendu
 label: tips-on-yazi
@@ -31,6 +31,17 @@ tags:
    Instead of just browsing and opening files normally,
    running Yazi with this flag tells it to write the absolute paths of the files you select
    to the specified text file when it exits.
+
+## Useful Plugins
+
+https://mynixos.com/packages/yaziPlugins
+
+https://github.com/yazi-rs/plugins
+
+https://yazi-rs.github.io/docs/resources/
+
+- [jjui](https://github.com/Adda0/jjui.yazi)
+- [gitui](https://github.com/gclarkjr5/gitui.yazi)
 
 ## Image Preview in Yazi Running in Zellij
 

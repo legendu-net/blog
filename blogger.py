@@ -1140,6 +1140,6 @@ class Blogger:
             parts[0] = SITE
             parts[-1] = parts[-1][:50]
             url = "/".join(parts)
-            print(f"\n{rowid}: [{title}]({label})  |  {path}")
+            print(f"\n{rowid}: [](#{label})  |  {title}  |  {path}")
             print(f"    {url}  |  archives/blog/{path}")
         print("")

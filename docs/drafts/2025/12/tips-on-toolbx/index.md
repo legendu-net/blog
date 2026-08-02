@@ -1,7 +1,7 @@
 ---
 title: Tips on Toolbx
 created: '2025-12-14T16:59:01+00:00'
-date: '2026-08-02T11:56:06-07:00'
+date: '2026-08-02T12:10:52-07:00'
 authors:
   - bendu
 label: tips-on-toolbx
@@ -85,13 +85,13 @@ toolbox create --image \<registry/image:tag> \<container_name>
 
 1. [toolbox @ GitHub](https://github.com/containers/toolbox)
    contains a [images directory](https://github.com/containers/toolbox/tree/main/images)
-   which was the source code of podman/toolbx images `quay.io/*-toolbox`.
+   which was the source code of podman/toolbx images `quay.io/fedora/*-toolbox`.
    However,
-   it is deprecated and I'm not sure where the latest source code is for images `quay.io/*-toolbox`.
+   it is deprecated and I'm not sure where the latest source code is for images `quay.io/fedora/*-toolbox`.
 
 1. [](#universal-blue-atomic-linux-distributions)
    has its own customized podman/toolbx images `ghcr.io/ublue-os/*-toolbox`
-   which are based on `quay.io/*-toolbox`.
+   which are based on `quay.io/fedora/*-toolbox`.
    The source code is at
    [ublue-os/toolboxes @ GitHub](https://github.com/ublue-os/toolboxes)
    .

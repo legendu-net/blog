@@ -14,7 +14,7 @@ classifiers = [
 ]
 dependencies = [
   "beautifulsoup4>=4.14.3",
-  "dulwich>=1.2.5",
+  "dulwich[merge]>=1.2.5",
   "loguru>=0.7.3",
   "nbformat>=5.10.4",
   "pyyaml>=6.0.3",

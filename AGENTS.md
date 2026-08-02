@@ -59,4 +59,4 @@ This is why the CLI is **index-based**: `search`/`list` print rows numbered by t
 
 - `ruff` excludes `docs/` and `*.ipynb`; `ty` excludes notebooks; `deptry` excludes `docs/`. Don't fight these — they're intentional (notebooks are content, not source).
 - Content is MyST Markdown or Jupyter Notebooks with YAML frontmatter (title, author, tags, labels).
-- Use `{ref}\`label-name\`` syntax for cross-referencing other posts using their labels in MyST markdown (e.g. `{ref}\`jujutsu-workspace\``).
+- Use `[](#label-name)` syntax for cross-referencing other posts using their labels in MyST markdown (e.g. `[](#jujutsu-workspace)`). An empty link text lets MyST fill in the target's title automatically; use `[custom text](#label-name)` to override it. Do NOT use the older `{ref}\`label-name\`` role.

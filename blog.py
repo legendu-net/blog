@@ -525,29 +525,60 @@ def _commit_message(repo: Repo) -> bytes:
     return b"update repository"
 
 
+def _check_on_main(repo: Repo) -> None:
+    """Abort unless ``main`` is checked out.
+
+    ``auto_git_push`` commits to the current branch but always pushes ``main``,
+    so it only makes sense on ``main``. The check is not merely cosmetic: the
+    pull below ends by writing *through* HEAD, so on another branch it would
+    silently reset that branch and its working tree to ``origin/main`` without
+    raising anything.
+    """
+    try:
+        branch = porcelain.active_branch(repo).decode()
+    except IndexError, KeyError, ValueError:
+        # Respectively: detached HEAD, no working tree, HEAD outside refs/heads.
+        branch = "no branch"
+    if branch != "main":
+        raise SystemExit(
+            f"Refusing to run: {branch} is checked out, not main.\n"
+            "`./blog.py ap` commits to the current branch but pushes main. "
+            "Switch to main first."
+        )
+
+
 def _pull(repo: Repo, auth_kwargs: dict) -> None:
-    """Merge ``origin/main`` into the local branch, as ``git pull origin main``.
+    """Merge ``origin/main`` into ``main``, as ``git pull origin main``.
 
     ``fast_forward=False`` lets dulwich create a merge commit when the branches
-    have diverged instead of refusing the pull. Dulwich leaves the repository
-    untouched when the merge conflicts, so any failure is reported as-is and
-    left for manual resolution.
+    have diverged instead of refusing the pull. On a conflict dulwich keeps HEAD
+    where it was but writes conflict markers into the index and working tree
+    without recording a MERGE_HEAD, so ``git status`` shows nothing more than an
+    ordinary staged edit. The error message has to spell that out, because a
+    blind rerun of this command would commit those markers.
     """
     try:
         porcelain.pull(repo, "origin", "main", fast_forward=False, **auth_kwargs)
     except Exception as exc:
         raise SystemExit(
             f"Failed to pull origin/main - {type(exc).__name__}: {exc}\n"
-            "The repository is unchanged. Reconcile it manually "
-            "(e.g. `git pull origin main`), then rerun `./blog.py ap`."
+            "Local changes are committed but not pushed.\n"
+            "If the merge conflicted, conflict markers are now staged. Note "
+            "`git status` will show them as an ordinary staged edit, so check "
+            "`git diff --cached` or grep for '<<<<<<< ours'. Do NOT rerun "
+            "`./blog.py ap` first - it would commit the markers into main.\n"
+            "Either resolve the conflict manually and rerun, or run "
+            "`git reset --hard HEAD` to discard the merge (which leaves the "
+            "divergence in place for you to reconcile another way)."
         ) from exc
 
 
 def auto_git_push(blogger, args):
     """Push changes in this repository."""
+    repo = Repo(str(BASE_DIR))
+    _check_on_main(repo)
     blogger.sync_dates()
     blogger.commit()
-    repo = Repo(str(BASE_DIR))
     message = _commit_message(repo)
     porcelain.add(repo)
     porcelain.commit(repo, message=message)

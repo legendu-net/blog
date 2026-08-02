@@ -1,7 +1,7 @@
 ---
 title: Manage Your Code Repositories Using Jujutsu
 created: '2026-04-30T19:49:30.593438-07:00'
-date: '2026-07-28T20:06:52-07:00'
+date: '2026-08-02T10:51:34-07:00'
 authors:
   - bendu
 label: manage-your-code-repositories-using-jujutsu
@@ -135,15 +135,15 @@ jj git push --named new-branch=@-
 
 ## Jujutsu Rebase
 
-Please refer to {ref}`jujutsu-rebase`
+Please refer to [](#jujutsu-rebase)
 for discussions.
 
 ## Jujutsu Workspace
 
-Please refer to {ref}`jujutsu-workspace`
+Please refer to [](#jujutsu-workspace)
 for discussions.
 
 ## References
 
-- {ref}`jujutsu-rebase`
-- {ref}`jujutsu-workspace`
+- [](#jujutsu-rebase)
+- [](#jujutsu-workspace)

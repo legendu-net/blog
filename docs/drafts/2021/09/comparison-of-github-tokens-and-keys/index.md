@@ -1,7 +1,7 @@
 ---
 title: Comparison of GitHub Tokens and Keys
 created: '2021-09-09T15:21:21-07:00'
-date: '2026-07-18T01:31:04-07:00'
+date: '2026-08-02T10:51:34-07:00'
 authors:
   - bendu
 label: comparison-of-github-tokens-and-keys
@@ -98,7 +98,7 @@ Both the GitHub Team and GitHub Enterprise paid tiers unlock the ability to shar
 
 ```{tip}
 Check out
-{ref}`reduce-operational-burdens-managing-secrets-without-a-paid-github-plan`
+[](#reduce-operational-burdens-managing-secrets-without-a-paid-github-plan)
 .
 ```
 
@@ -136,7 +136,7 @@ they create a noticeable operational bottleneck as your engineering team scales 
 
 ```{tip}
 Check out
-{ref}`reduce-operational-burdens-managing-secrets-without-a-paid-github-plan`
+[](#reduce-operational-burdens-managing-secrets-without-a-paid-github-plan)
 .
 ```
 

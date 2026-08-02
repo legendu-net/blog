@@ -525,6 +525,24 @@ def _commit_message(repo: Repo) -> bytes:
     return b"update repository"
 
 
+def _pull(repo: Repo, auth_kwargs: dict) -> None:
+    """Merge ``origin/main`` into the local branch, as ``git pull origin main``.
+
+    ``fast_forward=False`` lets dulwich create a merge commit when the branches
+    have diverged instead of refusing the pull. Dulwich leaves the repository
+    untouched when the merge conflicts, so any failure is reported as-is and
+    left for manual resolution.
+    """
+    try:
+        porcelain.pull(repo, "origin", "main", fast_forward=False, **auth_kwargs)
+    except Exception as exc:
+        raise SystemExit(
+            f"Failed to pull origin/main - {type(exc).__name__}: {exc}\n"
+            "The repository is unchanged. Reconcile it manually "
+            "(e.g. `git pull origin main`), then rerun `./blog.py ap`."
+        ) from exc
+
+
 def auto_git_push(blogger, args):
     """Push changes in this repository."""
     blogger.sync_dates()
@@ -533,7 +551,9 @@ def auto_git_push(blogger, args):
     message = _commit_message(repo)
     porcelain.add(repo)
     porcelain.commit(repo, message=message)
-    porcelain.push(repo, "origin", "main", **_auth_kwargs(repo))
+    auth_kwargs = _auth_kwargs(repo)
+    _pull(repo, auth_kwargs)
+    porcelain.push(repo, "origin", "main", **auth_kwargs)
 
 
 def clean_db(blogger, _):

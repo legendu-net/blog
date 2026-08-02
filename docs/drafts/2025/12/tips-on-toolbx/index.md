@@ -1,7 +1,7 @@
 ---
 title: Tips on Toolbx
 created: '2025-12-14T16:59:01+00:00'
-date: '2026-08-02T10:43:32-07:00'
+date: '2026-08-02T11:56:06-07:00'
 authors:
   - bendu
 label: tips-on-toolbx
@@ -78,6 +78,8 @@ name: toolbox-comparison-table
 https://github.com/containers/toolbox
 
 toolbox create --distro ubuntu --release 24.04
+
+toolbox create --image \<registry/image:tag> \<container_name>
 
 ### Images
 

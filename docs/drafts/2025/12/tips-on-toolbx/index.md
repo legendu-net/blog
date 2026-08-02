@@ -1,7 +1,7 @@
 ---
 title: Tips on Toolbx
 created: '2025-12-14T16:59:01+00:00'
-date: '2026-07-12T11:52:36-07:00'
+date: '2026-08-02T10:12:58-07:00'
 authors:
   - bendu
 label: tips-on-toolbx
@@ -79,8 +79,27 @@ https://github.com/containers/toolbox
 
 toolbox create --distro ubuntu --release 24.04
 
+### Images
+
+1. [toolbox @ GitHub](https://github.com/containers/toolbox)
+   contains a [images directory](https://github.com/containers/toolbox/tree/main/images)
+   which was the source code of container `quay.io/*-toolbox` images.
+   However,
+   it is deprecated and I'm not sure where the latest source code is for `quay.io/*-toolbox` images.
+
+1. [](#universal-blue-atomic-linux-distributions)
+   has its own customized podman/toolbx images `ghcr.io/ublue-os/*-toolbox`
+   which are based on `quay.io/*-toolbox`.
+   The source code is at
+   [ublue-os/toolboxes @ GitHub](https://github.com/ublue-os/toolboxes)
+   .
+
 ## DistroBox
 
 https://github.com/ranfdev/DistroShelf
 
 https://distrobox.it/#quick-start
+
+## References
+
+- [toolbox @ GitHub](https://github.com/containers/toolbox)

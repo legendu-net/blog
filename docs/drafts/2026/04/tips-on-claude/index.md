@@ -1,7 +1,7 @@
 ---
 title: Tips on Claude
 created: '2026-04-18T18:53:35.655987-07:00'
-date: '2026-08-02T18:33:36-07:00'
+date: '2026-08-03T00:49:40-07:00'
 authors:
   - bendu
 label: tips-on-claude
@@ -35,6 +35,14 @@ Works simiarly to [Gemini CLI](tips-on-google-gemini-cli).
    .
 
 ## General Tips
+
+1. The `@` symbol is useful in a few ways.
+
+- Include the content of another file in context files (e.g., CLAUDE.md)
+  so that you don't have to duplicate the content at multiple places.
+- Type in `@` within a live claude session brings up a dropdown list for you to select files.
+  This is handy,
+  which avoid typing long file names or copying/pasting file names.
 
 1. Use `ctrl + g` to edit the prompt using an external editor (`$EDITOR`).
 

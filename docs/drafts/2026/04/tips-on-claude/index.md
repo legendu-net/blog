@@ -1,7 +1,7 @@
 ---
 title: Tips on Claude
 created: '2026-04-18T18:53:35.655987-07:00'
-date: '2026-08-02T18:09:28-07:00'
+date: '2026-08-02T18:33:36-07:00'
 authors:
   - bendu
 label: tips-on-claude
@@ -44,6 +44,8 @@ Works simiarly to [Gemini CLI](tips-on-google-gemini-cli).
    See discussions in
    [claude cli voice input](https://share.gemini.google/j9U9cXKTfWRn)
    .
+
+1. Generate a long-live token using `claude setup-token`.
 
 ## Permissions
 

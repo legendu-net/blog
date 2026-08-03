@@ -1,7 +1,7 @@
 ---
 title: Tips on Claude
 created: '2026-04-18T18:53:35.655987-07:00'
-date: '2026-07-26T09:05:03-07:00'
+date: '2026-08-02T18:09:28-07:00'
 authors:
   - bendu
 label: tips-on-claude
@@ -35,6 +35,8 @@ Works simiarly to [Gemini CLI](tips-on-google-gemini-cli).
    .
 
 ## General Tips
+
+1. Use `ctrl + g` to edit the prompt using an external editor (`$EDITOR`).
 
 1. Use `/review` and `/ultra-review` to review code changes.
 

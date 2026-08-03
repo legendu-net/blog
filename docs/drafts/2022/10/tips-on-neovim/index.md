@@ -1,7 +1,7 @@
 ---
 title: Tips on Neovim
-created: 2022-10-16 19:54:05
-date: 2026-04-20 08:53:34.514431
+created: '2022-10-16T19:54:05-07:00'
+date: '2026-08-03T01:20:50-07:00'
 authors:
   - bendu
 label: tips-on-neovim
@@ -18,7 +18,9 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## Installation Using Homebrew on Linux/macOS (Recommended)
+## Installation
+
+### Using Homebrew on Linux/macOS (Recommended)
 
 ```
 brew install neovim
@@ -26,7 +28,7 @@ brew install neovim
 
 This is the recommended way to install Neovim.
 
-## Installation on Ubuntu
+### Ubuntu / Debian
 
 ```
 sudo apt update
@@ -50,6 +52,20 @@ Use Homebrew of AppImage instead if you want a newer version of Neovim.
    nvim --noplugin /path/to/large/text/file
    ```
 
+1. You can open a terminal tab within Neovim using `:term`.
+   Or use `:vsplit | term` to open a terminal in vertical split mode.
+   The default CWD of the terminal is the user's home directory.
+   You can change it using something like `:vsplit | term cs % && fish`.
+
+1. `NVIM_APPNAME` is an environment variable that allows you to
+   manage and switch between multiple, completely isolated Neovim configurations.
+   By changing this variable,
+   you change the subfolder name where Neovim looks for your configurations, plugins, caches, and state files.
+   Instead of defaulting to `~/.config/nvim`, it will target `~/.config/$NVIM_APPNAME`.
+   This can be extremly useful if you have to keep multiple Neovim configurations.
+   For example,
+   if you use Firenvim with Neovim and want to use a different configuration for it.
+
 ## Manage Language Servers
 
 ### Python
@@ -60,7 +76,7 @@ Use Homebrew of AppImage instead if you want a newer version of Neovim.
 
 ## Repeat
 
-- [Tips on AstroNvim](tips-on-astronvim) 
+- [Tips on AstroNvim](tips-on-astronvim)
 
 - [Adding dot-repeat to your Neovim plugin](https://gist.github.com/kylechui/a5c1258cd2d86755f97b10fc921315c3)
 

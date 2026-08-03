@@ -1,7 +1,7 @@
 ---
 title: Tips on the Fish Shell
 created: '2025-11-11T18:13:06-08:00'
-date: '2026-07-03T17:11:55-07:00'
+date: '2026-08-03T01:38:00-07:00'
 authors:
   - bendu
 label: tips-on-the-fish-shell
@@ -26,6 +26,17 @@ makes it easy to install and configure the fish shell.
 
 ```
 icon fish -ic
+```
+
+## Fish History
+
+Unlike bash/zsh,
+fish history commands are saved in a YAML file.
+
+```
+history
+
+history search --prefix env
 ```
 
 ## Key Bindings

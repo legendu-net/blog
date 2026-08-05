@@ -1,7 +1,7 @@
 ---
 title: Tips on the Fish Shell
 created: '2025-11-11T18:13:06-08:00'
-date: '2026-08-03T01:38:00-07:00'
+date: '2026-08-04T09:22:23-07:00'
 authors:
   - bendu
 label: tips-on-the-fish-shell
@@ -94,3 +94,7 @@ The fish shell provides built-in tools for lingting.
 
 1. [crazy-complete](https://github.com/crazy-complete/crazy-complete)
    helps generate completion scripts based on YAML defined completion rules.
+
+## References
+
+- [](#parallel-computing-in-fish)

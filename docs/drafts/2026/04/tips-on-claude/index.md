@@ -1,7 +1,7 @@
 ---
 title: Tips on Claude
 created: '2026-04-18T18:53:35.655987-07:00'
-date: '2026-08-03T00:57:36-07:00'
+date: '2026-08-05T23:17:23-07:00'
 authors:
   - bendu
 label: tips-on-claude
@@ -29,12 +29,15 @@ Works simiarly to [Gemini CLI](tips-on-google-gemini-cli).
 
 1. Runs in a sandboxed VM and cannot access local files (which limits its power).
 
-## [Claude Plugins](https://claude.com/plugins)
+## Claude Plugins
 
 1. [Claude Plugins](https://claude.com/plugins) (similar concept to Gemini extensions)
    .
 
 ## General Tips
+
+Claude Code cheatsheet
+https://devhints.io/claude-code
 
 1. Use `ctrl + g` to edit the prompt using an external editor (`$EDITOR`).
 

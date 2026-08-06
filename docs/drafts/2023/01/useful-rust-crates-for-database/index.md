@@ -1,7 +1,7 @@
 ---
 title: Useful Rust Crates for Database
 created: '2023-01-13T15:46:22-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-08-04T22:54:59-07:00'
 authors:
   - bendu
 label: useful-rust-crates-for-database

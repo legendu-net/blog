@@ -644,7 +644,9 @@ class Blogger:
         :param db: the path to the SQLite3 database file.
         """
         self._db = db if db else str(BASE_DIR / ".blogger.sqlite3")
-        self._conn = sqlite3.connect(self._db)
+        # A generous busy timeout lets concurrent blog.py instances queue on the
+        # write lock instead of failing with "database is locked".
+        self._conn = sqlite3.connect(self._db, timeout=30)
         self._conn.execute("PRAGMA journal_mode=WAL")
         self._create_vtable_posts()
         self._create_table_srps()
@@ -672,8 +674,10 @@ class Blogger:
 
     def reload_posts(self):
         """Reload posts into the SQLite3 database."""
-        self.delete_records(self.POSTS, "")
+        # Parse before deleting so that the write lock is not held while
+        # thousands of posts are read from disk.
         records = _parse_records()
+        self.delete_records(self.POSTS, "")
         logger.info("Inserting records into SQLite3 ...")
         for batch in tqdm(it.batched(records, 1000)):
             self.load_records(batch)
@@ -895,7 +899,13 @@ class Blogger:
         )
 
     def edit(self, paths: str | list[str], editor: str) -> None:
-        """Edit the specified posts using the specified editor."""
+        """Edit the specified posts using the specified editor.
+
+        Pending changes are committed first so that the SQLite write lock is not
+        held for the whole (possibly very long) interactive editing session,
+        which would block other blog.py instances.
+        """
+        self.commit()
         if isinstance(paths, str):
             paths = [paths]
         if not editor:
@@ -973,7 +983,11 @@ class Blogger:
 
     def convert(self, path: str) -> None:
         path_new = Post(path).parse().convert()
-        self.update_records(table=self.POSTS, paths=path, kvs={"path": path_new})
+        # The suffix changed, so srps has to be updated too; otherwise a
+        # follow-up edit/vim on the same index opens the old, gone path.
+        kvs = {"path": path_new}
+        self.update_records(table=self.SRPS, paths=path, kvs=kvs)
+        self.update_records(table=self.POSTS, paths=path, kvs=kvs)
 
     def empty_posts(self) -> None:
         """Load all empty posts into the table srps."""

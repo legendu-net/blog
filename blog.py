@@ -379,6 +379,7 @@ def search(blogger, args):
 def last(blogger, args):
     blogger.last(args.n)
     blogger.show(args.n)
+    blogger.commit()
 
 
 def add(blogger, args):
@@ -1149,6 +1150,7 @@ def convert(blogger, args):
     if args.files:
         for file in args.files:
             blogger.convert(file)
+    blogger.commit()
 
 
 def _subparse_convert(subparsers):

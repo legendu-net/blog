@@ -1,5 +1,12 @@
+import shlex
+import sqlite3
+import sys
+from argparse import Namespace
+from types import SimpleNamespace
+
 import pytest
 
+import blog
 import blogger
 from blogger import SITE, Blogger, Post
 
@@ -236,3 +243,86 @@ def test_extract_xrefs_ignores_non_post_absolute_urls(base_dir):
 def test_extract_xrefs_absolute_url_stops_at_label(base_dir):
     body = f"[a]({SITE}/articles/2021/04/post-a/extra)"
     assert _extract(base_dir, body) == [f"{SITE}/articles/2021/04/post-a"]
+
+
+POST_A = "docs/articles/2021/04/post-a/index.md"
+
+
+def test_busy_timeout_configured(base_dir):
+    bg = Blogger(db=str(base_dir / ".blogger.sqlite3"))
+    assert bg._conn.execute("PRAGMA busy_timeout").fetchone()[0] == 30000
+
+
+def test_edit_commits_before_launching_editor(env, monkeypatch):
+    # An editing session is unbounded, so no write transaction may be open
+    # while the editor runs.
+    bg, _ = env
+    seen = {}
+    # Replace the subprocess module as seen by blogger only, so that patching
+    # does not leak into anything else shelling out during the test.
+    fake_sp = SimpleNamespace(
+        run=lambda *_, **__: seen.update(txn=bg._conn.in_transaction)
+    )
+    monkeypatch.setattr(blogger, "sp", fake_sp)
+    bg.insert_records(Blogger.SRPS, Blogger.SRPS_COLS, [(POST_A, "Post A", "post-a")])
+    assert bg._conn.in_transaction
+    bg.edit([POST_A], editor="true")
+    assert seen["txn"] is False
+
+
+def test_second_process_can_write_while_editor_runs(env):
+    # A stand-in editor that writes to the same database from another process,
+    # i.e. what a second blog.py instance does while the first sits in NeoVim.
+    bg, base = env
+    db = str(base / ".blogger.sqlite3")
+    script = (
+        "import sqlite3;"
+        f"conn = sqlite3.connect({db!r}, timeout=2);"
+        f'conn.execute("INSERT INTO {Blogger.SRPS} ({Blogger.SRPS_COLS})'
+        " VALUES ('other', 'Other', 'other')\");"
+        "conn.commit()"
+    )
+    bg.insert_records(Blogger.SRPS, Blogger.SRPS_COLS, [(POST_A, "Post A", "post-a")])
+    # Blogger.edit runs the editor with check=True, so a locked-out child fails here.
+    bg.edit([POST_A], editor=shlex.join([sys.executable, "-c", script]))
+    bg.commit()
+    sql = "SELECT count(*) FROM srps WHERE path = 'other'"
+    assert bg._conn.execute(sql).fetchone()[0] == 1
+
+
+def test_convert_updates_srps_path(env):
+    bg, _ = env
+    bg.last(5)  # populate srps, as a search/last would before a convert
+    bg.convert(POST_A)
+    bg.commit()
+    sql = f"SELECT count(*) FROM {Blogger.SRPS} WHERE path = ?"
+    assert bg._conn.execute(sql, [POST_A.replace(".md", ".ipynb")]).fetchone()[0] == 1
+    assert bg._conn.execute(sql, [POST_A]).fetchone()[0] == 0
+
+
+def test_reload_posts_parses_before_deleting(env, monkeypatch):
+    bg, _ = env
+    sql = f"SELECT count(*) FROM {Blogger.POSTS}"
+    num_posts = bg._conn.execute(sql).fetchone()[0]
+
+    def _boom():
+        raise RuntimeError("parse failed")
+
+    monkeypatch.setattr(blogger, "_parse_records", _boom)
+    with pytest.raises(RuntimeError):
+        bg.reload_posts()
+    assert bg._conn.execute(sql).fetchone()[0] == num_posts
+
+
+def test_last_commits(env):
+    bg, base = env
+    sql = f"SELECT count(*) FROM {Blogger.SRPS}"
+    blog.last(bg, Namespace(n=5))
+    num_srps = bg._conn.execute(sql).fetchone()[0]
+    assert num_srps
+    # Only committed rows are visible to a separate connection.
+    conn = sqlite3.connect(str(base / ".blogger.sqlite3"))
+    try:
+        assert conn.execute(sql).fetchone()[0] == num_srps
+    finally:
+        conn.close()

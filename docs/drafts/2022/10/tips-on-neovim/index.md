@@ -1,7 +1,7 @@
 ---
 title: Tips on Neovim
 created: '2022-10-16T19:54:05-07:00'
-date: '2026-08-06T23:48:41-07:00'
+date: '2026-08-06T23:49:42-07:00'
 authors:
   - bendu
 label: tips-on-neovim
@@ -92,3 +92,5 @@ Use Homebrew of AppImage instead if you want a newer version of Neovim.
 - [Adding dot-repeat to your Neovim plugin](https://gist.github.com/kylechui/a5c1258cd2d86755f97b10fc921315c3)
 
 - [Better repeat #1025](https://github.com/neovim/neovim/issues/1025)
+
+- [Neovim ToggleTerm vs. :term Explained](https://share.gemini.google/rZZ5nAr6EEa1)

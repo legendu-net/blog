@@ -1,7 +1,7 @@
 ---
 title: Tips on Neovim
 created: '2022-10-16T19:54:05-07:00'
-date: '2026-08-03T01:27:38-07:00'
+date: '2026-08-06T23:48:41-07:00'
 authors:
   - bendu
 label: tips-on-neovim
@@ -52,15 +52,21 @@ Use Homebrew of AppImage instead if you want a newer version of Neovim.
    nvim --noplugin /path/to/large/text/file
    ```
 
-1. You can open a terminal tab within Neovim using `:term`.
-   Or use `:vsplit | term` to open a terminal in vertical split mode.
-   The default CWD of the terminal is the user's home directory.
-   You can change it using something like `:vsplit | term cs % && fish`.
-   This embedded terminal within Neovim is actually a Neovim buffer in the terminal mode.
-   You can escape (quit) the terminal model using `Ctrl-\ Ctrl-N`,
-   which allows you to manipulate it as a regualr (but read-only) Neovim buffer.
-   For example,
-   you can copy output of commands from the terminal buffer to another buffer.
+1. You can open terminals using the ToggleTerm.nvim plugin
+   (which comes with AstroNvim).
+   It is preferred to Neovim's built-in command `:term`.
+   As a matter of fact,
+   ToggleTerm.nvim is wrapper over the built-in feature `:term`
+   to make terminals more user fiendly and easier to manage.
+
+- `:term` opens a terminal with CWD being the user's home directory
+  while ToggleTerm.nvim opens a terminal within the same directory as the current buffer.
+
+- An embedded terminal within Neovim is actually a Neovim buffer in the terminal mode.
+  You can escape (quit) the terminal model using `Ctrl-\ Ctrl-N`,
+  which allows you to manipulate it as a regualr (but read-only) Neovim buffer.
+  For example,
+  you can copy output of commands from the terminal buffer to another buffer.
 
 1. `NVIM_APPNAME` is an environment variable that allows you to
    manage and switch between multiple, completely isolated Neovim configurations.

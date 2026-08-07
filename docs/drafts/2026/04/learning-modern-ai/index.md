@@ -1,7 +1,7 @@
 ---
 title: Learning Modern AI
-created: 2026-04-17 11:40:11.842740
-date: 2026-04-27 20:27:29.088865
+created: '2026-04-17T11:40:11.842740-07:00'
+date: '2026-08-06T21:22:27-07:00'
 authors:
   - bendu
 label: learning-modern-ai
@@ -29,6 +29,8 @@ tags:
 - [Massively Parallel Procrastination](https://blog.fsck.com/)
 
 - [Daniel Miessler's Blog](https://danielmiessler.com/blog/)
+
+- [Sanj Dev - Filtering Noise](https://sanj.dev/post/)
 
 ## Learning Platform
 

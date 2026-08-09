@@ -1,7 +1,7 @@
 ---
 title: Tips on Claude
 created: '2026-04-18T18:53:35.655987-07:00'
-date: '2026-08-05T23:17:23-07:00'
+date: '2026-08-08T00:58:38-07:00'
 authors:
   - bendu
 label: tips-on-claude
@@ -36,8 +36,7 @@ Works simiarly to [Gemini CLI](tips-on-google-gemini-cli).
 
 ## General Tips
 
-Claude Code cheatsheet
-https://devhints.io/claude-code
+[Claude Code cheatsheet](https://devhints.io/claude-code)
 
 1. Use `ctrl + g` to edit the prompt using an external editor (`$EDITOR`).
 
@@ -63,6 +62,22 @@ https://devhints.io/claude-code
    .
 
 1. Generate a long-live token using `claude setup-token`.
+
+## Agent Ochestration (Multi-model Mode)
+
+[Claude Code Opusplan Model Explained](https://share.gemini.google/KZRyzb2dj1a1)
+
+1. Claude Code has a `opusplan` model setting which uses Opus for planning and Sonnet for execution.
+   See [Claude Code Opusplan Model Explained](https://share.gemini.google/Y1onO6QlKg9y)
+   for details.
+   You cannot see opusplan in the interactive /model menu of the Claude Code CLI
+   because of a known discoverability bug:
+   the interface's display list omits it,
+   even though the underlying parser fully supports it.
+   To use it, bypass the visual picker menu and type `/model opusplan` directly into the terminal prompt.
+
+1. The command `/batch` allows you to research and plan a large-scale change,
+   then execute in in parallel across 5-30 isolated worktree agents that each open a PR.
 
 ## Permissions
 

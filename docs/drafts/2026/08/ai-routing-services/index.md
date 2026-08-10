@@ -1,7 +1,7 @@
 ---
 title: AI Routing Services
 created: '2026-08-04T19:44:42.449935-07:00'
-date: '2026-08-09T10:06:55-07:00'
+date: '2026-08-09T20:45:37-07:00'
 authors:
   - bendu
 label: ai-routing-services
@@ -28,7 +28,7 @@ tags:
 ```{list-table} 9Router vs OmniRoute Comparison
 ---
 header-rows: 1
-name: router-comparison-table
+name: 9router-omniroute-comparison-table
 ---
 * - Feature / Attribute
   - 9Router
@@ -47,10 +47,12 @@ name: router-comparison-table
   - Broader scope; includes Model Context Protocol (MCP) server support and handles advanced reasoning APIs.
 ```
 
-.. list-table::
-:widths: 25 35 40
-:header-rows: 1
-
+```{list-table} OmniRoute vs LiteLLM AI Gateway Comparison
+---
+widths: 25 35 40
+header-rows: 1
+name: omniroute-llm-comparison-table
+---
 - - Feature / Aspect
   - LiteLLM
   - OmniRoute
@@ -72,6 +74,7 @@ name: router-comparison-table
 - - Integrations
   - Python SDK, LangChain, LlamaIndex, LiteLLM Proxy.
   - Terminal/IDE agents (Claude Code, Cursor, OpenCode, Antigravity IDE, MCP servers).
+```
 
 [OmniRoute](https://github.com/diegosouzapw/OmniRoute)
 seems to be the best choice for local use

@@ -1,5 +1,6 @@
 #!.venv/bin/python3
 from argparse import ArgumentParser, Namespace
+import atexit
 import getpass
 import itertools as it
 import os
@@ -9,16 +10,19 @@ import subprocess as sp
 from dulwich import porcelain
 from dulwich.repo import Repo
 from loguru import logger
+from tqdm import tqdm
 from blogger import (
     BASE_DIR,
     ARTICLES,
     DRAFTS,
+    IPYNB,
     OUTDATED,
     Blogger,
     Post,
     SITE,
     add_spells_title as _add_spells_title,
     add_spells_tag as _add_spells_tag,
+    get_post_paths,
     get_vim,
     get_code,
     qmarks,
@@ -82,6 +86,26 @@ def option_files(subparser):
     """
     subparser.add_argument(
         "--files", nargs="+", dest="files", default=(), help="Paths to files."
+    )
+
+
+def option_indexes_flag(subparser):
+    """Add the option -i/--indexes.
+
+    Same purpose as :func:`option_indexes`, but as a flag rather than a
+    positional, for subcommands (e.g. ``ast``/``astag``) that already have
+    their own variadic positional argument.
+
+    :param subparser: A sub parser for command-line options.
+    """
+    subparser.add_argument(
+        "-i",
+        "--indexes",
+        dest="indexes",
+        nargs="+",
+        type=str,
+        default=(),
+        help=INDEXES_HELP,
     )
 
 
@@ -162,16 +186,31 @@ def option_editor(subparser):
 
 
 def option_all(subparser):
-    """Add the option --all.
+    """Add the option --all-srps.
 
     :param subparser: A sub parser for command-line options.
     """
     subparser.add_argument(
         "-a",
-        "--all",
+        "--all-srps",
         dest="all",
         action="store_true",
         help="Select all files in the search results.",
+    )
+
+
+def option_all_posts(subparser):
+    """Add the option --all-posts.
+
+    :param subparser: A sub parser for command-line options.
+    """
+    subparser.add_argument(
+        "-A",
+        "--all-posts",
+        dest="all_posts",
+        action="store_true",
+        help="Select all posts on disk (not just the search results). "
+        "Takes precedence over -a/--all-srps, indexes and --files.",
     )
 
 
@@ -257,6 +296,9 @@ def move(blogger, args):
 
 
 def _resolve_files(args: Namespace) -> None:
+    if "all_posts" in args and args.all_posts:
+        args.files = get_post_paths()
+        return
     if "all" in args and args.all:
         args.files = blogger.path(Blogger.SRPS, where="")
         return
@@ -337,16 +379,44 @@ def edit(blogger, args):
     blogger.commit()
 
 
-def add_spells_title(_, args):
+def add_spells_title(blogger, args):
     if len(args.words) % 2:
         raise ValueError("Words for spell corrections must be in pairs.")
     _add_spells_title(it.batched(args.words, 2))
+    _resolve_files(args)
+    if args.files:
+        for file in tqdm(args.files) if args.all_posts else args.files:
+            post = Post(file).parse()
+            blogger.update_title(post)
+            _flush(post)
+        blogger.commit()
+    else:
+        print(
+            "\nTip: this spell correction is not applied to any existing posts yet. "
+            "Pass -i/--indexes, --files, -a/--all-srps or -A/--all-posts to ast to "
+            "apply it now, or run './blog.py utitle <indexes>' later.\n"
+        )
 
 
-def add_spells_tag(_, args):
+def add_spells_tag(blogger, args):
     if len(args.words) % 2:
         raise ValueError("Words for spell corrections must be in pairs.")
-    _add_spells_tag(it.batched(args.words, 2))
+    pairs = list(it.batched(args.words, 2))
+    _add_spells_tag(pairs)
+    _resolve_files(args)
+    if args.files:
+        kvs = dict(pairs)
+        for file in tqdm(args.files) if args.all_posts else args.files:
+            post = Post(file).parse()
+            blogger.update_tags(post, kvs)
+            _flush(post)
+        blogger.commit()
+    else:
+        print(
+            "\nTip: this spell correction is not applied to any existing posts yet. "
+            "Pass -i/--indexes, --files, -a/--all-srps or -A/--all-posts to astag to "
+            "apply it now, or run './blog.py utag <indexes>' later.\n"
+        )
 
 
 def add_refs(blogger, args):
@@ -395,14 +465,27 @@ def add(blogger, args):
     blogger.commit()
 
 
+def _flush(post: Post) -> None:
+    """Write a post's pending changes to disk right away.
+
+    Post writes are otherwise deferred to interpreter exit, which keeps every
+    parsed post alive and unwritten until then; that does not scale to
+    --all-posts.
+    """
+    post.shutdown_hook()
+    atexit.unregister(post.shutdown_hook)
+
+
 def update_tags(blogger, args):
     if len(args.tags) % 2:
         raise ValueError("Tags for update must be in pairs.")
     _resolve_files(args)
     if args.files:
         kvs = dict(it.batched(args.tags, 2))
-        for file in args.files:
-            blogger.update_tags(file, kvs)
+        for file in tqdm(args.files) if args.all_posts else args.files:
+            post = Post(file).parse()
+            blogger.update_tags(post, kvs)
+            _flush(post)
     else:
         print("No file is specified for updating tags!\n")
     blogger.commit()
@@ -411,8 +494,10 @@ def update_tags(blogger, args):
 def update_title(blogger, args):
     _resolve_files(args)
     if args.files:
-        for file in args.files:
-            blogger.update_title(file)
+        for file in tqdm(args.files) if args.all_posts else args.files:
+            post = Post(file).parse()
+            blogger.update_title(post)
+            _flush(post)
     else:
         print("No file is specified for updating title!\n")
     blogger.commit()
@@ -607,11 +692,19 @@ def exec_notebook(blogger, args):
 
 
 def format_notebook(_, args):
-    # TODO: is this necessary?
-    # Can you use ruff to format notebooks? And if so, you can do this directly, right?
-    # _resolve_files(args)
-    cmd = f"black {BASE_DIR}"
-    sp.run(cmd, shell=True, check=True)
+    paths = [path for path in get_post_paths() if path.suffix == IPYNB]
+    failed = []
+    for path in paths:
+        result = sp.run(
+            ["uv", "run", "ruff", "format", str(path)], capture_output=True, text=True
+        )
+        if result.returncode != 0:
+            failed.append(path)
+            logger.warning("Failed to format {}:\n{}", path, result.stderr.strip())
+    if failed:
+        logger.warning(
+            "{} of {} notebook(s) could not be formatted.", len(failed), len(paths)
+        )
 
 
 def _subparse_format_notebook(subparsers):
@@ -622,9 +715,6 @@ def _subparse_format_notebook(subparsers):
         help=desc,
         description=desc,
     )
-    option_indexes(subparser_format_notebook)
-    option_files(subparser_format_notebook)
-    option_all(subparser_format_notebook)
     subparser_format_notebook.set_defaults(func=format_notebook)
 
 
@@ -672,6 +762,7 @@ def _subparse_update_tags(subparsers):
     option_indexes(subparser_utag)
     option_files(subparser_utag)
     option_all(subparser_utag)
+    option_all_posts(subparser_utag)
     subparser_utag.add_argument(
         "-t",
         "--tags",
@@ -694,6 +785,7 @@ def _subparse_update_title(subparsers):
     option_indexes(subparser_utitle)
     option_files(subparser_utitle)
     option_all(subparser_utitle)
+    option_all_posts(subparser_utitle)
     subparser_utitle.set_defaults(func=update_title)
 
 
@@ -786,6 +878,7 @@ def _subparse_info(subparsers):
     )
     option_indexes(subparser_info)
     option_all(subparser_info)
+    option_files(subparser_info)
 
     group = subparser_info.add_mutually_exclusive_group()
     group.add_argument(
@@ -964,6 +1057,10 @@ def _subparse_add_spells_title(subparsers):
     subparser_add_spells_title.add_argument(
         "words", nargs="+", help="Word pairs in the format w1 c1 w2 c2..."
     )
+    option_indexes_flag(subparser_add_spells_title)
+    option_files(subparser_add_spells_title)
+    option_all(subparser_add_spells_title)
+    option_all_posts(subparser_add_spells_title)
     subparser_add_spells_title.set_defaults(func=add_spells_title)
 
 
@@ -978,6 +1075,10 @@ def _subparse_add_spells_tag(subparsers):
     subparser_add_spells_tag.add_argument(
         "words", nargs="+", help="Word pairs in the format w1 c1 w2 c2..."
     )
+    option_indexes_flag(subparser_add_spells_tag)
+    option_files(subparser_add_spells_tag)
+    option_all(subparser_add_spells_tag)
+    option_all_posts(subparser_add_spells_tag)
     subparser_add_spells_tag.set_defaults(func=add_spells_tag)
 
 
@@ -1062,6 +1163,7 @@ def _subparse_match_title(subparsers):
     )
     option_indexes(subparser_match_post)
     option_all(subparser_match_post)
+    option_files(subparser_match_post)
     subparser_match_post.set_defaults(func=match_title)
 
 

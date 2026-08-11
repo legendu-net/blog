@@ -1,7 +1,7 @@
 ---
 title: Tips on Neovim
 created: '2022-10-16T19:54:05-07:00'
-date: '2026-08-06T23:49:42-07:00'
+date: '2026-08-09T21:22:40-07:00'
 authors:
   - bendu
 label: tips-on-neovim
@@ -59,14 +59,14 @@ Use Homebrew of AppImage instead if you want a newer version of Neovim.
    ToggleTerm.nvim is wrapper over the built-in feature `:term`
    to make terminals more user fiendly and easier to manage.
 
-- `:term` opens a terminal with CWD being the user's home directory
-  while ToggleTerm.nvim opens a terminal within the same directory as the current buffer.
+   - `:term` opens a terminal with CWD being the user's home directory
+     while ToggleTerm.nvim opens a terminal within the same directory as the current buffer.
 
-- An embedded terminal within Neovim is actually a Neovim buffer in the terminal mode.
-  You can escape (quit) the terminal model using `Ctrl-\ Ctrl-N`,
-  which allows you to manipulate it as a regualr (but read-only) Neovim buffer.
-  For example,
-  you can copy output of commands from the terminal buffer to another buffer.
+   - An embedded terminal within Neovim is actually a Neovim buffer in the terminal mode.
+     You can escape (quit) the terminal model using `Ctrl-\ Ctrl-N`,
+     which allows you to manipulate it as a regualr (but read-only) Neovim buffer.
+     For example,
+     you can copy output of commands from the terminal buffer to another buffer.
 
 1. `NVIM_APPNAME` is an environment variable that allows you to
    manage and switch between multiple, completely isolated Neovim configurations.

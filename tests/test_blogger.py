@@ -326,3 +326,58 @@ def test_last_commits(env):
         assert conn.execute(sql).fetchone()[0] == num_srps
     finally:
         conn.close()
+
+
+# --- update_title/update_tags --all-posts -----------------------------------
+
+
+def test_update_title_all_posts_updates_db(base_dir):
+    # get_post_paths() returns absolute paths, but Post._set_path normalizes
+    # them relative to BASE_DIR, matching what's stored in the posts table; if
+    # that normalization broke, the UPDATE below would silently match 0 rows.
+    base = base_dir
+    _write_post(base, "articles", "hello-world", "hello world", "Body.\n")
+    rel_path = "docs/articles/2021/04/hello-world/index.md"
+    bg = Blogger(db=str(base / ".blogger.sqlite3"))
+    bg.reload_posts()
+    bg.commit()
+    blog.update_title(bg, Namespace(indexes=(), files=(), all=False, all_posts=True))
+    sql = f"SELECT title FROM {Blogger.POSTS} WHERE path = ?"
+    assert bg._conn.execute(sql, [rel_path]).fetchone()[0] == "Hello World"
+
+
+def test_update_tags_all_posts_updates_db(base_dir):
+    base = base_dir
+    _write_post(base, "articles", "hello-world", "hello world", "Body.\n")
+    rel_path = "docs/articles/2021/04/hello-world/index.md"
+    bg = Blogger(db=str(base / ".blogger.sqlite3"))
+    bg.reload_posts()
+    bg.commit()
+    blog.update_tags(
+        bg,
+        Namespace(
+            indexes=(),
+            files=(),
+            all=False,
+            all_posts=True,
+            tags=("programming", "python"),
+        ),
+    )
+    sql = f"SELECT tags FROM {Blogger.POSTS} WHERE path = ?"
+    assert bg._conn.execute(sql, [rel_path]).fetchone()[0] == "|python|"
+
+
+def test_flush_writes_immediately(tmp_path, monkeypatch):
+    # Unlike base_dir, this does NOT neuter Post.shutdown_hook, so it exercises
+    # blog._flush()'s actual disk-write path rather than the deferred,
+    # write-at-interpreter-exit default.
+    base = tmp_path.resolve()
+    monkeypatch.setattr(blogger, "BASE_DIR", base)
+    monkeypatch.chdir(base)
+    path = _write_post(base, "articles", "flush-me", "flush me", "Body.\n")
+    post = Post(path).parse()
+    post.update_meta_field({"title": "Flushed"})
+    assert post._should_write
+    blog._flush(post)
+    assert not post._should_write
+    assert "title: Flushed" in path.read_text(encoding="utf-8")

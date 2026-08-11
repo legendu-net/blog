@@ -44,3 +44,34 @@ def test_parse_args_expands_indexes():
 def test_parse_args_invalid_index_exits():
     with pytest.raises(SystemExit):
         parse_args(["edit", "a"])
+
+
+@pytest.mark.parametrize("cmd", ["utitle", "utag"])
+@pytest.mark.parametrize("flag", ["-A", "--all-posts"])
+def test_parse_args_all_posts(cmd, flag):
+    args = parse_args([cmd, flag])
+    assert args.all_posts
+    assert not args.all
+
+
+@pytest.mark.parametrize("flag", ["-a", "--all-srps"])
+def test_parse_args_all_srps_renamed(flag):
+    assert parse_args(["utitle", flag]).all
+    assert parse_args(["trash", flag]).all
+
+
+def test_parse_args_all_still_unambiguous_prefix_elsewhere():
+    # "trash" only has --all-srps, so --all remains an unambiguous prefix.
+    assert parse_args(["trash", "--all"]).all
+
+
+def test_parse_args_all_ambiguous_on_utitle():
+    # utitle now has both --all-srps and --all-posts, so the bare --all
+    # prefix is ambiguous and must fail loudly rather than guess.
+    with pytest.raises(SystemExit):
+        parse_args(["utitle", "--all"])
+
+
+def test_parse_args_all_posts_not_available_elsewhere():
+    with pytest.raises(SystemExit):
+        parse_args(["trash", "-A"])

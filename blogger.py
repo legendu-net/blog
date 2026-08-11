@@ -67,7 +67,7 @@ def read_spells_title() -> dict[str, str]:
 
 
 def read_spells_tag() -> dict[str, str] | dict[str, str | list[str]]:
-    kvs = _read_spells(SPELLS_TITLE)
+    kvs = _read_spells(SPELLS_TITLE).copy()
     kvs.update(_read_spells(SPELLS_TAG))
     return kvs
 
@@ -78,6 +78,7 @@ def add_spells_title(pairs: Iterable[tuple[str, str]]) -> None:
     spells.sort(key=lambda x: x[0])
     with SPELLS_TITLE.open("w", encoding="utf-8") as fout:
         yaml.dump(dict(spells), fout)
+    _read_spells.cache_clear()
 
 
 def add_spells_tag(pairs: Iterable[tuple[str, str]]) -> None:
@@ -86,6 +87,7 @@ def add_spells_tag(pairs: Iterable[tuple[str, str]]) -> None:
     spells.sort(key=lambda x: x[0])
     with SPELLS_TAG.open("w", encoding="utf-8") as fout:
         yaml.dump(dict(spells), fout)
+    _read_spells.cache_clear()
 
 
 def extract_url_title(url: str) -> str:
@@ -715,6 +717,7 @@ class Blogger:
             dir_.mkdir(0o700, True, True)
         for path in paths:
             shutil.move(Path(path).parent, dir_)
+        self.delete_records(table=self.SRPS, paths=paths)
         self.delete_records(table=self.POSTS, paths=paths)
 
     def delete_records(self, table: str, paths: str | list[str]) -> None:
@@ -756,6 +759,11 @@ class Blogger:
             po = Path(path).parts
             old_doc_dir, yyyy, mm, label = po[1], po[2], po[3], po[4]
             post.change_doc_dir(doc_dir)
+            self.update_records(
+                table=self.SRPS,
+                paths=path,
+                kvs={"path": str(post.path)},
+            )
             self.update_records(
                 table=self.POSTS,
                 paths=path,
@@ -865,11 +873,9 @@ class Blogger:
         else:
             path = str(post.path)
         if post.update_title():
-            self.update_records(
-                table=self.POSTS,
-                paths=path,
-                kvs={"title": post.metadata["title"]},
-            )
+            title_kvs = {"title": post.metadata["title"]}
+            self.update_records(table=self.SRPS, paths=path, kvs=title_kvs)
+            self.update_records(table=self.POSTS, paths=path, kvs=title_kvs)
 
     def insert_records(
         self, table: str, fields: str | list[str], values: Sequence[tuple[Any, ...]]

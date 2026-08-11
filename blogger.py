@@ -184,24 +184,49 @@ def _parse_records() -> list[Record]:
     return [_parse_record(path) for path in get_post_paths()]
 
 
+_TITLE_LEADING_PUNCT = set("(\"'“‘")
+_TITLE_TRAILING_PUNCT = set(")\"'”’:,;.!?")
+
+
 def format_title(title):
-    # TODO: replacement at beginning and end might have bugs
-    # it's possible to have the same pattern in the middle
-    # and the replacements assumes space as the separator,
-    # which might not always be true.
-    # it sounds better to use regex.
-    # Easier to just update words.json to use regex.
     title = title.title()
-    for origin, replace in read_spells_title().items():
+    spells = read_spells_title()
+    # Multi-word origins (e.g. "Intellij Idea: IntelliJ IDEA") are corrected as
+    # whole space-bounded phrases first.
+    multi_word = {k: v for k, v in spells.items() if " " in k}
+    for origin, replace in multi_word.items():
         title = title.replace(f" {origin} ", f" {replace} ")
         if title.startswith(origin + " "):
             title = title.replace(origin + " ", replace + " ")
         if title.endswith(" " + origin):
             title = title.replace(" " + origin, " " + replace)
-    if title.startswith("the "):
-        title = "The " + title[4:]
-    if title.startswith("a "):
-        title = "A " + title[2:]
+    # Single-word origins are matched per whitespace-delimited token, so a word
+    # glued to punctuation (e.g. "AnalysisException:", "(UDF)") is still
+    # corrected. Hyphen/slash/dot/underscore-joined compounds are left as-is
+    # here since they're separate tokens by design; add a whole-token spell
+    # (e.g. "Java_Home: JAVA_HOME") for those.
+    single_word = {k: v for k, v in spells.items() if " " not in k}
+    tokens = title.split(" ")
+    first_word_idx = next((i for i, tok in enumerate(tokens) if tok), None)
+    for i, tok in enumerate(tokens):
+        core = tok
+        lead = ""
+        trail = ""
+        while core and core[0] in _TITLE_LEADING_PUNCT:
+            lead += core[0]
+            core = core[1:]
+        while core and core[-1] in _TITLE_TRAILING_PUNCT:
+            trail = core[-1] + trail
+            core = core[:-1]
+        if core in single_word:
+            core = single_word[core]
+        # The true first word of the title is always capitalized, even when a
+        # minor-word spell (e.g. "The: the", "A: a") lowered it and even when
+        # it's wrapped in leading punctuation (e.g. a quoted title).
+        if i == first_word_idx and core in ("the", "a"):
+            core = core.capitalize()
+        tokens[i] = lead + core + trail
+    title = " ".join(tokens)
     return title
 
 

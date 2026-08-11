@@ -16,6 +16,7 @@ from blogger import (
     ARTICLES,
     DRAFTS,
     IPYNB,
+    MARKDOWN,
     OUTDATED,
     Blogger,
     Post,
@@ -707,6 +708,22 @@ def format_notebook(_, args):
         )
 
 
+def format_markdown(_, args):
+    paths = [path for path in get_post_paths() if path.suffix == MARKDOWN]
+    failed = []
+    for path in paths:
+        result = sp.run(
+            ["uv", "run", "mdformat", str(path)], capture_output=True, text=True
+        )
+        if result.returncode != 0:
+            failed.append(path)
+            logger.warning("Failed to format {}:\n{}", path, result.stderr.strip())
+    if failed:
+        logger.warning(
+            "{} of {} markdown file(s) could not be formatted.", len(failed), len(paths)
+        )
+
+
 def _subparse_format_notebook(subparsers):
     desc = "Format notebooks."
     subparser_format_notebook = subparsers.add_parser(
@@ -716,6 +733,17 @@ def _subparse_format_notebook(subparsers):
         description=desc,
     )
     subparser_format_notebook.set_defaults(func=format_notebook)
+
+
+def _subparse_format_markdown(subparsers):
+    desc = "Format markdown files."
+    subparser_format_markdown = subparsers.add_parser(
+        "format_markdown",
+        aliases=["fmd"],
+        help=desc,
+        description=desc,
+    )
+    subparser_format_markdown.set_defaults(func=format_markdown)
 
 
 def _subparse_trust_notebooks(subparsers):
@@ -1368,6 +1396,7 @@ def parse_args(args=None, namespace=None) -> Namespace:
     _subparse_match_title(subparsers)
     _subparse_exec_notebook(subparsers)
     _subparse_format_notebook(subparsers)
+    _subparse_format_markdown(subparsers)
     _subparse_trust_notebooks(subparsers)
     _subparse_convert(subparsers)
     parsed_args = parser.parse_args(args=args, namespace=namespace)

@@ -340,6 +340,8 @@ def _subparse_trash(subparsers):
 def find_mismatch(blogger, args):
     blogger.find_mismatch()
     blogger.show(args.n)
+    if blogger.num_srps():
+        print("Run `./blog.py matchtitle --all-srp` to fix mismatches above.\n")
     blogger.commit()
 
 

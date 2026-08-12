@@ -1,35 +1,35 @@
 ---
-title: Subtle Differences Among Spark DataFrame and PySpark Dataframe
-created: 2020-02-19 16:44:50
-date: 2026-04-05 19:42:37.827522
+title: Subtle Differences among Spark DataFrame and PySpark DataFrame
+created: '2020-02-19T16:44:50-08:00'
+date: '2026-08-11T22:39:34-07:00'
 authors:
-- bendu
+  - bendu
 label: subtle-differences-among-spark-dataframe-and-pyspark-dataframe
 license: CC-BY-4.0
 tags:
-- programming
-- big data
-- Spark
-- PySpark
-- DataFrame
-- difference
+  - programming
+  - big data
+  - Spark
+  - PySpark
+  - DataFrame
+  - difference
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. Besides using the `col` function to reference a column,
-    Spark/Scala DataFrame supports using `$"col_name"` 
-    (based on implicit conversion and must have `import spark.implicit._`)
-    while PySpark DataFrame support using `df.col_name` 
-    (similar to what you can do with a pandas DataFrame).
+   Spark/Scala DataFrame supports using `$"col_name"`
+   (based on implicit conversion and must have `import spark.implicit._`)
+   while PySpark DataFrame support using `df.col_name`
+   (similar to what you can do with a pandas DataFrame).
 
-    |                     | Spark/Scala        | PySpark            |
-    |---------------------|--------------------|--------------------|
-    |                     | col\("col\_name"\) | col\("col\_name"\) |
-    | Implicit Conversion | $"col\_name"       | X                  |
-    | Dot reference       | X                  | df\.col\_name      |
+   |                     | Spark/Scala     | PySpark         |
+   | ------------------- | --------------- | --------------- |
+   |                     | col("col_name") | col("col_name") |
+   | Implicit Conversion | \$"col_name"    | X               |
+   | Dot reference       | X               | df.col_name     |
 
-    
-3. `===` (null safe equality comparison) is supported in Spark/Scala but not available in PySpark.
+1. `===` (null safe equality comparison) is supported in Spark/Scala but not available in PySpark.
 
 ## References
 

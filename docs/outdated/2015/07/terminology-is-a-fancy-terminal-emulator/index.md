@@ -1,7 +1,7 @@
 ---
-title: Terminology is a Fancy Terminal Emulator
-created: 2015-07-22 14:10:31
-date: 2026-04-14 19:40:25.532474
+title: Terminology Is a Fancy Terminal Emulator
+created: '2015-07-22T14:10:31-07:00'
+date: '2026-08-11T22:19:34-07:00'
 authors:
   - bendu
 label: terminology-is-a-fancy-terminal-emulator

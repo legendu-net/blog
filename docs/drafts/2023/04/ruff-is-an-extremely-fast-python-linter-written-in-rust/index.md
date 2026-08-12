@@ -1,7 +1,7 @@
 ---
-title: Ruff Is An Extremely Fast Python Linter Written in Rust
-created: 2023-04-01 18:21:35
-date: 2026-04-13 23:14:32.063574
+title: Ruff Is an Extremely Fast Python Linter Written in Rust
+created: '2023-04-01T18:21:35-07:00'
+date: '2026-08-11T22:19:20-07:00'
 authors:
   - bendu
 label: ruff-is-an-extremely-fast-python-linter-written-in-rust

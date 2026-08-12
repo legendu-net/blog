@@ -1,7 +1,7 @@
 ---
-title: Tips on Torchvision
-created: 2020-01-07 09:50:47
-date: 2026-04-15 19:27:01.106877
+title: Tips on TorchVision
+created: '2020-01-07T09:50:47-08:00'
+date: '2026-08-11T22:19:27-07:00'
 authors:
   - bendu
 label: tips-on-torchvision

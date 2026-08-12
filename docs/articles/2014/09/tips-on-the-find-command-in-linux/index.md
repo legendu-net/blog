@@ -1,23 +1,24 @@
 ---
-title: Tips on the find command in Linux
-created: 2014-09-06 09:43:30
-date: 2026-04-05 19:42:37.455686
+title: Tips on the find Command in Linux
+created: '2014-09-06T09:43:30-07:00'
+date: '2026-08-11T22:30:47-07:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-the-find-command-in-linux
 license: CC-BY-4.0
 tags:
-- Linux
-- find
-- tips
-- search
-- locate
+  - Linux
+  - find
+  - tips
+  - search
+  - locate
 ---
+
 ## Better Alternatives to `find`
 
 There are some better alternatives to find.
 The Python module `pathlib` is the most suitable one for relatively complex jobs.
-`fd`, `ripgrep`, `fselect` and `osquery` 
+`fd`, `ripgrep`, `fselect` and `osquery`
 are other alternatives.
 
 <table class="comparison-table">
@@ -102,139 +103,177 @@ are other alternatives.
 </table>
 
 ## Example Usages
+
 ### Search Files By Name
 
-1. Find all files with the extension ".out" in the current directory and its subdirectory, 
-    and then make them executable.
+1. Find all files with the extension ".out" in the current directory and its subdirectory,
+   and then make them executable.
 
-        :::bash
-        find . -type f -iname *.out -exec chmod +x '{}' \;
-        # or you can use 
-        find . -type f -iname *.out -print0 | xargs -0 chmod +x
+   ```
+    :::bash
+    find . -type f -iname *.out -exec chmod +x '{}' \;
+    # or you can use 
+    find . -type f -iname *.out -print0 | xargs -0 chmod +x
+   ```
 
+1. Find files whose names contain "conflicted" and remove them.
 
-2. Find files whose names contain "conflicted" and remove them.
+   ```
+    :::bash
+    find . -iname '*conflicted*' -print0 | xargs -0 rm
+   ```
 
-        :::bash
-        find . -iname '*conflicted*' -print0 | xargs -0 rm
+1. Find Python scripts in the current directory recursively
+   but ignore those under directories with the name `.ipynb_checkpoints`.
 
-3. Find Python scripts in the current directory recursively
-    but ignore those under directories with the name `.ipynb_checkpoints`.
-
-        :::bash
-        find . -type f -iname '*.py' -not -path '*/.ipynb_checkpoints/*'
+   ```
+    :::bash
+    find . -type f -iname '*.py' -not -path '*/.ipynb_checkpoints/*'
+   ```
 
 ### Search Files by Size
 
 1. Find files with 0 size and delete them.
 
-        :::bash
-        find /path/to/files -size 0 -ok -exec rm {} \;
-        # or you can use
-        find /path/to/files -size 0 -ok | xargs rm 
+   ```
+    :::bash
+    find /path/to/files -size 0 -ok -exec rm {} \;
+    # or you can use
+    find /path/to/files -size 0 -ok | xargs rm 
+   ```
 
+1. Find empty directories.
 
-2. Find empty directories. 
+   ```
+    :::bash
+    find / -type d -empty
+   ```
 
-        :::bash
-        find / -type d -empty
+1. Find files greater than 1G.
 
+   ```
+    :::bash
+    find . -xdev -type f -size +1G
+   ```
 
-3. Find files greater than 1G.
+1. First find files and then pass them to other commands is a very useful trick.
+   For example,
+   you can use the following command to find all R scripts containing the word `paste`.
 
-        :::bash
-        find . -xdev -type f -size +1G
-
-
-4. First find files and then pass them to other commands is a very useful trick.
-    For example, 
-    you can use the following command to find all R scripts containing the word `paste`.
-
-        :::bash
-        find . -type f -iname '*.r' | grep --color=auto paste
+   ```
+    :::bash
+    find . -type f -iname '*.r' | grep --color=auto paste
+   ```
 
 ### Search Files by Time
 
 1. Find files created with in 60 minutes.
 
-        :::bash
-        find . -cmin 60
+   ```
+    :::bash
+    find . -cmin 60
+   ```
 
-2. Find files more than 30 days ago
-        
-        :::bash
-        find . -ctime +30
+1. Find files more than 30 days ago
 
-3. Find file less than 30 days ago.
+   ```
+    :::bash
+    find . -ctime +30
+   ```
 
-        :::bash
-        find . -ctime -30
+1. Find file less than 30 days ago.
 
-4. Find files that are exactly 30 days ago.
+   ```
+    :::bash
+    find . -ctime -30
+   ```
 
-        :::bash
-        find . -ctime 30
+1. Find files that are exactly 30 days ago.
 
-2. Find all files modified on the June 7, 2007 in the current directory.
+   ```
+    :::bash
+    find . -ctime 30
+   ```
 
-        :::bash
-        find . -type f -newermt 2007-06-07 ! -newermt 2007-06-08
+1. Find all files modified on the June 7, 2007 in the current directory.
 
+   ```
+    :::bash
+    find . -type f -newermt 2007-06-07 ! -newermt 2007-06-08
+   ```
 
-3. Find all files accessed on the Sep 29, 2008 in the current directory.
+1. Find all files accessed on the Sep 29, 2008 in the current directory.
 
-        :::bash
-        find . -type f -newerat 2008-09-29 ! -newerat 2008-09-30
+   ```
+    :::bash
+    find . -type f -newerat 2008-09-29 ! -newerat 2008-09-30
+   ```
 
-4. Find files which had their permission changed on the same day.
+1. Find files which had their permission changed on the same day.
 
-        :::bash
-        find . -type f -newerct 2008-09-29 ! -newerct 2008-09-30
+   ```
+    :::bash
+    find . -type f -newerct 2008-09-29 ! -newerct 2008-09-30
+   ```
 
 ### Search Files by Type
 
 1. Find broken symbolic links.
 
-        :::bash
-        find . -xtype l
-        # or
-        find -L . -type l
+   ```
+    :::bash
+    find . -xtype l
+    # or
+    find -L . -type l
+   ```
 
-2. Find executable files in current directory 
-        
-        :::bash
-        find .  -maxdepth 1 -type f -executable
+1. Find executable files in current directory
 
-3. Check file type of all files under the current directory.
+   ```
+    :::bash
+    find .  -maxdepth 1 -type f -executable
+   ```
 
-        :::bash
-        find . -type f | xargs file
+1. Check file type of all files under the current directory.
+
+   ```
+    :::bash
+    find . -type f | xargs file
+   ```
 
 ### Search Files by User Permission
 
 1. Find files that belong to a user but writable by its group or other people.
 
-        :::bash
-        find /path/to/file -user user1 -perm /022
+   ```
+    :::bash
+    find /path/to/file -user user1 -perm /022
+   ```
 
-    - `-perm mode`: File's permission bits are exactly mode (octal or symbolic).
-    - `-perm -mode`: All  of  the  permission bits mode are set for the file. 
-    - `-perm /mode`: Any of the permission bits mode are set for the file. 
+   - `-perm mode`: File's permission bits are exactly mode (octal or symbolic).
+   - `-perm -mode`: All of the permission bits mode are set for the file.
+   - `-perm /mode`: Any of the permission bits mode are set for the file.
 
-2. The following command finds all files that readable or writable by the group or (readable or writable) by others.
+1. The following command finds all files that readable or writable by the group or (readable or writable) by others.
 
-        :::bash
-        find /path/to/file -user user1 -perm /066
+   ```
+    :::bash
+    find /path/to/file -user user1 -perm /066
+   ```
 
-3. The following command find all files that readable and writable by the group and (readable and writable) by others.
+1. The following command find all files that readable and writable by the group and (readable and writable) by others.
 
-        :::bash
-        find /path/to/file -user user1 -perm -066
+   ```
+    :::bash
+    find /path/to/file -user user1 -perm -066
+   ```
 
-4. The following command find all files that readable or writable by the group and (readable or writable) by others.
+1. The following command find all files that readable or writable by the group and (readable or writable) by others.
 
-        :::bash
-        find /path/to/file -user user1 -perm /060 -perm /006
+   ```
+    :::bash
+    find /path/to/file -user user1 -perm /060 -perm /006
+   ```
 
 ## References
 

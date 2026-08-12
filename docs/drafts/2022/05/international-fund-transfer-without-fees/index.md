@@ -1,7 +1,7 @@
 ---
-title: International Fund Transfer Without Fees
-created: 2022-05-12 11:36:40
-date: 2026-04-13 23:30:34.527039
+title: International Fund Transfer without Fees
+created: '2022-05-12T11:36:40-07:00'
+date: '2026-08-11T22:39:34-07:00'
 authors:
   - bendu
 label: international-fund-transfer-without-fees

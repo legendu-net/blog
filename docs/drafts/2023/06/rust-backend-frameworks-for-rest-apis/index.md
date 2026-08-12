@@ -1,7 +1,7 @@
 ---
-title: Rust Backend Frameworks for Rest APIs
-created: 2023-06-11 10:03:30
-date: 2026-04-13 23:14:29.296099
+title: Rust Backend Frameworks for REST APIs
+created: '2023-06-11T10:03:30-07:00'
+date: '2026-08-11T22:19:20-07:00'
 authors:
   - bendu
 label: rust-backend-frameworks-for-rest-apis

@@ -1,7 +1,7 @@
 ---
-title: "Group by vs Over Partition in SQL"
-created: 2018-09-12 18:40:34
-date: 2019-09-12 18:40:34
+title: GROUP BY vs OVER PARTITION in SQL
+created: '2018-09-12T18:40:34-07:00'
+date: '2026-08-11T22:19:30-07:00'
 authors:
   - bendu
 label: group-by-vs-over-partition-in-sql
@@ -17,14 +17,13 @@ tags:
 
 [SQL Server: Difference between PARTITION BY and GROUP BY](http://stackoverflow.com/questions/2404565/sql-server-difference-between-partition-by-and-group-by)
 
-1. `group by` alwasy aggreates values. 
-    That is `group by` alwasy reduces a group of values to 1 value.
-    Hoever, `analytics_function() over(partition by column)` does not aggreage.
-    It returns a value for each record in the group.
-    Even if an aggregation function is applied and returns only 1 value,
-    this value is returned for each value in the group.
-    real example, meta_cat, sub_cat, want to find all sub_cat that have multiple meta_cat, over partition is an easier way
-
+1. `group by` alwasy aggreates values.
+   That is `group by` alwasy reduces a group of values to 1 value.
+   Hoever, `analytics_function() over(partition by column)` does not aggreage.
+   It returns a value for each record in the group.
+   Even if an aggregation function is applied and returns only 1 value,
+   this value is returned for each value in the group.
+   real example, meta_cat, sub_cat, want to find all sub_cat that have multiple meta_cat, over partition is an easier way
 
 They are used in different places. group by modifies the entire query, like:
 
@@ -38,6 +37,7 @@ group by
     customerId
 
 ```
+
 But partition by just works on a window function, like row_number:
 
 ```SQL
@@ -47,7 +47,7 @@ from
     Orders
 ```
 
-A group by normally reduces the number of rows returned 
-by rolling them up and calculating averages or sums for each row. 
-partition by does not affect the number of rows returned, 
+A group by normally reduces the number of rows returned
+by rolling them up and calculating averages or sums for each row.
+partition by does not affect the number of rows returned,
 but it changes how a window function's result is calculated.

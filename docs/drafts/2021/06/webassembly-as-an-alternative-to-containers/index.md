@@ -1,7 +1,7 @@
 ---
-title: Webassembly as An Alternative to Containers
-created: 2021-06-10 09:39:25
-date: 2026-04-13 23:15:01.500259
+title: WebAssembly as an Alternative to Containers
+created: '2021-06-10T09:39:25-07:00'
+date: '2026-08-11T22:19:23-07:00'
 authors:
   - bendu
 label: webassembly-as-an-alternative-to-containers

@@ -1,20 +1,24 @@
+10-Digit: 10-digit
 3d: 3D
 A: a
 A-Share: A-share
 Abi: ABI
 Abook: ABook
 Accesscontrolexception: AccessControlException
+Add Level: Add level
 Add-Ons: Add-ons
 Aerofs: AeroFS
 Ai: AI
 Ai-Based: AI-based
 Ai-First: AI-first
 Aix: AIX
+Alternative To Find: Alternative to find
 Aml: AML
 Analysisexception: AnalysisException
 Anbox: AnBox
 And: and
 Anova: ANOVA
+Anti-Money: Anti-money
 Antix: antiX
 Antlr4: ANTLR4
 Api: API
@@ -24,6 +28,7 @@ Appimages: AppImages
 Appscript: AppScript
 Ar1X: AR1X
 Argparse: argparse
+Arp-Scan: arp-scan
 Arraylist: ArrayList
 Arrayqualitymetrics: arrayQualityMetrics
 Arrowtypeerror: ArrowTypeError
@@ -52,19 +57,25 @@ Buildkit: BuildKit
 Bus: BUS
 But: but
 By: by
+Cargo-Udeps: cargo-udeps
 Centos: CentOS
 Chromeos: ChromeOS
 Ci/Cd: CI/CD
 Cicd: CICD
 Cli: CLI
+Client-Server: Client-server
 Collections.Counter: collections.Counter
 Combinatoricsutils: CombinatoricsUtils
 Command-Line: Command-line
+Conda-Pack: conda-pack
 Cosmic: COSMIC
+Could Not Find Any Configured Addresses: Could not find any configured addresses
 Cpp: C++
 Cpu: CPU
 Cran: CRAN
 Crashloopbackoff: CrashLoopBackOff
+Crazy-Complete: crazy-complete
+Cross-Platform: Cross-platform
 Crosvm: crosvm
 Crunchbang: CrunchBang
 Csv: CSV
@@ -77,15 +88,18 @@ Dataframes: DataFrames
 Datetime: datetime
 Dbeaver: dbeaver
 Dc: DC
+Dclong/Jupyterhub-Ds: dclong/jupyterhub-ds
 Deepdiff: DeepDiff
 Dict: dict
 Diy: DIY
 Dns: DNS
+Docker-Py: docker-py
 Dockerhub: DockerHub
 Dsl: DSL
 Dt: DT
 Ec2: EC2
 Eps: EPS
+Error Expected Item Found Let: error expected item found let
 Error[E0554]: error[E0554]
 Etrade: eTrade
 Eval: eval
@@ -96,13 +110,18 @@ Fdr: FDR
 Featuretools: FeatureTools
 Ffmpeg: FFmpeg
 Filepath: filepath
-Firenvim: FireNVim
+Filter Function: filter Function
+Find Command: find Command
+FireNVim: Firenvim
+FireNvim: Firenvim
+Fit_Transform: fit_transform
 For: for
 Forward: forward
 From: from
 Fs: FS
 Fselect: fselect
 Ftp: FTP
+Full-Text: Full-text
 Fuse: fuse
 Fzf: fzf
 Gat: GAT
@@ -126,12 +145,15 @@ Gpt-2: GPT-2
 Gpu: GPU
 Graphql: GraphQL
 Grep: grep
+Group By: GROUP BY
+Group-By: Group-by
 Groupby: GroupBy
 Grpc: gRPC
 Grub: GRUB
 Gsl: GSL
 Gui: GUI
 Gui-Based: GUI-based
+Hands-On: Hands-on
 Hashlib: hashlib
 Hashmap: HashMap
 Hdfs: HDFS
@@ -152,14 +174,17 @@ Ide: IDE
 Ideavim: IdeaVim
 Ides: IDEs
 Idx: IDX
+Ifelse: ifelse
 Ifmain: ifmain
 Illegalargumentexception: IllegalArgumentException
 Imagechops: ImageChops
 Iml: IML
 Importerror: ImportError
 In: in
+Include Is: include Is
 Inotify: inotify
 Insertoperationconflictexception: InsertOperationConflictException
+Intellij: IntelliJ
 Intellij Idea: IntelliJ IDEA
 Into: into
 Invalidinputexception: InvalidInputException
@@ -204,12 +229,15 @@ Krangl: krangl
 Lapack: LAPACK
 Latex: LaTeX
 Lazyframe: LazyFrame
+Liblua5.1-Luv.So.0: liblua5.1-luv.so.0
 Libreoffice: LibreOffice
 Lightgbm: LightGBM
+List Collection: list Collection
 Litellm: LiteLLM
 Llm: LLM
 Llms: LLMs
 Ln: ln
+Logging Module: logging Module
 Lru: lru
 Ls: ls
 Lstm: LSTM
@@ -225,6 +253,8 @@ Mkshell: mkShell
 Ml: ML
 Mllib: MLlib
 Mobaxterm: MobaXterm
+Module Random: Module random
+Module Requests: Module requests
 Modulenotfounderror: ModuleNotFoundError
 Mongodb: MongoDB
 Moviepy: MoviePy
@@ -239,7 +269,6 @@ Namedtuple: namedtuple
 Nbconvert: nbconvert
 Nbdime: nbdime
 NeoVim: Neovim
-Neovim: NeoVim
 Networkx: NetworkX
 Nfs: NFS
 Ngrok: ngrok
@@ -250,6 +279,7 @@ Nodejs: NodeJS
 Nomachine: NoMachine
 Noscript: NoScript
 Notebooklm: NotebookLM
+Notebooks.Ai: notebooks.ai
 Notifiers: notifiers
 Npm: npm
 Ntfs: NTFS
@@ -268,14 +298,15 @@ Opencv: OpenCV
 Openfaas: OpenFaaS
 Or: or
 Os: OS
+Os.Path: os.path
 Osquery: osquery
 Outofmemoryerror: OutOfMemoryError
+Over Partition: OVER PARTITION
 Packagekitd: PackageKitD
 Pandas: pandas
 Pandas.Series: pandas.Series
 Pandas_Market_Calendars: pandas_market_calendars
 Pandas_Udf: pandas_udf
-Path: PATH
 Pathlib.Path: pathlib.Path
 Pcie: PCIe
 Pdf: PDF
@@ -284,6 +315,7 @@ Pdftk: pdftk
 Pdftotext: pdftotext
 Pex: pex
 Pexpect: pexpect
+Phoronix-Test-Suite: phoronix-test-suite
 Php: PHP
 Pip: pip
 Pk: PK
@@ -293,6 +325,7 @@ Png: PNG
 Pos: POS
 Ppa: PPA
 Ppt: PPT
+Pre-Commit: pre-commit
 Pre-Owned: Pre-owned
 Println: println
 Projectlibre: ProjectLibre
@@ -330,25 +363,31 @@ Randomdatagenerator: RandomDataGenerator
 Rdd: RDD
 Rdds: RDDs
 Re: re
+Re.Match: re.match
+Real-Time: Real-time
 Recordmydesktop: RecordMyDesktop
 Recurssionerror: RecurssionError
 Refcell: RefCell
-Rename: rename
-Requests: requests
+Requests Module: requests Module
 Rest: REST
 Restful: RESTful
 Restructuretext: RestructureText
+Right-Click: Right-click
+Ripgrep: ripgrep
 Rjava: rJava
 Rjava.So: rJava.so
 Rm: rm
 Rmarkdown: RMarkdown
 Rng: RNG
 Rngs: RNGs
+Row-Based: Row-based
+Roxygen2: roxygen2
 Rpc: RPC
 Rpm-Ostree: rpm-ostree
 Rsnapshot: rsnapshot
 Rstudio: RStudio
 Rsync: rsync
+Rule-Base: Rule-base
 Rule-Based: Rule-based
 Runtimeerror: RuntimeError
 Runtimeexception: RuntimeException
@@ -359,34 +398,40 @@ Rv: RV
 Sagemath: SageMath
 Sas: SAS
 Sbt: sbt
+Scala.Math: scala.math
 Scalajs: ScalaJS
+Scikit-Image: scikit-image
 Scikit-Learn: scikit-learn
 Sed: sed
-Select: select
+Select Function: select Function
 Self-Hosted: Self-hosted
 Serde-Yaml: serde-yaml
-Set: set
+Serde_Yaml: serde_yaml
+Set Collection: set Collection
 Shutil: shutil
 Sigbus: SIGBUS
 Slide: SLIDE
 Snakeyaml: SnakeYaml
 Spacevim: SpaceVim
+Spark-Shell: spark-shell
 Spark-shell: spark-shell
 Spark.Driver.Maxresultsize: spark.driver.maxResultSize
 Sparkcontext: SparkContext
 Sql: SQL
 Sqlite: SQLite
 Sqlite3: SQLite3
+Sqlite3-Jdbc: sqlite3-jdbc
 Sqlx: SQLX
 Ssd: SSD
 Ssh: SSH
+Ssh-Copy-Id: ssh-copy-id
 Ssh-Keygen: ssh-keygen
 Sshfs: sshfs
 Sshuttle: sshuttle
 Ssl: SSL
+Std::Set_Difference: std::set_difference
 Stirling-Pdf: Stirling-PDF
 Stringi: stringi
-Submodule: submodule
 Subprocess: subprocess
 Sudo: sudo
 System.Identityhashcode: System.identityHashCode
@@ -400,12 +445,16 @@ Teamviewer: TeamViewer
 Tempfile: tempfile
 Tensorflow: TensorFlow
 Texstudio: TeXstudio
+Text-Based: Text-based
 Textwrap: textwrap
 The: the
+Third-Party: Third-party
 Threading: threading
 Tinyproxy: TinyProxy
+Tips On Yarn: Tips on yarn
 Tmux: tmux
 To: to
+To/From: to/from
 Toml: TOML
 Tomlkit: tomlkit
 Top: top
@@ -414,9 +463,11 @@ Torch.Nn.Module: torch.nn.Module
 Torchvision: TorchVision
 Tpu: TPU
 Tqdm: tqdm
+Try/Except/Finally: try/except/finally
 Tsv: TSV
 Tty: TTY
 Tvm: TVM
+Ty Is: ty Is
 Typeerror: TypeError
 Typescript: TypeScript
 Udf: UDF
@@ -426,13 +477,18 @@ Ulimit: ulimit
 Uml: UML
 Unittest: unittest
 Ups: UPS
+Upstart: upstart
 Uri: URI
 Urisyntaxexception: UriSyntaxException
 Url: URL
 Urllib: urllib
 Us: US
+Use Q: Use q
+User-Defined: User-defined
+User-Written: User-written
 Userscript: UserScript
 Userscripts: UserScripts
+Using Rename: Using rename
 Utf-8: UTF-8
 Uuid: UUID
 Uv: uv
@@ -441,7 +497,7 @@ Vb/Vb.Net: VB/VB.net
 Vba: VBA
 Vbscript: VBScript
 Viewfs: ViewFs
-Vim/Neovim: Vim/NeoVim
+Vim/NeoVim: Vim/Neovim
 Virtualbox: VirtualBox
 Virtualvm: VirtualVM
 Visualize-Sqlite: visualize-sqlite
@@ -450,6 +506,7 @@ Vms: VMs
 Vnc: VNC
 Vpn: VPN
 Vs: vs
+Vs Transform: vs transform
 Wa: WA
 Wasi: WASI
 Wasm: WASM
@@ -470,11 +527,15 @@ Xgboost: XGBoost
 Xmind: XMind
 Yaml: YAML
 Yapf: yapf
-Yarn: yarn
+Ydata-Profiling: ydata-profiling
 Youcompleteme: YouCompleteMe
 Yyyymm: YYYYMM
+Zero-Length: Zero-length
 Zetasql: ZetaSQL
 Zoneinfo: ZoneInfo
+__Call__: __call__
+'`#![Feature]`': '`#![feature]`'
+'`Strings`': '`strings`'
 ghosttext: GhostText
 neoVim: Neovim
 neovim: Neovim

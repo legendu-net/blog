@@ -1,7 +1,7 @@
 ---
-title: Parallel RNGs With Rayon in Rust
+title: Parallel RNGs with Rayon in Rust
 created: '2023-07-05T08:42:27-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-08-11T22:19:16-07:00'
 authors:
   - bendu
 label: parallel-rngs-with-rayon-in-rust

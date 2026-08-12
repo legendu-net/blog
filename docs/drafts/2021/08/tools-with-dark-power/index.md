@@ -1,7 +1,7 @@
 ---
-title: Tools With Dark Power
+title: Tools with Dark Power
 created: '2021-08-08T11:56:50-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-08-11T22:19:23-07:00'
 authors:
   - bendu
 label: tools-with-dark-power

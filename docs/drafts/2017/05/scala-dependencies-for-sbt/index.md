@@ -1,7 +1,7 @@
 ---
-title: Scala Dependencies for SBT
-created: 2017-05-22 12:38:10
-date: 2026-04-15 19:27:01.355333
+title: Scala Dependencies for sbt
+created: '2017-05-22T12:38:10-07:00'
+date: '2026-08-11T22:19:31-07:00'
 authors:
   - bendu
 label: scala-dependencies-for-sbt

@@ -1,7 +1,7 @@
 ---
-title: Sorting At Compile Time in Rust
-created: 2023-06-20 00:23:43
-date: 2026-04-13 23:14:29.454621
+title: Sorting at Compile Time in Rust
+created: '2023-06-20T00:23:43-07:00'
+date: '2026-08-11T22:19:20-07:00'
 authors:
   - bendu
 label: sorting-at-compile-time-in-rust

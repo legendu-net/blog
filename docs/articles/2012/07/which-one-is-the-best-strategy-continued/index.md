@@ -1,7 +1,7 @@
 ---
-title: Which One Is the Best Strategy? (continued)
-created: 2012-07-30 15:13:01
-date: 2026-04-13 23:33:06.685666
+title: Which One Is the Best Strategy? (Continued)
+created: '2012-07-30T15:13:01-07:00'
+date: '2026-08-11T22:19:15-07:00'
 authors:
   - bendu
 label: which-one-is-the-best-strategy-continued

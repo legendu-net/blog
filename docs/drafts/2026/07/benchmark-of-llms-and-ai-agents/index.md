@@ -1,7 +1,7 @@
 ---
-title: Benchmark of Llms and AI Agents
+title: Benchmark of LLMs and AI Agents
 created: '2026-07-21T23:01:21.529121-07:00'
-date: '2026-08-08T22:10:04-07:00'
+date: '2026-08-11T22:19:18-07:00'
 authors:
   - bendu
 label: benchmark-of-llms-and-ai-agents

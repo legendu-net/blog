@@ -1,7 +1,7 @@
 ---
-title: Things to Do After Installing Linux
+title: Things to Do after Installing Linux
 created: '2016-05-04T20:59:32-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-08-11T22:39:32-07:00'
 authors:
   - bendu
 label: things-to-do-after-installing-linux

@@ -1,7 +1,7 @@
 ---
-title: Shopping At Homedepot
-created: 2021-09-29 01:17:39
-date: 2026-04-15 19:27:00.872076
+title: Shopping at Homedepot
+created: '2021-09-29T01:17:39-07:00'
+date: '2026-08-11T22:19:22-07:00'
 authors:
   - bendu
 label: shopping-at-homedepot

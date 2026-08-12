@@ -1,7 +1,7 @@
 ---
-title: Automate Google Workspace Using Appscript
-created: 2026-05-02 13:42:14.985312
-date: 2026-05-02 13:44:32.986655
+title: Automate Google Workspace Using AppScript
+created: '2026-05-02T13:42:14.985312-07:00'
+date: '2026-08-11T22:19:17-07:00'
 authors:
   - bendu
 label: automate-google-workspace-using-appscript

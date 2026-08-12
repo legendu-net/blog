@@ -1,7 +1,7 @@
 ---
-title: Speed Up Rust Build With Cache
-created: 2021-12-04 17:41:10
-date: 2026-04-13 23:14:52.127481
+title: Speed Up Rust Build with Cache
+created: '2021-12-04T17:41:10-08:00'
+date: '2026-08-11T22:19:22-07:00'
 authors:
   - bendu
 label: speed-up-rust-build-with-cache

@@ -1,7 +1,7 @@
 ---
-title: "Using Kotlin With Gradle"
-created: 2019-11-21 18:43:25
-date: 2019-11-21 18:43:25
+title: Using Kotlin with Gradle
+created: '2019-11-21T18:43:25-08:00'
+date: '2026-08-11T22:19:28-07:00'
 authors:
   - bendu
 label: using-kotlin-with-gradle

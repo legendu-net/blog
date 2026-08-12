@@ -1,7 +1,7 @@
 ---
-title: Tips on KeepassXC
+title: Tips on KeePassXC
 created: '2021-09-27T10:45:11-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-08-11T22:19:23-07:00'
 authors:
   - bendu
 label: tips-on-keepassxc

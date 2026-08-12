@@ -1,7 +1,7 @@
 ---
-title: "Differences Between Kotlin and Java"
-created: 2019-10-28 22:20:51
-date: 2019-10-28 22:20:51
+title: Differences between Kotlin and Java
+created: '2019-10-28T22:20:51-07:00'
+date: '2026-08-11T22:19:29-07:00'
 authors:
   - bendu
 label: differences-between-kotlin-and-java

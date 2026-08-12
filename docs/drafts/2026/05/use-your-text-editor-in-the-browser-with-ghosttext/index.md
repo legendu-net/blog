@@ -1,7 +1,7 @@
 ---
-title: Use Your Text Editor in the Browser With Ghosttext
+title: Use Your Text Editor in the Browser with GhostText
 created: '2026-05-13T01:06:39.691227-07:00'
-date: '2026-05-13T01:08:59-07:00'
+date: '2026-08-11T22:19:17-07:00'
 authors:
   - bendu
 label: use-your-text-editor-in-the-browser-with-ghosttext

@@ -1,7 +1,7 @@
 ---
-title: Convert Math Formula and Table To LaTeX
-created: 2012-11-13 00:05:59
-date: 2016-07-13 00:05:59
+title: Convert Math Formula and Table to LaTeX
+created: '2012-11-13T00:05:59-08:00'
+date: '2026-08-11T22:19:32-07:00'
 authors:
   - bendu
 label: convert-math-formula-and-table-to-latex
@@ -16,13 +16,18 @@ tags:
   - R
   - MATLAB
 ---
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-## R
-1. xtable{xtable}
-	- Good for converting table to LaTeX code.
 
-2. latex{Hmisc} 
-	- Convert R objects (not just tables) to LaTeX code.
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+## R
+
+1. xtable\{xtable}
+
+   - Good for converting table to LaTeX code.
+
+1. latex\{Hmisc}
+
+   - Convert R objects (not just tables) to LaTeX code.
 
 ## Excel
 
@@ -32,11 +37,8 @@ tags:
 
 1. Type in the formula in Mathematica.
 
-2. Selected the formula.
+1. Selected the formula.
 
-3. Right click on selection, and then select "Copy as" -> "LaTeX".
+1. Right click on selection, and then select "Copy as" -> "LaTeX".
 
-4. You can also convert formulas to other format in Mathematica.
-
-
-
+1. You can also convert formulas to other format in Mathematica.

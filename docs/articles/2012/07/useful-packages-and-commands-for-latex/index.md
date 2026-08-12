@@ -1,7 +1,7 @@
 ---
-title: Useful Packages and Commands for LaTex
-created: 2012-07-29 11:37:43
-date: 2026-04-14 19:44:30.907719
+title: Useful Packages and Commands for LaTeX
+created: '2012-07-29T11:37:43-07:00'
+date: '2026-08-11T22:19:14-07:00'
 authors:
   - bendu
 label: useful-packages-and-commands-for-latex

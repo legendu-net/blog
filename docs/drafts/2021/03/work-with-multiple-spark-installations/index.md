@@ -1,7 +1,7 @@
 ---
-title: Work With Multiple Spark Installations
-created: 2021-03-30 16:28:59
-date: 2026-04-13 23:15:06.322724
+title: Work with Multiple Spark Installations
+created: '2021-03-30T16:28:59-07:00'
+date: '2026-08-11T22:19:24-07:00'
 authors:
   - bendu
 label: work-with-multiple-spark-installations

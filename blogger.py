@@ -72,13 +72,29 @@ def read_spells_tag() -> dict[str, str] | dict[str, str | list[str]]:
     return kvs
 
 
+def _clear_spells_caches() -> None:
+    """Drop every cache derived from the spells files.
+
+    Spells are added and applied within a single run (``./blog.py ast ... -A``),
+    so the derived title overrides have to be dropped together with the files.
+    """
+    _read_spells.cache_clear()
+    _title_overrides.cache_clear()
+    _title_phrases.cache_clear()
+
+
 def add_spells_title(pairs: Iterable[tuple[str, str]]) -> None:
     spells = list(read_spells_title().items())
     spells.extend(pairs)
     spells.sort(key=lambda x: x[0])
+    merged = dict(spells)
+    # Validate before writing: a spell that conflicts with an existing one makes
+    # every later format_title() raise, so it must not reach the file.
+    _build_title_overrides(merged)
+    _build_title_phrases(merged)
     with SPELLS_TITLE.open("w", encoding="utf-8") as fout:
-        yaml.dump(dict(spells), fout)
-    _read_spells.cache_clear()
+        yaml.dump(merged, fout)
+    _clear_spells_caches()
 
 
 def add_spells_tag(pairs: Iterable[tuple[str, str]]) -> None:
@@ -87,7 +103,7 @@ def add_spells_tag(pairs: Iterable[tuple[str, str]]) -> None:
     spells.sort(key=lambda x: x[0])
     with SPELLS_TAG.open("w", encoding="utf-8") as fout:
         yaml.dump(dict(spells), fout)
-    _read_spells.cache_clear()
+    _clear_spells_caches()
 
 
 def extract_url_title(url: str) -> str:
@@ -184,50 +200,252 @@ def _parse_records() -> list[Record]:
     return [_parse_record(path) for path in get_post_paths()]
 
 
-_TITLE_LEADING_PUNCT = set("(\"'“‘")
-_TITLE_TRAILING_PUNCT = set(")\"'”’:,;.!?")
+_TITLE_LEADING_PUNCT = frozenset(["(", '"', "'", "“", "‘"])
+_TITLE_TRAILING_PUNCT = frozenset(
+    [")", '"', "'", "”", "’", ":", ",", ";", ".", "!", "?"]
+)
+# Function words kept lowercase inside a title (never first or last).
+_TITLE_SMALL_WORDS = frozenset(
+    [
+        "a",
+        "an",
+        "and",
+        "as",
+        "at",
+        "but",
+        "by",
+        "for",
+        "in",
+        "of",
+        "on",
+        "or",
+        "the",
+        "to",
+        "via",
+        "vs",
+    ]
+)
+# House style on top of the standard set above: these read better lowercase in
+# this blog's titles. This frozenset is the single knob for that choice; empty
+# it and the words follow ordinary title case instead.
+_TITLE_HOUSE_WORDS = frozenset(
+    [
+        "about",
+        "after",
+        "among",
+        "before",
+        "behind",
+        "between",
+        "during",
+        "except",
+        "from",
+        "inside",
+        "into",
+        "over",
+        "than",
+        "through",
+        "with",
+        "without",
+    ]
+)
+# Function words are cased by position, which a spell cannot express, so spells
+# never own them. Listed out rather than derived from the two sets above so that
+# emptying the house style cannot hand these words back to a spell.
+_TITLE_FUNCTION_WORDS = frozenset(
+    [
+        "a",
+        "about",
+        "after",
+        "among",
+        "an",
+        "and",
+        "as",
+        "at",
+        "before",
+        "behind",
+        "between",
+        "but",
+        "by",
+        "during",
+        "except",
+        "for",
+        "from",
+        "in",
+        "inside",
+        "into",
+        "of",
+        "on",
+        "or",
+        "over",
+        "than",
+        "the",
+        "through",
+        "to",
+        "via",
+        "vs",
+        "with",
+        "without",
+    ]
+)
 
 
-def format_title(title):
-    title = title.title()
-    spells = read_spells_title()
-    # Multi-word origins (e.g. "Intellij Idea: IntelliJ IDEA") are corrected as
-    # whole space-bounded phrases first.
-    multi_word = {k: v for k, v in spells.items() if " " in k}
-    for origin, replace in multi_word.items():
-        title = title.replace(f" {origin} ", f" {replace} ")
-        if title.startswith(origin + " "):
-            title = title.replace(origin + " ", replace + " ")
-        if title.endswith(" " + origin):
-            title = title.replace(" " + origin, " " + replace)
-    # Single-word origins are matched per whitespace-delimited token, so a word
-    # glued to punctuation (e.g. "AnalysisException:", "(UDF)") is still
-    # corrected. Hyphen/slash/dot/underscore-joined compounds are left as-is
-    # here since they're separate tokens by design; add a whole-token spell
-    # (e.g. "Java_Home: JAVA_HOME") for those.
-    single_word = {k: v for k, v in spells.items() if " " not in k}
+def _split_punct(token: str) -> tuple[str, str, str]:
+    """Split a token into its leading punctuation, core word and trailing punctuation.
+
+    Spells are looked up on the core, so a word glued to punctuation (e.g.
+    ``AnalysisException:``, ``(UDF)``, ``"rsnapshot"``) is still corrected.
+
+    :param token: A whitespace-delimited token of a title.
+    :return: A ``(lead, core, trail)`` tuple that re-joins to ``token``.
+    """
+    lead = trail = ""
+    while token and token[0] in _TITLE_LEADING_PUNCT:
+        lead += token[0]
+        token = token[1:]
+    while token and token[-1] in _TITLE_TRAILING_PUNCT:
+        trail = token[-1] + trail
+        token = token[:-1]
+    return lead, token, trail
+
+
+def _build_title_overrides(spells: dict[str, str]) -> dict[str, str]:
+    """Fold title spells into a lookup keyed by the lowercased word.
+
+    Keys are folded to lowercase because titles are no longer passed through
+    ``str.title()`` first, so a spell must match the word however it was typed.
+    Skipped are multi-word keys, which no longer have a matching pass, and
+    ``_TITLE_FUNCTION_WORDS``, whose casing is positional.
+
+    :param spells: Title spells as read from ``SPELLS_TITLE``.
+    :return: A mapping from lowercased word to its replacement.
+    :raise ValueError: If two spells disagree about the same lowercased word.
+    """
+    overrides: dict[str, str] = {}
+    origins: dict[str, str] = {}
+    for origin, replace in spells.items():
+        key = origin.lower()
+        if " " in origin or key in _TITLE_FUNCTION_WORDS:
+            continue
+        if overrides.get(key, replace) != replace:
+            raise ValueError(
+                f"Conflicting title spells: {origins[key]!r} -> {overrides[key]!r} "
+                f"and {origin!r} -> {replace!r}."
+            )
+        overrides[key] = replace
+        origins[key] = origin
+    return overrides
+
+
+@cache
+def _title_overrides() -> dict[str, str]:
+    """Build the title override lookup from the spells file.
+
+    :return: A mapping from lowercased word to its replacement.
+    """
+    return _build_title_overrides(read_spells_title())
+
+
+def _build_title_phrases(spells: dict[str, str]) -> dict[tuple[str, ...], list[str]]:
+    """Fold multi-word title spells into a lookup keyed by lowercased words.
+
+    A phrase spells a run of words that only reads correctly together, e.g.
+    ``Over Partition: OVER PARTITION``, where neither word can be cased on its
+    own without hitting ordinary prose.
+
+    :param spells: Title spells as read from ``SPELLS_TITLE``.
+    :return: A mapping from a tuple of lowercased words to its replacements.
+    :raise ValueError: If a phrase does not replace word for word, which would
+        change the spacing and therefore the post's label and URL.
+    """
+    phrases: dict[tuple[str, ...], list[str]] = {}
+    for origin, replace in spells.items():
+        if " " not in origin:
+            continue
+        key = tuple(origin.lower().split())
+        words = replace.split()
+        if len(words) != len(key):
+            raise ValueError(
+                f"Title spell {origin!r} -> {replace!r} must replace word for "
+                f"word: {len(key)} words became {len(words)}."
+            )
+        phrases[key] = words
+    return phrases
+
+
+@cache
+def _title_phrases() -> dict[tuple[str, ...], list[str]]:
+    """Build the multi-word title lookup from the spells file.
+
+    :return: A mapping from a tuple of lowercased words to its replacements.
+    """
+    return _build_title_phrases(read_spells_title())
+
+
+def _apply_title_phrases(
+    tokens: list[str], parts: list[tuple[str, str, str]]
+) -> set[int]:
+    """Apply multi-word spells to ``tokens`` in place, longest phrase first.
+
+    :param tokens: The title's tokens, updated in place.
+    :param parts: The ``_split_punct`` result for each original token.
+    :return: The indexes of the tokens a phrase has already cased.
+    """
+    phrases = _title_phrases()
+    handled: set[int] = set()
+    if not phrases:
+        return handled
+    longest = max(len(key) for key in phrases)
+    i = 0
+    while i < len(tokens):
+        for size in range(min(longest, len(tokens) - i), 1, -1):
+            key = tuple(parts[j][1].lower() for j in range(i, i + size))
+            if key in phrases:
+                for offset, word in enumerate(phrases[key]):
+                    lead, _, trail = parts[i + offset]
+                    tokens[i + offset] = lead + word + trail
+                    handled.add(i + offset)
+                i += size
+                break
+        else:
+            i += 1
+    return handled
+
+
+def format_title(title: str) -> str:
+    """Format a title in title case, preserving names that carry their own casing.
+
+    A word that already contains a capital past its first letter (``Neovim``,
+    ``macOS``, ``GRUB``) is left alone, so correct casing survives instead of
+    being flattened and then repaired by a spell.
+
+    :param title: The title to format.
+    :return: The formatted title.
+    """
+    overrides = _title_overrides()
     tokens = title.split(" ")
-    first_word_idx = next((i for i, tok in enumerate(tokens) if tok), None)
-    for i, tok in enumerate(tokens):
-        core = tok
-        lead = ""
-        trail = ""
-        while core and core[0] in _TITLE_LEADING_PUNCT:
-            lead += core[0]
-            core = core[1:]
-        while core and core[-1] in _TITLE_TRAILING_PUNCT:
-            trail = core[-1] + trail
-            core = core[:-1]
-        if core in single_word:
-            core = single_word[core]
-        # The true first word of the title is always capitalized, even when a
-        # minor-word spell (e.g. "The: the", "A: a") lowered it and even when
-        # it's wrapped in leading punctuation (e.g. a quoted title).
-        if i == first_word_idx and core in ("the", "a"):
-            core = core.capitalize()
+    parts = [_split_punct(token) for token in tokens]
+    filled = [i for i, token in enumerate(tokens) if token]
+    first, last = (filled[0], filled[-1]) if filled else (None, None)
+    phrased = _apply_title_phrases(tokens, parts)
+    for i in range(len(tokens)):
+        if i in phrased:
+            continue
+        lead, core, trail = parts[i]
+        if not core:
+            continue
+        key = core.lower()
+        if key in overrides:
+            core = overrides[key]
+        elif any(char.isupper() for char in core[1:]):
+            pass  # Self-cased name, e.g. Neovim, macOS, GRUB, GPT-2.
+        elif key in _TITLE_SMALL_WORDS or key in _TITLE_HOUSE_WORDS:
+            core = key if i not in (first, last) else key.capitalize()
+        else:
+            # Only the first letter, so hyphenated compounds stay as written
+            # ("Cross-platform") and contractions are safe ("Don't").
+            core = core[:1].upper() + core[1:]
         tokens[i] = lead + core + trail
-    title = " ".join(tokens)
-    return title
+    return " ".join(tokens)
 
 
 def _label(title: str) -> str:

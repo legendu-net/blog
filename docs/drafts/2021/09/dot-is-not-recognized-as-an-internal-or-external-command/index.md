@@ -1,7 +1,7 @@
 ---
-title: Dot Is Not Recognized as An Internal or External Command
-created: 2021-09-05 12:51:24
-date: 2026-04-13 23:14:58.300199
+title: Dot Is Not Recognized as an Internal or External Command
+created: '2021-09-05T12:51:24-07:00'
+date: '2026-08-11T22:19:23-07:00'
 authors:
   - bendu
 label: dot-is-not-recognized-as-an-internal-or-external-command

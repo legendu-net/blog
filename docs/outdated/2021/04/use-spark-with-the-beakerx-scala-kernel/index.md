@@ -1,7 +1,7 @@
 ---
-title: Use Spark With the BeakerX Scala Kernel
-created: 2021-04-23 17:23:46
-date: 2026-04-13 23:15:30.637857
+title: Use Spark with the BeakerX Scala Kernel
+created: '2021-04-23T17:23:46-07:00'
+date: '2026-08-11T22:19:32-07:00'
 authors:
   - bendu
 label: use-spark-with-the-beakerx-scala-kernel

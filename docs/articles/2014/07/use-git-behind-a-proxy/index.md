@@ -1,7 +1,7 @@
 ---
-title: Use Git Behind a Proxy
+title: Use Git behind a Proxy
 created: '2014-07-07T23:42:48-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-08-11T22:39:33-07:00'
 authors:
   - bendu
 label: use-git-behind-a-proxy

@@ -1,7 +1,7 @@
 ---
-title: Turn Neovim into An AI IDE
+title: Turn Neovim into an AI IDE
 created: '2026-05-01T21:18:26.870750-07:00'
-date: '2026-06-11T19:59:13-07:00'
+date: '2026-08-11T22:19:17-07:00'
 authors:
   - bendu
 label: turn-neovim-into-an-ai-ide

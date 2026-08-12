@@ -1,7 +1,7 @@
 ---
-title: Tools for IOT
+title: Tools for IoT
 created: '2020-11-09T11:25:24-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-08-11T22:19:25-07:00'
 authors:
   - bendu
 label: tools-for-iot

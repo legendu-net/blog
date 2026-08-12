@@ -1,7 +1,7 @@
 ---
-title: 'PySpark Issue: Java Gateway Process Exited Before Sending the Driver Its Port Number'
-created: 2021-10-10 14:23:22
-date: 2026-04-13 23:14:10.495270
+title: 'PySpark Issue: Java Gateway Process Exited before Sending the Driver Its Port Number'
+created: '2021-10-10T14:23:22-07:00'
+date: '2026-08-11T22:39:32-07:00'
 authors:
   - bendu
 label: pyspark-issue-java-gateway-process-exited-before-sending-the-driver-its-port-number

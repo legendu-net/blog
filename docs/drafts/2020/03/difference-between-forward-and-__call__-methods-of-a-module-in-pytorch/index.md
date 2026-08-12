@@ -1,7 +1,7 @@
 ---
-title: "Difference Between forward and __call__ Methods of a Module in PyTorch"
-created: 2020-03-05 16:05:30
-date: 2020-03-05 16:05:30
+title: Difference between forward and __call__ Methods of a Module in PyTorch
+created: '2020-03-05T16:05:30-08:00'
+date: '2026-08-11T22:19:26-07:00'
 authors:
   - bendu
 label: difference-between-forward-and-__call__-methods-of-a-module-in-pytorch
@@ -18,13 +18,13 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-1. The `Module.__call__` method register all hooks and call the method `Module.forward`. 
-    In short, 
-    when you train the model you should use the method `forward`,
-    while when you test the model during training 
-    or when you do prediction using a well trained model, 
-    you should use the method `__call__`. 
-    `model.__call__(data)` is equivalent to `model(data)`.
+1. The `Module.__call__` method register all hooks and call the method `Module.forward`.
+   In short,
+   when you train the model you should use the method `forward`,
+   while when you test the model during training
+   or when you do prediction using a well trained model,
+   you should use the method `__call__`.
+   `model.__call__(data)` is equivalent to `model(data)`.
 
 ## References
 

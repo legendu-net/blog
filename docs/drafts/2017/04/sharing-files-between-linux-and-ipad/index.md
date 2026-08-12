@@ -1,7 +1,7 @@
 ---
-title: Sharing Files Between Linux and iPad
-created: 2017-04-22 22:09:13
-date: 2026-04-15 19:27:01.359791
+title: Sharing Files between Linux and iPad
+created: '2017-04-22T22:09:13-07:00'
+date: '2026-08-11T22:19:31-07:00'
 authors:
   - bendu
 label: sharing-files-between-linux-and-ipad
@@ -31,7 +31,7 @@ sudo apt-get install libimobiledevice-utils ifuse
 And then run the following commands to pair your iPad.
 
 ```bash
-idevicepair unpair 
+idevicepair unpair
 idevicepair pair
 ```
 

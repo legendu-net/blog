@@ -1,27 +1,28 @@
 ---
-title: Tips on cURL and Wget
-created: 2013-10-26 13:02:55
-date: 2026-04-05 19:42:38.327004
+title: Tips on cURL and wget
+created: '2013-10-26T13:02:55-07:00'
+date: '2026-08-11T22:19:32-07:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-curl-and-wget
 license: CC-BY-4.0
 tags:
-- tips
-- cURL
-- downloading
-- web
-- wget
+  - tips
+  - cURL
+  - downloading
+  - web
+  - wget
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## cURL vs Wget
 
 [curl vs wget](https://daniel.haxx.se/docs/curl-vs-wget.html)
 has a detailed comparison between curl and wget.
-In short, 
+In short,
 curl is more powerful and flexible and thus is preferred to wget
-unless you want to download content recursively from a site 
+unless you want to download content recursively from a site
 (which curl does not support currently).
 
 ## Alternatives to `curl`
@@ -36,72 +37,80 @@ A general way (works for most other command-line tools too) is set the environme
 (and `ftp_proxy`, etc. if need them).
 This way is preferred if your command/script to run has dependencies which also requires proxy to work.
 
-    :::bash
-    export http_proxy=http://your.proxy.server:port
-    export https_proxy=http://your.proxy.server:port
+```
+:::bash
+export http_proxy=http://your.proxy.server:port
+export https_proxy=http://your.proxy.server:port
+```
 
 Another simple way is to use the option `--proxy` directly.
 This way is preferred if your command/script does not have other dependencies which also requires proxy to work.
-    
-    :::bash
-    curl --proxy http://your.proxy.server:port ...
+
+```
+:::bash
+curl --proxy http://your.proxy.server:port ...
+```
 
 ## Tricks and Traps
 
-1. Use the `-L` option to follow redirect URLs. 
-    This is a really useful trick to use curl to download things from GitHub.
+1. Use the `-L` option to follow redirect URLs.
+   This is a really useful trick to use curl to download things from GitHub.
 
 ## cURL Examples
 
 1. Get redirected URL.
 
-        :::bash
-        curl -sSL -o /dev/null -w %{url_effective} https://github.com/legendu-net/icon/releases/latest
+   ```
+    :::bash
+    curl -sSL -o /dev/null -w %{url_effective} https://github.com/legendu-net/icon/releases/latest
+   ```
 
-2. Use browser cookie.
+1. Use browser cookie.
 
-        :::bash
-        curl -v --cookie-jar cjar \
-            --output /dev/null \
-            http://cos.name/cn/
+   ```
+    :::bash
+    curl -v --cookie-jar cjar \
+        --output /dev/null \
+        http://cos.name/cn/
 
-        curl -v --cookie cjar --cookie-jar cjar \
-            --data 'user_login={username}' \
-            --data 'password={password}' \
-            --data 'form_id=login' \
-            --output cos.html \
-            http://cos.name/cn/
+    curl -v --cookie cjar --cookie-jar cjar \
+        --data 'user_login={username}' \
+        --data 'password={password}' \
+        --data 'form_id=login' \
+        --output cos.html \
+        http://cos.name/cn/
 
-        :::bash
-        curl -v --cookie-jar cjar \
-            --output /dev/null \
-            https://www.economy.com/home/login/a_login.asp
+    :::bash
+    curl -v --cookie-jar cjar \
+        --output /dev/null \
+        https://www.economy.com/home/login/a_login.asp
 
-        curl -v --cookie cjar \
-            --cookie-jar cjar \
-            --data 'email={user_email@some.com}' \
-            --data 'password={password}' \
-            --data 'form_id=frmMain' \
-            --output moody.html \
-            https://www.economy.com/home/login/a_login.asp
+    curl -v --cookie cjar \
+        --cookie-jar cjar \
+        --data 'email={user_email@some.com}' \
+        --data 'password={password}' \
+        --data 'form_id=frmMain' \
+        --output moody.html \
+        https://www.economy.com/home/login/a_login.asp
 
-        :::bash
-        curl -v --cookie-jar cjar \
-            --output /dev/null \
-            https://www.ncreif.org/login.aspx
+    :::bash
+    curl -v --cookie-jar cjar \
+        --output /dev/null \
+        https://www.ncreif.org/login.aspx
 
-        curl -v --cookie cjar \
-            --cookie-jar cjar \
-            --data 'username={user_name}' \
-            --data 'password={password}' \
-            --data 'form_id=form1' \
-            --output ncreif.html \
-            https://www.ncreif.org/login.aspx
+    curl -v --cookie cjar \
+        --cookie-jar cjar \
+        --data 'username={user_name}' \
+        --data 'password={password}' \
+        --data 'form_id=form1' \
+        --output ncreif.html \
+        https://www.ncreif.org/login.aspx
 
-        :::bash
-        wget --no-check-certificate \
-            --load-cookies=ff_cookies.txt \
-            -p https://bitbucket.org/dclong/config/get/
+    :::bash
+    wget --no-check-certificate \
+        --load-cookies=ff_cookies.txt \
+        -p https://bitbucket.org/dclong/config/get/
+   ```
 
 The easy way: login with your browser,
 and give the cookies to wget
@@ -120,14 +129,17 @@ and save the cookies.txt file (you can change the filename/destination).
 Open up a terminal,
 and use wget with the `--load-cookies=FILENAME` option, e.g.
 
-    :::bash
-    wget --load-cookies=cookies.txt http://en.wikipedia.org/wiki/User:A
+```
+:::bash
+wget --load-cookies=cookies.txt http://en.wikipedia.org/wiki/User:A
+```
 
 For `cURL`, it's
 
-    :::bash
-    curl --cookie cookies.txt ...
-
+```
+:::bash
+curl --cookie cookies.txt ...
+```
 
 The hard way: use `cURL` (preferably) or `wget` to manage the entire session
 
@@ -145,7 +157,6 @@ Tip: if you go this route,
 it is often much simpler to deal with the mobile version of a website (if available),
 at least for the authentication step.
 
-
 ## Tricks and Traps
 
 `-q`/`--quiet`: quiet mode which turns off wget's output.
@@ -157,22 +168,28 @@ You can force it (or overwrite other non-quiet options) using `-s`/`--silent`.
 
 To filter for specific file extensions:
 
-    :::bash
-    wget -A pdf,jpg -m -p -E -k -K -np http://site/PATH/
+```
+:::bash
+wget -A pdf,jpg -m -p -E -k -K -np http://site/PATH/
+```
 
 This will mirror the site, but the files without jpg or pdf extension will be automatically removed.
 
 Download all contents under the link.
 
-    :::bash
-    wget -r --no-parent -e robots=off http://site/PATH/
+```
+:::bash
+wget -r --no-parent -e robots=off http://site/PATH/
+```
 
 Download all contents except HTML files under the link.
 
-    :::bash
-    wget -r --no-parent -e robots=off -R "*.html"
-    wget --no-check-certificate
-    wget --random-wait -r -p -e robots=off -U mozilla
+```
+:::bash
+wget -r --no-parent -e robots=off -R "*.html"
+wget --no-check-certificate
+wget --random-wait -r -p -e robots=off -U mozilla
+```
 
 ## References
 

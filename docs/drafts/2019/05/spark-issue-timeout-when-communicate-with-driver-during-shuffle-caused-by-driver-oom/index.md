@@ -1,7 +1,7 @@
 ---
-title: 'Spark Issue: Timeout When Communicate With Driver During Shuffle Caused by Driver OOM'
-created: 2019-05-26 10:15:49
-date: 2026-04-15 19:27:01.199385
+title: 'Spark Issue: Timeout When Communicate with Driver during Shuffle Caused by Driver OOM'
+created: '2019-05-26T10:15:49-07:00'
+date: '2026-08-11T22:39:35-07:00'
 authors:
   - bendu
 label: spark-issue-timeout-when-communicate-with-driver-during-shuffle-caused-by-driver-oom
@@ -51,9 +51,9 @@ Based on my experience, we may need 10G memory for 10K partition.
 1. Increase Driver memory and computation power is useful in case you need less than 15G memory
 
    ```bash
-    --driver-memory 12G
-    --conf spark.driver.cores=4 
-    --conf spark.akka.threads=32 
+   --driver-memory 12G
+   --conf spark.driver.cores=4
+   --conf spark.akka.threads=32
    ```
 
 1. The ultimate solution is to re-partition the map output when feed to the reduce actions.

@@ -1,7 +1,7 @@
 ---
-title: "Work With SAS in Command Line"
-created: 2013-08-13 01:01:25
-date: 2015-03-13 01:01:25
+title: Work with SAS in Command Line
+created: '2013-08-13T01:01:25-07:00'
+date: '2026-08-11T22:19:35-07:00'
 authors:
   - bendu
 label: work-with-sas-in-command-line
@@ -15,10 +15,10 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
+\*\*
+Things under legendu.net/outdated are outdated technologies
+that the author does not plan to update any more.
 Please look for better alternatives.
-**
- 
+\*\*
+
 sas script.sas -l script.log

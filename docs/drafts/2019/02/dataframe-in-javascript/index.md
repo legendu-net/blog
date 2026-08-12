@@ -1,7 +1,7 @@
 ---
-title: Dataframe in JavaScript
-created: 2019-02-01 19:42:16
-date: 2026-04-15 19:27:01.226727
+title: DataFrame in JavaScript
+created: '2019-02-01T19:42:16-08:00'
+date: '2026-08-11T22:19:30-07:00'
 authors:
   - bendu
 label: dataframe-in-javascript

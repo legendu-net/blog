@@ -1,7 +1,7 @@
 ---
-title: What are the Two Integers?
-created: 2013-02-08 11:41:48
-date: 2026-04-11 22:10:02.959228
+title: What Are the Two Integers?
+created: '2013-02-08T11:41:48-08:00'
+date: '2026-08-11T22:19:14-07:00'
 authors:
   - bendu
 label: what-are-the-two-integers

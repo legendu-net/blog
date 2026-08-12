@@ -1,7 +1,7 @@
 ---
-title: Share Memory Among Processes in Python
-created: 2020-03-20 17:56:05
-date: 2026-04-13 23:15:25.290924
+title: Share Memory among Processes in Python
+created: '2020-03-20T17:56:05-07:00'
+date: '2026-08-11T22:39:34-07:00'
 authors:
   - bendu
 label: share-memory-among-processes-in-python

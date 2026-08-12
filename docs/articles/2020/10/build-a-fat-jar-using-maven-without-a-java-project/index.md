@@ -1,7 +1,7 @@
 ---
-title: Build a Fat JAR Using Maven Without a Java Project
-created: 2020-10-21 17:22:39
-date: 2026-04-13 23:14:14.150872
+title: Build a Fat JAR Using Maven without a Java Project
+created: '2020-10-21T17:22:39-07:00'
+date: '2026-08-11T22:39:32-07:00'
 authors:
   - bendu
 label: build-a-fat-jar-using-maven-without-a-java-project

@@ -1,7 +1,7 @@
 ---
-title: Query and Monitor OS Information using osquery
+title: Query and Monitor OS Information Using osquery
 created: '2019-02-22T15:27:24-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-08-11T22:19:30-07:00'
 authors:
   - bendu
 label: query-and-monitor-os-information-using-osquery

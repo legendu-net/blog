@@ -1,7 +1,7 @@
 ---
-title: QQ on Linux via Wine QQ
-created: 2017-04-22 15:23:18
-date: 2026-04-15 19:27:02.013233
+title: QQ on Linux via WINE QQ
+created: '2017-04-22T15:23:18-07:00'
+date: '2026-08-11T22:19:34-07:00'
 authors:
   - bendu
 label: qq-on-linux-via-wine-qq

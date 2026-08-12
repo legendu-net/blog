@@ -1,7 +1,7 @@
 ---
-title: Use Spark With Apache Toree Kernel in Juptyerlab
-created: 2020-03-23 17:47:21
-date: 2026-04-13 23:15:26.337063
+title: Use Spark with Apache Toree Kernel in Juptyerlab
+created: '2020-03-23T17:47:21-07:00'
+date: '2026-08-11T22:19:26-07:00'
 authors:
   - bendu
 label: use-spark-with-apache-toree-kernel-in-juptyerlab

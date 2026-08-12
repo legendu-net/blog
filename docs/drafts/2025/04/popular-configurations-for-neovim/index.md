@@ -1,7 +1,7 @@
 ---
-title: Popular Configurations for NeoVim
+title: Popular Configurations for Neovim
 created: '2025-04-18T06:28:10-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-08-11T22:19:19-07:00'
 authors:
   - bendu
 label: popular-configurations-for-neovim

@@ -1,7 +1,7 @@
 ---
-title: Python for IOT
+title: Python for IoT
 created: '2021-04-09T09:49:34-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-08-11T22:19:24-07:00'
 authors:
   - bendu
 label: python-for-iot

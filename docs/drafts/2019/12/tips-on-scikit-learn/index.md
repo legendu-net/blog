@@ -1,7 +1,7 @@
 ---
-title: Tips on Scikit-Learn
+title: Tips on scikit-learn
 created: '2019-12-01T10:06:27-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-08-11T22:19:28-07:00'
 authors:
   - bendu
 label: tips-on-scikit-learn

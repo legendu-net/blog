@@ -1,7 +1,7 @@
 ---
-title: The NeoVim Plugin for Visual Studio Code
-created: 2020-12-10 23:23:59
-date: 2026-04-15 19:27:00.945900
+title: The Neovim Plugin for Visual Studio Code
+created: '2020-12-10T23:23:59-08:00'
+date: '2026-08-11T22:19:25-07:00'
 authors:
   - bendu
 label: the-neovim-plugin-for-visual-studio-code
@@ -26,7 +26,7 @@ https://github.com/asvetliakov/vscode-neovim
 1. Install NeoVim 0.5+ using [icon](https://github.com/legendu-net/icon).
 
    ```bash
-    icon nvim -ic --ppa
+   icon nvim -ic --ppa
    ```
 
 1. Install the NeoVim plugin from the extension market in VSCode or Code Server.

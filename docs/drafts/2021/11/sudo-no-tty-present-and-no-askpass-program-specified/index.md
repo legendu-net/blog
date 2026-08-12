@@ -1,7 +1,7 @@
 ---
-title: 'Sudo: No TTY Present and No AskPass Program Specified'
-created: 2021-11-29 00:04:14
-date: 2026-04-14 19:32:04.096914
+title: 'sudo: No TTY Present and No AskPass Program Specified'
+created: '2021-11-29T00:04:14-08:00'
+date: '2026-08-11T22:19:22-07:00'
 authors:
   - bendu
 label: sudo-no-tty-present-and-no-askpass-program-specified

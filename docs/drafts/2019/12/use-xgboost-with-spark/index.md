@@ -1,7 +1,7 @@
 ---
-title: "Use XGBoost With Spark"
-created: 2019-12-17 11:37:33
-date: 2020-03-17 11:37:33
+title: Use XGBoost with Spark
+created: '2019-12-17T11:37:33-08:00'
+date: '2026-08-11T22:19:28-07:00'
 authors:
   - bendu
 label: use-xgboost-with-spark
@@ -36,4 +36,3 @@ https://news.developer.nvidia.com/gpu-accelerated-spark-xgboost/
 https://towardsdatascience.com/pyspark-and-xgboost-integration-tested-on-the-kaggle-titanic-dataset-4e75a568bdb
 
 https://www.kdnuggets.com/2016/03/xgboost-implementing-winningest-kaggle-algorithm-spark-flink.html
-

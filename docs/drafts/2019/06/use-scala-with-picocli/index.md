@@ -1,7 +1,7 @@
 ---
-title: "Use Scala With Picocli"
-created: 2019-06-22 03:41:22
-date: 2019-06-22 03:41:22
+title: Use Scala with Picocli
+created: '2019-06-22T03:41:22-07:00'
+date: '2026-08-11T22:19:29-07:00'
 authors:
   - bendu
 label: use-scala-with-picocli
@@ -22,6 +22,6 @@ It is suggested that you
 
 1. Have all parameters prepared before using them.
 
-2. manually specify types of arguments when preparing parameters.
+1. manually specify types of arguments when preparing parameters.
 
-3. Never use `args("some-parameters")` directly. 
+1. Never use `args("some-parameters")` directly.

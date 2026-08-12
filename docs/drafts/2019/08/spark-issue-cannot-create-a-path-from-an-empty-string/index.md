@@ -1,7 +1,7 @@
 ---
-title: 'Spark Issue: Cannot Create a Path from An Empty String'
-created: 2019-08-21 12:14:37
-date: 2026-04-15 19:27:01.163589
+title: 'Spark Issue: Cannot Create a Path from an Empty String'
+created: '2019-08-21T12:14:37-07:00'
+date: '2026-08-11T22:19:29-07:00'
 authors:
   - bendu
 label: spark-issue-cannot-create-a-path-from-an-empty-string

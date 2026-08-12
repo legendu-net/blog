@@ -1,7 +1,7 @@
 ---
-title: Tips About Octopress
-created: 2013-10-15 21:43:18
-date: 2026-04-15 19:27:02.072216
+title: Tips about Octopress
+created: '2013-10-15T21:43:18-07:00'
+date: '2026-08-11T22:39:37-07:00'
 authors:
   - bendu
 label: tips-about-octopress

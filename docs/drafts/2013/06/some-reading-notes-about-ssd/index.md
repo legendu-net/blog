@@ -1,7 +1,7 @@
 ---
-title: Some Reading Notes About SSD
-created: 2013-06-23 00:00:00
-date: 2026-04-14 19:42:37.462937
+title: Some Reading Notes about SSD
+created: '2013-06-23T00:00:00-07:00'
+date: '2026-08-11T22:39:36-07:00'
 authors:
   - bendu
 label: some-reading-notes-about-ssd

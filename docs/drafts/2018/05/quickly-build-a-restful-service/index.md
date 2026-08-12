@@ -1,7 +1,7 @@
 ---
-title: "Quickly Build a Restful Service"
-created: 2018-05-27 15:25:58
-date: 2018-05-27 15:25:58
+title: Quickly Build a RESTful Service
+created: '2018-05-27T15:25:58-07:00'
+date: '2026-08-11T22:19:31-07:00'
 authors:
   - bendu
 label: quickly-build-a-restful-service
@@ -19,7 +19,6 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [OpenFaaS](https://github.com/openfaas/faas)
-
 
 ## Flask
 

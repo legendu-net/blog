@@ -5,6 +5,7 @@ from argparse import Namespace
 from types import SimpleNamespace
 
 import pytest
+import yaml
 
 import blog
 import blogger
@@ -381,3 +382,201 @@ def test_flush_writes_immediately(tmp_path, monkeypatch):
     blog._flush(post)
     assert not post._should_write
     assert "title: Flushed" in path.read_text(encoding="utf-8")
+
+
+# --- format_title -----------------------------------------------------------
+
+
+@pytest.fixture
+def spells(tmp_path, monkeypatch):
+    """Point the title spells at a temporary file.
+
+    SPELLS_TITLE is resolved from BASE_DIR at import time and _read_spells is
+    cached per path, so patching BASE_DIR alone would not redirect it; the
+    caches also have to be dropped on the way in and out.
+    """
+    path = tmp_path / "spells_title.yaml"
+
+    def write(mapping):
+        with path.open("w", encoding="utf-8") as fout:
+            yaml.dump(mapping, fout)
+        blogger._clear_spells_caches()
+
+    monkeypatch.setattr(blogger, "SPELLS_TITLE", path)
+    write({})
+    yield write
+    blogger._clear_spells_caches()
+
+
+@pytest.mark.parametrize(
+    "title",
+    [
+        "Tips on Neovim",
+        "Install macOS on a VM",
+        "Missing GRUB Menu of Windows",
+        "The GPT-2 Model in NLP",
+        "Cross-platform Data Exchanging",
+        "User-defined Function (UDF) in PySpark",
+    ],
+)
+def test_format_title_keeps_self_cased_words(spells, title):
+    # The whole point of the formatter: a word that carries its own casing is
+    # left alone. No spell is loaded, so this is the rule and not the data.
+    assert blogger.format_title(title) == title
+
+
+@pytest.mark.parametrize(
+    "title",
+    [
+        "Don't Do Statistics If You Don't Understand It",
+        "Get User's Information in Python",
+        "O'Reilly Book Notes",
+        "Equivalent of C++'s Set Difference",
+        "Y'all Need This",
+    ],
+)
+def test_format_title_keeps_apostrophes(spells, title):
+    assert blogger.format_title(title) == title
+
+
+def test_format_title_shipped_spells_are_usable():
+    # Smoke test of the real spells file: it must fold without conflicting.
+    assert blogger.format_title("tips on neovim") == "Tips on Neovim"
+
+
+def test_format_title_spell_beats_self_cased_word(spells):
+    # A spell has to win over "leave a self-cased word alone", otherwise a
+    # miscapitalized name could never be corrected.
+    spells({"Vim/NeoVim": "Vim/Neovim"})
+    assert blogger.format_title("a Vim/NeoVim config") == "A Vim/Neovim Config"
+
+
+def test_format_title_applies_multi_word_spells(spells):
+    # A phrase spells words that only read correctly together, so neither word
+    # has to be cased on its own where it would also hit ordinary prose.
+    spells({"Over Partition": "OVER PARTITION", "Group By": "GROUP BY"})
+    assert blogger.format_title("group by vs over partition in sql") == (
+        "GROUP BY vs OVER PARTITION in Sql"
+    )
+    # A hyphenated compound is a single token and must not match the phrase.
+    assert blogger.format_title("group-by plots") == "Group-by Plots"
+
+
+def test_format_title_phrase_beats_house_style(spells):
+    # "over" is lowercased mid-title as a preposition, but not inside a phrase.
+    spells({"Over Partition": "OVER PARTITION"})
+    assert blogger.format_title("transfer files over network") == (
+        "Transfer Files over Network"
+    )
+    assert blogger.format_title("using over partition here") == (
+        "Using OVER PARTITION Here"
+    )
+
+
+def test_format_title_uneven_phrase_spell_is_rejected(spells):
+    # An uneven replacement would change the spacing, and so the post's label.
+    with pytest.raises(ValueError, match="word for word"):
+        blogger.add_spells_title([("Foo Bar", "FooBar")])
+
+
+@pytest.mark.parametrize("title", ["", "   ", "  a  b  ", " leading", "trailing "])
+def test_format_title_only_changes_case(spells, title):
+    # Nothing but letter case may change: spacing drives the slug in _label, so
+    # adding or dropping a character here would move a post's URL.
+    assert blogger.format_title(title).lower() == title.lower()
+
+
+def test_format_title_conflicting_spell_is_rejected_before_writing(spells):
+    spells({"NeoVim": "Neovim"})
+    before = blogger.SPELLS_TITLE.read_text(encoding="utf-8")
+    with pytest.raises(ValueError, match="Conflicting title spells"):
+        blogger.add_spells_title([("NEOVIM", "NEOVIM")])
+    # A conflicting spell would make every later format_title() raise, so the
+    # file must be left alone.
+    assert blogger.SPELLS_TITLE.read_text(encoding="utf-8") == before
+    assert blogger.format_title("tips on neovim") == "Tips on Neovim"
+
+
+def test_title_function_words_cover_both_word_sets():
+    # _TITLE_FUNCTION_WORDS is listed out rather than derived so that emptying
+    # the house set cannot hand those words back to a spell; that only holds
+    # while it stays a superset of both.
+    assert blogger._TITLE_FUNCTION_WORDS == (
+        blogger._TITLE_SMALL_WORDS | blogger._TITLE_HOUSE_WORDS
+    )
+
+
+def test_format_title_house_style_knob_is_isolated(spells, monkeypatch):
+    # Emptying the house set must only stop the lowercasing. A leftover spell
+    # for the same word must not take over, since a spell is unconditional and
+    # would lowercase the word even as the first one.
+    spells({"From": "from", "Into": "into"})
+    monkeypatch.setattr(blogger, "_TITLE_HOUSE_WORDS", frozenset())
+    blogger._clear_spells_caches()
+    assert blogger.format_title("from zero to hero") == "From Zero to Hero"
+    assert blogger.format_title("transfer files over network") == (
+        "Transfer Files Over Network"
+    )
+
+
+def test_read_spells_tag_keeps_original_cased_keys(spells):
+    # Tags are matched exactly, so the shared spells file must not be re-keyed.
+    spells({"Ai": "AI"})
+    assert blogger.read_spells_tag()["Ai"] == "AI"
+
+
+def test_format_title_small_words(spells):
+    assert blogger.format_title("the rust book") == "The Rust Book"
+    # A small word is only lowered away from the first and last position.
+    assert blogger.format_title("sharing files with a friend") == (
+        "Sharing Files with a Friend"
+    )
+    assert blogger.format_title("with great power") == "With Great Power"
+    assert blogger.format_title("what this is for") == "What This Is For"
+
+
+def test_format_title_spell_applies_to_punctuated_word(spells):
+    spells({"Rsnapshot": "rsnapshot", "Analysisexception": "AnalysisException"})
+    assert blogger.format_title('backup files using "rsnapshot"') == (
+        'Backup Files Using "rsnapshot"'
+    )
+    assert blogger.format_title("spark issue: analysisexception: cannot resolve") == (
+        "Spark Issue: AnalysisException: Cannot Resolve"
+    )
+
+
+def test_format_title_spell_wins_over_leading_position(spells):
+    # A lowercase tool name stays lowercase even as the first word.
+    spells({"Mdformat": "mdformat"})
+    assert blogger.format_title("mdformat is a formatter") == "mdformat Is a Formatter"
+
+
+def test_format_title_new_spell_applies_without_manual_cache_clear(spells):
+    assert blogger.format_title("foo bar") == "Foo Bar"
+    blogger.add_spells_title([("Foo", "FOO")])
+    # add_spells_title writes and applies spells within a single run, so the
+    # derived overrides must be invalidated along with the files.
+    assert blogger.format_title("foo bar") == "FOO Bar"
+
+
+def test_format_title_conflicting_spells_raise(spells):
+    spells({"NeoVim": "Neovim", "neovim": "NeoVim"})
+    with pytest.raises(ValueError, match="neovim"):
+        blogger.format_title("tips on neovim")
+
+
+@pytest.mark.parametrize(
+    "title",
+    [
+        "tips on neovim",
+        '"the great debugging story"',
+        "(a retrospective)",
+        "don't panic",
+        "",
+        "   ",
+    ],
+)
+def test_format_title_is_idempotent_and_label_stable(title):
+    once = blogger.format_title(title)
+    assert blogger.format_title(once) == once
+    assert blogger._label(once) == blogger._label(title)

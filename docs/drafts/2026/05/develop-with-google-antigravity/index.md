@@ -1,7 +1,7 @@
 ---
-title: Develop With Google Antigravity
+title: Develop with Google Antigravity
 created: '2026-05-24T23:28:22.137138-07:00'
-date: '2026-06-14T12:25:10-07:00'
+date: '2026-08-11T22:19:18-07:00'
 authors:
   - bendu
 label: develop-with-google-antigravity

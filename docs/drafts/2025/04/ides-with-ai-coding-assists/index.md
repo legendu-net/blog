@@ -1,7 +1,7 @@
 ---
-title: IDEs With AI Coding Assists
-created: 2025-04-18 07:12:55
-date: 2026-04-13 23:14:22.509975
+title: IDEs with AI Coding Assists
+created: '2025-04-18T07:12:55-07:00'
+date: '2026-08-11T22:19:19-07:00'
 authors:
   - bendu
 label: ides-with-ai-coding-assists

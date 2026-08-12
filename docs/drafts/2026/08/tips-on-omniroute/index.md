@@ -1,7 +1,7 @@
 ---
-title: Tips on Omniroute
+title: Tips on OmniRoute
 created: '2026-08-04T22:33:38.519018-07:00'
-date: '2026-08-06T23:57:11-07:00'
+date: '2026-08-11T22:19:18-07:00'
 authors:
   - bendu
 label: tips-on-omniroute

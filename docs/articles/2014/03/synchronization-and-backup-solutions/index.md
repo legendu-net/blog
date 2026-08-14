@@ -1,7 +1,7 @@
 ---
-title: "Synchronization and Backup Solutions"
-created: 2014-03-04 22:11:05
-date: 2021-09-24 12:14:58
+title: Synchronization and Backup Solutions
+created: '2014-03-04T22:11:05-08:00'
+date: '2026-08-13T21:19:31-07:00'
 authors:
   - bendu
 label: synchronization-and-backup-solutions
@@ -14,230 +14,174 @@ tags:
   - Dropbox
   - TeamDrive
   - Syncthing
+  - alternative
 ---
 
 ## Tips and Traps
 
 1. Almost all sychronization tools have problems with symbolic links.
-    Most of them just ignore symbolic links.
-    This makes sense as following symbolic links can causes serious disk problems.
-    If not followed then symbolic links are likely broken on other device.
-    The simple suggestion is do not place symbolic links in your synchronization folders.
+   Most of them just ignore symbolic links.
+   This makes sense as following symbolic links can causes serious disk problems.
+   If not followed then symbolic links are likely broken on other device.
+   The simple suggestion is do not place symbolic links in your synchronization folders.
 
-2. Backup (relatively) small files to Dropbox (or a similar tool),
-  and Backup large non-privacy files on Baidu Yun.
-  If a large file is sensitive, 
-  encrypt it first before uploding it to Baidu Yun.
+1. Backup (relatively) small files to Dropbox (or a similar tool),
+   and Backup large non-privacy files on Baidu Yun.
+   If a large file is sensitive,
+   encrypt it first before uploding it to Baidu Yun.
 
-<table style="width:100%">
-  <tr>
-    <th> Name </th>
-    <th> Opensource/free </th>
-    <th> OS </th>
-    <th> GUI/CLI </th>
-    <th> Sync/Backup </th>
-    <th> Directly Accessible from Mainland of China </th>
-    <th> Comments </th>
-  </tr>
-  <tr>
-    <td> 
-    <a href="https://www.dropbox.com/"> Dropbox </a>
-    </td>
-    <td> free for 3 devices and 2G space  </td>
-    <td> Windows, macOS, Linux </td>
-    <td> GUI </td>
-    <td> Sync </td>
-    <td> No </td>
-    <td> 
-    1. Best solution for small data backup 
+```{list-table}
+---
+header-rows: 1
+---
+- - Service
+  - Linux Support Level
+  - Official Linux App Details
+- - pCloud
+  - Native (Full Support)
+  - Provides a fully featured AppImage client with file syncing, GUI management, virtual drive mounting, and selective sync.
+- - Nextcloud
+  - Native (Full Support)
+  - Offers full desktop sync client support for Ubuntu, Debian, Fedora, Arch, openSUSE, and AppImage formats.
+- - Proton Drive
+  - Limited (CLI Only)
+  - Official support is limited to a Command-Line Interface (CLI) app; no official native GUI sync app for desktop Linux.
+- - Google Drive
+  - Web / 3rd-Party Only
+  - No official Google sync client for Linux. Requires web browser usage or third-party sync apps (e.g., Insync, Rclone).
+- - Microsoft OneDrive
+  - Web / 3rd-Party Only
+  - No official desktop client. Requires web app or open-source tools (e.g., onedrive CLI or Rclone).
+- - Sync.com
+  - Web Only
+  - Offers no native desktop sync app for Linux; web portal access only.
+```
+
+```{list-table}
+---
+header-rows: 1
+---
+- - Name
+  - Opensource/free
+  - OS
+  - GUI/CLI
+  - Sync/Backup
+  - Directly Accessible from Mainland of China
+  - Comments
+- - [Dropbox](https://www.dropbox.com/)
+  - free for 3 devices and 2G space
+  - Windows, macOS, Linux
+  - GUI
+  - Sync
+  - No
+  - 1. Best solution for small data backup
     2. every thing is in the same folder, no way to sync a folder with higher priority over others
-        while you can do this with TeamDrive or BTSync
-    </td>
-  </tr>
-  <tr>
-    <td> 
-    <a href="https://pan.baidu.com/disk/home"> Baidu Net Disk </a>
-    </td>
-    <td> free for 2T space and limited download speed  </td>
-    <td> Windows, macOS, Linux </td>
-    <td> GUI </td>
-    <td> Sync </td>
-    <td> Yes </td>
-    <td> 
-    Best solution for large data backup
-    </td>
-  </tr>
-  <tr>
-    <td> 
-    <a href="https://synqion.com/"> Synqion (TeamDrive) </a>
-    </td>
-    <td> free for 2G space </td>
-    <td> Windows, macOS, Linux </td>
-    <td> GUI </td>
-    <td> Sync </td>
-    <td> Yes </td>
-    <td> 
-    1. Best solution for small data backup 
-    1. extremely secure, good for private, sensitive docs
+       while you can do this with TeamDrive or BTSync
+- - [Baidu Net Disk](https://pan.baidu.com/disk/home)
+  - free for 2T space and limited download speed
+  - Windows, macOS, Linux
+  - GUI
+  - Sync
+  - Yes
+  - Best solution for large data backup
+- - [Synqion (TeamDrive)](https://synqion.com/)
+  - free for 2G space
+  - Windows, macOS, Linux
+  - GUI
+  - Sync
+  - Yes
+  - 1. Best solution for small data backup
+    2. extremely secure, good for private, sensitive docs
     3. separated spaces which is much better than dropbox
-    </td>
-  </tr>
-  <tr>
-    <td> 
-    <a href="https://syncthing.net/"> Syncthing </a>
-    </td>
-    <td> free </td>
-    <td> Windows, macOS, Linux </td>
-    <td> Both </td>
-    <td> Sync </td>
-    <td> Yes </td>
-    <td> 
-    1. extremely secure, good for private, sensitive docs
+- - [Syncthing](https://syncthing.net/)
+  - free
+  - Windows, macOS, Linux
+  - Both
+  - Sync
+  - Yes
+  - 1. extremely secure, good for private, sensitive docs
     2. good performance on large files but poor performance on small files
-    3. Best solution for private personal backup 
-    </td>
-  </tr>
-  <tr>
-    <td> 
-    <a href="https://www.google.com/drive/"> Google Drive </a>
-    </td>
-    <td> free for 15G space </td>
-    <td> Windows, macOS </td>
-    <td> GUI </td>
-    <td> Sync </td>
-    <td> No </td>
-    <td> 
-    1. good for backing up Google products
-    </td>
-  </tr>
-  <tr>
-    <td> 
-    <a href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage"> OneDrive </a>
-    </td>
-    <td> free for 15G space </td>
-    <td> Windows, macOS </td>
-    <td> GUI </td>
-    <td> Sync </td>
-    <td> No </td>
-    <td> 
-    1. good for backing up MS products
-    </td>
-  </tr>
-  <tr>
-    <td> 
-    <a> NAS / NFS </a>
-    </td>
-    <td> free </td>
-    <td> Windows, macOS, Linux </td>
-    <td> Both </td>
-    <td> network file system </td>
-    <td> Yes </td>
-    <td> 
-    1. easy to use
+    3. Best solution for private personal backup
+- - [Google Drive](https://www.google.com/drive/)
+  - free for 15G space
+  - Windows, macOS
+  - GUI
+  - Sync
+  - No
+  - 1. good for backing up Google products
+- - [OneDrive](https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage)
+  - free for 15G space
+  - Windows, macOS
+  - GUI
+  - Sync
+  - No
+  - 1. good for backing up MS products
+- - NAS / NFS
+  - free
+  - Windows, macOS, Linux
+  - Both
+  - network file system
+  - Yes
+  - 1. easy to use
     2. provided to employees by many companies
     3. relatively low performance
-    </td>
-  </tr>
-  <tr>
-    <td> 
-    <a href="https://mutagen.io/"> Mutagen </a>
-    </td>
-    <td> Opensource </td>
-    <td> Windows, macOS, Linux </td>
-    <td> CLI </td>
-    <td> sync </td>
-    <td> Yes </td>
-    <td> 
-    1. fast file synchronization;
-    2. network forwarding 
-    </td>
-  </tr>
-  <tr>
-    <td> 
-    <a href="https://github.com/bcpierce00/unison"> Unison </a>
-    </td>
-    <td> Opensource </td>
-    <td> Windows, macOS, Linux </td>
-    <td> CLI </td>
-    <td> 2-way sync </td>
-    <td> Yes </td>
-    <td> 
-    2-way sync, fault tolerance
-    </td>
-  </tr>
-  <tr>
-    <td> 
-    <a href="https://github.com/deajan/osync"> osync </a>
-    </td>
-    <td> Opensource </td>
-    <td> Windows, macOS, Linux </td>
-    <td> CLI </td>
-    <td> 2-way sync </td>
-    <td> Yes </td>
-    <td> 
-    2-way sync, rsync-based, fault tolerance
-    </td>
-  </tr>
-  <tr>
-    <td> 
-    <a href="https://github.com/rsnapshot/rsnapshot"> Rsnapshot </a>
-    </td>
-    <td> free </td>
-    <td> Windows, macOS, Linux </td>
-    <td> CLI </td>
-    <td> Backup </td>
-    <td> Yes </td>
-    <td> 
-    1. easy to use
+- - [Mutagen](https://mutagen.io/)
+  - Opensource
+  - Windows, macOS, Linux
+  - CLI
+  - sync
+  - Yes
+  - 1. fast file synchronization;
+    2. network forwarding
+- - [Unison](https://github.com/bcpierce00/unison)
+  - Opensource
+  - Windows, macOS, Linux
+  - CLI
+  - 2-way sync
+  - Yes
+  - 2-way sync, fault tolerance
+- - [osync](https://github.com/deajan/osync)
+  - Opensource
+  - Windows, macOS, Linux
+  - CLI
+  - 2-way sync
+  - Yes
+  - 2-way sync, rsync-based, fault tolerance
+- - [Rsnapshot](https://github.com/rsnapshot/rsnapshot)
+  - free
+  - Windows, macOS, Linux
+  - CLI
+  - Backup
+  - Yes
+  - 1. easy to use
     2. quick access
     3. copy on change which takes more disk space than incremental backup tools but it is much simpler to use and is very robust
-    </td>
-  </tr>
-  <tr>
-    <td> 
-    <a href="http://www.nongnu.org/duplicity/"> duplicity </a>
-    </td>
-    <td> free </td>
-    <td> Windows, macOS, Linux </td>
-    <td> CLI </td>
-    <td> Backup </td>
-    <td> Yes </td>
-    <td> 
-    1. incremental backup
+- - [duplicity](http://www.nongnu.org/duplicity/)
+  - free
+  - Windows, macOS, Linux
+  - CLI
+  - Backup
+  - Yes
+  - 1. incremental backup
     2. support encryption
-    </td>
-  </tr>
-  <tr>
-    <td> 
-    <a href="https://github.com/backuppc/backuppc"> backupPC </a>
-    </td>
-    <td> free </td>
-    <td> Windows, macOS, Linux </td>
-    <td> ? </td>
-    <td> Backup </td>
-    <td> Yes </td>
-    <td> 
-    high performance, enterprise-grade system
-    </td>
-  </tr>
-  <tr>
-    <td> 
-    <a href="https://www.bacula.org/"> Bacula </a>
-    </td>
-    <td> Opensource </td>
-    <td> Windows, macOS, Linux </td>
-    <td> ? </td>
-    <td> Backup </td>
-    <td> Yes </td>
-    <td> 
-    enterprise-level computer backup system for heterogeneous networks 
-    </td>
-  </tr>
-</table>
+- - [backupPC](https://github.com/backuppc/backuppc)
+  - free
+  - Windows, macOS, Linux
+  - ?
+  - Backup
+  - Yes
+  - high performance, enterprise-grade system
+- - [Bacula](https://www.bacula.org/)
+  - Opensource
+  - Windows, macOS, Linux
+  - ?
+  - Backup
+  - Yes
+  - enterprise-level computer backup system for heterogeneous networks
+```
 
 ## References
 
 - [How to synchronize files between two servers bidirectionally](http://xmodulo.com/synchronize-files-between-two-servers.html)
 
 - [csync](https://www.csync.org/)
-

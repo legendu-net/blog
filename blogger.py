@@ -1359,7 +1359,7 @@ class Blogger:
             fout.write(":header-rows: 1\n")
             fout.write(":widths: 70 30\n\n")
             fout.write("* - Title\n")
-            fout.write("  - Date\n")
+            fout.write("  - Updated Date\n")
             for label, date in rows:
                 date_str = str(date)[:10]
                 fout.write(f"* - [](#{label})\n")

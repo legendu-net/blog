@@ -1,7 +1,7 @@
 ---
 title: Benchmark of LLMs and AI Agents
 created: '2026-07-21T23:01:21.529121-07:00'
-date: '2026-08-11T22:19:18-07:00'
+date: '2026-08-13T20:20:54-07:00'
 authors:
   - bendu
 label: benchmark-of-llms-and-ai-agents
@@ -23,8 +23,28 @@ tags:
 
 - [LLM Rankings](https://openrouter.ai/rankings)
 
-## AI Subscriptions
+## LLM Subscriptions
 
-https://opencode.ai/go
+### Free
+
+- [Gemini Free Tier](https://aistudio.google.com/)
+
+- [OpenCode Free Tier](https://opencode.ai/)
+
+  - automatically included in OmniRoute and no signup is required
+
+- Felo Free Tier
+
+  - automatically included in OmniRoute and no signup is required
+
+### Cheap
+
+- [DeepSeek](https://platform.deepseek.com/)
+
+- [Qwen AI](https://qwen.ai/apiplatform)
+
+- [OpenCode Go](https://opencode.ai/go)
+
+## References
 
 - [Opencode Go plan is really worth it, or just like Google's AGY (antigravity).](https://www.reddit.com/r/opencode/comments/1v1ii2p/opencode_go_plan_is_really_worth_it_or_just_like/)

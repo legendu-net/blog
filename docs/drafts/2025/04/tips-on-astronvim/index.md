@@ -1,7 +1,7 @@
 ---
 title: Tips on AstroNvim
-created: 2025-04-28 10:55:17
-date: 2026-04-15 19:27:00.591039
+created: '2025-04-28T10:55:17-07:00'
+date: '2026-08-27T19:07:27-07:00'
 authors:
   - bendu
 label: tips-on-astronvim
@@ -37,7 +37,7 @@ You can show all available snippets for the current document type using the comm
 .
 However,
 the most popular and "Astro-like" way to search snippets is via Telescope (telescope-luasnip.nvim).
-Please refer to 
+Please refer to
 [telescope-luasnip.lua](https://github.com/legendu-net/AstroNvim_template/blob/main/lua/plugins/telescope-luasnip.lua)
 on enable and configure telescope-luasnip.
 The configuration set the keybinding `<leader>fS` for finding snippets.
@@ -62,15 +62,20 @@ The configuration set the keybinding `<leader>fS` for finding snippets.
 
 - [Git Commit](https://github.com/rafamadriz/friendly-snippets/blob/main/snippets/gitcommit.json)
 
-## Chaing Keyword Cases
+## Changing Keyword Cases
 
 [gregorias/coerce.nvim](https://github.com/gregorias/coerce.nvim)
 is the best Neovim plugin for changing keyword cases.
-See 
+See
 [lua/plugins/coerce.lua] (https://github.com/legendu-net/AstroNvim_template/blob/main/lua/plugins/coerce.lua)
 for an example of enabling and configuring coere.nvim.
 By default,
 coerce.nvim uses keybindings `cr` and `gcr` (visual mode) to toggle on options for changing cases.
+
+## Custom Lua Script
+
+- markdown_link_title.lua: trigger by `,at`.
+- commit_msg.lua: trigger by Git/JJ.
 
 ## References
 

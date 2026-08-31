@@ -1,7 +1,7 @@
 ---
 title: Tips on Openai Codex
 created: '2026-07-14T09:14:11.518563-07:00'
-date: '2026-07-14T09:14:11.518571-07:00'
+date: '2026-08-30T23:28:48-07:00'
 authors:
   - bendu
 label: tips-on-openai-codex
@@ -15,8 +15,6 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-1. The codex app for macOS requires macOS Sillicon (M chips).
+1. The codex desktop app is available for Linux, macOS and Windows. However, the app for macOS requires macOS Sillicon (M chips).
 
-2. The Record & Replay feature is currently available only in the **Codex desktop application on macOS**. 
-
-3. The codex desktop application is not available on Linux currently, however, codex cli is available on Linux.
+1. The Record & Replay feature is currently available only in the **Codex desktop application on macOS**.

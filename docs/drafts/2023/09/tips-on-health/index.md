@@ -1,7 +1,7 @@
 ---
-title: "Tips on Health"
-created: 2023-09-23 00:58:13
-date: 2025-06-19 09:41:33
+title: Tips on Health
+created: '2023-09-23T00:58:13-07:00'
+date: '2026-09-12T21:15:27-07:00'
 authors:
   - bendu
 label: tips-on-health
@@ -34,19 +34,19 @@ tags:
 
 https://www.saramednick.com/napwheel
 
-
 ## Get Vaccine Shot
 
-1. You can find pharmacies for vaccine shot near you at
-    https://www.vaccines.gov/
-    .
-    
-2. [Care-a-Van Mobile Health Services](https://doh.wa.gov/you-and-your-family/care-van-mobile-health-services)
-    provides free vaccines to people without medical insurances.
+1. Check [King County vaccination locations for children and uninsured adults](https://kingcounty.gov/en/dept/dph/health-safety/health-centers-programs-services/immunizations/where-to-get-vaccine/map-locator)
+   and [Care-a-Van Mobile Health Services](https://doh.wa.gov/you-and-your-family/care-van-mobile-health-services)
+   for free vaccines for uninsured adults.
 
-3. For people without medical insurance,
-    Costco offers the cheapest vaccine shots
-    if Care-a-Van Mobile Health Services are not available.
+1. For people without medical insurances,
+   Costco offers the cheapest vaccine shots
+   if free vaccines are not available.
+
+1. You can find pharmacies for vaccine shot near you at
+   https://www.vaccines.gov/
+   .
 
 ## References
 

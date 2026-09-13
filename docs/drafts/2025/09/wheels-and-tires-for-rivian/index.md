@@ -1,7 +1,7 @@
 ---
-title: "Wheels and Tires for Rivian"
-created: 2025-09-30 08:21:16
-date: 2025-10-04 19:15:56
+title: Wheels and Tires for Rivian
+created: '2025-09-30T08:21:16-07:00'
+date: '2026-09-13T14:55:21-07:00'
 authors:
   - bendu
 label: wheels-and-tires-for-rivian
@@ -94,9 +94,7 @@ strongly suggest 20-inch wheels against 22-inch wheels.
 
 ## Snow Tires, Snow Chains and Snow Socks
 
-
 ![](https://github.com/user-attachments/assets/8f3530e3-01e6-4326-b8a4-69a1df59e67f)
-
 
 - [20" All-Season Wheel and Tire Set](https://gearshop.rivian.com/products/20-in-all-season-wheel-and-tire-set?_pos=11&_sid=413bccd3e&_ss=r)
 
@@ -105,7 +103,6 @@ strongly suggest 20-inch wheels against 22-inch wheels.
 - [Planning for Snow Tires](https://www.rivianforums.com/forum/threads/planning-for-snow-tires.29150/)
 
 - [What winter tires should be used on Rivian vehicles?](https://rivian.com/support/article/what-winter-tires-should-be-used-on-rivian-vehicles)
-
 
 - [Snow chain compatibility (according to customer service) @ Reddit](https://www.reddit.com/r/Rivian/comments/te99zz/snow_chain_compatibility_according_to_customer/)
 
@@ -124,3 +121,7 @@ strongly suggest 20-inch wheels against 22-inch wheels.
 - [Wheels for Rivian R1S - TireRack](https://www.tirerack.com/wheels/results.jsp?autoMake=Rivian&autoModel=R1S&autoYear=2025&autoModClar=HL275%2F50-22+XL+High+Load&package=false)
 
 - [2025 Rivian R1S 275/60-20 Tires](https://www.tirerack.com/tires/TireSearchResults.jsp?tireIndex=0&autoMake=Rivian&autoYear=2025&autoModel=R1S&autoModClar=275%2F60-20&width=275%2F&ratio=60&diameter=20&sortCode=60065&skipOver=true&minSpeedRating=H&minLoadRating=XL&performance=ALL)
+
+## R2
+
+- [R2: Choosing wheels and tires for Launch Package | Rivian](https://rivian.com/stories/r2-wheel-and-tire-guide)

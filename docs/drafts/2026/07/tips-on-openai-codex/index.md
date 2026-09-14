@@ -1,7 +1,7 @@
 ---
-title: Tips on Openai Codex
+title: Tips on OpenAI Codex
 created: '2026-07-14T09:14:11.518563-07:00'
-date: '2026-08-30T23:28:48-07:00'
+date: '2026-09-14T00:27:24-07:00'
 authors:
   - bendu
 label: tips-on-openai-codex

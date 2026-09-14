@@ -892,7 +892,8 @@ class Blogger:
         # A generous busy timeout lets concurrent blog.py instances queue on the
         # write lock instead of failing with "database is locked".
         self._conn = sqlite3.connect(self._db, timeout=30)
-        self._conn.execute("PRAGMA journal_mode=WAL")
+        self._cursor = self._conn.cursor()
+        self._cursor.execute("PRAGMA journal_mode=WAL")
         self._create_vtable_posts()
         self._create_table_srps()
 
@@ -903,11 +904,11 @@ class Blogger:
                 tokenize = porter
             )
             """
-        self._conn.execute(sql)
+        self._cursor.execute(sql)
 
     def _create_table_srps(self):
         sql = f"CREATE TABLE IF NOT EXISTS {self.SRPS} ({self.SRPS_COLS})"
-        self._conn.execute(sql)
+        self._cursor.execute(sql)
 
     def clean_db(self):
         """Remove the SQLite3 database."""
@@ -936,7 +937,7 @@ class Blogger:
                 {qmarks(POSTS_COLS)}
             )
             """
-        self._conn.executemany(sql, records)
+        self._cursor.executemany(sql, records)
 
     def load_post(self, post: Post):
         sql = f"""
@@ -946,7 +947,7 @@ class Blogger:
                 {qmarks(POSTS_COLS)}
             )
             """
-        self._conn.execute(sql, post.record())
+        self._cursor.execute(sql, post.record())
 
     def trash(self, paths: str | list[str]):
         """Move the specified posts to the trash directory.
@@ -972,22 +973,22 @@ class Blogger:
         """
         sql = f"DELETE FROM {table} "
         if not paths:
-            self._conn.execute(sql)
+            self._cursor.execute(sql)
             return
         if isinstance(paths, AnyPath):
             paths = [paths]
         sql += f"WHERE path IN ({qmarks(paths)})"
-        self._conn.execute(sql, paths)
+        self._cursor.execute(sql, paths)
 
     def keep_srps(self, indexes: list[int]) -> None:
         """Keep only the srps rows with the given rowids, removing all others."""
         sql = f"DELETE FROM {self.SRPS} WHERE rowid NOT IN ({qmarks(indexes)})"
-        self._conn.execute(sql, indexes)
+        self._cursor.execute(sql, indexes)
 
     def remove_srps(self, indexes: list[int]) -> None:
         """Remove srps rows with the given rowids."""
         sql = f"DELETE FROM {self.SRPS} WHERE rowid IN ({qmarks(indexes)})"
-        self._conn.execute(sql, indexes)
+        self._cursor.execute(sql, indexes)
 
     def move(self, paths: str | Sequence[str], doc_dir: str) -> None:
         """Move specified posts into a destination directory.
@@ -1132,7 +1133,7 @@ class Blogger:
                 {qmarks(fields)}
             )
             """
-        self._conn.executemany(sql, values)
+        self._cursor.executemany(sql, values)
 
     def add_refs(self, paths: str | list[str], urls: str | list[str]) -> None:
         if isinstance(paths, str):
@@ -1176,7 +1177,7 @@ class Blogger:
             SET {", ".join(f"{k} = ?" for k in kvs)}
             WHERE path in ({qmarks(paths)})
             """
-        self._conn.execute(sql, list(it.chain(kvs.values(), paths)))
+        self._cursor.execute(sql, list(it.chain(kvs.values(), paths)))
 
     def sync_dates(self):
         """Sync the date field of changed posts to their mtime."""
@@ -1265,7 +1266,7 @@ class Blogger:
             {"ORDER BY " + order_by if order_by else ""}
             {f"LIMIT {limit}" if limit else ""}
             """
-        self._conn.execute(sql)
+        self._cursor.execute(sql)
 
     def search(self, phrase: str, filter_: str = "", append: bool = False):
         """Search for posts containing the phrase.
@@ -1295,7 +1296,7 @@ class Blogger:
             SELECT path FROM {table}
             {"WHERE " + where if where else ""}
             """
-        return [row[0] for row in self._conn.execute(sql, params)]
+        return [row[0] for row in self._cursor.execute(sql, params)]
 
     def gen_tags_md(self) -> None:
 
@@ -1308,7 +1309,7 @@ class Blogger:
             ORDER BY date DESC
         """
         tags: dict[str, list[tuple[str, str]]] = {}
-        for label, date, tag_str in self._conn.execute(sql):
+        for label, date, tag_str in self._cursor.execute(sql):
             link = f"[](#{label})"
             date_str = str(date)[:10]
             for tag in tag_str.strip(SEPARATOR).split(SEPARATOR):
@@ -1352,7 +1353,7 @@ class Blogger:
             ORDER BY date DESC
             LIMIT ?
         """
-        rows = self._conn.execute(sql, (ARTICLES, DRAFTS, n)).fetchall()
+        rows = self._cursor.execute(sql, (ARTICLES, DRAFTS, n)).fetchall()
         path = BASE_DIR / "docs/recent_posts.md"
         with path.open("w", encoding="utf-8") as fout:
             fout.write(":::{list-table}\n")
@@ -1377,7 +1378,7 @@ class Blogger:
             {"WHERE " + where if where else ""}
             {"ORDER BY " + order_by if order_by else ""}
             """
-        for title, label, tags in self._conn.execute(sql):
+        for title, label, tags in self._cursor.execute(sql):
             link = f"[{title}]({label})"
             for tag in tags.strip(SEPARATOR).split(SEPARATOR):
                 kvs.setdefault(tag, [])
@@ -1385,12 +1386,12 @@ class Blogger:
         return kvs
 
     def num_srps(self) -> int:
-        row = self._conn.execute(f"SELECT count(*) FROM {self.SRPS}").fetchone()
+        row = self._cursor.execute(f"SELECT count(*) FROM {self.SRPS}").fetchone()
         return row[0]
 
     def show(self, n: int, order_by: str = "") -> None:
         print("\nNumber of posts in srps:", self.num_srps())
-        for row in self._conn.execute(
+        for row in self._cursor.execute(
             f"""
             SELECT rowid, {self.SRPS_COLS}
             FROM {self.SRPS}

@@ -1,7 +1,7 @@
 ---
 title: Tab Management in Chrome
 created: '2026-05-16T19:50:19.502335-07:00'
-date: '2026-09-14T23:35:30-07:00'
+date: '2026-09-17T00:58:35-07:00'
 authors:
   - bendu
 label: tab-management-in-chrome
@@ -36,7 +36,7 @@ tags:
 
 1. Memory Saver
 
-   <img width="80%" alt="Image" src="https://github.com/user-attachments/assets/986773db-6790-46bb-b71c-4190df3965fa" />
+   <img width="90%" alt="Image" src="https://github.com/user-attachments/assets/986773db-6790-46bb-b71c-4190df3965fa" />
 
 ## History (SQLite3 Database)
 

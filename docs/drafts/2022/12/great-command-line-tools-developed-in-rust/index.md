@@ -1,7 +1,7 @@
 ---
 title: Great Command Line Tools Developed in Rust
 created: '2022-12-21T10:14:53-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-09-18T01:46:11-07:00'
 authors:
   - bendu
 label: great-command-line-tools-developed-in-rust
@@ -78,30 +78,6 @@ is an intuitive find & replace CLI (sed alternative).
 
 [skim](https://github.com/skim-rs/skim)
 is a fuzzy finder implemented in rust!
-
-## Summarize a Project
-
-### [git-cliff](https://github.com/orhun/git-cliff)
-
-[git-cliff](https://github.com/orhun/git-cliff)
-can generate changelog files from the Git history
-by utilizing conventional commits as well as regex-powered custom parsers.
-The changelog template can be customized with a configuration file to match the desired format.
-
-### [tokei](https://github.com/XAMPPRocky/tokei)
-
-[Tokei](https://github.com/XAMPPRocky/tokei)
-is a program that displays statistics about your code.
-Tokei will show the number of files,
-total lines within those files and code, comments, and blanks grouped by language.
-
-### [onefetch](https://github.com/o2sh/onefetch)
-
-[OneFetch](https://github.com/o2sh/onefetch)
-is a command-line Git information tool written in Rust
-that displays project information and code statistics
-for a local Git repository directly to your terminal.
-The tool is completely offline - no network access is required.
 
 ## System Monitoring
 
@@ -198,6 +174,40 @@ checks for unsaved or uncommitted changes on your machine.
 StGit for short,
 is an application for managing Git commits as a stack of patches.
 
+### [delta](https://github.com/dandavison/delta)
+
+[delta](https://github.com/dandavison/delta)
+is a syntax-highlighting pager for git, diff, and grep output.
+
+### [difftastic](https://github.com/Wilfred/difftastic)
+
+[Difftastic](https://github.com/Wilfred/difftastic)
+is a structural diff tool that compares files based on their syntax.
+
+### [git-cliff](https://github.com/orhun/git-cliff)
+
+[git-cliff](https://github.com/orhun/git-cliff)
+can generate changelog files from the Git history
+by utilizing conventional commits as well as regex-powered custom parsers.
+The changelog template can be customized with a configuration file to match the desired format.
+
+### [tokei](https://github.com/XAMPPRocky/tokei)
+
+[Tokei](https://github.com/XAMPPRocky/tokei)
+is a program that displays statistics about your code.
+Tokei will show the number of files,
+total lines within those files and code, comments, and blanks grouped by language.
+
+### [onefetch](https://github.com/o2sh/onefetch)
+
+[OneFetch](https://github.com/o2sh/onefetch)
+is a command-line Git information tool written in Rust
+that displays project information and code statistics
+for a local Git repository directly to your terminal.
+The tool is completely offline - no network access is required.
+
+## Misc
+
 ## [grex](https://github.com/pemistahl/grex)
 
 [grex](https://github.com/pemistahl/grex)
@@ -205,38 +215,28 @@ is a command-line tool and Rust library
 for generating regular expressions from user-provided test cases
 .
 
-## [delta](https://github.com/dandavison/delta)
-
-[delta](https://github.com/dandavison/delta)
-is a syntax-highlighting pager for git, diff, and grep output.
-
-## [difftastic](https://github.com/Wilfred/difftastic)
-
-[Difftastic](https://github.com/Wilfred/difftastic)
-is a structural diff tool that compares files based on their syntax.
-
-## [ruff](https://github.com/charliermarsh/ruff)
+### [ruff](https://github.com/charliermarsh/ruff)
 
 [ruff](https://github.com/charliermarsh/ruff)
 is an extremely fast Python linter, written in Rust.
 
-## [Rome](https://github.com/rome/tools)
+### [Rome](https://github.com/rome/tools)
 
 [Rome](https://github.com/rome/tools)
 provides unified developer tools for JavaScript, TypeScript, and the web.
 
-## [carbonyl](https://github.com/fathyb/carbonyl)
+### [carbonyl](https://github.com/fathyb/carbonyl)
 
 [Carbonyl](https://github.com/fathyb/carbonyl)
 is a Chromium based browser built to run in a terminal.
 
-## [speedtest-rs](https://github.com/nelsonjchen/speedtest-rs)
+### [speedtest-rs](https://github.com/nelsonjchen/speedtest-rs)
 
 [speedtest-rs](https://github.com/nelsonjchen/speedtest-rs)
 a tool like speedtest-cli, but in Rust
 .
 
-## [mprocs](https://github.com/pvolok/mprocs)
+### [mprocs](https://github.com/pvolok/mprocs)
 
 [mprocs](https://github.com/pvolok/mprocs)
 runs multiple commands in parallel and shows output of each command separately.

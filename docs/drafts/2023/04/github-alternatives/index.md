@@ -1,7 +1,7 @@
 ---
 title: GitHub Alternatives
 created: '2023-04-11T17:28:17-07:00'
-date: '2026-08-23T23:34:30-07:00'
+date: '2026-09-18T00:51:39-07:00'
 authors:
   - bendu
 label: github-alternatives
@@ -54,3 +54,10 @@ a Chinese non-profit organization that promotes open source software.
 Gitee is similar to GitHub,
 another popular code hosting service,
 but it is tailored to the Chinese market.
+
+## [Fossil](https://fossil-scm.org/home/doc/trunk/www/index.wiki)
+
+[Fossil](https://fossil-scm.org/home/doc/trunk/www/index.wiki)
+is a simple, high-reliability, distributed SCM system
+with built-in web interface that natively provides project management features
+like bug tracking, wikis, forums, chat, and email alerts.

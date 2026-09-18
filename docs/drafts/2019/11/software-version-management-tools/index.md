@@ -1,7 +1,7 @@
 ---
-title: "Software Version Management Tools"
-created: 2019-11-03 12:43:57
-date: 2023-03-06 10:34:02
+title: Software Version Management Tools
+created: '2019-11-03T12:43:57-08:00'
+date: '2026-09-18T01:42:14-07:00'
 authors:
   - bendu
 label: software-version-management-tools
@@ -21,37 +21,24 @@ tags:
 [rtx](https://github.com/jdxcode/rtx)
 is a version management tool for multiple programming languages.
 
-<table style="width:100%">
-  <tr>
-    <th> Software/Programming Language </th>
-    <th> Version Management Tool </th>
-  </tr>
-  <tr>
-    <td> Text </td>
-    <td> Git </td>
-  </tr>
-  <tr>
-    <td> Python </td>
-    <td> <a href="https://github.com/pyenv/pyenv"> pyenv </a> </td>
-  </tr>
-  <tr>
-    <td> NodeJS </td>
-    <td> <a href="https://github.com/tj/n"> n </a> </td>
-  </tr>
-  <tr>
-    <td> Rust </td>
-    <td> <a href="https://rustup.rs/"> Rustup </a> </td>
-  </tr>
-  <tr>
-    <td> JVM Languages/Tools </td>
-    <td> <a href="https://sdkman.io/"> sdkman </a> </td>
-  </tr>
-  <tr>
-    <td> Ruby </td>
-    <td> <a href="https://rvm.io/"> rvm </a> </td>
-  </tr>
-  <tr>
-    <td> NeoVim </td>
-    <td> <a href="https://github.com/MordechaiHadad/bob"> bob </a> </td>
-  </tr>
-</table>
+```{list-table}
+---
+header-rows: 1
+---
+- - Software/Programming Language
+  - Version Management Tool
+- - Text
+  - Git
+- - Python
+  - uv (venv for virtual environments) 
+- - NodeJS
+  - [n](https://github.com/tj/n)
+- - Rust
+  - [Rustup](https://rustup.rs/)
+- - JVM Languages/Tools
+  - [sdkman](https://sdkman.io/)
+- - Ruby
+  - [rvm](https://rvm.io/)
+- - NeoVim
+  - [bob](https://github.com/MordechaiHadad/bob)
+```

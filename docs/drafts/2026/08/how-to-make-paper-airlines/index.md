@@ -1,7 +1,7 @@
 ---
-title: How to Make Paper Airlines
+title: How to Make Paper Airplanes
 created: '2026-08-27T18:36:16.659858-07:00'
-date: '2026-08-27T18:36:16.659868-07:00'
+date: '2026-09-20T19:06:40-07:00'
 authors:
   - bendu
 label: how-to-make-paper-airlines
@@ -15,6 +15,14 @@ tags:
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+- [Glider Baru Terbang Lebih Jauh dari Sebelumnya! Rahasia Desain & Tekniknya! - YouTube](https://www.youtube.com/watch?v=BPi9ukDcyJk)
+
+- [Papierflieger falten der weit fliegt basteln - Beste Papierflieger der Welt einfach bauen - YouTube](https://www.youtube.com/watch?v=OneYlWOpVzE)
+
+- [how to make jet plane with craft paper || best paper plane that Flies Far #shorts #viral #diy - YouTube](https://www.youtube.com/shorts/ZM029ZouYBI)
+
+- [EASY PAPER PLANE STAR FIGHTER INSTRUCTION | HOW TO MAKE A COOL PAPER PLANE STEP BY STEP - YouTube](https://www.youtube.com/shorts/c_Y2mo7qvEc)
 
 - [How To Make a Paper Airplane that Flies Far - World's Best Paper Airplane (Swallow)](https://www.youtube.com/watch?v=dlAYKYNRzac)
 

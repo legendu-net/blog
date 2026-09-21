@@ -1,7 +1,7 @@
 ---
 title: Misc Tips in Daily Life
 created: '2013-10-22T13:31:43-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-09-20T18:37:48-07:00'
 authors:
   - bendu
 label: misc-tips-in-daily-life
@@ -26,25 +26,6 @@ tags:
    I have problem to use SSH and NX services.
 
 1. Time Warner is not good either but is OK.
-
-## Health
-
-1. urgent care
-1. ER
-
-## Printing
-
-1. Office
-1. Library
-1. FedEx/UPS Offices
-
-## Tax Preparation
-
-1. H&R Block
-
-## Chocolate
-
-1. Shari's Berries
 
 ## Furniture
 

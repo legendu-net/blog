@@ -2,6 +2,8 @@
 site:
   hide_title_block: true
   hide_outline: true
+created:
+date:
 ---
 
 # Home
@@ -15,12 +17,15 @@ site:
 
 </div>
 
+And let it direct your passion with reason,
+that your passion may live through its own daily resurrection
+and like the phoenix rise above its own ashes.
+
 ## Recent blog posts
 
-:::{include} ./recent_posts.md
+:::\{include} ./recent_posts.md
 :::
 
 ## About the Author
 
-[GitHub](https://github.com/legendu-net) &emsp; | &emsp; [LinkedIn](https://www.linkedin.com/in/ben-chuanlong-du-1239b221/) &emsp; | &emsp; [Blog Source](https://github.com/legendu-net/blog)
-
+[GitHub](https://github.com/legendu-net)   |   [LinkedIn](https://www.linkedin.com/in/ben-chuanlong-du-1239b221/)   |   [Blog Source](https://github.com/legendu-net/blog)

@@ -1193,7 +1193,11 @@ class Blogger:
             else:
                 path_str = path_entry
             path = Path(path_str)
-            if not (path.suffix in (MARKDOWN, IPYNB) and path.parts[0] == "docs"):
+            if not (
+                path.suffix in (MARKDOWN, IPYNB)
+                and len(path.parts) > 1
+                and path.parts[1] in (ARTICLES, DRAFTS, OUTDATED)
+            ):
                 continue
             if not path.exists():
                 continue

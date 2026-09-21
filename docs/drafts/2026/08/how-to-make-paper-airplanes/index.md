@@ -1,10 +1,10 @@
 ---
 title: How to Make Paper Airplanes
 created: '2026-08-27T18:36:16.659858-07:00'
-date: '2026-09-20T19:06:40-07:00'
+date: '2026-09-21T01:06:57-07:00'
 authors:
   - bendu
-label: how-to-make-paper-airlines
+label: how-to-make-paper-airplanes
 license: CC-BY-4.0
 tags:
   - life

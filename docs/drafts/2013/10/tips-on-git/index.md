@@ -1,7 +1,7 @@
 ---
 title: Tips on Git
 created: '2013-10-30T11:09:57-07:00'
-date: '2026-09-22T11:10:19-07:00'
+date: '2026-09-23T01:20:40-07:00'
 authors:
   - bendu
 label: tips-on-git
@@ -25,11 +25,6 @@ tags:
 [Git Tools](great-command-line-tools-developed-in-rust-git-tools)
 
 [](#tools-for-checking-for-dirty-git-repositories)
-
-https://github.com/mergestat/mergestat
-
-Query git repositories with SQL.
-Generate reports, perform status checks, analyze codebases.
 
 ## Access Token for Git
 

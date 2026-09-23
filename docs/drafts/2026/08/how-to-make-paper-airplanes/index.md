@@ -1,7 +1,7 @@
 ---
 title: How to Make Paper Airplanes
 created: '2026-08-27T18:36:16.659858-07:00'
-date: '2026-09-21T01:06:57-07:00'
+date: '2026-09-22T21:20:40-07:00'
 authors:
   - bendu
 label: how-to-make-paper-airplanes
@@ -15,6 +15,8 @@ tags:
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
+- [How To Make An Easy Airplane that flies far #papierflieger #paperairplane #basteln - YouTube](https://www.youtube.com/shorts/rQsv71Ho5Qs)
 
 - [Glider Baru Terbang Lebih Jauh dari Sebelumnya! Rahasia Desain & Tekniknya! - YouTube](https://www.youtube.com/watch?v=BPi9ukDcyJk)
 

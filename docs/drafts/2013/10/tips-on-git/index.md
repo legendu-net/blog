@@ -1,7 +1,7 @@
 ---
 title: Tips on Git
 created: '2013-10-30T11:09:57-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-09-22T11:10:19-07:00'
 authors:
   - bendu
 label: tips-on-git
@@ -20,7 +20,16 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+## Useful Tools for Git and Git Repositoris
+
 [Git Tools](great-command-line-tools-developed-in-rust-git-tools)
+
+[](#tools-for-checking-for-dirty-git-repositories)
+
+https://github.com/mergestat/mergestat
+
+Query git repositories with SQL.
+Generate reports, perform status checks, analyze codebases.
 
 ## Access Token for Git
 
@@ -444,13 +453,6 @@ git diff -- . ':(exclude)db/irrelevant.php' ':(exclude)db/irrelevant2.php'
    ```
     git stash
    ```
-
-## Useful Tools for Git and Git Repositoris
-
-https://github.com/mergestat/mergestat
-
-Query git repositories with SQL.
-Generate reports, perform status checks, analyze codebases.
 
 ## References
 

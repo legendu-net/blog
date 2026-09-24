@@ -1,7 +1,7 @@
 ---
 title: Develop with Google Antigravity
 created: '2026-05-24T23:28:22.137138-07:00'
-date: '2026-08-11T22:19:18-07:00'
+date: '2026-09-24T08:17:43-07:00'
 authors:
   - bendu
 label: develop-with-google-antigravity
@@ -37,6 +37,13 @@ ctrl + k to approve
 ```sh
 agy --dangerously-skip-permissions
 ```
+
+Avoid passing flags like `--dangerously-skip-permissions`
+if you need the agent to stop at /plan review checkpoints.
+
+- [CLI Bug: --dangerously-skip-permissions bypasses /plan mode stop hooks · Issue #1074](https://github.com/google-antigravity/antigravity-cli/issues/1074?utm_source=gemini)
+
+- [Understanding Antigravity CLI Stop Hook](https://share.gemini.google/sEyxQJnWCWMV)
 
 ## References
 

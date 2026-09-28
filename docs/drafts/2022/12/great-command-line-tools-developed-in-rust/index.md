@@ -1,7 +1,7 @@
 ---
 title: Great Command Line Tools Developed in Rust
 created: '2022-12-21T10:14:53-08:00'
-date: '2026-09-27T21:53:30-07:00'
+date: '2026-09-27T22:48:19-07:00'
 authors:
   - bendu
 label: great-command-line-tools-developed-in-rust
@@ -139,9 +139,9 @@ widths: 15 20 65
 - - Security
   - [rtx](https://github.com/jdxcode/rtx)
   - Is a version manager for multiple programming languages.
-- - Good Ones but Which I Won't Use
+- - Shell
   - nushell
-  -
+  - I personal won't use it. Fish is a great shell for daily use. For any thing complicated (e.g., data process), Python/IPython shells are more practical ones.
 ```
 
 ## References

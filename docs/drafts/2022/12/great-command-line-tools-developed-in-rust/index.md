@@ -1,7 +1,7 @@
 ---
 title: Great Command Line Tools Developed in Rust
 created: '2022-12-21T10:14:53-08:00'
-date: '2026-09-23T02:09:42-07:00'
+date: '2026-09-27T21:53:30-07:00'
 authors:
   - bendu
 label: great-command-line-tools-developed-in-rust
@@ -16,8 +16,6 @@ tags:
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-
-(great-command-line-tools-developed-in-rust-git-tools)=
 
 ```{list-table}
 ---

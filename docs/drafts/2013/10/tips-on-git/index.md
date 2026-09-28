@@ -1,7 +1,7 @@
 ---
 title: Tips on Git
 created: '2013-10-30T11:09:57-07:00'
-date: '2026-09-23T01:20:40-07:00'
+date: '2026-09-27T22:42:46-07:00'
 authors:
   - bendu
 label: tips-on-git
@@ -22,9 +22,9 @@ tags:
 
 ## Useful Tools for Git and Git Repositoris
 
-[Git Tools](great-command-line-tools-developed-in-rust-git-tools)
+- Git tools in [](#great-command-line-tools-developed-in-rust)
 
-[](#tools-for-checking-for-dirty-git-repositories)
+- [](#tools-for-checking-for-dirty-git-repositories)
 
 ## Access Token for Git
 

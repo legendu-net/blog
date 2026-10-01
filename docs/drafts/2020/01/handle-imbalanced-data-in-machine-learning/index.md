@@ -1,7 +1,7 @@
 ---
-title: "Handle Imbalanced Data in Machine Learning"
-created: 2020-01-18 10:40:49
-date: 2020-02-18 10:40:49
+title: Handle Imbalanced Data in Machine Learning
+created: '2020-01-18T10:40:49-08:00'
+date: '2026-09-30T17:10:21-07:00'
 authors:
   - bendu
 label: handle-imbalanced-data-in-machine-learning
@@ -21,28 +21,32 @@ is a Python Package to Tackle the Curse of Imbalanced Datasets in Machine Learni
 ## Type of Imbalanced Data
 
 - Intrinsic (imbalance is a direct result of the nature of the dataspace)
+
 - Extrinsic (due to time and/or storage, etc.)
 
-
-
 - Between-class Imbalance
-	- Relative imbalance (OOM)
-	- Rare instances a.k.a. absolute rarity (pink blood patient)
+
+  - Relative imbalance (OOM)
+  - Rare instances a.k.a. absolute rarity (pink blood patient)
+
 - Within-class Imbalance
 
-
 - Data complexity (primary)
-	- Overlapping
-	- Lack of representative data
-	- Small disjuncts
+
+  - Overlapping
+  - Lack of representative data
+  - Small disjuncts
+
 - Imbalanced
+
 - Small sample size
 
 ## Impact of Imbalanced Data on Decision Tree
+
 - Fewer and fewer observations of minority class examples
-	resulting in fewer leaves describing minority concepts and successively weaker confidences estimates
-- Concepts that have dependencies on different feature space conjunctions 
-	can go unlearned by the sparseness introduced through partitionining
+  resulting in fewer leaves describing minority concepts and successively weaker confidences estimates
+- Concepts that have dependencies on different feature space conjunctions
+  can go unlearned by the sparseness introduced through partitionining
 
 ## Evaluation
 
@@ -57,20 +61,33 @@ is a Python Package to Tackle the Curse of Imbalanced Datasets in Machine Learni
 ## Ways to Handle Imbalanced Data
 
 - Do nothing
+
 - Balance the training set
-	Oversampling: tied data leading to overfitting
-	Undersampling: miss important concepts 
-	overall undersampling is preferred if there are enough data.
-	However, oversampling might be better if you have very small data.
+  Oversampling: tied data leading to overfitting
+  Undersampling: miss important concepts
+  overall undersampling is preferred if there are enough data.
+  However, oversampling might be better if you have very small data.
 
 - Border based approach
+
 - Sampling with Data Cleaning
+
 - Adjust algorithms
+
 - Cluster-based Sampling
+
 - Sampling + Boosting
+
 - New algorithms
+
 - Anomaly detection
 
+If the training contains multiple data slices (each of which contains positive/negative samples)
+and you'd like to make sure that the trained model perform well on a slice with very volume,
+do not use too high weights for the data slice with small volume.
+Slightly higher weight 1-2x helps but too high weights hurt training
+(observed in TensorFlow).
+Negative downsampling based on volumes data slices is usually a much better solution.
 
 ## Undersampling
 
@@ -82,56 +99,59 @@ is a Python Package to Tackle the Curse of Imbalanced Datasets in Machine Learni
 ## Border-based Approaches
 
 ### Tomek Links
-A pair of minimally distanced nearest neighbors of opposite classes. 
- Remove the majority instance of Tomek Links. 
-  Makes the border more clear
+
+A pair of minimally distanced nearest neighbors of opposite classes.
+Remove the majority instance of Tomek Links.
+Makes the border more clear
 
 ### SMOTE
+
 Synthetic Minority Oversampling TEchique
- Synthesizing new minority class examples 
-  break the tie introduced by simple oversampling and augment the original data
-   shown a great success in various applications  
-   Similar to mixup for deep learning
+Synthesizing new minority class examples
+break the tie introduced by simple oversampling and augment the original data
+shown a great success in various applications\
+Similar to mixup for deep learning
+
 ### Variation of SMOTE
+
 Borderline-SMOTE
- ADASYN
-  SMOTE + Undersampling
-   SMOTE-NC (nominal continuous)
-     SMOTE-N (nominal)
+ADASYN
+SMOTE + Undersampling
+SMOTE-NC (nominal continuous)
+SMOTE-N (nominal)
 
 ### Sampling + Data Cleaning
- OSS
-  CNN + Tomek Links
-   NCL based on ENN
-    SMOTE + ENN 
-     SMOTE + Tomek
+
+OSS
+CNN + Tomek Links
+NCL based on ENN
+SMOTE + ENN
+SMOTE + Tomek
 
 ### Adjusting Algorithms
+
 Class weights
- Decision threshold
-  Modify an algorithm to be more sensitive to rare classes
+Decision threshold
+Modify an algorithm to be more sensitive to rare classes
 
 ## Box Drawings
 
 Construct boxes (axis-parallel hyper-rectangles) around minority class examples
- Concise, intelligible representation of the minority class
-  Penalize the number of boxes
-   Exact Boxes
-    Mixed-integer programming 
-     Exact but fairly expensive solution
-      Fast Boxes 
-       Faster clustering method to generate the initial boxes
-        Refine the boxes
-         Both perform well among a large set of test datasets
-
+Concise, intelligible representation of the minority class
+Penalize the number of boxes
+Exact Boxes
+Mixed-integer programming
+Exact but fairly expensive solution
+Fast Boxes
+Faster clustering method to generate the initial boxes
+Refine the boxes
+Both perform well among a large set of test datasets
 
 ## Anomaly Detection - Isolation Forest
+
 identify anomalies in data (by learning random forests)
-     measuring the average number of decision splits to isolate each point
-      calculate each data points anomaly score (likelihood to belong to minority)
-
-
-
+measuring the average number of decision splits to isolate each point
+calculate each data points anomaly score (likelihood to belong to minority)
 
 ## References
 
@@ -140,4 +160,3 @@ https://www.youtube.com/watch?v=YMPMZmlH5Bo
 http://storm.cis.fordham.edu/~gweiss/small_disjuncts.html
 
 https://www.svds.com/learning-imbalanced-classes/
-

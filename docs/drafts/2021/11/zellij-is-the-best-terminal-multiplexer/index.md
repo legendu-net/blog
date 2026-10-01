@@ -1,7 +1,7 @@
 ---
 title: Zellij Is the Best Terminal Multiplexer
 created: '2021-11-09T10:19:10-08:00'
-date: '2026-07-26T22:41:47-07:00'
+date: '2026-09-30T18:18:49-07:00'
 authors:
   - bendu
 label: zellij-is-the-best-terminal-multiplexer
@@ -45,6 +45,19 @@ mouse_mode false
 ```
 zellij -l welcome
 ```
+
+### Delete Sessions
+
+- `Fn + Delete` on macOS to delete a selected session.
+  On macOS keyboards, the standard Delete key actually sends a Backspace code (`0x7F` or `^?`),
+  whereas terminal applications expect the forward-delete keycode (`\033[3~`) for `<Del>`.
+  Furthermore,
+  web browsers often intercept key combinations before forwarding them to the web terminal.
+
+- `zellij d -f some_session`.
+  If a session is opened in a browser tab,
+  It will automatically be recreated,
+  so you will have to close corrresponding web sessions first.
 
 ## Zellij Web
 

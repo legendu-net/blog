@@ -13,7 +13,7 @@ date:
 
 <div style="margin-top: 1em;">
 
-## Welcome to Chuanlong Ben Du's Blog! 👋
+## Direct Passion with Reason
 
 </div>
 
@@ -26,6 +26,6 @@ and like the phoenix rise above its own ashes.
 :::{include} ./recent_posts.md
 :::
 
-## About the Author
+## About Chuanlong Ben Du
 
 [GitHub](https://github.com/legendu-net)   |   [LinkedIn](https://www.linkedin.com/in/ben-chuanlong-du-1239b221/)   |   [Blog Source](https://github.com/legendu-net/blog)

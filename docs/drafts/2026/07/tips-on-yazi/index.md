@@ -1,7 +1,7 @@
 ---
 title: Tips on Yazi
 created: '2026-07-26T23:03:52.607491-07:00'
-date: '2026-07-29T16:36:00-07:00'
+date: '2026-10-04T20:32:20-07:00'
 authors:
   - bendu
 label: tips-on-yazi
@@ -15,6 +15,9 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Tips and Traps
+
+1. Use `~` or `F1` to bring up the help menu for Yazi.
+   And you can directly search for the description of a keybinding.
 
 1. Yazi accepts a working dir as parameter.
    That is,

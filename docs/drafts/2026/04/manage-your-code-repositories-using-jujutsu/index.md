@@ -1,7 +1,7 @@
 ---
 title: Manage Your Code Repositories Using Jujutsu
 created: '2026-04-30T19:49:30.593438-07:00'
-date: '2026-08-02T10:51:34-07:00'
+date: '2026-10-04T11:50:34-07:00'
 authors:
   - bendu
 label: manage-your-code-repositories-using-jujutsu
@@ -37,10 +37,10 @@ To install Jujutsu (jj) using Homebrew, run:
    and then run those commands,
    or specify revisions manually.
 
-## Installation Using Homebrew (Linux / macOS)
+## Installation
 
 ```
-brew install jj
+icon jj -ic
 ```
 
 ## Jujutsu Configuration
@@ -132,6 +132,123 @@ you don't manage branch names manually; jj derives them from change IDs.
 ```sh
 jj git push --named new-branch=@-
 ```
+
+## Avoid Racing Conditions When Working with Multiple AI Agents
+
+In jj,
+the working copy (`@`) is a real commit
+and changes on disk are snapshotted into it
+at the start of every jj command.
+If you run an interactive command (e.g., `jj commit` or `jj describe` without `-m`),
+jj waits for your editor to close.
+If an AI agent (or any tool) runs a jj command during that window,
+it snapshots `@` in a concurrent operation
+while your command finalizes based on the stale state from before the editor opened.
+jj merges the concurrent operations automatically,
+but `@` might end up as a divergent change.
+
+`jj split` is NOT a good primary solution.
+It only cleans up tangled changes after the fact,
+the interactive `jj split` has the same race window (while the diff editor is open),
+and repeatedly untangling changes adds friction.
+Below are better ways (from the easiest daily habit to full isolation).
+
+1. Run `jj new` first and then `jj describe @-` (minimal race window).
+   `jj new` finishes in milliseconds and moves `@` to a fresh empty commit.
+   Any file changed by agents while you are writing the commit message
+   lands in the new `@`,
+   leaving the content of `@-` untouched.
+
+   ```sh
+   jj new
+   jj describe @-
+   ```
+
+1. Commit non-interactively using `jj commit -m "..."`.
+   There is no editor window for agents to race against
+   (though agents' half-finished edits on disk are included in the commit).
+
+1. If agents' changes are already mixed into `@`,
+   use `jj squash --into` to move only your files into the target commit
+   (leaving agents' files in `@`).
+   `-u` (`--use-destination-message`) avoids opening an editor to combine commit messages.
+   Note that paths only separate whole files.
+
+   ```sh
+   jj squash --into @- path/to/file1 path/to/file2 -u
+   ```
+
+1. Isolate agents using separate workspaces (cleanest for multiple agents).
+   Agents sharing the same working directory and working copy
+   will inevitably collide (overlapping edits, linter conflicts, snapshot races).
+   `jj workspace add` creates a workspace with its own independent working copy
+   attached to the same repository,
+   so commits are visible across workspaces
+   while agents (launched inside the new workspace) never touch your working copy.
+   Note that a jj workspace is not a Git worktree,
+   so `git` commands might not work in it even for a colocated repository.
+   Please refer to [](#jujutsu-workspace) for more discussions.
+
+   ```sh
+   jj workspace add ../agent_scratch
+   ```
+
+## Avoid Commits with Empty Messages
+
+Commit descriptions are optional in jj by design.
+Unlike Git,
+leaving the commit message blank in the editor does NOT abort `jj commit`.
+However,
+jj does abort the command if the editor exits with a non-zero code
+(e.g., `:cq` in Vim / Neovim).
+
+A practical way is to configure a wrapper script as jj's `ui.editor`,
+which exits with an error if the commit message is empty
+(ignoring jj's `JJ:` comment lines).
+For example,
+create a script `~/.local/bin/jj-editor-check.fish`.
+
+```fish
+#!/usr/bin/env fish
+set -l file $argv[1]
+# Use the first non-blank one of $VISUAL, $EDITOR and vim
+set -l editor (string match -rv '^\s*$' -- $VISUAL $EDITOR vim)[1]
+# Split to allow editor commands with arguments (e.g., "code --wait")
+set -l cmd (string split -n ' ' -- $editor)
+$cmd $file; or exit $status
+
+# Check whether the file contains any non-comment, non-whitespace text
+if not sed '/^JJ: ignore-rest$/,$d' $file | grep -v '^JJ:' | grep -q '[^[:space:]]'
+    echo "Aborting due to empty commit message." >&2
+    exit 1
+end
+```
+
+Make it executable.
+
+```bash
+chmod +x ~/.local/bin/jj-editor-check.fish
+```
+
+And configure jj to use it
+(`~` is not expanded in `ui.editor`, so use an absolute path).
+
+```bash
+jj config set --user ui.editor /home/<user>/.local/bin/jj-editor-check.fish
+```
+
+Notes:
+
+1. Do NOT set `$VISUAL` / `$EDITOR` to the script itself (infinite recursion).
+   And `$JJ_EDITOR` (if set) overrides `ui.editor` and bypasses the script.
+
+1. The script applies to every command that opens `ui.editor`,
+   e.g., `jj commit`, `jj describe`, `jj split` and `jj squash` (when combining messages).
+   Diff editors and `-m` (e.g., `jj describe -m ""`) are not affected.
+
+1. If a commit with an empty message is created anyway,
+   run `jj undo` immediately to roll it back,
+   or add a message later using `jj describe`.
 
 ## Jujutsu Rebase
 

@@ -1,7 +1,7 @@
 ---
 title: Manage Your Code Repositories Using Jujutsu
 created: '2026-04-30T19:49:30.593438-07:00'
-date: '2026-10-08T22:56:10-07:00'
+date: '2026-10-08T23:27:00-07:00'
 authors:
   - bendu
 label: manage-your-code-repositories-using-jujutsu
@@ -145,7 +145,7 @@ for discussions.
 
 ## Avoid Racing Conditions When Working with Multiple AI Agents
 
-Please refer to [](#avoid-racing-conditions-when-working-with-multiple-ai-agents-in-jujutsu)
+Please refer to [](#avoid-racing-conditions-when-working-with-ai-agents-in-jujutsu)
 for discussions.
 
 ## Avoid Commits with Empty Messages
@@ -167,7 +167,7 @@ for discussions.
 
 - [](#jujutsu-equivalent-of-git-stage)
 - [](#committing-using-git-causes-orphan-commits-in-jujutsu)
-- [](#avoid-racing-conditions-when-working-with-multiple-ai-agents-in-jujutsu)
+- [](#avoid-racing-conditions-when-working-with-ai-agents-in-jujutsu)
 - [](#avoid-commits-with-empty-messages-in-jujutsu)
 - [](#jujutsu-rebase)
 - [](#jujutsu-workspace)

@@ -4,7 +4,7 @@ created: '2026-10-08T21:50:02.923981-07:00'
 date: '2026-10-08T21:52:13-07:00'
 authors:
   - bendu
-label: avoid-racing-conditions-when-working-with-multiple-ai-agents-in-jujutsu
+label: avoid-racing-conditions-when-working-with-ai-agents-in-jujutsu
 license: CC-BY-4.0
 tags:
   - VCS

@@ -1,7 +1,7 @@
 ---
 title: Avoid Commits with Empty Messages in Jujutsu
 created: '2026-10-08T21:34:50.782468-07:00'
-date: '2026-10-08T21:34:55-07:00'
+date: '2026-10-08T23:05:56-07:00'
 authors:
   - bendu
 label: avoid-commits-with-empty-messages-in-jujutsu
@@ -11,6 +11,7 @@ tags:
   - Jujutsu
   - jj
   - commit
+  - empty
   - message
   - editor
 ---

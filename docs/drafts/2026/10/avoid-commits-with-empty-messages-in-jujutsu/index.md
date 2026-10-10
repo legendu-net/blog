@@ -1,7 +1,7 @@
 ---
 title: Avoid Commits with Empty Messages in Jujutsu
 created: '2026-10-08T21:34:50.782468-07:00'
-date: '2026-10-08T23:05:56-07:00'
+date: '2026-10-09T12:15:21-07:00'
 authors:
   - bendu
 label: avoid-commits-with-empty-messages-in-jujutsu
@@ -33,6 +33,7 @@ create a script `~/.local/bin/jj-editor-check.fish`.
 
 ```fish
 #!/usr/bin/env fish
+
 set -l file $argv[1]
 # Use the first non-blank one of $VISUAL, $EDITOR and vim
 set -l editor (string match -rv '^\s*$' -- $VISUAL $EDITOR vim)[1]

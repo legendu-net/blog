@@ -1,7 +1,7 @@
 ---
 title: Rust for Robots
 created: '2023-01-17T10:46:23-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-10-10T22:04:46-07:00'
 authors:
   - bendu
 label: rust-for-robots
@@ -20,6 +20,8 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Rust is for Robotics](https://robotics.rs/)
+
+https://github.com/deepcausality-rs/deep_causality
 
 ## [copper-rs](https://github.com/copper-project/copper-rs)
 

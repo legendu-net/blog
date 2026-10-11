@@ -1,7 +1,7 @@
 ---
 title: LLM and Robotics
-created: 2023-12-11 12:12:29
-date: 2026-04-13 23:14:24.925752
+created: '2023-12-11T12:12:29-08:00'
+date: '2026-10-10T22:04:28-07:00'
 authors:
   - bendu
 label: llm-and-robotics
@@ -18,3 +18,5 @@ tags:
 
 Awesome-LLM-Robotics
 https://github.com/GT-RIPL/Awesome-LLM-Robotics
+
+https://github.com/deepcausality-rs/deep_causality

@@ -30,3 +30,6 @@ jupyterhub_cookie_secret
 urls.txt
 .antigravitycli/
 /.agents/skills/html-table-to-list-table
+/.agents/skills/abstract-session-skill
+/.agents/skills/find-skills
+/.agents/skills/mine-conversation-history-for-skills

@@ -1,7 +1,7 @@
 ---
 title: Comparison of Google Gemini Products
 created: '2026-10-18T00:06:41.898266-07:00'
-date: '2026-10-18T00:23:43-07:00'
+date: '2026-10-18T23:43:26-07:00'
 authors:
   - bendu
 label: comparison-of-google-gemini-products
@@ -293,6 +293,12 @@ Auto Browse clicks, scrolls, types and fills in forms for you
 - [](#develop-with-google-antigravity)
 
 - [](#automated-web-browsing-tasks-using-gemini-in-chrome)
+
+## References
+
+- [Gemini Spark Versus Meta Muse](https://share.gemini.google/4GFmC7DrC2G0)
+
+- [Google Workspace Integration Guide](https://share.gemini.google/DyfzkBEEKaDD)
 
 [^ag-ide]: See the section Antigravity App / IDE below.
 

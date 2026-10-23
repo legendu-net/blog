@@ -1,4 +1,5 @@
 skills/abstract-session-skill
+skills/compare-tools
 skills/find-skills
 skills/html-table-to-list-table
 skills/mine-conversation-history-for-skills

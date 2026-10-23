@@ -33,3 +33,4 @@ urls.txt
 /.agents/skills/abstract-session-skill
 /.agents/skills/find-skills
 /.agents/skills/mine-conversation-history-for-skills
+/.agents/skills/compare-tools

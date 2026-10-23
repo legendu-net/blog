@@ -1,7 +1,7 @@
 ---
 title: Run Your GitHub Actions Locally
 created: '2026-05-28T00:05:08.917806-07:00'
-date: '2026-05-30T00:08:06-07:00'
+date: '2026-10-22T20:10:04-07:00'
 authors:
   - bendu
 label: run-your-github-actions-locally
@@ -38,7 +38,9 @@ Wrkflw has a great TUI
 which makes it easy to selectively run workflow and insepct results.
 However,
 wrkflw currently maps the ubuntu-latest VM to the ubuntu:latest Docker image
-which are not compatible.
+which are not compatible
+(see [issues 113](https://github.com/bahdotsh/wrkflw/issues/113))
+.
 This causes many GitHub Actions workflow fail to run with wrkflw.
 
 ## References

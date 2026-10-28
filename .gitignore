@@ -34,3 +34,4 @@ urls.txt
 /.agents/skills/find-skills
 /.agents/skills/mine-conversation-history-for-skills
 /.agents/skills/compare-tools
+/.agents/skills/update-blog-post

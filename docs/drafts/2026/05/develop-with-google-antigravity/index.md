@@ -1,7 +1,7 @@
 ---
 title: Develop with Google Antigravity
 created: '2026-05-24T23:28:22.137138-07:00'
-date: '2026-09-24T08:17:43-07:00'
+date: '2026-10-27T08:46:18-07:00'
 authors:
   - bendu
 label: develop-with-google-antigravity
@@ -46,6 +46,8 @@ if you need the agent to stop at /plan review checkpoints.
 - [Understanding Antigravity CLI Stop Hook](https://share.gemini.google/sEyxQJnWCWMV)
 
 ## References
+
+- [](#sidecars-daemons-and-schedulers-in-ai-coding-agents)
 
 - [Antigravity Documentation](https://antigravity.google/docs/home)
 

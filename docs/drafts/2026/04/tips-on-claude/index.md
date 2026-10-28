@@ -1,7 +1,7 @@
 ---
 title: Tips on Claude
 created: '2026-04-18T18:53:35.655987-07:00'
-date: '2026-08-08T00:58:38-07:00'
+date: '2026-10-27T08:46:23-07:00'
 authors:
   - bendu
 label: tips-on-claude
@@ -191,6 +191,8 @@ See [Claude API Docs](https://platform.claude.com/docs/en/home)
 .
 
 ## References
+
+- [](#sidecars-daemons-and-schedulers-in-ai-coding-agents)
 
 - [Claude Code Docs](https://code.claude.com/docs/en/quickstart)
 

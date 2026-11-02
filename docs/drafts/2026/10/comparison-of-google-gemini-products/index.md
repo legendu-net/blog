@@ -1,7 +1,7 @@
 ---
 title: Comparison of Google Gemini Products
 created: '2026-10-18T00:06:41.898266-07:00'
-date: '2026-10-18T23:43:26-07:00'
+date: '2026-11-02T08:12:49-08:00'
 authors:
   - bendu
 label: comparison-of-google-gemini-products
@@ -39,6 +39,13 @@ tags:
   It touches local files only via connected folders in the macOS desktop app.
 - Gemini in Chrome is the best choice for tasks on web pages (Auto Browse).
   It connects to Gmail and Calendar, but it cannot save files to your computer.
+  Chrome Skills are desktop-only; Android and iOS do not have them yet.
+  Auto Browse supports eligible desktop and Android users, but not iOS.
+
+Platform availability does not imply feature parity.
+The Android and iOS rows below describe access to each product;
+skills, browser automation and local-file access have their own platform limits.
+Availability also depends on account, region, language and rollout.
 
 ```{list-table} Comparison of Google Gemini Products
 ---
@@ -59,7 +66,7 @@ widths: 14 15 14 15 14 14 14
   - Web app (gemini.google.com) and mobile apps
   - Native app for macOS and Windows
   - Cloud agent, used from the Gemini web, mobile and desktop apps
-  - Side panel in the Chrome browser
+  - Desktop side panel; mobile chat overlay
 * - Main use
   - Agentic coding
   - Agentic coding in terminals, SSH sessions and scripts
@@ -113,9 +120,9 @@ widths: 14 15 14 15 14 14 14
   - Y[^sk-ag-app]
   - Y[^sk-ag-cli]
   - Y[^sk-chat]
-  - Likely[^sk-desktop]
+  - macOS: Y; Windows: unconfirmed[^sk-desktop]
   - Y[^sk-spark]
-  - Y[^sk-chrome]
+  - Desktop only; Android/iOS: N[^sk-chrome]
 * - Runs when your computer is off?
   - N
   - N[^bg-cli]
@@ -130,13 +137,27 @@ widths: 14 15 14 15 14 14 14
   - N
   - Y (via web app)
   - Experimental[^linux-chrome]
+* - Android?
+  - No native app
+  - No official native app[^mobile-cli]
+  - Y (mobile app / browser)
+  - N (use Gemini Chat)
+  - Via Gemini mobile app / browser; no connected folders
+  - Y; no Chrome Skills[^sk-chrome]
+* - iOS / iPadOS?
+  - No native app
+  - No official native app[^mobile-cli]
+  - Y (mobile app / browser)
+  - N (use Gemini Chat)
+  - Via Gemini mobile app / browser; no connected folders
+  - Y; no Chrome Skills or Auto Browse[^mobile-chrome]
 * - Plan
   - Free, AI Plus, AI Pro, AI Ultra
   - Free, AI Plus, AI Pro, AI Ultra
   - Free, AI Pro, AI Ultra
   - Free, AI Pro, AI Ultra
   - AI Ultra (US first)[^plan-spark]
-  - Free; Auto Browse needs AI Pro or Ultra (US)
+  - Free; Auto Browse needs AI Pro or Ultra (eligible desktop/Android, US and India)[^auto-chrome]
 ```
 
 ## Antigravity App / IDE
@@ -177,6 +198,9 @@ Enterprise (Code Assist Standard/Enterprise) and paid API key users can still us
   or command line tools such as gog (which also has an MCP server `gog mcp`) and gws.
   Gemini CLI extensions (e.g., the Google Workspace extension) can be migrated using `agy plugin import gemini`.
 - It is the best fit if you work on Linux, over SSH or in scripts.
+  Android and iOS are not official native CLI targets.
+  A mobile SSH client can control `agy` on another computer,
+  but its file access and commands then operate on that remote computer.
 
 ## Gemini Chat (gemini.google.com)
 
@@ -192,13 +216,18 @@ Enterprise (Code Assist Standard/Enterprise) and paid API key users can still us
   The same applies to the mobile apps.
 - **Skills:** Reusable instructions added via the Customize menu
   (rolling out since 2026-10-13); they will eventually replace Gems.
+  Google documents creating and using skills in the web app and the Android and iOS apps,
+  as well as the Mac app. Uploading a skill file or folder requires the web app
+  on mobile; this is separate from Chrome Skills, which are desktop-only.
+  See [Create and manage skills for Gemini Apps](https://support.google.com/gemini/answer/17094296).
 - Gemini Notebook (formerly NotebookLM) can't reach your disk either.
 
 ## Gemini Desktop App
 
 The Gemini app launched on macOS first
 and on Windows 10/11 in September 2026.
-There is no Linux version.
+There is no Linux version. Android and iOS use the Gemini mobile apps
+covered under Gemini Chat, rather than this desktop app.
 
 - **Google Workspace:** Same Connected Apps as Gemini Chat,
   e.g., drafting a summary from Gmail and Google Drive.
@@ -231,12 +260,17 @@ It asks for confirmation before high-stakes actions such as spending money or se
 - **Local files:** Only via connected folders in the macOS desktop app,
   e.g., turning invoices saved locally into a budget spreadsheet in Google Sheets
   that updates on a schedule.
+  Android and iOS can access cloud tasks through Gemini, but do not provide
+  connected-folder access to the phone or tablet's filesystem.
   Starting tasks on your Mac from the web or mobile apps is announced as "coming soon".
 
 ## Gemini in Chrome
 
-Gemini in Chrome is a side panel in Chrome (Windows, macOS, Chromebook Plus, Android and iOS)
-that reads the current page and the tabs you add.
+Gemini in Chrome appears in a side panel on desktop (Windows, macOS and Chromebook Plus)
+and a chat overlay on Android and iOS / iPadOS.
+It reads the current page; sharing multiple tabs (up to 10) is documented for computers,
+so do not assume the same multi-tab context on mobile.
+See [Use Gemini in Chrome on iPhone and iPad](https://support.google.com/gemini/answer/16283624?co=GENIE.Platform%3DiOS&hl=en).
 Auto Browse clicks, scrolls, types and fills in forms for you
 (see [](#automated-web-browsing-tasks-using-gemini-in-chrome)).
 
@@ -252,6 +286,14 @@ Auto Browse clicks, scrolls, types and fills in forms for you
 - **Skills:** Since 2026-04, you can save a prompt as a skill
   and run it on the current page (and selected tabs) by typing `/`.
   Prebuilt skills are available in the Skills library (type `/`, then click the compass icon).
+  These Chrome Skills support macOS, Windows and ChromeOS only (US English),
+  not Android or iOS / iPadOS. This restriction does not apply to skills in the Gemini mobile app.
+- **Auto Browse:** Available to eligible AI Pro and Ultra subscribers on desktop and Android
+  in the US and India; not available in Chrome on iPhone or iPad.
+  Google's [Android announcement](https://blog.google/products-and-platforms/products/chrome/bringing-chrome-ai-to-android/)
+  specifies select Android 12+ devices with at least 4 GB of RAM for the initial US rollout.
+  See also the [India rollout](https://blog.google/intl/en-in/products/bringing-gemini-in-chrome-with-auto-browse-to-india/)
+  and [Auto Browse help](https://support.google.com/gemini/answer/16821166).
 - **Linux:** Chrome on Linux lags behind in Gemini features.
   Gemini in Chrome is only experimental on Linux,
   and Skills officially support only macOS, Windows and ChromeOS (with Chrome set to US English).
@@ -334,11 +376,11 @@ Auto Browse clicks, scrolls, types and fills in forms for you
 
 [^sk-chat]: Skills (reusable instructions) began rolling out on 2026-10-13 for personal and Workspace accounts and will eventually replace Gems; Gems move to Settings on 2026-11-17. Skills inside Workspace apps (Docs, Gmail, etc.) are delayed until further notice.
 
-[^sk-desktop]: Skills belong to the Gemini app, so they should be available in the desktop app too, but I could not confirm that.
+[^sk-desktop]: Google's [Skills help](https://support.google.com/gemini/answer/17094296) explicitly lists the Mac, mobile and web apps; it does not list the Windows app.
 
 [^sk-spark]: Custom skills, e.g., checking your inbox for school updates and sending a daily digest.
 
-[^sk-chrome]: Skills are saved prompts invoked with `/`. Officially available on macOS, Windows and ChromeOS (with Chrome set to US English) only, not Linux.
+[^sk-chrome]: Skills are saved prompts invoked with `/`. Officially available on macOS, Windows and ChromeOS (with Chrome set to US English) only, not Linux, Android or iOS / iPadOS. See [Google's Chrome Skills announcement](https://blog.google/products-and-platforms/products/chrome/skills-in-chrome/).
 
 [^bg-cli]: Unless you run it on a remote server, e.g., over SSH.
 
@@ -346,4 +388,10 @@ Auto Browse clicks, scrolls, types and fills in forms for you
 
 [^linux-chrome]: Gemini in Chrome is not officially available on Linux, but it can be enabled experimentally (Glic).
 
+[^mobile-cli]: Official native mobile support is not documented. Using SSH from a phone runs the CLI on the remote host, with access to that host's files.
+
+[^mobile-chrome]: Mobile Chrome can answer questions about the current page. Google's [Auto Browse help](https://support.google.com/gemini/answer/16821166) excludes iPhone and iPad.
+
 [^plan-spark]: Launched as a beta for Google AI Ultra subscribers in the US. Google's Windows announcement only says it "requires a Google AI subscription", and some sources report that AI Pro is included now. Some sources also report that Google is folding Spark into a "Task mode" in the Gemini app, which I could not confirm.
+
+[^auto-chrome]: Google documents Android and desktop availability in the [US Android announcement](https://blog.google/products-and-platforms/products/chrome/bringing-chrome-ai-to-android/) and [India rollout](https://blog.google/intl/en-in/products/bringing-gemini-in-chrome-with-auto-browse-to-india/). Device, language, account and rollout restrictions apply.

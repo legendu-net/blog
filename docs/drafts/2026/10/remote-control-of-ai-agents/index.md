@@ -1,7 +1,7 @@
 ---
 title: Remote Control of AI Agents
 created: '2026-10-17T17:00:35.675043-07:00'
-date: '2026-10-17T20:37:49-07:00'
+date: '2026-11-02T08:15:51-08:00'
 authors:
   - bendu
 label: remote-control-of-ai-agents
@@ -100,6 +100,36 @@ without opening the terminal or even the session.
    The repo is deprecated now
    and the product has pivoted to a multiplayer coding agent IDE/cloud
    ([humanlayer.com](https://www.humanlayer.com/)).
+
+## Through an Always-on Agent via MCP
+
+Another approach is to connect the coding agent to an always-on agent
+through MCP (Model Context Protocol).
+You message the always-on agent from your phone;
+it relays instructions to the coding agent and brings results back to you.
+This requires a bridge that exposes agent-control tools
+or a shared message space that both agents check.
+
+1. [Crosswalk](https://crosswalk.to/)
+   provides a shared MCP server where agents can post messages and read replies.
+   Connect both the coding agent and the always-on agent to the same shared space
+   to exchange task requests, progress updates and follow-up instructions.
+   Its [agent connection guide](https://crosswalk.to/agents)
+   explains that active agents check on a schedule,
+   while passive agents catch up when opened.
+   Crosswalk carries messages; it does not run or wake the coding agent itself.
+
+1. [Gemini Antigravity Bridge](https://github.com/nandhakumar-murugan/gemini-antigravity-bridge)
+   describes an MCP bridge between cloud-based Gemini Spark and local Antigravity.
+   Its tools include dispatching coding tasks, checking task status,
+   injecting messages into Antigravity conversations,
+   and retrieving execution reports.
+   This provides a more direct control path than exchanging messages alone.
+
+The coding agent's host must remain awake and reachable for local work to continue.
+Whether you can answer a pending question or approve a command remotely
+depends on the tools exposed by the bridge and the target agent's integration;
+an MCP connection alone does not provide permission-prompt forwarding.
 
 ## DIY Approaches
 

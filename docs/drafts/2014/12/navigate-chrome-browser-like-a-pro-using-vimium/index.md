@@ -1,7 +1,7 @@
 ---
 title: Navigate Chrome Browser Like a Pro Using Vimium
-created: 2014-12-18 15:05:35
-date: 2026-04-19 21:16:59.854672
+created: '2014-12-18T15:05:35-08:00'
+date: '2026-11-09T20:23:37-08:00'
 authors:
   - bendu
 label: navigate-chrome-browser-like-a-pro-using-vimium
@@ -44,6 +44,41 @@ for more discussions.
    ```
 
 1. Click the "Save changes" button at the bottom-left corn.
+
+## Save Failures with Large Settings
+
+[GitLab issue #4986](https://gitlab.com/dclong/tasks/-/work_items/4986)
+reports that adding an exclusion pattern may fail to save through either Vimium Options
+("Save changes" or `Command+Enter` on macOS) or the toolbar popup.
+The discussion identifies a likely cause: oversized settings exceeding Chrome's sync storage quota.
+[Chrome's storage documentation](https://developer.chrome.com/docs/extensions/reference/api/storage#storage_areas)
+lists limits of approximately 8 KB per item and 100 KB in total.
+
+The issue's analysis says both interfaces use `Settings.setSettings()`,
+which writes all non-default settings to `chrome.storage.sync`.
+Too many exclusion patterns, or large custom key mappings, search-engine definitions,
+or link-hint CSS, can therefore block saving even an unrelated change.
+The failure may appear silent because the UI does not surface the storage error.
+
+To investigate, open DevTools on the Vimium Options page
+(`Command+Option+I` on macOS) and check the Console for storage errors such as
+`QUOTA_BYTES_PER_ITEM`.
+You can inspect current storage usage with:
+
+```javascript
+const settings = await chrome.storage.sync.get(null);
+console.table(Object.entries(settings).map(([key, value]) => ({
+  key,
+  bytes: new Blob([key + JSON.stringify(value)]).size,
+})));
+console.log("Total bytes:", await chrome.storage.sync.getBytesInUse(null));
+```
+
+These values describe already stored settings; unsaved additions may exceed the quota.
+If a quota error is confirmed, remove unnecessary exclusion rules or simplify the oversized
+setting, save again, and reload Options to verify persistence.
+If only the Options page fails, also look for validation errors in other fields,
+which may be off-screen and prevent saving.
 
 ## Alternatives
 

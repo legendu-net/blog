@@ -1077,7 +1077,7 @@ def _subparse_edit(subparsers):
 
 
 def _subparse_add_spells_title(subparsers):
-    desc = "Add spell corrections."
+    desc = "Add title spell corrections."
     subparser_add_spells_title = subparsers.add_parser(
         "add_spells_title",
         aliases=["ast"],

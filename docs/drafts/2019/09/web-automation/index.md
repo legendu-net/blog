@@ -1,7 +1,7 @@
 ---
 title: Web Automation
 created: '2019-09-07T09:02:30-07:00'
-date: '2026-07-15T01:22:20-07:00'
+date: '2026-11-13T07:49:26-08:00'
 authors:
   - bendu
 label: web-automation
@@ -19,6 +19,20 @@ tags:
 
 ## AI-based Tools
 
+For a comprehensive comparison of AI browsers and agentic web automation tools—including [BrowserOS](https://github.com/browseros-ai/browseros) (`browseros-neo`), `chrome-devtools-mcp`, Gemini in Chrome, Claude Computer Use, Perplexity Comet, Brave Leo, and HARPA AI—see [](#ai-browsers-and-agentic-web-automation).
+
+### BrowserOS (BrowserOS neo)
+
+[BrowserOS](https://github.com/browseros-ai/browseros) (`browseros-neo`) is an open-source (AGPL-3.0) Chromium-based AI browser for Linux, macOS, and Windows with a built-in local MCP server and `SKILL.md` support.
+It is currently the best choice for complex, multi-step agentic web workflows because it:
+
+- Queries the browser's Accessibility Tree (`snapshot`) with deterministic element refs rather than relying on slow pixel screenshots.
+- Executes multi-step workflows in a single batched JavaScript `run` call (~15–30 seconds instead of ~7 minutes of turn-by-turn LLM round-trips).
+- Opens and controls tabs in the background (`background: true`) with background tab throttling disabled, never stealing focus from your active browser tab.
+- Reuses your persistent browser profile and live logins with local or BYOK models (Ollama, OpenRouter, Claude, Gemini, OpenAI).
+
+See [](#ai-browsers-and-agentic-web-automation) for architectural details and benchmarks.
+
 ### Stagehand
 
 [Stagehand](https://github.com/browserbase/stagehand-python)
@@ -27,13 +41,14 @@ By combining the power of AI with the precision of code, Stagehand makes web aut
 
 ### Gemini in Chrome
 
-See discussions in
-[Automated Web Browsing Tasks Using Gemini in Chrome](automated-web-browsing-tasks-using-gemini-in-chrome)
-.
+[Gemini in Chrome](https://blog.google/products-and-platforms/products/chrome/gemini-3-auto-browse/) provides a built-in Chrome sidebar assistant and Auto Browse mode (requires Google AI Pro or Ultra).
+While convenient for simple single-tab tasks on Windows and macOS, it is experimental on Linux, cannot save local files directly, and is much less capable than BrowserOS neo for complicated multi-step workflows.
+See discussions in [](#automated-web-browsing-tasks-using-gemini-in-chrome) and [](#ai-browsers-and-agentic-web-automation).
 
 ### Claude Computer Use
 
-automate anything (not just web) with Claude
+[Claude Computer Use](https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool) can automate any desktop GUI application (not just web browsers) by taking full-screen pixel screenshots and simulating mouse coordinates and keystrokes.
+However, for web automation it is significantly slower, more token-expensive, and less reliable than Accessibility Tree / DOM-based tools like BrowserOS neo (see [](#ai-browsers-and-agentic-web-automation)).
 
 - [I Let Claude Use My Computer for 2 Days. Here's What It Can Actually Do.](https://aiblewmymind.substack.com/p/claude-computer-use-guide-6-workflows-tested)
 

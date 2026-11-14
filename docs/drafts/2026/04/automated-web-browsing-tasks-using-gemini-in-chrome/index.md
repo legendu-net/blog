@@ -1,7 +1,7 @@
 ---
 title: Automated Web Browsing Tasks Using Gemini in Chrome
 created: '2026-04-07T16:04:20.756411-07:00'
-date: '2026-07-12T15:03:16-07:00'
+date: '2026-11-13T07:49:28-08:00'
 authors:
   - bendu
 label: automated-web-browsing-tasks-using-gemini-in-chrome
@@ -21,6 +21,10 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Tips and Traps
+
+1. For complicated, multi-step web automation workflows, **[BrowserOS](https://github.com/browseros-ai/browseros) (`browseros-neo`) is a much better choice than Gemini in Chrome**.
+   Unlike Gemini in Chrome (which is bound to an active sidebar tab, requires a Google AI Pro/Ultra subscription for Auto Browse, has only experimental Linux support, and cannot save files to disk), BrowserOS neo runs natively on Linux and macOS with your existing logins, executes multi-step task flows in the background without stealing tab focus, batches multi-step navigation via its `run` MCP tool in seconds, supports direct file downloads/uploads, and works with any local or BYOK LLM as well as standard `SKILL.md` skills.
+   For a detailed architectural comparison of BrowserOS neo, `chrome-devtools-mcp`, Gemini in Chrome, Claude Computer Use, and Perplexity Comet, see [](#ai-browsers-and-agentic-web-automation) and [](#web-automation).
 
 1. Gemini in Chrome is not available on Linux currently!
    For more discussions,

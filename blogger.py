@@ -1,31 +1,31 @@
-#!/usr/bin/env python3
-# encoding: utf-8
 """Main logic of the blogging system."""
 
-from collections import namedtuple
+import atexit
 import datetime
-from functools import cache
 import itertools as it
 import json
 import os
-from pathlib import Path
 import re
 import shlex
 import shutil
 import sqlite3
 import subprocess as sp
-from typing import Any, Iterable, Self, Sequence, TypeAlias
-import atexit
-from dulwich import porcelain
-from bs4 import BeautifulSoup
-import nbformat
-from loguru import logger
-import requests
-from tqdm import tqdm
-import yaml
+from collections import namedtuple
+from collections.abc import Iterable, Sequence
+from functools import cache
+from pathlib import Path
+from typing import Any, Self
 
-AnyPath: TypeAlias = str | Path
-Number: TypeAlias = int | float
+import nbformat
+import requests
+import yaml
+from bs4 import BeautifulSoup
+from dulwich import porcelain
+from loguru import logger
+from tqdm import tqdm
+
+type AnyPath = str | Path
+type Number = int | float
 BASE_DIR = Path(__file__).resolve().parent
 SPELLS_TITLE = BASE_DIR / "spells/spells_title.yaml"
 SPELLS_TAG = BASE_DIR / "spells/spells_tag.yaml"
@@ -559,7 +559,7 @@ class Post:
         idx = lines.index("---\n", 1)
         try:
             self.metadata = _parse_metadata("".join(lines[:idx]))
-        except Exception as err:
+        except Exception:
             print(
                 "Failed to parse the YAML metadata of the following post!\n",
                 self.path,
@@ -568,7 +568,7 @@ class Post:
             for line in lines:
                 print(line)
             print()
-            raise err
+            raise
         idx += 1
         while idx < len(lines):
             if lines[idx].strip():
@@ -624,7 +624,7 @@ class Post:
         )
 
     def mdformat(self):
-        sp.run(f"uv run mdformat {self.path}", shell=True)
+        sp.run(f"uv run mdformat {self.path}", shell=True, check=False)
 
     def _write(self):
         if self.is_markdown:
@@ -808,7 +808,7 @@ class Post:
         self, index: int | None = None, source: list[str] | None = None
     ):
         """Add an empty markdown cell."""
-        cell = nbformat.versions[nbformat.current_nbformat].new_markdown_cell()  # ty: ignore[unresolved-attribute]
+        cell = nbformat.versions[nbformat.current_nbformat].new_markdown_cell()  # ty: ignore[missing-union-attribute]
         if source:
             cell["source"] = source
         if index is None:
@@ -975,7 +975,7 @@ class Blogger:
         if not paths:
             self._cursor.execute(sql)
             return
-        if isinstance(paths, AnyPath):
+        if isinstance(paths, str):
             paths = [paths]
         sql += f"WHERE path IN ({qmarks(paths)})"
         self._cursor.execute(sql, paths)
@@ -1161,7 +1161,7 @@ class Blogger:
         if not editor:
             raise ValueError("An editor must be specified.")
         if editor == "auto":
-            suffixes = list(set(Path(path).suffix for path in paths))
+            suffixes = list({Path(path).suffix for path in paths})
             editor = get_preferred_editor(suffixes)
         sp.run(shlex.split(editor) + list(paths), check=True)
 
@@ -1410,4 +1410,4 @@ class Blogger:
             url = "/".join(parts)
             print(f"\n{rowid}: {title}  |  [](#{label})  |  {path}")
             print(f"    {url}  |  archives/blog/{path}")
-        print("")
+        print()

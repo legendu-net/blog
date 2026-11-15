@@ -1,7 +1,7 @@
 ---
 title: Things to Do after Installing Linux
 created: '2016-05-04T20:59:32-07:00'
-date: '2026-08-11T22:39:32-07:00'
+date: '2026-11-15T03:15:06-08:00'
 authors:
   - bendu
 label: things-to-do-after-installing-linux
@@ -129,3 +129,36 @@ Note: The tips here are for Debian-based Linux distributions
    This list might not be the best for everyone.
    For a general list of useful software/tools for Linux,
    please check the post [Useful Tools in Linux](useful-tools-in-linux).
+
+## Prevent Linux Desktop Freezes
+
+To prevent multi-hour desktop freezes caused by full swap (such as `zram`) and page-cache thrashing on modern Linux workstations:
+
+1. Enable swap-based OOM killing (`ManagedOOMSwap=kill`) in `systemd-oomd` on the root cgroup slice (`-.slice`):
+
+   ```bash
+   sudo mkdir -p -- /etc/systemd/system/-.slice.d
+   sudo tee /etc/systemd/system/-.slice.d/10-oomd-root-slice-defaults.conf > /dev/null <<'EOF'
+   [Slice]
+   ManagedOOMSwap=kill
+   EOF
+   sudo systemctl daemon-reload
+   sudo systemctl restart systemd-oomd
+   ```
+
+1. Enable Magic SysRq keys (`kernel.sysrq = 244`) so `Alt+SysRq+F` (manual OOM kill) and `Alt+SysRq+REISUB` (safe reboot) are available as a hardware-level escape hatch if the GUI freezes:
+
+   ```bash
+   echo "kernel.sysrq = 244" | sudo tee /etc/sysctl.d/90-sysrq.conf
+   sudo sysctl -p /etc/sysctl.d/90-sysrq.conf
+   ```
+
+1. On KDE Plasma desktops with large home directories, disable and purge the KDE Baloo file indexer (`kde-baloo.service`) if full-text content indexing is not needed:
+
+   ```bash
+   balooctl6 disable
+   systemctl --user stop kde-baloo.service
+   balooctl6 purge
+   ```
+
+For a detailed root-cause analysis and step-by-step guide, please refer to [](#diagnosing-and-fixing-linux-desktop-freezes-caused-by-zram-swap-exhaustion-and-baloo).

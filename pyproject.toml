@@ -11,6 +11,7 @@ requires-python = ">=3.14"
 classifiers = [
   "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: 3.15",
 ]
 dependencies = [
   "beautifulsoup4>=4.14.3",
@@ -27,7 +28,7 @@ dev = [
   "deptry>=0.25.1",
   "jupyter-book==2.1.7",
   "mdformat>=1",
-  "mdformat-beautysh>=1.0.0",
+  "mdformat-beautysh>=1",
   "mdformat-myst>=0.3",
   "pyproject-fmt>=2.21.1",
   "pytest>=9.0.2",
@@ -44,6 +45,7 @@ exclude = [
 [tool.deptry]
 extend_exclude = [
   "docs/",
+  "trash/",
 ]
 
 [tool.ty]
@@ -53,12 +55,12 @@ src.exclude = [
 
 [tool.pytest]
 ini_options.norecursedirs = [
-  "dist",
-  "build",
   ".tox",
-  "venv",
   ".venv",
-  "node_modules",
-  "legacy_tests",
+  "build",
+  "dist",
   "docs",
+  "legacy_tests",
+  "node_modules",
+  "venv",
 ]

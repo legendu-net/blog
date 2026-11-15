@@ -1,33 +1,40 @@
 #!.venv/bin/python3
-from argparse import ArgumentParser, Namespace
 import atexit
+import contextlib
 import getpass
 import itertools as it
 import os
-from pathlib import Path
 import re
 import subprocess as sp
+from argparse import ArgumentParser, Namespace
+from pathlib import Path
+
 from dulwich import porcelain
 from dulwich.repo import Repo
 from loguru import logger
 from tqdm import tqdm
+
 from blogger import (
-    BASE_DIR,
     ARTICLES,
+    BASE_DIR,
     DRAFTS,
     IPYNB,
     MARKDOWN,
     OUTDATED,
+    SITE,
     Blogger,
     Post,
-    SITE,
-    add_spells_title as _add_spells_title,
-    add_spells_tag as _add_spells_tag,
+    format_title,
+    get_code,
     get_post_paths,
     get_vim,
-    get_code,
     qmarks,
-    format_title,
+)
+from blogger import (
+    add_spells_tag as _add_spells_tag,
+)
+from blogger import (
+    add_spells_title as _add_spells_title,
 )
 
 USER = getpass.getuser()
@@ -549,12 +556,10 @@ def _post_title(path_str: str) -> str:
     """Title of a changed post, falling back to its slug directory."""
     path = BASE_DIR / path_str
     if path.exists():
-        try:
+        with contextlib.suppress(Exception):
             title = Post(path).parse().metadata.get("title", "")
             if title:
                 return title
-        except Exception:
-            pass
     # Deleted or unparsable post: use the post's slug directory.
     return Path(path_str).parent.name
 
@@ -605,12 +610,12 @@ def _commit_message(repo: Repo) -> bytes:
             if label not in labels:
                 labels.append(label)
     if len(titles) == 1:
-        return f"add/update post: {titles[0]}".encode("utf-8")
+        return f"add/update post: {titles[0]}".encode()
     if titles:
         body = "\n".join(f"- {title}" for title in titles)
-        return f"add/update {len(titles)} posts\n\n{body}".encode("utf-8")
+        return f"add/update {len(titles)} posts\n\n{body}".encode()
     if labels:
-        return f"update {_join(labels)}".encode("utf-8")
+        return f"update {_join(labels)}".encode()
     return b"update repository"
 
 
@@ -699,7 +704,10 @@ def format_notebook(_, args):
     failed = []
     for path in paths:
         result = sp.run(
-            ["uv", "run", "ruff", "format", str(path)], capture_output=True, text=True
+            ["uv", "run", "ruff", "format", str(path)],
+            capture_output=True,
+            text=True,
+            check=False,
         )
         if result.returncode != 0:
             failed.append(path)
@@ -715,7 +723,10 @@ def format_markdown(_, args):
     failed = []
     for path in paths:
         result = sp.run(
-            ["uv", "run", "mdformat", str(path)], capture_output=True, text=True
+            ["uv", "run", "mdformat", str(path)],
+            capture_output=True,
+            text=True,
+            check=False,
         )
         if result.returncode != 0:
             failed.append(path)

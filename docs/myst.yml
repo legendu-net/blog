@@ -39,7 +39,7 @@ project:
 extends:
   - toc.yml
 site:
-  template: book-theme
+  template: https://github.com/jupyter-book/myst-theme/releases/download/myst-to-react%401.4.1/book-theme.zip
   #template: https://github.com/QuantEcon/quantecon-theme/archive/refs/heads/main.zip
   options:
     favicon: favicon.ico

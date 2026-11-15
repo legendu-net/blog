@@ -25,7 +25,7 @@ dependencies = [
 [dependency-groups]
 dev = [
   "deptry>=0.25.1",
-  "jupyter-book==2.1.0",
+  "jupyter-book==2.1.7",
   "mdformat>=1",
   "mdformat-beautysh>=1.0.0",
   "mdformat-myst>=0.3",

@@ -1,7 +1,7 @@
 ---
-title: "Update a Line in Standard Output"
-created: 2019-10-10 21:00:55
-date: 2019-10-10 21:00:55
+title: Update a Line in Standard Output
+created: '2019-10-10T21:00:55-07:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: update-a-line-in-standard-output
@@ -18,14 +18,14 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 The trick is to use `\r` (return) instead `\n` (return and new line).
-I will use Python to illustrate. 
+I will use Python to illustrate.
 The following Python code
 
 :::Python
 import sys
 
 for idx in range(5):
-    sys.stdout.write(f'\nLine {idx}')
+sys.stdout.write(f'\\nLine \{idx}')
 
 outputs the following lines.
 
@@ -41,7 +41,7 @@ while the following Python code
 import sys
 
 for idx in range(5):
-    sys.stdout.write(f'\rLine {idx}')
+sys.stdout.write(f'\\rLine \{idx}')
 
 outputs `Line i` (where i runs from 0 to 4)
 to the same line in standard output.

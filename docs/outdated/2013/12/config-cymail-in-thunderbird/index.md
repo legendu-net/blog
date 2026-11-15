@@ -1,7 +1,7 @@
 ---
-title: "Config Cymail in Thunderbird"
-created: 2013-12-19 10:16:17
-date: 2013-12-19 10:16:17
+title: Config Cymail in Thunderbird
+created: '2013-12-19T10:16:17-08:00'
+date: '2026-11-15T12:20:42-08:00'
 authors:
   - bendu
 label: config-cymail-in-thunderbird
@@ -16,28 +16,24 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
- 
-
-
 1. Incoming Mail (IMAP) Server - Requires SSL: imap.gmail.com
 
-2. Port: 993
+1. Port: 993
 
-3. Requires SSL:Yes
+1. Requires SSL:Yes
 
-4. Outgoing Mail (SMTP) Server - Requires TLS: smtp.gmail.com
+1. Outgoing Mail (SMTP) Server - Requires TLS: smtp.gmail.com
 
-5. Port: 465 or 587
+1. Port: 465 or 587
 
-6. Requires SSL: Yes
+1. Requires SSL: Yes
 
-7. Requires authentication: Yes
+1. Requires authentication: Yes
 
-8. Full Name or Display Name: [your name]
+1. Full Name or Display Name: [your name]
 
-9. Account Name or User Name: your full Cymail address 
+1. Account Name or User Name: your full Cymail address
 
-10. Email address: your full Cymail address 
+1. Email address: your full Cymail address
 
-11. Password: your Cymail password
-
+1. Password: your Cymail password

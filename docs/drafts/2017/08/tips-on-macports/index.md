@@ -1,48 +1,57 @@
 ---
 title: Tips on MacPorts
-created: 2017-08-20 14:04:56
-date: 2026-04-05 19:42:38.045952
+created: '2017-08-20T14:04:56-07:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-macports
 license: CC-BY-4.0
 tags:
-- macOS
-- MacPorts
-- tips
+  - macOS
+  - MacPorts
+  - tips
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-    :::bash
-    sudo port selfupdate
-    port search pkg
-    sudo port install pkg
+```
+:::bash
+sudo port selfupdate
+port search pkg
+sudo port install pkg
+```
 
 ## MacPorts behind Firewall
 
-1. Use http instead of rsync. 
-    Open the file `/opt/local/etc/macports/sources.conf`
-    and replace the line 
+1. Use http instead of rsync.
+   Open the file `/opt/local/etc/macports/sources.conf`
+   and replace the line
 
-        :::bash
-        rsync://rsync.macports.org/release/tarballs/ports.tar [default]
+   ```
+    :::bash
+    rsync://rsync.macports.org/release/tarballs/ports.tar [default]
+   ```
 
-    with
+   with
 
-        :::bash
-        http://www.macports.org/files/ports.tar.gz [default]
+   ```
+    :::bash
+    http://www.macports.org/files/ports.tar.gz [default]
+   ```
 
-2. Configure proxy.
+1. Configure proxy.
 
-        :::bash
-        export http_proxy=http://username:password@proxyURL:portNumber
-        export HTTP_PROXY=http://username:password@proxyURL:portNumberexport 
-        export ftp_proxy=ftp://username:password@proxyURL:portNumber
-        export FTP_PROXY=ftp://username:password@proxyURL:portNumber
-        export rsync_proxy=username:password@proxyURL:portNumber
-        export RSYNC_PROXY=username:password@proxyURL:portNumber
+   ```
+    :::bash
+    export http_proxy=http://username:password@proxyURL:portNumber
+    export HTTP_PROXY=http://username:password@proxyURL:portNumberexport 
+    export ftp_proxy=ftp://username:password@proxyURL:portNumber
+    export FTP_PROXY=ftp://username:password@proxyURL:portNumber
+    export rsync_proxy=username:password@proxyURL:portNumber
+    export RSYNC_PROXY=username:password@proxyURL:portNumber
+   ```
 
-3. Use `sudo port -d sync` instead of `sudo port selfupdate` to print debugging information while updating.
+1. Use `sudo port -d sync` instead of `sudo port selfupdate` to print debugging information while updating.
 
 ## References
 

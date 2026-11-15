@@ -1,7 +1,7 @@
 ---
-title: "Tips on NLP"
-created: 2020-01-28 10:59:14
-date: 2020-11-28 10:59:14
+title: Tips on NLP
+created: '2020-01-28T10:59:14-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: tips-on-nlp
@@ -22,8 +22,8 @@ is a great place for deep learning blogging.
 ## Overview of NLP
 
 [Deep Learning for NLP: An Overview of Recent Trends](https://medium.com/dair-ai/deep-learning-for-nlp-an-overview-of-recent-trends-d0d8f40a776d)
-Chapter 8 of the book (Performance of Different Models on Different NLP Tasks) also summarizes the state-of-the-art methods 
-fore each sub area of NLP. 
+Chapter 8 of the book (Performance of Different Models on Different NLP Tasks) also summarizes the state-of-the-art methods
+fore each sub area of NLP.
 
 [Ten trends in Deep learning NLP](https://blog.floydhub.com/ten-trends-in-deep-learning-nlp/)
 
@@ -31,22 +31,18 @@ http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/
 
 https://github.com/Oxer11/NLP-task-review
 
-
 https://nlpoverview.com/
 
 https://arxiv.org/pdf/1703.03906.pdf
 
-The transformer architecture, which was first published at the end of 2017, 
-addresses this by creating a way to allow parallel inputs. 
-Each word can have a separate embedding and be process simultaneously 
+The transformer architecture, which was first published at the end of 2017,
+addresses this by creating a way to allow parallel inputs.
+Each word can have a separate embedding and be process simultaneously
 which greatly improves training times which facilitates training on much larger datasets.
 
 Google's BERT and OpenAI's GPT-2 models are based on Transformer.
 
 transformer-XL
-
-
-
 
 ## Semantics vs Syntactic
 
@@ -60,20 +56,19 @@ https://huggingface.co/coref/
 
 https://github.com/huggingface/neuralcoref
 
-## Machine Translation 
+## Machine Translation
 
 Transformer
 
-In machine translation, 
-self-attention also contributes to impressive results. 
-For example, 
-recently a model, named Transformer, 
-was introduced in a paper with a rather bold title “Attention Is All You Need” [Vaswani, 2017]. 
-As you can guess, 
-this model relies only on self-attention without the use of RNNs. 
-As a result, 
+In machine translation,
+self-attention also contributes to impressive results.
+For example,
+recently a model, named Transformer,
+was introduced in a paper with a rather bold title “Attention Is All You Need” [Vaswani, 2017].
+As you can guess,
+this model relies only on self-attention without the use of RNNs.
+As a result,
 it is highly parallelizable and requires less time to train, while establishing state-of-the-art results on WMT2014.
-
 
 Large embeddings with 2048 dimensions
 achieved the best results, but only by a small
@@ -92,27 +87,24 @@ penalty is crucial. Beam widths of 5 to 10
 together with a length penalty of 1.0 seemed
 to work well.
 
-## seq2seq 
+## seq2seq
 
 https://github.com/IBM/pytorch-seq2seq
-
 
 ## Attention
 
 The article [Attention in NLP](https://medium.com/@joealato/attention-in-nlp-734c6fa9d983)
 has a very detailed summary of development and applications of Attention in NLP.
 
-
-## Libraries 
+## Libraries
 
 [SpaCy](https://github.com/explosion/spaCy)
 is an industrial-strength Natural Language Processing (NLP) library.
 
-
 [transformers](https://github.com/huggingface/transformers)
-(formerly known as pytorch-transformers and pytorch-pretrained-bert) 
-provides state-of-the-art general-purpose architectures (BERT, GPT-2, RoBERTa, XLM, DistilBert, XLNet, CTRL...) 
-for Natural Language Understanding (NLU) and Natural Language Generation (NLG) 
+(formerly known as pytorch-transformers and pytorch-pretrained-bert)
+provides state-of-the-art general-purpose architectures (BERT, GPT-2, RoBERTa, XLM, DistilBert, XLNet, CTRL...)
+for Natural Language Understanding (NLU) and Natural Language Generation (NLG)
 with over 32+ pretrained models in 100+ languages and deep interoperability between TensorFlow 2.0 and PyTorch.
 
 [huggingface/tokenizers](https://github.com/huggingface/tokenizers/tree/master/bindings/python)
@@ -129,8 +121,7 @@ https://github.com/google/seq2seq
 
 [GloVe](https://github.com/stanfordnlp/GloVe)
 
-
-## Data 
+## Data
 
 [CoLA: The Corpus of Linguistic Acceptability](https://nyu-mll.github.io/CoLA/)
 

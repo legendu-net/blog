@@ -1,7 +1,7 @@
 ---
-title: "Fail to Install Packages into Python Virtual Environment in PyCharm on Windows"
-created: 2019-03-05 02:13:27
-date: 2019-03-05 02:13:27
+title: Fail to Install Packages into Python Virtual Environment in PyCharm on Windows
+created: '2019-03-05T02:13:27-08:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: fail-to-install-packages-into-python-virtual-environment-in-pycharm-on-windows
@@ -15,11 +15,9 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
 ## Error Message
 
 pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available.
-
 
 ## Solutions
 

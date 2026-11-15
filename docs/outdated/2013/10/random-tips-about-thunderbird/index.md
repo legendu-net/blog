@@ -1,7 +1,7 @@
 ---
 title: Random Tips about Thunderbird
 created: '2013-10-04T14:29:35-07:00'
-date: '2026-11-15T09:35:26-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: random-tips-about-thunderbird
@@ -14,12 +14,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 ## Backup
 

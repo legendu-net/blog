@@ -1,18 +1,20 @@
 ---
 title: Install Kotlin
-created: 2019-11-23 09:57:56
-date: 2026-04-05 19:42:37.849817
+created: '2019-11-23T09:57:56-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
-- bendu
+  - bendu
 label: install-kotlin
 license: CC-BY-4.0
 tags:
-- programming
-- Kotlin
-- install
-- installation
+  - programming
+  - Kotlin
+  - install
+  - installation
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 ## Ubuntu
 
 Unfortunately,
@@ -20,8 +22,8 @@ there is no apt-get installation (even no Ubuntu PPA) for Kotlin at this time.
 There are basically 3 options to install Kotlin on Ubuntu.
 
 1. Install manually.
-2. Use snap app.
-3. Use sdkman to install Kotlin LOCALLY.
+1. Use snap app.
+1. Use sdkman to install Kotlin LOCALLY.
 
 ## Mac
 

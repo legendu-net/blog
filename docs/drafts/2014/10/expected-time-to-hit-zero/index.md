@@ -1,25 +1,26 @@
 ---
 title: Expected Time to Hit Zero
-created: 2014-10-23 17:03:01
-date: 2026-04-05 19:42:38.224130
+created: '2014-10-23T17:03:01-07:00'
+date: '2026-11-15T12:20:33-08:00'
 authors:
-- bendu
+  - bendu
 label: expected-time-to-hit-zero
 license: CC-BY-4.0
 tags:
-- fun problems
-- expected time
-- hitting time
-- discrete uniform distribution
+  - fun problems
+  - expected time
+  - hitting time
+  - discrete uniform distribution
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 Let $DU(0, n)$ be the discrete uniform distribution on $0$, $1$, ..., $n-1$.
 Define random variables as below.
-$$X_1 \sim DU(0, n)$$
-$$X_{i+1} \sim DU(0, X_{i}) \ for \ i \ge 1$$
+\$$X_1 \sim DU(0, n)$$
+$$X_{i+1} \sim DU(0, X_{i}) \ for \ i \ge 1$\$
 The above process is repeated until we get a random variable with the value zero.
-What is the expected number of variables 
+What is the expected number of variables
 (i.e., time to hit zero) in this process?
 
 Let $T_n$ be the time needed to hit zero.
@@ -34,6 +35,7 @@ t_n &=E(T_n) = E\left(E(T_n|X_1)\right) \\
 $$
 
 $$nt_n = n + \sum_{i=0}^{n-1} t_i $$
+
 $$(n-1)t_{n-1} = (n-1) + \sum_{i=0}^{n-2} t_i $$
 
 $$

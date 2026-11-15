@@ -1,7 +1,7 @@
 ---
-title: "Convolutional Neural Networks"
-created: 2020-01-24 22:24:05
-date: 2020-02-24 22:24:05
+title: Convolutional Neural Networks
+created: '2020-01-24T22:24:05-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: convolutional-neural-networks
@@ -20,7 +20,6 @@ tags:
 is a great introduction of CNN.
 
 [ConvNet Architectures](http://cs231n.github.io/convolutional-networks/#convnet-architectures)
-
 
 ## References
 

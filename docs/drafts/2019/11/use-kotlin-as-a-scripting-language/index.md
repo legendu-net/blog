@@ -1,7 +1,7 @@
 ---
-title: "Use Kotlin as a Scripting Language"
-created: 2019-11-03 13:10:42
-date: 2019-11-03 13:10:42
+title: Use Kotlin as a Scripting Language
+created: '2019-11-03T13:10:42-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: use-kotlin-as-a-scripting-language

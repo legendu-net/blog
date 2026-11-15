@@ -1,7 +1,7 @@
 ---
-title: "English Vocabulary"
-created: 2014-09-13 22:55:30
-date: 2016-07-13 22:55:30
+title: English Vocabulary
+created: '2014-09-13T22:55:30-07:00'
+date: '2026-11-15T12:20:33-08:00'
 authors:
   - bendu
 label: english-vocabulary
@@ -16,16 +16,16 @@ tags:
 
 1. beneficiary
 
-2. perfunctory
-
+1. perfunctory
 
 ### Alike
 
 1. bimonthly vs semimonthly
 
-2. every one vs everyone, every thing vs everything, etc.
+1. every one vs everyone, every thing vs everything, etc.
 
-3. numeric vs numerical
+1. numeric vs numerical
 
 ### Culture
+
 chicken: white meant -> breast, dark meat -> leg

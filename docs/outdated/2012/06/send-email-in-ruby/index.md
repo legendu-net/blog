@@ -1,19 +1,20 @@
 ---
 title: Send Email in Ruby
-created: 2012-06-06 11:28:52
-date: 2026-04-05 19:42:39.392197
+created: '2012-06-06T11:28:52-07:00'
+date: '2026-11-15T12:20:41-08:00'
 authors:
-- bendu
+  - bendu
 label: send-email-in-ruby
 license: CC-BY-4.0
 tags:
-- smtp
-- programming
-- Verizon
-- PDF
-- Ruby
-- email
+  - smtp
+  - programming
+  - Verizon
+  - PDF
+  - Ruby
+  - email
 ---
+
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 <img src="/media/ruby/ruby.png" height="200" width="240" align="right"/>
@@ -31,35 +32,36 @@ Among all these libraries, "actionmailer" meets my requirement well and has good
 documentation. The following the function I wrote to send email to members in my
 family plan.
 
-    def email_bills(subject,body)
-        require 'action_mailer'
-        ActionMailer::Base.raise_delivery_errors = true
-        ActionMailer::Base.delivery_method = :smtp
-        member_emails = "dclong@iastate.edu,lisa19850925@gmail.com,lynnyu2009@gmail.com,klins@iastate.edu"
-        # member_emails = 'duchuanlong@gmail.com'
-        # read in password for 'firedragon.du@gmail.com'
-        password = read_password
-        ActionMailer::Base.smtp_settings = {
-            :address   => "smtp.gmail.com",
-            :port      => 587,
-            :domain    => "gmail.com",
-            :authentication => :plain,
-            :user_name      => "firedragon.du@gmail.com",
-            :password       => password,
-            :enable_starttls_auto => true
-        }
-        mail = ActionMailer::Base.mail(:to=>member_emails)
-        mail.from = "duchuanlong@gmail.com"
-        mail.reply_to = "duchuanlong@gmail.com"
-        mail.subject = subject
-        mail.body = body
-        mail.deliver
-    end
-    def read_password()
-        require 'highline/import'
-        return ask('Please enter the password for "firedragon.du@gmail.com":' + "\n"){
-            |q|
-            q.echo = "*"
-        }
-    end
-
+```
+def email_bills(subject,body)
+    require 'action_mailer'
+    ActionMailer::Base.raise_delivery_errors = true
+    ActionMailer::Base.delivery_method = :smtp
+    member_emails = "dclong@iastate.edu,lisa19850925@gmail.com,lynnyu2009@gmail.com,klins@iastate.edu"
+    # member_emails = 'duchuanlong@gmail.com'
+    # read in password for 'firedragon.du@gmail.com'
+    password = read_password
+    ActionMailer::Base.smtp_settings = {
+        :address   => "smtp.gmail.com",
+        :port      => 587,
+        :domain    => "gmail.com",
+        :authentication => :plain,
+        :user_name      => "firedragon.du@gmail.com",
+        :password       => password,
+        :enable_starttls_auto => true
+    }
+    mail = ActionMailer::Base.mail(:to=>member_emails)
+    mail.from = "duchuanlong@gmail.com"
+    mail.reply_to = "duchuanlong@gmail.com"
+    mail.subject = subject
+    mail.body = body
+    mail.deliver
+end
+def read_password()
+    require 'highline/import'
+    return ask('Please enter the password for "firedragon.du@gmail.com":' + "\n"){
+        |q|
+        q.echo = "*"
+    }
+end
+```

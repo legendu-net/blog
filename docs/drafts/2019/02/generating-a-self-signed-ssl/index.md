@@ -1,17 +1,17 @@
 ---
 title: Generating a Self-Signed SSL
-created: 2019-02-27 22:20:14
-date: 2026-04-05 19:42:37.908645
+created: '2019-02-27T22:20:14-08:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
-- bendu
+  - bendu
 label: generating-a-self-signed-ssl
 license: CC-BY-4.0
 tags:
-- software
-- SSL
+  - software
+  - SSL
 ---
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://stackoverflow.com/questions/10175812/how-to-create-a-self-signed-certificate-with-openssl
 

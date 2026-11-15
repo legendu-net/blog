@@ -1,7 +1,7 @@
 ---
 title: Tips on SAS
 created: '2013-10-10T19:13:40-07:00'
-date: '2026-11-15T09:28:07-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: tips-on-sas
@@ -13,12 +13,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. SAS on Linux recognize `~` as the home directory of users.
 

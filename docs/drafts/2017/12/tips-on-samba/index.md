@@ -1,17 +1,18 @@
 ---
 title: Tips on Samba
-created: 2017-12-29 17:14:25
-date: 2026-04-05 19:42:38.030935
+created: '2017-12-29T17:14:25-08:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-samba
 license: CC-BY-4.0
 tags:
-- Linux
-- SAMBA
-- remote file system
-- file sharing
+  - Linux
+  - SAMBA
+  - remote file system
+  - file sharing
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 SAMBA File System is a great way to share files among computers in local network (e.g., office or home).
@@ -26,6 +27,7 @@ Some companies make SAMBA file system accessible to everyone!
 dclong/samba
 
 ## Mount Windows Samba Share on Ubuntu
+
 ```
 sudo mount //WINSRV/SHARE -t cifs -o uid=1000,gid=1000,username=winuser /mnt/path
 ```
@@ -36,15 +38,20 @@ It is now possible to mount USB media (including formatted as FAT)
 and network shares with `drvfs` on Windows 10.
 
 You can use the following command to mount removable media (e.g. D:).
+
 ```
 sudo mkdir /mnt/d
 sudo mount -t drvfs D: /mnt/d
 ```
+
 And use the following command to safely unmount it.
+
 ```
 sudo umount /mnt/d
 ```
+
 You can also mount network shares without `smbfs`.
+
 ```
 sudo mount -t drvfs '\\server\share' /mnt/share
 ```
@@ -61,10 +68,6 @@ https://ubuntuforums.org/showthread.php?t=1865953
 
 https://stackoverflow.com/questions/3323966/echo-smbpasswd-by-stdin-doesnt-work
 
-
-
 https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20%28Command-line%20interface/Linux%20Terminal%29%20-%20Uncomplicated%2C%20Simple%20and%20Brief%20Way%21
-
-
 
 https://superuser.com/questions/1109993/accessing-removable-media-in-bash-on-windows/1209701#1209701

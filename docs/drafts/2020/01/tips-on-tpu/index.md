@@ -1,7 +1,7 @@
 ---
-title: "Tips on TPU"
-created: 2020-01-01 11:01:05
-date: 2020-01-01 11:01:05
+title: Tips on TPU
+created: '2020-01-01T11:01:05-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: tips-on-tpu

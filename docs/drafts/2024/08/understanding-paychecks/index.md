@@ -1,7 +1,7 @@
 ---
-title: "Understanding Paychecks"
-created: 2024-08-02 11:35:45
-date: 2024-08-09 23:16:19
+title: Understanding Paychecks
+created: '2024-08-02T11:35:45-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: understanding-paychecks

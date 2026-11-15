@@ -1,7 +1,7 @@
 ---
 title: mkShell vs buildFHSUserEnv in Nix
-created: 2025-04-21 13:07:34
-date: 2026-04-13 23:14:22.666145
+created: '2025-04-21T13:07:34-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: mkshell-vs-buildfhsuserenv-in-nix
@@ -81,8 +81,9 @@ Typically defined as a Nix derivation itself. You build it like any other packag
 Can be called within a shell.nix or flake.nix to provide an FHS environment as part of a development shell, but it's a distinct layer.
 
 ```{list-table} mkShell vs buildFHSUserEnv Comparison
-:header-rows: 1
-
+---
+header-rows: 1
+---
 - - Feature
   - `mkShell`
   - `buildFHSUserEnv`

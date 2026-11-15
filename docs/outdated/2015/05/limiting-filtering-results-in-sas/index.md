@@ -1,7 +1,7 @@
 ---
-title: "Limiting/Filtering Results in SAS"
-created: 2015-05-28 12:54:45
-date: 2015-08-28 12:54:45
+title: Limiting/Filtering Results in SAS
+created: '2015-05-28T12:54:45-07:00'
+date: '2026-11-15T12:20:43-08:00'
 authors:
   - bendu
 label: limiting-filtering-results-in-sas
@@ -15,14 +15,6 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
-Please look for better alternatives.
-**
-
-
-
 In the data step you can use the hidden variable `_n_` to select records based on observation id.
 
 In `proc sql`,
@@ -30,6 +22,7 @@ you can use the `outobs` option.
 In other procedures,
 you can use `firstobs` together with `obs` to limit records based observation id.
 Again, this is ugly as you have to much to remember when using SAS.
+
 ```SAS
 proc sql;
 	select *
@@ -37,8 +30,8 @@ proc sql;
 	where monotonic() <= 10;
 quit;
 ```
-The `monotonic` function is similar to the `row_number` function in Oracle SQL.
 
+The `monotonic` function is similar to the `row_number` function in Oracle SQL.
 
 ```SAS
 proc sql outobs=10;
@@ -49,6 +42,7 @@ proc sql outobs=10;
 	;
 quit;
 ```
+
 For other steps, you can use firstObs and obs to limit the number of observations.
 
 ```SAS

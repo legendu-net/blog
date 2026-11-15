@@ -1,7 +1,7 @@
 ---
 title: Television Is a Fast and Portable Fuzzy Finder
 created: '2026-09-29T01:21:21.177516-07:00'
-date: '2026-09-29T01:21:21.177525-07:00'
+date: '2026-11-15T12:20:41-08:00'
 authors:
   - bendu
 label: television-is-a-fast-and-portable-fuzzy-finder
@@ -47,7 +47,6 @@ https://alexpasmantier.github.io/television/getting-started/first-channel/
 
 https://alexpasmantier.github.io/television/user-guide/channels/
 
-## fdfind 
+## fdfind
 
-ln -s $(which fdfind) ~/.local/bin/fd
-
+ln -s \$(which fdfind) ~/.local/bin/fd

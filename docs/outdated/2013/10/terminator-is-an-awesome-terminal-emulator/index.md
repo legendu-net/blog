@@ -1,7 +1,7 @@
 ---
 title: Terminator Is an Awesome Terminal Emulator
 created: '2013-10-18T14:03:09-07:00'
-date: '2026-11-15T09:35:30-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: terminator-is-an-awesome-terminal-emulator
@@ -15,12 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 Hyper.js is a better cross-platform alternative!
 Use Hyper instead.

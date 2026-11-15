@@ -1,7 +1,7 @@
 ---
-title: "Calculating Quantiles in SAS"
-created: 2015-03-13 16:49:45
-date: 2015-03-13 16:49:45
+title: Calculating Quantiles in SAS
+created: '2015-03-13T16:49:45-07:00'
+date: '2026-11-15T12:20:43-08:00'
 authors:
   - bendu
 label: calculating-quantiles-in-sas
@@ -14,16 +14,7 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
-Please look for better alternatives.
-**
-
-
-
 Use the quantile function. Don't use distribution specific function models.
-
 
 BETAINV
 returns a quantile from the beta distribution
@@ -38,4 +29,4 @@ returns a quantile from the standard normal distribution
 QUANTILE
 returns the quantile from the specified distribution
 TINV
-returns a quantile from the  distribution
+returns a quantile from the distribution

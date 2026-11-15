@@ -1,7 +1,7 @@
 ---
-title: "Tips on XGBoost"
-created: 2019-12-28 23:22:29
-date: 2019-12-28 23:22:29
+title: Tips on XGBoost
+created: '2019-12-28T23:22:29-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: tips-on-xgboost
@@ -16,34 +16,34 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. It is suggested that you use the sklearn wrapper classes `XGBClassifier` and `XGBRegressor`
-    so that you can fully leverage other tools of the sklearn package.
+   so that you can fully leverage other tools of the sklearn package.
 
-2. There are 2 types of boosters (`gbtree` and `gblinear`), 
-    It is suggested that you always use tree booster (`gbtree`) 
-    as it always outperformas the linear booster (`gblinear`).
+1. There are 2 types of boosters (`gbtree` and `gblinear`),
+   It is suggested that you always use tree booster (`gbtree`)
+   as it always outperformas the linear booster (`gblinear`).
 
-3. Instead of training, validation and testing sets,
-    people typically use training and testing sets 
-    and parameter tuning is done using cross validation based on the training data.
-    The advantage of this way is that the data is better used. 
+1. Instead of training, validation and testing sets,
+   people typically use training and testing sets
+   and parameter tuning is done using cross validation based on the training data.
+   The advantage of this way is that the data is better used.
 
-4. Feature engineering and ensemble are usually more important 
-    (in terms of improving model performance) than parameter tuning.
+1. Feature engineering and ensemble are usually more important
+   (in terms of improving model performance) than parameter tuning.
 
-5. split-by-leaf mode (grow_policy='lossguide') makes XGBoost run much faster.
+1. split-by-leaf mode (grow_policy='lossguide') makes XGBoost run much faster.
 
 ## Parameters
 
 ### General Parameters
 
-It is suggested that you keep the default values for the general parameters 
+It is suggested that you keep the default values for the general parameters
 (`booster`, `silent` and `nthrad`).
 
 #### booster [default=gbtree]
 
-The booster parameter specifies the type of model to run. 
+The booster parameter specifies the type of model to run.
 It has 2 options `gbtree` (tree-based models) and `gblinear` (linear models).
-It is suggested that you keep the default value (`gbtree`) 
+It is suggested that you keep the default value (`gbtree`)
 as `gbtree` always outperforms `gblinear`.
 
 #### silent [default=0]
@@ -71,12 +71,11 @@ It is suggested that you tune the value using cross validation.
 #### \* min_child_weight [default=1]
 
 Defines the minimum sum of weights of all observations required in a child.
-It is used to control over-fitting. 
-Higher values prevent a model from learning relations 
+It is used to control over-fitting.
+Higher values prevent a model from learning relations
 (which might be highly specific to the particular sample selected for a tree)
 while too high values can lead to under-fitting hence.
 It is suggested that you tune the value using cross validation.
-
 
 #### \* max_depth [default=6]
 
@@ -92,6 +91,7 @@ Can be defined in place of max_depth. Since binary trees are created, a depth of
 If this is defined, GBM will ignore max_depth.
 
 #### gamma [default=0]
+
 A node is split only when the resulting split gives a positive reduction in the loss function. Gamma specifies the minimum loss reduction required to make a split.
 Makes the algorithm conservative. The values can vary depending on the loss function and should be tuned.
 
@@ -130,8 +130,6 @@ Can be used in case of very high dimensionality so that the algorithm runs faste
 #### scale_pos_weight [default=1]
 
 A value greater than 0 should be used in case of high class imbalance as it helps in faster convergence.
- 
-
 
 ### Number of Decision Trees (`n_estimators`)
 
@@ -145,8 +143,8 @@ Prevent overfitting.
 
 ### subsample
 
-`subsample` is for each tree the percentage of rows taken to build the tree. 
-I recommend not taking out too many rows, 
+`subsample` is for each tree the percentage of rows taken to build the tree.
+I recommend not taking out too many rows,
 as performance will drop a lot. Take values from 0.8 to 1.
 
 ### colsample_bytree
@@ -159,7 +157,7 @@ number of columns used by each tree. In order to avoid some columns to take too 
 
 ### gamma
 
-A regularization parameter. 
+A regularization parameter.
 Either 0, 1 or 5.
 
 ## [XGBClassifier.fit](https://xgboost.readthedocs.io/en/latest/python/python_api.html?highlight=classifier#xgboost.XGBClassifier.fit)
@@ -177,7 +175,7 @@ instead of setting parameter on model creation.
 
 https://stackoverflow.com/questions/34674797/xgboost-xgbclassifier-defaults-in-python
 
-## Parameter Tuning 
+## Parameter Tuning
 
 https://sites.google.com/view/lauraepp/parameters
 
@@ -187,7 +185,7 @@ https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgb
 
 https://xgboost.readthedocs.io/en/latest/gpu/
 
-## Questions 
+## Questions
 
 Any difference between xgboost.cv and the cross validation in sklearn?
 which one should I use?
@@ -207,4 +205,3 @@ https://towardsdatascience.com/a-beginners-guide-to-xgboost-87f5d4c30ed7
 https://www.datacamp.com/community/tutorials/xgboost-in-python
 
 https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/
-

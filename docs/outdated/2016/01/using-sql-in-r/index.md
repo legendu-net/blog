@@ -1,7 +1,7 @@
 ---
 title: Using SQL in R
 created: '2016-01-08T15:47:42-08:00'
-date: '2026-11-15T09:28:15-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: using-sql-in-r
@@ -17,12 +17,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. It is suggested that you do not use paste to concatenate SQL queries,
    but rather have a complete SQL query with special marked variables

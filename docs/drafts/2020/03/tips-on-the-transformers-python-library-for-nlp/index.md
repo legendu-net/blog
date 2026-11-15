@@ -1,7 +1,7 @@
 ---
-title: "Tips on the Transformers Python Library for NLP"
-created: 2020-03-06 13:19:56
-date: 2020-03-06 13:19:56
+title: Tips on the Transformers Python Library for NLP
+created: '2020-03-06T13:19:56-08:00'
+date: '2026-11-15T12:20:37-08:00'
 authors:
   - bendu
 label: tips-on-the-transformers-python-library-for-nlp
@@ -23,11 +23,9 @@ tags:
 
 https://github.com/huggingface/transformers#quick-tour
 
-
 https://github.com/huggingface/transformers
 
 https://huggingface.co/transformers/
-
 
 [BERT](https://huggingface.co/transformers/model_doc/bert.html)
 

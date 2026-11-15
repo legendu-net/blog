@@ -1,7 +1,7 @@
 ---
 title: Synchronize Files Using Unison
 created: '2015-10-22T14:18:56-07:00'
-date: '2026-11-15T09:28:12-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: synchronize-files-using-unison
@@ -18,12 +18,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 https://incumbent.org/post/unison-sync-and-launchd/
 

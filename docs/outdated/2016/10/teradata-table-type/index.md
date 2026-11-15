@@ -1,7 +1,7 @@
 ---
-title: "Teradata Table Type"
-created: 2016-10-16 11:22:18
-date: 2016-10-16 11:22:18
+title: Teradata Table Type
+created: '2016-10-16T11:22:18-07:00'
+date: '2026-11-15T12:20:43-08:00'
 authors:
   - bendu
 label: teradata-table-type
@@ -15,27 +15,21 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
-Please look for better alternatives.
-**
-
 1. MULTISET Table
 
 create table test
 ( id int,
-  name char(20)
+name char(20)
 )
 
 当你用show table test检查表定义的时候发现，它已经变成如下定义：
 CREATE MULTISET TABLE test ,NO FALLBACK ,
-     NO BEFORE JOURNAL,
-     NO AFTER JOURNAL,
-     CHECKSUM = DEFAULT
-     (
-      id INTEGER,
-      name CHAR(20) CHARACTER SET LATIN CASESPECIFIC)
+NO BEFORE JOURNAL,
+NO AFTER JOURNAL,
+CHECKSUM = DEFAULT
+(
+id INTEGER,
+name CHAR(20) CHARACTER SET LATIN CASESPECIFIC)
 PRIMARY INDEX ( id );
 
 可以看到，系统默认会将表设置为MULTISET Table，没有备份（FALLBACK ）和恢复日志（BEFORE JOURNAL/AFTER JOURNAL），而且会默认将第一列设置为PRIMARY INDEX。
@@ -75,18 +69,18 @@ on commit preserve rows
 定义如下：
 create global temporary table test as
 ( select * from table
-) with no data    -- global temporary table cannot define with data
+) with no data -- global temporary table cannot define with data
 on commit preserve rows
 
 这个表存在于data dictionary中，当User结束一个session时，这个表中的数据将自动删除，表还保留，其它用户可以继续访问这个表，但是数据只存在于某一session中。
 
 在上边的定义中，我们使用的是on commit preserve rows，执行以下SQL，我们可以看到表中存有数据。
 insert into test
-select *
+select \*
 from table
 
 然后执行
-select *
+select \*
 from test
 
 如果把定义改为on commit delete rows，我们看到表中依然没有数据，这是因为每个SQL 语句都是一个隐性事务。

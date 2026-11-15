@@ -1,7 +1,7 @@
 ---
 title: Work with Teradata SQL in Python
 created: '2017-05-17T11:47:48-07:00'
-date: '2026-08-11T22:19:34-07:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: work-with-teradata-sql-in-python
@@ -14,12 +14,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 ## ODBC
 

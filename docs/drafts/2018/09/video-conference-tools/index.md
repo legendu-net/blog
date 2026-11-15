@@ -1,7 +1,7 @@
 ---
-title: "Video Conference Tools"
-created: 2018-09-15 15:14:07
-date: 2022-07-11 16:56:40
+title: Video Conference Tools
+created: '2018-09-15T15:14:07-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: video-conference-tools
@@ -30,67 +30,70 @@ A great choice.
 2. Slack
 
 another very good choice
-   
-3. Skype 
-    - support screen sharing
 
-2. WeChat
-    - do not support screen sharing
+3. Skype
 
-3. QQ
-    - support screen sharing
+   - support screen sharing
 
-2. Apache OpenMeeting
+1. WeChat
 
-3. Jitsi
+   - do not support screen sharing
 
-7. iVisit, iChat, NetMeeting
+1. QQ
 
-8. Breeze
+   - support screen sharing
 
-10. GoToMeeting (free for up to 4 people)
+1. Apache OpenMeeting
 
-11. Google Voice (up to 4 people)
+1. Jitsi
 
-12. FreeConferenceCall (seems that it is free?)
+1. iVisit, iChat, NetMeeting
 
-13. Wiggio (?)
+1. Breeze
 
-14. Speek (?)
+1. GoToMeeting (free for up to 4 people)
 
-15. https://www.freeconference.com/
+1. Google Voice (up to 4 people)
 
-16. join.me by LogMeIn
+1. FreeConferenceCall (seems that it is free?)
 
-17. SightSpeed
+1. Wiggio (?)
 
-18. Free conference calling
+1. Speek (?)
 
-19. Dimdim
+1. https://www.freeconference.com/
 
-20. Tokbox
+1. join.me by LogMeIn
 
-21. MyMeeting123
+1. SightSpeed
 
-22. Paltalk
+1. Free conference calling
 
-23. MegaMeeting
+1. Dimdim
 
-24. Fuze Meeting
+1. Tokbox
 
-25. Free Audio Conferencing
+1. MyMeeting123
 
-26. Easy Conference
+1. Paltalk
 
-27. Easy Conference
+1. MegaMeeting
 
-28. Gizmo Call
+1. Fuze Meeting
 
-29. Totally Free Conference
+1. Free Audio Conferencing
 
-30. RingCenteral
+1. Easy Conference
 
-31. Onstream Meetings
+1. Easy Conference
+
+1. Gizmo Call
+
+1. Totally Free Conference
+
+1. RingCenteral
+
+1. Onstream Meetings
 
 ## References
 

@@ -1,7 +1,7 @@
 ---
 title: Convert HEIC Images in Linux
-created: 2022-01-01 13:41:55
-date: 2026-04-13 23:14:50.496405
+created: '2022-01-01T13:41:55-08:00'
+date: '2026-11-15T12:20:38-08:00'
 authors:
   - bendu
 label: convert-heic-images-in-linux
@@ -40,7 +40,7 @@ then you use the following code in IPython or a JupyterLab notebook.
 
 ```bash
 for p in Path().glob("*.HEIC"):
-    !heif-convert {p} {p.with_suffix(".jpg")}
+!heif-convert {p} {p.with_suffix(".jpg")}
 ```
 
 ## References

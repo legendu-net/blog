@@ -1,7 +1,7 @@
 ---
-title: "Use the ulimit Command to Control the Stack Size"
-created: 2020-02-28 10:27:20
-date: 2020-02-28 10:27:20
+title: Use the ulimit Command to Control the Stack Size
+created: '2020-02-28T10:27:20-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: use-the-ulimit-command-to-control-the-stack-size

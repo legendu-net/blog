@@ -1,7 +1,7 @@
 ---
 title: Tips on pre-commit
-created: 2020-09-09 12:03:21
-date: 2026-04-13 23:15:15.560214
+created: '2020-09-09T12:03:21-07:00'
+date: '2026-11-15T12:20:37-08:00'
 authors:
   - bendu
 label: tips-on-pre-commit
@@ -26,7 +26,7 @@ Git hooks can be useful for simple and fast local code formatting.
 1. Install pre-commit.
 
    ```bash
-    pip3 install pre-commit
+   pip3 install pre-commit
    ```
 
 1. Edit `.pre-commit-config.yaml`.
@@ -63,7 +63,7 @@ Git hooks can be useful for simple and fast local code formatting.
 1. Install the git hook scripts.
 
    ```bash
-    pre-commit install
+   pre-commit install
    ```
 
 ## References

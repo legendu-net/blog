@@ -1,17 +1,18 @@
 ---
 title: Tips on dbeaver
-created: 2018-05-28 21:36:04
-date: 2026-04-05 19:42:38.007413
+created: '2018-05-28T21:36:04-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-dbeaver
 license: CC-BY-4.0
 tags:
-- software
-- dbeaver
-- IDE
-- SQL
+  - software
+  - dbeaver
+  - IDE
+  - SQL
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Links
@@ -28,8 +29,8 @@ You can install vrapper as vim keybindings on dbeaver.
 
 1. Help -> Install Software
 
-2. Add vrapper repository http://vrapper.sourceforge.net/update-site/stable
+1. Add vrapper repository http://vrapper.sourceforge.net/update-site/stable
 
-3. Install
+1. Install
 
-4. Restart dbeaver
+1. Restart dbeaver

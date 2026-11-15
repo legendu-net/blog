@@ -1,7 +1,7 @@
 ---
-title: "Tips on Tesla Superchargers"
-created: 2025-08-23 22:25:52
-date: 2025-08-23 22:25:52
+title: Tips on Tesla Superchargers
+created: '2025-08-23T22:25:52-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: tips-on-tesla-superchargers
@@ -20,10 +20,10 @@ tags:
 ## Tesla Superchargers for Third-party EVs
 
 1. Only V3+ Tesla Superchargers are open to third-party EVs.
-    One easy way to tell the version of Tesla superchargers 
-    is via the maximum charging power supported.
-    V2 Tesla Superchargers provide up to 150kw of power,
-    V3 Tesla Superchargers provide up to 250kw of power,
-    and V4 Tesla Superchargers provide up to 325kw of power.
-    If you have your third-party vehicle registered in the Tesla app,
-    you can search in the Tesla charging map in the app for compatible superchargers.
+   One easy way to tell the version of Tesla superchargers
+   is via the maximum charging power supported.
+   V2 Tesla Superchargers provide up to 150kw of power,
+   V3 Tesla Superchargers provide up to 250kw of power,
+   and V4 Tesla Superchargers provide up to 325kw of power.
+   If you have your third-party vehicle registered in the Tesla app,
+   you can search in the Tesla charging map in the app for compatible superchargers.

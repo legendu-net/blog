@@ -1,7 +1,7 @@
 ---
-title: "Hardware for AI"
-created: 2020-03-11 11:56:25
-date: 2023-07-30 22:22:48
+title: Hardware for AI
+created: '2020-03-11T11:56:25-07:00'
+date: '2026-11-15T12:20:37-08:00'
 authors:
   - bendu
 label: hardware-for-ai
@@ -23,9 +23,7 @@ tags:
 [TVM](https://github.com/apache/incubator-tvm)
 for deep learning is kind of like LLVM for programming languages.
 
-
 [Nvidia TensorRT](https://developer.nvidia.com/tensorrt)
-
 
 ## Embedded/Edge AI
 
@@ -68,14 +66,12 @@ CPU：i9-10920X
 - 已经开始研究深度学习：RTX 2070起步，以后按需添置更多RTX 2070
 - 尝试入门深度学习：GTX 1050 Ti（2GB或4GB显存）
 
-
 https://www.digitalstorm.com/configurator.asp?id=3137888
 
-Need UPS in case of power interruption 
+Need UPS in case of power interruption
 
 https://list.jd.com/Search?keyword=%E5%8F%B0%E5%BC%8F%E6%9C%BA%E6%96%AD%E7%94%B5%E4%BF%9D%E6%8A%A4%E7%94%B5%E6%BA%90&enc=utf-8&spm=2.1.11
 
 ## References
 
 - [Google Just Turned the Raspberry Pi into a Supercomputer](https://www.youtube.com/watch?v=mOY_Dbyq6OY)
-

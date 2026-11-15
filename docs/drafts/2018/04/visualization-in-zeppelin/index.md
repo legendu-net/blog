@@ -1,7 +1,7 @@
 ---
-title: "Visualization in Zeppelin"
-created: 2018-04-30 16:24:19
-date: 2018-04-30 16:24:19
+title: Visualization in Zeppelin
+created: '2018-04-30T16:24:19-07:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
   - bendu
 label: visualization-in-zeppelin
@@ -14,7 +14,6 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
 http://stackoverflow.com/questions/37219069/how-to-use-plotly-with-zeppelin
 
 http://www.jfree.org/jfreechart/
@@ -22,4 +21,4 @@ http://www.jfree.org/jfreechart/
 beljun/zeppelin-plotly
 
 2. it seems that Zeppelin has an easier way for UI!!!
-select * where name =="${username=A, A|B}"
+   select * where name =="\${username=A, A|B}"

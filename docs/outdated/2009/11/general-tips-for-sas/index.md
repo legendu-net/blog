@@ -1,7 +1,7 @@
 ---
 title: General Tips for SAS
 created: '2009-11-02T12:05:07-08:00'
-date: '2026-11-15T09:30:46-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: general-tips-for-sas
@@ -16,12 +16,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. Do not go crazy in encapsulating/reusing code in SAS.
    SAS is too stupid on this.

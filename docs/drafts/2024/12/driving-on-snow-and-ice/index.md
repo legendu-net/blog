@@ -1,7 +1,7 @@
 ---
-title: "Driving on Snow and Ice"
-created: 2024-12-26 22:16:02
-date: 2024-12-27 13:48:17
+title: Driving on Snow and Ice
+created: '2024-12-26T22:16:02-08:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: driving-on-snow-and-ice
@@ -18,11 +18,10 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-[Snow Socks VS Snow Chains VS Snow Tires - What's REALLY Best on Snow and Ice?](https://www.youtube.com/watch?v=W-k_1gz87vM) 
+[Snow Socks VS Snow Chains VS Snow Tires - What's REALLY Best on Snow and Ice?](https://www.youtube.com/watch?v=W-k_1gz87vM)
 concludes that winter tire + tire cable are good choices.
 
 https://wsdot.com/travel/real-time/mountainpasses/tiresandchains
-
 
 ## Mount Rainier
 

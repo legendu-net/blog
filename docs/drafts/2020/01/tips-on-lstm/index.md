@@ -1,7 +1,7 @@
 ---
-title: "Tips on LSTM"
-created: 2020-01-11 15:58:32
-date: 2020-02-11 15:58:32
+title: Tips on LSTM
+created: '2020-01-11T15:58:32-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: tips-on-lstm

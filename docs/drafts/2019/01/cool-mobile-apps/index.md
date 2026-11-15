@@ -1,7 +1,7 @@
 ---
-title: "Cool Mobile Apps"
-created: 2019-01-21 21:54:58
-date: 2019-01-21 21:54:58
+title: Cool Mobile Apps
+created: '2019-01-21T21:54:58-08:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: cool-mobile-apps
@@ -20,4 +20,4 @@ https://techwiser.com/5-apps-to-remote-control-android-phone-from-pc-usb-and-wif
 
 1. Schemes (scheduled messages, sounds good)
 
-2. BTSync (Multiway synchronization)
+1. BTSync (Multiway synchronization)

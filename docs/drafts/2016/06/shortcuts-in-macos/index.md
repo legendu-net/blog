@@ -1,20 +1,21 @@
 ---
 title: Shortcuts in macOS
-created: 2016-06-22 16:10:02
-date: 2026-04-05 19:42:38.146568
+created: '2016-06-22T16:10:02-07:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
-- bendu
+  - bendu
 label: shortcuts-in-macos
 license: CC-BY-4.0
 tags:
-- macOS
-- Apple
-- shortcuts
-- GUI
-- keybinding
-- customize
-- disable
+  - macOS
+  - Apple
+  - shortcuts
+  - GUI
+  - keybinding
+  - customize
+  - disable
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Customize Keybindings
@@ -23,13 +24,14 @@ You can customize keybindings by editing the file
 `~/Library/KeyBindings/DefaultKeyBinding.dict`
 .
 For example,
-to disable the system keybinding 
-`Alt + e` 
+to disable the system keybinding
+`Alt + e`
 and
-`Alt + .` 
+`Alt + .`
 (so that they can be used by other applications, e.g., the fish shell)
 ,
 you can add the following content into the file.
+
 ```
 {
     "~e" = "noAction:";
@@ -43,17 +45,16 @@ you can add the following content into the file.
 lists comparisons of shortcuts on Windows, macOS and Linux.
 
 1. Unless you have a full Mac keyboard,
-    you will not have the `Home/End` keys.
-    `Fn + Left/Right` act as equivalent to `Home/End` keys in macOS,
-    however, `Home/End` keys not necessarily behave the same as in Windows/Linux.
-    `Command + Left/Right` behave equivalent to what `Home/End` keys do in Windows/Linux.
+   you will not have the `Home/End` keys.
+   `Fn + Left/Right` act as equivalent to `Home/End` keys in macOS,
+   however, `Home/End` keys not necessarily behave the same as in Windows/Linux.
+   `Command + Left/Right` behave equivalent to what `Home/End` keys do in Windows/Linux.
 
-2. `Delete` acts like the key `Backspace` in Windows/Linux
-    `Fn + Delete` acts like the key `Delete` in Windows/Linux.
+1. `Delete` acts like the key `Backspace` in Windows/Linux
+   `Fn + Delete` acts like the key `Delete` in Windows/Linux.
 
-3. `CMD + C` copies files and `CMD + V` pastes the copied files.
-    `CMD + Option + V` moves the files instead of to copy them.
-
+1. `CMD + C` copies files and `CMD + V` pastes the copied files.
+   `CMD + Option + V` moves the files instead of to copy them.
 
 <table style="width:100%">
   <tr>
@@ -78,7 +79,6 @@ Command + k: connect to server
 
 Option + Left/Right: move to the left/right by one word
 
-
 Basic Shortcuts
 
 Command + W = Close the current active window
@@ -100,12 +100,12 @@ Command + Shift + 4 = Take selected area screenshot
 Command + Shift + 4 + Space = Take screenshot of window or menu
 Option + Command + Escape = Bring up Force Quit window
 Command + Space = Spotlight search
-Command + ` (back tick) = Cycle through applications windows
+Command + \` (back tick) = Cycle through applications windows
 Command + . = Cancel operation
 Command + Shift + ? = Open help
 Command + I = Get Info
-Command + [ = Go backwards in history in Finder
-Command + ] = Go forwards in history in Finder
+Command + \[ = Go backwards in history in Finder
+Command + \] = Go forwards in history in Finder
 Command + Up Arrow = Go to previous folder in hierarchy
 Command + Down Arrow = Open folder of file in Finder
 Command + Option/Alt + T = Show hide Finder’s toolbar
@@ -140,12 +140,6 @@ Option + Command + Eject = Sleep
 Command + Shift + F = Find file by name
 Command + R = Refresh widget
 
-
-
-
-
-
-
 Command + = = Zoom in (works in terminal, iterm2, etc.)
 Command + - = Zoom out (works in terminal, iterm2, etc.)
 
@@ -155,7 +149,6 @@ https://www.youtube.com/watch?v=Hcp5YpFv1d0
 
 http://www.keyboardmaestro.com/main/
 
-
 ## Web Browsing
 
 Different web browsers share standard keyboard shortcuts
@@ -164,15 +157,16 @@ including Mac OS X. On a Mac, the big difference is
 that you’ll usually be pressing the Command key instead of the Ctrl
 or Alt keys you’d press on Windows.
 
-    Command + F – Start searching the current page. This also works in other applications.
-    Command + Left Arrow – Go back a page.
-    Command + Right Arrow – Go forward a page.
-    Command + T – Open a new tab.
-    Command + W – Close the current tab.
-    Command + L – Focus the browser’s location bar so you can start typing a search or web address immediately.
-    Ctrl + Tab – Switch between open tabs.
-    Ctrl + Shift + Tab – Switch between open tabs in reverse.
-
+```
+Command + F – Start searching the current page. This also works in other applications.
+Command + Left Arrow – Go back a page.
+Command + Right Arrow – Go forward a page.
+Command + T – Open a new tab.
+Command + W – Close the current tab.
+Command + L – Focus the browser’s location bar so you can start typing a search or web address immediately.
+Ctrl + Tab – Switch between open tabs.
+Ctrl + Shift + Tab – Switch between open tabs in reverse.
+```
 
 ## Text Editing
 
@@ -184,17 +178,19 @@ while the Ctrl key is in the bottom-left corner on Windows keyboards.
 The way you have to position your fingers is different,
 so your muscle memory can interfere with these shortcuts.
 
-    Command + A – Select All
-    Command + X – Cut
-    Command + C – Copy
-    Command + V – Paste
-    Command + Z – Undo
-    Command + Shift + Z – Redo
-    Command + Left Arrow –  Go to the beginning of the current line.
-    Command + Right Arrow – Go to the end of the current line.
-    Option + Left Arrow – Move the cursor left one word.
-    Option + Right Arrow – Move the cursor right one word.
-    Option + Delete – Delete the word to the left of the cursor. Bear in mind that the Delete button on a Mac functions like Backspace on Windows.
+```
+Command + A – Select All
+Command + X – Cut
+Command + C – Copy
+Command + V – Paste
+Command + Z – Undo
+Command + Shift + Z – Redo
+Command + Left Arrow –  Go to the beginning of the current line.
+Command + Right Arrow – Go to the end of the current line.
+Option + Left Arrow – Move the cursor left one word.
+Option + Right Arrow – Move the cursor right one word.
+Option + Delete – Delete the word to the left of the cursor. Bear in mind that the Delete button on a Mac functions like Backspace on Windows.
+```
 
 As on Windows, you can press Shift to select text while using these shortcuts. For example, hold down Shift and Option and tap the left arrow repeatedly to select entire previous words.
 
@@ -204,14 +200,15 @@ Macs offer an application switcher that works just like Alt + Tab does on Window
 but there are many more keyboard shortcuts that tie into the Mission Control feature.
 Read our our guide to using Mission Control for more keyboard shortcuts and tricks.
 
-    Command + Tab – Move through a list of open applications. This is like Alt + Tab on Windows.
-    Command + Shift + Tab – Move through the list in reverse.
-    Command + Q – Quit the current application. This is like Alt + F4 on Windows.
-    F3 – Open Mission Control to view all open application windows and desktops.
-    Ctrl + Left Arrow – Move one desktop to the left.
-    Ctrl + Right Arrow – Move one desktop to the right.
+```
+Command + Tab – Move through a list of open applications. This is like Alt + Tab on Windows.
+Command + Shift + Tab – Move through the list in reverse.
+Command + Q – Quit the current application. This is like Alt + F4 on Windows.
+F3 – Open Mission Control to view all open application windows and desktops.
+Ctrl + Left Arrow – Move one desktop to the left.
+Ctrl + Right Arrow – Move one desktop to the right.
+```
 
 ## References
 
 https://appuals.com/cut-paste-mac/
-

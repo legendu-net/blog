@@ -1,7 +1,7 @@
 ---
 title: 'Spark Issue: a Master URL Must Be Set in Your Configuration'
-created: 2019-12-21 12:14:37
-date: 2026-04-15 19:27:01.124590
+created: '2019-12-21T12:14:37-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: spark-issue-a-master-url-must-be-set-in-your-configuration
@@ -32,17 +32,17 @@ Add `.master("yarn")` into the following code
 
 ```bash
 val spark = SparkSession.builder()
-    .appName("SomeAppName")
-    .getOrCreate();
+.appName("SomeAppName")
+.getOrCreate();
 ```
 
 making it become
 
 ```bash
 val spark = SparkSession.builder()
-    .master("yarn")
-    .appName("SomeAppName")
-    .getOrCreate();
+.master("yarn")
+.appName("SomeAppName")
+.getOrCreate();
 ```
 
 ## References

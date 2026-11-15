@@ -1,73 +1,76 @@
 ---
 title: Cartesian Product in SAS
-created: 2014-10-23 15:52:51
-date: 2026-04-05 19:42:39.235130
+created: '2014-10-23T15:52:51-07:00'
+date: '2026-11-15T12:20:42-08:00'
 authors:
-- bendu
+  - bendu
 label: cartesian-product-in-sas
 license: CC-BY-4.0
 tags:
-- programming
-- SAS
-- Cartesian product
+  - programming
+  - SAS
+  - Cartesian product
 ---
+
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 Suppose we have 2 variables `x = ("a", "b", "c")` and `y = (1, 2, 3)`,
 and we want to create a dataset containing the Cartesian product of `x` and `y` in SAS.
 This can be achieved by manually input the Cartesian product of x and y in a data step.
 However,
-this is infeasible when `x` and/or `y` is very large or `x` and/or `y` can only be determined at run time. 
+this is infeasible when `x` and/or `y` is very large or `x` and/or `y` can only be determined at run time.
 Here I provide 2 two general ways to generate Cartesian product of `x` and `y`.
 
 ## Use Outer Join of SQL
 
-    data x;
-        input x$;
-        datalines;
-    a
-    b
-    c
-    ;
-    run;
+```
+data x;
+    input x$;
+    datalines;
+a
+b
+c
+;
+run;
 
-    data y;
-        input y;
-        datalines;
-    1
-    2
-    3
-    ;
-    run;
+data y;
+    input y;
+    datalines;
+1
+2
+3
+;
+run;
 
-    proc sql;
-        create table cart as
-        select * from x, y
-        ;
-    quit;
+proc sql;
+    create table cart as
+    select * from x, y
+    ;
+quit;
+```
 
 ## Use Loop in Data Step
 
-If one of the 2 variables (whose Cartesian product is to be calculated) 
-has an explicit expression (e.g., $y_i = i$), 
+If one of the 2 variables (whose Cartesian product is to be calculated)
+has an explicit expression (e.g., $y_i = i$),
 then we can also use a loop in a data step to calculate the Cartesian product.
 
-    data x;
-        input x$;
-        datalines;
-    a
-    b
-    c
-    ;
-    run;
+```
+data x;
+    input x$;
+    datalines;
+a
+b
+c
+;
+run;
 
-    data cart;
-        set x;
-        do y=1 to 3;
-            output;
-        end;
-    run;
+data cart;
+    set x;
+    do y=1 to 3;
+        output;
+    end;
+run;
+```
 
 (Note: the loop trick a frequently used one in SAS to convert a "fat" data to a "thin" data.)
-
-

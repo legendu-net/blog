@@ -1,7 +1,7 @@
 ---
 title: Understand and Avoid the No More Spool Space Issue in Teradata
 created: '2020-06-22T08:53:57-07:00'
-date: '2026-11-15T09:27:44-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: understand-and-avoid-the-no-more-spool-space-issue-in-teradata
@@ -16,11 +16,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-\*\*
 
 ## Knowledge About Spool Space in Teradata
 

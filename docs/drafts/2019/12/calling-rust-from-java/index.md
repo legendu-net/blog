@@ -1,7 +1,7 @@
 ---
-title: "Calling Rust from Java"
-created: 2019-12-31 11:15:26
-date: 2019-12-31 11:15:26
+title: Calling Rust from Java
+created: '2019-12-31T11:15:26-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: calling-rust-from-java

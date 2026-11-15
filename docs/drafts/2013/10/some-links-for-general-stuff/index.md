@@ -1,16 +1,17 @@
 ---
 title: Some Links for General Stuff
-created: 2013-10-20 00:00:00
-date: 2026-04-05 19:42:38.334391
+created: '2013-10-20T00:00:00-07:00'
+date: '2026-11-15T12:20:33-08:00'
 authors:
-- bendu
+  - bendu
 label: some-links-for-general-stuff
 license: CC-BY-4.0
 tags:
-- links
+  - links
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
- 
+
 - [TED](http://www.ted.com/talks)
 - [Coursera](https://www.coursera.org/course/)
 - [Video Lectures](http://videolectures.net/)

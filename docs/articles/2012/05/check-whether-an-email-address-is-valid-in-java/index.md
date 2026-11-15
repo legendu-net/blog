@@ -1,18 +1,19 @@
 ---
 title: Check Whether an Email Address Is Valid in Java
-created: 2012-05-12 23:58:54
-date: 2026-04-05 19:42:37.362375
+created: '2012-05-12T23:58:54-07:00'
+date: '2026-11-15T12:20:30-08:00'
 authors:
-- bendu
+  - bendu
 label: check-whether-an-email-address-is-valid-in-java
 license: CC-BY-4.0
 tags:
-- pattern
-- match
-- Java
-- programming
-- email address
+  - pattern
+  - match
+  - Java
+  - programming
+  - email address
 ---
+
 See the following code.
 
 ```Java

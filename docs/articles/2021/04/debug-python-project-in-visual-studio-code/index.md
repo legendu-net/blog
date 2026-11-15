@@ -1,7 +1,7 @@
 ---
 title: Debug Python Project in Visual Studio Code
-created: 2021-04-23 10:26:29
-date: 2026-04-13 23:14:11.678556
+created: '2021-04-23T10:26:29-07:00'
+date: '2026-11-15T12:16:23-08:00'
 authors:
   - bendu
 label: debug-python-project-in-visual-studio-code
@@ -36,11 +36,11 @@ which makes things very convenient.
 
 ![Python: Debug](https://user-images.githubusercontent.com/824507/108890085-fb49fc80-75c1-11eb-8121-a52743e07960.png)
 
-## Examplel of Debugging Configuration
+## Example of Debugging Configuration
 
 `launch.json` for debugging Python code.
 
-```bash
+```json
 {
     "version": "0.2.0",
     "configurations": [

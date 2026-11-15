@@ -1,39 +1,40 @@
 ---
 title: Python Developing in PyCharm
-created: 2015-05-22 15:30:47
-date: 2026-04-05 19:42:38.181026
+created: '2015-05-22T15:30:47-07:00'
+date: '2026-11-15T12:20:33-08:00'
 authors:
-- bendu
+  - bendu
 label: python-developing-in-pycharm
 license: CC-BY-4.0
 tags:
-- software
-- PyCharm
-- Python
-- IDE
+  - software
+  - PyCharm
+  - Python
+  - IDE
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Change Scheme
 
 1. File -> Settings... -> Editor -> Colors & Fonts
 
-2. Choose a scheme right to "Scheme name"
+1. Choose a scheme right to "Scheme name"
 
 ## Change Font of Terminal
 
 1. Search for Console Font
 
-2. Set the desired font size.
+1. Set the desired font size.
 
-3. Restart terminal (the font size for terminal won't take effect until the terminal is restarted)
+1. Restart terminal (the font size for terminal won't take effect until the terminal is restarted)
 
 ## PyCharm on WSL
 
 PyCharm (starting from 2018.3) supports configuring a remote Python interpreter via Windows Subsystem Linux WSL).
 See [Using WSL As a Remote Interpreter](https://www.jetbrains.com/help/pycharm/2018.3/using-wsl-as-a-remote-interpreter.html)
 for detailed instructions.
-However, 
+However,
 be aware that this feature is **only available in the professional edition** but not in the community edition.
 
 ## pybuilder Integration
@@ -44,7 +45,7 @@ https://github.com/pybuilder/pybuilder/issues/24
 
 1. no good theme
 
-2. auto completion does not complete file paths
+1. auto completion does not complete file paths
 
 ## References
 

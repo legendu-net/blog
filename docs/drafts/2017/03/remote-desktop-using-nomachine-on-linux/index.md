@@ -1,7 +1,7 @@
 ---
-title: "Remote Desktop Using NoMachine on Linux"
-created: 2017-03-03 20:43:17
-date: 2020-03-03 20:43:17
+title: Remote Desktop Using NoMachine on Linux
+created: '2017-03-03T20:43:17-08:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
   - bendu
 label: remote-desktop-using-nomachine-on-linux
@@ -19,11 +19,10 @@ tags:
 ## Installation
 
 1. Install a desktop environment, say, `lxqt`.
-    Do NOT install a desktop manager (lightdm, kdm, xdm, etc.).
+   Do NOT install a desktop manager (lightdm, kdm, xdm, etc.).
 
-2. [Download NoMachine](https://www.nomachine.com/download)
-    and install it.
-
+1. [Download NoMachine](https://www.nomachine.com/download)
+   and install it.
 
 ## References
 

@@ -1,7 +1,7 @@
 ---
 title: 'Spark Issue: Container Killed by Yarn for Exceeding Memory Limits'
-created: 2020-11-24 14:55:43
-date: 2026-04-15 19:27:00.959100
+created: '2020-11-24T14:55:43-08:00'
+date: '2026-11-15T12:20:37-08:00'
 authors:
   - bendu
 label: spark-issue-container-killed-by-yarn-for-exceeding-memory-limits
@@ -85,7 +85,7 @@ have good discussions on solutions to fix the issue including some low-level exp
    the below configuration set memory overhead to 8G.
 
    ```bash
-    --conf spark.yarn.executor.memoryOverhead=8G
+   --conf spark.yarn.executor.memoryOverhead=8G
    ```
 
 1. Reducing the number of executor cores (which helps reducing memory consumption).
@@ -95,7 +95,7 @@ have good discussions on solutions to fix the issue including some low-level exp
 1. Increase the number of partitions (which makes each task smaller and helps reducing memory consumption).
 
    ```bash
-    --conf spark.sql.shuffle.partitions=2000
+   --conf spark.sql.shuffle.partitions=2000
    ```
 
 1. Configure the JVM option `MaxDirectMemorySize`
@@ -106,7 +106,7 @@ have good discussions on solutions to fix the issue including some low-level exp
    Spark containers might use too much off-heap memory.
 
    ```bash
-    --conf spark.executor.extraJavaOptions=-XX:MaxDirectMemorySize=8G
+   --conf spark.executor.extraJavaOptions=-XX:MaxDirectMemorySize=8G
    ```
 
 ## References

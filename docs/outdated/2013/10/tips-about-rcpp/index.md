@@ -1,7 +1,7 @@
 ---
 title: Tips about Rcpp
 created: '2013-10-09T18:53:10-07:00'
-date: '2026-11-15T09:35:47-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: tips-about-rcpp
@@ -15,12 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. The trick of using a macro `NORCPP` to indicate
    whether you are using the code in Rcpp.

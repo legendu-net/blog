@@ -1,7 +1,7 @@
 ---
 title: Fastload in Teradata
-created: 2020-05-22 09:06:28
-date: 2026-04-13 23:15:31.255447
+created: '2020-05-22T09:06:28-07:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: fastload-in-teradata
@@ -16,11 +16,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-\*\*
 
 ## Insert Multiple Rows
 

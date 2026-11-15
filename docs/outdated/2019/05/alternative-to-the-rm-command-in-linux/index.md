@@ -1,7 +1,7 @@
 ---
 title: Alternative to the rm Command in Linux
 created: '2019-05-02T02:41:04-07:00'
-date: '2026-11-15T09:27:11-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: alternative-to-the-rm-command-in-linux
@@ -15,11 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-\*\*
 
 As is know to all,
 it can be dangerous to use the `rm` command directly in Linux/Unix.

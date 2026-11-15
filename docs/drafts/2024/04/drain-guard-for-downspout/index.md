@@ -1,7 +1,7 @@
 ---
-title: "Drain Guard for Downspout"
-created: 2024-04-14 15:37:57
-date: 2024-04-14 15:37:57
+title: Drain Guard for Downspout
+created: '2024-04-14T15:37:57-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: drain-guard-for-downspout

@@ -1,7 +1,7 @@
 ---
 title: String in R
 created: '2012-11-20T19:36:57-08:00'
-date: '2026-11-15T09:33:58-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: string-in-r
@@ -15,12 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 The R package `stringi` is a great one.
 It is suggested you used string functions in the `stringi` package

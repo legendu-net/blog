@@ -1,7 +1,7 @@
 ---
 title: Apache Toree Tips
-created: 2016-12-12 20:32:58
-date: 2026-04-15 19:27:02.016758
+created: '2016-12-12T20:32:58-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: apache-toree-tips
@@ -17,12 +17,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 <https://github.com/apache/incubator-toree/blob/master/etc/examples/notebooks/magic-tutorial.ipynb>
 

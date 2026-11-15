@@ -1,7 +1,7 @@
 ---
 title: Relative Import in Python
-created: 2020-04-12 10:08:43
-date: 2026-04-13 23:14:14.743188
+created: '2020-04-12T10:08:43-07:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: relative-import-in-python
@@ -11,11 +11,6 @@ tags:
   - Python
   - class
 ---
-
-\*\*
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-\*\*
 
 1. Call the package outside it
 

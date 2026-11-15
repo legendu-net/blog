@@ -1,22 +1,22 @@
 ---
 title: Tips on Career
-created: 2018-05-17 16:52:16
-date: 2026-04-05 19:42:37.997684
+created: '2018-05-17T16:52:16-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-career
 license: CC-BY-4.0
 tags:
-- career
-- work
-- office
-- tips
-- salary
+  - career
+  - work
+  - office
+  - tips
+  - salary
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://stackoverflow.com/company/salary/calculator
-
 
 https://en.wikipedia.org/wiki/Behavioral_economics
 

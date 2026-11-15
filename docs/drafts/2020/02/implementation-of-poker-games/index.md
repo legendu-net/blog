@@ -1,7 +1,7 @@
 ---
-title: "Implementation of Poker Games"
-created: 2020-02-09 09:33:16
-date: 2021-04-09 09:33:16
+title: Implementation of Poker Games
+created: '2020-02-09T09:33:16-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: implementation-of-poker-games
@@ -16,7 +16,8 @@ tags:
 
 ## [kingsfield/Poker](https://github.com/kingsfield/Poker)
 
-[Fully functional Pokerbot that works on PartyPoker and PokerStars.
+\[Fully functional Pokerbot that works on PartyPoker and PokerStars.
+
 - Python
 - PyQT
 

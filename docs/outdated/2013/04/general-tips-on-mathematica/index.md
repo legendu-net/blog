@@ -1,7 +1,7 @@
 ---
 title: General Tips on Mathematica
 created: '2013-04-25T21:27:34-07:00'
-date: '2026-11-15T09:34:53-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: general-tips-on-mathematica
@@ -13,13 +13,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-It is not meant to readers
-but rather for convenient reference of the author and future improvement.
-\*\*
 
 1. Mathematica is very a powerful symbolic computing system.
    It is the best among all these symbol computing software that I've used

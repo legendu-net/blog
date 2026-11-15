@@ -1,19 +1,20 @@
 ---
 title: Vim Keybindings in Firefox Using Tridactyl
-created: 2018-12-22 15:32:49
-date: 2026-04-05 19:42:37.968666
+created: '2018-12-22T15:32:49-08:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
-- bendu
+  - bendu
 label: vim-keybindings-in-firefox-using-tridactyl
 license: CC-BY-4.0
 tags:
-- software
-- Tridactyl
-- add-on
-- plugin
-- Firefox
-- tips
+  - software
+  - Tridactyl
+  - add-on
+  - plugin
+  - Firefox
+  - tips
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 `:mode ignore`: temporarily disables Tridactyl on a page.
@@ -23,10 +24,10 @@ tags:
 
 ## Tricks & Traps
 
-1. `shift + insert` enters insert mode in Tridactyl, however `shift + insert` is also used as paste in JupyterLab terminals on Windows. 
-    If you are using Tridactyl and JupyterLab together,
-    `shift + insert` is passed to Tridactyl rather than acts as paste in JupyterLab terminals.
-    
+1. `shift + insert` enters insert mode in Tridactyl, however `shift + insert` is also used as paste in JupyterLab terminals on Windows.
+   If you are using Tridactyl and JupyterLab together,
+   `shift + insert` is passed to Tridactyl rather than acts as paste in JupyterLab terminals.
+
 ## Configure An External Editor
 
 https://tridactyl.xyz/build/static/docs/modules/_src_excmds_.html#editor

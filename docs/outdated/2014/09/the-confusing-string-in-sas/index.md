@@ -1,7 +1,7 @@
 ---
 title: The Confusing String in SAS
 created: '2014-09-28T16:55:06-07:00'
-date: '2026-11-15T09:29:20-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: the-confusing-string-in-sas
@@ -14,12 +14,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. the `min` function also works on string variables.
 

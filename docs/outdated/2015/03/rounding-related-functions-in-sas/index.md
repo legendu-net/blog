@@ -1,7 +1,7 @@
 ---
-title: "Rounding Related Functions in SAS"
-created: 2015-03-17 18:35:52
-date: 2015-05-17 18:35:52
+title: Rounding Related Functions in SAS
+created: '2015-03-17T18:35:52-07:00'
+date: '2026-11-15T12:20:43-08:00'
 authors:
   - bendu
 label: rounding-related-functions-in-sas
@@ -14,18 +14,12 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
-Please look for better alternatives.
-**
-
 1. To avoid numerical issues,
-you should use the ceil function instead of the ceilz function
-for rounding up generally speaking.
+   you should use the ceil function instead of the ceilz function
+   for rounding up generally speaking.
 
+1. Notice that the round function in SAS rounds away from zero to break ties (i.e., at x.5).
 
-2. Notice that the round function in SAS rounds away from zero to break ties (i.e., at x.5). 
 ```SAS
 data _null_;
 	x1 = round(1.5);
@@ -41,11 +35,11 @@ run;
 
 Truncation Functions
 CEIL
-returns the smallest integer  the argument
+returns the smallest integer the argument
 CEILZ
 returns the smallest integer that is greater than or equal to the argument, using zero fuzzing
 FLOOR
-returns the largest integer  the argument
+returns the largest integer the argument
 FLOORZ
 returns the largest integer that is less than or equal to the argument, using zero fuzzing
 FUZZ

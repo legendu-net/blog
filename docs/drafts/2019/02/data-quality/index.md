@@ -1,7 +1,7 @@
 ---
-title: "Data Quality"
-created: 2019-02-07 08:54:40
-date: 2021-11-22 12:13:22
+title: Data Quality
+created: '2019-02-07T08:54:40-08:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: data-quality
@@ -28,35 +28,35 @@ tags:
 
 - Tracking Data Inserts
 
-- Wherever data comes from, whether it is flat files, IPs, users, etc. This should all be tracked. Especially if it is specific files. 
-    If your team finds out that the data from a specific file was inaccurate. 
-    Then it would want to remove it. If you have tracked what file the data came from, this is easy.
+- Wherever data comes from, whether it is flat files, IPs, users, etc. This should all be tracked. Especially if it is specific files.
+  If your team finds out that the data from a specific file was inaccurate.
+  Then it would want to remove it. If you have tracked what file the data came from, this is easy.
 
 ## Data Validation Tools
 
 ### [voluptuous](https://github.com/alecthomas/voluptuous)
+
 [voluptuous](https://github.com/alecthomas/voluptuous)
 is a Python data validation library.
 
 ## Useful Libraries
 
-
 1. [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling)
 
-    pandas-profiling is tool for profiling pandas DataFrames.
-    One possible way to work with large data is to do simple profiling on the large DataFrame 
-    and then sample a relative small data and use pandas-profiling to profile it.
+   pandas-profiling is tool for profiling pandas DataFrames.
+   One possible way to work with large data is to do simple profiling on the large DataFrame
+   and then sample a relative small data and use pandas-profiling to profile it.
 
-2. [great_expectations](https://github.com/great-expectations/great_expectations)
-    helps data teams eliminate pipeline debt, through data testing, documentation, and profiling.
+1. [great_expectations](https://github.com/great-expectations/great_expectations)
+   helps data teams eliminate pipeline debt, through data testing, documentation, and profiling.
 
-3. [deequ](https://github.com/awslabs/deequ)
-    is a library built on top of Apache Spark for defining "unit tests for data", 
-    which measure data quality in large datasets.
+1. [deequ](https://github.com/awslabs/deequ)
+   is a library built on top of Apache Spark for defining "unit tests for data",
+   which measure data quality in large datasets.
 
-4. [Optimus](https://github.com/ironmussa/Optimus)
+1. [Optimus](https://github.com/ironmussa/Optimus)
 
-5. [dbsanity](http://databene.org/dbsanity)
+1. [dbsanity](http://databene.org/dbsanity)
 
 1. [Apache Griffin](https://github.com/apache/griffin)
 
@@ -75,7 +75,6 @@ A GUI tool for data cleaning, profiling ,etc.
 ## Books
 
 Python Business Intelligence Bookbook
-
 
 ## References
 

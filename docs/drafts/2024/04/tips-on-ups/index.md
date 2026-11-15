@@ -1,7 +1,7 @@
 ---
-title: "Tips on UPS"
-created: 2024-04-02 09:37:47
-date: 2024-04-12 01:58:50
+title: Tips on UPS
+created: '2024-04-02T09:37:47-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: tips-on-ups
@@ -20,8 +20,7 @@ tags:
 ## Overnight Shipping Delay Handling
 
 1. Just talk to the local UPS store where you shipped the overnight package.
-    Do NOT call 800-742-5877 even if they ask you to do that
-    as it is impossible to reach a live agent via this phone number.
+   Do NOT call 800-742-5877 even if they ask you to do that
+   as it is impossible to reach a live agent via this phone number.
 
-2. A check will be mailed to your address if your dispute on late delivery is approved.
-
+1. A check will be mailed to your address if your dispute on late delivery is approved.

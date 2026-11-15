@@ -1,7 +1,7 @@
 ---
-title: "Tips on TensorFlow"
-created: 2019-12-27 10:57:44
-date: 2021-09-16 09:54:29
+title: Tips on TensorFlow
+created: '2019-12-27T10:57:44-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: tips-on-tensorflow
@@ -21,16 +21,17 @@ tags:
 The article
 [Stop Installing Tensorflow using pip for performance sake!](https://towardsdatascience.com/stop-installing-tensorflow-using-pip-for-performance-sake-5854f9d9eb0c)
 suggest installing TensorFlow using conda instead of pip
-as the version installed by conda leverages Intel Math Kernel Library 
+as the version installed by conda leverages Intel Math Kernel Library
 and is about 8 times faster **on CPU**.
 
 https://www.anaconda.com/tensorflow-in-anaconda/
 
-
 cuDNN is required by TensorFlow
 
-    :::bash
-    pip install tensorflow
+```
+:::bash
+pip install tensorflow
+```
 
 https://www.tensorflow.org/install/gpu
 
@@ -42,14 +43,13 @@ https://www.tensorflow.org/install/pip
 
 https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/dockerfiles/dockerfiles
 
-
 https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/dockerfiles/dockerfiles/gpu.Dockerfile
 uses pip (instead of conda) to install Python packages.
 
 ## General Tips
 
-1. With TensorFlow 2.0, 
-    you should use `tf.keras` instead of the separate Keras package.
+1. With TensorFlow 2.0,
+   you should use `tf.keras` instead of the separate Keras package.
 
 https://www.pyimagesearch.com/2019/10/21/keras-vs-tf-keras-whats-the-difference-in-tensorflow-2-0/
 

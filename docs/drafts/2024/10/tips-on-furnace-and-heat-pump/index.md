@@ -1,7 +1,7 @@
 ---
-title: "Tips on Furnace and Heat Pump"
-created: 2024-10-13 14:54:01
-date: 2025-09-07 22:35:28
+title: Tips on Furnace and Heat Pump
+created: '2024-10-13T14:54:01-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: tips-on-furnace-and-heat-pump
@@ -16,7 +16,6 @@ tags:
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-
 
 - [How to Remove and Clean Furnace or AC Blower Wheel](https://www.youtube.com/watch?v=gs9KT4soJMY)
 
@@ -40,20 +39,21 @@ You should clean the charging cell points with a piece of foam included in the o
 
 ### How it works
 
-The CleanEffects system has two main filter components: 
-a pre-filter and a set of reusable collection cells. 
+The CleanEffects system has two main filter components:
+a pre-filter and a set of reusable collection cells.
 
 Pre-filter: Air first passes through a reusable pre-filter, which removes larger particles like lint and hair.
 Field charger: After the pre-filter, air is drawn through an electrically charged field. This charges the remaining fine particles, such as dust, pollen, pet dander, and mold spores.
 Collection cells: The charged particles are then attracted to and trapped on the oppositely charged collection cells, much like static electricity.
-Clean air delivery: Because the collection cells capture particles without restricting airflow, the CleanEffects system maintains a high rate of clean air delivery. 
+Clean air delivery: Because the collection cells capture particles without restricting airflow, the CleanEffects system maintains a high rate of clean air delivery.
 
 ### Cleaning and maintenance
-Collection cells are a key part of the CleanEffects system because they are washable and do not require frequent replacement. 
+
+Collection cells are a key part of the CleanEffects system because they are washable and do not require frequent replacement.
 Cleaning frequency: Trane recommends cleaning the collection cells about once every 6 months, or when the system's indicator light shows it's time for maintenance.
 Cleaning process: The primary method for cleaning is vacuuming. You should remove the cells from the unit and use a vacuum hose with an attachment to clean both sides.
 Washing caution: Some older "CleanEffects 200" collection cells can be damaged by water. If your cells have a "200/200-1" marking, you can wash them with a low-pressure spray. If the mark is not present, use a vacuum only.
-Drying: If you wash the cells, they must be completely dry before reinstallation to prevent mold growth and potential system faults. 
+Drying: If you wash the cells, they must be completely dry before reinstallation to prevent mold growth and potential system faults.
 
 ### Benefits
 

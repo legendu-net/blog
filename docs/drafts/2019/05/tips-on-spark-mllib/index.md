@@ -1,7 +1,7 @@
 ---
-title: "Tips on Spark MLlib"
-created: 2019-05-16 23:45:42
-date: 2019-06-16 23:45:42
+title: Tips on Spark MLlib
+created: '2019-05-16T23:45:42-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: tips-on-spark-mllib
@@ -17,12 +17,11 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-1. Spark MLlib RDD-based API supports 
-    [stratified sampling](https://spark.apache.org/docs/latest/mllib-statistics.html#stratified-sampling)
-    but the DataFrame-based API hasn't implemented it yet as of Spark 2.4.3.
+1. Spark MLlib RDD-based API supports
+   [stratified sampling](https://spark.apache.org/docs/latest/mllib-statistics.html#stratified-sampling)
+   but the DataFrame-based API hasn't implemented it yet as of Spark 2.4.3.
 
 sample keys (not rows) with equal probability
-
 
 ## References
 

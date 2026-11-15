@@ -1,7 +1,7 @@
 ---
-title: "Get Deals for Traveling"
-created: 2025-09-08 23:19:32
-date: 2025-09-29 08:22:58
+title: Get Deals for Traveling
+created: '2025-09-08T23:19:32-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: get-deals-for-traveling
@@ -33,4 +33,3 @@ Good with points redeem.
 ## Priceline
 
 ## Robinhood Travel
-

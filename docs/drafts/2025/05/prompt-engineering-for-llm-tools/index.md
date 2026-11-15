@@ -1,7 +1,7 @@
 ---
 title: Prompt Engineering for LLM Tools
-created: 2025-05-30 08:26:03
-date: 2026-04-16 17:22:20.166171
+created: '2025-05-30T08:26:03-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: prompt-engineering-for-llm-tools
@@ -22,7 +22,7 @@ skills are preferred to plain prompts.
 However,
 sometimes you do still want to manage prompts.
 And in that case,
-[fabric](manage-ai-prompts-using-fabric) 
+[fabric](manage-ai-prompts-using-fabric)
 is a great tool.
 
 - [Gemini API - Prompt Gallery](https://ai.google.dev/gemini-api/prompts)
@@ -41,7 +41,7 @@ is a great tool.
 
 1. Leverage built-in tools provided by LLM products.
    For example,
-   Google AI Studio provides the tool "grounding with google search" (obsolete with agent/skills). 
+   Google AI Studio provides the tool "grounding with google search" (obsolete with agent/skills).
 
 1. A single comprehensive prompt including all details is better than interactively improving your prompt.
 
@@ -58,8 +58,9 @@ is a great tool.
 ## Tools for Generating and Managing Prompts
 
 ```{list-table}
-:header-rows: 1
-
+---
+header-rows: 1
+---
 - - Feature/Tool
   - Vellum.ai
   - PromptPerfect (Jina AI)

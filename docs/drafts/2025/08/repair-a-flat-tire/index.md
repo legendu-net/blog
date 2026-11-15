@@ -1,7 +1,7 @@
 ---
-title: "Repair a Flat Tire"
-created: 2025-08-10 08:53:22
-date: 2025-08-10 08:53:22
+title: Repair a Flat Tire
+created: '2025-08-10T08:53:22-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: repair-a-flat-tire
@@ -60,7 +60,7 @@ The sticky string tire plug is preferred and the discussion here focus on it.
 ## Apply Sealant to Flat Tire
 
 If you have a flat tire (say, due to puncture),
-you can apply tire sealant to temporary fix the problem 
+you can apply tire sealant to temporary fix the problem
 so that you drive to a safe location or to a car shop to get your tire repaired or replaced.
 Notice that some tire sealant might damage TPMS,
 so make sure to choose TPMS safe sealant when you purchase one.
@@ -68,42 +68,42 @@ Below are steps to apply tire sealant.
 
 1. Deflate the tire.
 
-2. Remove the valve core from the tire.
+1. Remove the valve core from the tire.
 
-3. Shake the sealant well.
+1. Shake the sealant well.
 
-4. Inject the whole bag of sealant into the tire. 
+1. Inject the whole bag of sealant into the tire.
 
-5. Install the valve core back.
+1. Install the valve core back.
 
-6. Inflate the tire.
+1. Inflate the tire.
 
-7. Go for a few minutes drive.
+1. Go for a few minutes drive.
 
-8. Check tire pressure to see whether the sealant is working.
+1. Check tire pressure to see whether the sealant is working.
 
-9. Get the tire repaired or replaced.
+1. Get the tire repaired or replaced.
 
 See
 [Installing TireJect tire sealant](https://www.youtube.com/watch?v=kV-EklLFw6o)
-for examples and instructions on how to apply sealant. 
+for examples and instructions on how to apply sealant.
 
 ## Tire Puncture Repair Kit
 
 1. There are different toolkits for repairing a punctured tire by yourself.
-  A sticky string tire plug kit is preferred for a few reasons.
+   A sticky string tire plug kit is preferred for a few reasons.
 
-  1. Sticky string repairs are of good quality and some are even considered permanent repairs.
+1. Sticky string repairs are of good quality and some are even considered permanent repairs.
 
-  2. Stick string repairs not only apply to small round woulds due to nail/screw puctures 
-    but also apply to other odd shaped or large wounds.
+1. Stick string repairs not only apply to small round woulds due to nail/screw puctures
+   but also apply to other odd shaped or large wounds.
 
-2. Safety Seal and Xtra Seal produce good sticky string tire plug kit.
+1. Safety Seal and Xtra Seal produce good sticky string tire plug kit.
 
-3. A Sidewall damage ruins a tire.
-  You can do an emergency repair (using sealant or stick string tire plug)
-  so that you can drive to a safe location.
-  But it's strongly suggested that you replace a tire with sidewall damages.
+1. A Sidewall damage ruins a tire.
+   You can do an emergency repair (using sealant or stick string tire plug)
+   so that you can drive to a safe location.
+   But it's strongly suggested that you replace a tire with sidewall damages.
 
 ## References
 

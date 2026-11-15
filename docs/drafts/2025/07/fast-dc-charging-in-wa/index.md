@@ -1,7 +1,7 @@
 ---
-title: "Fast DC Charging in WA"
-created: 2025-07-25 00:43:06
-date: 2025-07-27 18:27:29
+title: Fast DC Charging in WA
+created: '2025-07-25T00:43:06-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: fast-dc-charging-in-wa
@@ -22,25 +22,26 @@ tags:
 
 ## Tips & Traps
 
-1. PlugShare helps you find plugs regardless of network 
-    and see user ratings/comments on those plugs to see if they are accessible or reliable.
-    PlugShare for charging stations is kind of like Yelp to restaurants.
+1. PlugShare helps you find plugs regardless of network
+   and see user ratings/comments on those plugs to see if they are accessible or reliable.
+   PlugShare for charging stations is kind of like Yelp to restaurants.
 
-2. It is safe to charge in an open charging station when it is raining. 
-    However, 
-    avoid charing in an open charging station hen it rains really heavily. 
+1. It is safe to charge in an open charging station when it is raining.
+   However,
+   avoid charing in an open charging station hen it rains really heavily.
 
-3. While an EV with a START button is been charged,
-    pressing the start button allow you to use radio, climate control and infotainment.
-    However,
-    you cannot drive the EV until your unplug the charge (which is a good safety feature). 
-    Pressing the START button again without pushing the brake pedal turns the EV off.
+1. While an EV with a START button is been charged,
+   pressing the start button allow you to use radio, climate control and infotainment.
+   However,
+   you cannot drive the EV until your unplug the charge (which is a good safety feature).
+   Pressing the START button again without pushing the brake pedal turns the EV off.
 
 ## Good Fast DC Charging in WA
 
 ```{list-table} Good Fast DC Charging in WA
-:header-rows: 1
-
+---
+header-rows: 1
+---
 - - Dimension
   - Tesla Supercharger
   - Electrify America
@@ -69,7 +70,6 @@ tags:
     * **Convenience:** Partners with retail locations like grocery stores. [10]
 ```
 
-
 ## Route / Charging Planning
 
 Many EVs (e.g., Tesla, Rivian, etc.)
@@ -77,7 +77,7 @@ have built-in route planners.
 If your EV doesn't have such a feature or it's no good,
 you can use
 [EV Route Planner](https://abetterrouteplanner.com/)
-or 
+or
 [A Better Route Planner](https://abetterrouteplanner.com/)
 to help you plan charging during your road trip
 .
@@ -85,4 +85,3 @@ to help you plan charging during your road trip
 ## References
 
 - [PlugShare](https://www.plugshare.com/)
-

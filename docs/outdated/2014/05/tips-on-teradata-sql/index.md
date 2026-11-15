@@ -1,7 +1,7 @@
 ---
 title: Tips on Teradata SQL
 created: '2014-05-15T12:10:03-07:00'
-date: '2026-11-15T09:28:29-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: tips-on-teradata-sql
@@ -14,12 +14,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 - [Teradata Open Source Project on GitHub](https://github.com/Teradata)
 - [Teradata SQL笔记](http://cuishen.iteye.com/blog/638968)

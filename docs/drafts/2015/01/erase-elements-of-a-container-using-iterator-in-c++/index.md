@@ -1,7 +1,7 @@
 ---
-title: "Erase Elements of a Container Using Iterator in C++"
-created: 2015-01-29 23:08:20
-date: 2015-03-29 23:08:20
+title: Erase Elements of a Container Using Iterator in C++
+created: '2015-01-29T23:08:20-08:00'
+date: '2026-11-15T12:20:33-08:00'
 authors:
   - bendu
 label: erase-elements-of-a-container-using-iterator-in-c++
@@ -20,11 +20,10 @@ tags:
 
 vector -> best to remove backwards ...
 
-You cannot erase elements from a container 
-using the function `std::for_each` 
+You cannot erase elements from a container
+using the function `std::for_each`
 or the range-based for loop (introduced in C++11).
 It is easy to make mistakes while you erases elements using iterator in C++.
-
 
 the following discussion is for set only
 

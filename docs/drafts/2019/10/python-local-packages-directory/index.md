@@ -1,7 +1,7 @@
 ---
-title: "Python Local Packages Directory"
-created: 2019-10-30 18:53:06
-date: 2019-10-30 18:53:06
+title: Python Local Packages Directory
+created: '2019-10-30T18:53:06-07:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: python-local-packages-directory

@@ -1,7 +1,7 @@
 ---
 title: Useful Windows Shortcuts
-created: 2014-07-19 23:09:50
-date: 2015-05-19 23:09:50
+created: '2014-07-19T23:09:50-07:00'
+date: '2026-11-15T12:20:33-08:00'
 authors:
   - bendu
 label: useful-windows-shortcuts
@@ -10,15 +10,9 @@ tags:
   - Windows
   - shortcut
 ---
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-**
-Things on this page are 
-fragmentary and immature notes/thoughts of the author.
-It is not meant to readers 
-but rather for convenient reference of the author and future improvement.
-**
 
-            
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 ## OS
 
 Alt + Print Screen: Make a screenshot of the active WINDOW only (when you are using multiple screens).
@@ -45,7 +39,9 @@ Shift + Win + Left/Right: Move the window to the monitor on the left or right.
 Shift + Right Click (file/folder): select "copy as path" to copy the full path of the file/folder.
 
 ## Outlook
+
 Ctrl + Scroll: Zoom in/out the email message.
 
 ## Word
+
 1. Alt + = inserts an equation in Word.

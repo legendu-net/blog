@@ -1,7 +1,7 @@
 ---
 title: Tips on Goldendict
 created: '2014-12-22T13:13:55-08:00'
-date: '2026-11-15T09:29:39-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: tips-on-goldendict
@@ -14,12 +14,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. Click the Edit menu.
 

@@ -1,7 +1,7 @@
 ---
 title: Cygwin Portable
 created: '2016-08-16T00:06:34-07:00'
-date: '2026-11-15T09:16:02-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: cygwin-portable
@@ -14,11 +14,6 @@ tags:
   - Cygwin
   - portable
 ---
-
-\*\*
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-\*\*
 
 ## Cygwin Portable
 

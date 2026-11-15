@@ -1,7 +1,7 @@
 ---
 title: Generating Random Numbers in SAS
 created: '2015-03-10T22:05:12-07:00'
-date: '2026-11-15T09:27:36-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: generating-random-numbers-in-sas
@@ -15,12 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 CALL RANDGEN( result, distname\<, parm1>\<, parm2>\<, parm3>);
 or

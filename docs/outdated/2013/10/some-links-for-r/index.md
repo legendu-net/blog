@@ -1,25 +1,20 @@
 ---
 title: Some Links for R
-created: 2013-10-20 00:00:00
-date: 2026-04-05 19:42:39.284418
+created: '2013-10-20T00:00:00-07:00'
+date: '2026-11-15T12:20:42-08:00'
 authors:
-- bendu
+  - bendu
 label: some-links-for-r
 license: CC-BY-4.0
 tags:
-- links
-- programming
-- R
-- CRAN
+  - links
+  - programming
+  - R
+  - CRAN
 ---
+
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
-Please look for better alternatives.
-**
- 
 - [Experience with R](http://statisticsr.blogspot.com/)
 - [CRAN Task Views](http://cran.r-project.org/web/views/)
 - [Quick R](http://www.statmethods.net/index.html)

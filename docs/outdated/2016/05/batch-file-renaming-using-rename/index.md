@@ -1,7 +1,7 @@
 ---
 title: Batch File Renaming Using "rename"
-created: 2016-05-12 11:04:38
-date: 2026-04-11 22:10:45.723907
+created: '2016-05-12T11:04:38-07:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: batch-file-renaming-using-rename
@@ -15,12 +15,6 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
-
 It is suggested that you use Python script to rename files in batch.
 
 Change names of `.txt` files to lowercase.
@@ -32,5 +26,5 @@ rename 'y/A-Z/a-z/' *.txt
 Get rid of `(1)` in file names.
 
 ```bash
-rename 's/\(1\)//' * 
+rename 's/\(1\)//' *
 ```

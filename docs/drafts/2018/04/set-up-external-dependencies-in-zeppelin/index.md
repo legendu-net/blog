@@ -1,7 +1,7 @@
 ---
-title: "Set Up External Dependencies in Zeppelin"
-created: 2018-04-30 16:20:46
-date: 2018-04-30 16:20:46
+title: Set Up External Dependencies in Zeppelin
+created: '2018-04-30T16:20:46-07:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
   - bendu
 label: set-up-external-dependencies-in-zeppelin
@@ -15,9 +15,9 @@ tags:
 http://zeppelin.apache.org/docs/0.8.0-SNAPSHOT/index.html
 
 1. `%spark.dep` seems troublesome.
-    What if I set interpreter dependency directly?
-    And can I do it for a single notebook?
-    How to do this, must-have feature ...
-    user menu -> interpreter -> edit -> add dependency
+   What if I set interpreter dependency directly?
+   And can I do it for a single notebook?
+   How to do this, must-have feature ...
+   user menu -> interpreter -> edit -> add dependency
 
-2. jars for a specific notebook only? is it possible? properties for a single notebook?
+1. jars for a specific notebook only? is it possible? properties for a single notebook?

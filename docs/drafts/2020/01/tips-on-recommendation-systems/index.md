@@ -1,7 +1,7 @@
 ---
-title: "Tips on Recommendation Systems"
-created: 2020-01-27 12:00:51
-date: 2020-01-27 12:00:51
+title: Tips on Recommendation Systems
+created: '2020-01-27T12:00:51-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: tips-on-recommendation-systems
@@ -30,9 +30,7 @@ Variational Autoencoder
 
 Hybrid
 
-
 New methods like VAE, AE, or Deep Collaborative outperform classical methods like NMF on the NDCG metric. Non-linear probabilistic models such as variational autoencoders enable us to go beyond the limited modeling capacity of linear factor models.
-
 
 ## References
 

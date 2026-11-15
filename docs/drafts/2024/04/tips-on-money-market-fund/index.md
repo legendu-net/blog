@@ -1,7 +1,7 @@
 ---
-title: "Tips on Money Market Fund"
-created: 2024-04-25 15:22:56
-date: 2024-04-25 15:22:56
+title: Tips on Money Market Fund
+created: '2024-04-25T15:22:56-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: tips-on-money-market-fund
@@ -23,25 +23,25 @@ tags:
 - An order will be executed at the next available net asset value (NAV), which is determined after the market close each trading day.
 - When thinking about price, investors need to take into account the fees and sales loads associated with funds.
 
-A money market fund is a special class of mutual funds 
+A money market fund is a special class of mutual funds
 which is designed to offer stability of capital, liquidity, and income.
 Money market funds usually have relatively low expense ratio compared to other types of mutual funds.
 There are ETF alternatives to money market funds.
-However, 
+However,
 you have to cautious about the ex-dates of ETFs focusing on dividends.
 Taking those into consideration,
 ETFs focusing on dividens are not necessarily more liquidity than MMFs.
 
-- Vanguard Federal Money Market Fund (ticker: VMFXX)	0.11%	
-- Fidelity Money Market Fund (SPRXX)	0.42%	
+- Vanguard Federal Money Market Fund (ticker: VMFXX) 0.11%
+- Fidelity Money Market Fund (SPRXX) 0.42%
 - [Schwab Value Advantage Money Fund® - Investor Shares](https://www.schwabassetmanagement.com/products/swvxx)
-- Schwab Municipal Money Fund - Investor Shares (SWTXX)	0.34%	
-- North Capital Treasury Money Market Fund (NCGXX)	0%	
-- [JPMorgan Ultra-Short Income ETF (JPST)](https://am.jpmorgan.com/us/en/asset-management/adv/products/jpmorgan-ultra-short-income-etf-etf-shares-46641q837?gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZ6W_ylQeiKI2f50bPkVghvWIa-X9tCNzKnXVRhn-exwlvOpUn-5esBoCiz4QAvD_BwE&gclsrc=aw.ds) 0.18%	
-- [Vanguard Ultra-Short Bond ETF (VUSB)](https://investor.vanguard.com/investment-products/etfs/profile/vusb) 0.1%	
-- [Global X 1-3 Month T-Bill ETF (CLIP)](https://www.globalxetfs.com/funds/clip/) 0.07%	
+- Schwab Municipal Money Fund - Investor Shares (SWTXX) 0.34%
+- North Capital Treasury Money Market Fund (NCGXX) 0%
+- [JPMorgan Ultra-Short Income ETF (JPST)](https://am.jpmorgan.com/us/en/asset-management/adv/products/jpmorgan-ultra-short-income-etf-etf-shares-46641q837?gad_source=1&gclid=CjwKCAiA_OetBhAtEiwAPTeQZ6W_ylQeiKI2f50bPkVghvWIa-X9tCNzKnXVRhn-exwlvOpUn-5esBoCiz4QAvD_BwE&gclsrc=aw.ds) 0.18%
+- [Vanguard Ultra-Short Bond ETF (VUSB)](https://investor.vanguard.com/investment-products/etfs/profile/vusb) 0.1%
+- [Global X 1-3 Month T-Bill ETF (CLIP)](https://www.globalxetfs.com/funds/clip/) 0.07%
 - [iShares 0-3 Month Treasury Bond ETF (SGOV)](https://www.ishares.com/us/products/314116/ishares-0-3-month-treasury-bond-etf?cid=ppc:ish_us:ish_us_nb_fixed_income_product_phrase:google:nonbrand_prod:ei&gad_source=1&gclid=Cj0KCQiA2eKtBhDcARIsAEGTG421i89nkhUtWtHRE_sXOH8jCdDk_DV6DhRiBvvypVLp5M1fpviEgAIaAqw9EALw_wcB&gclsrc=aw.ds)
-    (a good ETF alternative to money market funds)
+  (a good ETF alternative to money market funds)
 - PGIM Ultra Short Bond ETF (PULS)
 
 [Charles Schwab - Money Fund Yields](https://www.schwabassetmanagement.com/products/money-fund-yields)

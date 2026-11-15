@@ -1,7 +1,7 @@
 ---
 title: Using Bash in Docker
-created: 2016-12-14 13:54:14
-date: 2026-04-15 19:27:00.429600
+created: '2016-12-14T13:54:14-08:00'
+date: '2026-11-15T12:20:31-08:00'
 authors:
   - bendu
 label: using-bash-in-docker
@@ -24,7 +24,7 @@ If the docker container was started but not with `/bin/bash`,
 you have to create a bash instance inside the container using `exec`.
 
 ```bash
-docker exec -it container_name_or_id /bin/bash 
+docker exec -it container_name_or_id /bin/bash
 ```
 
 Notice that `attach` does not create a new instance of bash

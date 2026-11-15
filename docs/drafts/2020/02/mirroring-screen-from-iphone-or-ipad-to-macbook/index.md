@@ -1,7 +1,7 @@
 ---
-title: "Mirroring Screen from iPhone or iPad to Macbook"
-created: 2020-02-10 10:10:05
-date: 2020-02-10 10:10:05
+title: Mirroring Screen from iPhone or iPad to Macbook
+created: '2020-02-10T10:10:05-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: mirroring-screen-from-iphone-or-ipad-to-macbook
@@ -18,6 +18,7 @@ tags:
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
+
 ## 5KPlayer
 
 https://www.youtube.com/watch?v=Zc41jJAhozc
@@ -37,5 +38,3 @@ Works both for IOS and Android.
 https://support.apple.com/en-us/HT204289#mirroriOS
 
 https://www.airdroid.com/en/
-
-

@@ -1,7 +1,7 @@
 ---
 title: Debug Stack Overflow Issues in Rust
-created: 2023-01-18 20:30:28
-date: 2026-04-13 23:14:33.582379
+created: '2023-01-18T20:30:28-08:00'
+date: '2026-11-15T12:20:39-08:00'
 authors:
   - bendu
 label: debug-stack-overflow-issues-in-rust
@@ -28,7 +28,7 @@ when your Rust program encounters stack overflow issues.
    as a dependency into your project.
 
    ```bash
-    cargo add backtrace-on-stack-overflow
+   cargo add backtrace-on-stack-overflow
    ```
 
 1. Add the line

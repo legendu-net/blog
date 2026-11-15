@@ -1,7 +1,7 @@
 ---
 title: Manage Autostart Applications
-created: 2014-03-22 12:35:14
-date: 2026-04-05 19:42:38.270297
+created: '2014-03-22T12:35:14-07:00'
+date: '2026-11-15T12:20:33-08:00'
 authors:
   - bendu
 label: manage-autostart-applications
@@ -35,14 +35,14 @@ tags:
    while autostart application in `~/.config/autostart`
    are shown to users in "Startup Applications Preferences".
 
-2. If you use multiple Linux desktop environments,
+1. If you use multiple Linux desktop environments,
    you can customize `desktop` configuration files
    for different Linux desktop environments.
    Please refer to
    [Desktop Entry Specification](https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html)
    for details.
 
-3. By default,
+1. By default,
    a `*.desktop` file under `/etc/xdg/autostart` or `~/.config/autostart`
    enables an application to autostart.
    There are 2 ways to disable autostart of the application.
@@ -53,7 +53,7 @@ tags:
      This is not recommended,
      generally speaking.
 
-4. If you want to disable an autostart application
+1. If you want to disable an autostart application
    defined by a `desktop` file in `/etc/xdg/autostart`,
    you'd
    <span style="color:green">
@@ -65,7 +65,7 @@ tags:
    </span>
    .
 
-5. Sometimes,
+1. Sometimes,
    it's helpful to delay the start of some applications (e.g., Dropbox).
 
    - makes your Linux machine boot faster

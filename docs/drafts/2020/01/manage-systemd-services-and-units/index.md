@@ -1,45 +1,53 @@
 ---
 title: Manage systemd Services and Units
-created: 2020-01-24 10:37:18
-date: 2026-04-05 19:42:37.837473
+created: '2020-01-24T10:37:18-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
-- bendu
+  - bendu
 label: manage-systemd-services-and-units
 license: CC-BY-4.0
 tags:
-- OS
-- Linux
-- systemd
-- service
-- systemctl
-- enable
-- disable
-- start
-- stop
-- restart
+  - OS
+  - Linux
+  - systemd
+  - service
+  - systemctl
+  - enable
+  - disable
+  - start
+  - stop
+  - restart
 ---
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. List all services names.
 
-        :::bash
-        service --status-all
+   ```
+    :::bash
+    service --status-all
+   ```
 
 1. List all systemd units.
 
-        :::bash
-        systemctl 
+   ```
+    :::bash
+    systemctl 
+   ```
 
-3. Disable a service.
+1. Disable a service.
 
-        :::bash
-        systemctl disable service_name
+   ```
+    :::bash
+    systemctl disable service_name
+   ```
 
-2. Check whether systemd is running as PID 1.
+1. Check whether systemd is running as PID 1.
 
-        :::bash
-        ps --no-headers -o comm 1
+   ```
+    :::bash
+    ps --no-headers -o comm 1
+   ```
 
 ## A List of Services to Disable
 
@@ -47,41 +55,50 @@ tags:
 
 1. bluetooth
 
-        :::bash
-        sudo systemctl disable bluetooth
+   ```
+    :::bash
+    sudo systemctl disable bluetooth
+   ```
 
-2. openvpn
+1. openvpn
 
-        :::bash
-        sudo systemctl disable openvpn
+   ```
+    :::bash
+    sudo systemctl disable openvpn
+   ```
 
-3. virtualbox
+1. virtualbox
 
-        :::bash
-        sudo systemctl disable virtualbox
+   ```
+    :::bash
+    sudo systemctl disable virtualbox
+   ```
 
+1. packagekit
 
-4. packagekit
+   ```
+    :::bash
+    sudo systemctl mask packagekit
+   ```
 
-        :::bash
-        sudo systemctl mask packagekit
-
-    Notice that subcommand `systemctl mask` (instead of `systemctl disable`) is used
-    as `systemctl disable` does not work in this case.
-    For the difference between `systemctl disable` and `systemctl mask`,
-    please refer to
-    [What is the difference between "systemctl mask" and "systemctl disable"?](https://askubuntu.com/questions/816285/what-is-the-difference-between-systemctl-mask-and-systemctl-disable)
-    .
+   Notice that subcommand `systemctl mask` (instead of `systemctl disable`) is used
+   as `systemctl disable` does not work in this case.
+   For the difference between `systemctl disable` and `systemctl mask`,
+   please refer to
+   [What is the difference between "systemctl mask" and "systemctl disable"?](https://askubuntu.com/questions/816285/what-is-the-difference-between-systemctl-mask-and-systemctl-disable)
+   .
 
 ### Controversial Ones
 
 1. snapd
 
-        :::bash
-        sudo systemctl disable snapd.service
-        sudo systemctl disable snapd.socket
-        sudo systemctl disable snapd.seeded
-        sudo systemctl disable snapd.snap-repair.timer
+   ```
+    :::bash
+    sudo systemctl disable snapd.service
+    sudo systemctl disable snapd.socket
+    sudo systemctl disable snapd.seeded
+    sudo systemctl disable snapd.snap-repair.timer
+   ```
 
 ## References
 

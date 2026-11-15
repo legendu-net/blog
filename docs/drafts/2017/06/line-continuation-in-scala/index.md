@@ -1,7 +1,7 @@
 ---
-title: "Line Continuation in Scala"
-created: 2017-06-22 13:35:34
-date: 2017-10-22 13:35:34
+title: Line Continuation in Scala
+created: '2017-06-22T13:35:34-07:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
   - bendu
 label: line-continuation-in-scala
@@ -19,13 +19,13 @@ It infers a semicolon always when:
 
 1. an expression can end
 
-2. The following (not whitespace) line begins not with a token that can start a statement
+1. The following (not whitespace) line begins not with a token that can start a statement
 
-3. There are no unclosed ( or [ found before
+1. There are no unclosed ( or \[ found before
 
-Thus, 
-to "delay" semicolon inference one can place a method call 
-or the dot at the end of the line 
+Thus,
+to "delay" semicolon inference one can place a method call
+or the dot at the end of the line
 or place the dot at the beginning of the following line:
 
 ```scala

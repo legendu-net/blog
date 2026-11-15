@@ -1,7 +1,7 @@
 ---
 title: Tips on MobaXterm
 created: '2014-05-22T15:40:46-07:00'
-date: '2026-11-15T09:28:26-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: tips-on-mobaxterm
@@ -15,12 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. MobaXterm uses a temporary folder as the home directory by default
    and all data in the temporary home directory will be lost next time you run MobaXterm,

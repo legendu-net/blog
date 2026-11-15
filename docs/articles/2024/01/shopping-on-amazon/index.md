@@ -1,7 +1,7 @@
 ---
-title: "Shopping on Amazon"
-created: 2024-01-22 17:18:34
-date: 2025-07-27 11:11:37
+title: Shopping on Amazon
+created: '2024-01-22T17:18:34-08:00'
+date: '2026-11-15T12:20:32-08:00'
 authors:
   - bendu
 label: shopping-on-amazon
@@ -12,8 +12,6 @@ tags:
   - e-Commerce
 ---
 
-
-
 ## Amazon Price Tracking & Alert
 
 - [CamelCamelCamel](https://camelcamelcamel.com/)
@@ -21,23 +19,23 @@ tags:
 ## Return Items
 
 1. It seems to me that processing of returned and received item is much much faster
-    if you choose to to return as Amazon credit.
-    
-## Customer Service Online Chat 
+   if you choose to to return as Amazon credit.
+
+## Customer Service Online Chat
 
 1. Goto
-    <https://www.amazon.com/gp/help/customer/display.html?nodeId=200127470>
-    .
-2. Scroll down to the bottom and locate "Need more help?".
-3. Click on the link "Contact Us".
+   <https://www.amazon.com/gp/help/customer/display.html?nodeId=200127470>
+   .
+1. Scroll down to the bottom and locate "Need more help?".
+1. Click on the link "Contact Us".
 
 ## Amazon Subscriptions
 
 1. Subscription order won't be charged for shipping fees.
 
-2. Check your subscriptions at 
-    [Amazon Subscriptions](https://www.amazon.com/auto-deliveries?ref_=pe_29444320_544268820__em_sc_vs)
-    .
+1. Check your subscriptions at
+   [Amazon Subscriptions](https://www.amazon.com/auto-deliveries?ref_=pe_29444320_544268820__em_sc_vs)
+   .
 
 ## Amazon In-store Promotion Wallet
 
@@ -49,20 +47,20 @@ Amazon promotion credit is not shown directly.
 You have to add an item sold by Amazon,
 e.g.,
 [Amazon Basics 4 Gallon Trash Bags, Flap Ties, Fresh Scent, 80 Count, Pack of 1](https://www.amazon.com/dp/B09NQGR39K?psc=1&ref=ppx_yo2ov_dt_b_product_details)
-, 
+,
 proceed to checkout (but do not place the order)
-and look for "P&G Promo Credit" in 
+and look for "P&G Promo Credit" in
 [order summary](https://github.com/user-attachments/assets/12d58f8e-f52f-419d-84fc-f6025d506b8f)
 .
-If "Total before tax" is $0.00, 
-it means that there might be more promotion credit left. 
+If "Total before tax" is \$0.00,
+it means that there might be more promotion credit left.
 You can increase the quantity of the item until "Total before tax" is positive,
 then "P&G Promo Credit" in order summary shows the total promotion credit you have.
 
 ## Amazon Prime Membership
 
 1. You can occasionally pause your Amazon Prime subscription,
-    and Amazon will likely offer you cheaper trials.
+   and Amazon will likely offer you cheaper trials.
 
 ## Products Which are Sold and Shipped by Amazon
 
@@ -79,4 +77,5 @@ then "P&G Promo Credit" in order summary shows the total promotion credit you ha
 - [Amazon Smart Air Quality Monitor – Know your air, Works with Alexa](https://www.amazon.com/dp/B08W8KS8D3?psc=1&ref=ppx_yo2ov_dt_b_product_details)
 
 ## References
+
 - [How to view Promotional Credit balance?](https://www.reddit.com/r/amazonprime/comments/18p76pa/how_to_view_promotional_credit_balance/)

@@ -1,7 +1,7 @@
 ---
 title: Tips on WezTerm
-created: 2023-12-13 20:53:16
-date: 2026-04-13 23:14:25.375079
+created: '2023-12-13T20:53:16-08:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: tips-on-wezterm
@@ -54,8 +54,9 @@ wezterm imgcat /path/to/image
 ## Shortcuts
 
 ```{list-table}
-:header-rows: 1
-
+---
+header-rows: 1
+---
 - - Shortcut
   - Description
 - - Fn + F

@@ -1,24 +1,25 @@
 ---
 title: Write Unit Tests Using PyTest in Python
-created: 2019-02-05 19:29:39
-date: 2026-04-05 19:42:37.931870
+created: '2019-02-05T19:29:39-08:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
-- bendu
+  - bendu
 label: write-unit-tests-using-pytest-in-python
 license: CC-BY-4.0
 tags:
-- programming
-- Python
-- PyTest
-- fixtures
-- plugins
+  - programming
+  - Python
+  - PyTest
+  - fixtures
+  - plugins
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-Run `pytest` in the root directory of your project to run all test suites. 
-You can run test cases in a specific test file (e.g., `test_file.py`) 
+Run `pytest` in the root directory of your project to run all test suites.
+You can run test cases in a specific test file (e.g., `test_file.py`)
 using the command `pytest test_file.py`.
-You can run a specific test (e.g., `test_func`) 
+You can run a specific test (e.g., `test_func`)
 in a test file (e.g., `test_func`) using `pytest test_file.py -k test_func`.
 you can also pass parameters to a test function using
 `pytest test_file.py:::test_func[0-0-0-invalid]`.
@@ -28,10 +29,9 @@ you can also pass parameters to a test function using
 --tb=short
 --lf (last failure)
 
-
 ## Markers
 
-`@pytest.mark.foo` where `foo` can be any arbitrary string you like, 
+`@pytest.mark.foo` where `foo` can be any arbitrary string you like,
 e.g., `@pytest.mark.slow` tells pytest that the marked test takes a long time to run.
 
 [@pytest.mark.skipif](http://doc.pytest.org/en/latest/reference.html#pytest-mark-skipif)
@@ -44,10 +44,12 @@ https://stackoverflow.com/questions/38442897/how-do-i-disable-a-test-using-py-te
 
 ## Capturing of the stdout/stderr output
 
-You can disable all capturing using the `-s` option 
+You can disable all capturing using the `-s` option
 (which is equivalent to `--capture=no`).
 
-    pytest -s
+```
+pytest -s
+```
 
 For more details,
 please refer to
@@ -58,13 +60,11 @@ please refer to
 
 [Talk: Brian K Okken - Multiply your Testing Effectiveness with Parameterized Testing](https://www.youtube.com/watch?v=2R1HELARjUk)
 
-
 ## Plugins
 
 https://github.com/ClearcodeHQ/pytest-elasticsearch
 
 https://github.com/ClearcodeHQ/pytest-postgresql
-
 
 https://github.com/ClearcodeHQ/pytest-dynamodb
 
@@ -75,7 +75,6 @@ https://github.com/ClearcodeHQ/pytest-mysql
 https://github.com/ClearcodeHQ/pytest-redis
 
 https://github.com/ClearcodeHQ/pytest-mongo
-
 
 ## References
 

@@ -1,38 +1,37 @@
 ---
 title: Numerical Analysis in MATLAB
-created: 2012-12-04 00:00:00
-date: 2026-04-05 19:42:39.330282
+created: '2012-12-04T00:00:00-08:00'
+date: '2026-11-15T12:20:42-08:00'
 authors:
-- bendu
+  - bendu
 label: numerical-analysis-in-matlab
 license: CC-BY-4.0
 tags:
-- programming
-- MATLAB
+  - programming
+  - MATLAB
 ---
+
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-
 1. `fmincon` finds minimum of constrained nonlinear multivariate function.
-`fminunc` finds minimum of unconstrained nonlinear multivariate function.
-`fgoalattain` solves multiobjective goal attainment problems; 
-`fminimax` solves minimax constraint problems.
+   `fminunc` finds minimum of unconstrained nonlinear multivariate function.
+   `fgoalattain` solves multiobjective goal attainment problems;
+   `fminimax` solves minimax constraint problems.
 
-2. When you use one of these functions mentioned above to do optimizations, 
-you might want to pass extra parameters to the objective function. 
-You can do this directly in R, 
-however, 
-you have to this indirectly in MATLAB. 
-To pass extra parameters to the objective function, 
-there are 3 different ways: anonymous function, nested function and global variable. 
-I think anonymous function is the best an most nature way to do it. 
-Suppose you have defined an objective function `myObjFun(x,a,b,c)`, 
-and you want to do optimization for given `a`, `b` and `c`. 
-You can first specify values for `a`, `b` and `c`, 
-define a function handle `f=@(x)myObjFun(x,a,b,c)`, 
-and then optimize function handle `f`.
+1. When you use one of these functions mentioned above to do optimizations,
+   you might want to pass extra parameters to the objective function.
+   You can do this directly in R,
+   however,
+   you have to this indirectly in MATLAB.
+   To pass extra parameters to the objective function,
+   there are 3 different ways: anonymous function, nested function and global variable.
+   I think anonymous function is the best an most nature way to do it.
+   Suppose you have defined an objective function `myObjFun(x,a,b,c)`,
+   and you want to do optimization for given `a`, `b` and `c`.
+   You can first specify values for `a`, `b` and `c`,
+   define a function handle `f=@(x)myObjFun(x,a,b,c)`,
+   and then optimize function handle `f`.
 
-3. `quadl` can be used to numerically calculate integrals. 
-To calculate integrals symbolically, 
-you can use `int`.
-
+1. `quadl` can be used to numerically calculate integrals.
+   To calculate integrals symbolically,
+   you can use `int`.

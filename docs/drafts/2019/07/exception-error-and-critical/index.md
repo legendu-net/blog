@@ -1,7 +1,7 @@
 ---
-title: "Exception Error and Critical"
-created: 2019-07-25 00:48:52
-date: 2019-07-25 00:48:52
+title: Exception Error and Critical
+created: '2019-07-25T00:48:52-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: exception-error-and-critical

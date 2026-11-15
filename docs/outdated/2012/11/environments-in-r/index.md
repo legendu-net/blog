@@ -1,7 +1,7 @@
 ---
 title: Environments in R
 created: '2012-11-22T13:02:41-08:00'
-date: '2026-11-15T09:31:00-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: environments-in-r
@@ -13,12 +13,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. The option `pos=1` of the function `assign` refers to the global environment,
    i.e., the user's workspace.

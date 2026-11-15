@@ -1,7 +1,7 @@
 ---
-title: "Representation of Machine Learning Models"
-created: 2020-01-05 15:32:24
-date: 2020-03-05 15:32:24
+title: Representation of Machine Learning Models
+created: '2020-01-05T15:32:24-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: representation-of-machine-learning-models
@@ -31,7 +31,6 @@ is a PMML (Predictive Model Markup Language) scoring library for Scala. It provi
 
 [JPMML-Evaluator](https://github.com/jpmml/jpmml-evaluator)
 is a Java evaluator API for PMML.
-
 
 ## [Plain Old Java Object (POJO)]
 

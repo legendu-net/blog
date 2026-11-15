@@ -1,7 +1,7 @@
 ---
-title: "Distance and Similarity for Machine Learning"
-created: 2019-12-17 11:46:20
-date: 2020-03-17 11:46:20
+title: Distance and Similarity for Machine Learning
+created: '2019-12-17T11:46:20-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: distance-and-similarity-for-machine-learning
@@ -16,14 +16,13 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
 ## Cosine Similarity
 
 ## [Jaccard Index (Jaccard Similarity Coefficient)](https://en.wikipedia.org/wiki/Jaccard_index)
 
 ## Eucleadian Distance
 
-## L1 Distance 
+## L1 Distance
 
 ## [Chebyshev Distance](https://en.wikipedia.org/wiki/Chebyshev_distance)
 

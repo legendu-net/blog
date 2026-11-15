@@ -1,45 +1,49 @@
 ---
 title: Tips on httpd
-created: 2018-05-27 01:25:32
-date: 2026-04-05 19:42:38.009647
+created: '2018-05-27T01:25:32-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-httpd
 license: CC-BY-4.0
 tags:
-- software
-- httpd
-- HTTP
-- tips
-- web
-- internet
+  - software
+  - httpd
+  - HTTP
+  - tips
+  - web
+  - internet
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. A directory must be executable by others in order to show up.
-    Even if a directory show up,
-    it does NOT mean that you can access it.
-    It must be readable by others (at the same)
-    so that it can be accessed using HTTP.
+   Even if a directory show up,
+   it does NOT mean that you can access it.
+   It must be readable by others (at the same)
+   so that it can be accessed using HTTP.
 
-2. A directory/file must be readable by others on the host
-    so that it can be accessed using HTTP,
-    otherwise you will encounter error messages like the one below.
+1. A directory/file must be readable by others on the host
+   so that it can be accessed using HTTP,
+   otherwise you will encounter error messages like the one below.
 
-    > You don't have permission to access /wwwroot/somedir/ on this server.
+   > You don't have permission to access /wwwroot/somedir/ on this server.
 
+## Docker Image
 
-## Docker Image 
-    
 The Docker image [httpd](https://hub.docker.com/_/httpd/)
 is a good one.
 
-Pull the image. 
+Pull the image.
 
-    :::bash
-    docker pull httpd
+```
+:::bash
+docker pull httpd
+```
 
 Start a docker container.
 
-    :::bash
-    docker run --hostname httpd -dit -p 80:80 -v $(pwd):/usr/local/apache2/htdocs/ httpd
+```
+:::bash
+docker run --hostname httpd -dit -p 80:80 -v $(pwd):/usr/local/apache2/htdocs/ httpd
+```

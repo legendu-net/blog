@@ -1,7 +1,7 @@
 ---
-title: "Monitoring and Alerting Tools"
-created: 2018-10-04 11:10:00
-date: 2020-07-04 11:10:00
+title: Monitoring and Alerting Tools
+created: '2018-10-04T11:10:00-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: monitoring-and-alerting-tools
@@ -38,7 +38,6 @@ another one but doesn't seem as popular as prometheus
 
 A Python Toolbox for Scalable Outlier Detection (Anomaly Detection)
 
-
 https://www.datadoghq.com/
 
 https://www.dynatrace.com/
@@ -46,7 +45,6 @@ https://www.dynatrace.com/
 https://dylibso.com/
 
 https://github.com/DataDog/dd-trace-py
-
 
 ## References
 
@@ -56,8 +54,6 @@ https://github.com/DataDog/dd-trace-py
 
 [Outlier Detection and Anomaly Detection with Machine learning](https://medium.com/@mehulved1503/outlier-detection-and-anomaly-detection-with-machine-learning-caa96b34b7f6)
 
-
 [Introduction to Anomaly Detection](https://www.datascience.com/blog/python-anomaly-detection)
-
 
 [10 Tips for Monitoring Best Practices (Alerting and Notifications)](http://www.monitis.com/blog/10-tips-for-monitoring-best-practices-alerting-and-notifications/)

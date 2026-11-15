@@ -1,7 +1,7 @@
 ---
-title: "Conda Build Issue"
-created: 2018-07-23 09:24:19
-date: 2020-05-23 09:24:19
+title: Conda Build Issue
+created: '2018-07-23T09:24:19-07:00'
+date: '2026-11-15T12:20:43-08:00'
 authors:
   - bendu
 label: conda-build-issue
@@ -17,18 +17,15 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-
 I encountered an issue building the package
 [sqlalchemy-teradata](https://pypi.org/project/sqlalchemy-teradata/).
 There are a few related issues:
 [issues/2790](https://github.com/conda/conda-build/issues/2790),
 [issues/2826](https://github.com/conda/conda-build/issues/2826).
 It seems that the recipe uses an outdated URL.
-Change the URL to 
+Change the URL to
 [this one](https://files.pythonhosted.org/packages/13/ba/bd5ebedd251630a822cfa2ad819caa99f6b494726aa05c8ef69bbb39330e/sqlalchemy_teradata-0.1.0.dev0.tar.gz)
 resolves the issue.
-
-
 
 ## Build a Conda Package
 
@@ -36,7 +33,7 @@ resolves the issue.
 has detailed instructions on how to build a conda package from scratch.
 In most situations,
 you can simplify the building process with the help of `conda skeleton`.
-Please refer to 
+Please refer to
 [Building conda packages with conda skeleton](https://docs.conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs-skeleton.html)
 on how to use build a conda package using conda skeleton.
 

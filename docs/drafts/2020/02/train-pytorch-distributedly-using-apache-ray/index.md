@@ -1,7 +1,7 @@
 ---
-title: "Train PyTorch Distributedly Using Apache Ray"
-created: 2020-02-01 11:36:44
-date: 2020-03-01 11:36:44
+title: Train PyTorch Distributedly Using Apache Ray
+created: '2020-02-01T11:36:44-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: train-pytorch-distributedly-using-apache-ray
@@ -25,7 +25,6 @@ https://github.com/ray-project/ray/tree/master/python/ray/util/sgd/pytorch/examp
 [Distributed PyTorch Using Apache Ray](https://ray.readthedocs.io/en/latest/raysgd/raysgd_pytorch.html)
 
 [RaySGD: Distributed Training Wrappers](https://ray.readthedocs.io/en/latest/raysgd/raysgd.html)
-
 
 ## Hyperparameter Optimization for Models Implemented in PyTorch
 
@@ -60,16 +59,16 @@ print("Best config: ", analysis.get_best_config(metric="mean_accuracy"))
 df = analysis.dataframe()
 ```
 
-- data parallelism vs model parallelism  
-- use Ring Allreduce (RA) (instead of Parameter Server or Peer to Peer) 
-    for synchronization among processes (CPU/GPU on the same node or different nodes)
+- data parallelism vs model parallelism
+- use Ring Allreduce (RA) (instead of Parameter Server or Peer to Peer)
+  for synchronization among processes (CPU/GPU on the same node or different nodes)
 - Distributed Optimization Algorithm
-    - synchronized SGD 
-    - asynchronized SGD 
-    - 1-bit SGD
-    - The Hogwild algorithm
-    - Downpour SGD
-    - synchronized SGD + large minibatch to reduce update frequency of parameters
+  - synchronized SGD
+  - asynchronized SGD
+  - 1-bit SGD
+  - The Hogwild algorithm
+  - Downpour SGD
+  - synchronized SGD + large minibatch to reduce update frequency of parameters
 
 ## References
 
@@ -84,7 +83,6 @@ df = analysis.dataframe()
 https://jdhao.github.io/2019/11/01/pytorch_distributed_training/
 
 [Training Neural Nets on Larger Batches: Practical Tips for 1-GPU, Multi-GPU & Distributed setups](https://medium.com/huggingface/training-larger-batches-practical-tips-on-1-gpu-multi-gpu-distributed-setups-ec88c3e51255)
-
 
 [DISTRIBUTED COMMUNICATION PACKAGE - TORCH.DISTRIBUTED](https://pytorch.org/docs/stable/distributed.html)
 

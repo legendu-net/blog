@@ -1,39 +1,32 @@
 ---
 title: Formatting Data in SAS
-created: 2009-11-17 18:52:19
-date: 2026-04-05 19:42:39.411575
+created: '2009-11-17T18:52:19-08:00'
+date: '2026-11-15T12:20:41-08:00'
 authors:
-- bendu
+  - bendu
 label: formatting-data-in-sas
 license: CC-BY-4.0
 tags:
-- SAS
-- formatting data
-- programming
-- label
+  - SAS
+  - formatting data
+  - programming
+  - label
 ---
+
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
-Please look for better alternatives.
-**
-
 
 ## Data Formatting
 
-1. To add labels to a variable, 
-You can use the statement `label` to add labels to a variable in SAS.
-And it doesn't matter whether you use the quotation marks for the label string or not.
+1. To add labels to a variable,
+   You can use the statement `label` to add labels to a variable in SAS.
+   And it doesn't matter whether you use the quotation marks for the label string or not.
 
+1. The `label` statement in SAS is somehow similar to the `format` procedure.
+   The difference is that `label` explains the name of variables while
+   `format` explains the value of variables.
 
-3. The `label` statement in SAS is somehow similar to the `format` procedure. 
-The difference is that `label` explains the name of variables while 
-`format` explains the value of variables. 
+1. To quickly remove all labels
 
-
-2. To quickly remove all labels 
 ```SAS
 proc datasets library=mylib nolist;
     modify mydataset;
@@ -41,8 +34,9 @@ proc datasets library=mylib nolist;
 quit;
 ```
 
-4. There are times in SAS when you simply want to remove all the formats from a dataset. 
-This can be done in one line in a data step.
+4. There are times in SAS when you simply want to remove all the formats from a dataset.
+   This can be done in one line in a data step.
+
 ```SAS
 data unformatted;
     set formatted;

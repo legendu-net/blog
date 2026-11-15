@@ -1,7 +1,7 @@
 ---
-title: "Software for Charts"
-created: 2018-05-14 08:40:48
-date: 2018-05-14 08:40:48
+title: Software for Charts
+created: '2018-05-14T08:40:48-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: software-for-charts
@@ -18,8 +18,8 @@ tags:
 ## [draw.io](www.draw.io)
 
 1. Can be integrated into JupyterLab via the
-    [jupyterlab-drawio](https://github.com/QuantStack/jupyterlab-drawio)
-    extension.
+   [jupyterlab-drawio](https://github.com/QuantStack/jupyterlab-drawio)
+   extension.
 
 ## Dia Diagram Editor
 

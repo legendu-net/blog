@@ -1,21 +1,22 @@
 ---
 title: Web Automation and Testing Using PlayWright
-created: 2026-04-07 10:47:51.456028
-date: 2026-04-07 13:01:58.164437
+created: '2026-04-07T10:47:51.456028-07:00'
+date: '2026-11-15T12:20:41-08:00'
 authors:
-- bendu
+  - bendu
 label: web-automation-and-testing-using-playwright
 license: CC-BY-4.0
 tags:
-- computer science
-- programming
-- web
-- automation
-- testing
-- PlayWright
-- visual
-- UI
+  - computer science
+  - programming
+  - web
+  - automation
+  - testing
+  - PlayWright
+  - visual
+  - UI
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [Playwright Test Agents](https://playwright.dev/docs/test-agents)

@@ -1,7 +1,7 @@
 ---
 title: Tips for R Packages
 created: '2012-11-23T22:30:01-08:00'
-date: '2026-11-15T09:34:05-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: tips-for-r-packages
@@ -18,12 +18,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 <img src="/media/r/r.png" height="200" width="240" align="right"/>
 

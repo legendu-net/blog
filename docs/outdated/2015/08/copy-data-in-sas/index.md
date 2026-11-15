@@ -1,7 +1,7 @@
 ---
-title: "Copy Data in SAS"
-created: 2015-08-28 12:50:40
-date: 2015-08-28 12:50:40
+title: Copy Data in SAS
+created: '2015-08-28T12:50:40-07:00'
+date: '2026-11-15T12:20:43-08:00'
 authors:
   - bendu
 label: copy-data-in-sas
@@ -16,12 +16,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
-Please look for better alternatives.
-**
 
 ```SAS
 /* copy data using the datasets procedure */
@@ -51,6 +45,6 @@ x cp src_file des_file;
 ```
 
 1. datasets and copy are essentially the same
-2. datasets and copy can copy the index as well
-3. generally speaking, the datasets procedure is preferred
-actually datasets is recommended for not only copying but also deleting, renaming datasets, etc.
+1. datasets and copy can copy the index as well
+1. generally speaking, the datasets procedure is preferred
+   actually datasets is recommended for not only copying but also deleting, renaming datasets, etc.

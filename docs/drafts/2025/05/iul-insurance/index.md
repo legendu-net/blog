@@ -1,7 +1,7 @@
 ---
-title: "IUL Insurance"
-created: 2025-05-15 14:43:38
-date: 2025-05-27 11:58:07
+title: IUL Insurance
+created: '2025-05-15T14:43:38-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: iul-insurance
@@ -15,7 +15,6 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
 - infinite banking concept
 - whole life insurance
 - overfunded life insurance
@@ -24,10 +23,10 @@ tags:
 ## Tips and Traps
 
 1. Generally speaking,
-    I do not recommend IUL insurance
-    as it is risky.
-    If you do want a life insurance with cash value,
-    consider a whole life insurance (with cash value).
+   I do not recommend IUL insurance
+   as it is risky.
+   If you do want a life insurance with cash value,
+   consider a whole life insurance (with cash value).
 
 ## References
 

@@ -1,7 +1,7 @@
 ---
-title: "JavaScript Alternatives to Shell"
-created: 2019-02-01 19:45:52
-date: 2021-09-26 14:03:01
+title: JavaScript Alternatives to Shell
+created: '2019-02-01T19:45:52-08:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: javascript-alternatives-to-shell

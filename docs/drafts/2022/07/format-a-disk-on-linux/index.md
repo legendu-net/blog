@@ -1,7 +1,7 @@
 ---
 title: Format a Disk on Linux
-created: 2022-07-28 10:33:40
-date: 2026-04-13 23:14:44.192740
+created: '2022-07-28T10:33:40-07:00'
+date: '2026-11-15T12:20:39-08:00'
 authors:
   - bendu
 label: format-a-disk-on-linux
@@ -32,8 +32,8 @@ tags:
 1. Create disk partition tables using the command `fdisk`.
 
    ```bash
-    fdisk /dev/sdb
-    fdisk /dev/nvme0n1
+   fdisk /dev/sdb
+   fdisk /dev/nvme0n1
    ```
 
 1. Format partitions to the right format (`ext4` recommended).
@@ -41,8 +41,8 @@ tags:
    the following command formats the partition `/dev/sdb3` as ext4.
 
    ```bash
-    mkfs.ext4 /dev/sdb3
-    mkfs.ext4 /dev/nvme0n1p1
+   mkfs.ext4 /dev/sdb3
+   mkfs.ext4 /dev/nvme0n1p1
    ```
 
 ## References

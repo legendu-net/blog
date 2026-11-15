@@ -1,7 +1,7 @@
 ---
-title: "Preferred Python Version in Shebang"
-created: 2017-11-17 19:15:35
-date: 2019-02-17 19:15:35
+title: Preferred Python Version in Shebang
+created: '2017-11-17T19:15:35-08:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
   - bendu
 label: preferred-python-version-in-shebang
@@ -15,8 +15,6 @@ tags:
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-
-
 
 ```
 #!/bin/sh

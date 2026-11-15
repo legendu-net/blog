@@ -1,7 +1,7 @@
 ---
 title: Control SAS Outputs
 created: '2015-06-14T17:27:03-07:00'
-date: '2026-11-15T09:28:00-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: control-sas-outputs
@@ -14,12 +14,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. it is suggested that you use
    `ods select none;` at the beginning of a user-defined macro to suppress unnecessary output.

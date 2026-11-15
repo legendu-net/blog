@@ -1,7 +1,7 @@
 ---
 title: Git Large File Storage
-created: 2019-01-08 13:46:55
-date: 2026-04-13 23:28:02.197522
+created: '2019-01-08T13:46:55-08:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: git-large-file-storage
@@ -27,7 +27,7 @@ for instructions on how to install git-lfs.
 1. Track a large file.
 
    ```bash
-    git lfs track "*.pickle"
+   git lfs track "*.pickle"
    ```
 
 1. It seems to be that git-lfs automatically tracks large files now if it is installed and enabled,

@@ -1,7 +1,7 @@
 ---
 title: General Tips for Gradle
-created: 2018-12-08 16:57:03
-date: 2026-04-15 19:27:01.254501
+created: '2018-12-08T16:57:03-08:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: general-tips-for-gradle
@@ -70,7 +70,7 @@ brew upgrade gradle
    or update the version of an existing Gradle wrapper using the following command.
 
    ```bash
-    gradle wrapper --gradle-version 6.0.1
+   gradle wrapper --gradle-version 6.0.1
    ```
 
 ## The IDEA Plugin

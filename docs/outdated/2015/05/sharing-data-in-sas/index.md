@@ -1,7 +1,7 @@
 ---
 title: Sharing Data in SAS
 created: '2015-05-17T17:09:52-07:00'
-date: '2026-11-15T09:27:49-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: sharing-data-in-sas
@@ -15,12 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 There are basically 2 ways to share data among procedures
 and data steps in SAS.

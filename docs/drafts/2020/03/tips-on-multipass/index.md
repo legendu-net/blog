@@ -1,7 +1,7 @@
 ---
-title: "Tips on Multipass"
-created: 2020-03-03 17:27:18
-date: 2022-07-31 17:54:16
+title: Tips on Multipass
+created: '2020-03-03T17:27:18-08:00'
+date: '2026-11-15T12:20:37-08:00'
 authors:
   - bendu
 label: tips-on-multipass
@@ -22,16 +22,16 @@ tags:
 
 1. LXD supports both containers and VMs while multipass supports only (Ubuntu) VMs.
 
-2. LXD is more lightweight compared to multipass.
+1. LXD is more lightweight compared to multipass.
 
-3. LXD does not require CPU virtualization while multipass relies on CPU virtualization.
+1. LXD does not require CPU virtualization while multipass relies on CPU virtualization.
 
-4. Multipass is very user-friendly 
-  while LXD requires some manual configuration and is much harder to use.
+1. Multipass is very user-friendly
+   while LXD requires some manual configuration and is much harder to use.
 
 ## General Tips
 
-1. You can consider Multipass as a lightweight Ubuntu specific Docker equivalence. 
+1. You can consider Multipass as a lightweight Ubuntu specific Docker equivalence.
 
 ## Installation
 
@@ -57,23 +57,25 @@ multipass info dancing-chipmunk
 
 The recommended way to share data between your host and the instance is the mount command:
 
-    :::bash
-    multipass mount $HOME keen-yak
-    multipass info keen-yak
-    …
-    Mounts:         /home/ubuntu => /home/ubuntu
-    From this point on /home/ubuntu will be available inside the instance. Use umount to unmount it again and you can change the target by passing it after the instance name:
+```
+:::bash
+multipass mount $HOME keen-yak
+multipass info keen-yak
+…
+Mounts:         /home/ubuntu => /home/ubuntu
+From this point on /home/ubuntu will be available inside the instance. Use umount to unmount it again and you can change the target by passing it after the instance name:
 
-    :::bash
-    multipass umount keen-yak
-    multipass mount $HOME keen-yak:/some/path
-    multipass info keen-yak                
-    …
-    Mounts:         /home/michal => /some/path
-    You can also use copy-files to just copy files around - prefix the path with <name>: if it’s inside an instance:
+:::bash
+multipass umount keen-yak
+multipass mount $HOME keen-yak:/some/path
+multipass info keen-yak                
+…
+Mounts:         /home/michal => /some/path
+You can also use copy-files to just copy files around - prefix the path with <name>: if it’s inside an instance:
 
-    :::bash
-    multipass copy-files keen-yak:/etc/crontab keen-yak:/etc/fstab .
+:::bash
+multipass copy-files keen-yak:/etc/crontab keen-yak:/etc/fstab .
+```
 
 ## Connect to a running instance
 
@@ -88,6 +90,7 @@ multipass exec dancing-chipmunk -- lsb_release -a
 multipass stop dancing-chipmunk
 
 ## Delete the instance
+
 multipass delete dancing-chipmunk
 
 ## References

@@ -1,7 +1,7 @@
 ---
-title: "Tips on Airbnb"
-created: 2025-07-21 16:36:23
-date: 2025-07-22 07:06:52
+title: Tips on Airbnb
+created: '2025-07-21T16:36:23-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: tips-on-airbnb
@@ -19,7 +19,7 @@ tags:
 ## Weather
 
 1. Make sure to check the weather of your planned stops (instead of your depart city).
-  The weather (including temperature) can vary greatly even after 30 minutes driving!
+   The weather (including temperature) can vary greatly even after 30 minutes driving!
 
 ## Scrutinize the Listing Carefully
 

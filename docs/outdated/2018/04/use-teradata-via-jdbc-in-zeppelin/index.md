@@ -1,7 +1,7 @@
 ---
-title: "Use Teradata via JDBC in Zeppelin"
-created: 2018-04-10 10:00:59
-date: 2020-05-10 10:00:59
+title: Use Teradata via JDBC in Zeppelin
+created: '2018-04-10T10:00:59-07:00'
+date: '2026-11-15T12:20:43-08:00'
 authors:
   - bendu
 label: use-teradata-via-jdbc-in-zeppelin
@@ -15,23 +15,17 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
-Please look for better alternatives.
-**
-
 ## Use Teradata in Zeppelin
 
 In order to connect Teradata via jdbc, a few things are needed to config the jdbc interpreter for Zeppelin:
 
 1. Set default.user, default.password
 
-2. Set default.url to `jdbc:teradata://server_ip`
+1. Set default.url to `jdbc:teradata://server_ip`
 
-3. Import Teradata JDBC driver into Dependencies (the .jar package is attached)
+1. Import Teradata JDBC driver into Dependencies (the .jar package is attached)
 
-4. Set default.driver to com.teradata.jdbc.TeraDriver
+1. Set default.driver to com.teradata.jdbc.TeraDriver
 
 ## Related Resources
 

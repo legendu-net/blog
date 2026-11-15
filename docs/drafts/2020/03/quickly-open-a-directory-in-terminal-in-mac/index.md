@@ -1,7 +1,7 @@
 ---
 title: Quickly Open a Directory in Terminal in Mac
-created: 2020-03-11 16:25:01
-date: 2026-04-15 19:27:01.061554
+created: '2020-03-11T16:25:01-07:00'
+date: '2026-11-15T12:20:37-08:00'
 authors:
   - bendu
 label: quickly-open-a-directory-in-terminal-in-mac
@@ -26,7 +26,7 @@ to open the current or selected directory in Terminal, iTerm, Hyper or Alacritty
 1. Install OpenInTerminal
 
    ```bash
-    brew cask install openinterminal
+   brew cask install openinterminal
    ```
 
 1. Launch OpenInTerminal from Applications.

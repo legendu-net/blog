@@ -1,7 +1,7 @@
 ---
-title: "Deep Learning Tools and Apps"
-created: 2019-05-21 01:31:55
-date: 2019-05-21 01:31:55
+title: Deep Learning Tools and Apps
+created: '2019-05-21T01:31:55-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: deep-learning-tools-and-apps
@@ -15,10 +15,9 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
 https://www.imageidentify.com/
 
-## Neural Style Transfer Applications 
+## Neural Style Transfer Applications
 
 DeepArt
 

@@ -1,7 +1,7 @@
 ---
 title: Install Essential and Useful R Packages
 created: '2015-01-23T22:27:25-08:00'
-date: '2026-11-15T09:29:48-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: install-essential-and-useful-r-packages
@@ -15,12 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 ```R
 pkgs = ("data.table", "ggplot2", "RJDBC", "xlsx", "rmarkdown", "Rcpp", "inline")

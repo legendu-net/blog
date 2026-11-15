@@ -1,7 +1,7 @@
 ---
 title: Static Type Checking of Python Scripts Using pytype
-created: 2020-08-30 09:16:10
-date: 2026-04-13 23:14:14.598710
+created: '2020-08-30T09:16:10-07:00'
+date: '2026-11-15T12:20:32-08:00'
 authors:
   - bendu
 label: static-type-checking-of-python-scripts-using-pytype
@@ -38,7 +38,7 @@ for an example of configuration file of `pytype`.
 1. Use the `--exclude` option.
 
    ```bash
-    PATH=.venv/bin:$PATH pytype xinstall --exclude xinstall/data
+   PATH=.venv/bin:$PATH pytype xinstall --exclude xinstall/data
    ```
 
 1. Specify files and/or directories to exclude in the configuration file `setup.cfg`.

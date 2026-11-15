@@ -1,7 +1,7 @@
 ---
 title: Tips on Reinforcement Learning
 created: '2020-01-28T11:02:29-08:00'
-date: '2026-11-15T09:21:54-08:00'
+date: '2026-11-15T12:20:01-08:00'
 authors:
   - bendu
 label: tips-on-reinforcement-learning
@@ -16,13 +16,9 @@ tags:
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-\*\*
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
 
 [Reinforcement Learning algorithms — an intuitive overview](https://medium.com/@SmartLabAI/reinforcement-learning-algorithms-an-intuitive-overview-904e2dff5bbc)
 has a good overview of different approaches to RL.
-\*\*
 
 ## Courses & Tutorials
 

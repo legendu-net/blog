@@ -1,7 +1,7 @@
 ---
-title: "Install sbt on CentOS"
-created: 2017-06-25 10:37:51
-date: 2017-06-25 10:37:51
+title: Install sbt on CentOS
+created: '2017-06-25T10:37:51-07:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
   - bendu
 label: install-sbt-on-centos

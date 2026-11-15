@@ -1,7 +1,7 @@
 ---
 title: Install R Kernel for JupyterLab
 created: '2016-12-25T20:22:24-08:00'
-date: '2026-11-15T09:28:41-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: install-r-kernel-for-jupyterlab
@@ -16,12 +16,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. Install JupyterLab.
 

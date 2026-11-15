@@ -1,7 +1,7 @@
 ---
 title: RStudio Tips
 created: '2015-01-04T20:30:49-08:00'
-date: '2026-11-15T09:29:51-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: rstudio-tips
@@ -16,12 +16,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. RStudio (both desktop and server edition) supports auto complete.
    Sometime the auto completion of the server edition might not work well,

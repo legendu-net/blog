@@ -1,7 +1,7 @@
 ---
-title: "Tips on Pest and Rodent Control"
-created: 2025-08-01 11:58:54
-date: 2025-08-20 17:38:01
+title: Tips on Pest and Rodent Control
+created: '2025-08-01T11:58:54-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: tips-on-pest-and-rodent-control
@@ -19,26 +19,25 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
 ## Rat
 
-1. Dehydration mice/rat baits 
-    (e.g.,
-    [RatX 1 lb. Rodent Control Animal Bait](https://www.homedepot.com/p/ECOCLEAR-PRODUCTS-RatX-1-lb-Rodent-Control-100516268/205743655)
-    and
-    [RatX All-Natural Humane Rat And Mouse 1 lb. Bag - EcoClear Products 620101](https://www.amazon.com/EcoClear-Products-620101-All-Natural-Non-Toxic/dp/B00RU6YHJW/ref=sr_1_22?dchild=1&keywords=rat+dehydration&qid=1626710097&sr=8-22)
-    )
-    are preferred for a few reason.
-    
-    - non-toxic to human and pet in the house
+1. Dehydration mice/rat baits
+   (e.g.,
+   [RatX 1 lb. Rodent Control Animal Bait](https://www.homedepot.com/p/ECOCLEAR-PRODUCTS-RatX-1-lb-Rodent-Control-100516268/205743655)
+   and
+   [RatX All-Natural Humane Rat And Mouse 1 lb. Bag - EcoClear Products 620101](https://www.amazon.com/EcoClear-Products-620101-All-Natural-Non-Toxic/dp/B00RU6YHJW/ref=sr_1_22?dchild=1&keywords=rat+dehydration&qid=1626710097&sr=8-22)
+   )
+   are preferred for a few reason.
 
-    - mice runs out of the house for water after eating those dehydration baits
+   - non-toxic to human and pet in the house
 
-    - even if a mice stuck somewhere at home, it won't be as smelly
+   - mice runs out of the house for water after eating those dehydration baits
 
-2. Peanut butter is a very good bait for mice/rat traps.
+   - even if a mice stuck somewhere at home, it won't be as smelly
 
-3. Flipping lid trap is good.
+1. Peanut butter is a very good bait for mice/rat traps.
+
+1. Flipping lid trap is good.
 
 ## Ants
 
@@ -49,4 +48,3 @@ tags:
 - [RatX All-Natural Humane Rat And Mouse 1 lb. Bag - EcoClear Products 620101](https://www.amazon.com/EcoClear-Products-620101-All-Natural-Non-Toxic/dp/B00RU6YHJW/ref=sr_1_22?dchild=1&keywords=rat+dehydration&qid=1626710097&sr=8-22)
 
 - [JT Eaton Anticoagulant Rodenticide Bait Block for Mice and Rats, Apple Flavor, 4 Pound Pail of 64 Blocks](https://www.amazon.com/Eaton-704-AP-Anticoagulant-Flavor-rodenticide/dp/B07GBQKLWZ/ref=sr_1_35?dchild=1&keywords=rat+dehydration&qid=1626710097&sr=8-35)
-

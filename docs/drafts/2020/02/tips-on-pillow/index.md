@@ -1,7 +1,7 @@
 ---
-title: "Tips on Pillow"
-created: 2020-02-26 12:07:50
-date: 2021-08-21 23:02:29
+title: Tips on Pillow
+created: '2020-02-26T12:07:50-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: tips-on-pillow
@@ -24,10 +24,10 @@ Notice that the bounding box is inclusive/EXCLUSIVE like the `range` function.
 
 1. `img.resize(img.size)` returns a new copy and the new copy is not necessarily the same as the original one.
 
-2. `Image.resize` might return different results in different versions of Pillow.
-    To ensure that you get the same result,
-    make sure to have the same version of Pillow,
-    and best to use a Docker environment to ensure identical environment.
+1. `Image.resize` might return different results in different versions of Pillow.
+   To ensure that you get the same result,
+   make sure to have the same version of Pillow,
+   and best to use a Docker environment to ensure identical environment.
 
 ## Mask (Image) in Pillow
 

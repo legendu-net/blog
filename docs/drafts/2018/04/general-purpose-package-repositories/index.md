@@ -1,7 +1,7 @@
 ---
-title: "General Purpose Package Repositories"
-created: 2018-04-22 09:16:50
-date: 2018-04-22 09:16:50
+title: General Purpose Package Repositories
+created: '2018-04-22T09:16:50-07:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
   - bendu
 label: general-purpose-package-repositories

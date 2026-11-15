@@ -1,7 +1,7 @@
 ---
 title: Install Terminator on Cygwin
 created: '2015-09-09T22:24:39-07:00'
-date: '2026-11-15T09:28:06-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: install-terminator-on-cygwin
@@ -15,12 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. Update your Cygwin to the latest
 

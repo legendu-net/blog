@@ -1,7 +1,7 @@
 ---
 title: Tips on Teradata SQL Assistant
 created: '2018-05-12T22:02:34-07:00'
-date: '2026-11-15T09:26:34-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: tips-on-teradata-sql-assistant
@@ -14,12 +14,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. You can open multiple Teradata SQL Assistant sessions when necessary.
    This is helpful if you have to connect to multiple data platforms at the time.

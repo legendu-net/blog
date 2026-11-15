@@ -1,7 +1,7 @@
 ---
-title: "Tools for Web Crawling"
-created: 2019-04-27 18:34:44
-date: 2019-06-27 18:34:44
+title: Tools for Web Crawling
+created: '2019-04-27T18:34:44-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: tools-for-web-crawling
@@ -21,8 +21,7 @@ tags:
 ## Libraries
 
 1. [Scrapy](https://scrapy.org/) (an open source web crawling and scraping tool written in Python)
-2. 火车采集器
-3. [80legs](http://www.80legs.com/)
-
+1. 火车采集器
+1. [80legs](http://www.80legs.com/)
 
 [xchaoinfo/fuck-login](https://github.com/xchaoinfo/fuck-login)

@@ -1,7 +1,7 @@
 ---
-title: "Useful Accessories for Rivian"
-created: 2025-09-30 08:16:05
-date: 2025-10-04 09:33:27
+title: Useful Accessories for Rivian
+created: '2025-09-30T08:16:05-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: useful-accessories-for-rivian
@@ -15,18 +15,17 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
 - [Tire Sealant Kit](https://gearshop.rivian.com/products/tire-sealant-kit)
-    .
-    It's much cheaper to order one from Amazon.
+  .
+  It's much cheaper to order one from Amazon.
 
 - [Jack Service Kit](https://gearshop.rivian.com/products/jack-service-kit)
 
 - [2023 Rivian R1T & R1S Accessories | Essential Upgrades For The Best EV Truck](https://www.youtube.com/watch?v=Qyt91MytaQU)
 
-- [‪@Rivian‬](https://www.youtube.com/@Rivian) 
+- [‪@Rivian‬](https://www.youtube.com/@Rivian)
 
-- [R1S hitch mount bike rack: [‪@innoracks‬](https://www.youtube.com/@innoracks) 
+- \[R1S hitch mount bike rack: [‪@innoracks‬](https://www.youtube.com/@innoracks)
 
 - [INH110] (https://www.youtube.com/watch?v=RsIhahJfbtI)
 

@@ -1,7 +1,7 @@
 ---
 title: Tips on Flatpak
-created: 2025-05-14 16:58:04
-date: 2026-04-13 23:14:20.675525
+created: '2025-05-14T16:58:04-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: tips-on-flatpak
@@ -19,7 +19,7 @@ sudo apt install flatpak
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-restart 
+restart
 ```
 
 ## References

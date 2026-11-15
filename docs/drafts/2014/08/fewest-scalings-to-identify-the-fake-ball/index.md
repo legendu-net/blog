@@ -1,7 +1,7 @@
 ---
 title: Fewest Scalings to Identify the Fake Ball
-created: 2014-08-23 17:12:23
-date: 2014-10-23 17:12:23
+created: '2014-08-23T17:12:23-07:00'
+date: '2026-11-15T12:20:33-08:00'
 authors:
   - bendu
 label: fewest-scalings-to-identify-the-fake-ball
@@ -12,15 +12,8 @@ tags:
   - fake
   - ball
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-**
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-It is not meant to readers 
-but rather for convenient reference of the author and future improvement.
-** 
-
-
 
 8 balls, one fake
 2 problems

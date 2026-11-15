@@ -1,7 +1,7 @@
 ---
-title: "Count Number of Fields in Each Line"
-created: 2016-06-13 23:08:03
-date: 2021-09-26 21:56:40
+title: Count Number of Fields in Each Line
+created: '2016-06-13T23:08:03-07:00'
+date: '2026-11-15T12:20:31-08:00'
 authors:
   - bendu
 label: count-number-of-fields-in-each-line
@@ -22,16 +22,17 @@ A simple way to verify it is to count the number of fields in each line.
 
 ## Using awk
 
-You can count the number of fields in each line 
+You can count the number of fields in each line
 using the following awk command.
-Unfortunately, 
+Unfortunately,
 awk does not take escaped characters into consideration.
 So this only works for simple formatted (without escaped characters) text files.
 
-    :::bash
-    awk '{print NF}' filename
+```
+:::bash
+awk '{print NF}' filename
+```
 
 ## Using R
 
 There is a function named `count.field` in R.
-

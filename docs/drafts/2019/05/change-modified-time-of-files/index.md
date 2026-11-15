@@ -1,7 +1,7 @@
 ---
-title: "Change Modified Time of Files"
-created: 2019-05-02 02:40:46
-date: 2019-05-02 02:40:46
+title: Change Modified Time of Files
+created: '2019-05-02T02:40:46-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: change-modified-time-of-files
@@ -16,19 +16,27 @@ tags:
 
 1. Change the modifiled timestamp of a file to the specified timestamp.
 
-        touch -m -t 201512180130.09 some_file
+   ```
+    touch -m -t 201512180130.09 some_file
+   ```
 
-2. Change the modified timestamp of a file to the current time.
+1. Change the modified timestamp of a file to the current time.
 
-        touch -m some_file
+   ```
+    touch -m some_file
+   ```
 
-3. Change the modified timestamp of all files in the current directory to the current time.
+1. Change the modified timestamp of all files in the current directory to the current time.
 
-        find . -type f -print0 | xargs -0 touch -m
+   ```
+    find . -type f -print0 | xargs -0 touch -m
+   ```
 
-4. You can use the `stat` command to show the modified timestamps of files.
+1. You can use the `stat` command to show the modified timestamps of files.
 
-        stat -c '%y' some_file
+   ```
+    stat -c '%y' some_file
+   ```
 
 ## References
 

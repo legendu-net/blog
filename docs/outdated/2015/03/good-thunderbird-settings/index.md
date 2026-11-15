@@ -1,7 +1,7 @@
 ---
-title: "Good Thunderbird Settings"
-created: 2015-03-10 20:02:21
-date: 2015-03-10 20:02:21
+title: Good Thunderbird Settings
+created: '2015-03-10T20:02:21-07:00'
+date: '2026-11-15T12:20:43-08:00'
 authors:
   - bendu
 label: good-thunderbird-settings
@@ -14,37 +14,29 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
-Please look for better alternatives.
-**
-
-
 ## Settings
 
 1. Signature (use html)
 
-2. Sync Lightning with Google Calendar 
+1. Sync Lightning with Google Calendar
 
-3. cache
+1. cache
 
-4. threaded view, view -> sort -> by time / threaded
+1. threaded view, view -> sort -> by time / threaded
 
-5. disable global search and index
+1. disable global search and index
 
-6. set reply to address
+1. set reply to address
 
-7. message storage, clean up inbox, don't empty trash
+1. message storage, clean up inbox, don't empty trash
 
-8. template folder, you'd better save templates on server! you probably don't have to do this if you use the quicktext addon, but then you have to worry about how to sync quicktext template
+1. template folder, you'd better save templates on server! you probably don't have to do this if you use the quicktext addon, but then you have to worry about how to sync quicktext template
 
-9. trash settings: leave mail on server until I delete it (for Yahoo), for Gmail: move to trash if I delete a mail
-The email will be delete from inbox (gmail) for Yahoo if you empty trash 
+1. trash settings: leave mail on server until I delete it (for Yahoo), for Gmail: move to trash if I delete a mail
+   The email will be delete from inbox (gmail) for Yahoo if you empty trash
 
-10. archive directory on server
+1. archive directory on server
 
-11. Disable attachment inline view.
+1. Disable attachment inline view.
 
 View > Display Attachments Inline
-

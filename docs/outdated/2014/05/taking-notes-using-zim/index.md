@@ -1,7 +1,7 @@
 ---
 title: Taking Notes Using Zim
 created: '2014-05-22T13:11:56-07:00'
-date: '2026-11-15T09:28:22-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: taking-notes-using-zim
@@ -14,12 +14,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 0. best to let Zim commit (Git) automatically to avoid data loss
 

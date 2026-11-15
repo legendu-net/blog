@@ -1,7 +1,7 @@
 ---
-title: "SAS Loop"
-created: 2015-01-17 18:47:56
-date: 2015-05-17 18:47:56
+title: SAS Loop
+created: '2015-01-17T18:47:56-08:00'
+date: '2026-11-15T12:20:42-08:00'
 authors:
   - bendu
 label: sas-loop
@@ -13,12 +13,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
-Please look for better alternatives.
-**
 
 ```SAS
 y = 0;
@@ -47,8 +41,7 @@ run;
 
 comma cannot be omitted.
 
-
-However, 
+However,
 you cannot do this directly in macro loops.
 A way to close assembly this to use the trick of `%scan`.
 

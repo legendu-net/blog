@@ -1,7 +1,7 @@
 ---
 title: Check the Type of a SAS Variable
 created: '2014-08-22T16:59:20-07:00'
-date: '2026-11-15T09:28:40-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: check-the-type-of-a-sas-variable
@@ -16,13 +16,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-It is not meant to readers
-but rather for convenient reference of the author and future improvement.
-\*\*
 
 1. SAS has only 2 data types, numerical and character.
    Date, time and datetime, etc. are all represented as numerical values inside SAS.

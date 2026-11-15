@@ -1,7 +1,7 @@
 ---
-title: "Zeppelin Issues and Solutions"
-created: 2018-04-30 16:38:02
-date: 2018-04-30 16:38:02
+title: Zeppelin Issues and Solutions
+created: '2018-04-30T16:38:02-07:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
   - bendu
 label: zeppelin-issues-and-solutions

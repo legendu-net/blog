@@ -1,7 +1,7 @@
 ---
-title: "Personal Blogs"
-created: 2018-09-15 12:04:05
-date: 2020-11-15 12:04:05
+title: Personal Blogs
+created: '2018-09-15T12:04:05-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: personal-blogs
@@ -37,7 +37,7 @@ tags:
 - [Dorin Comaniclu](http://www.cs.cmu.edu/~har/)
 - [Henry Schneiderman](http://www.cs.cmu.edu/~hws/)
 - [Michael Wong](https://wongmichael.com/)
-http://www.wdong.org/wordpress/
+  http://www.wdong.org/wordpress/
 
 ## Statistics
 
@@ -62,6 +62,7 @@ http://www.wdong.org/wordpress/
 - http://blog.gillerinvestments.com/archive.aspx
 
 ## CS:
+
 - [Josh Rendek](http://joshrendek.com/)
 - [SmSpillaz](http://smspillaz.wordpress.com/)
 - [Solarian Programmer](http://solarianprogrammer.com/)
@@ -81,11 +82,10 @@ http://www.wdong.org/wordpress/
 - [BingoTree](http://bingotree.cn/)
 
 ## Material Science
+
 - [Ralf Hielscher](http://www-user.tu-chemnitz.de/~rahi/pubs.php?druck)
 
-
-
-## C++ 
+## C++
 
 - [Michael Wong](https://wongmichael.com/)
 
@@ -98,5 +98,6 @@ http://www.wdong.org/wordpress/
 ## Misc
 
 http://eric-yuan.me/
+
 - [月光](http://www.williamlong.info/blog/)
 - [独步清风](http://dbqf.xyz)

@@ -1,7 +1,7 @@
 ---
 title: Tips on Empower
-created: 2025-03-10 23:49:49
-date: 2026-04-09 10:34:50.576286
+created: '2025-03-10T23:49:49-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: tips-on-empower
@@ -15,6 +15,7 @@ tags:
   - WealthFront
   - Monarch Money
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## App-specific Password
@@ -32,4 +33,3 @@ tags:
 - [Mint Successors](https://docs.google.com/spreadsheets/d/1jBWg9ukqr-Ne35BUTzjvanCgy5pKScwUdf65Ov7azSc/edit?gid=265012713#gid=265012713&fvid=1015579541)
 
 - [6 Best Net Worth Calculators in 2026 (#1 is Free)](https://robberger.com/net-worth-calcs/)
-

@@ -1,7 +1,7 @@
 ---
-title: "Tips on Transformer in NLP"
-created: 2020-01-13 14:17:48
-date: 2020-01-13 14:17:48
+title: Tips on Transformer in NLP
+created: '2020-01-13T14:17:48-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: tips-on-transformer-in-nlp
@@ -22,4 +22,3 @@ https://blog.floydhub.com/the-transformer-in-pytorch/
 http://jalammar.github.io/illustrated-transformer/
 
 https://towardsdatascience.com/transformers-141e32e69591
-

@@ -1,19 +1,20 @@
 ---
 title: Git Errors and Solutions
-created: 2016-11-14 14:02:46
-date: 2026-04-05 19:42:38.138446
+created: '2016-11-14T14:02:46-08:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
-- bendu
+  - bendu
 label: git-errors-and-solutions
 license: CC-BY-4.0
 tags:
-- programming
-- Git
-- version control
-- error
-- solutions
-- issues
+  - programming
+  - Git
+  - version control
+  - error
+  - solutions
+  - issues
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## `git clone` throws the error message "fatal: unable to fork"
@@ -22,7 +23,9 @@ The reason is due to missing SSH.
 
 The solution is simply to install `openssh-client`.
 
-    sudo apt-get install openssh
+```
+sudo apt-get install openssh
+```
 
 ## `git pull` throw the error message "fatal: early EOF fatal: index-pack failed"
 
@@ -30,25 +33,29 @@ There are a few possible reasons that caused this error.
 
 1. Compression runs out of memory.
 
-2. Poor network connection.
+1. Poor network connection.
 
 Below are some possible solutions to this issue.
 
 1. turn off compression.
 
-        git config --global core.compression 0
+   ```
+    git config --global core.compression 0
+   ```
 
-2. Try with a better network connection.
+1. Try with a better network connection.
 
-3. Do a shallow clone.
+1. Do a shallow clone.
 
-        git clone --depth 1 repos_url
+   ```
+    git clone --depth 1 repos_url
+   ```
 
-    The command trieves the latest commit.
+   The command trieves the latest commit.
 
-4. Repack remote.
+1. Repack remote.
 
-5. Use Git submodules.
+1. Use Git submodules.
 
 ## Force push lead to "bad object" message from git rev-list
 

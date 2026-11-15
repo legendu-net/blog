@@ -1,19 +1,19 @@
 ---
 title: Application Tracking Using OpenCats
-created: 2018-05-22 15:16:47
-date: 2026-04-05 19:42:38.002413
+created: '2018-05-22T15:16:47-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
-- bendu
+  - bendu
 label: application-tracking-using-opencats
 license: CC-BY-4.0
 tags:
-- software
-- OpenCats
-- tips
-- applicant tracking system
+  - software
+  - OpenCats
+  - tips
+  - applicant tracking system
 ---
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 OpenCats looks like a great applicant tracking system!
 

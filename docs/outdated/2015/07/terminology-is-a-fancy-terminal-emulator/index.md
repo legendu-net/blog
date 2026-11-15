@@ -1,7 +1,7 @@
 ---
 title: Terminology Is a Fancy Terminal Emulator
 created: '2015-07-22T14:10:31-07:00'
-date: '2026-08-11T22:19:34-07:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: terminology-is-a-fancy-terminal-emulator
@@ -17,12 +17,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 Hyper is a better alternative than Terminology.
 

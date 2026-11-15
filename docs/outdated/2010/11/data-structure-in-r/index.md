@@ -1,7 +1,7 @@
 ---
 title: Data Structure in R
 created: '2010-11-09T18:57:36-08:00'
-date: '2026-11-15T09:26:33-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: data-structure-in-r
@@ -18,12 +18,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 ## Vector, Matrix and Array
 

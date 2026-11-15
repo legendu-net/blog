@@ -1,7 +1,7 @@
 ---
-title: "Parameterized SQL"
-created: 2018-09-15 13:24:42
-date: 2018-09-15 13:24:42
+title: Parameterized SQL
+created: '2018-09-15T13:24:42-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: parameterized-sql

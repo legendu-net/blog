@@ -1,7 +1,7 @@
 ---
 title: Filesystem in R
 created: '2010-11-06T21:25:28-07:00'
-date: '2026-11-15T09:26:39-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: filesystem-in-r
@@ -15,12 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. `dirname` returns the parent folder of a file or directory,
    and `basename` return the name (without the parent folder) of the file or directory.

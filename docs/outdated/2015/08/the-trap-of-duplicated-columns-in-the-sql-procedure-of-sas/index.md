@@ -1,31 +1,25 @@
 ---
 title: The Trap of Duplicated Columns in the SQL Procedure of SAS
-created: 2015-08-28 13:02:17
-date: 2026-04-05 19:42:39.212129
+created: '2015-08-28T13:02:17-07:00'
+date: '2026-11-15T12:20:43-08:00'
 authors:
-- bendu
+  - bendu
 label: the-trap-of-duplicated-columns-in-the-sql-procedure-of-sas
 license: CC-BY-4.0
 tags:
-- programming
-- SAS
-- SQL
+  - programming
+  - SAS
+  - SQL
 ---
+
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
-Please look for better alternatives.
-**
-
 
 If 2 columns with the same names are selected from 2 tables when joining them,
 the first selected column is kept and the other one is dropped.
 If you don't like this behavior, you can rename and drop columns.
 
 This potentially invite some very dangerous errors!!! you know that in sas sql cannot update using join,
-so you might want to join to get the create .... when there are many columns, people just use *, the order matters!!!
+so you might want to join to get the create .... when there are many columns, people just use \*, the order matters!!!
 you must be very carefule !!!!
 
 ```SAS
@@ -142,6 +136,7 @@ proc sql;
 	;
 quit;
 ```
+
 ## same column appear twice
 
 ```SAS
@@ -163,4 +158,5 @@ proc sql;
 	;
 run;
 ```
+
 this actually works in sas ... there will be 2 columns with the same name

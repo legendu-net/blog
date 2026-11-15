@@ -1,7 +1,7 @@
 ---
 title: Account Management in Linux
 created: '2017-06-22T13:30:05-07:00'
-date: '2026-11-15T09:16:32-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: account-management-in-linux
@@ -15,12 +15,6 @@ tags:
   - gpasswd
   - getent
 ---
-
-\*\*
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-\*\*
 
 ## Create a User
 

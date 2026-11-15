@@ -1,7 +1,7 @@
 ---
 title: Benchmark a Rust App
-created: 2021-10-26 22:38:20
-date: 2026-04-15 19:27:00.855471
+created: '2021-10-26T22:38:20-07:00'
+date: '2026-11-15T12:20:38-08:00'
 authors:
   - bendu
 label: benchmark-a-rust-app
@@ -21,8 +21,8 @@ tags:
 
 ## Tips and Traps
 
-1. Rust's built-in benchmark feature has been unstable (on nightly channel only) for many years 
-    and will likely be deprecated.
+1. Rust's built-in benchmark feature has been unstable (on nightly channel only) for many years
+   and will likely be deprecated.
 
 ## Comparison of Popular Benchmark Tools for Rust
 
@@ -30,17 +30,18 @@ tags:
    was the most popular choice for benchmarking code.
 
 1. [divan](https://github.com/nvzqz/divan)
-    is a newer modern alternative to criterion with many more features.
+   is a newer modern alternative to criterion with many more features.
 
 1. [Gungraun](https://github.com/gungraun/gungraun)
-    is another rising tool for benching Rust code.
-    It leverages Valgrind's profiling tools like Callgrind, Cachegrind and DHAT
-    to provide extremely accurate and consistent measurements of Rust code,
-    making it perfectly suited to run in environments like a CI.
+   is another rising tool for benching Rust code.
+   It leverages Valgrind's profiling tools like Callgrind, Cachegrind and DHAT
+   to provide extremely accurate and consistent measurements of Rust code,
+   making it perfectly suited to run in environments like a CI.
 
 ```{list-table} Rust Benchmarking Tool Comparison
-:header-rows: 1
-
+---
+header-rows: 1
+---
 * - Feature
   - [Criterion](https://crates.io/crates/criterion)
   - [Divan](https://github.com/nvzqz/divan)
@@ -75,7 +76,6 @@ tags:
   - Linux/macOS only
 ```
 
-[^criterion_perf_events]: Not recommended: Linux only; requires sudo access to set the kernel parameter kernel.perf_event_paranoid.
 ## [Criterion](https://crates.io/crates/criterion)
 
 1. With Rust stable,
@@ -163,3 +163,5 @@ Vec::clear / ArrayVec::clear: 2
 - [Useful tip for benchmarking/testing optional Cargo features](https://users.rust-lang.org/t/useful-tip-for-benchmarking-testing-optional-cargo-features/60365)
 
 - https://github.com/madsmtm/objc2/blob/master/objc2/benches/autorelease.rs
+
+[^criterion_perf_events]: Not recommended: Linux only; requires sudo access to set the kernel parameter kernel.perf_event_paranoid.

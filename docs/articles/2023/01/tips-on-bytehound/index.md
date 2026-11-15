@@ -1,7 +1,7 @@
 ---
 title: Tips on Bytehound
-created: 2023-01-08 21:33:57
-date: 2026-04-13 23:14:12.800593
+created: '2023-01-08T21:33:57-08:00'
+date: '2026-11-15T12:20:32-08:00'
 authors:
   - bendu
 label: tips-on-bytehound
@@ -61,7 +61,7 @@ LD_PRELOAD=~/.local/lib/libbytehound.so ../../target/release-debug/ofcp_test pla
 Start a web server to visualize the memory profiling data.
 
 ```bash
-bytehound server --port 9090 -i 0.0.0.0 memory-profiling_*.dat 
+bytehound server --port 9090 -i 0.0.0.0 memory-profiling_*.dat
 ```
 
 ## References

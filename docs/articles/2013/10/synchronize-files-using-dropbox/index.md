@@ -1,33 +1,34 @@
 ---
 title: Synchronize Files Using Dropbox
-created: 2013-10-22 13:36:17
-date: 2026-04-05 19:42:37.188584
+created: '2013-10-22T13:36:17-07:00'
+date: '2026-11-15T12:20:31-08:00'
 authors:
-- bendu
+  - bendu
 label: synchronize-files-using-dropbox
 license: CC-BY-4.0
 tags:
-- tips
-- Dropbox
-- synchronizaion
-- backup
-- cloud
-- sync
+  - tips
+  - Dropbox
+  - synchronizaion
+  - backup
+  - cloud
+  - sync
 ---
+
 1. Dropbox won't sync files that you don't have read permissions.
 
-2. You'd better not merge an old Dropbox folder while installing/configuring Dropbox.
+1. You'd better not merge an old Dropbox folder while installing/configuring Dropbox.
 
-3. You'd better not store symbolic links in the Dropbox folder,
-    because the symbolic links will be replaced by the real files/folders 
-    when synchronized to other computers.
+1. You'd better not store symbolic links in the Dropbox folder,
+   because the symbolic links will be replaced by the real files/folders
+   when synchronized to other computers.
 
-4. It is not a good idea to put a Git repository into Dropbox.
-    First, 
-    a Git repository usually contains lots of small files 
-    which downgrades the performance of Dropbox.
-    Second, 
-    it is better to push a Git repository to GitHub, GitLab, etc.
+1. It is not a good idea to put a Git repository into Dropbox.
+   First,
+   a Git repository usually contains lots of small files
+   which downgrades the performance of Dropbox.
+   Second,
+   it is better to push a Git repository to GitHub, GitLab, etc.
 
 ## References
 

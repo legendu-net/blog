@@ -1,7 +1,7 @@
 ---
 title: Run Unix/Linux Commands in SAS
 created: '2015-05-17T16:36:48-07:00'
-date: '2026-11-15T09:27:46-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: run-unix-linux-commands-in-sas
@@ -15,12 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 SAS can run Unix/Linux commands everywhere using
 

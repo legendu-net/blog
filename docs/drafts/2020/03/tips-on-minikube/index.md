@@ -1,7 +1,7 @@
 ---
 title: Tips on Minikube
-created: 2020-03-10 09:39:25
-date: 2026-04-15 19:27:01.059074
+created: '2020-03-10T09:39:25-07:00'
+date: '2026-11-15T12:20:37-08:00'
 authors:
   - bendu
 label: tips-on-minikube
@@ -27,25 +27,25 @@ Microk8s is a more lightweight solution than Minikube
 1. Start minikube.
 
    ```bash
-    minikube start --vm-driver=hyperkit
+   minikube start --vm-driver=hyperkit
    ```
 
 1. Check status of minikube.
 
    ```bash
-    minikube status
+   minikube status
    ```
 
 1. Launch minikube dashboard.
 
    ```bash
-    minikube dashboard
+   minikube dashboard
    ```
 
 1. Show minikube IP.
 
    ```bash
-    minikube ip
+   minikube ip
    ```
 
 ## References

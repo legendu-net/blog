@@ -1,7 +1,7 @@
 ---
-title: "Tips on Docker Compose"
-created: 2018-04-16 09:18:10
-date: 2021-02-16 09:18:10
+title: Tips on Docker Compose
+created: '2018-04-16T09:18:10-07:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
   - bendu
 label: tips-on-docker-compose
@@ -14,18 +14,21 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
 ## Installation
 
 `docker-compose` can be installed using the following command on Ubuntu.
 
-    :::bash
-    sudo apt install docker-compose
+```
+:::bash
+sudo apt install docker-compose
+```
 
 And docker -compose can be installed using brew on macOS.
 
-    :::bash
-    brew install docker-compose
+```
+:::bash
+brew install docker-compose
+```
 
 ## Examples
 
@@ -52,7 +55,7 @@ which is a big limitation of Docker-Compose.
 
 https://github.com/docker/compose/issues/4081
 
-## Nvidia GPU Support 
+## Nvidia GPU Support
 
 [Enabling GPU access with Compose](https://docs.docker.com/compose/gpu-support/)
 

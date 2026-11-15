@@ -1,7 +1,7 @@
 ---
-title: "Popular Functions in IML"
-created: 2015-01-02 18:09:00
-date: 2015-03-02 18:09:00
+title: Popular Functions in IML
+created: '2015-01-02T18:09:00-08:00'
+date: '2026-11-15T12:20:42-08:00'
 authors:
   - bendu
 label: popular-functions-in-iml
@@ -15,13 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
-Please look for better alternatives.
-**
-
 
 `dif`: lagged difference, keep missing values, may or may not what you want,
 can use negative lag,
@@ -45,19 +38,18 @@ rowvec
 
 `shape`
 SHAPE Function
-SHAPE (matrix, nrow <, ncol> <, pad-value> ) ;
+SHAPE (matrix, nrow \<, ncol> \<, pad-value> ) ;
 The SHAPE function reshapes and repeats values in a matrix.
 
 `choose`, kind of like `ifelse` in R
 
-`cuSum` 
+`cuSum`
 
-`cuProd` 
+`cuProd`
 
 `diag`
 
-
-`sample` (x <, n> <, method> <, prob> ) ;
+`sample` (x \<, n> \<, method> \<, prob> ) ;
 
 `ssq`
 
@@ -68,7 +60,6 @@ The SHAPE function reshapes and repeats values in a matrix.
 `concat` like paste in R
 
 `change` like replace
-
 
 `qntl` Call for sample quantile
 
@@ -85,16 +76,16 @@ The SHAPE function reshapes and repeats values in a matrix.
 `mod`
 
 EXPANDGRID Function
-EXPANDGRID (x1, x2 <, x3> …<, x15>) ;
+EXPANDGRID (x1, x2 \<, x3> …\<, x15>) ;
 The EXPANDGRID function is part of the IMLMLIB library. The arguments to the EXPANDGRID function are $k$ vectors, $2 \leq k \leq 15$. The EXPANDGRID function returns a matrix that contains the Cartesian product of elements from the specified vectors. If the $i$th argument has $n_ i$ elements, the return matrix has $\Pi _{i\leq k}n_ i$ rows and $k$ columns.
 
 ROWVEC Function
 ROWVEC (matrix) ;
 
 SHAPECOL Function
-SHAPECOL (matrix, nrow <, ncol> <, pad-value> ) ;
+SHAPECOL (matrix, nrow \<, ncol> \<, pad-value> ) ;
 The SHAPECOL function reshapes and repeats values in a matrix. It is similar to the SHAPE function except that the SHAPECOL function produces the result matrix by traversing the argument matrix in column-major order.
+
 ## String
 
 strip works both in the data step and the iml procedure
-

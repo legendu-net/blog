@@ -1,24 +1,25 @@
 ---
 title: Convert a Socks Proxy to a HTTP Proxy
-created: 2018-09-08 18:57:48
-date: 2026-04-05 19:42:37.403974
+created: '2018-09-08T18:57:48-07:00'
+date: '2026-11-15T12:20:32-08:00'
 authors:
-- bendu
+  - bendu
 label: convert-a-socks-proxy-to-a-http-proxy
 license: CC-BY-4.0
 tags:
-- network
-- socks proxy
-- http proxy
-- polipo
+  - network
+  - socks proxy
+  - http proxy
+  - polipo
 ---
-There are multiple tools available 
-to convert a Socks proxy to a HTTP/HTTPS proxy. 
-The work by convertting HTTP requests into socks requests 
-and send them to the socks proxy. 
-Be aware that this might not be necessary 
-as many tools accepting HTTP/HTTPS proxies 
-also accept socks proxies. 
+
+There are multiple tools available
+to convert a Socks proxy to a HTTP/HTTPS proxy.
+The work by convertting HTTP requests into socks requests
+and send them to the socks proxy.
+Be aware that this might not be necessary
+as many tools accepting HTTP/HTTPS proxies
+also accept socks proxies.
 In that case,
 you can direct your socks proxy
 (e.g., `socks5://localhost:1080`)
@@ -31,28 +32,36 @@ read the below.
 
 1. Install Polipo.
 
-        :::bash
-        apt search polipo
+   ```
+    :::bash
+    apt search polipo
+   ```
 
-2. Create a HTTP proxy listening on 8123
-    (assuming you have a Socks proxy `localhost:1080`). 
+1. Create a HTTP proxy listening on 8123
+   (assuming you have a Socks proxy `localhost:1080`).
 
-        :::bash
-        polipo socksParentProxy=localhost:1080
+   ```
+    :::bash
+    polipo socksParentProxy=localhost:1080
+   ```
 
 ## [http-proxy-to-socks](https://www.npmjs.com/package/http-proxy-to-socks)
 
 1. Install http-proxy-to-socks.
 
-        :::bash
-        npm install -g http-proxy-to-socks
+   ```
+    :::bash
+    npm install -g http-proxy-to-socks
+   ```
 
-2.  Create a HTTP proxy listening on 8080
-    (assuming you have a Socks proxy `localhost:1080`).
-    Please make sure your socks service is available at the corresponding port.
+1. Create a HTTP proxy listening on 8080
+   (assuming you have a Socks proxy `localhost:1080`).
+   Please make sure your socks service is available at the corresponding port.
 
-        :::bash
-        hpts -s 127.0.0.1:1080 -p 8080
+   ```
+   :::bash
+   hpts -s 127.0.0.1:1080 -p 8080
+   ```
 
 ## References
 

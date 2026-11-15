@@ -1,7 +1,7 @@
 ---
 title: Macro in SAS
 created: '2009-11-28T16:43:05-08:00'
-date: '2026-11-15T09:31:20-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: macro-in-sas
@@ -15,12 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 [Here](https://bitbucket.org/dclong/sas_learn/src/) are some examples for SAS macro.
 

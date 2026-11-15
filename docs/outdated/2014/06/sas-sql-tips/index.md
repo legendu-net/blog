@@ -1,7 +1,7 @@
 ---
 title: SAS SQL Tips
 created: '2014-06-28T12:58:18-07:00'
-date: '2026-11-15T09:28:35-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: sas-sql-tips
@@ -14,12 +14,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. A const column does not work if no row is selected.
    This becomes trickier if you use `count(*)` in your query.

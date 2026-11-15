@@ -1,7 +1,7 @@
 ---
-title: "Functional Keys on Computers"
-created: 2017-03-04 12:45:01
-date: 2017-03-04 12:45:01
+title: Functional Keys on Computers
+created: '2017-03-04T12:45:01-08:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
   - bendu
 label: functional-keys-on-computers

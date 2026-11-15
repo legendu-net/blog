@@ -1,7 +1,7 @@
 ---
-title: "Tips for Rainy Winter"
-created: 2024-06-16 21:49:37
-date: 2024-06-19 09:23:23
+title: Tips for Rainy Winter
+created: '2024-06-16T21:49:37-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: tips-for-rainy-winter
@@ -22,4 +22,3 @@ tags:
 - [Fall and winter lighting tips for better health and mood](https://healthlighting.com/blogs/wellness/fall-winter-healthy-lighting-tips)
 
 - [WARM VS COOL LIGHTING: WHAT SHOULD YOU USE IN YOUR HOME?](https://www.natalebuilders.com/blog/warm-vs-cool-lighting-what-should-you-use-in-your-home)
-

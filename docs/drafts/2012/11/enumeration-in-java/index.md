@@ -1,7 +1,7 @@
 ---
-title: "Enumeration in Java"
-created: 2012-11-13 22:19:38
-date: 2016-07-13 22:19:38
+title: Enumeration in Java
+created: '2012-11-13T22:19:38-08:00'
+date: '2026-11-15T12:20:32-08:00'
 authors:
   - bendu
 label: enumeration-in-java

@@ -1,7 +1,7 @@
 ---
 title: Yarn for Spark
-created: 2021-11-29 12:32:33
-date: 2026-04-15 19:27:00.849940
+created: '2021-11-29T12:32:33-08:00'
+date: '2026-11-15T12:20:38-08:00'
 authors:
   - bendu
 label: yarn-for-spark
@@ -19,23 +19,23 @@ tags:
 1. List all Spark applications.
 
    ```bash
-    yarn application --list
+   yarn application --list
    ```
 
 1. Show status of a Spark application.
 
    ```bash
-    yarn application -status application_1459542433815_0002
+   yarn application -status application_1459542433815_0002
    ```
 
 1. view logs of a Spark application.
 
    ```bash
-    yarn logs -applicationId application_1459542433815_0002
+   yarn logs -applicationId application_1459542433815_0002
    ```
 
 1. kill a Spark application.
 
    ```bash
-    yarn application -kill application_1459542433815_0002
+   yarn application -kill application_1459542433815_0002
    ```

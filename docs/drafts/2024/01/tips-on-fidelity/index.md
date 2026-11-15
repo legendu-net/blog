@@ -1,7 +1,7 @@
 ---
-title: "Tips on Fidelity"
-created: 2024-01-16 07:37:45
-date: 2024-01-22 23:28:37
+title: Tips on Fidelity
+created: '2024-01-16T07:37:45-08:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: tips-on-fidelity
@@ -20,16 +20,16 @@ tags:
 ## Cash Sweep Program
 
 1. Fidelity has cash sweep programs,
-    which is supported by the concept of "core position".
-    Core position is the default investment that uninvested money will be automatically moved to.
+   which is supported by the concept of "core position".
+   Core position is the default investment that uninvested money will be automatically moved to.
 
-2. The default "core position" is FDRXX.
-    You can change your core position 
-    by clicking on it under your positions tab. 
-    It will then give you the option to change it.
-    You can find FDIC insured rates at
-    [Fidelity® Cash Management Account](https://digital.fidelity.com/prgw/digital/fdic-interest-rate/fcma)
-    .
+1. The default "core position" is FDRXX.
+   You can change your core position
+   by clicking on it under your positions tab.
+   It will then give you the option to change it.
+   You can find FDIC insured rates at
+   [Fidelity® Cash Management Account](https://digital.fidelity.com/prgw/digital/fdic-interest-rate/fcma)
+   .
 
 ## References
 
@@ -38,4 +38,3 @@ tags:
 - [What is a core position?](https://www.fidelity.com/bin-public/060_www_fidelity_com/documents/mutual-funds/what-is-a-core-position.pdf)
 
 - [SPAXX vs. FZFXX, FDIC, FCASH, FDRXX – Fidelity Core Position](https://www.optimizedportfolio.com/fidelity-core-position/)
-

@@ -1,7 +1,7 @@
 ---
-title: "Tips on Word2Vec"
-created: 2020-01-08 12:06:32
-date: 2020-01-08 12:06:32
+title: Tips on Word2Vec
+created: '2020-01-08T12:06:32-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: tips-on-word2vec
@@ -17,8 +17,6 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
-
 ## Word2Vec
 
 https://code.google.com/archive/p/word2vec/
@@ -28,11 +26,10 @@ https://code.google.com/archive/p/word2vec/
 ### Negative Sampling
 
 [Google Word2Vec](https://code.google.com/archive/p/word2vec/)
-claims that 
-hierarchical softmax is better for infrequent words 
-while negative sampling is better for frequent words 
+claims that
+hierarchical softmax is better for infrequent words
+while negative sampling is better for frequent words
 and better with low dimensional vectors.
-
 
 http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/
 

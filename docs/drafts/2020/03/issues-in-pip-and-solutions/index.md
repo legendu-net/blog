@@ -1,7 +1,7 @@
 ---
 title: Issues in pip and Solutions
-created: 2020-03-09 16:37:34
-date: 2026-04-13 23:15:24.977964
+created: '2020-03-09T16:37:34-07:00'
+date: '2026-11-15T12:20:37-08:00'
 authors:
   - bendu
 label: issues-in-pip-and-solutions
@@ -25,19 +25,19 @@ and then upgrading `cryptography` to version 2.8.
 1. Find the location of the Python package cryptography.
 
    ```bash
-    pip3 show cryptograph
+   pip3 show cryptograph
    ```
 
 1. Remove the whole package directory.
 
    ```bash
-    sudo rm -rf /path/to/cryptograph
+   sudo rm -rf /path/to/cryptograph
    ```
 
 1. Reinstall the latest version of `cryptograph`.
 
    ```bash
-    pip3 install cryptograph
+   pip3 install cryptograph
    ```
 
 https://github.com/pypa/pip/issues/7254

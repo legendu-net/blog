@@ -1,7 +1,7 @@
 ---
 title: Transfer GitHub Issues
 created: '2026-06-03T08:07:33.866252-07:00'
-date: '2026-06-03T08:07:33.866261-07:00'
+date: '2026-11-15T12:20:41-08:00'
 authors:
   - bendu
 label: transfer-github-issues
@@ -25,12 +25,12 @@ There are a few ways to circumstance the limitation.
 
 1. You write you own command-line application to read an issue and open a new one in another repository.
 
-2. You can create intermediate GitHub repository.
-  Let's says that you want transfer issues from a private repository `entity1/repo1`
-  to a public repository `entity2/repo2`.
-  - Create a private repository `entity1/repo3`.
-  - Transfer issues from `entity1/repo1` to `entity1/repo3`.
-  - Transfer ownership of `entity1/repo3` to `entity2`, that it transfer it to `entity2/repo3`.
-  - Make `entity2/repo3` public.
-  - Transfer issues from the public repository `entity2/repo3` to the public repository `entity2/repo2`.
+1. You can create intermediate GitHub repository.
+   Let's says that you want transfer issues from a private repository `entity1/repo1`
+   to a public repository `entity2/repo2`.
 
+- Create a private repository `entity1/repo3`.
+- Transfer issues from `entity1/repo1` to `entity1/repo3`.
+- Transfer ownership of `entity1/repo3` to `entity2`, that it transfer it to `entity2/repo3`.
+- Make `entity2/repo3` public.
+- Transfer issues from the public repository `entity2/repo3` to the public repository `entity2/repo2`.

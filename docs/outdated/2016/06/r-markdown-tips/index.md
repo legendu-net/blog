@@ -1,7 +1,7 @@
 ---
 title: R Markdown Tips
 created: '2016-06-09T17:52:05-07:00'
-date: '2026-11-15T09:28:22-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: r-markdown-tips
@@ -15,12 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 [RMarkdown Reference](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
 

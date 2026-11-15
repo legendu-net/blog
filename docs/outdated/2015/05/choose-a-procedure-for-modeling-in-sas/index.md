@@ -1,7 +1,7 @@
 ---
 title: Choose a Procedure for Modeling in SAS
 created: '2015-05-10T21:12:54-07:00'
-date: '2026-11-15T09:27:43-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: choose-a-procedure-for-modeling-in-sas
@@ -14,12 +14,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. `proc glm` has many advantages over `proc reg` and `proc anova`.
    For example,

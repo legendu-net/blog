@@ -1,7 +1,7 @@
 ---
-title: "Tips for Gardening"
-created: 2023-10-11 10:06:31
-date: 2023-10-11 10:06:31
+title: Tips for Gardening
+created: '2023-10-11T10:06:31-07:00'
+date: '2026-11-15T12:20:39-08:00'
 authors:
   - bendu
 label: tips-for-gardening

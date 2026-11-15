@@ -1,7 +1,7 @@
 ---
 title: R Configuration
 created: '2016-06-11T17:53:43-07:00'
-date: '2026-11-15T09:28:19-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: r-configuration
@@ -15,12 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. You can customize R libraries to use
    by putting a line `R_LIBS="path_to_library"` in the `.Renviron` file.

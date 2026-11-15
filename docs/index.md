@@ -23,8 +23,8 @@ and like the phoenix rise above its own ashes.
 
 ## Recent blog posts
 
-:::{include} ./recent_posts.md
-:::
+```{include} ./recent_posts.md
+```
 
 ## About Chuanlong Ben Du
 

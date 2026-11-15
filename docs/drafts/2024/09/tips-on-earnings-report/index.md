@@ -1,7 +1,7 @@
 ---
-title: "Tips on Earnings Report"
-created: 2024-09-14 13:14:40
-date: 2024-09-14 15:40:46
+title: Tips on Earnings Report
+created: '2024-09-14T13:14:40-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: tips-on-earnings-report
@@ -16,4 +16,3 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 - [Alphabet Investor Relations](https://abc.xyz/investor/)
-

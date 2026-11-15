@@ -1,7 +1,7 @@
 ---
-title: "Use Kotlin in a Scala Project"
-created: 2019-11-27 09:25:16
-date: 2019-11-27 09:25:16
+title: Use Kotlin in a Scala Project
+created: '2019-11-27T09:25:16-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: use-kotlin-in-a-scala-project
@@ -17,10 +17,10 @@ tags:
 
 1. Methods of a Kotlin object can be called in a Scala project by `KotlinObject.INSTANCE.methodToCall()`
 
-2. You might need to provide the Kotlin standard library `kotlin-stdlib.jar`
-    in order to run the compiled JAR. 
-    One way to avoid this is to compile a fat/uber JAR 
-    that contains all dependencies (including `kotlin-stdlib.jar`).
+1. You might need to provide the Kotlin standard library `kotlin-stdlib.jar`
+   in order to run the compiled JAR.
+   One way to avoid this is to compile a fat/uber JAR
+   that contains all dependencies (including `kotlin-stdlib.jar`).
 
 ##. Use Kotlin in Spark/Scala
 

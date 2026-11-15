@@ -1,69 +1,75 @@
 ---
 title: Tips on Oracle SQL
-created: 2014-02-22 14:58:36
-date: 2026-04-05 19:42:38.284668
+created: '2014-02-22T14:58:36-08:00'
+date: '2026-11-15T12:20:33-08:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-oracle-sql
 license: CC-BY-4.0
 tags:
-- programming
-- Oracle SQL
-- tips
+  - programming
+  - Oracle SQL
+  - tips
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
- 
 
-0. Unlike Teradata SQL, 
-    a `select` statement in Oracle must have the `from` keyword. 
-    The `dual` table can be used if you do not really want to select from a table.
+0. Unlike Teradata SQL,
+   a `select` statement in Oracle must have the `from` keyword.
+   The `dual` table can be used if you do not really want to select from a table.
 
-        :::sql
-        select 'example' from dual
+   ```
+    :::sql
+    select 'example' from dual
+   ```
 
 1. insert multiple records/tuples into a table/tables
 
-        :::sql
-        insert all
-        into t1(f1, f2) values (v1, v2)
-        into t1(f1, f2) values (v3, v4)
-        into t2(n1, n2) values (w1, w2)
-        select * from t1;
+   ```
+    :::sql
+    insert all
+    into t1(f1, f2) values (v1, v2)
+    into t1(f1, f2) values (v3, v4)
+    into t2(n1, n2) values (w1, w2)
+    select * from t1;
+   ```
 
-    Note that you must issue a `select` clause at the end.
-    Fields declaration can be omitted. 
+   Note that you must issue a `select` clause at the end.
+   Fields declaration can be omitted.
 
-2. Show user tables
+1. Show user tables
 
-    ::sql
-    select * FROM user_tables;
+   ::sql
+   select * FROM user_tables;
 
-3. rownum vs rownumber() over() 
+1. rownum vs rownumber() over()
 
-3. how to drop if exists?
+1. how to drop if exists?
 
-4. it's strange that I cannot insert multiple records into an empty table!
-    be careful! you previous conclusion about fields might be wrong!
+1. it's strange that I cannot insert multiple records into an empty table!
+   be careful! you previous conclusion about fields might be wrong!
 
 ## Data Type
 
-1. `varchar` is reserved by Oracle to support distinction 
-    between NULL and empty string in future, 
-    as ANSI standard prescribes.
-    `varchar2` does not distinguish between a NULL and empty string, 
-    and never will.
-    If you rely on empty string and NULL being the same thing, 
-    you should use `varchar2`.
+1. `varchar` is reserved by Oracle to support distinction
+   between NULL and empty string in future,
+   as ANSI standard prescribes.
+   `varchar2` does not distinguish between a NULL and empty string,
+   and never will.
+   If you rely on empty string and NULL being the same thing,
+   you should use `varchar2`.
 
 ## Regular Expression
 
-    :::sql
-    select
-        regexp_substr('Programming', '(\w).*?\1', 1, 1, 'i')
-    from
-        dual
-    ;
+```
+:::sql
+select
+    regexp_substr('Programming', '(\w).*?\1', 1, 1, 'i')
+from
+    dual
+;
+```
 
 ## Trick and Traps
 
-it seems that {} in /* ... */ causes issues ...
+it seems that {} in /\* ... \*/ causes issues ...

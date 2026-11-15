@@ -1,7 +1,7 @@
 ---
-title: "LightGBM on GPU"
-created: 2020-02-04 20:49:35
-date: 2021-09-16 09:54:29
+title: LightGBM on GPU
+created: '2020-02-04T20:49:35-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: lightgbm-on-gpu
@@ -15,7 +15,6 @@ tags:
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-
 
 https://pypi.org/project/lightgbm/#build-gpu-version
 

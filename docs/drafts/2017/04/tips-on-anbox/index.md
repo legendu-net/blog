@@ -1,40 +1,40 @@
 ---
 title: Tips on AnBox
-created: 2017-04-12 23:41:58
-date: 2026-04-05 19:42:38.094328
+created: '2017-04-12T23:41:58-07:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-anbox
 license: CC-BY-4.0
 tags:
-- software
-- AnBox
-- Android
-- Linux
-- emulator
-- emulation
-- tips
+  - software
+  - AnBox
+  - Android
+  - Linux
+  - emulator
+  - emulation
+  - tips
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
 1. AnBox CANNOT be run on macOS.
-    
-2. There was a limited support of ARM-only app on x86-based Linux OS.
-    However,
-    Android 11+ images are capable of running ARM apps on x86-based machines. 
-    This means that AnBox is capable of running ARM apps now
-    with Android 11+ images. 
-    For more details,
-    please refer to
-    [Run ARM apps on the Android Emulator](https://android-developers.googleblog.com/2020/03/run-arm-apps-on-android-emulator.html)
-    .
+
+1. There was a limited support of ARM-only app on x86-based Linux OS.
+   However,
+   Android 11+ images are capable of running ARM apps on x86-based machines.
+   This means that AnBox is capable of running ARM apps now
+   with Android 11+ images.
+   For more details,
+   please refer to
+   [Run ARM apps on the Android Emulator](https://android-developers.googleblog.com/2020/03/run-arm-apps-on-android-emulator.html)
+   .
 
 ## Installation
 
 ```bash
-sudo snap install --classic anbox-installer 
-anbox-installer 
+sudo snap install --classic anbox-installer
+anbox-installer
 ```
 
 ## References

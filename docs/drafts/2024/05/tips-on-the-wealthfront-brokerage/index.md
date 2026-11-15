@@ -1,7 +1,7 @@
 ---
-title: "Tips on the WealthFront Brokerage"
-created: 2024-05-06 10:36:44
-date: 2026-01-08 00:32:07
+title: Tips on the WealthFront Brokerage
+created: '2024-05-06T10:36:44-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: tips-on-the-wealthfront-brokerage
@@ -18,9 +18,9 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 WealthFront is good for long-term investment.
-The stock account is not flexible. 
+The stock account is not flexible.
 It allow you to specify amount of money to investment in certain stocks only.
-However, 
+However,
 it does not allow you to set orders to trade stocks, ETFs, etc.
 
 ## References

@@ -1,7 +1,7 @@
 ---
 title: Stick Breaking Paradox
-created: 2014-08-23 17:11:45
-date: 2026-04-13 23:33:11.276757
+created: '2014-08-23T17:11:45-07:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: stick-breaking-paradox
@@ -16,9 +16,5 @@ tags:
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-\*\*
-Things on this page arefragmentary and immature notes/thoughts of the author.
-It is not meant to readersbut rather for convenient reference of the author and future improvement.
-\*\*
 
 5. dirichlet distribution, circle, unit, identical, mixing problem ...

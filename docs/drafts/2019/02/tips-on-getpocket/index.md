@@ -1,19 +1,19 @@
 ---
 title: Tips on GetPocket
-created: 2019-02-22 15:25:07
-date: 2026-04-05 19:42:37.910878
+created: '2019-02-22T15:25:07-08:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-getpocket
 license: CC-BY-4.0
 tags:
-- software
-- getpocket
-- pocket
-- tips
+  - software
+  - getpocket
+  - pocket
+  - tips
 ---
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://help.getpocket.com/article/883-using-the-save-to-pocket-extension-for-google-chrome
 

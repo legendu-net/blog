@@ -1,7 +1,7 @@
 ---
 title: Understand a Code Repository Using LLM Tools
-created: 2026-04-16 14:53:52.309642
-date: 2026-04-16 17:07:44.156090
+created: '2026-04-16T14:53:52.309642-07:00'
+date: '2026-11-15T12:20:41-08:00'
 authors:
   - bendu
 label: understand-a-code-repository-using-llm-tools
@@ -38,6 +38,6 @@ tags:
 - [karpathy/llm-wiki.md - a pattern for personal knowledge bases](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
 
 - [nashsu/llm_wiki](https://github.com/nashsu/llm_wiki)
-    is a cross-platform desktop application that turns your documents into an organized, interlinked knowledge base — automatically. 
-    Instead of traditional RAG (retrieve-and-answer from scratch every time), 
-    the LLM incrementally builds and maintains a persistent wiki from your sources。
+  is a cross-platform desktop application that turns your documents into an organized, interlinked knowledge base — automatically.
+  Instead of traditional RAG (retrieve-and-answer from scratch every time),
+  the LLM incrementally builds and maintains a persistent wiki from your sources。

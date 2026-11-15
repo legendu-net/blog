@@ -1,7 +1,7 @@
 ---
 title: Git Shell on Windows
-created: 2019-10-14 01:01:31
-date: 2026-04-13 23:28:04.416052
+created: '2019-10-14T01:01:31-07:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: git-shell-on-windows
@@ -16,11 +16,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things on this page are fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-\*\*
 
 It is suggested that you use Git in Windows Subsystem Linux (WSL)
 instead of Git Shell in Windows.

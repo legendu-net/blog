@@ -1,7 +1,7 @@
 ---
-title: "Volatile CTE and Subqueries in SQL"
-created: 2016-10-25 18:45:40
-date: 2020-10-25 18:45:40
+title: Volatile CTE and Subqueries in SQL
+created: '2016-10-25T18:45:40-07:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
   - bendu
 label: volatile-cte-and-subqueries-in-sql
@@ -19,17 +19,17 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. A volatile table persistents in the duration of the connection that creates it
-    while a CTE is only accessible by the query following it.
-    That is the scope of CTE is narrower and is safer.
+   while a CTE is only accessible by the query following it.
+   That is the scope of CTE is narrower and is safer.
 
 1. If performance is a concern, use volatile (temp) tables.
 
-2. Always use a CTE (with clause) instead of a sub query when applicable
-    as a CTE is more flexible (can be recursive),
-    is reusable,
-    and is more readable.
+1. Always use a CTE (with clause) instead of a sub query when applicable
+   as a CTE is more flexible (can be recursive),
+   is reusable,
+   and is more readable.
 
-3. A CTE can be recursive and is reusable.
+1. A CTE can be recursive and is reusable.
 
 ## References
 

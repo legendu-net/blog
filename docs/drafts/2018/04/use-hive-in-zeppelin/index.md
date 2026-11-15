@@ -1,7 +1,7 @@
 ---
-title: "Use Hive in Zeppelin"
-created: 2018-04-30 16:29:11
-date: 2018-04-30 16:29:11
+title: Use Hive in Zeppelin
+created: '2018-04-30T16:29:11-07:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
   - bendu
 label: use-hive-in-zeppelin
@@ -16,6 +16,7 @@ tags:
 
 It seems that you have set a queue using the following code
 even if you have already set a queue in properties.
+
 ```
 %hive-interpreter
 
@@ -27,15 +28,19 @@ set mapred.max.split.size = 268435456;
 ## Tricks & Traps
 
 1. When you write a query in Hive shell,
-    you should end it with a semicolon (`;`).
+   you should end it with a semicolon (`;`).
 
-        load data local inpath '/tmp/sql.txt' into table files;
+   ```
+    load data local inpath '/tmp/sql.txt' into table files;
+   ```
 
-    However,
-    you should never end a SQL statement with a semicolon (`;`) in Zeppelin.
+   However,
+   you should never end a SQL statement with a semicolon (`;`) in Zeppelin.
 
-        load data local inpath '/tmp/sql.txt' into table files
+   ```
+    load data local inpath '/tmp/sql.txt' into table files
+   ```
 
-    For this reason,
-    you cannot run multiple SQL statements in a cell in Zeppelin.
-    You should split different SQL statements into different cells.
+   For this reason,
+   you cannot run multiple SQL statements in a cell in Zeppelin.
+   You should split different SQL statements into different cells.

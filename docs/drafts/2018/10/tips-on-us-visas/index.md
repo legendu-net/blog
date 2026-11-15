@@ -1,24 +1,24 @@
 ---
 title: Tips on US Visas
-created: 2018-10-22 15:42:45
-date: 2026-04-05 19:42:37.976176
+created: '2018-10-22T15:42:45-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-us-visas
 license: CC-BY-4.0
 tags:
-- life
-- US
-- DS-160
-- visa
-- interview
-- B1
-- B2
-- travel
-- trip
+  - life
+  - US
+  - DS-160
+  - visa
+  - interview
+  - B1
+  - B2
+  - travel
+  - trip
 ---
-**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
+**Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 - [Most Recent I94](https://i94.cbp.dhs.gov/I94/#/recent-search)
 
@@ -41,4 +41,3 @@ tags:
 ## Useful Tools
 
 - [Make Passport Photo](https://makepassportphoto.com/)
-

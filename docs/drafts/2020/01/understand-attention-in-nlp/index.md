@@ -1,7 +1,7 @@
 ---
-title: "Understand Attention in NLP"
-created: 2020-01-08 15:27:58
-date: 2020-01-08 15:27:58
+title: Understand Attention in NLP
+created: '2020-01-08T15:27:58-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: understand-attention-in-nlp

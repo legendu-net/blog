@@ -1,7 +1,7 @@
 ---
-title: "Maven Dependencies"
-created: 2017-08-10 10:00:59
-date: 2020-05-10 10:00:59
+title: Maven Dependencies
+created: '2017-08-10T10:00:59-07:00'
+date: '2026-11-15T12:20:34-08:00'
 authors:
   - bendu
 label: maven-dependencies
@@ -90,6 +90,7 @@ tags:
 ```
 
 ### Apache Commons Math3
+
 ```
 <dependency>
     <groupId>org.apache.commons</groupId>
@@ -98,9 +99,10 @@ tags:
 </dependency>
 ```
 
-## Plugin 
+## Plugin
 
 ### scala-maven-plugin
+
 ```XML
 <plugin>
   <groupId>net.alchim31.maven</groupId>
@@ -139,7 +141,7 @@ tags:
 ```
 
 ### maven-shade-plugin
- 
+
 ```XML
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
@@ -194,14 +196,3 @@ tags:
     </configuration>
 </plugin>
 ```
-
-
-
-
-
-
-
-
-
-
-

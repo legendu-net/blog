@@ -1,7 +1,7 @@
 ---
 title: SAS Stored Process and SAS Visual Analytics
 created: '2013-07-13T22:11:25-07:00'
-date: '2026-11-15T09:35:00-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: sas-stored-process-and-sas-visual-analytics
@@ -15,12 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 ## SAS Stored Process
 

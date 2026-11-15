@@ -1,7 +1,7 @@
 ---
 title: Graphics in R
 created: '2012-11-11T18:28:16-08:00'
-date: '2026-11-15T09:31:06-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: graphics-in-r
@@ -17,12 +17,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 1. `par("din")` gets the dimension
    (i.e. width and height) of the graphics device.

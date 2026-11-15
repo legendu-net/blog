@@ -1,7 +1,7 @@
 ---
-title: "Linux Administrator Tools"
-created: 2019-01-17 11:24:31
-date: 2025-12-25 23:04:06
+title: Linux Administrator Tools
+created: '2019-01-17T11:24:31-08:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
   - bendu
 label: linux-administrator-tools
@@ -16,18 +16,17 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
 1. [BCC](https://github.com/iovisor/bcc)
-    is a toolkit for creating efficient kernel tracing and manipulation programs
-    leveraging extended Berkeley Packet Filters (eBPF).
+   is a toolkit for creating efficient kernel tracing and manipulation programs
+   leveraging extended Berkeley Packet Filters (eBPF).
 
 1. webmin, cloudmin, usermin
 
-2. id, adduser, gpasswd (recommended for adding/removing groups)
+1. id, adduser, gpasswd (recommended for adding/removing groups)
 
-3. RustNet, uptime, netstat, ifconfig, iotop (input and output monitoring), atop,
+1. RustNet, uptime, netstat, ifconfig, iotop (input and output monitoring), atop,
 
-4. bottom (a better alternative to top/htop)
+1. bottom (a better alternative to top/htop)
 
 ## [osquery](https://github.com/facebook/osquery)
 

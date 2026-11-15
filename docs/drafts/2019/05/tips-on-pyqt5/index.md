@@ -1,18 +1,19 @@
 ---
 title: Tips on PyQt5
-created: 2019-05-21 10:51:36
-date: 2026-04-05 19:42:37.861949
+created: '2019-05-21T10:51:36-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-pyqt5
 license: CC-BY-4.0
 tags:
-- programming
-- PyQt5
-- GUI
-- Python
-- Qt5
+  - programming
+  - PyQt5
+  - GUI
+  - Python
+  - Qt5
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 https://www.youtube.com/watch?v=0wAU5usATX8

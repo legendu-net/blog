@@ -1,7 +1,7 @@
 ---
-title: "Hiring a Nanny"
-created: 2024-04-14 09:31:28
-date: 2024-04-14 09:31:28
+title: Hiring a Nanny
+created: '2024-04-14T09:31:28-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: hiring-a-nanny
@@ -18,6 +18,4 @@ tags:
 
 care.com
 
-
 - [Washington Nanny Tax Rules](https://www.poppinspayroll.com/nanny-taxes-washington?gad_source=1&gclid=Cj0KCQjwqpSwBhClARIsADlZ_TkFbUkWqg8t5Vvg2YupQrBngZqoGZVefLrDHd_JpPVRJZDdWbq6y54aAm-5EALw_wcB)
-

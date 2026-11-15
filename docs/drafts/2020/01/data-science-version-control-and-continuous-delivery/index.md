@@ -1,7 +1,7 @@
 ---
-title: "Data Science Version Control and Continuous Delivery"
-created: 2020-01-07 08:52:52
-date: 2020-10-07 08:52:52
+title: Data Science Version Control and Continuous Delivery
+created: '2020-01-07T08:52:52-08:00'
+date: '2026-11-15T12:20:36-08:00'
 authors:
   - bendu
 label: data-science-version-control-and-continuous-delivery
@@ -16,7 +16,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## Data Version Control 
+## Data Version Control
 
 [dvc](https://dvc.org/)
 
@@ -32,7 +32,7 @@ Data Versioning, Data Pipelines, and Data Lineage
 
 [Retracing Your Steps in Machine Learning](https://medium.com/thelaunchpad/retracing-your-steps-in-machine-learning-ml-versioning-74d19a66bd08)
 
-## Model Life Cycle Tracking 
+## Model Life Cycle Tracking
 
 [mlflow](https://mlflow.org/docs/latest/index.html)
 mlflow tracks every detail about a model (including training, servering, etc.)

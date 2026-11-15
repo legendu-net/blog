@@ -1,7 +1,7 @@
 ---
 title: LaTeX for Chinese
-created: 2012-11-13 00:04:39
-date: 2026-04-15 19:27:00.308777
+created: '2012-11-13T00:04:39-08:00'
+date: '2026-11-15T12:20:31-08:00'
 authors:
   - bendu
 label: latex-for-chinese
@@ -22,7 +22,7 @@ tags:
    using the following command.
 
 ```bash
-sudo apt install texlive-xetex 
+sudo apt install texlive-xetex
 ```
 
 You can use command `xelatex` to compile.

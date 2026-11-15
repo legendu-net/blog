@@ -1,7 +1,7 @@
 ---
-title: "Tips on Fishing in the Washington State"
-created: 2024-09-20 13:45:59
-date: 2025-01-27 16:30:09
+title: Tips on Fishing in the Washington State
+created: '2024-09-20T13:45:59-07:00'
+date: '2026-11-15T12:20:40-08:00'
 authors:
   - bendu
 label: tips-on-fishing-in-the-washington-state
@@ -29,12 +29,12 @@ Please refer to
 ## Report Puget Sound Dungeness Catches
 
 1. When looking up for your recreational account in the WDFW system,
-    it's better to use WILD ID (rather than SSN or Driver's License).
-    The reason is that SSN or Driver's License is not required for people under 15 
-    when purchasing fishing licenses 
-    and thus might not be available in the system
-    while a WILD ID is always created in the system when a fishing license is sold.
-    The WILD ID can be found on your fishing license.
+   it's better to use WILD ID (rather than SSN or Driver's License).
+   The reason is that SSN or Driver's License is not required for people under 15
+   when purchasing fishing licenses
+   and thus might not be available in the system
+   while a WILD ID is always created in the system when a fishing license is sold.
+   The WILD ID can be found on your fishing license.
 
 Call: 360-902-2707
 Email: Catch.Reporting@dfw.wa.gov

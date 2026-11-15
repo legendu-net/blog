@@ -1,16 +1,17 @@
 ---
 title: Games for Linux
-created: 2018-09-22 15:21:44
-date: 2026-04-05 19:42:37.983212
+created: '2018-09-22T15:21:44-07:00'
+date: '2026-11-15T12:20:35-08:00'
 authors:
-- bendu
+  - bendu
 label: games-for-linux
 license: CC-BY-4.0
 tags:
-- software
-- game
-- Linux
+  - software
+  - game
+  - Linux
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 - Team fortress 2

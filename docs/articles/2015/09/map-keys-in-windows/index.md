@@ -1,7 +1,7 @@
 ---
 title: Map Keys in Windows
 created: '2015-09-01T22:17:13-07:00'
-date: '2026-11-15T09:15:23-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: map-keys-in-windows
@@ -15,12 +15,6 @@ tags:
   - Escape
   - SharpKeys
 ---
-
-\*\*
-Things on this page are
-fragmentary and immature notes/thoughts of the author.
-Please read with your own judgement!
-\*\*
 
 If you are a heavy Vim user and you have work on Windows,
 it is suggested that you Swap the Caps Lock key with the Escape key.

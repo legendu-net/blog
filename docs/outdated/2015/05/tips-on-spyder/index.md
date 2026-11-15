@@ -1,7 +1,7 @@
 ---
 title: Tips on Spyder
 created: '2015-05-22T14:49:26-07:00'
-date: '2026-11-15T09:27:53-08:00'
+date: '2026-11-15T12:20:06-08:00'
 authors:
   - bendu
 label: tips-on-spyder
@@ -14,12 +14,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 <http://www.southampton.ac.uk/~fangohr/blog/spyder-the-python-ide.html>
 

@@ -1,7 +1,7 @@
 ---
 title: SAS Enterprise Guide Tips
 created: '2014-09-14T18:44:56-07:00'
-date: '2026-11-15T09:29:16-08:00'
+date: '2026-11-15T12:20:05-08:00'
 authors:
   - bendu
 label: sas-enterprise-guide-tips
@@ -15,12 +15,6 @@ tags:
 ---
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
-
-\*\*
-Things under legendu.net/outdated are outdated technologies
-that the author does not plan to update any more.
-Please look for better alternatives.
-\*\*
 
 0. You can open multiple SAS Enterprise Guide instances.
    This allows you to work on another project if your SAS code takes a long time to run.

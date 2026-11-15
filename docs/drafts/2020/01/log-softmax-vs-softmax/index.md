@@ -1,7 +1,7 @@
 ---
-title: "Log Softmax vs Softmax"
-created: 2020-01-07 10:19:59
-date: 2020-01-07 10:19:59
+title: Log Softmax vs Softmax
+created: '2020-01-07T10:19:59-08:00'
+date: '2026-11-15T09:23:27-08:00'
 authors:
   - bendu
 label: log-softmax-vs-softmax
@@ -16,7 +16,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-The difference betwen Log Softmax and Softmax should be understood together with the loss function.
+The difference between Log Softmax and Softmax should be understood together with the loss function.
 
 ## References
 

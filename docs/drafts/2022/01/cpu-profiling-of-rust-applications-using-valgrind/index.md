@@ -1,7 +1,7 @@
 ---
 title: CPU Profiling of Rust Applications Using Valgrind
 created: '2022-01-13T01:02:06-08:00'
-date: '2026-06-18T20:09:57-07:00'
+date: '2026-11-15T09:23:03-08:00'
 authors:
   - bendu
 label: cpu-profiling-of-rust-applications-using-valgrind
@@ -51,7 +51,7 @@ valgrind --tool=callgrind --dump-instr=yes --simulate-cache=yes --collect-jumps=
 
 1. Profiling an application using valgrind is about 50-200 times slower
    than running the application.
-   It is suggested that you use not-perf for profiling long-running Rust applicaitons.
+   It is suggested that you use not-perf for profiling long-running Rust applications.
 
 1. Valgrind seems to have some issues with Rust applications.
    Only performance data of public methods are dumped.

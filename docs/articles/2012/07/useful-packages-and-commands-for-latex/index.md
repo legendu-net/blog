@@ -1,7 +1,7 @@
 ---
 title: Useful Packages and Commands for LaTeX
 created: '2012-07-29T11:37:43-07:00'
-date: '2026-08-11T22:19:14-07:00'
+date: '2026-11-15T09:19:27-08:00'
 authors:
   - bendu
 label: useful-packages-and-commands-for-latex
@@ -33,7 +33,7 @@ tags:
    - math formulas.
 1. \\usepackage\{amsthm}
    - theorem environments
-   - proof enviroment
+   - proof environment
 
 ## List Packages
 
@@ -56,7 +56,7 @@ tags:
 ## Bibliography
 
 1. \\usepackage\{natbib}
-   - for citing refernce
+   - for citing reference
    - compatible with bibtex
    - compile using `pdflatex/latex`, `bibtex`, `pdflatex/latex`, `pdflatex/latex`, `pdflatex/latex` in sequence
    - some Latex IDE (e.g., WinEdt) has a single button/command (PDFTexify) for simplifying the compiling process
@@ -66,7 +66,7 @@ tags:
 1. \\usepackage[usenames,dvipsnames]\{color}
    - using color by name
 
-## Mutiple Files
+## Multiple Files
 
 1. You can use command `\input` or `\include` to include Latex source files.
    Generally speaking,

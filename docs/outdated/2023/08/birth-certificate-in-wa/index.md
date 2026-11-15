@@ -1,7 +1,7 @@
 ---
 title: Birth Certificate in WA
-created: 2023-08-30 10:51:14
-date: 2026-04-13 23:33:14.252330
+created: '2023-08-30T10:51:14-07:00'
+date: '2026-11-15T09:28:05-08:00'
 authors:
   - bendu
 label: birth-certificate-in-wa
@@ -63,7 +63,7 @@ tags:
    If the hospital submits the correction,
    the turnaround time is 7-10 business days.
    You can contact the Department of Health to confirm whether the correction is done
-   before sending your original birth certificate back for exhange.
+   before sending your original birth certificate back for exchange.
 
 1. Write "EXCHANGE" and your current address on the front of the original copy of birth certificate.
    If you have multiple incorrect copies, include all of those in the same envelope and they can all be exchanged.

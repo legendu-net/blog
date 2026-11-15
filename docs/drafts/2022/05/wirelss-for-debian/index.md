@@ -1,7 +1,7 @@
 ---
 title: Wirelss for Debian
-created: 2022-05-04 11:21:24
-date: 2026-04-13 23:14:48.737466
+created: '2022-05-04T11:21:24-07:00'
+date: '2026-11-15T09:24:17-08:00'
 authors:
   - bendu
 label: wirelss-for-debian
@@ -18,12 +18,12 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. Depending on the wireless card on your machine,
-   you might have to install a wireless card dirver manually.
+   you might have to install a wireless card driver manually.
    You can use the following command
    to check the type of the wireless card on your machine.
 
    ```bash
-    lspci | grep -i wireless
+   lspci | grep -i wireless
    ```
 
    Then you can search for the driver/package that support your wireless card.
@@ -34,7 +34,7 @@ tags:
    ```
 
    This wireless card is supported by iwlwifi.
-   If you have included non-free softwares in your debian repository
+   If you have included non-free software in your debian repository
    (see the first step after installation),
    you can type `sudo apt install firmware-iwlwifi` in terminal to install it.
 

@@ -1,7 +1,7 @@
 ---
 title: Tips about Rcpp
 created: '2013-10-09T18:53:10-07:00'
-date: '2026-08-11T22:39:38-07:00'
+date: '2026-11-15T09:35:47-08:00'
 authors:
   - bendu
 label: tips-about-rcpp
@@ -28,12 +28,12 @@ Please look for better alternatives.
    and makes it easier to debug the code.
    You have to use the option `-D NORCPP` when compiling the code natively using `g++/clang++`.
 
-1. The Armadillo package is more conveinient to use
+1. The Armadillo package is more convenient to use
    than `NumericVector`, `NumericMarix`, etc. when using Rcpp.
 
-1. Rcpp doesn't have a uniform integer generator curently,
+1. Rcpp doesn't have a uniform integer generator currently,
    someone is working on sample equivalence currently.
-   You can use `runif` to achive what you want.
+   You can use `runif` to achieve what you want.
 
 1. I think you misunderstood `Rcpp::sugar`,
    I think vectorized version functions return `NumericVector`,
@@ -43,7 +43,7 @@ Please look for better alternatives.
    however these with prefix `Rf_` is non-vectorized.
    They are functions coming from `Rmath.h`.
 
-1. It is suggested that you alwasy prefixed functions
+1. It is suggested that you always prefixed functions
    with their namespaces when using Rcpp.
    Without prefixed namespaces,
    function name conflictions happen a lot
@@ -63,7 +63,7 @@ Please look for better alternatives.
    If you pass an object which is not exactly the required type,
    Rcpp tries cast it to the right type.
 
-1. One way to avoid terminating R becuase of DLL problem by Rcpp
+1. One way to avoid terminating R because of DLL problem by Rcpp
    is to remove all related object every time you restart R.
    Or if there is a better way to check this?
 
@@ -72,4 +72,4 @@ Please look for better alternatives.
    Rcpp, don't use functions with same names as r functions,
    potentially C functions, confliction ...
    `Rf_qbeta`, parameters can be inferred from R documentation
-   problem of `Rf_qnorm`? not definied? what the heck
+   problem of `Rf_qnorm`? not defined? what the heck

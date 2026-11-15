@@ -1,14 +1,14 @@
 ---
 title: Static Site Generators
 created: '2020-08-01T12:19:14-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:24:54-08:00'
 authors:
   - bendu
 label: static-site-generators
 license: CC-BY-4.0
 tags:
   - computer science
-  - static site genertor
+  - static site generator
   - blog
   - blogging
   - Gatsby

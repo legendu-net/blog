@@ -1,7 +1,7 @@
 ---
 title: Tips on Network
 created: '2014-03-03T11:41:59-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:16:26-08:00'
 authors:
   - bendu
 label: tips-on-network
@@ -60,9 +60,9 @@ or detailed discussions.
 
 1. http://192.168.0.1/ is the router address
 
-1. Turn off wireless router and moderm.
+1. Turn off wireless router and modem.
    Start wireless router and wait for 30 seconds,
-   and then start the moderm.
+   and then start the modem.
 
 ## Permanent Change to the File /etc/resolv.conf
 

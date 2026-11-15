@@ -1,7 +1,7 @@
 ---
 title: Profile Rust Applications Using Flamegraph
 created: '2021-11-09T10:28:40-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:22:25-08:00'
 authors:
   - bendu
 label: profile-rust-applications-using-flamegraph
@@ -45,7 +45,7 @@ tags:
    or install a non-compatible one.
    Generally speaking,
    it is a good choice to run a Ubuntu Docker container
-   on a Ubunut host machine
+   on a Ubuntu host machine
    with matching releasing versions.
 
 1. You have to configure `perf_event_paranoid` to be `-1`.
@@ -65,13 +65,13 @@ tags:
    into the file `/etc/sysctl.conf`
    .
    You can of course edit the file manually.
-   Below is a comamnd for doing this (and applying changes) automatically.
+   Below is a command for doing this (and applying changes) automatically.
 
    ```sh
    sudo $(which uvx) --from aiutil etc_sysctl kernel.perf_event_paranoid -1 --apply
    ```
 
-   If you work in a Docker environemnt,
+   If you work in a Docker environment,
    you have to
 
    1. Configure `kernel.perf_event_paranoid = -1` on the host machine.
@@ -140,7 +140,7 @@ Notice that it is best to
    .
 
 1. Enable debug info (if you are profiling the release build which is the default).
-   You can achive this by adding the following configuration into your `Cargo.toml` file.
+   You can achieve this by adding the following configuration into your `Cargo.toml` file.
 
    ```
     [profile.release]

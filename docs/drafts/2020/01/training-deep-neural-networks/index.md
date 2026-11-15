@@ -1,7 +1,7 @@
 ---
 title: Training Deep Neural Networks
 created: '2020-01-21T13:44:37-08:00'
-date: '2026-06-12T21:38:36-07:00'
+date: '2026-11-15T09:22:01-08:00'
 authors:
   - bendu
 label: training-deep-neural-networks
@@ -55,7 +55,7 @@ How to initialize weights in PyTorch?
 1. Check whether there are NAN values in your raw data.
    I encountered a tricky situation
    where my training data (tensors) was prepared using pandas DataFrame
-   and NAN values were generated due to missuse of the method `DataFrame.iterrows`.
+   and NAN values were generated due to misuse of the method `DataFrame.iterrows`.
 
 [Nan Loss coming after some time](https://discuss.pytorch.org/t/nan-loss-coming-after-some-time/11568)
 

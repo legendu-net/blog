@@ -1,7 +1,7 @@
 ---
 title: A Comprehensive List of Common Issues in Spark Applications
 created: '2020-08-22T08:53:56-07:00'
-date: '2026-06-12T21:38:36-07:00'
+date: '2026-11-15T09:21:48-08:00'
 authors:
   - bendu
 label: a-comprehensive-list-of-common-issues-in-spark-applications
@@ -34,8 +34,8 @@ for a comprehensive list of Spark Issues and (possible) causes and solutions.
    or if you want to confirm that configurations for your Spark application are correct.
 
 1. The `SQL` tab contains all Spark SQLs in your Spark application.
-   you can click on each SQL to see visualization of its execuation plans.
-   This visualiation of execuation plan has more information than the one in the `Jobs` tab.
+   you can click on each SQL to see visualization of its execution plans.
+   This visualiation of execution plan has more information than the one in the `Jobs` tab.
    Notice that statistics after each stage will be update in this visualiation
    as the Spark application runs.
    This is extremely helpful for

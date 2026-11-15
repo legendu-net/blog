@@ -1,7 +1,7 @@
 ---
 title: Tips on Reinforcement Learning
-created: 2020-01-28 11:02:29
-date: 2020-11-28 11:02:29
+created: '2020-01-28T11:02:29-08:00'
+date: '2026-11-15T09:21:54-08:00'
 authors:
   - bendu
 label: tips-on-reinforcement-learning
@@ -14,15 +14,16 @@ tags:
   - reinforcement learning
   - RLLib
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
-**
+\*\*
 Things on this page are fragmentary and immature notes/thoughts of the author.
 Please read with your own judgement!
 
-
 [Reinforcement Learning algorithms — an intuitive overview](https://medium.com/@SmartLabAI/reinforcement-learning-algorithms-an-intuitive-overview-904e2dff5bbc)
 has a good overview of different approaches to RL.
-**
+\*\*
+
 ## Courses & Tutorials
 
 http://rail.eecs.berkeley.edu/deeprlcourse/
@@ -31,13 +32,13 @@ https://towardsdatascience.com/reinforcement-learning-q-learning-with-decision-t
 
 ## Frameworks
 
-The article 
+The article
 [A Comparison of Reinforcement Learning Frameworks: Dopamine, RLLib, Keras-RL, Coach, TRFL, Tensorforce, Coach and more](https://winderresearch.com/a-comparison-of-reinforcement-learning-frameworks-dopamine-rllib-keras-rl-coach-trfl-tensorforce-coach-and-more/)
-has a comprehensive comparison of diferent reinforcement learning frameworks. 
+has a comprehensive comparison of different reinforcement learning frameworks.
 Based on the author's opinion,
 [OpenAI Gym](https://github.com/openai/gym)
-and 
-Apache Ray 
+and
+Apache Ray
 [RLLib](https://github.com/ray-project/ray/tree/master/rllib)
 are the best 2 libraries.
 

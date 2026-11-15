@@ -1,95 +1,114 @@
 ---
 title: Compress and Decompressing Archives in Linux
-created: 2012-05-19 23:12:07
-date: 2026-04-05 19:42:37.354778
+created: '2012-05-19T23:12:07-07:00'
+date: '2026-11-15T09:16:17-08:00'
 authors:
-- bendu
+  - bendu
 label: compress-and-decompressing-archives-in-linux
 license: CC-BY-4.0
 tags:
-- Linux
-- decompress
-- compress
-- archive
-- split
-- multiple
-- zip
-- tar
-- gz
-- bz2
-- dtrx
-- rar
-- 7zip
-- zstd
+  - Linux
+  - decompress
+  - compress
+  - archive
+  - split
+  - multiple
+  - zip
+  - tar
+  - gz
+  - bz2
+  - dtrx
+  - rar
+  - 7zip
+  - zstd
 ---
+
 ## Tips and Traps
 
 1. Always test integrity of the compressed file
-    before you throw away the original archives.
-    I've seen a case before that a large zip file generated in Windows
-    cannot be unzipped correctly in Linux.
-    Not sure what happend though. 
+   before you throw away the original archives.
+   I've seen a case before that a large zip file generated in Windows
+   cannot be unzipped correctly in Linux.
+   Not sure what happened though.
 
-2. Zstd is currently the best compression/decompression tool.
-    It supports different levels of compression.
-    For a similar compression ratio,
-    it is generally much faster than other compression tools.
+1. Zstd is currently the best compression/decompression tool.
+   It supports different levels of compression.
+   For a similar compression ratio,
+   it is generally much faster than other compression tools.
 
 ## zst or zstd
 
 1. Extract archive.
 
-        zstd -d /path/to/archive.ztd
+   ```
+    zstd -d /path/to/archive.ztd
+   ```
 
-2. Create a zst archive from a single file.
+1. Create a zst archive from a single file.
 
-        zstd -19 -T0 /path/to/file/to/compress
+   ```
+    zstd -19 -T0 /path/to/file/to/compress
+   ```
 
-    If you want to compress a directory using zstd,
-    you can tar it first.
-    See the next section for more discussions.
+   If you want to compress a directory using zstd,
+   you can tar it first.
+   See the next section for more discussions.
 
 ## tar.zstd or tar.zst
 
 1. Extract archive.
 
-        :::bash
-        tar -I zstd -xvf archive.tar.zst
+   ```
+    :::bash
+    tar -I zstd -xvf archive.tar.zst
+   ```
 
-2. Create an archive. 
+1. Create an archive.
 
-        :::bash
-        # max compression
-        tar cf - Dropbox/ | zstd -19 -T0 > Dropbox.tar.zstd
-        # good balance bewteen compression ratio and speed
-        tar cf - Dropbox/ | zstd -9 -T0 > Dropbox.tar.zstd
+   ```
+    :::bash
+    # max compression
+    tar cf - Dropbox/ | zstd -19 -T0 > Dropbox.tar.zstd
+    # good balance between compression ratio and speed
+    tar cf - Dropbox/ | zstd -9 -T0 > Dropbox.tar.zstd
+   ```
 
 ## tar.gz or tgz
 
 1. List the content of an archive.
 
-        :::bash
-        tar -ztvf archive_name.tag.gz
+   ```
+    :::bash
+    tar -ztvf archive_name.tag.gz
+   ```
 
-2. Extract the content of an archive to the current directory.
+1. Extract the content of an archive to the current directory.
 
-        :::bash
-        tar -zxvf archive_name.tag.gz
+   ```
+    :::bash
+    tar -zxvf archive_name.tag.gz
+   ```
 
-3. Extract the content of an archive to a directory named "exdir".
+1. Extract the content of an archive to a directory named "exdir".
 
-        :::bash
-        tar -zxvf archive_name.tag.gz -C exdir
+   ```
+    :::bash
+    tar -zxvf archive_name.tag.gz -C exdir
+   ```
 
-4. Create an archive.
+1. Create an archive.
 
-        :::bash
-        tar -zcvf archive_name.tar.gz /path/to/file_or_dir
+   ```
+    :::bash
+    tar -zcvf archive_name.tar.gz /path/to/file_or_dir
+   ```
 
-5. Create an archive with some files excluded.
+1. Create an archive with some files excluded.
 
-        :::bash
-        tar -zcvf archive_name.tar.gz --exclude='abc' --exclude='xyz' /path/to/file_or_dir
+   ```
+    :::bash
+    tar -zcvf archive_name.tar.gz --exclude='abc' --exclude='xyz' /path/to/file_or_dir
+   ```
 
 ## gz
 
@@ -101,6 +120,7 @@ gzip -cd archive_name.gz > decompressed_file_name
 # or
 zcat archive_name.gz > decompressed_file_name
 ```
+
 Notice that you have to use the `-c` option,
 otherwise,
 the original compressed file is removed.
@@ -120,33 +140,45 @@ tar -jxvf archive_name.tar.bz2 -C exdir
 
 1. List the content of an archive.
 
-        :::bash
-        unzip -l archive_name.zip
+   ```
+    :::bash
+    unzip -l archive_name.zip
+   ```
 
-2. Test the integrity of an archive.
+1. Test the integrity of an archive.
 
-        :::bash
-        unzip -t archive_name.zip
+   ```
+    :::bash
+    unzip -t archive_name.zip
+   ```
 
-3. Extract the archive contents into the current directory.
+1. Extract the archive contents into the current directory.
 
-        ::bash
-        unzip archive_name.zip
+   ```
+    ::bash
+    unzip archive_name.zip
+   ```
 
-4. Extract the archive contents into the directory "exdir".
+1. Extract the archive contents into the directory "exdir".
 
-        :::bash
-        unzip archive_name.zip -d exdir
+   ```
+    :::bash
+    unzip archive_name.zip -d exdir
+   ```
 
-5. Create a zip archive. 
+1. Create a zip archive.
 
-        :::bash
-        zip -r archive_name.zip .
+   ```
+    :::bash
+    zip -r archive_name.zip .
+   ```
 
-6. Create a zip archive with some files excluded.
+1. Create a zip archive with some files excluded.
 
-        :::bash
-        zip -r -x "Nothanks.jpg" archive.zip images/ 
+   ```
+    :::bash
+    zip -r -x "Nothanks.jpg" archive.zip images/ 
+   ```
 
 ## rar
 
@@ -159,7 +191,7 @@ unrar t file_name
 unrar x file_name
 ```
 
-## Jar 
+## Jar
 
 ```
 # extract the archive
@@ -178,7 +210,8 @@ jar xf jar-file [archived-file(s)]
 # extract a file/folder from the archive
 7za x archive_name path_to_file_to_be_extracted
 ```
-If the compressed archive is splitted into several smaller files,
+
+If the compressed archive is split into several smaller files,
 just replace `file_name` in the above commands
 with the name of the first file of the compressed archive.
 
@@ -199,12 +232,14 @@ For example,
 you can use the following command to unzip archives
 `BigDataLite-3.0.zip.001`, `BigDataLite-3.0.zip.002`, `BigDataLite-3.0.zip.003`,
 `BigDataLite-3.0.zip.004`, `BigDataLite-3.0.zip.005` and `BigDataLite-3.0.zip.006`.
+
 ```bash
 # concatenate zipped archives into a single one
 cat BigDataLite-3.0.zip.00? > BigDataLite-3.0.zip
 # unzip the combined archive
 unzip BigDataLite-3.0.zip
 ```
+
 To compress files into multiple archives,
 you have to first compress them into a single archive
 using one of the commands introduced before
@@ -213,11 +248,14 @@ using the command `split`.
 For example,
 the following command split the archive `WinTPC_1.tar.gz`
 into smaller ones named `WinTPC_1.tar.gz_part??` with size around 2.7G.
+
 ```bash
 split -b 2700M -d WinTPC_1.tar.gz WinTPC_1.tar.gz_part
 ```
+
 An alternative way (and better in my opinion)
 is to specify the number of archives (with about equal size) to split into.
+
 ```bash
 split -n 5 -d xp_2.tar.gz xp_2.tar.gz_part
 ```

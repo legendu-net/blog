@@ -1,7 +1,7 @@
 ---
 title: Process Big Data Using PySpark
 created: '2021-04-30T11:49:58-07:00'
-date: '2026-06-13T19:05:12-07:00'
+date: '2026-11-15T09:16:42-08:00'
 authors:
   - bendu
 label: process-big-data-using-pyspark
@@ -131,7 +131,7 @@ tags:
    if you have both a cluster version of Spark and a local version of Spark installed,
    you might failed to submit Spark applications using `spark-submit`.
    One simple fix to this problem is
-   to manually configure a right version of the `PATH` environemnt varible
+   to manually configure a right version of the `PATH` environment variable
    before you invoke the command `spark-submit` of the local version of Spark.
 
    ```

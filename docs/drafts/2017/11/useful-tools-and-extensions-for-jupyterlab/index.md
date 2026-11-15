@@ -1,7 +1,7 @@
 ---
 title: Useful Tools and Extensions for JupyterLab
 created: '2017-11-24T10:55:57-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:22:06-08:00'
 authors:
   - bendu
 label: useful-tools-and-extensions-for-jupyterlab
@@ -53,7 +53,7 @@ jupyter serverextension disable --py jupyterlab_code_formatter
 ### Variable Inspaction in Notebook
 
 1. makes notebook run slow
-1. why do you want such a tool if you can check any vairable in notebook already?
+1. why do you want such a tool if you can check any variable in notebook already?
 
 ### [jupyterLab/debugger](https://github.com/jupyterlab/debugger)
 

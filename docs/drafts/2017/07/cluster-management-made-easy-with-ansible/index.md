@@ -1,7 +1,7 @@
 ---
 title: Cluster Management Made Easy with Ansible
 created: '2017-07-29T22:26:41-07:00'
-date: '2026-06-12T22:31:50-07:00'
+date: '2026-11-15T09:21:19-08:00'
 authors:
   - bendu
 label: cluster-management-made-easy-with-ansible
@@ -63,7 +63,7 @@ it will result in an error message (host fingerprint changed).
 This can be fixed by removing keys from `~/.ssh/known_hosts`.
 If a machine in the cluster is not in `~/.ssh/known_hosts`,
 it will prompt for confirmation of adding the host as a known one.
-To avoid those interuptions,
+To avoid those interruptions,
 you can add the following into your Ansible configuration file.
 
 ```text

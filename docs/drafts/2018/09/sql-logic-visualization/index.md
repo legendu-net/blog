@@ -1,7 +1,7 @@
 ---
 title: SQL Logic Visualization
-created: 2018-09-27 18:31:29
-date: 2026-04-15 19:27:01.274004
+created: '2018-09-27T18:31:29-07:00'
+date: '2026-11-15T09:23:05-08:00'
 authors:
   - bendu
 label: sql-logic-visualization
@@ -19,7 +19,7 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. [rm-hull/sql_graphviz](https://github.com/rm-hull/sql_graphviz)
-   is a small Pyton script that generates a Graphviz visualization of a SQL schema dump.
+   is a small Python script that generates a Graphviz visualization of a SQL schema dump.
 
 1. [sqldep - queryScope](https://app.sqldep.com/queryscope/#)
    is a great online tool for visualizing logic of SQL code.

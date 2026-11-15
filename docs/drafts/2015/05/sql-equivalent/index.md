@@ -1,7 +1,7 @@
 ---
 title: SQL Equivalent
 created: '2015-05-20T11:48:36-07:00'
-date: '2026-06-13T10:27:40-07:00'
+date: '2026-11-15T09:19:23-08:00'
 authors:
   - bendu
 label: sql-equivalent
@@ -17,7 +17,7 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [SQL translation](https://www.jooq.org/translate/)
-is a great tool that transalte any SQL statement(s) to a different dialetc using the JOOQ Parser.
+is a great tool that translates any SQL statement(s) to a different dialetc using the JOOQ Parser.
 
 <div style="overflow-x:auto;">
 <style>
@@ -481,7 +481,7 @@ is a great tool that transalte any SQL statement(s) to a different dialetc using
   <tr>
     <td> Teradata </td>
     <td rowspan="1"> <code> 
-        DROP TABEL IF EXISTS table_name
+        DROP TABLE IF EXISTS table_name
     </code> </td>
   </tr>
   <tr>
@@ -776,7 +776,7 @@ is a great tool that transalte any SQL statement(s) to a different dialetc using
     <td> <code> 
     - not supported as of Spark 2.4.5 <br>
     - Spark SQL 3.0.0 has update/delete APIs but not implemented <br>
-    - Update/delete is feasible using Detal Lake
+    - Update/delete is feasible using Delta Lake
     </code> </td>
   </tr>
   <tr>
@@ -823,7 +823,7 @@ is a great tool that transalte any SQL statement(s) to a different dialetc using
     <td> <code> 
     - not supported as of Spark 2.4.5 <br>
     - Spark SQL 3.0.0 has update/delete APIs but not implemented <br>
-    - Update/delete is feasible using Detal Lake
+    - Update/delete is feasible using Delta Lake
     </code> </td>
   </tr>
   <tr>
@@ -875,7 +875,7 @@ is a great tool that transalte any SQL statement(s) to a different dialetc using
     <td> <code> 
     - not supported as of Spark 2.4.5 <br>
     - Spark SQL 3.0.0 has update/delete APIs but not implemented <br>
-    - Update/delete is feasible using Detal Lake
+    - Update/delete is feasible using Delta Lake
     </code> </td>
   </tr>
   <tr>
@@ -915,7 +915,7 @@ is a great tool that transalte any SQL statement(s) to a different dialetc using
     <td> <code> 
     - not supported as of Spark 2.4.5 <br>
     - Spark SQL 3.0.0 has update/delete APIs but not implemented <br>
-    - Update/delete is feasible using Detal Lake
+    - Update/delete is feasible using Delta Lake
     </code> </td>
   </tr>
   <tr>
@@ -1512,7 +1512,7 @@ is a great tool that transalte any SQL statement(s) to a different dialetc using
   </tr>
 
 <tr>
-    <td rowspan="6"> ocurrence of char </td>
+    <td rowspan="6"> occurrence of char </td>
     <td> SQLite 3 </td>
     <td> <code> 
     </code> </td>

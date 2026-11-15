@@ -1,7 +1,7 @@
 ---
 title: Fix Authentication Error of GitHub Repositories on DockerHub
-created: 2019-03-04 19:49:58
-date: 2026-04-13 23:06:49.626750
+created: '2019-03-04T19:49:58-08:00'
+date: '2026-11-15T09:22:29-08:00'
 authors:
   - bendu
 label: fix-authentication-error-of-github-repositories-on-dockerhub
@@ -18,9 +18,9 @@ tags:
 
 ## Solution
 
-1. Got to Account Seetings
+1. Got to Account Settings
 
-1. Navigate to the Linked Accounts seciton
+1. Navigate to the Linked Accounts section
 
 1. Unlink GitHub and relink it.
 

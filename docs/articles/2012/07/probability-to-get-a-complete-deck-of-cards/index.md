@@ -1,7 +1,7 @@
 ---
 title: Probability to Get a Complete Deck of Cards?
-created: 2012-07-17 17:54:37
-date: 2026-04-13 23:33:06.845790
+created: '2012-07-17T17:54:37-07:00'
+date: '2026-11-15T09:18:04-08:00'
 authors:
   - bendu
 label: probability-to-get-a-complete-deck-of-cards
@@ -56,7 +56,7 @@ We can write a program to help us solve this problem.
 The following is an implementation of the recursion formula in Mathematica.
 
 ```
-GeneralizedHyperGeometryProbability::illegal = "The number of selected exeeds the total number.";
+GeneralizedHyperGeometryProbability::illegal = "The number of selected exceeds the total number.";
 (*
 @param nselected: the number of card selected;
 @param ndistinct: the number of distinct card in the selected card;

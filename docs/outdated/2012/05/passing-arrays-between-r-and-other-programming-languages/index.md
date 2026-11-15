@@ -1,7 +1,7 @@
 ---
 title: Passing Arrays between R and Other Programming Languages
 created: '2012-05-02T13:10:12-07:00'
-date: '2026-08-11T22:19:36-07:00'
+date: '2026-11-15T09:27:37-08:00'
 authors:
   - bendu
 label: passing-arrays-between-r-and-other-programming-languages
@@ -47,7 +47,7 @@ x = .jevalArray(x)
 x = t(sapply(x,.jevalArray))
 ```
 
-If a C function returns an array of unkown length, there is no directly way to
+If a C function returns an array of unknown length, there is no directly way to
 return it to R. There are two ways to solve this problem. First, if you know the
 maximum length of the array to be returned, you can pass an array with this
 length from R to C to accept the returned result. Second, you can write data

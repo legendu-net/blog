@@ -1,7 +1,7 @@
 ---
 title: Tips on Git
 created: '2013-10-30T11:09:57-07:00'
-date: '2026-09-27T22:42:46-07:00'
+date: '2026-11-15T09:17:15-08:00'
 authors:
   - bendu
 label: tips-on-git
@@ -29,7 +29,7 @@ tags:
 ## Access Token for Git
 
 There are a few advantages of using (GitHub, etc.) access tokens for Git,
-especially in an enterprise environemnt.
+especially in an enterprise environment.
 
 1. Access tokens can provided more fined access control.
    For example,
@@ -135,9 +135,9 @@ especially in an enterprise environemnt.
     git rebase --abort
    ```
 
-1. Use the following comamnd to clone into a specific directory.
+1. Use the following command to clone into a specific directory.
    Please refer to
-   [How do you clone a Git repository into a specific foler?](https://stackoverflow.com/questions/651038/how-do-you-clone-a-git-repository-into-a-specific-folder)
+   [How do you clone a Git repository into a specific folder?](https://stackoverflow.com/questions/651038/how-do-you-clone-a-git-repository-into-a-specific-folder)
    for more discussions.
 
    ```
@@ -246,7 +246,7 @@ git diff -- . ':(exclude)db/irrelevant.php' ':(exclude)db/irrelevant2.php'
     git add .
    ```
 
-1. Add all modifed tracked files for commit
+1. Add all modified tracked files for commit
 
    ```
     git add *
@@ -407,7 +407,7 @@ git diff -- . ':(exclude)db/irrelevant.php' ':(exclude)db/irrelevant2.php'
 1. https://www.gitignore.io/
    can help generate `.gitignore` files for different programming languages.
 
-1. Git in Windows automatically convert Linux/OSX line termiantors to Windows line terminators.
+1. Git in Windows automatically convert Linux/OSX line terminators to Windows line terminators.
    To turn off auto line terminator conversion globally, use the following command.
 
    ```

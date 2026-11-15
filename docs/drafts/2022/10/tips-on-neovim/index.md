@@ -1,7 +1,7 @@
 ---
 title: Tips on Neovim
 created: '2022-10-16T19:54:05-07:00'
-date: '2026-08-09T21:22:40-07:00'
+date: '2026-11-15T09:24:32-08:00'
 authors:
   - bendu
 label: tips-on-neovim
@@ -64,7 +64,7 @@ Use Homebrew of AppImage instead if you want a newer version of Neovim.
 
    - An embedded terminal within Neovim is actually a Neovim buffer in the terminal mode.
      You can escape (quit) the terminal model using `Ctrl-\ Ctrl-N`,
-     which allows you to manipulate it as a regualr (but read-only) Neovim buffer.
+     which allows you to manipulate it as a regular (but read-only) Neovim buffer.
      For example,
      you can copy output of commands from the terminal buffer to another buffer.
 
@@ -73,7 +73,7 @@ Use Homebrew of AppImage instead if you want a newer version of Neovim.
    By changing this variable,
    you change the subfolder name where Neovim looks for your configurations, plugins, caches, and state files.
    Instead of defaulting to `~/.config/nvim`, it will target `~/.config/$NVIM_APPNAME`.
-   This can be extremly useful if you have to keep multiple Neovim configurations.
+   This can be extremely useful if you have to keep multiple Neovim configurations.
    For example,
    if you use Firenvim with Neovim and want to use a different configuration for it.
 

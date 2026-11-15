@@ -1,7 +1,7 @@
 ---
 title: Use Docker Containers for GitHub Actions
-created: 2025-11-23 10:57:08
-date: 2026-04-13 23:14:19.297564
+created: '2025-11-23T10:57:08-08:00'
+date: '2026-11-15T09:28:25-08:00'
 authors:
   - bendu
 label: use-docker-containers-for-github-actions
@@ -28,7 +28,7 @@ tags:
    for more details.
 
 1. The `runner` account (even with `sudo`) in GitHub Actions VMs
-   have restricted priviledges.
+   have restricted privileges.
    For example,
    the Linux perf (and equivalent) tools cannot be run in GitHub Actions VMs
    even if `sudo` is used.

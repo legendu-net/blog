@@ -1,7 +1,7 @@
 ---
 title: Ruff Is an Extremely Fast Python Linter Written in Rust
 created: '2023-04-01T18:21:35-07:00'
-date: '2026-08-11T22:19:20-07:00'
+date: '2026-11-15T09:24:49-08:00'
 authors:
   - bendu
 label: ruff-is-an-extremely-fast-python-linter-written-in-rust
@@ -34,7 +34,7 @@ uvx ruff check /some/path
 uvx ruff format /some/path
 ```
 
-## Format Python Scripts with Indention Width = 2
+## Format Python Scripts with Indentation Width = 2
 
 ```
 ruff format --config indent-width=2 path/to/file.py

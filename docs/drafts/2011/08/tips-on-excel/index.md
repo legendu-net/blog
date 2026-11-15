@@ -1,7 +1,7 @@
 ---
 title: Tips on Excel
-created: 2011-08-22 13:10:13
-date: 2026-04-13 23:33:13.763835
+created: '2011-08-22T13:10:13-07:00'
+date: '2026-11-15T09:17:40-08:00'
 authors:
   - bendu
 label: tips-on-excel
@@ -87,7 +87,7 @@ tags:
 
 1. how to open a workbook as hidden by default? You can hide it manually.
 
-1. How to quickly check sum of a banch of cells in a large table where no adjacent cells are available?
+1. How to quickly check sum of a bunch of cells in a large table where no adjacent cells are available?
    Is it posisble to use some kind of prompt diaglog? Actually you can write such a function by yourself.
 
 1. learn how to make plots in excel

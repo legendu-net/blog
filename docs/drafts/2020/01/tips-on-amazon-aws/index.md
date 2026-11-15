@@ -1,7 +1,7 @@
 ---
 title: Tips on Amazon AWS
-created: 2020-01-11 20:47:40
-date: 2026-04-14 19:44:31.747856
+created: '2020-01-11T20:47:40-08:00'
+date: '2026-11-15T09:21:27-08:00'
 authors:
   - bendu
 label: tips-on-amazon-aws
@@ -17,7 +17,7 @@ tags:
 
 1. By default,
    AWS shows your resources (VMs, etc.) in one location (data center) only.
-   This can be tricky if you have VMs in mutiple locations (data centers)
+   This can be tricky if you have VMs in multiple locations (data centers)
    as you might forget that you have VMs in other locations
    (rather than the currently displayed one to you)
    and forgot to stop them.

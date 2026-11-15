@@ -1,7 +1,7 @@
 ---
 title: GitHub Alternatives
 created: '2023-04-11T17:28:17-07:00'
-date: '2026-09-18T00:51:39-07:00'
+date: '2026-11-15T09:24:46-08:00'
 authors:
   - bendu
 label: github-alternatives
@@ -20,7 +20,7 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 In short,
-if you are looking for a public code hosting service alterantive to GitHub,
+if you are looking for a public code hosting service alternative to GitHub,
 go with GitLab.
 If you want to host one by yourself,
 go with Gitea.

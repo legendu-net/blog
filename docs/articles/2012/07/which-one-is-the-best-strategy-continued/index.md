@@ -1,7 +1,7 @@
 ---
 title: Which One Is the Best Strategy? (Continued)
 created: '2012-07-30T15:13:01-07:00'
-date: '2026-08-11T22:19:15-07:00'
+date: '2026-11-15T09:14:45-08:00'
 authors:
   - bendu
 label: which-one-is-the-best-strategy-continued
@@ -148,7 +148,7 @@ PatternFirstComeOutProbability[{ {"H", "T"}, {"H", "H", "T", "H"} }, {"H", "T"}]
 ```
 
 These kind of situations are easy to handle. A always safe way compare patterns
-with differen lengths is to change the problem to one in which all patterns have
+with different lengths is to change the problem to one in which all patterns have
 the same length. For example, instead of letting function PatternFirstComeOur-
 Probability compare patterns "HH" and "HTH", we can let it compare patterns
 "HHT", "HHH" and "HTT".

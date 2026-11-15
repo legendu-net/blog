@@ -1,7 +1,7 @@
 ---
 title: My Podman Container Images
 created: '2026-05-16T16:22:55.500335-07:00'
-date: '2026-05-24T12:20:41-07:00'
+date: '2026-11-15T09:30:07-08:00'
 authors:
   - bendu
 label: my-podman-container-images
@@ -166,7 +166,7 @@ Those podman images are auto built leveraging GitHub Actions workflow
 
 ## On Failure of GitHub Actions Workflow for Building Container Images
 
-1. If the Docker image buidling workflow fails due to network issues,
+1. If the Docker image building workflow fails due to network issues,
    it might not work to rerun failed pipelines in GitHub Actions
    (as the network issue is like due to probalematic network nodes
    and retrying failed pipelines sending jobs to the same nodes).

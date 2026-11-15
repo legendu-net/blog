@@ -1,7 +1,7 @@
 ---
 title: Run Commands on Remote Machines
-created: 2019-02-06 23:21:30
-date: 2026-04-14 19:32:05.156523
+created: '2019-02-06T23:21:30-08:00'
+date: '2026-11-15T09:21:34-08:00'
 authors:
   - bendu
 label: run-commands-on-remote-machines
@@ -32,18 +32,18 @@ tags:
    prints the content of a text file and then count the number of lines in the file.
 
    ```bash
-    proxychains ssh client_ip /apache/hadoop/bin/hdfs dfs -cat adset_id/adset_id_642.txt | wc -l
+   proxychains ssh client_ip /apache/hadoop/bin/hdfs dfs -cat adset_id/adset_id_642.txt | wc -l
    ```
 
    The `wc -l` command is run locally instead of running on the Hadoop client.
    Since proxychains prints out some information too,
    the `wc -l` will over count the number of lines in the text file.
    The correct way is count the number of lines on the Hadoop client instead of counting locally.
-   A simple way is to place the whole command to be run on the Hadoop client in double/singls quotes.
+   A simple way is to place the whole command to be run on the Hadoop client in double/single quotes.
    Below is an illustration.
 
    ```bash
-    proxychains ssh client_ip '/apache/hadoop/bin/hdfs dfs -cat adset_id/adset_id_642.txt | wc -l'
+   proxychains ssh client_ip '/apache/hadoop/bin/hdfs dfs -cat adset_id/adset_id_642.txt | wc -l'
    ```
 
 https://stackoverflow.com/questions/305035/how-to-use-ssh-to-run-a-shell-script-on-a-remote-machine

@@ -1,7 +1,7 @@
 ---
 title: Understand and Avoid the No More Spool Space Issue in Teradata
-created: 2020-06-22 08:53:57
-date: 2026-04-13 23:15:31.100454
+created: '2020-06-22T08:53:57-07:00'
+date: '2026-11-15T09:27:44-08:00'
 authors:
   - bendu
 label: understand-and-avoid-the-no-more-spool-space-issue-in-teradata
@@ -33,7 +33,7 @@ Please read with your own judgement!
 
 ## Some Potential Solutions
 
-1. Choose a **good primary index** when creating a data tabel.
+1. Choose a **good primary index** when creating a data table.
 
 1. Reduce the number of rows and columns you’re working with
 

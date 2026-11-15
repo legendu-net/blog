@@ -1,7 +1,7 @@
 ---
 title: 'Spark Issue: Namespace Quota Is Exceeded'
-created: 2022-01-06 22:33:54
-date: 2026-04-15 19:27:00.377922
+created: '2022-01-06T22:33:54-08:00'
+date: '2026-11-15T09:17:13-08:00'
 authors:
   - bendu
 label: spark-issue-namespace-quota-is-exceeded
@@ -23,7 +23,7 @@ tags:
 
 ## Cause
 
-The namespace quota of the directory `/user/user_name` is execeeded.
+The namespace quota of the directory `/user/user_name` is exceeded.
 
 ## Solutions
 

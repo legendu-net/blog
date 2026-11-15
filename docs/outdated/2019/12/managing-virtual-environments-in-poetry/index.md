@@ -1,7 +1,7 @@
 ---
 title: Managing Virtual Environments in Poetry
 created: '2019-12-25T23:14:43-08:00'
-date: '2026-06-12T22:31:33-07:00'
+date: '2026-11-15T09:27:36-08:00'
 authors:
   - bendu
 label: managing-virtual-environments-in-poetry
@@ -24,7 +24,7 @@ and is prefer to poetry.
 ## Where to Create Virtual Environments
 
 By default,
-Poetry create virtual environment in `$HOME/.poetry` for cahcing/sharing purpose.
+Poetry create virtual environment in `$HOME/.poetry` for caching/sharing purpose.
 However,
 it is inconvenient if you use Docker-based web IDE for a Python project
 as you will lose the created virtual environment once the Docker container is restarted.
@@ -61,7 +61,7 @@ You can use `poetry env use python_version` to specify the Python version to use
 poetry env use python3
 ```
 
-## Activate Vitual Environment
+## Activate Virtual Environment
 
 The virtual environment shell can be activated using the following command.
 
@@ -79,7 +79,7 @@ you can also use the following command to activate the virtual environment.
 . .venv/bin/activate
 ```
 
-## Show Information of the Vitual Environment
+## Show Information of the Virtual Environment
 
 You can list information of virtual environments using the following command.
 

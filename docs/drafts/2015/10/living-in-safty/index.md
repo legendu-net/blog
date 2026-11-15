@@ -1,16 +1,17 @@
 ---
-title: Living in Safty
-created: 2015-10-22 14:16:22
-date: 2026-04-05 19:42:38.159076
+title: Living in Safety
+created: '2015-10-22T14:16:22-07:00'
+date: '2026-11-15T09:19:36-08:00'
 authors:
-- bendu
+  - bendu
 label: living-in-safty
 license: CC-BY-4.0
 tags:
-- life
-- tips
-- safety
+  - life
+  - tips
+  - safety
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 http://chicago.everyblock.com/crime/

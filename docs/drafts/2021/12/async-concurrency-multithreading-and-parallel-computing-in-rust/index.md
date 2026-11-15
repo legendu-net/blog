@@ -1,7 +1,7 @@
 ---
 title: Async, Concurrency, Multithreading and Parallel Computing in Rust
-created: 2021-12-24 09:50:50
-date: 2026-04-13 23:14:52.276709
+created: '2021-12-24T09:50:50-08:00'
+date: '2026-11-15T09:22:45-08:00'
 authors:
   - bendu
 label: async-concurrency-multithreading-and-parallel-computing-in-rust
@@ -25,14 +25,14 @@ Other struct (e.g., Cell, RefCell, Rc, Arc, etc.) with interior mutability relie
 Rc: reference counting, single thread
 Arc: Atomic reference counting, multi-thread
 Cell: single thread
-get and set methods for midifying
+get and set methods for modifying
 does not modify in-place
 RefCell:
 can borrow content with borrow and borrow_mut
 single thread; reference rule checked at runtime; panics if it cannot get the borrow
 Atomics: concurrent version of Cell
 RwLock: concurrent version of RefCell
-blocks/sleep intead of calling panic if it cannot get the borrow
+blocks/sleep instead of calling panic if it cannot get the borrow
 Mutex: conrrent version of RefCell; simpler than RwLock; only allow exclusive borrows
 
 ## [rayon](https://crates.io/crates/rayon)

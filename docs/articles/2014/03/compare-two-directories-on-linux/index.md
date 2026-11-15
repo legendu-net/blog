@@ -1,7 +1,7 @@
 ---
 title: Compare Two Directories on Linux
-created: 2014-03-10 19:13:40
-date: 2026-04-15 19:27:00.453040
+created: '2014-03-10T19:13:40-07:00'
+date: '2026-11-15T09:19:52-08:00'
 authors:
   - bendu
 label: compare-two-directories-on-linux
@@ -45,7 +45,7 @@ md5deep -r path_to_directory > md5.txt
 ```
 
 Once you have the md5sums for the 2 directories calculated
-and outputed into files (e.g., `j.txt`) on the 2 machines,
+and outputted into files (e.g., `j.txt`) on the 2 machines,
 you can then compare the contents of the 2 files on the 2 machines.
 One way to achieve this is to run the following command on one of the machines.
 

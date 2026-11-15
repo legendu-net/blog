@@ -1,7 +1,7 @@
 ---
 title: Tips on Buying a House
-created: 2025-08-01 13:50:48
-date: 2026-04-20 08:53:08.937572
+created: '2025-08-01T13:50:48-07:00'
+date: '2026-11-15T09:28:15-08:00'
 authors:
   - bendu
 label: tips-on-buying-a-house
@@ -50,7 +50,7 @@ tags:
    - Prefer to not have a crawl space.
    - But if there's a crawl space,
      - check whether it's wet down there
-     - check for droppings of mices
+     - check for droppings of mice
 
 ## Ideas
 

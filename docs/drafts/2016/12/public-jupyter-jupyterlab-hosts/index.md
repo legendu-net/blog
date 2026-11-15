@@ -1,7 +1,7 @@
 ---
 title: Public Jupyter/JupyterLab Hosts
 created: '2016-12-14T18:35:33-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:21:49-08:00'
 authors:
   - bendu
 label: public-jupyter-jupyterlab-hosts
@@ -19,7 +19,7 @@ tags:
 ## [Google Firebase Studio](tips-on-google-firebase-studio)
 
 You can use notebooks after installing the jupyter extension
-and the programming lanuage that you want to use in Jupyter notebook.
+and the programming language that you want to use in Jupyter notebook.
 
 ## [Google Cloud Shell](https://cloud.google.com/shell/docs)
 
@@ -136,7 +136,7 @@ e.g., writing a notebook-based article for my blog.
 
 1. Great for temporary usages.
 
-1. Customization of Docker iamge is supported!
+1. Customization of Docker image is supported!
 
 ### Cons
 

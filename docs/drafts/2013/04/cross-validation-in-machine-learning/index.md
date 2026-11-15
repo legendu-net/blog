@@ -1,19 +1,20 @@
 ---
 title: Cross Validation in Machine Learning
-created: 2013-04-03 00:00:00
-date: 2026-04-05 19:42:38.396829
+created: '2013-04-03T00:00:00-07:00'
+date: '2026-11-15T09:19:13-08:00'
 authors:
-- bendu
+  - bendu
 label: cross-validation-in-machine-learning
 license: CC-BY-4.0
 tags:
-- AI
-- data science
-- machine learning
-- cross validation
+  - AI
+  - data science
+  - machine learning
+  - cross validation
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
- 
+
 ## Training and Testing Data Set
 
 - good when you have large amount of data
@@ -40,4 +41,4 @@ tags:
 
 - 10 times number of parameters, probably in good shape
 
-- 20 times number of prameters, usually perfect good
+- 20 times number of parameters, usually perfect good

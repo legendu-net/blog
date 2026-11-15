@@ -1,7 +1,7 @@
 ---
 title: Tips on Rustfmt
-created: 2021-10-25 19:57:05
-date: 2026-04-13 23:14:55.886524
+created: '2021-10-25T19:57:05-07:00'
+date: '2026-11-15T09:22:21-08:00'
 authors:
   - bendu
 label: tips-on-rustfmt
@@ -12,8 +12,8 @@ tags:
   - Rust
   - format
   - rustfmt
-  - formating code
-  - code formating
+  - formatting code
+  - code formatting
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**

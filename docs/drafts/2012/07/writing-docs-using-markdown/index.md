@@ -1,7 +1,7 @@
 ---
 title: Writing Docs Using Markdown
 created: '2012-07-22T09:25:23-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:15:59-08:00'
 authors:
   - bendu
 label: writing-docs-using-markdown
@@ -53,7 +53,7 @@ knitr (R package)
 
 1. how to define a link variable in jekyll or in markdown?
 
-1. does markdown support include and so on? if there are mutiple md file in a folder,
+1. does markdown support include and so on? if there are multiple md file in a folder,
    several of them are use by a main file. what happens?
    can we tell jekyll not to compile some of the markdown files?
 
@@ -79,14 +79,14 @@ knitr (R package)
 
 ## Misc
 
-1. Jekyll interprete contents in two nested curly brackets as a variable
-   (white spaces around the vairable are trimmed).
+1. Jekyll interprets contents in two nested curly brackets as a variable
+   (white spaces around the variable are trimmed).
    For example, if we have `{{ abcd }}` in the markdown code,
    then `abcd` is interpreted as a variable.
    So you should avoid using two nested braces for other purpose in Markdown code,
    otherwise,
    Jekyll might fail to build your web pages.
-   If you do want to dispaly two nested curly brackets,
+   If you do want to display two nested curly brackets,
    you can either insert a space between the two left curly brackets and the two
    right curly brackets. Also you can also put it into a literal block (might be
    changed to raw later). There are also other preserved symbol combinations in Jekyll
@@ -112,7 +112,7 @@ knitr (R package)
    You can use a same nature number if you want.
    Later items do not have to start with bigger nature numbers.
 
-1. Images of format `jpg`, `png`, `gif`, etc. can be embeded in Markdown,
+1. Images of format `jpg`, `png`, `gif`, etc. can be embedded in Markdown,
    however, PDF images cannot.
 
 1. To insert a link in Markdown,
@@ -131,10 +131,10 @@ knitr (R package)
    In contrast, when you use Latex in Markdown,
    you have to use `\newline` instead of `\\`.
 
-1. In LaTex, you can supress equation numbers using the star version of equation environments
+1. In LaTex, you can suppress equation numbers using the star version of equation environments
    (e.g., `align*`).
    However, when you use LaTex in Markdown,
-   you'd better use `\nonumber` to supress equation numbers manually
+   you'd better use `\nonumber` to suppress equation numbers manually
    instead of using the star version of equation environments.
    This is because `*` has special meaning in Markdown.
 
@@ -144,7 +144,7 @@ knitr (R package)
 
 - [Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
 
-- [cheet sheet](http://stationinthemetro.com/storage/dev/Markdown_Cheat_Sheet_v1-1.pdf)
+- [cheat sheet](http://stationinthemetro.com/storage/dev/Markdown_Cheat_Sheet_v1-1.pdf)
 
 ## Mind Map
 

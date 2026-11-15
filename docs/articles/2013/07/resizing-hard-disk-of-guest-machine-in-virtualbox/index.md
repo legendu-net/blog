@@ -1,7 +1,7 @@
 ---
 title: Resizing Hard Disk of Guest Machine in VirtualBox
 created: '2013-07-20T10:57:11-07:00'
-date: '2026-08-11T22:19:14-07:00'
+date: '2026-11-15T09:15:50-08:00'
 authors:
   - bendu
 label: resizing-hard-disk-of-guest-machine-in-virtualbox
@@ -43,7 +43,7 @@ Note that the above commands only resize the virtual disk,
 it doesn't resizes partitions inside the virtual disk.
 You must manually resize partiions.
 This is easy to do for Windows 7/8 guest machines.
-If have other type of guest machiens (e.g., XP),
+If have other type of guest machines (e.g., XP),
 you can use partition tools (e.g., GParted) to manually resize partitions.
 Take GParted for example,
 you can download it,

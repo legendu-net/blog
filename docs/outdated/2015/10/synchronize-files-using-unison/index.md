@@ -1,33 +1,34 @@
 ---
 title: Synchronize Files Using Unison
-created: 2015-10-22 14:18:56
-date: 2026-04-05 19:42:39.207129
+created: '2015-10-22T14:18:56-07:00'
+date: '2026-11-15T09:28:12-08:00'
 authors:
-- bendu
+  - bendu
 label: synchronize-files-using-unison
 license: CC-BY-4.0
 tags:
-- software
-- unison
-- sync
-- two-way
-- synchronization
-- backup
-- 2-way
-- tips
+  - software
+  - unison
+  - sync
+  - two-way
+  - synchronization
+  - backup
+  - 2-way
+  - tips
 ---
+
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
+\*\*
+Things under legendu.net/outdated are outdated technologies
+that the author does not plan to update any more.
 Please look for better alternatives.
-**
+\*\*
 
 https://incumbent.org/post/unison-sync-and-launchd/
 
 1. Unison对版本要求很高，进行同步的两台主机需要相同版本的unison，
-    所以这里使用和windows一致的版本2.13.16，unison-2.13.16.tar.gz
+   所以这里使用和windows一致的版本2.13.16，unison-2.13.16.tar.gz
 
 ## Configuration
 
@@ -36,8 +37,10 @@ windows则位于C:Documents and Settingscurrentuser.unison，默认的配置文�
 
 运行这样的命令：
 
-    :::bash
-    unison config
+```
+:::bash
+unison config
+```
 
 Unison将读取~currentuser/.unison/config.prf文件里的配置。
 
@@ -66,11 +69,10 @@ log = true表示在终端输出运行信息。
 
 logfile则指定了同时将输出写入log文件。
 
-
 ```
 # Unison preferences file
 # Sync between these too folders
-# .prf file cannot recoginize ~, and NOTICE // in ssh address
+# .prf file cannot recognize ~, and NOTICE // in ssh address
 root = /home/fwolf/
 root = ssh://address_of_company_pc//home/fwolf/
 
@@ -80,7 +82,7 @@ path = .muttrc
 path = .unison/default.prf
 path = .unison/mail2home.prf
 
-# Include another perference file(.prf)
+# Include another preference file(.prf)
 #Include foo
 
 # ignore all .mp3 files anywhere

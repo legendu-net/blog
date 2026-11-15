@@ -1,7 +1,7 @@
 ---
 title: Tips on Health
 created: '2023-09-23T00:58:13-07:00'
-date: '2026-09-12T21:15:27-07:00'
+date: '2026-11-15T09:25:33-08:00'
 authors:
   - bendu
 label: tips-on-health
@@ -28,7 +28,7 @@ tags:
 
 ## Immunization Records
 
-[Immunization Inforamtion System](https://app.myirmobile.com/auth/sign-in?state=WA)
+[Immunization Information System](https://app.myirmobile.com/auth/sign-in?state=WA)
 
 ## Taking Nap
 

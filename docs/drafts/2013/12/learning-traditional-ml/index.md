@@ -1,7 +1,7 @@
 ---
 title: Learning Traditional ML
 created: '2013-12-08T23:07:57-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:18:48-08:00'
 authors:
   - bendu
 label: learning-traditional-ml
@@ -40,9 +40,9 @@ https://mmlspark.blob.core.windows.net/website/index.html
 
 ### Random Forest
 
-1. Is discrete variables easier to handle than continous variables (in random forest)?
+1. Is discrete variables easier to handle than continuous variables (in random forest)?
    Is there any advantage of discretize variables?
-   The eseential question is how is categorical varialbes handled in RF?
+   The eseential question is how is categorical variables handled in RF?
    Does RF use category variables directly or does it have to convert it to numerical somehow?
 
 1. Random forest has a way to impute missing values.

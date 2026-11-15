@@ -1,7 +1,7 @@
 ---
-title: "The Bert Model in NLP"
-created: 2020-01-05 16:28:22
-date: 2020-02-05 16:28:22
+title: The Bert Model in NLP
+created: '2020-01-05T16:28:22-08:00'
+date: '2026-11-15T09:23:54-08:00'
 authors:
   - bendu
 label: the-bert-model-in-nlp
@@ -19,8 +19,8 @@ tags:
 ## Implementations
 
 [huggingface/transformers](https://github.com/huggingface/transformers)
-has PyTorch implementation of transfomer based models 
-(such as 
+has PyTorch implementation of transformer based models
+(such as
 [BERT](https://github.com/huggingface/transformers/blob/master/src/transformers/modeling_bert.py)
 and
 [DistilBERT](https://github.com/huggingface/transformers/blob/master/src/transformers/modeling_distilbert.py)

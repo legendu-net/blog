@@ -1,7 +1,7 @@
 ---
-title: Anonymouse Internet Surfing Using Tor
-created: 2021-12-04 18:31:21
-date: 2026-04-13 23:14:51.533868
+title: Anonymous Internet Surfing Using Tor
+created: '2021-12-04T18:31:21-08:00'
+date: '2026-11-15T09:22:43-08:00'
 authors:
   - bendu
 label: anonymouse-internet-surfing-using-tor
@@ -11,7 +11,7 @@ tags:
   - programming
   - Rust
   - Tor
-  - anonymouse
+  - anonymous
   - arti
   - privacy
 ---

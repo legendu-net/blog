@@ -1,7 +1,7 @@
 ---
 title: Transfer Files over Network in Linux
-created: 2014-03-02 17:16:03
-date: 2026-04-15 19:27:00.455866
+created: '2014-03-02T17:16:03-08:00'
+date: '2026-11-15T09:20:03-08:00'
 authors:
   - bendu
 label: transfer-files-over-network-in-linux
@@ -31,7 +31,7 @@ tags:
 To sum up,
 **Samba is the one you want to use generally speaking**.
 However,
-if you are on a local network and performance is crtical,
+if you are on a local network and performance is critical,
 go with NFS.
 
 ## Comparison of File-copying Tools
@@ -50,16 +50,16 @@ go with NFS.
    The example below is how you can copy files suing `mbuffer`.
 
    ```bash
-    tar zcf - bigfile.m4p | mbuffer -s 1K -m 512 | ssh otherhost "tar zxf -"
+   tar zcf - bigfile.m4p | mbuffer -s 1K -m 512 | ssh otherhost "tar zxf -"
    ```
 
    The example below uses `tar` and `netcat` to copy files.
 
    ```bash
-    # run this command on the machine with the source files
-    tar --numeric-owner -cvf - ./ | netcat -l -p 2020
-    # run this command on the machine to copy files to
-    netcat source_machine_ip 2020 | tar -zxf -
+   # run this command on the machine with the source files
+   tar --numeric-owner -cvf - ./ | netcat -l -p 2020
+   # run this command on the machine to copy files to
+   netcat source_machine_ip 2020 | tar -zxf -
    ```
 
 ## References

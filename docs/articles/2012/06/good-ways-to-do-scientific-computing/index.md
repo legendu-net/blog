@@ -1,7 +1,7 @@
 ---
 title: Good Ways to Do Scientific Computing
-created: 2012-06-15 19:07:49
-date: 2026-04-15 19:27:00.293614
+created: '2012-06-15T19:07:49-07:00'
+date: '2026-11-15T09:17:06-08:00'
 authors:
   - bendu
 label: good-ways-to-do-scientific-computing
@@ -12,7 +12,7 @@ tags:
 ---
 
 1. Break down the work into smaller modules and develop pipelines (consists of module) for the work.
-   Be sure to save (important) intermediate results so that you can resume failed modules withouting reruning succeeded ones.
+   Be sure to save (important) intermediate results so that you can resume failed modules withouting rerunning succeeded ones.
 
 1. Manage your project in GitHub and use issues to manage tasks to do and their priorities.
 
@@ -29,6 +29,6 @@ tags:
 1. Test running your code using a small dataset or complexity degree
    to estimate the time needed to run at full scale.
 
-1. Update the progress of running regularlly if a program is time-consuming.
-   It is good practice to log both the time ellapsed and the amount of work that has been done
+1. Update the progress of running regularly if a program is time-consuming.
+   It is good practice to log both the time elapsed and the amount of work that has been done
    so that you can estimate the ETA.

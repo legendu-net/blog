@@ -1,7 +1,7 @@
 ---
 title: Matrix Decomposition
-created: 2013-04-24 23:14:16
-date: 2026-04-13 23:33:12.234361
+created: '2013-04-24T23:14:16-07:00'
+date: '2026-11-15T09:19:25-08:00'
 authors:
   - bendu
 label: matrix-decomposition
@@ -26,11 +26,11 @@ The ith column of R is the way that the ith original vector can be expressed in 
 This means that R is an upper (right) triangular matrix.
 
 More specifically,
-For any realy matrix $X_{n\times p}$, there $Q_{n\times p}$ and $R_{p\times p}$ such that
+For any real matrix $X_{n\times p}$, there $Q_{n\times p}$ and $R_{p\times p}$ such that
 (X\_{n\\times p} = Q\_{n\\times p} R\_{p\\times p}),
 where $Q$ is a matrix with orthogonal unit column vectors,
 i.e., $Q'Q=I$; $R$ is an upper (right) triangular matrix.
-QR decomposition is often done throught Gram-Schmidt process.
+QR decomposition is often done through Gram-Schmidt process.
 Given a vector $x_i$,
 the Gram-Schmidt process produce a (unit) vector $e_i$ that is orthogonal to previously produced orthogonal vectors $\{e_1,...,e_{i-1}\}$.
 This is done by subtract the projection of $e_i$ to the space spanned by $\{e_1,...,e_{i-1}\}$ from $e_i$ (and then normalize it).
@@ -78,7 +78,7 @@ The SVD can be used to
 
 1. find the rank of the matrix $X$.
 
-1. find pseudoinverse inverse of the matirx $X$.
+1. find pseudoinverse inverse of the matrix $X$.
 
 1. find lower rank approximation of the matrix $X$.
    This is one way to reduce dimension in statistics.

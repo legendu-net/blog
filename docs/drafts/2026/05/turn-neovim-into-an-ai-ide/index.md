@@ -1,7 +1,7 @@
 ---
 title: Turn Neovim into an AI IDE
 created: '2026-05-01T21:18:26.870750-07:00'
-date: '2026-08-11T22:19:17-07:00'
+date: '2026-11-15T09:30:14-08:00'
 authors:
   - bendu
 label: turn-neovim-into-an-ai-ide
@@ -75,10 +75,10 @@ I personally suggest taking approach 2 (exporting environment variables).
 - Approach 1 makes it inconvenient to use Avante.
 - Approach 3 might encounter various issues.
   - Command-line password managers might ask for password. And depending on your terminal environment, this might fail to work with Avante.
-  - Depnding on your terminal environment, the encryption (GPT or age) agent might fail to work making your password manager ask you for password every time.
+  - Depending on your terminal environment, the encryption (GPT or age) agent might fail to work making your password manager ask you for password every time.
   - You might work across multiple machines with the same AstroNvim configuration but some environment doesn't have the password manager installed.
 - Approach 2 itself (exporting environment variables) isn't secure due to increase attach through AI agents/skills.
-  However, this can be mitigated by using a command-line password mananger and setting environment variables for Neovim only.
+  However, this can be mitigated by using a command-line password manager and setting environment variables for Neovim only.
   That is,
   you can run `AVANTE_GEMINI_API_KEY=(gopass show -o gemini/token) nvim` to start Neovim with Gemini API key exported to Neovim only.
 

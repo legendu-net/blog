@@ -1,7 +1,7 @@
 ---
 title: Tips on WSL 2
 created: '2017-08-26T23:23:44-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:21:49-08:00'
 authors:
   - bendu
 label: tips-on-wsl-2
@@ -81,9 +81,9 @@ With the 1903 update, users can access Linux Filesystem from Windows directly.
 ## General Tips
 
 2. All windows disks are mounted under `/mnt`.
-   You can visit all Windows files/directories that do not require admin privilige in WSL.
+   You can visit all Windows files/directories that do not require admin privilege in WSL.
    However,
-   if you want to visit files/directories that require admin privilige,
+   if you want to visit files/directories that require admin privilege,
    you have to run WSL with admin and visit these files/directories using sudo in WSL.
 
 1. You'd better use files names that work both in Windows and Linux,

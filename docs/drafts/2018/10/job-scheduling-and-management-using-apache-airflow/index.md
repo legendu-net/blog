@@ -1,7 +1,7 @@
 ---
 title: Job Scheduling and Management Using Apache Airflow
-created: 2018-10-10 09:32:40
-date: 2026-04-15 19:27:01.265930
+created: '2018-10-10T09:32:40-07:00'
+date: '2026-11-15T09:23:17-08:00'
 authors:
   - bendu
 label: job-scheduling-and-management-using-apache-airflow
@@ -91,7 +91,7 @@ Below is an example of `my.cnf`.
    Some bash commands (e.g., `rsync`) might return the error code 0
    even if it essentially succeeds.
    It is quite challenge to handle exceptions/error code of shell command
-   to ingore non-critical errors.
+   to ignore non-critical errors.
 
 ## Delete DAGs
 

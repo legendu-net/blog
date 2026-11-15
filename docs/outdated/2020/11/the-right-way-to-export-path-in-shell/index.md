@@ -1,7 +1,7 @@
 ---
 title: The Right Way to Export PATH in Shell
 created: '2020-11-09T11:10:06-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:27:50-08:00'
 authors:
   - bendu
 label: the-right-way-to-export-path-in-shell
@@ -45,7 +45,7 @@ for ((_i=${#_PATHS[@]}-1; _i>=0; _i--)); do
 done
 ```
 
-The snippet has the advatage that it works well in both `.bashrc` and `.bash_profile`.
+The snippet has the advantage that it works well in both `.bashrc` and `.bash_profile`.
 So,
 you can safely add such snippets into `.bashrc`
 and keep your `.bash_profile` as simple as the following.

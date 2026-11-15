@@ -1,7 +1,7 @@
 ---
-title: "Python Build Tools"
-created: 2019-03-17 13:12:30
-date: 2020-02-17 13:12:30
+title: Python Build Tools
+created: '2019-03-17T13:12:30-07:00'
+date: '2026-11-15T09:22:48-08:00'
 authors:
   - bendu
 label: python-build-tools
@@ -10,17 +10,17 @@ tags:
   - programming
   - Python
   - building tools
-  - dependency managment
+  - dependency management
   - packaging
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## [poetry](https://github.com/sdispater/poetry)
+
 [poetry](https://github.com/sdispater/poetry)
 is the best dependency management/packaging tool for Python
 and is widely adopted.
-
 
 ## [pybuilder/pybuilder](https://github.com/pybuilder/pybuilder)
 

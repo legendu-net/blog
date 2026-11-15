@@ -1,7 +1,7 @@
 ---
 title: Map Keys in macOS
 created: '2016-06-26T07:30:03-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:15:46-08:00'
 authors:
   - bendu
 label: map-keys-in-macos
@@ -26,7 +26,7 @@ Follow the steps below to remap Caps Lock to Escape (without relying on 3rd part
 ## The Old Way of Using Seil
 
 [Seil](https://pqrs.org/osx/karabiner/seil.html.en)
-(previouly known as PCKeyboardHack) is great tool for mapping keys on Mac.
+(previously known as PCKeyboardHack) is great tool for mapping keys on Mac.
 Let me illustrate how to use `Seil`.
 As a heavy Vim user,
 I find it is necessary to swap the `Caps Lock` key with the `Escape` key.

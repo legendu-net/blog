@@ -1,7 +1,7 @@
 ---
 title: Tree-Based Data Structures
-created: 2023-05-20 11:57:13
-date: 2026-04-13 23:14:31.594757
+created: '2023-05-20T11:57:13-07:00'
+date: '2026-11-15T09:24:52-08:00'
 authors:
   - bendu
 label: tree-based-data-structures
@@ -62,7 +62,7 @@ Red-black trees are suitable for applications where the data size is manageable 
 
 ## Heap
 
-1. (Binary) heap is nearly compelete binary tree.
+1. (Binary) heap is nearly complete binary tree.
 1. A max heap requires each parent to be greater or equal to its children,
    and a min heap requires each parent to be less or equal to its children.
 1. Max heap is useful for heapsort while min heap is useful for priority queue.

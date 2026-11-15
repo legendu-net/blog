@@ -1,7 +1,7 @@
 ---
 title: Write R Code That Runs Faster
 created: '2012-06-26T22:08:17-07:00'
-date: '2026-08-11T22:19:36-07:00'
+date: '2026-11-15T09:28:11-08:00'
 authors:
   - bendu
 label: write-r-code-that-runs-faster
@@ -24,12 +24,12 @@ tags:
 
 <img src="/media/r/run-fast.jpg" height="200" width="240" align="right"/>
 
-R is a popular statistical software which is famous for enormous amout of
+R is a popular statistical software which is famous for enormous amount of
 packages. The syntax of R is very flexible with make it convenient at the cost
 of performance. R is indeed slow compared to many other scripting languages, but
 there are a few tricks which can make your R code run faster.
 
-1. Use vector and matrix operation if possible. Theses `*apply` functions
+1. Use vector and matrix operation if possible. These `*apply` functions
    are very helpful for this purpose.
 
 1. Avoid changing the type and size of object in R. Though we use R object
@@ -64,19 +64,19 @@ and then operate on the matrix.
 
 1. Use native code (e.g., Fortran, C/C++) for computationally intensive job if applicable.
    Though native code can increase the performance, there is overheading to invoke native code.
-   It is less benefitial to invoke native code many times to do a smart part of job each time.
+   It is less beneficial to invoke native code many times to do a smart part of job each time.
    You have to use command `R CMD SHLIB file_to_compile` to compile native code,
    and use the function `dyn.load` to load the shared library object.
    A more convenient way is to use R package "Rcpp" if you are confident about writing C++ code.
    However, you have to pay extra attention when you interact between R and other programming language.
-   For example, passing arrays betwwen R and other languages can be tricky.
+   For example, passing arrays between R and other languages can be tricky.
    For more information about this, refer to [this post](http://dclong.github.io/en/2012/05/r-interface-other-languages/).
 
 1. Split big data object (e.g., big data frame or matrix) to smaller ones,
    and operate on these smaller objects.
 
 1. Avoid creating too many objects in the each working environment. Not having
-   enough memeory can not only make your code run slower but also make it fail
+   enough memory can not only make your code run slower but also make it fail
    to run if have to allocate big vectors. One way to do this is to writing
    small functions and run your functions instead of running everything
    directly in a working environment. Small functions make sure that objects

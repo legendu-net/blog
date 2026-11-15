@@ -1,7 +1,7 @@
 ---
 title: Use Flake8 to Lint Python Scripts
-created: 2020-08-25 14:52:31
-date: 2026-04-13 23:15:17.057632
+created: '2020-08-25T14:52:31-07:00'
+date: '2026-11-15T09:24:58-08:00'
 authors:
   - bendu
 label: use-flake8-to-lint-python-scripts
@@ -15,7 +15,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## Configration
+## Configuration
 
 It is suggested that you put the configuration into a file named `.flake8`
 in the root directory of your project.

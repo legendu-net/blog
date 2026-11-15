@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Code for Java Development
-created: 2019-05-10 23:23:59
-date: 2026-04-14 19:49:14.929692
+created: '2019-05-10T23:23:59-07:00'
+date: '2026-11-15T09:24:22-08:00'
 authors:
   - bendu
 label: visual-studio-code-for-java-development
@@ -45,7 +45,7 @@ https://github.com/redhat-developer/vscode-java/wiki/Lombok-support
 
 ## Other Potentially Useful Extensions
 
-- [Visual Stuido IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+- [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 
 - [TabNine VSCode](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
 

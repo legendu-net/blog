@@ -1,7 +1,7 @@
 ---
 title: Editing Shell Commands Using Vim
 created: '2024-07-22T13:39:40-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:28:26-08:00'
 authors:
   - bendu
 label: editing-shell-commands-using-vim
@@ -17,7 +17,7 @@ tags:
 is preferred to Bash/Zsh.
 The following content is for Bash/Zsh only.
 
-1. A bash prompt can be editted in both Vi mode and Emacs mode.
+1. A bash prompt can be edited in both Vi mode and Emacs mode.
    The default is Emacs mode.
    You can turn on the Vi mode by `set -o vi` in `.bashrc`.
    This will make all bash prompts be edited in a limited single-line Vi mode.
@@ -42,7 +42,7 @@ The following content is for Bash/Zsh only.
 
      - You can span a complicated command to multiple lines using `\`.
      - You can split a complicated command into multiple simpler commands on multiple lines.
-       On quiting Vim,
+       On quitting Vim,
        those commands will be run in sequential.
 
    - If you find that you need information from historical commands

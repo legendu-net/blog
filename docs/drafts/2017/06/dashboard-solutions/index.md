@@ -1,7 +1,7 @@
 ---
-title: "Dashboard Solutions"
-created: 2017-06-08 14:01:55
-date: 2022-05-09 10:54:27
+title: Dashboard Solutions
+created: '2017-06-08T14:01:55-07:00'
+date: '2026-11-15T09:24:04-08:00'
 authors:
   - bendu
 label: dashboard-solutions
@@ -27,7 +27,7 @@ is an awesome dashboard plugin for JupyterLab!
 
 ## [panel](https://github.com/pyviz/panel)
 
-A high-level app and dashboarding solution for Python. 
+A high-level app and dashboarding solution for Python.
 Notice that panel does not support ipywidgets currently.
 
 ## [StreamLit](https://github.com/streamlit/streamlit)
@@ -57,28 +57,28 @@ https://discuss.redash.io/
 
 **Pros**
 
-1. Redash is a great opensource alternative to Tableau! 
+1. Redash is a great opensource alternative to Tableau!
 
-2. Code free which makes it suitable for business people.
+1. Code free which makes it suitable for business people.
 
 **Cons**
 
-1. Currently SQL is supported. 
-    Even though Redash is developed in Python,
-    directly Python script based data manipulation is not nicely supported. 
-    There is a large voice in the community on this, 
-    so hopefully this will get improved soon.
+1. Currently SQL is supported.
+   Even though Redash is developed in Python,
+   directly Python script based data manipulation is not nicely supported.
+   There is a large voice in the community on this,
+   so hopefully this will get improved soon.
 
-2. Superset use SQLAlchemy for underlying crunching. 
-    SQLAlchemy relies on ODBC for querying databases,
-    however, 
-    ODBC installation and configuration is often a nightmare for commerical databases
-    (such as Teradata, Oracle and SQL Server).
-    It is often more convenient to query commerical databases using JDBC,
-    but unfortuantely JDBC support in SQLAlchemy is not good.
+1. Superset use SQLAlchemy for underlying crunching.
+   SQLAlchemy relies on ODBC for querying databases,
+   however,
+   ODBC installation and configuration is often a nightmare for commercial databases
+   (such as Teradata, Oracle and SQL Server).
+   It is often more convenient to query commercial databases using JDBC,
+   but unfortunately JDBC support in SQLAlchemy is not good.
 
-3. Visualization is via JS. 
-    Python visualization libraries (even if JS based) are not supported directly.
+1. Visualization is via JS.
+   Python visualization libraries (even if JS based) are not supported directly.
 
 ### Docker Image
 
@@ -92,29 +92,29 @@ Superset is a very similar (both functionalities and underlying techs) product t
 
 **Pros**
 
-1. Superset is a great opensource alternative to Tableau! 
+1. Superset is a great opensource alternative to Tableau!
 
-2. Code free which makes it suitable for business people.
+1. Code free which makes it suitable for business people.
 
 **Cons**
 
-1. Currently SQL Lab is supported. 
-    Even though Superset is developed in Python,
-    directly Python script based data manipulation is not nicely supported. 
-    There is a large voice in the community on this, 
-    so hopefully this will get improved soon.
+1. Currently SQL Lab is supported.
+   Even though Superset is developed in Python,
+   directly Python script based data manipulation is not nicely supported.
+   There is a large voice in the community on this,
+   so hopefully this will get improved soon.
 
-2. Superset use SQLAlchemy for underlying crunching. 
-    SQLAlchemy relies on ODBC for querying databases,
-    however, 
-    ODBC installation and configuration is often a nightmare for commerical databases
-    (such as Teradata, Oracle and SQL Server).
-    It is often more convenient to query commerical databases using JDBC,
-    but unfortuantely JDBC support in SQLAlchemy is not good.
+1. Superset use SQLAlchemy for underlying crunching.
+   SQLAlchemy relies on ODBC for querying databases,
+   however,
+   ODBC installation and configuration is often a nightmare for commercial databases
+   (such as Teradata, Oracle and SQL Server).
+   It is often more convenient to query commercial databases using JDBC,
+   but unfortunately JDBC support in SQLAlchemy is not good.
 
-3. Visualization is via JS. 
-    Python visualization libraries (even if JS based) are not supported directly.
-    
+1. Visualization is via JS.
+   Python visualization libraries (even if JS based) are not supported directly.
+
 ### Docker Image
 
 amancevice/superset
@@ -125,36 +125,34 @@ Looks very interesting!
 
 ## [Bokeh Server](https://bokeh.pydata.org/en/latest/docs/user_guide/server.html)
 
-It is a great idea to combine Bokeh Serve with Jupyter Notebook and Docker images. 
+It is a great idea to combine Bokeh Serve with Jupyter Notebook and Docker images.
 You can use Jupyter Notebook to quickly prototype
-and rely on Docker for quickly deployment. 
+and rely on Docker for quickly deployment.
 
 ### Pros & Cons
 
 **Pros**
 
-1. Very convenient for Python user. 
+1. Very convenient for Python user.
 
-2. Bokeh Server integrates with Jupyter Notebook very well.
-    You can even start a Bokeh Server in a Jupyter Notebook.
-    This gives the ability to quickly prototype your dashboard in Jupyter Notebook.
+1. Bokeh Server integrates with Jupyter Notebook very well.
+   You can even start a Bokeh Server in a Jupyter Notebook.
+   This gives the ability to quickly prototype your dashboard in Jupyter Notebook.
 
 **Cons**
 
-1. Coding required. 
-    Users have to be familiar with both Python and the Bokeh package.
+1. Coding required.
+   Users have to be familiar with both Python and the Bokeh package.
 
 ## Plotly Dash
 
 Dash is a great (even better) alternative to Bokeh.
-I though Dash is based on Plotly APIs but the developers says not 
+I though Dash is based on Plotly APIs but the developers says not
 (see [this issue](https://github.com/plotly/dash/issues/192)).
 
 https://medium.com/@plotlygraphs/introducing-dash-5ecf7191b503
 
 https://dash.plot.ly/
-
-
 
 ## HVF/franchise
 
@@ -178,9 +176,8 @@ https://github.com/keen/dashboards
 
 https://github.com/metabase/metabase
 
-
-
 ## Redash
+
 Redash is a dashboard tool developed in Python.
 
 Installation of Redash
@@ -204,7 +201,8 @@ Teradata is not officially supported by Redash;
 Unable to add the Presto and Hive data source to Redash, don't know the reason;
 
 ## Superset
-At the first glance, Superset is an Apache project, whcih means that it may be more active, maintained by more people, and better-supported.
+
+At the first glance, Superset is an Apache project, which means that it may be more active, maintained by more people, and better-supported.
 
 Installation of Superset
 Installing Superset is pretty easy by just following the guide here: https://superset.incubator.apache.org/installation.html

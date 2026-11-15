@@ -1,18 +1,19 @@
 ---
 title: Chasing Freedom on Snowboards
-created: 2026-04-03 19:10:39.880862
-date: 2026-04-05 19:42:37.599542
+created: '2026-04-03T19:10:39.880862-07:00'
+date: '2026-11-15T09:29:12-08:00'
 authors:
-- bendu
+  - bendu
 label: chasing-freedom-on-snowboards
 license: CC-BY-4.0
 tags:
-- sports
-- snowboard
-- snowboarding
-- snow
-- opensnow
+  - sports
+  - snowboard
+  - snowboarding
+  - snow
+  - opensnow
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Weather Forecasting
@@ -24,15 +25,14 @@ tags:
 ## Passes to Resorts
 
 1. resort-specific passes
-2. [Ikon](https://www.ikonpass.com/) passes
-3. [Epic](https://www.epicpass.com/) passes
+1. [Ikon](https://www.ikonpass.com/) passes
+1. [Epic](https://www.epicpass.com/) passes
 
 [Price History of Ikon vs Epic](https://www.epicorikon.com/price-history)
 
 ## Goggles
 
 m4 goggles compatible with glasses
-
 
 ## Snowboard Boots
 
@@ -41,7 +41,7 @@ m4 goggles compatible with glasses
 ## Bindings
 
 1. FASE is a great choice overall.
-    I personally perfer it to supermatic and step-on bindings.
+   I personally prefer it to supermatic and step-on bindings.
 
 - [FASE vs Union Step-On vs Supermatic | Hike Park Binding Comparison](https://www.youtube.com/watch?v=64BuT2s5fnE)
 
@@ -63,7 +63,7 @@ m4 goggles compatible with glasses
 
 - [How to One Foot Like a Pro](https://www.youtube.com/watch?v=e3cffkBo6yM)
 
-### Get On and Off Lift 
+### Get On and Off Lift
 
 - [How to Get On and OFF Ski Lift | Snowboard Beginner Guide](https://www.youtube.com/watch?v=RkNhXala8xY)
 

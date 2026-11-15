@@ -1,7 +1,7 @@
 ---
 title: Optimization Algorithms
-created: 2013-03-30 12:17:07
-date: 2026-04-15 19:27:01.501575
+created: '2013-03-30T12:17:07-07:00'
+date: '2026-11-15T09:19:01-08:00'
 authors:
   - bendu
 label: optimization-algorithms
@@ -54,7 +54,7 @@ however, it need to computer the Hessian matrix,
 which requires more time and sometimes causes numerical problems.
 
 - Coordinate Descent
-  This trick is used in non-linear models and linear models with covariance matrix differnt from the identity matrix.
+  This trick is used in non-linear models and linear models with covariance matrix different from the identity matrix.
   SMO algorithm: change 2 parameters at a time
 
 - Genetics Algorithm

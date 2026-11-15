@@ -1,7 +1,7 @@
 ---
 title: Traps in R
 created: '2012-11-09T23:47:21-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:34:11-08:00'
 authors:
   - bendu
 label: traps-in-r
@@ -200,6 +200,6 @@ is that it invites many problems and can probably result in fetal mistakes.
 15. Because of the way that computers stores double values,
     there are always tiny storing errors associated with double values.
     So if you want to compare whether a double value belongs to a range
-    (a point is a closed interval with equal limts),
+    (a point is a closed interval with equal limits),
     you can change the limits (depends on what your want to do)
     of the range slightly to avoid storing errors.

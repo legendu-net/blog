@@ -1,7 +1,7 @@
 ---
 title: Benchmark of Popular Deep Learning Models
-created: 2021-09-16 11:21:11
-date: 2026-04-13 23:14:56.032744
+created: '2021-09-16T11:21:11-07:00'
+date: '2026-11-15T09:21:45-08:00'
 authors:
   - bendu
 label: benchmark-of-popular-deep-learning-models
@@ -18,7 +18,7 @@ tags:
 
 ## Memory
 
-1. ResNet152 inferencing requies about (a little bit less than) 2G GPU memory
+1. ResNet152 inferencing requires about (a little bit less than) 2G GPU memory
    and training can be done with 8G GPU memory (need to set a small batch size).
    Deeper ResNet cannot be trained with 8G GPU memory.
 

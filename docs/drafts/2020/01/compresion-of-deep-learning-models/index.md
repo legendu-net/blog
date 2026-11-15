@@ -1,7 +1,7 @@
 ---
-title: "Compresion of Deep Learning Models"
-created: 2020-01-08 11:26:35
-date: 2020-01-08 11:26:35
+title: Compression of Deep Learning Models
+created: '2020-01-08T11:26:35-08:00'
+date: '2026-11-15T09:23:05-08:00'
 authors:
   - bendu
 label: compresion-of-deep-learning-models
@@ -20,7 +20,6 @@ Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantiz
 
 MobileNet
 
-
 一、网络修剪
 
 网络修剪，采用当网络权重非常小的时候(小于某个设定的阈值)，把它置0，就像二值网络一般；然后屏蔽被设置为0的权重更新，继续进行训练；以此循环，每隔训练几轮过后，继续进行修剪。
@@ -36,7 +35,6 @@ MobileNet
 四、从结构上，简化网络计算
 
 这些需自己阅读比较多相关文献，才能设计出合理，速度更快的网络，比如引入fire module、NIN、除全连接层等一些设计思想，这边不进行具体详述。
-
 
 [Distilling knowledge from Neural Networks to build smaller and faster models](https://blog.floydhub.com/knowledge-distillation/)
 

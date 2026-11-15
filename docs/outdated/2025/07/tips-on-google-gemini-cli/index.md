@@ -1,7 +1,7 @@
 ---
 title: Tips on Google Gemini CLI
 created: '2025-07-06T08:55:45-07:00'
-date: '2026-05-24T23:36:24-07:00'
+date: '2026-11-15T09:28:43-08:00'
 authors:
   - bendu
 label: tips-on-google-gemini-cli
@@ -49,7 +49,7 @@ instead.
 
 1. Use `/help` for more information on Gemini CLI.
 
-1. Use the comamnd `/vim` to toggle on Vim mode.
+1. Use the command `/vim` to toggle on Vim mode.
    This sets `vimMode: true` in the file `~/.gemini/settings.json`.
 
 ## Manage Prompts

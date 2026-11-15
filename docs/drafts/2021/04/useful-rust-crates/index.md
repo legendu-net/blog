@@ -1,7 +1,7 @@
 ---
 title: Useful Rust Crates
 created: '2021-04-09T23:34:03-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:26:01-08:00'
 authors:
   - bendu
 label: useful-rust-crates
@@ -95,7 +95,7 @@ Serde adapter that avoids stack overflow by dynamically growing the stack
 A crate that allows you to share memory between processes.
 This crate provides lightweight wrappers around shared memory APIs in an OS agnostic way.
 It is intended to be used with it's sister crate raw_sync
-which provide simple primitves to synchronize access to the shared memory (Mutex, RwLock, Events, etc).
+which provide simple primitives to synchronize access to the shared memory (Mutex, RwLock, Events, etc).
 
 ### [rust-scudo](https://github.com/google/rust-scudo)
 

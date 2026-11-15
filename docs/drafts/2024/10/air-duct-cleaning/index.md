@@ -1,7 +1,7 @@
 ---
 title: Air Duct Cleaning
-created: 2024-10-20 23:55:21
-date: 2026-04-13 23:14:23.284522
+created: '2024-10-20T23:55:21-07:00'
+date: '2026-11-15T09:27:48-08:00'
 authors:
   - bendu
 label: air-duct-cleaning
@@ -25,7 +25,7 @@ Drill Powered Rotary Brush
 
 - [Wohler Rotary Brush M10-10' | Air Duct & Dryer Vent Cleaning Tool | Drill Powered | Easy Operation | for Residential & Commercial Use | Incl. Brush Head](https://www.amazon.com/gp/product/B0BKN5259Z/ref=ox_sc_act_title_1?smid=ATVPDKIKX0DER&psc=1)
 
-Rental a powerful Vaccum from HomeDepot
+Rental a powerful Vacuum from HomeDepot
 
 https://www.homedepot.com/c/floor_care_and_refinishing_equipment_rental#floor-strippers
 

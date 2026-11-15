@@ -1,7 +1,7 @@
 ---
-title: "Undelete Files in Linux"
-created: 2015-09-12 01:39:06
-date: 2022-12-20 12:05:13
+title: Undelete Files in Linux
+created: '2015-09-12T01:39:06-07:00'
+date: '2026-11-15T09:19:29-08:00'
 authors:
   - bendu
 label: undelete-files-in-linux
@@ -23,9 +23,9 @@ is really to avoid permanently delete files.
 It is suggested that you avoid using the `rm` command
 (unless you are 100% sure what you are doing)
 .
-Insted,
+Instead,
 you can use a file manager provided by a Linux desktop to delete files.
-This way, 
+This way,
 deleted files are moved to the Trash directory,
 which can be recovered easily.
 If you must use a command-line tool,
@@ -39,7 +39,7 @@ it is suggested that you use one of the following safer alternatives to `rm`.
 
 ```bash
 sudo mount -o remount,ro /dev/sdb1
-sudo extundelete --restore-all /dev/sdb1 
+sudo extundelete --restore-all /dev/sdb1
 ```
 
 ## References

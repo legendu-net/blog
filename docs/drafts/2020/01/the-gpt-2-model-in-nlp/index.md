@@ -1,7 +1,7 @@
 ---
 title: The GPT-2 Model in NLP
-created: 2020-01-06 09:57:38
-date: 2026-04-15 19:27:01.098243
+created: '2020-01-06T09:57:38-08:00'
+date: '2026-11-15T09:21:22-08:00'
 authors:
   - bendu
 label: the-gpt-2-model-in-nlp
@@ -21,7 +21,7 @@ tags:
 
 The project
 [huggingface/transfomer](https://github.com/huggingface/transformers)
-has implementation of transfomer based modles
+has implementation of transformer based models
 (such as
 [GPT-2](https://github.com/huggingface/transformers/blob/master/src/transformers/modeling_gpt2.py)
 )

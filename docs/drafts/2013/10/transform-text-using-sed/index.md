@@ -1,7 +1,7 @@
 ---
 title: Transform Text Using sed
 created: '2013-10-22T15:47:51-07:00'
-date: '2026-06-12T22:31:33-07:00'
+date: '2026-11-15T09:18:40-08:00'
 authors:
   - bendu
 label: transform-text-using-sed
@@ -74,7 +74,7 @@ tags:
    ```
 
 1. Get rid of all spaces (helpful for comparing not well formatted code)
-   对于格式问题 可以直接先删除空格等 然后再比较文件！！！very briliant idea!!!
+   对于格式问题 可以直接先删除空格等 然后再比较文件！！！very brilliant idea!!!
 
    ```
     :::bash
@@ -111,7 +111,7 @@ tags:
     sed -i '1 s/\./_/g' *.csv
    ```
 
-1. Print the first (header) line of all CSV documents seprated by dash lines.
+1. Print the first (header) line of all CSV documents separated by dash lines.
 
    ```
     :::bash

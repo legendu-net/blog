@@ -1,7 +1,7 @@
 ---
 title: Tips on Network Protocols
-created: 2020-10-17 01:00:06
-date: 2026-04-13 23:15:13.899035
+created: '2020-10-17T01:00:06-07:00'
+date: '2026-11-15T09:25:34-08:00'
 authors:
   - bendu
 label: tips-on-network-protocols
@@ -27,7 +27,7 @@ TCP/IP and UDP/IP are low-level data transfer protocols.
 
 HTTP, FTP, SMTP, WebSocket are high-level data transfer protocols.
 
-WebSocket persists a connection and use it for bidirectional data transfering.
+WebSocket persists a connection and use it for bidirectional data transferring.
 It is good for real-time applications, e.g., chat and game applications.
 
 WebTransport is a better alternative to WebSocket.

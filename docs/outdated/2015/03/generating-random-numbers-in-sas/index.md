@@ -1,7 +1,7 @@
 ---
-title: "Generating Random Numbers in SAS"
-created: 2015-03-10 22:05:12
-date: 2015-05-10 22:05:12
+title: Generating Random Numbers in SAS
+created: '2015-03-10T22:05:12-07:00'
+date: '2026-11-15T09:27:36-08:00'
 authors:
   - bendu
 label: generating-random-numbers-in-sas
@@ -16,20 +16,18 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
+\*\*
+Things under legendu.net/outdated are outdated technologies
+that the author does not plan to update any more.
 Please look for better alternatives.
-**
+\*\*
 
-
-
-CALL RANDGEN( result, distname<, parm1><, parm2><, parm3>);
+CALL RANDGEN( result, distname\<, parm1>\<, parm2>\<, parm3>);
 or
-   u = rand("Uniform"); /* u ~ U[0,1] */ based on Mersenne-Twister
+u = rand("Uniform"); /\* u ~ U[0,1] \*/ based on Mersenne-Twister
 in a data step
 
-forget about other random number genrating functions
+forget about other random number generating functions
 
 ```SAS
 data random;
@@ -41,21 +39,18 @@ data random;
 run; 
 ```
 
-
-
-
-rand can also be used in the IML procedure, 
+rand can also be used in the IML procedure,
 same method as RANDGEN, the differeence is that rand generate 1 at a time while randgen can generate multiple ones (optimized for IML)
 
 RANDGEN Call
 in iml procedures
 
-----------------------------------------------------------------------------
-NORMAL (seed) ; only for N(0, 1) distribution, 
+______________________________________________________________________
+
+NORMAL (seed) ; only for N(0, 1) distribution,
 UNIFORM (seed) ; U(0, 1)
 
 not suggested as RANDGEN generate better quality random numbers
-
 
 The following functions ranDist are not good!!!
 
@@ -91,8 +86,6 @@ generates a random sample from a multivariate normal distribution
 
 RANDWISHART
 generates a random sample from a Wishart distribution
-
-
 
 Random Number Functions and Subroutines
 NORMAL

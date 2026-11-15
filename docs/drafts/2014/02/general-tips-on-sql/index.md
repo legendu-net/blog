@@ -1,7 +1,7 @@
 ---
 title: General Tips on SQL
 created: '2014-02-15T12:10:03-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:16:13-08:00'
 authors:
   - bendu
 label: general-tips-on-sql
@@ -24,7 +24,7 @@ tags:
 
 ## Performance
 
-1. Avoid implicit data convertion!
+1. Avoid implicit data conversion!
    This might cause full table scan which hurts performance badly.
    For more discussions,
    please refer to
@@ -70,7 +70,7 @@ tags:
    In that case, all records is treated as one partition.
 
 1. When using integer constant in SQL code, prefer BigInt, i.e., suffix them with `L`.
-   This can save you troubes of overflow if count/sum a large table.
+   This can save you troubles of overflow if count/sum a large table.
 
 1. Always assume there are data issues (such as missing values, duplicates, etc.) unless forced by table constraints
    as this is often the fact.
@@ -119,7 +119,7 @@ tags:
 1. Use `=` instead of `==` for comparison.
    Quote strings using single quotation marks instead of double quotation marks.
 
-1. refresh in SQLDeveloper to show newly created talbes
+1. refresh in SQLDeveloper to show newly created tables
 
 1. You must put all columns of the SELECT
    in the GROUP BY or use aggregate functions on them
@@ -138,7 +138,7 @@ tags:
 1. You cannot use `order by` when insert records into a table using select .
    this is easy to understand as first SQL does not save data in order.
    second, ordering in select might conflict with ordered columns (e.g., auto increment columns).
-   Finally, select never garantee any ordering.
+   Finally, select never guarantee any ordering.
    You have to apply order by any way.
 
 1. It is always good practice to indicate the version of SQL in your sql code ....

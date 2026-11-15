@@ -1,7 +1,7 @@
 ---
 title: Tips on Delta Lake
-created: 2020-05-19 19:49:16
-date: 2026-04-13 23:15:21.803583
+created: '2020-05-19T19:49:16-07:00'
+date: '2026-11-15T09:24:27-08:00'
 authors:
   - bendu
 label: tips-on-delta-lake
@@ -24,7 +24,7 @@ convert to delta [db_name.]table_name
 [partitioned by ...]
 \[vacuum [retain number hours]\]
 
-vaccum
+vacuum
 
 describe history db_name.table_name
 

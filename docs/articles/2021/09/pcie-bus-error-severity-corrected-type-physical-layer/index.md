@@ -1,7 +1,7 @@
 ---
 title: 'PCIe BUS Error: Severity=Corrected, Type=Physical Layer'
-created: 2021-09-06 12:47:10
-date: 2026-04-15 19:27:00.256728
+created: '2021-09-06T12:47:10-07:00'
+date: '2026-11-15T09:17:09-08:00'
 authors:
   - bendu
 label: pcie-bus-error-severity-corrected-type-physical-layer
@@ -32,7 +32,7 @@ Below are step-by-step symptoms from superficial to root causes.
 1. Your Linux system becomes very slow
    even if the system has enough CPU and memory resources.
 
-1. `top` reports a large portion of CPU wating on IO.
+1. `top` reports a large portion of CPU waiting on IO.
 
 1. `sudo iotop` reports `jbd2` using lots of disk IO.
 
@@ -55,7 +55,7 @@ is to directly search for the keyword `PCIe-Bus-Error` in log files.
 ls /var/log/*log | xargs grep PCI-Bus-Error
 ```
 
-If you see lots of occurences of the following line,
+If you see lots of occurrences of the following line,
 then your machine is likely experiencing the issue.
 
 > PCIe-Bus-Error:-severity=Corrected,-type=Physical-Layer
@@ -68,7 +68,7 @@ then your machine is likely experiencing the issue.
    Notice that you'd better NOT remove log files.
 
    ```bash
-    cat /dev/null | sudo tee /var/log/kern.log
+   cat /dev/null | sudo tee /var/log/kern.log
    ```
 
 1. Edit the GRUB file `/etc/default/grub`
@@ -78,7 +78,7 @@ then your machine is likely experiencing the issue.
 1. Update the GRUB.
 
    ```bash
-    sudo update-grub
+   sudo update-grub
    ```
 
 1. If the above steps does not fix the issue,

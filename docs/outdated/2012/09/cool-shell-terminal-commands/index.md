@@ -1,7 +1,7 @@
 ---
 title: Cool Shell/Terminal Commands
 created: '2012-09-18T21:38:38-07:00'
-date: '2026-06-12T22:31:33-07:00'
+date: '2026-11-15T09:30:13-08:00'
 authors:
   - bendu
 label: cool-shell-terminal-commands
@@ -25,7 +25,7 @@ The following content is for Bash/Zsh only.
 ## Seeking Help
 
 The best way to seek for help is surely to use a search engine.
-However, there are serveral terminal command that can help you quickly.
+However, there are several terminal command that can help you quickly.
 
 1. `whatis` briefly describes what a command does.
    For example,
@@ -101,8 +101,8 @@ please refer to
    `!!:-` stands for the last command without the last parameter.
 
 1. `^foo^bar^` stands for the last command
-   with the first occurence of `foo` replaced by `bar`.
-   The last `^` can be omitted if no more manipulation on the command is neede.
+   with the first occurrence of `foo` replaced by `bar`.
+   The last `^` can be omitted if no more manipulation on the command is needed.
    (Note that this trick only works for the last command.)
 
 1. You can use the suffix `:s/foo/bar/` to replace the first occurrence of `foo` with `bar`
@@ -116,7 +116,7 @@ please refer to
    in a retrieved command.
    For example,
    `!!:gs/foo/bar/` stands for the last command
-   with all occurences of `foo` replaced by `bar`.
+   with all occurrences of `foo` replaced by `bar`.
    The last `/` can be omitted if no more manipulation on the command is needed.
 
 1. You can add vanilla strings before and/or after a retrieved command.
@@ -134,7 +134,7 @@ please refer to
 
 ### Previeawing Commands
 
-You can preview (rather than run) a retrived and manipulated (using string substitution) command
+You can preview (rather than run) a retrieved and manipulated (using string substitution) command
 by adding the suffix `:p` to the command.
 
 In the above commands,
@@ -162,14 +162,14 @@ please refer to
 1. `!:3-5` stands for the third to fifth parameters of the last command.
    If the first argument index is 0, then it can be omitted.
    For example, `!:0-2` can be simplified as `!:-2`.
-   If the "TO" argument index is omited,
+   If the "TO" argument index is omitted,
    then the last argument is not included.
    For example, `!:3-` means the third argument to the last-but-1 argument.
    Specially, `!:-` stands for last command without the last argument.
 
 1. `<ESC> .` or `ALT + .` retrieves the last parameter of any previous command.
-   Pressed once, it retrives the last parameter of the last command;
-   pressed twice, it retrives the last parameter of the 2nd last command,
+   Pressed once, it retrieves the last parameter of the last command;
+   pressed twice, it retrieves the last parameter of the 2nd last command,
    and so on and so forth.
 
 ## Retrieve Output of Commands
@@ -184,7 +184,7 @@ there are several indirect ways to do this.
 
 1. Assign result to a variable.
    For example,
-   `v=$(ls)` makes `v` a variable contining the result of last command.
+   `v=$(ls)` makes `v` a variable containing the result of last command.
 
 1. Use `$(!!)` to retrieve the result of last command.
    Similarly,

@@ -1,7 +1,7 @@
 ---
 title: Docker on Windows
-created: 2017-07-08 14:45:17
-date: 2026-04-13 23:28:04.879191
+created: '2017-07-08T14:45:17-07:00'
+date: '2026-11-15T09:28:55-08:00'
 authors:
   - bendu
 label: docker-on-windows
@@ -9,7 +9,7 @@ license: CC-BY-4.0
 tags:
   - software
   - Docker
-  - Widnows
+  - Windows
   - Windows 10
   - Hyper-V
   - Virtualization
@@ -28,7 +28,7 @@ there are all kinds of issues.
 It is suggested that you avoid running Docker on Windows at this time
 unless you absolutely have to.
 
-## Installtion
+## Installation
 
 1. Docker is natively supported on Win 10 and later.
    However,

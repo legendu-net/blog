@@ -1,7 +1,7 @@
 ---
-title: "Best Filesystem Format for Cross-platform Data Exchanging"
-created: 2019-03-11 10:24:51
-date: 2021-09-28 13:01:57
+title: Best Filesystem Format for Cross-platform Data Exchanging
+created: '2019-03-11T10:24:51-07:00'
+date: '2026-11-15T09:18:22-08:00'
 authors:
   - bendu
 label: best-filesystem-format-for-cross-platform-data-exchanging
@@ -22,7 +22,7 @@ tags:
 
 ## FAT32
 
-FAT32 is an outdated filesystem. 
+FAT32 is an outdated filesystem.
 The maximum size for a single file is 4G.
 You should instead exFAT instead of FAT32 where possible.
 
@@ -33,17 +33,17 @@ There is practically no limit (big enough for average users) on single file size
 
 ## NTFS
 
-NTFS is the current MS Windows Filesystem. 
-It is superior to exFAT and is supported by Linux out-of-box, 
-however, there is limited support on macOS. 
-Reading a NTFS filesystem is supported in macOS 
+NTFS is the current MS Windows Filesystem.
+It is superior to exFAT and is supported by Linux out-of-box,
+however, there is limited support on macOS.
+Reading a NTFS filesystem is supported in macOS
 but writing to a NTFS drive is experimental currently
 and it is strongly suggest that you don't try it at this time.
 
-NTFS is a POSIX-compatible filesystem, 
+NTFS is a POSIX-compatible filesystem,
 and it is POSSIBLE to use permissions (even though complicated) on NTFS (but not on FAT systems).
-To enable permissions on NTFS, 
-you need a "User Mapping File" or just give the permissions option when mounting (when no compatibility with Windows is needed). 
+To enable permissions on NTFS,
+you need a "User Mapping File" or just give the permissions option when mounting (when no compatibility with Windows is needed).
 This maps linux users on your system with the user IDs like NTFS/Windows use them internally.
 Please refer to the [ntfs-3g manual](http://manpages.ubuntu.com/manpages/bionic/en/man8/ntfs-3g.8.html) for more information.
 
@@ -55,42 +55,42 @@ It can be accessed in Windows via WSL 2
 [Access Linux filesystems in Windows and WSL 2](https://devblogs.microsoft.com/commandline/access-linux-filesystems-in-windows-and-wsl-2/)
 for more details).
 Reading ext4 on Mac can be supported by installing `ext4fuse`,
-however, 
+however,
 reading/writing ext4 on Mac is experimental and it is strongly suggested that you don't try it at this time.
 
-## Mount External Hard Drive Via Virtual Machine 
+## Mount External Hard Drive Via Virtual Machine
 
 Given the above said,
-there is a heavy and hacking way to read all kinds of filesystem 
+there is a heavy and hacking way to read all kinds of filesystem
 if your machine is powerful enough to run a Virtual Machine.
-You can mount an external hard drive that is not supported by the current operating system 
+You can mount an external hard drive that is not supported by the current operating system
 via a virtual machine which can read/write it.
-For example, 
-if you have an external ext4 hard drive and want to read/write in Mac, 
+For example,
+if you have an external ext4 hard drive and want to read/write in Mac,
 you can run a Ubuntu virtual machine in Mac to read/write it.
-In order for the guest virtual machine to read/write the external hard drive, 
+In order for the guest virtual machine to read/write the external hard drive,
 it must be able to access the USB devices.
 Below are details steps to access an external hard drive in a VirtualBox VM.
 
 1. Download and install VirtualBox.
 
-2. Download and install VirtualBox Extension pack. 
-    You can install it by double clicking it.
+1. Download and install VirtualBox Extension pack.
+   You can install it by double clicking it.
 
-3. Plug in your external hard drive to the host machine. 
-    Notice that you must be umounted on the host machine 
-    in order for it to be accsible on the guest virtual machine.
+1. Plug in your external hard drive to the host machine.
+   Notice that you must be umounted on the host machine
+   in order for it to be accsible on the guest virtual machine.
 
-4. Enable the USB device on the guest virtual machine.
-    You hve to do this by adding a corresponding USB filter.
+1. Enable the USB device on the guest virtual machine.
+   You have to do this by adding a corresponding USB filter.
 
-5. The hard drive will auto mount on some Linux distributions (e.g., Ubuntu). 
-    If not, just manually mount it.
+1. The hard drive will auto mount on some Linux distributions (e.g., Ubuntu).
+   If not, just manually mount it.
 
-The above process is even more symplified on Window 11+ with WSL 2. 
+The above process is even more symplified on Window 11+ with WSL 2.
 You can mount an external EXT4 formatted hard drive to WSL 2
-using the command `wsl --mount <DiskPath>` 
-and umount it from WSL 2 using the command `wsl --unmount <Diskpath>`. 
+using the command `wsl --mount <DiskPath>`
+and umount it from WSL 2 using the command `wsl --unmount <Diskpath>`.
 In case you want to see all available hard drives in the Windows system,
 you can run `wmic diskdrive list brief`
 .

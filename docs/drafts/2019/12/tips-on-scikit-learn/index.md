@@ -1,7 +1,7 @@
 ---
 title: Tips on scikit-learn
 created: '2019-12-01T10:06:27-08:00'
-date: '2026-08-11T22:19:28-07:00'
+date: '2026-11-15T09:22:58-08:00'
 authors:
   - bendu
 label: tips-on-scikit-learn
@@ -24,7 +24,7 @@ tags:
 
 1. [Label encoding](https://scikit-learn.org/stable/modules/preprocessing_targets.html#label-encoding)
    is an easy way to convert a categorical response/target variable to a numeric one and back to the raw value space.
-   For transform of response/target varible in regression,
+   For transform of response/target variable in regression,
    please refer to [Transforming Target in Tegression](https://scikit-learn.org/stable/modules/compose.html#transforming-target-in-regression).
 
 1. [Skorch](https://github.com/skorch-dev/skorch)

@@ -1,7 +1,7 @@
 ---
 title: Terminator Is an Awesome Terminal Emulator
 created: '2013-10-18T14:03:09-07:00'
-date: '2026-08-11T22:19:35-07:00'
+date: '2026-11-15T09:35:30-08:00'
 authors:
   - bendu
 label: terminator-is-an-awesome-terminal-emulator
@@ -27,7 +27,7 @@ Use Hyper instead.
 
 1. You can save layouts and open a layout at startup.
 
-1. you can drap splitted windows to rearrange them which is really convenient.
+1. you can drap split windows to rearrange them which is really convenient.
 
 ## Shortcuts
 

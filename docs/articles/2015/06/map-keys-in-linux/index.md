@@ -1,7 +1,7 @@
 ---
 title: Map Keys in Linux
 created: '2015-06-19T10:30:15-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:15:16-08:00'
 authors:
   - bendu
 label: map-keys-in-linux
@@ -20,7 +20,7 @@ tags:
 ---
 
 Note: For Vim users, it is appealing to make the `Caps Lock` function like `Escape`.
-It is suggested that you make `Caps Lock` an additonal `Escape`
+It is suggested that you make `Caps Lock` an additional `Escape`
 rather than swap them.
 This avoid inconsistent key mapping issues when you work remotely via VNC, NoMachine, etc.
 
@@ -62,9 +62,9 @@ Some desktop environment (e.g., Cinnamon, GNOME, etc.) let you define behavior o
 
 1. Open System Settings.
 
-1. Select Keybord.
+1. Select Keyboard.
 
-1. Keybord layouts
+1. Keyboard layouts
 
 1. Options (on the right-bottom corner)
 
@@ -85,9 +85,9 @@ Run the following command after updating the file `/etc/default/keyboard` to mak
 sudo dpkg-reconfigure keyboard-configuration
 ```
 
-This is the recommended way if you want to make key swaping persistent.
+This is the recommended way if you want to make key swapping persistent.
 Another advantage it has over GUI configuration and `setxkbmap` (see the next section)
-is that the key swaping works in TTY (without X11 or Wayland).
+is that the key swapping works in TTY (without X11 or Wayland).
 
 ## setxkbmap
 

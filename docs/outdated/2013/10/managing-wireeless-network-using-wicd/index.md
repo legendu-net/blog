@@ -1,24 +1,25 @@
 ---
 title: Managing Wireeless Network Using Wicd
-created: 2013-10-22 14:40:58
-date: 2026-04-05 19:42:39.309075
+created: '2013-10-22T14:40:58-07:00'
+date: '2026-11-15T09:35:10-08:00'
 authors:
-- bendu
+  - bendu
 label: managing-wireeless-network-using-wicd
 license: CC-BY-4.0
 tags:
-- tips
-- wicd
-- network
-- Linux
+  - tips
+  - wicd
+  - network
+  - Linux
 ---
+
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
+\*\*
+Things under legendu.net/outdated are outdated technologies
+that the author does not plan to update any more.
 Please look for better alternatives.
-**
- 
-1. By defualt wicd doesn't know the name of wireless card, 
-    wicd preference, wireless name, and then wicd is able to find wireless networks ...
+\*\*
+
+1. By default wicd doesn't know the name of wireless card,
+   wicd preference, wireless name, and then wicd is able to find wireless networks ...

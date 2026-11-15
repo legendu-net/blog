@@ -1,7 +1,7 @@
 ---
 title: Make Traffic Follow through Proxies Using ProxyChains
 created: '2017-06-30T14:34:01-07:00'
-date: '2026-08-11T22:39:35-07:00'
+date: '2026-11-15T09:24:48-08:00'
 authors:
   - bendu
 label: make-traffic-follow-through-proxies-using-proxychains
@@ -76,9 +76,9 @@ socks5     127.0.0.1 1080
 ```
 
 Second,
-ProxyChains can be used to cirumstance a firewall through a chain of proxies (in a certain order).
+ProxyChains can be used to circumvent a firewall through a chain of proxies (in a certain order).
 In this situation,
-a single proxy is not enough but you must redict your connection
+a single proxy is not enough but you must redirect your connection
 through multiple proxies in a certain order (a chain of proxies).
 You have to list the proxies to use in the order you want to connect
 and specify the `strict_chain` option.

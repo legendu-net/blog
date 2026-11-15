@@ -1,7 +1,7 @@
 ---
 title: Parallel Computing Using Multithreading
 created: '2012-06-26T11:14:47-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:17:37-08:00'
 authors:
   - bendu
 label: parallel-computing-using-multithreading
@@ -23,11 +23,11 @@ tags:
 ---
 
 1. Not all jobs are suitable for parallel computing.
-   The more comminication that threads has to make,
+   The more communication that threads has to make,
    the more dependent the jobs are and the less efficient the parallel computing is.
 
 1. Generally speaking,
-   commercial softwares (Mathematica, MATLAB and Revolution R, etc.)
+   commercial software (Mathematica, MATLAB and Revolution R, etc.)
    have very good support on parallel computing.
 
 ## Python
@@ -51,7 +51,7 @@ so that you can use your own function for parallel computing directly,
 which is very convenient.
 Actually,
 Mathematica is the most convenient one to do parallel computing among all programming languages mentioned in this post,
-but at the cost of effciency of parallel computing.
+but at the cost of efficiency of parallel computing.
 Mathematica is famous for its intellegency but also nutorious (at least I think so) for running slow.
 It is the most smart but also the slowest programming languages among all programming languages
 that I have ever used (not just these mentioned in this post).
@@ -77,7 +77,7 @@ To let `parfor` use multiple threads,
 you must open the matlabpool manually.
 For example,
 to use the local host for parallel computing,
-you use the following command to initilize a pool with 8 workers
+you use the following command to initialize a pool with 8 workers
 (I assume the computer has 8 cores).
 
 ```MATLAB
@@ -159,7 +159,7 @@ and assign them to different threads so that a thread pool is not essential.
 For example,
 if you want to do a simulation of 1000 runs, you can create `k` threads,
 assign the first `1000/k` runs to the first threads,
-assgin the second `1000/k` runs to the second threads,
+assign the second `1000/k` runs to the second threads,
 and so on and so forth.
 To share data between different threads,
 usually you have to lock and unlock shared resources.
@@ -182,7 +182,7 @@ There are a few ways to overcome the issue.
 1. Just use lock if RNG is not a bottleneck.
 
 1. If you do not worry too much about using multiple RNGs with different seeds
-   (theoretically speaking, this might cause issues of overlaping sequences
+   (theoretically speaking, this might cause issues of overlapping sequences
    but many people just use it and it works in most situations),
    it is probably the easy way to go.
    You can easily use different RNGs in different threads (via `ThreadLocal`) or processes.

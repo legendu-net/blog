@@ -1,7 +1,7 @@
 ---
-title: "Taxes on Investment Gains"
-created: 2023-12-14 09:48:44
-date: 2024-04-02 01:54:25
+title: Taxes on Investment Gains
+created: '2023-12-14T09:48:44-08:00'
+date: '2026-11-15T09:27:30-08:00'
 authors:
   - bendu
 label: taxes-on-investment-gains
@@ -21,47 +21,46 @@ tags:
 
 1. Treasury bonds and securities are exempted from state & local income taxes.
 
-2. The IRS allows you to deduct from your taxable income a capital loss, 
-    for example, 
-    from a stock or other investment that has lost money.
-    Please refer to
-    [How to deduct stock losses from your taxes](https://www.bankrate.com/investing/how-to-deduct-stock-losses-from-taxes/)
-    and
-    [How to Cut Your Tax Bill with Tax-Loss Harvesting](https://www.schwab.com/learn/story/how-to-cut-your-tax-bill-with-tax-loss-harvesting)
-    for more details and tips.
-
+1. The IRS allows you to deduct from your taxable income a capital loss,
+   for example,
+   from a stock or other investment that has lost money.
+   Please refer to
+   [How to deduct stock losses from your taxes](https://www.bankrate.com/investing/how-to-deduct-stock-losses-from-taxes/)
+   and
+   [How to Cut Your Tax Bill with Tax-Loss Harvesting](https://www.schwab.com/learn/story/how-to-cut-your-tax-bill-with-tax-loss-harvesting)
+   for more details and tips.
 
 ## Taxes on Different Investments Gains
 
 1. RSU: 2 taxes, first: income tax; 2nd: capital gain taxes
-2. interest rate: income tax
-3. MMFs dividend: monthly, taxes as income tax
-4. dividend
-    - ordinary dividend: income tax
-    - qualified dividend: capital gain taxes: how about short-term vs long-term?
+1. interest rate: income tax
+1. MMFs dividend: monthly, taxes as income tax
+1. dividend
+   - ordinary dividend: income tax
+   - qualified dividend: capital gain taxes: how about short-term vs long-term?
 
 ## Long-term vs Short-term Capital Gains
 
-Generally, 
-if you hold the asset for more than one year before you dispose of it, 
-your capital gain or loss is long-term. 
-If you hold it one year or less, 
+Generally,
+if you hold the asset for more than one year before you dispose of it,
+your capital gain or loss is long-term.
+If you hold it one year or less,
 your capital gain or loss is short-term.
 
-To limit capital gains taxes, you can 
+To limit capital gains taxes, you can
+
 - invest for the long-term
-- use tax-advantaged retirement accounts 
+- use tax-advantaged retirement accounts
 - offset capital gains with capital losses
 
 https://smartasset.com/taxes/state-capital-gains-tax
 
 1. federal tax on capital gains
-    - short-term: income tax (depending on your income range)
-    - long-term: also depending on income range
-3. WA state tax on capital gains
-    - short-term: no
-    - long-term: 7% on capital gains over $250,000
-
+   - short-term: income tax (depending on your income range)
+   - long-term: also depending on income range
+1. WA state tax on capital gains
+   - short-term: no
+   - long-term: 7% on capital gains over \$250,000
 
 [What is the long-term capital gains tax?](https://www.bankrate.com/investing/long-term-capital-gains-tax)
 
@@ -77,10 +76,10 @@ https://dor.wa.gov/taxes-rates/other-taxes/capital-gains-tax
 
 ## Tax on ESPP
 
-Please refer to the section "US tax considerations" on the page 
+Please refer to the section "US tax considerations" on the page
 [Understanding employee stock purchase plans](https://us.etrade.com/knowledge/library/stock-plans/employee-stock-purchase-plan)
 for details.
-In short, 
+In short,
 you want to have qualifying dispositions which requires:
 
 - The disposition occurs more than two years after the grant date, and
@@ -91,37 +90,37 @@ you want to have qualifying dispositions which requires:
 [Restricted Stock Units (RSUs) Comprehensive Guide](https://tanphan.com/blog/restricted-stock-units-rsu-comprehensive-guide)
 
 1. Do NOT transfer RSUs from a stock plan account to another account
-    no matter the other account is within the same brokerage or not!
-    The reason is that vested RSUs might show a zero cost in non-stock plan account,
-    which means that you gain is substantially over counted 
-    and thus you will be over taxed when you sell those RSUs from a non-stock plan account! 
-    Of course, 
-    you can submit an adjusted cost basis for those RSUs 
-    but it is a nightmare to go through as tax is already complicate enough.  
-    ESPP might show the right cost in non-stock plan account,
-    however,
-    it is suggested that you keep ESPP in your stock account as well.
-    If you do want to transfer RSUs or ESPP to a non-stock plan account,
-    it is suggested that you sell them from you stock plan account and transfer the money out.
-    You can alwasy purchase stocks back if you do want to hold stocks instead of cash in the other non-stock plan account.
+   no matter the other account is within the same brokerage or not!
+   The reason is that vested RSUs might show a zero cost in non-stock plan account,
+   which means that you gain is substantially over counted
+   and thus you will be over taxed when you sell those RSUs from a non-stock plan account!
+   Of course,
+   you can submit an adjusted cost basis for those RSUs
+   but it is a nightmare to go through as tax is already complicate enough.\
+   ESPP might show the right cost in non-stock plan account,
+   however,
+   it is suggested that you keep ESPP in your stock account as well.
+   If you do want to transfer RSUs or ESPP to a non-stock plan account,
+   it is suggested that you sell them from you stock plan account and transfer the money out.
+   You can always purchase stocks back if you do want to hold stocks instead of cash in the other non-stock plan account.
 
-2. The way to cover tax for RSU can be updated at https://us.etrade.com/etx/sp/stockplan/#/myAccount/planElections/stockElections.
-    You might not be able to update it for 2 reasons.
-    First, 
-    some company use the default way (sell to cover) and does not allow employees to change it.
-    Second,
-    even if you company allows you to update the way to cover tax,
-    you have to wait for an open time window to update it.
+1. The way to cover tax for RSU can be updated at https://us.etrade.com/etx/sp/stockplan/#/myAccount/planElections/stockElections.
+   You might not be able to update it for 2 reasons.
+   First,
+   some company use the default way (sell to cover) and does not allow employees to change it.
+   Second,
+   even if you company allows you to update the way to cover tax,
+   you have to wait for an open time window to update it.
 
-When RSU shares vest, 
-shares are withheld and sold to cover your tax commitment. 
-The percentage withheld is dictated by your employer typically to match how your bonus are taxed. 
-They deliver those instructions to us and we must comply. 
-You can view this for yourself in the Release of Confirmation 
-by going to "Stock Plans" >> "Holdings" and expanding the blue arrow next to the grant date. 
-You'll see "View Confirmation of Release" below the grant details. 
-Generally when you sell ESPP no tax is paid upon selling them. 
-However, 
+When RSU shares vest,
+shares are withheld and sold to cover your tax commitment.
+The percentage withheld is dictated by your employer typically to match how your bonus are taxed.
+They deliver those instructions to us and we must comply.
+You can view this for yourself in the Release of Confirmation
+by going to "Stock Plans" >> "Holdings" and expanding the blue arrow next to the grant date.
+You'll see "View Confirmation of Release" below the grant details.
+Generally when you sell ESPP no tax is paid upon selling them.
+However,
 coming tax season we will provide you a tax form. Where you can then work with an accountant or tax advisor on how to report that.
 
 ## References

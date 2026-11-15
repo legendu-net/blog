@@ -1,7 +1,7 @@
 ---
 title: Tips on the Seattle-Tacoma International Airport
-created: 2023-08-21 20:50:50
-date: 2026-05-03 16:15:08
+created: '2023-08-21T20:50:50-07:00'
+date: '2026-11-15T09:25:29-08:00'
 authors:
   - bendu
 label: tips-on-the-seattle-tacoma-international-airport
@@ -42,8 +42,8 @@ for the next 7 days.
 
 1. Hard to find a EV charging SPOT generally speaking.
 
-For more inforamtion,
-plese refer to
+For more information,
+please refer to
 [SEA Parking Information and Rates](https://www.portseattle.org/sea-tac/parking/parking-information)
 .
 

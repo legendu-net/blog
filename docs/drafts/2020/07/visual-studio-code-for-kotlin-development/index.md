@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Code for Kotlin Development
-created: 2020-07-10 13:07:08
-date: 2026-04-13 23:15:19.138790
+created: '2020-07-10T13:07:08-07:00'
+date: '2026-11-15T09:21:32-08:00'
 authors:
   - bendu
 label: visual-studio-code-for-kotlin-development
@@ -33,7 +33,7 @@ tags:
 
 ## Other Potentially Useful Extensions
 
-- [Visual Stuido IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+- [Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 
 - [TabNine VSCode](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
 

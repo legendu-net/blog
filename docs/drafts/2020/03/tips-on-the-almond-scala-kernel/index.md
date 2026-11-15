@@ -1,7 +1,7 @@
 ---
 title: Tips on the Almond Scala Kernel
 created: '2020-03-24T18:33:39-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:23:24-08:00'
 authors:
   - bendu
 label: tips-on-the-almond-scala-kernel
@@ -16,7 +16,7 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. `kernel.silent(true)`
-   supress outputs of cells.
+   suppress outputs of cells.
 
 1. Currently each line in a cell have an output,
    which is messy.

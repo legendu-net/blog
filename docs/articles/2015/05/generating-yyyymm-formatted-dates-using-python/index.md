@@ -1,7 +1,7 @@
 ---
-title: "Generating YYYYMM Formatted Dates Using Python"
-created: 2015-05-17 17:05:55
-date: 2015-05-17 17:05:55
+title: Generating YYYYMM Formatted Dates Using Python
+created: '2015-05-17T17:05:55-07:00'
+date: '2026-11-15T09:20:32-08:00'
 authors:
   - bendu
 label: generating-yyyymm-formatted-dates-using-python
@@ -35,14 +35,17 @@ print(", ".join(map(str, yymms)))
 ```
 
 The between ... and clause is also convenient to work with YYYYMM numbers
-I saw people use 
+I saw people use
+
 ```SAS
 where m in &months.;
 ```
+
 to check ..
-while a much more convenient way is to use 
+while a much more convenient way is to use
+
 ```SAS
 where m between 200201 and 201212;
 ```
-if you are sure `m` contains only YYYYMM formated numbers.
 
+if you are sure `m` contains only YYYYMM formatted numbers.

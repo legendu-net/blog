@@ -1,7 +1,7 @@
 ---
 title: Install Packages Using Homebrew on macOS and Linux
 created: '2019-03-27T22:55:07-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:22:36-08:00'
 authors:
   - bendu
 label: install-packages-using-homebrew-on-macos-and-linux
@@ -83,7 +83,7 @@ Or use the following command if Linuxbrew is installed to `~/.linuxbrew`.
    in environments which you do not have sudo permission**.
 
 1. You might encounter link problems when you use the `brew` command to install packages on Mac.
-   A possible way to fix the issue is to manually configure the `PATH` environemnt variable.
+   A possible way to fix the issue is to manually configure the `PATH` environment variable.
    Or a quick and dirty way to resolve the problem is to link the executable file into `$HOME/bin`.
 
 1. You can install a specific version of a package using the `@` symbol.

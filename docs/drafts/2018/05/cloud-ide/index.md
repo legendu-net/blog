@@ -1,7 +1,7 @@
 ---
 title: Cloud IDE
 created: '2018-05-20T09:49:30-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:22:15-08:00'
 authors:
   - bendu
 label: cloud-ide
@@ -56,7 +56,7 @@ https://github.com/theia-ide/theia
 
 1. best to mount a directory that has mode 777
 
-1. support installling VS Code extensions (\*.vsix) by drag and drop.
+1. support installing VS Code extensions (\*.vsix) by drag and drop.
    Installing from VS Code Marketplace is not supported at this time.
 
 [Enable username/password for Theia](https://github.com/theia-ide/theia-apps/issues/167)

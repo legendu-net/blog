@@ -1,7 +1,7 @@
 ---
-title: "Popular and Useful Modules and Functions in PyTorch"
-created: 2020-02-03 10:08:35
-date: 2020-03-03 10:08:35
+title: Popular and Useful Modules and Functions in PyTorch
+created: '2020-02-03T10:08:35-08:00'
+date: '2026-11-15T09:22:22-08:00'
 authors:
   - bendu
 label: popular-and-useful-modules-and-functions-in-pytorch
@@ -33,7 +33,6 @@ tags:
 [torch.utils.data.random_split](https://pytorch.org/docs/stable/data.html#torch.utils.data.random_split)
 
 [torch.nn.functional.relu](https://pytorch.org/docs/stable/nn.functional.html#relu)
-
 
 [torch.nn.functional.leaky_relu](https://pytorch.org/docs/stable/nn.functional.html#leaky-relu)
 
@@ -68,8 +67,7 @@ tags:
 
 [torchvision.transforms.Compose](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.Compose)
 
-
-## Referneces
+## References
 
 [Using Dropout in Pytorch: nn.Dropout vs. F.dropout](https://stackoverflow.com/questions/53419474/using-dropout-in-pytorch-nn-dropout-vs-f-dropout)
 

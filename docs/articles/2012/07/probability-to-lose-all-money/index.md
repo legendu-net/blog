@@ -1,7 +1,7 @@
 ---
 title: Probability to Lose All Money
-created: 2012-07-22 03:56:28
-date: 2026-04-13 23:33:06.362675
+created: '2012-07-22T03:56:28-07:00'
+date: '2026-11-15T09:18:24-08:00'
 authors:
   - bendu
 label: probability-to-lose-all-money
@@ -38,10 +38,10 @@ this problem using *reflection*.
 However,
 as I mentioned in my book *Statistics Thinkings*,
 there is a universal way to solve this kind of problems.
-The key is to find a recursive forumula using conditional expectation/probability.
+The key is to find a recursive formula using conditional expectation/probability.
 First,
 we can generalize the problem to the following one.
-A gamber palys a fair game and bet 1 dollar each time.
+A gamber plays a fair game and bet 1 dollar each time.
 If he lose all his money,
 the game stops.
 Suppoe he has $m_0$ dollars and is only allowed to play $k$ rounds at most,
@@ -61,7 +61,7 @@ $$
 where $I$ is the indicator function.
 As I mentioned in my book *Statistics Thinkings* and other similar posts on my blog,
 there are several ways (e.g., moment generating function) to solve for $P\_{n,m}\$.
-A pratical way is write a program to do this.
+A practical way is write a program to do this.
 
 I recently learned C++11, so I wrote a program in C++11 to solve this problem just for practice.
 The core code is just a recursive function.
@@ -121,7 +121,7 @@ int main(){
     cout<<"Please type in the stop step:"<<endl;
     cin>>step;
     p = lose_probability(init_money,step);
-    cout<<"The probablity to lose all money is: "<<p<<endl;
+    cout<<"The probability to lose all money is: "<<p<<endl;
 }
 ```
 

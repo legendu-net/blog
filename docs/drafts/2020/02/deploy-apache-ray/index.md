@@ -1,7 +1,7 @@
 ---
-title: "Deploy Apache Ray"
-created: 2020-02-10 09:39:25
-date: 2021-06-10 09:39:25
+title: Deploy Apache Ray
+created: '2020-02-10T09:39:25-08:00'
+date: '2026-11-15T09:22:08-08:00'
 authors:
   - bendu
 label: deploy-apache-ray
@@ -22,7 +22,6 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
 ## [Manual Cluster Setup](https://ray.readthedocs.io/en/latest/using-ray-on-a-cluster.html)
 
 It is very easy to set up Apache Ray on a small cluster manually.
@@ -31,13 +30,13 @@ The instructions at
 is very clear.
 Just one comment.
 You do not need to configure SSH keys for nodes in the cluster for manual configuration.
-When you start the master node manually (using the command `ray start --head`), 
+When you start the master node manually (using the command `ray start --head`),
 it will print a command to add new nodes into the cluster.
-The command 
+The command
 (e.g., `ray start --address='10.148.186.18:12030' --redis-password='5241590000000000'`)
 includes the Redis password for authentication to join the cluster.
 
-By default, 
+By default,
 the Ray dashboard is visitable only on the head node.
 To make it visitable by public IP,
 you can include the option `--webui-host=0.0.0.0` when starting Ray on the head node.
@@ -47,9 +46,9 @@ you can include the option `--webui-host=0.0.0.0` when starting Ray on the head 
 https://github.com/ray-project/ray/blob/master/python/ray/autoscaler/local/example-full.yaml
 
 1. The Ray autoscaler installs Ray on the head and worker nodes by default.
-    That is if you don't set values for the fileds `head_setup_commands` and `setup_commands`,
-    Ray is automatically installed/updated on the head and worker nodes.
-    You can disable this behavior by set a dummy command (e.g., `echo "Starting Ray ..."`) for the 2 fileds.
+   That is if you don't set values for the fields `head_setup_commands` and `setup_commands`,
+   Ray is automatically installed/updated on the head and worker nodes.
+   You can disable this behavior by set a dummy command (e.g., `echo "Starting Ray ..."`) for the 2 fields.
 
 https://github.com/ray-project/ray/issues/4902
 
@@ -79,7 +78,7 @@ https://ray.readthedocs.io/en/latest/using-ray-on-a-cluster.html
 
 https://github.com/ray-project/ray/issues/2660
 
-## AWS 
+## AWS
 
 https://gist.github.com/edoakes/0f7f62b7d9aa5481482bca23be5f622a
 
@@ -93,7 +92,7 @@ https://ray.readthedocs.io/en/latest/autoscaling.html#kubernetes
 
 https://github.com/ray-project/ray/blob/master/python/ray/autoscaler/kubernetes/example-full.yaml
 
-## Ray with Spark 
+## Ray with Spark
 
 ## References
 

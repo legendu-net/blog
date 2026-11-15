@@ -1,7 +1,7 @@
 ---
 title: Run Virtual Machines on Linux
-created: 2025-12-16 23:39:50
-date: 2026-04-13 23:14:17.069680
+created: '2025-12-16T23:39:50-08:00'
+date: '2026-11-15T09:28:40-08:00'
 authors:
   - bendu
 label: run-virtual-machines-on-linux
@@ -27,7 +27,7 @@ as KVM is a type-1 hypervisor which runs directly on the hardware via the Linux 
 while VirtualBox is a type-2 hypervisor which runs as an application on top of your OS.
 Since KVM is part of the Linux kernel,
 it has lower overhead and offers near-native CPU and disk performance.
-For more detailed comparisions,
+For more detailed comparisons,
 please refer to
 [Chat with Gemini: KVM vs. VirtualBox for Linux](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%2210w5VDJtO6r3t4oHGB2G6WucWNeuyJzlF%22%5D,%22action%22:%22open%22,%22userId%22:%22100282891140280543929%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing)
 .
@@ -46,7 +46,7 @@ GNOME Boxes and
 are 2 popular choices (based on KVM, QEMU and libvirt) for Linux.
 GNOME Boxes is very simple to use
 while Virtual Machine Manager offers more options and is more suitable for power users.
-For more detailed comparision,
+For more detailed comparison,
 please refer to
 [Chat with Gemini: GNOME Boxes vs virt-manager](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221hQepi_tkMePT1PJY71TWc8TaCbnTPkc7%22%5D,%22action%22:%22open%22,%22userId%22:%22100282891140280543929%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing)
 .

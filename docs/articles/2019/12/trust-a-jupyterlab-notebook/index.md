@@ -1,7 +1,7 @@
 ---
 title: Trust a JupyterLab Notebook
-created: 2019-12-29 20:14:09
-date: 2026-04-13 23:27:57.265570
+created: '2019-12-29T20:14:09-08:00'
+date: '2026-11-15T09:16:29-08:00'
 authors:
   - bendu
 label: trust-a-jupyterlab-notebook
@@ -14,8 +14,8 @@ tags:
 ---
 
 By default,
-IPython (kernel of Jupyter/Lab notebook) disables executation of untrusted code without explicit user input.
-If you have notebook whose output containings JavaScript (e.g., JS-based visualiation)
+IPython (kernel of Jupyter/Lab notebook) disables execution of untrusted code without explicit user input.
+If you have notebook whose output containing JavaScript (e.g., JS-based visualiation)
 and code wasn't run by you (e.g., the notebook is shared by someone else),
 the JS-based output won't be shown by default.
 For more explanation,
@@ -32,7 +32,7 @@ jupyter trust *.ipynb
 ```
 
 Second,
-you can trust a notebook using the `Trust Notebook` comamnd from the command tab in the left panel.
+you can trust a notebook using the `Trust Notebook` command from the command tab in the left panel.
 
 1. Click the on the `Commands` tab in the left panel.
 

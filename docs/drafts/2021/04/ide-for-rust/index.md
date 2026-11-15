@@ -1,7 +1,7 @@
 ---
 title: IDE for Rust
 created: '2021-04-20T08:43:39-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:25:57-08:00'
 authors:
   - bendu
 label: ide-for-rust
@@ -21,8 +21,8 @@ tags:
    [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer)
    extension seems to be a good option.
 
-1. [Rust extenstion (rust-lang.rust)](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust)
-   is another posssible extension for Rust
+1. [Rust extension (rust-lang.rust)](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust)
+   is another possible extension for Rust
    but does not work as well as
    [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer)
    .

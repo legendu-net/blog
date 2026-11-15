@@ -1,7 +1,7 @@
 ---
 title: Manage Docker Images and Containers
 created: '2017-03-15T10:29:33-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:16:17-08:00'
 authors:
   - bendu
 label: manage-docker-images-and-containers
@@ -223,7 +223,7 @@ for more detailed discussions.
 1. By default,
    logging in a Docker container is redirected to the standard output.
    However,
-   you won't be able to see the log if you start the Docker container as a deamon (using the `-d` option).
+   you won't be able to see the log if you start the Docker container as a daemon (using the `-d` option).
    For debugging purposes,
    it is suggested that you use the `-it` options instead the `-d` option.
    A more general and robust way is of course to redirect log of applications to a file.

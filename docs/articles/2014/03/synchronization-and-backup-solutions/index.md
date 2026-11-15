@@ -1,7 +1,7 @@
 ---
 title: Synchronization and Backup Solutions
 created: '2014-03-04T22:11:05-08:00'
-date: '2026-08-13T21:19:31-07:00'
+date: '2026-11-15T09:20:00-08:00'
 authors:
   - bendu
 label: synchronization-and-backup-solutions
@@ -19,7 +19,7 @@ tags:
 
 ## Tips and Traps
 
-1. Almost all sychronization tools have problems with symbolic links.
+1. Almost all synchronization tools have problems with symbolic links.
    Most of them just ignore symbolic links.
    This makes sense as following symbolic links can causes serious disk problems.
    If not followed then symbolic links are likely broken on other device.
@@ -28,7 +28,7 @@ tags:
 1. Backup (relatively) small files to Dropbox (or a similar tool),
    and Backup large non-privacy files on Baidu Yun.
    If a large file is sensitive,
-   encrypt it first before uploding it to Baidu Yun.
+   encrypt it first before uploading it to Baidu Yun.
 
 ```{list-table}
 ---

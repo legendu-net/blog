@@ -1,7 +1,7 @@
 ---
 title: Sort top by CPU or Memory Usage
-created: 2020-02-18 11:56:57
-date: 2026-04-15 19:27:01.075348
+created: '2020-02-18T11:56:57-08:00'
+date: '2026-11-15T09:22:30-08:00'
 authors:
   - bendu
 label: sort-top-by-cpu-or-memory-usage
@@ -19,7 +19,7 @@ tags:
 
 By default the result of the `top` command is sorted by CPU usage on Linux.
 The table below list options to sort the result of the `top` command
-by different criterias on Linux and macOS
+by different criteria on Linux and macOS
 
 |                      | Linux       | macOS      |
 | -------------------- | ----------- | ---------- |

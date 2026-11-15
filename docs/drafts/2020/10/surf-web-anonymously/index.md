@@ -1,7 +1,7 @@
 ---
 title: Surf Web Anonymously
-created: 2020-10-15 22:41:26
-date: 2026-04-13 23:15:12.399088
+created: '2020-10-15T22:41:26-07:00'
+date: '2026-11-15T09:25:17-08:00'
 authors:
   - bendu
 label: surf-web-anonymously
@@ -27,7 +27,7 @@ tags:
 1. use tor
 
 1. Use PrivateInternetAccess (or similar VPN tools) to protect your privacy.
-   Unfortuantely PrivateInternetAccess is block in China.
+   Unfortunately PrivateInternetAccess is block in China.
 
 1. It is recommended that you use a virtual machine or Docker to download files using PIA.
    The advantage is that only the virtual machine's ip is map to a different one,

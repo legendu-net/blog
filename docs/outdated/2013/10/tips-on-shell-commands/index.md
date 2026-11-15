@@ -1,7 +1,7 @@
 ---
 title: Tips on Shell Commands
 created: '2013-10-23T12:19:10-07:00'
-date: '2026-06-12T22:31:50-07:00'
+date: '2026-11-15T09:28:13-08:00'
 authors:
   - bendu
 label: tips-on-shell-commands
@@ -66,12 +66,12 @@ https://github.com/thoughtbot/til/blob/master/bash/bash_profile_vs_bashrc.md#:~:
 
 1. the trick of "--" end of command after which only positional arguments are accepted
 
-1. variable substituation makes things very interesting in shell,
+1. variable substitution makes things very interesting in shell,
    for example awk and so on ..., always be careful if you use "\$" and so on....
 
 1. process of substitution \<() >(), pipe ...
 
-1. variables defined in bash function won't polute the global environment
+1. variables defined in bash function won't pollute the global environment
    and local make the variables visible only to the scope of the function
 
 1. prefer dot rather than source for sourcing script,
@@ -289,7 +289,7 @@ readlink path
 
 ## Task
 
-8. `at` command run in backgroud,
+8. `at` command run in background,
    so do not use it to do things that have to communicate with stdin stdout ...
 
 ## Archive

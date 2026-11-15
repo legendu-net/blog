@@ -1,7 +1,7 @@
 ---
 title: Tips on ZetaSQL
-created: 2023-06-27 23:48:22
-date: 2026-04-13 23:14:29.602651
+created: '2023-06-27T23:48:22-07:00'
+date: '2026-11-15T09:25:05-08:00'
 authors:
   - bendu
 label: tips-on-zetasql
@@ -24,7 +24,7 @@ that Google uses for products like BigQuery and Spanner.
 ## [unnest](https://github.com/google/zetasql/blob/master/docs/query-syntax.md#unnest_operator)
 
 cross join if an implicit join is used.
-Notice that cross join is equivalen to inner join in this case.
+Notice that cross join is equivalent to inner join in this case.
 
 Left join can be used to keep rows which has a null/emtpry array.
 

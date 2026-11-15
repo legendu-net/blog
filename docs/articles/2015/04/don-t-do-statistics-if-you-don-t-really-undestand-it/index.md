@@ -1,7 +1,7 @@
 ---
-title: Don't Do Statistics If You Don't Really Undestand It
-created: 2015-04-10 07:50:16
-date: 2026-04-13 23:33:07.854894
+title: Don't Do Statistics If You Don't Really Understand It
+created: '2015-04-10T07:50:16-07:00'
+date: '2026-11-15T09:20:28-08:00'
 authors:
   - bendu
 label: don-t-do-statistics-if-you-don-t-really-undestand-it
@@ -30,8 +30,8 @@ However, not many people really understand what these assumptions mean.
 For example,
 most people don't know that an "independency" test is actually with respect to some "order".
 For human beings, there are 2 nature orders: time
-(for which people developped time series analysis)
-and space (for which people developped spatial analysis).
+(for which people developed time series analysis)
+and space (for which people developed spatial analysis).
 While we test for "independency",
 mostly of the time we test for "independency" with respect to time.
 Here comes the problem.

@@ -1,7 +1,7 @@
 ---
 title: Tips on ValeLang
-created: 2022-07-11 17:06:06
-date: 2026-04-13 23:14:45.576672
+created: '2022-07-11T17:06:06-07:00'
+date: '2026-11-15T09:24:24-08:00'
 authors:
   - bendu
 label: tips-on-valelang
@@ -18,6 +18,6 @@ tags:
 My first impression is that Vale is Rust with GC.
 It looks interesting.
 However,
-consider that it is an language which came ealier than Rust
+consider that it is an language which came earlier than Rust
 but still in alpha stage,
 I don't think it's going anywehre at this time.

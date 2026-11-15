@@ -1,7 +1,7 @@
 ---
-title: "Libraries for Gradient Boosting"
-created: 2019-12-24 15:19:42
-date: 2019-12-24 15:19:42
+title: Libraries for Gradient Boosting
+created: '2019-12-24T15:19:42-08:00'
+date: '2026-11-15T09:22:52-08:00'
 authors:
   - bendu
 label: libraries-for-gradient-boosting
@@ -30,13 +30,12 @@ https://machinelearningmastery.com/best-tune-multithreading-support-xgboost-pyth
 
 https://medium.com/data-design/xgboost-gpu-performance-on-low-end-gpu-vs-high-end-cpu-a7bc5fcd425b
 
-xgboost GPU is fast. 
-Very fast. 
+xgboost GPU is fast.
+Very fast.
 As long as it fits in RAM and you do not care about getting reproducible results (and getting crashes).
-To keep getting those epic, 
-stable and reproducible results (or if data is just too big for GPU RAM), 
+To keep getting those epic,
+stable and reproducible results (or if data is just too big for GPU RAM),
 keep using the CPU. There’s no real workaround (yet).
-
 
 ## [LightGBM](https://github.com/microsoft/LightGBM)
 
@@ -50,42 +49,43 @@ The paper [Benchmarking and Optimization of Gradient Boosting Decision Tree Algo
 compares the 3 libraries from the 3 perspectives/questions below
 and claims that there is no clear win among the 3 libraries.
 
-    1. How much acceleration can be expected when using GPU-based training routines?
-    2. How well does this GPU-acceleration translate to reduced time-to-solution in the context of Bayesian hyper-parameter optimization?
-    3. How well do the resulting models generalize to unseen data?
+```
+1. How much acceleration can be expected when using GPU-based training routines?
+2. How well does this GPU-acceleration translate to reduced time-to-solution in the context of Bayesian hyper-parameter optimization?
+3. How well do the resulting models generalize to unseen data?
+```
 
-The article 
+The article
 [Gradient Boosting Decision trees: XGBoost vs LightGBM (and catboost)](https://medium.com/kaggle-nyc/gradient-boosting-decision-trees-xgboost-vs-lightgbm-and-catboost-72df6979e0bb)
 claims that LightGBM improves on XGBoost.
 
-> In summary, 
-> LightGBM improves on XGBoost. 
-> The LightGBM paper uses XGBoost as a baseline and outperforms it in training speed and the dataset sizes it can handle. 
-> The accuracies are comparable. 
-> LightGBM in some cases reaches it’s top accuracy in under a minute and while only reading a fraction of the whole dataset. 
-> This goes to show the power of approximation algorithms 
+> In summary,
+> LightGBM improves on XGBoost.
+> The LightGBM paper uses XGBoost as a baseline and outperforms it in training speed and the dataset sizes it can handle.
+> The accuracies are comparable.
+> LightGBM in some cases reaches it’s top accuracy in under a minute and while only reading a fraction of the whole dataset.
+> This goes to show the power of approximation algorithms
 > and intelligently sampling a dataset to extract the most information as fast as possible.
 
 The article [Xgboost vs Catboost vs Lightgbm: which is best for price prediction?](https://blog.griddynamics.com/xgboost-vs-catboost-vs-lightgbm-which-is-best-for-price-prediction/)
 also claims that LightGMB was the clear winner in terms of speed
 and XGBoost was the clear winner in terms of model accuracy.
-(However, 
+(However,
 people on Kaggles says that speed is the most important thing in Kaggle competitions
-as you can try more features and model iterations 
+as you can try more features and model iterations
 which eventually lead to higher model accuracy).
 
-> As the table above demonstrates, 
-> lightgbm was the clear winner in terms of speed, 
-> consistently outperforming catboost and xgboost. 
-> In terms of model accuracy, 
-> xgboost was the clear winner in both GridSearchCV and RandomizedSearchCV, 
-> with the lowest root mean squared error. 
-> For early stopping, 
-> lightgbm was the winner, 
+> As the table above demonstrates,
+> lightgbm was the clear winner in terms of speed,
+> consistently outperforming catboost and xgboost.
+> In terms of model accuracy,
+> xgboost was the clear winner in both GridSearchCV and RandomizedSearchCV,
+> with the lowest root mean squared error.
+> For early stopping,
+> lightgbm was the winner,
 > with a slightly lower root mean squared error than xgboost.
 
-
-CatBoost is seldomly used in Kaggle competitions.
+CatBoost is seldom used in Kaggle competitions.
 LightGBM is faster than XGBoost and is used more and more in Kaggle competitions.
 If you need a mature and stable solution,
 XGBoost is the right choice.

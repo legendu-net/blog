@@ -1,7 +1,7 @@
 ---
 title: Tips on Web Browsers
-created: 2025-12-17 12:32:32
-date: 2026-04-19 07:31:01.803311
+created: '2025-12-17T12:32:32-08:00'
+date: '2026-11-15T09:28:52-08:00'
 authors:
   - bendu
 label: tips-on-web-browsers
@@ -37,7 +37,7 @@ tags:
 
 - [Opera Neon](https://www.operaneon.com/)
 
-  - subscript requried
+  - subscript required
   - Windows, macOS
 
 ## Headless Browsers

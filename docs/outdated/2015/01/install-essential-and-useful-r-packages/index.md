@@ -1,7 +1,7 @@
 ---
-title: "Install Essential and Useful R Packages"
-created: 2015-01-23 22:27:25
-date: 2016-10-23 22:27:25
+title: Install Essential and Useful R Packages
+created: '2015-01-23T22:27:25-08:00'
+date: '2026-11-15T09:29:48-08:00'
 authors:
   - bendu
 label: install-essential-and-useful-r-packages
@@ -16,11 +16,11 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
+\*\*
+Things under legendu.net/outdated are outdated technologies
+that the author does not plan to update any more.
 Please look for better alternatives.
-**
+\*\*
 
 ```R
 pkgs = ("data.table", "ggplot2", "RJDBC", "xlsx", "rmarkdown", "Rcpp", "inline")
@@ -28,12 +28,13 @@ install.packages(pkgs)
 ## biostatistics
 source("http://bioconductor.org/biocLite.R")
 ```
+
 ```R
 update.packages(ask = FALSE, checkBuilt = TRUE)
 ```
 
 unfortunately sometimes fail to upgrade bioconductor packages ... and have to use biocLite('pkg') ...
-the problem is largely caused by the fact that you used a single persoanl R libary ....
+the problem is largely caused by the fact that you used a single persoanl R library ....
 if you used different R libraries for different versions of R, then you won't have the problem ...
 remove.packages("BiocInstaller") and then
 

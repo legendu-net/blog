@@ -1,7 +1,7 @@
 ---
 title: Query and Monitor OS Information Using osquery
 created: '2019-02-22T15:27:24-08:00'
-date: '2026-08-11T22:19:30-07:00'
+date: '2026-11-15T09:23:49-08:00'
 authors:
   - bendu
 label: query-and-monitor-os-information-using-osquery
@@ -190,7 +190,7 @@ There are currently some bugs ...
 -perm mode: File's permission bits are exactly mode (octal or symbolic).
 -perm -mode: All of the permission bits mode are set for the file.
 -perm /mode: Any of the permission bits mode are set for the file.
-a little bit trick about how to understand the last 2 permission criterias.
+a little bit trick about how to understand the last 2 permission criteria.
 as suggested, think in terms of permission BITs (0/1)
 
 The following command finds all files that readable or writable by the group or (readable or writable) by others.

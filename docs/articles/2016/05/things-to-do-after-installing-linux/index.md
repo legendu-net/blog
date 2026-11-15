@@ -1,7 +1,7 @@
 ---
 title: Things to Do after Installing Linux
 created: '2016-05-04T20:59:32-07:00'
-date: '2026-11-15T04:18:00-08:00'
+date: '2026-11-15T09:15:33-08:00'
 authors:
   - bendu
 label: things-to-do-after-installing-linux
@@ -44,7 +44,7 @@ Note: The tips here are for Debian-based Linux distributions
    ```
 
    It is suggested that you include `contrib` and `non-free` in the repository.
-   This ensures that you can also use many non-open source but cost-free softwares.
+   This ensures that you can also use many non-open source but cost-free software.
 
 1. Install the `sudo` package and configure it.
    You have to switch to root to install packages.

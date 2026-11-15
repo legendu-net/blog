@@ -1,7 +1,7 @@
 ---
 title: Randomly Select an Integer?!
 created: '2012-08-29T17:23:24-07:00'
-date: '2026-06-12T20:46:55-07:00'
+date: '2026-11-15T09:15:06-08:00'
 authors:
   - bendu
 label: randomly-select-an-integer
@@ -28,7 +28,7 @@ that is not impossible on [COS].
 And a person said "randomly pick an integer from all integers".
 While this example sounds like a neat one,
 it is invalid actually.
-The example assumes that there exists a probablity measure on all integers
+The example assumes that there exists a probability measure on all integers
 such that the measure for each integer is that same.
 However, such a probabiliy measure does not exists.
 This is easy to see.

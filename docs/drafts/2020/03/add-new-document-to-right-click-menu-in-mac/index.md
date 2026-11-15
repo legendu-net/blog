@@ -1,7 +1,7 @@
 ---
 title: Add New Document to Right-click Menu in Mac
 created: '2020-03-11T16:04:18-07:00'
-date: '2026-08-11T22:19:25-07:00'
+date: '2026-11-15T09:22:52-08:00'
 authors:
   - bendu
 label: add-new-document-to-right-click-menu-in-mac
@@ -28,4 +28,4 @@ This solution is a no-go for me as I don't pay for apps.
 Another possible way is to install the opensource application
 [OpenInTerminal](https://github.com/Ji4n1ng/OpenInTerminal).
 It helps you quickly open the currently directory in terminal.
-You can then use create a new file from comamnd-line.
+You can then use create a new file from command-line.

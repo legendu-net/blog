@@ -1,7 +1,7 @@
 ---
 title: Make Linux Run Faster
 created: '2013-06-08T08:54:21-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:15:12-08:00'
 authors:
   - bendu
 label: make-linux-run-faster
@@ -89,7 +89,7 @@ leveraging extended Berkeley Packet Filters (eBPF).
    for detailed discussions.
 
 1. If you use the GNOME desktop environment,
-   configuare "Gnome Shell Search" to disable unnecessary applications.
+   configure "Gnome Shell Search" to disable unnecessary applications.
    ![gnome-shell-search-config](https://user-images.githubusercontent.com/824507/170840843-f085a295-4071-4ee8-929f-62d1e57c67f6.png)
 
 ## Software-based Optimization
@@ -113,7 +113,7 @@ leveraging extended Berkeley Packet Filters (eBPF).
 
    ```
     :::bash
-    sudo apt purge linux-image-<verson>
+    sudo apt purge linux-image-<version>
    ```
 
 ### Lightweight Alternatives

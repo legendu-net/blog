@@ -1,7 +1,7 @@
 ---
-title: "Tips on Car Tires"
-created: 2025-02-08 13:28:34
-date: 2025-08-10 08:14:02
+title: Tips on Car Tires
+created: '2025-02-08T13:28:34-08:00'
+date: '2026-11-15T09:27:56-08:00'
 authors:
   - bendu
 label: tips-on-car-tires
@@ -21,47 +21,48 @@ tags:
 
 1. Modern tires are tubeless.
 
-## Run-flat Tires 
+## Run-flat Tires
 
-1. Run-flat tires can be a good option 
-    if you need the peace of mind 
-    of being able to drive a short distance 
-    after a puncture in a remote area where access to tire repair might be limited.
+1. Run-flat tires can be a good option
+   if you need the peace of mind
+   of being able to drive a short distance
+   after a puncture in a remote area where access to tire repair might be limited.
 
-2. Run-flat tires does not performance as well 
-    compared to standard (non-run-flat) tires on snow and ice.
-    However,
-    there are run-flat tires which are rated 3PMS (Three-peak Mountain Snow)
-    which have good performance on medium snow.
+1. Run-flat tires does not performance as well
+   compared to standard (non-run-flat) tires on snow and ice.
+   However,
+   there are run-flat tires which are rated 3PMS (Three-peak Mountain Snow)
+   which have good performance on medium snow.
 
-## Snow Tires 
+## Snow Tires
 
 1. Snow tires are great for driving on snow and ice.
-    However,
-    you have to swap snow tires to all-season (or summer) tires 
-    and store snow tires by yourself
-    after the winter is over.
-    Notice that different cars might have different sizes of tires.
-    If you won't keep cars with the same size of tires for at least serveral years,
-    your snow tires won't be well utilized.
+   However,
+   you have to swap snow tires to all-season (or summer) tires
+   and store snow tires by yourself
+   after the winter is over.
+   Notice that different cars might have different sizes of tires.
+   If you won't keep cars with the same size of tires for at least several years,
+   your snow tires won't be well utilized.
 
-2. If you do not want to go with snow tires 
-    but still want good performance on snow and ice,
-    you can choose the following tires (ranked according to preference).
-    - All-weather tires.
-    - All-season tires rated 3PMS (Three-peak Mountain Snow)
-        which have good performance on medium snow.
-        For example,
-        Michelin CrossClimate is an all-season tire rated 3PMS.
-    - All-season tires with the feature "M+S" 
-        (means mud and snow)
-        which has good performs in light snow.
-        For example,
-        BFGoodrich Advantage Control is such an example 
-        (which is also relatively cheap compared to other famous brand tires)
-        .
-        
-## Cost-efficient Ways to Install Tires 
+1. If you do not want to go with snow tires
+   but still want good performance on snow and ice,
+   you can choose the following tires (ranked according to preference).
+
+   - All-weather tires.
+   - All-season tires rated 3PMS (Three-peak Mountain Snow)
+     which have good performance on medium snow.
+     For example,
+     Michelin CrossClimate is an all-season tire rated 3PMS.
+   - All-season tires with the feature "M+S"
+     (means mud and snow)
+     which has good performs in light snow.
+     For example,
+     BFGoodrich Advantage Control is such an example
+     (which is also relatively cheap compared to other famous brand tires)
+     .
+
+## Cost-efficient Ways to Install Tires
 
 <table class="tg"><thead>
   <tr>

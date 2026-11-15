@@ -1,7 +1,7 @@
 ---
 title: Change Shell in Mac
-created: 2018-04-02 14:46:43
-date: 2026-04-15 19:27:00.410499
+created: '2018-04-02T14:46:43-07:00'
+date: '2026-11-15T09:17:14-08:00'
 authors:
   - bendu
 label: change-shell-in-mac
@@ -24,7 +24,7 @@ However,
 notice that `echo $SHELL` does not report the right shell sometimes.
 A more robust way is to use `echo $0`.
 
-The default shell can be changed using the comamnd `chsh`.
+The default shell can be changed using the command `chsh`.
 For example,
 the following command changes the default shell to the fish shell.
 

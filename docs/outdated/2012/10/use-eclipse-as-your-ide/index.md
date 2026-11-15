@@ -1,7 +1,7 @@
 ---
 title: Use Eclipse as Your IDE
 created: '2012-10-22T13:41:22-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:30:38-08:00'
 authors:
   - bendu
 label: use-eclipse-as-your-ide
@@ -59,7 +59,7 @@ tags:
 
 1. To change editor fonts in Eclipse.
 
-Menu -> Windows -> Preference -> General -> Apprearance -> Colors and Fonts -> Text Font -> Edit (on the right panel)
+Menu -> Windows -> Preference -> General -> Appearance -> Colors and Fonts -> Text Font -> Edit (on the right panel)
 
 3. Eclipse has an extensive amount of settings.
    Sometimes it is hard to find the right settings you want.

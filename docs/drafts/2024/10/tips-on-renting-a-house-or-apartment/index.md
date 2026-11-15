@@ -1,7 +1,7 @@
 ---
-title: "Tips on Renting a House or Apartment"
-created: 2024-10-13 14:49:05
-date: 2024-10-13 15:12:34
+title: Tips on Renting a House or Apartment
+created: '2024-10-13T14:49:05-07:00'
+date: '2026-11-15T09:27:53-08:00'
 authors:
   - bendu
 label: tips-on-renting-a-house-or-apartment
@@ -15,26 +15,25 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## Fees 
+## Fees
 
 ### Utilities
 
 1. Which utilities are included in the rent? Water, electric, trash, etc.
 
-2. administration fee, application fee? I hate these fees.
+1. administration fee, application fee? I hate these fees.
 
-2. Facing which direction?
+1. Facing which direction?
 
 - South is probably the best, especially the sun room
 
-    
 3. Internet
 
-    - everyone claims their internet speed is fast
-    - TV cable is usually faster than phone cable
-    - ask for the name of internet supplier
-    - Century Link is very bad, slow, limited services
-    - Time Warner Cable is bad
+   - everyone claims their internet speed is fast
+   - TV cable is usually faster than phone cable
+   - ask for the name of internet supplier
+   - Century Link is very bad, slow, limited services
+   - Time Warner Cable is bad
 
 ## Facilities
 
@@ -53,14 +52,13 @@ tags:
 ## Floor
 
 - Generally higher floor is more quiet
-- higher floor is safer (security, flood, etc) and ususally cleaner (less bugs, etc.)
+- higher floor is safer (security, flood, etc) and usually cleaner (less bugs, etc.)
 
 ## Safety
 
 1. Gated Community or Not
 
-    - Gated is safer though not convenient for driving
-
+   - Gated is safer though not convenient for driving
 
 ## Location
 
@@ -78,12 +76,11 @@ tags:
 
 1. Is the house in or close to woods? If so, there might be many bugs especially in southern states.
 
-2. If a house/apartment is too close to a highway/subway, 
-    it might be too noisy.
-    From my experience, 
-    two blocks (vertical distance) from the subway is acceptable.
+1. If a house/apartment is too close to a highway/subway,
+   it might be too noisy.
+   From my experience,
+   two blocks (vertical distance) from the subway is acceptable.
 
-3. Close to restaurant, shoppings, gym or not
+1. Close to restaurant, shoppings, gym or not
 
-4. How old is the apartment?
-
+1. How old is the apartment?

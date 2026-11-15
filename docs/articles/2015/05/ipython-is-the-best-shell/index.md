@@ -1,7 +1,7 @@
 ---
 title: IPython Is the Best Shell
 created: '2015-05-24T13:00:31-07:00'
-date: '2026-06-12T22:31:50-07:00'
+date: '2026-11-15T09:20:53-08:00'
 authors:
   - bendu
 label: ipython-is-the-best-shell
@@ -26,7 +26,7 @@ tags:
    unless Linux distributions start switching to zsh
    for a few reasons.
 
-   - Linux environment is more popular than a macOS environemnt
+   - Linux environment is more popular than a macOS environment
      both for production and dev (due to Docker).
    - Most Linux distributions are still using Bash as the default shell.
    - It's easier to switch from zsh to bash on macOS
@@ -70,7 +70,7 @@ tags:
 
 ## Start IPython
 
-1. It is suggested that you run IPython using the comamnd `/path/to/python -m IPython`
+1. It is suggested that you run IPython using the command `/path/to/python -m IPython`
    unless you are sure that `ipython` pointing to the right Python version.
    Even if `ipython` points to the right Python version,
    you might encounter ModuleNotFouneError (saying "cannot import IPython")
@@ -137,7 +137,7 @@ tags:
    if there is a Python variable named `pkg` which refers to a local package file,
    then you can use `!cp $pkg ~` to copy it to the home directory.
    Another even more general approach is to use the curly braces
-   which accepts an arbitrary Python expresion.
+   which accepts an arbitrary Python expression.
    Still,
    let's assume that `pkg` is a Python variable which refers to a local package file
    but it is a relative path w.r.t. `/tmp`.
@@ -187,7 +187,7 @@ tags:
             sp.run(f"zip -r {path} {path.with_suffix('.zip')} &", shell=True)
    ```
 
-   The second way is to use the Python moduel `multiprocessing`.
+   The second way is to use the Python module `multiprocessing`.
 
    ```python
     from multiprocessing import Pool
@@ -224,7 +224,7 @@ tags:
    Of course,
    you can also use `os.environ` to help management environment variables.
    However,
-   be aware that environment varaibles set by either `%env` or `os.environ`
+   be aware that environment variables set by either `%env` or `os.environ`
    are active in the current session only
    and are not visible to other shell/Python processes spawned using `subprocess`.
    For more details,
@@ -273,7 +273,7 @@ tags:
 
 ## References
 
-- [Set Environment Varibles in IPython](set-environment-varibles-in-ipython)
+- [Set Environment Variables in IPython](set-environment-varibles-in-ipython)
 
 - [Disable Jedi in IPython](disable-jedi-in-ipython)
 

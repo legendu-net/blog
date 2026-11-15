@@ -1,7 +1,7 @@
 ---
 title: Proxy for sudo
 created: '2017-04-07T23:42:48-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:23:36-08:00'
 authors:
   - bendu
 label: proxy-for-sudo
@@ -24,7 +24,7 @@ export https_proxy='proxy_server:port'
 
 However,
 you might find the exported environment variables are not visible to `sudo`.
-This can be resovled by simplying adding the `-E` (preserve environment) option to `sudo`.
+This can be resolved by simply adding the `-E` (preserve environment) option to `sudo`.
 
 ```bash
 sudo -E command_to_run

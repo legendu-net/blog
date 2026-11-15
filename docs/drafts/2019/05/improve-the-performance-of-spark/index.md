@@ -1,7 +1,7 @@
 ---
 title: Improve the Performance of Spark
 created: '2019-05-05T09:10:38-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:23:30-08:00'
 authors:
   - bendu
 label: improve-the-performance-of-spark
@@ -96,9 +96,9 @@ tags:
    it is still beneficial to unpersist data as soon as it is no used any more to reduce memory usage.
 
 1. Spark DataFrame is lazily computed but computed again if needed.
-   It can greatly boost the perfromance of your Spark application
+   It can greatly boost the performance of your Spark application
    if you cache/persist the intermediate Spark DataFrame
-   which is used in mutliple places.
+   which is used in multiple places.
    Notably,
    if a Spark DataFrame containing randomly generately values
    and is used in multiple places,
@@ -114,7 +114,7 @@ tags:
    However,
    you should hint/help Spark to use the right join when applicable.
 
-   - Do NOT split a medium sized table and boradcast each splitted part.
+   - Do NOT split a medium sized table and broadcast each split part.
      Just let Spark pick the right join (which will be the Sort Merge Join) in this case.
      Also notice that the splitting tricky might not work in non-inner joins.
 
@@ -122,11 +122,11 @@ tags:
      Use BroadcastHashJoin if possible.
      Notice that BroadcastHashJoin only works for inner joins.
      If you have a outer join,
-     BroadcastHashJoin won't happend even if you explicitly Broadcast a DataFrame.
+     BroadcastHashJoin won't happen even if you explicitly Broadcast a DataFrame.
 
    - Notice that BroadcastJoin only works for inner joins.
      If you have a outer join,
-     BroadcastJoin won't happend even if you explicitly Broadcast a DataFrame.
+     BroadcastJoin won't happen even if you explicitly Broadcast a DataFrame.
 
 1. Make sure that keys to join in Spark DataFrames have the same type!
    When joining 2 large DataFrames in Spark,
@@ -186,7 +186,7 @@ tags:
    it is safe to keep the number of tasks to 3k - 100k.
    If you are unsure, 10k is a good start point.
 
-## Execuation Plan
+## Execution Plan
 
 1. Avoid having too large execution plans.
    Specially,
@@ -266,7 +266,7 @@ you might want to consider using the Kryo serializer.
    you should avoid having big tasks and then try to leveraging multithreading to speed up each tasks.
    Instead,
    you should have smaller single-threaded tasks
-   and leverage Spark for parallism.
+   and leverage Spark for parallelism.
 
 1. Multhreading does not seem to work if you call a shell command
    (which supports multithreading)
@@ -287,9 +287,9 @@ you might want to consider using the Kryo serializer.
 ## When to Reshuffle
 
 1. Situations (e.g., merging small files or splitting huge files)
-   that requires explicitly increasing or decreasing the number of RDD partiitons.
+   that requires explicitly increasing or decreasing the number of RDD partitions.
 
-1. Before multiple bucket joins, it is usually benefical to repartition DataFrames by the same key.
+1. Before multiple bucket joins, it is usually beneficial to repartition DataFrames by the same key.
 
 [Cost Based Optimizer in Apache Spark 2.2](https://databricks.com/blog/2017/08/31/cost-based-optimizer-in-apache-spark-2-2.html)
 

@@ -1,7 +1,7 @@
 ---
 title: Tips on System Design
 created: '2022-10-08T16:41:38-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:24:39-08:00'
 authors:
   - bendu
 label: tips-on-system-design
@@ -19,7 +19,7 @@ tags:
 
 [Popular Databases](popular-databases)
 
-[Messsage Queue Implementations](messsage-queue-implementations)
+[Message Queue Implementations](messsage-queue-implementations)
 
 [Top 7 Most-Used Distributed System Patterns](https://www.youtube.com/watch?v=nH4qjmP2KEE)
 

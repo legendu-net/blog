@@ -1,7 +1,7 @@
 ---
 title: Quant Trading
 created: '2016-06-09T19:32:27-07:00'
-date: '2026-06-12T22:31:33-07:00'
+date: '2026-11-15T09:19:57-08:00'
 authors:
   - bendu
 label: quant-trading
@@ -132,7 +132,7 @@ https://github.com/asavinov/intelligent-trading-bot
    It aims to revolutionize FinTech by providing a comprehensive ecosystem
    for developing and deploying reinforcement learning-based trading strategies.
 
-## Good Platfroms
+## Good Platforms
 
 [API Algo Trading Landscape](https://alpaca.markets/learn/algo-trading-landscape/)
 has a good summary.

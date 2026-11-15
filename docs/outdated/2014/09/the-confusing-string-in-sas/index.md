@@ -1,7 +1,7 @@
 ---
 title: The Confusing String in SAS
 created: '2014-09-28T16:55:06-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:29:20-08:00'
 authors:
   - bendu
 label: the-confusing-string-in-sas
@@ -191,7 +191,7 @@ Removes trailing blanks from a character string,
 and returns one blank if the string is missing.
 this is ugly as most languages, trim is strip
 
-however, compress is much more diffrent!!!
+however, compress is much more different!!!
 Returns a character string with specified characters removed from the original string.
 
 you will use strip to remove .. most of the time.

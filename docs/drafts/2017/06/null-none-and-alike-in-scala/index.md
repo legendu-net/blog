@@ -1,7 +1,7 @@
 ---
 title: Null, None and Alike in Scala
-created: 2017-06-22 13:37:40
-date: 2026-04-15 19:27:01.350391
+created: '2017-06-22T13:37:40-07:00'
+date: '2026-11-15T09:24:54-08:00'
 authors:
   - bendu
 label: null-none-and-alike-in-scala
@@ -15,7 +15,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-`Nil` represents an emptry List of anything of zero length.
+`Nil` represents an empty List of anything of zero length.
 It is not that it refers to nothing but it refers to List which has no contents.
 In other words, `Nil` is equivalent to `List()` or `List.empty`.
 

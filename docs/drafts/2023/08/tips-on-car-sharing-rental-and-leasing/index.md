@@ -1,7 +1,7 @@
 ---
 title: Tips on Car Sharing, Rental and Leasing
 created: '2023-08-29T14:22:20+00:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:25:23-08:00'
 authors:
   - bendu
 label: tips-on-car-sharing-rental-and-leasing
@@ -23,7 +23,7 @@ tags:
 
 ## Car Rental
 
-1. typicall a few days to a few weeks
+1. typically a few days to a few weeks
 
 1. Choose the right size of car to rent.
 
@@ -32,18 +32,18 @@ tags:
 1. People at the front desk won't tell you all details about the rental car.
    Instead,
    they often tell you the maker and mode of the car.
-   If you are not familar about the make/mode of the car,
+   If you are not familiar about the make/mode of the car,
    be sure to verify details.
 
    - Is it a sedan, SUV, pickup or other types of vehicle?
    - Does it support CarPlay and/or Android Auto?
    - How many people can it hold?
    - How many luggage can it hold?
-   - Is a baby seat included (if you reqested one).
+   - Is a baby seat included (if you requested one).
 
 1. Some car rental companies provides baby seat.
 
-### Avis Prefferred
+### Avis Preferred
 
 1. Most car rental companies (including Avis) support self service from mobile apps now.
    You can pick any car in the same tier as your reservation from the app,

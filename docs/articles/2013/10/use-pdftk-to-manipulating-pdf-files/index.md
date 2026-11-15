@@ -1,7 +1,7 @@
 ---
 title: Use pdftk to Manipulating PDF Files
 created: '2013-10-06T11:44:58-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:19:44-08:00'
 authors:
   - bendu
 label: use-pdftk-to-manipulating-pdf-files
@@ -53,7 +53,7 @@ sudo apt install pdftk-java
     pdftk i9.pdf dump_data_fields > fields.txt 
     # generate a FDF data file
     pdftk i9.pdf generate_fdf output data.fdf 
-    # after fill in fileds in the FDF file, run the following command
+    # after fill in fields in the FDF file, run the following command
     pdftk i9.pdf fill_form data.fdf output i9_2.pdf
    ```
 
@@ -83,7 +83,7 @@ sudo apt install pdftk-java
     pdftk *.pdf cat output i-20_all.pdf
    ```
 
-1. Combine scaned pages into the right order.
+1. Combine scanned pages into the right order.
 
    ```
     :::bash

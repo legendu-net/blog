@@ -1,7 +1,7 @@
 ---
-title: "Python Modules for Visualization"
-created: 2017-06-08 10:20:38
-date: 2023-02-08 11:57:17
+title: Python Modules for Visualization
+created: '2017-06-08T10:20:38-07:00'
+date: '2026-11-15T09:25:12-08:00'
 authors:
   - bendu
 label: python-modules-for-visualization
@@ -21,22 +21,23 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 The website [The Python Graph Gallery](https://python-graph-gallery.com/)
-displays hundreds of charts, always providing the reproducible python code! 
-It aims to showcase the awesome dataviz possibilities of python and to help you benefit it. 
+displays hundreds of charts, always providing the reproducible python code!
+It aims to showcase the awesome dataviz possibilities of python and to help you benefit it.
 
 ## General Purpose Visualization Libraries Based on JavaScript
 
 ### [hvplot](https://github.com/pyviz/hvplot)
 
-A high-level plotting API for pandas, dask, xarray, and networkx built on HoloViews 
+A high-level plotting API for pandas, dask, xarray, and networkx built on HoloViews
 
 ### [visdom](https://github.com/fossasia/visdom)
+
 [Visdom](https://github.com/fossasia/visdom)
-is a flexible tool for creating, organizing, and sharing visualizations of live, rich data. 
+is a flexible tool for creating, organizing, and sharing visualizations of live, rich data.
 
 ### [Cufflink](https://github.com/santosjorge/cufflinks)
 
-Enables plotly plots in pandas DataFrame (via the `iplot` method) directly. 
+Enables plotly plots in pandas DataFrame (via the `iplot` method) directly.
 
 https://plot.ly/pandas/getting-started/
 
@@ -45,7 +46,7 @@ https://medium.com/@kbrook10/day-7-data-visualization-how-to-use-plotly-and-cuff
 ### HoloViews
 
 HoloViews is my favorate JS-based visualization package in Python.
-It has the simpliest yet rigorous syntax.
+It has the simplest yet rigorous syntax.
 
 ### bokeh
 
@@ -63,7 +64,6 @@ Plotly is great (even better than Bokeh) but unfortunately not totally free (ver
 ### matplotlib
 
 The old default visualization package in Python.
-
 
 has display issues without x server ...
 
@@ -105,6 +105,7 @@ HiPlot makes understanding high dimensional data easy
 Beautiful visualizations of how language differs among document types.
 
 ### [geemap](https://github.com/giswqs/geemap)
+
 [geemap](https://github.com/giswqs/geemap)
 is a Python package for interactive mapping with Google Earth Engine, ipyleaflet, and folium.
 

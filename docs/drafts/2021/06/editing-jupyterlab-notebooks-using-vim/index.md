@@ -1,7 +1,7 @@
 ---
 title: Editing JupyterLab Notebooks Using Vim
-created: 2021-06-08 08:42:41
-date: 2026-04-13 23:15:01.944248
+created: '2021-06-08T08:42:41-07:00'
+date: '2026-11-15T09:21:24-08:00'
 authors:
   - bendu
 label: editing-jupyterlab-notebooks-using-vim
@@ -45,7 +45,7 @@ pip3 uninstall jupyterlab_vim
 ```
 
 By default,
-a JupyterLab extension is enabled after installtion.
+a JupyterLab extension is enabled after installation.
 You can disable an extension,
 e.g., jupyterlab_vim, using the following command.
 

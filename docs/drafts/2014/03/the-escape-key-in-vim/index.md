@@ -1,7 +1,7 @@
 ---
 title: The Escape Key in Vim
 created: '2014-03-20T18:59:03-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:16:19-08:00'
 authors:
   - bendu
 label: the-escape-key-in-vim
@@ -23,7 +23,7 @@ tags:
 
 cons: no caps key,
 generally speaking I type lower case and then convert letters to upper case as needed
-u/U ect
+u/U etc.
 
 3. Swap CapsLock and Esc
    works very well until you remote to other desktops

@@ -1,7 +1,7 @@
 ---
 title: 'Spark Issue: Could Not Execute Broadcast in 300S'
 created: '2022-01-22T11:11:13-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:23:04-08:00'
 authors:
   - bendu
 label: spark-issue-could-not-execute-broadcast-in-300s
@@ -24,7 +24,7 @@ tags:
 
 ## Possible Causes
 
-1. Broadcast was too large or the network was slow which caused the boradcast to timeout.
+1. Broadcast was too large or the network was slow which caused the broadcast to timeout.
    Notice that is usually a superficial cause instead of the deep root cause.
 
 1. DataFrame caching failed due to failure of Spark nodes.

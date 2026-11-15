@@ -1,7 +1,7 @@
 ---
 title: Template Meta Programming
-created: 2012-10-21 00:00:00
-date: 2026-04-15 19:27:01.510045
+created: '2012-10-21T00:00:00-07:00'
+date: '2026-11-15T09:16:59-08:00'
 authors:
   - bendu
 label: template-meta-programming
@@ -50,13 +50,13 @@ Illustrative examples for the following discussions can be found
    know that it is a template type. (This is not right ..., sometimes you need it sometimes not ...)
 
 1. Whenever you refer to a template class,
-   you must specify the template arguemnts.
+   you must specify the template arguments.
    If all template arguments have default values,
    then they can omitted,
    however, you still have to use `<>` after the name of the class
    to let the compiler know that it is a template class.
    Forgetting template arguments is a common mistake when using template classes.
-   When you implemente a template method outside the definition of its class,
+   When you implement a template method outside the definition of its class,
    you must start with `template<...> `.
    This is because the template arguments of the template class is only in effect
    inside the scope of the class.

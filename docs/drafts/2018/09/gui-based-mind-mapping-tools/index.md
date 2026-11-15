@@ -1,7 +1,7 @@
 ---
 title: GUI-based Mind Mapping Tools
-created: 2018-09-03 08:18:27
-date: 2026-04-13 23:15:27.764783
+created: '2018-09-03T08:18:27-07:00'
+date: '2026-11-15T09:22:49-08:00'
 authors:
   - bendu
 label: gui-based-mind-mapping-tools
@@ -21,7 +21,7 @@ tags:
 Most office tools (MS, Google, etc.) has built-in Flowchart support.
 **It is suggested that you use the built-in flowchart**
 if you a such an office tool
-as it is much esier to update the flowchart later.
+as it is much easier to update the flowchart later.
 
 ## XMind
 
@@ -43,7 +43,7 @@ Asciiflow is an online tool for generating flowchart in Ascii.
 
 ## [MindJet](http://www.mindjet.com/)
 
-commerical, windows, mac
+commercial, windows, mac
 
 ## Mindomo
 

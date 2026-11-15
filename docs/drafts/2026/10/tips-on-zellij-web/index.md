@@ -1,7 +1,7 @@
 ---
 title: Tips on Zellij Web
 created: '2026-10-04T20:38:36.580759-07:00'
-date: '2026-10-04T20:55:12-07:00'
+date: '2026-11-15T09:30:24-08:00'
 authors:
   - bendu
 label: tips-on-zellij-web
@@ -25,15 +25,15 @@ tags:
 
 1. By default,
    `zellij web` uses the IPv4 address `127.0.0.1`.
-   Modern browsers (Chrome, Edge, ect) might resolves `localhost` as the IPv6 address `::1`.
+   Modern browsers (Chrome, Edge, etc) might resolves `localhost` as the IPv6 address `::1`.
    If that's the case,
    visiting `localhost:8082` will results in the error code `ERR_EMPTY_RESPONSE`
    .
    It is suggested that you use `127.0.0.1` instead of `localhost`
-   when visiting the web page or doing local port fowarding via SSH tunneling.
+   when visiting the web page or doing local port forwarding via SSH tunneling.
 
 1. Use `mkcert` to create certificate for hosting HTTPS
-   if you need to share sessions beyong the local network.
+   if you need to share sessions beyond the local network.
 
 For more discussions,
 please refer to
@@ -51,7 +51,7 @@ please refer to
    which allows web applications to capture reserved system keystrokes (including Ctrl + T, Ctrl + N, and Ctrl + W),
    but only when the browser tab is in fullscreen.
    This is kind of like the lock mode of Zellij,
-   which allows keystokes to be passed into applications running in Zellij terminals.
+   which allows keystrokes to be passed into applications running in Zellij terminals.
 
 ## References
 

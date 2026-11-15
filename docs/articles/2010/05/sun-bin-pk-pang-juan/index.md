@@ -1,7 +1,7 @@
 ---
 title: Sun Bin PK Pang Juan
-created: 2010-05-06 10:57:40
-date: 2026-04-05 19:42:37.481162
+created: '2010-05-06T10:57:40-07:00'
+date: '2026-11-15T09:15:06-08:00'
 authors:
   - bendu
 label: sun-bin-pk-pang-juan
@@ -76,7 +76,7 @@ SunBin[comb_] :=
        divisors[[counter]]}]
      ];
     (*There should be only one possible combination according the \
-imformation that Pang Juan provided in his first sentence*)
+information that Pang Juan provided in his first sentence*)
     If[Length[DivisorCombinations] == 1,
      AppendTo[positions, {i}],
      If[Length[PangJuan1[DivisorCombinations]] != 1,
@@ -132,7 +132,7 @@ to delete those impossible combinations*)
    Result = PangJuan2[Result];
    Return[Result];
    ];
-(*run the porgram*)
+(*run the program*)
 GuiGuzi[]
 {{4, 13}}
 ```

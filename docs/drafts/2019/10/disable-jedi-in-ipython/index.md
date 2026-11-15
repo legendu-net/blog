@@ -1,7 +1,7 @@
 ---
 title: Disable Jedi in IPython
-created: 2019-10-19 21:06:24
-date: 2026-04-15 19:27:01.142005
+created: '2019-10-19T21:06:24-07:00'
+date: '2026-11-15T09:21:22-08:00'
 authors:
   - bendu
 label: disable-jedi-in-ipython
@@ -22,6 +22,6 @@ Specifically you can use ipython locate profile to find your current profile dir
 
 In jupyter just run a cell with the following contents %config IPCompleter.use_jedi = False
 
-## Refences
+## References
 
 https://tutorials.technology/solved_errors/Slow-tab-completion-on-large-data-object-in-notebook.html

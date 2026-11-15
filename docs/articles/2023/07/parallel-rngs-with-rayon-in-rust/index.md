@@ -1,7 +1,7 @@
 ---
 title: Parallel RNGs with Rayon in Rust
 created: '2023-07-05T08:42:27-07:00'
-date: '2026-08-11T22:19:16-07:00'
+date: '2026-11-15T09:17:25-08:00'
 authors:
   - bendu
 label: parallel-rngs-with-rayon-in-rust
@@ -64,7 +64,7 @@ a few things to notice.
    Note that the `init` closure passed to `map_init` is called once per rayon job
    NOT per rayon worker thead.
    A rayon worker thread typically executes many jobs.
-   If you need to ensure some intializing work per rayon worker thread
+   If you need to ensure some initializing work per rayon worker thread
    (e.g., if you want to use the same RNG for jobs executed by the same worker thread),
    you have to leverage thread-local storage in the `init` closure.
    For more discussions,

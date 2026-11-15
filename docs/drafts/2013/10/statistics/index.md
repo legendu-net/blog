@@ -1,7 +1,7 @@
 ---
 title: Statistics
-created: 2013-10-13 22:40:14
-date: 2026-04-13 23:33:11.611516
+created: '2013-10-13T22:40:14-07:00'
+date: '2026-11-15T09:15:35-08:00'
 authors:
   - bendu
 label: statistics
@@ -15,7 +15,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-1. in real problems, the true value of (some quantity) are usually unknow/defined,
+1. in real problems, the true value of (some quantity) are usually unknown/defined,
    even if we can collect data about it,
    e.g., Amazon goods, what is the true cost of a good?
    You must first give a definition ...

@@ -1,7 +1,7 @@
 ---
 title: Regular Expression Equivalent
 created: '2013-10-30T12:29:42-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:19:30-08:00'
 authors:
   - bendu
 label: regular-expression-equivalent
@@ -38,7 +38,7 @@ tags:
    since special characters (e.g., `\`) need to be escaped in strings in most programming languages,
    you will need the string `"\\s"` to represent the regular expression pattern `\s`,
    and similar for other regular expression patterns with a leading backslash.
-   Python is specialy as it provides raw strings (without escaping) to make it easier to write regular expression patterns.
+   Python is special as it provides raw strings (without escaping) to make it easier to write regular expression patterns.
    It even goes one step further to auto correct non-properly escape strings.
    For more discussions on Python regular expressions,
    pleaser fer to
@@ -51,7 +51,7 @@ tags:
    since `\` needs to be escaped in both programming languages,
    you will end up using `\\\\s` to represent `\s`.
    If you use Python to call other languages to perform regular expression patterns,
-   things can be simplifed by using raw strings in Python.
+   things can be simplified by using raw strings in Python.
    For example,
    instead of `"\\\\s"`,
    you can use `r"\\s"` in Python.
@@ -71,7 +71,7 @@ tags:
    than remembering different options in different programming languages or tools.
    It is suggested that you use regular expression modifiers when possible.
 
-1. Word boundry (`\b`) is a super set of white spaces (`\s`).
+1. Word boundary (`\b`) is a super set of white spaces (`\s`).
 
 1. `[[:alnum:]]` contains all letters and numbers
    while `\w` contains not only letters and numbers but also some special character such as `_`.
@@ -574,7 +574,7 @@ tags:
     </tr>
     <tr>
         <td> 
-            Word boundry
+            Word boundary
         </td>
         <td> 
             <code>\b</code>
@@ -1057,7 +1057,7 @@ via Perl style regular (the `-P` option) expressions.
 
 \[4\]: `grep` matches pattern greedly by default.
 However,
-in Perl style syntax you can use the modifer `?` after a quantifier to perform a non-greedy match.
+in Perl style syntax you can use the modifier `?` after a quantifier to perform a non-greedy match.
 For example,
 instead of `.*` you can use `.*?` to do a non-greedy match.
 
@@ -1065,7 +1065,7 @@ instead of `.*` you can use `.*?` to do a non-greedy match.
 `"\s"` also works in Python and it is equivalent to `"\\s"` and `r"\s"`.
 However,
 it is suggested that you avoid using `"\s"` as causes confusions
-especially when you call other programming languges (e.g., Spark SQL)
+especially when you call other programming languages (e.g., Spark SQL)
 to run regular expression operations from Python.
 The raw string pattern `r"\s"` is preferred for its unambiguity and simplicity.
 For more discussions on Python regular expressions,

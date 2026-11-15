@@ -1,7 +1,7 @@
 ---
 title: Linked List in Rust
-created: 2021-11-27 12:59:49
-date: 2026-04-13 23:14:53.018225
+created: '2021-11-27T12:59:49-08:00'
+date: '2026-11-15T09:22:22-08:00'
 authors:
   - bendu
 label: linked-list-in-rust
@@ -23,7 +23,7 @@ The std library of Rust has an implementation of
 however,
 it is not useful
 as it does not give users the flexibility of manipulating raw pointers
-(which is the essense of linked list).
+(which is the essence of linked list).
 
 [Learn Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/)
 

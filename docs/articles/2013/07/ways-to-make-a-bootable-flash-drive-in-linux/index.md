@@ -1,7 +1,7 @@
 ---
 title: Ways to Make a Bootable Flash Drive in Linux
-created: 2013-07-19 10:33:38
-date: 2026-04-14 19:42:36.045201
+created: '2013-07-19T10:33:38-07:00'
+date: '2026-11-15T09:18:44-08:00'
 authors:
   - bendu
 label: ways-to-make-a-bootable-flash-drive-in-linux
@@ -9,7 +9,7 @@ license: CC-BY-4.0
 tags:
   - bootable
   - flash drive
-  - hybird
+  - hybrid
   - USB
   - hardware
   - Linux
@@ -43,7 +43,7 @@ or
 cat path_to_linux_image > path_to_device
 ```
 
-to write a hybird Linux image into a flash drive.
+to write a hybrid Linux image into a flash drive.
 Note that you
 <span style="color:red">
 must use the whole device
@@ -86,7 +86,7 @@ which is not recommended.
    [Ventoy](https://github.com/ventoy/Ventoy)
    instead.
 
-1. If you create a boot flash drive for Ubuntu in Windows using UNetbootin or other softwares,
+1. If you create a boot flash drive for Ubuntu in Windows using UNetbootin or other software,
    then you'd better format the flash drive as `FAT` instead of `FAT32`.
    Otherwise,
    you might get the error information: "BOOTMGR is missing".

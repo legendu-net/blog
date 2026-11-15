@@ -1,7 +1,7 @@
 ---
-title: "Transpose Data in SAS"
-created: 2015-02-26 22:09:17
-date: 2015-08-26 22:09:17
+title: Transpose Data in SAS
+created: '2015-02-26T22:09:17-08:00'
+date: '2026-11-15T09:27:32-08:00'
 authors:
   - bendu
 label: transpose-data-in-sas
@@ -15,8 +15,8 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-You can use the transpose procedure to tranpose a fat/thin data to a thin/fat data in SAS.
-For example, 
+You can use the transpose procedure to transpose a fat/thin data to a thin/fat data in SAS.
+For example,
 suppose we have a data set s1 in SAS.
 
 ```SAS
@@ -29,6 +29,7 @@ data s1;
 ; 
 run;
 ```
+
 You can transpose the fat data set to a thin one using the transpose procedure.
 
 ```SAS
@@ -37,32 +38,35 @@ proc transpose data=s1 out=s2 (rename=(_name_=year)) prefix=x;
     var faminc96-faminc98;
 run;
 ```
+
 This gives you the following data set.
 
-|famid|year|x1|
-|:-----:|:----:|:----:|
-|1|faminc96|40000|
-|1|faminc97|40500|
-|1|faminc98|41000|
-|2|faminc96|45000|
-|2|faminc97|45400|
-|2|faminc98|45800|
-|3|faminc96|75000|
-|3|faminc97|76000|
-|3|faminc98|77000|
+| famid |   year   |  x1   |
+| :---: | :------: | :---: |
+|   1   | faminc96 | 40000 |
+|   1   | faminc97 | 40500 |
+|   1   | faminc98 | 41000 |
+|   2   | faminc96 | 45000 |
+|   2   | faminc97 | 45400 |
+|   2   | faminc98 | 45800 |
+|   3   | faminc96 | 75000 |
+|   3   | faminc97 | 76000 |
+|   3   | faminc98 | 77000 |
 
-You can transpose this thin data back to a fat one. 
+You can transpose this thin data back to a fat one.
+
 ```SAS
 proc transpose data=s2 out=s3 (drop=_name_);
     by famid ;
 	id year;
 run;
 ```
+
 The following are a few tips.
 
-1. The `id` statement specifies one or more variables in the input data set 
-whose formatted values name the transposed variables in the output data set.
+1. The `id` statement specifies one or more variables in the input data set
+   whose formatted values name the transposed variables in the output data set.
 
-2. The `var` statement specified variables in the input data set to be transposed. 
+1. The `var` statement specified variables in the input data set to be transposed.
 
-3. The `by` statement defines groups and the transpose will be done in each `by` group.
+1. The `by` statement defines groups and the transpose will be done in each `by` group.

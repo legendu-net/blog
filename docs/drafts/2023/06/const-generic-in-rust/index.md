@@ -1,7 +1,7 @@
 ---
 title: Const Generic in Rust
 created: '2023-06-19T23:45:11-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:25:02-08:00'
 authors:
   - bendu
 label: const-generic-in-rust
@@ -25,7 +25,7 @@ tags:
    [static_assertions](https://crates.io/crates/static_assertions)
    can be used to assert that a const generic parameter satisfy certain conditions at compile time.
    This is an alternative to const bounds using `where`
-   before `feature(generic-const-exprs)` is stablized.
+   before `feature(generic-const-exprs)` is stabilized.
 
 ## Disable Users From Constructing Instances of a Public Struct
 

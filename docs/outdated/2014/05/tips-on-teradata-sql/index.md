@@ -1,7 +1,7 @@
 ---
 title: Tips on Teradata SQL
 created: '2014-05-15T12:10:03-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:28:29-08:00'
 authors:
   - bendu
 label: tips-on-teradata-sql
@@ -45,7 +45,7 @@ Please refer to
    Another way is to use suffix to indicate the type of literal values,
    e.g., `'1'XI8`.
 
-1. Below code get informtion about the table `cat123`.
+1. Below code get information about the table `cat123`.
 
    ```
     :::sql

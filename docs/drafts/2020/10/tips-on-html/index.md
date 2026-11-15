@@ -1,7 +1,7 @@
 ---
 title: Tips on HTML
-created: 2020-10-27 10:09:15
-date: 2026-04-13 23:15:13.453595
+created: '2020-10-27T10:09:15-07:00'
+date: '2026-11-15T09:25:28-08:00'
 authors:
   - bendu
 label: tips-on-html
@@ -41,16 +41,16 @@ Nu Html Checker – Helps you catch problems in your HTML/CSS/SVG
 ## Misc
 
 1. HTML is not case sensitive,
-   but it's suggested that you alway use lower case for tags.
+   but it's suggested that you always use lower case for tags.
 
 1. `<!-- ... -->` comment
 
 1. always use `<!DOCTYPE>`
 
 1. code is for verbatim code while `<script> ... </script>`
-   is for scripting code that will acutally run.
+   is for scripting code that will actually run.
 
-1. you'd better use percent for width when formating paragraphs and so on,
+1. you'd better use percent for width when formatting paragraphs and so on,
    this is more portable `<p style="width:79%"> ... </p>`
 
 1. it seems that figcaption in html5 cannot align correctly, must rely on div to align,

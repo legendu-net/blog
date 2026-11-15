@@ -1,7 +1,7 @@
 ---
 title: Loss Functions for Machine Learning Models
 created: '2013-03-07T11:12:36-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:18:53-08:00'
 authors:
   - bendu
 label: loss-functions-for-machine-learning-models
@@ -23,7 +23,7 @@ tags:
    If you get a negative loss when training a model,
    there must be something wrong with the code.
    For example,
-   maybe you chosed a loss function incorrectly.
+   maybe you chose a loss function incorrectly.
 
 ## Loss Functions
 
@@ -49,7 +49,7 @@ for detailed discussions.
 
 MSE is a L2 loss function.
 Both L1 and L2 loss functions are special cases of $L_p$ ($p>0$) loss functions.
-$L_p$ loss functions are typicall used for regression problems.
+$L_p$ loss functions are typically used for regression problems.
 Compared to L1 loss,
 L2 loss gives larger weights on larger (absolute) errors.
 In many real applications,

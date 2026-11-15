@@ -1,7 +1,7 @@
 ---
 title: Distributed Training of Models on Spark
 created: '2020-01-05T10:26:27-08:00'
-date: '2026-06-12T22:31:50-07:00'
+date: '2026-11-15T09:23:11-08:00'
 authors:
   - bendu
 label: distributed-training-of-models-on-spark
@@ -32,7 +32,7 @@ tags:
 
 You can run Apache Ray on top of Spark via
 [analytics-zoo](https://github.com/intel-analytics/analytics-zoo),
-which enables you to run any Python machine lerning library in distributed fashion.
+which enables you to run any Python machine learning library in distributed fashion.
 But I'm not sure whether this is a good idea.
 
 ## [yahoo/TensorFlowOnSpark](https://github.com/yahoo/TensorFlowOnSpark)

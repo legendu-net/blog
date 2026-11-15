@@ -1,7 +1,7 @@
 ---
 title: The Deref Trait in Rust
-created: 2023-07-22 11:27:41
-date: 2026-04-15 19:27:00.658438
+created: '2023-07-22T11:27:41-07:00'
+date: '2026-11-15T09:25:16-08:00'
 authors:
   - bendu
 label: the-deref-trait-in-rust
@@ -21,7 +21,7 @@ tags:
    do NOT implement the `Deref` trait unless you are absolutely sure that it's needed!
    According to [Rust Official Doc - Deref](https://doc.rust-lang.org/std/ops/trait.Deref.html),
    Deref should only be implemented for smart pointers.
-   The Rust Programing Language book has a chapter covering
+   The Rust Programming Language book has a chapter covering
    [smart pointers](https://doc.rust-lang.org/book/ch15-00-smart-pointers.html)
    ,
    however,

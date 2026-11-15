@@ -1,7 +1,7 @@
 ---
 title: Build Docker Images Using Kaniko
-created: 2021-07-20 17:09:59
-date: 2026-04-13 23:14:10.192291
+created: '2021-07-20T17:09:59-07:00'
+date: '2026-11-15T09:16:57-08:00'
 authors:
   - bendu
 label: build-docker-images-using-kaniko
@@ -37,17 +37,17 @@ tags:
    and users can work in the directory `/workspace` only.
    Even if some users have tried customizing their own Kaniko Docker images
    and reported successful experiences,
-   it is NOT guranteed that customized Kaniko Docker images will always work.
+   it is NOT guaranteed that customized Kaniko Docker images will always work.
    Any additional tool (besides `/kaniko/executor` and `/busybox/sh`)
    might fail to work due to changed filesystems (layers) during the building of a Docker image,
    and even worse, might intervent the building of Docker images.
 
 1. Even if you use an official Kaniko Docker image,
    it doesn't mean that it will always work
-   even if your Docker image can be built successfull using Docker.
+   even if your Docker image can be built successfully using Docker.
    Various issues can make the image building fail to work.
 
-   i. If your Docker image intervent with critial Kaniko filesystem/layers,
+   i. If your Docker image intervent with critical Kaniko filesystem/layers,
    it might fail to work.
    For example,
    `/workspace` is the work directory of Kaniko.
@@ -71,7 +71,7 @@ tags:
    so you can define the command as
    `["tail", "-f", "/dev/null"]`
    .
-   The above command implicity invokes `/busybox/sh`.
+   The above command implicitly invokes `/busybox/sh`.
    If you'd like to invoke `/busybox/sh` directly,
    make sure to use
    `["/busybox/sh", "-c", "tail -f /dev/null"]`

@@ -1,7 +1,7 @@
 ---
 title: Install Python in macOS
 created: '2019-02-19T10:18:07-08:00'
-date: '2026-06-12T22:31:33-07:00'
+date: '2026-11-15T09:18:16-08:00'
 authors:
   - bendu
 label: install-python-in-macos
@@ -22,7 +22,7 @@ There are a few ways to install Python in Mac.
 
 You should avoid installing multiple versions of Python in your system.
 It usually brings more troubles than conveniences.
-Python virtual environemnts (
+Python virtual environments (
 via [uv](manage-python-projects-using-uv)
 ) and Docker containers are usually much better alternatives
 when you need different versions of Python.

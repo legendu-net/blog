@@ -1,7 +1,7 @@
 ---
 title: Tips on JupyterLab
 created: '2016-12-10T10:12:31-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:22:15-08:00'
 authors:
   - bendu
 label: tips-on-jupyterlab
@@ -38,11 +38,11 @@ tags:
    the resolution of a terminal might not be messed up when you use Vim in it.
    A simple way to resolve the issue is create a new terminal.
 
-1. If a notebook is running and outputing results,
+1. If a notebook is running and outputting results,
    disconnecting and reconnecting to it will lose future outputs
    even if the notebook continues to run.
    And what is even trickier is that the kernel icon won't display itself as busy,
-   which can confuse users that the notebook was iterrupted or has finished running.
+   which can confuse users that the notebook was interrupted or has finished running.
    This issue is being tracked at
    [issue 6003](https://github.com/jupyterlab/jupyterlab/issues/6003)
    and
@@ -58,7 +58,7 @@ tags:
    `reset` resolves the issue.
 
 1. hard to do interactive UI in JupyterLab right now ...
-   many interactive UI pacakges in R relies on RStudio to work.
+   many interactive UI packages in R relies on RStudio to work.
 
 1. Convert Jupyter Notebook to another format.
 
@@ -73,7 +73,7 @@ tags:
    you can rerun everything in the notebook and save it.
    This will usually resolve the trust issue.
 
-## Lauch a JupyterLab Server
+## Launch a JupyterLab Server
 
 ```
 :::bash
@@ -122,10 +122,10 @@ https://github.com/dclong/dsutil/blob/dev/dsutil/filesystem.py#L266
 
 - [Wait, IPython Can Do That?!](https://ep2019.europython.eu/media/conference/slides/cBeHNyZ-wait-ipython-can-do-that.pdf)
 
-## [JupyterLab Extenions](useful-tools-and-extensions-for-jupyterlab)
+## [JupyterLab Extensions](useful-tools-and-extensions-for-jupyterlab)
 
 Please refer to
-[JupyterLab Extenions](useful-tools-and-extensions-for-jupyterlab)
+[JupyterLab Extensions](useful-tools-and-extensions-for-jupyterlab)
 for more details.
 
 ## References

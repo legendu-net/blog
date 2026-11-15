@@ -1,7 +1,7 @@
 ---
 title: Visualization for AI Concepts
 created: '2020-08-24T12:29:58-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:25:05-08:00'
 authors:
   - bendu
 label: visualization-for-ai-concepts
@@ -22,7 +22,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-Tools for (approximately) visualizing the architures of existing neural networks
+Tools for (approximately) visualizing the architectures of existing neural networks
 or for visualizing the traing process (training/validation loss/accuracy, activation, etc.)
 are extremely helpful!
 TensorBoard is one of the best tools for this purpose.
@@ -56,7 +56,7 @@ it can also be used with PyTorch.
 When you call `SummaryWriter.add_graph` to add a graph to TensorBoard,
 it might throw the error "ModuleNotFoundError: No module named 'past'"
 due to a few causes.
-One case of the error that I encounted was due to passing an object which is not a PyTorch model.
+One case of the error that I encountered was due to passing an object which is not a PyTorch model.
 The object was a customized trainer class which wraps a model.
 Pass the innter wrapped model to `SummaryWriter.add_graph` solved the problem.
 

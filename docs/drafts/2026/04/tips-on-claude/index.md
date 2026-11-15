@@ -1,7 +1,7 @@
 ---
 title: Tips on Claude
 created: '2026-04-18T18:53:35.655987-07:00'
-date: '2026-10-27T08:46:23-07:00'
+date: '2026-11-15T09:30:01-08:00'
 authors:
   - bendu
 label: tips-on-claude
@@ -23,7 +23,7 @@ tags:
 curl -fsSL https://claude.ai/install.sh | bash
 ```
 
-Works simiarly to [Gemini CLI](tips-on-google-gemini-cli).
+Works similarly to [Gemini CLI](tips-on-google-gemini-cli).
 
 ## Claude Desktop
 

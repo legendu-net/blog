@@ -1,7 +1,7 @@
 ---
 title: Estimation of False Discovery Rate Using Sequential Permutation Pvalues
 created: '2012-06-03T10:17:03-07:00'
-date: '2026-08-11T22:19:14-07:00'
+date: '2026-11-15T09:16:54-08:00'
 authors:
   - bendu
 label: estimation-of-false-discovery-rate-using-sequential-permutation-pvalues
@@ -25,7 +25,7 @@ I wrote a paper on sequential permutation test with Tim Bancroft and Dan Nettlet
 The paper "T. Bancroft, C. Du and D. Nettleton (2012). 
 Estimation of False Discovery Rate Using Sequential Permutation P­Values." 
 has been accepted by Biometrics. To illustrate ideas in the paper and make sequential 
-permutation test easier to use, I wrote an R package **dclong.spt** which is availabe 
+permutation test easier to use, I wrote an R package **dclong.spt** which is available 
 on [GitHub](https://github.com/dclong/dclong.spt). In order to make the package smaller, 
 I moved these big datasets (used for illustrations in the paper) from the package to this website. 
 

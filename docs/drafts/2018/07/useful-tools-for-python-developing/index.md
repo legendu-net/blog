@@ -1,7 +1,7 @@
 ---
 title: Useful Tools for Python Developing
 created: '2018-07-08T10:46:18-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:22:34-08:00'
 authors:
   - bendu
 label: useful-tools-for-python-developing
@@ -61,7 +61,7 @@ It is preferred to other Python linters such as pylint and flake8.
 
 ## Formatting
 
-`ruff` is prerred for formating Python script (and notebooks).
+`ruff` is preferred for formatting Python script (and notebooks).
 Just run `ruff format` to format code.
 
 ## [Debugging, Unit Testing and CICD](debugging-unit-testing-and-cicd-in-python)

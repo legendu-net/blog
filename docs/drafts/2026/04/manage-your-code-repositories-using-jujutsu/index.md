@@ -1,7 +1,7 @@
 ---
 title: Manage Your Code Repositories Using Jujutsu
 created: '2026-04-30T19:49:30.593438-07:00'
-date: '2026-10-08T23:27:00-07:00'
+date: '2026-11-15T09:29:56-08:00'
 authors:
   - bendu
 label: manage-your-code-repositories-using-jujutsu
@@ -19,7 +19,7 @@ To install Jujutsu (jj) using Homebrew, run:
 
 ## General Tips
 
-1. jj ecourages small and frequently commits
+1. jj encourages small and frequently commits
 
    - easier to check local diffs
    - more flexible and granular control over changes

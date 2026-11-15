@@ -1,7 +1,7 @@
 ---
 title: Working with Spreadsheet in Python
 created: '2015-05-09T08:43:45-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:14:59-08:00'
 authors:
   - bendu
 label: working-with-spreadsheet-in-python
@@ -63,7 +63,7 @@ This sort of gives you a flavor of updating an existing Excel file.
 
 ## [xlwings](https://www.xlwings.org/)
 
-xlwings is a commerical software but has a opensource community edition.
+xlwings is a commercial software but has a opensource community edition.
 It requires an installation of Excel and therefore only works on Windows and macOS.
 Note that macOS currently does not support UDFs.
 

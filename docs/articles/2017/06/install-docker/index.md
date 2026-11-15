@@ -1,7 +1,7 @@
 ---
 title: Install Docker
 created: '2017-06-09T13:13:36-07:00'
-date: '2026-06-12T21:38:36-07:00'
+date: '2026-11-15T09:16:38-08:00'
 authors:
   - bendu
 label: install-docker
@@ -51,7 +51,7 @@ Configure your docker following instructions in the section
 
 ## Install Docker in Other Operating Systems
 
-Please refer to the offical Docker doc [Install Docker](https://docs.docker.com/install/)
+Please refer to the official Docker doc [Install Docker](https://docs.docker.com/install/)
 on instruction to install Docker in other operating systems.
 
 Configure your docker following instructions in the section

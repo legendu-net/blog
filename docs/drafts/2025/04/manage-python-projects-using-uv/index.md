@@ -1,7 +1,7 @@
 ---
 title: Manage Python Projects Using uv
-created: 2025-04-30 06:16:38
-date: 2026-04-20 14:21:55.769362
+created: '2025-04-30T06:16:38-07:00'
+date: '2026-11-15T09:27:59-08:00'
 authors:
   - bendu
 label: manage-python-projects-using-uv
@@ -107,7 +107,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sudo env UV_INSTALL_DIR="/usr/local
    into the Python script,
    so that you can invoke the script as an executable directly.
 
-1. You might want to pass Python interpretor options (e.g., the `-P` option)
+1. You might want to pass Python interpreter options (e.g., the `-P` option)
    while running a script using `uv`.
    This can be done using the command below.
 

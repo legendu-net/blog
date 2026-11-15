@@ -1,7 +1,7 @@
 ---
-title: Firebug Is Awsome
-created: 2013-07-25 20:16:40
-date: 2026-04-13 23:33:11.920716
+title: Firebug Is Awesome
+created: '2013-07-25T20:16:40-07:00'
+date: '2026-11-15T09:19:34-08:00'
 authors:
   - bendu
 label: firebug-is-awsome

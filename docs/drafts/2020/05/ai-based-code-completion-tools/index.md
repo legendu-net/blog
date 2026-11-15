@@ -1,7 +1,7 @@
 ---
 title: AI-based Code Completion Tools
-created: 2020-05-04 23:17:12
-date: 2026-04-13 23:15:20.786713
+created: '2020-05-04T23:17:12-07:00'
+date: '2026-11-15T09:24:06-08:00'
 authors:
   - bendu
 label: ai-based-code-completion-tools
@@ -19,7 +19,7 @@ tags:
 
 [TabNine](https://www.tabnine.com)
 uses deep learning to help you write code faster.
-In paticular,
+In particular,
 [jupyter-tabnine](https://github.com/wenmin-wu/jupyter-tabnine)
 and
 [TabNine VSCode](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)

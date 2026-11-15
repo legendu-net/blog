@@ -1,7 +1,7 @@
 ---
 title: Tips on VirtualBox
 created: '2013-10-03T10:42:46-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:18:17-08:00'
 authors:
   - bendu
 label: tips-on-virtualbox
@@ -89,7 +89,7 @@ tags:
    ```
 
    This is probably because of a bad symbolic link.
-   Adding a symblic link might solve the problem.
+   Adding a symbolic link might solve the problem.
 
    sudo ln -s /opt/VBoxGuestAdditions-4.3.10/lib/VBoxGuestAdditions /usr/lib/VBoxGuestAdditions
 

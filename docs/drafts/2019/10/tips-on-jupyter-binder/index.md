@@ -1,7 +1,7 @@
 ---
 title: Tips on Jupyter Binder
-created: 2019-10-21 10:06:37
-date: 2026-04-13 23:28:01.194546
+created: '2019-10-21T10:06:37-07:00'
+date: '2026-11-15T09:22:02-08:00'
 authors:
   - bendu
 label: tips-on-jupyter-binder
@@ -16,7 +16,7 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 1. By default a Jupyter notebook server is shown.
-   You can manually switch to the JupyterLab server by changin `tree` to `lab?` in the URL.
+   You can manually switch to the JupyterLab server by changing `tree` to `lab?` in the URL.
    For more details,
    please refer to
    [binder-examples/jupyterlab](https://github.com/binder-examples/jupyterlab).

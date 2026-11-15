@@ -1,7 +1,7 @@
 ---
 title: Remote Development in Visual Studio Code
 created: '2019-10-10T13:07:08-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:16:15-08:00'
 authors:
   - bendu
 label: remote-development-in-visual-studio-code
@@ -25,7 +25,7 @@ please refer to
 and
 [VS Code Remote Development](https://code.visualstudio.com/docs/remote/remote-overview).
 
-The second (prefered) approach is to leverage
+The second (preferred) approach is to leverage
 [cdr/code-server](https://github.com/cdr/code-server).
 For more details,
 please refer to

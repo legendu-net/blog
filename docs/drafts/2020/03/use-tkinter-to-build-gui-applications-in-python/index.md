@@ -1,7 +1,7 @@
 ---
 title: Use Tkinter to Build GUI Applications in Python
 created: '2020-03-09T09:41:03-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:23:51-08:00'
 authors:
   - bendu
 label: use-tkinter-to-build-gui-applications-in-python
@@ -70,7 +70,7 @@ please continue read if you encounter the following error.
         ...
 
 
-    Button(root, text="Scrrenshot", command=button_click)
+    Button(root, text="Screenshot", command=button_click)
    ```
 
    Nevertheless,

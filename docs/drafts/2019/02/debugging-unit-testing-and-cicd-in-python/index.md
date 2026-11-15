@@ -1,7 +1,7 @@
 ---
 title: Debugging, Unit Testing and CICD in Python
 created: '2019-02-07T22:02:18-08:00'
-date: '2026-06-12T22:31:50-07:00'
+date: '2026-11-15T09:23:35-08:00'
 authors:
   - bendu
 label: debugging-unit-testing-and-cicd-in-python
@@ -30,9 +30,9 @@ tags:
    and unit testing has to be written before other dependent components are ready,
    make sure that unit tests cover agreed interfaces.
 
-1. Printing intermediate variables is the universal way (even inefficienty many times) for debugging.
+1. Printing intermediate variables is the universal way (even inefficiently many times) for debugging.
    [PySnooper](https://github.com/cool-RR/PySnooper) is debugging tool
-   based on the idea of printing intermediate varibles
+   based on the idea of printing intermediate variables
    but is great improved over the plain `print` function
    and is both easy and fun to use.
 

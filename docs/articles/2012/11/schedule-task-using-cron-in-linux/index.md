@@ -1,7 +1,7 @@
 ---
 title: Schedule Task Using Cron in Linux
 created: '2012-11-27T11:28:08-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:17:39-08:00'
 authors:
   - bendu
 label: schedule-task-using-cron-in-linux
@@ -33,7 +33,7 @@ sudo apt update && sudo apt install cron
 
 ## Alternative to Cron
 
-1. AirFow is a more rigorous job scheduling system.
+1. Airflow is a more rigorous job scheduling system.
 
 1. When cron is not available,
    a simple alternative is to
@@ -61,7 +61,7 @@ sudo apt update && sudo apt install cron
 
    Notice that abbreviations of days (MON, TUE, etc.) can be used for the field `dow`.
    For example `SUN,MON,THU` for (day of week)
-   will exectute the command on Sundays, Mondays on Thursdays.
+   will execute the command on Sundays, Mondays on Thursdays.
    [Crontab Guru](https://crontab.guru/)
    is a quick and simple editor for cron schedule expressions.
 
@@ -75,7 +75,7 @@ sudo apt update && sudo apt install cron
    and then run the command `crontab task.txt` to import it.
    To list all scheduled tasks,
    run the command `crontab -l`.
-   To remove a sheduled task,
+   To remove a scheduled task,
    use the command `crontab -r`.
 
 1. As long as you use the `crontab` commands to edit the file `/etc/crontab`,
@@ -84,7 +84,7 @@ sudo apt update && sudo apt install cron
    The log of cron jobs can be found at
    `/var/log/syslog` (Ubuntu) or `/var/log/cron` (CentOS).
    If you do not have read permission to cron log files,
-   you'd better redict the output and error messages of a cron job
+   you'd better redirect the output and error messages of a cron job
    to a log file which you have read access.
 
 1. If your cron job consists of multiple shell commands,
@@ -126,7 +126,7 @@ sudo apt update && sudo apt install cron
    ```
 
 1. Run the command `rsnapshot daily` hourly at the 5th minutes,
-   and redict standard output and error messages to `/home/dclong/cron.log`.
+   and redirect standard output and error messages to `/home/dclong/cron.log`.
 
    ```
     5   *   *     *     *     /home/dclong/schedule.sh >> /home/dclong/cron.log 2> &1

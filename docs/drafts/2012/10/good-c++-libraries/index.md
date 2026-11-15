@@ -1,7 +1,7 @@
 ---
 title: Good C++ Libraries
-created: 2012-10-18 11:46:12
-date: 2026-04-15 19:27:01.512865
+created: '2012-10-18T11:46:12-07:00'
+date: '2026-11-15T09:16:51-08:00'
 authors:
   - bendu
 label: good-c++-libraries
@@ -73,11 +73,11 @@ in your C/C++ code.
 A more general and powerful way to call R related functions is via the "Rinside" package.
 Using the "Rinside" package,
 you can call any R function not just C functions in R header files.
-On the contrary, "Rcpp" is a way to extened R via C++.
+On the contrary, "Rcpp" is a way to extend R via C++.
 The most convenient way to use "Rcpp" is to expose C++ classes/methods/functions to R via `RCPP_MODULE`.
 Note that "Rcpp" is for R users not C/C++ users,
 i.e., you must come back to R.
-Tring to compile C/C++ based on "Rcpp" and the binary code will result in segmentation fault.
+Trying to compile C/C++ based on "Rcpp" and the binary code will result in segmentation fault.
 
 ## Unit Testing
 

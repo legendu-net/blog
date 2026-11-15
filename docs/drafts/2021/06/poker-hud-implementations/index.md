@@ -1,7 +1,7 @@
 ---
 title: Poker Hud Implementations
-created: 2021-06-25 16:46:50
-date: 2026-04-15 19:27:00.886159
+created: '2021-06-25T16:46:50-07:00'
+date: '2026-11-15T09:21:25-08:00'
 authors:
   - bendu
 label: poker-hud-implementations
@@ -78,7 +78,7 @@ the app parses it, computes some statistics and displays a widget per player aro
 https://www.hand2note.com/Purchase
 has a free (but limited) version.
 
-## Commerical Software
+## Commercial Software
 
 [Poker Copilot](https://pokercopilot.com/)
 

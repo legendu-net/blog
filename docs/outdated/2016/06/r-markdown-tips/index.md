@@ -1,7 +1,7 @@
 ---
 title: R Markdown Tips
-created: 2016-06-09 17:52:05
-date: 2026-04-14 19:49:15.995197
+created: '2016-06-09T17:52:05-07:00'
+date: '2026-11-15T09:28:22-08:00'
 authors:
   - bendu
 label: r-markdown-tips
@@ -47,6 +47,6 @@ Please look for better alternatives.
    a good way is to replace pattern `${site}` (instead of plain `site`) with the value of the variable `site`.
 
 1. Avoid doing complicated calculations in RMakrdown.
-   Separted the code for calculation, etc., and use rmakrdown for reporting purpose mostly ...,
+   Separated the code for calculation, etc., and use rmakrdown for reporting purpose mostly ...,
 
 1. `plotly` (for graphics) and `DT` (for tables) are great visualization tools to use with R Markdown.

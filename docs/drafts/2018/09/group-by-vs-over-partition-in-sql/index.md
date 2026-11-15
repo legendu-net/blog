@@ -1,7 +1,7 @@
 ---
 title: GROUP BY vs OVER PARTITION in SQL
 created: '2018-09-12T18:40:34-07:00'
-date: '2026-08-11T22:19:30-07:00'
+date: '2026-11-15T09:22:40-08:00'
 authors:
   - bendu
 label: group-by-vs-over-partition-in-sql
@@ -17,9 +17,9 @@ tags:
 
 [SQL Server: Difference between PARTITION BY and GROUP BY](http://stackoverflow.com/questions/2404565/sql-server-difference-between-partition-by-and-group-by)
 
-1. `group by` alwasy aggreates values.
-   That is `group by` alwasy reduces a group of values to 1 value.
-   Hoever, `analytics_function() over(partition by column)` does not aggreage.
+1. `group by` always aggregates values.
+   That is `group by` always reduces a group of values to 1 value.
+   However, `analytics_function() over(partition by column)` does not aggregate.
    It returns a value for each record in the group.
    Even if an aggregation function is applied and returns only 1 value,
    this value is returned for each value in the group.

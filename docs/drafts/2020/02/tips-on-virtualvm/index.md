@@ -1,7 +1,7 @@
 ---
-title: "Tips on VirtualVM"
-created: 2020-02-10 09:59:52
-date: 2020-02-10 09:59:52
+title: Tips on VirtualVM
+created: '2020-02-10T09:59:52-08:00'
+date: '2026-11-15T09:22:39-08:00'
 authors:
   - bendu
 label: tips-on-virtualvm
@@ -10,7 +10,7 @@ tags:
   - programming
   - VirtualVM
   - Java
-  - performace
+  - performance
   - profiling
 ---
 

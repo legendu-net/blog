@@ -1,7 +1,7 @@
 ---
 title: Check the Memory Limit of a Docker Container
-created: 2020-12-19 11:39:17
-date: 2026-04-13 23:15:08.652116
+created: '2020-12-19T11:39:17-08:00'
+date: '2026-11-15T09:25:40-08:00'
 authors:
   - bendu
 label: check-the-memory-limit-of-a-docker-container
@@ -10,7 +10,7 @@ tags:
   - computer science
   - Docker
   - container
-  - memroy limit
+  - memory limit
   - cgroup
   - cgget
 ---
@@ -31,14 +31,14 @@ cat /sys/fs/cgroup/memory/memory.limit_in_bytes
 1. Install [cgroup-tools](https://github.com/mk-fg/cgroup-tools).
 
    ```bash
-    sudo apt update
-    sudo apt install cgroup-tools
+   sudo apt update
+   sudo apt install cgroup-tools
    ```
 
 1. Query the memory limit of the Docker container.
 
    ```bash
-    cgget -n --values-only --variable memory.limit_in_bytes /
+   cgget -n --values-only --variable memory.limit_in_bytes /
    ```
 
 Notice that if a memory limit is not,

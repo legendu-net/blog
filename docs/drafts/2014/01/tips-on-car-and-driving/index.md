@@ -1,7 +1,7 @@
 ---
 title: Tips on Car and Driving
 created: '2014-01-22T13:43:34-08:00'
-date: '2026-06-12T22:31:33-07:00'
+date: '2026-11-15T09:14:52-08:00'
 authors:
   - bendu
 label: tips-on-car-and-driving
@@ -37,7 +37,7 @@ tags:
    This can be really dangerous if your are driving.
    If this happens,
    don't be panic.
-   Just tune your air condition to warm the windshield and forst should disappear soon.
+   Just tune your air condition to warm the windshield and frost should disappear soon.
 
 1. Be careful when you drive in a new city.
    Some roads might be much wider and it's easy for you to turn into the wrong way!

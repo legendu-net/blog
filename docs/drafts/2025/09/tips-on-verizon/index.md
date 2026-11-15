@@ -1,7 +1,7 @@
 ---
 title: Tips on Verizon
 created: '2025-09-23T16:10:42-07:00'
-date: '2026-08-30T16:45:12-07:00'
+date: '2026-11-15T09:28:18-08:00'
 authors:
   - bendu
 label: tips-on-verizon
@@ -36,7 +36,7 @@ only if they already own a single-line Verizon account.
    e.g., prices, deals, different plans, Verizon vs other phone carriers, etc.
 
 1. A person with a single-line Verizon plan has already made their commitment.
-   They likely have alrady purchased new phone and sort out trade-in,
+   They likely have already purchased new phone and sort out trade-in,
    so there's minimum effort needed from the account owner.
 
 1. Port in a line from another phone carrier

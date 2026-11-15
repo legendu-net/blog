@@ -1,7 +1,7 @@
 ---
-title: "Control SAS Outputs"
-created: 2015-06-14 17:27:03
-date: 2015-06-14 17:27:03
+title: Control SAS Outputs
+created: '2015-06-14T17:27:03-07:00'
+date: '2026-11-15T09:28:00-08:00'
 authors:
   - bendu
 label: control-sas-outputs
@@ -15,30 +15,29 @@ tags:
 
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
-**
-Things under legendu.net/outdated are outdated technologies 
-that the author does not plan to update any more. 
+\*\*
+Things under legendu.net/outdated are outdated technologies
+that the author does not plan to update any more.
 Please look for better alternatives.
-**
+\*\*
 
-1. it is suggested that you use 
-`ods select none;` at the beginning of a user-defined macro to supress unnecessary output.
-and 
-`ods select all;` at the end of the macro to enable output.
+1. it is suggested that you use
+   `ods select none;` at the beginning of a user-defined macro to suppress unnecessary output.
+   and
+   `ods select all;` at the end of the macro to enable output.
 
-2. `noPrint` is for the corresponding procedure only while `ods select none` is for all procedures.
-However, `ods` allows more specific control over which results to output/display
-rather than supress all of them.
+1. `noPrint` is for the corresponding procedure only while `ods select none` is for all procedures.
+   However, `ods` allows more specific control over which results to output/display
+   rather than suppress all of them.
 
 `ods select none`
-`noPrint` 
+`noPrint`
 `noList`
 
-The `noPrint` option in the logistic procedure supresses all displayed output.
-It also supresses the logistic procedure from sending any result to ODS,
-so ODS select statment will not work in this case.
+The `noPrint` option in the logistic procedure suppresses all displayed output.
+It also suppresses the logistic procedure from sending any result to ODS,
+so ODS select statement will not work in this case.
 A better way is to use ODS to control output.
-
 
 ODS and the NOPRINT Option
 
@@ -56,9 +55,9 @@ ods listing close;
 Note that ODS statements do not instruct a procedure to generate output. Instead, they specify how ODS should manage output once it is created. You must ensure that the proper procedure options are in effect, or the output will not be generated. For example, the following statements do not create the requested data set Parms:
 
 proc glm;
-    ods output ParameterEstimates=Parms;
-    class x;
-    model y=x;
+ods output ParameterEstimates=Parms;
+class x;
+model y=x;
 run; quit;
 
 This is because the SOLUTION option was not specified in the MODEL statement. Since PROC GLM did not create the table, ODS cannot make the output data set. When you execute these statements, the following message is displayed in the log:
@@ -68,8 +67,7 @@ WARNING: Output 'ParameterEstimates' was not created.
 The following step creates the output data set:
 
 proc glm;
-    ods output ParameterEstimates=Parms;
-    class x;
-    model y=x / solution;
+ods output ParameterEstimates=Parms;
+class x;
+model y=x / solution;
 run; quit;
-

@@ -1,7 +1,7 @@
 ---
 title: Tips on Gemini
 created: '2025-05-06T15:04:36-07:00'
-date: '2026-06-02T00:03:29-07:00'
+date: '2026-11-15T09:28:06-08:00'
 authors:
   - bendu
 label: tips-on-gemini
@@ -30,7 +30,7 @@ for discussions on Gemini CLI.
    the directory "My Drive/Google AI Studio" in your Google drive.
 
 1. Gemini is also available as a desktop App for macOS (with M chips).
-   The destkop version introduces some killer features
+   The desktop version introduces some killer features
    such as sharing a desktop window with Gemini.
 
 ## Some Useful Features

@@ -1,23 +1,24 @@
 ---
 title: Tips on Maven
-created: 2017-01-22 15:06:34
-date: 2026-04-05 19:42:38.123230
+created: '2017-01-22T15:06:34-08:00'
+date: '2026-11-15T09:23:20-08:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-maven
 license: CC-BY-4.0
 tags:
-- programming
-- Maven
-- tips
-- Java
-- Scala
+  - programming
+  - Maven
+  - tips
+  - Java
+  - Scala
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [The Central Repository](http://search.maven.org/#search)
 
-$HOME/.m2
+\$HOME/.m2
 
 maven: shade plugin, scala compile plugin, exclude manifest files, ...
 
@@ -26,21 +27,19 @@ import as maven project ...
 find an updated version of scala archetype for maven
 
 ```sh
-mvn package  
-mvn clean package  
-mvn compile  
-mvn build  
+mvn package
+mvn clean package
+mvn compile
+mvn build
 mvn -e build
 ```
 
-intellij scala mavn archtype is too ooooooooooold!!! 
-wait for generate complete and then manaully update the pom file
-
+intellij scala mavn archetype is too ooooooooooold!!!
+wait for generate complete and then manually update the pom file
 
 Maven
 
 https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/hdinsight/hdinsight-apache-spark-create-standalone-application.md
-
 
 How to define a customized archetype for IntelliJ?
 If you use maven in intellij for scala, after choose archetype, update the old pom content!!!
@@ -58,9 +57,6 @@ Both of them are good ways and are easy to set up.
 
 [Configuring a proxy](https://maven.apache.org/guides/mini/guide-proxies.html)
 
-
-
 http://search.maven.org/#search%7Cga%7C1%7C
 
 https://maven.apache.org/guides/introduction/introduction-to-archetypes.html
-

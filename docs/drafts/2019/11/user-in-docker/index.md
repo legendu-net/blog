@@ -1,7 +1,7 @@
 ---
 title: User in Docker
-created: 2019-11-20 21:21:08
-date: 2026-04-13 23:28:00.582045
+created: '2019-11-20T21:21:08-08:00'
+date: '2026-11-15T09:22:36-08:00'
 authors:
   - bendu
 label: user-in-docker
@@ -44,9 +44,10 @@ The developer can set a default user to run the first process with the Dockerfil
 
 -u="", --user="": Sets the username or UID used and optionally the groupname or GID for the specified command.
 
-The followings examples are all valid:
+The following examples are all valid:
 --user=[ user | user:group | uid | uid:gid | user:gid | uid:group ]
 Note: if you pass a numeric uid, it must be in the range of 0-2147483647.
 
-```
+````
 https://jtreminio.com/blog/running-docker-containers-as-current-host-user/```
+````

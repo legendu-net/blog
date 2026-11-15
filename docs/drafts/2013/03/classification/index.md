@@ -1,7 +1,7 @@
 ---
 title: Classification
-created: 2013-03-23 22:22:34
-date: 2026-04-13 23:33:12.975956
+created: '2013-03-23T22:22:34-07:00'
+date: '2026-11-15T09:17:58-08:00'
 authors:
   - bendu
 label: classification
@@ -31,14 +31,14 @@ The complexity of Neuron Network is related to the number of nodes in the hidden
 
 The basic version of SVM is a linear separation.
 This is obvious since SVM uses a hyperplane to separate data points.
-The kenel version (nonlinear transformation) of SVM uses curves/curved surfaces to separate data points.
-The Gaussian kenel is a popular choice.
-The kenel version (nonlinear transformation) of SVM is good for situations
+The kernel version (nonlinear transformation) of SVM uses curves/curved surfaces to separate data points.
+The Gaussian kernel is a popular choice.
+The kernel version (nonlinear transformation) of SVM is good for situations
 where different classes are separated by simple non-linear functions.
 Another way to classify non-separable data points is to use the soft margin version.
 The soft margin version of SVM is good situations
 whether most data points except a few data points can be separate by a hyperplane.
-In this situation it is often a bad idea to use the kenel version (nonlinear transformation).
+In this situation it is often a bad idea to use the kernel version (nonlinear transformation).
 
 - The optimization problem in SVM is a quadratic programming problem,
   so it's relatively easy to solve.
@@ -46,7 +46,7 @@ In this situation it is often a bad idea to use the kenel version (nonlinear tra
 - SVM is claimed to be one of the most effective classification methods (though debatable).
 
 - SVM scales well to high dimension data.
-  Acutally the kenel version of SVM allows it to deal with data of infinite dimensions.
+  Actually the kernel version of SVM allows it to deal with data of infinite dimensions.
 
 - The expected prediction error is bounded by $\frac{n}{N-1}$,
   where $n$ is the number of support vectors
@@ -64,7 +64,7 @@ Can be generalized to the multi-class classification problem using the multinomi
 
 ## Naive Bayesian Classification
 
-Called naive becuase the assumption of conditional independent of covariates given the response variable.
+Called naive because the assumption of conditional independent of covariates given the response variable.
 Despite the assumption is obviously wrong,
 the Naive Bayesian classification is very effective in text mining,
 e.g. predict whether an email is a spam or not.

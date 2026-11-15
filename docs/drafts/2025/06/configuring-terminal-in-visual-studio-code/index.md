@@ -1,7 +1,7 @@
 ---
 title: Configuring Terminal in Visual Studio Code
-created: 2025-06-07 09:45:35
-date: 2026-04-13 23:14:19.616175
+created: '2025-06-07T09:45:35-07:00'
+date: '2026-11-15T09:28:09-08:00'
 authors:
   - bendu
 label: configuring-terminal-in-visual-studio-code
@@ -23,7 +23,7 @@ tags:
 
 The shortcut `ctrl+x` `ctrl+e` edits a bash prompt using `$EDITOR` in terminals.
 However,
-this doesn't work out-of-the-box in the teminal in Visual Studio Code.
+this doesn't work out-of-the-box in the terminal in Visual Studio Code.
 This is because by default `ctrl+e` is binded to the command\
 `workbench.action.quickOpen`
 which is among the list of commands skipping shell by default.

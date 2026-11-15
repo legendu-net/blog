@@ -1,7 +1,7 @@
 ---
 title: Tips on Purchasing or Leasing a Car
 created: '2023-10-17T11:55:34-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:25:47-08:00'
 authors:
   - bendu
 label: tips-on-purchasing-or-leasing-a-car
@@ -18,7 +18,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## Must-have Featuers
+## Must-have Features
 
 - AWD
 - TPMS (tire pressure monitoring system)
@@ -39,7 +39,7 @@ tags:
 
 ## For Leasing
 
-1. Guidence on good deals.
+1. Guidance on good deals.
 
    - no money down
    - 10k miles minimum
@@ -71,7 +71,7 @@ for discussions.
 1. decide if you want to make repairs
 1. make a vehicle-return appointment with the dealer
 1. complete a federal odometer/lease termination statement at the dealer
-1. satisy any lease liability fees/charges
+1. satisfy any lease liability fees/charges
 
 ### End-of-lease Checklist
 
@@ -85,7 +85,7 @@ for discussions.
 ### Vehicle Return Checklist
 
 - remove toll/EZ tags
-- remove all personal items, e.g., auxilary cords, glasses, etc
+- remove all personal items, e.g., auxiliary cords, glasses, etc
 - license plates
 - delete information from the vehicle
 - cancel all electronic payments

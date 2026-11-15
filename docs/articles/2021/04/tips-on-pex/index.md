@@ -1,7 +1,7 @@
 ---
 title: Tips on pex
-created: 2021-04-26 10:25:39
-date: 2026-04-15 19:27:00.261055
+created: '2021-04-26T10:25:39-07:00'
+date: '2026-11-15T09:16:47-08:00'
 authors:
   - bendu
 label: tips-on-pex
@@ -20,20 +20,20 @@ tags:
    For example,
 
    ```bash
-    docker run -it -v $(pwd):/workdir python:3.5-buster /bin/bash
+   docker run -it -v $(pwd):/workdir python:3.5-buster /bin/bash
    ```
 
 1. Install pex.
 
    ```bash
-    pip3 install pex
+   pip3 install pex
    ```
 
 1. Build a pex environment file.
 
    ```bash
-    pex --python=python3 -v pyspark findspark -o env.pex
-    pex --python=python3 --python-shebang=/usr/share/anaconda3/bin/python --inherit-path=fallback -v pyspark -o env.pex
+   pex --python=python3 -v pyspark findspark -o env.pex
+   pex --python=python3 --python-shebang=/usr/share/anaconda3/bin/python --inherit-path=fallback -v pyspark -o env.pex
    ```
 
 ## General Tips
@@ -82,12 +82,12 @@ tags:
 1. By default,
    a pex environment file does not inherit the contents of `sys.path`.
    There are 2 ways to make a pex environment file inherit the contents of `sys.path`.
-   One way is to issue one of the options at bulid time.
+   One way is to issue one of the options at build time.
 
    ```bash
-    --inherit-path
-    --inherit-path=prefer
-    --inherit-path=fallback
+   --inherit-path
+   --inherit-path=prefer
+   --inherit-path=fallback
    ```
 
    Another way is to export the environment variable `PEX_INHERIT_PATH` at run time.

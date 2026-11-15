@@ -1,7 +1,7 @@
 ---
 title: Tips on Retirement
-created: 2023-12-14 16:25:39
-date: 2026-04-14 19:34:15.960823
+created: '2023-12-14T16:25:39-08:00'
+date: '2026-11-15T09:27:37-08:00'
 authors:
   - bendu
 label: tips-on-retirement
@@ -22,11 +22,11 @@ tags:
 1. You can contribute to your own IRA accounts
    even if you have maxed out your 401K contributions.
    For people without coverage of work 401K plans and low income,
-   those contributions are tax deductable.
+   those contributions are tax deductible.
    For people with coverage of work 401K plans or relative high income,
-   those contributions are not tax deductable.
+   those contributions are not tax deductible.
    Please refer to [Retirement topics - IRA contribution limits](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits)
-   for detailed information on IRA contribution limits and tax deductable qualifications.
+   for detailed information on IRA contribution limits and tax deductible qualifications.
    Even you are not qualified for tax deduction on IRA contributions,
    it can still be beneficial to contribute
    as some brokerages (e.g., Robinhood and Webull) do matches on IRA contributions.

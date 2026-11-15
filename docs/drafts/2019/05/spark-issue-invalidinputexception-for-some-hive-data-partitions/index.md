@@ -1,7 +1,7 @@
 ---
 title: 'Spark Issue: InvalidInputException for Some Hive Data Partitions'
-created: 2019-05-22 09:55:40
-date: 2026-04-15 19:27:01.193159
+created: '2019-05-22T09:55:40-07:00'
+date: '2026-11-15T09:23:49-08:00'
 authors:
   - bendu
 label: spark-issue-invalidinputexception-for-some-hive-data-partitions
@@ -37,7 +37,7 @@ For some reason the HDFS path registered in the Hive meta store
 does not exist in the physical path - (Infra team should take care of this)
 
 Solution: add the following configuration to force checking partition paths
-when submiting Spark jobs.
+when submitting Spark jobs.
 
 ```bash
 --conf spark.sql.hive.verifyPartitionPath=true

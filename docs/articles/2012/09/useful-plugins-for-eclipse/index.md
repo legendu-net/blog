@@ -1,7 +1,7 @@
 ---
-title: "Useful Plugins for Eclipse"
-created: 2012-09-22 13:41:22
-date: 2020-05-22 13:41:22
+title: Useful Plugins for Eclipse
+created: '2012-09-22T13:41:22-07:00'
+date: '2026-11-15T09:15:34-08:00'
 authors:
   - bendu
 label: useful-plugins-for-eclipse
@@ -25,26 +25,23 @@ tags:
 
 ## EasyShell
 
-"EasyShell" allows to open a shell window or file manager from the popup menu 
+"EasyShell" allows to open a shell window or file manager from the popup menu
 in the navigation tree or editor view.
 
 ## Vrapper
 
-Vrapper provides Vim-like scheme for Eclispe.
-You can edit code similar as what you do in Vim 
-plus that you can use mouse to copy and paste code. 
-In my opinion, 
-it is better than either Eclipse or Vim alone. 
+Vrapper provides Vim-like scheme for Eclipse.
+You can edit code similar as what you do in Vim
+plus that you can use mouse to copy and paste code.
+In my opinion,
+it is better than either Eclipse or Vim alone.
 The configuration file of Vrapper is `.vrapper` or `_vrapperrc` (on Windows).
 
-The [Eclim](http://eclim.org/) project provides a great alternative to the Vrapper plugin. 
-Eclim is a seemless integration of Eclipse and the native Vim (rather than a Vim plugin). 
-All plugins in Vim works well. 
+The [Eclim](http://eclim.org/) project provides a great alternative to the Vrapper plugin.
+Eclim is a seamless integration of Eclipse and the native Vim (rather than a Vim plugin).
+All plugins in Vim works well.
 
-## CodeInterview Plugin 
+## CodeInterview Plugin
 
-"CodeInterview Plugin" allows you to write code in Eclipse instead of on CodeInterview directly. 
+"CodeInterview Plugin" allows you to write code in Eclipse instead of on CodeInterview directly.
 This is helpful if you will be interviewed for coding skills on CodeInterview.
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: Maintain Garage Doors
-created: 2022-05-08 20:56:48
-date: 2026-04-13 23:30:34.673027
+created: '2022-05-08T20:56:48-07:00'
+date: '2026-11-15T09:24:09-08:00'
 authors:
   - bendu
 label: maintain-garage-doors
@@ -34,7 +34,7 @@ check trails to make sure it's not damaged, not dent, nothing is blocking the wh
 
 - [Garage Door Opener Stops and Reverses](https://www.youtube.com/watch?v=xTvqlNf_lkI)
 
-- [Garage Door Wont Close? 4 Easy Fixes and Reasons Why the Garage Door Is Not Closing](https://www.youtube.com/watch?v=bn1MIRsfl5E)
+- [Garage Door Won't Close? 4 Easy Fixes and Reasons Why the Garage Door Is Not Closing](https://www.youtube.com/watch?v=bn1MIRsfl5E)
 
 - [Garage door closes, but then opens again!!?? Learn how to fix!](https://www.youtube.com/watch?v=wjc7SFfJtg0)
 

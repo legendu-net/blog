@@ -1,7 +1,7 @@
 ---
 title: Docker for Nvidia GPU
 created: '2020-01-18T01:02:42-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:16:35-08:00'
 authors:
   - bendu
 label: docker-for-nvidia-gpu
@@ -48,7 +48,7 @@ tags:
    For example,
    you can install it on the Debian-series of Linux distributions
    (Debian, Ubuntu, Linux Mint, etc.)
-   using the following comamnds.
+   using the following commands.
 
    ```
     :::bash

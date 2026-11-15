@@ -1,7 +1,7 @@
 ---
 title: Tips on Outlook
-created: 2014-01-06 20:28:42
-date: 2026-04-15 19:27:01.456024
+created: '2014-01-06T20:28:42-08:00'
+date: '2026-11-15T09:15:10-08:00'
 authors:
   - bendu
 label: tips-on-outlook
@@ -42,11 +42,11 @@ tags:
    1. Click the "Tools" menu.
    1. Click "Options".
    1. Select the "Mail Format" tab.
-   1. Click "Signatures..." in the Signature group and follow the intructions.
+   1. Click "Signatures..." in the Signature group and follow the instructions.
 
 1. You can use `Ctrl` + `Scroll` to zoom in/out an email message.
 
-1. If you send an email to someone and like to send another follow-up before he/seh replies you,
+1. If you send an email to someone and like to send another follow-up before he/she replies you,
    you cannot use the "Reply" functionality directly as Outlook will send the follow-up to yourself.
    One way to work around this is to "Reply to All".
    However, this will include yourself in the recipient list.
@@ -55,14 +55,14 @@ tags:
 1. outlook, need password problem
    switching network caused the problem
    it is suggested that you use the wireless network because it's available everywhere in the office.
-   If you use the wired network, you might encouter problems if you take your laptop to a meeting (using wireless network) and then take it back to use wired network.
+   If you use the wired network, you might encounter problems if you take your laptop to a meeting (using wireless network) and then take it back to use wired network.
 
 ## Categories
 
 you can use the outlook search, or when you use windows 7 and outlook 2010 the windows search.
 just type in: categories:[CategorieName]
 
-you can narrow down the search with additional search terms seperated by space.
+you can narrow down the search with additional search terms separated by space.
 further options:
 from:[email or lastname]
 to:[email or lastname]
@@ -71,7 +71,7 @@ body:[Text]
 date:[date]
 Type:[email,appointment]
 
-For further informations have a look here:
+For further information have a look here:
 
 http://windows.microsoft.com/en-US/windows7/products/features/windows-search
 http://helpdeskgeek.com/windows-7/windows-7-file-search-indexing-options/

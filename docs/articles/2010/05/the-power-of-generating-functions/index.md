@@ -1,7 +1,7 @@
 ---
 title: The Power of Generating Functions
-created: 2010-05-22 02:20:55
-date: 2026-04-13 23:33:08.196462
+created: '2010-05-22T02:20:55-07:00'
+date: '2026-11-15T09:15:13-08:00'
 authors:
   - bendu
 label: the-power-of-generating-functions
@@ -46,6 +46,6 @@ As is known too all,
 it's easy to use mathematical induction method to prove or disprove
 a closed formula for a sequence define iteratively.
 If the formula can be proved,
-the generating method works, vise versa.
+the generating method works, vice versa.
 So far I haven't come across a situation
 that generating functions method fails to work.

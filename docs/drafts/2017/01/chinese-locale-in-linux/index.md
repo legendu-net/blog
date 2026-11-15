@@ -1,36 +1,41 @@
 ---
 title: Chinese Locale in Linux
-created: 2017-01-15 12:06:13
-date: 2026-04-05 19:42:38.115751
+created: '2017-01-15T12:06:13-08:00'
+date: '2026-11-15T09:22:30-08:00'
 authors:
-- bendu
+  - bendu
 label: chinese-locale-in-linux
 license: CC-BY-4.0
 tags:
-- Linux
-- Chinese
-- Locale
-- locale-gen
-- locales
-- Ubuntu
-- Debian
+  - Linux
+  - Chinese
+  - Locale
+  - locale-gen
+  - locales
+  - Ubuntu
+  - Debian
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 First you have to make sure `locales` is installed.
 If not,
 you can install it using the following command (on Ubuntu/Debian).
 
-    :::bash
-    sudo apt-get install locales
+```
+:::bash
+sudo apt-get install locales
+```
 
 ## Ubuntu
 
-    :::bash
-    # GB2312 encoding support
-    sudo locale-gen zh_CN
-    # UTF-8 encoding support
-    sudo locale-gen zh_CN.UTF-8
+```
+:::bash
+# GB2312 encoding support
+sudo locale-gen zh_CN
+# UTF-8 encoding support
+sudo locale-gen zh_CN.UTF-8
+```
 
 `$LANG` environment control the different language to use ...
 
@@ -38,12 +43,12 @@ you can install it using the following command (on Ubuntu/Debian).
 
 Notice that `locale-gen` is one of those things that Ubuntu differs from Debian.
 While `locale-gen` in Ubuntu takes arguments from command-line,
-`locale-gen` in Debain read locales from the file `/etc/locale.gen`.
+`locale-gen` in Debian read locales from the file `/etc/locale.gen`.
 You can follow the steps below to generate locales in Debian.
 
 1. Uncomment locales to generate in the file `/etc/locale.gen`.
 
-2. Run the command `sudo locale-gen`.
+1. Run the command `sudo locale-gen`.
 
 ## References
 

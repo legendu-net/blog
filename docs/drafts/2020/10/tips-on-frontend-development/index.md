@@ -1,7 +1,7 @@
 ---
 title: Tips on Frontend Development
 created: '2020-10-26T13:10:46-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:25:20-08:00'
 authors:
   - bendu
 label: tips-on-frontend-development
@@ -27,7 +27,7 @@ has a good discussion about the state and trend of frontend technologies as of 2
 
 1. [Rome](https://github.com/rome/tools)
    provides unified developer tools for JavaScript, TypeScript, and the web.
-   It is designed to replace Babel, ESLint, webpack, Pretier, Jest and others.
+   It is designed to replace Babel, ESLint, webpack, Prettier, Jest and others.
 
 1. [turbo](https://github.com/vercel/turbo)
    is an incremental bundler and build system

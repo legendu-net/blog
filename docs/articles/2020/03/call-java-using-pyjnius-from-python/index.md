@@ -1,7 +1,7 @@
 ---
 title: Call Java Using PyJNIus from Python
 created: '2020-03-25T20:15:13-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:16:39-08:00'
 authors:
   - bendu
 label: call-java-using-pyjnius-from-python
@@ -36,7 +36,7 @@ YourClass = autoclass(path.to.YourClass)
 yourObj = YourClass()
 ```
 
-Note: Avoid using the same name for an instance varialbe and a method in the same class.
+Note: Avoid using the same name for an instance variable and a method in the same class.
 Even though Java is able to distinguish between them
 PyJNIus is not able to.
 A method will be hide by the instance variable with the same name

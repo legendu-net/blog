@@ -1,7 +1,7 @@
 ---
 title: Keep Matrix Structure When Extract a Row/Column from a Matrix
 created: '2012-08-14T22:04:52-07:00'
-date: '2026-08-11T22:19:35-07:00'
+date: '2026-11-15T09:29:17-08:00'
 authors:
   - bendu
 label: keep-matrix-structure-when-extract-a-row-column-from-a-matrix
@@ -19,7 +19,7 @@ tags:
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 I talked in the post [Abuse of Vector in R](<>) that
-it is often the case that we want keep the matrix sturcture when
+it is often the case that we want keep the matrix structure when
 extracting a row/column from a matrix,
 i.e., we often want to return a matrix with 1 row/column when extracting
 a row/column from a matrix.
@@ -35,7 +35,7 @@ b
 [1,]    1    5    9   13
 ```
 
-On the contrary, if you want to keep the sturcture of a matrix with multiple
+On the contrary, if you want to keep the structure of a matrix with multiple
 rows and columns but convert a matrix with 1 row/column to a vector in R,
 you can the function `drop`. See the following example.
 

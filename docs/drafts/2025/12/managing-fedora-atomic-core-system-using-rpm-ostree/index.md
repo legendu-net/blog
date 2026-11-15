@@ -1,7 +1,7 @@
 ---
 title: Managing Fedora Atomic Core System Using rpm-ostree
-created: 2025-12-07 18:19:15
-date: 2026-04-13 23:14:16.156583
+created: '2025-12-07T18:19:15-08:00'
+date: '2026-11-15T09:28:38-08:00'
 authors:
   - bendu
 label: managing-fedora-atomic-core-system-using-rpm-ostree
@@ -18,7 +18,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-Fedora Atomic Linux ditributions use
+Fedora Atomic Linux distributions use
 `rpm-ostree` to install system tools.
 
 ## Upgrade

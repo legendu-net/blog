@@ -1,7 +1,7 @@
 ---
 title: Editing PDF Files
 created: '2016-06-30T10:21:47-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:15:38-08:00'
 authors:
   - bendu
 label: editing-pdf-files
@@ -219,7 +219,7 @@ All of these file types can be parsed through a single interface, making Tika us
 
 ### pdftk
 
-A command-line tool for filling fileds in PDF docs.
+A command-line tool for filling fields in PDF docs.
 
 ## References
 

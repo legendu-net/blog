@@ -1,7 +1,7 @@
 ---
-title: Comparision of Linux Emulation Solutions on Windows
-created: 2014-06-13 22:21:09
-date: 2026-04-15 19:27:00.450135
+title: Comparison of Linux Emulation Solutions on Windows
+created: '2014-06-13T22:21:09-07:00'
+date: '2026-11-15T09:20:13-08:00'
 authors:
   - bendu
 label: comparision-of-linux-emulation-solutions-on-windows

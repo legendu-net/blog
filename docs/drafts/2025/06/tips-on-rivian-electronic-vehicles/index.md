@@ -1,7 +1,7 @@
 ---
 title: Tips on Rivian Electronic Vehicles
 created: '2025-06-25T10:57:40-07:00'
-date: '2026-06-12T22:31:33-07:00'
+date: '2026-11-15T09:28:12-08:00'
 authors:
   - bendu
 label: tips-on-rivian-electronic-vehicles
@@ -74,7 +74,7 @@ My Rivian referral code: LISHA4198234.
    to hop on/off the car.
    However,
    the behavior of auto kneeling is not consistently
-   especially when it's interruptted by opening door when parked.
+   especially when it's interrupted by opening door when parked.
    I'd suggest you disable (default) this feature.
 
 1. Rivian Connect+. Once subscribed, you can use its WiFi hotspot.

@@ -1,7 +1,7 @@
 ---
-title: "Methodology for Solving Problems"
-created: 2019-05-14 01:49:29
-date: 2019-05-14 01:49:29
+title: Methodology for Solving Problems
+created: '2019-05-14T01:49:29-07:00'
+date: '2026-11-15T09:23:36-08:00'
 authors:
   - bendu
 label: methodology-for-solving-problems
@@ -24,8 +24,8 @@ Mathematicican interviewing for fire-extinguisher
 
 ## Control Varying Factor and Enumerate
 
-1. list possible causes 
+1. list possible causes
 
-2. control others and let one change
+1. control others and let one change
 
-3. step by step fo find out what went wrong
+1. step by step to find out what went wrong

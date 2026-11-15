@@ -1,7 +1,7 @@
 ---
 title: Questions about Java
 created: '2013-10-12T23:44:08-07:00'
-date: '2026-08-11T22:39:36-07:00'
+date: '2026-11-15T09:15:23-08:00'
 authors:
   - bendu
 label: questions-about-java
@@ -32,14 +32,14 @@ tags:
    I guess for classes that have both static and non-static method,
    reference by class name is preferred. But ...
 
-1. if a instance variable (need not to be initialized manually) is affected by multiple instance varibles,
+1. if a instance variable (need not to be initialized manually) is affected by multiple instance variables,
    what the best way to update them?
    I currently use a single method to update them all to avoid possible issues, but it's less convenient, and confusing.
 
 1. if you write a generic class, for example MyClass<T>, how do you make a defensive copy in the constructor?
 
 1. java ArrayList\<ArrayList<DataPoint>>,
-   if i remove an elment of the list, but the element of the elment (also a list) is still in use, will there be memory leak?
+   if i remove an element of the list, but the element of the element (also a list) is still in use, will there be memory leak?
 
 ## input and output
 
@@ -50,7 +50,7 @@ tags:
 1. johnson told me that we have to protect shared data even if we sum a bunch of values together, because of thread local cache,
    if this is the case, how can we avoid using lock? there are some algorithms that are thread safe without lock ...
 
-1. atomic seems to be more tight than volatie. I think atomic can replace volatile if you do not consider performace, while volatitle can not replace atomic. Atomic is for interaction between threads ...
+1. atomic seems to be more tight than volatie. I think atomic can replace volatile if you do not consider performance, while volatitle can not replace atomic. Atomic is for interaction between threads ...
 
 1. about mutex, if an object has two fields that are shared, thought they are independent,
    still only once thread can access the object no matter which filed it access ...
@@ -103,13 +103,13 @@ tags:
    I guess for classes that have both static and non-static method,
    reference by class name is preferred. But ...
 
-1. if a instance variable (need not to be initialized manually) is affected by multiple instance varibles,
+1. if a instance variable (need not to be initialized manually) is affected by multiple instance variables,
    what the best way to update them?
    I currently use a single method to update them all to avoid possible issues, but it's less convenient, and confusing.
 
 1. if you write a generic class, for example MyClass<T>, how do you make a defensive copy in the constructor?
 
 1. java ArrayList\<ArrayList<DataPoint>>,
-   if i remove an elment of the list, but the element of the elment (also a list) is still in use, will there be memory leak?
+   if i remove an element of the list, but the element of the element (also a list) is still in use, will there be memory leak?
 
 1. Java container resize, how to make sure the length of array won't overflow?

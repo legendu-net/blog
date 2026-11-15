@@ -1,7 +1,7 @@
 ---
 title: Tips on Installing Debian Series of Linux Distributions
 created: '2013-03-11T01:05:59-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:18:09-08:00'
 authors:
   - bendu
 label: tips-on-installing-debian-series-of-linux-distributions
@@ -50,10 +50,10 @@ tags:
    I am not sure whether the problem has been fixed or not,
    but it does not hurt to use the text installation.
 
-1. If you do not like the default desktop enviroment of Debian (currently GNOME),
+1. If you do not like the default desktop environment of Debian (currently GNOME),
    you can deselect the desktop environment during installation.
    This also makes the installation faster.
-   You can install a desktop enviroment you like manually after installtion of Debian.
+   You can install a desktop environment you like manually after installation of Debian.
 
 ### Other Debian-based Linux Distributions
 

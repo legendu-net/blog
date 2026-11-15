@@ -1,7 +1,7 @@
 ---
 title: User Access Control on Linux
 created: '2020-02-29T17:47:12-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:22:45-08:00'
 authors:
   - bendu
 label: user-access-control-on-linux
@@ -39,7 +39,7 @@ such as whether you need a password for particular commands.
 The file is composed of aliases (basically variables) and user specifications (which control who can run what).
 However,
 it is suggested you never touch the file `/etc/sudoers` directly
-(even not via the comamnd `visudo`).
+(even not via the command `visudo`).
 You might screw up all sudo users if you damage the format of the file.
 The right way to grant a user sudo access is to add the user to the `sudo` group.
 Please refer to

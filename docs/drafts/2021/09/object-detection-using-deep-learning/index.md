@@ -1,7 +1,7 @@
 ---
 title: Object Detection Using Deep Learning
-created: 2021-09-20 15:41:42
-date: 2026-04-13 23:14:56.782736
+created: '2021-09-20T15:41:42-07:00'
+date: '2026-11-15T09:21:47-08:00'
 authors:
   - bendu
 label: object-detection-using-deep-learning
@@ -31,7 +31,7 @@ Output: One or more bounding boxes (e.g. defined by a point, width, and height),
 
 Image Segmentation
 \- Semantic Segmentation
-\- Instance segemntation
+\- Instance segmentation
 
 https://en.wikipedia.org/wiki/Image_segmentation
 

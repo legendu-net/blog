@@ -1,7 +1,7 @@
 ---
-title: Messsage Queue Implementations
-created: 2021-05-26 10:32:39
-date: 2026-04-13 23:15:02.548395
+title: Message Queue Implementations
+created: '2021-05-26T10:32:39-07:00'
+date: '2026-11-15T09:26:05-08:00'
 authors:
   - bendu
 label: messsage-queue-implementations

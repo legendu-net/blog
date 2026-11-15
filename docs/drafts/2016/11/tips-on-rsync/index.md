@@ -1,130 +1,146 @@
 ---
 title: Tips on rsync
-created: 2016-11-18 18:54:19
-date: 2026-04-05 19:42:38.143939
+created: '2016-11-18T18:54:19-08:00'
+date: '2026-11-15T09:21:35-08:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-rsync
 license: CC-BY-4.0
 tags:
-- Linux
-- copy
-- synchronization
-- file system
-- filesystem
-- rsync
+  - Linux
+  - copy
+  - synchronization
+  - file system
+  - filesystem
+  - rsync
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ## Tips and Traps
 
-1. The command `rsync -avh src_dir des_dir` (`src_dir` has no trailing slash) 
-    synchronizes the whole directory `src_dir` into the destination directory `des_dir`
-    while `rsync -avh src_dir/ des_dir` (`src_dir/` has trailing slash) 
-    synchronizes the contents (sub-files and sub-directories) of `src_dir` into the destination directory `des_dir`.
-    However, 
-    one thing tricky is that `rsync -avh . des_dir` synchronizes the content 
-    (sub-files and sub-directories) of the current directory into the destination directory `des_dir`.
-    This is especially tricky if you programmally get the source directory that you want to synchronize.
-    Here are a few **good practices to follow**.
+1. The command `rsync -avh src_dir des_dir` (`src_dir` has no trailing slash)
+   synchronizes the whole directory `src_dir` into the destination directory `des_dir`
+   while `rsync -avh src_dir/ des_dir` (`src_dir/` has trailing slash)
+   synchronizes the contents (sub-files and sub-directories) of `src_dir` into the destination directory `des_dir`.
+   However,
+   one thing tricky is that `rsync -avh . des_dir` synchronizes the content
+   (sub-files and sub-directories) of the current directory into the destination directory `des_dir`.
+   This is especially tricky if you programmally get the source directory that you want to synchronize.
+   Here are a few **good practices to follow**.
 
-    - Convert programmally generated path (for use in `rsync`) into its absolute form.
+   - Convert programmally generated path (for use in `rsync`) into its absolute form.
 
-    - Always use the form `rsync -avh src_dir/ des_dir/` instead of the form `rsync -avh src_dir des_dir`.
+   - Always use the form `rsync -avh src_dir/ des_dir/` instead of the form `rsync -avh src_dir des_dir`.
 
-2. Use the option `--partial` to keep partially transfered files 
-    so that you can resume from break-point if rsync is interrupted.
-    This is **really useful** 
-    if you use rsync to transfer large files over unstable network.
+1. Use the option `--partial` to keep partially transferred files
+   so that you can resume from break-point if rsync is interrupted.
+   This is **really useful**
+   if you use rsync to transfer large files over unstable network.
 
-3. You can specify the option `--relative` to ask `rsync` to create missing directories
-    in order to keep the same directory structure.
-    For example,
-    suppose you want to copy the content of the directory `/new/x/y/z/` (of a machine) 
-    to `/pre_existing/dir/` (on another machine)
-    and you want keep the directory structure 
-    (that is you want the content to be copied to `/pre_existing/dir/new/x/y/z/` instead of `/pre_existing/dir/`),
-    you can use the following comamnd.
+1. You can specify the option `--relative` to ask `rsync` to create missing directories
+   in order to keep the same directory structure.
+   For example,
+   suppose you want to copy the content of the directory `/new/x/y/z/` (of a machine)
+   to `/pre_existing/dir/` (on another machine)
+   and you want keep the directory structure
+   (that is you want the content to be copied to `/pre_existing/dir/new/x/y/z/` instead of `/pre_existing/dir/`),
+   you can use the following command.
 
-        :::bash
-        rsync -a --relative /new/x/y/z/ user@remote:/pre_existing/dir/
+   ```
+    :::bash
+    rsync -a --relative /new/x/y/z/ user@remote:/pre_existing/dir/
+   ```
 
-    And if you want to have `y/z/` created but not inside `new/x/`
-    (i.e., copy the content to `/pre_existing/dir/y/z/`), 
-    you can add `./` where you want `--relative` to begin.
+   And if you want to have `y/z/` created but not inside `new/x/`
+   (i.e., copy the content to `/pre_existing/dir/y/z/`),
+   you can add `./` where you want `--relative` to begin.
 
-        :::bash
-        rsync -a --relative /new/x/./y/z/ user@remote:/pre_existing/dir/
+   ```
+    :::bash
+    rsync -a --relative /new/x/./y/z/ user@remote:/pre_existing/dir/
+   ```
 
-4. You can use `rsync` to sync between 2 local directories/files 
-    or to sync between a remote server and the local host.
-    You cannot use `rsync` to directly rsync between 2 remote servers.
-    However, 
-    this is archivable (indirectly) uisng SSH.
-    For example, 
-    the following command logs into a server named `vm1.example.com` using SSH 
-    and then use `rsync` to synchronize the directory `/workdir/` on the server `vm2.example.com`
-    to the directory `/workdir/` on the server `vm1.example.com` (which is the local machine of `rsync`).
+1. You can use `rsync` to sync between 2 local directories/files
+   or to sync between a remote server and the local host.
+   You cannot use `rsync` to directly rsync between 2 remote servers.
+   However,
+   this is archivable (indirectly) using SSH.
+   For example,
+   the following command logs into a server named `vm1.example.com` using SSH
+   and then use `rsync` to synchronize the directory `/workdir/` on the server `vm2.example.com`
+   to the directory `/workdir/` on the server `vm1.example.com` (which is the local machine of `rsync`).
 
-        :::bash
-        ssh vm1.example.com rsync -avh --info=progress2 --delete vm2.example.com:/workdir/ /workdir/ \
-            > backup.log 2> backup.err
+   ```
+    :::bash
+    ssh vm1.example.com rsync -avh --info=progress2 --delete vm2.example.com:/workdir/ /workdir/ \
+        > backup.log 2> backup.err
+   ```
 
-5. By default, 
-    `rsync` set the owner of files on the destination machine to be the user that receives the files.
-    However,
-    you can keep the original owners/groups information by specifying the options `-o` and `-g`.
-    For more discussions,
-    please refer to [Rsync command issues, owner and group permissions doesn´t change](https://serverfault.com/questions/564385/rsync-command-issues-owner-and-group-permissions-doesn%C2%B4t-change)
-    .
-
+1. By default,
+   `rsync` set the owner of files on the destination machine to be the user that receives the files.
+   However,
+   you can keep the original owners/groups information by specifying the options `-o` and `-g`.
+   For more discussions,
+   please refer to [Rsync command issues, owner and group permissions doesn´t change](https://serverfault.com/questions/564385/rsync-command-issues-owner-and-group-permissions-doesn%C2%B4t-change)
+   .
 
 ## Examples
 
-1. Disable strickt host key checking. 
+1. Disable strickt host key checking.
 
-        :::bash
-        rsync -e "ssh -o StrictHostKeyChecking=no" ...
+   ```
+    :::bash
+    rsync -e "ssh -o StrictHostKeyChecking=no" ...
+   ```
 
-2. Use a different port (rather than 22).
+1. Use a different port (rather than 22).
 
-        :::bash
-        rsync -e "ssh -p 323" ...
+   ```
+    :::bash
+    rsync -e "ssh -p 323" ...
+   ```
 
-3. Copy specified patterns (e.g., JupyterLab notebooks) only.
+1. Copy specified patterns (e.g., JupyterLab notebooks) only.
 
-        :::bash
-        rsync -avh --include='*.ipynb' --include='*/' --exclude='*' --delete src_dir/ des_dir/
+   ```
+    :::bash
+    rsync -avh --include='*.ipynb' --include='*/' --exclude='*' --delete src_dir/ des_dir/
+   ```
 
-4. Sync one directory to another one. 
+1. Sync one directory to another one.
 
-        :::bash
-        rsync -avh --info=progress2 --exclude=‘*.pyc’ --exclude=‘.Trash-*’ --exclude=‘lost+found’ --delete $tiger:/workdir/ /workdir/
+   ```
+    :::bash
+    rsync -avh --info=progress2 --exclude=‘*.pyc’ --exclude=‘.Trash-*’ --exclude=‘lost+found’ --delete $tiger:/workdir/ /workdir/
+   ```
 
-5. An example script for synchronizing a Java project directory.
+1. An example script for synchronizing a Java project directory.
 
-        :::bash
-        #!/usr/bin/env bash
+   ```
+    :::bash
+    #!/usr/bin/env bash
 
-        dir=$(dirname $(dirname "$0"))
+    dir=$(dirname $(dirname "$0"))
 
-        rsync -avh \
-            --info=progress2 \
-            --delete \
-            --exclude=.git/ \
-            --exclude=target/ \
-            --exclude=build/ \
-            --exclude=analysis/ \
-            --exclude=classes/ \
-            --exclude=maven-archiver/ \
-            --exclude=surefire-reports/ \
-            --exclude=test-classes/ \
-            --exclude=generated-sources/ \
-            --exclude=generated-test-sources/ \
-            --exclude=java.io.tmpdir/ \
-            --exclude=out \
-            $dir/ \
-            $tiger:/workdir/users/
+    rsync -avh \
+        --info=progress2 \
+        --delete \
+        --exclude=.git/ \
+        --exclude=target/ \
+        --exclude=build/ \
+        --exclude=analysis/ \
+        --exclude=classes/ \
+        --exclude=maven-archiver/ \
+        --exclude=surefire-reports/ \
+        --exclude=test-classes/ \
+        --exclude=generated-sources/ \
+        --exclude=generated-test-sources/ \
+        --exclude=java.io.tmpdir/ \
+        --exclude=out \
+        $dir/ \
+        $tiger:/workdir/users/
+   ```
 
 ## Squeeze the Performance out of `rsync` over `ssh`
 
@@ -149,21 +165,23 @@ tags:
 
 Example of copying files from local to a remote server using rsync and ssh with optimal speed.
 
-    :::bash
-    rsync -aHAXxv --numeric-ids --delete --info=progress2 -e "ssh -T -c arcfour -o Compression=no -x" user@remote_host:source_dir dest_dir
+```
+:::bash
+rsync -aHAXxv --numeric-ids --delete --info=progress2 -e "ssh -T -c arcfour -o Compression=no -x" user@remote_host:source_dir dest_dir
+```
 
 Example of copying files from a remote server to local using rsync and ssh with optimal speed.
 
-    :::bash
-    rsync -aHAXxv --numeric-ids --delete --info=progress2 -e "ssh -T -c arcfour -o Compression=no -x" source_dir user@remote_host:dest_dir]
-
-
-
+```
+:::bash
+rsync -aHAXxv --numeric-ids --delete --info=progress2 -e "ssh -T -c arcfour -o Compression=no -x" source_dir user@remote_host:dest_dir]
+```
 
 ## Errors & Solutions
 
 ### error in protocol data stream (code 12)
-It is probably because the remote diretory does not exist.
+
+It is probably because the remote directory does not exist.
 
 ### References
 

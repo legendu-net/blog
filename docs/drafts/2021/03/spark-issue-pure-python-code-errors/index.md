@@ -1,7 +1,7 @@
 ---
 title: 'Spark Issue: Pure Python Code Errors'
-created: 2021-03-22 10:18:22
-date: 2026-04-15 19:27:00.922418
+created: '2021-03-22T10:18:22-07:00'
+date: '2026-11-15T09:25:53-08:00'
 authors:
   - bendu
 label: spark-issue-pure-python-code-errors
@@ -51,7 +51,7 @@ Add the required arguments to the command invoking your Python script.
 
 ## Solution 4
 
-Correct tthe argument name or remove non-exist arguments from the command invoking your Python script.
+Correct the argument name or remove non-exist arguments from the command invoking your Python script.
 
 ## Symptom 5
 

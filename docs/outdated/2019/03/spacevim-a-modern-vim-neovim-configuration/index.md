@@ -1,7 +1,7 @@
 ---
 title: SpaceVim - a Modern Vim/Neovim Configuration
 created: '2019-03-03T20:02:57-08:00'
-date: '2026-08-11T22:19:33-07:00'
+date: '2026-11-15T09:27:05-08:00'
 authors:
   - bendu
 label: spacevim-a-modern-vim-neovim-configuration
@@ -77,11 +77,11 @@ https://github.com/SpaceVim/SpaceVim/issues/78
   </tr>
   <tr>
     <td> SPC t 8 </td>
-    <td> highlight characters that execeeds 80th column </td>
+    <td> highlight characters that exceeds 80th column </td>
   </tr>
   <tr>
     <td> SPC t f </td>
-    <td> highlight characters that execeeds the fill column </td>
+    <td> highlight characters that exceeds the fill column </td>
   </tr>
   <tr>
     <td> SPC [1-9] </td>
@@ -152,7 +152,7 @@ https://github.com/SpaceVim/SpaceVim/issues/78
   </tr>
   <tr>
     <td> SPC t f </td>
-    <td> highlight characters that execeeds the fill column </td>
+    <td> highlight characters that exceeds the fill column </td>
   </tr>
   <tr>
     <td> SPC [1-9] </td>
@@ -160,7 +160,7 @@ https://github.com/SpaceVim/SpaceVim/issues/78
   </tr>
 </table>
 
-## Lanugage Server Protocol
+## Language Server Protocol
 
 https://spacevim.org/layers/language-server-protocol/
 

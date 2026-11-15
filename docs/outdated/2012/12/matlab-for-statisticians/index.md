@@ -1,7 +1,7 @@
 ---
 title: MATLAB for Statisticians
-created: 2012-12-04 00:00:00
-date: 2026-04-13 23:33:14.494702
+created: '2012-12-04T00:00:00-08:00'
+date: '2026-11-15T09:34:43-08:00'
 authors:
   - bendu
 label: matlab-for-statisticians
@@ -27,7 +27,7 @@ tags:
    these random number generating functions end with "rnd" might cause problems
    in parallel computing.
    Then you want to use these two basic functions `rand` and `randn`,
-   and use all kinds of technics to generate random variables you want.
+   and use all kinds of techniques to generate random variables you want.
 
 1. `randsample` generates a random sample
    from a given collection of data with or without replacement.

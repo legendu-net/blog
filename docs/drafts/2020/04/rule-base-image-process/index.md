@@ -1,7 +1,7 @@
 ---
 title: Rule-base Image Process
-created: 2020-04-07 16:29:17
-date: 2026-04-13 23:15:23.142812
+created: '2020-04-07T16:29:17-07:00'
+date: '2026-11-15T09:23:59-08:00'
 authors:
   - bendu
 label: rule-base-image-process
@@ -32,7 +32,7 @@ Here are some basic tips for developing rule-based algorithms for image processi
    it is suggested that you convert images to black/white or grayscale
    and develop your algorithm based on black/white or grayscale images.
 
-1. Direct image pixle comparision is a good idea
+1. Direct image pixle comparison is a good idea
    if the (relative) position of the object on the image is fixed/standard,
    otherwise,
    you might want to avoid direct pixle comparison.

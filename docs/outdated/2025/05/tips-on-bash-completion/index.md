@@ -1,7 +1,7 @@
 ---
 title: Tips on Bash Completion
 created: '2025-05-06T14:27:02-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:28:37-08:00'
 authors:
   - bendu
 label: tips-on-bash-completion
@@ -23,7 +23,7 @@ The following content is for Bash/Zsh only.
 
 It is suggested that you use the fish shell
 instead of the bash shell
-(for iteractive use cases)
+(for interactive use cases)
 .
 
 ## Installation
@@ -42,7 +42,7 @@ brew install bash-completion
 
 If you don't like or cannot install bash-completion,
 [bash-it](https://github.com/Bash-it/bash-it)
-provies completion scripts for many popular tools.
+provides completion scripts for many popular tools.
 
 ## Develop Bash Completion
 
@@ -52,7 +52,7 @@ provies completion scripts for many popular tools.
 
 ## Auto Generate Bash Completion Scripts
 
-1. The cobra library in GoLang supports auto genrating shell (bash, fish, zsh and PowerShell) completion scripts.
+1. The cobra library in GoLang supports auto generating shell (bash, fish, zsh and PowerShell) completion scripts.
 
 1. The Python library
    [argcomplete](https://github.com/kislyuk/argcomplete)

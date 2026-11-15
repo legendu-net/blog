@@ -1,7 +1,7 @@
 ---
 title: Change the Default Shell in Linux
 created: '2025-12-07T17:48:30-08:00'
-date: '2026-07-26T08:56:28-07:00'
+date: '2026-11-15T09:28:29-08:00'
 authors:
   - bendu
 label: change-the-default-shell-in-linux
@@ -19,7 +19,7 @@ tags:
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 ```{note}
-Changing the default shell might not work with certain desktop login manangers (e.g, SDDM).
+Changing the default shell might not work with certain desktop login managers (e.g, SDDM).
 A safer alternative is to change the default shell for terminal applications.
 ```
 

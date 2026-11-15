@@ -1,20 +1,21 @@
 ---
 title: Tips on pylint
-created: 2019-02-09 12:02:28
-date: 2026-04-05 19:42:37.929491
+created: '2019-02-09T12:02:28-08:00'
+date: '2026-11-15T09:21:58-08:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-pylint
 license: CC-BY-4.0
 tags:
-- programming
-- Python
-- pylint
-- tips
+  - programming
+  - Python
+  - pylint
+  - tips
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-## Tips and Traps 
+## Tips and Traps
 
 [Optional Pylint checkers in the extensions module](https://docs.pylint.org/en/1.6.0/extensions.html#optional-pylint-checkers-in-the-extensions-module)
 
@@ -22,23 +23,30 @@ tags:
 
 1. Show ERROR messages only.
 
-        :::bash 
-        pylint -E some_script.py
+   ```
+    :::bash 
+    pylint -E some_script.py
+   ```
 
-2. Show ERROR and WARNING messages only.
+1. Show ERROR and WARNING messages only.
 
-        :::bash 
-        pylint --disable=R,C some_script.py
+   ```
+    :::bash 
+    pylint --disable=R,C some_script.py
+   ```
 
-3. Disable warning associated with a specific line.
+1. Disable warning associated with a specific line.
 
-        :::bash
-        proc = sp.run(cmd, shell=True)  # pylint: disable=W1510
+   ```
+    :::bash
+    proc = sp.run(cmd, shell=True)  # pylint: disable=W1510
+   ```
 
 ## Configuration
 
-It is suggessted that you configure pylint using `pyproject.toml`.
+It is suggested that you configure pylint using `pyproject.toml`.
 Below is an example.
+
 ```
 [tool.pylint.master]
 unsafe-load-any-extension=no
@@ -71,7 +79,7 @@ https://github.com/dclong/xinstall/blob/dev/xinstall/data/pylint/pylintrc
 
 https://github.com/kubeflow/examples/blob/master/.pylintrc
 
-Please refer to 
+Please refer to
 [settings.json](https://github.com/dclong/xinstall/blob/dev/xinstall/data/vscode/settings.json)
 for an example of pylint configuration for Visual Studio Code.
 

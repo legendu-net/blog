@@ -1,7 +1,7 @@
 ---
 title: Enable and Disable Key Repeating in macOS
-created: 2025-11-27 01:05:39
-date: 2026-04-13 23:14:18.404969
+created: '2025-11-27T01:05:39-08:00'
+date: '2026-11-15T09:28:21-08:00'
 authors:
   - bendu
 label: enable-and-disable-key-repeating-in-macos
@@ -21,13 +21,13 @@ tags:
 1. Run the following command in terminal and then **restart your Mac** to enable key repeating by pressing and holding.
 
    ```bash
-    defaults write -g ApplePressAndHoldEnabled -bool false
+   defaults write -g ApplePressAndHoldEnabled -bool false
    ```
 
-1. Run the following command in terminal and then **restart your Mac** to disable key repeating by presing and holding.
+1. Run the following command in terminal and then **restart your Mac** to disable key repeating by pressing and holding.
 
    ```bash
-    defaults write -g ApplePressAndHoldEnabled -bool true
+   defaults write -g ApplePressAndHoldEnabled -bool true
    ```
 
 For more details please refer to

@@ -1,7 +1,7 @@
 ---
 title: Zellij Is the Best Terminal Multiplexer
 created: '2021-11-09T10:19:10-08:00'
-date: '2026-10-08T23:19:10-07:00'
+date: '2026-11-15T09:22:26-08:00'
 authors:
   - bendu
 label: zellij-is-the-best-terminal-multiplexer
@@ -57,7 +57,7 @@ zellij -l welcome
 - `zellij d -f some_session`.
   If a session is opened in a browser tab,
   It will automatically be recreated,
-  so you will have to close corrresponding web sessions first.
+  so you will have to close corresponding web sessions first.
 
 ## Layout
 

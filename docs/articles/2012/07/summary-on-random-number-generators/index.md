@@ -1,7 +1,7 @@
 ---
 title: Summary on Random Number Generators
 created: '2012-07-27T21:14:07-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:18:31-08:00'
 authors:
   - bendu
 label: summary-on-random-number-generators
@@ -48,7 +48,7 @@ It was implemented in many programming languages
 and was the default in many software and programming languages.
 Mersenne Twister has many different versions,
 among which the MT19937 is the most widely used one.
-The period of MT19937 is extreemly long ($2^{19937}-1$)
+The period of MT19937 is extremely long ($2^{19937}-1$)
 and is equidistributed for generating vectors up to dimension 623.
 The MT19937 generate 32 bits random numbers.
 Combining two random blocks,

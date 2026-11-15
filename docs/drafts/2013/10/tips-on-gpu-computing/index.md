@@ -1,7 +1,7 @@
 ---
 title: Tips on GPU Computing
 created: '2013-10-12T11:19:32-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:17:21-08:00'
 authors:
   - bendu
 label: tips-on-gpu-computing
@@ -53,7 +53,7 @@ lspci -v | grep VGA
 ## Low-level Libraries for General Purpose GPU Computing
 
 1. CUDA and Vulkan (successor to OpenCL) are the 2 most popular frameworks for GPU computing.
-   CUDA is commerical and for Nvidia GPUs only
+   CUDA is commercial and for Nvidia GPUs only
    while Vulkan is opensource and support more brand of GPUs.
    Generally speaking,
    CUDA has slight better performance than Vulkan on Nvidia GPUs.

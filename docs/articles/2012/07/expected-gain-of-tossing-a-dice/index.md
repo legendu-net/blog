@@ -1,7 +1,7 @@
 ---
 title: Expected Gain of Tossing a Dice
-created: 2012-07-30 09:37:39
-date: 2026-04-13 23:33:06.193439
+created: '2012-07-30T09:37:39-07:00'
+date: '2026-11-15T09:17:57-08:00'
 authors:
   - bendu
 label: expected-gain-of-tossing-a-dice
@@ -184,7 +184,7 @@ fibo=function(n,ini,coef=rep(1,length(ini)),start=1,irev=FALSE,crev=FALSE){
     if(order<2)
     stop("the order of the difference equation must be at least 2.")
     if(length(coef)!=order)
-    stop("the lengths of the coefficents vector and the initial
+    stop("the lengths of the coefficients vector and the initial
     values vector must be the same.")
     n=n-start+1
     nmax=max(n)

@@ -1,7 +1,7 @@
 ---
 title: Tips on Visual Studio Code
 created: '2019-05-24T11:28:44-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:24:15-08:00'
 authors:
   - bendu
 label: tips-on-visual-studio-code
@@ -47,7 +47,7 @@ Please refer to
 [Useful Visual Studio Code Extensions](useful-visual-studio-code-extensions)
 .
 
-## Change Indention/Shift Width
+## Change Indentation/Shift Width
 
 https://stackoverflow.com/questions/34174207/how-to-change-indentation-in-visual-studio-code/45671704
 
@@ -71,7 +71,7 @@ Ctrl + Alt + Click: variable definition
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-0lax" rowspan="2">Descrption</th>
+    <th class="tg-0lax" rowspan="2">Description</th>
     <th class="tg-0lax" colspan="3">Shortcut</th>
   </tr>
   <tr>

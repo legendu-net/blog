@@ -1,7 +1,7 @@
 ---
 title: Alternative to the rm Command in Linux
-created: 2019-05-02 02:41:04
-date: 2026-04-14 19:32:06.440657
+created: '2019-05-02T02:41:04-07:00'
+date: '2026-11-15T09:27:11-08:00'
 authors:
   - bendu
 label: alternative-to-the-rm-command-in-linux
@@ -31,7 +31,7 @@ I have a shell script named `trash` which moves files (as input arguments) to th
 trash files_to_remove
 ```
 
-Another even simplier way is to directly move files to the directory `/tmp`.
+Another even simpler way is to directly move files to the directory `/tmp`.
 
 ```
 mv files_to_remove /tmp

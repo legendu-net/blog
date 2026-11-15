@@ -1,7 +1,7 @@
 ---
 title: Compare R with Other Languages on Data Manipulation
-created: 2012-05-13 13:14:35
-date: 2026-04-13 23:33:14.978505
+created: '2012-05-13T13:14:35-07:00'
+date: '2026-11-15T09:27:33-08:00'
 authors:
   - bendu
 label: compare-r-with-other-languages-on-data-manipulation
@@ -44,14 +44,14 @@ MATLAB is close to R in the sense that its matrix data structure is comparable
 to the matrix data structure in R, and its structure array data structure is
 comparable to the data frame data structure in R. However, you can only extract
 rows from a structure array but not columns. The cell data structure in MATLAB
-is another data structure that is comparable to the data frame data structre in
+is another data structure that is comparable to the data frame data structure in
 R, however, as I mentioned before it doesn't have row names and column names
 attributes. All these things make it a hessle to work on data with different
 types at the same time in MATLAB.
 
 Python has some libraries (e.g., pandas and pydataframe) that offer similar
 object as data frame in R and similar functions as `read.table` and
-`write.table` (and their derived functions) in R. One advatange of Python over R
+`write.table` (and their derived functions) in R. One advantage of Python over R
 is that it has better support of object oriented programming than R. Working on
 vector alike object in python is more convenient than in R many times. For example, you can
 easily insert an element into a list in Python with the `insert` method while in
@@ -61,7 +61,7 @@ elements you want to insert.
 Support of string in C awful. Java has a better support of string, however, I
 don't know whether there are libraries offering convenient ways to read and write data like
 `read.table` and `write.table` in R. Honestly speaking, I doubt. What's more,
-compiled langugaes are not as convenient as script languages to explore data.
+compiled languages are not as convenient as script languages to explore data.
 
 Given these things discussed above, Python and R
 are good choices if you have to deal with both numerical and character data at the same time.

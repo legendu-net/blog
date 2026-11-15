@@ -1,7 +1,7 @@
 ---
 title: Tips on GitHub Actions
 created: '2020-09-01T12:42:15-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:25:13-08:00'
 authors:
   - bendu
 label: tips-on-github-actions
@@ -30,7 +30,7 @@ tags:
    [create-pull-request](https://github.com/peter-evans/create-pull-request) with `GITHUB_TOKEN`
    which might have issues triggering other pipelines listening to PR events.
    A simple solution to this problem is to manually create a repository secret (e.g., `GITHUBACTIONS`)
-   and use it to autenticate the GitHub Action
+   and use it to authenticate the GitHub Action
    [create-pull-request](https://github.com/peter-evans/create-pull-request)
    .
 
@@ -38,9 +38,9 @@ tags:
    following instructions at
    [Install Rust Globally in Linux](install-rust-globally-in-linux)
    .
-   This might because GitHub Actions VMs have restrictions on environemnt variables.
+   This might because GitHub Actions VMs have restrictions on environment variables.
    You can still install Rust using root (via sudo)
-   but this doesn't give you much priviledge
+   but this doesn't give you much privilege
    as the root account in a GitHub Actions VM is restricted too.
 
 1. Good practices for GitHub repository with GitHub Actions workflows:

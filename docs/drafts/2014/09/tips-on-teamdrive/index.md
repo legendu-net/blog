@@ -1,7 +1,7 @@
 ---
 title: Tips on TeamDrive
-created: 2014-09-18 08:12:57
-date: 2026-04-15 19:27:01.431140
+created: '2014-09-18T08:12:57-07:00'
+date: '2026-11-15T09:17:47-08:00'
 authors:
   - bendu
 label: tips-on-teamdrive
@@ -20,10 +20,10 @@ tags:
 0. fix a startup issue
 
    ```bash
-    LIBGL_DRI3_DISABLE=1 /usr/bin/synqion
+   LIBGL_DRI3_DISABLE=1 /usr/bin/synqion
    ```
 
-1. TeamDrive 4 asking users to buy a commerical license frequently,
+1. TeamDrive 4 asking users to buy a commercial license frequently,
    which is very annoying.
    It is suggested that you stay with TeamDrive 3 as long as it is supported.
 

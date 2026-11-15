@@ -1,7 +1,7 @@
 ---
 title: General Tips on Programming
 created: '2018-07-20T00:25:59-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:22:25-08:00'
 authors:
   - bendu
 label: general-tips-on-programming
@@ -32,8 +32,8 @@ tags:
    it is suggested that you use the bitwise methods instead of the bitwise operators.
 
 1. Always remember to check whether you have correct set/reset state of variables
-   when you use loops **especiall while loops**.
-   Forgetting to set/reset state of varialbes/objects in while loops is a common mistake
+   when you use loops **especially while loops**.
+   Forgetting to set/reset state of variables/objects in while loops is a common mistake
    and can be tricky to debug sometimes (e.g., if randomization is used in a loop).
    It is suggested that you avoid using plain for/while loops if possible
    and use high-level alternatives such as `forEach`, `map`, `filter`, etc.
@@ -44,7 +44,7 @@ tags:
    For example,
    if you define command-line options using the library `argparse`
    and a default value might take a long time to run,
-   it is better to set the defautl value to `None`
+   it is better to set the default value to `None`
    and then calculalte the default value when the corresponding command is called.
 
 ## Performance and Memory Profiling

@@ -1,7 +1,7 @@
 ---
 title: Return a New Object or Mutate the Existing Object
 created: '2019-10-31T17:09:56-07:00'
-date: '2026-08-11T22:19:29-07:00'
+date: '2026-11-15T09:21:34-08:00'
 authors:
   - bendu
 label: return-a-new-object-or-mutate-the-existing-object
@@ -18,7 +18,7 @@ tags:
 
 Generally speaking,
 prefer to return a new object rather than mutating the existing object.
-This is true in most programming languages besides C who seeks for best peformance.
+This is true in most programming languages besides C who seeks for best performance.
 
 The pandas package in Python keeps a good balance between good design and performance.
 By default,

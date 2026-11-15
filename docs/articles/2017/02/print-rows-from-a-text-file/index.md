@@ -1,7 +1,7 @@
 ---
 title: Print Rows from a Text File
 created: '2017-02-06T14:36:40-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:16:10-08:00'
 authors:
   - bendu
 label: print-rows-from-a-text-file
@@ -36,7 +36,7 @@ awk 'NR >= 10 && NR <= 20' file_name
 ```
 
 If you work with a very large file,
-you make the `sed` command a little bit more efficient by quitting ealier.
+you make the `sed` command a little bit more efficient by quitting earlier.
 For example,
 the following command efficiently prints lines 10000000 to 10000020 of the file.
 
@@ -44,4 +44,4 @@ the following command efficiently prints lines 10000000 to 10000020 of the file.
 sed -n '10000000,10000020p; 10000021q' file_name
 ```
 
-Thi way is faster than `awk` (but slower without the quitting early trick) on large files.
+This way is faster than `awk` (but slower without the quitting early trick) on large files.

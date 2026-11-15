@@ -1,7 +1,7 @@
 ---
 title: Export Conversations with AI
 created: '2026-05-18T21:07:13.454191-07:00'
-date: '2026-08-11T22:19:18-07:00'
+date: '2026-11-15T09:30:04-08:00'
 authors:
   - bendu
 label: export-conversations-with-ai
@@ -20,7 +20,7 @@ tags:
 
 AI tools such as Gemini supports copying a single chat or response but doesn't support copying the whole conversation yet.
 Depends on your use cases,
-there are a few differnt ways to address this issues.
+there are a few different ways to address this issues.
 
 ## Share Conversations to NotebookLM
 

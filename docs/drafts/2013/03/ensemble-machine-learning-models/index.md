@@ -1,7 +1,7 @@
 ---
 title: Ensemble Machine Learning Models
 created: '2013-03-24T13:51:12-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:18:42-08:00'
 authors:
   - bendu
 label: ensemble-machine-learning-models
@@ -30,7 +30,7 @@ This can be done by variable/feature selection.
 This is discussed in
 [Regularization in Machine Learning Models](regularization-in-machine-learning-models)
 .
-Here we talk about some ensamble technics to decrease the complexity of predictors/models.
+Here we talk about some ensamble techniques to decrease the complexity of predictors/models.
 The is inspired by the simple fact that the variance of the mean of `n` i.i.d random variables (with finite variance)
 is $\frac{1}{n}$ times the variance of the population of those random variables.
 This means that by combining (not strongly correlated) predictors,
@@ -58,13 +58,13 @@ since the input of a node is a linear combination of outcomes from last layer.
 
 Stacking is similar to Bagging.
 The difference is that Stacking uses weighted averages of predictors based on their performances.
-The weights are often chosen to minized the prediction error in leave-1-out cross validation.
+The weights are often chosen to minimize the prediction error in leave-1-out cross validation.
 
 ## Increase Complexity
 
 An opposite approach to these discussed above is to start from a very simple predictor (big bias but small variance)
 and then increase the complexity (decrease bias at cost of increase variance) of the predictor.
-This is common in nature, e.g., the human brain is developped from simple to complex.
+This is common in nature, e.g., the human brain is developed from simple to complex.
 This approach is called Boosting.
 Boosting algorithms is an iterative functional gradient descent algorithms.
 That is, algorithms that optimize a cost function

@@ -1,7 +1,7 @@
 ---
 title: Easy Made Mistakes When Writing R Code
 created: '2012-06-14T22:04:09-07:00'
-date: '2026-08-11T22:19:36-07:00'
+date: '2026-11-15T09:27:53-08:00'
 authors:
   - bendu
 label: easy-made-mistakes-when-writing-r-code
@@ -56,7 +56,7 @@ opens the Pandor's box. <!---'-->
    global variable.
 
 1. Priority of operators
-   The colon (:) operator precede over arithmatic operators
+   The colon (:) operator precede over arithmetic operators
    such as +, -, \*, / and so on. However, [] precede over the
    colon operator. When you write code `1:n-1`, you thought
    you get a vector from `1` to `n-1` while you actually get
@@ -76,5 +76,5 @@ opens the Pandor's box. <!---'-->
 
 1. Use `*apply` functions to operate on rows of data frames.
    A row of data frame is still a data frame (with 1 row). R is
-   evil in the sence that it coerce data type wheneve necessary
+   evil in the sense that it coerce data type wheneve necessary
    without noticing users. ...

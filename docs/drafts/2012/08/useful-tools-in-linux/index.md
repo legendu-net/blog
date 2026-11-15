@@ -1,7 +1,7 @@
 ---
 title: Useful Tools in Linux
 created: '2012-08-17T11:42:15-07:00'
-date: '2026-06-12T22:31:50-07:00'
+date: '2026-11-15T09:16:16-08:00'
 authors:
   - bendu
 label: useful-tools-in-linux
@@ -164,7 +164,7 @@ to find software/tools for all kinds of purposes.
 
 1. unlimited space
 
-1. no bandwith limit
+1. no bandwidth limit
 
 #### Cons
 
@@ -504,7 +504,7 @@ for more details.
 
 ### Integrated Package for Web Hosting
 
-1. XAMPP (originaly called LAMPP)
+1. XAMPP (originally called LAMPP)
 
 ### Math Formulas in Web Pages
 

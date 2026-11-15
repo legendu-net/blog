@@ -1,7 +1,7 @@
 ---
 title: Hands on the Python Library notifiers
-created: 2020-08-03 15:46:20
-date: 2026-04-13 23:27:59.070236
+created: '2020-08-03T15:46:20-07:00'
+date: '2026-11-15T09:24:37-08:00'
 authors:
   - bendu
 label: hands-on-the-python-library-notifiers
@@ -36,5 +36,5 @@ notifiers.get_notifier("email").notify(
 )
 ```
 
-Notice that notifiers supports email attachements via the `attachments` option
+Notice that notifiers supports email attachments via the `attachments` option
 which accepts a **non-empty list of valid file paths**.

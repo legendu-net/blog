@@ -1,7 +1,7 @@
 ---
 title: Install Python Packages Using pip
 created: '2017-06-05T08:26:34-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:16:52-08:00'
 authors:
   - bendu
 label: install-python-packages-using-pip
@@ -55,7 +55,7 @@ sudo python3 -m ensurepip
     pip3 install MySQL_python==1.2.2
    ```
 
-1. Install pyarrow with a verison of at least 0.14.0.
+1. Install pyarrow with a version of at least 0.14.0.
    Notice that you must quote `pyarrow>=0.14.0` using single/double quotes.
 
    ```
@@ -97,9 +97,9 @@ sudo python3 -m ensurepip
     pip3 install .
    ```
 
-1. `pip` 20.0+ supports instaling a peotry managed Python project from GitHub directly.
+1. `pip` 20.0+ supports installing a poetry managed Python project from GitHub directly.
    For example,
-   the comamnd below installs the Python package dsutil from the GitHub repository dclong/dsutil directly.
+   the command below installs the Python package dsutil from the GitHub repository dclong/dsutil directly.
 
    ```
     :::bash
@@ -115,7 +115,7 @@ sudo python3 -m ensurepip
    If you are behind a corporate proxy,
    you might need 2FA to visit the enterprise GitHub of your company.
    However,
-   2FA is usually not required for Git comamnd line (since it would too much hassle).
+   2FA is usually not required for Git command line (since it would too much hassle).
    The above way to install Python packages from GitHub repositories directly
    can be a good way to avoid 2FA authentication if you are behind a corporate proxy.
 

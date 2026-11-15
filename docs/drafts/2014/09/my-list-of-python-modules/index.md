@@ -1,7 +1,7 @@
 ---
 title: My List of Python Modules
 created: '2014-09-13T09:48:04-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:17:23-08:00'
 authors:
   - bendu
 label: my-list-of-python-modules
@@ -25,7 +25,7 @@ tags:
 
 1. scipy: scientific computing.
 
-1. numpy: multi-dimensional arrays, fundation of pandas and deep learning packages.
+1. numpy: multi-dimensional arrays, foundation of pandas and deep learning packages.
 
 1. re: regular expression
 

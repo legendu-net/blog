@@ -1,7 +1,7 @@
 ---
 title: Mount NTFS Drive Manually on Mac
-created: 2019-03-10 10:25:07
-date: 2026-04-15 19:27:00.394454
+created: '2019-03-10T10:25:07-07:00'
+date: '2026-11-15T09:16:00-08:00'
 authors:
   - bendu
 label: mount-ntfs-drive-manually-on-mac
@@ -15,49 +15,49 @@ tags:
   - exFAT
 ---
 
-1. First use `diskutil list` to list all avaiable disks
-   and identifiy the external hard drive to mount.
+1. First use `diskutil list` to list all available disks
+   and identify the external hard drive to mount.
    For example,
    running `diskutil list` on my Mac gives me the following output
    and `/dev/disk2s1` is the partition (NTFS) to mount.
 
    ```bash
-    $ diskutil list
-    /dev/disk0 (internal):
-       #:                       TYPE NAME                    SIZE       IDENTIFIER
-       0:      GUID_partition_scheme                         500.3 GB   disk0
-       1:                        EFI EFI                     314.6 MB   disk0s1
-       2:                 Apple_APFS Container disk1         500.0 GB   disk0s2
+   $ diskutil list
+   /dev/disk0 (internal):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                         500.3 GB   disk0
+   1:                        EFI EFI                     314.6 MB   disk0s1
+   2:                 Apple_APFS Container disk1         500.0 GB   disk0s2
 
-    /dev/disk1 (synthesized):
-       #:                       TYPE NAME                    SIZE       IDENTIFIER
-       0:      APFS Container Scheme -                      +500.0 GB   disk1
-                                     Physical Store disk0s2
-       1:                APFS Volume Macintosh HD            102.7 GB   disk1s1
-       2:                APFS Volume Preboot                 45.2 MB    disk1s2
-       3:                APFS Volume Recovery                517.0 MB   disk1s3
-       4:                APFS Volume VM                      3.2 GB     disk1s4
+   /dev/disk1 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +500.0 GB   disk1
+   Physical Store disk0s2
+   1:                APFS Volume Macintosh HD            102.7 GB   disk1s1
+   2:                APFS Volume Preboot                 45.2 MB    disk1s2
+   3:                APFS Volume Recovery                517.0 MB   disk1s3
+   4:                APFS Volume VM                      3.2 GB     disk1s4
 
-    /dev/disk2 (external, physical):
-       #:                       TYPE NAME                    SIZE       IDENTIFIER
-       0:     FDisk_partition_scheme                        *1.0 TB     disk2
-       1:                      Linux                         1.0 TB     disk2s1
+   /dev/disk2 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *1.0 TB     disk2
+   1:                      Linux                         1.0 TB     disk2s1
    ```
 
 1. Mount the disk partition.
 
    ```bash
-    # mount NTFS
-    sudo mount_ntfs /dev/disk2s1 /path/to/mount/the/disk/partition
-    # mount a ExFAT volume
-    sudo mount_exfat /dev/disk2s1 /path/to/mount/the/disk/partition
+   # mount NTFS
+   sudo mount_ntfs /dev/disk2s1 /path/to/mount/the/disk/partition
+   # mount a ExFAT volume
+   sudo mount_exfat /dev/disk2s1 /path/to/mount/the/disk/partition
    ```
 
 1. Umount the external disk if you do not need it any more.
    You can do this by right click on the icon of the disk
    and click "Eject" in the pop-up menu.
-   Or you can use the following comamnd to unmount a disk.
+   Or you can use the following command to unmount a disk.
 
    ```bash
-    diskutil unmount /a/mounted/path
+   diskutil unmount /a/mounted/path
    ```

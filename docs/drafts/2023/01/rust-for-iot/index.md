@@ -1,7 +1,7 @@
 ---
 title: Rust for IoT
 created: '2023-01-13T10:42:03-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:24:43-08:00'
 authors:
   - bendu
 label: rust-for-iot
@@ -13,7 +13,7 @@ tags:
   - IoT
   - RTOS
   - OS
-  - embeded
+  - embedded
   - hardware
 ---
 

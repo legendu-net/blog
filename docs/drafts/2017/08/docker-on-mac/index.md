@@ -1,7 +1,7 @@
 ---
 title: Docker on Mac
-created: 2017-08-20 10:19:20
-date: 2026-04-15 19:27:01.322371
+created: '2017-08-20T10:19:20-07:00'
+date: '2026-11-15T09:21:35-08:00'
 authors:
   - bendu
 label: docker-on-mac
@@ -14,7 +14,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-1. It is suggested that you install the offical docker app on Mac
+1. It is suggested that you install the official docker app on Mac
    instead of installing docker using MacPorts/Homebrew.
    Docker installed using MacPorts/Homebrew might have issues to start.
 

@@ -1,7 +1,7 @@
 ---
-title: "Docker Images for Programming Languages"
-created: 2017-07-14 09:41:49
-date: 2020-07-14 09:41:49
+title: Docker Images for Programming Languages
+created: '2017-07-14T09:41:49-07:00'
+date: '2026-11-15T09:21:26-08:00'
 authors:
   - bendu
 label: docker-images-for-programming-languages
@@ -15,8 +15,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-
-## Python 
+## Python
 
 ### [continuumio/miniconda3](https://hub.docker.com/r/continuumio/miniconda3)
 
@@ -30,22 +29,21 @@ tags:
 
 - Different versions of Python with the Debian Linux OS in Docker image.
 - Easy to figure out the version of Python from the version of the Docker image.
-    It is perticularly good if you need a specific (especially old) version of Python. 
+  It is particularly good if you need a specific (especially old) version of Python.
 
 ### [dclong/python](https://hub.docker.com/r/dclong/python)
 
 - Python 3.8 with Ubuntu 20.04 in Docker.
 
-- Extra useful Python packages 
-    (e.g., [xinstall](https://github.com/dclong/xinstall),
-    mypy, pylint, yapf, pytest and ipython)
-    installed.
+- Extra useful Python packages
+  (e.g., [xinstall](https://github.com/dclong/xinstall),
+  mypy, pylint, yapf, pytest and ipython)
+  installed.
 
-- Extra essentiall tools (SSH, Git, Wajig, sudo etc.) installed.
+- Extra essential tools (SSH, Git, Wajig, sudo etc.) installed.
 
-- Ready for development and serve as the ancester image for 
-    [dclong/jupyterhub-ds](https://github.com/dclong/docker-jupyterhub-ds)
-
+- Ready for development and serve as the ancestor image for
+  [dclong/jupyterhub-ds](https://github.com/dclong/docker-jupyterhub-ds)
 
 ## Scala
 

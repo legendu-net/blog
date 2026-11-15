@@ -1,7 +1,7 @@
 ---
 title: Tips on Conda
 created: '2018-04-22T09:36:27-07:00'
-date: '2026-06-12T21:38:36-07:00'
+date: '2026-11-15T09:29:04-08:00'
 authors:
   - bendu
 label: tips-on-conda
@@ -17,7 +17,7 @@ tags:
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 1. conda and executables installed by conda might not be able to run by sudo directly.
-   If this happends,
+   If this happens,
    use the full path of the executable
    or add the option `-E "PATH=$PATH"` to sudo.
 
@@ -26,7 +26,7 @@ tags:
     sudo -E env "PATH=$PATH" <command> [arguments]
    ```
 
-1. By defaut, conda installs things into /opt/conda.
+1. By default, conda installs things into /opt/conda.
 
 ## Download Archives
 
@@ -76,9 +76,9 @@ as pip in a virtual environment sometimes installs packages into global location
 This won't affect usage of your virtual environment locally,
 generally speaking.
 However,
-if you want to package your virtual environemnt using conda-pack
+if you want to package your virtual environment using conda-pack
 and use it somewhere else,
-the Python packages installed outside the virtual environemnt won't be packed.
+the Python packages installed outside the virtual environment won't be packed.
 Make sure to use `conda list -n env_name`
 to check that the Python packages are installed into the virtual environment
 before you pack it using `conda-pack`.

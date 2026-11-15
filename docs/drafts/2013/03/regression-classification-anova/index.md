@@ -1,7 +1,7 @@
 ---
 title: Regression Classification ANOVA
-created: 2013-03-22 00:00:00
-date: 2026-04-13 23:33:12.679612
+created: '2013-03-22T00:00:00-07:00'
+date: '2026-11-15T09:19:08-08:00'
 authors:
   - bendu
 label: regression-classification-anova
@@ -17,7 +17,7 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-Regression refers to problems where the response (output) variable is continous
-while classfication refers to problems where the response (output) variable is discrete.
+Regression refers to problems where the response (output) variable is continuous
+while classification refers to problems where the response (output) variable is discrete.
 
 Generally speaking fitting gression to classification problems is a not a good idea.

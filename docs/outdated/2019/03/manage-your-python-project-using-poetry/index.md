@@ -1,7 +1,7 @@
 ---
 title: Manage Your Python Project Using Poetry
 created: '2019-03-02T11:17:44-08:00'
-date: '2026-06-12T22:31:33-07:00'
+date: '2026-11-15T09:26:51-08:00'
 authors:
   - bendu
 label: manage-your-python-project-using-poetry
@@ -118,14 +118,14 @@ poetry self:update --preview
 
 ### Install Dependencies
 
-1. Installl all dependencies.
+1. Install all dependencies.
 
    ```
     :::bash
     poetry install 
    ```
 
-1. Installl all but dev dependencies.
+1. Install all but dev dependencies.
 
    ```
     :::bash

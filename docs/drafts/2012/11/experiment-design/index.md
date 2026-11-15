@@ -1,7 +1,7 @@
 ---
 title: Experiment Design
-created: 2012-11-22 12:24:54
-date: 2026-04-13 23:33:13.443885
+created: '2012-11-22T12:24:54-08:00'
+date: '2026-11-15T09:17:34-08:00'
 authors:
   - bendu
 label: experiment-design
@@ -11,7 +11,7 @@ tags:
   - Statistics
   - regression
   - AI
-  - experiement design
+  - experiment design
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**

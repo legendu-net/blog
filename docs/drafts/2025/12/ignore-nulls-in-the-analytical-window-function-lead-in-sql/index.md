@@ -1,7 +1,7 @@
 ---
 title: Ignore Nulls in the Analytical Window Function Lead in SQL
-created: 2025-12-17 11:08:59
-date: 2026-04-13 23:14:17.376473
+created: '2025-12-17T11:08:59-08:00'
+date: '2026-11-15T09:28:34-08:00'
 authors:
   - bendu
 label: ignore-nulls-in-the-analytical-window-function-lead-in-sql
@@ -22,7 +22,7 @@ tags:
 
 The analytical window function `lead`
 does not support ignoring `NULL` values.
-One workaround is to to use the analytical window fucntion `first_value`
+One workaround is to to use the analytical window function `first_value`
 which supports ignoring `NULL` values.
 
 ```

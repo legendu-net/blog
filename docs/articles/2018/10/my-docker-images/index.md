@@ -1,7 +1,7 @@
 ---
 title: My Docker Images
 created: '2018-10-18T09:10:17-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:18:05-08:00'
 authors:
   - bendu
 label: my-docker-images
@@ -134,7 +134,7 @@ Keep the default if you don't know what are the best to use.
   WARNING: the shell script `/scripts/sys/init.sh` cannot create a user named `root`
   as it already exists in the Docker container.
   If you start a Docker container using `root`,
-  make sure to pass a different user name to the envrionment variable `DOCKER_USER`,
+  make sure to pass a different user name to the environment variable `DOCKER_USER`,
   e.g., `-e DOCKER_USER=dclong`.
   </font>
   For more discussion,
@@ -143,7 +143,7 @@ Keep the default if you don't know what are the best to use.
   The shell command `id -u` gets the user ID of the current user (on the host),
   so the option `-e DOCKER_USER_ID=$(id -u)` instructs the script `/scripts/sys/init.sh`
   to create a user in the Docker container whose user ID is the same as the user ID of the current user on the host.
-  This means that the user in the Docker container is essentailly the current user on the host,
+  This means that the user in the Docker container is essentially the current user on the host,
   which helps resolve file permissions between the Docker container and the host.
   This option is similar to the option `--user` of the command `docker run`,
   and you want to keep it unchanged, generally speaking.
@@ -218,9 +218,9 @@ docker run -d --init \
 
 ## Add a New User Inside a Docker Container
 
-You can of course use the well know commands `useradd`, `adduser`, etc. to achive it.
+You can of course use the well know commands `useradd`, `adduser`, etc. to achieve it.
 To make things easier for you,
-there are some shell scripts in the directory `/scripts/sys/` to create usres for you.
+there are some shell scripts in the directory `/scripts/sys/` to create users for you.
 
 - `/scripts/sys/create_user.sh`: Create a new user. It's the base script for creating users.
 - `/scripts/sys/create_user_group.sh`: Create a new user with the given (existing) group.
@@ -544,7 +544,7 @@ My Docker images are auto built leveraging GitHub Actions workflow
 
 ## On Failure of GitHub Actions Workflow for Building Docker Images
 
-1. If the Docker image buidling workflow fails due to network issues,
+1. If the Docker image building workflow fails due to network issues,
    it might not work to rerun failed pipelines in GitHub Actions
    (as the network issue is like due to probalematic network nodes
    and retrying failed pipelines sending jobs to the same nodes).

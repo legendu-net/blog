@@ -1,7 +1,7 @@
 ---
 title: High Performance Computing in Python
 created: '2017-06-12T09:26:31-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:24:11-08:00'
 authors:
   - bendu
 label: high-performance-computing-in-python
@@ -60,7 +60,7 @@ Automated interactive infrastructure and database for computational science.
 
 ## [mars](https://github.com/mars-project/mars)
 
-It sems to me that mars focus on tensor computation.
+It seems to me that mars focus on tensor computation.
 Mars is a tensor-based unified framework for large-scale data computation which scales Numpy, Pandas and Scikit-learn.
 
 ## [modin-project/modin](https://github.com/modin-project/modin)

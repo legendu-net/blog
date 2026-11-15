@@ -1,7 +1,7 @@
 ---
 title: Popular Databases
-created: 2021-06-10 10:33:02
-date: 2026-04-15 19:27:00.888621
+created: '2021-06-10T10:33:02-07:00'
+date: '2026-11-15T09:21:27-08:00'
 authors:
   - bendu
 label: popular-databases
@@ -23,7 +23,7 @@ tags:
 
 The YouTube video
 [How to Choose The Right Database](https://www.youtube.com/watch?v=kkeFE6iRfMM)
-has great advices on how to choose the right databases.
+has great advice on how to choose the right databases.
 
 ## Types of Databases
 
@@ -38,7 +38,7 @@ has great advices on how to choose the right databases.
 
 Advantages of Relational Databases
 
-- consitency
+- consistency
 - security
 - ease of backup and recovery
 

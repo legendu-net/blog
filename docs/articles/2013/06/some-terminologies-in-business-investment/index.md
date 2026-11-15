@@ -1,7 +1,7 @@
 ---
 title: Some Terminologies in Business Investment
-created: 2013-06-13 22:26:26
-date: 2026-04-15 19:27:00.282404
+created: '2013-06-13T22:26:26-07:00'
+date: '2026-11-15T09:15:41-08:00'
 authors:
   - bendu
 label: some-terminologies-in-business-investment
@@ -477,7 +477,7 @@ of the legal, financial and regulatory aspects of owning this type of property.
 Investors who don't want to deal with these hassles directly
 can gain exposure to commercial real estate through real estate investment trusts (REITs).
 
-## Quater Over Quater (QoQ)
+## Quarter Over Quarter (QoQ)
 
 A measuring technique that calculates the change between one financial quarter
 and the previous financial quarter.
@@ -1075,7 +1075,7 @@ where n is the number of years in the period being considered.
 This can be written as follows:
 
 $$
-CAGR = \left(\frac{\text{Ending Value}}{\text{Begining Value}}\right)^{\frac{1}{\text{number of years}}} - 1
+CAGR = \left(\frac{\text{Ending Value}}{\text{Beginning Value}}\right)^{\frac{1}{\text{number of years}}} - 1
 $$
 
 CAGR isn't the actual return in reality.
@@ -1286,7 +1286,7 @@ Receiving a ratio of less than 40% means that the potential borrower
 has an acceptable level of debt.
 
 $$
-TDS = \frac{\text{Annual Mortgage Payments} + \text{Propety Taxes} + \text{Other Debt Payments}}{\text{Gross Family Income}}
+TDS = \frac{\text{Annual Mortgage Payments} + \text{Property Taxes} + \text{Other Debt Payments}}{\text{Gross Family Income}}
 $$
 
 For example,
@@ -1413,7 +1413,7 @@ A charge-off will fall under one of the following categories:
 1. Companies often say something like:
    "we will take a one-time charge against earnings this quarter."
    This means that an extraordinary event has occurred and,
-   altough it affects present earnings,
+   although it affects present earnings,
    it is unlikely to occur again.
    As a result,
    a company will usually provide an earnings per share (EPS) figure

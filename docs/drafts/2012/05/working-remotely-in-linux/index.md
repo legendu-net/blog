@@ -1,7 +1,7 @@
 ---
 title: Working Remotely in Linux
-created: 2012-05-01 23:20:51
-date: 2026-04-16 12:51:31.321121
+created: '2012-05-01T23:20:51-07:00'
+date: '2026-11-15T09:17:56-08:00'
 authors:
   - bendu
 label: working-remotely-in-linux
@@ -52,14 +52,14 @@ tags:
   - remmina
   - [noVNC](https://novnc.com/info.html)
 - NoMachine
-  - commericial but free for personal use
+  - commercial but free for personal use
 - [rustdesk](https://github.com/rustdesk/rustdesk)
 - [Chrome Remote Desktop](https://remotedesktop.google.com/home)
   - Linux support is limited to Debian/Ubuntu series.
 - Teamviewer
-  - commericial
+  - commercial
 - [Parsec](https://parsec.app)
-  - commericial, monthly subscription
+  - commercial, monthly subscription
 
 ## From Linux to Windows
 
@@ -86,7 +86,7 @@ tags:
 
 ## From Windows to Linux
 
-### Comand Line Mode Using `ssh`
+### Command Line Mode Using `ssh`
 
 ### Remote File System
 

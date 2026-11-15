@@ -1,7 +1,7 @@
 ---
 title: Cygwin Come to Rescue Linux Fans on Windows
 created: '2013-08-19T10:37:20-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:35:07-08:00'
 authors:
   - bendu
 label: cygwin-come-to-rescue-linux-fans-on-windows
@@ -129,11 +129,11 @@ python setup.py --install package_name
 
 1. grep, sed, awk
 
-### Availabe Tools not Installed by Default
+### Available Tools not Installed by Default
 
 1. terminator (available via [Cygwin Ports](cygwin-ports))
 
-1. shutdown, halt, reboot (availabe via the `shutdown` package)
+1. shutdown, halt, reboot (available via the `shutdown` package)
 
 1. openssh-client, scp, rsync, keychain (keyring for ssh)
 

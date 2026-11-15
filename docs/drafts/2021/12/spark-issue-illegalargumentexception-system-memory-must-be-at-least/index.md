@@ -1,7 +1,7 @@
 ---
 title: 'Spark Issue: IllegalArgumentException: System Memory Must Be at Least'
 created: '2021-12-05T13:02:47-08:00'
-date: '2026-08-11T22:19:22-07:00'
+date: '2026-11-15T09:22:48-08:00'
 authors:
   - bendu
 label: spark-issue-illegalargumentexception-system-memory-must-be-at-least
@@ -24,7 +24,7 @@ Exception in thread "main" java.lang.IllegalArgumentException: System memory 466
 
 ## Causes
 
-Not enough heap size (dirver memory).
+Not enough heap size (driver memory).
 
 ## Solutions
 

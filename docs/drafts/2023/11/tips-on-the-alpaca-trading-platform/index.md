@@ -1,7 +1,7 @@
 ---
 title: Tips on the Alpaca Trading Platform
-created: 2023-11-26 21:58:44
-date: 2026-04-14 19:34:16.125129
+created: '2023-11-26T21:58:44-08:00'
+date: '2026-11-15T09:27:27-08:00'
 authors:
   - bendu
 label: tips-on-the-alpaca-trading-platform
@@ -21,10 +21,10 @@ tags:
 
 [What are the regulatory fees?](https://alpaca.markets/support/regulatory-fees)
 
-Alpaca does NOT charge commision fees for trading stocks and ETFs.
+Alpaca does NOT charge commission fees for trading stocks and ETFs.
 However,
 Alpaca does charge SEC process fee (SEC), option regulatory fee (ORF), trading activity fee (TAF) and index option fee (IOF).
-Other commision-fee-free brokerages (such as Charles Schwab)
+Other commission-fee-free brokerages (such as Charles Schwab)
 charge SEC, ORF, TAF and IOF fees too.
 
 ## ACH Transactions

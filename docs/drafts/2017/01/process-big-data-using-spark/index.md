@@ -1,7 +1,7 @@
 ---
 title: Process Big Data Using Spark
 created: '2017-01-05T23:55:46-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:23:11-08:00'
 authors:
   - bendu
 label: process-big-data-using-spark
@@ -31,10 +31,10 @@ tags:
    This can cause a serious data skew issue.
 
 1. When you join 2 tables and apply filtering conditions on those 2 tables,
-   it is suggested that you explictly use subqueries to filtering first and then do the join.
+   it is suggested that you explicitly use subqueries to filtering first and then do the join.
    (This is generally true for other SQL databases too.)
 
-   - Explict is always better than implicit.
+   - Explicit is always better than implicit.
      This makes sure that SQL do the filtering first before join
      rather than relying on the SQL engine optimization.
 
@@ -46,7 +46,7 @@ tags:
 
 1. Before you use a HDFS table,
    have a rough estimation of the tables size
-   and check the number of underlying files of the talbe.
+   and check the number of underlying files of the table.
    This helps you
    \- have a rough idea of the complexity of the Spark job
    \- get a idea of the rough number of tasks in the Spark job
@@ -55,7 +55,7 @@ tags:
    some HDFS table might have a huge number (more than 100k) of underlying files.
    This will causes your Spark job to have too many (small) tasks,
    which not only makes your Spark application run slow
-   but also might causes vairous issues such as
+   but also might causes various issues such as
    [Spark Issue: Total Size of Serialized Results Is Bigger than spark.driver.maxResultSize](spark-issue-total-size-of-serialized-results-is-bigger-than-spark.driver.maxresultsize)
    and
    [Spark Issue: Too Large Table for Auto BroadcastHashJoin](spark-issue-too-large-table-for-auto-broadcasthashjoin)
@@ -76,7 +76,7 @@ tags:
    You can then submit a Spark application for each of the smaller jobs.
    The advantage of this approach is 2 fold.
    First,
-   each of the smaller jobs can run reliably and have a much higher chance to suceed.
+   each of the smaller jobs can run reliably and have a much higher chance to succeed.
    Second,
    shall any of the smaller jobs fail,
    you run rerun that specific job (this is why reproducible is important) instead of rerunning the whole large simulation.
@@ -109,7 +109,7 @@ which are variables that are only “added” to, such as counters and sums.
    from a server that has very stable network connection.
 
 1. Best to use the JVM option `-XX:MaxDirectMemorySize` to limit the maximum directory memory used.
-   This helps avoid the issue of memory exceding limit.
+   This helps avoid the issue of memory exceeding limit.
 
    ```
     :::bash

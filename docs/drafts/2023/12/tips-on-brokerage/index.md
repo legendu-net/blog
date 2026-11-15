@@ -1,7 +1,7 @@
 ---
 title: Tips on Brokerage
 created: '2023-12-25T16:53:44-08:00'
-date: '2026-06-12T21:45:13-07:00'
+date: '2026-11-15T09:27:33-08:00'
 authors:
   - bendu
 label: tips-on-brokerage
@@ -36,7 +36,7 @@ header-rows: 1
   - Market Analysis & Research Report
   - Algorithmic Trading (API)
   - Algorithmic Trading (Data Quality)
-* - Iteractive Brokerage
+* - Interactive Brokerage
   - Low-High <sup>[1]</sup>
   - 
   - Yes

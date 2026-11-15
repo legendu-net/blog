@@ -1,7 +1,7 @@
 ---
 title: Python Alternatives to Shell
-created: 2019-01-03 16:17:10
-date: 2026-04-15 19:27:00.402076
+created: '2019-01-03T16:17:10-08:00'
+date: '2026-11-15T09:18:11-08:00'
 authors:
   - bendu
 label: python-alternatives-to-shell
@@ -200,7 +200,7 @@ tags:
 
 ## [IPython](https://github.com/ipython/ipython)
 
-IPython is the best and simpliest Python approach to replace (all part of) shell so far.
+IPython is the best and simplest Python approach to replace (all part of) shell so far.
 
 1. Use the IPython shell or JupyterLab notebook (preferred)
    instead of Shell for complicated interactive operations.

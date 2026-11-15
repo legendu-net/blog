@@ -1,7 +1,7 @@
 ---
 title: Thread Safe Random Number Generator
 created: '2012-07-08T00:00:00-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:18:54-08:00'
 authors:
   - bendu
 label: thread-safe-random-number-generator
@@ -18,10 +18,10 @@ tags:
   - concurrency
 ---
 
-In pratice,
+In practice,
 the approach of separate RNGs with different seeds for threads/processes
 is widely used
-(even though theoretically those RNGs might have overlaping sequences,
+(even though theoretically those RNGs might have overlapping sequences,
 which is undesirable).
 For more discussions on this approach,
 please refer to
@@ -39,7 +39,7 @@ please refer to
 <img src="/media/rng/random-number-generator.png" height="200" width="240" align="right"/>
 
 In statistical simulation, a thread safe random number generator is often useful.
-Thread safty can be achieved by synchronize public methods of random number generator engines.
+Thread safety can be achieved by synchronize public methods of random number generator engines.
 In C++,
 this can be done through mutex (see more about my post on multithreading in C++).
 I implemented a [Thread Safe Random Number Generator] (based on the Mersenne Twister RNG).
@@ -86,7 +86,7 @@ UINT64_C(6364136223846793005)> smt19937_64;
 #endif
 ```
 
-To test whether this random number generator is truely thread safe,
+To test whether this random number generator is truly thread safe,
 I generated a bunch of integer from negative binomial distribution
 using both this random number generator and mt19937_64
 with a same seed (on which the random number generator implemented here is based)

@@ -1,7 +1,7 @@
 ---
 title: Cluster Management Made Easy with the Python Package Fabric
 created: '2017-06-29T22:26:41-07:00'
-date: '2026-06-12T22:31:50-07:00'
+date: '2026-11-15T09:23:50-08:00'
 authors:
   - bendu
 label: cluster-management-made-easy-with-the-python-package-fabric
@@ -30,11 +30,11 @@ UnicodeEncodeError: 'ascii' codec can't encode character '\\u2018' in position 3
 It is suggested that minimize output to avoid this issue.
 
 Fabric has issues with Unicode-only characters right now.
-Supressing outputs (of shell commands) containing unicode can help avoid potential `UnicodeEncodeError`.
+Suppressing outputs (of shell commands) containing unicode can help avoid potential `UnicodeEncodeError`.
 
 ## Question
 
-Is it possible to surpress logging information?
+Is it possible to suppress logging information?
 
 ## References
 

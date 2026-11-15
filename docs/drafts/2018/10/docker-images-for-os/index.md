@@ -1,7 +1,7 @@
 ---
 title: Docker Images for OS
-created: 2018-10-27 08:29:44
-date: 2026-04-15 19:27:01.267923
+created: '2018-10-27T08:29:44-07:00'
+date: '2026-11-15T09:23:10-08:00'
 authors:
   - bendu
 label: docker-images-for-os
@@ -20,7 +20,7 @@ tags:
 
 ## [ubuntu](https://hub.docker.com/_/ubuntu/)
 
-This is the default/offical Ubuntu Docker image.
+This is the default/official Ubuntu Docker image.
 
 ## [CentOS](https://hub.docker.com/r/_/centos/)
 

@@ -1,7 +1,7 @@
 ---
-title: Free High Performance Computing Resouces
-created: 2023-07-13 18:41:38
-date: 2026-04-13 23:14:27.748925
+title: Free High Performance Computing Resources
+created: '2023-07-13T18:41:38-07:00'
+date: '2026-11-15T09:25:08-08:00'
 authors:
   - bendu
 label: free-high-performance-computing-resouces

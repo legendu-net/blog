@@ -1,7 +1,7 @@
 ---
 title: Autonomous Driving
-created: 2022-06-05 16:04:29
-date: 2026-04-13 23:14:45.724719
+created: '2022-06-05T16:04:29-07:00'
+date: '2026-11-15T09:24:21-08:00'
 authors:
   - bendu
 label: autonomous-driving
@@ -10,7 +10,7 @@ tags:
   - computer science
   - programming
   - IoT
-  - embedd
+  - embed
   - hardware
   - autonomous
   - drive

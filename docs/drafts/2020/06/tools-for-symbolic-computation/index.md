@@ -1,7 +1,7 @@
 ---
 title: Tools for Symbolic Computation
-created: 2020-06-12 10:23:32
-date: 2026-04-13 23:15:20.643586
+created: '2020-06-12T10:23:32-07:00'
+date: '2026-11-15T09:21:20-08:00'
 authors:
   - bendu
 label: tools-for-symbolic-computation
@@ -33,7 +33,7 @@ A more symbolic-centric package that is an open source development of the old co
 
 ## [SageMath](https://www.sagemath.org/)
 
-A good open souce alternative to Mathematica.
+A good open source alternative to Mathematica.
 sympy, Maxima, etc. are integrated into SageMath.
 
 ## Which One to Use

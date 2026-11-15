@@ -1,7 +1,7 @@
 ---
 title: Tips on GitHub
 created: '2019-02-08T13:41:56+00:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:21:52-08:00'
 authors:
   - bendu
 label: tips-on-github
@@ -24,7 +24,7 @@ tags:
 
 1. Have at least 2 branches master and dev.
    Reserve the master branch for releasing purpose
-   and the dev banch for development.
+   and the dev branch for development.
    Protect the master branch on GitHub to require checks to pass before merging.
    If it is only one person (yourself) developing on the project,
    do not require pull request review before merging.
@@ -36,7 +36,7 @@ tags:
 1. A development (dev, daily, next, or whatever name) release should be made
    when a push is made into the master branch.
    An official tagged release should be made on creation of a new tag.
-   A new tag should only be created on the lastest commit of the master branch!
+   A new tag should only be created on the latest commit of the master branch!
 
 1. Adblock Plus might cause some GitHub pages (e.g., the page showing changes of a PR)
    fail to render correctly.

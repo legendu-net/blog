@@ -1,7 +1,7 @@
 ---
-title: "Tips on AutoGluon"
-created: 2020-01-27 15:28:00
-date: 2020-02-27 15:28:00
+title: Tips on AutoGluon
+created: '2020-01-27T15:28:00-08:00'
+date: '2026-11-15T09:21:33-08:00'
 authors:
   - bendu
 label: tips-on-autogluon
@@ -25,20 +25,18 @@ https://github.com/awslabs/autogluon
 
 https://autogluon.mxnet.io/
 
-AutoGluon automatically inferences the problem type. 
-However, 
-you are still able to specify the probelm type 
+AutoGluon automatically inferences the problem type.
+However,
+you are still able to specify the problem type
 if AutoGluon fails to infer the right problem type.
 
-
 1. AutoGluon auto saves all models into the specified output directory during training.
-    And the save models can be load back using the `load` method of the corresponding predictor.
+   And the save models can be load back using the `load` method of the corresponding predictor.
 
-
-2. GPU support in AutoGluon is for image/text but not Tabular data currently.
-    For more details,
-    please refer to
-    [issue 262](https://github.com/awslabs/autogluon/issues/262).
+1. GPU support in AutoGluon is for image/text but not Tabular data currently.
+   For more details,
+   please refer to
+   [issue 262](https://github.com/awslabs/autogluon/issues/262).
 
 ## Questions
 

@@ -1,7 +1,7 @@
 ---
 title: 'Spark Issue: Mac spark-shell Error Initializing SparkContext'
-created: 2019-08-24 16:49:09
-date: 2026-04-15 19:27:01.161419
+created: '2019-08-24T16:49:09-07:00'
+date: '2026-11-15T09:24:37-08:00'
 authors:
   - bendu
 label: spark-issue-mac-spark-shell-error-initializing-sparkcontext
@@ -28,7 +28,7 @@ Mac spark-shell Error initializing SparkContext
 
 ## Solution
 
-One possible solution is to simplfy restart Mac.
+One possible solution is to simply restart Mac.
 Other solutions exists in the
 [discussion on StackOverflow](https://stackoverflow.com/questions/34601554/mac-spark-shell-error-initializing-sparkcontext)
 

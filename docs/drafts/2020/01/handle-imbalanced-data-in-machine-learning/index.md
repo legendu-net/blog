@@ -1,7 +1,7 @@
 ---
 title: Handle Imbalanced Data in Machine Learning
 created: '2020-01-18T10:40:49-08:00'
-date: '2026-09-30T17:10:21-07:00'
+date: '2026-11-15T09:23:22-08:00'
 authors:
   - bendu
 label: handle-imbalanced-data-in-machine-learning
@@ -106,7 +106,7 @@ Makes the border more clear
 
 ### SMOTE
 
-Synthetic Minority Oversampling TEchique
+Synthetic Minority Oversampling TEchnique
 Synthesizing new minority class examples
 break the tie introduced by simple oversampling and augment the original data
 shown a great success in various applications\

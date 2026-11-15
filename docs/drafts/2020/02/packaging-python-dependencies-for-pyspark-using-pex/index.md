@@ -1,7 +1,7 @@
 ---
 title: Packaging Python Dependencies for PySpark Using pex
 created: '2020-02-07T14:44:03-08:00'
-date: '2026-08-11T22:19:26-07:00'
+date: '2026-11-15T09:22:15-08:00'
 authors:
   - bendu
 label: packaging-python-dependencies-for-pyspark-using-pex
@@ -45,7 +45,7 @@ For example,
 some Spark clusters configure `$HOME` to be `/home`
 which makes the default pex root directory to be `/home/.pex`.
 This causes [permission issues](https://github.com/pantsbuild/pex/issues/359)
-as users do not have previleges to create the directory on the master and executor containers.
+as users do not have privileges to create the directory on the master and executor containers.
 If this happens,
 you have to set the environment variable `PEX_ROOT`
 to a writable location using thee option `--conf`

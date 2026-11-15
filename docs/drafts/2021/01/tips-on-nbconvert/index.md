@@ -1,7 +1,7 @@
 ---
 title: Tips on nbconvert
-created: 2021-01-08 13:59:41
-date: 2026-04-13 23:15:08.176022
+created: '2021-01-08T13:59:41-08:00'
+date: '2026-11-15T09:25:49-08:00'
 authors:
   - bendu
 label: tips-on-nbconvert
@@ -24,7 +24,7 @@ tags:
 1. Convert a Jupyter notebook to markdown format.
 
    ```bash
-    jupyter nbconvert --to markdown notebook.ipynb
+   jupyter nbconvert --to markdown notebook.ipynb
    ```
 
 1. It is recommended that you use the template
@@ -37,28 +37,28 @@ tags:
    which provides beautiful and dynamic reports.
 
    ```bash
-    pip3 install pretty_jupyter
-    jupyter nbconvert --to HTML --template pj notebook.ipynb
+   pip3 install pretty_jupyter
+   jupyter nbconvert --to HTML --template pj notebook.ipynb
    ```
 
 1. You can execute a notebook without converting it to a different format using the following command.
 
    ```bash
-    jupyter nbconvert --to notebook --execute mynotebook.ipynb
+   jupyter nbconvert --to notebook --execute mynotebook.ipynb
    ```
 
    This will generate another notebook with the output inlined.
    You can use the option `--inplace` to overwrite the file inplace.
 
    ```bash
-    jupyter nbconvert --to notebook --inplace --execute mynotebook.ipynb
+   jupyter nbconvert --to notebook --inplace --execute mynotebook.ipynb
    ```
 
 1. There is no way to control the work directory of `jupyter nbconvert` at this time.
    A recommended alternative is to manually change the directory in the notebook.
    It is possible to specify the output directory where things will be deployed.
    For more discussions,
-   pleas refer to [this issue](https://github.com/jupyter/nbconvert/issues/1343).
+   please refer to [this issue](https://github.com/jupyter/nbconvert/issues/1343).
 
 ## Template
 

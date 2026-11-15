@@ -1,7 +1,7 @@
 ---
 title: Docker Issues and Solutions
 created: '2020-03-14T09:56:34-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:23:15-08:00'
 authors:
   - bendu
 label: docker-issues-and-solutions
@@ -30,7 +30,7 @@ tags:
    ```
 
    If you have a non-standard Docker location configured,
-   then rmeove that location instead.
+   then remove that location instead.
 
 1. Restart Docker.
 
@@ -60,7 +60,7 @@ Please refer to
 [The Non-Zero Exit Code 137 While Building a Docker Image](the-non-zero-exit-code-137-while-building-a-docker-image)
 for more details.
 
-## Debuging Docker Container Exit
+## Debugging Docker Container Exit
 
 1. List Docker container IDs.
 

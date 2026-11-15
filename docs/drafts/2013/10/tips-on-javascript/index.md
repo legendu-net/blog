@@ -1,19 +1,20 @@
 ---
 title: Tips on JavaScript
-created: 2013-10-26 12:48:21
-date: 2026-04-05 19:42:38.355824
+created: '2013-10-26T12:48:21-07:00'
+date: '2026-11-15T09:17:27-08:00'
 authors:
-- bendu
+  - bendu
 label: tips-on-javascript
 license: CC-BY-4.0
 tags:
-- tips
-- programming
-- JavaScript
-- JS
-- web
-- frontend
+  - tips
+  - programming
+  - JavaScript
+  - JS
+  - web
+  - frontend
 ---
+
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
 [The State of Frontend in 2022](https://newsletter.pragmaticengineer.com/p/state-of-frontend-2022)
@@ -22,37 +23,38 @@ has a good discussion about the state and trend of frontend technologies as of 2
 ## JavaScript Runtimes
 
 1. [Node.js](https:/nodejs.org/en/) is a JavaScript runtime environment outside browsers.
-2. deno
-3. bun
-
+1. deno
+1. bun
 
 ## Tools
 
 ### Vite
 
 ### [babel](https://github.com/babel/babel)
+
 [babel](https://github.com/babel/babel)
 is a compiler for writing next generation JavaScript.
-It allows you to write code using the latest ES features 
-and transpile it down to older versions (like ES5) for broader compatibility. 
+It allows you to write code using the latest ES features
+and transpile it down to older versions (like ES5) for broader compatibility.
 
 ### [webpack](https://webpack.js.org/)
+
 [webpack](https://github.com/webpack/webpack)
-is a module bundler. 
-Its main purpose is to bundle JavaScript files for usage in a browser, 
+is a module bundler.
+Its main purpose is to bundle JavaScript files for usage in a browser,
 yet it is also capable of transforming, bundling, or packaging just about any resource or asset.
 
 ### [grunt](https://github.com/gruntjs/grunt)
+
 [grunt](https://github.com/gruntjs/grunt)
 is a JavaScript Task Runner.
 
 [Select the Plates](https://flukeout.github.io/)
 
-
 https://github.com/sindresorhus/awesome-nodejs
 
 https://github.com/bnb/awesome-awesome-nodejs
- 
+
 [JavaScript Libraries](http://javascriptlibraries.com/)
 [JavaScript WikiBooks](http://en.wikibooks.org/wiki/JavaScript)
 [W3Schools JavaScript Tutorial](http://www.w3schools.com/js/default.asp)
@@ -65,23 +67,23 @@ https://www.tutorialsteacher.com/typescript/typescript-build-tools
 
 ## Install & Import a Package
 
-This is a common misunderstanding in Node.js and npm. Installing a package globally doesn't ensure that the package can be required. A global install is meant to be used to install executable files. For example, if you want to install the latest version of npm, then you could run the command: npm install -g npm. This command would install the npm package in {prefix}/lib/node_modules and the executable file in {prefix}/bin (that usually is in your PATH).
+This is a common misunderstanding in Node.js and npm. Installing a package globally doesn't ensure that the package can be required. A global install is meant to be used to install executable files. For example, if you want to install the latest version of npm, then you could run the command: npm install -g npm. This command would install the npm package in \{prefix}/lib/node_modules and the executable file in \{prefix}/bin (that usually is in your PATH).
 
 In your case, I'd suggest the following:
 
-$ mkdir my-project
+\$ mkdir my-project
 
-$ cd my-project
+\$ cd my-project
 
-$ npm init -y
+\$ npm init -y
 [...]
 
-$ npm install web3
+\$ npm install web3
 [...]
 
-$ npm install ethereum.js
+\$ npm install ethereum.js
 
-$ jupyter notebook
+\$ jupyter notebook
 [so that your notebook is created in the folder where the npm packages have been installed]
 
 https://github.com/n-riesco/ijavascript/issues/118
@@ -91,9 +93,9 @@ https://github.com/n-riesco/ijavascript/issues/118
 https://github.com/jupyterlab/lumino
 
 [partytown](https://github.com/BuilderIO/partytown)
-is a lazy-loaded library to help relocate resource intensive scripts into a web worker, 
-and off of the main thread. 
-Its goal is to help speed up sites by dedicating the main thread to your code, 
+is a lazy-loaded library to help relocate resource intensive scripts into a web worker,
+and off of the main thread.
+Its goal is to help speed up sites by dedicating the main thread to your code,
 and offloading third-party scripts to a web worker.
 
 ## Testing & Debugging
@@ -106,14 +108,12 @@ https://github.com/AgustinCB/docker-api
 
 https://github.com/apocas/dockerode
 
-
 1. case sensi tive
 
-2. you don't have to write every line of code in HTML,
-    you can save JavaScript code in another file and then load it.
+1. you don't have to write every line of code in HTML,
+   you can save JavaScript code in another file and then load it.
 
-
-3. alert vs confirm vs prompt
+1. alert vs confirm vs prompt
 
 An alert box is often used if you want to make sure information comes through to the user.
 
@@ -131,38 +131,38 @@ When a prompt box pops up, the user will have to click either "OK" or "Cancel" t
 
 If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns null.
 
-## OOP 
+## OOP
 
 [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
 
-[https://www.youtube.com/watch?v=YkoelSTUy7A](Prototype basics - Object Creation in JavaScript P3 - FunFunFunction #46)
-
+\[https://www.youtube.com/watch?v=YkoelSTUy7A\](Prototype basics - Object Creation in JavaScript P3 - FunFunFunction #46)
 
 ## Electron
+
 For desktop UI.
 
 ## Libraries
 
 1. D3
 
-2. jQuery
+1. jQuery
 
-3. AJAX relationship between jQuery? seems that jQuery can make AJAX calls
+1. AJAX relationship between jQuery? seems that jQuery can make AJAX calls
 
-4. plotly, phantomjs
+1. plotly, phantomjs
 
 angularJS
 
-## Visulization
+## Visualization
+
 1. Google Visualization APIs
 
-
 [Underscore](http://underscorejs.org/)
-is a JavaScript library that provides a whole mess of useful functional programming helpers without extending any built-in objects. 
-It's the answer to the question: 
-"If I sit down in front of a blank HTML page, 
-and want to start being productive immediately, 
-what do I need?" ... and the tie to go along with jQuery's tux and Backbone's suspenders. 
+is a JavaScript library that provides a whole mess of useful functional programming helpers without extending any built-in objects.
+It's the answer to the question:
+"If I sit down in front of a blank HTML page,
+and want to start being productive immediately,
+what do I need?" ... and the tie to go along with jQuery's tux and Backbone's suspenders.
 
 ## References
 

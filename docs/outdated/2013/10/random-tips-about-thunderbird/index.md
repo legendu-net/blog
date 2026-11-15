@@ -1,7 +1,7 @@
 ---
 title: Random Tips about Thunderbird
 created: '2013-10-04T14:29:35-07:00'
-date: '2026-08-11T22:39:38-07:00'
+date: '2026-11-15T09:35:26-08:00'
 authors:
   - bendu
 label: random-tips-about-thunderbird
@@ -31,7 +31,7 @@ Please look for better alternatives.
 
 ## General Tips
 
-2. it seems that Thunderbird can handles multiple profiles itslef,
+2. it seems that Thunderbird can handles multiple profiles itself,
    see how thunderbird switches profiles itself,
    this is great!
 
@@ -71,7 +71,7 @@ New calendar -> Calendar on network -> paste carlendar private link
 ## Sync
 
 0. sync apps files such as thunderbird might not be a good idea!!!
-   The files are the same, so it's easy to get conficts, corruption, etc.
+   The files are the same, so it's easy to get conflicts, corruption, etc.
    Use your way, copy from one to the other directly!!
 
 1. it is not a good idea to sync thunderbird profile.
@@ -91,7 +91,7 @@ New calendar -> Calendar on network -> paste carlendar private link
 
 1. You can move an old `msgFilterRules.dat` file
    into a new Thunderbird profile.
-   Those filters involing non-existing tags won't work.
+   Those filters involving non-existing tags won't work.
    They automatically delegate to the tag `Important`.
    However,
    if you add the missing tags, then most of the filters works like a charm.
@@ -101,7 +101,7 @@ New calendar -> Calendar on network -> paste carlendar private link
 ## change default account
 
 1. select the account that you want to set as default
-1. right click on the acount and choose settings
+1. right click on the account and choose settings
 1. click Account Action at the bottom and then choose Set as Default in the drop-down menu.
 
 ## Questions

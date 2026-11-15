@@ -1,20 +1,20 @@
 ---
-title: Permission Issues When Installing Softwares in Linux
+title: Permission Issues When Installing Software in Linux
 created: '2012-04-30T00:00:00-07:00'
-date: '2026-08-11T22:19:16-07:00'
+date: '2026-11-15T09:15:43-08:00'
 authors:
   - bendu
 label: permission-issues-when-installing-softwares-in-linux
 license: CC-BY-4.0
 tags:
   - Linux
-  - softwares
+  - software
   - permission
   - issue
   - chmod
 ---
 
-Sometime when you install softwares in Linux,
+Sometime when you install software in Linux,
 you get an error message saying that you do not have permission while you used sudo or the root account.
 This probably means that you do not have full access to some installation files.
 An easy way to solve this problem is to change file permissions of these installation files.

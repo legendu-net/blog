@@ -1,7 +1,7 @@
 ---
 title: Tips on PyTorch
 created: '2020-01-18T00:39:50-08:00'
-date: '2026-06-12T21:38:36-07:00'
+date: '2026-11-15T09:21:49-08:00'
 authors:
   - bendu
 label: tips-on-pytorch
@@ -36,7 +36,7 @@ If you do want to initialize weights by yourself,
 please refer to
 [Initialize Weights](training-deep-neural-networks-initialize-weights)
 for some good practices.
-And below are some example PyTorch code snippets for initalizing weights.
+And below are some example PyTorch code snippets for initializing weights.
 
 torch.nn.init.xavier_uniform(conv1.weight)
 conv1.weight.data.fill\_(0.01)
@@ -84,7 +84,7 @@ https://discuss.pytorch.org/t/trying-to-understand-the-meaning-of-model-train-an
 
 https://medium.com/datadriveninvestor/deploy-your-pytorch-model-to-production-f69460192217
 
-[TRANSFERING A MODEL FROM PYTORCH TO CAFFE2 AND MOBILE USING ONNX](https://pytorch.org/tutorials/advanced/super_resolution_with_caffe2.html)
+[TRANSFERRING A MODEL FROM PYTORCH TO CAFFE2 AND MOBILE USING ONNX](https://pytorch.org/tutorials/advanced/super_resolution_with_caffe2.html)
 
 [TORCH.ONNX](https://pytorch.org/docs/master/onnx.html)
 

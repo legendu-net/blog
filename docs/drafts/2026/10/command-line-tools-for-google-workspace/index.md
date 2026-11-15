@@ -1,7 +1,7 @@
 ---
 title: Command Line Tools for Google Workspace
 created: '2026-10-14T10:06:34.010747-07:00'
-date: '2026-10-17T23:05:34-07:00'
+date: '2026-11-15T09:30:17-08:00'
 authors:
   - bendu
 label: command-line-tools-for-google-workspace
@@ -99,7 +99,7 @@ widths: 16 28 28 28
   - ~31.6k ★
 ```
 
-## Other Realted Tools
+## Other Related Tools
 
 - [GitHub - google/clasp: 🔗 Command Line Apps Script Projects · GitHub](https://github.com/google/CLASP)
 

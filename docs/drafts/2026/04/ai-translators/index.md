@@ -1,7 +1,7 @@
 ---
 title: AI Translators
-created: 2026-04-17 12:10:25.717065
-date: 2026-04-17 23:06:01.918100
+created: '2026-04-17T12:10:25.717065-07:00'
+date: '2026-11-15T09:28:59-08:00'
 authors:
   - bendu
 label: ai-translators
@@ -10,7 +10,7 @@ tags:
   - AI
   - translate
   - translator
-  - interpretor
+  - interpreter
   - LLM
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Workflow Managing Tools
 created: '2019-03-10T09:32:40-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:22:54-08:00'
 authors:
   - bendu
 label: workflow-managing-tools
@@ -26,7 +26,7 @@ tags:
    A big advantage of Airflow over other workflow managing tools (e.g., UC4)
    is that the workflow is expressed in (simple and concise) Python code.
    It is easy to version control and review changes in source code
-   while it is extremly hard to do so for graphically expressed workflows,
+   while it is extremely hard to do so for graphically expressed workflows,
    especially when the workflow grows large.
 
 ## [prefect](https://github.com/PrefectHQ/prefect)

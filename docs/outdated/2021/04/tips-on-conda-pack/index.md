@@ -1,7 +1,7 @@
 ---
 title: Tips on conda-pack
 created: '2021-04-30T12:13:17-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:27:59-08:00'
 authors:
   - bendu
 label: tips-on-conda-pack
@@ -23,17 +23,17 @@ for more details.
 **Things under legendu.net/outdated are outdated technologies that the author does not plan to update any more. Please look for better alternatives.**
 
 1. All packages in a virtual environment must be managed by conda (rather than pip)
-   so that it can be packe using conda-pack.
+   so that it can be packed using conda-pack.
 
 1. When using a conda-pack virtual environment with PySpark,
    the Python package `pyyspark` comes with Spark is automatically injected into PYTHONPATH
-   so that users do not have to install `pyspark` into the virtual environemnt by themselves.
+   so that users do not have to install `pyspark` into the virtual environment by themselves.
    As a matter of fact,
    the `pyspark` comes with Spark is always used
    even if you have a local copy installed
    when you submit a PySpark application with a conda-pack virtual environment.
    For more discussions,
-   please refer to [this isue](https://github.com/conda/conda-pack/issues/102).
+   please refer to [this issue](https://github.com/conda/conda-pack/issues/102).
 
 ## References
 

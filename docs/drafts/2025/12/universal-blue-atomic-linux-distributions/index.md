@@ -1,7 +1,7 @@
 ---
 title: Universal Blue Atomic Linux Distributions
 created: '2025-12-07T17:20:04-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-15T09:28:55-08:00'
 authors:
   - bendu
 label: universal-blue-atomic-linux-distributions
@@ -35,7 +35,7 @@ which makes it easy to learn and use Universal Blue Linux distributions.
 
 ## Universal Blue vs Fedora Atomic
 
-1. Universal Blue Linux distributions are recommened.
+1. Universal Blue Linux distributions are recommended.
 
    - Universal Blue Linux distributions have "batteries included".
      - provide ISO images with Nvidia drivers pre-installed

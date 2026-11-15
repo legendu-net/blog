@@ -1,7 +1,7 @@
 ---
 title: Data Profiling Tools
-created: 2020-07-10 15:59:42
-date: 2026-04-13 23:15:18.249674
+created: '2020-07-10T15:59:42-07:00'
+date: '2026-11-15T09:21:26-08:00'
 authors:
   - bendu
 label: data-profiling-tools
@@ -30,7 +30,7 @@ tags:
 1. [Optimus](https://github.com/ironmussa/Optimus)
 
    Optimus is the one that is closest to what I want to achieve so far.
-   Looks promissing.
+   Looks promising.
 
 1. [Apache Griffin](https://github.com/apache/griffin)
 

@@ -1,7 +1,7 @@
 ---
 title: String in Different Programming Languages
-created: 2012-06-14 16:34:30
-date: 2026-04-15 19:27:00.298438
+created: '2012-06-14T16:34:30-07:00'
+date: '2026-11-15T09:17:44-08:00'
 authors:
   - bendu
 label: string-in-different-programming-languages
@@ -26,7 +26,7 @@ For a deep discussion, please check other posts.
 
 - C++: double quotes (single quotes for char type)
 - Java: double quotes (single quotes for char type)
-- Bash: single or double quotes (double quotes allows expansion of varialbes while single quotes not)
+- Bash: single or double quotes (double quotes allows expansion of variables while single quotes not)
 - Python: single or double quotes (exchangeable)
 - Ruby: single or double quotes (single preserve escapes while double interpret them)
 - R: single or double quotes (exchangeable)

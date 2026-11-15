@@ -1,7 +1,7 @@
 ---
 title: My Docker Images
 created: '2018-10-18T09:10:17-07:00'
-date: '2026-11-15T09:18:05-08:00'
+date: '2026-11-15T12:09:13-08:00'
 authors:
   - bendu
 label: my-docker-images
@@ -231,6 +231,9 @@ You can use the option `-h` to print help doc for these commands.
 
 ```bash
 /scripts/sys/create_user_nogroup.sh -h
+```
+
+```text
 Create a new user with the group name "nogroup".
 Syntax: create_user_nogroup user user_id [password]
 Arguments:

@@ -42,7 +42,7 @@ DASHES = "\n" + "-" * 100 + "\n"
 
 
 INDEXES_HELP = (
-    "Positve row IDs in the search results. "
+    "Positive row IDs in the search results. "
     "Each value is a single ID (e.g. 3) or an inclusive range (e.g. 3-7)."
 )
 
@@ -368,7 +368,7 @@ def _subparse_find_mismatch(subparsers):
 def match_title(blogger, args):
     _resolve_files(args)
     if not args.files:
-        print("No specifed files to update labels to match titles!\n")
+        print("No specified files to update labels to match titles!\n")
         return
     for file in args.files:
         blogger.match_title(file)
@@ -970,7 +970,7 @@ def _subparse_search(subparsers):
         nargs="+",
         dest="title",
         default=(),
-        help="Search for posts with the sepcified title.",
+        help="Search for posts with the specified title.",
     )
     subparser_search.add_argument(
         "-t",
@@ -978,7 +978,7 @@ def _subparse_search(subparsers):
         nargs="+",
         dest="tags",
         default=(),
-        help="Search for posts with the sepcified tags.",
+        help="Search for posts with the specified tags.",
     )
     subparser_search.add_argument(
         "-d",
@@ -994,7 +994,7 @@ def _subparse_search(subparsers):
         dest="filter",
         nargs="+",
         default=(),
-        help="Futher filtering conditions in addition to the full-text match.",
+        help="Further filtering conditions in addition to the full-text match.",
     )
     subparser_search.add_argument(
         "-a",
@@ -1376,7 +1376,7 @@ def parse_args(args=None, namespace=None) -> Namespace:
 
     :param args: The arguments to parse.
         If None, the arguments from command-line are parsed.
-    :param namespace: An inital Namespace object.
+    :param namespace: An initial Namespace object.
     :return: A namespace object containing parsed options.
     """
     parser = ArgumentParser(description="Write blog in command line.")

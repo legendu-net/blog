@@ -1,10 +1,10 @@
 #!/bin/bash
 
-if [ -d /home_host/$(id -un)/archives/ ]; then
-    ln -svf /home_host/$(id -un)/archives $HOME/
+if [ -d "/home_host/$(id -un)/archives/" ]; then
+    ln -svf "/home_host/$(id -un)/archives" "$HOME/"
 fi
-if [ -f /workdir/user/$(id -un) ]; then
-    ln -svfT /workdir/user/$(id -un) $HOME/projects
+if [ -f "/workdir/user/$(id -un)" ]; then
+    ln -svfT "/workdir/user/$(id -un)" "$HOME/projects"
 fi
 
 xinstall sshc -c

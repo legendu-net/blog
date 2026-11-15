@@ -42,6 +42,14 @@ exclude = [
   "docs/",
 ]
 
+[tool.codespell]
+ignore-words-list = """\
+  ABL,Appen,FASE,Gool,halp,Hass,HSA,iTerm,Januar,NIN,non-useful,Noteable,OT,Parms,PULS,ratatui,RataTUI,SME,strager,THI,\
+  tread,VISE,whos\
+  """
+ignore-regex = ':(?:save\[eas\]|table\[ast\]|b\[buffer\]|via\[wsource\])'
+uri-ignore-words-list = "*"
+
 [tool.deptry]
 extend_exclude = [
   "docs/",

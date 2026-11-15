@@ -34,8 +34,7 @@ if [[ ! -e /app/archives/dsutil ]]; then
     git clone git@bitbucket.org:dclong/dsutil.git /app/archives/
 fi
 git -C /app/archives/dsutil pull origin dev
-cd /app/archives/dsutil/
+cd /app/archives/dsutil/ || exit
 poetry env use python3
 poetry build
 pip3 install dist/dsutil*.whl
-

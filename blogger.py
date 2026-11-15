@@ -655,7 +655,7 @@ class Post:
         for line in (
             yaml.dump(metadata, allow_unicode=True, sort_keys=False).strip().split("\n")
         ):
-            # prefer indention for list
+            # prefer indentation for list
             if line.startswith("- "):
                 line = "  " + line
             lines.append(line + "\n")

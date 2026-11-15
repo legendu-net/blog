@@ -1,7 +1,7 @@
 ---
 title: Things to Do after Installing Linux
 created: '2016-05-04T20:59:32-07:00'
-date: '2026-11-15T03:15:06-08:00'
+date: '2026-11-15T04:18:00-08:00'
 authors:
   - bendu
 label: things-to-do-after-installing-linux
@@ -162,3 +162,7 @@ To prevent multi-hour desktop freezes caused by full swap (such as `zram`) and p
    ```
 
 For a detailed root-cause analysis and step-by-step guide, please refer to [](#diagnosing-and-fixing-linux-desktop-freezes-caused-by-zram-swap-exhaustion-and-baloo).
+
+## Troubleshoot System Slowdowns
+
+1. If the system experiences severe disk I/O slowdowns due to `PCIe Bus Error: severity=Corrected, type=Physical Layer` flooding kernel logs, add the kernel parameter `pci=nomsi` (or `pci=noaer`) to your bootloader configuration; see [](#pcie-bus-error-severity-corrected-type-physical-layer) for details.

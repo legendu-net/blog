@@ -1,7 +1,7 @@
 ---
 title: Agent Orchestration
 created: '2026-08-08T22:19:59.650925-07:00'
-date: '2026-11-03T09:37:03-08:00'
+date: '2026-11-16T00:55:54-08:00'
 authors:
   - bendu
 label: agent-orchestration
@@ -119,6 +119,67 @@ widths: 15 10 22 18 18 17
   - Web UI; remote deployment
   - Existing installations; evaluate sunset plans first
 ```
+
+### My Recommendation: Paseo
+
+My requirements for an agent manager are:
+
+1. Manage local AI agent CLIs (Claude Code, Codex, OpenCode, Antigravity CLI, etc.).
+1. Use hosted LLM APIs.
+1. Use local LLMs.
+1. Run on Linux and macOS, with an Android app (must-have).
+1. Manage sessions launched on my Linux/macOS machines remotely from the Android app (must-have).
+1. Free (preferred).
+1. Automatically switch an agent to a different model
+   when its quota for the current model runs out (nice to have).
+
+Based on these requirements, **[Paseo](https://github.com/getpaseo/paseo) is my
+recommendation**.
+
+- **Local agent CLIs**: its daemon manages supported agent CLIs installed on a workstation or server.
+- **LLM APIs and local LLMs**: supported through the agent CLIs it runs, e.g., OpenCode,
+  which connects to hosted APIs and to local models through its provider configuration.
+- **Platforms and remote access**: desktop, web, CLI, iOS, and **Android** clients
+  connect to the same daemon. An optional end-to-end encrypted relay pairs devices
+  without opening firewall ports; alternatively, connect over a LAN, Tailscale/VPN,
+  or a self-hosted relay.
+- **Cost**: the daemon, clients (including the Android app), and relay software are
+  free and open source (AGPL-3.0), and the hosted relay is optional. You only pay for the underlying agent subscriptions or
+  LLM API keys. You do need to run the daemon yourself, and the machine running it
+  must stay awake (use an always-on Linux box or VPS if needed).
+- **Automatic model switching on quota exhaustion**: not supported natively,
+  and I found no manager above that documents it.
+  Handle it in the agent CLI or in an LLM router/proxy (e.g., LiteLLM fallbacks) instead.
+- **The Android app**: "Paseo - Claude Code & Codex" by Mohamed Boudra on Google Play
+  (also linked from [paseo.sh](https://paseo.sh/)).
+
+Runners-up:
+
+- **OpenChamber**: a good choice if you standardize on OpenCode as the single agent runtime;
+  it has iOS/Android apps, but it does not natively supervise arbitrary external agent CLIs.
+- **Happy**: strong encrypted phone access to Claude Code, Codex, and other agents,
+  and it can run on your own server; however, it focuses on specific provider integrations
+  rather than arbitrary local agent CLIs, and Android support is not explicitly documented
+  in the sources checked here.
+
+Why not just use Claude Code or Antigravity CLI as the orchestrator?
+Both can run shell commands,
+so a prompt or a skill can make them drive other agent CLIs or call LLM APIs.
+Claude Code even has mobile apps with Remote Control, but that requires a paid Claude subscription.
+Paseo still has several advantages:
+
+- Session management itself consumes no LLM tokens,
+  so the control layer stays available even when a supervisor model's quota runs out.
+- Every agent gets its own first-class session in the app
+  (diffs, permission approvals, prompts),
+  instead of being tunneled through a single supervisor chat.
+- Worktree isolation and session lifecycle are built in,
+  instead of hand-rolled tmux/worktree scripts.
+
+The two approaches combine well:
+use Paseo for session management, worktrees, and remote control from Android,
+and use Claude Code/Antigravity CLI skills inside it when AI judgment is needed
+to decompose and delegate tasks.
 
 ### Choosing a Manager
 

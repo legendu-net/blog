@@ -1,7 +1,7 @@
 ---
 title: SSH Tunnel
 created: '2018-09-07T21:32:57-07:00'
-date: '2026-07-19T19:15:27-07:00'
+date: '2026-11-22T17:27:30-08:00'
 authors:
   - bendu
 label: ssh-tunnel
@@ -162,6 +162,11 @@ You can follow the steps below to access the public network from machine B.
     :::bash
     proxychains pip3 install pytorch
    ```
+
+## Troubleshooting
+
+If an SSH tunnel freezes while the internet connection is still working,
+please refer to [](#fix-ssh-tunnel-freezes-while-internet-is-working).
 
 ## References
 

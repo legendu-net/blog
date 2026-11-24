@@ -1,7 +1,7 @@
 ---
 title: Tips on Rust
 created: '2019-04-10T12:17:46+00:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-23T19:43:00-08:00'
 authors:
   - bendu
 label: tips-on-rust
@@ -159,7 +159,7 @@ https://tweedegolf.nl/en/blog
 
 https://rust-trends.com/newsletter/rust-is-becoming-the-ai-runtime/
 
-https://rust-trends.com/
+- [Rust Trends](https://rust-trends.com/) — biweekly developer-first curated Rust newsletter ([RSS](https://rust-trends.com/newsletter/rss.xml))
 
 ## Good Forums
 

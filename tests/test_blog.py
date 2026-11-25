@@ -75,3 +75,67 @@ def test_parse_args_all_ambiguous_on_utitle():
 def test_parse_args_all_posts_not_available_elsewhere():
     with pytest.raises(SystemExit):
         parse_args(["trash", "-A"])
+
+
+@pytest.mark.parametrize(
+    "cmd",
+    ["format", "fmt", "f", "format_notebook", "fnb", "format_markdown", "fmd"],
+)
+def test_parse_args_format_commands_no_args(cmd):
+    args = parse_args([cmd])
+    assert not args.indexes
+    assert not args.files
+    assert not args.all
+    assert not args.all_posts
+
+
+@pytest.mark.parametrize(
+    "cmd",
+    ["format", "fmt", "f", "format_notebook", "fnb", "format_markdown", "fmd"],
+)
+def test_parse_args_format_commands_targets(cmd):
+    assert parse_args([cmd, "0", "1-3"]).indexes == [0, 1, 2, 3]
+    assert parse_args([cmd, "--files", "a.md", "b.ipynb"]).files == [
+        "a.md",
+        "b.ipynb",
+    ]
+    assert parse_args([cmd, "-a"]).all
+    assert parse_args([cmd, "--all-srps"]).all
+    assert parse_args([cmd, "-A"]).all_posts
+    assert parse_args([cmd, "--all-posts"]).all_posts
+
+
+def test_resolve_format_paths_filters_and_defaults(monkeypatch, tmp_path):
+    from typing import cast
+
+    import blog
+    from blogger import Blogger
+
+    all_posts = [tmp_path / "a.md", tmp_path / "b.ipynb", tmp_path / "c.txt"]
+    monkeypatch.setattr(blog, "get_post_paths", lambda: all_posts)
+
+    class FakeBlogger:
+        def path(self, table, where, params=()):
+            return [str(tmp_path / "srp.md"), str(tmp_path / "srp.ipynb")]
+
+    bg = cast(Blogger, FakeBlogger())
+    # Default (no target) -> get_post_paths()
+    assert blog._resolve_format_paths(bg, parse_args(["fmt"])) == [
+        tmp_path / "a.md",
+        tmp_path / "b.ipynb",
+    ]
+    assert blog._resolve_format_paths(bg, parse_args(["fnb"]), suffix=".ipynb") == [
+        tmp_path / "b.ipynb"
+    ]
+    assert blog._resolve_format_paths(bg, parse_args(["fmd"]), suffix=".md") == [
+        tmp_path / "a.md"
+    ]
+    # Indexes -> blogger.path
+    assert blog._resolve_format_paths(bg, parse_args(["fmt", "0"])) == [
+        tmp_path / "srp.md",
+        tmp_path / "srp.ipynb",
+    ]
+    # --files
+    assert blog._resolve_format_paths(
+        bg, parse_args(["fnb", "--files", "x.md", "y.ipynb"]), suffix=".ipynb"
+    ) == [blog.Path("y.ipynb")]

@@ -580,3 +580,60 @@ def test_format_title_is_idempotent_and_label_stable(title):
     once = blogger.format_title(title)
     assert blogger.format_title(once) == once
     assert blogger._label(once) == blogger._label(title)
+
+
+def test_format_notebook_markdown_formats_code_blocks_and_preserves_cells(tmp_path):
+    import nbformat
+
+    nb = nbformat.v4.new_notebook()
+    frontmatter_cell = nbformat.v4.new_markdown_cell(
+        "---\ntitle: Sample Notebook\ncreated: 2021-04-01 00:00:00\n"
+        "date: 2021-04-01 00:00:00\nauthors:\n  - bendu\nlabel: sample-notebook\n"
+        "license: CC-BY-4.0\ntags:\n  - python\n---\n"
+    )
+    prose_cell = nbformat.v4.new_markdown_cell(
+        'Some prose.\n\n```python\nx=1+2\n```\n\n```json\n{"a":1,"b":2}\n```\n\n```bash\nif true; then\necho hello\nfi\n```'
+    )
+    code_cell = nbformat.v4.new_code_cell(
+        "y=1+2",
+        execution_count=7,
+        outputs=[nbformat.v4.new_output("stream", name="stdout", text="3\n")],
+    )
+    nb.cells = [frontmatter_cell, prose_cell, code_cell]
+    nb_path = tmp_path / "index.ipynb"
+    nbformat.write(nb, nb_path)
+
+    assert blogger.format_notebook_markdown(nb_path) is True
+
+    updated = nbformat.read(nb_path, as_version=nbformat.NO_CONVERT)
+    # Cell 0 YAML frontmatter preserved.
+    assert "title: Sample Notebook" in updated.cells[0]["source"]
+    assert "label: sample-notebook" in updated.cells[0]["source"]
+    # Markdown cell code blocks formatted.
+    md_src = updated.cells[1]["source"]
+    assert "x = 1 + 2" in md_src
+    assert '{\n  "a": 1,\n  "b": 2\n}' in md_src
+    assert "    echo hello" in md_src
+    # Code cell, execution_count, and outputs untouched.
+    assert updated.cells[2]["source"] == "y=1+2"
+    assert updated.cells[2]["execution_count"] == 7
+    assert updated.cells[2]["outputs"][0]["text"] == "3\n"
+
+    # Second run is idempotent.
+    assert blogger.format_notebook_markdown(nb_path) is False
+
+
+def test_post_mdformat_uses_list_args_without_shell(base_dir, monkeypatch):
+    path = _write_post(base_dir, "articles", "sample-post", "Sample Post", "Body.\n")
+    post = Post(path)
+    calls = []
+
+    def fake_run(cmd, **kwargs):
+        calls.append((cmd, kwargs))
+        return SimpleNamespace(returncode=0)
+
+    monkeypatch.setattr(blogger.sp, "run", fake_run)
+    post.mdformat()
+    assert calls == [
+        (["uv", "run", "mdformat", str(post.path)], {"check": False}),
+    ]

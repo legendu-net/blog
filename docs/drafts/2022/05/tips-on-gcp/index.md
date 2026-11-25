@@ -26,11 +26,12 @@ Notable Always Free limits include:
 - **Cloud Run**: 2 million requests, 180,000 vCPU-seconds, 360,000 GiB-seconds, and 1 GB of North America outbound data transfer per month.
 - **Cloud Storage**: 5 GB-months of Standard Storage in eligible US regions (`us-central1`, `us-east1`, `us-west1`), plus monthly Class A/B operation allowances.
 - **BigQuery**: 1 TB of queried data and 10 GB of active storage per month.
-- **Cloud Build**: 120 build-minutes per day.
+- **Cloud Build**: 2,500 build-minutes per month.
 - **Cloud Shell**: Free browser-based shell and editor with 5 GB of persistent `$HOME` storage.
 
-> [!IMPORTANT]
-> Always Free compute and storage resources generally require eligible US regions (`us-central1`, `us-east1`, `us-west1`). GCP does not automatically stop services when you exceed free limits, so set up **Billing Budgets and Alerts** to avoid unexpected charges.
+```{important}
+Always Free compute and storage resources generally require eligible US regions (`us-central1`, `us-east1`, `us-west1`). GCP does not automatically stop services when you exceed free limits, so set up **Billing Budgets and Alerts** to avoid unexpected charges.
+```
 
 ## Google Cloud Shell
 

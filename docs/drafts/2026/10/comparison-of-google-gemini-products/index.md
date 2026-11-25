@@ -1,7 +1,7 @@
 ---
 title: Comparison of Google Gemini Products
 created: '2026-10-18T00:06:41.898266-07:00'
-date: '2026-11-02T08:12:49-08:00'
+date: '2026-11-25T10:44:48-08:00'
 authors:
   - bendu
 label: comparison-of-google-gemini-products
@@ -329,6 +329,8 @@ Auto Browse clicks, scrolls, types and fills in forms for you
 - [Introducing skills in the Gemini app and Workspace, plus what's next for Gems](https://workspaceupdates.googleblog.com/2026/09/skills-gemini-app-workspace.html)
 
 - [An update on the launch of skills in the Gemini app and Workspace](https://workspaceupdates.googleblog.com/2026/10/an-update-on-launch-of-skills-in-gemini-app-and-workspace.html)
+
+- [](#comparison-of-google-gemini-4-models)
 
 - [](#command-line-tools-for-google-workspace)
 

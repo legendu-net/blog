@@ -1,7 +1,7 @@
 ---
 title: Tips on Gemini
 created: '2025-05-06T15:04:36-07:00'
-date: '2026-11-15T09:28:06-08:00'
+date: '2026-11-25T10:44:49-08:00'
 authors:
   - bendu
 label: tips-on-gemini
@@ -58,6 +58,8 @@ most people (unless you are an app developer) should use Gemini and Gems (instea
 - [Try notebooks in Gemini to easily keep track of projects](https://blog.google/innovation-and-ai/products/gemini-app/notebooks-gemini-notebooklm/)
 
 ## References
+
+- [](#comparison-of-google-gemini-4-models)
 
 - [Review GitHub Code Using Gemini Code Assist](review-github-code-using-gemini-code-assist)
 

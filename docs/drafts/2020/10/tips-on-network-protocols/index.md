@@ -90,7 +90,7 @@ widths: 12 16 16 10 24 22
   - Eliminates transport-level HoL blocking, supports 0-RTT/1-RTT handshakes and connection migration; UDP blocked on some strict firewalls
   - HTTP/3, mobile/lossy networks, modern real-time transport (WebTransport)
 * - **HTTP**
-  - L7 Application (TCP or QUIC)
+  - L7 Application (TCP; HTTP/1.1 & h2c)
   - Stateless request-response
   - No
   - Universal web semantics, caching, proxies; plaintext traffic is vulnerable to eavesdropping and tampering
@@ -102,10 +102,10 @@ widths: 12 16 16 10 24 22
   - Confidentiality, integrity, and CA-verified server identity; slight handshake overhead (mitigated by TLS 1.3 & HTTP/3)
   - Public web, REST APIs, browser apps, secure service-to-service calls
 * - **WebSockets**
-  - L7 Application (TCP via HTTP Upgrade)
+  - L7 Application (TCP via HTTP/1.1 Upgrade; also HTTP/2 & HTTP/3)
   - Persistent, full-duplex bidirectional messages
   - Optional (`wss://` uses TLS)
-  - Low-overhead server push and client-to-server streaming; stateful connections complicate horizontal scaling and suffer TCP HoL blocking
+  - Low-overhead server push and client-to-server streaming; stateful connections complicate horizontal scaling and suffer TCP HoL blocking when running over TCP
   - Live chat, collaborative editing, real-time dashboards, multiplayer games
 * - **RPC (e.g., gRPC)**
   - L7 Paradigm (commonly HTTP/2 + Protobuf)

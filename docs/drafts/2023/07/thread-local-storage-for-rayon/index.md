@@ -1,7 +1,7 @@
 ---
 title: Thread-Local Storage for Rayon
 created: 2023-07-05 09:24:27
-date: 2026-04-13 23:14:28.351860
+date: '2026-11-24T22:05:30-08:00'
 authors:
   - bendu
 label: thread-local-storage-for-rayon
@@ -20,26 +20,102 @@ tags:
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
 
-There might be issue if the code relies on Drop of the struct.
-For example,
-if you create a BufWriter in thread-local storage,
-last buffered output might not flush.
-You have to
+## Concerns with `std::thread_local!` in Rayon
 
-1. (not recommended) manually flush
-1. (recommended) swap out the `BufWrite` from RefCell to allow it to be dropped.
+1. **Drop timing and resource leaks (`BufWriter`, file handles, large buffers):**
+   Rayon's global thread pool keeps worker threads alive for the entire lifetime of the process,
+   so `std::thread_local!` values are **not** dropped when a parallel job finishes.
+   For example, if you store a `BufWriter` in thread-local storage,
+   the last buffered output might not be flushed before the program exits.
+   You have to either:
+   1. (not recommended) manually flush, or
+   2. (recommended) swap out the `BufWriter` from `RefCell<Option<BufWriter<_>>>` (e.g., `bw.borrow_mut().take()` or `bw.replace(None)`) so that you take ownership of it and allow it to be dropped immediately.
+      This is good practice anyway because you want to release handles to files as soon as they are no longer used, and free large scratch buffers rather than keeping them allocated on idle worker threads.
 
-Have to manually call bw.replace(None) so own the struct so that it can be dropped.
-This is good practice anyway as you want to lease handle to files so soon as they are no longer used.
+2. **Work-stealing and `RefCell` re-entrancy panics:**
+   Rayon uses a work-stealing scheduler.
+   If code currently holding a `RefCell::borrow_mut()` on a `thread_local!` variable calls back into Rayon
+   (nested parallelism such as `rayon::join` or an inner `.par_iter()`),
+   the same worker thread may steal another task that tries to `borrow_mut()` the same thread-local `RefCell`,
+   causing a runtime `BorrowMutError` panic.
 
-## rayon
+3. **No task affinity and cross-job state leakage:**
+   Successive items or chunks are not guaranteed to execute on the same worker thread,
+   and thread-local state persists across unrelated parallel jobs on the global pool
+   unless you explicitly reset or drain it after each job.
 
-1. Can\
-   [ThreadPool.broadcast](https://docs.rs/rayon/latest/rayon/struct.ThreadPool.html#method.broadcast)
-   be used?
-   No good example of using it for thread-local storage ...
+4. **Custom `ThreadPool` vs. the global pool:**
+   Unlike the global pool, dropping a custom `rayon::ThreadPool` signals its worker threads to shut down (without blocking to join them),
+   so `std::thread_local!` destructors run asynchronously as those worker threads exit rather than synchronously when the `ThreadPool` value is dropped.
+   Even then, draining or resetting TLS between jobs on a reused custom pool is still necessary.
 
-```
+## `rayon::broadcast` and `ThreadPool::broadcast`
+
+Can [rayon::broadcast](https://docs.rs/rayon/latest/rayon/fn.broadcast.html)
+(or [ThreadPool::broadcast](https://docs.rs/rayon/latest/rayon/struct.ThreadPool.html#method.broadcast))
+be used with thread-local storage, and can it return a `Vec<RefCell<T>>` to circumvent Rust's borrow checker?
+
+- **Why returning `Vec<RefCell<T>>` does not circumvent the borrow checker:**
+  `rayon::broadcast` executes a closure once on each worker thread in the pool and collects the return values into a `Vec<R>` **after** all threads complete (`R: Send`).
+  Although `RefCell<T>` is `Send` (when `T: Send`), `RefCell<T>` is **`!Sync`**.
+  Because it is `!Sync`, you **cannot** share `&Vec<RefCell<T>>` across threads in a subsequent `.par_iter()`—Rust's `Sync` bound prevents data races at compile time.
+  Furthermore, `broadcast` is synchronous and returns only after every worker thread has finished running the closure;
+  it is designed for **per-thread setup, teardown, or draining/collecting TLS results**, not for handing out shared mutable handles across threads.
+
+- **Practical `rayon::broadcast` example (draining TLS accumulators and flushing `BufWriter`s):**
+  You can use `rayon::broadcast` after a `par_iter()` to drain each worker thread's `thread_local!` state into a `Vec` on the caller thread and drop any open resources cleanly:
+
+  ```rust
+  use rayon::prelude::*;
+  use std::cell::RefCell;
+
+  thread_local! {
+      static ACCUM: RefCell<Vec<usize>> = const { RefCell::new(Vec::new()) };
+  }
+
+  fn main() {
+      (0..10_000usize).into_par_iter().for_each(|x| {
+          ACCUM.with(|cell| cell.borrow_mut().push(x * x));
+      });
+
+      // Drain every worker thread's TLS buffer.
+      let per_thread_chunks: Vec<Vec<usize>> = rayon::broadcast(|_| {
+          ACCUM.with(|cell| std::mem::take(&mut *cell.borrow_mut()))
+      });
+
+      let total_items: usize = per_thread_chunks.iter().map(|c| c.len()).sum();
+      println!("Collected {total_items} items across {} worker threads", per_thread_chunks.len());
+  }
+  ```
+
+  Similarly, for a `thread_local!` `RefCell<Option<BufWriter<File>>>`, calling `rayon::broadcast(|_| TLS_WRITER.with(|w| w.borrow_mut().take()))` drops every worker's `BufWriter` (flushing buffered bytes and closing the file handle) before the program proceeds.
+
+## Idiomatic Alternatives to `std::thread_local!` with Rayon
+
+1. **`map_init`, `for_each_init`, and `fold` + `reduce`:**
+   Rayon's built-in combinators create per-job state lazily, pass it as `&mut`, and drop it automatically when the parallel iterator finishes—avoiding `RefCell`, re-entrancy panics, and leaked TLS state.
+   Note that `map_init` / `for_each_init` runs its `init` closure once per Rayon split/job rather than strictly once per worker thread; see [](#parallel-rngs-with-rayon-in-rust) for details.
+
+   ```rust
+   use rayon::prelude::*;
+
+   let sum: usize = (0..10_000usize)
+       .into_par_iter()
+       .fold(Vec::new, |mut buf, x| {
+           buf.push(x);
+           buf
+       })
+       .map(|buf| buf.into_iter().sum::<usize>())
+       .sum();
+   ```
+
+2. **The `thread_local` crate (`thread_local::ThreadLocal<T>`):**
+   Unlike `std::thread_local!`, `thread_local::ThreadLocal<T>` ties the lifetime of all per-thread values to the `ThreadLocal` object itself rather than to OS thread exit.
+   When the `ThreadLocal` instance is dropped (or consumed via `into_iter()`), every thread's value is dropped or collected cleanly—no `rayon::broadcast` teardown required.
+
+## Older `thread_local!` Example in Rayon
+
+```rust
 let zip_archive = zip::ZipArchive::new(std::fs::File::open("AllPublicXML.zip")?)?;
 let results = (0..zip_archive.len())
     .into_par_iter()
@@ -96,39 +172,33 @@ let results = (0..zip_archive.len())
     .collect::<Result<HashMap<String, Vec<(String, String)>>>>()?;
 ```
 
-## crossbeam
+## `std::thread_local!` with `crossbeam::scope`
 
-```
-use crossbeam::thread_local;
+The `crossbeam` crate does not provide a `crossbeam::thread_local` macro—it uses `std::thread_local!` with interior mutability (such as `Cell` or `RefCell`) when threads need to mutate their thread-local value (and since Rust 1.63, `std::thread::scope` is available in the standard library for most scoped-thread use cases):
 
-// Define a thread-local variable.
-thread_local! {
-    static MY_VARIABLE: u32 = 42;
+```rust
+use std::cell::Cell;
+
+// Define a thread-local variable with interior mutability.
+std::thread_local! {
+    static MY_VARIABLE: Cell<u32> = const { Cell::new(42) };
 }
 
 fn main() {
-    // Access the thread-local variable from multiple threads.
     crossbeam::scope(|scope| {
         scope.spawn(|_| {
-            // Get the value of the thread-local variable.
-            println!("Thread 1: {}", MY_VARIABLE.with(|&v| v));
-
-            // Set a new value for the thread-local variable.
-            MY_VARIABLE.with(|v| *v = 100);
+            println!("Thread 1: {}", MY_VARIABLE.with(|v| v.get()));
+            MY_VARIABLE.with(|v| v.set(100));
         });
 
         scope.spawn(|_| {
-            // Get the value of the thread-local variable.
-            println!("Thread 2: {}", MY_VARIABLE.with(|&v| v));
-
-            // Set a new value for the thread-local variable.
-            MY_VARIABLE.with(|v| *v = 200);
+            println!("Thread 2: {}", MY_VARIABLE.with(|v| v.get()));
+            MY_VARIABLE.with(|v| v.set(200));
         });
     })
     .unwrap();
 
-    // Get the value of the thread-local variable in the main thread.
-    println!("Main thread: {}", MY_VARIABLE.with(|&v| v));
+    println!("Main thread: {}", MY_VARIABLE.with(|v| v.get()));
 }
 ```
 

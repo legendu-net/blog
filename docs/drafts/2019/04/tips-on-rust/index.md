@@ -1,7 +1,7 @@
 ---
 title: Tips on Rust
 created: '2019-04-10T12:17:46+00:00'
-date: '2026-11-23T19:43:00-08:00'
+date: '2026-11-25T00:08:00-08:00'
 authors:
   - bendu
 label: tips-on-rust
@@ -123,6 +123,16 @@ https://skipworth.io/posts/rust-wc-threads/
 https://crates.io/crates/scoped-threadpool
 
 ## [Rust GUI](develop-a-gui-application-in-rust)
+
+## Graphics and GPU Computing
+
+- [Using Metal and Rust to Make FFT Even Faster](https://www.notamonadtutorial.com/using-metal-and-rust-to-make-fft-even-faster/):
+  Accelerating Fast Fourier Transform (FFT) computations on Apple Silicon GPUs
+  using Metal Shading Language (MSL) kernels and `metal-rs`.
+- [Ray Tracer Challenge, pt. 3: Let There Be Light!](https://www.superperfundo.dev/articles/ray-tracer-part3):
+  Implementing 3D ray-sphere intersection math and rendering a 2D sphere silhouette in Rust.
+
+See also [](#rust-for-game-development) and [](#tips-on-gpu-computing).
 
 ## Optimize Compiling of Rust Projects
 

@@ -1,7 +1,7 @@
 ---
 title: Async in Rust
 created: 2022-12-04 10:38:16
-date: 2026-04-13 23:14:37.777802
+date: '2026-11-24T22:30:00-08:00'
 authors:
   - bendu
 label: async-in-rust
@@ -37,9 +37,21 @@ tags:
 
 ## Tutorials
 
-[Basics of Rust Concurrency (Atomics and Locks Chapter 1)](https://www.youtube.com/watch?v=99Qzpv325yI)
+- [Basics of Rust Concurrency (Atomics and Locks Chapter 1)](https://www.youtube.com/watch?v=99Qzpv325yI)
+
+- [Rust Concurrency Video](https://www.youtube.com/watch?v=Ivm1FuO8quw)
 
 ## References
+
+- [Async in Rust (Conrad Ludgate)](https://conradludgate.com/posts/async)
+
+- [Pin and Suffering](https://fasterthanli.me/articles/pin-and-suffering)
+
+- [How to Split Up CPU-Intensive Work with Async Generators](https://dev.to/alekseiberezkin/how-to-split-up-cpu-intensive-work-with-async-generators-1fhb)
+
+- [Using Rust's Async Tokio Runtime for CPU-Bound Tasks](https://thenewstack.io/using-rustlangs-async-tokio-runtime-for-cpu-bound-tasks/)
+
+- [Actor Model in Async Rust](https://www.youtube.com/watch?v=xJJwl_o9Juk&t=7s)
 
 - [Improving async Rust codegen](https://swatinem.de/blog/improving-async-codegen/)
 

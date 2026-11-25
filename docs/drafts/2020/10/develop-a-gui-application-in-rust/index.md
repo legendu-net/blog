@@ -1,7 +1,7 @@
 ---
 title: Develop a GUI Application in Rust
 created: '2020-10-03T21:36:53-07:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-24T22:30:00-08:00'
 authors:
   - bendu
 label: develop-a-gui-application-in-rust
@@ -113,6 +113,8 @@ is an easy-to-use, 2D GUI library written entirely in Rust.
 is a Rust bindings for Dear ImGui.
 
 ## References
+
+- [Async GUI in Rust](https://notgull.github.io/async-gui/)
 
 - [50 Shades of Rust - Or emerging Rust GUIs in a WASM world](https://monadical.com/posts/shades-of-rust-gui-library-list.html)
 

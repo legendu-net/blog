@@ -1,7 +1,7 @@
 ---
 title: Tips on Shuttle for Deploying Rust Apps
 created: 2023-11-08 16:18:09
-date: 2026-04-13 23:14:25.839361
+date: '2026-11-24T22:30:00-08:00'
 authors:
   - bendu
 label: tips-on-shuttle-for-deploying-rust-apps
@@ -26,5 +26,7 @@ Shuttle uses traits and annotations to configure your backend deployment - inclu
 ## References
 
 - [Deploy Rust Code Faster](https://endler.dev/2023/move-fast-rust)
+
+- [Shuttle.rs Overview Video](https://www.youtube.com/watch?v=HZf6uKO0Ep4)
 
 - [How to Build & Deploy a Rust App in Under 60 Seconds](https://www.youtube.com/watch?v=-t7Aa6Dr4pI)

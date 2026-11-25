@@ -58,3 +58,7 @@ FROM
   ads_signup_events_6
 ;
 ```
+
+## References
+
+- [](#tricks-on-any_value-with-having-max-in-googlesql)

@@ -50,12 +50,12 @@ Protocols such as TCP, UDP, QUIC, HTTP, HTTPS, WebSockets, RPC, and ActivityPub 
 - **Security Layer (between L4 and L7):**
   - **TLS (Transport Layer Security):** Provides encryption, integrity, and server/client authentication over TCP (or built directly into QUIC), turning HTTP into **HTTPS**.
 - **Application / Communication Layer (L7):**
-  - **HTTP (Hypertext Transfer Protocol):** Stateless request-response protocol (`HTTP/1.1` and `HTTP/2` run over TCP+TLS; `HTTP/3` runs over QUIC).
+  - **HTTP (Hypertext Transfer Protocol):** Stateless request-response protocol (`HTTP/1.1` and `HTTP/2` run over TCP, with TLS optional in the spec though required by browsers for HTTP/2; `HTTP/3` runs over QUIC).
   - **HTTPS:** HTTP secured with TLS.
-  - **WebSockets (RFC 6455):** Persistent, full-duplex, message-framed communication over a single TCP connection initiated via an HTTP upgrade handshake (for HTTP/3, **WebTransport** provides multiplexed streams and unreliable datagrams over QUIC).
+  - **WebSockets (RFC 6455):** Persistent, full-duplex, message-framed communication over a single connection, originally initiated via an HTTP/1.1 upgrade handshake and also extensible to HTTP/2 (RFC 8441) and HTTP/3 (RFC 9220). For HTTP/3, **WebTransport** additionally provides multiplexed streams and unreliable datagrams over QUIC.
   - **RPC (Remote Procedure Call):** Action-oriented communication paradigm (e.g., gRPC using Protocol Buffers over HTTP/2, or JSON-RPC over HTTP/WebSockets) for calling remote functions as if they were local.
 - **Application / Social Federation Protocol (above HTTP/HTTPS):**
-  - **[ActivityPub](https://www.w3.org/TR/activitypub/):** W3C decentralized social networking protocol built *on top of* HTTPS using ActivityStreams 2.0 JSON-LD payloads, powering the Fediverse (e.g., Mastodon, PeerTube, Pixelfed).
+  - **[ActivityPub](https://www.w3.org/TR/activitypub/):** W3C decentralized social networking protocol using ActivityStreams 2.0 JSON-LD payloads over HTTP/HTTPS, powering the Fediverse (e.g., Mastodon, PeerTube, Pixelfed).
 
 ## Comparison Table
 
@@ -82,7 +82,7 @@ widths: 12 16 16 10 24 22
   - Connectionless, best-effort datagrams
   - No (pair with DTLS / custom)
   - Minimal overhead and low latency; no built-in ordering, retransmission, or congestion control
-  - DNS, VoIP, video streaming, online gaming, foundation for QUIC
+  - DNS, VoIP, real-time video calls (RTP/WebRTC), online gaming, foundation for QUIC
 * - **QUIC**
   - L4 Transport (over UDP)
   - Connection-oriented, multiplexed independent streams
@@ -114,9 +114,9 @@ widths: 12 16 16 10 24 22
   - Strongly typed schemas, compact binary payloads, bidirectional streaming (gRPC); tighter coupling and less browser-native than REST
   - Microservices, internal APIs, low-latency polyglot backends
 * - **ActivityPub**
-  - L7 Social Federation (over HTTPS)
+  - L7 Social Federation (over HTTP/HTTPS)
   - Asynchronous actor inbox/outbox JSON-LD delivery
-  - Yes (relies on HTTPS + HTTP Signatures)
+  - No (HTTPS used in practice; HTTP Signatures for auth)
   - Decentralized, federated social graph without central lock-in; eventual consistency and cross-instance moderation complexity
   - Fediverse platforms (Mastodon, Lemmy, PeerTube, Pixelfed)
 ```
@@ -127,7 +127,7 @@ widths: 12 16 16 10 24 22
 
 - **TCP** guarantees that every byte arrives in order, retransmitting lost packets. However, because TCP treats a connection as a single byte stream, one lost packet stalls all multiplexed application streams on that connection (transport-level head-of-line blocking).
 - **UDP** sends independent datagrams with no handshake or retransmission. Applications that tolerate minor packet loss (like voice/video calls or fast-paced game state) prefer UDP to avoid retransmission stalls.
-- **QUIC** runs over UDP to bypass OS kernel TCP ossification while implementing reliability, congestion control, and **TLS 1.3** in user space. Each QUIC stream is independent, so packet loss on one stream does not block others, and connection IDs let mobile clients switch between Wi-Fi and cellular without dropping the connection.
+- **QUIC** runs over UDP primarily to bypass network middlebox ossification (firewalls, NATs, and proxies that drop or mangle unfamiliar TCP extensions) and to iterate in user space without waiting on OS kernel updates, while implementing reliability, congestion control, and **TLS 1.3** directly. Each QUIC stream is independent, so packet loss on one stream does not block others, and connection IDs let mobile clients switch between Wi-Fi and cellular without dropping the connection.
 
 ### HTTP vs. HTTPS
 
@@ -136,8 +136,8 @@ widths: 12 16 16 10 24 22
 
 ### HTTP vs. WebSockets (and WebTransport)
 
-- Standard **HTTP** is client-initiated request-response. For server-to-client updates alone, **Server-Sent Events (SSE)** over HTTP/2 or HTTP/3 is simpler than WebSockets because it uses plain HTTP semantics and automatic reconnection.
-- **WebSockets** (`ws://` / `wss://`) upgrade an HTTP/1.1 connection into a long-lived, full-duplex channel where both client and server can push frames at any time.
+- Standard **HTTP** is client-initiated request-response. For server-to-client updates alone, **Server-Sent Events (SSE)**—which works over HTTP/1.1, HTTP/2, and HTTP/3 (with HTTP/2+ avoiding HTTP/1.1's per-origin connection limits)—is simpler than WebSockets because it uses plain HTTP semantics and automatic reconnection.
+- **WebSockets** (`ws://` / `wss://`) upgrade an HTTP/1.1 connection (or use extended `CONNECT` over HTTP/2 via RFC 8441 and HTTP/3 via RFC 9220) into a long-lived, full-duplex channel where both client and server can push frames at any time.
 - **WebTransport** brings WebSocket-like bidirectional messaging *plus* unreliable datagrams and multiple independent streams on top of **HTTP/3 (QUIC)**, avoiding TCP head-of-line blocking.
 
 ### HTTP/REST vs. RPC
@@ -147,10 +147,10 @@ widths: 12 16 16 10 24 22
 
 ### ActivityPub
 
-- Unlike transport or general-purpose API protocols, **[ActivityPub](https://www.w3.org/TR/activitypub/)** is a decentralized social networking specification built *on top of* HTTPS.
+- Unlike transport or general-purpose API protocols, **[ActivityPub](https://www.w3.org/TR/activitypub/)** is a decentralized social networking specification built *on top of* HTTP/HTTPS.
 - It defines two complementary APIs using ActivityStreams 2.0 JSON-LD:
   - **Client-to-Server (C2S):** How a user's client posts activities (`Create`, `Like`, `Follow`) to their own server's `outbox`.
-  - **Server-to-Server (S2S):** How federated servers deliver activities to remote actors' `inbox` endpoints over HTTPS, typically authenticated with HTTP Signatures.
+  - **Server-to-Server (S2S):** How federated servers deliver activities to remote actors' `inbox` endpoints. While the W3C specification does not mandate encryption or a specific signing scheme, Fediverse deployments use HTTPS for transport security and HTTP Signatures by convention to authenticate S2S deliveries.
 
 ## Cross-References
 

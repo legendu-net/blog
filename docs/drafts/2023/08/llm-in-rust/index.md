@@ -1,7 +1,7 @@
 ---
 title: LLM in Rust
 created: 2023-08-03 16:03:13
-date: 2026-04-13 23:14:27.008892
+date: '2026-11-24T22:30:00-08:00'
 authors:
   - bendu
 label: llm-in-rust
@@ -48,3 +48,9 @@ tags:
 - [async-openai](https://github.com/64bit/async-openai)
   [async-openai](https://github.com/64bit/async-openai)
   is an unofficial Rust library for OpenAI.
+
+## References
+
+- [Hugging Face from Rust](https://peterprototypes.com/blog/huggingface-from-rust/)
+
+- [Vector Search in 200 Lines of Rust](https://fennel.ai/blog/vector-search-in-200-lines-of-rust/)

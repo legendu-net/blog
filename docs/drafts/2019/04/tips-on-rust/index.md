@@ -1,7 +1,7 @@
 ---
 title: Tips on Rust
 created: '2019-04-10T12:17:46+00:00'
-date: '2026-11-23T19:43:00-08:00'
+date: '2026-11-24T22:30:00-08:00'
 authors:
   - bendu
 label: tips-on-rust
@@ -131,6 +131,12 @@ has a detailed discuss on how to optimize the compiling time of rust projects.
 
 ## Cool Rust Projects
 
+- [Gyroflow](https://github.com/gyroflow/gyroflow): Video stabilization using gyroscope data, written in Rust.
+
+- [FuelLabs Sway](https://github.com/FuelLabs/sway) and [fuels-rs](https://github.com/FuelLabs/fuels-rs): Smart contract language and Rust SDK for the Fuel blockchain.
+
+- [Rome Tools](https://github.com/rome/tools) (succeeded by [Biome](https://biomejs.dev/)): Frontend toolchain written in Rust.
+
 https://github.com/rajasekarv/native_spark
 
 https://github.com/andygrove/ballista
@@ -167,6 +173,10 @@ https://rust-trends.com/newsletter/rust-is-becoming-the-ai-runtime/
 
 ## Tutorials
 
+- [Comprehensive Rust (Google)](https://google.github.io/comprehensive-rust/)
+
+- [Rust by Practice](https://github.com/sunface/rust-by-practice)
+
 [Rust Language Cheat Sheet](https://cheats.rs/)
 
 [How to learn modern Rust](https://github.com/joaocarvalhoopen/How_to_learn_modern_Rust)
@@ -180,6 +190,44 @@ https://rust-trends.com/newsletter/rust-is-becoming-the-ai-runtime/
 https://github.com/rust-unofficial/awesome-rust
 
 https://kerkour.com/
+
+## Rust API Guidelines
+
+- [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)
+  - [Interoperability](https://rust-lang.github.io/api-guidelines/interoperability.html)
+  - [Predictability](https://rust-lang.github.io/api-guidelines/predictability.html)
+  - [Documentation](https://rust-lang.github.io/api-guidelines/documentation.html)
+  - [Flexibility](https://rust-lang.github.io/api-guidelines/flexibility.html)
+  - [Type Safety](https://rust-lang.github.io/api-guidelines/type-safety.html)
+  - [Macros](https://rust-lang.github.io/api-guidelines/macros.html)
+  - [Dependability](https://rust-lang.github.io/api-guidelines/dependability.html)
+  - [Debuggability](https://rust-lang.github.io/api-guidelines/debuggability.html)
+  - [Future Proofing](https://rust-lang.github.io/api-guidelines/future-proofing.html)
+  - [Necessities](https://rust-lang.github.io/api-guidelines/necessities.html)
+
+## Language Design & Internals
+
+- [Tree Borrows / Aliasing Model](https://www.youtube.com/watch?v=zQ76zLXesxA)
+
+- [Changing the Rules of Rust (without.boats)](https://without.boats/blog/changing-the-rules-of-rust/)
+
+- [Follow-up to Changing the Rules of Rust (without.boats)](https://without.boats/blog/follow-up-to-changing-the-rules-of-rust/)
+
+- [String Types in Rust](https://www.youtube.com/watch?v=CpvzeyzgQdw)
+
+## Performance, Terminal/TUI, WASM & Security
+
+- [Why is my Rust server slower than a laptop?](https://pkolaczk.github.io/server-slower-than-a-laptop/)
+
+- [Ratatui 0.22.0](https://blog.orhun.dev/ratatui-0-22-0/)
+
+- [Building a TUI with clap (tuify-clap)](https://developerlife.com/2023/09/17/tuify-clap/)
+
+- [WebAssembly (WASM) in Rust](https://www.youtube.com/watch?v=ie13kswrWu4)
+
+- [Vector Databases and Vector Embeddings](https://terminusdb.com/blog/vector-database-and-vector-embeddings/) (see also [](#llm-in-rust))
+
+- [Data Exfiltration Through DNS with Rust](https://balwurk.com/data-exfiltration-through-dns-with-rust/)
 
 ## References
 

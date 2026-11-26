@@ -1,7 +1,7 @@
 ---
 title: Rust Crates for Parallel, Concurrency, Async and Distributed Applications
 created: 2023-01-13 16:51:04
-date: 2026-04-13 23:14:37.628648
+date: '2026-11-26T12:05:00-08:00'
 authors:
   - bendu
 label: rust-crates-for-parallel-concurrency-async-and-distributed-applications
@@ -46,6 +46,8 @@ A lock-free, bounded, single-producer, multi-consumer, broadcast channel.
 
 ## Distributed
 
+- [Solving distributed systems challenges in Rust](https://www.youtube.com/watch?v=gboGyccRVXI) — Jon Gjengset's walkthrough of implementing Fly.io's Maelstrom distributed systems challenges in Rust, covering message-passing node state machines, gossip/broadcast protocols, and fault-injection testing.
+
 https://crates.io/crates/zmq
 High-level bindings to the zeromq library
 
@@ -53,3 +55,8 @@ High-level bindings to the zeromq library
 
 https://crates.io/crates/riker
 Easily build fast, highly concurrent and resilient applications. An Actor Framework for Rust.
+
+## References
+
+- [](#tips-on-distributed-development)
+- [](#async-concurrency-multithreading-and-parallel-computing-in-rust)

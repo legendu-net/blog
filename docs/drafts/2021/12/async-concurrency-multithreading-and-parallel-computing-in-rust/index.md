@@ -1,7 +1,7 @@
 ---
 title: Async, Concurrency, Multithreading and Parallel Computing in Rust
 created: '2021-12-24T09:50:50-08:00'
-date: '2026-11-15T09:22:45-08:00'
+date: '2026-11-26T12:05:00-08:00'
 authors:
   - bendu
 label: async-concurrency-multithreading-and-parallel-computing-in-rust
@@ -69,6 +69,11 @@ is a dead simple async pool for connections and objects of any type.
 [mobc](https://crates.io/crates/mobc)
 is a generic connection pool with async/await support.
 
+## Async Scoped Tasks
+
+- [The Scoped Task Trilemma](https://without.boats/blog/the-scoped-task-trilemma/) — Examines why a sound async API under Rust's leak-permitting memory safety model can provide at most two of three properties: concurrency, parallelizability (multi-threaded execution), and borrowing non-`'static` stack references.
+
 ## References
 
 - [Basics of Rust Concurrency (Atomics and Locks Chapter 1)](https://www.youtube.com/watch?v=99Qzpv325yI)
+- [](#rust-crates-for-parallel-concurrency-async-and-distributed-applications)

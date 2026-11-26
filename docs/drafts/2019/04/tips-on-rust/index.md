@@ -1,7 +1,7 @@
 ---
 title: Tips on Rust
 created: '2019-04-10T12:17:46+00:00'
-date: '2026-11-24T22:30:00-08:00'
+date: '2026-11-26T12:05:00-08:00'
 authors:
   - bendu
 label: tips-on-rust
@@ -228,6 +228,13 @@ https://kerkour.com/
 - [Vector Databases and Vector Embeddings](https://terminusdb.com/blog/vector-database-and-vector-embeddings/) (see also [](#llm-in-rust))
 
 - [Data Exfiltration Through DNS with Rust](https://balwurk.com/data-exfiltration-through-dns-with-rust/)
+
+## Graphics and GPU Computing
+
+- [Using Metal and Rust to Make FFT Even Faster](https://www.notamonadtutorial.com/using-metal-and-rust-to-make-fft-even-faster/) — Accelerating Fast Fourier Transform computations on Apple GPUs using Rust (`metal-rs`) and Metal compute shaders.
+- [Ray Tracer Challenge, pt. 3: Let There Be Light!](https://www.superperfundo.dev/articles/ray-tracer-part3) — Implementing `Ray` and `Sphere` structs, ray-sphere intersection math, and rendering a 2D sphere silhouette in Rust.
+
+See also [](#rust-for-game-development) and [](#tips-on-gpu-computing).
 
 ## References
 

@@ -16,6 +16,8 @@ from functools import cache
 from pathlib import Path
 from typing import Any, Self
 
+import mdformat
+import mdformat.plugins
 import nbformat
 import requests
 import yaml
@@ -624,7 +626,7 @@ class Post:
         )
 
     def mdformat(self):
-        sp.run(f"uv run mdformat {self.path}", shell=True, check=False)
+        sp.run(["uv", "run", "mdformat", str(self.path)], check=False)
 
     def _write(self):
         if self.is_markdown:
@@ -1411,3 +1413,32 @@ class Blogger:
             print(f"\n{rowid}: {title}  |  [](#{label})  |  {path}")
             print(f"    {url}  |  archives/blog/{path}")
         print()
+
+
+def format_notebook_markdown(path: AnyPath) -> bool:
+    """Format markdown cells (and their fenced code blocks) in a Jupyter notebook.
+
+    Leaves code cells, raw cells, outputs, and execution counts untouched.
+    Returns True if any markdown cell changed and the notebook was written back.
+    """
+    nb = nbformat.read(path, as_version=nbformat.NO_CONVERT)
+    changed = False
+    for cell in nb.cells:
+        if cell.get("cell_type") != "markdown":
+            continue
+        source = cell.get("source", "")
+        if not source.strip():
+            continue
+        formatted = mdformat.text(
+            source,
+            extensions={"myst"},
+            codeformatters=mdformat.plugins.CODEFORMATTERS,
+        )
+        if not source.endswith("\n"):
+            formatted = formatted.removesuffix("\n")
+        if formatted != source:
+            cell["source"] = formatted
+            changed = True
+    if changed:
+        nbformat.write(nb, path)
+    return changed

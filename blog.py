@@ -24,6 +24,7 @@ from blogger import (
     SITE,
     Blogger,
     Post,
+    format_notebook_markdown,
     format_title,
     get_code,
     get_post_paths,
@@ -699,52 +700,122 @@ def exec_notebook(blogger, args):
         sp.run(cmd, check=True)
 
 
-def format_notebook(_, args):
-    paths = [path for path in get_post_paths() if path.suffix == IPYNB]
+def _resolve_format_paths(
+    blogger: Blogger, args: Namespace, suffix: str | None = None
+) -> list[Path]:
+    """Resolve target post paths for format commands, defaulting to all posts."""
+    if getattr(args, "all_posts", False):
+        paths = [Path(p) for p in get_post_paths()]
+    elif getattr(args, "all", False):
+        paths = [Path(p) for p in blogger.path(Blogger.SRPS, where="")]
+    elif getattr(args, "indexes", None):
+        paths = [
+            Path(p)
+            for p in blogger.path(
+                Blogger.SRPS,
+                where=f"rowid IN ({qmarks(args.indexes)})",
+                params=args.indexes,
+            )
+        ]
+    elif getattr(args, "files", None):
+        paths = [Path(f) for f in args.files]
+    else:
+        paths = [Path(p) for p in get_post_paths()]
+    if suffix is not None:
+        return [p for p in paths if p.suffix == suffix]
+    return [p for p in paths if p.suffix in (MARKDOWN, IPYNB)]
+
+
+def _format_markdown_file(path: Path) -> bool:
+    result = sp.run(
+        ["uv", "run", "mdformat", str(path)],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        logger.warning("Failed to format {}:\n{}", path, result.stderr.strip())
+        return False
+    return True
+
+
+def _format_notebook_file(path: Path) -> bool:
+    result = sp.run(
+        ["uv", "run", "ruff", "format", str(path)],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        logger.warning("Failed to format {}:\n{}", path, result.stderr.strip())
+        return False
+    try:
+        format_notebook_markdown(path)
+    except (OSError, ValueError, SyntaxError, RuntimeError) as exc:
+        logger.warning("Failed to format markdown cells in {}:\n{}", path, exc)
+        return False
+    return True
+
+
+def _format_paths(paths: list[Path]) -> None:
     failed = []
     for path in paths:
-        result = sp.run(
-            ["uv", "run", "ruff", "format", str(path)],
-            capture_output=True,
-            text=True,
-            check=False,
-        )
-        if result.returncode != 0:
+        if path.suffix == MARKDOWN:
+            ok = _format_markdown_file(path)
+        elif path.suffix == IPYNB:
+            ok = _format_notebook_file(path)
+        else:
+            continue
+        if not ok:
             failed.append(path)
-            logger.warning("Failed to format {}:\n{}", path, result.stderr.strip())
     if failed:
         logger.warning(
-            "{} of {} notebook(s) could not be formatted.", len(failed), len(paths)
+            "{} of {} file(s) could not be formatted.", len(failed), len(paths)
         )
 
 
-def format_markdown(_, args):
-    paths = [path for path in get_post_paths() if path.suffix == MARKDOWN]
-    failed = []
-    for path in paths:
-        result = sp.run(
-            ["uv", "run", "mdformat", str(path)],
-            capture_output=True,
-            text=True,
-            check=False,
-        )
-        if result.returncode != 0:
-            failed.append(path)
-            logger.warning("Failed to format {}:\n{}", path, result.stderr.strip())
-    if failed:
-        logger.warning(
-            "{} of {} markdown file(s) could not be formatted.", len(failed), len(paths)
-        )
+def format_posts(blogger, args):
+    paths = _resolve_format_paths(blogger, args)
+    _format_paths(paths)
+
+
+def format_notebook(blogger, args):
+    paths = _resolve_format_paths(blogger, args, suffix=IPYNB)
+    _format_paths(paths)
+
+
+def format_markdown(blogger, args):
+    paths = _resolve_format_paths(blogger, args, suffix=MARKDOWN)
+    _format_paths(paths)
+
+
+def _subparse_format(subparsers):
+    desc = "Format markdown and notebook posts."
+    subparser_format = subparsers.add_parser(
+        "format",
+        aliases=["fmt", "f"],
+        help=desc,
+        description=desc,
+    )
+    option_indexes(subparser_format)
+    option_files(subparser_format)
+    option_all(subparser_format)
+    option_all_posts(subparser_format)
+    subparser_format.set_defaults(func=format_posts)
 
 
 def _subparse_format_notebook(subparsers):
     desc = "Format notebooks."
     subparser_format_notebook = subparsers.add_parser(
         "format_notebook",
-        aliases=["format", "fmt", "f"],
+        aliases=["fnb"],
         help=desc,
         description=desc,
     )
+    option_indexes(subparser_format_notebook)
+    option_files(subparser_format_notebook)
+    option_all(subparser_format_notebook)
+    option_all_posts(subparser_format_notebook)
     subparser_format_notebook.set_defaults(func=format_notebook)
 
 
@@ -756,6 +827,10 @@ def _subparse_format_markdown(subparsers):
         help=desc,
         description=desc,
     )
+    option_indexes(subparser_format_markdown)
+    option_files(subparser_format_markdown)
+    option_all(subparser_format_markdown)
+    option_all_posts(subparser_format_markdown)
     subparser_format_markdown.set_defaults(func=format_markdown)
 
 
@@ -1408,6 +1483,7 @@ def parse_args(args=None, namespace=None) -> Namespace:
     _subparse_find_mismatch(subparsers)
     _subparse_match_title(subparsers)
     _subparse_exec_notebook(subparsers)
+    _subparse_format(subparsers)
     _subparse_format_notebook(subparsers)
     _subparse_format_markdown(subparsers)
     _subparse_trust_notebooks(subparsers)

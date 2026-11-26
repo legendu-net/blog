@@ -1,7 +1,7 @@
 ---
 title: Taxes on Investment Gains
 created: '2023-12-14T09:48:44-08:00'
-date: '2026-11-15T09:27:30-08:00'
+date: '2026-11-25T01:21:00-08:00'
 authors:
   - bendu
 label: taxes-on-investment-gains
@@ -124,6 +124,8 @@ However,
 coming tax season we will provide you a tax form. Where you can then work with an accountant or tax advisor on how to report that.
 
 ## References
+
+- [](#santa-claus-rally-and-year-end-tax-loss-harvesting)
 
 - [拿W-2的人最吃虧？這20個節稅方法很多人不知道](https://www.youtube.com/watch?v=aQmtorV24yE)
 

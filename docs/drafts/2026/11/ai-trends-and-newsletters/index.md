@@ -1,7 +1,7 @@
 ---
 title: AI Trends and Newsletters
 created: '2026-11-23T19:41:23.813621-08:00'
-date: '2026-11-23T19:41:23.813631-08:00'
+date: '2026-11-24T22:55:00-08:00'
 authors:
   - bendu
 label: ai-trends-and-newsletters
@@ -13,6 +13,7 @@ tags:
   - newsletter
   - trends
   - programming
+  - forums
 ---
 
 **Things on this page are fragmentary and immature notes/thoughts of the author. Please read with your own judgement!**
@@ -110,6 +111,17 @@ For engineers working across Rust, Python, and AI agents:
 - **Weekly/Biweekly Technical Anchor**: **Ahead of AI** (for deep LLM/ML engineering) *or* **Latent Space** (weekly deep dives only, opting out of daily emails).
 - **Practical Tooling Feed**: **Simon Willison's Newsletter** (or RSS from `simonwillison.net`) for hands-on agent/LLM tooling and CLI patterns.
 - **Optional Weekday Pulse**: [AINews](https://news.smol.ai/) or [TLDR AI](https://tldr.tech/ai) only if you want a fast weekday scan of new repos and releases.
+
+## Forums & Communities
+
+- [r/MachineLearning](https://www.reddit.com/r/MachineLearning/)
+- [r/datascience](https://www.reddit.com/r/datascience/)
+- [DEV Community — #ai](https://dev.to/t/ai)
+- [Kaggle Discussion](https://www.kaggle.com/discussion)
+
+## Articles & Tool Lists
+
+- [9 Awesome AI Tools You Need to Try (DEV Community)](https://dev.to/alexomeyer/9-awesome-ai-tools-you-need-to-try-48o0)
 
 ## Related Posts
 

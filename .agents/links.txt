@@ -1,6 +1,4 @@
-skills/abstract-session-skill
-skills/compare-tools
-skills/find-skills
-skills/html-table-to-list-table
-skills/mine-conversation-history-for-skills
-skills/update-blog-post
+skills_proj/blog/html-table-to-list-table
+skills_proj/blog/improve-blog-post
+skills_proj/blog/triage-blog-posts
+skills_proj/blog/update-blog-post

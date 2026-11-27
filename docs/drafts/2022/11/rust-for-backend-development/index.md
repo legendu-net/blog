@@ -1,7 +1,7 @@
 ---
 title: Rust for Backend Development
 created: '2022-11-27T00:20:12-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-24T22:30:00-08:00'
 authors:
   - bendu
 label: rust-for-backend-development
@@ -40,5 +40,11 @@ Please refer to
 for detailed discussions.
 
 ## References
+
+- [Axum Template](https://radim.xyz/project/axum-template/)
+
+- [Rust Backend Development Video](https://www.youtube.com/watch?v=hzSsOV2F7-s)
+
+- [Serving Dynamic Social Preview Images with Rust and Serverless Functions](https://www.traitscratesawaits.com/serving-dynamic-social-preview-images-with-rust-and-serverless-functions/)
 
 - [Are we web yet?](https://www.arewewebyet.org/)

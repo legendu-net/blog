@@ -1,7 +1,7 @@
 ---
 title: Cross Compile Rust
 created: 2021-12-23 10:25:30
-date: 2026-04-13 23:14:51.682326
+date: '2026-11-24T22:30:00-08:00'
 authors:
   - bendu
 label: cross-compile-rust
@@ -19,3 +19,5 @@ tags:
 [Reproducible cross-compilation for Rust (with Docker)](https://kerkour.com/rust-reproducible-cross-compilation-with-docker/)
 
 [Cross-compiling Rust Lambdas on macOS without Docker](https://noserve.rs/rust-lambdas-macos/)
+
+[Rust Cross-Compilation with GitHub Actions](https://reemus.dev/tldr/rust-cross-compilation-github-actions)

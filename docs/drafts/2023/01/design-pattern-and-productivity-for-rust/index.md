@@ -1,7 +1,7 @@
 ---
 title: Design Pattern and Productivity for Rust
 created: '2023-01-13T16:29:29-08:00'
-date: '2026-06-12T22:15:55-07:00'
+date: '2026-11-24T22:30:00-08:00'
 authors:
   - bendu
 label: design-pattern-and-productivity-for-rust
@@ -44,7 +44,13 @@ is a Rust crate for generating compile-time-checked builders for functions and s
 
 ## Design Patterns
 
-[Improve your Rust APIs with the type state pattern](https://www.youtube.com/watch?v=_ccDqRTx-JU)
+- [Rust Design Patterns](https://rust-unofficial.github.io/patterns/)
+
+- [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)
+
+- [Elegant APIs in Rust](https://deterministic.space/elegant-apis-in-rust.html)
+
+- [Improve your Rust APIs with the type state pattern](https://www.youtube.com/watch?v=_ccDqRTx-JU)
 
 ## Constraints on Types
 
